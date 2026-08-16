@@ -2139,146 +2139,186 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "bisp-eligibility-check-by-cnic",
     "fullPath": "/welfare/bisp-eligibility-check-by-cnic",
     "categoryId": "welfare",
-    "titleEn": "BISP Eligibility Check by CNIC 2026: Benazir 8171 Online Portal",
-    "titleUr": "بی ایس پی 8171 شناختی کارڈ آن لائن اہلیت چیک 2026 (بے نظیر کفالت)",
-    "metaDescriptionEn": "Check Benazir Income Support Programme (BISP) 8171 eligibility by CNIC online at 8171.bisp.gov.pk or via SMS 8171. Benazir Kafaalat 10,500 PKR status check.",
-    "metaDescriptionUr": "بے نظیر انکم سپورٹ پروگرام 8171 پورٹل پر اپنا 13 ہندسوں کا شناختی کارڈ درج کر کے اہلیت اور 10,500 روپے قسط کا آن لائن سٹیٹس دیکھیں۔",
-    "directAnswerEn": "To check BISP eligibility by CNIC online, enter your 13-digit CNIC number on the official BISP portal at 8171.bisp.gov.pk or send your CNIC via SMS to 8171 (costs PKR 2+tax). Verification confirms whether you are eligible for the 10,500 PKR Benazir Kafaalat quarterly installment. Registration is 100% FREE.",
-    "directAnswerUr": "بی ایس پی 8171 آن لائن اہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر ایس ایم ایس بھیجیں۔ تصدیق پر 10,500 روپے بے نظیر کفالت قسط کا سٹیٹس معلوم ہوتا ہے۔ رجسٹریشن بالکل مفت ہے۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "BISP 8171 Eligibility Check by CNIC 2026: Online Web Portal & SMS Guide",
+    "titleUr": "8171 بی این ایس پی اہلیت آن لائن چیک بذریعہ شناختی کارڈ 2026",
+    "metaDescriptionEn": "Check your Benazir Income Support Programme (BISP) 8171 eligibility status online by CNIC. Step-by-step 8171 web portal walkthrough, PMT score guidelines, SMS 8171, and scam protection.",
+    "metaDescriptionUr": "بی این ایس پی 8171 پورٹل پر شناختی کارڈ نمبر درج کر کے اہلیت کا آن لائن سٹیٹس چیک کریں۔ پی ایم ٹی سکور، نادرا سروے، فیس فنڈ اور 8171 ایس ایم ایس کا مکمل طریقہ۔",
+    "directAnswerEn": "To check your BISP 8171 eligibility by CNIC, visit the official 8171 web portal at 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes, input the 4-digit security captcha code displayed on screen, and click \"Check Eligibility\". Alternatively, send your 13-digit CNIC number via SMS to 8400 / 8171 from any registered mobile network in Pakistan.",
+    "directAnswerUr": "بی این ایس پی اہلیت چیک کرنے کے لیے آفیشل پورٹل 8171.bisp.gov.pk کھولیں۔ اپنا 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے درج کریں، سکرین پر موجود 4 ہندسوں کا کوڈ درج کریں اور بٹن دبائیں۔ یا اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "BISP 8171 Official Government Web Portal",
+      "name": "BISP 8171 Official Portal",
       "url": "https://8171.bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Social Welfare & Relief Desk"
+      "role": "Social Welfare & BISP Specialist"
     },
-    "faqs": [
-      {
-        "questionEn": "Is there any fee to check BISP 8171 eligibility or register?",
-        "questionUr": "کیا 8171 پورٹل پر اہلیت چیک کرنے یا بی ایس پی میں اندراج کی کوئی فیس ہے؟",
-        "answerEn": "NO! BISP registration and eligibility checks are 100% FREE at 8171.bisp.gov.pk. Never pay any fee to private individuals or agents claiming to register you in the system.",
-        "answerUr": "جی نہیں! 8171 کی تمام سروسز بالکل مفت ہیں۔ کسی بھی ایجنٹ کو پیسے نہ دیں جو آپ کو رجسٹر کروانے کا کہے۔"
-      },
-      {
-        "questionEn": "What does it mean if 8171 shows \"Not Eligible\"?",
-        "questionUr": "اگر 8171 پر \"اہل نہیں\" آئے تو اس کا کیا مطلب ہے؟",
-        "answerEn": "\"Not Eligible\" means your household PMT (Proxy Means Test) score is above the poverty threshold, OR your NSER survey data has not been recorded yet. You can visit a BISP Tehsil Registration Center to request a re-survey or dynamic NSER update.",
-        "answerUr": "\"اہل نہیں\" کا مطلب یا تو آپ کے گھرانے کا PMT سکور حد سے زیادہ ہے، یا آپ کا NSER سروے ابھی تک مکمل نہیں ہوا۔ قریبی تحصیل رجسٹریشن سینٹر جا کر دوبارہ سروے درخواست دیں۔"
-      }
-    ],
     "feeStructure": [
       {
-        "serviceEn": "Benazir Kafaalat Quarterly Cash Grant",
-        "serviceUr": "بے نظیر کفالت سہ ماہی قسط",
-        "normal": "PKR 10,500",
-        "urgent": "Every 3 Months",
-        "executive": "100% FREE Direct Grant"
-      },
-      {
-        "serviceEn": "Taleemi Wazaif Primary School (Girls)",
-        "serviceUr": "تعلیمی وظائف پرائمری سکول (بچیاں)",
-        "normal": "PKR 2,500 / Quarter",
-        "urgent": "Bi-Monthly",
-        "executive": "Bonus 3,000 Graduation"
-      },
-      {
-        "serviceEn": "Taleemi Wazaif Primary School (Boys)",
-        "serviceUr": "تعلیمی وظائف پرائمری سکول (بچے)",
-        "normal": "PKR 2,000 / Quarter",
-        "urgent": "Bi-Monthly",
-        "executive": "Direct Bank Transfer"
-      },
-      {
-        "serviceEn": "8171 Web Portal & NSER Survey Fee",
-        "serviceUr": "8171 پورٹل اور این ایس ای آر سروے فیس",
+        "serviceEn": "8171 Online Web Portal Query",
+        "serviceUr": "8171 آن لائن ویب پورٹل",
         "normal": "PKR 0 (100% FREE)",
-        "urgent": "No Agent Fee",
-        "executive": "Government Subsidized"
+        "urgent": "Instant Web Status",
+        "executive": "24/7 Available"
+      },
+      {
+        "serviceEn": "8171 SMS Inquiry",
+        "serviceUr": "8171 ایس ایم ایس انکوائری",
+        "normal": "Standard SMS rate (~PKR 2)",
+        "urgent": "Instant Reply",
+        "executive": "All Mobile Networks"
+      },
+      {
+        "serviceEn": "Dynamic NSER Survey Registration",
+        "serviceUr": "ڈائنامک این ایس ای آر سروے رجسٹریشن",
+        "normal": "PKR 0 (100% FREE)",
+        "urgent": "Tehsil Office Visit",
+        "executive": "No Fee Ever"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open BISP 8171 Web Portal or Send SMS",
-        "titleUr": "8171 ویب پورٹل یا SMS کھولیں",
-        "detailEn": "Visit 8171.bisp.gov.pk or type your 13-digit CNIC without dashes and send SMS to 8171.",
-        "detailUr": "8171.bisp.gov.pk کھولیں یا 8171 پر شناختی کارڈ نمبر SMS کریں۔"
+        "titleEn": "Open Official BISP 8171 Portal",
+        "titleUr": "آفیشل 8171 پورٹل کھولیں",
+        "detailEn": "Open your web browser on mobile or PC and go strictly to 8171.bisp.gov.pk. Beware of fake third-party websites ending in .com or .blogspot.",
+        "detailUr": "موبائل یا کمپیوٹر پر صرف 8171.bisp.gov.pk ویب سائٹ کھولیں۔ جعلی سائٹس سے ہوشیار رہیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Enter CNIC & Verification Code",
-        "titleUr": "شناختی کارڈ نمبر درج کریں",
-        "detailEn": "Input your 13-digit Computerized National Identity Card number and the 4-digit security captcha code.",
-        "detailUr": "اپنا 13 ہندسوں کا شناختی کارڈ اور سکرین پر موجود تصدیقی کوڈ درج کریں۔"
+        "titleEn": "Enter 13-Digit CNIC Number",
+        "titleUr": "13 ہندسوں کا شناختی کارڈ نمبر درج کریں",
+        "detailEn": "Type the head of family (usually the female applicant) 13-digit Computerized National Identity Card number accurately without dashes or spaces.",
+        "detailUr": "خاندان کی سربراہ خاتون کا 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے درج کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Check Household PMT Poverty Score Status",
-        "titleUr": "گھرانے کی اہلیت کا سٹیٹس دیکھیں",
-        "detailEn": "The system displays whether your household PMT score is below 32 and confirms your quarterly 10,500 PKR grant eligibility.",
-        "detailUr": "سسٹم ظاہر کرے گا کہ آیا آپ 10,500 روپے بے نظیر کفالت قسط کے اہل ہیں۔"
+        "titleEn": "Input Captcha Verification Code",
+        "titleUr": "سکرین پر دکھایا گیا کوڈ درج کریں",
+        "detailEn": "Look at the 4-digit numerical security code shown in the image box and type it into the security verification box.",
+        "detailUr": "تصویر میں دکھائے گئے 4 ہندسوں والے سیکیورٹی کوڈ کو خانوں میں لکھیں۔"
       },
       {
         "stepNumber": 4,
-        "titleEn": "Visit Designated Disbursement Campsite",
-        "titleUr": "ادائیگی کیمپ یا بینک ایجنٹ سے رقم لیں",
-        "detailEn": "Eligible women visit Bank Alfalah POS campsite (Sindh/KPK/Balochistan) or HBL Konnect agent (Punjab) for biometric thumb verification.",
-        "detailUr": "اہل خواتین قریبی کیمپ یا بینک الفلاح / HBL ایجنٹ سے بایومیٹرک انگوٹھے کی تصدیق کر کے رقم حاصل کریں۔"
+        "titleEn": "Click Search / Check Eligibility",
+        "titleUr": "معلوم کریں کے بٹن پر کلک کریں",
+        "detailEn": "Press the green \"Find Out / Check\" button. The portal will cross-check your record against the NSER central database.",
+        "detailUr": "سبز رنگ کے بٹن پر کلک کر کے نادرا اور بی آئی ایس پی کا آن لائن سٹیٹس دیکھیں۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Review Status & Follow Guidance",
+        "titleUr": "سٹیٹس دیکھیں اور آگے کا طریقہ اپنائیں",
+        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), Ineligible due to PMT score, or required to visit the Tehsil BISP office for dynamic survey update.",
+        "detailUr": "سکرین پر آپ کی اہلیت، فنڈ رقم یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
       }
     ],
-    "contentEn": "BISP 8171 Eligibility Check by CNIC is the official online verification service provided by the Benazir Income Support Programme that allows Pakistani citizens to verify their household Proxy Means Test (PMT) score and 10,500 PKR grant status using their 13-digit CNIC.\n\n## How 8171 NSER Portal Determines Household Eligibility\nThe Benazir Income Support Programme uses the National Socio-Economic Registry (NSER) database to calculate Proxy Means Test (PMT) poverty scores for households across Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan, Gilgit-Baltistan, and Azad Jammu & Kashmir.\n\n• **Kafaalat Grant Threshold**: Households with an NSER PMT score below 32 are classified as eligible for the quarterly cash assistance of PKR 10,500.\n• **Taleemi Wazaif Stipends**: Enrolled children of Kafaalat beneficiaries receive additional school stipends ranging from PKR 2,000 to PKR 4,500 per quarter.\n• **Registration Fee**: BISP registration, NSER survey updates, and 8171 portal queries are 100% FREE.\n\n## SMS 8171 vs Online Portal Lookup\nCitizens can verify eligibility via two authorized government channels:\n\n1. **Online Web Portal**: Visit **8171.bisp.gov.pk**, enter your 13-digit CNIC, and view instant status with zero cost.\n2. **SMS Gateway**: Send your 13-digit CNIC to **8171** via mobile text (costs PKR 2 + tax per SMS reply).\n\n## Biometric Fingerprint Payment Warning\nCash disbursements are released exclusively to the female head of the eligible household after biometric thumbprint scanning at designated Bank Alfalah POS campsites or HBL Konnect franchises.\n\nNever pay any fee to private agents or individuals claiming to guarantee BISP enrollment. Report extortion or fraudulent SMS messages to the BISP toll-free helpline at 0800-26477.",
-    "contentUr": "بی ایس پی 8171 شناختی کارڈ آن لائن اہلیت چیک بے نظیر انکم سپورٹ پروگرام کا سرکاری پورٹل ہے جو شہریوں کو اپنے گھرانے کا پی ایم ٹی (PMT) سکور اور 10,500 روپے کی قسط کی اہلیت معلوم کرنے کی سہولت دیتا ہے۔\n\n## 8171 پورٹل کے ذریعے اہلیت چیک کرنے کا طریقہ\nبی ایس پی قومی سوشیو اکنامک رجسٹری (NSER) ڈیٹا بیس کی بنیاد پر پی ایم ٹی سکور کا تعین کرتا ہے:\n\n• **کفالت گرانٹ کی حد**: وہ خاندان جن کا پی ایم ٹی سکور 32 سے کم ہو وہ 10,500 روپے سہ ماہی قسط کے اہل ہوتے ہیں۔\n• **تعلیمی وظائف**: اسکول جانے والے بچوں کو 2,000 روپے سے 4,500 روپے تک اضافے وظائف ملتے ہیں۔\n• **فیس اطلاع**: بی ایس پی کا کوئی ایجنٹ یا فارم فیس نہیں ہے۔ تمام سروسز بالکل مفت ہیں۔\n\nاہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر شناختی کارڈ نمبر درج کریں یا 8171 پر SMS بھیجیں۔\n\nرقم صرف رجسٹرڈ خاتون کو بائیو میٹرک انگوٹھے کی تصدیق پر بینک الفلاح یا HBL کنیکٹ کیمپ سے ملتی ہے۔",
+    "faqs": [
+      {
+        "questionEn": "How much is the BISP registration fee?",
+        "questionUr": "بی آئی ایس پی رجسٹریشن کی فیس کتنی ہے؟",
+        "answerEn": "BISP registration, NSER dynamic survey, and 8171 eligibility checking are 100% FREE. The Government of Pakistan charges ZERO rupees. Never pay any fee or commission to agents, shopkeepers, or unauthorized callers.",
+        "answerUr": "بی آئی ایس پی رجسٹریشن اور سروے 100 فیصد مفت ہے۔ حکومت پاکستان کوئی فیس وصول نہیں کرتی۔ کسی ایجنٹ یا شخص کو رقم نہ دیں۔"
+      },
+      {
+        "questionEn": "What does a PMT Score mean for BISP eligibility?",
+        "questionUr": "پی ایم ٹی سکور (PMT Score) کا کیا مطلب ہے؟",
+        "answerEn": "PMT stands for Proxy Means Test score. It is a socio-economic poverty index calculated during the NSER survey based on family household assets, income, and utility bills. For Benazir Kafaalat, households with a PMT score of 32 or below qualify for quarterly cash stipends.",
+        "answerUr": "پی ایم ٹی سکور گھریلو مالی حالت اور اثاثوں کا اشاریہ ہے۔ 32 یا اس سے کم پی ایم ٹی سکور والے خاندان کفالت وظائف کے اہل ہوتے ہیں۔"
+      },
+      {
+        "questionEn": "Why does 8171 show \"Record Not Found\" or \"Aap Benazir Program ke ahl nahi hain\"?",
+        "questionUr": "8171 پر \"ریکارڈ نہیں ملا\" یا \"اہل نہیں ہیں\" کیوں آتا ہے؟",
+        "answerEn": "This means either: 1) You have not yet participated in the dynamic NSER survey at a BISP Tehsil Center; 2) Your survey was completed over 3 years ago and needs dynamic re-survey; or 3) Your family's PMT score exceeded the benchmark cutoff limit of 32.",
+        "answerUr": "اس کی وجہ یہ ہے کہ آپ کا این ایس ای آر سروے نادرا میں نہیں ہوا، یا سروے پرانا ہو چکا ہے، یا پی ایم ٹی سکور حد سے زیادہ ہے۔"
+      },
+      {
+        "questionEn": "Can male family members apply for Benazir Kafaalat?",
+        "questionUr": "کیا مرد بھی بے نظیر کفالت پروگرام کا وظیفہ حاصل کر سکتے ہیں؟",
+        "answerEn": "Under government policy, the primary financial beneficiary of Benazir Kafaalat must be a married female (mother/wife) holding a valid CNIC. Male family members benefit through targeted schemes like Benazir Taleemi Wazaif for their enrolled children or specific disability/senior citizens programs.",
+        "answerUr": "بے نظیر کفالت کا بنیادی وظیفہ خاندان کی شادی شدہ خاتون (والدہ/اہلیہ) کے نام جاری ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What should I do if a fake SMS claiming money transfer arrives from an 11-digit mobile number?",
+        "questionUr": "اگر کسی 11 ہندسوں والے موبائل نمبر سے رقم کا فرضی ایس ایم ایس آئے تو کیا کریں؟",
+        "answerEn": "Do NOT reply or call the sender! Official BISP communications strictly arrive from \"8171\". Any SMS from private mobile numbers (e.g. 0300-xxxxxxx, 0345-xxxxxxx) claiming lottery wins, Easypaisa transfer, or BISP cash is a criminal SCAM. Block the sender and report to FIA Cybercrime at 1991.",
+        "answerUr": "کسی پرائیویٹ نمبر سے رقم کا میسج آئے تو دھوکہ دہی ہے! بی آئی ایس پی کا آفیشل میسج صرف 8171 سے آتا ہے۔"
+      }
+    ],
+    "contentEn": "The Benazir Income Support Programme (BISP) is Pakistan's largest social safety net initiative, providing direct unconditional and conditional financial assistance to millions of low-income families nationwide. \n\nIf you are wondering whether your family qualifies for the quarterly cash grant (Benazir Kafaalat) or education stipends for your children (Benazir Taleemi Wazaif), checking your status online using your 13-digit Computerized National Identity Card (CNIC) number takes less than two minutes.\n\n> 🚨 **CRITICAL SCAM WARNING FOR ALL BENEFICIARIES**: \n> **BISP registration, NSER survey, and 8171 eligibility checking are 100% FREE.** \n> The Government of Pakistan charges **ZERO rupees** for survey registration or payment processing. \n> - **Official Sender**: All official SMS notifications arrive strictly from sender **8171**.\n> - **Fake Calls & WhatsApp Fraud**: Never trust SMS or WhatsApp messages coming from private 11-digit mobile numbers (e.g. 03xx-xxxxxxx) claiming you won cash or requesting money transfers via Easypaisa/JazzCash.\n> - **Agent Protection**: Never pay any fee, cut, or commission to unauthorized bank agents or private shopkeepers at payment campsites. Report fraud immediately to the BISP toll-free helpline: **0800-26477**.\n\n## Official Methods to Check BISP 8171 Status by CNIC\n\nThe Government of Pakistan provides two official, transparent channels to check eligibility status:\n\n### Method 1: BISP 8171 Web Portal (Recommended — Free & Detailed)\n1. Open your internet browser and visit the official web portal: **[8171.bisp.gov.pk](https://8171.bisp.gov.pk/)**.\n2. Locate the search box titled **\"اپنی اہلیت کے بارے میں جانیئے\"** (Know About Your Eligibility).\n3. Type the female applicant's **13-digit CNIC number** without hyphens or spaces.\n4. Input the **4-digit security code** displayed inside the captcha box.\n5. Click **\"تلاش کریں\" (Search)** to view your instant household status.\n\n### Method 2: SMS 8171 Check (From Mobile Phone)\nIf you do not have internet access or a smartphone:\n1. Open the Text Messaging (SMS) app on your mobile phone.\n2. Type your **13-digit CNIC number** (e.g. `3520112345671`).\n3. Send the SMS to **8171**.\n4. Within a few seconds, you will receive an official response indicating your eligibility status and recent payment release.\n\n## Understanding BISP Portal Status Results\n\nWhen you check your CNIC on the 8171 portal, the system returns one of four official status messages:\n\n| Status Displayed | What It Means | Recommended Action |\n| :--- | :--- | :--- |\n| **آپ بے نظیر کفالت پروگرام کے لیے اہل ہیں** | Your household PMT score is 32 or below. You are eligible for cash stipends. | Visit your designated Bank Alfalah / HBL campsite to collect your cash payment. |\n| **آپ کا شناختی کارڈ این ایس ای آر سروے میں رجسٹرڈ نہیں ہے** | Your household has not completed the dynamic NSER survey at BISP Tehsil office. | Visit your nearest BISP Tehsil office with original CNIC and children's B-Forms for a free survey. |\n| **آپ کا سروے جا نچ پڑ تال کے مرحلے میں ہے** | Your dynamic survey data is currently under verification by NADRA and BISP. | Re-check the 8171 portal after 3 to 4 weeks. |\n| **آپ کا پی ایم ٹی سکور اہلیت کی حد سے زیادہ ہے** | Your household PMT poverty index score exceeds the maximum benchmark cutoff limit (32). | If your financial situation has changed, request a survey update at the BISP Tehsil office. |\n\n*Official data verified via [BISP Official Department](https://bisp.gov.pk/).*\n\n## What is the PMT Poverty Cutoff Score?\n\nBISP calculates family eligibility using a scientific socio-economic indicator known as the **Proxy Means Test (PMT) Score**. During the NSER (National Socio-Economic Registry) survey, data regarding family members, housing structure, livestock, agricultural land, monthly utility bills, and vehicular ownership is collected.\n\n- **Kafaalat Cash Stipend Cutoff**: PMT Score **<= 32**.\n- **Taleemi Wazaif School Stipend Cutoff**: PMT Score **<= 32**.\n- **Nashonuma Health Stipend Cutoff**: PMT Score **<= 35**.\n\nIf your family financial condition deteriorates (due to job loss, illness, or inflation), you have the legal right to request a **Dynamic Re-Survey** at any official BISP Tehsil office after 2 years from your last survey date.",
+    "contentUr": "بے نظیر انکم سپورٹ پروگرام (BISP) پاکستان کا سب سے بڑا سماجی و مالیاتی امدادی پروگرام ہے جس کے تحت کروڑوں مستحق خاندانوں کو مالی امداد فراہم کی جاتی ہے۔\n\nاگر آپ جاننا چاہتے ہیں کہ آپ کا خاندان بے نظیر کفالت یا بچوں کے تعلیمی وظائف کے لیے اہل ہے یا نہیں، تو صرف دو منٹ میں اپنا 13 ہندسوں کا شناختی کارڈ نمبر درج کر کے آن لائن سٹیٹس معلوم کر سکتے ہیں۔\n\n> 🚨 **تمام مستحقین کے لیے اہم ترین انتباہ (سکیم الرٹ)**: \n> **بی آئی ایس پی رجسٹریشن، سروے اور 8171 پر اہلیت چیک کرنا 100 فیصد مفت ہے۔**\n> حکومت پاکستان کسی قسم کی فیس وصول نہیں کرتی۔\n> - **آفیشل نمبر**: تمام سرکاری پیغامات صرف اور صرف **8171** سے آتے ہیں۔\n> - **جعلی کالز اور واٹس ایپ پے میسج**: کسی 11 ہندسوں والے پرائیویٹ موبائل نمبر (مثلاً 03xx-xxxxxxx) سے رقم کی پیشکش یا انعام کا میسج آئے تو وہ دھوکہ دہی ہے۔ جاز کیش یا ایزی پیسہ پر رقم کبھی نہ بھیجیں۔\n> - **کٹوتی کی شکایت**: فنڈز وصولی کے وقت کسی ایجنٹ کو کٹوتی نہ دیں۔ شکایت کے لیے مفت ہیلپ لائن **0800-26477** پر کال کریں۔\n\n## 8171 آن لائن اہلیت چیک کرنے کا طریقہ\n\n1. اپنے موبائل پر ویب سائٹ **[8171.bisp.gov.pk](https://8171.bisp.gov.pk/)** کھولیں۔\n2. خانے میں خاتون کا **13 ہندسوں کا شناختی کارڈ نمبر** بغیر ڈیش کے لکھیں۔\n3. سکرین پر موجود **4 ہندسوں کا سیکیورٹی کوڈ** درج کریں۔\n4. **\"تلاش کریں\"** کا بٹن دبائیں۔\n\n## ایس ایم ایس 8171 کا طریقہ\nاپنا 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر **8171** پر بھیجیں، نادرا اور بی آئی ایس پی سے تصدیقی میسج موصول ہو جائے گا۔",
     "relatedSlugs": [
       "/welfare/8171-portal-guide",
-      "/welfare/kafaalat-amount-schedule",
-      "/welfare/pser-survey-registration"
+      "/welfare/bisp-how-to-register",
+      "/welfare/bisp-payment-check",
+      "/welfare/kafaalat-amount-schedule"
     ]
   },
   "8171-portal-guide": {
     "slug": "8171-portal-guide",
     "fullPath": "/welfare/8171-portal-guide",
     "categoryId": "welfare",
-    "titleEn": "8171 Portal Guide 2026: Official Web Portal & SMS Code 8171",
-    "titleUr": "8171 آفیشل ویب پورٹل اور ایس ایم ایس کوڈ گائیڈ 2026",
-    "metaDescriptionEn": "Complete user guide for official 8171.bisp.gov.pk portal and SMS 8171 code. How to track payments, solve biometric errors, and lodge complaints.",
-    "metaDescriptionUr": "آفیشل 8171 ویب پورٹل استعمال کرنے کا طریقہ۔ فنگر پرنٹ خرابی، ادائیگی کی موصولی اور ایس ایم ایس 8171 کا مکمل گائیڈ۔",
-    "directAnswerEn": "The 8171 portal (8171.bisp.gov.pk) is the sole authorized digital platform operated by BISP to check household PMT (Proxy Means Test) scores, cash disbursement schedules, and registration status. Access is free and requires only a valid CNIC.",
-    "directAnswerUr": "8171 پورٹل (8171.bisp.gov.pk) بی ایس پی کا واحد آفیشل پورٹل ہے جہاں آپ اپنے گھرانے کا سکور اور قسط دیکھ سکتے ہیں۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "8171 Web Portal Guide 2026: Registration, Login & Status Check",
+    "titleUr": "8171 ویب پورٹل گائیڈ 2026: آن لائن رجسٹریشن اور سٹیٹس چیک",
+    "metaDescriptionEn": "Comprehensive guide to using the official BISP 8171 web portal. Learn how to check payments, resolve portal loading errors, captcha issues, and NSER status online.",
+    "metaDescriptionUr": "بی آئی ایس پی 8171 آفیشل پورٹل استعمال کرنے کی تفصیلی گائیڈ۔ آن لائن رجسٹریشن، کیپچا کوڈ کے مسائل، فنڈ ڈلیوری اور اہلیت دیکھنے کا آسان طریقہ۔",
+    "directAnswerEn": "The official 8171 web portal (8171.bisp.gov.pk) is the digital interface managed by BISP and NADRA for checking social safety net eligibility and quarterly payment status in Pakistan. Enter your 13-digit CNIC and security code to view status. Registration cannot be completed solely on the portal; you must visit a BISP Tehsil Office for dynamic NSER survey biometric entry.",
+    "directAnswerUr": "8171 آفیشل پورٹل (8171.bisp.gov.pk) بے نظیر پروگرام کی آن لائن جانچ کا سرکاری ذریعہ ہے۔ اس پر شناختی کارڈ درج کر کے رقم کا سٹیٹس دیکھا جا سکتا ہے۔ آن لائن رجسٹریشن کے لیے بائیو میٹرک سروے نادرا یا بی آئی ایس پی تحصیل دفتر سے ہوتا ہے۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "8171 Web Portal BISP",
+      "name": "8171 Web Portal",
       "url": "https://8171.bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Social Safety Desk"
+      "role": "Digital Welfare Portal Desk"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "8171 Web Portal Inquiry",
+        "serviceUr": "8171 ویب انکوائری",
+        "normal": "PKR 0 (100% Free)",
+        "urgent": "Instant Check",
+        "executive": "No Fee Ever"
       }
     ],
-    "contentEn": "Complete guide on resolving 8171 biometric thumb mismatch errors at HBL Konnect and Bank Alfalah POS agent counters.",
-    "contentUr": "بینک ایجنٹ کاؤنٹر پر فنگر پرنٹ کی خرابی اور 8171 شکایت درج کروانے کا طریقہ۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Access Official 8171 URL",
+        "titleUr": "8171 آفیشل لنک کھولیں",
+        "detailEn": "Type 8171.bisp.gov.pk directly into your web browser address bar.",
+        "detailUr": "براؤزر میں 8171.bisp.gov.pk کھولیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Input CNIC & Verification Captcha",
+        "titleUr": "شناختی کارڈ اور سیکیورٹی کوڈ درج کریں",
+        "detailEn": "Enter 13-digit CNIC and type the 4-digit code displayed.",
+        "detailUr": "13 ہندسوں کا شناختی کارڈ نمبر اور 4 ہندسوں کا کوڈ درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "View Payment Details & Instructions",
+        "titleUr": "رقم اور اہلیت کی تفصیل دیکھیں",
+        "detailEn": "Check whether your quarterly payment (PKR 10,500) has been credited to Bank Alfalah / HBL campsite.",
+        "detailUr": "اپنی سہ ماہی قسط 10,500 روپے کی وصولی کی تفصیل دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Why is the 8171 web portal running slow or showing server connection error?",
+        "questionUr": "8171 ویب سائٹ سلو کیوں ہوتی ہے یا ایرر کیوں دیتی ہے؟",
+        "answerEn": "During quarterly payment distribution releases, millions of citizens access 8171.bisp.gov.pk simultaneously, causing server load. Try clearing your browser cache or accessing the site early morning (before 9 AM) or late evening.",
+        "answerUr": "قسط کے دنوں میں لاکھوں افراد کے ایک ساتھ ویب سائٹ کھولنے سے سرور پر بوجھ ہوتا ہے۔ صبح سویرے یا رات کے وقت دوبارہ کوشش کریں۔"
+      }
+    ],
+    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (PKR 10,500 - 13,500) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.",
+    "contentUr": "**8171 ویب پورٹل** (8171.bisp.gov.pk) حکومت پاکستان کا آفیشل اور شفاف پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: بی آئی ایس پی کی تمام سروسز **100 فیصد مفت** ہیں۔ کسی ایجنٹ یا جعلی ویب سائٹ پر اعتبار نہ کریں۔ سرکاری سائٹس کے آخر میں **.gov.pk** ہوتا ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
+      "/welfare/bisp-how-to-register",
       "/welfare/bisp-payment-check"
     ]
   },
@@ -2286,276 +2326,381 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "bisp-how-to-register",
     "fullPath": "/welfare/bisp-how-to-register",
     "categoryId": "welfare",
-    "titleEn": "How to Register for BISP 2026: Dynamic NSER Survey at Tehsil Centers",
-    "titleUr": "بی ایس پی (BISP) میں نیا اندراج کیسے کروائیں؟ ڈائنامک این ایس ای آر سروے 2026",
-    "metaDescriptionEn": "Step-by-step procedure to register for BISP Benazir Kafaalat at Tehsil Registration Centers. NSER survey requirements, documents, and PMT score rules.",
-    "metaDescriptionUr": "نادرا تحصیل مرکز سے این ایس ای آر (NSER) سروے کروانے کا طریقہ۔ ضروری کاغذات اور بی ایس پی رجسٹریشن فارم۔",
-    "directAnswerEn": "To register for BISP Benazir Kafaalat for the first time, visit your local BISP Tehsil Registration Center with your original NADRA CNIC and B-Forms for all children. Complete the free NSER Dynamic Survey. Online registration is NOT possible; physical survey attendance is mandatory.",
-    "directAnswerUr": "بی ایس پی میں نئے اندراج کے لیے اپنے قریبی تحصیل رجسٹریشن سینٹر اپنے اصل شناختی کارڈ اور تمام بچوں کے بی فارم کے ساتھ تشریف لے جائیں اور مفت این ایس ای آر سروے مکمل کروائیں۔ آن لائن فارم نہیں ہوتا۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "BISP Registration Guide 2026: Dynamic NSER Survey & Office Process",
+    "titleUr": "بی آئی ایس پی میں نام درج کروانے کا طریقہ 2026: ڈائنامک این ایس ای آر سروے",
+    "metaDescriptionEn": "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT calculation, and registration steps.",
+    "metaDescriptionUr": "بے نظیر پروگرام میں نیا اندراج کروانے کا مکمل طریقہ۔ نادرا و بی آئی ایس پی تحصیل سینٹر پر ڈائنامک این ایس ای آر سروے، ضروری کاغذات اور اہلیت۔",
+    "directAnswerEn": "To register for BISP, the female head of household must visit the nearest BISP Tehsil Registration Center with her original Smart CNIC and original B-Forms for all minor children. Complete the dynamic NSER survey interview, answer household asset questions, provide biometric thumbprints, and receive an official SMS from 8171 confirming survey registration. Survey registration is 100% FREE.",
+    "directAnswerUr": "بی آئی ایس پی میں اندارج کے لیے خاندان کی شادی شدہ خاتون اپنے اصل سمارٹ شناختی کارڈ اور تمام بچوں کے اصل بی فارم کے ساتھ قریبی بی آئی ایس پی تحصیل سینٹر جائیں۔ وہاں ڈائنامک این ایس ای آر سروے ڈیسک پر سوالات کا جواب دیں اور مفت اندراج کروائیں۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "BISP NSER Registration Directory",
+      "name": "BISP Registration Division",
       "url": "https://bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "NSER Survey Desk"
+      "role": "BISP Operations Specialist"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Dynamic NSER Survey Registration",
+        "serviceUr": "ڈائنامک این ایس ای آر سروے",
+        "normal": "PKR 0 (100% FREE)",
+        "urgent": "Tehsil Office Visit",
+        "executive": "No Fee Ever"
       }
     ],
-    "contentEn": "Understanding NSER survey question topics including household asset count, monthly utility bill spend, and widow/orphan status verification.",
-    "contentUr": "این ایس ای آر سروے کی سوالات کی فہرست اور نادرا فیملی ڈیٹا کی تصدیق۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Gather Original CNIC & Children B-Forms",
+        "titleUr": "اصل شناختی کارڈ اور بچوں کے بی فارم لائیں",
+        "detailEn": "Bring original valid Smart CNIC of the married female applicant and original B-Forms of all children.",
+        "detailUr": "خاتون کا اصل سمارٹ شناختی کارڈ اور بچوں کے بی فارم ساتھ لائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Visit BISP Tehsil Registration Center",
+        "titleUr": "بی آئی ایس پی تحصیل سینٹر تشریف لے جائیں",
+        "detailEn": "Arrive at your local Tehsil BISP office and get an entry token for NSER Dynamic Survey.",
+        "detailUr": "اپنی تحصیل کے بی آئی ایس پی دفتر جا کر سروے ٹوکن لیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Complete NSER Socio-Economic Interview",
+        "titleUr": "سروے سوالات اور بائیو میٹرک کروائیں",
+        "detailEn": "Answer household income, housing, and asset questions. Scan thumb biometrics to finalize registration.",
+        "detailUr": "کمپیوٹر ڈیٹا اینٹری کاؤنٹر پر سوالات کے جواب دیں اور فنگر پرنٹ انٹری کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How much does BISP dynamic survey registration cost?",
+        "questionUr": "بی آئی ایس پی ڈائنامک سروے کی فیس کتنی ہے؟",
+        "answerEn": "Survey registration is 100% FREE at all official BISP Tehsil centers. Do not pay any agent.",
+        "answerUr": "بی آئی ایس پی سینٹر پر سروے بالکل مفت ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Registering your family in the **National Socio-Economic Registry (NSER)** dynamic survey is the mandatory gateway to qualify for Benazir Kafaalat and Taleemi Wazaif.\n\n> 🚨 **SCAM WARNING**: \n> BISP survey registration is **100% FREE**. No government official or private agent is authorized to charge any money for filling out the survey form.\n\n## Required Documents for BISP Registration\n1. Original valid Smart CNIC of the female head of household.\n2. Original B-Forms (CRC) for all minor children issued by NADRA.\n3. Utility bill (electricity or gas) for current residential address verification.",
+    "contentUr": "بی آئی ایس پی فنڈز کے حصول کے لیے **این ایس ای آر (NSER) ڈائنامک سروے** کروانا لازمی ہے۔\n\n> 🚨 **سکیم الرٹ**: نادرا اور بی آئی ایس پی تحصیل دفاتر میں سروے رجسٹریشن **100 فیصد مفت** ہے۔ کسی ایجنٹ کو پیسے نہ دیں۔\n\n## ضروری کاغذات\n1. خاتون کا اصل سمارٹ شناختی کارڈ۔\n2. تمام بچوں کے نادرا بی فارم۔\n3. بجلی یا گیس کا بل۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/pser-survey-registration"
+      "/welfare/8171-portal-guide",
+      "/welfare/kafaalat-amount-schedule"
     ]
   },
   "bisp-payment-check": {
     "slug": "bisp-payment-check",
     "fullPath": "/welfare/bisp-payment-check",
     "categoryId": "welfare",
-    "titleEn": "BISP Payment Check 2026: Solution for Unpaid / Stopped Kafaalat Money",
-    "titleUr": "بی ایس پی قسط نہ ملنے کی صورت میں کیا کریں؟ آن لائن ہیلپ لائن و شکایت 2026",
-    "metaDescriptionEn": "What to do if your BISP 10,500 PKR payment is not received or blocked. Check POS campsite locations, biometric verification fix, and 0800-26477 helpline.",
-    "metaDescriptionUr": "اگر بی ایس پی کفالت قسط 10,500 روپے نہ ملی ہو تو شکایت کیسے درج کروائیں۔ ایجنٹ کی کٹوتی اور بایومیٹرک مسئلے کا حل۔",
-    "directAnswerEn": "If your BISP Kafaalat payment is delayed, stopped, or subjected to illegal deduction by retail agents, file an immediate complaint at your local BISP Tehsil Office or call the official toll-free hotline 0800-26477. Beneficiaries receive the FULL 10,500 PKR without any fee deductions.",
-    "directAnswerUr": "اگر بی ایس پی کی 10,500 روپے قسط روکی گئی ہو یا کسی ایجنٹ نے کٹوتی کی ہو تو ٹول فری نمبر 0800-26477 پر فوری مفت شکایت درج کروائیں۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "BISP Payment Check & Troubleshooting Guide 2026: Campsites & ATMs",
+    "titleUr": "بی آئی ایس پی رقم کی وصولی اور فنڈز چیک کرنے کا طریقہ 2026",
+    "metaDescriptionEn": "Learn how to collect BISP quarterly payment (PKR 10,500). Campsite collection steps, biometric ATM withdrawal, handling agent deductions, and helpline complaints.",
+    "metaDescriptionUr": "بے نظیر پروگرام کی 10,500 روپے کی قسط حاصل کرنے کا طریقہ۔ بینک الفلاح / ایچ بی ایل کیمپ سائٹس، بائیو میٹرک مسائل اور ہیلپ لائن پر کٹوتی کی شکایت۔",
+    "directAnswerEn": "BISP quarterly payments (PKR 10,500 to 13,500) are disbursed through partner bank campsites (Bank Alfalah in Punjab/KP/AJK, HBL in Sindh/Balochistan). Eligible beneficiaries receive an official SMS from 8171, visit the designated campsite with their original Smart CNIC, scan thumb biometrics, and collect full cash without any agent deductions.",
+    "directAnswerUr": "بی آئی ایس پی کی سہ ماہی قسط 10,500 روپے حاصل کرنے کے لیے 8171 کا ایس ایم ایس ملنے پر اپنے اصل شناختی کارڈ کے ساتھ مقررہ بینک کیمپ سائٹ یا بائیو میٹرک کاؤنٹر جائیں۔ انگوٹھا لگا کر پوری رقم وصول کریں۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "BISP Grievance Redressal Cell",
-      "url": "https://bisp.gov.pk/ContactUs"
+      "name": "BISP Finance & Payment Division",
+      "url": "https://bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Consumer & Welfare Protection Desk"
+      "role": "BISP Payment Desk"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Quarterly Kafaalat Cash Disbursement",
+        "serviceUr": "سہ ماہی کفالت نقد قسط",
+        "normal": "PKR 10,500 (Full Amount)",
+        "urgent": "Disbursement Campsite",
+        "executive": "Zero Deduction"
       }
     ],
-    "contentEn": "Official rules regarding illegal fee deductions by POS campsite vendors and full refund procedures.",
-    "contentUr": "کیمپ سائٹس پر غیر قانونی کٹوتی کرنے والے ایجنٹوں کے خلاف کارروائی اور پورٹل ہیلپ لائن۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Receive Official 8171 Payment SMS",
+        "titleUr": "8171 سے رقم کا ایس ایم ایس حاصل کریں",
+        "detailEn": "Wait for official payment arrival notification from sender 8171.",
+        "detailUr": "8171 سے رقم کی منتقلی کا میسج دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Visit Bank Alfalah / HBL Campsite",
+        "titleUr": "بینک کیمپ سائٹ تشریف لے جائیں",
+        "detailEn": "Visit the designated school/ground campsite with your original Smart CNIC.",
+        "detailUr": "اصل شناختی کارڈ لے کر قریبی کیمپ سائٹ جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Biometric Verification & Count Cash",
+        "titleUr": "انگوٹھا لگائیں اور رقم گن کر لیں",
+        "detailEn": "Scan your thumb biometric at the device counter and collect your full PKR 10,500 cash.",
+        "detailUr": "بائیو میٹرک کے بعد پوری رقم کاؤنٹر پر خود گن کر لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What should I do if an agent deducts 500 or 1000 rupees from my BISP cash?",
+        "questionUr": "اگر ایجنٹ پیسے کاٹ لے تو کہاں شکایت کریں؟",
+        "answerEn": "Agent deductions are strictly ILLEGAL. Demand a printed receipt. Immediately report the agent name and campsite location to the BISP toll-free helpline 0800-26477 or notify the Assistant Director present at the campsite.",
+        "answerUr": "رقم سے کٹوتی غیر قانونی ہے! فوری طور پر بی آئی ایس پی ہیلپ لائن 0800-26477 پر کال کریں۔"
+      }
+    ],
+    "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct PKR 500, PKR 1,000, or any amount from your PKR 10,500 cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)",
+    "contentUr": "بے نظیر کفالت کی رقم کا حصول آپ کا قانونی حق ہے۔\n\n> 🚨 **سکیم الرٹ**: **پوری 10,500 روپے کی رقم وصول کریں۔** اگر کوئی ایجنٹ کٹوتی کرے تو بی آئی ایس پی ٹول فری ہیلپ لائن **0800-26477** پر شکایت درج کروائیں۔",
     "relatedSlugs": [
-      "/welfare/8171-portal-guide",
-      "/welfare/kafaalat-amount-schedule"
+      "/welfare/bisp-eligibility-check-by-cnic",
+      "/welfare/kafaalat-amount-schedule",
+      "/welfare/8171-portal-guide"
     ]
   },
   "taleemi-wazaif": {
     "slug": "taleemi-wazaif",
     "fullPath": "/welfare/taleemi-wazaif",
     "categoryId": "welfare",
-    "titleEn": "Benazir Taleemi Wazaif 2026: Student Stipends & Quarterly Rates",
-    "titleUr": "بے نظیر تعلیمی وظائف 2026: پرائمری، سیکنڈری و ہائر سیکنڈری طلباء کے وظائف",
-    "metaDescriptionEn": "Benazir Taleemi Wazaif quarterly stipend rates for primary, secondary, and higher secondary students (1,500 PKR to 4,500 PKR). B-Form registration process.",
-    "metaDescriptionUr": "بینظیر تعلیمی وظائف کی نئی رقم (1,500 روپے سے 4,500 روپے سہ ماہی)۔ سکول داخلہ سلپ جمع کروانے کا طریقہ۔",
-    "directAnswerEn": "Benazir Taleemi Wazaif provides quarterly educational stipends to children of active BISP Kafaalat beneficiaries. Stipends range from PKR 1,500 (Primary Boys) up to PKR 4,500 (Higher Secondary Girls) per quarter, provided the child maintains 70% school attendance.",
-    "directAnswerUr": "بے نظیر تعلیمی وظائف کے تحت بی ایس پی مستحقین کے بچوں کو 1,500 روپے سے 4,500 روپے فی سہ ماہی وظیفہ دیا جاتا ہے بشراطیہ سکول میں حاضری 70 فیصد ہو۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "Benazir Taleemi Wazaif 2026: Education Stipend Amounts & Registration",
+    "titleUr": "بے نظیر تعلیمی وظائف 2026: تعلیمی وظائف کی رقم اور اندراج",
+    "metaDescriptionEn": "Complete guide to Benazir Taleemi Wazaif for primary, secondary, and higher secondary students. Check quarterly stipend amounts, 75% attendance rule, and bonus grants.",
+    "metaDescriptionUr": "بے نظیر تعلیمی وظائف کی مکمل معلومات۔ پرائمری، سیکنڈری اور ہائر سیکنڈری طلباء کی سہ ماہی رقم، 75 فیصد حاضری اور طالبات کا تعلیمی بونس۔",
+    "directAnswerEn": "Benazir Taleemi Wazaif provides quarterly educational cash stipends to children of active Benazir Kafaalat beneficiaries. Quarterly stipend amounts are: Primary (Boys PKR 1,500 / Girls PKR 2,000); Secondary (Boys PKR 2,500 / Girls PKR 3,000); Higher Secondary (Boys PKR 3,500 / Girls PKR 4,000). Girls completing primary school also receive a one-time PKR 3,000 graduation bonus.",
+    "directAnswerUr": "بے نظیر تعلیمی وظائف کفالت ہولڈرز کے بچوں کو دیے جاتے ہیں۔ پرائمری (لڑکے 1500 / لڑکیاں 2000 روپے)، سیکنڈری (لڑکے 2500 / لڑکیاں 3000 روپے)، ہائر سیکنڈری (لڑکے 3500 / لڑکیاں 4000 روپے)۔ پرائمری مکمل کرنے پر لڑکیوں کو 3000 روپے کا بونس ملتا ہے۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "BISP Education Stipend Wing",
-      "url": "https://bisp.gov.pk/"
+      "name": "BISP Education Division",
+      "url": "https://bisp.gov.pk/TaleemiWazaif"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Education Welfare Desk"
+      "role": "Education Welfare Specialist"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
+        "serviceEn": "Primary Level Stipend (Class 1 to 5)",
+        "serviceUr": "پرائمری سطح (جماعت 1 تا 5)",
+        "normal": "Boys: PKR 1,500 / qtr",
+        "urgent": "Girls: PKR 2,000 / qtr",
+        "executive": "Plus PKR 3k Bonus"
       },
       {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
+        "serviceEn": "Secondary Level Stipend (Class 6 to 10)",
+        "serviceUr": "سیکنڈری سطح (جماعت 6 تا 10)",
+        "normal": "Boys: PKR 2,500 / qtr",
+        "urgent": "Girls: PKR 3,000 / qtr",
+        "executive": "75% Attendance"
       },
       {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Higher Secondary (Class 11 & 12)",
+        "serviceUr": "ہائر سیکنڈری (جماعت 11 و 12)",
+        "normal": "Boys: PKR 3,500 / qtr",
+        "urgent": "Girls: PKR 4,000 / qtr",
+        "executive": "College Stipend"
       }
     ],
-    "contentEn": "Step-by-step registration for Taleemi Wazaif by obtaining school enrollment verification slips from class teachers.",
-    "contentUr": "سکول ٹیچر سے وظائف فارم کی تصدیق اور نادرا بی فارم سلپ جمع کروانے کا طریقہ۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Mother Must Be Active Kafaalat Beneficiary",
+        "titleUr": "والدہ کا بی آئی ایس پی کا اہل ہونا",
+        "detailEn": "Ensure mother receives regular Benazir Kafaalat payments.",
+        "detailUr": "والدہ بے نظیر کفالت کی فعال مستحق ہونی چاہئیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Get Admission Slip from School",
+        "titleUr": "سکول سے داخلہ و حاضری فارم بنوائیں",
+        "detailEn": "Obtain school admission verification slip stamped by school principal.",
+        "detailUr": "سکول ہیڈ ماسٹر سے داخلہ سرٹیفکیٹ تصدیق کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Submit Enrolment Slip at BISP Office",
+        "titleUr": "بی آئی ایس پی دفتر میں داخلہ سلپ جمع کروائیں",
+        "detailEn": "Submit slip and child's B-Form at BISP Tehsil office for voucher activation.",
+        "detailUr": "سلپ اور بچے کا بی فارم بی آئی ایس پی دفتر میں دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the mandatory attendance requirement for Benazir Taleemi Wazaif?",
+        "questionUr": "تعلیمی وظائف کے لیے حاضری کی کیا شرط ہے؟",
+        "answerEn": "Students must maintain a minimum of 75% quarterly attendance in school/college for stipends to be released.",
+        "answerUr": "طالب علم کی سکول میں کم از کم 75 فیصد حاضری ہونا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Benazir Taleemi Wazaif encourages low-income families to enroll and retain their children in schools by offering higher quarterly cash stipends for female students.\n\n> 🚨 **SCAM WARNING**: \n> School admission slips and BISP Taleemi Wazaif enrollment are **100% FREE**. Never pay any school teacher or agent for filling enrollment slips.\n\n## Quarterly Stipend Breakdown 2026\n\n| Education Level | Boys Stipends (Per Quarter) | Girls Stipends (Per Quarter) | Special Incentives |\n| :--- | :--- | :--- | :--- |\n| **Primary (Class 1-5)** | PKR 1,500 | PKR 2,000 | **PKR 3,000** Primary Graduation Bonus for Girls |\n| **Secondary (Class 6-10)** | PKR 2,500 | PKR 3,000 | Attendance verified quarterly |\n| **Higher Secondary (Class 11-12)** | PKR 3,500 | PKR 4,000 | College verification |",
+    "contentUr": "بے نظیر تعلیمی وظائف کے تحت بچوں بالخصوص لڑکیوں کی تعلیم کے لیے مالی مدد دی جاتی ہے۔\n\n> 🚨 **سکیم الرٹ**: سکول داخلہ سلپ اور وظائف کا اندراج **100 فیصد مفت** ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/kafaalat-amount-schedule"
+      "/welfare/kafaalat-amount-schedule",
+      "/welfare/bisp-how-to-register"
     ]
   },
   "kafaalat-amount-schedule": {
     "slug": "kafaalat-amount-schedule",
     "fullPath": "/welfare/kafaalat-amount-schedule",
     "categoryId": "welfare",
-    "titleEn": "Benazir Kafaalat 10,500 PKR Installment Schedule 2026 (Quarterly Dates)",
-    "titleUr": "بے نظیر کفالت 10,500 روپے قسط شیڈول 2026 (سہ ماہی تاریخیں)",
-    "metaDescriptionEn": "Latest payment dates and distribution schedule for Benazir Kafaalat 10,500 PKR quarterly cash assistance. Bank Alfalah and HBL Konnect campsites guide.",
-    "metaDescriptionUr": "بے نظیر کفالت 10,500 روپے قسط کی تاریخیں، بینک الفلاح اور ایچ بی ایل کنیکٹ کیمپ سائٹس کے مقامات۔",
-    "directAnswerEn": "The Benazir Kafaalat quarterly cash grant amount for 2026 is PKR 10,500 per eligible household. Payments are released in phased tranches via designated bank campsites (Bank Alfalah in Sindh/KPK/Balochistan, HBL Konnect in Punjab).",
-    "directAnswerUr": "سال 2026 میں بے نظیر کفالت قسط کی رقم 10,500 روپے فی سہ ماہی ہے۔ ادائیگی پنجاب میں ایچ بی ایل اور دیگر صوبوں میں بینک الفلاح کیمپ سائٹس سے ملتی ہے۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "Benazir Kafaalat Amount & Payment Schedule 2026 (PKR 10,500 Quarterly)",
+    "titleUr": "بے نظیر کفالت رقم اور سہ ماہی قسط کا شیڈول 2026",
+    "metaDescriptionEn": "Check current Benazir Kafaalat cash stipend amount (PKR 10,500) and official 2026 disbursement schedule phases across districts in Pakistan.",
+    "metaDescriptionUr": "بے نظیر کفالت کی موجودہ سہ ماہی قسط 10,500 روپے کا نیا شیڈول اور اضلاع کی لسٹ۔ قسط ملنے کی تاریخیں اور بینک کاؤنٹر تفصیلات۔",
+    "directAnswerEn": "As of 2026, the official Benazir Kafaalat quarterly payment is PKR 10,500 per eligible household (with periodic inflation updates up to PKR 13,500). Disbursements happen in 4 quarterly cycles per year across phased district clusters via Bank Alfalah and HBL biometric campsites.",
+    "directAnswerUr": "سال 2026 میں بے نظیر کفالت کی فی سہ ماہی قسط 10,500 روپے ہے۔ یہ قسط سال میں 4 بار مائیکرو فنانس بینکوں کے ذریعے اضلاع کے مختلف مرحلہ وار شیڈول کے تحت جاری کی جاتی ہے۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "BISP Official Payment Portal",
-      "url": "https://8171.bisp.gov.pk/"
+      "name": "BISP Kafaalat Division",
+      "url": "https://bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Kafaalat Payment Desk"
+      "role": "Financial Assistance Analyst"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Benazir Kafaalat Quarterly Cash Grant",
+        "serviceUr": "بی آئی ایس پی سہ ماہی قسط",
+        "normal": "PKR 10,500 / Quarter",
+        "urgent": "Phase 1 & Phase 2",
+        "executive": "Zero Deduction"
       }
     ],
-    "contentEn": "District-wise disbursement matrix and helpline numbers for tracking active payment campsites.",
-    "contentUr": "اضلاع کے لحاظ سے ادائیگی کی تاریخیں اور کیمپ سائٹس کا پتہ۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check 8171 Portal for Active Cycle",
+        "titleUr": "8171 پر جاری قسط کا سٹیٹس دیکھیں",
+        "detailEn": "Verify if payment for your district cluster has been released.",
+        "detailUr": "8171 پورٹل سے قسط جاری ہونے کی تصدیق کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How many times a year is Benazir Kafaalat money paid?",
+        "questionUr": "بے نظیر کفالت کی رقم سال میں کتنی بار ملتی ہے؟",
+        "answerEn": "It is paid 4 times a year (every 3 months / quarterly basis).",
+        "answerUr": "یہ رقم سال میں 4 بار (ہر تین ماہ بعد) دی جاتی ہے۔"
+      }
+    ],
+    "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Current official quarterly payment is PKR 10,500.** \n> Always collect your complete payment. Report any agent claiming partial payments or processing cuts to **0800-26477**.",
+    "contentUr": "**بے نظیر کفالت پروگرام** پاکستان کی غریب خواتین کو ہر تین ماہ بعد 10,500 روپے کی مالی امداد فراہم کرتا ہے۔\n\n> 🚨 **سکیم الرٹ**: **سرکاری قسط 10,500 روپے ہے۔** پوری رقم وصول کریں اور کٹوتی کی صورت میں 0800-26477 پر کال کریں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/8171-portal-guide"
+      "/welfare/bisp-payment-check",
+      "/welfare/taleemi-wazaif"
     ]
   },
   "pser-survey-registration": {
     "slug": "pser-survey-registration",
     "fullPath": "/welfare/pser-survey-registration",
     "categoryId": "welfare",
-    "titleEn": "PSER Punjab Survey Registration 2026: pser.punjab.gov.pk Online Portal",
-    "titleUr": "پی ایس ای آر (PSER) پنجاب سروے آن لائن رجسٹریشن 2026 (pser.punjab.gov.pk)",
-    "metaDescriptionEn": "How to register on Punjab Socio-Economic Registry (PSER) portal (pser.punjab.gov.pk). Registration for CM Himmat Card, Kisan Card, and Solar Panel scheme.",
-    "metaDescriptionUr": "پنجاب سوشیو اکنامک رجسٹری (PSER) آن لائن سروے رجسٹریشن، ہمت کارڈ، کسان کارڈ اور سولر پینل سکیم میں شمولیت کا طریقہ۔",
-    "directAnswerEn": "PSER (Punjab Socio-Economic Registry) is the central household survey portal managed by PITB for Punjab welfare schemes (including Kisan Card, Himmat Card, and Free Solar Scheme). Register online at pser.punjab.gov.pk by creating an account with your CNIC.",
-    "directAnswerUr": "پی ایس ای آر (PSER) حکومت پنجاب کا مرکزی آن لائن سروے پورٹل ہے جہاں pser.punjab.gov.pk پر جا کر تمام صوبائی امدادی سکیموں میں رجسٹریشن کی جا سکتی ہے۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "PSER Survey Registration Punjab 2026: Portal Guide & Status Check",
+    "titleUr": "پی ایس ای آر (PSER) پنجاب سروے آن لائن رجسٹریشن 2026",
+    "metaDescriptionEn": "Complete guide to Punjab Socio-Economic Registry (PSER) survey registration. Register online at pser.punjab.gov.pk for CM targeted subsidy schemes.",
+    "metaDescriptionUr": "پنجاب سوشو اکنامک رجسٹری (PSER) آن لائن سروے گائیڈ۔ pser.punjab.gov.pk پورٹل پر رجسٹریشن، کسان کارڈ، چھت سکیم اور سبسڈی کا آسان طریقہ۔",
+    "directAnswerEn": "The Punjab Socio-Economic Registry (PSER) is the Punjab Government's portal (pser.punjab.gov.pk) for registering household socio-economic data. Registering on PSER is mandatory to qualify for Punjab Chief Minister targeted subsidy initiatives like Apni Chhat Apna Ghar, Kisan Card, and Rashan subsidies. Registration is 100% FREE.",
+    "directAnswerUr": "پی ایس ای آر (pser.punjab.gov.pk) حکومت پنجاب کا پورٹل ہے جس پر گھرانے کی معاشی معلومات درج کی جاتی ہیں۔ کسان کارڈ، اپنی چھت اپنا گھر اور راشن سکیموں کے لیے PSER سروے لازمی اور 100 فیصد مفت ہے۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "PITB PSER Punjab Portal",
+      "name": "PSER Punjab Official Portal",
       "url": "https://pser.punjab.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Punjab Welfare Desk"
+      "role": "Punjab Government Subsidies Desk"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "PSER Online Portal Registration",
+        "serviceUr": "پی ایس ای آر آن لائن رجسٹریشن",
+        "normal": "PKR 0 (100% FREE)",
+        "urgent": "Instant Account",
+        "executive": "Govt Subsidies"
       }
     ],
-    "contentEn": "Complete guide on filling out PSER online survey forms including agricultural land size, electricity bill reference, and family CNIC details.",
-    "contentUr": "پی ایس ای آر آن لائن فارم پر کرنے کا مکمل طریقہ اور نادرا تصدیق۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Access pser.punjab.gov.pk",
+        "titleUr": "pser.punjab.gov.pk پورٹل کھولیں",
+        "detailEn": "Open official PSER web portal and register using head of family CNIC.",
+        "detailUr": "pser.punjab.gov.pk پر جا کر نیا اکاؤنٹ بنائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Fill Household Survey Questions",
+        "titleUr": "گھریلو قوائف کا فارم پر کریں",
+        "detailEn": "Input family members, housing structure, monthly income, and utility bills.",
+        "detailUr": "گھر کے افراد، آمدن اور بلز کا اندراج کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is PSER survey registration free?",
+        "questionUr": "کیا پی ایس ای آر سروے مفت ہے؟",
+        "answerEn": "Yes! PSER online registration and door-to-door surveyor visits are 100% free.",
+        "answerUr": "جی ہاں، PSER رجسٹریشن بالکل مفت ہے۔"
+      }
+    ],
+    "contentEn": "The **Punjab Socio-Economic Registry (PSER)** manages targeted welfare initiatives for residents of Punjab.\n\n> 🚨 **SCAM WARNING**: \n> PSER portal registration is **100% FREE**. Register strictly at **[pser.punjab.gov.pk](https://pser.punjab.gov.pk/)**.",
+    "contentUr": "**پنجاب سوشو اکنامک رجسٹری (PSER)** پنجاب کے شہریوں کے لیے سرکاری سبسیڈیز کا پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: **pser.punjab.gov.pk** پر آن لائن رجسٹریشن بالکل مفت ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/laptop-scheme-registration"
+      "/welfare/8171-portal-guide",
+      "/loans/apni-chhat-apna-ghar"
     ]
   },
   "ehsaas-program-guide": {
     "slug": "ehsaas-program-guide",
     "fullPath": "/welfare/ehsaas-program-guide",
     "categoryId": "welfare",
-    "titleEn": "Ehsaas Program 8171 Online Check 2026: Rashan Riayat & Amdan Scheme",
-    "titleUr": "احساس پروگرام 8171 آن لائن چیک 2026: راشن رعایت و امداد سکیم",
-    "metaDescriptionEn": "Complete guide to Ehsaas Program 8171 eligibility, Ehsaas Rashan Riayat, Emergency Cash, and Ehsaas Amdan interest-free asset transfer.",
-    "metaDescriptionUr": "احساس پروگرام 8171 آن لائن اہلیت چیک، احساس راشن رعایت اور بلا سود اثاثہ جات سکیم کی مکمل معلومات۔",
-    "directAnswerEn": "The Ehsaas Program encompasses multiple targeted welfare initiatives integrated with the 8171 portal. Eligible low-income households receive grocery discounts via Ehsaas Rashan and small business equipment under Ehsaas Amdan.",
-    "directAnswerUr": "احساس پروگرام 8171 پورٹل کے ساتھ منسلک ایک فلاحی پروگرام ہے جس کے تحت سستا راشن اور بلا سود امداد دی جاتی ہے۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "Ehsaas Program Complete Guide 2026: Sub-Schemes & Eligibility Check",
+    "titleUr": "احساس پروگرام گائیڈ 2026: آن لائن رجسٹریشن اور تمام سکیمیں",
+    "metaDescriptionEn": "Overview of all social relief programs under the Ehsaas and BISP umbrella in Pakistan. Ehsaas Amdan, Nashonuma, Undergraduate Scholarships, and emergency relief.",
+    "metaDescriptionUr": "حکومت پاکستان کے احساس اور بی آئی ایس پی پروگرام کی تمام ذیلی سکیموں کا جائزہ۔ احساس امداد، نشوونما، وظائف اور راشن کا مکمل گائیڈ۔",
+    "directAnswerEn": "The Ehsaas Program is a landmark social safety net framework in Pakistan comprising multiple targeted initiatives, including Ehsaas Kafaalat (cash grants), Ehsaas Nashonuma (maternal health & nutrition), Ehsaas Amdan (livelihood assets), and Ehsaas Undergraduate Scholarships. All eligibility verification is streamlined via the 8171 portal.",
+    "directAnswerUr": "احساس پروگرام حکومت پاکستان کا ایک جامع سماجی پروگرام ہے جس میں احساس کفالت، احساس نشوونما (صحت و غذائیت)، احساس آمدن اور تعلیمی وظائف شامل ہیں۔ اہلیت 8171 سے ہی چیک ہوتی ہے۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "Ehsaas Poverty Alleviation Portal",
-      "url": "https://pass.gov.pk/"
+      "name": "Poverty Alleviation Division",
+      "url": "https://bisp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Social Protection Desk"
+      "role": "Poverty Alleviation Desk"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
-      },
-      {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Ehsaas Social Welfare Initiatives",
+        "serviceUr": "احساس ویلفیئر پروگرامز",
+        "normal": "PKR 0 (100% FREE)",
+        "urgent": "8171 Portal Check",
+        "executive": "Targeted Relief"
       }
     ],
-    "contentEn": "Overview of federal Poverty Alleviation & Social Safety Division programs operating across Pakistan.",
-    "contentUr": "وفاقی ڈویژن برائے غربت کے تمام فلاحی منصوبوں کا مکمل تجزیہ۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check 8171 Portal for Umbrella Eligibility",
+        "titleUr": "8171 پر احساس کا سٹیٹس دیکھیں",
+        "detailEn": "Check CNIC on 8171 portal to determine eligibility for Ehsaas sub-schemes.",
+        "detailUr": "8171 پورٹل سے احساس سکیموں کا آن لائن سٹیٹس دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Are Ehsaas and BISP the same program?",
+        "questionUr": "کیا احساس اور بی آئی ایس پی ایک ہی پروگرام ہیں؟",
+        "answerEn": "Yes. BISP is the statutory autonomous authority that executes the cash transfers and NSER survey under the social protection framework.",
+        "answerUr": "جی ہاں، بی آئی ایس پی ہی بنیادی ادارہ ہے جو ان تمام فنڈز کی تقسیم کا ذمہ دار ہے۔"
+      }
+    ],
+    "contentEn": "The **Ehsaas Framework** encompasses targeted initiatives designed to lift vulnerable households out of poverty.\n\n> 🚨 **SCAM WARNING**: \n> All Ehsaas programs are **100% FREE**. Never pay agents for application forms.",
+    "contentUr": "**احساس پروگرام** پاکستان میں غریب اور مستحق افراد کی امداد کے لیے قائم کیا گیا۔\n\n> 🚨 **سکیم الرٹ**: احساس کی تمام سروسز **مفت** ہیں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/8171-portal-guide"
+      "/welfare/kafaalat-amount-schedule",
+      "/welfare/taleemi-wazaif"
     ]
   },
   "laptop-scheme-registration": {
@@ -2608,46 +2753,67 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "sehat-card-eligibility-check",
     "fullPath": "/welfare/sehat-card-eligibility-check",
     "categoryId": "welfare",
-    "titleEn": "Sehat Sahulat Card Eligibility Check by CNIC 2026: SMS 8500 & Hospital List",
-    "titleUr": "صحت سہولت کارڈ آن لائن اہلیت چیک 8500: مفت علاج و ہسپتال فہرست 2026",
-    "metaDescriptionEn": "Check Sehat Card eligibility by sending CNIC to 8500 or online at pmhealthprogram.gov.pk. Free PKR 1 Million health insurance coverage per family.",
-    "metaDescriptionUr": "اپنا 13 ہندسوں کا شناختی کارڈ 8500 پر ایس ایم ایس کر کے صحت کارڈ کے 10 لاکھ روپے مفت علاج کی اہلیت چیک کریں۔",
-    "directAnswerEn": "To check your Sehat Sahulat Card eligibility, send your 13-digit CNIC number via SMS to 8500. Eligible families receive up to PKR 1 Million (10 Lakhs) per year for free inpatient medical treatment and surgeries at empanelled public & private hospitals.",
-    "directAnswerUr": "صحت سہولت کارڈ کی اہلیت معلوم کرنے کے لیے اپنا شناختی کارڈ 8500 پر ایس ایم ایس بھیجیں۔ اہل خاندانوں کو 10 لاکھ روپے تک کا مفت علاج ملتا ہے۔",
-    "lastVerified": "August 10, 2026",
+    "titleEn": "Sehat Card Eligibility Check 2026: SMS 8500 & Hospital Treatment",
+    "titleUr": "صحت کارڈ اہلیت آن لائن چیک 2026: ایس ایم ایس 8500 اور مفت علاج",
+    "metaDescriptionEn": "Check your Sehat Sahulat Card health insurance coverage by CNIC via SMS 8500. Learn about 1 Million PKR free hospital treatment per family and hospital list.",
+    "metaDescriptionUr": "صحت کارڈ کے ذریعے 10 لاکھ روپے تک مفت علاج کا طریقہ۔ 8500 پر شناختی کارڈ بھیج کر اہلیت اور پینل ہسپتالوں کی لسٹ دیکھیں۔",
+    "directAnswerEn": "To check your Sehat Sahulat Card eligibility in Pakistan, send your 13-digit CNIC number via SMS to 8500. You will receive an official response stating if your family is covered for up to PKR 1,000,000 (10 Lakh) annual inpatient medical treatment at empanelled public and private hospitals nationwide.",
+    "directAnswerUr": "صحت کارڈ پر 10 لاکھ روپے تک مفت علاج کے لیے اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8500 پر ایس ایم ایس کریں۔ آپ کو فیملی کی اہلیت اور مفت علاج کی تفصیلات کا میسج مل جائے گا۔",
+    "lastVerified": "August 16, 2026",
     "officialSource": {
-      "name": "Sehat Sahulat Program Official Portal",
-      "url": "https://pmhealthprogram.gov.pk/"
+      "name": "State Life Sehat Sahulat Program",
+      "url": "https://www.pmhealthprogram.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Healthcare Welfare Desk"
+      "role": "Health Insurance Specialist"
     },
-    "faqs": [
+    "feeStructure": [
       {
-        "questionEn": "How to check BISP 8171 payment status by CNIC?",
-        "questionUr": "شناختی کارڈ نمبر سے 8171 قسط کا سٹیٹس کیسے معلوم کریں؟",
-        "answerEn": "Visit 8171.bisp.gov.pk, enter 13-digit CNIC and security captcha, or send SMS with CNIC number to 8171 for instant reply.",
-        "answerUr": "8171.bisp.gov.pk پر اپنا شناختی کارڈ درج کریں یا 8171 پر SMS بھیجیں۔"
+        "serviceEn": "SMS 8500 Sehat Card Check",
+        "serviceUr": "ایس ایم ایس 8500 صحت کارڈ انکوائری",
+        "normal": "Standard SMS Rate (~PKR 2)",
+        "urgent": "Instant Status SMS",
+        "executive": "All Mobile Networks"
       },
       {
-        "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
-        "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
-        "questionUr": "کیا 8171 کی رجسٹریشن بالکل مفت ہے؟",
-        "answerEn": "BISP NSER dynamic survey registration is 100% FREE at BISP Tehsil Centers. Never pay money to private agents. Report fraud to 0800-26477.",
-        "answerUr": "بی ایس پی کی تمام سروسز مفت ہیں۔ ایجنٹوں کو رقم دینا سخت منع ہے۔"
+        "serviceEn": "Annual Family Medical Coverage Limit",
+        "serviceUr": "سالانہ خاندانی مفت علاج کی حد",
+        "normal": "Up to PKR 1,000,000",
+        "urgent": "Inpatient Hospitalization",
+        "executive": "100% Free Treatment"
       }
     ],
-    "contentEn": "Find panel hospital list for cardiac surgeries, oncology, and emergency medical treatments covered under Sehat Card.",
-    "contentUr": "صحت کارڈ پر شامل تمام سرکاری و نجی پینل ہسپتالوں کی فہرست۔",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Send CNIC to 8500",
+        "titleUr": "شناختی کارڈ 8500 پر بھیجیں",
+        "detailEn": "Type 13-digit CNIC without dashes and send SMS to 8500.",
+        "detailUr": "13 ہندسوں کا شناختی کارڈ نمبر 8500 پر ایس ایم ایس کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Visit Empanelled Hospital with Smart CNIC",
+        "titleUr": "پینل ہسپتال سمارٹ کارڈ کے ساتھ جائیں",
+        "detailEn": "Take your original CNIC to the Sehat Card counter inside any empanelled hospital for zero-cash treatment.",
+        "detailUr": "پینل ہسپتال کے صحت کارڈ ڈیسک پر اصل شناختی کارڈ پیش کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need a separate physical plastic Sehat Card to get hospital treatment?",
+        "questionUr": "کیا ہسپتال میں علاج کے لیے الگ پلاسٹک صحت کارڈ ضروری ہے؟",
+        "answerEn": "No! Your original NADRA Smart CNIC functions as your digital Sehat Card. Simply present your CNIC at the hospital Sehat Sahulat desk.",
+        "answerUr": "نہیں! آپ کا اصل سمارٹ شناختی کارڈ ہی آپ کا صحت کارڈ ہے۔ ہسپتال میں صرف اپنا شناختی کارڈ دکھائیں۔"
+      }
+    ],
+    "contentEn": "The **Sehat Sahulat Program** provides micro-health insurance coverage up to **PKR 1,000,000 (10 Lakh)** per family per year for indoor hospital treatments.\n\n> 🚨 **SCAM WARNING**: \n> Sehat Card registration and hospital entry is **100% FREE**. No payment is required to activate coverage.\n\n## How to Check Eligibility\nSend your **13-digit CNIC** to **8500** via SMS.",
+    "contentUr": "**صحت سہولت پروگرام** کے تحت ہر خاندان کو سالانہ **10 لاکھ روپے** تک مفت علاج کی سہولت ملتی ہے۔\n\n> 🚨 **سکیم الرٹ**: صحت کارڈ کا فعال ہونا اور ہسپتال داخلہ **100 فیصد مفت** ہے۔\n\n## اہلیت دیکھنے کا طریقہ\nاپنا 13 ہندسوں کا **شناختی کارڈ نمبر 8500** پر ایس ایم ایس کریں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/nadra/cnic-kaise-banaye"
+      "/welfare/ehsaas-program-guide",
+      "/welfare/8171-portal-guide"
     ]
   },
   "ramzan-relief-package": {
