@@ -1,10 +1,19 @@
-'use client';
-
 import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
+import type { Metadata } from 'next';
 
-export default function VehicleTransferPage() {
+export const metadata: Metadata = {
+  title: 'Vehicle Ownership Registration Transfer Guide 2026 (Biometric Transfer)',
+  description: 'Step-by-step procedure to transfer vehicle ownership in Pakistan. Mandatory NADRA Biometric verification rules for buyer & seller, fee challan, and smart card fees.',
+  openGraph: {
+    title: 'Vehicle Ownership Registration Transfer Guide 2026 (Biometric Transfer)',
+    description: 'Step-by-step procedure to transfer vehicle ownership in Pakistan. Mandatory NADRA Biometric verification rules for buyer & seller, fee challan, and smart card fees.',
+    url: 'https://pakistaninfohub.com/traffic/vehicle-registration-transfer',
+  },
+};
+
+export default function Page() {
   const article = ARTICLES['vehicle-registration-transfer'];
   return <ArticleLayout article={article} />;
 }

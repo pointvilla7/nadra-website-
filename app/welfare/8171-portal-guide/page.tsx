@@ -1,10 +1,19 @@
-'use client';
-
 import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
+import type { Metadata } from 'next';
 
-export default function Portal8171GuidePage() {
+export const metadata: Metadata = {
+  title: '8171 Web Portal Guide 2026: Registration, Login & Status Check',
+  description: 'Comprehensive guide to using the official BISP 8171 web portal. Learn how to check payments, resolve portal loading errors, captcha issues, and NSER status online.',
+  openGraph: {
+    title: '8171 Web Portal Guide 2026: Registration, Login & Status Check',
+    description: 'Comprehensive guide to using the official BISP 8171 web portal. Learn how to check payments, resolve portal loading errors, captcha issues, and NSER status online.',
+    url: 'https://pakistaninfohub.com/welfare/8171-portal-guide',
+  },
+};
+
+export default function Page() {
   const article = ARTICLES['8171-portal-guide'];
   return <ArticleLayout article={article} />;
 }

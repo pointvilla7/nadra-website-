@@ -50,6 +50,2015 @@ export interface Article {
 }
 
 export const ARTICLES: Record<string, Article> = {
+
+  "death-cancellation-certificate": {
+    "slug": "death-cancellation-certificate",
+    "fullPath": "/nadra/death-cancellation-certificate",
+    "categoryId": "nadra",
+    "titleEn": "NADRA CNIC Death & Cancellation Certificate Guide 2026",
+    "titleUr": "نادرا فوتیدگی کینسلیشن سرٹیفکیٹ آن لائن گائیڈ 2026",
+    "metaDescriptionEn": "How to apply for NADRA CNIC Cancellation Certificate after death. Document checklist, Union Council death certificate, NRC fee, and family tree update.",
+    "metaDescriptionUr": "نادرا شناختی کارڈ منسوخی و فوتیدگی سرٹیفکیٹ کا طریقہ۔ یونین کونسل ڈیتھ سرٹیفکیٹ، فیس اور نادرا سینٹر کے قواعد۔",
+    "directAnswerEn": "To cancel a deceased family member's CNIC and obtain a NADRA Cancellation Certificate, visit any NADRA Registration Center (NRC) with the original Union Council Death Certificate, original CNIC of the deceased (to be surrendered), and CNIC of the legal heir. The fee is PKR 500.",
+    "directAnswerUr": "فوت شدہ فرد کا شناختی کارڈ منسوخ کروانے کے لیے اصل یونین کونسل ڈیتھ سرٹیفکیٹ، متوفی کا اصل شناختی کارڈ اور وارث کا شناختی کارڈ لے کر نادرا سینٹر جائیں۔ فیس 500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NADRA Pak-ID Portal",
+        "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "NADRA Legal Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Death Cancellation Certificate",
+            "serviceUr": "فوتیدگی منسوخی سرٹیفکیٹ",
+            "normal": "PKR 500",
+            "urgent": "NRC Counter",
+            "executive": "Same Day Issue"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Obtain Union Council Death Certificate",
+            "titleUr": "یونین کونسل ڈیتھ سرٹیفکیٹ لیں",
+            "detailEn": "Register death at local UC office within 60 days to get computerized Death Certificate.",
+            "detailUr": "مقامی یونین کونسل سے کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ حاصل کریں۔"
+        },
+        {
+            "stepNumber": 2,
+            "titleEn": "Visit NADRA Center with Original CNIC",
+            "titleUr": "اصل شناختی کارڈ کے ساتھ نادرا سینٹر جائیں",
+            "detailEn": "Surrender deceased CNIC and show blood relative original CNIC.",
+            "detailUr": "متوفی کا اصل کارڈ نادرا کاؤنٹر پر جمع کروائیں۔"
+        },
+        {
+            "stepNumber": 3,
+            "titleEn": "Biometric Verification & Collect Certificate",
+            "titleUr": "بائیو میٹرک تصدیق اور سرٹیفکیٹ وصولی",
+            "detailEn": "Complete thumb biometric scan and receive NADRA CNIC Cancellation Certificate.",
+            "detailUr": "بائیو میٹرک تصدیق کے بعد فوری منسوخی سرٹیفکیٹ حاصل کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Is CNIC cancellation mandatory after death?",
+            "questionUr": "کیا فوتیدگی کے بعد شناختی کارڈ منسوخ کروانا لازمی ہے؟",
+            "answerEn": "Yes, cancelling CNIC prevents identity theft, illegal pension withdrawal, and is required for succession certificate.",
+            "answerUr": "جی ہاں! وراثت، پنشن اور ڈپلیکیٹ اکاؤنٹ کے مسائل سے بچنے کے لیے ضروری ہے۔"
+        }
+    ],
+    "contentEn": "Comprehensive guide to NADRA death cancellation certificate rules and inheritance requirements.",
+    "contentUr": "نادرا شناختی کارڈ منسوخی اور ڈیتھ سرٹیفکیٹ کا مکمل قانون۔",
+    "relatedSlugs": [
+        "/nadra/family-registration-certificate",
+        "/nadra/succession-certificate-online"
+    ]
+},
+  "succession-certificate-online": {
+    "slug": "succession-certificate-online",
+    "fullPath": "/nadra/succession-certificate-online",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Succession Certificate & Letter of Administration 2026",
+    "titleUr": "نادرا سکسیشن سرٹیفکیٹ و لیٹر آف ایڈمنسٹریشن آن لائن گائیڈ 2026",
+    "metaDescriptionEn": "Apply online for NADRA Succession Certificate & Letter of Administration. Fee structure, legal heir biometric verification, and bank asset transfer rules.",
+    "metaDescriptionUr": "نادرا جانشینی سرٹیفکیٹ آن لائن اپلائی کرنے کا طریقہ۔ وارثان کی بائیو میٹرک، فیس شیڈول اور بینک اکاؤنٹ میں رقم منتقلی۔",
+    "directAnswerEn": "NADRA issues Succession Certificates within 15 days for legal heirs to claim moveable assets (bank accounts, stocks, vehicles) of deceased citizens. Apply online at succession.nadra.gov.pk or at NRC. Fee is PKR 10,000 for assets up to 100,000 PKR and PKR 20,000 for assets above 100,000 PKR.",
+    "directAnswerUr": "نادرا سکسیشن سرٹیفکیٹ 15 دن میں بینک اکاؤنٹس اور گاڑیوں کی وراثت منتقلی کے لیے جاری کیا جاتا ہے۔ 1 لاکھ تک کے اثاثوں پر فیس 10,000 روپے اور 1 لاکھ سے زائد پر 20,000 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NADRA Succession Portal",
+        "url": "https://succession.nadra.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Legal Services Specialist"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Assets up to PKR 100,000",
+            "serviceUr": "1 لاکھ روپے تک اثاثے",
+            "normal": "PKR 10,000",
+            "urgent": "15 Days Issue",
+            "executive": "Online Portal"
+        },
+        {
+            "serviceEn": "Assets above PKR 100,000",
+            "serviceUr": "1 لاکھ روپے سے زائد اثاثے",
+            "normal": "PKR 20,000",
+            "urgent": "15 Days Issue",
+            "executive": "Online Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Create Account on Succession Portal",
+            "titleUr": "سکسیشن پورٹل پر اکاؤنٹ بنائیں",
+            "detailEn": "Register at succession.nadra.gov.pk using CNIC and active mobile number.",
+            "detailUr": "شناختی کارڈ اور موبائل نمبر سے پورٹل پر لاگ ان کریں۔"
+        },
+        {
+            "stepNumber": 2,
+            "titleEn": "Enter Asset Details & Legal Heirs",
+            "titleUr": "وراثتی تفصیلات اور اثاثے درج کریں",
+            "detailEn": "List all legal heirs (children, spouse, parents) and bank account numbers.",
+            "detailUr": "تمام وراثان اور بینک اکاؤنٹس کی تفصیل درج کریں۔"
+        },
+        {
+            "stepNumber": 3,
+            "titleEn": "Biometric Verification of Heirs",
+            "titleUr": "تمام وارثان کی بائیو میٹرک تصدیق",
+            "detailEn": "All heirs complete biometric scan at NRC or via Pak-ID app.",
+            "detailUr": "تمام ورثاء نادرا سینٹر یا موبائل ایپ سے بائیو میٹرک تصدیق کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "How long does NADRA succession certificate take?",
+            "questionUr": "نادرا سکسیشن سرٹیفکیٹ کتنے دن میں ملتا ہے؟",
+            "answerEn": "In undisputed cases, the certificate is issued within 15 working days following public newspaper advertisement.",
+            "answerUr": "بغیر کسی تنازعے کے 15 ورکنگ دنوں میں سرٹیفکیٹ جاری کر دیا جاتا ہے۔"
+        }
+    ],
+    "contentEn": "Complete rules for obtaining legal succession certificate without civil court delays.",
+    "contentUr": "عدالتی چکروں کے بغیر نادرا سے وراثت نامہ حاصل کرنے کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+        "/nadra/death-cancellation-certificate",
+        "/nadra/family-registration-certificate"
+    ]
+},
+  "cnic-name-address-modification": {
+    "slug": "cnic-name-address-modification",
+    "fullPath": "/nadra/cnic-name-address-modification",
+    "categoryId": "nadra",
+    "titleEn": "NADRA CNIC Modification Guide 2026: Name, Address & Marital Status",
+    "titleUr": "نادرا شناختی کارڈ قوائف میں ترمیم: نام، پتہ اور ازدواجی حیثیت 2026",
+    "metaDescriptionEn": "Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.",
+    "metaDescriptionUr": "نادرا شناختی کارڈ پر نام، پتہ اور شادی کے بعد تبدیلی کا آن لائن طریقہ۔ پاک آئی ڈی ایپ فیس اور نادرا سینٹر کے قواعد۔",
+    "directAnswerEn": "To modify data on your NADRA CNIC (such as marital status after marriage, present/permanent address, or spelling correction), apply online via Pak-ID app or visit an NRC. Normal fee is PKR 750 (31 days), Urgent is PKR 1,500 (15 days), and Executive is PKR 2,500 (7 days). Bring original Nikkahnama or Gazette notification.",
+    "directAnswerUr": "شناختی کارڈ میں شادی کے بعد شوہر کا نام درج کروانے، پتہ یا سپیلنگ تبدیل کرنے کے لیے نارمل فیس 750، ارجنٹ 1500 اور ایگزیکٹو 2500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NADRA Pak-ID App",
+        "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "NADRA Documentation Specialist"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Smart CNIC Modification",
+            "serviceUr": "شناختی کارڈ ترمیم فیس",
+            "normal": "PKR 750 (31 Days)",
+            "urgent": "PKR 1,500 (15 Days)",
+            "executive": "PKR 2,500 (7 Days)"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Gather Legal Proof Documents",
+            "titleUr": "اصل ثبوتی دستاویزات ساتھ رکھیں",
+            "detailEn": "Provide registered Nikkahnama for marital status, or utility bill/domicile for address change.",
+            "detailUr": "شادی کی صورت میں نکاح نامہ اور پتہ کی تبدیلی کے لیے ڈومیسائل یا بجلی کا بل فراہم کریں۔"
+        },
+        {
+            "stepNumber": 2,
+            "titleEn": "Apply Online via Pak-ID or NRC",
+            "titleUr": "آن لائن یا نادرا سینٹر درخواست دیں",
+            "detailEn": "Log into Pak-ID mobile app, choose 'Modification', upload documents, and capture fingerprint biometrics.",
+            "detailUr": "پاک آئی ڈی ایپ پر موڈیفکیشن سلیکٹ کر کے فنگر پرنٹ سکین کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I change my permanent address to another province?",
+            "questionUr": "کیا میں اپنا مستقل پتہ دوسرے صوبے کا کروا سکتا ہوں؟",
+            "answerEn": "Yes, with valid property registration document, domicile of target district, or spouse CNIC.",
+            "answerUr": "جی ہاں! ڈومیسائل یا جائیداد کے کاغذات کی بنیاد پر مستقل پتہ تبدیل ہو سکتا ہے۔"
+        }
+    ],
+    "contentEn": "Official rules for updating NADRA records after marriage, relocation, or legal name change.",
+    "contentUr": "شادی یا منتقلی کے بعد نادرا ریکارڈز کی درستی کا قانونی طریقہ کار۔",
+    "relatedSlugs": [
+        "/nadra/cnic-kaise-banaye",
+        "/nadra/card-renewal-online"
+    ]
+},
+  "executive-center-timings-fees": {
+    "slug": "executive-center-timings-fees",
+    "fullPath": "/nadra/executive-center-timings-fees",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Executive Registration Center (NRC) Timings & Fast Track Fees",
+    "titleUr": "نادرا ایگزیکٹو رجسٹریشن سینٹر اوقات کار اور فیس 2026",
+    "metaDescriptionEn": "Find NADRA Executive Center locations in Lahore, Karachi, Islamabad, Rawalpindi & Peshawar. Saturday timings, executive CNIC fees, and VIP lounge processing.",
+    "metaDescriptionUr": "نادرا ایگزیکٹو سینٹر کے اوقات کار، ہفتہ وار رخصت، ایگزیکٹو شناختی کارڈ فیس 2500 روپے اور لائیو ٹوکن سٹیٹس۔",
+    "directAnswerEn": "NADRA Executive Registration Centers (NRCs) offer air-conditioned lounges, 24/7 or extended timings (8:00 AM to 10:00 PM including Saturdays), and priority processing. Executive Smart CNIC fee is PKR 2,500 with delivery within 7 working days.",
+    "directAnswerUr": "نادرا ایگزیکٹو سینٹر ہفتے کے دن بھی کھلے رہتے ہیں اور ایگزیکٹو شناختی کارڈ کی فیس 2500 روپے ہے جس کی ڈیلیوری 7 دنوں میں ہوتی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NADRA NRC Directory",
+        "url": "https://www.nadra.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Public Operations Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Executive Smart CNIC",
+            "serviceUr": "ایگزیکٹو سمارٹ کارڈ",
+            "normal": "PKR 2,500",
+            "urgent": "7 Working Days",
+            "executive": "VIP Lounge Access"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Locate Nearest Executive NRC",
+            "titleUr": "قریبی ایگزیکٹو سینٹر تلاش کریں",
+            "detailEn": "Visit major centers at Blue Area Islamabad, Shimla Hill Lahore, or Mega Center Karachi.",
+            "detailUr": "اسلام آباد، لاہور یا کراچی کے ایگزیکٹو میگا سینٹر تشریف لے جائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Are NADRA Executive Centers open on Saturdays?",
+            "questionUr": "کیا نادرا ایگزیکٹو سینٹر ہفتے کو کھلے ہوتے ہیں؟",
+            "answerEn": "Yes! Most executive centers operate on Saturdays from 9:00 AM to 3:00 PM.",
+            "answerUr": "جی ہاں! ایگزیکٹو میگا سینٹر ہفتے کے دن صبح 9 سے دوپہر 3 بجے تک کھلے رہتے ہیں۔"
+        }
+    ],
+    "contentEn": "Executive NRC directory with full address list, working hours, and fast track services.",
+    "contentUr": "پاکستان کے تمام بڑے شہروں میں واقع نادرا ایگزیکٹو سینٹرز کے پتہ جات اور ٹائمنگز۔",
+    "relatedSlugs": [
+        "/nadra/nadra-card-fee",
+        "/nadra/cnic-kaise-banaye"
+    ]
+},
+  "pak-id-biometric-verification-fix": {
+    "slug": "pak-id-biometric-verification-fix",
+    "fullPath": "/nadra/pak-id-biometric-verification-fix",
+    "categoryId": "nadra",
+    "titleEn": "Pak-ID Mobile App Fingerprint Biometric Troubleshooting Guide",
+    "titleUr": "پاک آئی ڈی ایپ فنگر پرنٹ اور بائیو میٹرک سکین کا حل 2026",
+    "metaDescriptionEn": "Fix Pak-ID app camera fingerprint scanning errors, glare issues, lighting alignment, and biometric verification failure on Android & iOS.",
+    "metaDescriptionUr": "پاک آئی ڈی موبائل ایپ پر فنگر پرنٹ سکین کے مسائل، لائٹ ایڈجسٹمنٹ اور بایومیٹرک ایرر کا آسان ترین حل۔",
+    "directAnswerEn": "If the Pak-ID mobile app fails to capture finger biometrics, place your hand over a plain white sheet of paper in bright natural daylight, hold your smartphone camera 6 inches away, and align your 4 fingers inside the green guide box.",
+    "directAnswerUr": "پاک آئی ڈی ایپ پر بائیو میٹرک ایرر دور کرنے کے لیے ہاتھ کو سفید کاغذ پر رکھیں اور تیز قدرتی روشنی میں کیمرہ 6 انچ کے فاصلے پر رکھیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NADRA Pak-ID App Technical Support",
+        "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Digital Identity Tech Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Pak-ID Mobile Verification",
+            "serviceUr": "ایپ بائیو میٹرک سکین",
+            "normal": "FREE",
+            "urgent": "Instant",
+            "executive": "In-App Feature"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Use Plain White Background & Natural Light",
+            "titleUr": "سفید کاغذ کا پس منظر اور تیز روشنی",
+            "detailEn": "Do not scan under yellow bulb light. Place hand over plain white paper near window.",
+            "detailUr": "کمرے کی زرد لائٹ کے بجائے قدرتی روشنی اور سفید کاغذ استعمال کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What if Pak-ID camera fails to detect fingers after 5 tries?",
+            "questionUr": "اگر 5 بار کوشش کے بعد بھی کیمرہ نشانات سکین نہ کرے؟",
+            "answerEn": "Clean camera lens, update Pak-ID app to latest version from Play Store, or visit an NRC for physical scanner.",
+            "answerUr": "کیمرہ کا شیشہ صاف کریں اور ایپ اپڈیٹ کریں۔ مسئلہ حل نہ ہو تو نادرا سینٹر جائیں۔"
+        }
+    ],
+    "contentEn": "Step-by-step camera adjustment rules to successfully complete Pak-ID online biometric authentication.",
+    "contentUr": "پاک آئی ڈی آن لائن بائیو میٹرک کیمرہ ایڈجسٹمنٹ کے بہترین طریقے۔",
+    "relatedSlugs": [
+        "/nadra/card-renewal-online",
+        "/nadra/nicop-apply-online"
+    ]
+},
+  "executive-fast-track-passport": {
+    "slug": "executive-fast-track-passport",
+    "fullPath": "/passport/executive-fast-track-passport",
+    "categoryId": "passport",
+    "titleEn": "Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026",
+    "titleUr": "پاکستان 24 گھنٹے ایگزیکٹو فاسٹ ٹریک پاسپورٹ گائیڈ 2026",
+    "metaDescriptionEn": "Get a Pakistani passport in 24 hours via DGIP Fast Track counters in Islamabad, Lahore, Karachi & Rawalpindi. Fee table, fast track counters, and rules.",
+    "metaDescriptionUr": "24 گھنٹے میں پاکستان فاسٹ ٹریک پاسپورٹ حاصل کرنے کا طریقہ۔ اسلام آباد، لاہور اور کراچی کاؤنٹر فیس شیڈول۔",
+    "directAnswerEn": "DGIP Fast Track Passport service delivers printed passports within 24 hours (2 working days). Available at Executive Regional Passport Offices in Islamabad, Lahore, Karachi, Rawalpindi, and Peshawar. Fast Track fee is PKR 20,000 for 5-Year e-Passport and PKR 12,500 for 36-Page MRP.",
+    "directAnswerUr": "فاسٹ ٹریک پاسپورٹ سروس کے تحت 24 سے 48 گھنٹوں میں پاسپورٹ مل جاتا ہے۔ ای پاسپورٹ فاسٹ ٹریک فیس 20,000 روپے اور ایم آر پی فیس 12,500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "DGIP Passport Division",
+        "url": "https://fee.dgip.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Passport Operations Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "36-Page MRP Fast Track (5 Yrs)",
+            "serviceUr": "36 صفحے فاسٹ ٹریک پاسپورٹ",
+            "normal": "PKR 12,500",
+            "urgent": "2 Working Days",
+            "executive": "24-Hour Counter"
+        },
+        {
+            "serviceEn": "5-Year e-Passport Fast Track",
+            "serviceUr": "ای پاسپورٹ فاسٹ ٹریک (5 سال)",
+            "normal": "PKR 20,000",
+            "urgent": "2 Working Days",
+            "executive": "24-Hour Counter"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Generate Fast Track PSID on Passport App",
+            "titleUr": "پاسپورٹ آسان ایپ پر فاسٹ ٹریک PSID بنائیں",
+            "detailEn": "Select Fast Track delivery tier in Passport Fee Asan Mobile App.",
+            "detailUr": "پاسپورٹ فیس آسان ایپ میں فاسٹ ٹریک منتخب کر کے فیس ادا کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I get a passport printed on the same day in an emergency?",
+            "questionUr": "کیا ہنگامی صورت میں اسی دن پاسپورٹ مل سکتا ہے؟",
+            "answerEn": "Yes, Fast Track counter applicants in Islamabad and Lahore can collect passport within 24 hours.",
+            "answerUr": "جی ہاں! اسلام آباد اور لاہور ایگزیکٹو کاؤنٹر سے 24 گھنٹے میں پاسپورٹ پرنٹ ہو کر مل جاتا ہے۔"
+        }
+    ],
+    "contentEn": "Detailed instructions for obtaining urgent emergency 24-hour delivery passport in Pakistan.",
+    "contentUr": "ہنگامی سفر کے لیے 24 گھنٹے میں فاسٹ ٹریک پاسپورٹ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+        "/passport/fee-2026",
+        "/passport/online-apply"
+    ]
+},
+  "lost-passport-application-fee": {
+    "slug": "lost-passport-application-fee",
+    "fullPath": "/passport/lost-passport-application-fee",
+    "categoryId": "passport",
+    "titleEn": "Lost Pakistani Passport Replacement Guide & Penalty Fees 2026",
+    "titleUr": "گم شدہ پاسپورٹ کی دوبارہ منتقلی اور جرمانہ فیس گائیڈ 2026",
+    "metaDescriptionEn": "How to replace a lost or stolen Pakistani passport. Police report (FIR) requirements, 1st loss (double fee), 2nd loss (4x fee), and DGIP approval.",
+    "metaDescriptionUr": "گم شدہ پاسپورٹ کی جگہ نیا پاسپورٹ بنوانے کا طریقہ۔ پولیس رپورٹ، پہلی بار گم ہونے پر دگنی فیس اور دوسری بار 4 گنا فیس کا قانون۔",
+    "directAnswerEn": "If your Pakistani passport is lost or stolen, report it to the nearest Police Station to get a computerized FIR copy. For 1st time loss, DGIP charges Double Fee. For 2nd time loss, Quadruple (4x) Fee applies. For 3rd time loss, clearance from DGIP Headquarters Islamabad is mandatory.",
+    "directAnswerUr": "پاسپورٹ گم ہونے پر پہلی بار دگنی فیس اور دوسری بار 4 گنا فیس ادا کرنا پڑتی ہے۔ قریبی تھانے سے ایف آئی آر کی کاپی لانا لازمی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "DGIP Lost Passport Directorate",
+        "url": "https://dgip.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Consular Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "First Time Loss (36 Pages 5 Yrs)",
+            "serviceUr": "پہلی بار گم ہونے پر (دگنی فیس)",
+            "normal": "PKR 9,000",
+            "urgent": "PKR 15,000",
+            "executive": "PKR 25,000"
+        },
+        {
+            "serviceEn": "Second Time Loss (36 Pages 5 Yrs)",
+            "serviceUr": "دوسری بار گم ہونے پر (4 گنا فیس)",
+            "normal": "PKR 18,000",
+            "urgent": "PKR 30,000",
+            "executive": "PKR 50,000"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "File Police Report (FIR)",
+            "titleUr": "پولیس تھانے میں رپٹ / ایف آئی آر درج کروائیں",
+            "detailEn": "Obtain computerized Police Report mentioning lost passport number.",
+            "detailUr": "گم شدہ پاسپورٹ نمبر کے ساتھ تھانے سے ایف آئی آر پرنٹ لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I renew a lost passport online?",
+            "questionUr": "کیا گم شدہ پاسپورٹ آن لائن رینیو ہو سکتا ہے؟",
+            "answerEn": "No. First-time lost passport applications REQUIRE physical visit to Passport Office for Police FIR verification.",
+            "answerUr": "نہیں! گم شدہ پاسپورٹ کے لیے پاسپورٹ آفس جانا لازمی ہے۔"
+        }
+    ],
+    "contentEn": "Official DGIP regulations regarding duplicate passport issuance after theft or loss.",
+    "contentUr": "پاسپورٹ چوری یا گمیدگی کی صورت میں قانونی کارروائی اور دگنی فیس کا قانون۔",
+    "relatedSlugs": [
+        "/passport/renewal-documents",
+        "/passport/fee-2026"
+    ]
+},
+  "child-minor-passport-guide": {
+    "slug": "child-minor-passport-guide",
+    "fullPath": "/passport/child-minor-passport-guide",
+    "categoryId": "passport",
+    "titleEn": "Pakistani Child & Minor Passport Guide 2026 (Under 15 Years)",
+    "titleUr": "بچوں اور نابالغوں کا پاسپورٹ بنوانے کا مکمل طریقہ 2026",
+    "metaDescriptionEn": "Apply for minor passport in Pakistan for newborn babies & children under 15. Mandatory B-Form/CRC, father & mother CNIC, 5-year maximum validity rule.",
+    "metaDescriptionUr": "15 سال سے کم عمر بچوں اور شیر خوار بچوں کا پاسپورٹ بنوانے کی فیس، نادرا بی فارم اور والدین کے شناختی کارڈ کی شرائط۔",
+    "directAnswerEn": "Children under 15 years of age are issued Machine Readable Passports (MRP) valid for a maximum of 5 years (10-year validity is prohibited for minors under 15). Both parents' original Smart CNICs and child's original NADRA B-Form (CRC) are required. Normal fee is PKR 4,500.",
+    "directAnswerUr": "15 سال سے کم عمر بچوں کو صرف 5 سالہ پاسپورٹ جاری کیا جاتا ہے۔ نادرا بی فارم اور والدین کے اصل شناختی کارڈ ساتھ لانا لازمی ہے۔ فیس 4,500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "DGIP Minor Passport Branch",
+        "url": "https://dgip.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Child Licensing Specialist"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Minor Passport (36 Pages 5 Yrs)",
+            "serviceUr": "بچوں کا پاسپورٹ (5 سال میعاد)",
+            "normal": "PKR 4,500",
+            "urgent": "PKR 7,500",
+            "executive": "PKR 12,500"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Bring Original NADRA B-Form & Parents CNIC",
+            "titleUr": "اصل بی فارم اور والدین کے شناختی کارڈ لائیں",
+            "detailEn": "Child must be present at passport office along with father or mother.",
+            "detailUr": "بچے کو والدین میں سے کسی ایک کے ساتھ پاسپورٹ آفس لائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can a child under 15 get a 10-year valid passport?",
+            "questionUr": "کیا 15 سال سے کم بچے کا 10 سالہ پاسپورٹ بن سکتا ہے؟",
+            "answerEn": "No. According to DGIP rules, minors under 15 are legally restricted to 5-year validity passports.",
+            "answerUr": "نہیں! 15 سال سے کم عمر بچوں کے لیے 10 سالہ پاسپورٹ بنوانا ممنوع ہے۔"
+        }
+    ],
+    "contentEn": "Full documentation requirements for newborn and minor passport processing in Pakistan.",
+    "contentUr": "بچوں کے پاسپورٹ کے لیے والدین کے بیانات اور تصدیقی فارم کا گائیڈ۔",
+    "relatedSlugs": [
+        "/passport/fee-2026",
+        "/passport/renewal-documents"
+    ]
+},
+  "overseas-pakistani-passport-renewal": {
+    "slug": "overseas-pakistani-passport-renewal",
+    "fullPath": "/passport/overseas-pakistani-passport-renewal",
+    "categoryId": "passport",
+    "titleEn": "Overseas Pakistani Online Passport Renewal Guide 2026 (OPMS)",
+    "titleUr": "بیرون ملک مقیم پاکستانیوں کا پاسپورٹ آن لائن رینیول گائیڈ 2026",
+    "metaDescriptionEn": "Renew your Pakistani passport online from UAE, Saudi Arabia, UK, USA, Canada via onlinemrp.dgip.gov.pk. Fees in USD/AED, delivery options, and NICOP.",
+    "metaDescriptionUr": "تارکین وطن کے لیے آن لائن پاسپورٹ تجدید پورٹل۔ دبئی، سعودیہ، برطانیہ اور امریکہ سے فیس اور ہوم ڈیلیوری۔",
+    "directAnswerEn": "Overseas Pakistanis can renew their expired Machine Readable Passport or e-Passport online via the official DGIP portal (onlinemrp.dgip.gov.pk). Requires valid NICOP/CNIC, current passport scan, photo, and credit/debit card for USD payment. Delivery takes 10 to 12 working days via DHL/EMS.",
+    "directAnswerUr": "تارکین وطن اپنے ایکسپائرڈ پاسپورٹ آن لائن onlinemrp.dgip.gov.pk پر رینیو کر سکتے ہیں۔ فیس کریڈٹ کارڈ سے ڈیلرز میں ادا ہوتی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "DGIP Online Passport System",
+        "url": "https://onlinemrp.dgip.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Overseas Affairs Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Overseas 36-Page Renewal (5 Yrs)",
+            "serviceUr": "بیرون ملک پاسپورٹ تجدید (5 سال)",
+            "normal": "$35 USD + Shipping",
+            "urgent": "$65 USD + Shipping",
+            "executive": "Online Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Register on Online MRP Portal",
+            "titleUr": "آن لائن ایم آر پی پورٹل پر اکاؤنٹ بنائیں",
+            "detailEn": "Create account on onlinemrp.dgip.gov.pk and select 'Renewal'.",
+            "detailUr": "شناختی کارڈ اور ایمیل سے پورٹل پر لاگ ان کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can overseas Pakistanis apply for a first-time passport online?",
+            "questionUr": "کیا بیرون ملک مقیم پاکستانی پہلی بار آن لائن پاسپورٹ بنا سکتے ہیں؟",
+            "answerEn": "No. First-time passports REQUIRE visiting the Pakistani Embassy/Consulate General.",
+            "answerUr": "نہیں! پہلی بار پاسپورٹ بنوانے کے لیے سفارت خانے جانا لازمی ہے۔"
+        }
+    ],
+    "contentEn": "Step-by-step e-services portal guide for overseas passport renewal and DHL tracking.",
+    "contentUr": "بیرون ملک پاکستانی سفارت خانوں اور ڈی ایچ ایل ہوم ڈیلیوری کا طریقہ۔",
+    "relatedSlugs": [
+        "/passport/online-apply",
+        "/nadra/nicop-apply-online"
+    ]
+},
+  "passport-delay-complaint-helpline": {
+    "slug": "passport-delay-complaint-helpline",
+    "fullPath": "/passport/passport-delay-complaint-helpline",
+    "categoryId": "passport",
+    "titleEn": "Urgent Passport Delay Complaint & DGIP Helpline Guide 2026",
+    "titleUr": "پاسپورٹ تاخیر کی شکایت اور ڈی جی آئی پی ہیلپ لائن 2026",
+    "metaDescriptionEn": "What to do if your urgent or normal Pakistani passport is delayed. DGIP Citizen Portal complaint, UAN helpline (051-111-344-777), and passport status check.",
+    "metaDescriptionUr": "ارجنٹ پاسپورٹ میں تاخیر کی صورت میں آن لائن شکایت درج کروانے کا طریقہ اور ہیلپ لائن نمبر۔",
+    "directAnswerEn": "If your passport printing is delayed beyond the official timeline (Urgent > 5 days, Normal > 21 days), register an official complaint on the Prime Minister Performance Delivery Unit (PMDU) Citizen Portal app or call the DGIP UAN Helpline at 051-111-344-777.",
+    "directAnswerUr": "پاسپورٹ ڈلیوری میں تاخیر پر ڈی جی آئی پی ہیلپ لائن 051-111-344-777 پر کال کریں یا سٹیزن پورٹل ایپ پر شکایت درج کروائیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "DGIP Complaint Redressal Cell",
+        "url": "https://dgip.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Public Grievances Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Grievance Complaint Portal",
+            "serviceUr": "شکایت درج کروانا",
+            "normal": "100% FREE",
+            "urgent": "Instant Tracking",
+            "executive": "PMDU Citizen Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Check Live Status on Tracking Portal",
+            "titleUr": "آن لائن پورٹل پر سٹیٹس دیکھیں",
+            "detailEn": "Verify status on tracking.dgip.gov.pk using 11-digit token number.",
+            "detailUr": "پاسپورٹ پورٹل پر ٹوکن نمبر درج کر کے پرنٹ سٹیٹس دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the official helpline number for DGIP Islamabad?",
+            "questionUr": "ڈی جی آئی پی اسلام آباد کا ہیلپ لائن نمبر کیا ہے؟",
+            "answerEn": "Call 051-111-344-777 or email support@dgip.gov.pk.",
+            "answerUr": "ہیلپ لائن نمبر 051-111-344-777 پر کال کریں۔"
+        }
+    ],
+    "contentEn": "Official procedure to escalate delayed passport printing with DGIP authorities.",
+    "contentUr": "پاسپورٹ تاخیر کے ازالے کے لیے سرکاری طریقہ کار۔",
+    "relatedSlugs": [
+        "/passport/tracking-status",
+        "/passport/office-contact-directory"
+    ]
+},
+  "iesco-bill-check-online": {
+    "slug": "iesco-bill-check-online",
+    "fullPath": "/bills/iesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "IESCO Bill Check Online 2026: Islamabad Electricity Duplicate Bill",
+    "titleUr": "آئیسکو آن لائن بجلی بل چیک 2026 (اسلام آباد و راولپنڈی)",
+    "metaDescriptionEn": "Check and print IESCO duplicate bill online by 14-digit reference number. Islamabad, Rawalpindi, Attock, Chakwal, and Jhelum electricity bill check.",
+    "metaDescriptionUr": "اسلام آباد اور راولپنڈی آئیسکو آن لائن بجلی بل ڈپلیکیٹ پرنٹ بائے 14 ہندسوں کا ریفرنس نمبر۔",
+    "directAnswerEn": "To check and print your IESCO electricity bill online for Islamabad, Rawalpindi, Attock, Chakwal, or Jhelum, enter your 14-digit Reference Number or 10-digit Customer ID at iesco.com.pk or bill.pitb.gov.pk.",
+    "directAnswerUr": "آئیسکو آن لائن بجلی بل دیکھنے کے لیے اپنا 14 ہندسوں کا ریفرنس نمبر iesco.com.pk یا bill.pitb.gov.pk پر درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "IESCO / PITB Bill Gateway",
+        "url": "https://bill.pitb.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Utility Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "IESCO Online Bill Print",
+            "serviceUr": "آئیسکو ڈپلیکیٹ بل پرنٹ",
+            "normal": "FREE",
+            "urgent": "Instant Download",
+            "executive": "PDF Download"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Locate 14-Digit Reference Number",
+            "titleUr": "14 ہندسوں کا ریفرنس نمبر تلاش کریں",
+            "detailEn": "Find your 14-digit number printed on previous month bill copy.",
+            "detailUr": "پرانے بل کے اوپر سے 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Where can I pay my IESCO bill online?",
+            "questionUr": "آئیسکو کا بل آن لائن کہاں جمع ہو سکتا ہے؟",
+            "answerEn": "Pay via JazzCash, Easypaisa, 1Link mobile banking app, or ePay Punjab.",
+            "answerUr": "جاز کیش، ایزی پیسہ یا تمام بینکنگ ایپس سے ادا کریں۔"
+        }
+    ],
+    "contentEn": "IESCO online bill download guide and complaint helpline numbers.",
+    "contentUr": "آئیسکو آن لائن بجلی بل دیکھنے اور پرنٹ کا طریقہ۔",
+    "relatedSlugs": [
+        "/bills/lesco-bill-check-online",
+        "/bills/wapda-bill-complaint-number"
+    ]
+},
+  "fesco-bill-check-online": {
+    "slug": "fesco-bill-check-online",
+    "fullPath": "/bills/fesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "FESCO Bill Check Online 2026: Faisalabad Electricity Duplicate Bill",
+    "titleUr": "فیسکو آن لائن بجلی بل چیک 2026 (فیصل آباد ڈویژن)",
+    "metaDescriptionEn": "Check and print FESCO duplicate electricity bill online for Faisalabad, Jhang, Sargodha, Toba Tek Singh, and Chiniot by 14-digit reference number.",
+    "metaDescriptionUr": "فیصل آباد اور جھنگ فیسکو آن لائن بجلی بل پرنٹ کا طریقہ کار بائے ریفرنس نمبر۔",
+    "directAnswerEn": "FESCO consumers in Faisalabad, Jhang, Sargodha, Chiniot, and Toba Tek Singh can view and print duplicate electricity bills online by entering their 14-digit Reference Number at fesco.com.pk or bill.pitb.gov.pk.",
+    "directAnswerUr": "فیسکو فیصل آباد آن لائن بجلی بل دیکھنے کے لیے اپنا 14 ہندسوں کا ریفرنس نمبر fesco.com.pk پر درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "FESCO Bill Portal",
+        "url": "https://bill.pitb.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Utility Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "FESCO Duplicate Bill Check",
+            "serviceUr": "فیسکو بل آن لائن",
+            "normal": "FREE",
+            "urgent": "Instant View",
+            "executive": "PDF Print"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter 14-Digit Reference Number",
+            "titleUr": "14 ہندسوں کا ریفرنس نمبر درج کریں",
+            "detailEn": "Type reference number without spaces and click search.",
+            "detailUr": "ریفرنس نمبر درج کر کے سرچ پر کلک کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is FESCO customer complaint helpline number?",
+            "questionUr": "فیسکو کسٹمر ہیلپ لائن نمبر کیا ہے؟",
+            "answerEn": "Call 118 or 0800-88844 for electricity outage complaints.",
+            "answerUr": "شکایت کے لیے 118 یا 0800-88844 پر کال کریں۔"
+        }
+    ],
+    "contentEn": "FESCO Faisalabad duplicate bill download and payment instructions.",
+    "contentUr": "فیسکو بجلی بل آن لائن دیکھنے کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+        "/bills/lesco-bill-check-online",
+        "/bills/wapda-bill-complaint-number"
+    ]
+},
+  "mepco-bill-check-online": {
+    "slug": "mepco-bill-check-online",
+    "fullPath": "/bills/mepco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "MEPCO Bill Check Online 2026: Multan Electricity Duplicate Bill",
+    "titleUr": "میپکو آن لائن بجلی بل چیک 2026 (ملتان و جنوبی پنجاب)",
+    "metaDescriptionEn": "MEPCO online duplicate bill check for Multan, Sahiwal, D.G. Khan, Bahawalpur, Rahim Yar Khan & Khanewal. Print duplicate bill by 14-digit reference number.",
+    "metaDescriptionUr": "میپکو ملتان اور جنوبی پنجاب کا آن لائن بجلی بل ڈپلیکیٹ پرنٹ اور بل ادائیگی۔",
+    "directAnswerEn": "MEPCO electricity consumers in Multan, Bahawalpur, Sahiwal, D.G. Khan, and Rahim Yar Khan can check and download duplicate bills online by entering their 14-digit Reference Number at mepco.com.pk or bill.pitb.gov.pk.",
+    "directAnswerUr": "میپکو ملتان آن لائن بجلی بل حاصل کرنے کے لیے اپنا 14 ہندسوں کا ریفرنس نمبر mepco.com.pk پر درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "MEPCO Official Bill Gateway",
+        "url": "https://bill.pitb.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Utility Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "MEPCO Duplicate Bill Print",
+            "serviceUr": "میپکو بل پرنٹ",
+            "normal": "FREE",
+            "urgent": "Instant PDF",
+            "executive": "Online Gateway"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Reference Number",
+            "titleUr": "ریفرنس نمبر درج کریں",
+            "detailEn": "Enter 14-digit MEPCO reference number to generate duplicate bill PDF.",
+            "detailUr": "14 ہندسوں کا نمبر درج کر کے آن لائن بل لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "How to pay MEPCO bill online?",
+            "questionUr": "میپکو بل آن لائن کیسے ادا کریں؟",
+            "answerEn": "Pay via 1Link banking, JazzCash, or Easypaisa app.",
+            "answerUr": "جاز کیش یا موبائل بینکنگ سے ادا کریں۔"
+        }
+    ],
+    "contentEn": "MEPCO Multan online duplicate bill download and helpline directory.",
+    "contentUr": "میپکو جنوبی پنجاب آن لائن بل دیکھنے کا طریقہ۔",
+    "relatedSlugs": [
+        "/bills/lesco-bill-check-online",
+        "/bills/wapda-bill-complaint-number"
+    ]
+},
+  "ssgc-duplicate-bill-check": {
+    "slug": "ssgc-duplicate-bill-check",
+    "fullPath": "/bills/ssgc-duplicate-bill-check",
+    "categoryId": "bills",
+    "titleEn": "SSGC Sui Southern Gas Bill Online Check 2026: Sindh & Balochistan",
+    "titleUr": "ایس ایس جی سی سوئی سدرن گیس بل آن لائن چیک 2026 (سندھ و بلوچستان)",
+    "metaDescriptionEn": "Check and print SSGC duplicate gas bill online for Karachi, Hyderabad, Quetta, and Sukkur by 10-digit Customer Number. Official SSGC bill portal.",
+    "metaDescriptionUr": "کراچی، حیدرآباد اور کوئٹہ ایس ایس جی سی گیس بل آن لائن چیک بذریعہ 10 ہندسوں کا کسٹمر نمبر۔",
+    "directAnswerEn": "To view and print your SSGC (Sui Southern Gas Company) bill online for Sindh or Balochistan (Karachi, Hyderabad, Quetta), enter your 10-digit Customer Number at ssgc.com.pk. SNGPL serves Punjab/KPK while SSGC serves Southern Pakistan.",
+    "directAnswerUr": "ایس ایس جی سی آن لائن گیس بل دیکھنے کے لیے اپنا 10 ہندسوں کا کسٹمر نمبر ssgc.com.pk پر درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "SSGC Customer Web Portal",
+        "url": "https://www.ssgc.com.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Gas Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "SSGC Online Bill Download",
+            "serviceUr": "ایس ایس جی سی بل پرنٹ",
+            "normal": "FREE",
+            "urgent": "Instant View",
+            "executive": "PDF Print"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Locate 10-Digit SSGC Customer Number",
+            "titleUr": "10 ہندسوں کا کسٹمر نمبر درج کریں",
+            "detailEn": "Enter your 10-digit customer number printed on top-left of previous gas bill.",
+            "detailUr": "بل کے اوپر درج 10 ہندسوں کا کسٹمر نمبر درج کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the difference between SSGC and SNGPL?",
+            "questionUr": "ایس ایس جی سی اور ایس این جی پی ایل میں کیا فرق ہے؟",
+            "answerEn": "SSGC serves Sindh & Balochistan, while SNGPL serves Punjab & KPK.",
+            "answerUr": "ایس ایس جی سی سندھ اور بلوچستان کے لیے ہے جبکہ ایس این جی پی ایل پنجاب اور کے پی کے کے لیے ہے۔"
+        }
+    ],
+    "contentEn": "SSGC Sindh and Balochistan duplicate bill download and customer care portal.",
+    "contentUr": "سوئی سدرن گیس بل آن لائن دیکھنے کا طریقہ۔",
+    "relatedSlugs": [
+        "/bills/sui-gas-bill-check-online",
+        "/bills/wapda-bill-complaint-number"
+    ]
+},
+  "electricity-bill-installment-guide": {
+    "slug": "electricity-bill-installment-guide",
+    "fullPath": "/bills/electricity-bill-installment-guide",
+    "categoryId": "bills",
+    "titleEn": "Electricity Bill Extension & Installment Application Guide 2026",
+    "titleUr": "بجلی کا بل اقساط میں کروانے اور تاریخ میں توسیع کا طریقہ 2026",
+    "metaDescriptionEn": "How to get electricity bill installments approved at LESCO, IESCO, K-Electric, MEPCO customer centers. NEPRA consumer rules, due date extension, and surge relief.",
+    "metaDescriptionUr": "بھاری بجلی کا بل آسان اقساط میں کروانے اور آخری تاریخ بڑھوانے کی مکمل سرکاری گائیڈ۔",
+    "directAnswerEn": "If your monthly electricity bill exceeds your budget, you are legally entitled under NEPRA rules to request bill installments (up to 3 equal monthly installments) at your local DISCO Customer Services Center (LESCO/IESCO/K-Electric) before the due date.",
+    "directAnswerUr": "نیپرا قوانین کے تحت آپ اپنا بجلی کا بل اپنے ڈسکو کسٹمر سینٹر (لیسکو / آئیسکو) سے 3 آسان اقساط میں کروا سکتے ہیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "NEPRA Consumer Affairs",
+        "url": "https://nepra.org.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Consumer Protection Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Bill Installment Processing",
+            "serviceUr": "بل اقساط منظوری",
+            "normal": "FREE",
+            "urgent": "Customer Center",
+            "executive": "NEPRA Approved"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Visit DISCO Customer Services Center",
+            "titleUr": "ڈسکو کسٹمر سروسز سینٹر تشریف لے جائیں",
+            "detailEn": "Bring original bill before due date to get SDO or XEN approval stamp for installments.",
+            "detailUr": "بل کی آخری تاریخ سے پہلے ایس ڈی او یا ایکسین کے دفتر سے اقساط کی مہر لگوائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I get bill installments done online?",
+            "questionUr": "کیا بجلی کا بل آن لائن اقساط میں ہو سکتا ہے؟",
+            "answerEn": "K-Electric allows online installments via KE Live app. DISCOs (LESCO/IESCO) require customer center stamp.",
+            "answerUr": "کے الیکٹرک کی ایپ سے آن لائن ہو جاتا ہے جبکہ لیسکو کے لیے کسٹمر سینٹر جانا پڑتا ہے۔"
+        }
+    ],
+    "contentEn": "NEPRA consumer protection guidelines for securing bill installments and avoiding disconnection.",
+    "contentUr": "بجلی کے بوجھ سے بچنے کے لیے بل اقساط کروانے کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+        "/bills/lesco-bill-check-online",
+        "/bills/wapda-bill-complaint-number"
+    ]
+},
+  "bise-rawalpindi-result-2026": {
+    "slug": "bise-rawalpindi-result-2026",
+    "fullPath": "/education/bise-rawalpindi-result-2026",
+    "categoryId": "education",
+    "titleEn": "BISE Rawalpindi Board Result 2026: 9th, 10th, 11th & 12th Class",
+    "titleUr": "بورڈ آف انٹرمیڈیٹ اینڈ سیکنڈری ایجوکیشن راولپنڈی رزلٹ 2026",
+    "metaDescriptionEn": "BISE Rawalpindi matric (SSC) and intermediate (HSSC) result check online by roll number and SMS 800296. Official gazette and mark sheet.",
+    "metaDescriptionUr": "بی آئی ایس ای راولپنڈی بورڈ 9ویں، 10ویں، 11ویں اور 12ویں کلاس کا رزلٹ آن لائن رول نمبر اور ایس ایم ایس 800296 سے دیکھیں۔",
+    "directAnswerEn": "To check BISE Rawalpindi 9th, 10th, 11th, or 12th class result 2026 online, enter your Roll Number at biserawalpindi.edu.pk or send your Roll Number via SMS to 800296.",
+    "directAnswerUr": "راولپنڈی بورڈ کا رزلٹ دیکھنے کے لیے اپنا رول نمبر biserawalpindi.edu.pk پر درج کریں یا 800296 پر ایس ایم ایس بھیجیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "BISE Rawalpindi Portal",
+        "url": "https://biserawalpindi.edu.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Education Gazette Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Online Gazette Result",
+            "serviceUr": "آن لائن رزلٹ پورٹل",
+            "normal": "FREE",
+            "urgent": "Instant View",
+            "executive": "Official Site"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Roll Number on BISE Portal",
+            "titleUr": "راولپنڈی بورڈ پورٹل پر رول نمبر درج کریں",
+            "detailEn": "Visit biserawalpindi.edu.pk and click 'Results'. Enter roll number to view marks.",
+            "detailUr": "پورٹل پر رول نمبر درج کر کے نمبرز اور ڈی ایم سی دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is BISE Rawalpindi SMS result code?",
+            "questionUr": "راولپنڈی بورڈ کا ایس ایم ایس رزلٹ کوڈ کیا ہے؟",
+            "answerEn": "Send Roll Number to 800296.",
+            "answerUr": "اپنا رول نمبر 800296 پر ایس ایم ایس کریں۔"
+        }
+    ],
+    "contentEn": "BISE Rawalpindi matric and FSc result gazette lookup guide.",
+    "contentUr": "راولپنڈی بورڈ کے رزلٹ اور مارکس شیٹ کا مکمل گائیڈ۔",
+    "relatedSlugs": [
+        "/education/bise-result-check-2026",
+        "/education/bise-lahore-result-2026"
+    ]
+},
+  "bise-faisalabad-result-2026": {
+    "slug": "bise-faisalabad-result-2026",
+    "fullPath": "/education/bise-faisalabad-result-2026",
+    "categoryId": "education",
+    "titleEn": "BISE Faisalabad Board Result 2026: 9th, 10th, 11th & 12th Class",
+    "titleUr": "بورڈ آف انٹرمیڈیٹ اینڈ سیکنڈری ایجوکیشن فیصل آباد رزلٹ 2026",
+    "metaDescriptionEn": "BISE Faisalabad matric and FSc result check online by roll number and SMS 800299. Official gazette search for SSC & HSSC.",
+    "metaDescriptionUr": "بی آئی ایس ای فیصل آباد بورڈ 9ویں، 10ویں اور 12ویں جماعت کا رزلٹ آن لائن اور ایس ایم ایس 800299 پر دیکھیں۔",
+    "directAnswerEn": "Check BISE Faisalabad Board 9th, 10th, 11th, and 12th class results online by entering your Roll Number at bisefsd.edu.pk or send your Roll Number via SMS to 800299.",
+    "directAnswerUr": "فیصل آباد بورڈ کا رزلٹ دیکھنے کے لیے bisefsd.edu.pk پر رول نمبر درج کریں یا 800299 پر ایس ایم ایس بھیجیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "BISE Faisalabad Portal",
+        "url": "https://bisefsd.edu.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Education Gazette Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Faisalabad Result Gazette",
+            "serviceUr": "فیصل آباد رزلٹ پرنٹ",
+            "normal": "FREE",
+            "urgent": "Instant Search",
+            "executive": "Official Site"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Roll Number",
+            "titleUr": "رول نمبر درج کریں",
+            "detailEn": "Visit bisefsd.edu.pk, enter roll number, and download result card.",
+            "detailUr": "bisefsd.edu.pk پر رول نمبر درج کر کے رزلٹ کارڈ لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is BISE Faisalabad SMS result code?",
+            "questionUr": "فیصل آباد بورڈ کا رزلٹ ایس ایم ایس کوڈ کیا ہے؟",
+            "answerEn": "Send Roll Number to 800299.",
+            "answerUr": "اپنا رول نمبر 800299 پر ایس ایم ایس بھیجیں۔"
+        }
+    ],
+    "contentEn": "BISE Faisalabad SSC & HSSC board exam result gazette portal.",
+    "contentUr": "فیصل آباد بورڈ میٹرک و انٹر رزلٹ کی مکمل تفصیل۔",
+    "relatedSlugs": [
+        "/education/bise-result-check-2026",
+        "/education/bise-lahore-result-2026"
+    ]
+},
+  "fbise-federal-board-result-2026": {
+    "slug": "fbise-federal-board-result-2026",
+    "fullPath": "/education/fbise-federal-board-result-2026",
+    "categoryId": "education",
+    "titleEn": "FBISE Federal Board Result 2026: SSC & HSSC Check Online",
+    "titleUr": "فیڈرل بورڈ (FBISE) اسلام آباد رزلٹ آن لائن چیک 2026",
+    "metaDescriptionEn": "Check FBISE Federal Board Islamabad matric (SSC I & II) and FSc (HSSC I & II) result online by roll number, name, or SMS 5050.",
+    "metaDescriptionUr": "فیڈرل بورڈ اسلام آباد 9ویں، 10ویں اور ایف ایس سی کا رزلٹ آن لائن fbise.edu.pk اور ایس ایم ایس 5050 پر دیکھیں۔",
+    "directAnswerEn": "To check FBISE Federal Board Islamabad 9th, 10th, 11th, or 12th class results 2026 online, visit fbise.edu.pk/result-main.php and enter your Roll Number or Name. Alternatively, SMS your Roll Number format 'FB [RollNo]' to 5050.",
+    "directAnswerUr": "فیڈرل بورڈ کا رزلٹ آن لائن دیکھنے کے لیے fbise.edu.pk پر رول نمبر درج کریں یا FB کے ساتھ رول نمبر ملا کر 5050 پر ایس ایم ایس بھیجیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "FBISE Official Portal",
+        "url": "https://fbise.edu.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Federal Education Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "FBISE Result Check",
+            "serviceUr": "فیڈرل بورڈ آن لائن رزلٹ",
+            "normal": "FREE",
+            "urgent": "Instant View",
+            "executive": "Official Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Roll Number on FBISE Portal",
+            "titleUr": "فیڈرل بورڈ پورٹل پر رول نمبر درج کریں",
+            "detailEn": "Visit fbise.edu.pk, enter roll number to download Detailed Marks Certificate (DMC).",
+            "detailUr": "fbise.edu.pk پر رول نمبر درج کر کے رزلٹ کارڈ دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "How to check FBISE result by SMS?",
+            "questionUr": "ایس ایم ایس کے ذریعے فیڈرل بورڈ کا رزلٹ کیسے دیکھیں؟",
+            "answerEn": "Format SMS as 'FB [RollNo]' and send to 5050.",
+            "answerUr": "FB لکھ کر سپیس دیں اور رول نمبر 5050 پر بھیجیں۔"
+        }
+    ],
+    "contentEn": "FBISE Federal Board Islamabad matriculation and intermediate gazette result lookup.",
+    "contentUr": "فیڈرل بورڈ اسلام آباد کے آن لائن رزلٹ اور ڈی ایم سی کی مکمل معلومات۔",
+    "relatedSlugs": [
+        "/education/bise-result-check-2026",
+        "/education/bise-lahore-result-2026"
+    ]
+},
+  "bise-paper-rechecking-procedure": {
+    "slug": "bise-paper-rechecking-procedure",
+    "fullPath": "/education/bise-paper-rechecking-procedure",
+    "categoryId": "education",
+    "titleEn": "BISE Board Paper Rechecking & Recounting Procedure 2026",
+    "titleUr": "بورڈ پیپر ری چیکنگ اور ری کاؤنٹنگ کا مکمل طریقہ 2026",
+    "metaDescriptionEn": "How to apply for BISE matric and FSc paper rechecking. Fee structure per subject (PKR 1,000–1,500), 15-day deadline, and online application form.",
+    "metaDescriptionUr": "میٹرک اور انٹر کے پیپر ری چیکنگ کروانے کی فیس، 15 دن کی آخری تاریخ اور آن لائن فارم پُر کرنے کی مکمل معلومات۔",
+    "directAnswerEn": "If you are dissatisfied with your BISE matric or FSc marks, apply for Paper Rechecking (Recounting) within 15 days of result declaration. Submit the online rechecking form at your BISE portal and pay the fee (approx PKR 1,000 to PKR 1,500 per subject). Note: Rechecking covers totaling errors and unmarked questions.",
+    "directAnswerUr": "رزلٹ کے 15 دنوں کے اندر اپنے بورڈ کی ویب سائٹ پر ری چیکنگ کا فارم بھریں۔ فی مضمون فیس 1000 سے 1500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Punjab BISE Chairmen Committee",
+        "url": "https://biselahore.com/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Examination Appeals Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Paper Recounting (Per Subject)",
+            "serviceUr": "پیپر ری کاؤنٹنگ فیس",
+            "normal": "PKR 1,200",
+            "urgent": "15 Days Deadline",
+            "executive": "Board Office"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Fill Online Rechecking Form Within 15 Days",
+            "titleUr": "15 دن میں آن لائن فارم پر کریں",
+            "detailEn": "Log into your official BISE portal, select subjects for recounting, and generate fee PSID.",
+            "detailUr": "رزلٹ کے 15 دن میں آن لائن پورٹل سے ری چیکنگ کا چالان پرنٹ کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Does BISE paper rechecking re-evaluate answer content?",
+            "questionUr": "کیا ری چیکنگ میں پیپر دوبارہ چیک ہوتا ہے؟",
+            "answerEn": "No. Rechecking strictly verifies mark totaling, unchecked pages, and transfer of marks to title sheet.",
+            "answerUr": "نہیں! ری چیکنگ میں صرف نمبرز کی گنتی اور غیر نشان شدہ صفحات چیک ہوتے ہیں۔"
+        }
+    ],
+    "contentEn": "Official rules governing BISE board examination paper recounting and mark adjustments.",
+    "contentUr": "بورڈ امتحانات میں نمبرز کی ری کاؤنٹنگ کے قانونی قوانین۔",
+    "relatedSlugs": [
+        "/education/bise-result-check-2026",
+        "/education/bise-lahore-result-2026"
+    ]
+},
+  "hec-degree-attestation-process": {
+    "slug": "hec-degree-attestation-process",
+    "fullPath": "/education/hec-degree-attestation-process",
+    "categoryId": "education",
+    "titleEn": "HEC Degree Attestation Process Guide 2026: Fee & E-Services",
+    "titleUr": "ایچ ای سی ڈگری تصدیق گائیڈ 2026: فیس شیڈول و آن لائن پورٹل",
+    "metaDescriptionEn": "Step-by-step HEC degree attestation guide. Apply online at eservices.hec.gov.pk, courier vs urgent walk-in mode, fee per original (PKR 1,000) & photocopy (PKR 700).",
+    "metaDescriptionUr": "ایچ ای سی آن لائن ڈگری تصدیق کا طریقہ۔ آن لائن فارم eservices.hec.gov.pk، اصل ڈگری فیس 1000 روپے اور کاپی فیس 700 روپے۔",
+    "directAnswerEn": "HEC Pakistan attests Bachelor, Master, and PhD degrees online via eservices.hec.gov.pk. Create an account, fill education profile, upload transcripts, and select mode (TCS Courier or Urgent Walk-In). Fee is PKR 1,000 per original document and PKR 700 per photocopy.",
+    "directAnswerUr": "ایچ ای سی ڈگری تصدیق کے لیے eservices.hec.gov.pk پر اپلائی کریں۔ اصل ڈگری فیس 1000 روپے اور فوٹو کاپی فیس 700 روپے فی سند ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "HEC E-Services Portal",
+        "url": "https://eservices.hec.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Higher Education Accreditation Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Original Degree / Transcript",
+            "serviceUr": "اصل ڈگری تصدیق فیس",
+            "normal": "PKR 1,000 / doc",
+            "urgent": "TCS Courier Mode",
+            "executive": "Walk-In Mode"
+        },
+        {
+            "serviceEn": "Photocopy Attestation",
+            "serviceUr": "فوٹو کاپی تصدیق فیس",
+            "normal": "PKR 700 / doc",
+            "urgent": "TCS Courier Mode",
+            "executive": "Walk-In Mode"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Create Account on HEC E-Services Portal",
+            "titleUr": "ایچ ای سی ای سروسز پورٹل پر اکاؤنٹ بنائیں",
+            "detailEn": "Register at eservices.hec.gov.pk with CNIC and upload educational documents.",
+            "detailUr": "eservices.hec.gov.pk پر شناختی کارڈ درج کر کے تعلیمی پروفائل مکمل کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Is Matric and Inter attestation required before HEC?",
+            "questionUr": "کیا ایچ ای سی سے پہلے میٹرک اور انٹر کی تصدیق لازمی ہے؟",
+            "answerEn": "Yes, your Matric & Intermediate certificates MUST be attested by IBCC before applying to HEC.",
+            "answerUr": "جی ہاں! ایچ ای سی سے پہلے آئی بی سی سی (IBCC) کی تصدیق لازمی ہے۔"
+        }
+    ],
+    "contentEn": "HEC degree attestation instructions for job seekers and study abroad applicants.",
+    "contentUr": "بیرون ملک ویزا اور نوکری کے لیے ایچ ای سی ڈگری تصدیق کا طریقہ۔",
+    "relatedSlugs": [
+        "/education/hec-scholarship-pakistan",
+        "/education/css-preparation-books"
+    ]
+},
+  "fpsc-online-apply-procedure": {
+    "slug": "fpsc-online-apply-procedure",
+    "fullPath": "/jobs/fpsc-online-apply-procedure",
+    "categoryId": "jobs",
+    "titleEn": "FPSC Online Apply Guide 2026: Treasury Challan 32-A & Test Syllabus",
+    "titleUr": "ایف پی ایس سی (FPSC) آن لائن اپلائی گائیڈ 2026: فیس چالان و سلیبس",
+    "metaDescriptionEn": "How to apply online for FPSC federal jobs at fpsc.gov.pk. Download Treasury Challan Form 32-A, fee rates (BPS 16-17 PKR 300), and admission certificate.",
+    "metaDescriptionUr": "ایف پی ایس سی فیڈرل نوکریوں کے لیے آن لائن اپلائی کا طریقہ۔ چالان فارم 32-A فیس 300 روپے اور داخلہ سلپ۔",
+    "directAnswerEn": "To apply for Federal Public Service Commission (FPSC) jobs, download Treasury Challan Form 32-A from fpsc.gov.pk, pay fee at NBP or State Bank (BS-16/17: PKR 300, BS-18: PKR 750, BS-19: PKR 1,200), and submit the online application.",
+    "directAnswerUr": "ایف پی ایس سی سیٹوں کے لیے 300 روپے چالان فارم 32-A نیشنل بینک میں جمع کروا کر fpsc.gov.pk پر آن لائن درخواست فارم پُر کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "FPSC Official Web Portal",
+        "url": "https://fpsc.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Federal Recruitment Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "BPS 16 to BPS 17 Fee",
+            "serviceUr": "گریڈ 16 سے 17 کی فیس",
+            "normal": "PKR 300",
+            "urgent": "NBP Branch Deposit",
+            "executive": "Online Form"
+        },
+        {
+            "serviceEn": "BPS 18 Fee",
+            "serviceUr": "گریڈ 18 کی فیس",
+            "normal": "PKR 750",
+            "urgent": "NBP Branch Deposit",
+            "executive": "Online Form"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Pay Treasury Challan at NBP",
+            "titleUr": "نیشنل بینک میں چالان فیس جمع کروائیں",
+            "detailEn": "Fill Challan Form 32-A with case number and deposit cash at National Bank.",
+            "detailUr": "چالان فارم 32-A پر کیس نمبر لکھ کر این بی پی میں فیس جمع کروائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the age relaxation rule for FPSC jobs?",
+            "questionUr": "ایف پی ایس سی میں عمر کی کتنی رعایت ملتی ہے؟",
+            "answerEn": "General 5-year age relaxation is granted above the prescribed age limit for federal posts.",
+            "answerUr": "تمام وفاقی اسامیوں پر 5 سال کی عمومی رعایت دی جاتی ہے۔"
+        }
+    ],
+    "contentEn": "FPSC recruitment guide for CSS and General Recruitment competitive examinations.",
+    "contentUr": "وفاقی پبلک سروس کمیشن کے ٹیسٹس اور سلیبس کی مکمل تفصیلات۔",
+    "relatedSlugs": [
+        "/jobs/latest-govt-jobs-pakistan",
+        "/jobs/ppsc-jobs-2026"
+    ]
+},
+  "spsc-jobs-apply-online": {
+    "slug": "spsc-jobs-apply-online",
+    "fullPath": "/jobs/spsc-jobs-apply-online",
+    "categoryId": "jobs",
+    "titleEn": "SPSC Jobs 2026: Sindh Public Service Commission Online Apply",
+    "titleUr": "ایس پی ایس سی (SPSC) سندھ نوبلیاں 2026: آن لائن فارم و چالان فیس",
+    "metaDescriptionEn": "SPSC upcoming job advertisements 2026, online portal at spsc.gov.pk, challan fee (PKR 500), CCE Combined Competitive Exam, and roll number slip.",
+    "metaDescriptionUr": "سندھ پبلک سروس کمیشن کی نئی نوبلیاں، آن لائن اپلائی پورٹل spsc.gov.pk اور چالان فیس 500 روپے۔",
+    "directAnswerEn": "Apply online for Sindh Public Service Commission (SPSC) vacancies by depositing PKR 500 fee via SPSC Challan at NBP, registering your profile on spsc.gov.pk, and uploading required academic records.",
+    "directAnswerUr": "ایس پی ایس سی سندھ کی نوکریوں کے لیے 500 روپے چالان فیس این بی پی میں جمع کروا کر spsc.gov.pk پر آن لائن فارم پر کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "SPSC Official Portal",
+        "url": "https://spsc.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Provincial Recruitment Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "SPSC Application Fee",
+            "serviceUr": "ایس پی ایس سی درخواست فیس",
+            "normal": "PKR 500",
+            "urgent": "NBP Deposit",
+            "executive": "Online Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Register on SPSC Online Portal",
+            "titleUr": "ایس پی ایس سی پورٹل پر اکاؤنٹ بنائیں",
+            "detailEn": "Create profile on spsc.gov.pk with CNIC and mobile number.",
+            "detailUr": "spsc.gov.pk پر اکاؤنٹ بنا کر کوائف درج کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Is Sindh Domicile mandatory for SPSC jobs?",
+            "questionUr": "کیا ایس پی ایس سی کے لیے سندھ کا ڈومیسائل لازمی ہے؟",
+            "answerEn": "Yes, applicants must possess valid Sindh Urban or Sindh Rural Domicile.",
+            "answerUr": "جی ہاں! سندھ شہری یا دیہی کا ڈومیسائل ہونا لازمی ہے۔"
+        }
+    ],
+    "contentEn": "SPSC Sindh competitive examination guide and admission slip portal instructions.",
+    "contentUr": "سندھ کمیشن کے امتحانات اور آن لائن چالان کا طریقہ۔",
+    "relatedSlugs": [
+        "/jobs/latest-govt-jobs-pakistan",
+        "/jobs/ppsc-jobs-2026"
+    ]
+},
+  "kppsc-jobs-apply-online": {
+    "slug": "kppsc-jobs-apply-online",
+    "fullPath": "/jobs/kppsc-jobs-apply-online",
+    "categoryId": "jobs",
+    "titleEn": "KPPSC Jobs 2026: KPK Public Service Commission Online Apply",
+    "titleUr": "کے پی پی ایس سی (KPPSC) نوکریاں 2026: آن لائن اپلائی گائیڈ",
+    "metaDescriptionEn": "KPPSC jobs advertisement 2026 for Khyber Pakhtunkhwa. Online application portal at kppsc.gov.pk, Easypaisa/JazzCash fee deposit (PKR 500), and test slip.",
+    "metaDescriptionUr": "خیبر پختونخوا پبلک سروس کمیشن کی نئی نوکریاں، آن لائن اپلائی kppsc.gov.pk اور ایزی پیسہ فیس ادائیگی 500 روپے۔",
+    "directAnswerEn": "To apply for KPPSC vacancies in Khyber Pakhtunkhwa, pay the PKR 500 application fee via JazzCash or Easypaisa, log into kppsc.gov.pk, and fill the online form before the closing date.",
+    "directAnswerUr": "کے پی پی ایس سی کے لیے 500 روپے فیس ایزی پیسہ یا جاز کیش سے ادا کر کے kppsc.gov.pk پر آن لائن فارم پر کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "KPPSC Official Portal",
+        "url": "https://kppsc.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Provincial Recruitment Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "KPPSC Exam Fee",
+            "serviceUr": "کے پی پی ایس سی فیس",
+            "normal": "PKR 500",
+            "urgent": "Easypaisa / JazzCash",
+            "executive": "Online Portal"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Pay Fee via JazzCash / Easypaisa",
+            "titleUr": "جاز کیش یا ایزی پیسہ سے فیس ادا کریں",
+            "detailEn": "Pay KPPSC fee under Govt Payments menu to receive Transaction ID.",
+            "detailUr": "موبائل ایپ سے فیس ادا کر کے ٹی آر ایکس آئی ڈی نوٹ کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Is KPK Domicile mandatory for KPPSC recruitment?",
+            "questionUr": "کیا کے پی پی ایس سی کے لیے کے پی کے کا ڈومیسائل ہونا لازمی ہے؟",
+            "answerEn": "Yes, candidates must possess valid KPK / Merged Districts (FATA) domicile.",
+            "answerUr": "جی ہاں! کے پی کے یا قبائلی اضلاع کا ڈومیسائل ہونا لازمی ہے۔"
+        }
+    ],
+    "contentEn": "KPPSC online application process and screening test pattern details.",
+    "contentUr": "کے پی کے پبلک سروس کمیشن کے آن لائن پورٹل کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+        "/jobs/latest-govt-jobs-pakistan",
+        "/jobs/ppsc-jobs-2026"
+    ]
+},
+  "join-pak-army-online-registration": {
+    "slug": "join-pak-army-online-registration",
+    "fullPath": "/jobs/join-pak-army-online-registration",
+    "categoryId": "jobs",
+    "titleEn": "Join Pak Army Online Registration 2026: PMA Long Course & LCC",
+    "titleUr": "پاک فوج آن لائن رجسٹریشن 2026: پی ایم اے لانگ کورس و لیڈی کیڈٹ کورس",
+    "metaDescriptionEn": "How to register online for Join Pak Army 2026. PMA Long Course, Lady Cadet Course (LCC), Technical Cadet Course, eligibility, physical test criteria, and AS&RC.",
+    "metaDescriptionUr": "پاک فوج میں آن لائن رجسٹریشن کا طریقہ۔ پی ایم اے 154 لانگ کورس، قد کی حد، جسمانی ٹیسٹ اور آرمی سلیکشن سینٹر۔",
+    "directAnswerEn": "Register for Pak Army Commissioned Officer courses (PMA Long Course, Lady Cadet Course, Technical Cadet Course) online at joinpakarmy.gov.pk or visit your nearest Army Selection and Recruitment Centre (AS&RC). Registration is 100% FREE.",
+    "directAnswerUr": "پاک فوج میں سیکنڈ لیفٹیننٹ بننے کے لیے joinpakarmy.gov.pk پر مفت آن لائن رجسٹریشن کریں۔ فزیکل اور میڈیکل ٹیسٹ سلیکشن سینٹر میں ہوتے ہیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Pak Army Recruitment Directorate",
+        "url": "https://joinpakarmy.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Defense Recruitment Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Army Online Registration",
+            "serviceUr": "آن لائن رجسٹریشن فیس",
+            "normal": "100% FREE",
+            "urgent": "AS&RC Exam",
+            "executive": "No Charge"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Register on Official Join Pak Army Portal",
+            "titleUr": "آن لائن پورٹل پر رجسٹریشن کریں",
+            "detailEn": "Fill personal details, matric/FSc marks, and select nearest AS&RC center.",
+            "detailUr": "joinpakarmy.gov.pk پر فارم پر کر کے رجسٹریشن سلپ ڈاؤن لوڈ کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the minimum height requirement for PMA Long Course?",
+            "questionUr": "پی ایم اے لانگ کورس کے لیے کم از کم قد کتنا ہونا چاہیے؟",
+            "answerEn": "Minimum height for male candidates is 5 ft 4 in (162.5 cm) and for female candidates is 5 ft (152.4 cm).",
+            "answerUr": "مرد امیدواروں کے لیے کم از کم قد 5 فٹ 4 انچ ہونا لازمی ہے۔"
+        }
+    ],
+    "contentEn": "Complete selection criteria and physical standards for Pakistan Army commissioned officer entry.",
+    "contentUr": "پاک فوج میں آفیسرز کی بھرتی کا فزیکل اور انیشل ٹیسٹ کا گائیڈ۔",
+    "relatedSlugs": [
+        "/jobs/latest-govt-jobs-pakistan",
+        "/jobs/ppsc-jobs-2026"
+    ]
+},
+  "punjab-health-department-jobs": {
+    "slug": "punjab-health-department-jobs",
+    "fullPath": "/jobs/punjab-health-department-jobs",
+    "categoryId": "jobs",
+    "titleEn": "Primary & Secondary Healthcare Punjab Jobs 2026: Doctors & Nurses",
+    "titleUr": "محکمہ صحت پنجاب نوکریاں 2026: میڈیکل آفیسر اور چارج نرس آن لائن فارم",
+    "metaDescriptionEn": "Primary & Secondary Healthcare Department Punjab jobs 2026. Online apply at pshealthpunjab.gop.pk, Medical Officer (BPS-17), Charge Nurse (BPS-16), and Allied Staff.",
+    "metaDescriptionUr": "پرائمری اینڈ سیکنڈری ہیلتھ کیئر ڈیپارٹمنٹ پنجاب میں نرسنگ اور ڈاکٹرز کی نئی نوکریاں اور آن لائن فارم۔",
+    "directAnswerEn": "Primary & Secondary Healthcare Department Punjab recruits Medical Officers (BPS-17), Women Medical Officers, and Charge Nurses (BPS-16) online at pshealthpunjab.gop.pk or via PPSC. Applications require valid PMDC/PNC registration.",
+    "directAnswerUr": "پنجاب ہیلتھ ڈیپارٹمنٹ میں ڈاکٹرز اور نرسوں کی بھرتی pshealthpunjab.gop.pk پورٹل پر ہوتی ہے۔ PMDC یا PNC رجسٹریشن لازمی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "P&SHD Punjab Portal",
+        "url": "https://pshealthpunjab.gop.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Healthcare Recruitment Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Departmental Online Application",
+            "serviceUr": "محکمہ صحت آن لائن فارم",
+            "normal": "FREE / PPSC Fee",
+            "urgent": "P&SHD Portal",
+            "executive": "Online Registration"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Check PMDC / PNC Registration Status",
+            "titleUr": "پی ایم ڈی سی یا نرسنگ کونسل رجسٹریشن جانچیں",
+            "detailEn": "Ensure your PMDC (PMC) or Pakistan Nursing Council license is valid.",
+            "detailUr": "اپنا اصل میڈیکل یا نرسنگ کونسل کا لائسنس ساتھ رکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Are health department ad-hoc jobs eligible for regularisation?",
+            "questionUr": "کیا ایڈہاک پر بھرتی ڈاکٹرز اور نرسیں ریگولر ہوتی ہیں؟",
+            "answerEn": "Yes, ad-hoc doctors and nurses regularise their services upon passing PPSC screening tests.",
+            "answerUr": "جی ہاں! پی پی ایس سی ٹیسٹ پاس کرنے کے بعد سروس ریگولر کر دی جاتی ہے۔"
+        }
+    ],
+    "contentEn": "Punjab Health Department doctor, nurse, and paramedic recruitment guidelines.",
+    "contentUr": "پنجاب کے سرکاری ہسپتالوں میں میڈیکل سٹاف کی بھرتی کا طریقہ۔",
+    "relatedSlugs": [
+        "/jobs/latest-govt-jobs-pakistan",
+        "/jobs/ppsc-jobs-2026"
+    ]
+},
+  "punjab-green-tractor-scheme-2026": {
+    "slug": "punjab-green-tractor-scheme-2026",
+    "fullPath": "/loans/punjab-green-tractor-scheme-2026",
+    "categoryId": "loans",
+    "titleEn": "CM Punjab Green Tractor Scheme 2026: 10 Lakh PKR Subsidy Online Apply",
+    "titleUr": "وزیراعلیٰ پنجاب گرین ٹریکٹر سکیم 2026: 10 لاکھ روپے سبسڈی آن لائن فارم",
+    "metaDescriptionEn": "CM Punjab Green Tractor Scheme 2026 online application at gts.punjab.gov.pk. 10 Lakh PKR subsidy per tractor, land eligibility (6 to 50 acres), and balloting.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب کی کاشتکاروں کے لیے 10 لاکھ روپے کی سبسڈی ٹریکٹر سکیم۔ آن لائن فارم gts.punjab.gov.pk اور 6 سے 50 ایکڑ رقبہ کی شرط۔",
+    "directAnswerEn": "Chief Minister Punjab Green Tractor Scheme provides a massive flat subsidy of PKR 1,000,000 (10 Lakhs) per tractor for farmers owning between 6 to 50 acres of agricultural land in Punjab. Apply online at gts.punjab.gov.pk.",
+    "directAnswerUr": "گرین ٹریکٹر سکیم کے تحت 6 سے 50 ایکڑ زرعی زمین کے مالک کسانوں کو 10 لاکھ روپے کی نقد سبسڈی دی جاتی ہے۔ آن لائن اپلائی gts.punjab.gov.pk پر کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Punjab Agriculture Department Portal",
+        "url": "https://gts.punjab.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Agricultural Schemes Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Green Tractor Subsidy Grant",
+            "serviceUr": "گرین ٹریکٹر سبسڈی گرانٹ",
+            "normal": "PKR 1,000,000 Subsidy",
+            "urgent": "Balloting Winner",
+            "executive": "Govt Subsidized"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Verify Agricultural Land Record (PLRA)",
+            "titleUr": "زرعی رقبہ کی تصدیق (PLRA)",
+            "detailEn": "Ensure land ownership (6 to 50 acres) is recorded under your CNIC in Land Records.",
+            "detailUr": "پٹوار خانے یا کمپیوٹرائزڈ لینڈ ریکارڈز سے اپنے 6 سے 50 ایکڑ کی فرد لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "How is the winner selected for Green Tractor Scheme?",
+            "questionUr": "گرین ٹریکٹر سکیم کے کامیاب امیدوار کا انتخاب کیسے ہوتا ہے؟",
+            "answerEn": "Selection is done via transparent computerized electronic balloting per district.",
+            "answerUr": "شفاف ترین کمپیوٹرائزڈ قرعہ اندازی کے ذریعے ضلع وائز انتخاب ہوتا ہے۔"
+        }
+    ],
+    "contentEn": "Punjab Agriculture Department Green Tractor subsidy application details and balloting schedule.",
+    "contentUr": "کاشتکاروں کے لیے حکومت پنجاب کی 10 لاکھ کی ٹریکٹر سبسڈی سکیم۔",
+    "relatedSlugs": [
+        "/loans/apni-chhat-apna-ghar",
+        "/loans/pm-youth-loan-scheme"
+    ]
+},
+  "sbp-asaan-mobile-account-guide": {
+    "slug": "sbp-asaan-mobile-account-guide",
+    "fullPath": "/loans/sbp-asaan-mobile-account-guide",
+    "categoryId": "loans",
+    "titleEn": "State Bank Asaan Mobile Account (AMA) Guide: Open Bank Account via *2262#",
+    "titleUr": "سٹیٹ بینک آسان موبائل اکاؤنٹ (*2262#) آن لائن گائیڈ 2026",
+    "metaDescriptionEn": "How to open State Bank Asaan Mobile Account (AMA) instantly without internet by dialing *2262# from any mobile phone. Zero fee, instant digital banking.",
+    "metaDescriptionUr": "سٹیٹ بینک آف پاکستان کی ہدایت پر بغیر انٹرنیٹ کے *2262# کوڈ ملا کر منٹوں میں آسان بینک اکاؤنٹ کھولنے کا طریقہ۔",
+    "directAnswerEn": "State Bank of Pakistan's Asaan Mobile Account (AMA) platform lets any mobile phone user open an instant digital bank account without internet by dialing *2262# on any SIM card. Choose your bank, enter CNIC issuance date, and start sending/receiving money.",
+    "directAnswerUr": "بغیر انٹرنیٹ کے کسی بھی موبائل سے *2262# کوڈ ڈائل کر کے منٹوں میں آسان بینک اکاؤنٹ بنائیں۔ اپنی مرضی کا بینک منتخب کر کے شناختی کارڈ کی تاریخ اجراء درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "State Bank of Pakistan AMA Gateway",
+        "url": "https://www.sbp.org.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Financial Inclusion Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "AMA Account Opening (*2262#)",
+            "serviceUr": "آسان موبائل اکاؤنٹ فیس",
+            "normal": "100% FREE",
+            "urgent": "Instant Setup",
+            "executive": "Zero Fee"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Dial *2262# from Mobile Phone",
+            "titleUr": "موبائل فون سے *2262# کوڈ ڈائل کریں",
+            "detailEn": "Dial USSD code *2262# from any Jazz, Telenor, Zong, or Ufone SIM card registered on your CNIC.",
+            "detailUr": "اپنی ہی شناختی کارڈ پر رجسٹرڈ سم سے *2262# ملائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Is smartphone internet required for *2262# account?",
+            "questionUr": "کیا آسان موبائل اکاؤنٹ کے لیے سمارٹ فون یا انٹرنیٹ چاہیے؟",
+            "answerEn": "No! Works on basic feature keypad phones via USSD menu without internet.",
+            "answerUr": "نہیں! یہ تمام سادہ فونز پر بغیر انٹرنیٹ کے کام کرتا ہے۔"
+        }
+    ],
+    "contentEn": "State Bank financial inclusion guide for zero-cost instant AMA digital bank accounts.",
+    "contentUr": "بغیر بینک گئے اور بغیر انٹرنیٹ کے ڈیجیٹل اکاؤنٹ کھولنے کی آسان ترین معلومات۔",
+    "relatedSlugs": [
+        "/loans/asaan-karobar-scheme",
+        "/loans/pm-youth-loan-scheme"
+    ]
+},
+  "akhuwat-interest-free-loan-application": {
+    "slug": "akhuwat-interest-free-loan-application",
+    "fullPath": "/loans/akhuwat-interest-free-loan-application",
+    "categoryId": "loans",
+    "titleEn": "Akhuwat Interest-Free Loan Application Guide 2026 (50k to 5 Lakhs)",
+    "titleUr": "اخوت ہاؤسنگ و بزنس بلا سود قرضہ آن لائن گائیڈ 2026 (50 ہزار سے 5 لاکھ)",
+    "metaDescriptionEn": "Apply for Akhuwat Foundation interest-free loans (0% Riba) for small business & house construction up to PKR 500,000. Branch application form & rules.",
+    "metaDescriptionUr": "اخوت فاؤنڈیشن کا بلا سود قرضہ آن لائن اور برانچ فارم۔ 50,000 سے 5 لاکھ روپے تک بلا سود کاروبار اور مکان کی تعمیر۔",
+    "directAnswerEn": "Akhuwat Islamic Microfinance provides 100% interest-free loans (0% Riba) ranging from PKR 50,000 to PKR 500,000 for small shopkeepers, female entrepreneurs, and home construction. Apply at any local Akhuwat branch with CNIC and guarantor.",
+    "directAnswerUr": "اخوت فاؤنڈیشن 50,000 سے 5 لاکھ روپے تک کا 100 فیصد بلا سود قرضہ فراہم کرتی ہے۔ اپلائی کے لیے قریبی اخوت برانچ میں فارم جمع کروائیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Akhuwat Islamic Microfinance",
+        "url": "https://akhuwat.org.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Microfinance Assistance Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Akhuwat Interest-Free Loan",
+            "serviceUr": "اخوت بلا سود قرضہ",
+            "normal": "0% Interest",
+            "urgent": "Branch Application",
+            "executive": "Zero Riba"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Visit Nearest Akhuwat Branch",
+            "titleUr": "قریبی اخوت اسلامک مائیکرو فنانس برانچ جائیں",
+            "detailEn": "Obtain free application form at your local Akhuwat branch office.",
+            "detailUr": "مقامی اخوت برانچ سے فارم حاصل کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Does Akhuwat charge any interest or service fee?",
+            "questionUr": "کیا اخوت فاؤنڈیشن کوئی سود یا سروس چارجز لیتی ہے؟",
+            "answerEn": "No, Akhuwat operates strictly on Islamic Qarz-e-Hasana principles with 0% interest.",
+            "answerUr": "جی نہیں! اخوت کا سسٹم 100 فیصد قرض حسانہ پر مبنی ہے۔"
+        }
+    ],
+    "contentEn": "Akhuwat Islamic Microfinance zero-interest business loan form instructions.",
+    "contentUr": "اخوت فاؤنڈیشن سے بلا سود قرضہ حاصل کرنے کا مکمل شرعی گائیڈ۔",
+    "relatedSlugs": [
+        "/loans/asaan-karobar-scheme",
+        "/loans/apni-chhat-apna-ghar"
+    ]
+},
+  "hbfc-ghar-pakistan-housing-loan": {
+    "slug": "hbfc-ghar-pakistan-housing-loan",
+    "fullPath": "/loans/hbfc-ghar-pakistan-housing-loan",
+    "categoryId": "loans",
+    "titleEn": "HBFC Ghar Pakistan Housing Scheme 2026: Home Construction Loan",
+    "titleUr": "ایچ بی ایف سی (HBFC) گھر پاکستان ہاؤسنگ لون 2026",
+    "metaDescriptionEn": "Apply for House Building Finance Company (HBFC) Ghar Pakistan Scheme up to PKR 4.5 Million. Subsidized mortgage financing, monthly installment calculator, and forms.",
+    "metaDescriptionUr": "ہاؤس بلڈنگ فنانس کارپوریشن کے تحت 45 لاکھ روپے تک کا ہاؤسنگ فنانسنگ قرضہ اور ماہانہ اقساط۔",
+    "directAnswerEn": "House Building Finance Company (HBFC) offers the 'Ghar Pakistan Scheme' providing up to PKR 4,500,000 (4.5 Million) home construction and home purchase financing over 3 to 20 years with fixed discounted mark-up options. Apply at hbfc.com.pk.",
+    "directAnswerUr": "ایچ بی ایف سی گھر پاکستان سکیم کے تحت 45 لاکھ روپے تک مکان کی تعمیر یا خریداری کے لیے 20 سالہ آسان اقساط پر قرضہ فراہم کیا جاتا ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "House Building Finance Company Portal",
+        "url": "https://hbfc.com.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Mortgage Services Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "HBFC Home Financing (Up to 4.5M)",
+            "serviceUr": "ایچ بی ایف سی ہاؤسنگ قرضہ",
+            "normal": "Fixed Subsidized Rate",
+            "urgent": "Up to 20 Yrs",
+            "executive": "HBFC Branch"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Calculate Monthly Repayment at HBFC",
+            "titleUr": "ایچ بی ایف سی پورٹل پر اقساط جانچیں",
+            "detailEn": "Visit hbfc.com.pk and use home loan calculator for 10, 15, or 20-year term.",
+            "detailUr": "hbfc.com.pk پر جا کر ماہانہ قسط کیلکولیٹ کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the maximum repayment period for HBFC home loan?",
+            "questionUr": "ایچ بی ایف سی ہاؤسنگ لون کی زیادہ سے زیادہ مدت کتنی ہے؟",
+            "answerEn": "HBFC loans can be repaid over a flexible 3 to 20-year tenure.",
+            "answerUr": "قرضے کی واپسی کے لیے 3 سے 20 سال کی لچکدار مدت ملتی ہے۔"
+        }
+    ],
+    "contentEn": "HBFC Pakistan home construction and apartment purchase mortgage scheme details.",
+    "contentUr": "ایچ بی ایف سی سے سستا مکان بنانے کا آن لائن فارم اور طریقہ۔",
+    "relatedSlugs": [
+        "/loans/apni-chhat-apna-ghar",
+        "/loans/mera-ghar-mera-ashiana"
+    ]
+},
+  "benazir-nashonuma-program-guide": {
+    "slug": "benazir-nashonuma-program-guide",
+    "fullPath": "/welfare/benazir-nashonuma-program-guide",
+    "categoryId": "welfare",
+    "titleEn": "Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support",
+    "titleUr": "بے نظیر نشوونما پروگرام 2026: 2500 روپے ماہانہ وظیفہ و ہیلتھ گائیڈ",
+    "metaDescriptionEn": "Benazir Nashonuma Program eligibility, registration at Tehsil Nashonuma Centers, PKR 2,000 (boy) / PKR 2,500 (girl) monthly stipend for pregnant mothers & infants.",
+    "metaDescriptionUr": "حاملہ خواتین اور 2 سال سے کم عمر بچوں کے لیے بے نظیر نشوونما 2500 روپے ماہانہ وظیفہ اور مفت غذائی پیکٹ۔",
+    "directAnswerEn": "Benazir Nashonuma Program provides specialized health and cash support for pregnant & lactating mothers and infants under 2 years. Beneficiaries receive PKR 2,000 monthly for a boy child and PKR 2,500 monthly for a girl child, along with free specialized nutritious food packets at DHQ/THQ Nashonuma Centers.",
+    "directAnswerUr": "بے نظیر نشوونما پروگرام کے تحت حاملہ خواتین اور 2 سال تک کے بچوں کی ماؤں کو لڑکے کی پیدائش پر 2000 اور لڑکی پر 2500 روپے ماہانہ ملتے ہیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "BISP Nashonuma Directorate",
+        "url": "https://bisp.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Maternal Health & Welfare Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Monthly Girl Child Cash Grant",
+            "serviceUr": "لڑکی کی پیدائش پر ماہانہ وظیفہ",
+            "normal": "PKR 2,500 / month",
+            "urgent": "DHQ Nashonuma Center",
+            "executive": "100% FREE"
+        },
+        {
+            "serviceEn": "Monthly Boy Child Cash Grant",
+            "serviceUr": "لڑکے کی پیدائش پر ماہانہ وظیفہ",
+            "normal": "PKR 2,000 / month",
+            "urgent": "DHQ Nashonuma Center",
+            "executive": "100% FREE"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Visit DHQ / THQ Hospital Nashonuma Desk",
+            "titleUr": "ہسپتال کے بے نظیر نشوونما ڈیسک پر جائیں",
+            "detailEn": "Bring original CNIC and pregnancy immunisation card to closest Nashonuma Center.",
+            "detailUr": "اصل شناختی کارڈ لے کر قریبی سرکاری ہسپتال کے نشوونما سینٹر جائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Who can register for Benazir Nashonuma Program?",
+            "questionUr": "بے نظیر نشوونما پروگرام میں کون رجسٹر ہو سکتا ہے؟",
+            "answerEn": "BISP Kafaalat beneficiary mothers who are pregnant or have infants under 24 months.",
+            "answerUr": "بی آئی ایس پی کی اہلیت رکھنے والی حاملہ خواتین اور 2 سال سے چھوٹے بچے کی مائیں۔"
+        }
+    ],
+    "contentEn": "Complete rules for claiming monthly health cash grants under Benazir Nashonuma initiative.",
+    "contentUr": "بچوں کی نشوونما اور ماؤں کی صحت کے لیے 2500 روپے وظیفہ کا گائیڈ۔",
+    "relatedSlugs": [
+        "/welfare/bisp-eligibility-check-by-cnic",
+        "/welfare/taleemi-wazaif"
+    ]
+},
+  "punjab-himmat-card-registration": {
+    "slug": "punjab-himmat-card-registration",
+    "fullPath": "/welfare/punjab-himmat-card-registration",
+    "categoryId": "welfare",
+    "titleEn": "CM Punjab Himmat Card Scheme 2026: 10,500 PKR Quarterly Aid",
+    "titleUr": "وزیراعلیٰ پنجاب ہمت کارڈ سکیم 2026: 10,500 روپے سہ ماہی وظیفہ",
+    "metaDescriptionEn": "Himmat Card Scheme 2026 online registration at swd.punjab.gov.pk. PKR 10,500 quarterly financial assistance for non-working disabled individuals in Punjab.",
+    "metaDescriptionUr": "مخصوص افراد کے لیے وزیراعلیٰ پنجاب ہمت کارڈ 10,500 روپے سہ ماہی امداد اور نادرا معذوری سرٹیفکیٹ کا طریقہ۔",
+    "directAnswerEn": "Chief Minister Punjab Himmat Card scheme provides a quarterly financial stipend of PKR 10,500 for non-working certified disabled persons (differently-abled citizens) in Punjab holding a NADRA Special Disability CNIC (with wheel-chair logo). Apply via Social Welfare Department.",
+    "directAnswerUr": "پنجاب ہمت کارڈ کے تحت معذور افراد (ویہل چیئر لوگو والے شناختی کارڈ ہولڈرز) کو 10,500 روپے سہ ماہی قسط بینک آف پنجاب کارڈ سے ملتی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Punjab Social Welfare Department",
+        "url": "https://swd.punjab.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Special Needs Assistance Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Himmat Card Quarterly Stipend",
+            "serviceUr": "هپمت کارڈ سہ ماہی وظیفہ",
+            "normal": "PKR 10,500 / 3 Months",
+            "urgent": "BOP Himmat ATM Card",
+            "executive": "100% FREE"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Obtain NADRA Special CNIC with Disability Logo",
+            "titleUr": "نادرا معذوری شناختی کارڈ بنوائیں",
+            "detailEn": "Visit Social Welfare Board for Medical Disability Certificate and update CNIC at NADRA.",
+            "detailUr": "ڈسٹرکٹ میڈیکل بورڈ سے معذوری سرٹیفکیٹ لے کر نادرا سے لوگو والا کارڈ لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Where can I collect Himmat Card cash?",
+            "questionUr": "ہمت کارڈ کی رقم کہاں سے ملے گی؟",
+            "answerEn": "Collect cash via Bank of Punjab (BOP) Himmat ATM Card from any BOP ATM.",
+            "answerUr": "بینک آف پنجاب کے اے ٹی ایم کارڈ سے رقم حاصل کریں۔"
+        }
+    ],
+    "contentEn": "CM Punjab Himmat Card scheme eligibility, medical board certification, and ATM card guide.",
+    "contentUr": "پنجاب میں معذور افراد کے لیے 10,500 روپے سہ ماہی امداد کا مکمل طریقہ۔",
+    "relatedSlugs": [
+        "/welfare/bisp-eligibility-check-by-cnic",
+        "/welfare/sehat-card-eligibility-check"
+    ]
+},
+  "kisan-card-punjab-apply-online": {
+    "slug": "kisan-card-punjab-apply-online",
+    "fullPath": "/welfare/kisan-card-punjab-apply-online",
+    "categoryId": "welfare",
+    "titleEn": "CM Punjab Kisan Card Scheme 2026: 1.5 Lakh PKR Interest-Free Credit",
+    "titleUr": "کسان کارڈ پنجاب 2026: 1.5 لاکھ روپے بلا سود زرعی قرضہ آن لائن فارم",
+    "metaDescriptionEn": "Kisan Card Punjab 2026 apply online at kisancard.punjab.gov.pk. PKR 150,000 interest-free agricultural credit per season for seed, fertilizer, and pesticides.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب کسان کارڈ آن لائن اپلائی، 1.5 لاکھ روپے بلا سود کھاد بیج قرضہ، رجسٹریشن SMS 8070 اور اہلیت۔",
+    "directAnswerEn": "Chief Minister Punjab Kisan Card scheme provides PKR 150,000 (1.5 Lakhs) per crop season in interest-free digital credit for farmers owning up to 12.5 acres of land. Use card at registered agro-dealers for purchasing DAP, Urea fertilizer, seeds, and pesticides. Apply by sending CNIC via SMS to 8070 or at kisancard.punjab.gov.pk.",
+    "directAnswerUr": "کسان کارڈ کے تحت 12.5 ایکڑ تک کے کسانوں کو 1.5 لاکھ روپے کا بلا سود زرعی قرضہ ملتا ہے تاکہ وہ کھاد اور بیج خرید سکیں۔ 8070 پر ایس ایم ایس بھیجیں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Punjab Kisan Card Gateway",
+        "url": "https://kisancard.punjab.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Agriculture Welfare Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Kisan Card Crop Credit (1.5 Lakhs)",
+            "serviceUr": "زرعی کریڈٹ کارڈ (1.5 لاکھ)",
+            "normal": "0% Interest",
+            "urgent": "Registered Agro-Dealers",
+            "executive": "SMS 8070"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Send CNIC via SMS to 8070",
+            "titleUr": "8070 پر شناختی کارڈ بھیجیں",
+            "detailEn": "Send your 13-digit CNIC without dashes to 8070 from your registered SIM card.",
+            "detailUr": "اپنا شناختی کارڈ نمبر 8070 پر ایس ایم ایس کریں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "What is the land limit for Kisan Card eligibility?",
+            "questionUr": "کسان کارڈ کی اہلیت کے لیے زمین کی کتنی حد ہے؟",
+            "answerEn": "Farmers owning up to 12.5 acres of agricultural land registered in PLRA.",
+            "answerUr": "12.5 ایکڑ تک زرعی زمین کے مالک تمام کسان اہل ہیں۔"
+        }
+    ],
+    "contentEn": "Official CM Punjab Kisan Card registration rules and fertilizer purchase instructions.",
+    "contentUr": "کسان کارڈ کے ذریعے سستی کھاد اور بیج خریدنے کا مکمل گائیڈ۔",
+    "relatedSlugs": [
+        "/loans/punjab-green-tractor-scheme-2026",
+        "/welfare/bisp-eligibility-check-by-cnic"
+    ]
+},
+  "bisp-nser-survey-center-locations": {
+    "slug": "bisp-nser-survey-center-locations",
+    "fullPath": "/welfare/bisp-nser-survey-center-locations",
+    "categoryId": "welfare",
+    "titleEn": "BISP NSER Dynamic Survey Tehsil Centers & In-Person Registration",
+    "titleUr": "بی آئی ایس پی (NSER) تحصیل سروے سینٹر لوکیشنز اور بائیو میٹرک 2026",
+    "metaDescriptionEn": "Find local BISP Tehsil Registration Desk locations for NSER dynamic survey updates. Required documents, counter timings, token system, and scam protection.",
+    "metaDescriptionUr": "تمام اضلاع اور تحصیلوں میں واقع بی آئی ایس پی ڈائنامک سروے دفاتر، ٹائم، ضروری کاغذات اور مفت سروے کا طریقہ۔",
+    "directAnswerEn": "To complete or update your family's NSER Dynamic Survey for BISP Kafaalat, visit your local BISP Tehsil Registration Desk operating inside the Assistant Commissioner / Tehsil Office. Bring original female CNIC, children B-Forms, and utility bill. Survey registration is 100% FREE.",
+    "directAnswerUr": "بی آئی ایس پی این ایس ای آر سروے کروانے کے لیے اپنی تحصیل میں واقع بی آئی ایس پی دفتر جائیں۔ سروے رجسٹریشن بالکل مفت ہوتی ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "BISP Tehsil Center Directory",
+        "url": "https://bisp.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "NSER Survey Operations Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Tehsil NSER Survey Registration",
+            "serviceUr": "تحصیل سروے رجسٹریشن",
+            "normal": "100% FREE",
+            "urgent": "Tehsil Desk Token",
+            "executive": "No Charge Ever"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Locate Local Tehsil BISP Office",
+            "titleUr": "مقامی تحصیل بی آئی ایس پی دفتر کا پتہ دیکھیں",
+            "detailEn": "Visit the BISP Registration Desk situated at your Tehsil Assistant Commissioner Complex.",
+            "detailUr": "اپنی تحصیل کے اسسٹنٹ کمشنر کمپلیکس میں بی آئی ایس پی کاؤنٹر جائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Should I pay any fee to agents outside the BISP Tehsil center?",
+            "questionUr": "کیا بی آئی ایس پی سینٹر کے باہر کسی ایجنٹ کو فیس دینی چاہیے؟",
+            "answerEn": "NO! BISP survey is strictly 100% FREE. Report illegal agents immediately to toll-free helpline 0800-26477.",
+            "answerUr": "جی نہیں! سروے بالکل مفت ہے، کسی ایجنٹ کو پیسے نہ دیں۔"
+        }
+    ],
+    "contentEn": "Detailed Tehsil desk appointment procedure for BISP NSER survey updates.",
+    "contentUr": "بی آئی ایس پی ڈائنامک سروے دفاتر کی لوکیشنز اور ان پرسن بائیو میٹرک۔",
+    "relatedSlugs": [
+        "/welfare/pser-survey-registration",
+        "/welfare/bisp-eligibility-check-by-cnic"
+    ]
+},
+  "islamabad-traffic-police-echallan": {
+    "slug": "islamabad-traffic-police-echallan",
+    "fullPath": "/traffic/islamabad-traffic-police-echallan",
+    "categoryId": "traffic",
+    "titleEn": "Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026",
+    "titleUr": "اسلام آباد ٹریفک پولیس (ICT) ای چالان و لائسنس گائیڈ 2026",
+    "metaDescriptionEn": "Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.",
+    "metaDescriptionUr": "اسلام آباد کیپیٹل ٹریفک پولیس آن لائن ای چالان چیک، 1Link ایپ سے ادائیگی اور اسلام آباد ڈرائیونگ لائسنس۔",
+    "directAnswerEn": "Islamabad Capital Territory (ICT) Traffic Police e-challans can be checked online by entering your Vehicle Registration Number at islamabadtraffic.gov.pk or via the ICT Smart City App. Pay fine instantly via 1Link PSID or JazzCash.",
+    "directAnswerUr": "اسلام آباد کا ای چالان دیکھنے کے لیے اپنا گاڑی نمبر islamabadtraffic.gov.pk پر درج کریں اور 1Link یا جاز کیش سے فیس ادا کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "ICT Traffic Police Gateway",
+        "url": "https://islamabadtraffic.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Capital Traffic Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "ICT E-Challan Lookup",
+            "serviceUr": "اسلام آباد ای چالان پورٹل",
+            "normal": "FREE",
+            "urgent": "Instant View",
+            "executive": "Online Payment"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Vehicle Registration on ICT Portal",
+            "titleUr": "اسلام آباد پورٹل پر گاڑی کا نمبر لکھیں",
+            "detailEn": "Visit islamabadtraffic.gov.pk, enter registration number, and view violation details.",
+            "detailUr": "پورٹل پر گاڑی نمبر درج کر کے غیر ادا شدہ چالان دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "How to pay ICT Islamabad e-challan via mobile app?",
+            "questionUr": "اسلام آباد کا ای چالان موبائل ایپ سے کیسے ادا کریں؟",
+            "answerEn": "Use JazzCash / Easypaisa → Select 1Bill Govt Payments → Enter 18-digit PSID.",
+            "answerUr": "موبائل ایپ میں 1Bill سلیکٹ کر کے 18 ہندسوں کا PSID درج کریں۔"
+        }
+    ],
+    "contentEn": "Islamabad Traffic Police e-challan checking and online DLIMS guidelines.",
+    "contentUr": "وفاقی دارالحکومت اسلام آباد میں ای چالان اور گاڑی فائن کا حل۔",
+    "relatedSlugs": [
+        "/traffic/e-challan-check-online",
+        "/traffic/driving-license-guide"
+    ]
+},
+  "sindh-driving-license-online-apply": {
+    "slug": "sindh-driving-license-online-apply",
+    "fullPath": "/traffic/sindh-driving-license-online-apply",
+    "categoryId": "traffic",
+    "titleEn": "Sindh Driving License Online Guide 2026: DLIMS Karachi & Appointment",
+    "titleUr": "سندھ ڈرائیونگ لائسنس آن لائن اپلائی 2026: کراچی DLIMS پورٹل",
+    "metaDescriptionEn": "Apply online for Sindh Driving License (Karachi, Hyderabad, Sukkur) via dlims.sindh.gov.pk. Learner permit fee, appointment booking, and license renewal.",
+    "metaDescriptionUr": "سندھ پولیس کراچی آن لائن ڈرائیونگ لائسنس لرنر پرمٹ، اپائنٹمنٹ بکنگ اور رینیول فیس کی مکمل معلومات۔",
+    "directAnswerEn": "To get a Driving License in Karachi or Sindh, book an online appointment at dlims.sindh.gov.pk or visit Clifton / Nazimabad DL Branch. Learner permit fee is PKR 500 (valid for 6 months). Permanent 5-year license fee is approx PKR 1,850 to PKR 2,500.",
+    "directAnswerUr": "سندھ (کراچی و حیدرآباد) میں ڈرائیونگ لائسنس حاصل کرنے کے لیے dlims.sindh.gov.pk پر آن لائن وقت بک کریں۔ لرنر پرمٹ فیس 500 روپے ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "Sindh Police DLIMS Portal",
+        "url": "https://dlims.sindh.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Sindh Licensing Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "Sindh Learner Permit (6 Months)",
+            "serviceUr": "سندھ لرنر پرمٹ فیس",
+            "normal": "PKR 500",
+            "urgent": "DL Branch Visit",
+            "executive": "Online Appointment"
+        },
+        {
+            "serviceEn": "Permanent License (5 Years)",
+            "serviceUr": "پکا لائسنس فیس (5 سال)",
+            "normal": "PKR 1,850",
+            "urgent": "Driving Test",
+            "executive": "DL Branch"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Book Appointment on Sindh DLIMS Portal",
+            "titleUr": "سندھ ڈی ایل آئی ایم ایس پر ٹائم بک کریں",
+            "detailEn": "Visit dlims.sindh.gov.pk, select branch (Clifton/Nazimabad), and choose appointment slot.",
+            "detailUr": "dlims.sindh.gov.pk پر جا کر قریبی برانچ کی اپائنٹمنٹ لیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can Punjab DLIMS license be used in Sindh?",
+            "questionUr": "کیا پنجاب کا ڈرائیونگ لائسنس سندھ میں چلتا ہے؟",
+            "answerEn": "Yes, all provincial computerised driving licenses are legally valid nationwide across Pakistan.",
+            "answerUr": "جی ہاں! پاکستان کے تمام صوبوں کا لائسنس پورے ملک میں کارآمد ہے۔"
+        }
+    ],
+    "contentEn": "Karachi and Sindh Police driving license online application and branch appointment instructions.",
+    "contentUr": "کراچی اور سندھ کے تمام اضلاع کے لیے آن لائن لائسنس پورٹل۔",
+    "relatedSlugs": [
+        "/traffic/driving-license-guide",
+        "/traffic/token-tax-check"
+    ]
+},
+  "m-tag-motorway-registration-one-network": {
+    "slug": "m-tag-motorway-registration-one-network",
+    "fullPath": "/traffic/m-tag-motorway-registration-one-network",
+    "categoryId": "traffic",
+    "titleEn": "M-Tag Motorway Registration Guide 2026: One Network & Toll Recharge",
+    "titleUr": "ایم ٹیگ (M-Tag) موٹروے آن لائن رجسٹریشن اور ریچارج گائیڈ 2026",
+    "metaDescriptionEn": "How to get mandatory M-Tag sticker for Motorway travel (M-1, M-2, M-3, M-4, M-5). Toll plaza booth locations, CNIC registration, and One Network app recharge.",
+    "metaDescriptionUr": "موٹروے پر سفر کے لیے ایم ٹیگ چسپاں کروانے کا طریقہ، ٹول پلازہ بوتھ، 100 فیصد مفت رجسٹریشن اور آن لائن ریچارج۔",
+    "directAnswerEn": "M-Tag is mandatory for all vehicles travelling on Pakistan Motorways (M-1, M-2, M-3, M-4, M-5). Visit any Motorway Toll Plaza M-Tag Customer Center with your vehicle, CNIC, and vehicle registration book. M-Tag issuance is 100% FREE. Recharge via One Network mobile app or JazzCash.",
+    "directAnswerUr": "موٹروے پر سفر کے لیے ایم ٹیگ لگانا لازمی ہے۔ ٹول پلازہ پر گاڑی، شناختی کارڈ اور سمارٹ کارڈ کے ساتھ جائیں۔ ایم ٹیگ بالکل مفت لگایا جاتا ہے۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "One Network / NHA M-Tag Gateway",
+        "url": "https://m-tag.one-network.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "Motorway Infrastructure Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "M-Tag Sticker Issuance",
+            "serviceUr": "ایم ٹیگ سٹیکر جاری کرنا",
+            "normal": "100% FREE",
+            "urgent": "Toll Plaza Booth",
+            "executive": "Instant Activation"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Drive Vehicle to Motorway Toll Plaza M-Tag Booth",
+            "titleUr": "گاڑی موٹروے ایم ٹیگ کاؤنٹر پر لے جائیں",
+            "detailEn": "Stop at M-Tag customer center before entering Motorway.",
+            "detailUr": "موٹروے پر داخل ہونے سے پہلے ایم ٹیگ بوتھ پر لائیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I enter Motorway without an M-Tag sticker?",
+            "questionUr": "کیا بغیر ایم ٹیگ موٹروے پر سفر ہو سکتا ہے؟",
+            "answerEn": "Un-tagged vehicles incur heavy fines at entry toll plazas and face cash toll delays.",
+            "answerUr": "بغیر ایم ٹیگ گاڑیوں پر ٹول پلازہ پر جرمانہ عائد ہوتا ہے۔"
+        }
+    ],
+    "contentEn": "National Highway Authority M-Tag mandatory rules and digital toll payment tutorial.",
+    "contentUr": "این ایچ اے کے قوانین کے مطابق ایم ٹیگ لگوانے اور موبائل سے بیلنس ریچارج کا گائیڈ۔",
+    "relatedSlugs": [
+        "/traffic/token-tax-check",
+        "/traffic/e-challan-check-online"
+    ]
+},
+  "kpk-excise-vehicle-verification": {
+    "slug": "kpk-excise-vehicle-verification",
+    "fullPath": "/traffic/kpk-excise-vehicle-verification",
+    "categoryId": "traffic",
+    "titleEn": "KPK Excise Online Vehicle Verification & Token Tax Guide 2026",
+    "titleUr": "کے پی کے (KPK) ایکسائز گاڑیوں کی آن لائن تصدیق و ٹوکن ٹیکس 2026",
+    "metaDescriptionEn": "Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.",
+    "metaDescriptionUr": "پشاور اور کے پی کے کی گاڑیوں کی آن لائن تصدیق، مالک کا نام اور ایکسائز ٹوکن ٹیکس ادا کرنے کا طریقہ۔",
+    "directAnswerEn": "To verify vehicle ownership or pay token tax online in Khyber Pakhtunkhwa (Peshawar, Mardan, Abbottabad), enter your vehicle registration number at excise.kp.gov.pk or download the official KPK Zameen Zoya app. Pay tax via Easypaisa or JazzCash.",
+    "directAnswerUr": "کے پی کے کی گاڑی کی تصدیق اور ٹوکن ٹیکس کی ادائیگی کے لیے اپنا گاڑی نمبر excise.kp.gov.pk یا زمین زویا ایپ پر درج کریں۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+        "name": "KPK Excise & Taxation Portal",
+        "url": "https://excise.kp.gov.pk/"
+    },
+    "author": {
+        "name": "Editorial Team",
+        "role": "KPK Excise Desk"
+    },
+    "feeStructure": [
+        {
+            "serviceEn": "KPK Vehicle Lookup",
+            "serviceUr": "کے پی کے گاڑی آن لائن سرچ",
+            "normal": "FREE",
+            "urgent": "Instant Details",
+            "executive": "Official Site"
+        }
+    ],
+    "steps": [
+        {
+            "stepNumber": 1,
+            "titleEn": "Enter Registration Number on KPK Excise Site",
+            "titleUr": "کے پی کے ایکسائز ویب سائٹ پر نمبر لکھیں",
+            "detailEn": "Visit excise.kp.gov.pk and enter registration number (e.g., B-1234 or LEA-24-123).",
+            "detailUr": "پورٹل پر گاڑی نمبر درج کر کے مالک کا نام دیکھیں۔"
+        }
+    ],
+    "faqs": [
+        {
+            "questionEn": "Can I pay KPK token tax online from anywhere in Pakistan?",
+            "questionUr": "کیا کے پی کے کا ٹوکن ٹیکس آن لائن کہیں سے بھی ادا ہو سکتا ہے؟",
+            "answerEn": "Yes! Pay online via Easypaisa, JazzCash, or 1Link banking from any province.",
+            "answerUr": "جی ہاں! پاکستان بھر سے ایزی پیسہ یا بینک ایپ سے ادا ہو سکتا ہے۔"
+        }
+    ],
+    "contentEn": "Khyber Pakhtunkhwa Excise department online vehicle verification and smart card tracking.",
+    "contentUr": "خیبر پختونخوا ایکسائز پورٹل اور پشاور ڈرائیونگ لائسنس کی معلومات۔",
+    "relatedSlugs": [
+        "/traffic/token-tax-check",
+        "/traffic/vehicle-registration-transfer"
+    ]
+},
   "cnic-kaise-banaye": {
     "slug": "cnic-kaise-banaye",
     "fullPath": "/nadra/cnic-kaise-banaye",

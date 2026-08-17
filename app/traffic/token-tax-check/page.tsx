@@ -1,10 +1,19 @@
-'use client';
-
 import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
+import type { Metadata } from 'next';
 
-export default function TokenTaxPage() {
+export const metadata: Metadata = {
+  title: 'Vehicle Token Tax Check & Calculator 2026: Punjab, Sindh & ICT Rates',
+  description: 'Calculate and pay vehicle token tax online for cars and motorcycles in Punjab (ePay), Sindh Excise, and Islamabad. Lifetime token tax rates for under 1000cc engines.',
+  openGraph: {
+    title: 'Vehicle Token Tax Check & Calculator 2026: Punjab, Sindh & ICT Rates',
+    description: 'Calculate and pay vehicle token tax online for cars and motorcycles in Punjab (ePay), Sindh Excise, and Islamabad. Lifetime token tax rates for under 1000cc engines.',
+    url: 'https://pakistaninfohub.com/traffic/token-tax-check',
+  },
+};
+
+export default function Page() {
   const article = ARTICLES['token-tax-check'];
   return <ArticleLayout article={article} />;
 }

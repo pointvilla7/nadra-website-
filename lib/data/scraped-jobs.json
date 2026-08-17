@@ -1,8 +1,74 @@
 {
-  "lastUpdated": "2026-08-17T06:22:24.813Z",
+  "lastUpdated": "2026-08-17T06:39:32.193Z",
   "status": "healthy",
-  "totalJobs": 8,
+  "totalJobs": 10,
   "jobs": [
+    {
+      "jobId": "ppsc-live-1786948772780-1",
+      "title": "Assistant Director (BPS-17) - Punjab Police",
+      "department": "Punjab Public Service Commission (PPSC)",
+      "bps": "BPS-17",
+      "location": "Lahore, Punjab",
+      "deadline": "2026-09-05",
+      "applyUrl": "https://www.ppsc.gop.pk/",
+      "source": "PPSC Official Portal",
+      "updatedAt": "2026-08-17T06:39:32.193Z"
+    },
+    {
+      "jobId": "fpsc-live-1786948773245-2",
+      "title": "Inspector Customs / Intelligence Officer (BPS-16)",
+      "department": "Federal Public Service Commission (FPSC)",
+      "bps": "BPS-16",
+      "location": "Islamabad / All Pakistan",
+      "deadline": "2026-09-10",
+      "applyUrl": "https://fpsc.gov.pk/",
+      "source": "FPSC Official Portal",
+      "updatedAt": "2026-08-17T06:39:32.193Z"
+    },
+    {
+      "jobId": "ppsc-live-1786948724952-1",
+      "title": "Assistant Director (BPS-17) - Punjab Police",
+      "department": "Punjab Public Service Commission (PPSC)",
+      "bps": "BPS-17",
+      "location": "Lahore, Punjab",
+      "deadline": "2026-09-05",
+      "applyUrl": "https://www.ppsc.gop.pk/",
+      "source": "PPSC Official Portal",
+      "updatedAt": "2026-08-17T06:38:44.917Z"
+    },
+    {
+      "jobId": "fpsc-live-1786948724958-2",
+      "title": "Inspector Customs / Intelligence Officer (BPS-16)",
+      "department": "Federal Public Service Commission (FPSC)",
+      "bps": "BPS-16",
+      "location": "Islamabad / All Pakistan",
+      "deadline": "2026-09-10",
+      "applyUrl": "https://fpsc.gov.pk/",
+      "source": "FPSC Official Portal",
+      "updatedAt": "2026-08-17T06:38:44.917Z"
+    },
+    {
+      "jobId": "ppsc-live-1786948680036-1",
+      "title": "Assistant Director (BPS-17) - Punjab Police",
+      "department": "Punjab Public Service Commission (PPSC)",
+      "bps": "BPS-17",
+      "location": "Lahore, Punjab",
+      "deadline": "2026-09-05",
+      "applyUrl": "https://www.ppsc.gop.pk/",
+      "source": "PPSC Official Portal",
+      "updatedAt": "2026-08-17T06:38:00.013Z"
+    },
+    {
+      "jobId": "fpsc-live-1786948680043-2",
+      "title": "Inspector Customs / Intelligence Officer (BPS-16)",
+      "department": "Federal Public Service Commission (FPSC)",
+      "bps": "BPS-16",
+      "location": "Islamabad / All Pakistan",
+      "deadline": "2026-09-10",
+      "applyUrl": "https://fpsc.gov.pk/",
+      "source": "FPSC Official Portal",
+      "updatedAt": "2026-08-17T06:38:00.013Z"
+    },
     {
       "jobId": "ppsc-live-1786947745927-1",
       "title": "Assistant Director (BPS-17) - Punjab Police",
@@ -45,50 +111,6 @@
       "deadline": "2026-09-10",
       "applyUrl": "https://fpsc.gov.pk/",
       "source": "FPSC Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
-    },
-    {
-      "jobId": "nts-wapda-2026",
-      "title": "Junior Engineer (Electrical / Civil BPS-17)",
-      "department": "Water and Power Development Authority (WAPDA)",
-      "bps": "BPS-17",
-      "location": "WAPDA House Lahore",
-      "deadline": "2026-09-02",
-      "applyUrl": "https://www.nts.org.pk/",
-      "source": "NTS Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
-    },
-    {
-      "jobId": "ppsc-health-2026",
-      "title": "Medical Officer (BPS-17) - Primary Healthcare",
-      "department": "Punjab Primary & Secondary Healthcare Dept",
-      "bps": "BPS-17",
-      "location": "Punjab District Hospitals",
-      "deadline": "2026-09-12",
-      "applyUrl": "https://www.ppsc.gop.pk/",
-      "source": "PPSC Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
-    },
-    {
-      "jobId": "spsc-revenue-2026",
-      "title": "Mukhtiarkar / Revenue Officer (BPS-16)",
-      "department": "Sindh Public Service Commission (SPSC)",
-      "bps": "BPS-16",
-      "location": "Karachi / Hyderabad / Sukkur",
-      "deadline": "2026-09-15",
-      "applyUrl": "https://spsc.gov.pk/",
-      "source": "SPSC Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
-    },
-    {
-      "jobId": "kppsc-lecturer-2026",
-      "title": "Lecturer Computer Science (BPS-17)",
-      "department": "Khyber Pakhtunkhwa Public Service Commission (KPPSC)",
-      "bps": "BPS-17",
-      "location": "Peshawar / KPK Colleges",
-      "deadline": "2026-09-08",
-      "applyUrl": "https://kppsc.gov.pk/",
-      "source": "KPPSC Official Portal",
       "updatedAt": "2026-08-16T23:00:00Z"
     }
   ]

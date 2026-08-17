@@ -1,10 +1,19 @@
-'use client';
-
 import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
+import type { Metadata } from 'next';
 
-export default function RamzanReliefPage() {
+export const metadata: Metadata = {
+  title: 'Ramzan Relief Package 2026: Free Rashan Subsidy & Utility Stores Discount',
+  description: 'Government Ramzan Relief Package 2026 guidelines: Free Rashan hamper delivery, Utility Stores subsidies on flour (Atta), sugar, ghee, and 8070 SMS check.',
+  openGraph: {
+    title: 'Ramzan Relief Package 2026: Free Rashan Subsidy & Utility Stores Discount',
+    description: 'Government Ramzan Relief Package 2026 guidelines: Free Rashan hamper delivery, Utility Stores subsidies on flour (Atta), sugar, ghee, and 8070 SMS check.',
+    url: 'https://pakistaninfohub.com/welfare/ramzan-relief-package',
+  },
+};
+
+export default function Page() {
   const article = ARTICLES['ramzan-relief-package'];
   return <ArticleLayout article={article} />;
 }
