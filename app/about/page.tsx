@@ -13,9 +13,9 @@ export default function AboutPage() {
     <div className="space-y-8 animate-fadeIn max-w-4xl mx-auto">
       <Breadcrumbs items={breadcrumbs} />
 
-      <header className="rounded-3xl glass-card border border-emerald-500/30 p-8 md:p-10 space-y-4 bg-gradient-to-br from-emerald-950 via-pakistan-green-950 to-slate-950 text-white">
+      <header className="rounded-3xl glass-card border border-emerald-500/30 p-8 md:p-10 space-y-4 bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 text-white">
         <div className="flex items-center gap-2">
-          <Award className="w-6 h-6 text-pakistan-gold-400" />
+          <Award className="w-6 h-6 text-amber-400" />
           <span className="text-xs font-bold uppercase tracking-wider text-emerald-300">
             {t('E-E-A-T & Editorial Policy', 'اعتماد اور صحافتی معیار')}
           </span>

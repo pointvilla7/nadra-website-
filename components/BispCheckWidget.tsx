@@ -22,7 +22,7 @@ export const BispCheckWidget: React.FC = () => {
   };
 
   return (
-    <div className="my-8 rounded-2xl glass-card border border-emerald-500/40 p-6 md:p-8 shadow-xl bg-gradient-to-br from-pakistan-green-950 via-slate-900 to-emerald-950 text-white relative overflow-hidden">
+    <div className="my-8 rounded-2xl glass-card border border-emerald-500/40 p-6 md:p-8 shadow-xl bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-950 text-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Anti-Scam Verification Trust Banner */}

@@ -108,9 +108,9 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="w-full py-3 px-6 rounded-xl bg-pakistan-green-900 hover:bg-pakistan-green-800 text-white font-bold text-sm flex items-center justify-center gap-2 transition"
+              className="w-full py-3 px-6 rounded-xl bg-doc-seal hover:bg-doc-seal/90 text-white font-bold text-sm flex items-center justify-center gap-2 transition shadow-md"
             >
-              <Send className="w-4 h-4 text-pakistan-gold-400" />
+              <Send className="w-4 h-4 text-doc-paper" />
               <span>{t('Send Message', 'پیغام بھیجیں')}</span>
             </button>
           </form>
