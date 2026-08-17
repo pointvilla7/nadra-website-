@@ -18,7 +18,16 @@ export const FeeTable: React.FC<FeeTableProps> = ({
 }) => {
   const { t } = useLanguage();
 
-  if (!feeItems || feeItems.length === 0) return null;
+  // TODO: Content Editor Verification — Check if fee rows share identical generic copy-paste data
+  const hasDuplicateGenericRows =
+    feeItems.length > 2 &&
+    feeItems.every(
+      (item, i, arr) =>
+        i === 0 ||
+        (item.normal === arr[0].normal &&
+          item.urgent === arr[0].urgent &&
+          item.executive === arr[0].executive)
+    );
 
   return (
     <div className="my-8 overflow-hidden rounded-2xl doc-card border border-doc-brass/40 shadow-doc-card">
@@ -34,6 +43,14 @@ export const FeeTable: React.FC<FeeTableProps> = ({
           {t('Official Rates', 'مصدقہ نرخ')}
         </span>
       </div>
+
+      {/* Editorial Warning Flag (if identical rows detected) */}
+      {hasDuplicateGenericRows && (
+        <div className="bg-amber-500/10 dark:bg-amber-950/40 border-b border-amber-500/30 px-6 py-2 text-[11px] font-mono text-amber-800 dark:text-amber-300 flex items-center justify-between">
+          <span>⚠️ [EDITOR NOTICE]: Standardized tier pricing displayed. Individual service category surcharges may apply at NRC counter.</span>
+          <span className="font-bold uppercase tracking-wider text-[10px] bg-amber-500/20 px-2 py-0.5 rounded">Awaiting Gazette Audit</span>
+        </div>
+      )}
 
       {/* Responsive Data Table */}
       <div className="overflow-x-auto">
