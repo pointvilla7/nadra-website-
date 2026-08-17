@@ -19,13 +19,17 @@ export const AdPlacementZone: React.FC<AdPlacementZoneProps> = ({
   // In production without AdSense configuration, render CLS-shielded reserved space without placeholder text
   if (!isDev && !pubId) {
     return (
-      <aside className="my-6 no-print" aria-label="Advertisement">
+      <aside
+        className="my-6 no-print w-full"
+        aria-label="Advertisement"
+        style={{ contain: 'layout size', containIntrinsicSize: format === 'rectangle' ? '300px 250px' : '728px 90px' }}
+      >
         <div
           id={`ad-slot-${slotId}`}
-          className={`w-full rounded-2xl ${
+          className={`w-full mx-auto rounded-2xl ${
             format === 'rectangle'
-              ? 'h-64 md:h-72 min-h-[250px]'
-              : 'h-28 md:h-36 min-h-[110px]'
+              ? 'min-h-[250px] max-w-[336px] aspect-[300/250]'
+              : 'min-h-[90px] max-w-[728px] aspect-[728/90]'
           }`}
         />
       </aside>
@@ -33,27 +37,31 @@ export const AdPlacementZone: React.FC<AdPlacementZoneProps> = ({
   }
 
   return (
-    <aside className="my-6 no-print" aria-label="Advertisement">
-      <div className="w-full rounded-2xl doc-card border border-doc-brass/30 p-4 text-center space-y-2 bg-slate-100/60 dark:bg-slate-900/60">
+    <aside
+      className="my-6 no-print w-full"
+      aria-label="Advertisement"
+      style={{ contain: 'layout size', containIntrinsicSize: format === 'rectangle' ? '300px 250px' : '728px 90px' }}
+    >
+      <div className="w-full mx-auto rounded-2xl doc-card border border-doc-brass/30 p-3 sm:p-4 text-center space-y-2 bg-slate-100/60 dark:bg-slate-900/60">
         <div className="flex items-center justify-between text-[10px] font-mono font-bold uppercase tracking-widest text-slate-500">
           <span>{t('SPONSORED ADVERTISEMENT ZONE', 'اشتہاری جگہ')}</span>
           <span className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-            GOOGLE ADSENSE RESERVED
+            IAB RESERVED
           </span>
         </div>
 
-        {/* Ad Box Container with Explicit Height Reservation for Zero CLS */}
+        {/* Ad Box Container with Explicit Dimension Reservation for Zero CLS */}
         <div
           id={`ad-slot-${slotId}`}
-          className={`w-full rounded-xl border border-dashed border-doc-brass/40 flex items-center justify-center text-xs text-slate-500 font-sans font-medium transition-all ${
+          className={`w-full mx-auto rounded-xl border border-dashed border-doc-brass/40 flex items-center justify-center text-xs text-slate-500 font-sans font-medium transition-all ${
             format === 'rectangle'
-              ? 'h-64 md:h-72 min-h-[250px]'
-              : 'h-28 md:h-36 min-h-[110px]'
+              ? 'min-h-[250px] max-w-[336px] aspect-[300/250]'
+              : 'min-h-[90px] max-w-[728px] aspect-[728/90]'
           }`}
         >
           <span>
             {t(
-              'Tasteful Sponsor Container (CLS-Shielded Responsive Ad Unit)',
+              'Sponsor Container (CLS-Shielded Standard Ad Unit)',
               'باوقار ڈسپلے فریم (زیرو ڈسٹورشن)'
             )}
           </span>
