@@ -1,5 +1,6 @@
 'use client';
 
+import { VerifiedBadge } from '@/components/VerifiedBadge';
 import React from 'react';
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -78,10 +79,7 @@ export default function EducationCategoryPage() {
                   <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded bg-doc-seal/10 text-doc-seal dark:text-red-300 border border-doc-brass/20">
                     EDUCATION OFFICIAL
                   </span>
-                  <span className="text-[11px] text-doc-seal dark:text-red-400 font-bold flex items-center gap-1">
-                    <ShieldCheck className="w-3.5 h-3.5" />
-                    {t('VERIFIED', 'مصدقہ')}
-                  </span>
+                  <VerifiedBadge variant="card" />
                 </div>
 
                 <Link href={article.fullPath}>

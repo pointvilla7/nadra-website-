@@ -9,7 +9,7 @@ import { useLanguage } from '@/lib/context/LanguageContext';
 import { CategoryCard } from '@/components/CategoryCard';
 import { SearchBar } from '@/components/SearchBar';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
-import { EmbossedVerificationSeal } from '@/components/EmbossedVerificationSeal';
+import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { RecentlyVerifiedTicker } from '@/components/RecentlyVerifiedTicker';
 
 export default function HomePage() {
@@ -37,8 +37,8 @@ export default function HomePage() {
 
         <div className="relative max-w-3xl mx-auto text-center space-y-6">
           {/* Top Stamp Seal + Trust Badge */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <EmbossedVerificationSeal size="md" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-staggerIn">
+            <VerifiedBadge variant="stamp" />
             <div className="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-doc-brass/40 pt-2 sm:pt-0 sm:pl-4">
               <span className="text-xs font-mono font-bold uppercase tracking-widest text-doc-brass block">
                 INDEPENDENTLY VERIFIED PUBLIC DIRECTORY
@@ -220,10 +220,7 @@ export default function HomePage() {
                     <span className={`text-[10px] font-mono font-bold px-2.5 py-0.5 rounded ${cat.badgeBg} ${cat.badgeText}`}>
                       {t(cat.nameEn, cat.nameUr)}
                     </span>
-                    <span className="text-[11px] text-doc-seal dark:text-red-400 font-bold flex items-center gap-1">
-                      <ShieldCheck className="w-3.5 h-3.5" />
-                      {t('VERIFIED', 'مصدقہ')}
-                    </span>
+                    <VerifiedBadge variant="card" />
                   </div>
 
                   <Link href={article.fullPath}>
