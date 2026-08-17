@@ -173,6 +173,8 @@ body.lite-mode-enabled * {
   line-height: 2.2;
   font-size: 1.05em;
   text-align: right;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 [dir="rtl"] body {
@@ -180,20 +182,36 @@ body.lite-mode-enabled * {
   line-height: 2.2;
 }
 
-[dir="rtl"] h1,
+[dir="rtl"] h1 {
+  font-family: var(--font-urdu), 'Noto Nastaliq Urdu', 'Segoe UI', serif;
+  line-height: 2.1 !important;
+  letter-spacing: normal;
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 [dir="rtl"] h2,
 [dir="rtl"] h3 {
   font-family: var(--font-urdu), 'Noto Nastaliq Urdu', 'Segoe UI', serif;
-  line-height: 1.95;
+  line-height: 2.0 !important;
   letter-spacing: normal;
   text-align: right;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 [dir="rtl"] p,
 [dir="rtl"] article,
-[dir="rtl"] .prose {
-  line-height: 2.2 !important;
+[dir="rtl"] .prose,
+[dir="rtl"] .prose-container {
+  line-height: 2.25 !important;
   text-align: right;
+}
+
+[dir="rtl"] table td,
+[dir="rtl"] table th {
+  line-height: 1.9;
 }
 
 [dir="rtl"] .english-code,
