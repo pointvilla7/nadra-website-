@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026',
     description: 'Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.',
+    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://pakistaninfohub.com/traffic/islamabad-traffic-police-echallan',
   },
 };
@@ -17,3 +18,4 @@ export default function Page() {
   const article = ARTICLES['islamabad-traffic-police-echallan'];
   return <ArticleLayout article={article} />;
 }
+

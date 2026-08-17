@@ -37,11 +37,46 @@ const monoFont = IBM_Plex_Mono({
 // It's large (~1.5MB) and only needed when user switches to Urdu script mode.
 // UrduFontLoader component handles dynamic injection client-side.
 
+const BASE_URL = 'https://pakistaninfohub.com';
+const OG_IMAGE = `${BASE_URL}/og-default.jpg`;
+
 export const metadata: Metadata = {
   title: 'Pakistan Info Hub | Official Civic & Public Services Directory 2026',
   description:
     'Verified public information directory for NADRA CNIC, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic services.',
-  metadataBase: new URL('https://pakistaninfohub.com'),
+  metadataBase: new URL(BASE_URL),
+  openGraph: {
+    type: 'website',
+    siteName: 'Pakistan Info Hub',
+    title: 'Pakistan Info Hub | Official Civic & Public Services Directory 2026',
+    description:
+      'Verified public information directory for NADRA CNIC, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic services.',
+    url: BASE_URL,
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: 'Pakistan Info Hub — Official Verified Public Services Directory 2026',
+      },
+    ],
+    locale: 'en_PK',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pakistan Info Hub | Official Civic & Public Services Directory 2026',
+    description:
+      'Verified public information directory for NADRA CNIC, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic services.',
+    images: [OG_IMAGE],
+    site: '@PakistanInfoHub',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
   other: {
     'google-site-verification': process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? '',
   },
@@ -57,6 +92,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1B2A4A" />
 

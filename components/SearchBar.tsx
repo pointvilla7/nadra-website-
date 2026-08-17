@@ -1,11 +1,12 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Search, X, ArrowRight, FileText, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { ARTICLES, Article } from '@/lib/data/articles';
 import { CATEGORIES } from '@/lib/data/categories';
+import { SkeletonSearchResults } from '@/components/Skeleton';
 
 interface SearchBarProps {
   isOpen: boolean;
@@ -16,6 +17,22 @@ export const SearchBar: React.FC<SearchBarProps> = ({ isOpen, onClose }) => {
   const { t } = useLanguage();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Article[]>([]);
+  // Skeleton: show briefly after first open to prevent blank-flash on slow connections
+  const [isInitializing, setIsInitializing] = useState(true);
+  const initTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsInitializing(true);
+      initTimerRef.current = setTimeout(() => setIsInitializing(false), 280);
+    } else {
+      setQuery('');
+      setIsInitializing(true);
+    }
+    return () => {
+      if (initTimerRef.current) clearTimeout(initTimerRef.current);
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -94,7 +111,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({ isOpen, onClose }) => {
 
         {/* Search Results Body */}
         <div className="max-h-[60vh] overflow-y-auto p-4 bg-slate-50/50 dark:bg-slate-950/50">
-          {query.trim() === '' ? (
+          {/* Skeleton: brief shimmer while search modal initializes */}
+          {isInitializing ? (
+            <SkeletonSearchResults count={4} />
+          ) : query.trim() === '' ? (
             <div className="space-y-4">
               <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 {t('Popular Quick Searches', 'مقبول ترین تلاشیں')}

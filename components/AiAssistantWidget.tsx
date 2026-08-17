@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Bot, X, Send, Sparkles, User, ShieldCheck, RefreshCw, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { ARTICLES } from '@/lib/data/articles';
+import { SkeletonAiMessage, SkeletonText } from '@/components/Skeleton';
 
 interface Message {
   id: string;
@@ -18,6 +19,8 @@ export const AiAssistantWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputQuery, setInputQuery] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  // Skeleton on first open — prevents blank flash while widget JS initializes
+  const [isWidgetLoading, setIsWidgetLoading] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const [messages, setMessages] = useState<Message[]>([
@@ -40,6 +43,10 @@ export const AiAssistantWidget: React.FC = () => {
   useEffect(() => {
     if (isOpen) {
       scrollToBottom();
+      // Show skeleton briefly when widget first opens
+      setIsWidgetLoading(true);
+      const timer = setTimeout(() => setIsWidgetLoading(false), 350);
+      return () => clearTimeout(timer);
     }
   }, [messages, isOpen]);
 
@@ -210,7 +217,16 @@ export const AiAssistantWidget: React.FC = () => {
 
           {/* Messages Container */}
           <div className="flex-1 p-4 overflow-y-auto space-y-3 text-xs">
-            {messages.map((msg) => (
+            {/* Skeleton: shown while widget initializes after first open */}
+            {isWidgetLoading ? (
+              <div className="space-y-4">
+                <SkeletonAiMessage />
+                <div className="flex justify-end">
+                  <SkeletonText width="w-32" height="h-8" className="rounded-2xl rounded-tr-sm" />
+                </div>
+                <SkeletonAiMessage />
+              </div>
+            ) : messages.map((msg) => (
               <div
                 key={msg.id}
                 className={`flex gap-2 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
