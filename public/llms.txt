@@ -1,0 +1,66 @@
+# Pakistan Info Hub (pakistaninfohub.com)
+
+> Pakistan Info Hub is an independent, verified civic and public services information directory for Pakistan. It provides accurate, up-to-date guides, official fee schedules, required document checklists, portal links, helpline numbers, and verification procedures for citizens in Pakistan and overseas Pakistanis.
+
+## Core Service Directories Covered
+
+- NADRA Services: https://pakistaninfohub.com/nadra
+  - CNIC Application & Renewal Guide: https://pakistaninfohub.com/nadra/cnic-kaise-banaye
+  - NADRA Fee Schedule 2026: https://pakistaninfohub.com/nadra/nadra-card-fee
+  - CNIC Application Tracking: https://pakistaninfohub.com/nadra/tracking-id
+  - NICOP for Overseas Pakistanis: https://pakistaninfohub.com/nadra/nicop-apply-online
+  - Family Registration Certificate (FRC): https://pakistaninfohub.com/nadra/family-registration-certificate
+  - Child Registration Certificate (B-Form): https://pakistaninfohub.com/nadra/b-form-kaise-banaye
+
+- Passport Services (DGIP): https://pakistaninfohub.com/passport
+  - Passport Fee Schedule 2026: https://pakistaninfohub.com/passport/fee-2026
+  - Online Passport Renewal: https://pakistaninfohub.com/passport/online-apply
+  - Passport Application Tracking: https://pakistaninfohub.com/passport/tracking-status
+  - Renewal Document Checklist: https://pakistaninfohub.com/passport/renewal-documents
+  - Regional Passport Office Directory: https://pakistaninfohub.com/passport/office-contact-directory
+
+- BISE Education & Board Results: https://pakistaninfohub.com/education
+  - All Pakistan BISE Board Results 2026: https://pakistaninfohub.com/education/bise-result-check-2026
+  - BISE Lahore Board Results: https://pakistaninfohub.com/education/bise-lahore-result-2026
+  - HEC Scholarships Guide: https://pakistaninfohub.com/education/hec-scholarship-pakistan
+  - NUST Entry Test (NET) Guide: https://pakistaninfohub.com/education/nust-admission-process
+  - Punjab University Admission: https://pakistaninfohub.com/education/punjab-university-admission-2026
+  - FPSC CSS Exam Books & Syllabus: https://pakistaninfohub.com/education/css-preparation-books
+
+- Utility Bills Lookup & Duplicate Bills: https://pakistaninfohub.com/bills
+  - LESCO Online Bill Check: https://pakistaninfohub.com/bills/lesco-bill-check-online
+  - K-Electric Duplicate Bill: https://pakistaninfohub.com/bills/k-electric-duplicate-bill
+  - Sui Gas Bill Check: https://pakistaninfohub.com/bills/sui-gas-bill-check-online
+  - WAPDA Helpline & Complaint: https://pakistaninfohub.com/bills/wapda-bill-complaint-number
+
+- Social Welfare & Relief Schemes: https://pakistaninfohub.com/welfare
+  - BISP 8171 Eligibility Check by CNIC: https://pakistaninfohub.com/welfare/bisp-eligibility-check-by-cnic
+  - BISP 8171 Web Portal Guide: https://pakistaninfohub.com/welfare/8171-portal-guide
+  - BISP Kafaalat Payment Schedule: https://pakistaninfohub.com/welfare/kafaalat-amount-schedule
+  - PSER Survey Registration: https://pakistaninfohub.com/welfare/pser-survey-registration
+  - PM & CM Laptop Scheme: https://pakistaninfohub.com/welfare/laptop-scheme-registration
+  - Sehat Card Eligibility: https://pakistaninfohub.com/welfare/sehat-card-eligibility-check
+
+- Government Loans & Schemes: https://pakistaninfohub.com/loans
+  - Apni Chhat Apna Ghar Scheme: https://pakistaninfohub.com/loans/apni-chhat-apna-ghar
+  - PM Youth Business Loan Scheme: https://pakistaninfohub.com/loans/pm-youth-loan-scheme
+  - Asaan Karobar Loan Scheme: https://pakistaninfohub.com/loans/asaan-karobar-scheme
+
+- Traffic & License Services: https://pakistaninfohub.com/traffic
+  - PSCA E-Challan Online Check: https://pakistaninfohub.com/traffic/e-challan-check-online
+  - E-Challan Check by CNIC: https://pakistaninfohub.com/traffic/e-challan-check-by-cnic
+  - Driving License Guide: https://pakistaninfohub.com/traffic/driving-license-guide
+  - Vehicle Registration & Transfer: https://pakistaninfohub.com/traffic/vehicle-registration-transfer
+
+- Government Jobs & Careers: https://pakistaninfohub.com/jobs
+  - PPSC Jobs 2026 Guide: https://pakistaninfohub.com/jobs/ppsc-jobs-2026
+  - Latest Pakistan Govt Jobs: https://pakistaninfohub.com/jobs/latest-govt-jobs-pakistan
+  - NTS Test Jobs Guide: https://pakistaninfohub.com/jobs/nts-jobs-today
+
+## Key Official Helplines in Pakistan
+
+- NADRA Helpline: 1777 (Mobile) | +92-51-111-786-100 (Landline)
+- BISP 8171 Toll-Free Helpline: 0800-26477
+- Passport DGIP Helpline: 051-111-344-777
+- Utility Bills Complaint Helpline: 118
+- Punjab Safe Cities Authority (E-Challan): 15 / 042-111-15-15-15

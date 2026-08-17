@@ -9,6 +9,9 @@ interface SchemaInjectorProps {
   breadcrumbs?: BreadcrumbItem[];
   faqs?: FAQItem[];
   siteSearch?: boolean;
+  isHomepage?: boolean;
+  categoryName?: string;
+  categoryArticles?: Article[];
   customSchema?: any;
 }
 
@@ -17,6 +20,9 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
   breadcrumbs,
   faqs,
   siteSearch = false,
+  isHomepage = false,
+  categoryName,
+  categoryArticles,
   customSchema,
 }) => {
   const schemas: any[] = [];
@@ -25,8 +31,23 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     schemas.push(customSchema);
   }
 
+  // Organization Schema (Sitewide & Homepage)
+  if (isHomepage || siteSearch) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Pakistan Info Hub',
+      url: 'https://pakistaninfohub.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://pakistaninfohub.com/icon.png',
+      },
+      description: 'Verified civic and public services information directory for Pakistan.',
+    });
+  }
+
   // WebSite Schema with SearchAction
-  if (siteSearch) {
+  if (siteSearch || isHomepage) {
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -34,21 +55,44 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
       url: 'https://pakistaninfohub.com',
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://pakistaninfohub.com/?s={search_term_string}',
+        target: 'https://pakistaninfohub.com/tracker?q={search_term_string}',
         'query-input': 'required name=search_term_string',
       },
     });
   }
 
-  // Article Schema
+  // CollectionPage / ItemList Schema for Category pages
+  if (categoryName && categoryArticles && categoryArticles.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `${categoryName} Verified Guides & Services 2026`,
+      url: `https://pakistaninfohub.com/${categoryArticles[0]?.categoryId || ''}`,
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: categoryArticles.map((art, idx) => ({
+          '@type': 'ListItem',
+          position: idx + 1,
+          name: art.titleEn,
+          url: `https://pakistaninfohub.com${art.fullPath}`,
+        })),
+      },
+    });
+  }
+
+  // Article Schema for Guide pages
   if (article) {
+    const isoDateModified = article.lastVerified
+      ? new Date(article.lastVerified).toISOString()
+      : '2026-08-16T08:00:00+05:00';
+
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: article.titleEn,
       description: article.metaDescriptionEn,
       datePublished: '2026-01-01T08:00:00+05:00',
-      dateModified: '2026-08-10T08:00:00+05:00',
+      dateModified: isoDateModified,
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': `https://pakistaninfohub.com${article.fullPath}`,
