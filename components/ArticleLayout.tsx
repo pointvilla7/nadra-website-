@@ -30,6 +30,7 @@ import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWid
 import { MarkdownContent } from '@/components/MarkdownContent';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { AuthorBio } from '@/components/AuthorBio';
+import { CrossCategoryRelated } from '@/components/CrossCategoryRelated';
 import { getAuthorForCategory } from '@/lib/data/authors';
 
 const NadraTrackingWidget = dynamic(
@@ -341,6 +342,9 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           </div>
         </div>
       </section>
+
+      {/* Cross-Category Topical Authority Linker */}
+      <CrossCategoryRelated currentArticle={article} />
 
       {/* Structured Author Profile & E-E-A-T Verification */}
       <AuthorBio
