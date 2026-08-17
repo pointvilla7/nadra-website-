@@ -41,6 +41,7 @@ export const FAQAccordion: React.FC<FAQAccordionProps> = ({
           const isOpen = openIndex === idx;
           const qText = t(faq.questionEn, faq.questionUr);
           const aText = t(faq.answerEn, faq.answerUr);
+          const answerId = `faq-answer-${idx}`;
 
           return (
             <div
@@ -49,8 +50,9 @@ export const FAQAccordion: React.FC<FAQAccordionProps> = ({
             >
               <button
                 onClick={() => toggle(idx)}
-                className="w-full flex items-center justify-between p-5 text-left font-bold text-sm md:text-base text-slate-900 dark:text-slate-100 hover:text-emerald-600 dark:hover:text-emerald-400 transition"
+                className="w-full flex items-center justify-between p-5 text-left font-bold text-sm md:text-base text-slate-900 dark:text-slate-100 hover:text-emerald-600 dark:hover:text-emerald-400 transition cursor-pointer"
                 aria-expanded={isOpen}
+                aria-controls={answerId}
               >
                 <span className="flex items-center gap-3">
                   <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
@@ -59,17 +61,25 @@ export const FAQAccordion: React.FC<FAQAccordionProps> = ({
                   <span>{qText}</span>
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${
+                  aria-hidden="true"
+                  className={`w-5 h-5 text-slate-400 transition-transform duration-300 shrink-0 ${
                     isOpen ? 'rotate-180 text-emerald-600' : ''
                   }`}
                 />
               </button>
 
-              {isOpen && (
-                <div className="px-5 pb-5 pt-1 text-xs md:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-900/40 animate-fadeIn">
-                  <p>{aText}</p>
-                </div>
-              )}
+              {/* Keep answer in DOM for SEO/AEO crawlers, toggle with CSS */}
+              <div
+                id={answerId}
+                aria-hidden={!isOpen}
+                className={`transition-all duration-300 ease-out overflow-hidden px-5 text-xs md:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-sans ${
+                  isOpen
+                    ? 'max-h-[600px] pb-5 pt-1 border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-900/40 opacity-100'
+                    : 'max-h-0 pb-0 pt-0 opacity-0 pointer-events-none'
+                }`}
+              >
+                <p>{aText}</p>
+              </div>
             </div>
           );
         })}
