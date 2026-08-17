@@ -53,19 +53,23 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1B2A4A" />
-        {/* GA4 Integration Placeholder */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PLACEHOLDER_ID');
-            `,
-          }}
-        />
-        {/* Google Search Console verification meta tag placeholder */}
-        <meta name="google-site-verification" content="GSC_VERIFICATION_PLACEHOLDER_TAG" />
+        {/* GA4 Integration (Renders only if NEXT_PUBLIC_GA_MEASUREMENT_ID is provided) */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+              `,
+            }}
+          />
+        )}
+        {/* Google Search Console verification (Renders only if NEXT_PUBLIC_GSC_VERIFICATION is provided) */}
+        {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
+          <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />
+        )}
       </head>
       <body>
         <ClientLayout>{children}</ClientLayout>

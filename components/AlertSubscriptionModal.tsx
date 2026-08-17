@@ -130,7 +130,7 @@ export const AlertSubscriptionModal: React.FC<AlertSubscriptionModalProps> = ({
                 <input
                   type={method === 'whatsapp' ? 'tel' : 'email'}
                   required
-                  placeholder={method === 'whatsapp' ? '0300 1234567' : 'name@example.com'}
+                  placeholder={method === 'whatsapp' ? '0300 1234567' : 'user@gmail.com'}
                   value={contactInput}
                   onChange={(e) => setContactInput(e.target.value)}
                   className="w-full px-3.5 py-2.5 text-xs bg-white dark:bg-doc-dark-base border border-slate-300 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-doc-seal"

@@ -3,19 +3,59 @@
 import React from 'react';
 import { ShieldCheck, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
+import { ARTICLES } from '@/lib/data/articles';
 import Link from 'next/link';
+
+export function formatRelativeVerification(dateStr: string, t: (en: string, ur?: string) => string): string {
+  if (!dateStr) return t('Verified Today', 'آج تصدیق شدہ');
+  
+  const verifiedDate = new Date(dateStr);
+  if (isNaN(verifiedDate.getTime())) {
+    return dateStr;
+  }
+
+  const now = new Date();
+  const diffMs = now.getTime() - verifiedDate.getTime();
+  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  if (diffDays <= 0 && diffHours < 1) {
+    return t('Just Updated', 'ابھی اپڈیٹ ہوا');
+  } else if (diffDays <= 0) {
+    return t('Verified Today', 'آج تصدیق شدہ');
+  } else if (diffDays === 1) {
+    return t('Verified Yesterday', 'کل تصدیق شدہ');
+  } else if (diffDays > 1 && diffDays < 30) {
+    return t(`Verified ${diffDays}d ago`, `${diffDays} دن پہلے`);
+  } else {
+    return dateStr;
+  }
+}
 
 export const RecentlyVerifiedTicker: React.FC = () => {
   const { t } = useLanguage();
 
-  const updates = [
-    { labelEn: 'NADRA Smart CNIC Fee 2026', labelUr: 'نادرا سمارٹ شناختی کارڈ فیس 2026', time: '2 hrs ago', slug: '/nadra/nadra-card-fee' },
-    { labelEn: 'BISP 8171 Kafaalat 10,500 PKR Schedule', labelUr: 'بے نظیر کفالت 10,500 روپے قسط شیڈول', time: 'Verified Today', slug: '/welfare/bisp-eligibility-check-by-cnic' },
-    { labelEn: 'Apni Chhat Housing Loan (1.5M PKR)', labelUr: 'اپنی چھت اپنا گھر 15 لاکھ بلا سود قرضہ', time: '3 hrs ago', slug: '/loans/apni-chhat-apna-ghar' },
-    { labelEn: 'Pakistani e-Passport 2026 Fee Chart', labelUr: 'پاکستان ای پاسپورٹ فیس شیڈول 2026', time: 'Verified Today', slug: '/passport/fee-2026' },
-    { labelEn: 'PSCA Punjab E-Challan Rates', labelUr: 'سیف سٹی پنجاب ای چالان ریٹس', time: '5 hrs ago', slug: '/traffic/e-challan-check-online' },
-    { labelEn: 'LESCO Electricity Bill Check 2026', labelUr: 'لیسکو آن لائن بجلی بل چیک 2026', time: 'Just Updated', slug: '/bills/lesco-bill-check-online' },
+  const tickerConfig = [
+    { key: 'nadra-card-fee', labelEn: 'NADRA Smart CNIC Fee 2026', labelUr: 'نادرا سمارٹ شناختی کارڈ فیس 2026' },
+    { key: 'bisp-eligibility-check-by-cnic', labelEn: 'BISP 8171 Kafaalat 10,500 PKR Schedule', labelUr: 'بے نظیر کفالت 10,500 روپے قسط شیڈول' },
+    { key: 'apni-chhat-apna-ghar', labelEn: 'Apni Chhat Housing Loan (1.5M PKR)', labelUr: 'اپنی چھت اپنا گھر 15 لاکھ بلا سود قرضہ' },
+    { key: 'fee-2026', labelEn: 'Pakistani e-Passport 2026 Fee Chart', labelUr: 'پاکستان ای پاسپورٹ فیس شیڈول 2026' },
+    { key: 'e-challan-check-online', labelEn: 'PSCA Punjab E-Challan Rates', labelUr: 'سیف سٹی پنجاب ای چالان ریٹس' },
+    { key: 'lesco-bill-check-online', labelEn: 'LESCO Electricity Bill Check 2026', labelUr: 'لیسکو آن لائن بجلی بل چیک 2026' },
   ];
+
+  const updates = tickerConfig.map((item) => {
+    const article = ARTICLES[item.key];
+    const lastVerified = article ? article.lastVerified : 'August 16, 2026';
+    const fullPath = article ? article.fullPath : '/';
+
+    return {
+      labelEn: item.labelEn,
+      labelUr: item.labelUr,
+      slug: fullPath,
+      time: formatRelativeVerification(lastVerified, t),
+    };
+  });
 
   // Duplicate items for continuous seamless loop
   const tickerItems = [...updates, ...updates];

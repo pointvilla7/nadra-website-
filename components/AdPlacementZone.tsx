@@ -13,6 +13,24 @@ export const AdPlacementZone: React.FC<AdPlacementZoneProps> = ({
   format = 'horizontal',
 }) => {
   const { t } = useLanguage();
+  const isDev = process.env.NODE_ENV === 'development';
+  const pubId = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID;
+
+  // In production without AdSense configuration, render CLS-shielded reserved space without placeholder text
+  if (!isDev && !pubId) {
+    return (
+      <aside className="my-6 no-print" aria-label="Advertisement">
+        <div
+          id={`ad-slot-${slotId}`}
+          className={`w-full rounded-2xl ${
+            format === 'rectangle'
+              ? 'h-64 md:h-72 min-h-[250px]'
+              : 'h-28 md:h-36 min-h-[110px]'
+          }`}
+        />
+      </aside>
+    );
+  }
 
   return (
     <aside className="my-6 no-print" aria-label="Advertisement">
