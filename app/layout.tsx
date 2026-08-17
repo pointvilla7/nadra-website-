@@ -68,7 +68,7 @@ export default function RootLayout({
             }}
           />
         )}
-        {/* Google Search Console verification (Renders only if NEXT_PUBLIC_GSC_VERIFICATION is provided) */}
+        {/* Note: File-based HTML verification is active via /google0fa1afe950f3fb07.html. Optional meta tag fallback if NEXT_PUBLIC_GSC_VERIFICATION is provided */}
         {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
           <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />
         )}
