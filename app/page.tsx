@@ -171,7 +171,7 @@ export default function HomePage() {
       </section>
 
       {/* CATEGORIES GRID SECTION */}
-      <section className="space-y-6">
+      <section className="space-y-6 cv-auto">
         <div className="flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2">
@@ -197,7 +197,7 @@ export default function HomePage() {
       <AdPlacementZone slotId="homepage-middle" format="horizontal" />
 
       {/* TRENDING GUIDES SECTION */}
-      <section className="space-y-6">
+      <section className="space-y-6 cv-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-doc-seal" />
@@ -253,7 +253,7 @@ export default function HomePage() {
       </section>
 
       {/* WHY PAKISTAN INFO HUB Section */}
-      <section className="rounded-3xl doc-card border-2 border-doc-brass/40 p-8 md:p-10 space-y-6">
+      <section className="rounded-3xl doc-card border-2 border-doc-brass/40 p-8 md:p-10 space-y-6 cv-auto">
         <div className="max-w-3xl space-y-3">
           <h2 className="text-2xl md:text-3xl font-serif font-extrabold text-doc-ink dark:text-white">
             {t('Why Trust Pakistan Info Hub?', 'پاکستان انفو ہب کا انتخاب کیوں؟')}

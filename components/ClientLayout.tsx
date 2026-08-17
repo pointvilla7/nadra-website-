@@ -1,16 +1,44 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { LanguageProvider } from '@/lib/context/LanguageContext';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { SearchBar } from '@/components/SearchBar';
-import { CookieConsent } from '@/components/CookieConsent';
 import { SchemaInjector } from '@/components/SchemaInjector';
-import { AiAssistantWidget } from '@/components/AiAssistantWidget';
-import { PWAInstaller } from '@/components/PWAInstaller';
-
 import { CategoryPillNav } from '@/components/CategoryPillNav';
+
+// ── Dynamically imported: none of these are needed for initial paint ──────────
+
+// SearchBar: only rendered when open, no SSR needed
+const SearchBar = dynamic(
+  () => import('@/components/SearchBar').then((m) => m.SearchBar),
+  { ssr: false }
+);
+
+// AI Assistant: large widget — defer until after hydration, only when used
+const AiAssistantWidget = dynamic(
+  () => import('@/components/AiAssistantWidget').then((m) => m.AiAssistantWidget),
+  { ssr: false, loading: () => null }
+);
+
+// Cookie consent: never needed for initial paint or SSR
+const CookieConsent = dynamic(
+  () => import('@/components/CookieConsent').then((m) => m.CookieConsent),
+  { ssr: false, loading: () => null }
+);
+
+// PWA installer: background install prompt, never above-fold
+const PWAInstaller = dynamic(
+  () => import('@/components/PWAInstaller').then((m) => m.PWAInstaller),
+  { ssr: false, loading: () => null }
+);
+
+// Urdu font: only loaded when user switches to Urdu/Nastaliq mode
+const UrduFontLoader = dynamic(
+  () => import('@/components/UrduFontLoader').then((m) => m.UrduFontLoader),
+  { ssr: false, loading: () => null }
+);
 
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -18,16 +46,23 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
   return (
     <LanguageProvider>
       <SchemaInjector siteSearch />
+      {/* Urdu font loader — injects Noto Nastaliq stylesheet only when Urdu is active */}
+      <UrduFontLoader />
       <PWAInstaller />
       <Header onOpenSearch={() => setIsSearchOpen(true)} />
       <CategoryPillNav />
-      <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      {/* SearchBar is client-only and only rendered when isOpen=true */}
+      {isSearchOpen && (
+        <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      )}
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {children}
       </main>
       <Footer />
-      <CookieConsent />
-      <AiAssistantWidget />
+      <Suspense fallback={null}>
+        <CookieConsent />
+        <AiAssistantWidget />
+      </Suspense>
     </LanguageProvider>
   );
 };

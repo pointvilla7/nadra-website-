@@ -1,4 +1,4 @@
-'use client';
+// Server Component — pure SVG/JSX, no state or browser APIs needed
 
 import React from 'react';
 

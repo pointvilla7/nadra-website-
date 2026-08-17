@@ -1,7 +1,7 @@
-'use client';
-
+// Server Component — no state, no browser APIs needed
 import React from 'react';
 import { CreditCard, Plane, FileText, HeartHandshake, Landmark, Briefcase, GraduationCap, Car, ShieldCheck } from 'lucide-react';
+
 
 interface ArticleFeaturedImageProps {
   categoryId: string;

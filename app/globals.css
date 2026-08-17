@@ -63,7 +63,8 @@
     --font-serif: 'Newsreader', Georgia, serif;
     --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
-    --font-urdu: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', 'Segoe UI', serif;
+    /* Urdu font uses system fallback until UrduFontLoader injects Noto Nastaliq */
+    --font-urdu: 'Noto Sans Arabic', 'Segoe UI', Arial, serif;
   }
 
   body {
@@ -234,3 +235,32 @@ body.lite-mode-enabled * {
     color: black !important;
   }
 }
+
+/* ── Performance: content-visibility for below-fold heavy sections ── */
+/* Tells browser it can skip rendering off-screen content until needed  */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 400px; /* rough height estimate prevents layout jump */
+}
+
+/* ── Overscroll containment: prevents scroll chaining on mobile ── */
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* ── Focus-visible: keyboard-only focus rings (accessibility + CLS) ── */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+*:focus-visible {
+  outline: 2px solid #A02334;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── GPU-accelerated marquee (prevents layout thrash) ── */
+.animate-marquee {
+  will-change: transform;
+  transform: translateZ(0);
+}
+

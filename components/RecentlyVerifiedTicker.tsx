@@ -61,7 +61,7 @@ export const RecentlyVerifiedTicker: React.FC = () => {
   const tickerItems = [...updates, ...updates];
 
   return (
-    <div className="w-full doc-card rounded-2xl p-3 md:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 shadow-doc-card overflow-hidden">
+    <div className="w-full doc-card rounded-2xl p-3 md:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 shadow-doc-card overflow-hidden min-h-[72px] md:min-h-[60px]">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         {/* Ticker Title Label */}
         <div className="flex items-center gap-2 shrink-0 border-b md:border-b-0 md:border-r border-doc-brass/30 pb-2 md:pb-0 md:pr-4">

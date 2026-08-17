@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+
 import { Article, FAQItem } from '@/lib/data/articles';
 import { BreadcrumbItem } from './Breadcrumbs';
 

@@ -1,15 +1,17 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, Newsreader, IBM_Plex_Mono, Noto_Nastaliq_Urdu } from 'next/font/google';
+import { Plus_Jakarta_Sans, Newsreader, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { ClientLayout } from '@/components/ClientLayout';
 
+// ─── Core fonts: loaded eagerly, display: swap prevents FOIT ───────────────
 const sansFont = Plus_Jakarta_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-sans',
   display: 'swap',
+  preload: true,
   adjustFontFallback: false,
 });
 
@@ -18,6 +20,7 @@ const serifFont = Newsreader({
   weight: ['400', '600', '700', '800'],
   variable: '--font-serif',
   display: 'swap',
+  preload: true,
   adjustFontFallback: false,
 });
 
@@ -26,21 +29,22 @@ const monoFont = IBM_Plex_Mono({
   weight: ['400', '600', '700'],
   variable: '--font-mono',
   display: 'swap',
+  preload: false, // mono only used in badges/labels, not above-fold body text
   adjustFontFallback: false,
 });
 
-const urduFont = Noto_Nastaliq_Urdu({
-  subsets: ['arabic'],
-  weight: ['400', '700'],
-  variable: '--font-urdu',
-  display: 'swap',
-  adjustFontFallback: false,
-});
+// ─── NOTE: Noto Nastaliq Urdu is NOT preloaded here. ────────────────────────
+// It's large (~1.5MB) and only needed when user switches to Urdu script mode.
+// UrduFontLoader component handles dynamic injection client-side.
 
 export const metadata: Metadata = {
   title: 'Pakistan Info Hub | Official Civic & Public Services Directory 2026',
-  description: 'Verified public information directory for NADRA CNIC, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic services.',
+  description:
+    'Verified public information directory for NADRA CNIC, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic services.',
   metadataBase: new URL('https://pakistaninfohub.com'),
+  other: {
+    'google-site-verification': process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? '',
+  },
 };
 
 export default function RootLayout({
@@ -49,28 +53,48 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sansFont.variable} ${serifFont.variable} ${monoFont.variable} ${urduFont.variable}`}>
+    <html lang="en" className={`${sansFont.variable} ${serifFont.variable} ${monoFont.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1B2A4A" />
-        {/* GA4 Integration (Renders only if NEXT_PUBLIC_GA_MEASUREMENT_ID is provided) */}
+
+        {/* ── Preconnect to Google Fonts CDN (avoids extra DNS+TCP round-trips) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* ── DNS prefetch for official Pakistan govt portals users redirect to ── */}
+        <link rel="dns-prefetch" href="//id.nadra.gov.pk" />
+        <link rel="dns-prefetch" href="//onlinemrp.dgip.gov.pk" />
+        <link rel="dns-prefetch" href="//bisp.gov.pk" />
+
+        {/* ── GA4 — only injected if env var provided ── */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-              `,
-            }}
-          />
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', { send_page_view: true });
+                `,
+              }}
+            />
+          </>
         )}
-        {/* Note: File-based HTML verification is active via /google0fa1afe950f3fb07.html. Optional meta tag fallback if NEXT_PUBLIC_GSC_VERIFICATION is provided */}
+
+        {/* GSC HTML-file verification is active at /google0fa1afe950f3fb07.html */}
         {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
-          <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />
+          <meta
+            name="google-site-verification"
+            content={process.env.NEXT_PUBLIC_GSC_VERIFICATION}
+          />
         )}
       </head>
       <body>
