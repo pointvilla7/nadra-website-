@@ -63,13 +63,13 @@ export const FeeTable: React.FC<FeeTableProps> = ({
                 <td className="px-6 py-4 font-bold text-doc-ink dark:text-white font-serif">
                   {t(item.serviceEn, item.serviceUr)}
                 </td>
-                <td className="px-6 py-4 font-mono font-semibold text-slate-700 dark:text-slate-300">
+                <td className="px-6 py-4 font-mono tabular-nums font-semibold text-slate-700 dark:text-slate-300">
                   {item.normal}
                 </td>
-                <td className="px-6 py-4 font-mono font-bold text-amber-700 dark:text-amber-400">
+                <td className="px-6 py-4 font-mono tabular-nums font-bold text-amber-700 dark:text-amber-400">
                   {item.urgent}
                 </td>
-                <td className="px-6 py-4 font-mono font-extrabold text-doc-seal dark:text-red-400">
+                <td className="px-6 py-4 font-mono tabular-nums font-extrabold text-doc-seal dark:text-red-400">
                   {item.executive}
                 </td>
               </tr>

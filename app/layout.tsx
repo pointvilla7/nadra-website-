@@ -77,9 +77,6 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
-  other: {
-    'google-site-verification': process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? '',
-  },
 };
 
 export default function RootLayout({
@@ -124,14 +121,6 @@ export default function RootLayout({
               }}
             />
           </>
-        )}
-
-        {/* GSC HTML-file verification is active at /google0fa1afe950f3fb07.html */}
-        {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
-          <meta
-            name="google-site-verification"
-            content={process.env.NEXT_PUBLIC_GSC_VERIFICATION}
-          />
         )}
       </head>
       <body>

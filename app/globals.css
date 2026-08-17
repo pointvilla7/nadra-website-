@@ -65,15 +65,46 @@
     --font-mono: 'IBM Plex Mono', monospace;
     /* Urdu font uses system fallback until UrduFontLoader injects Noto Nastaliq */
     --font-urdu: 'Noto Sans Arabic', 'Segoe UI', Arial, serif;
+
+    /* Shared Motion & Easing Tokens */
+    --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 160ms;
+    --duration-normal: 240ms;
+    --duration-slow: 400ms;
   }
 
   body {
     @apply bg-doc-paper text-doc-charcoal font-sans antialiased transition-colors duration-300 dark:bg-doc-dark-base dark:text-doc-dark-paper min-h-screen flex flex-col;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
-  h1, h2, h3, .font-serif {
+  h1, .font-serif-display {
+    font-family: var(--font-serif);
+    letter-spacing: -0.025em;
+    line-height: 1.18;
+    font-weight: 800;
+  }
+
+  h2 {
     font-family: var(--font-serif);
     letter-spacing: -0.02em;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  p {
+    line-height: 1.68;
+  }
+
+  .font-mono, table td, table th, .tabular-nums {
+    font-variant-numeric: tabular-nums;
   }
 }
 

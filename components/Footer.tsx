@@ -6,6 +6,7 @@ import { ShieldAlert, ExternalLink, Globe, Mail, MapPin } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CATEGORIES } from '@/lib/data/categories';
 import { VerifiedSeal } from './VerifiedSeal';
+import { VerifiedBadge } from './VerifiedBadge';
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -45,9 +46,7 @@ export const Footer: React.FC = () => {
                 <span className="font-serif font-extrabold text-2xl tracking-tight text-white block">
                   Pakistan Info Hub
                 </span>
-                <span className="text-[11px] font-mono text-doc-brass uppercase tracking-widest block">
-                  VERIFIED CIVIC DIRECTORY
-                </span>
+                <VerifiedBadge variant="inline" textEn="VERIFIED CIVIC DIRECTORY 2026" textUr="مصدقہ ڈائریکٹری 2026" className="mt-0.5" />
               </div>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md">

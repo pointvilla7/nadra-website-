@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles } from 'lucide-react';
 import { Category } from '@/lib/data/categories';
 import { useLanguage } from '@/lib/context/LanguageContext';
+import { VerifiedBadge } from '@/components/VerifiedBadge';
 
 interface CategoryCardProps {
   category: Category;
@@ -46,9 +47,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
           <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105 border border-doc-brass/30 bg-doc-paper dark:bg-doc-dark-base">
             {getCategoryIcon(category.iconName, category.accentColor)}
           </div>
-          <span className={`text-[10px] font-mono font-bold px-2.5 py-1 rounded border border-doc-brass/20 ${category.badgeBg} ${category.badgeText}`}>
-            {articleCount}+ {t('VERIFIED GUIDES', 'مصدقہ فائلز')}
-          </span>
+          <VerifiedBadge variant="card" textEn={`${articleCount}+ GUIDES`} textUr={`${articleCount}+ فائلز`} />
         </div>
 
         {/* Title */}

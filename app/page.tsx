@@ -11,6 +11,7 @@ import { SearchBar } from '@/components/SearchBar';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { RecentlyVerifiedTicker } from '@/components/RecentlyVerifiedTicker';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -40,10 +41,8 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-staggerIn">
             <VerifiedBadge variant="stamp" />
             <div className="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-doc-brass/40 pt-2 sm:pt-0 sm:pl-4">
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-doc-brass block">
-                INDEPENDENTLY VERIFIED PUBLIC DIRECTORY
-              </span>
-              <span className="text-xs text-slate-300 font-medium block">
+              <VerifiedBadge variant="inline" textEn="INDEPENDENTLY VERIFIED CIVIC DIRECTORY" textUr="آزادانہ مصدقہ عوامی ڈائریکٹری" />
+              <span className="text-xs text-slate-300 font-medium block mt-1">
                 {t('100% Original Gazette Citations • Updated August 2026', 'مصدقہ 2026 • 100٪ اصلی معلومات')}
               </span>
             </div>
@@ -171,89 +170,94 @@ export default function HomePage() {
       </section>
 
       {/* CATEGORIES GRID SECTION */}
-      <section className="space-y-6 cv-auto">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-doc-seal" />
-              <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
-                {t('Verified Public Directory Categories', 'اہم کیٹیگریز اور شعبہ جات')}
-              </h2>
+      <ScrollReveal delayMs={50}>
+        <section className="space-y-6 cv-auto">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-doc-seal" />
+                <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
+                  {t('Verified Public Directory Categories', 'اہم کیٹیگریز اور شعبہ جات')}
+                </h2>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                {t('Purpose-built guides for Pakistani citizens and overseas Pakistanis.', 'شہریوں کی سہولت کے لیے خصوصی کیٹیگریز۔')}
+              </p>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-              {t('Purpose-built guides for Pakistani citizens and overseas Pakistanis.', 'شہریوں کی سہولت کے لیے خصوصی کیٹیگریز۔')}
-            </p>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {CATEGORIES.map((category) => (
-            <CategoryCard key={category.id} category={category} />
-          ))}
-        </div>
-      </section>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {CATEGORIES.map((category) => (
+              <CategoryCard key={category.id} category={category} />
+            ))}
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* Tasteful Mid Homepage Ad */}
       <AdPlacementZone slotId="homepage-middle" format="horizontal" />
 
       {/* TRENDING GUIDES SECTION */}
-      <section className="space-y-6 cv-auto">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
-              {t('Most Requested Official Records (2026)', 'مقبول ترین معلومات اور فائلز')}
-            </h2>
+      <ScrollReveal delayMs={100}>
+        <section className="space-y-6 cv-auto">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-doc-seal" />
+              <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
+                {t('Most Requested Official Records (2026)', 'مقبول ترین معلومات اور فائلز')}
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {trendingArticles.map((article) => {
-            const cat = CATEGORIES.find((c) => c.id === article.categoryId) || CATEGORIES[0];
-            return (
-              <div
-                key={article.slug}
-                className="doc-card rounded-2xl p-6 border border-doc-brass/20 hover:border-doc-brass/50 hover:scale-[1.01] hover:-translate-y-0.5 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-md"
-              >
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className={`text-[10px] font-mono font-bold px-2.5 py-0.5 rounded ${cat.badgeBg} ${cat.badgeText}`}>
-                      {t(cat.nameEn, cat.nameUr)}
-                    </span>
-                    <VerifiedBadge variant="card" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {trendingArticles.map((article) => {
+              const cat = CATEGORIES.find((c) => c.id === article.categoryId) || CATEGORIES[0];
+              return (
+                <div
+                  key={article.slug}
+                  className="doc-card rounded-2xl p-6 border border-doc-brass/20 hover:border-doc-brass/50 hover:scale-[1.01] hover:-translate-y-0.5 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-md"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className={`text-[10px] font-mono font-bold px-2.5 py-0.5 rounded ${cat.badgeBg} ${cat.badgeText}`}>
+                        {t(cat.nameEn, cat.nameUr)}
+                      </span>
+                      <VerifiedBadge variant="card" />
+                    </div>
+
+                    <Link href={article.fullPath}>
+                      <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white group-hover:text-doc-seal transition line-clamp-2">
+                        {t(article.titleEn, article.titleUr)}
+                      </h3>
+                    </Link>
+
+                    <p className="text-xs text-slate-700 dark:text-slate-300 line-clamp-3 leading-relaxed">
+                      {t(article.directAnswerEn, article.directAnswerUr)}
+                    </p>
                   </div>
 
-                  <Link href={article.fullPath}>
-                    <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white group-hover:text-doc-seal transition line-clamp-2">
-                      {t(article.titleEn, article.titleUr)}
-                    </h3>
-                  </Link>
-
-                  <p className="text-xs text-slate-700 dark:text-slate-300 line-clamp-3 leading-relaxed">
-                    {t(article.directAnswerEn, article.directAnswerUr)}
-                  </p>
+                  <div className="pt-4 mt-4 border-t border-doc-brass/20 flex items-center justify-between font-mono text-[11px]">
+                    <span className="text-slate-500">
+                      {t('Verified:', 'تاریخ:')} {article.lastVerified}
+                    </span>
+                    <Link
+                      href={article.fullPath}
+                      className="font-bold text-doc-seal dark:text-red-400 hover:underline flex items-center gap-1"
+                    >
+                      <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
-
-                <div className="pt-4 mt-4 border-t border-doc-brass/20 flex items-center justify-between font-mono text-[11px]">
-                  <span className="text-slate-500">
-                    {t('Verified:', 'تاریخ:')} {article.lastVerified}
-                  </span>
-                  <Link
-                    href={article.fullPath}
-                    className="font-bold text-doc-seal dark:text-red-400 hover:underline flex items-center gap-1"
-                  >
-                    <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+              );
+            })}
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* WHY PAKISTAN INFO HUB Section */}
-      <section className="rounded-3xl doc-card border-2 border-doc-brass/40 p-8 md:p-10 space-y-6 cv-auto">
+      <ScrollReveal delayMs={150}>
+        <section className="rounded-3xl doc-card border-2 border-doc-brass/40 p-8 md:p-10 space-y-6 cv-auto">
         <div className="max-w-3xl space-y-3">
           <h2 className="text-2xl md:text-3xl font-serif font-extrabold text-doc-ink dark:text-white">
             {t('Why Trust Pakistan Info Hub?', 'پاکستان انفو ہب کا انتخاب کیوں؟')}
@@ -304,6 +308,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { VerifiedBadge } from '@/components/VerifiedBadge';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import React from 'react';
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -56,6 +57,7 @@ export default function NadraCategoryPage() {
       </header>
 
       {/* ARTICLES GRID SECTION */}
+      <ScrollReveal delayMs={60}>
       <section className="space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -108,6 +110,7 @@ export default function NadraCategoryPage() {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Ad Zone */}
       <AdPlacementZone slotId="nadra-category-bottom" format="horizontal" />

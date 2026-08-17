@@ -59,7 +59,7 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
             </div>
 
             {/* Shimmer Glare */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none motion-reduce:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none motion-reduce:hidden" />
           </div>
         </div>
         <div className="absolute -bottom-2 flex gap-1 pointer-events-none z-0 opacity-90">
@@ -74,11 +74,13 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
   if (variant === 'header') {
     return (
       <div
-        className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-doc-paper dark:bg-doc-dark-base border border-doc-brass/40 shadow-sm text-doc-ink dark:text-slate-200 text-xs font-mono font-bold uppercase tracking-wider group hover:border-doc-seal transition ${className}`}
+        className={`relative inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-doc-paper dark:bg-doc-dark-base border border-doc-brass/40 shadow-xs text-doc-ink dark:text-slate-200 text-xs font-mono font-bold uppercase tracking-wider group hover:border-doc-seal overflow-hidden transition-all duration-200 ${className}`}
       >
-        <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 stroke-[2.5]" />
+        <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 stroke-[2.5] transition-transform duration-200 group-hover:scale-110" />
         <span>{t(labelEn, labelUr)}</span>
         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse motion-reduce:animate-none" />
+        {/* Subtle Shimmer Highlight */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none motion-reduce:hidden" />
       </div>
     );
   }
@@ -87,10 +89,12 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
   if (variant === 'card') {
     return (
       <div
-        className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-950/20 dark:bg-emerald-950/40 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-mono font-extrabold uppercase tracking-tight ${className}`}
+        className={`relative inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-950/15 dark:bg-emerald-950/40 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-mono font-extrabold uppercase tracking-tight group hover:border-emerald-600 overflow-hidden transition-all duration-200 ${className}`}
       >
-        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 transition-transform duration-200 group-hover:scale-110" />
         <span>{t(labelEn, labelUr)}</span>
+        {/* Subtle Shimmer Highlight */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-400/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none motion-reduce:hidden" />
       </div>
     );
   }
@@ -98,9 +102,9 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
   // Variant 4: Compact Inline Tag (Tickers, Subheaders & Meta Lines)
   return (
     <span
-      className={`inline-flex items-center gap-1 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider ${className}`}
+      className={`inline-flex items-center gap-1 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider group hover:text-emerald-600 transition-colors duration-200 ${className}`}
     >
-      <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+      <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 transition-transform duration-200 group-hover:scale-110" />
       <span>{t(labelEn, labelUr)}</span>
     </span>
   );

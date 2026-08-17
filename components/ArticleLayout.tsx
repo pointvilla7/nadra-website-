@@ -27,6 +27,8 @@ import { PrivacyTrustBanner } from '@/components/PrivacyTrustBanner';
 import { TextToSpeechButton } from '@/components/TextToSpeechButton';
 import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
 import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWidget';
+import { MarkdownContent } from '@/components/MarkdownContent';
+import { VerifiedBadge } from '@/components/VerifiedBadge';
 
 const NadraTrackingWidget = dynamic(
   () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
@@ -105,15 +107,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         <div className="flex flex-wrap items-center gap-2">
           <Link
             href={`/${category.slug}`}
-            className={`text-[10px] font-mono font-bold px-3 py-1 rounded ${category.badgeBg} ${category.badgeText} hover:opacity-80 transition uppercase tracking-wider`}
+            className={`text-[11px] font-mono font-bold px-3 py-1 rounded border border-doc-brass/30 ${category.badgeBg} ${category.badgeText} hover:opacity-80 transition uppercase tracking-wider`}
           >
             {t(category.nameEn, category.nameUr)}
           </Link>
           <span className="text-xs text-slate-400 font-semibold">•</span>
-          <span className="text-xs text-doc-seal dark:text-red-400 font-bold flex items-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            {t('Official Information Directory 2026', 'آفیشل معلومات پورٹل 2026', 'Official Info Directory 2026')}
-          </span>
+          <VerifiedBadge variant="header" textEn="OFFICIAL VERIFIED RECORD 2026" textUr="مصدقہ ریکارڈ 2026" />
         </div>
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-doc-ink dark:text-white leading-tight tracking-tight">
@@ -326,14 +325,17 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         </section>
       )}
 
-      {/* Main Body Content Text */}
-      <section className="prose dark:prose-invert max-w-none space-y-4 my-8 text-slate-800 dark:text-slate-200 leading-relaxed text-sm md:text-base font-sans">
-        <div className="doc-card rounded-2xl p-6 md:p-8 border border-doc-brass/30 space-y-4">
-          <h2 className="text-xl font-serif font-bold text-doc-ink dark:text-white border-l-4 border-doc-seal pl-3">
-            {t('Detailed Guide & Guidelines', 'تفصیلی معلومات اور ہدایات')}
-          </h2>
-          <div className="whitespace-pre-line">
-            {t(article.contentEn, article.contentUr)}
+      {/* Main Body Content Text with Premium Typography */}
+      <section className="my-8">
+        <div className="doc-card rounded-2xl p-6 sm:p-10 border border-doc-brass/40 space-y-6">
+          <div className="flex items-center justify-between border-b border-doc-brass/30 pb-4">
+            <h2 className="text-xl sm:text-2xl font-serif font-extrabold text-doc-ink dark:text-white border-l-4 border-doc-seal pl-3.5 tracking-tight">
+              {t('Detailed Guide & Verified Procedures', 'تفصیلی معلومات اور ہدایات')}
+            </h2>
+            <VerifiedBadge variant="card" textEn="GAZETTE VERIFIED" textUr="گزٹ مصدقہ" />
+          </div>
+          <div className="max-w-none text-slate-800 dark:text-slate-200">
+            <MarkdownContent content={t(article.contentEn, article.contentUr)} />
           </div>
         </div>
       </section>
