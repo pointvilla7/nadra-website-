@@ -30,7 +30,10 @@ export const DirectAnswerBox: React.FC<DirectAnswerBoxProps> = ({
   };
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-doc-ink text-white p-6 shadow-xl border-2 border-doc-brass/40 my-6 space-y-4">
+    <section
+      aria-label="Direct Answer Summary"
+      className="answer-box relative overflow-hidden rounded-2xl bg-doc-ink text-white p-6 shadow-xl border-2 border-doc-brass/40 my-6 space-y-4"
+    >
       {/* Decorative Stamp Watermark */}
       <div className="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 rounded-full border-4 border-dashed border-doc-brass/20 pointer-events-none" />
 
@@ -85,6 +88,6 @@ export const DirectAnswerBox: React.FC<DirectAnswerBoxProps> = ({
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
