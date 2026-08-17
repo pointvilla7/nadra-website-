@@ -29,6 +29,8 @@ import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
 import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWidget';
 import { MarkdownContent } from '@/components/MarkdownContent';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
+import { AuthorBio } from '@/components/AuthorBio';
+import { getAuthorForCategory } from '@/lib/data/authors';
 
 const NadraTrackingWidget = dynamic(
   () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
@@ -339,6 +341,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           </div>
         </div>
       </section>
+
+      {/* Structured Author Profile & E-E-A-T Verification */}
+      <AuthorBio
+        author={getAuthorForCategory(article.categoryId)}
+        lastVerifiedDate={article.lastVerified}
+      />
 
       {/* Privacy & Safety Guarantee */}
       <PrivacyTrustBanner />

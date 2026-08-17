@@ -4,6 +4,7 @@ import React from 'react';
 
 import { Article, FAQItem } from '@/lib/data/articles';
 import { BreadcrumbItem } from './Breadcrumbs';
+import { getAuthorForCategory } from '@/lib/data/authors';
 
 interface SchemaInjectorProps {
   article?: Article;
@@ -81,12 +82,29 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     });
   }
 
-  // Article Schema for Guide pages
+  // Article Schema & Author Person Schema for Guide pages
   if (article) {
-    const isoDateModified = article.lastVerified
-      ? new Date(article.lastVerified).toISOString()
-      : '2026-08-16T08:00:00+05:00';
+    const authorData = getAuthorForCategory(article.categoryId);
+    const parsedDate = article.lastVerified ? new Date(article.lastVerified) : new Date('2026-08-17');
+    const isoDateModified = !isNaN(parsedDate.getTime()) ? parsedDate.toISOString() : '2026-08-17T00:00:00+05:00';
 
+    // Person Schema for Author (E-E-A-T)
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': `https://pakistaninfohub.com/authors/${authorData.slug}#person`,
+      name: authorData.name,
+      jobTitle: authorData.role,
+      description: authorData.bioEn,
+      url: `https://pakistaninfohub.com/authors/${authorData.slug}`,
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Pakistan Info Hub',
+        url: 'https://pakistaninfohub.com',
+      },
+    });
+
+    // Article / Guide Schema
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -99,8 +117,10 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
         '@id': `https://pakistaninfohub.com${article.fullPath}`,
       },
       author: {
-        '@type': 'Organization',
-        name: article.author?.name || 'Pakistan Info Hub Editorial Team',
+        '@type': 'Person',
+        '@id': `https://pakistaninfohub.com/authors/${authorData.slug}#person`,
+        name: authorData.name,
+        url: `https://pakistaninfohub.com/authors/${authorData.slug}`,
       },
       publisher: {
         '@type': 'Organization',
