@@ -1,8 +1,30 @@
 {
-  "lastUpdated": "2026-08-17T06:39:32.193Z",
+  "lastUpdated": "2026-08-17T06:47:50.930Z",
   "status": "healthy",
   "totalJobs": 10,
   "jobs": [
+    {
+      "jobId": "ppsc-live-1786949272156-1",
+      "title": "Assistant Director (BPS-17) - Punjab Police",
+      "department": "Punjab Public Service Commission (PPSC)",
+      "bps": "BPS-17",
+      "location": "Lahore, Punjab",
+      "deadline": "2026-09-05",
+      "applyUrl": "https://www.ppsc.gop.pk/",
+      "source": "PPSC Official Portal",
+      "updatedAt": "2026-08-17T06:47:50.930Z"
+    },
+    {
+      "jobId": "fpsc-live-1786949279064-2",
+      "title": "Inspector Customs / Intelligence Officer (BPS-16)",
+      "department": "Federal Public Service Commission (FPSC)",
+      "bps": "BPS-16",
+      "location": "Islamabad / All Pakistan",
+      "deadline": "2026-09-10",
+      "applyUrl": "https://fpsc.gov.pk/",
+      "source": "FPSC Official Portal",
+      "updatedAt": "2026-08-17T06:47:50.930Z"
+    },
     {
       "jobId": "ppsc-live-1786948772780-1",
       "title": "Assistant Director (BPS-17) - Punjab Police",
@@ -90,28 +112,6 @@
       "applyUrl": "https://fpsc.gov.pk/",
       "source": "FPSC Official Portal",
       "updatedAt": "2026-08-17T06:22:24.813Z"
-    },
-    {
-      "jobId": "ppsc-adv-22-2026",
-      "title": "Assistant Director (BPS-17) - Punjab Police",
-      "department": "Punjab Public Service Commission (PPSC)",
-      "bps": "BPS-17",
-      "location": "Lahore, Punjab",
-      "deadline": "2026-09-05",
-      "applyUrl": "https://www.ppsc.gop.pk/",
-      "source": "PPSC Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
-    },
-    {
-      "jobId": "fpsc-gr-08-2026",
-      "title": "Inspector Customs / Intelligence Officer (BPS-16)",
-      "department": "Federal Public Service Commission (FPSC)",
-      "bps": "BPS-16",
-      "location": "Islamabad / All Pakistan",
-      "deadline": "2026-09-10",
-      "applyUrl": "https://fpsc.gov.pk/",
-      "source": "FPSC Official Portal",
-      "updatedAt": "2026-08-16T23:00:00Z"
     }
   ]
 }

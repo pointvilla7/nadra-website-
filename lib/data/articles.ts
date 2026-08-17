@@ -3726,6 +3726,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Find duplicate bill download instructions for both major gas distribution companies operating across Pakistan.",
     "contentUr": "پاکستان میں سوئی گیس کے آن لائن بل اور میٹر ریڈنگ چیک کرنے کا گائیڈ۔",
     "relatedSlugs": [
+      "/bills/ssgc-duplicate-bill-check",
       "/bills/lesco-bill-check-online",
       "/bills/wapda-bill-complaint-number"
     ]
@@ -4709,9 +4710,9 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "The **Punjab Socio-Economic Registry (PSER)** manages targeted welfare initiatives for residents of Punjab.\n\n> 🚨 **SCAM WARNING**: \n> PSER portal registration is **100% FREE**. Register strictly at **[pser.punjab.gov.pk](https://pser.punjab.gov.pk/)**.",
     "contentUr": "**پنجاب سوشو اکنامک رجسٹری (PSER)** پنجاب کے شہریوں کے لیے سرکاری سبسیڈیز کا پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: **pser.punjab.gov.pk** پر آن لائن رجسٹریشن بالکل مفت ہے۔",
     "relatedSlugs": [
+      "/welfare/bisp-nser-survey-center-locations",
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/8171-portal-guide",
-      "/loans/apni-chhat-apna-ghar"
+      "/welfare/8171-portal-guide"
     ]
   },
   "ehsaas-program-guide": {
@@ -5159,8 +5160,9 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Online renewal process for expired driving licenses and e-license PDF download on smartphone.",
     "contentUr": "آن لائن ای لائسنس پی ڈی ایف ڈاؤن لوڈ کرنے کا طریقہ۔",
     "relatedSlugs": [
-      "/traffic/e-challan-check-online",
-      "/traffic/token-tax-check"
+      "/traffic/sindh-driving-license-online-apply",
+      "/traffic/token-tax-check",
+      "/traffic/e-challan-check-online"
     ]
   },
   "vehicle-registration-transfer": {
