@@ -1263,11 +1263,66 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "eservices.hec.gov.pk پر پروفائل بنا کر ڈگری اپلوڈ کریں اور فیس ادا کریں۔"
       }
     ],
-    "contentEn": "BISE Lahore conducts matriculation and intermediate board exams for Lahore, Kasur, Sheikhupura, and Nankana Sahib districts.",
+    "contentEn": "BISE Lahore conducts matriculation and intermediate board exams for Lahore, Kasur, Sheikhupura, and Nankana Sahib districts.\n\n> 💡 **ALL PAKISTAN RESULT TOOL**: \n> You can check results for all 25 Pakistani BISE boards on our [All Pakistan Board Result Checker](/education/bise-result-check-2026).",
     "contentUr": "لاہور بورڈ سالانہ امتحانات کے نتائج اپنی آفیشل ویب سائٹ پر جاری کرتا ہے۔",
     "relatedSlugs": [
+      "/education/bise-result-check-2026",
       "/education/punjab-university-admission-2026",
       "/education/nust-admission-process"
+    ]
+  },
+  "bise-result-check-2026": {
+    "slug": "bise-result-check-2026",
+    "fullPath": "/education/bise-result-check-2026",
+    "categoryId": "education",
+    "titleEn": "All Pakistan BISE Board Results 2026: Check Matric & Inter Gazette Online",
+    "titleUr": "پاکستان تمام تعلیمی بورڈز رزلٹ 2026: میٹرک و انٹر آن لائن رزلٹ چیک کریں",
+    "metaDescriptionEn": "Unified result checker tool for all 25+ BISE educational boards in Pakistan. Check 9th, 10th (Matric), 11th, and 12th (Inter) annual exam results 2026 for Punjab, Sindh, KPK, Federal, and AJK.",
+    "metaDescriptionUr": "پاکستان کے تمام 25 تعلیمی بورڈز کا آن لائن رزلٹ پورٹل 2026۔ پنجاب، سندھ، کے پی کے، فیڈرل اور کے پی کے بورڈز کے میٹرک و انٹر رزلٹ رول نمبر یا ایس ایم ایس سے چیک کریں۔",
+    "directAnswerEn": "To check your 2026 annual board exam results for any BISE board in Pakistan, select your province and board in our Unified Result Checker above, enter your 6-digit Roll Number, and click 'Check Result on Official Board'. You will be redirected directly to your board's official gazette server safely.",
+    "directAnswerUr": "پاکستان کے کسی بھی تعلیمی بورڈ کا رزلٹ دیکھنے کے لیے اوپر دیے گئے پورٹل میں اپنا صوبہ، بورڈ اور رول نمبر منتخب کریں۔ رزلٹ براہِ راست آفیشل ویب سائٹ سے فوری کھل جائے گا۔",
+    "lastVerified": "August 16, 2026",
+    "officialSource": {
+      "name": "Inter Board Coordination Commission (IBCC)",
+      "url": "https://ibcc.edu.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Education & Examination Board Desk"
+    },
+    "faqs": [
+      {
+        "questionEn": "How can I check BISE results online by roll number?",
+        "questionUr": "بورڈ رزلٹ آن لائن رول نمبر سے کیسے چیک کریں؟",
+        "answerEn": "Select your Province and BISE Board in our interactive tool above, type your Roll Number, and click 'Check Result'. Our redirect assistant will launch your official board's gazette portal in a new tab with zero delay.",
+        "answerUr": "اوپر موجود پورٹل میں اپنا صوبہ اور بورڈ منتخب کریں، رول نمبر لکھیں اور 'آن لائن رزلٹ' پر کلک کریں۔"
+      },
+      {
+        "questionEn": "What are the SMS codes for checking BISE board results in Pakistan?",
+        "questionUr": "پاکستان میں تعلیمی بورڈز کا رزلٹ ایس ایم ایس سے چیک کرنے کا طریقہ اور کوڈز کیا ہیں؟",
+        "answerEn": "Send your Roll Number to the official code: BISE Lahore (800291), BISE Rawalpindi (800296), BISE Multan (800293), BISE Faisalabad (800299), BISE Gujranwala (800299), BISE Sargodha (800290), BISE Bahawalpur (800298), BISE D.G. Khan (800295), BISE Sahiwal (800292), Sindh Boards (8583), KPK Boards (8333 / 9818), Federal Board (5050).",
+        "answerUr": "لاہور بورڈ 800291، راولپنڈی 800296، ملتان 800293، فیصل آباد 800299، سندھ بورڈز 8583، اور فیڈرل بورڈ 5050 پر ایس ایم ایس کے ذریعے رزلٹ چیک کیا جا سکتا ہے۔"
+      },
+      {
+        "questionEn": "How to apply for paper rechecking if my marks seem incorrect?",
+        "questionUr": "نمبرز کم آنے کی صورت میں پیپر ری چیکنگ کا طریقہ کیا ہے؟",
+        "answerEn": "Apply for rechecking on your board's official website within 15 days of result declaration. Rechecking involves re-counting marks, verifying un-marked answers, and ensuring proper tabulation.",
+        "answerUr": "رزلٹ کے اعلان کے 15 دن کے اندر آفیشل بورڈ پورٹل پر آن لائن ری چیکنگ کی درخواست جمع کروائیں۔"
+      },
+      {
+        "questionEn": "What should I do if I forgot or lost my board Roll Number?",
+        "questionUr": "رول نمبر بھول جانے کی صورت میں نام یا گزٹ سے رزلٹ کیسے دیکھیں؟",
+        "answerEn": "You can download the full PDF Official Gazette published on your board's website on result day and search for your school name or student candidate name.",
+        "answerUr": "امتحان کے دن آفیشل ویب سائٹ سے بورڈ کا مکمل پی ڈی ایف گزٹ ڈاؤن لوڈ کر کے اپنے نام سے تلاش کریں۔"
+      }
+    ],
+    "contentEn": "Every academic year, over 4 million students across Pakistan sit for secondary (Matric Part 1 & Part 2 / Class 9th & 10th) and higher secondary (Intermediate Part 1 & Part 2 / Class 11th & 12th) examinations conducted by the 25 primary Boards of Intermediate and Secondary Education (BISE).\n\nNavigating multiple outdated government servers during result day can be frustrating due to heavy server traffic. Our All-Pakistan BISE Result Assistant eliminates server congestion by connecting you directly to verified gazette endpoints for every province.\n\n---\n\n## All Pakistan BISE Education Board Results Portal 2026\n\nPakistan's examination system is organized provincially, supervised by the Inter Board Coordination Commission (IBCC). Each board manages affiliated public and private schools and colleges in its assigned administrative districts.\n\n### 1. BISE Lahore Result 2026 (9th, 10th & Inter)\nBISE Lahore is Punjab's largest educational board, serving students across Lahore, Kasur, Sheikhupura, and Nankana Sahib. The Matric annual result is traditionally declared in July/August, followed by the Intermediate (FSc Pre-Engineering, Pre-Medical, ICS, FA, and Commerce) results in September. Students can check their result at result.biselahore.com or by texting their 6-digit Roll Number to 800291.\n\n### 2. BISE Karachi Result 2026 (BSEK & BIEK)\nIn Karachi, secondary education is split into two specialized boards:\n- BSEK Karachi: Manages SSC Part 1 (Class 9th) and SSC Part 2 (Class 10th) exams. Results are published on bsek.edu.pk.\n- BIEK Karachi: Manages HSSC Part 1 (Class 11th) and HSSC Part 2 (Class 12th) exams across Science, General Science, Commerce, and Humanities. Results are hosted at biek.edu.pk.\n- Both Karachi boards support SMS verification via code 8583.\n\n### 3. BISE Multan Result 2026\nBISE Multan covers districts including Multan, Khanewal, Vehari, and Lodhran. Results for SSC and HSSC annual exams are accessible on bisemultan.edu.pk. Candidates can also verify marks by sending an SMS to 800293.\n\n### 4. BISE Rawalpindi Result 2026\nBISE Rawalpindi caters to Rawalpindi, Attock, Chakwal, and Jhelum districts. Candidates can query their marks card on biserawalpindi.edu.pk or text their roll number to 800296.\n\n### 5. BISE Faisalabad Result 2026\nBISE Faisalabad manages exams for Faisalabad, Jhang, Toba Tek Singh, and Chiniot. Official result lookup is hosted at bisefsd.edu.pk with SMS verification on 800299.\n\n### 6. BISE Peshawar Result 2026\nBISE Peshawar is Khyber Pakhtunkhwa's flagship education board, presiding over Peshawar, Charsadda, and Chitral. Results are released on bisep.edu.pk and via SMS code 8333.\n\n### 7. Federal Board Result 2026 (FBISE Islamabad)\nThe Federal Board of Intermediate and Secondary Education (FBISE) conducts exams for cantonment schools, overseas Pakistani institutions, and federal territory schools across Pakistan and international missions. FBISE offers direct roll number search and e-marksheets at fbise.edu.pk and SMS alerts on 5050.\n\n---\n\n## 9th & 10th Class Gazette Results 2026 Across Pakistan\n\nWhether you are checking SSC Part 1 (9th Class) or SSC Part 2 (10th Class Matric), board results follow strict evaluation procedures. Position holders are announced one day prior to public portal releases at official press ceremonies.\n\n---\n\n## How Paper Rechecking & Recounting Works\n\nIf your declared marks differ significantly from your expectation, every BISE board provides a formal Rechecking & Recounting Facility:\n1. Application Window: Must be submitted within 15 days of official result declaration.\n2. Scope of Rechecking: Under BISE regulations, rechecking covers recounting of total marks, verifying that all answer booklet pages are marked, and ensuring correct transfer of marks from answer sheets to the result ledger.\n3. Fee Structure: Nominal per-subject rechecking fee (typically PKR 1,000 to PKR 1,500 per paper) payable via bank challan.\n\n---\n\n> 🛡️ INDEPENDENT PLATFORM DISCLAIMER\n> Pakistan Info Hub is a free, independent civic information portal. We are not affiliated with any BISE board or the Ministry of Federal Education. All roll numbers are processed client-side without storing personal candidate data.",
+    "contentUr": "پاکستان میں ہر سال 40 لاکھ سے زائد طلباء میٹرک (نویں و دسویں) اور انٹر میڈیٹ (گیارہویں و بارہویں) کے سالانہ امتحانات میں شرکت کرتے ہیں۔\n\nرزلٹ والے دن آفیشل سرورز پر شدید ٹریفک کی وجہ سے سائٹ ڈاؤن ہو جاتی ہے۔ ہمارے اس پورٹل کے ذریعے آپ بغیر کسی تاخیر کے اپنے بورڈ کی آفیشل رزلٹ ویب سائٹ تک رسائی حاصل کر سکتے ہیں۔\n\n---\n\n## تمام پاکستانی تعلیمی بورڈز کا رزلٹ پورٹل 2026\n\n### 1. بی آئی ایس ای لاہور رزلٹ 2026\nلاہور بورڈ پنجاب کا سب سے بڑا تعلیمی ادارہ ہے۔ رزلٹ biselahore.com پر دیکھ سکتے ہیں یا 800291 پر ایس ایم ایس کر سکتے ہیں۔\n\n### 2. کراچی میٹرک و انٹر بورڈ رزلٹ\nکراچی میں نویں اور دسویں کا رزلٹ BSEK (bsek.edu.pk) پر جبکہ انٹر کا رزلٹ BIEK (biek.edu.pk) پر جاری ہوتا ہے۔ ایس ایم ایس کوڈ 8583 ہے۔\n\n### 3. ملتان، راولپنڈی، فیصل آباد اور پشاور بورڈز\nان تمام بورڈز کے رزلٹ آفیشل لنکس اور ایس ایم ایس کوڈز پورٹل پر موجود ہیں۔",
+    "relatedSlugs": [
+      "/education/bise-lahore-result-2026",
+      "/education/punjab-university-admission-2026",
+      "/education/css-preparation-books",
+      "/education/hec-scholarship-pakistan"
     ]
   },
   "punjab-university-admission-2026": {

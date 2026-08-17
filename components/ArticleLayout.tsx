@@ -51,7 +51,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
   const isWelfarePage = article.categoryId === 'welfare';
   const isTrafficPage = article.categoryId === 'traffic';
   const isPassportFeePage = article.slug === 'fee-2026';
-  const isEducationBoardPage = article.slug === 'bise-lahore-result-2026';
+  const isEducationBoardPage = article.slug === 'bise-lahore-result-2026' || article.slug === 'bise-result-check-2026';
   const isNadraTrackingPage = article.slug === 'tracking-id';
   const isPassportTrackingPage = article.slug === 'tracking-status';
 
