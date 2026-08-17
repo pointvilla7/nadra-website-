@@ -99,7 +99,7 @@ export default function JobsCategoryPage() {
                   href={article.fullPath}
                   className="font-bold text-doc-seal dark:text-red-400 hover:underline flex items-center gap-1"
                 >
-                  <span>{t('READ GUIDE', 'گائیڈ پڑھیں')}</span>
+                  <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

@@ -379,7 +379,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
                     </h4>
                   </div>
                   <div className="flex items-center text-[11px] font-mono font-bold text-slate-500 group-hover:text-doc-seal transition pt-2">
-                    <span>{t('READ FILE', 'مطالعہ کریں')}</span>
+                    <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-1" />
                   </div>
                 </Link>
