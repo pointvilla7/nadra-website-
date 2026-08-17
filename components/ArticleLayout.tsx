@@ -27,6 +27,7 @@ import { TextToSpeechButton } from '@/components/TextToSpeechButton';
 import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
 import { NadraTrackingWidget } from '@/components/NadraTrackingWidget';
 import { PassportTrackingWidget } from '@/components/PassportTrackingWidget';
+import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWidget';
 import { ArrowRight, ShieldCheck, BookOpen, Sparkles, Share2, PhoneCall, Bell, Copy, Check, Eye } from 'lucide-react';
 
 interface ArticleLayoutProps {
@@ -239,14 +240,26 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         />
       )}
 
-      {isLoansPage && (
-        <LoanEligibilityWidget
-          schemeNameEn={article.titleEn}
-          schemeNameUr={article.titleUr}
-        />
+      {isWelfarePage && (
+        <>
+          <BispCheckWidget />
+          <EligibilityChecklistWidget programId="bisp-8171" />
+        </>
       )}
 
-      {isWelfarePage && <BispCheckWidget />}
+      {isLoansPage && (
+        <>
+          <LoanEligibilityWidget
+            schemeNameEn={article.titleEn}
+            schemeNameUr={article.titleUr}
+          />
+          <EligibilityChecklistWidget programId="apni-chhat-loan" />
+        </>
+      )}
+
+      {article.slug === 'hec-scholarship-pakistan' && (
+        <EligibilityChecklistWidget programId="hec-scholarships" />
+      )}
 
       {isTrafficPage && <TrafficLookupWidget />}
 
