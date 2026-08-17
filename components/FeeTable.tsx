@@ -4,6 +4,7 @@ import React from 'react';
 import { FeeItem } from '@/lib/data/articles';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CreditCard, Clock } from 'lucide-react';
+import { TierComparisonCard } from '@/components/TierComparisonCard';
 
 interface FeeTableProps {
   feeItems: FeeItem[];
@@ -105,6 +106,9 @@ export const FeeTable: React.FC<FeeTableProps> = ({
           )}
         </span>
       </div>
+
+      {/* Tier Comparison Block for AEO */}
+      <TierComparisonCard className="mt-6 border-0 shadow-none bg-slate-50/50 dark:bg-slate-900/40" />
     </div>
   );
 };
