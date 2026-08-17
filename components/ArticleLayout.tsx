@@ -25,6 +25,8 @@ import { PdfChecklistGenerator } from '@/components/PdfChecklistGenerator';
 import { PrivacyTrustBanner } from '@/components/PrivacyTrustBanner';
 import { TextToSpeechButton } from '@/components/TextToSpeechButton';
 import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
+import { NadraTrackingWidget } from '@/components/NadraTrackingWidget';
+import { PassportTrackingWidget } from '@/components/PassportTrackingWidget';
 import { ArrowRight, ShieldCheck, BookOpen, Sparkles, Share2, PhoneCall, Bell, Copy, Check, Eye } from 'lucide-react';
 
 interface ArticleLayoutProps {
@@ -50,6 +52,8 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
   const isTrafficPage = article.categoryId === 'traffic';
   const isPassportFeePage = article.slug === 'fee-2026';
   const isEducationBoardPage = article.slug === 'bise-lahore-result-2026';
+  const isNadraTrackingPage = article.slug === 'tracking-id';
+  const isPassportTrackingPage = article.slug === 'tracking-status';
 
   // Determine appropriate helpline based on category
   const helplineNumber = 
@@ -247,6 +251,10 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {isTrafficPage && <TrafficLookupWidget />}
 
       {isEducationBoardPage && <BoardResultWidget />}
+
+      {isNadraTrackingPage && <NadraTrackingWidget />}
+
+      {isPassportTrackingPage && <PassportTrackingWidget />}
 
       {/* Fee Table Section if available */}
       {article.feeStructure && article.feeStructure.length > 0 && (
