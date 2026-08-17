@@ -10,6 +10,8 @@ import { SchemaInjector } from '@/components/SchemaInjector';
 import { AiAssistantWidget } from '@/components/AiAssistantWidget';
 import { PWAInstaller } from '@/components/PWAInstaller';
 
+import { CategoryPillNav } from '@/components/CategoryPillNav';
+
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -18,6 +20,7 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
       <SchemaInjector siteSearch />
       <PWAInstaller />
       <Header onOpenSearch={() => setIsSearchOpen(true)} />
+      <CategoryPillNav />
       <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {children}

@@ -38,8 +38,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'Fraunces', 'Newsreader', 'Georgia', 'serif'],
-        sans: ['var(--font-sans)', 'Inter', 'Manrope', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Newsreader', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         mono: ['var(--font-mono)', 'IBM Plex Mono', 'monospace'],
         urdu: ['var(--font-urdu)', 'Noto Nastaliq Urdu', 'Segoe UI', 'serif'],
       },

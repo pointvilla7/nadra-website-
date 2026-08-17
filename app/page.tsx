@@ -9,7 +9,7 @@ import { useLanguage } from '@/lib/context/LanguageContext';
 import { CategoryCard } from '@/components/CategoryCard';
 import { SearchBar } from '@/components/SearchBar';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
-import { VerifiedSeal } from '@/components/VerifiedSeal';
+import { EmbossedVerificationSeal } from '@/components/EmbossedVerificationSeal';
 import { RecentlyVerifiedTicker } from '@/components/RecentlyVerifiedTicker';
 
 export default function HomePage() {
@@ -31,20 +31,20 @@ export default function HomePage() {
       <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
       {/* HERO SECTION - VERIFIED DOCUMENT DESIGN */}
-      <section className="relative overflow-hidden rounded-3xl bg-doc-ink border-2 border-doc-brass/40 p-8 sm:p-12 text-white shadow-2xl">
+      <section className="relative overflow-hidden rounded-3xl bg-doc-ink border-2 border-doc-brass/40 p-6 sm:p-10 text-white shadow-2xl">
         {/* Background Watermark Stamp Graphic */}
         <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 rounded-full border-8 border-dashed border-doc-brass/10 pointer-events-none" />
 
         <div className="relative max-w-3xl mx-auto text-center space-y-6">
           {/* Top Stamp Seal + Trust Badge */}
-          <div className="flex items-center justify-center gap-3">
-            <VerifiedSeal size="md" year="2026" />
-            <div className="text-left border-l border-doc-brass/40 pl-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <EmbossedVerificationSeal size="md" />
+            <div className="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-doc-brass/40 pt-2 sm:pt-0 sm:pl-4">
               <span className="text-xs font-mono font-bold uppercase tracking-widest text-doc-brass block">
-                VERIFIED PUBLIC DIRECTORY
+                INDEPENDENTLY VERIFIED PUBLIC DIRECTORY
               </span>
               <span className="text-xs text-slate-300 font-medium block">
-                {t('100% Original • Gazette Citation Verified 2026', 'مصدقہ 2026 • 100٪ اصلی معلومات')}
+                {t('100% Original Gazette Citations • Updated August 2026', 'مصدقہ 2026 • 100٪ اصلی معلومات')}
               </span>
             </div>
           </div>

@@ -22,12 +22,21 @@ import { StepByStepWizard } from '@/components/StepByStepWizard';
 import { ArticleFeedbackWidget } from '@/components/ArticleFeedbackWidget';
 import { AlertSubscriptionModal } from '@/components/AlertSubscriptionModal';
 import { PdfChecklistGenerator } from '@/components/PdfChecklistGenerator';
+import dynamic from 'next/dynamic';
 import { PrivacyTrustBanner } from '@/components/PrivacyTrustBanner';
 import { TextToSpeechButton } from '@/components/TextToSpeechButton';
 import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
-import { NadraTrackingWidget } from '@/components/NadraTrackingWidget';
-import { PassportTrackingWidget } from '@/components/PassportTrackingWidget';
 import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWidget';
+
+const NadraTrackingWidget = dynamic(
+  () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
+  { ssr: false }
+);
+
+const PassportTrackingWidget = dynamic(
+  () => import('@/components/PassportTrackingWidget').then((mod) => mod.PassportTrackingWidget),
+  { ssr: false }
+);
 import { ArrowRight, ShieldCheck, BookOpen, Sparkles, Share2, PhoneCall, Bell, Copy, Check, Eye } from 'lucide-react';
 
 interface ArticleLayoutProps {

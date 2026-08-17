@@ -35,11 +35,11 @@ const getCategoryIcon = (iconName: string, color: string) => {
   }
 };
 
-export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCount = 5 }) => {
+export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCount = 8 }) => {
   const { t } = useLanguage();
 
   return (
-    <div className="doc-card rounded-2xl p-6 transition-all duration-300 border border-doc-brass/20 hover:border-doc-brass/50 hover:scale-[1.01] hover:-translate-y-0.5 hover:shadow-lg flex flex-col justify-between group">
+    <div className="doc-card rounded-2xl p-6 transition-all duration-300 border border-doc-brass/30 border-t-4 border-t-doc-brass hover:border-doc-seal hover:scale-[1.01] hover:-translate-y-0.5 hover:shadow-xl flex flex-col justify-between group relative overflow-hidden">
       <div>
         {/* Header Icon + Badge */}
         <div className="flex items-center justify-between mb-4">
