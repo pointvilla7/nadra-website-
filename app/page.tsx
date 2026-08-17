@@ -78,8 +78,8 @@ export default function HomePage() {
                   )}
                 </span>
               </div>
-              <span className="hidden sm:inline-flex items-center gap-1 px-4 py-2 rounded-xl bg-doc-seal hover:bg-doc-seal/90 text-white font-mono font-bold text-xs shadow-sm transition">
-                {t('SEARCH DIRECTORY', 'تلاش کریں')}
+              <span className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#A02334] to-[#C72C41] hover:from-[#881B2B] hover:to-[#A02334] text-white font-mono font-extrabold text-xs shadow-md shadow-doc-seal/30 transition-transform group-hover:scale-105 min-h-[44px]">
+                <span>{t('SEARCH DIRECTORY', 'تلاش کریں')}</span>
               </span>
             </button>
           </div>

@@ -81,13 +81,13 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
         </div>
       </div>
 
-      {/* Explore Button — Unified Seal Red CTA */}
+      {/* Explore Button — High Contrast 44px Accessible CTA */}
       <Link
         href={`/${category.slug}`}
-        className="w-full py-2.5 px-4 rounded-xl text-xs font-bold font-mono flex items-center justify-center gap-2 transition-all duration-300 bg-doc-seal text-white hover:bg-doc-seal/90 shadow-sm"
+        className="w-full min-h-[44px] py-3 px-4 rounded-xl text-xs font-extrabold font-mono flex items-center justify-center gap-2 transition-all duration-200 bg-gradient-to-r from-[#A02334] to-[#C72C41] hover:from-[#881B2B] hover:to-[#A02334] text-white shadow-md shadow-doc-seal/20 hover:scale-[1.02] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-seal"
       >
         <span>{t(`EXPLORE ${category.nameEn.toUpperCase()}`, `${category.nameUr} فائلز`)}</span>
-        <ChevronRight className="w-4 h-4" />
+        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
       </Link>
     </div>
   );
