@@ -142,6 +142,8 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
         '@type': 'HowToStep',
         position: st.stepNumber,
         name: st.titleEn,
+        text: st.detailEn,
+        url: `https://pakistaninfohub.com${article.fullPath}#step-${st.stepNumber}`,
         itemListElement: [
           {
             '@type': 'HowToDirection',
@@ -168,7 +170,9 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
           '@type': 'ListItem',
           position: idx + 2,
           name: b.nameEn,
-          item: b.url ? `https://pakistaninfohub.com${b.url}` : undefined,
+          item: b.url
+            ? (b.url.startsWith('http') ? b.url : `https://pakistaninfohub.com${b.url}`)
+            : (article ? `https://pakistaninfohub.com${article.fullPath}` : undefined),
         })),
       ],
     });
