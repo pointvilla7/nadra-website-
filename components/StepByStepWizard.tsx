@@ -31,7 +31,7 @@ export const StepByStepWizard: React.FC<StepByStepWizardProps> = ({ steps, artic
             {t('Interactive Step-by-Step Wizard', 'مرحلہ وار گائیڈ وزرڈ', 'Step-by-Step Wizard')}
           </h3>
         </div>
-        <span className="font-mono text-xs font-bold text-doc-brass bg-doc-brass/10 px-3 py-1 rounded-full border border-doc-brass/30">
+        <span className="font-mono text-xs font-bold text-doc-brass-dark dark:text-doc-brass-light bg-doc-brass/15 px-3 py-1 rounded-full border border-doc-brass/40">
           {isCompleted
             ? t('Complete!', 'مکمل!')
             : t(`Step ${currentStepIndex + 1} of ${steps.length}`, `مرحلہ ${currentStepIndex + 1} از ${steps.length}`)}

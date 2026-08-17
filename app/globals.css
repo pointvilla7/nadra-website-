@@ -73,6 +73,11 @@
     --duration-slow: 400ms;
   }
 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-doc-paper text-doc-charcoal font-sans antialiased transition-colors duration-300 dark:bg-doc-dark-base dark:text-doc-dark-paper min-h-screen flex flex-col;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";

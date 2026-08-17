@@ -19,7 +19,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   const { t } = useLanguage();
 
   return (
-    <nav className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 py-3 my-2 overflow-x-auto whitespace-nowrap">
+    <nav aria-label="Breadcrumbs" className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 py-3 my-2 overflow-x-auto whitespace-nowrap">
       <Link
         href="/"
         className="flex items-center gap-1 hover:text-emerald-600 dark:hover:text-emerald-400 transition"

@@ -125,10 +125,11 @@ export const TextToSpeechButton: React.FC<TextToSpeechButtonProps> = ({
       {!isPlaying && !isPaused && (
         <button
           onClick={handlePlay}
+          aria-label={t('Listen to article audio reading', 'مضمون کی صوتی قرأت سنیں')}
           className="flex items-center gap-1 font-bold text-doc-seal dark:text-red-400 hover:underline px-2 py-0.5 rounded bg-doc-seal/10 dark:bg-red-950/50 hover:bg-doc-seal/20 transition cursor-pointer"
           title="Click to listen to article audio reading"
         >
-          <Play className="w-3.5 h-3.5 fill-current" />
+          <Play aria-hidden="true" className="w-3.5 h-3.5 fill-current" />
           <span>{t('Listen', 'سنیں', 'Sunain')}</span>
         </button>
       )}
@@ -137,18 +138,20 @@ export const TextToSpeechButton: React.FC<TextToSpeechButtonProps> = ({
         <>
           <button
             onClick={handlePause}
+            aria-label={t('Pause audio reading', 'آڈیو وقفہ کریں')}
             className="flex items-center gap-1 font-bold text-amber-600 dark:text-amber-400 hover:underline px-1.5 py-0.5"
             title="Pause audio"
           >
-            <Pause className="w-3.5 h-3.5 fill-current" />
+            <Pause aria-hidden="true" className="w-3.5 h-3.5 fill-current" />
             <span>{t('Pause', 'وقفہ', 'Pause')}</span>
           </button>
           <button
             onClick={handleStop}
+            aria-label={t('Stop audio reading', 'آڈیو روکیں')}
             className="flex items-center gap-1 font-bold text-red-600 dark:text-red-400 hover:underline px-1.5 py-0.5"
             title="Stop audio"
           >
-            <VolumeX className="w-3.5 h-3.5" />
+            <VolumeX aria-hidden="true" className="w-3.5 h-3.5" />
             <span>{t('Stop', 'روکیں', 'Stop')}</span>
           </button>
         </>
@@ -158,18 +161,20 @@ export const TextToSpeechButton: React.FC<TextToSpeechButtonProps> = ({
         <>
           <button
             onClick={handlePlay}
+            aria-label={t('Resume audio reading', 'آڈیو جاری رکھیں')}
             className="flex items-center gap-1 font-bold text-doc-seal dark:text-red-400 hover:underline px-1.5 py-0.5"
             title="Resume audio"
           >
-            <Play className="w-3.5 h-3.5 fill-current" />
+            <Play aria-hidden="true" className="w-3.5 h-3.5 fill-current" />
             <span>{t('Resume', 'جاری رکھیں', 'Resume')}</span>
           </button>
           <button
             onClick={handleStop}
+            aria-label={t('Stop audio reading', 'آڈیو روکیں')}
             className="flex items-center gap-1 font-bold text-red-600 dark:text-red-400 hover:underline px-1.5 py-0.5"
             title="Stop audio"
           >
-            <VolumeX className="w-3.5 h-3.5" />
+            <VolumeX aria-hidden="true" className="w-3.5 h-3.5" />
             <span>{t('Stop', 'روکیں', 'Stop')}</span>
           </button>
         </>

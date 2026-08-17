@@ -16,6 +16,8 @@ const config: Config = {
           ink: '#1B2A4A',
           seal: '#A02334',
           brass: '#B08D57',
+          'brass-dark': '#855F27',
+          'brass-light': '#D4AF37',
           charcoal: '#2B2B2B',
           verified: '#3F6B4A',
           dark: {
