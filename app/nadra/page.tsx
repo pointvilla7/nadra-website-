@@ -21,7 +21,11 @@ export default function NadraCategoryPage() {
 
   return (
     <div className="space-y-10 md:space-y-16 animate-fadeIn">
-      <SchemaInjector breadcrumbs={breadcrumbs} />
+      <SchemaInjector
+        breadcrumbs={breadcrumbs}
+        categoryName={category.nameEn}
+        categoryArticles={nadraArticles}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       {/* Category Header — Brand Seal + Ink Design */}

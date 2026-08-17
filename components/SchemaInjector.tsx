@@ -33,22 +33,24 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     schemas.push(customSchema);
   }
 
-  // Organization Schema (Sitewide & Homepage)
-  if (isHomepage || siteSearch) {
-    schemas.push({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'Pakistan Info Hub',
-      url: 'https://pakistaninfohub.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://pakistaninfohub.com/icon.png',
-      },
-      description: 'Verified civic and public services information directory for Pakistan.',
-    });
-  }
+  // Organization Schema (Sitewide Publisher Entity)
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Pakistan Info Hub',
+    url: 'https://pakistaninfohub.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://pakistaninfohub.com/icon.png',
+    },
+    description: 'Verified civic and public services information directory for Pakistan.',
+    sameAs: [
+      'https://twitter.com/PakistanInfoHub',
+      'https://www.facebook.com/PakistanInfoHub',
+    ],
+  });
 
-  // WebSite Schema with SearchAction
+  // WebSite Schema with SearchAction (Homepage & Sitewide Search)
   if (siteSearch || isHomepage) {
     schemas.push({
       '@context': 'https://schema.org',
