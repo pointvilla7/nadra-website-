@@ -20,7 +20,7 @@ import {
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 
-export type BillProviderKey = 'lesco' | 'kelectric' | 'sngpl' | 'ssgc';
+export type BillProviderKey = 'lesco' | 'iesco' | 'fesco' | 'mepco' | 'kelectric' | 'sngpl' | 'ssgc';
 
 interface ProviderConfig {
   id: BillProviderKey;
@@ -59,6 +59,57 @@ const PROVIDERS: Record<BillProviderKey, ProviderConfig> = {
     helpline: '118 or 0800-00118',
     helplineUr: '118 یا 0800-00118',
   },
+  iesco: {
+    id: 'iesco',
+    nameEn: 'IESCO (Islamabad Electric)',
+    nameUr: 'آئیسکو (اسلام آباد الیکٹرک)',
+    shortName: 'IESCO',
+    category: 'electric',
+    refLabelEn: '14-Digit Reference Number',
+    refLabelUr: '14 ہندسوں کا ریفرنس نمبر',
+    digitLength: 14,
+    sampleRef: '14123456789012',
+    coverageEn: 'Islamabad, Rawalpindi, Attock, Jhelum, Chakwal',
+    coverageUr: 'اسلام آباد، راولپنڈی، اٹک، جہلم، چکوال',
+    officialUrl: 'http://bill.pitc.com.pk/iescobill/',
+    isLiveFetch: true,
+    helpline: '118 or 051-9252937',
+    helplineUr: '118 یا 051-9252937',
+  },
+  fesco: {
+    id: 'fesco',
+    nameEn: 'FESCO (Faisalabad Electric)',
+    nameUr: 'فیسکو (فیصل آباد الیکٹرک)',
+    shortName: 'FESCO',
+    category: 'electric',
+    refLabelEn: '14-Digit Reference Number',
+    refLabelUr: '14 ہندسوں کا ریفرنس نمبر',
+    digitLength: 14,
+    sampleRef: '13123456789012',
+    coverageEn: 'Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot',
+    coverageUr: 'فیصل آباد، سرگودھا، جھنگ، ٹوبہ ٹیک سنگھ، چنیوٹ',
+    officialUrl: 'http://bill.pitc.com.pk/fescobill/',
+    isLiveFetch: true,
+    helpline: '118 or 0800-66554',
+    helplineUr: '118 یا 0800-66554',
+  },
+  mepco: {
+    id: 'mepco',
+    nameEn: 'MEPCO (Multan Electric)',
+    nameUr: 'میپکو (ملتان الیکٹرک)',
+    shortName: 'MEPCO',
+    category: 'electric',
+    refLabelEn: '14-Digit Reference Number',
+    refLabelUr: '14 ہندسوں کا ریفرنس نمبر',
+    digitLength: 14,
+    sampleRef: '15123456789012',
+    coverageEn: 'Multan, Sahiwal, Bahawalpur, D.G. Khan, Rahim Yar Khan',
+    coverageUr: 'ملتان، ساہیوال، بہاولپور، ڈیرہ غازی خان، رحیم یار خان',
+    officialUrl: 'http://bill.pitc.com.pk/mepcobill/',
+    isLiveFetch: true,
+    helpline: '118 or 0800-63726',
+    helplineUr: '118 یا 0800-63726',
+  },
   kelectric: {
     id: 'kelectric',
     nameEn: 'K-Electric (Karachi)',
@@ -71,7 +122,7 @@ const PROVIDERS: Record<BillProviderKey, ProviderConfig> = {
     sampleRef: '0400012345678',
     coverageEn: 'Karachi, Dhabeji, Gharo, Vinder, Hub (Balochistan)',
     coverageUr: 'کراچی، دھابیجی، گھارو، حب',
-    officialUrl: 'https://www.ke.com.pk/',
+    officialUrl: 'https://www.ke.com.pk/customer-services/bill-payment/',
     isLiveFetch: false,
     captchaNote: true,
     helpline: '118 or (021) 111-000-118',
@@ -89,7 +140,7 @@ const PROVIDERS: Record<BillProviderKey, ProviderConfig> = {
     sampleRef: '28461937501',
     coverageEn: 'Punjab, Khyber Pakhtunkhwa (KPK), Islamabad & AJK',
     coverageUr: 'پنجاب، خیبر پختونخوا، اسلام آباد اور آزاد کشمیر',
-    officialUrl: 'https://www.sngpl.com.pk/',
+    officialUrl: 'https://www.sngpl.com.pk/web/bill',
     isLiveFetch: false,
     captchaNote: true,
     helpline: '1199 (SNGPL Helpline)',
@@ -107,7 +158,7 @@ const PROVIDERS: Record<BillProviderKey, ProviderConfig> = {
     sampleRef: '1234567890',
     coverageEn: 'Sindh (Karachi, Hyderabad, Sukkur) & Balochistan',
     coverageUr: 'سندھ (کراچی، حیدرآباد، سکھر) اور بلوچستان',
-    officialUrl: 'https://www.ssgc.com.pk/',
+    officialUrl: 'https://www.ssgc.com.pk/web/ebill',
     isLiveFetch: false,
     captchaNote: true,
     helpline: '1199 (SSGC Helpline)',
@@ -161,7 +212,7 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
     setBillResult(null);
 
     try {
-      const res = await fetch('/api/bill-check/lesco', {
+      const res = await fetch(`/api/bill-check/${activeProvider}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ referenceNo: cleanRef }),

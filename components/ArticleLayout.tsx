@@ -12,7 +12,8 @@ import { FeeTable } from '@/components/FeeTable';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { SchemaInjector } from '@/components/SchemaInjector';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
-import { BillLookupWidget } from '@/components/BillLookupWidget';
+import { UtilityBillChecker } from '@/components/UtilityBillChecker';
+import { WAPDAComplaintTracker } from '@/components/WAPDAComplaintTracker';
 import { BoardResultWidget } from '@/components/BoardResultWidget';
 import { LoanEligibilityWidget } from '@/components/LoanEligibilityWidget';
 import { BispCheckWidget } from '@/components/BispCheckWidget';
@@ -242,17 +243,29 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {isPassportFeePage && <PassportFeeCalculator />}
 
       {isBillPage && (
-        <BillLookupWidget
-          providerId={
-            article.slug.includes('lesco')
-              ? 'lesco'
-              : article.slug.includes('electric')
-              ? 'kelectric'
-              : article.slug.includes('gas')
-              ? 'suigas'
-              : 'wapda'
-          }
-        />
+        article.slug.includes('wapda-bill-complaint') ? (
+          <WAPDAComplaintTracker />
+        ) : (
+          <UtilityBillChecker
+            initialProvider={
+              article.slug.includes('lesco')
+                ? 'lesco'
+                : article.slug.includes('iesco')
+                ? 'iesco'
+                : article.slug.includes('fesco')
+                ? 'fesco'
+                : article.slug.includes('mepco')
+                ? 'mepco'
+                : article.slug.includes('electric')
+                ? 'kelectric'
+                : article.slug.includes('ssgc')
+                ? 'ssgc'
+                : article.slug.includes('gas')
+                ? 'sngpl'
+                : 'lesco'
+            }
+          />
+        )
       )}
 
       {isWelfarePage && (
