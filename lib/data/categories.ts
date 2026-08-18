@@ -94,6 +94,8 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
     badgeText: 'text-amber-800 dark:text-amber-300',
     popularSearches: [
+      { en: 'Utility Bill Checker 2026', ur: 'یوٹیلیٹی بل چیکر 2026', slug: '/bills/utility-bill-checker-2026' },
+      { en: 'WAPDA Complaint Tracker', ur: 'واپڈا شکایات ٹریکر', slug: '/bills/wapda-complaint-status-tracker-2026' },
       { en: 'LESCO Bill Check', ur: 'لیسکو آن لائن بل', slug: '/bills/lesco-bill-check-online' },
       { en: 'K-Electric Bill Download', ur: 'کے الیکٹرک بل ڈاؤن لوڈ', slug: '/bills/k-electric-duplicate-bill' },
       { en: 'Sui Gas Online Bill', ur: 'سوئی گیس بل چیک', slug: '/bills/sui-gas-bill-check-online' },

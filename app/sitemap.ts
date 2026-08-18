@@ -19,15 +19,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education/bise-result-checker-2026',
     '/education/university-merit-list-checker-2026',
     '/education/hec-scholarship-status-2026',
+    '/bills/utility-bill-checker-2026',
+    '/bills/wapda-complaint-status-tracker-2026',
     '/contact',
     '/privacy',
     '/terms',
     '/disclaimer',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date('2026-08-17'),
+    lastModified: new Date('2026-08-18'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/bise-result') || route.includes('/education/university-merit') || route.includes('/education/hec-scholarship') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({
