@@ -51,9 +51,10 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-ink/10 dark:bg-slate-800',
     badgeText: 'text-doc-ink dark:text-slate-200',
     popularSearches: [
+      { en: 'Passport Fee Calculator', ur: 'پاسپورٹ فیس کیلکولیٹر', slug: '/passport/fee-calculator' },
+      { en: 'Passport Tracking Status', ur: 'پاسپورٹ ٹریکنگ سٹیٹس', slug: '/passport/tracking-status' },
       { en: 'Passport Fee 2026', ur: 'پاسپورٹ فیس 2026', slug: '/passport/fee-2026' },
       { en: 'e-Passport Online Apply', ur: 'ای پاسپورٹ آن لائن درخواست', slug: '/passport/online-apply' },
-      { en: 'Passport Tracking Status', ur: 'پاسپورٹ ٹریکنگ سٹیٹس', slug: '/passport/tracking-status' },
       { en: 'Passport Renewal Docs', ur: 'پاسپورٹ تجدید کے کاغذات', slug: '/passport/renewal-documents' },
     ],
   },

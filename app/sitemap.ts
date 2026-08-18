@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tracker',
     '/nadra/nicop-fee-calculator',
     '/nadra/b-form-frc-status-check',
+    '/passport/fee-calculator',
     '/contact',
     '/privacy',
     '/terms',
@@ -22,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-17'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({
