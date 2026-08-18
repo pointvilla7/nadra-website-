@@ -72,9 +72,11 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
     badgeText: 'text-amber-800 dark:text-amber-300',
     popularSearches: [
+      { en: 'BISE Result Checker 2026', ur: 'بورڈ رزلٹ چیکر 2026', slug: '/education/bise-result-checker-2026' },
+      { en: 'University Merit List 2026', ur: 'یونیورسٹی میرٹ لسٹ 2026', slug: '/education/university-merit-list-checker-2026' },
+      { en: 'HEC Scholarship Status', ur: 'HEC سکالرشپ سٹیٹس', slug: '/education/hec-scholarship-status-2026' },
       { en: 'BISE Lahore Result 2026', ur: 'لاہور بورڈ رزلٹ 2026', slug: '/education/bise-lahore-result-2026' },
       { en: 'PU Admissions 2026', ur: 'پنجاب یونیورسٹی ایڈمیشن', slug: '/education/punjab-university-admission-2026' },
-      { en: 'HEC Scholarships', ur: 'ایچ ای سی سکالرشپ', slug: '/education/hec-scholarship-pakistan' },
       { en: 'CSS Book List', ur: 'سی ایس ایس کی کتب', slug: '/education/css-preparation-books' },
     ],
   },
