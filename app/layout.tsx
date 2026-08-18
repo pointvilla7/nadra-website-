@@ -1,12 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, Newsreader, IBM_Plex_Mono } from 'next/font/google';
+import { Montserrat, Newsreader, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { ClientLayout } from '@/components/ClientLayout';
 
 // ─── Core fonts: loaded eagerly, display: swap prevents FOIT ───────────────
-const sansFont = Plus_Jakarta_Sans({
+const sansFont = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-sans',

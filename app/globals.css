@@ -61,7 +61,7 @@
 @layer base {
   :root {
     --font-serif: 'Newsreader', Georgia, serif;
-    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'Montserrat', system-ui, sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
     /* Urdu font uses system fallback until UrduFontLoader injects Noto Nastaliq */
     --font-urdu: 'Noto Sans Arabic', 'Segoe UI', Arial, serif;
