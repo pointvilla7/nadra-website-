@@ -8,22 +8,23 @@ import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { ExternalLink, HelpCircle, ShieldCheck, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Utility Bill Checker 2026 – LESCO, K-Electric, SNGPL & SSGC Gas Bills | Pakistan Info Hub',
+  title: 'Official Utility Bill Portal Access 2026 – LESCO, K-Electric, SNGPL & SSGC Gas Bills | Pakistan Info Hub',
   description:
-    'Check your LESCO electricity bill online with live duplicate bill lookup, plus official guides for K-Electric Karachi, SNGPL Sui Northern, and SSGC Sui Southern gas bills. 100% privacy safe.',
+    'Format validator and guided one-click access to official duplicate bill portals for LESCO, IESCO, FESCO, MEPCO, K-Electric Karachi, SNGPL Sui Northern, and SSGC gas bills. 100% privacy safe.',
   keywords: [
-    'LESCO bill check online 2026',
+    'official bill portal Pakistan',
+    'LESCO bill check 2026',
     'duplicate electricity bill Pakistan',
-    'K-Electric bill check',
-    'SNGPL gas bill online',
+    'K-Electric bill portal',
+    'SNGPL gas bill duplicate',
     'SSGC duplicate bill',
-    'online bill check Pakistan',
-    'PITC bill check',
+    'online bill reference number validator',
+    'PITC bill portal',
   ],
   openGraph: {
-    title: 'Utility Bill Checker 2026 – LESCO, K-Electric, SNGPL & SSGC',
+    title: 'Official Utility Bill Portal Access 2026 – LESCO, K-Electric, SNGPL & SSGC',
     description:
-      'Check your electricity and gas bills online. Live LESCO bill lookup by 14-digit reference number plus official K-Electric and Sui Gas portals.',
+      'Validate your reference number and get guided direct access to official duplicate bill portals for electricity, gas, and water utilities across Pakistan.',
     url: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026',
   },
   alternates: { canonical: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026' },
@@ -42,14 +43,14 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
         { '@type': 'ListItem', position: 2, name: 'Utility Bills', item: 'https://pakistaninfohub.com/bills' },
-        { '@type': 'ListItem', position: 3, name: 'Utility Bill Checker 2026', item: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026' },
+        { '@type': 'ListItem', position: 3, name: 'Utility Bill Portal Access 2026', item: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
-      name: 'Utility Bill Checker 2026',
+      name: 'Utility Bill Portal Access & Format Validator 2026',
       description:
-        'An interactive civic tool to check LESCO electricity bills live and navigate official billing portals for K-Electric, SNGPL, and SSGC.',
+        'An interactive civic navigation tool to validate utility reference numbers and access official billing portals for LESCO, IESCO, FESCO, MEPCO, K-Electric, SNGPL, and SSGC.',
       url: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -58,13 +59,13 @@ const jsonLd = {
     },
     {
       '@type': 'HowTo',
-      name: 'How to Check Your LESCO Electricity Bill Online 2026',
-      description: 'Step-by-step instructions to check and print your duplicate LESCO electricity bill online.',
+      name: 'How to Check and Print Your Duplicate Utility Bill Online (2026)',
+      description: 'Step-by-step instructions to validate your reference number and open the official provider bill portal.',
       step: [
-        { '@type': 'HowToStep', position: 1, name: 'Find 14-Digit Reference Number', text: 'Locate the 14-digit reference number printed on the top section of any previous paper bill.' },
-        { '@type': 'HowToStep', position: 2, name: 'Enter into Bill Checker', text: 'Type your 14-digit number into the LESCO tab of our bill checker tool.' },
-        { '@type': 'HowToStep', position: 3, name: 'View Bill & Due Date', text: 'Click "Check LESCO Bill Live" to view your payable amount, due date, billing month, and units consumed.' },
-        { '@type': 'HowToStep', position: 4, name: 'Print or Download', text: 'Use the print button or open the full official PITC bill PDF for bank counter payments.' },
+        { '@type': 'HowToStep', position: 1, name: 'Find Reference / Account Number', text: 'Locate the 14-digit reference number (or 13-digit for K-Electric, 11-digit for SNGPL, 10-digit for SSGC) printed on your physical bill.' },
+        { '@type': 'HowToStep', position: 2, name: 'Validate Format', text: 'Enter your number into our validator to confirm the digit count and subdivision prefix match official standards.' },
+        { '@type': 'HowToStep', position: 3, name: 'Copy Number', text: 'Click "Copy Number" to copy your clean reference digits to your clipboard.' },
+        { '@type': 'HowToStep', position: 4, name: 'Open Official Portal', text: 'Click "Open Official Bill Portal" to navigate directly to the specific query portal and paste your number to download your bill PDF.' },
       ],
     },
     {
@@ -72,18 +73,18 @@ const jsonLd = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How do I check my LESCO bill online without an app?',
+          name: 'How do I check my electricity bill online on the official portal?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'You can check your LESCO bill directly using our tool above or by visiting the official PITC portal at bill.pitc.com.pk/lescobill/. Enter your 14-digit Reference Number to view and print your duplicate bill instantly.',
+            text: 'Select your electricity distribution company (e.g. LESCO, IESCO, FESCO, MEPCO, K-Electric), validate your 14-digit reference number using our tool, copy it, and click "Open Official Bill Portal". Paste your number on the official PITC or K-Electric page to view and print your duplicate bill.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Where do I find my reference number on an electricity bill?',
+          name: 'Where do I find my reference number on a physical paper bill?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Your 14-digit Reference Number is printed at the top-left or top-right box of your physical electricity bill. It consists of a 2-digit batch, 1-digit sub-division, and customer number (e.g. 14112345678901).',
+            text: 'Your 14-digit Reference Number is printed at the top-left or top-right box of your physical electricity bill. It consists of a 2-digit batch, 1-digit sub-division, and customer number (e.g. 14 11234 5678901).',
           },
         },
         {
@@ -91,15 +92,15 @@ const jsonLd = {
           name: 'What is the difference between SNGPL and SSGC?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'SNGPL (Sui Northern Gas Pipelines Limited) supplies natural gas to Punjab, Khyber Pakhtunkhwa (KPK), Islamabad, and AJK. SSGC (Sui Southern Gas Company) supplies Sindh (including Karachi) and Balochistan.',
+            text: 'SNGPL (Sui Northern Gas Pipelines Limited) supplies natural gas to Punjab, Khyber Pakhtunkhwa (KPK), Islamabad, and AJK with 11-digit Consumer Numbers. SSGC (Sui Southern Gas Company) supplies Sindh (including Karachi) and Balochistan with 10-digit Customer Numbers.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can I pay my bill online after checking the amount?',
+          name: 'Can I pay my bill online after retrieving it from the official portal?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Once you have verified the payable amount and due date, you can pay via 1Link banking apps (HBL, Meezan, UBL, etc.), Easypaisa, JazzCash, Nayapay, or SadaPay using your 14-digit consumer reference number.',
+            text: 'Yes. Once you have verified the payable amount and due date on the official portal, you can pay via 1Link banking apps (HBL, Meezan, UBL, etc.), Easypaisa, JazzCash, Nayapay, or SadaPay using your consumer reference number.',
           },
         },
       ],
@@ -110,7 +111,7 @@ const jsonLd = {
 export default function UtilityBillCheckerPage() {
   const breadcrumbs = [
     { nameEn: 'Utility Bills', nameUr: 'یوٹیلیٹی بلز' },
-    { nameEn: 'Utility Bill Checker 2026', nameUr: 'یوٹیلیٹی بل چیکر 2026' },
+    { nameEn: 'Utility Bill Portal Access 2026', nameUr: 'یوٹیلیٹی بل پورٹل 2026' },
   ];
 
   return (
@@ -122,26 +123,26 @@ export default function UtilityBillCheckerPage() {
 
         <header className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
-            <InteractiveToolBadge labelEn="INTERACTIVE TOOL" labelUr="انٹرایکٹو ٹول" variant="gold" />
+            <InteractiveToolBadge labelEn="INTERACTIVE NAVIGATOR" labelUr="انٹرایکٹو رہنما" variant="gold" />
             <VerifiedBadge />
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            Utility Bill Checker 2026
+            Official Utility Bill Portal Access 2026
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              آن لائن یوٹیلیٹی بل چیکر (بجلی و گیس)
+              آفیشل یوٹیلیٹی بل پورٹل رہنمائی (بجلی، گیس و واسا)
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed font-sans">
-            Check your LESCO electricity bill live by entering your 14-digit reference number, or get guided access to
-            official duplicate bill portals for K-Electric, SNGPL Sui Northern, and SSGC Sui Southern gas.
+            Validate your consumer reference number format client-side, copy it to your clipboard with one click, and
+            access specific official duplicate bill portals for LESCO, IESCO, FESCO, MEPCO, K-Electric, SNGPL, and SSGC.
           </p>
         </header>
 
         <DirectAnswerBox
-          topicTitleEn="How to Check Your Electricity & Gas Bill Online"
-          topicTitleUr="آن لائن بجلی اور گیس کا بل چیک کرنے کا طریقہ"
-          answerEn="To check your utility bill in 2026: (1) Select your company (LESCO, K-Electric, SNGPL, or SSGC), (2) Enter your 14-digit reference number for LESCO to get live bill amount and due date instantly, (3) For KE, SNGPL, and SSGC, use the direct official portal buttons. All queries are ephemeral — no consumer data is stored."
-          answerUr="یوٹیلیٹی بل چیک کرنے کے لیے: (1) اپنی کمپنی (لیسکو، کے الیکٹرک، سوئی ناردرن یا سوئی سدرن) منتخب کریں، (2) لیسکو کے لیے 14 ہندسوں کا ریفرنس نمبر درج کر کے فوری واجب الادا رقم اور آخری تاریخ دیکھیں، (3) کے الیکٹرک اور سوئی گیس کے لیے آفیشل پورٹل لنکس کا استعمال کریں۔"
+          topicTitleEn="How to Access Your Official Electricity & Gas Bill Online"
+          topicTitleUr="آن لائن آفیشل بجلی اور گیس کا بل چیک کرنے کا طریقہ"
+          answerEn="To check your duplicate bill: (1) Select your utility company (LESCO, IESCO, FESCO, MEPCO, KE, SNGPL, SSGC, or WASA), (2) Enter and validate your reference number format, (3) Click 'Copy Number' to copy your clean digits, and (4) Click 'Open Official Portal' to navigate directly to the specific provider billing page and view or download your official PDF bill. 100% private — no consumer data is stored."
+          answerUr="آفیشل ڈپلیکیٹ بل حاصل کرنے کے لیے: (1) اپنی یوٹیلیٹی کمپنی منتخب کریں، (2) اپنا ریفرنس نمبر درج کر کے فارمیٹ چیک کریں، (3) کاپی بٹن دبا کر نمبر کلپ بورڈ میں محفوظ کریں، (4) آفیشل پورٹل بٹن پر کلک کر کے براہ راست سرکاری پورٹل پر نمبر پیسٹ کریں اور بل ڈاؤن لوڈ کریں۔ کوئی ڈیٹا محفوظ نہیں کیا جاتا۔"
         />
 
         <section aria-label="Utility Bill Checker Tool">
@@ -153,7 +154,7 @@ export default function UtilityBillCheckerPage() {
         {/* Breakdown of Utility Providers */}
         <section className="space-y-4">
           <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white">
-            Utility Companies & Identification Reference Formats
+            Utility Companies & Reference Number Formats
           </h2>
           <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
             <table className="w-full text-sm font-sans">
@@ -168,10 +169,13 @@ export default function UtilityBillCheckerPage() {
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {[
-                  { name: 'LESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Lahore, Kasur, Okara, Sheikhupura', url: 'bill.pitc.com.pk', href: 'http://bill.pitc.com.pk/lescobill/' },
-                  { name: 'K-Electric', type: 'Electricity', format: '13-Digit Account No', region: 'Karachi, Dhabeji, Hub', url: 'ke.com.pk', href: 'https://www.ke.com.pk/' },
-                  { name: 'SNGPL', type: 'Natural Gas', format: '11-Digit Consumer No', region: 'Punjab, KPK, Islamabad, AJK', url: 'sngpl.com.pk', href: 'https://www.sngpl.com.pk/' },
-                  { name: 'SSGC', type: 'Natural Gas', format: '10-Digit Customer No', region: 'Sindh (Karachi, Hyderabad) & Balochistan', url: 'ssgc.com.pk', href: 'https://www.ssgc.com.pk/' },
+                  { name: 'LESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Lahore, Kasur, Okara, Sheikhupura', url: 'bill.pitc.com.pk/lescobill', href: 'http://bill.pitc.com.pk/lescobill/' },
+                  { name: 'IESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Islamabad, Rawalpindi, Attock, Jhelum', url: 'bill.pitc.com.pk/iescobill', href: 'http://bill.pitc.com.pk/iescobill/' },
+                  { name: 'FESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Faisalabad, Sargodha, Jhang, Chiniot', url: 'bill.pitc.com.pk/fescobill', href: 'http://bill.pitc.com.pk/fescobill/' },
+                  { name: 'MEPCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Multan, Sahiwal, Bahawalpur, D.G. Khan', url: 'bill.pitc.com.pk/mepcobill', href: 'http://bill.pitc.com.pk/mepcobill/' },
+                  { name: 'K-Electric', type: 'Electricity', format: '13-Digit Account No', region: 'Karachi, Dhabeji, Hub', url: 'ke.com.pk', href: 'https://www.ke.com.pk/customer-services/billls-and-e-payments/' },
+                  { name: 'SNGPL', type: 'Natural Gas', format: '11-Digit Consumer No', region: 'Punjab, KPK, Islamabad, AJK', url: 'sngpl.com.pk/web/bill', href: 'https://www.sngpl.com.pk/web/bill' },
+                  { name: 'SSGC', type: 'Natural Gas', format: '10-Digit Customer No', region: 'Sindh (Karachi, Hyderabad) & Balochistan', url: 'viewbill.ssgc.com.pk', href: 'https://viewbill.ssgc.com.pk/' },
                 ].map((row) => (
                   <tr key={row.name} className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                     <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">{row.name}</td>
@@ -199,20 +203,20 @@ export default function UtilityBillCheckerPage() {
           <div className="space-y-4">
             {[
               {
-                q: 'How do I check my LESCO bill online without an app?',
-                a: 'You can check your LESCO bill using our tool above or directly at bill.pitc.com.pk/lescobill/. Simply enter your 14-digit Reference Number to view the payable amount, billing month, and due date.',
+                q: 'Why does Pakistan Info Hub direct me to the official provider portal?',
+                a: 'To guarantee 100% accuracy, authentic security, and official PDF downloads with barcodes suitable for bank counters. We validate your reference format locally so you never waste time entering invalid numbers on government portals.',
               },
               {
                 q: 'Where is the 14-digit reference number located on a paper bill?',
-                a: 'Look in the top-left or top-right box of your physical electricity bill. It consists of a 2-digit batch number, 1-digit sub-division code, and customer ID.',
+                a: 'Look in the top-left or top-right box of your physical electricity bill. It consists of a 2-digit batch number, 1-digit sub-division code, and customer ID (e.g. 14 11234 5678901).',
               },
               {
-                q: 'What should I do if my LESCO bill shows "Bill Not Found"?',
-                a: 'Ensure you have typed all 14 digits without spaces or dashes. If you recently shifted or got a new meter connection, verify the reference number printed on your latest physical bill.',
+                q: 'What should I do if the official portal shows "Bill Not Found"?',
+                a: 'Ensure you have typed all digits without spaces or dashes. If you recently moved or got a new meter connection, verify the reference number printed on your latest physical bill receipt.',
               },
               {
                 q: 'What is the helpline number for electricity and gas complaints?',
-                a: 'For electricity (LESCO, IESCO, FESCO, GEPCO, MEPCO, PESCO, KE): dial 118 (toll-free 24/7). For Sui Gas (SNGPL and SSGC): dial 1199.',
+                a: 'For electricity (LESCO, IESCO, FESCO, GEPCO, MEPCO, PESCO, KE): dial 118 (toll-free 24/7). For Sui Gas (SNGPL and SSGC): dial 1199. For WASA water services: dial 1334.',
               },
             ].map((faq, idx) => (
               <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
@@ -229,9 +233,9 @@ export default function UtilityBillCheckerPage() {
           {[
             { label: 'PITC Electricity Bill Portal', url: 'http://bill.pitc.com.pk/lescobill/' },
             { label: 'LESCO Official Portal', url: 'http://www.lesco.gov.pk/' },
-            { label: 'K-Electric Official Digital Billing', url: 'https://www.ke.com.pk/' },
-            { label: 'SNGPL Sui Northern Gas Pipelines Ltd', url: 'https://www.sngpl.com.pk/' },
-            { label: 'SSGC Sui Southern Gas Company', url: 'https://www.ssgc.com.pk/' },
+            { label: 'K-Electric Official Digital Billing', url: 'https://www.ke.com.pk/customer-services/billls-and-e-payments/' },
+            { label: 'SNGPL Sui Northern Gas Pipelines Ltd', url: 'https://www.sngpl.com.pk/web/bill' },
+            { label: 'SSGC Sui Southern Gas Company', url: 'https://viewbill.ssgc.com.pk/' },
           ].map((src) => (
             <a key={src.url} href={src.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-doc-seal">
               <ExternalLink className="w-3 h-3" />

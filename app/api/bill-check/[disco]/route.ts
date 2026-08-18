@@ -1,3 +1,31 @@
+/**
+ * /api/bill-check/[disco] — DISABLED IN PRODUCTION
+ * ─────────────────────────────────────────────────────────────────────────
+ * STATUS: Route exists but is effectively non-functional in production.
+ *
+ * ROOT CAUSE (confirmed 2026-08-18 via local-vs-prod testing):
+ * Vercel's serverless functions run on AWS/datacenter IP ranges.
+ * PITC (bill.pitc.com.pk) and most Pakistani government portals block
+ * outbound HTTP requests from datacenter IPs as bot/scraper prevention.
+ * The same fetch code works perfectly from a local/residential IP in <1s,
+ * but consistently fails (timeout or connection refused) from Vercel.
+ *
+ * WHAT WE TRIED: ASP.NET __VIEWSTATE token extraction → POST with session
+ * cookies in one continuous flow. The logic is correct; the blocking is
+ * purely IP-reputation-based — not fixable through better request code.
+ *
+ * FUTURE FIX (if live fetch is required):
+ * Route the fetch through a residential rotating proxy service, e.g.:
+ * - Bright Data / Oxylabs residential proxy (~$50–200/month)
+ * - A self-hosted Node.js proxy on a Pakistani ISP VPS
+ * Insert the proxy agent into the fetch() or http.request() call.
+ * Do NOT re-enable this route without a working proxy layer in place.
+ *
+ * CURRENT APPROACH: The UtilityBillChecker component now uses client-side
+ * format validation + guided deep-links to the official portals instead.
+ * ─────────────────────────────────────────────────────────────────────────
+ */
+
 import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
@@ -178,6 +206,14 @@ export async function POST(
     return NextResponse.json(result);
   } catch (error: any) {
     const pitcUrl = `http://bill.pitc.com.pk/${pitcFolder}/`;
+    // DIAGNOSTIC LOGGING — reveals real error from serverless function logs
+    console.error(`[BillCheck/${providerCode}] FETCH FAILED`, {
+      name: error?.name,
+      message: error?.message,
+      code: error?.code,
+      cause: error?.cause ? String(error.cause) : undefined,
+      stack: error?.stack?.split('\n').slice(0, 5).join(' | '),
+    });
     if (error.name === 'AbortError') {
       return NextResponse.json(
         {
@@ -193,6 +229,7 @@ export async function POST(
         found: false,
         message: `Could not connect to ${providerCode} bill server. Please try again or use the official portal.`,
         officialUrl: pitcUrl,
+        _debug: { errorName: error?.name, errorMessage: error?.message, errorCode: error?.code },
       },
       { status: 500 }
     );

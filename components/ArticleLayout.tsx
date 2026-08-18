@@ -245,6 +245,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {isBillPage && (
         article.slug.includes('wapda-bill-complaint') ? (
           <WAPDAComplaintTracker />
+        ) : article.slug.includes('hazeco') ||
+          article.slug.includes('gb-electric') ||
+          article.slug.includes('wssp-peshawar') ||
+          article.slug.includes('complaint-status-tracker') ? (
+          /* Guide/Complaint page only, no portal exists */
+          null
         ) : (
           <UtilityBillChecker
             initialProvider={
@@ -256,12 +262,40 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
                 ? 'fesco'
                 : article.slug.includes('mepco')
                 ? 'mepco'
+                : article.slug.includes('gepco')
+                ? 'gepco'
+                : article.slug.includes('hesco')
+                ? 'hesco'
+                : article.slug.includes('sepco')
+                ? 'sepco'
+                : article.slug.includes('pesco')
+                ? 'pesco'
+                : article.slug.includes('qesco')
+                ? 'qesco'
+                : article.slug.includes('tesco')
+                ? 'tesco'
+                : article.slug.includes('ajk-electric')
+                ? 'ajkelectric'
                 : article.slug.includes('electric')
                 ? 'kelectric'
                 : article.slug.includes('ssgc')
                 ? 'ssgc'
-                : article.slug.includes('gas')
+                : article.slug.includes('sngpl') || article.slug.includes('gas')
                 ? 'sngpl'
+                : article.slug.includes('wasa-lahore')
+                ? 'wasal'
+                : article.slug.includes('wasa-faisalabad')
+                ? 'wasaf'
+                : article.slug.includes('wasa-rawalpindi')
+                ? 'wasar'
+                : article.slug.includes('wasa-multan')
+                ? 'wasam'
+                : article.slug.includes('wasa-gujranwala')
+                ? 'wasag'
+                : article.slug.includes('wasa-sahiwal')
+                ? 'wasas'
+                : article.slug.includes('kwsc')
+                ? 'kwsc'
                 : 'lesco'
             }
           />

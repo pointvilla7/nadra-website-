@@ -1,3 +1,9 @@
+/**
+ * /api/bill-check/lesco — DISABLED IN PRODUCTION
+ * See /api/bill-check/[disco]/route.ts for full explanation.
+ * TL;DR: PITC blocks Vercel/datacenter IPs. Works locally, fails in prod.
+ */
+
 import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
