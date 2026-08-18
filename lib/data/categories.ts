@@ -29,6 +29,8 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
     badgeText: 'text-doc-seal dark:text-red-300',
     popularSearches: [
+      { en: 'NICOP Fee Calculator', ur: 'نائیکوپ فیس کیلکولیٹر', slug: '/nadra/nicop-fee-calculator' },
+      { en: 'B-Form / FRC Status Check', ur: 'بی فارم و ایف آر سی سٹیٹس', slug: '/nadra/b-form-frc-status-check' },
       { en: 'CNIC Online Apply', ur: 'شناختی کارڈ آن لائن درخواست', slug: '/nadra/cnic-kaise-banaye' },
       { en: 'NADRA Card Fee 2026', ur: 'نادرا کارڈ فیس 2026', slug: '/nadra/nadra-card-fee' },
       { en: 'NADRA Application Tracking', ur: 'نادرا شناختی کارڈ ٹریکنگ', slug: '/nadra/tracking-id' },

@@ -18,6 +18,8 @@ import { LoanEligibilityWidget } from '@/components/LoanEligibilityWidget';
 import { BispCheckWidget } from '@/components/BispCheckWidget';
 import { TrafficLookupWidget } from '@/components/TrafficLookupWidget';
 import { PassportFeeCalculator } from '@/components/PassportFeeCalculator';
+import { NicopFeeCalculator } from '@/components/NicopFeeCalculator';
+import { BFormFrcStatusChecker } from '@/components/BFormFrcStatusChecker';
 import { StepByStepWizard } from '@/components/StepByStepWizard';
 import { ArticleFeedbackWidget } from '@/components/ArticleFeedbackWidget';
 import { AlertSubscriptionModal } from '@/components/AlertSubscriptionModal';
@@ -69,6 +71,8 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
   const isEducationBoardPage = article.slug === 'bise-lahore-result-2026' || article.slug === 'bise-result-check-2026';
   const isNadraTrackingPage = article.slug === 'tracking-id';
   const isPassportTrackingPage = article.slug === 'tracking-status';
+  const isNicopPage = article.slug === 'nicop-apply-online';
+  const isBFormPage = article.slug === 'b-form-kaise-banaye' || article.slug === 'family-registration-certificate';
 
   // Determine appropriate helpline based on category
   const helplineNumber = 
@@ -279,6 +283,18 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {isNadraTrackingPage && <NadraTrackingWidget />}
 
       {isPassportTrackingPage && <PassportTrackingWidget />}
+
+      {isNicopPage && (
+        <div className="my-8">
+          <NicopFeeCalculator />
+        </div>
+      )}
+
+      {isBFormPage && (
+        <div className="my-8">
+          <BFormFrcStatusChecker />
+        </div>
+      )}
 
       {/* Fee Table Section if available */}
       {article.feeStructure && article.feeStructure.length > 0 && (
