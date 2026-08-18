@@ -368,8 +368,8 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 font-sans">
                   {t(
-                    'Found in the top-left or top-right box of any previous LESCO paper bill.',
-                    'پرانے لیسکو بل کے اوپر والے خانے میں 14 ہندسوں کا ریفرنس نمبر لکھا ہوتا ہے۔'
+                    `Found in the top-left or top-right box of any previous ${provider.shortName} paper bill.`,
+                    `پرانے ${provider.shortName} بل کے اوپر والے خانے میں ${provider.digitLength} ہندسوں کا نمبر لکھا ہوتا ہے۔`
                   )}
                 </p>
               </div>
@@ -382,12 +382,12 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                 {loading ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                    <span>{t('FETCHING FROM OFFICIAL LESCO SERVER…', 'سرکاری سرور سے بل حاصل ہو رہا ہے…')}</span>
+                    <span>{t(`FETCHING FROM OFFICIAL ${provider.shortName} SERVER…`, 'سرکاری سرور سے بل حاصل ہو رہا ہے…')}</span>
                   </>
                 ) : (
                   <>
                     <Search className="w-4 h-4" />
-                    <span>{t('CHECK LESCO BILL LIVE', 'لیسکو بل آن لائن دیکھیں')}</span>
+                    <span>{t(`CHECK ${provider.shortName} BILL LIVE`, `${provider.shortName} بل آن لائن دیکھیں`)}</span>
                   </>
                 )}
               </button>
@@ -446,7 +446,7 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                     <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
                     <div>
                       <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
-                        {t('LESCO Official Electricity Bill', 'لیسکو آفیشل بجلی کا بل')}
+                        {t(`${provider.shortName} Official ${provider.category === 'electric' ? 'Electricity' : 'Gas'} Bill`, `${provider.shortName} آفیشل ${provider.category === 'electric' ? 'بجلی' : 'گیس'} کا بل`)}
                       </p>
                       <p className="font-serif font-bold text-sm text-white">{billResult.consumerName}</p>
                     </div>

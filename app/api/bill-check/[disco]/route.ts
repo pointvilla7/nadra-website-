@@ -50,7 +50,7 @@ export async function POST(
     }
 
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 9000); // 9s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout for PITC gov servers
 
     const initUrl = `http://bill.pitc.com.pk/${pitcFolder}/`;
     const postUrl = `http://bill.pitc.com.pk/${pitcFolder}/general`;
@@ -182,7 +182,7 @@ export async function POST(
       return NextResponse.json(
         {
           found: false,
-          message: `Official ${providerCode} server timed out (over 9 seconds). PITC servers experience heavy load during peak hours. Please check directly at the official portal.`,
+          message: `Official ${providerCode} server timed out (over 15 seconds). PITC servers experience heavy load during peak hours. Please check directly at the official portal.`,
           officialUrl: pitcUrl,
         },
         { status: 504 }
