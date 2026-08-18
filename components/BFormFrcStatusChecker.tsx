@@ -111,12 +111,30 @@ export const BFormFrcStatusChecker: React.FC<BFormFrcStatusCheckerProps> = ({
   };
 
   const handleCopySms = () => {
+    const textToCopy = cleanId || '101234567890';
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(cleanId || '101234567890');
-      setCopiedSms(true);
-      setTimeout(() => setCopiedSms(false), 2500);
+      navigator.clipboard.writeText(textToCopy).catch(() => {
+        copyViaExecCommand(textToCopy);
+      });
+    } else {
+      copyViaExecCommand(textToCopy);
     }
+    setCopiedSms(true);
+    setTimeout(() => setCopiedSms(false), 2500);
   };
+
+  const copyViaExecCommand = (text: string) => {
+    if (typeof document === 'undefined') return;
+    const el = document.createElement('textarea');
+    el.value = text;
+    el.setAttribute('readonly', '');
+    el.style.cssText = 'position:absolute;left:-9999px;top:-9999px';
+    document.body.appendChild(el);
+    el.select();
+    try { document.execCommand('copy'); } catch { /* silent fail */ }
+    document.body.removeChild(el);
+  };
+
 
   return (
     <div
