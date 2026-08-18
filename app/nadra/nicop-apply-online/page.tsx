@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { ARTICLES } from '@/lib/data/articles';
 import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
@@ -6,6 +6,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'NADRA NICOP Apply Online 2026: Overseas Pakistani Card Fees & Process',
   description: 'Complete online NICOP application guide for overseas Pakistanis and dual nationals. Verified Zone A & Zone B country fee tables, online Pak-ID steps, and visa-free travel benefits.',
+  alternates: {
+    canonical: 'https://pakistaninfohub.com/nadra/nicop-apply-online',
+  },
   openGraph: {
     title: 'NADRA NICOP Apply Online 2026: Overseas Pakistani Card Fees & Process',
     description: 'Complete online NICOP application guide for overseas Pakistanis and dual nationals. Verified Zone A & Zone B country fee tables, online Pak-ID steps, and visa-free travel benefits.',

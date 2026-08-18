@@ -50,20 +50,18 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     ],
   });
 
-  // WebSite Schema with SearchAction (Homepage & Sitewide Search)
-  if (siteSearch || isHomepage) {
-    schemas.push({
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'Pakistan Info Hub',
-      url: 'https://pakistaninfohub.com',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: 'https://pakistaninfohub.com/tracker?q={search_term_string}',
-        'query-input': 'required name=search_term_string',
-      },
-    });
-  }
+  // WebSite Schema with SearchAction (Sitewide AI & search crawler discovery)
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Pakistan Info Hub',
+    url: 'https://pakistaninfohub.com',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://pakistaninfohub.com/tracker?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  });
 
   // CollectionPage / ItemList Schema for Category pages
   if (categoryName && categoryArticles && categoryArticles.length > 0) {
