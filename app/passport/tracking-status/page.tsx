@@ -1,8 +1,17 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SchemaInjector } from '@/components/SchemaInjector';
-import { PassportTrackingWidget } from '@/components/PassportTrackingWidget';
+
+// ssr:false prevents server-side pre-rendering of the initial empty state.
+// Without this, React sees a server-rendered guidance block, but client-side
+// the component may immediately render results (isValidated=true after hydration),
+// causing a hydration mismatch that silently detaches onClick/href event listeners.
+const PassportTrackingWidget = dynamic(
+  () => import('@/components/PassportTrackingWidget').then((mod) => mod.PassportTrackingWidget),
+  { ssr: false }
+);
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { DirectAnswerBox } from '@/components/DirectAnswerBox';

@@ -1,8 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SchemaInjector } from '@/components/SchemaInjector';
-import { NicopFeeCalculator } from '@/components/NicopFeeCalculator';
+
+const NicopFeeCalculator = dynamic(
+  () => import('@/components/NicopFeeCalculator').then((mod) => mod.NicopFeeCalculator),
+  { ssr: false }
+);
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { DirectAnswerBox } from '@/components/DirectAnswerBox';
