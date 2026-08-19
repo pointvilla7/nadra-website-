@@ -8207,5 +8207,277 @@ export const ARTICLES: Record<string, Article> = {
     "/bills/k-electric-duplicate-bill",
     "/bills/ssgc-duplicate-bill-check"
   ]
-}
+},
+  "token-tax-calculator-2026": {
+    "slug": "token-tax-calculator-2026",
+    "fullPath": "/traffic/token-tax-calculator-2026",
+    "categoryId": "traffic",
+    "titleEn": "Vehicle Token Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad, KPK",
+    "titleUr": "وہیکل ٹوکن ٹیکس کیلکولیٹر 2026 (پنجاب، سندھ، اسلام آباد و کے پی کے)",
+    "metaDescriptionEn": "Calculate vehicle token tax online for Punjab, Sindh, Islamabad, and KPK. Real-time rates for cars, bikes, SUVs, and Filer vs Non-Filer income tax slabs.",
+    "metaDescriptionUr": "پاکستان میں گاڑیوں کا ٹوکن ٹیکس آن لائن معلوم کریں۔ فائلر اور نان فائلر کے صوبائی ایکسائز ریٹس اور لائف ٹائم ٹیکس۔",
+    "directAnswerEn": "Vehicle token tax depends on engine capacity (cc), registration province, and FBR filer status. Vehicles ≤1000cc pay a one-time lifetime tax. Vehicles >1000cc pay annual Motor Vehicle Tax plus advance income tax. Payment is accepted online via ePay Punjab, ICT App, or 1Link.",
+    "directAnswerUr": "گاڑیوں کا ٹوکن ٹیکس انجن کی صلاحیت، صوبے اور فائلر سٹیٹس پر منحصر ہے۔ 1000 سی سی تک لائف ٹائم ٹیکس اور اس سے بڑی گاڑیوں پر سالانہ ٹیکس لاگو ہوتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Excise, Taxation & Narcotics Control",
+      "url": "https://excise.punjab.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Excise & Taxation Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "Can I pay vehicle token tax online?",
+        "questionUr": "کیا ٹوکن ٹیکس آن لائن جمع ہو سکتا ہے؟",
+        "answerEn": "Yes, through ePay Punjab, Sindh e-Payment, ICT City App, or 1Link mobile banking.",
+        "answerUr": "جی ہاں، ای پے پنجاب، سندھ ای پیمنٹ اور موبائل بینکنگ سے باآسانی ادا کریں۔"
+      }
+    ],
+    "contentEn": "## Pakistan Vehicle Token Tax Calculator 2026\nCalculate exact provincial excise rates for all vehicles.",
+    "contentUr": "## پاکستان وہیکل ٹوکن ٹیکس کیلکولیٹر 2026\nتمام گاڑیوں کے سرکاری ٹیکس کی تفصیلی جانچ۔",
+    "relatedSlugs": [
+      "/traffic/vehicle-verification-online-2026",
+      "/traffic/e-challan-check-online",
+      "/traffic/driving-license-guide"
+    ]
+  },
+  "vehicle-verification-online-2026": {
+    "slug": "vehicle-verification-online-2026",
+    "fullPath": "/traffic/vehicle-verification-online-2026",
+    "categoryId": "traffic",
+    "titleEn": "MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK",
+    "titleUr": "آن لائن گاڑی کی تصدیق و ملکیت چیکر 2026 (ایم ٹی ایم آئی ایس)",
+    "metaDescriptionEn": "Check official vehicle registration, owner name, chassis number, engine number, and token tax clearance online via MTMIS Punjab, Sindh Excise, Islamabad ICT, and KPK.",
+    "metaDescriptionUr": "ایم ٹی ایم آئی ایس پنجاب، سندھ اور اسلام آباد کے ذریعے گاڑی کی ملکیت، چیسس نمبر اور ٹوکن ٹیکس کی آن لائن تصدیق کریں۔",
+    "directAnswerEn": "To verify a vehicle online: (1) Select your registration province, (2) Enter registration number, (3) Click 'Copy', and (4) Open the official provincial MTMIS portal to view owner name, chassis number, engine number, and token tax clearance.",
+    "directAnswerUr": "گاڑی کی تصدیق کے لیے صوبہ منتخب کریں، گاڑی کا نمبر درج کریں اور آفیشل ایم ٹی ایم آئی ایس پورٹل پر جا کر مالک کی تفصیلات اور چیسس نمبر دیکھیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab MTMIS Official Portal",
+      "url": "https://mtmis.punjab.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Excise & Taxation Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "Is online vehicle verification free?",
+        "questionUr": "کیا آن لائن گاڑی کی تصدیق مفت ہے؟",
+        "answerEn": "Yes, official provincial MTMIS verification is 100% free of charge.",
+        "answerUr": "جی ہاں، سرکاری ایم ٹی ایم آئی ایس پر تصدیق مکمل مفت ہے۔"
+      }
+    ],
+    "contentEn": "## MTMIS Vehicle Verification Online 2026\nVerify vehicle registration and owner details across Pakistan.",
+    "contentUr": "## ایم ٹی ایم آئی ایس گاڑی کی تصدیق 2026\nگاڑی خریدنے سے پہلے آن لائن ریکارڈ کی مکمل تصدیق کریں۔",
+    "relatedSlugs": [
+      "/traffic/token-tax-calculator-2026",
+      "/traffic/e-challan-check-online",
+      "/traffic/token-tax-check"
+    ]
+  },
+  "emi-calculator-2026": {
+    "slug": "emi-calculator-2026",
+    "fullPath": "/loans/emi-calculator-2026",
+    "categoryId": "loans",
+    "titleEn": "Govt Loan EMI Calculator 2026 – Apni Chhat, PM Youth Loan, Akhuwat",
+    "titleUr": "سرکاری قرضہ قسط و ای ایم آئی کیلکولیٹر 2026 (اپنی چھت، پی ایم یوتھ)",
+    "metaDescriptionEn": "Calculate monthly installments (EMI) for Apni Chhat Apna Ghar (0% interest), PM Youth Business Loan, and Akhuwat. Instant calculation with amortization schedule.",
+    "metaDescriptionUr": "اپنی چھت اپنا گھر اور پی ایم یوتھ لون کی ماہانہ قسط اور مارک اپ کا فوری حساب لگائیں۔ 100٪ مفت کیلکولیٹر۔",
+    "directAnswerEn": "For interest-free schemes like Apni Chhat Apna Ghar (PKR 15 Lakh / 7 Years), the monthly installment is PKR 17,857. For markup loans like PM Youth Tier 2 (5%), monthly payments use reducing balance amortization.",
+    "directAnswerUr": "اپنی چھت اپنا گھر (15 لاکھ روپے / 7 سال) کی ماہانہ قسط 17,857 روپے بنتی ہے۔ پی ایم یوتھ لون ٹائر 2 کے لیے 5 فیصد سالانہ مارک اپ پر قسط کا حساب کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Apni Chhat Apna Ghar Housing Scheme",
+      "url": "https://acag.punjab.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Govt Finance & Loans Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "What is the installment for Apni Chhat Apna Ghar?",
+        "questionUr": "اپنی چھت اپنا گھر کی ماہانہ قسط کتنی ہے؟",
+        "answerEn": "Approximately PKR 17,857 per month for 7 years (84 months) at 0% markup.",
+        "answerUr": "7 سال کی مدت کے لیے تقریباً 17,857 روپے ماہانہ بلاسود قسط بنتی ہے۔"
+      }
+    ],
+    "contentEn": "## Govt Loan EMI Calculator 2026\nCalculate monthly repayments for all public loan schemes in Pakistan.",
+    "contentUr": "## سرکاری قرضہ ای ایم آئی کیلکولیٹر 2026\nتمام حکومتی لون سکیموں کی قسط معلوم کریں۔",
+    "relatedSlugs": [
+      "/loans/loan-application-status-tracker-2026",
+      "/loans/apni-chhat-apna-ghar",
+      "/loans/pm-youth-loan-scheme"
+    ]
+  },
+  "loan-application-status-tracker-2026": {
+    "slug": "loan-application-status-tracker-2026",
+    "fullPath": "/loans/loan-application-status-tracker-2026",
+    "categoryId": "loans",
+    "titleEn": "Govt Loan Application Status Tracker 2026 – Apni Chhat, PM Youth Loan",
+    "titleUr": "سرکاری قرضہ درخواست سٹیٹس ٹریکر 2026 (اپنی چھت و پی ایم یوتھ)",
+    "metaDescriptionEn": "Track loan application status online for Apni Chhat Apna Ghar, PM Youth Business Loan, Akhuwat, and HBFC. CNIC verification, balloting result, and disbursement stages.",
+    "metaDescriptionUr": "اپنی چھت اپنا گھر اور وزیر اعظم یوتھ لون کی درخواست کا سٹیٹس، قرعہ اندازی اور بینک ادائیگی شناختی کارڈ سے آن لائن ٹریک کریں۔",
+    "directAnswerEn": "To check your loan status: (1) Select your program, (2) Validate 13-digit CNIC, (3) Click 'Copy CNIC', and (4) Click 'Open Official Dashboard' to log into your applicant portal and check balloting, sanction letters, and bank disbursement status.",
+    "directAnswerUr": "لون سٹیٹس چیک کرنے کے لیے پروگرام منتخب کریں، 13 ہندسوں کا شناختی کارڈ درج کریں اور آفیشل ڈیش بورڈ پر جا کر قرعہ اندازی و بینک ٹرانسفر کا سٹیٹس دیکھیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "PM Youth Program Dashboard",
+      "url": "https://pmyp.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Govt Finance & Loans Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "How do I check my Apni Chhat application result?",
+        "questionUr": "اپنی چھت سکیم کا رزلٹ کیسے دیکھیں؟",
+        "answerEn": "Log into acag.punjab.gov.pk with your CNIC to check balloting and verification status.",
+        "answerUr": "پورٹل acag.punjab.gov.pk پر شناختی کارڈ سے لاگ ان کر کے قرعہ اندازی کا نتیجہ دیکھیں۔"
+      }
+    ],
+    "contentEn": "## Govt Loan Application Status Tracker 2026\nMonitor official balloting results and disbursement stages.",
+    "contentUr": "## سرکاری لون درخواست ٹریکر 2026\nقرضہ سکیموں کی منظوری اور تصدیق کے مراحل دیکھیں۔",
+    "relatedSlugs": [
+      "/loans/emi-calculator-2026",
+      "/loans/apni-chhat-apna-ghar",
+      "/loans/pm-youth-loan-scheme"
+    ]
+  },
+  "sehat-card-eligibility-checker-2026": {
+    "slug": "sehat-card-eligibility-checker-2026",
+    "fullPath": "/welfare/sehat-card-eligibility-checker-2026",
+    "categoryId": "welfare",
+    "titleEn": "Sehat Card Eligibility Checker 2026 – Check Status by CNIC & 8500 SMS",
+    "titleUr": "صحت سہولت کارڈ آن لائن اہلیت و ہسپتال چیکر 2026 (8500 ایس ایم ایس)",
+    "metaDescriptionEn": "Check Sehat Sahulat Card eligibility and hospital coverage online by 13-digit CNIC or 8500 SMS. Free 1 Million PKR medical treatment guide for Punjab, KPK, and ICT.",
+    "metaDescriptionUr": "صحت کارڈ کی اہلیت 13 ہندسوں کے شناختی کارڈ یا 8500 پر ایس ایم ایس بھیج کر چیک کریں۔ 10 لاکھ روپے تک مفت علاج کے ہسپتالوں کی فہرست۔",
+    "directAnswerEn": "To check Sehat Card eligibility: (1) SMS your 13-digit CNIC without dashes to 8500 to receive instant family status, or (2) Enter your CNIC in our navigator to copy and verify on the official Prime Minister Health Program portal (pmhealthprogram.gov.pk). Covers up to PKR 1,000,000/year for inpatient treatment.",
+    "directAnswerUr": "صحت کارڈ کی اہلیت کے لیے 13 ہندسوں کا شناختی کارڈ بغیر ڈیشز کے 8500 پر ایس ایم ایس کریں یا آفیشل پورٹل پر چیک کریں۔ سالانہ 10 لاکھ روپے تک مفت علاج کی سہولت میسر ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Prime Minister Sehat Sahulat Program",
+      "url": "https://www.pmhealthprogram.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Public Health & Social Welfare Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "How do I check Sehat Card eligibility by SMS?",
+        "questionUr": "ایس ایم ایس کے ذریعے صحت کارڈ کیسے چیک کریں؟",
+        "answerEn": "Send your 13-digit CNIC to 8500 from any Pakistani mobile network.",
+        "answerUr": "اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ 8500 پر ایس ایم ایس کریں۔"
+      }
+    ],
+    "contentEn": "## Sehat Card Eligibility Checker 2026\nFree 1 Million PKR medical insurance verification for families.",
+    "contentUr": "## صحت سہولت کارڈ اہلیت گائیڈ 2026\nتمام شہریوں کے لیے مفت میڈیکل انشورنس کی جانچ۔",
+    "relatedSlugs": [
+      "/welfare/pser-survey-status-checker-2026",
+      "/welfare/bisp-eligibility-check-by-cnic",
+      "/welfare/sehat-card-eligibility-check"
+    ]
+  },
+  "pser-survey-status-checker-2026": {
+    "slug": "pser-survey-status-checker-2026",
+    "fullPath": "/welfare/pser-survey-status-checker-2026",
+    "categoryId": "welfare",
+    "titleEn": "PSER Survey Status Checker 2026 – Punjab Socio-Economic Registry",
+    "titleUr": "پنجاب سوشو اکنامک رجسٹری (پی ایس ای آر) سروے چیکر 2026",
+    "metaDescriptionEn": "Check your Punjab Socio-Economic Registry (PSER) survey and registration status online by CNIC. Eligibility guide for Kisan Card, Himmat Card, and Apni Chhat schemes.",
+    "metaDescriptionUr": "پی ایس ای آر پنجاب سروے کا آن لائن سٹیٹس شناختی کارڈ سے معلوم کریں۔ کسان کارڈ، ہمت کارڈ اور اپنی چھت سکیم کی اہلیت۔",
+    "directAnswerEn": "To check PSER status: (1) Enter your 13-digit CNIC in our navigator, (2) Click 'Copy CNIC', and (3) Click 'Open Official PSER Portal' (pser.punjab.gov.pk) to view your verified household score and qualify for Kisan Card, Himmat Card, and Apni Chhat schemes.",
+    "directAnswerUr": "پی ایس ای آر سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ درج کریں اور آفیشل پورٹل (pser.punjab.gov.pk) پر جا کر گھریلو سکور اور فیملی رجسٹریشن دیکھیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Socio-Economic Registry Portal",
+      "url": "https://pser.punjab.gov.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Public Health & Social Welfare Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "What schemes require PSER survey registration?",
+        "questionUr": "پی ایس ای آر کن سکیموں کے لیے ضروری ہے؟",
+        "answerEn": "Kisan Card, Himmat Card, Apni Chhat Apna Ghar housing, and Honhaar Scholarships.",
+        "answerUr": "کسان کارڈ، ہمت کارڈ، اپنی چھت سکیم اور ہونہار سکالرشپس۔"
+      }
+    ],
+    "contentEn": "## PSER Survey Status Checker 2026\nUnified social registry for Punjab welfare initiatives.",
+    "contentUr": "## پی ایس ای آر سروے آن لائن چیکر 2026\nپنجاب کے تمام فلاحی پروگرامز کی مرکزی رجسٹریشن۔",
+    "relatedSlugs": [
+      "/welfare/sehat-card-eligibility-checker-2026",
+      "/welfare/bisp-eligibility-check-by-cnic",
+      "/welfare/pser-survey-registration"
+    ]
+  },
+  "roll-number-slip-checker-2026": {
+    "slug": "roll-number-slip-checker-2026",
+    "fullPath": "/jobs/roll-number-slip-checker-2026",
+    "categoryId": "jobs",
+    "titleEn": "Roll Number Slip Checker 2026 – FPSC, PPSC, SPSC, KPPSC, NTS & ETEA",
+    "titleUr": "سرکاری رول نمبر سلپ و ایڈمشن لیٹر چیکر 2026 (ایف پی ایس سی، پی پی ایس سی، این ٹی ایس)",
+    "metaDescriptionEn": "Download and check roll number slips and admission letters online by CNIC for FPSC (CSS), PPSC, SPSC, KPPSC, BPSC, NTS, and ETEA competitive exams and job tests.",
+    "metaDescriptionUr": "ایف پی ایس سی، پی پی ایس سی، سندھ کمیشن اور این ٹی ایس امتحانی رول نمبر سلپ اور ایڈمشن لیٹر شناختی کارڈ سے آن لائن حاصل کریں۔",
+    "directAnswerEn": "To download your slip: (1) Select your commission (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS, or ETEA), (2) Enter your 13-digit CNIC, (3) Click 'Copy CNIC', and (4) Click 'Open Official Portal' to enter your CNIC and print your printable PDF admission certificate with test center and seat number.",
+    "directAnswerUr": "رول نمبر سلپ ڈاؤن لوڈ کرنے کے لیے کمیشن منتخب کریں، شناختی کارڈ درج کریں اور آفیشل پورٹل پر جا کر اپنا امتحانی سینٹر اور رول نمبر دیکھ کر پرنٹ کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Public Service Commission",
+      "url": "https://www.ppsc.gop.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Public Service Examinations Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "How do I download a PPSC admission letter?",
+        "questionUr": "پی پی ایس سی رول نمبر سلپ کیسے ڈاؤن لوڈ کریں؟",
+        "answerEn": "Visit ppsc.gop.pk, enter your 13-digit CNIC and select your applied post.",
+        "answerUr": "ویب سائٹ ppsc.gop.pk پر جا کر 13 ہندسوں کا شناختی کارڈ درج کریں اور پوسٹ منتخب کریں۔"
+      }
+    ],
+    "contentEn": "## Roll Number Slip Checker 2026\nDownload competitive exam admission certificates and test schedules.",
+    "contentUr": "## رول نمبر سلپ چیکر 2026\nتمام امتحانی کمیشنز کی رول نمبر سلپس کا مرکزی گیٹ وے۔",
+    "relatedSlugs": [
+      "/jobs/nts-result-scorecard-checker-2026",
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/latest-govt-jobs-pakistan"
+    ]
+  },
+  "nts-result-scorecard-checker-2026": {
+    "slug": "nts-result-scorecard-checker-2026",
+    "fullPath": "/jobs/nts-result-scorecard-checker-2026",
+    "categoryId": "jobs",
+    "titleEn": "NTS, PPSC & FPSC Result & Scorecard Checker 2026 – Check by CNIC",
+    "titleUr": "این ٹی ایس، پی پی ایس سی و ایف پی ایس سی رزلٹ و ڈی ایم سی چیکر 2026",
+    "metaDescriptionEn": "Check test results, merit lists, and Detailed Marks Certificates (DMC) online by CNIC for NTS (NAT/GAT), PPSC, FPSC (CSS), ETEA, and PTS tests in Pakistan.",
+    "metaDescriptionUr": "این ٹی ایس، پی پی ایس سی اور ایف پی ایس سی تحریری امتحانی نتائج، میرٹ لسٹس اور تفصیلی مارکس سرٹیفکیٹ (ڈی ایم سی) آن لائن چیک کریں۔",
+    "directAnswerEn": "To check your test scorecard: (1) Select testing agency (NTS, PPSC, FPSC, ETEA, or PTS), (2) Enter your 13-digit CNIC, (3) Click 'Copy CNIC', and (4) Click 'Open Official Result Portal' to check your subject marks, passing status, and merit rank directly on the testing authority's server.",
+    "directAnswerUr": "رزلٹ کارڈ دیکھنے کے لیے ادارہ منتخب کریں، شناختی کارڈ درج کریں اور آفیشل پورٹل پر جا کر اپنے حاصل کردہ نمبر، پرسنٹائل اور میرٹ پوزیشن دیکھیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "National Testing Service Official Archive",
+      "url": "https://www.nts.org.pk/"
+    },
+    "author": { "name": "Editorial Team", "role": "Public Service Examinations Desk" },
+    "feeStructure": [],
+    "steps": [],
+    "faqs": [
+      {
+        "questionEn": "How long is an NTS NAT score valid?",
+        "questionUr": "این ٹی ایس رزلٹ کتنی مدت کے لیے کارآمد ہے؟",
+        "answerEn": "NTS NAT and GAT scorecards are officially valid for two (2) years.",
+        "answerUr": "این ٹی ایس نیٹ اور گیٹ ٹیسٹ کا رزلٹ 2 سال تک قابل قبول ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "## NTS, PPSC & FPSC Result Scorecard Checker 2026\nAccess recruitment test scorecards and merit ranks.",
+    "contentUr": "## امتحانی رزلٹ کارڈ چیکر 2026\nتمام ٹیسٹنگ ایجنسیوں کے تفصیلی نتائج اور انٹرویو کوالیفائرز لسٹ۔",
+    "relatedSlugs": [
+      "/jobs/roll-number-slip-checker-2026",
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/latest-govt-jobs-pakistan"
+    ]
+  }
 };

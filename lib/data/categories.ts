@@ -118,9 +118,11 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
     badgeText: 'text-doc-seal dark:text-red-300',
     popularSearches: [
+      { en: 'Roll Number Slip 2026', ur: 'رول نمبر سلپ چیکر 2026', slug: '/jobs/roll-number-slip-checker-2026' },
+      { en: 'NTS & PPSC Results 2026', ur: 'این ٹی ایس و پی پی ایس سی رزلٹس', slug: '/jobs/nts-result-scorecard-checker-2026' },
       { en: 'Govt Jobs Pakistan 2026', ur: 'سرکاری نوکریاں 2026', slug: '/jobs/latest-govt-jobs-pakistan' },
       { en: 'PPSC Jobs Today', ur: 'پی پی ایس سی نئی نوکریاں', slug: '/jobs/ppsc-jobs-2026' },
-      { en: 'NTS Roll No & Jobs', ur: 'این ٹی ایس جابز پاکستان', slug: '/jobs/nts-jobs-today' },
+      { en: 'FPSC Online Apply', ur: 'ایف پی ایس سی آن لائن درخواست', slug: '/jobs/fpsc-online-apply-procedure' },
     ],
   },
   {
@@ -137,9 +139,11 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
     badgeText: 'text-amber-800 dark:text-amber-300',
     popularSearches: [
+      { en: 'Govt Loan EMI Calculator', ur: 'قرضہ قسط کیلکولیٹر 2026', slug: '/loans/emi-calculator-2026' },
+      { en: 'Loan Status Tracker 2026', ur: 'لون سٹیٹس ٹریکر 2026', slug: '/loans/loan-application-status-tracker-2026' },
       { en: 'Apni Chhat Apna Ghar Apply', ur: 'اپنی چھت اپنا گھر آن لائن اپلائی', slug: '/loans/apni-chhat-apna-ghar' },
       { en: 'PM Youth Loan 2026', ur: 'پی ایم یوتھ لون سکیم', slug: '/loans/pm-youth-loan-scheme' },
-      { en: 'Kamyab Jawan Portal', ur: 'کامیاب جوان پروگرام فیس و فارم', slug: '/loans/kamyab-jawan-program' },
+      { en: 'Akhuwat Interest-Free Loan', ur: 'اخوت بلاسود قرضہ فارم', slug: '/loans/akhuwat-interest-free-loan-application' },
     ],
   },
   {
@@ -156,10 +160,11 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
     badgeText: 'text-doc-seal dark:text-red-300',
     popularSearches: [
+      { en: 'Sehat Card Eligibility Check', ur: 'صحت کارڈ اہلیت چیکر 2026', slug: '/welfare/sehat-card-eligibility-checker-2026' },
+      { en: 'PSER Survey Status 2026', ur: 'پی ایس ای آر سروے چیکر 2026', slug: '/welfare/pser-survey-status-checker-2026' },
       { en: 'BISP 8171 CNIC Check', ur: 'بی ایس پی 8171 شناختی کارڈ آن لائن', slug: '/welfare/bisp-eligibility-check-by-cnic' },
-      { en: 'PSER Punjab Survey', ur: 'پی ایس ای آر سروے رجسٹریشن', slug: '/welfare/pser-survey-registration' },
       { en: 'Kafaalat Payment Date', ur: 'بینظیر کفالت قسط شیڈول', slug: '/welfare/kafaalat-amount-schedule' },
-      { en: 'PM Laptop Scheme', ur: 'لیپ ٹاپ سکیم رجسٹریشن', slug: '/welfare/laptop-scheme-registration' },
+      { en: 'Kisan Card Punjab', ur: 'کسان کارڈ آن لائن اپلائی', slug: '/welfare/kisan-card-punjab-apply-online' },
     ],
   },
   {
@@ -176,9 +181,11 @@ export const CATEGORIES: Category[] = [
     badgeBg: 'bg-doc-ink/10 dark:bg-slate-800',
     badgeText: 'text-doc-ink dark:text-slate-200',
     popularSearches: [
+      { en: 'Token Tax Calculator 2026', ur: 'ٹوکن ٹیکس کیلکولیٹر 2026', slug: '/traffic/token-tax-calculator-2026' },
+      { en: 'Vehicle Verification MTMIS', ur: 'گاڑی کی تصدیق ایم ٹی ایم آئی ایس', slug: '/traffic/vehicle-verification-online-2026' },
       { en: 'E-Challan Online Check', ur: 'ای چالان آن لائن چیک پنجاب', slug: '/traffic/e-challan-check-online' },
-      { en: 'Token Tax Calculator', ur: 'گاڑیوں کا ٹوکن ٹیکس چیک', slug: '/traffic/token-tax-check' },
       { en: 'Driving License DLIMS', ur: 'ڈرائیونگ لائسنس آن لائن اپلائی', slug: '/traffic/driving-license-guide' },
+      { en: 'M-Tag Registration', ur: 'موٹروے ایم ٹیگ رجسٹریشن', slug: '/traffic/m-tag-motorway-registration-one-network' },
     ],
   },
 ];
