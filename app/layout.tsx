@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   title: `${siteConfig.name} | ${siteConfig.taglineEn} ${siteConfig.currentYear}`,
   description: siteConfig.descriptionEn,
   metadataBase: new URL(BASE_URL),
+  alternates: {
+    canonical: './',
+  },
   openGraph: {
     type: 'website',
     siteName: siteConfig.name,

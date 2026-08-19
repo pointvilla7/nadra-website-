@@ -57,17 +57,60 @@ export const SearchBar: React.FC<SearchBarProps> = ({ isOpen, onClose }) => {
       return;
     }
 
-    const q = query.toLowerCase().trim();
+    let q = query.toLowerCase().trim();
+
+    // Typo-tolerant normalization for common Pakistani civic search misspellings
+    const typoMap: Record<string, string> = {
+      'chalan': 'challan',
+      'echalan': 'e-challan',
+      'e-chalan': 'e-challan',
+      'besp': 'bisp',
+      'ehsas': 'ehsaas',
+      'fescoo': 'fesco',
+      'fasco': 'fesco',
+      'fesko': 'fesco',
+      'lescoo': 'lesco',
+      'lisco': 'lesco',
+      'lesko': 'lesco',
+      'mepcoo': 'mepco',
+      'mipco': 'mepco',
+      'kelectric': 'k-electric',
+      'ke duplicate': 'k-electric',
+      'suigas': 'sui-gas',
+      'tokan': 'token',
+      'tokin': 'token',
+      'roll no': 'roll number',
+      'rol no': 'roll number',
+      'snc': 'smart card',
+      'merit': 'merit list',
+      'sehat': 'sehat card',
+      'apni chat': 'apni chhat',
+      'kisan': 'kisan card',
+    };
+
+    for (const [misspelling, correction] of Object.entries(typoMap)) {
+      if (q.includes(misspelling)) {
+        q = q.replace(misspelling, correction);
+      }
+    }
+
     const articlesArray = Object.values(ARTICLES);
 
     const filtered = articlesArray.filter((art) => {
+      const titleEn = art.titleEn.toLowerCase();
+      const titleUr = art.titleUr.toLowerCase();
+      const descEn = art.metaDescriptionEn.toLowerCase();
+      const slug = art.slug.toLowerCase();
+      const cat = art.categoryId.toLowerCase();
+      const direct = art.directAnswerEn?.toLowerCase() || '';
+
       return (
-        art.titleEn.toLowerCase().includes(q) ||
-        art.titleUr.toLowerCase().includes(q) ||
-        art.metaDescriptionEn.toLowerCase().includes(q) ||
-        art.metaDescriptionUr.toLowerCase().includes(q) ||
-        art.slug.toLowerCase().includes(q) ||
-        art.categoryId.toLowerCase().includes(q)
+        titleEn.includes(q) ||
+        titleUr.includes(q) ||
+        descEn.includes(q) ||
+        slug.includes(q) ||
+        cat.includes(q) ||
+        direct.includes(q)
       );
     });
 

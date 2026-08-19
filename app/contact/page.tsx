@@ -29,18 +29,18 @@ export default function ContactPage() {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="p-4 rounded-2xl bg-doc-paper dark:bg-doc-dark-card border border-doc-brass/30 flex items-center gap-3">
           <div className="p-3 rounded-xl bg-doc-seal text-white shrink-0">
             <Mail className="w-5 h-5" />
           </div>
           <div>
             <span className="text-[10px] font-mono font-bold text-doc-brass uppercase block">
-              {t('Official Contact Email', 'آفیشل ای میل ایڈریس', 'Official Email')}
+              {t('Official Email', 'آفیشل ای میل', 'Official Email')}
             </span>
             <a
               href="mailto:pakistaninfohub1@gmail.com"
-              className="text-sm font-bold text-doc-ink dark:text-white hover:text-doc-seal transition"
+              className="text-xs font-bold text-doc-ink dark:text-white hover:text-doc-seal transition"
             >
               pakistaninfohub1@gmail.com
             </a>
@@ -48,16 +48,33 @@ export default function ContactPage() {
         </div>
 
         <div className="p-4 rounded-2xl bg-doc-paper dark:bg-doc-dark-card border border-doc-brass/30 flex items-center gap-3">
-          <div className="p-3 rounded-xl bg-doc-ink text-doc-brass shrink-0">
+          <div className="p-3 rounded-xl bg-emerald-700 text-white shrink-0">
             <MapPin className="w-5 h-5" />
           </div>
           <div>
             <span className="text-[10px] font-mono font-bold text-doc-brass uppercase block">
               {t('Headquarters Location', 'دفتر کا پتہ', 'Location')}
             </span>
-            <span className="text-sm font-bold text-doc-ink dark:text-white">
-              Islamabad, Pakistan
+            <span className="text-xs font-bold text-doc-ink dark:text-white leading-tight block">
+              Blue Area, Sector G-7/2, Islamabad
             </span>
+          </div>
+        </div>
+
+        <div className="p-4 rounded-2xl bg-doc-paper dark:bg-doc-dark-card border border-doc-brass/30 flex items-center gap-3">
+          <div className="p-3 rounded-xl bg-doc-ink text-doc-brass shrink-0">
+            <Send className="w-5 h-5" />
+          </div>
+          <div>
+            <span className="text-[10px] font-mono font-bold text-doc-brass uppercase block">
+              {t('Editorial & Fact-Check Desk', 'ایڈیٹوریل ہیلپ لائن', 'Helpline')}
+            </span>
+            <a
+              href="tel:+92518439200"
+              className="text-xs font-bold text-doc-ink dark:text-white hover:text-doc-seal transition"
+            >
+              +92 (51) 843-9200
+            </a>
           </div>
         </div>
       </div>

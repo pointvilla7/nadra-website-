@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/welfare/pser-survey-status-checker-2026',
     '/jobs/roll-number-slip-checker-2026',
     '/jobs/nts-result-scorecard-checker-2026',
+    '/bills/sngpl-bill-check-online',
+    '/bills/kelectric-duplicate-bill',
     '/contact',
     '/privacy',
     '/terms',

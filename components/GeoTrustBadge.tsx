@@ -58,8 +58,16 @@ export const GeoTrustBadge: React.FC<GeoTrustBadgeProps> = ({
             <span className="font-mono text-doc-seal dark:text-red-300 font-extrabold">{lastVerified}</span>
           </div>
           {author && (
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
-              {t('Verified by:', 'بذریعہ:')} <span className="font-bold text-slate-700 dark:text-slate-300">{author.name}</span> ({author.role})
+            <p className="text-[11px] text-slate-600 dark:text-slate-300 font-medium flex items-center flex-wrap gap-1">
+              <span>{t('Written by:', 'تحریر:')}</span>
+              <a href="/editorial-team" className="font-bold text-slate-800 dark:text-slate-100 hover:text-doc-seal underline underline-offset-2">
+                {author.name}
+              </a>
+              <span className="text-slate-400">·</span>
+              <span>{t('Reviewed by:', 'تصدیق:')}</span>
+              <a href="/editorial-team" className="font-bold text-doc-seal dark:text-red-300 hover:underline">
+                Editorial Review Board
+              </a>
             </p>
           )}
         </div>

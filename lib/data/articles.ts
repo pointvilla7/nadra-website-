@@ -8615,4 +8615,184 @@ export const ARTICLES: Record<string, Article> = {
       "/jobs/latest-govt-jobs-pakistan"
     ]
   }
+,
+  "lesco-vs-fesco-bill-comparison": {
+    "slug": "lesco-vs-fesco-bill-comparison",
+    "fullPath": "/bills/lesco-vs-fesco-bill-comparison",
+    "categoryId": "bills",
+    "titleEn": "LESCO vs FESCO Bill Check: Differences, Unit Rates & Slabs Explained (2026)",
+    "titleUr": "لیسکو بمقابلہ فیسکو بجلی کا بل: فرق، ٹیرف اور ریفرنس نمبر موازنہ 2026",
+    "metaDescriptionEn": "Compare LESCO vs FESCO electricity bill check. Understand jurisdiction differences (Lahore vs Faisalabad), reference number formats, NEPRA tariff slabs & complaint helplines.",
+    "metaDescriptionUr": "لیسکو اور فیسکو بجلی بل کا مکمل موازنہ۔ لاہور اور فیصل آباد ڈویژن کے ٹیرف سلیب، ریفرنس نمبر اور آن لائن ڈپلیکیٹ بلنگ کا فرق۔",
+    "directAnswerEn": "LESCO serves 6.2 million consumers across Lahore, Kasur, Okara, Sheikhupura, and Nankana Sahib, whereas FESCO powers 4.9 million consumers across Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot, Mianwali, Bhakkar, and Khushab. Both use 14-digit reference numbers via PITC portals with identical NEPRA domestic base tariffs (PKR 7.74/unit protected up to 100 units).",
+    "directAnswerUr": "لیسکو لاہور اور گردونواح کے 5 اضلاع جبکہ فیسکو فیصل آباد اور سرگودھا ڈویژن کے 8 اضلاع کو بجلی فراہم کرتی ہے۔ دونوں کمپنیاں PITC پورٹل کے ذریعے 14 ہندسوں کا ریفرنس نمبر استعمال کرتی ہیں اور گھریلو ٹیرف سلیب نیپرا کے تحت یکساں ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NEPRA Official Tariff Registry",
+      "url": "https://nepra.org.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Tariff (Protected: 1-100 Units)",
+        "serviceUr": "پروٹیکٹڈ گھریلو ٹیرف (1 تا 100 یونٹ)",
+        "normal": "PKR 7.74 / unit",
+        "urgent": "Both LESCO & FESCO",
+        "executive": "NEPRA Unified Surcharge",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Domestic Tariff (Non-Protected: 201-300 Units)",
+        "serviceUr": "نان پروٹیکٹڈ گھریلو ٹیرف (201 تا 300 یونٹ)",
+        "normal": "PKR 27.14 / unit",
+        "urgent": "Both LESCO & FESCO",
+        "executive": "+ PKR 200 Fixed Charge",
+        "validity": "Active 2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check Your Paper Bill Header for DISCO Name",
+        "titleUr": "بل کے اوپر کمپنی کا نام دیکھیں",
+        "detailEn": "Look at the logo: Lahore region carries 'LESCO'; Faisalabad region carries 'FESCO'.",
+        "detailUr": "بل پر لیسکو یا فیسکو کا لوگو دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter 14-Digit Reference Number on Dedicated Portal",
+        "titleUr": "متعلقہ پورٹل پر 14 ہندسوں کا نمبر درج کریں",
+        "detailEn": "Go to bill.pitc.com.pk/lescobill for LESCO or bill.pitc.com.pk/fescobill for FESCO.",
+        "detailUr": "لیسکو کے لیے لیسکو اور فیسکو کے لیے فیسکو پورٹل کھولیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay via 1Link Bill Payment in Banking Apps",
+        "titleUr": "بینکنگ ایپ میں 1Link سے ادا کریں",
+        "detailEn": "Select the correct DISCO from the utility payment menu to prevent misrouted funds.",
+        "detailUr": "صحیح کمپنی کا انتخاب کر کے بل ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the main difference between LESCO and FESCO?",
+        "questionUr": "لیسکو اور فیسکو میں بنیادی فرق کیا ہے؟",
+        "answerEn": "The primary difference lies in their geographical service areas and customer profiles. LESCO covers the metropolitan capital of Punjab (Lahore, Kasur, Okara, Sheikhupura) with predominantly urban and residential load, while FESCO covers the central industrial and textile belt (Faisalabad, Jhang, Sargodha, Chiniot, Mianwali, Bhakkar, Khushab) with heavy industrial B-3/B-4 feeders.",
+        "answerUr": "لیسکو لاہور ڈویژن کے اضلاع کو کور کرتی ہے جبکہ فیسکو فیصل آباد اور سرگودھا ڈویژن کے ٹیکسٹائل و انڈسٹریل علاقوں کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "Are electricity unit rates higher in LESCO or FESCO?",
+        "questionUr": "کیا لیسکو یا فیسکو کے یونٹ ریٹ میں کوئی فرق ہے؟",
+        "answerEn": "Base electricity tariffs for domestic consumers are strictly uniform across both LESCO and FESCO under NEPRA national tariff determinations. However, monthly Fuel Price Adjustments (FPA) and quarterly tariff adjustments (QTA) can vary slightly depending on regional transmission line losses and bilateral power purchasing costs.",
+        "answerUr": "گھریلو صارفین کے لیے بنیادی فی یونٹ ریٹ دونوں میں یکساں ہوتا ہے، صرف فیول ایڈجسٹمنٹ (FPA) میں معمولی فرق ہو سکتا ہے۔"
+      },
+      {
+        "questionEn": "Can I pay a FESCO bill using a LESCO consumer number?",
+        "questionUr": "کیا فیسکو کا بل لیسکو کے آپشن سے پے ہو سکتا ہے؟",
+        "answerEn": "No. Each DISCO maintains a distinct sub-division and 1Link routing prefix. Always select 'FESCO' in your mobile banking app when paying a Faisalabad region bill, or 'LESCO' for a Lahore region bill.",
+        "answerUr": "نہیں، بینکنگ ایپ میں اپنی متعلقہ کمپنی ہی منتخب کرنا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "## LESCO vs FESCO: Complete Comparison Matrix (2026)\nWhen navigating utility bills in Punjab, understanding whether your connection falls under **LESCO (Lahore Electric Supply Company)** or **FESCO (Faisalabad Electric Supply Company)** ensures correct online bill retrieval and payment routing.\n\n| Comparison Feature | LESCO (Lahore Electric) | FESCO (Faisalabad Electric) |\n| :--- | :--- | :--- |\n| **Operational Headquarters** | 22-A Queens Road, Lahore | West Canal Road, Faisalabad |\n| **Covered Districts** | Lahore, Kasur, Okara, Sheikhupura, Nankana Sahib | Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot, Mianwali, Bhakkar, Khushab |\n| **Total Active Consumers** | Over 6.2 Million Connections | Over 4.9 Million Connections |\n| **Online Bill Portal** | `bill.pitc.com.pk/lescobill` | `bill.pitc.com.pk/fescobill` |\n| **Reference Number Length** | 14 Numeric Digits | 14 Numeric Digits |\n| **Customer ID Length** | 10 Digits | 10 Digits |\n| **Emergency Outage Line** | 118 / 042-99205461 | 118 / 0800-66554 |\n| **SMS Helpline** | 8118 | 8118 |\n| **Tariff Determination** | NEPRA Unified Tariff (2026) | NEPRA Unified Tariff (2026) |\n\n---\n\n## Technical Differences in Billing & Feeder Infrastructure\n- **LESCO Load Distribution**: Highly urbanized residential concentration with peak load surges driven by air conditioning in summer.\n- **FESCO Load Distribution**: High industrial load concentration due to textile mills, power looms, and agricultural tube-wells under the Punjab Kisan Package.",
+    "contentUr": "## لیسکو بمقابلہ فیسکو موازنہ گائیڈ 2026\nلاہور اور فیصل آباد ڈویژن کی بجلی کمپنیوں کا مکمل تقابلی جائزہ اور آن لائن بلنگ کا طریقہ۔",
+    "relatedSlugs": [
+      "/bills/lesco-bill-check-online",
+      "/bills/fesco-bill-check-online",
+      "/bills/utility-bill-checker-2026"
+    ]
+  }
+,
+  "cnic-vs-nicop-vs-poc-comparison": {
+    "slug": "cnic-vs-nicop-vs-poc-comparison",
+    "fullPath": "/nadra/cnic-vs-nicop-vs-poc-comparison",
+    "categoryId": "nadra",
+    "titleEn": "CNIC vs NICOP vs POC: Differences, Fees & Eligibility Explained (2026)",
+    "titleUr": "شناختی کارڈ، نائیکوپ اور پی او سی میں فرق اور فیس موازنہ 2026",
+    "metaDescriptionEn": "Compare NADRA CNIC vs NICOP vs POC in 2026. Differences in eligibility, fees (Zone A & B), dual citizenship rules, visa-free travel & property ownership rights.",
+    "metaDescriptionUr": "نادرا شناختی کارڈ (CNIC)، اوورسیز نائیکوپ (NICOP) اور پاکستان اوریجن کارڈ (POC) میں فرق، فیس اور اہلیت کی مکمل معلومات۔",
+    "directAnswerEn": "A CNIC (Smart ID) is issued to resident Pakistani citizens aged 18+. A NICOP (National Identity Card for Overseas Pakistanis) is issued to Pakistani citizens residing abroad or holding dual nationality, granting visa-free entry to Pakistan. A POC (Pakistan Origin Card) is issued to foreign spouses of Pakistani nationals or former citizens who renounced Pakistani citizenship.",
+    "directAnswerUr": "شناختی کارڈ (CNIC) پاکستان میں مقیم شہریوں کے لیے ہے، نائیکوپ (NICOP) اوورسیز اور دوہری شہریت والے پاکستانیوں کو بغیر ویزا پاکستان آنے کی سہولت دیتا ہے، جبکہ پی او سی (POC) غیر ملکی شریک حیات یا ترک شہریت کرنے والوں کو جاری ہوتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Official Identification Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Smart CNIC (Resident Citizen)",
+        "serviceUr": "اسمارٹ شناختی کارڈ (مقامی شہری)",
+        "normal": "PKR 750 (Normal)",
+        "urgent": "PKR 1,500 (Urgent)",
+        "executive": "PKR 2,500 (Executive)",
+        "validity": "10 Years"
+      },
+      {
+        "serviceEn": "NICOP (Zone A - US, UK, Canada, Europe)",
+        "serviceUr": "نائیکوپ (زون اے: امریکہ، برطانیہ، یورپ)",
+        "normal": "$39 USD / PKR 11,000",
+        "urgent": "$59 USD / PKR 16,500",
+        "executive": "$79 USD / PKR 22,000",
+        "validity": "10 Years"
+      },
+      {
+        "serviceEn": "POC (Pakistan Origin Card - Foreign Spouse)",
+        "serviceUr": "پی او سی (غیر ملکی شریک حیات)",
+        "normal": "$150 USD",
+        "urgent": "$250 USD",
+        "executive": "$350 USD",
+        "validity": "5 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Identify Your Citizenship & Residency Status",
+        "titleUr": "اپنی شہریت اور رہائش کی نوعیت دیکھیں",
+        "detailEn": "Resident Pakistani = CNIC; Overseas/Dual Citizen = NICOP; Foreign Spouse = POC.",
+        "detailUr": "مقامی شہری شناختی کارڈ، اوورسیز نائیکوپ اور غیر ملکی شریک حیات پی او سی منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Apply Online via Pak-ID Portal or NRC Center",
+        "titleUr": "پاک آئی ڈی پورٹل یا قریبی نادرا سنٹر جائیں",
+        "detailEn": "Submit your digital application at id.nadra.gov.pk or visit an Executive NADRA Registration Center.",
+        "detailUr": "ویب سائٹ id.nadra.gov.pk پر اپلائی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Track Application Status & Receive Card",
+        "titleUr": "ٹریکنگ آئی ڈی سے سٹیٹس معلوم کریں",
+        "detailEn": "Track delivery through SMS short-code 8400 or Pak-ID tracking portal.",
+        "detailUr": "8400 پر ایس ایم ایس کر کے ڈلیوری چیک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a NICOP holder travel to Pakistan without a visa?",
+        "questionUr": "کیا نائیکوپ کا حامل بغیر ویزا پاکستان سفر کر سکتا ہے؟",
+        "answerEn": "Yes. Under Section 10 of the NADRA Ordinance 2000, a valid NICOP serves as a permanent visa-free entry document for Pakistan on any foreign passport.",
+        "answerUr": "جی ہاں! نائیکوپ ہولڈرز کسی بھی غیر ملکی پاسپورٹ پر بغیر ویزا لامحدود مدت کے لیے پاکستان آ سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Can a POC card holder buy property and open bank accounts in Pakistan?",
+        "questionUr": "کیا پی او سی ہولڈر پاکستان میں جائیداد خرید سکتا ہے اور بینک اکاؤنٹ کھول سکتا ہے؟",
+        "answerEn": "Yes. POC holders enjoy visa-free entry, the right to purchase and sell residential real estate, open Roshan Digital Accounts (RDA), and obtain local employment without requiring a work permit.",
+        "answerUr": "جی ہاں! پی او سی کارڈ ہولڈرز پاکستان میں رہائشی پراپرٹی خرید سکتے ہیں اور بینک اکاؤنٹس کھول سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "## NADRA Identity Documents: Comprehensive Comparison Matrix (2026)\n\n| Feature | CNIC (Smart ID) | NICOP (Overseas Card) | POC (Pakistan Origin Card) |\n| :--- | :--- | :--- | :--- |\n| **Eligibility** | Resident Pakistani citizens (age 18+) | Pakistani citizens living abroad or dual nationals | Foreign spouses of Pakistanis / former citizens |\n| **Visa-Free Entry to Pakistan** | No (requires Pakistani passport) | **Yes (100% Visa-Free on foreign passport)** | **Yes (100% Visa-Free entry)** |\n| **Right to Vote in Pakistan Elections** | Yes | Yes (Overseas polling mechanisms) | No (Foreign national) |\n| **Right to Buy Commercial Real Estate** | Yes (Full rights) | Yes (Full rights) | Residential only (Agricultural/commercial restricted) |\n| **Card Validity Period** | 10 Years | 10 Years (5 Years for minors) | 5 Years |\n| **Online Application Portal** | `id.nadra.gov.pk` | `id.nadra.gov.pk` | `id.nadra.gov.pk` |",
+    "contentUr": "## شناختی کارڈ، نائیکوپ اور پی او سی موازنہ 2026\nنادرا کے تمام شناختی کارڈز کی تفصیلی رہنمائی اور قانونی حقوق کا جائزہ۔",
+    "relatedSlugs": [
+      "/nadra/nicop-apply-online",
+      "/nadra/nicop-fee-calculator",
+      "/nadra/cnic-kaise-banaye"
+    ]
+  }
 };
