@@ -68,7 +68,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
           <p className="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider">
             {t('Popular Queries:', 'مقبول ترین تلاشیں:')}
           </p>
-          {category.popularSearches.slice(0, 3).map((item, i) => (
+          {category.popularSearches.slice(0, 4).map((item, i) => (
             <Link
               key={i}
               href={item.slug}

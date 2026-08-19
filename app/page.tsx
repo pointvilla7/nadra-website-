@@ -94,6 +94,12 @@ export default function HomePage() {
               CNIC Apply
             </Link>
             <Link
+              href="/bills/utility-bill-checker-2026"
+              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+            >
+              Bill Checker 2026
+            </Link>
+            <Link
               href="/welfare/bisp-eligibility-check-by-cnic"
               className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
             >
