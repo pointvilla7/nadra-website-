@@ -7,7 +7,7 @@ import { VerifiedBadge } from './VerifiedBadge';
 
 interface GeoTrustBadgeProps {
   lastVerified: string;
-  officialSource: {
+  officialSource?: {
     name: string;
     url: string;
   };
@@ -15,11 +15,12 @@ interface GeoTrustBadgeProps {
     name: string;
     role: string;
   };
+  categorySlug?: string;
 }
 
 export const GeoTrustBadge: React.FC<GeoTrustBadgeProps> = ({
   lastVerified,
-  officialSource,
+  officialSource = { name: 'Official Gazette of Pakistan', url: 'https://pakistaninfohub.com' },
   author,
 }) => {
   const { t } = useLanguage();

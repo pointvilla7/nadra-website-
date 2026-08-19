@@ -1,9 +1,16 @@
+export interface FAQItem {
+  questionEn: string;
+  questionUr: string;
+  answerEn: string;
+  answerUr: string;
+}
+
 export interface FeeItem {
   serviceEn: string;
   serviceUr: string;
   normal: string;
   urgent: string;
-  executive: string;
+  executive?: string;
   validity?: string;
 }
 
@@ -13,13 +20,6 @@ export interface StepItem {
   titleUr: string;
   detailEn: string;
   detailUr: string;
-}
-
-export interface FAQItem {
-  questionEn: string;
-  questionUr: string;
-  answerEn: string;
-  answerUr: string;
 }
 
 export interface Article {
@@ -33,20 +33,14 @@ export interface Article {
   directAnswerEn: string;
   directAnswerUr: string;
   lastVerified: string;
-  officialSource: {
-    name: string;
-    url: string;
-  };
-  author: {
-    name: string;
-    role: string;
-  };
+  officialSource?: { name: string; url: string };
+  author?: { name: string; role: string };
   feeStructure?: FeeItem[];
   steps?: StepItem[];
-  faqs: FAQItem[];
+  faqs?: FAQItem[];
   contentEn: string;
   contentUr: string;
-  relatedSlugs: string[];
+  relatedSlugs?: string[];
 }
 
 export const ARTICLES: Record<string, Article> = {
@@ -107,13 +101,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا فوتیدگی کے بعد شناختی کارڈ منسوخ کروانا لازمی ہے؟",
         "answerEn": "Yes, cancelling CNIC prevents identity theft, illegal pension withdrawal, and is required for succession certificate.",
         "answerUr": "جی ہاں! وراثت، پنشن اور ڈپلیکیٹ اکاؤنٹ کے مسائل سے بچنے کے لیے ضروری ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NADRA CNIC Death & Cancellation Certificate Guide 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to NADRA death cancellation certificate rules and inheritance requirements.",
     "contentUr": "نادرا شناختی کارڈ منسوخی اور ڈیتھ سرٹیفکیٹ کا مکمل قانون۔",
     "relatedSlugs": [
       "/nadra/family-registration-certificate",
-      "/nadra/succession-certificate-online"
+      "/nadra/succession-certificate-online",
+      "/nadra/pak-id-biometric-verification-fix"
     ]
   },
   "succession-certificate-online": {
@@ -180,6 +187,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "نادرا سکسیشن سرٹیفکیٹ کتنے دن میں ملتا ہے؟",
         "answerEn": "In undisputed cases, the certificate is issued within 15 working days following public newspaper advertisement.",
         "answerUr": "بغیر کسی تنازعے کے 15 ورکنگ دنوں میں سرٹیفکیٹ جاری کر دیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NADRA Succession Certificate & Letter of Administration 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Complete rules for obtaining legal succession certificate without civil court delays.",
@@ -239,13 +258,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا میں اپنا مستقل پتہ دوسرے صوبے کا کروا سکتا ہوں؟",
         "answerEn": "Yes, with valid property registration document, domicile of target district, or spouse CNIC.",
         "answerUr": "جی ہاں! ڈومیسائل یا جائیداد کے کاغذات کی بنیاد پر مستقل پتہ تبدیل ہو سکتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NADRA CNIC Modification Guide 2026: Name, Address & Marital Status?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Official rules for updating NADRA records after marriage, relocation, or legal name change.",
     "contentUr": "شادی یا منتقلی کے بعد نادرا ریکارڈز کی درستی کا قانونی طریقہ کار۔",
     "relatedSlugs": [
       "/nadra/cnic-kaise-banaye",
-      "/nadra/card-renewal-online"
+      "/nadra/card-renewal-online",
+      "/nadra/tracking-id"
     ]
   },
   "executive-center-timings-fees": {
@@ -291,13 +323,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا نادرا ایگزیکٹو سینٹر ہفتے کو کھلے ہوتے ہیں؟",
         "answerEn": "Yes! Most executive centers operate on Saturdays from 9:00 AM to 3:00 PM.",
         "answerUr": "جی ہاں! ایگزیکٹو میگا سینٹر ہفتے کے دن صبح 9 سے دوپہر 3 بجے تک کھلے رہتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NADRA Executive Registration Center (NRC) Timings & Fast Track Fees?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Executive NRC directory with full address list, working hours, and fast track services.",
     "contentUr": "پاکستان کے تمام بڑے شہروں میں واقع نادرا ایگزیکٹو سینٹرز کے پتہ جات اور ٹائمنگز۔",
     "relatedSlugs": [
       "/nadra/nadra-card-fee",
-      "/nadra/cnic-kaise-banaye"
+      "/nadra/cnic-kaise-banaye",
+      "/nadra/nicop-apply-online"
     ]
   },
   "pak-id-biometric-verification-fix": {
@@ -343,13 +388,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر 5 بار کوشش کے بعد بھی کیمرہ نشانات سکین نہ کرے؟",
         "answerEn": "Clean camera lens, update Pak-ID app to latest version from Play Store, or visit an NRC for physical scanner.",
         "answerUr": "کیمرہ کا شیشہ صاف کریں اور ایپ اپڈیٹ کریں۔ مسئلہ حل نہ ہو تو نادرا سینٹر جائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Pak-ID Mobile App Fingerprint Biometric Troubleshooting Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Step-by-step camera adjustment rules to successfully complete Pak-ID online biometric authentication.",
     "contentUr": "پاک آئی ڈی آن لائن بائیو میٹرک کیمرہ ایڈجسٹمنٹ کے بہترین طریقے۔",
     "relatedSlugs": [
       "/nadra/card-renewal-online",
-      "/nadra/nicop-apply-online"
+      "/nadra/nicop-apply-online",
+      "/nadra/b-form-kaise-banaye"
     ]
   },
   "executive-fast-track-passport": {
@@ -402,13 +460,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ہنگامی صورت میں اسی دن پاسپورٹ مل سکتا ہے؟",
         "answerEn": "Yes, Fast Track counter applicants in Islamabad and Lahore can collect passport within 24 hours.",
         "answerUr": "جی ہاں! اسلام آباد اور لاہور ایگزیکٹو کاؤنٹر سے 24 گھنٹے میں پاسپورٹ پرنٹ ہو کر مل جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Detailed instructions for obtaining urgent emergency 24-hour delivery passport in Pakistan.",
     "contentUr": "ہنگامی سفر کے لیے 24 گھنٹے میں فاسٹ ٹریک پاسپورٹ حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/passport/fee-2026",
-      "/passport/online-apply"
+      "/passport/online-apply",
+      "/passport/tracking-status"
     ]
   },
   "lost-passport-application-fee": {
@@ -461,13 +532,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا گم شدہ پاسپورٹ آن لائن رینیو ہو سکتا ہے؟",
         "answerEn": "No. First-time lost passport applications REQUIRE physical visit to Passport Office for Police FIR verification.",
         "answerUr": "نہیں! گم شدہ پاسپورٹ کے لیے پاسپورٹ آفس جانا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Lost Pakistani Passport Replacement Guide & Penalty Fees 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Official DGIP regulations regarding duplicate passport issuance after theft or loss.",
     "contentUr": "پاسپورٹ چوری یا گمیدگی کی صورت میں قانونی کارروائی اور دگنی فیس کا قانون۔",
     "relatedSlugs": [
       "/passport/renewal-documents",
-      "/passport/fee-2026"
+      "/passport/fee-2026",
+      "/passport/executive-fast-track-passport"
     ]
   },
   "child-minor-passport-guide": {
@@ -513,6 +597,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا 15 سال سے کم بچے کا 10 سالہ پاسپورٹ بن سکتا ہے؟",
         "answerEn": "No. According to DGIP rules, minors under 15 are legally restricted to 5-year validity passports.",
         "answerUr": "نہیں! 15 سال سے کم عمر بچوں کے لیے 10 سالہ پاسپورٹ بنوانا ممنوع ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Pakistani Child & Minor Passport Guide 2026 (Under 15 Years)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Full documentation requirements for newborn and minor passport processing in Pakistan.",
@@ -565,13 +661,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا بیرون ملک مقیم پاکستانی پہلی بار آن لائن پاسپورٹ بنا سکتے ہیں؟",
         "answerEn": "No. First-time passports REQUIRE visiting the Pakistani Embassy/Consulate General.",
         "answerUr": "نہیں! پہلی بار پاسپورٹ بنوانے کے لیے سفارت خانے جانا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Overseas Pakistani Online Passport Renewal Guide 2026 (OPMS)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Step-by-step e-services portal guide for overseas passport renewal and DHL tracking.",
     "contentUr": "بیرون ملک پاکستانی سفارت خانوں اور ڈی ایچ ایل ہوم ڈیلیوری کا طریقہ۔",
     "relatedSlugs": [
       "/passport/online-apply",
-      "/nadra/nicop-apply-online"
+      "/nadra/nicop-apply-online",
+      "/passport/tracking-status"
     ]
   },
   "passport-delay-complaint-helpline": {
@@ -617,13 +726,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ڈی جی آئی پی اسلام آباد کا ہیلپ لائن نمبر کیا ہے؟",
         "answerEn": "Call 051-111-344-777 or email support@dgip.gov.pk.",
         "answerUr": "ہیلپ لائن نمبر 051-111-344-777 پر کال کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Urgent Passport Delay Complaint & DGIP Helpline Guide 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Official procedure to escalate delayed passport printing with DGIP authorities.",
     "contentUr": "پاسپورٹ تاخیر کے ازالے کے لیے سرکاری طریقہ کار۔",
     "relatedSlugs": [
       "/passport/tracking-status",
-      "/passport/office-contact-directory"
+      "/passport/office-contact-directory",
+      "/passport/child-minor-passport-guide"
     ]
   },
   "iesco-bill-check-online": {
@@ -692,13 +814,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "آئیسکو میں کون سے اضلاع شامل ہیں؟",
         "answerEn": "IESCO supplies power to the Federal Capital Territory (Islamabad), Rawalpindi, Attock, Jhelum, and Chakwal districts.",
         "answerUr": "اسلام آباد، راولپنڈی، اٹک، جہلم اور چکوال کے اضلاع آئیسکو کے دائرہ اختیار میں آتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for IESCO Bill Check Online 2026: Islamabad Electricity Duplicate Bill?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Islamabad Electric Supply Company (IESCO) Guide 2026\n**IESCO** is renowned for having the highest recovery rates and lowest line losses among all distribution companies (DISCOs) in Pakistan. It manages electricity distribution for diplomatic enclaves, federal ministries, and residential cantonments.\n\n## Overview of IESCO Smart Metering (AMI) Project\n**IESCO** has deployed Advanced Metering Infrastructure (AMI) smart meters across Islamabad and Rawalpindi circles. These digital meters transmit real-time hourly consumption data via cellular SIMs, eliminating manual meter-reader visits and human reading errors.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Comprehensive Overview of IESCO Tariff Rates, Sub-Divisions & AMI Smart Metering (2026)\nThe **Islamabad Electric Supply Company (IESCO)** distributes electrical power across the Federal Capital Territory and northern Punjab. Renowned for maintaining one of the lowest line-loss ratios in the national grid, IESCO utilizes an Advanced Metering Infrastructure (AMI) network with smart digital meters that transmit hourly consumption readings wirelessly via dedicated cellular APNs.\n\n### 1. IESCO Administrative Circles & Regional Sub-Divisions\nIESCO's operations are divided into five major operational circles:\n- **Islamabad Circle**: Covering federal ministries, diplomatic enclaves, Sector E, F, G, H, I series, Bhara Kahu, and Tarnol.\n- **Rawalpindi City Circle**: Covering Raja Bazaar, Satellite Town, Westridge, Saddar Cantonment, and Murree Hills.\n- **Rawalpindi Cantt Circle**: Covering DHA Islamabad, Bahria Town, Chaklala, Airport Road, and Morgah.\n- **Attock Circle**: Covering Attock city, Fateh Jang, Hassan Abdal, Pindi Gheb, and Jand.\n- **Jhelum & Chakwal Circles**: Covering Dina, Sohawa, Choa Saidan Shah, Talagang, and Kalar Kahar.\n\n### 2. Time of Use (TOU) Smart Meter Peak Hours Matrix\nFor residential and commercial connections with 5 kW or higher sanctioned load, IESCO bills power under dual-rate Time-of-Use meters:\n- **Peak Hours (Higher Unit Rate)**: 7:00 PM to 11:00 PM (Summer: June to August) and 5:00 PM to 9:00 PM (Winter: December to February).\n- **Off-Peak Hours (Standard Base Rate)**: Remaining 20 hours daily with discounted fuel adjustment tariffs.\n\n---\n\n## Detailed Step-by-Step Guide to Resolving IESCO Overbilling & Faulty Meters\n1. **Physical Reading Audit**: Take a clear smartphone picture of your digital meter LCD display showing cumulative kWh and maximum demand indicator (MDI).\n2. **Contact Customer Service Center (CSC)**: Visit the IESCO Customer Services Center located at Sector G-7/4 in Islamabad or regional divisional offices.\n3. **Obtain Revised Bill (Billing Correction)**: The billing officer cross-checks meter reading logs and issues a revised bill with an extended payment deadline.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
     "contentUr": "## اسلام آباد الیکٹرک سپلائی کمپنی (IESCO) گائیڈ\nآئیسکو وفاقی دارالحکومت اور راولپنڈی ڈویژن کو بجلی فراہم کرتی ہے۔ صارفین اپنا ڈپلیکیٹ بل آن لائن چیک کر کے موبائل ایپ سے فوری ادا کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/wapda-bill-complaint-number",
+      "/bills/pesco-bill-check-online"
     ]
   },
   "fesco-bill-check-online": {
@@ -811,9 +946,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
       "/bills/gepco-bill-check-online",
-      "/bills/sui-gas-bill-check-online",
-      "/bills/k-electric-duplicate-bill",
-      "/bills/utility-bill-checker-2026"
+      "/bills/sui-gas-bill-check-online"
     ]
   },
   "mepco-bill-check-online": {
@@ -888,13 +1021,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Multan Electric Power Company (MEPCO) Guide 2026\n**MEPCO** serves the vast agricultural and commercial expanse of South Punjab, managing complex distribution networks across cotton belts and mango orchards.\n\n## Tube-Well & Rural Electrification under MEPCO South Punjab\nManaging electricity distribution across cotton and wheat farming belts, **MEPCO** administers subsidized agricultural flat-rate schemes and tube-well solarization transition policies.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Multan Electric Power Company (MEPCO) Complete South Punjab Billing Guide 2026\n**MEPCO** is the largest electricity distribution utility in Pakistan by geographic area, covering over 105,000 square kilometers across **13 districts in South Punjab**: Multan, Khanewal, Sahiwal, Pakpattan, Vehari, Lodhran, Bahawalpur, Bahawalnagar, Rahim Yar Khan, D.G. Khan, Muzaffargarh, Layyah, and Rajanpur.\n\n### 1. Managing Heavy Summer Bills & Voltage Fluctuation in Rural Feeders\nSouth Punjab experiences extreme summer temperatures exceeding 48°C, leading to heavy power demand and low voltage issues in tail-end rural feeders. MEPCO has installed automated capacitor banks and dedicated 132 kV grid stations in Lodhran, Taunsa, and Chishtian to stabilize transmission voltages.\n\n### 2. Step-by-Step Procedure to Change Meter Name on MEPCO Connections\n- Submit Form 2-A at your local MEPCO sub-division office.\n- Attach applicant's CNIC, original computerized Fard Malkiat or registered Sale Deed, and no-objection certificate (NOC) from previous owner.\n- Pay the nominal change of name fee (PKR 350) and receive updated bill under your name in the next billing cycle.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## ملتان الیکٹرک پاور کمپنی (MEPCO) گائیڈ\nمیپکو جنوبی پنجاب کا سب سے بڑا بجلی تقسیم کار ادارہ ہے۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/wapda-bill-complaint-number",
+      "/bills/fesco-bill-check-online"
     ]
   },
   "ssgc-duplicate-bill-check": {
@@ -969,13 +1109,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Sui Southern Gas Company (SSGC) Guide 2026\n**SSGC** provides natural gas and LPG distribution across Sindh and Balochistan, serving domestic kitchens and industrial powerhouses in Karachi and Hub.\n\n## SSGC Industrial & Domestic Distribution across Sindh & Balochistan\n**Sui Southern Gas Company** manages extensive pipeline distribution from Karachi port LNG terminals to interior Sindh and the high-altitude winter belts of Quetta and Kalat.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Sui Southern Gas Company (SSGC) Complete Billing & Customer Care Guide 2026\n**Sui Southern Gas Company (SSGC)** provides natural gas transmission and distribution to over 3.2 million domestic, commercial, and industrial consumers across **Sindh and Balochistan**, including the major metropolises of Karachi, Hyderabad, Sukkur, Quetta, and Gwadar.\n\n### 1. Understanding the MMBTU & Volume Calculation Formula\nGas meters measure volume consumed in hundreds of cubic meters (Hm3). This volume is converted into heat energy (MMBTU) based on the Gross Calorific Value (GCV) of natural gas supplied from Sui, Badin, and imported RLNG terminals at Port Qasim.\n\n### 2. Winter Load Management & Quetta Emergency Relief\nDuring extreme sub-zero winter temperatures in Quetta, Ziarat, and Kalat, SSGC provides emergency LPG cylinder air-mix distribution and implements specialized winter heating tariff slabs to prevent predatory billing for mountain populations.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## سوئی سدرن گیس کمپنی (SSGC) گائیڈ\nسندھ اور بلوچستان کے صارفین کے لیے سوئی سدرن گیس کا بل آن لائن حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/bills/sui-gas-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/wapda-bill-complaint-number",
+      "/bills/qesco-bill-check-online"
     ]
   },
   "electricity-bill-installment-guide": {
@@ -1059,13 +1206,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا بقایاجات والے بل کی قسطیں ہو سکتی ہیں؟",
         "answerEn": "Yes, but once an installment schedule is sanctioned, you must pay all subsequent monthly regular bills plus the agreed installment on time. Defaulting on any installment automatically voids the relief.",
         "answerUr": "جی ہاں، لیکن قسطیں منظور ہونے کے بعد تمام اقساط اور نیا ماہانہ بل وقت پر ادا کرنا لازمی ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Electricity Bill Extension & Installment Application Guide 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Complete Guide to Electricity Bill Installments in Pakistan 2026\nSoaring fuel price adjustments and capacity taxes can make summer electricity bills overwhelming for salaried families. Under **NEPRA Consumer Service Manual (CSM) regulations**, every electricity consumer has the legal right to request structured monthly installments for heavy utility bills.\n\n## Complete Legal Framework: NEPRA Consumer Service Manual Guidelines\nUnder Section 9 of the NEPRA Consumer Service Manual (CSM):\n- Any domestic consumer facing financial hardship is entitled to up to **3 monthly installments** upon application.\n- Disconnection notices are legally suspended the moment an official installment plan is signed and the first voucher is deposited.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Complete Legal & Practical Manual for Electricity Bill Installments across Pakistan\nUnder the **NEPRA Consumer Service Manual (CSM)**, electricity distribution companies (LESCO, IESCO, FESCO, MEPCO, GEPCO, PESCO, HESCO, SEPCO, QESCO, K-Electric) are legally required to provide installment relief to consumers facing financial distress.\n\n### 1. Delegation of Financial Powers for Installment Approval\n\n| Official Designation | Maximum Bill Amount Eligible for Installments | Number of Permissible Monthly Installments | Office Location |\n| :--- | :--- | :--- | :--- |\n| **Sub-Divisional Officer (SDO)** | Up to PKR 50,000 | 2 to 3 Installments | Local Sub-Division Office |\n| **Executive Engineer (XEN)** | Up to PKR 200,000 | 3 to 4 Installments | Division Office |\n| **Superintending Engineer (SE)** | Up to PKR 500,000 | 4 to 6 Installments | Circle Office |\n| **Chief Executive Officer (CEO)** | Unlimited Amount / Industrial | Up to 12 Installments | DISCO Headquarters |\n\n### 2. Critical Caveats When Availing Installments\n- **Immediate Power Disconnection Protection**: Once the SDO signs the installment voucher and the first installment is deposited at the bank, the computerized disconnection order (*KPK List*) is automatically frozen in the billing database.\n- **Avoiding Default Termination**: If a consumer defaults on any installment in the second or third month, the full remaining balance becomes immediately payable with a mandatory 10% late payment surcharge.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
     "contentUr": "## بجلی کے بل کی اقساط کروانے کا مکمل قانونی طریقہ 2026\nنیپرا کے قوانین کے تحت ہر شہری کو بھاری بل آسان اقساط میں تبدیل کروانے کا باقاعدہ قانونی حق حاصل ہے۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/wapda-bill-complaint-number",
+      "/bills/ssgc-duplicate-bill-check"
     ]
   },
   "bise-rawalpindi-result-2026": {
@@ -1111,13 +1271,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "راولپنڈی بورڈ کا ایس ایم ایس رزلٹ کوڈ کیا ہے؟",
         "answerEn": "Send Roll Number to 800296.",
         "answerUr": "اپنا رول نمبر 800296 پر ایس ایم ایس کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISE Rawalpindi Board Result 2026: 9th, 10th, 11th & 12th Class?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "BISE Rawalpindi matric and FSc result gazette lookup guide.",
     "contentUr": "راولپنڈی بورڈ کے رزلٹ اور مارکس شیٹ کا مکمل گائیڈ۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
-      "/education/bise-lahore-result-2026"
+      "/education/bise-lahore-result-2026",
+      "/education/fbise-federal-board-result-2026"
     ]
   },
   "bise-faisalabad-result-2026": {
@@ -1163,6 +1336,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "فیصل آباد بورڈ کا رزلٹ ایس ایم ایس کوڈ کیا ہے؟",
         "answerEn": "Send Roll Number to 800299.",
         "answerUr": "اپنا رول نمبر 800299 پر ایس ایم ایس بھیجیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISE Faisalabad Board Result 2026: 9th, 10th, 11th & 12th Class?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "BISE Faisalabad SSC & HSSC board exam result gazette portal.",
@@ -1215,13 +1400,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ایس ایم ایس کے ذریعے فیڈرل بورڈ کا رزلٹ کیسے دیکھیں؟",
         "answerEn": "Format SMS as 'FB [RollNo]' and send to 5050.",
         "answerUr": "FB لکھ کر سپیس دیں اور رول نمبر 5050 پر بھیجیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for FBISE Federal Board Result 2026: SSC & HSSC Check Online?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "FBISE Federal Board Islamabad matriculation and intermediate gazette result lookup.",
     "contentUr": "فیڈرل بورڈ اسلام آباد کے آن لائن رزلٹ اور ڈی ایم سی کی مکمل معلومات۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
-      "/education/bise-lahore-result-2026"
+      "/education/bise-lahore-result-2026",
+      "/education/hec-degree-attestation-process"
     ]
   },
   "bise-paper-rechecking-procedure": {
@@ -1267,13 +1465,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ری چیکنگ میں پیپر دوبارہ چیک ہوتا ہے؟",
         "answerEn": "No. Rechecking strictly verifies mark totaling, unchecked pages, and transfer of marks to title sheet.",
         "answerUr": "نہیں! ری چیکنگ میں صرف نمبرز کی گنتی اور غیر نشان شدہ صفحات چیک ہوتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISE Board Paper Rechecking & Recounting Procedure 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Official rules governing BISE board examination paper recounting and mark adjustments.",
     "contentUr": "بورڈ امتحانات میں نمبرز کی ری کاؤنٹنگ کے قانونی قوانین۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
-      "/education/bise-lahore-result-2026"
+      "/education/bise-lahore-result-2026",
+      "/education/css-preparation-books"
     ]
   },
   "hec-degree-attestation-process": {
@@ -1326,13 +1537,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ایچ ای سی سے پہلے میٹرک اور انٹر کی تصدیق لازمی ہے؟",
         "answerEn": "Yes, your Matric & Intermediate certificates MUST be attested by IBCC before applying to HEC.",
         "answerUr": "جی ہاں! ایچ ای سی سے پہلے آئی بی سی سی (IBCC) کی تصدیق لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for HEC Degree Attestation Process Guide 2026: Fee & E-Services?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "HEC degree attestation instructions for job seekers and study abroad applicants.",
     "contentUr": "بیرون ملک ویزا اور نوکری کے لیے ایچ ای سی ڈگری تصدیق کا طریقہ۔",
     "relatedSlugs": [
       "/education/hec-scholarship-pakistan",
-      "/education/css-preparation-books"
+      "/education/css-preparation-books",
+      "/education/bise-result-check-2026"
     ]
   },
   "fpsc-online-apply-procedure": {
@@ -1464,7 +1688,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## فیڈرل پبلک سروس کمیشن (FPSC) گائیڈ 2026\nوفاقی وزارتوں اور سی ایس ایس کے امتحانات کے لیے مستند رہنمائی۔\n\nچالان فارم 32-A جمع کروانے، آن لائن پورٹل پر پروفائل بنانے اور ٹیسٹ سلیبس کی مکمل تفصیلات۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/kppsc-jobs-apply-online"
     ]
   },
   "spsc-jobs-apply-online": {
@@ -1525,13 +1750,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سندھ میں اربن اور رورل کوٹہ کیسے تقسیم ہوتا ہے؟",
         "answerEn": "Under the provincial constitution, 60% of seats are reserved for Sindh Rural districts, while 40% are reserved for Sindh Urban (Karachi, Hyderabad, Sukkur).",
         "answerUr": "سندھ میں 60 فیصد کوٹہ دیہی اضلاع اور 40 فیصد کوٹہ شہری اضلاع (کراچی، حیدرآباد، سکھر) کے لیے مخصوص ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for SPSC Jobs 2026: Sindh Public Service Commission Online Apply?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Sindh Public Service Commission (SPSC) Guide 2026\n**SPSC** administers recruitment for civil administration, medical officers, secondary school teachers, and revenue officers across Sindh.\n\n## Sindh Combined Competitive Examination (CCE) & Departmental Vacancies\nThe **Sindh Public Service Commission** manages competitive selection for Assistant Commissioners, Section Officers, Excise Inspectors, and Headmasters with regional quotas split 60:40 between Rural and Urban Sindh.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Sindh Public Service Commission (SPSC) Complete Recruitment Manual 2026\nThe **Sindh Public Service Commission (SPSC)**, headquartered in Hyderabad with regional offices in Karachi, Sukkur, and Larkana, is the constitutional body responsible for recruiting officers into Basic Pay Scales BS-16 through BS-20 for the Government of Sindh.\n\n### 1. The 60:40 Rural vs Urban Quota Allocation Formula\nUnder Article 240 of the Constitution of Pakistan and the Sindh Civil Servants Act:\n- **Sindh Rural (60% Quota)**: Covers all interior districts including Hyderabad, Mirpurkhas, Sukkur, Larkana, Shaheed Benazirabad, Dadu, Thatta, Badin, Jacobabad, and Tharparkar.\n- **Sindh Urban (40% Quota)**: Covers the metropolitan municipal boundaries of Karachi Division (East, West, South, Central, Korangi, Malir, Keamari), Hyderabad City, and Sukkur Municipal Corporation.\n\n### 2. SPSC Combined Competitive Examination (CCE) Structure\n- **Screening Test (100 MCQs)**: General English, General Science, Current Affairs, and Sindhi/Urdu language.\n- **Written Examination (600 Marks)**: Compulsory subjects (English Essay, English Precis, General Science & Ability, Current Affairs, Pakistan Affairs, Islamic Studies / Ethics) plus two optional subjects.\n- **Viva Voce & Interview (200 Marks)**: Thorough personality, leadership, and administrative assessment by the Commission Board.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.",
     "contentUr": "## سندھ پبلک سروس کمیشن (SPSC) گائیڈ 2026\nسندھ بھر میں گریڈ 16 اور 17 کی سرکاری ملازمتوں کے لیے مکمل آن لائن طریقہ کار۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/kppsc-jobs-apply-online"
     ]
   },
   "kppsc-jobs-apply-online": {
@@ -1591,13 +1829,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Khyber Pakhtunkhwa Public Service Commission (KPPSC) Guide 2026\n**KPPSC** recruits civil administrators, engineers, college lecturers, and PMS officers across Khyber Pakhtunkhwa and merged tribal districts.\n\n## Khyber Pakhtunkhwa PMS & Specialised Engineering Selection\n**KPPSC** administers the Provincial Management Service (PMS) examination, college lecturer recruitments, and civil engineering induction tests across 5 geographic zones.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Khyber Pakhtunkhwa Public Service Commission (KPPSC) Comprehensive Guide 2026\n**KPPSC** administers merit-based recruitment for civil administrative positions (PMS), college teaching faculty, secondary school educators, and engineering cadres across Khyber Pakhtunkhwa.\n\n### 1. Detailed Breakdown of the 5-Zone Provincial Quota System\nTo guarantee equitable representation for historically underserved regions:\n- **Zone 1 (Merged Tribal Districts)**: Bajaur, Mohmand, Khyber, Kurram, Orakzai, North Waziristan, South Waziristan, and frontier tribal regions.\n- **Zone 2 (Peshawar Valley)**: Peshawar, Charsadda, Nowshera, Mardan, and Swabi.\n- **Zone 3 (Malakand Division)**: Swat, Buner, Dir Upper, Dir Lower, Chitral Upper, Chitral Lower, Shangla, and Malakand.\n- **Zone 4 (Southern Districts)**: Kohat, Hangu, Karak, Bannu, Lakki Marwat, D.I. Khan, and Tank.\n- **Zone 5 (Hazara Division)**: Abbottabad, Haripur, Mansehra, Battagram, Kohistan Upper, Kohistan Lower, Kolai-Palas, and Torghar.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## خیبر پختونخوا پبلک سروس کمیشن (KPPSC) گائیڈ 2026\nکے پی کے میں سرکاری ملازمتوں کے لیے زونل کوٹہ، فیس اور ٹیسٹ پاس کرنے کی تفصیلی گائیڈ۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/nts-result-scorecard-checker-2026"
     ]
   },
   "join-pak-army-online-registration": {
@@ -1673,13 +1918,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پی ایم اے لانگ کورس کے لیے قد اور فزیکل معیار کیا ہے؟",
         "answerEn": "Minimum height: 5 feet 4 inches (162.5 cm), Visual acuity: 6/6 with or without glasses, Physical test: 1.6 km run in 8 minutes, 15 push-ups in 2 minutes, 15 sit-ups in 2 minutes, 3 chin-ups in 2 minutes, and 7.4-foot ditch crossing.",
         "answerUr": "کم از کم قد 5 فٹ 4 انچ، 1.6 کلومیٹر دوڑ (8 منٹ)، 15 پش اپس، 15 سٹ اپس اور 3 پل اپس پاس کرنا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Join Pak Army Online Registration 2026: PMA Long Course & LCC?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Join Pakistan Army Complete Recruitment Guide 2026\nA career in the **Pakistan Armed Forces** as a commissioned officer or non-commissioned soldier offers prestigious national service, world-class leadership training at the Pakistan Military Academy (PMA) Kakul, free medical healthcare for life, and subsidized residential housing.\n\n## The Complete Inter-Services Selection Board (ISSB) 4-Day Assessment\nCandidates recommended from initial screening proceed to ISSB (Kohat, Gujranwala, Malir, or Quetta) for:\n- **Psychological Tests**: Thematic Apperception Tests (TAT), Word Association Tests (WAT), and Situation Reaction Tests (SRT).\n- **Group Testing Officer (GTO) Tasks**: Military Planning, Progressive Group Tasks (PGT), Half Group Tasks (HGT), and Command Tasks.\n- **Deputy President Interview**: Comprehensive character, current affairs, and leadership potential evaluation.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## In-Depth Analysis of Commissioned Entry Programs in the Pakistan Armed Forces\n\n### 1. PMA Long Course (Regular 2-Year Commission)\n- **Eligibility**: Male Pakistani citizens, age 17-22 years (up to 23 years for graduates), minimum 55% marks in FSc Pre-Engineering, Pre-Medical, or ICS.\n- **Training**: 2 rigorous years of military tactics, physical conditioning, weapon mastery, and academic degree work at Pakistan Military Academy (PMA) Kakul, Abbottabad.\n- **Commission Rank**: Commissioned as Second Lieutenant (BS-17 equivalent) in Pakistan Army combat arms (Infantry, Armoured Corps, Artillery) or services.\n\n### 2. Technical Cadet Course (TCC - 4-Year Engineering Commission)\n- **Eligibility**: FSc Pre-Engineering / Computer Science with 65%+ marks.\n- **Training**: 4 years BE Engineering degree at Military College of Signals (MCS) Rawalpindi, College of E&ME Rawalpindi, or Military College of Engineering (MCE) Risalpur followed by 1 year at PMA Kakul.\n- **Commission Rank**: Captain in Corps of Signals, E&ME, or Corps of Engineers.\n\n### 3. Lady Cadet Course (LCC - Direct 6-Month Commission for Female Graduates)\n- **Eligibility**: Unmarried female citizens, age 21-28 years with 16 years of education (Master's/BS) in IT, Law, Engineering, Psychology, or Natural Sciences.\n- **Training**: 6 months intensive basic military training at PMA Kakul.\n- **Commission Rank**: Captain in designated technical, medical, and administrative corps.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.",
     "contentUr": "## پاک فوج میں شمولیت کی مکمل گائیڈ 2026\nپاک آرمی میں کمیشنڈ آفیسر اور سپاہی کی بھرتی کے طریقہ کار، فزیکل اور انٹیلی جنس ٹیسٹ کی مکمل تیاری کی رہنمائی۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/punjab-health-department-jobs"
     ]
   },
   "punjab-health-department-jobs": {
@@ -1748,13 +2006,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پنجاب میں ایڈہاک میڈیکل آفیسر کی ماہانہ تنخواہ کتنی ہے؟",
         "answerEn": "In 2026, an ad-hoc Medical Officer (BS-17) receives a gross monthly salary ranging from PKR 135,000 to PKR 190,000 depending on hard-area district allowances in remote rural health centers.",
         "answerUr": "ایڈہاک میڈیکل آفیسر کی تنخواہ 1 لاکھ 35 ہزار سے لے کر دور دراز اضلاع میں 1 لاکھ 90 ہزار روپے تک ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Primary & Secondary Healthcare Punjab Jobs 2026: Doctors & Nurses?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Punjab Primary & Secondary Healthcare Department Jobs 2026\nThe **Primary & Secondary Healthcare Department (P&SHD)** manages thousands of Basic Health Units (BHUs), Rural Health Centers (RHCs), and Tehsil/District Headquarter Hospitals across Punjab.\n\n## Career Progression & Allowances in Punjab Public Healthcare\nDoctors and nurses in Punjab receive substantial financial incentives including:\n- **Non-Practicing Allowance (NPA)**: For doctors serving full-time in public institutions.\n- **Hard-Area / Special Healthcare Allowance**: Additional monthly allowances for medical officers deployed in remote Rajanpur, Cholistan, Bhakkar, and Mianwali facilities.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Primary & Secondary Healthcare Department Punjab Recruitment Manual 2026\nThe **Primary & Secondary Healthcare Department (P&SHD)** is the largest provincial healthcare employer in Pakistan, operating over 2,500 Basic Health Units (BHUs), 300 Rural Health Centers (RHCs), 120 Tehsil Headquarter (THQ) Hospitals, and 36 District Headquarter (DHQ) Hospitals.\n\n### 1. Medical Officer (MO) & Women Medical Officer (WMO) Induction Tracks\n- **Regular Cadre Recruitment via PPSC (BPS-17)**: Permanent pensionable civil service jobs advertised annually for MBBS graduates with valid PMDC registration and 1-year house job completion.\n- **Ad-Hoc Fast-Track Induction Portal**: Digital portal allowing instant district-level contract recruitment to fill vacant rural emergency wards with monthly gross packages up to PKR 190,000.\n\n### 2. Nursing Cadre (BS-16) & Allied Health Professional Scales\nRegistered Nurses holding a 4-year BS Generic Nursing degree or 3-year General Nursing Diploma registered with the Pakistan Nursing Council (PNC) are recruited on regular scales across all tertiary and secondary care hospitals.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.",
     "contentUr": "## محکمہ صحت پنجاب نوکریاں گائیڈ 2026\nڈاکٹرز، لیڈی ڈاکٹرز، نرسز اور پیرا میڈیکل اسٹاف کے لیے پنجاب حکومت کی مستقل اور ایڈہاک آسامیوں کا مکمل طریقہ۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/join-pak-army-online-registration"
     ]
   },
   "punjab-green-tractor-scheme-2026": {
@@ -1890,7 +2161,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## وزیراعلیٰ پنجاب گرین ٹریکٹر سکیم 2026\nگرین ٹریکٹر سکیم پنجاب کے کاشتکاروں کے لیے ایک تاریخی زرعی پیکج ہے جس کے تحت 50 سے 85 ہارس پاور کے ٹریکٹرز پر **10 لاکھ روپے کی یکمشت سبسڈی** فراہم کی جا رہی ہے۔ اس سکیم کا مقصد چھوٹے اور درمیانے درجے کے کسانوں کو جدید زرعی مشینری تک آسان رسائی دینا ہے۔\n\n---\n\n## ضروری اہلیت اور دستاویزات\n- پنجاب میں 1 سے 50 ایکڑ تک زرعی اراضی کی ملکیت۔\n- اراضی کا کمپیوٹرائزڈ فرد ملکیت پنجاب لینڈ ریکارڈ اتھارٹی سے تصدیق شدہ ہو۔\n- ایک شناختی کارڈ پر صرف ایک ٹریکٹر الاٹ کیا جائے گا۔\n- ٹریکٹر کو اگلے 3 سال تک فروخت یا ٹرانسفر کرنے کی اجازت نہیں ہوگی۔",
     "relatedSlugs": [
       "/loans/apni-chhat-apna-ghar",
-      "/loans/pm-youth-loan-scheme"
+      "/loans/pm-youth-loan-scheme",
+      "/loans/emi-calculator-2026"
     ]
   },
   "sbp-asaan-mobile-account-guide": {
@@ -2129,7 +2401,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## اخوت اسلامی مائیکرو فنانس کے بارے میں\nاخوت پاکستان کا سب سے بڑا **بلا سود قرض حسنہ پورٹل** ہے جو غریب اور خود دار شہریوں کو اپنے پاؤں پر کھڑا ہونے کے لیے 50 ہزار سے 5 لاکھ روپے تک کا سرمایہ فراہم کرتا ہے۔\n\nاس نظام میں کوئی بینک سود، پروسیسنگ کٹوتی یا چھپے ہوئے اخراجات شامل نہیں ہوتے۔",
     "relatedSlugs": [
       "/loans/asaan-karobar-scheme",
-      "/loans/apni-chhat-apna-ghar"
+      "/loans/apni-chhat-apna-ghar",
+      "/loans/emi-calculator-2026"
     ]
   },
   "hbfc-ghar-pakistan-housing-loan": {
@@ -2238,7 +2511,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## ایچ بی ایف سی گھر پاکستان ہاؤسنگ سکیم 2026\nہاؤس بلڈنگ فنانس کمپنی حکومت پاکستان کا مستند ادارہ ہے جو 20 سال تک کی طویل مدت کے لیے ہاؤسنگ فنانسنگ فراہم کرتا ہے۔\n\nاس سکیم کے ذریعے 45 لاکھ روپے تک قرضہ لے کر اپنی زمین پر نیا گھر تعمیر کیا جا سکتا ہے۔",
     "relatedSlugs": [
       "/loans/apni-chhat-apna-ghar",
-      "/loans/mera-ghar-mera-ashiana"
+      "/loans/mera-ghar-mera-ashiana",
+      "/loans/pm-youth-loan-scheme"
     ]
   },
   "benazir-nashonuma-program-guide": {
@@ -2291,13 +2565,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "بے نظیر نشوونما پروگرام میں کون رجسٹر ہو سکتا ہے؟",
         "answerEn": "BISP Kafaalat beneficiary mothers who are pregnant or have infants under 24 months.",
         "answerUr": "بی آئی ایس پی کی اہلیت رکھنے والی حاملہ خواتین اور 2 سال سے چھوٹے بچے کی مائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Complete rules for claiming monthly health cash grants under Benazir Nashonuma initiative.",
     "contentUr": "بچوں کی نشوونما اور ماؤں کی صحت کے لیے 2500 روپے وظیفہ کا گائیڈ۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/taleemi-wazaif"
+      "/welfare/taleemi-wazaif",
+      "/welfare/laptop-scheme-registration"
     ]
   },
   "punjab-himmat-card-registration": {
@@ -2343,13 +2630,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ہمت کارڈ کی رقم کہاں سے ملے گی؟",
         "answerEn": "Collect cash via Bank of Punjab (BOP) Himmat ATM Card from any BOP ATM.",
         "answerUr": "بینک آف پنجاب کے اے ٹی ایم کارڈ سے رقم حاصل کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for CM Punjab Himmat Card Scheme 2026: 10,500 PKR Quarterly Aid?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "CM Punjab Himmat Card scheme eligibility, medical board certification, and ATM card guide.",
     "contentUr": "پنجاب میں معذور افراد کے لیے 10,500 روپے سہ ماہی امداد کا مکمل طریقہ۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/sehat-card-eligibility-check"
+      "/welfare/sehat-card-eligibility-check",
+      "/welfare/bisp-nser-survey-center-locations"
     ]
   },
   "kisan-card-punjab-apply-online": {
@@ -2395,13 +2695,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کسان کارڈ کی اہلیت کے لیے زمین کی کتنی حد ہے؟",
         "answerEn": "Farmers owning up to 12.5 acres of agricultural land registered in PLRA.",
         "answerUr": "12.5 ایکڑ تک زرعی زمین کے مالک تمام کسان اہل ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for CM Punjab Kisan Card Scheme 2026: 1.5 Lakh PKR Interest-Free Credit?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Official CM Punjab Kisan Card registration rules and fertilizer purchase instructions.",
     "contentUr": "کسان کارڈ کے ذریعے سستی کھاد اور بیج خریدنے کا مکمل گائیڈ۔",
     "relatedSlugs": [
       "/loans/punjab-green-tractor-scheme-2026",
-      "/welfare/bisp-eligibility-check-by-cnic"
+      "/welfare/bisp-eligibility-check-by-cnic",
+      "/welfare/pser-survey-registration"
     ]
   },
   "bisp-nser-survey-center-locations": {
@@ -2447,6 +2760,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا بی آئی ایس پی سینٹر کے باہر کسی ایجنٹ کو فیس دینی چاہیے؟",
         "answerEn": "NO! BISP survey is strictly 100% FREE. Report illegal agents immediately to toll-free helpline 0800-26477.",
         "answerUr": "جی نہیں! سروے بالکل مفت ہے، کسی ایجنٹ کو پیسے نہ دیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISP NSER Dynamic Survey Tehsil Centers & In-Person Registration?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Detailed Tehsil desk appointment procedure for BISP NSER survey updates.",
@@ -2543,13 +2868,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Islamabad Traffic Police (ITP) Safe City E-Challan 2026\nThe **Islamabad Safe City Project** monitors the federal capital including Srinagar Highway, Islamabad Expressway, Margalla Road, and Murree Road.\n\n## Islamabad Safe City Surveillance Network & Point Penalty System\nThe **Islamabad Traffic Police (ITP)** utilizes 1,800+ optical cameras integrated into the Safe City Command & Control Center in Sector G-11. In addition to monetary fines, violations are logged against the driver's computerized license record.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Islamabad Traffic Police (ITP) Safe City ANPR Camera & Licensing Operations 2026\nThe federal capital of Pakistan operates a fully integrated **Safe City Traffic Enforcement Network** utilizing 1,800+ optical surveillance cameras across Srinagar Highway, Islamabad Expressway, Margalla Road, Faisal Avenue, and Seventh/Ninth Avenues.\n\n### 1. Point Penalty Deduction System on ICT Driving Licenses\nUnder the Islamabad Motor Vehicle Ordinance, traffic violations incur both monetary fines and negative driving record points:\n- Red Light Violation: 4 Demerit Points + PKR 1,000 Fine.\n- Excessive Over-Speeding: 6 Demerit Points + PKR 1,500 Fine.\n- Driving Under Mobile Phone Distraction: 2 Demerit Points + PKR 1,000 Fine.\n- Accumulating 20 Demerit Points within 12 months results in mandatory 6-month driving license suspension.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## اسلام آباد ٹریفک پولیس (ITP) ای چالان سسٹم 2026\nوفاقی دارالحکومت میں سیف سٹی کیمروں کے ذریعے شفاف ای چالان کا نظام نافذ ہے جس کی آن لائن ادائیگی دستیاب ہے۔",
     "relatedSlugs": [
       "/traffic/e-challan-check-online",
-      "/traffic/driving-license-guide"
+      "/traffic/driving-license-guide",
+      "/traffic/e-challan-check-by-cnic"
     ]
   },
   "sindh-driving-license-online-apply": {
@@ -2647,13 +2979,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Sindh Driving License (DLS) Guide 2026\nThe **Driving License Sindh (DLS)** branch under Sindh Police manages computerized driving licenses across Karachi, Hyderabad, Mirpurkhas, Sukkur, and Larkana.\n\n---\n\n## Major DLS Karachi Branch Locations\n1. **DLS Clifton**: Near 26th Street, Tauheed Commercial Area.\n2. **DLS Nazimabad**: Near Enquiry Office, Nazimabad No. 2.\n3. **DLS Korangi**: Near Brooks Chowrangi, Sector 15.\n4. **DLS Baldia**: Near RCD Highway, Baldia Town.\n\n## Complete Jurisdiction Breakdown for DLS Sindh Branches\n- **Karachi South & East**: DLS Clifton branch handles high-volume appointment quotas with integrated biometric capture.\n- **Karachi Central & West**: DLS Nazimabad and DLS Baldia cater to heavy commercial and two-wheeler licensing.\n- **Interior Sindh**: Regional licensing hubs operate in Hyderabad (Auto Bhan), Sukkur, Larkana, and Mirpurkhas.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## سندھ ڈرائیونگ لائسنس پورٹل گائیڈ\nکراچی اور سندھ بھر کے شہریوں کے لیے ڈرائیونگ لائسنس کا جدید کمپیوٹرائزڈ نظام جس کے تحت شفاف طریقے سے اسمارٹ کارڈ لائسنس جاری کیے جاتے ہیں۔",
     "relatedSlugs": [
       "/traffic/driving-license-guide",
-      "/traffic/token-tax-check"
+      "/traffic/token-tax-check",
+      "/traffic/vehicle-verification-online-2026"
     ]
   },
   "m-tag-motorway-registration-one-network": {
@@ -2743,13 +3082,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ایس ایم ایس کے ذریعے ایم ٹیگ بیلنس کیسے چیک کریں؟",
         "answerEn": "Type **MTAG <space> Vehicle Number** (e.g. MTAG LEA-20-1234) and send it to **9909** from your registered mobile SIM. You will receive an instant reply showing your remaining balance.",
         "answerUr": "اپنے موبائل سے MTAG لکھ کر گاڑی کا نمبر 9909 پر بھیجیں، بیلنس فوری موصول ہو جائے گا۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Motorway M-Tag & One Network System 2026\nThe **M-Tag electronic toll collection (ETC) system**, managed by the **National Highway Authority (NHA)** and **One Network**, provides seamless non-stop electronic toll clearance across Pakistan's entire motorway network.\n\n---\n\n## Supported Motorways with 100% Automated Toll Gates\n- **M-1**: Islamabad to Peshawar Motorway\n- **M-2**: Lahore to Islamabad Motorway\n- **M-3**: Lahore to Abdul Hakeem Motorway\n- **M-4**: Pindi Bhattian to Multan Motorway\n- **M-5**: Multan to Sukkur Motorway\n- **M-9**: Karachi to Hyderabad Motorway\n- **M-11**: Lahore to Sialkot Motorway (LSM)\n- **Swat Expressway**: Colonel Sher Khan to Chakdara Interchange\n\n## Technical Specifications of the RFID M-Tag Windshield Transponder\n- **Operating Frequency**: UHF 860-960 MHz compliant with ISO 18000-6C standard.\n- **Detection Range**: Passive antenna reads vehicle at speeds up to 40 km/h at automated toll gantries.\n- **Placement**: Mounted inside the cabin on the upper windshield behind the rear-view mirror away from metallic tint films.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
     "contentUr": "## موٹروے ایم ٹیگ اور ون نیٹ ورک گائیڈ 2026\nنیشنل ہائی وے اتھارٹی کے تحت موٹروے پر بلا تعطل اور تیز رفتار سفر کے لیے الیکٹرانک ایم ٹیگ لازمی قرار دیا گیا ہے۔\n\nاس سے ٹول پلازوں پر لمبی قطاروں سے نجات ملتی ہے اور گاڑی خودکار طریقے سے گزر جاتی ہے۔",
     "relatedSlugs": [
       "/traffic/token-tax-check",
-      "/traffic/e-challan-check-online"
+      "/traffic/e-challan-check-online",
+      "/traffic/sindh-driving-license-online-apply"
     ]
   },
   "kpk-excise-vehicle-verification": {
@@ -2824,6 +3170,12 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Khyber Pakhtunkhwa (KP) Vehicle Verification & Excise Guide 2026\nThe **Excise, Taxation & Narcotics Control Department Government of Khyber Pakhtunkhwa** provides digitized vehicle tracking to protect citizens against tampered and non-customs paid (NCP) vehicles.\n\n## Verifying Vehicle Title Legality & Customs Clearance in KPK\nDue to geographical proximity to border regions, verifying non-customs paid (NCP) status vs regular duty-paid status is vital. The **Zama KP App** cross-checks provincial excise registrations against the Federal Board of Revenue (FBR) WeBOC customs database.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Khyber Pakhtunkhwa (KP) Excise Vehicle Title & Token Tax Enforcement 2026\nThe **Excise, Taxation & Narcotics Control Department Government of Khyber Pakhtunkhwa** oversees vehicle registrations, ownership transfers, and token tax collections across all 35 districts of KP.\n\n### 1. Universal Vehicle Registration & High-Security Number Plates\nKPK issues standardized retro-reflective aluminum number plates with laser-etched provincial seals and tamper-proof security bolts to prevent plate swapping and vehicle theft.\n\n### 2. Verifying Non-Customs Paid (NCP) Status in Malakand Division\nVehicles operating in the PATA (Provincially Administered Tribal Areas) region of Malakand Division have distinct legal tax status. The Zama KP app allows prospective buyers to confirm whether a vehicle is registered for national highway circulation or local restricted use.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
@@ -3709,6 +4061,12 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پاسپورٹ فیس آن لائن پے کرنے کے لیے PSID کیسے بنائیں؟",
         "answerEn": "Download the official \"Passport Fee Asaan\" mobile app or visit onlinemrp.dgip.gov.pk to generate your 17-digit PSID number, then pay via JazzCash, Easypaisa, or 1Link banking.",
         "answerUr": "پاسپورٹ فیس آسان ایپ سے 17 ہندسوں کا PSID بنائیں اور جاز کیش یا بینکنگ ایپ سے فیس جمع کروائیں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "steps": [
@@ -3827,6 +4185,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "آن لائن پاسپورٹ تجدید کا اہل کون ہے؟",
         "answerEn": "Existing Machine Readable Passport holders whose passport has expired or has less than 7 months validity remaining can renew online. First-time passport applicants MUST visit a physical passport office.",
         "answerUr": "جن کا پاسپورٹ پہلے سے بنا ہو اور ایکسپائر ہو رہا ہو وہ آن لائن رینیو کر سکتے ہیں۔ پہلی بار بنوانے والے آن لائن اپلائی نہیں کر سکتے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for e-Passport Online Apply Portal 2026: Step-by-Step Registration?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The DGIP online passport system allows citizens inside Pakistan and overseas to renew Machine Readable Passports without visiting a regional office.\n\nVisit [onlinemrp.dgip.gov.pk](https://onlinemrp.dgip.gov.pk/) to create an account, upload documents, pay fee via PSID, and get doorstep delivery.",
@@ -3894,13 +4264,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پاسپورٹ ٹریکنگ میں In-Printing کا کیا مطلب ہے؟",
         "answerEn": "It means your data verification is approved, and your passport is currently being printed at the central HQ printing facility in Islamabad.",
         "answerUr": "اس کا مطلب ہے کہ بائیو میٹرک اور سیکیورٹی کلیئرنس ہو چکی ہے اور پاسپورٹ پرنٹ ہو رہا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Passport Tracking Status Online 2026: Track via Token Number & SMS 9988?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Track your passport status online at [tracking.dgip.gov.pk](https://tracking.dgip.gov.pk/) or SMS your 11-digit Token Number to **9988**.",
     "contentUr": "پاسپورٹ کا آن لائن سٹیٹس [tracking.dgip.gov.pk](https://tracking.dgip.gov.pk/) پر چیک کریں یا 9988 پر ایس ایم ایس بھیجیں۔",
     "relatedSlugs": [
       "/passport/fee-2026",
-      "/passport/online-apply"
+      "/passport/online-apply",
+      "/passport/renewal-documents"
     ]
   },
   "renewal-documents": {
@@ -3946,6 +4329,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سرکاری ملازمین کے لیے NOC لازمی ہے؟",
         "answerEn": "Yes. Government employees must provide an official No Objection Certificate (NOC) signed by their department head.",
         "answerUr": "جی ہاں، سرکاری ملازمین کے لیے محکمہ کا این او سی (NOC) لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Required Documents for Passport Renewal in Pakistan (2026 Checklist)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Ensure you take all original valid documents and clean photocopies when visiting the Regional Passport Office.\n\n## Document Checklist for Adults (18+)\n- Original Valid Smart CNIC + 2 Photocopies.\n- Original Previous Passport + Photocopy of pages 1 and 2.\n- 17-Digit PSID Paid Fee Receipt.\n\nDetails verified on [DGIP Official Website](https://dgip.gov.pk/).",
@@ -3998,13 +4393,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پاکستان میں کون سے پاسپورٹ دفاتر 24 گھنٹے کھلے رہتے ہیں؟",
         "answerEn": "Executive Passport Offices in Lahore (Garden Town) and Islamabad (G-10/4) operate 24/7 for urgent passport processing.",
         "answerUr": "لاہور گارڈن ٹاؤن اور اسلام آباد جی 10/4 کے پاسپورٹ دفاتر 24 گھنٹے کھلے رہتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Pakistan Passport Office Directory 2026: Contacts & Addresses?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Find physical location addresses, phone numbers, and helpline details for all Regional Passport Offices across Pakistan.\n\n- **Islamabad HQ**: Sector G-10/4, Islamabad. Phone: 051-111-344-777.\n- **Lahore Executive**: Garden Town, Lahore. Phone: 042-99231405.\n- **Karachi RPO**: Awami Markaz, Shahrah-e-Faisal / Clifton Block 4, Karachi. Phone: 021-99206300.\n\nVerified via [DGIP Official Directory](https://dgip.gov.pk/).",
     "contentUr": "پاکستان بھر کے تمام پاسپورٹ دفاتر کے پتے اور رابطہ نمبرز نیچے دیے گئے ہیں۔",
     "relatedSlugs": [
       "/passport/fee-2026",
-      "/passport/tracking-status"
+      "/passport/tracking-status",
+      "/passport/passport-delay-complaint-helpline"
     ]
   },
   "bise-lahore-result-2026": {
@@ -4052,6 +4460,47 @@ export const ARTICLES: Record<string, Article> = {
       "/education/bise-result-check-2026",
       "/education/punjab-university-admission-2026",
       "/education/nust-admission-process"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "bise-result-check-2026": {
@@ -4104,8 +4553,48 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/education/bise-lahore-result-2026",
       "/education/punjab-university-admission-2026",
-      "/education/css-preparation-books",
-      "/education/hec-scholarship-pakistan"
+      "/education/css-preparation-books"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "punjab-university-admission-2026": {
@@ -4116,8 +4605,8 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "پنجاب یونیورسٹی (PU) ایڈمیشن 2026: بی ایس پروگرامز اور میرٹ فارمولا",
     "metaDescriptionEn": "University of the Punjab Lahore admission guide 2026. Online admission portal (admissions.pu.edu.pk), PU entry test registration, fee structure, and merit calculator.",
     "metaDescriptionUr": "جامعہ پنجاب لاہور داخلہ 2026۔ آن لائن داخلہ پورٹل، انٹری ٹیسٹ شیڈول، اور بی ایس 4 سالہ ڈگری پروگرامز کا میرٹ۔",
-    "directAnswerEn": "Punjab University (PU Lahore) admissions open online at admissions.pu.edu.pk. Merit weightage: 30% PU Entry Test + 70% Intermediate marks.",
-    "directAnswerUr": "پنجاب یونیورسٹی کے داخلے admissions.pu.edu.pk پر شروع ہوتے ہیں۔ 30 فیصد ٹیسٹ اور 70 فیصد انٹر کا میرٹ فارمولا ہے۔",
+    "directAnswerEn": "Punjab University (PU Lahore) undergraduate and postgraduate admissions 2026 are conducted online via admissions.pu.edu.pk. Admission merit is calculated based on 30% PU Entry Test score and 70% Intermediate / Matric academic marks. Candidates must submit application tokens and verified fee challans before the closing deadline.",
+    "directAnswerUr": "پنجاب یونیورسٹی (لاہور) میں داخلے admissions.pu.edu.pk پر آن لائن ہوتے ہیں۔ میرٹ 30 فیصد انٹری ٹیسٹ اور 70 فیصد انٹرمیڈیٹ نمبروں کی بنیاد پر بنتا ہے۔",
     "lastVerified": "August 10, 2026",
     "officialSource": {
       "name": "University of the Punjab Admissions",
@@ -4151,7 +4640,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "پنجاب یونیورسٹی کے تمام شعبہ جات کے داخلہ فارم اور میرٹ کی تفصیل۔",
     "relatedSlugs": [
       "/education/hec-scholarship-pakistan",
-      "/education/bise-lahore-result-2026"
+      "/education/bise-lahore-result-2026",
+      "/education/nust-admission-process"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "hec-scholarship-pakistan": {
@@ -4162,8 +4693,8 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "ایچ ای سی سکالرشپ 2026: پاکستان اور بیرون ملک تعلیم کے لیے وظائف",
     "metaDescriptionEn": "Apply for HEC (Higher Education Commission) undergraduate and postgraduate scholarships in Pakistan. Ehsaas Undergraduate, Commonwealth, China, and Hungary scholarship guides.",
     "metaDescriptionUr": "ایچ ای سی کے قومی اور بین الاقوامی تعلیمی وظائف 2026۔ احساس سکالرشپ، ہنگری اور چین سکالرشپ آن لائن اپلائی۔",
-    "directAnswerEn": "HEC offers fully funded scholarships through scholarship.hec.gov.pk. Major schemes include HEC Need-Based Scholarships, Ehsaas Undergraduate Program, and Stipendium Hungaricum.",
-    "directAnswerUr": "ایچ ای سی پاکستان کے تمام باصلاحیت طلباء کو scholarship.hec.gov.pk کے ذریعے مفت وظائف فراہم کرتا ہے۔",
+    "directAnswerEn": "The Higher Education Commission (HEC) offers indigenous and overseas fully funded scholarships through the official portal at scholarship.hec.gov.pk. Prominent programs include HEC Need-Based Scholarships, Ehsaas Undergraduate Scholarships, Commonwealth, and Stipendium Hungaricum, providing 100% tuition coverage plus monthly living stipends.",
+    "directAnswerUr": "ہائر ایجوکیشن کمیشن (HEC) ضرورت مند اور لائق طلباء کے لیے مکمل فنڈڈ اسکالرشپس scholarship.hec.gov.pk پر فراہم کرتا ہے جس میں یونیورسٹی ٹیوشن فیس اور ماہانہ وظیفہ شامل ہے۔",
     "lastVerified": "August 10, 2026",
     "officialSource": {
       "name": "HEC Official Scholarship Portal",
@@ -4197,7 +4728,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "اعلیٰ تعلیم کے لیے حکومت پاکستان اور ایچ ای سی کے زیر اہتمام جاری تمام سکالرشپ پروگرامز کی فہرست۔",
     "relatedSlugs": [
       "/education/punjab-university-admission-2026",
-      "/education/nust-admission-process"
+      "/education/nust-admission-process",
+      "/education/bise-rawalpindi-result-2026"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "nust-admission-process": {
@@ -4243,7 +4816,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "نسٹ اسلام آباد کیمپس کے مختلف پروگرامز میں داخلہ حاصل کرنے کا مکمل فارمولا۔",
     "relatedSlugs": [
       "/education/bise-lahore-result-2026",
-      "/education/hec-scholarship-pakistan"
+      "/education/hec-scholarship-pakistan",
+      "/education/bise-faisalabad-result-2026"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "css-preparation-books": {
@@ -4289,7 +4904,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "سی ایس ایس افسر بننے کے خواہشمند طلباء کے لیے ایف پی ایس سی کا آفیشل سلیبس۔",
     "relatedSlugs": [
       "/jobs/ppsc-jobs-2026",
-      "/education/hec-scholarship-pakistan"
+      "/education/hec-scholarship-pakistan",
+      "/education/bise-paper-rechecking-procedure"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "lesco-bill-check-online": {
@@ -4433,9 +5090,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/fesco-bill-check-online",
       "/bills/gepco-bill-check-online",
-      "/bills/sui-gas-bill-check-online",
-      "/bills/k-electric-duplicate-bill",
-      "/bills/utility-bill-checker-2026"
+      "/bills/sui-gas-bill-check-online"
     ]
   },
   "k-electric-duplicate-bill": {
@@ -4548,9 +5203,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
       "/bills/sui-gas-bill-check-online",
-      "/bills/utility-bill-checker-2026",
-      "/bills/wapda-bill-complaint-number",
-      "/bills/hesco-bill-check-online"
+      "/bills/wapda-bill-complaint-number"
     ]
   },
   "sui-gas-bill-check-online": {
@@ -4663,9 +5316,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/ssgc-duplicate-bill-check",
       "/bills/lesco-bill-check-online",
-      "/bills/fesco-bill-check-online",
-      "/bills/utility-bill-checker-2026",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/fesco-bill-check-online"
     ]
   },
   "wapda-bill-complaint-number": {
@@ -4693,13 +5344,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا 118 پر کال تمام نیٹ ورکس سے فری ہے؟",
         "answerEn": "Yes. 118 is a federally mandated toll-free universal access number accessible from Jazz, Zong, Telenor, Ufone, and PTCL landlines.",
         "answerUr": "جی ہاں! 118 تمام موبائل نیٹ ورکس اور پی ٹی سی ایل لینڈ لائن سے فری نمبر ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WAPDA Complaint Numbers & Helplines 2026 (LESCO, MEPCO, IESCO)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Pakistan Electricity Complaints & Helplines Directory 2026\nNavigating power outages, voltage drops, burnt transformers, and billing discrepancies requires fast access to designated emergency dispatch desks.\n\n## Wafaqi Mohtasib (Federal Ombudsman) Escalation Procedures for Electricity Disputes\nIf your local DISCO fails to resolve an unjust over-billing issue within 30 days, filing an appeal with the **Federal Ombudsman Energy Investigation Wing** provides a legally binding resolution within 60 days with zero lawyer fees.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## National Directory of Electricity Helplines & Wafaqi Mohtasib Dispute Resolution\nWhen power outages, burnt distribution transformers, live sparking wires, or billing errors occur, contacting the exact emergency dispatch desk saves crucial hours.\n\n### 1. Complete DISCO 24/7 Emergency Helplines Directory\n- **LESCO (Lahore)**: 118 / 042-99205461 / SMS 8118\n- **IESCO (Islamabad/Rawalpindi)**: 118 / 051-9252937 / SMS 8118\n- **FESCO (Faisalabad)**: 118 / 0800-66554 / SMS 8118\n- **MEPCO (Multan)**: 118 / 061-9220313 / SMS 8118\n- **GEPCO (Gujranwala)**: 118 / 055-9200164 / SMS 8118\n- **PESCO (Peshawar)**: 118 / 091-9212013 / SMS 8118\n- **HESCO (Hyderabad)**: 118 / 022-9260161 / SMS 8118\n- **QESCO (Quetta)**: 118 / 081-9201444 / SMS 8118\n- **K-Electric (Karachi)**: 118 / 021-99000 / SMS 8119\n\n### 2. Filing Free Legal Appeals with the Federal Ombudsman (Energy Wing)\nThe Federal Ombudsman (*Wafaqi Mohtasib*) operates under Presidential Order No. 1 of 1983. Any citizen can file an overbilling or wrongful disconnection complaint online at `complaint.mohtasib.gov.pk` with zero court fees, zero lawyer requirements, and a statutory 60-day binding resolution mandate.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
     "contentUr": "## پاکستان بجلی و واپڈا شکایات ہیلپ لائن ڈائریکٹری 2026\nملک بھر کے صارفین کے لیے بجلی کے تمام مسائل، ٹرانسفارمرز اور اوور بلنگ کے فوری حل کے لیے مستند رابطہ نمبرز۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/k-electric-duplicate-bill"
+      "/bills/k-electric-duplicate-bill",
+      "/bills/qesco-bill-check-online"
     ],
     "feeStructure": [
       {
@@ -4776,13 +5440,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سوشل میڈیا پر جعلی سرکاری نوکریوں کے اشتہار کیسے پہچانیں؟",
         "answerEn": "Official government jobs always direct you to official .gov.pk or .org.pk portals and require fee payment exclusively through 1Link, Treasury Challan, or official ePay. Any advertisement asking for payment via private Easypaisa/JazzCash personal numbers is 100% fraudulent.",
         "answerUr": "سرکاری ملازمتوں کے لیے فیس صرف بینک چالان یا ای پے سے ہوتی ہے۔ کسی پرسنل ایزی پیسہ نمبر پر فیس مانگنے والا اشتہار مکمل فراڈ ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Latest Govt Jobs in Pakistan August 2026: Federal & Provincial Vacancies?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Verified Directory of Government Jobs in Pakistan 2026\nSecuring a permanent or contractual government job (*Sarkari Mulazmat*) in Pakistan provides unmatched job security, pension benefits, medical coverage, and societal respect.\n\n## Comprehensive Overview of Federal & Provincial Recruitment Portals 2026\nFinding verified employment requires navigating official state channels:\n- **Federal Level**: National Job Portal (njp.gov.pk) and FPSC (fpsc.gov.pk).\n- **Punjab**: Punjab Job Portal (jobs.punjab.gov.pk) and PPSC (ppsc.gop.pk).\n- **Sindh**: SPSC (spsc.gov.pk) and Sindh Education Department.\n- **KPK**: KPPSC (kppsc.gov.pk) and ETEA (etea.edu.pk).\n- **Balochistan**: BPSC (bpsc.gob.pk).\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## National Directory & Strategy Guide for Government Employment in Pakistan 2026\nSecuring a public sector job in Pakistan requires strategic awareness of competitive calendars, gazette recruitment notifications, and authentic testing portals.\n\n### 1. Comprehensive Overview of Major Federal & Provincial Testing Bodies\n- **Federal**: Federal Public Service Commission (FPSC), National Job Portal (NJP), National Testing Service (NTS), Open Testing Service (OTS).\n- **Punjab**: Punjab Public Service Commission (PPSC), Punjab Job Portal (`jobs.punjab.gov.pk`).\n- **Sindh**: Sindh Public Service Commission (SPSC), Sukkur IBA Testing Services (STS).\n- **Khyber Pakhtunkhwa**: Khyber Pakhtunkhwa Public Service Commission (KPPSC), Educational Testing & Evaluation Agency (ETEA).\n- **Balochistan**: Balochistan Public Service Commission (BPSC).\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.",
     "contentUr": "## پاکستان میں سرکاری ملازمتوں کی تصدیق شدہ ڈائریکٹری 2026\nوفاقی اور تمام صوبائی محکموں میں خالی آسامیوں کی مستند اور تازہ ترین معلومات۔",
     "relatedSlugs": [
       "/jobs/ppsc-jobs-2026",
-      "/jobs/nts-jobs-today"
+      "/jobs/nts-jobs-today",
+      "/jobs/nts-result-scorecard-checker-2026"
     ],
     "feeStructure": [
       {
@@ -4851,13 +5528,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا پی پی ایس سی کے ٹیسٹ میں نیگیٹو مارکنگ ہوتی ہے؟",
         "answerEn": "Yes! PPSC enforces strict negative marking in MCQs tests. Every correct answer awards +1.0 mark, while every wrong answer deducts -0.25 marks. Leaving a question blank results in 0 marks.",
         "answerUr": "جی ہاں! ہر غلط جواب پر 0.25 نمبر کاٹے جاتے ہیں، اس لیے تکے لگانے سے گریز کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for PPSC Jobs 2026: Punjab Public Service Commission Online Apply?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Punjab Public Service Commission (PPSC) Guide 2026\nThe **PPSC** conducts competitive testing and merit-based recruitment for provincial government positions in Punjab (Sub-Inspectors, Tehsildars, Educators, Lecturers, Medical Officers, and PMS Officers).\n\n## Mastering the PPSC Multiple Choice & Descriptive Examinations\nThe **Punjab Public Service Commission** adheres to rigorous merit-ranking benchmarks:\n- **Academic Score Computation**: PPSC awards up to 40 marks for matric, intermediate, and degree divisions before written test scores are aggregated.\n- **Negative Marking Strategy**: Because 4 wrong answers cancel out 1 full mark (-0.25 each), candidates should never guess answers blindly when probability is below 50%.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Complete Strategic Manual for PPSC Recruitment & Competitive PMS Examinations\nThe **Punjab Public Service Commission (PPSC)** is widely recognized as Pakistan's most automated and merit-driven provincial testing agency.\n\n### 1. PPSC Single-Paper MCQs Test Structure (100 Marks)\n- **General Ability Paper (General Posts)**: 100 multiple choice questions covering General Knowledge (20%), Pakistan Studies & History (20%), Everyday Science (15%), Basic Mathematics (15%), English Vocabulary & Grammar (15%), Urdu Literature (10%), and Computer/IT Literacy (5%).\n- **Subject-Specific Professional Paper (Lecturers / Engineers / Doctors)**: 80% Subject Qualification MCQs + 20% General Ability MCQs.\n- **Negative Marking Reality**: 0.25 marks deducted per wrong answer. Leaving a question un-attempted incurs 0 deduction.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.",
     "contentUr": "## پنجاب پبلک سروس کمیشن (PPSC) گائیڈ 2026\nپی پی ایس سی پنجاب کے تمام سرکاری محکموں میں میرٹ پر بھرتی کا بااعتماد ادارہ ہے۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/nts-jobs-today"
+      "/jobs/nts-jobs-today",
+      "/jobs/fpsc-online-apply-procedure"
     ],
     "feeStructure": [
       {
@@ -4946,13 +5636,20 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
         "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
         "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## National Testing Service (NTS) Guide 2026\n**NTS** is Pakistan's pioneer testing organization conducting transparent recruitment tests for WAPDA, SNGPL, atomic energy commissions, banks, educators, and university admissions.\n\n## National Testing Service (NTS) Scoring Matrix & NAT/GAT Formats\n- **National Aptitude Test (NAT)**: For undergraduate university admissions across engineering, medical, computer science, and social sciences.\n- **Graduate Assessment Test (GAT General & Subject)**: For MPhil/PhD admissions and government departmental appointments (e.g. WAPDA, SNGPL, NESCOM).\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## National Testing Service (NTS) Examination Formats, Roll No Slips & Scorecards\nThe **National Testing Service (NTS)** provides standardized evaluation tests for government ministries, state corporations, commercial banks, and higher education degree programs.\n\n### 1. Key NTS Test Classifications\n- **NTS NAT (National Aptitude Test)**: Conducted monthly for students seeking undergraduate admissions in COMSATS, FAST, NUST, and constituent public universities.\n- **NTS GAT General**: Evaluates English verbal reasoning, analytical reasoning, and quantitative ability for MS/MPhil admissions and public sector scholarships.\n- **NTS GAT Subject**: Advanced discipline-specific test for doctoral (PhD) program admissions and senior technical research appointments.\n\n---\n\n## Comprehensive Preparation Strategy for Competitive Examinations & Interviews\nSecuring a high merit ranking in public service commission examinations (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) requires structured, disciplined preparation across multiple academic disciplines.\n\n### 1. The 5-Pillar Core Curriculum for General Ability Tests\n- **Pakistan Affairs & Historical Constitutional Evolution**: 1857 War of Independence, Sir Syed's Aligarh Movement, 1906 Muslim League formation, 1940 Lahore Resolution, 1973 Constitution, 18th Constitutional Amendment, CPEC, and contemporary foreign policy challenges.\n- **Current Affairs & International Relations**: Key global alliances (SCO, BRICS, UN Security Council, OIC), Middle East dynamics, international climate treaties, and State Bank monetary policies.\n- **Everyday Science & Basic Mathematics**: Human anatomy, vitamins, planetary astronomy, solar energy, basic algebra, ratio-proportion, percentages, averages, and basic geometry problems.\n- **English Grammar, Comprehension & Précis**: Sentence correction, preposition rules, active-passive voice, direct-indirect narration, vocabulary antonyms/synonyms, and concise précis writing.\n- **Information Technology & Cyber Security**: Computer architecture, operating systems, Microsoft Office shortcut keys, networking concepts (LAN, WAN, IP address), and data encryption fundamentals.\n\n### 2. Mastering the Public Service Commission Interview & Psychological Viva Voce\n- **Confidence & Body Language**: Maintain steady eye contact with all interview panel members, sit upright with relaxed shoulders, and enter/leave the interview chamber with formal professional courtesy.\n- **Handling Unknown Questions**: Never guess or fabricate answers before seasoned panel members. If you do not know a factual query, politely state: *\"I apologize, sir/madam, I am unable to recall this specific information at the moment.\"*\n- **Current Job & Academic Defense**: Be prepared to defend your university final-year thesis, previous work experience, and explain precisely how your educational background directly benefits the applied government post.\n\n---\n\n## Redressal of Recruitment Grievances & Legal Rights of Candidates\nUnder statutory public service commission rules and high court precedents:\n- **Right to Paper Re-Checking**: Candidates have the legal right to apply for formal paper recount and optical mark recognition (OMR) sheet re-verification within 30 days of result announcement by paying a nominal fee.\n- **Right to Interview Merit Breakdown**: Rejected candidates can request their detailed breakdown marks (Academic Marks, Written Marks, Interview Marks) to verify merit transparency.\n- **Writ Jurisdiction in High Court**: If administrative rules or seat quotas were unlawfully altered, candidates can file a constitutional writ petition under Article 199 of the Constitution of Pakistan at the relevant Provincial High Court.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
     "contentUr": "## نیشنل ٹیسٹنگ سروس (NTS) گائیڈ 2026\nاین ٹی ایس کے ذریعے واپڈا، بینکوں اور سرکاری محکموں میں بھرتی کی مکمل تفصیلات۔",
     "relatedSlugs": [
       "/jobs/latest-govt-jobs-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/jobs/kppsc-jobs-apply-online"
     ],
     "feeStructure": [
       {
@@ -5214,7 +5911,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## کامیاب جوان پرائم منسٹر یوتھ لون گائیڈ\nنوجوانوں کو بااختیار بنانے اور نیا کاروبار شروع کرنے کے لیے وفاقی حکومت کا یہ سب سے بڑا قرضہ پروگرام ہے۔\n\nاس سکیم میں ٹائر 1 کا لون **مکمل طور پر بلا سود** ہے جبکہ ٹائر 2 اور 3 پر انتہائی کم رعایتی مارک اپ وصول کیا جاتا ہے۔",
     "relatedSlugs": [
       "/loans/pm-youth-loan-scheme",
-      "/loans/asaan-karobar-scheme"
+      "/loans/asaan-karobar-scheme",
+      "/loans/punjab-green-tractor-scheme-2026"
     ],
     "steps": [
       {
@@ -5391,7 +6089,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## آسان کاروبار سکیم 2026\nچھوٹے تاجروں اور دکانداروں کے لیے حکومت کا آسان ترین قرضہ پروگرام جس میں کاغذی کارروائی کو کم ترین سطح پر رکھا گیا ہے۔",
     "relatedSlugs": [
       "/loans/kamyab-jawan-program",
-      "/loans/pm-youth-loan-scheme"
+      "/loans/pm-youth-loan-scheme",
+      "/loans/loan-application-status-tracker-2026"
     ],
     "feeStructure": [
       {
@@ -5478,7 +6177,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## وزیراعظم یوتھ بزنس اینڈ ایگریکلچر لون سکیم 2026\nیہ سکیم ملک بھر کے نوجوانوں کو باعزت روزگار اور کاروبار کے مواقع فراہم کرنے کے لیے جاری کی گئی ہے۔\n\nزراعت، لائیو سٹاک، ڈیری فارمنگ، آئی ٹی اور سمال انڈسٹری کے لیے 50 ہزار سے 75 لاکھ روپے تک کے فنڈز فراہم کیے جاتے ہیں۔",
     "relatedSlugs": [
       "/loans/apni-chhat-apna-ghar",
-      "/loans/kamyab-jawan-program"
+      "/loans/kamyab-jawan-program",
+      "/loans/sbp-asaan-mobile-account-guide"
     ],
     "feeStructure": [
       {
@@ -5666,10 +6366,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/welfare/8171-portal-guide",
       "/welfare/kafaalat-amount-schedule",
-      "/welfare/taleemi-wazaif",
-      "/welfare/sehat-card-eligibility-checker-2026",
-      "/welfare/pser-survey-status-checker-2026",
-      "/welfare"
+      "/welfare/taleemi-wazaif"
     ]
   },
   "8171-portal-guide": {
@@ -5729,6 +6426,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "8171 ویب سائٹ سلو کیوں ہوتی ہے یا ایرر کیوں دیتی ہے؟",
         "answerEn": "During quarterly payment distribution releases, millions of citizens access 8171.bisp.gov.pk simultaneously, causing server load. Try clearing your browser cache or accessing the site early morning (before 9 AM) or late evening.",
         "answerUr": "قسط کے دنوں میں لاکھوں افراد کے ایک ساتھ ویب سائٹ کھولنے سے سرور پر بوجھ ہوتا ہے۔ صبح سویرے یا رات کے وقت دوبارہ کوشش کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for 8171 Web Portal Guide 2026: Registration, Login & Status Check?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (PKR 10,500 - 13,500) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.",
@@ -5796,6 +6505,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "بی آئی ایس پی ڈائنامک سروے کی فیس کتنی ہے؟",
         "answerEn": "Survey registration is 100% FREE at all official BISP Tehsil centers. Do not pay any agent.",
         "answerUr": "بی آئی ایس پی سینٹر پر سروے بالکل مفت ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISP Registration Guide 2026: Dynamic NSER Survey & Office Process?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Registering your family in the **National Socio-Economic Registry (NSER)** dynamic survey is the mandatory gateway to qualify for Benazir Kafaalat and Taleemi Wazaif.\n\n> 🚨 **SCAM WARNING**: \n> BISP survey registration is **100% FREE**. No government official or private agent is authorized to charge any money for filling out the survey form.\n\n## Required Documents for BISP Registration\n1. Original valid Smart CNIC of the female head of household.\n2. Original B-Forms (CRC) for all minor children issued by NADRA.\n3. Utility bill (electricity or gas) for current residential address verification.",
@@ -5863,6 +6584,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر ایجنٹ پیسے کاٹ لے تو کہاں شکایت کریں؟",
         "answerEn": "Agent deductions are strictly ILLEGAL. Demand a printed receipt. Immediately report the agent name and campsite location to the BISP toll-free helpline 0800-26477 or notify the Assistant Director present at the campsite.",
         "answerUr": "رقم سے کٹوتی غیر قانونی ہے! فوری طور پر بی آئی ایس پی ہیلپ لائن 0800-26477 پر کال کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for BISP Payment Check & Troubleshooting Guide 2026: Campsites & ATMs?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct PKR 500, PKR 1,000, or any amount from your PKR 10,500 cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)",
@@ -5944,6 +6677,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "تعلیمی وظائف کے لیے حاضری کی کیا شرط ہے؟",
         "answerEn": "Students must maintain a minimum of 75% quarterly attendance in school/college for stipends to be released.",
         "answerUr": "طالب علم کی سکول میں کم از کم 75 فیصد حاضری ہونا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Benazir Taleemi Wazaif 2026: Education Stipend Amounts & Registration?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Benazir Taleemi Wazaif encourages low-income families to enroll and retain their children in schools by offering higher quarterly cash stipends for female students.\n\n> 🚨 **SCAM WARNING**: \n> School admission slips and BISP Taleemi Wazaif enrollment are **100% FREE**. Never pay any school teacher or agent for filling enrollment slips.\n\n## Quarterly Stipend Breakdown 2026\n\n| Education Level | Boys Stipends (Per Quarter) | Girls Stipends (Per Quarter) | Special Incentives |\n| :--- | :--- | :--- | :--- |\n| **Primary (Class 1-5)** | PKR 1,500 | PKR 2,000 | **PKR 3,000** Primary Graduation Bonus for Girls |\n| **Secondary (Class 6-10)** | PKR 2,500 | PKR 3,000 | Attendance verified quarterly |\n| **Higher Secondary (Class 11-12)** | PKR 3,500 | PKR 4,000 | College verification |",
@@ -5997,6 +6742,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "بے نظیر کفالت کی رقم سال میں کتنی بار ملتی ہے؟",
         "answerEn": "It is paid 4 times a year (every 3 months / quarterly basis).",
         "answerUr": "یہ رقم سال میں 4 بار (ہر تین ماہ بعد) دی جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Benazir Kafaalat Amount & Payment Schedule 2026 (PKR 10,500 Quarterly)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Current official quarterly payment is PKR 10,500.** \n> Always collect your complete payment. Report any agent claiming partial payments or processing cuts to **0800-26477**.",
@@ -6057,6 +6814,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا پی ایس ای آر سروے مفت ہے؟",
         "answerEn": "Yes! PSER online registration and door-to-door surveyor visits are 100% free.",
         "answerUr": "جی ہاں، PSER رجسٹریشن بالکل مفت ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for PSER Survey Registration Punjab 2026: Portal Guide & Status Check?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The **Punjab Socio-Economic Registry (PSER)** manages targeted welfare initiatives for residents of Punjab.\n\n> 🚨 **SCAM WARNING**: \n> PSER portal registration is **100% FREE**. Register strictly at **[pser.punjab.gov.pk](https://pser.punjab.gov.pk/)**.",
@@ -6110,6 +6879,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا احساس اور بی آئی ایس پی ایک ہی پروگرام ہیں؟",
         "answerEn": "Yes. BISP is the statutory autonomous authority that executes the cash transfers and NSER survey under the social protection framework.",
         "answerUr": "جی ہاں، بی آئی ایس پی ہی بنیادی ادارہ ہے جو ان تمام فنڈز کی تقسیم کا ذمہ دار ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Ehsaas Program Complete Guide 2026: Sub-Schemes & Eligibility Check?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The **Ehsaas Framework** encompasses targeted initiatives designed to lift vulnerable households out of poverty.\n\n> 🚨 **SCAM WARNING**: \n> All Ehsaas programs are **100% FREE**. Never pay agents for application forms.",
@@ -6163,7 +6944,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "بی ایس، ایم فل اور پی ایچ ڈی کے طلباء کے لیے میرٹ کی شرائط۔",
     "relatedSlugs": [
       "/education/hec-scholarship-pakistan",
-      "/welfare/pser-survey-registration"
+      "/welfare/pser-survey-registration",
+      "/welfare/bisp-nser-survey-center-locations"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "sehat-card-eligibility-check": {
@@ -6223,6 +7046,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ہسپتال میں علاج کے لیے الگ پلاسٹک صحت کارڈ ضروری ہے؟",
         "answerEn": "No! Your original NADRA Smart CNIC functions as your digital Sehat Card. Simply present your CNIC at the hospital Sehat Sahulat desk.",
         "answerUr": "نہیں! آپ کا اصل سمارٹ شناختی کارڈ ہی آپ کا صحت کارڈ ہے۔ ہسپتال میں صرف اپنا شناختی کارڈ دکھائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Eligibility Check 2026: SMS 8500 & Hospital Treatment?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "The **Sehat Sahulat Program** provides micro-health insurance coverage up to **PKR 1,000,000 (10 Lakh)** per family per year for indoor hospital treatments.\n\n> 🚨 **SCAM WARNING**: \n> Sehat Card registration and hospital entry is **100% FREE**. No payment is required to activate coverage.\n\n## How to Check Eligibility\nSend your **13-digit CNIC** to **8500** via SMS.",
@@ -6276,7 +7111,49 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "رمضان نگہبان پروگرام اور یوٹیلیٹی سٹورز راشن کارڈ کی مکمل تفصیل۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/welfare/ehsaas-program-guide"
+      "/welfare/ehsaas-program-guide",
+      "/welfare/sehat-card-eligibility-check"
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
     ]
   },
   "e-challan-check-online": {
@@ -6421,9 +7298,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/traffic/token-tax-calculator-2026",
       "/traffic/vehicle-verification-online-2026",
-      "/traffic/driving-license-guide",
-      "/traffic/islamabad-traffic-police-echallan",
-      "/traffic"
+      "/traffic/driving-license-guide"
     ]
   },
   "e-challan-check-by-cnic": {
@@ -6451,13 +7326,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "بیچی ہوئی گاڑی کا چالان میرے شناختی کارڈ پر کیوں آ رہا ہے؟",
         "answerEn": "If the buyer never transferred the vehicle into their name on an open letter or stamp paper, the Excise record legally retains your CNIC as the registered owner. You must report the open letter sale to the Excise Department immediately.",
         "answerUr": "اگر خریدار نے گاڑی اپنے نام ٹرانسفر نہیں کروائی تو قانونی طور پر چالان پرانے مالک کے نام ہی جاری ہوتا رہے گا۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for E-Challan Check by CNIC 2026: Search Traffic Violations by Owner ID?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Checking E-Challans by CNIC in Pakistan\nWhen citizens own multiple family vehicles or motorcycles, checking each vehicle plate individually is tedious. The **CNIC-based unified challan lookup** enables motorists to pull up every pending Safe City ticket linked to their National Identity Card in a single unified dashboard.\n\n## Unified Fleet Management for Commercial and Family Vehicles\nWhen managing multiple motorcycles, family cars, or commercial fleet vehicles, checking by CNIC provides a single consolidated ledger:\n- **Comprehensive Liability Ledger**: Displays cumulative unpaid penalties across all registered plates.\n- **Vehicle Clearance for Resale**: Ensures that prospective vehicle sellers settle all outstanding Safe City dues before proceeding to biometric ownership transfer at NADRA e-Sahulat.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Multi-Vehicle Fleet Monitoring & CNIC Traffic Fine Search 2026\nFor multi-vehicle families, transport business owners, and corporate fleet managers, the **CNIC-integrated traffic fine search** provides a single centralized overview of all unpaid Safe City violations across cars, commercial pickups, and motorcycles.\n\n### 1. Resolving Open Transfer Letter Liabilities\nIf you sold a vehicle years ago on an open transfer letter without completing biometric transfer, any new camera violations committed by the current driver continue to be legally linked to your CNIC. Using the CNIC lookup, you can identify delinquent vehicles, download violation evidence, and apply to the Excise Department for a formal legal notice (*Notice-e-Khusoosi*) or vehicle registration suspension.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
     "contentUr": "## شناختی کارڈ کے ذریعے تمام ای چالان چیک کرنے کا طریقہ\nاگر آپ کے نام پر ایک سے زیادہ گاڑیاں یا موٹر سائیکلیں ہیں تو آپ صرف اپنا شناختی کارڈ نمبر درج کر کے تمام بقایاجات اور چالان ایک ساتھ دیکھ سکتے ہیں۔",
     "relatedSlugs": [
       "/traffic/e-challan-check-online",
-      "/traffic/vehicle-registration-transfer"
+      "/traffic/vehicle-registration-transfer",
+      "/traffic/token-tax-calculator-2026"
     ],
     "feeStructure": [
       {
@@ -6567,13 +7455,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "30 ستمبر کے بعد ٹوکن ٹیکس جمع کروانے پر کتنا جرمانہ ہے؟",
         "answerEn": "Under the Motor Vehicle Taxation Act, token tax is due by 30th June (with a grace period until 30th September). Late payments attract a monthly compound surcharge of 1% to 2% per month plus potential road fine impoundment.",
         "answerUr": "30 ستمبر کے بعد تاخیر پر ماہانہ 1 سے 2 فیصد اضافی سرچارج اور جرمانہ عائد کیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Vehicle Token Tax Check & Calculator 2026: Punjab, Sindh & ICT Rates?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Pakistan Vehicle Token Tax Rates & Calculator 2026\nEvery motorized vehicle operating on public roads in Pakistan is subject to **Annual Road Maintenance & Token Tax** levied by provincial Excise, Taxation & Narcotics Control Departments.\n\n---\n\n## Filer vs Non-Filer Tax Surcharge Difference\nUnder the Federal Finance Act 2026, vehicle owners who are **Non-Filers on the FBR Active Taxpayers List (ATL)** must pay **100% to 200% higher Advance Withholding Tax (Section 234)** on annual token renewals. Becoming an active income tax filer immediately halves your annual road tax burden.\n\n## Comprehensive Formula & Tax Calculation Rules across Engine Capacities\nUnder provincial Motor Vehicle Taxation schedules:\n- **Below 1000cc**: Fixed one-time lifetime tax.\n- **1001cc to 1300cc**: Annual road maintenance tax + SBP development cess.\n- **1301cc to 2000cc**: Progressive engine bracket with 100% surcharge for non-filers on the FBR Active Taxpayers List.\n- **Above 2000cc (Luxury SUVs & Crossovers)**: Top tax bracket carrying luxury withholding surcharges.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Comprehensive Vehicle Token Tax Calculation Tables & Withholding Tax Slabs (2026)\nUnder the provincial Motor Vehicle Taxation Acts and Federal Finance Act 2026, road token tax rates are structured into progressive engine displacement slabs with strong financial incentives for active tax filers.\n\n### 1. Detailed Tax Computation Schedule for Private Cars\n\n| Engine Capacity Range | Provincial Base Token Tax | FBR Advance Withholding Tax (Active Filer) | FBR Advance Tax (Non-Filer Surcharge) | Total Annual Payable (Filer) |\n| :--- | :--- | :--- | :--- | :--- |\n| **Up to 1000cc (e.g. Alto, Cultus, WagonR)** | Lifetime Tax (PKR 10,000) | Nil | Nil | Lifetime Paid |\n| **1001cc to 1199cc (e.g. Swift, Yaris 1.3)** | PKR 2,500 / year | PKR 1,250 | PKR 2,500 | PKR 3,750 / year |\n| **1200cc to 1299cc (e.g. City 1.2)** | PKR 3,000 / year | PKR 1,500 | PKR 3,000 | PKR 4,500 / year |\n| **1300cc to 1499cc (e.g. Yaris 1.5, City 1.5)** | PKR 4,500 / year | PKR 2,500 | PKR 5,000 | PKR 7,000 / year |\n| **1500cc to 1599cc (e.g. Corolla 1.6)** | PKR 6,000 / year | PKR 3,750 | PKR 7,500 | PKR 9,750 / year |\n| **1600cc to 1799cc (e.g. Civic 1.5T, Grande 1.8)** | PKR 9,000 / year | PKR 4,500 | PKR 9,000 | PKR 13,500 / year |\n| **1800cc to 2499cc (e.g. Sportage, Tucson, Oshan)** | PKR 15,000 / year | PKR 10,000 | PKR 20,000 | PKR 25,000 / year |\n| **Above 2500cc (e.g. Fortuner, Prado, Land Cruiser)**| PKR 25,000 / year | PKR 20,000 | PKR 40,000 | PKR 45,000+ / year |\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
     "contentUr": "## وہیکل ٹوکن ٹیکس کیلکولیٹر اور شرح 2026\nتمام گاڑیوں پر سالانہ ٹوکن ٹیکس لاگو ہوتا ہے۔ فائلر حضرات کو نان فائلرز کے مقابلے میں 50 فیصد سے زائد رعایت حاصل ہوتی ہے۔",
     "relatedSlugs": [
       "/traffic/e-challan-check-online",
-      "/traffic/vehicle-registration-transfer"
+      "/traffic/vehicle-registration-transfer",
+      "/traffic/driving-license-guide"
     ],
     "steps": [
       {
@@ -6637,6 +7538,12 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر ڈرائیونگ ٹیسٹ فیل ہو جائے تو کیا دوبارہ موقع ملتا ہے؟",
         "answerEn": "If you fail the sign test or driving track, you can re-appear after a mandatory 42-day practice window by paying a nominal re-test fee.",
         "answerUr": "ٹیسٹ فیل ہونے کی صورت میں 42 دن بعد دوبارہ ٹیسٹ دینے کی اجازت ہوتی ہے۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Complete Pakistan Driving License (DLIMS) Guide 2026\nIn 2026, obtaining a driving license in Pakistan has transitioned into a **100% paperless, automated digital ecosystem**. Through the **Driving License Information Management System (DLIMS)** and Police Khidmat Markaz networks, citizens can generate learner permits and renew expired licenses entirely online.\n\n---\n\n## 2026 Complete Fee Structure Across All License Categories\n\n| License Class | Learner Permit Fee | Regular License (5 Years) | Renewal Fee | International Permit |\n| :--- | :--- | :--- | :--- | :--- |\n| **Motorcycle (M/Cycle)** | PKR 500 | PKR 1,000 | PKR 1,000 | N/A |\n| **Motor Car / Jeep (M/Car)** | PKR 500 | PKR 1,800 | PKR 1,800 | PKR 4,000 |\n| **LTV (Light Transport Vehicle)** | PKR 500 | PKR 2,000 | PKR 2,000 | N/A |\n| **HTV (Heavy Transport Vehicle)** | PKR 500 | PKR 2,500 | PKR 2,500 | N/A |\n| **Commercial PSV (Bus/Coach)** | PKR 500 | PKR 3,000 | PKR 3,000 | N/A |\n\n---\n\n## The Computerized Sign Test: Essential Rules\nThe touch-screen test consists of:\n- **Mandatory Signs (Red Circles)**: Stop, No Entry, No Left Turn, Speed Limits.\n- **Warning Signs (Red Triangles)**: Steep Hill, Road Narrows, Pedestrian Crossing, Slippery Road.\n- **Informatory Signs (Blue/Green Rectangles)**: Hospital, Parking, Mosque, Highway Exits.\n\n## In-Depth Breakdown of the Practical Driving Track Test (Car & Motorcycle)\n\n### 1. The L-Shaped Reverse Track Test (Car / LTV)\n- **Track Dimensions**: Standard 10-foot wide asphalt track marked with fluorescent cones.\n- **Task**: Drive forward into the L-track, stop at the perimeter line without crossing, and reverse the entire length of the track into the parking bay using only side mirrors and rearview mirror without knocking down any cone.\n- **Disqualification Criteria**: Hitting or grazing any cone, stopping the vehicle midway for more than 5 seconds, or looking back over your shoulder instead of using mirrors.\n\n### 2. The Motorcycle Slalom & Balance Test\n- **Task**: Drive through an 8-cone zigzag slalom track at steady speed, complete a narrow 90-degree turn, and stop inside the designated stop-box without putting your feet down on the ground.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
@@ -6758,13 +7665,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر گاڑی کا مالک بیرون ملک ہو یا فوت ہو چکا ہو تو کیا طریقہ ہے؟",
         "answerEn": "If the seller is overseas, they must execute a Special Power of Attorney through the Pakistani Embassy/Consulate. If deceased, a NADRA Succession Certificate naming the legal heirs is required before transfer.",
         "answerUr": "بیرون ملک مالک کے لیے سفارت خانے سے پاور آف اٹارنی اور فوت شدہ کے لیے نادرا سکسیشن سرٹیفکیٹ درکار ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Vehicle Ownership Registration Transfer Guide 2026 (Biometric Transfer)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Vehicle Ownership Transfer & Biometric Rules 2026\nThe Government of Pakistan has **permanently eliminated open transfer letters and blank sale deeds**. Operating or purchasing a vehicle on an open transfer letter is a punishable offense leading to vehicle impoundment and heavy fines.\n\n---\n\n## Why Biometric Verification is Mandatory\n1. **Crime Prevention**: Ensures stolen, tampered, or bank-default vehicles cannot be fraudulently transferred without the owner's knowledge.\n2. **Terrorism & Security**: Prevents vehicles from being used in subversive activities under ghost identities.\n3. **E-Challan Liability**: Ensures that automated speed camera tickets and challans are billed directly to the current actual driver.\n\n## Step-by-Step Biometric Transfer Workflow at NADRA e-Sahulat\n1. **Application Generation**: Seller or buyer enters plate and chassis number on the ePay / Excise portal to generate a 17-digit PSID.\n2. **Seller Biometrics**: The seller visits any authorized NADRA e-Sahulat counter, provides their CNIC, places their right thumb on the optical biometric scanner, and receives a digital clearance receipt.\n3. **Buyer Biometrics**: The buyer completes biometric scanning within the 30-day validity window.\n4. **Automated Excise Sync**: The Excise database automatically updates ownership records and initiates Smart Card printing.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Comprehensive Guide to Motor Vehicle Ownership Transfer & Biometric Protocols 2026\nOperating a motor vehicle on an open transfer letter, un-executed stamp paper, or deceased relative's name is strictly illegal in Pakistan, leading to criminal liability, vehicle impoundment, and insurance forfeiture.\n\n### 1. Mandatory Biometric Transfer Steps for Buyer and Seller\n1. **Application Generation**: Seller or buyer enters plate and chassis number on the ePay / Excise portal to generate a 17-digit PSID.\n2. **Seller Biometrics**: The seller visits any authorized NADRA e-Sahulat counter, provides their CNIC, places their right thumb on the optical biometric scanner, and receives a digital clearance receipt.\n3. **Buyer Biometrics**: The buyer completes biometric scanning within the 30-day validity window.\n4. **Automated Excise Sync**: The Excise database automatically updates ownership records and initiates Smart Card printing.\n\n### 2. Transfer of Vehicles with Bank Hypothecation (HPA Leased Cars)\nIf a vehicle was purchased on bank lease, the owner must obtain an official **Bank Clearance Certificate (NOC)** and Form 35 (Termination of Hypothecation Agreement) signed by the bank's authorized branch manager before the Excise department will remove the bank lien and permit private transfer.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
     "contentUr": "## گاڑی کی ملکیت ٹرانسفر اور بائیو میٹرک گائیڈ 2026\nاوپن لیٹر پر گاڑی خریدنا یا چلانا مکمل طور پر بند کر دیا گیا ہے۔\n\nاب خریدار اور فروخت کنندہ دونوں کی نادرا ای سہولت سے فنگر پرنٹ بائیو میٹرک تصدیق کے بعد ہی نیا اسمارٹ کارڈ جاری کیا جاتا ہے۔",
     "relatedSlugs": [
       "/traffic/token-tax-check",
-      "/traffic/e-challan-check-by-cnic"
+      "/traffic/e-challan-check-by-cnic",
+      "/traffic/driving-license-guide"
     ],
     "feeStructure": [
       {
@@ -6837,1512 +7757,1635 @@ export const ARTICLES: Record<string, Article> = {
         "detailUr": "ایکسائز ڈیپارٹمنٹ نیا اسمارٹ کارڈ پرنٹ کر کے خریدار کے گھر کوریئر کر دے گا۔"
       }
     ]
-  }
-,
+  },
   "gepco-bill-check-online": {
-  "slug": "gepco-bill-check-online",
-  "fullPath": "/bills/gepco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "GEPCO Bill Check Online 2026: Gujranwala Electric Duplicate Bill PDF",
-  "titleUr": "گیپکو آن لائن بل چیک 2026: گوجرانوالہ ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your GEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
-  "metaDescriptionUr": "گیپکو گوجرانوالہ، سیالکوٹ، گجرات، حافظ آباد اور نارووال کا آن لائن بجلی کا بل 14 ہندسوں والے ریفرنس نمبر سے چیک اور ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your GEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 11 or 12 for Gujranwala division), (2) Validate the number in our tool and copy it, and (3) Click 'Open GEPCO Official Portal' to access the official PITC server (bill.pitc.com.pk/gepcobill/) to view or print your PDF bill.",
-  "directAnswerUr": "گیپکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں تصدیق کر کے کاپی کریں اور آفیشل پورٹل کے بٹن پر کلک کر کے اصل پی ڈی ایف بل حاصل کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC GEPCO Duplicate Bill Gateway",
-    "url": "http://bill.pitc.com.pk/gepcobill/"
+    "slug": "gepco-bill-check-online",
+    "fullPath": "/bills/gepco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "GEPCO Bill Check Online 2026: Gujranwala Electric Duplicate Bill PDF",
+    "titleUr": "گیپکو آن لائن بل چیک 2026: گوجرانوالہ ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your GEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
+    "metaDescriptionUr": "گیپکو گوجرانوالہ، سیالکوٹ، گجرات، حافظ آباد اور نارووال کا آن لائن بجلی کا بل 14 ہندسوں والے ریفرنس نمبر سے چیک اور ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your GEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 11 or 12 for Gujranwala division), (2) Validate the number in our tool and copy it, and (3) Click 'Open GEPCO Official Portal' to access the official PITC server (bill.pitc.com.pk/gepcobill/) to view or print your PDF bill.",
+    "directAnswerUr": "گیپکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں تصدیق کر کے کاپی کریں اور آفیشل پورٹل کے بٹن پر کلک کر کے اصل پی ڈی ایف بل حاصل کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC GEPCO Duplicate Bill Gateway",
+      "url": "http://bill.pitc.com.pk/gepcobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Protected Consumer (1–100 Units)",
+        "serviceUr": "پروٹیکٹڈ صارف (1 تا 100 یونٹ)",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "Exempt from fixed charges",
+        "executive": "NEPRA Lifeline"
+      },
+      {
+        "serviceEn": "Non-Protected (101–200 Units)",
+        "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+        "normal": "Rs. 22.95 / unit",
+        "urgent": "Fuel Adjustment applies",
+        "executive": "Single Phase"
+      },
+      {
+        "serviceEn": "Unprotected (201–300 Units)",
+        "serviceUr": "201 تا 300 یونٹ سلیب",
+        "normal": "Rs. 27.14 / unit",
+        "urgent": "FPA + GST + TV Fee",
+        "executive": "Standard"
+      },
+      {
+        "serviceEn": "301–700 Units Slab",
+        "serviceUr": "301 تا 700 یونٹ سلیب",
+        "normal": "Rs. 35.24 – 42.10 / unit",
+        "urgent": "Standard Domestic",
+        "executive": "Peak Hours Extra"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit GEPCO Reference Number",
+        "titleUr": "14 ہندسوں کا گیپکو ریفرنس نمبر تلاش کریں",
+        "detailEn": "Locate the 14-digit reference number printed in the top-left box of your GEPCO bill (e.g., 12 12345 6789012).",
+        "detailUr": "اپنے گیپکو کے پرانے بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر کی تصدیق اور کاپی کریں",
+        "detailEn": "Type the digits into our format checker above and click 'Copy Number' to store it on your clipboard.",
+        "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official PITC GEPCO Gateway",
+        "titleUr": "آفیشل گیپکو پورٹل کھولیں",
+        "detailEn": "Click the gold 'OPEN GEPCO OFFICIAL BILL PORTAL' button to open the official PITC page in a new tab.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کریں تاکہ سرکاری ویب سائٹ کھل جائے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Paste Number & Print PDF",
+        "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
+        "detailEn": "Paste your reference number into the official search field and press Search to view your complete bill with due date and barcode.",
+        "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل دیکھ کر پی ڈی ایف ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Which cities are covered under GEPCO?",
+        "questionUr": "گیپکو کن شہروں کو بجلی فراہم کرتی ہے؟",
+        "answerEn": "GEPCO provides electricity distribution to Gujranwala, Gujrat, Sialkot, Hafizabad, Narowal, and Mandi Bahauddin districts in Punjab.",
+        "answerUr": "گیپکو گوجرانوالہ، گجرات، سیالکوٹ، حافظ آباد، نارووال اور منڈی بہاؤالدین کے اضلاع کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the official GEPCO complaint helpline?",
+        "questionUr": "گیپکو کا آفیشل ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "GEPCO consumers can dial the nationwide 24/7 toll-free helpline 118 or GEPCO Head Office at 055-9200516.",
+        "answerUr": "گیپکو صارفین 24 گھنٹے 118 پر مفت کال کر سکتے ہیں یا ہیڈ آفس 055-9200516 پر رابطہ کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "How do I pay my GEPCO bill online?",
+        "questionUr": "گیپکو بل آن لائن کیسے ادا کریں؟",
+        "answerEn": "You can pay via 1Bill on mobile banking apps (JazzCash, Easypaisa, HBL, Meezan, Nayapay) using your 14-digit reference number.",
+        "answerUr": "آپ ایزی پیسہ، جاز کیش یا کسی بھی بینک ایپ پر 1Bill کے ذریعے اپنا 14 ہندسوں کا ریفرنس نمبر درج کر کے بل جمع کرا سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "## GEPCO (Gujranwala Electric Power Company) Online Billing Guide 2026\nGEPCO supplies electric power to over 4 million consumers across the industrial heartland of Punjab, including Gujranwala, Sialkot, and Gujrat.\n\n### How to Retrieve Your GEPCO Duplicate Bill Online\n1. Locate your **14-Digit Reference Number** on any previous paper bill.\n2. Ensure it begins with the correct subdivision code (typically `11` or `12`).\n3. Copy the clean numeric string using our one-click validator above.\n4. Access the official PITC duplicate portal (`http://bill.pitc.com.pk/gepcobill/`) and download your print-ready PDF duplicate bill.",
+    "contentUr": "## گیپکو (گوجرانوالہ الیکٹرک پاور کمپنی) آن لائن بلنگ گائیڈ 2026\nگیپکو پنجاب کے بڑے صنعتی اضلاع گوجرانوالہ، سیالکوٹ، گجرات، نارووال اور حافظ آباد کو بجلی فراہم کرتی ہے۔\n\nآن لائن ڈپلیکیٹ بلنگ سسٹم کی مدد سے صارفین گھر بیٹھے اپنا بجلی کا بل دیکھ سکتے ہیں اور بروقت ادائیگی کر کے لیٹ فیس سرچارج سے بچ سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/lesco-bill-check-online",
+      "/bills/fesco-bill-check-online",
+      "/bills/pesco-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Protected Consumer (1–100 Units)",
-      "serviceUr": "پروٹیکٹڈ صارف (1 تا 100 یونٹ)",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "Exempt from fixed charges",
-      "executive": "NEPRA Lifeline"
-    },
-    {
-      "serviceEn": "Non-Protected (101–200 Units)",
-      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
-      "normal": "Rs. 22.95 / unit",
-      "urgent": "Fuel Adjustment applies",
-      "executive": "Single Phase"
-    },
-    {
-      "serviceEn": "Unprotected (201–300 Units)",
-      "serviceUr": "201 تا 300 یونٹ سلیب",
-      "normal": "Rs. 27.14 / unit",
-      "urgent": "FPA + GST + TV Fee",
-      "executive": "Standard"
-    },
-    {
-      "serviceEn": "301–700 Units Slab",
-      "serviceUr": "301 تا 700 یونٹ سلیب",
-      "normal": "Rs. 35.24 – 42.10 / unit",
-      "urgent": "Standard Domestic",
-      "executive": "Peak Hours Extra"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit GEPCO Reference Number",
-      "titleUr": "14 ہندسوں کا گیپکو ریفرنس نمبر تلاش کریں",
-      "detailEn": "Locate the 14-digit reference number printed in the top-left box of your GEPCO bill (e.g., 12 12345 6789012).",
-      "detailUr": "اپنے گیپکو کے پرانے بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر کی تصدیق اور کاپی کریں",
-      "detailEn": "Type the digits into our format checker above and click 'Copy Number' to store it on your clipboard.",
-      "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official PITC GEPCO Gateway",
-      "titleUr": "آفیشل گیپکو پورٹل کھولیں",
-      "detailEn": "Click the gold 'OPEN GEPCO OFFICIAL BILL PORTAL' button to open the official PITC page in a new tab.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کریں تاکہ سرکاری ویب سائٹ کھل جائے۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Paste Number & Print PDF",
-      "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
-      "detailEn": "Paste your reference number into the official search field and press Search to view your complete bill with due date and barcode.",
-      "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل دیکھ کر پی ڈی ایف ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "Which cities are covered under GEPCO?",
-      "questionUr": "گیپکو کن شہروں کو بجلی فراہم کرتی ہے؟",
-      "answerEn": "GEPCO provides electricity distribution to Gujranwala, Gujrat, Sialkot, Hafizabad, Narowal, and Mandi Bahauddin districts in Punjab.",
-      "answerUr": "گیپکو گوجرانوالہ، گجرات، سیالکوٹ، حافظ آباد، نارووال اور منڈی بہاؤالدین کے اضلاع کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the official GEPCO complaint helpline?",
-      "questionUr": "گیپکو کا آفیشل ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "GEPCO consumers can dial the nationwide 24/7 toll-free helpline 118 or GEPCO Head Office at 055-9200516.",
-      "answerUr": "گیپکو صارفین 24 گھنٹے 118 پر مفت کال کر سکتے ہیں یا ہیڈ آفس 055-9200516 پر رابطہ کر سکتے ہیں۔"
-    },
-    {
-      "questionEn": "How do I pay my GEPCO bill online?",
-      "questionUr": "گیپکو بل آن لائن کیسے ادا کریں؟",
-      "answerEn": "You can pay via 1Bill on mobile banking apps (JazzCash, Easypaisa, HBL, Meezan, Nayapay) using your 14-digit reference number.",
-      "answerUr": "آپ ایزی پیسہ، جاز کیش یا کسی بھی بینک ایپ پر 1Bill کے ذریعے اپنا 14 ہندسوں کا ریفرنس نمبر درج کر کے بل جمع کرا سکتے ہیں۔"
-    }
-  ],
-  "contentEn": "## GEPCO (Gujranwala Electric Power Company) Online Billing Guide 2026\nGEPCO supplies electric power to over 4 million consumers across the industrial heartland of Punjab, including Gujranwala, Sialkot, and Gujrat.\n\n### How to Retrieve Your GEPCO Duplicate Bill Online\n1. Locate your **14-Digit Reference Number** on any previous paper bill.\n2. Ensure it begins with the correct subdivision code (typically `11` or `12`).\n3. Copy the clean numeric string using our one-click validator above.\n4. Access the official PITC duplicate portal (`http://bill.pitc.com.pk/gepcobill/`) and download your print-ready PDF duplicate bill.",
-  "contentUr": "## گیپکو (گوجرانوالہ الیکٹرک پاور کمپنی) آن لائن بلنگ گائیڈ 2026\nگیپکو پنجاب کے بڑے صنعتی اضلاع گوجرانوالہ، سیالکوٹ، گجرات، نارووال اور حافظ آباد کو بجلی فراہم کرتی ہے۔\n\nآن لائن ڈپلیکیٹ بلنگ سسٹم کی مدد سے صارفین گھر بیٹھے اپنا بجلی کا بل دیکھ سکتے ہیں اور بروقت ادائیگی کر کے لیٹ فیس سرچارج سے بچ سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/lesco-bill-check-online",
-    "/bills/fesco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "hesco-bill-check-online": {
-  "slug": "hesco-bill-check-online",
-  "fullPath": "/bills/hesco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
-  "titleUr": "حیسکو آن لائن بل چیک 2026: حیدرآباد ڈپلیکیٹ بجلی کا بل حاصل کریں",
-  "metaDescriptionEn": "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
-  "metaDescriptionUr": "حیسکو حیدرآباد، میرپورخاص، جامشورو، مٹیاری، بدین اور ٹھٹہ کا بجلی کا بل آن لائن چیک کریں اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your HESCO duplicate bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 22), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open HESCO Official Portal' to load the official PITC gateway (bill.pitc.com.pk/hescobill/) to view or print your bill.",
-  "directAnswerUr": "حیسکو بجلی کا بل آن لائن دیکھنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC HESCO Duplicate Bill Portal",
-    "url": "http://bill.pitc.com.pk/hescobill/"
+    "slug": "hesco-bill-check-online",
+    "fullPath": "/bills/hesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
+    "titleUr": "حیسکو آن لائن بل چیک 2026: حیدرآباد ڈپلیکیٹ بجلی کا بل حاصل کریں",
+    "metaDescriptionEn": "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
+    "metaDescriptionUr": "حیسکو حیدرآباد، میرپورخاص، جامشورو، مٹیاری، بدین اور ٹھٹہ کا بجلی کا بل آن لائن چیک کریں اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your HESCO duplicate bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 22), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open HESCO Official Portal' to load the official PITC gateway (bill.pitc.com.pk/hescobill/) to view or print your bill.",
+    "directAnswerUr": "حیسکو بجلی کا بل آن لائن دیکھنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC HESCO Duplicate Bill Portal",
+      "url": "http://bill.pitc.com.pk/hescobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Lifeline (1–50 Units)",
+        "serviceUr": "لائف لائن (1 تا 50 یونٹ)",
+        "normal": "Rs. 3.95 / unit",
+        "urgent": "No fixed charges",
+        "executive": "Protected"
+      },
+      {
+        "serviceEn": "Protected (51–100 Units)",
+        "serviceUr": "پروٹیکٹڈ (51 تا 100 یونٹ)",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "FPA applies",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Non-Protected (101–200 Units)",
+        "serviceUr": "101 تا 200 یونٹ سلیب",
+        "normal": "Rs. 22.95 / unit",
+        "urgent": "Standard charges",
+        "executive": "Single Phase"
+      },
+      {
+        "serviceEn": "201–300 Units Slab",
+        "serviceUr": "201 تا 300 یونٹ سلیب",
+        "normal": "Rs. 27.14 / unit",
+        "urgent": "Taxes & TV Fee",
+        "executive": "Standard"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit HESCO Reference Number",
+        "titleUr": "14 ہندسوں کا حیسکو ریفرنس نمبر تلاش کریں",
+        "detailEn": "Locate the 14-digit reference number printed in the top-left box of your previous HESCO electricity bill.",
+        "detailUr": "اپنے پرانے حیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Enter your reference number into our format tool and click 'Copy Number' for one-click pasting.",
+        "detailUr": "ہمارے ٹول میں نمبر درج کریں اور کاپی کا بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official HESCO Portal",
+        "titleUr": "آفیشل حیسکو پورٹل کھولیں",
+        "detailEn": "Click 'OPEN HESCO OFFICIAL BILL PORTAL' to navigate directly to http://bill.pitc.com.pk/hescobill/.",
+        "detailUr": "سرکاری پورٹل کے بٹن پر کلک کر کے PITC کی آفیشل ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "View and Save Bill PDF",
+        "titleUr": "بل دیکھیں اور پی ڈی ایف محفوظ کریں",
+        "detailEn": "Paste your reference number and click Search to display your current month bill, due date, and payable amount.",
+        "detailUr": "نمبر پیسٹ کر کے سرچ دبائیں اور اپنا مکمل بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What areas does HESCO cover in Sindh?",
+        "questionUr": "حیسکو سندھ کے کن اضلاع کو کور کرتی ہے؟",
+        "answerEn": "HESCO covers 12 districts in southern and central Sindh including Hyderabad, Jamshoro, Matiari, Tando Allahyar, Tando Muhammad Khan, Mirpurkhas, Thatta, Badin, Sajawal, and Nawabshah.",
+        "answerUr": "حیسکو حیدرآباد، جامشورو، مٹیاری، ٹنڈو الہ یار، ٹنڈو محمد خان، میرپورخاص، ٹھٹہ، بدین اور نوابشاہ کے اضلاع کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the HESCO customer emergency helpline?",
+        "questionUr": "حیسکو کا ایمرجنسی ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "You can report outages or billing disputes 24/7 by calling 118 or the HESCO helpline at 022-9260161.",
+        "answerUr": "بجلی کی بندش یا بل کے مسائل کے لیے 118 پر کال کریں یا حیسکو ہیلپ لائن 022-9260161 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## HESCO (Hyderabad Electric Supply Company) Duplicate Bill Guide 2026\nHESCO distributes electricity across southern Sindh districts. Consumers can easily download and print duplicate bills through official PITC servers without visiting customer care centers.",
+    "contentUr": "## حیسکو (حیدرآباد الیکٹرک سپلائی کمپنی) آن لائن بلنگ رہنمائی 2026\nحیسکو سندھ کے 12 اضلاع کو بجلی فراہم کرتی ہے۔ صارفین پی آئی ٹی سی کے آفیشل پورٹل سے اپنا بل آن لائن حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/sepco-bill-check-online",
+      "/bills/k-electric-duplicate-bill",
+      "/bills/wapda-bill-complaint-number"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Lifeline (1–50 Units)",
-      "serviceUr": "لائف لائن (1 تا 50 یونٹ)",
-      "normal": "Rs. 3.95 / unit",
-      "urgent": "No fixed charges",
-      "executive": "Protected"
-    },
-    {
-      "serviceEn": "Protected (51–100 Units)",
-      "serviceUr": "پروٹیکٹڈ (51 تا 100 یونٹ)",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "FPA applies",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Non-Protected (101–200 Units)",
-      "serviceUr": "101 تا 200 یونٹ سلیب",
-      "normal": "Rs. 22.95 / unit",
-      "urgent": "Standard charges",
-      "executive": "Single Phase"
-    },
-    {
-      "serviceEn": "201–300 Units Slab",
-      "serviceUr": "201 تا 300 یونٹ سلیب",
-      "normal": "Rs. 27.14 / unit",
-      "urgent": "Taxes & TV Fee",
-      "executive": "Standard"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit HESCO Reference Number",
-      "titleUr": "14 ہندسوں کا حیسکو ریفرنس نمبر تلاش کریں",
-      "detailEn": "Locate the 14-digit reference number printed in the top-left box of your previous HESCO electricity bill.",
-      "detailUr": "اپنے پرانے حیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Enter your reference number into our format tool and click 'Copy Number' for one-click pasting.",
-      "detailUr": "ہمارے ٹول میں نمبر درج کریں اور کاپی کا بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official HESCO Portal",
-      "titleUr": "آفیشل حیسکو پورٹل کھولیں",
-      "detailEn": "Click 'OPEN HESCO OFFICIAL BILL PORTAL' to navigate directly to http://bill.pitc.com.pk/hescobill/.",
-      "detailUr": "سرکاری پورٹل کے بٹن پر کلک کر کے PITC کی آفیشل ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "View and Save Bill PDF",
-      "titleUr": "بل دیکھیں اور پی ڈی ایف محفوظ کریں",
-      "detailEn": "Paste your reference number and click Search to display your current month bill, due date, and payable amount.",
-      "detailUr": "نمبر پیسٹ کر کے سرچ دبائیں اور اپنا مکمل بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What areas does HESCO cover in Sindh?",
-      "questionUr": "حیسکو سندھ کے کن اضلاع کو کور کرتی ہے؟",
-      "answerEn": "HESCO covers 12 districts in southern and central Sindh including Hyderabad, Jamshoro, Matiari, Tando Allahyar, Tando Muhammad Khan, Mirpurkhas, Thatta, Badin, Sajawal, and Nawabshah.",
-      "answerUr": "حیسکو حیدرآباد، جامشورو، مٹیاری، ٹنڈو الہ یار، ٹنڈو محمد خان، میرپورخاص، ٹھٹہ، بدین اور نوابشاہ کے اضلاع کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the HESCO customer emergency helpline?",
-      "questionUr": "حیسکو کا ایمرجنسی ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "You can report outages or billing disputes 24/7 by calling 118 or the HESCO helpline at 022-9260161.",
-      "answerUr": "بجلی کی بندش یا بل کے مسائل کے لیے 118 پر کال کریں یا حیسکو ہیلپ لائن 022-9260161 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## HESCO (Hyderabad Electric Supply Company) Duplicate Bill Guide 2026\nHESCO distributes electricity across southern Sindh districts. Consumers can easily download and print duplicate bills through official PITC servers without visiting customer care centers.",
-  "contentUr": "## حیسکو (حیدرآباد الیکٹرک سپلائی کمپنی) آن لائن بلنگ رہنمائی 2026\nحیسکو سندھ کے 12 اضلاع کو بجلی فراہم کرتی ہے۔ صارفین پی آئی ٹی سی کے آفیشل پورٹل سے اپنا بل آن لائن حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/sepco-bill-check-online",
-    "/bills/k-electric-duplicate-bill",
-    "/bills/wapda-bill-complaint-number"
-  ]
-},
   "sepco-bill-check-online": {
-  "slug": "sepco-bill-check-online",
-  "fullPath": "/bills/sepco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "SEPCO Bill Check Online 2026: Sukkur Electric Duplicate Bill PDF",
-  "titleUr": "سیپکو آن لائن بل چیک 2026: سکھر الیکٹرک ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your SEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, and Jacobabad.",
-  "metaDescriptionUr": "سیپکو سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور اور جیکب آباد کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف حاصل کریں۔",
-  "directAnswerEn": "To check your SEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 25 for Sukkur division), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open SEPCO Official Portal' to open http://bill.pitc.com.pk/sepcobill/ and print your bill.",
-  "directAnswerUr": "سیپکو کا بل آن لائن چیک کرنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر درج کریں، کاپی کریں اور آفیشل پورٹل بٹن پر کلک کر کے اصل بل دیکھیں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC SEPCO Duplicate Bill Portal",
-    "url": "http://bill.pitc.com.pk/sepcobill/"
+    "slug": "sepco-bill-check-online",
+    "fullPath": "/bills/sepco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "SEPCO Bill Check Online 2026: Sukkur Electric Duplicate Bill PDF",
+    "titleUr": "سیپکو آن لائن بل چیک 2026: سکھر الیکٹرک ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your SEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, and Jacobabad.",
+    "metaDescriptionUr": "سیپکو سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور اور جیکب آباد کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف حاصل کریں۔",
+    "directAnswerEn": "To check your SEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 25 for Sukkur division), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open SEPCO Official Portal' to open http://bill.pitc.com.pk/sepcobill/ and print your bill.",
+    "directAnswerUr": "سیپکو کا بل آن لائن چیک کرنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر درج کریں، کاپی کریں اور آفیشل پورٹل بٹن پر کلک کر کے اصل بل دیکھیں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC SEPCO Duplicate Bill Portal",
+      "url": "http://bill.pitc.com.pk/sepcobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Protected (1–100 Units)",
+        "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "NEPRA Lifeline",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Non-Protected (101–200 Units)",
+        "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+        "normal": "Rs. 22.95 / unit",
+        "urgent": "Fuel Adjustment",
+        "executive": "Single Phase"
+      },
+      {
+        "serviceEn": "Commercial Single Phase",
+        "serviceUr": "کمرشل سنگل فیز",
+        "normal": "Rs. 38.50 – 44.20 / unit",
+        "urgent": "Sales Tax Applies",
+        "executive": "A-2 Tariff"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit SEPCO Reference Number",
+        "titleUr": "14 ہندسوں کا سیپکو ریفرنس نمبر لیں",
+        "detailEn": "Check the upper left portion of your previous SEPCO paper bill for your 14-digit reference number.",
+        "detailUr": "اپنے پرانے سیپکو بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate Format and Copy",
+        "titleUr": "فارمیٹ چیک کر کے کاپی کریں",
+        "detailEn": "Ensure exact 14 digits and click 'Copy Number' to keep it ready.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official PITC SEPCO Gateway",
+        "titleUr": "آفیشل سیپکو پورٹل پر جائیں",
+        "detailEn": "Click 'OPEN SEPCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/sepcobill/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ کھولیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Search and Download PDF",
+        "titleUr": "سرچ کر کے پی ڈی ایف بل حاصل کریں",
+        "detailEn": "Paste your reference number into the official box and click Search to retrieve your full duplicate bill.",
+        "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل پرنٹ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What regions are under SEPCO jurisdiction?",
+        "questionUr": "سیپکو کے دائرہ اختیار میں کون سے اضلاع شامل ہیں؟",
+        "answerEn": "SEPCO covers northern Sindh districts including Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, Jacobabad, Kashmore, Naushahro Feroze, and Kamber-Shahdadkot.",
+        "answerUr": "سیپکو شمالی سندھ کے اضلاع سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور، جیکب آباد، کشمور اور نوشہرو فیروز کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the SEPCO helpline for power breakdowns?",
+        "questionUr": "سیپکو کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "SEPCO consumers can call the 24/7 universal helpline 118 or SEPCO complaint cell at 071-9310795.",
+        "answerUr": "شکایات اور خرابی کی اطلاع کے لیے 118 یا سیپکو ہیلپ لائن 071-9310795 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## SEPCO (Sukkur Electric Power Company) Duplicate Bill Guide 2026\nSEPCO serves upper Sindh. Get full duplicate bill access directly via official government gateways.",
+    "contentUr": "## سیپکو (سکھر الیکٹرک پاور کمپنی) آن لائن بلنگ معلومات 2026\nسیپکو شمالی سندھ کے صارفین کو ڈپلیکیٹ بلنگ اور کسٹمر کیئر فراہم کرتی ہے۔",
+    "relatedSlugs": [
+      "/bills/hesco-bill-check-online",
+      "/bills/mepco-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Protected (1–100 Units)",
-      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "NEPRA Lifeline",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Non-Protected (101–200 Units)",
-      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
-      "normal": "Rs. 22.95 / unit",
-      "urgent": "Fuel Adjustment",
-      "executive": "Single Phase"
-    },
-    {
-      "serviceEn": "Commercial Single Phase",
-      "serviceUr": "کمرشل سنگل فیز",
-      "normal": "Rs. 38.50 – 44.20 / unit",
-      "urgent": "Sales Tax Applies",
-      "executive": "A-2 Tariff"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit SEPCO Reference Number",
-      "titleUr": "14 ہندسوں کا سیپکو ریفرنس نمبر لیں",
-      "detailEn": "Check the upper left portion of your previous SEPCO paper bill for your 14-digit reference number.",
-      "detailUr": "اپنے پرانے سیپکو بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate Format and Copy",
-      "titleUr": "فارمیٹ چیک کر کے کاپی کریں",
-      "detailEn": "Ensure exact 14 digits and click 'Copy Number' to keep it ready.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official PITC SEPCO Gateway",
-      "titleUr": "آفیشل سیپکو پورٹل پر جائیں",
-      "detailEn": "Click 'OPEN SEPCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/sepcobill/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ کھولیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Search and Download PDF",
-      "titleUr": "سرچ کر کے پی ڈی ایف بل حاصل کریں",
-      "detailEn": "Paste your reference number into the official box and click Search to retrieve your full duplicate bill.",
-      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل پرنٹ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What regions are under SEPCO jurisdiction?",
-      "questionUr": "سیپکو کے دائرہ اختیار میں کون سے اضلاع شامل ہیں؟",
-      "answerEn": "SEPCO covers northern Sindh districts including Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, Jacobabad, Kashmore, Naushahro Feroze, and Kamber-Shahdadkot.",
-      "answerUr": "سیپکو شمالی سندھ کے اضلاع سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور، جیکب آباد، کشمور اور نوشہرو فیروز کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the SEPCO helpline for power breakdowns?",
-      "questionUr": "سیپکو کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "SEPCO consumers can call the 24/7 universal helpline 118 or SEPCO complaint cell at 071-9310795.",
-      "answerUr": "شکایات اور خرابی کی اطلاع کے لیے 118 یا سیپکو ہیلپ لائن 071-9310795 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## SEPCO (Sukkur Electric Power Company) Duplicate Bill Guide 2026\nSEPCO serves upper Sindh. Get full duplicate bill access directly via official government gateways.",
-  "contentUr": "## سیپکو (سکھر الیکٹرک پاور کمپنی) آن لائن بلنگ معلومات 2026\nسیپکو شمالی سندھ کے صارفین کو ڈپلیکیٹ بلنگ اور کسٹمر کیئر فراہم کرتی ہے۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/hesco-bill-check-online",
-    "/bills/mepco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "pesco-bill-check-online": {
-  "slug": "pesco-bill-check-online",
-  "fullPath": "/bills/pesco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "PESCO Bill Check Online 2026: Peshawar Electric Duplicate Bill PDF",
-  "titleUr": "پیسکو آن لائن بل چیک 2026: پشاور الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your PESCO electricity duplicate bill online using 14-digit Reference Number. Covers Peshawar, Mardan, Swat, Abbottabad, Bannu, and D.I. Khan.",
-  "metaDescriptionUr": "پیسکو پشاور، مردان، سوات، ایبٹ آباد، بنوں اور ڈی آئی خان کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
-  "directAnswerEn": "To check your PESCO duplicate electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 08 for KPK zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open PESCO Official Portal' to access the official PITC gateway (bill.pitc.com.pk/pescobill/) to view or print your PDF bill.",
-  "directAnswerUr": "پیسکو بجلی کا بل آن لائن حاصل کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC PESCO Duplicate Bill Gateway",
-    "url": "http://bill.pitc.com.pk/pescobill/"
+    "slug": "pesco-bill-check-online",
+    "fullPath": "/bills/pesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "PESCO Bill Check Online 2026: Peshawar Electric Duplicate Bill PDF",
+    "titleUr": "پیسکو آن لائن بل چیک 2026: پشاور الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your PESCO electricity duplicate bill online using 14-digit Reference Number. Covers Peshawar, Mardan, Swat, Abbottabad, Bannu, and D.I. Khan.",
+    "metaDescriptionUr": "پیسکو پشاور، مردان، سوات، ایبٹ آباد، بنوں اور ڈی آئی خان کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
+    "directAnswerEn": "To check your PESCO duplicate electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 08 for KPK zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open PESCO Official Portal' to access the official PITC gateway (bill.pitc.com.pk/pescobill/) to view or print your PDF bill.",
+    "directAnswerUr": "پیسکو بجلی کا بل آن لائن حاصل کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC PESCO Duplicate Bill Gateway",
+      "url": "http://bill.pitc.com.pk/pescobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Protected (1–100 Units)",
+        "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "Lifeline Subsidy",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Non-Protected (101–200 Units)",
+        "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+        "normal": "Rs. 22.95 / unit",
+        "urgent": "FPA applies",
+        "executive": "Standard"
+      },
+      {
+        "serviceEn": "201–300 Units Slab",
+        "serviceUr": "201 تا 300 یونٹ",
+        "normal": "Rs. 27.14 / unit",
+        "urgent": "Taxes & TV Fee",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial A-2",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Rs. 39.20 – 45.00 / unit",
+        "urgent": "Sales Tax applies",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit PESCO Reference Number",
+        "titleUr": "14 ہندسوں کا پیسکو ریفرنس نمبر تلاش کریں",
+        "detailEn": "Locate the 14-digit reference number printed in the top-left section of your PESCO paper bill.",
+        "detailUr": "اپنے پیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Enter your reference number into our validator and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official PITC PESCO Portal",
+        "titleUr": "آفیشل پیسکو پورٹل کھولیں",
+        "detailEn": "Click the gold button 'OPEN PESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/pescobill/.",
+        "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Paste & Print Duplicate Bill",
+        "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
+        "detailEn": "Paste your reference number in the official search box and click Search to view, print, or download your PDF bill.",
+        "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Which areas are served by PESCO in Khyber Pakhtunkhwa?",
+        "questionUr": "پیسکو خیبر پختونخوا کے کن اضلاع کو بجلی فراہم کرتی ہے؟",
+        "answerEn": "PESCO supplies electricity across most of KPK, including Peshawar, Mardan, Swat, Swabi, Nowshera, Charsadda, Abbottabad, Haripur, Mansehra, Kohat, Karak, Bannu, Lakki Marwat, and D.I. Khan.",
+        "answerUr": "پیسکو پشاور، مردان، سوات، صوابی، نوشہرہ، چارسدہ، ایبٹ آباد، ہری پور، مانسہرہ، کوہاٹ، بنوں اور ڈی آئی خان سمیت بیشتر کے پی کے کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the PESCO emergency complaint number?",
+        "questionUr": "پیسکو کا ایمرجنسی شکایت نمبر کیا ہے؟",
+        "answerEn": "Dial 118 (toll-free 24/7) or PESCO central complaint cell at 091-9212010 or 091-9212028.",
+        "answerUr": "کسی بھی شکایت کے لیے 118 پر کال کریں یا پیسکو شکایات سیل 091-9212010 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## PESCO (Peshawar Electric Supply Company) Duplicate Bill Guide 2026\nPESCO is the primary power utility for Khyber Pakhtunkhwa serving millions of consumers across valleys and urban centers.\n\nUse our one-click format validator and direct deep-link to the official PITC gateway to view and print your duplicate bill without delays.",
+    "contentUr": "## پیسکو (پشاور الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nپیسکو خیبر پختونخوا کا سب سے بڑا بجلی کا ادارہ ہے۔ آفیشل پورٹل کے ذریعے صارفین اپنا ڈپلیکیٹ بل حاصل کر کے آن لائن جمع کروا سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/tesco-bill-check-online",
+      "/bills/hazeco-bill-check-online",
+      "/bills/wapda-bill-complaint-number"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Protected (1–100 Units)",
-      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "Lifeline Subsidy",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Non-Protected (101–200 Units)",
-      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
-      "normal": "Rs. 22.95 / unit",
-      "urgent": "FPA applies",
-      "executive": "Standard"
-    },
-    {
-      "serviceEn": "201–300 Units Slab",
-      "serviceUr": "201 تا 300 یونٹ",
-      "normal": "Rs. 27.14 / unit",
-      "urgent": "Taxes & TV Fee",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial A-2",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Rs. 39.20 – 45.00 / unit",
-      "urgent": "Sales Tax applies",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit PESCO Reference Number",
-      "titleUr": "14 ہندسوں کا پیسکو ریفرنس نمبر تلاش کریں",
-      "detailEn": "Locate the 14-digit reference number printed in the top-left section of your PESCO paper bill.",
-      "detailUr": "اپنے پیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Enter your reference number into our validator and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official PITC PESCO Portal",
-      "titleUr": "آفیشل پیسکو پورٹل کھولیں",
-      "detailEn": "Click the gold button 'OPEN PESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/pescobill/.",
-      "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Paste & Print Duplicate Bill",
-      "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
-      "detailEn": "Paste your reference number in the official search box and click Search to view, print, or download your PDF bill.",
-      "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "Which areas are served by PESCO in Khyber Pakhtunkhwa?",
-      "questionUr": "پیسکو خیبر پختونخوا کے کن اضلاع کو بجلی فراہم کرتی ہے؟",
-      "answerEn": "PESCO supplies electricity across most of KPK, including Peshawar, Mardan, Swat, Swabi, Nowshera, Charsadda, Abbottabad, Haripur, Mansehra, Kohat, Karak, Bannu, Lakki Marwat, and D.I. Khan.",
-      "answerUr": "پیسکو پشاور، مردان، سوات، صوابی، نوشہرہ، چارسدہ، ایبٹ آباد، ہری پور، مانسہرہ، کوہاٹ، بنوں اور ڈی آئی خان سمیت بیشتر کے پی کے کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the PESCO emergency complaint number?",
-      "questionUr": "پیسکو کا ایمرجنسی شکایت نمبر کیا ہے؟",
-      "answerEn": "Dial 118 (toll-free 24/7) or PESCO central complaint cell at 091-9212010 or 091-9212028.",
-      "answerUr": "کسی بھی شکایت کے لیے 118 پر کال کریں یا پیسکو شکایات سیل 091-9212010 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## PESCO (Peshawar Electric Supply Company) Duplicate Bill Guide 2026\nPESCO is the primary power utility for Khyber Pakhtunkhwa serving millions of consumers across valleys and urban centers.\n\nUse our one-click format validator and direct deep-link to the official PITC gateway to view and print your duplicate bill without delays.",
-  "contentUr": "## پیسکو (پشاور الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nپیسکو خیبر پختونخوا کا سب سے بڑا بجلی کا ادارہ ہے۔ آفیشل پورٹل کے ذریعے صارفین اپنا ڈپلیکیٹ بل حاصل کر کے آن لائن جمع کروا سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/tesco-bill-check-online",
-    "/bills/hazeco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "qesco-bill-check-online": {
-  "slug": "qesco-bill-check-online",
-  "fullPath": "/bills/qesco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "QESCO Bill Check Online 2026: Quetta Electric Duplicate Bill PDF",
-  "titleUr": "کیسکو آن لائن بل چیک 2026: کوئٹہ الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your QESCO electricity bill online using 14-digit Reference Number. Covers Quetta, Gwadar, Khuzdar, Chaman, Sibi, Loralai, and all Balochistan.",
-  "metaDescriptionUr": "کیسکو کوئٹہ، گوادر، خضدار، چمن، سبی اور پورے بلوچستان کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your QESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 26 for Balochistan zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open QESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/qescobill/) to view or print your PDF bill.",
-  "directAnswerUr": "کیسکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC QESCO Duplicate Bill Gateway",
-    "url": "http://bill.pitc.com.pk/qescobill/"
+    "slug": "qesco-bill-check-online",
+    "fullPath": "/bills/qesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "QESCO Bill Check Online 2026: Quetta Electric Duplicate Bill PDF",
+    "titleUr": "کیسکو آن لائن بل چیک 2026: کوئٹہ الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your QESCO electricity bill online using 14-digit Reference Number. Covers Quetta, Gwadar, Khuzdar, Chaman, Sibi, Loralai, and all Balochistan.",
+    "metaDescriptionUr": "کیسکو کوئٹہ، گوادر، خضدار، چمن، سبی اور پورے بلوچستان کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your QESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 26 for Balochistan zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open QESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/qescobill/) to view or print your PDF bill.",
+    "directAnswerUr": "کیسکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC QESCO Duplicate Bill Gateway",
+      "url": "http://bill.pitc.com.pk/qescobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Protected (1–100 Units)",
+        "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "Lifeline Subsidy",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Non-Protected (101–200 Units)",
+        "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+        "normal": "Rs. 22.95 / unit",
+        "urgent": "Fuel Adjustment",
+        "executive": "Standard"
+      },
+      {
+        "serviceEn": "Agriculture Tube-well Tariff",
+        "serviceUr": "زرعی ٹیوب ویل ٹیرف",
+        "normal": "Subsidized Flat Rate",
+        "urgent": "Govt of Balochistan Relief",
+        "executive": "D-Tariff"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit QESCO Reference Number",
+        "titleUr": "14 ہندسوں کا کیسکو ریفرنس نمبر تلاش کریں",
+        "detailEn": "Check the top-left corner of your QESCO paper bill for your 14-digit reference number.",
+        "detailUr": "اپنے پرانے کیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Validate the format in our browser tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official PITC QESCO Portal",
+        "titleUr": "آفیشل کیسکو پورٹل پر جائیں",
+        "detailEn": "Click 'OPEN QESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/qescobill/.",
+        "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "View and Print Duplicate Bill",
+        "titleUr": "بل دیکھیں اور پرنٹ کریں",
+        "detailEn": "Paste your reference number into the official search field and click Search to retrieve your bill.",
+        "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What areas are covered by QESCO?",
+        "questionUr": "کیسکو کن علاقوں کو کور کرتی ہے؟",
+        "answerEn": "QESCO covers the entire province of Balochistan (except Lasbela/Hub which are supplied by K-Electric), covering Quetta, Gwadar, Turbat, Khuzdar, Chaman, Sibi, Zhob, Loralai, Pishin, and Mastung.",
+        "answerUr": "کیسکو پورے صوبہ بلوچستان (سوائے لسبیلہ و حب جو کے الیکٹرک کے پاس ہیں) بشمول کوئٹہ، گوادر، تربت، خضدار، چمن اور ژوب کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the QESCO 24/7 complaint contact?",
+        "questionUr": "کیسکو کا شکایات نمبر کیا ہے؟",
+        "answerEn": "Consumers can dial 118 or contact QESCO central control room at 081-9202211 / 081-9201445.",
+        "answerUr": "شکایات کے لیے 118 یا کیسکو کنٹرول روم 081-9202211 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## QESCO (Quetta Electric Supply Company) Duplicate Bill Guide 2026\nQESCO manages power distribution across the largest geographic territory in Pakistan, serving all regions of Balochistan.\n\nVerify your reference number and use official government portals to print duplicate bills quickly.",
+    "contentUr": "## کیسکو (کوئٹہ الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nکیسکو پورے بلوچستان کو بجلی فراہم کرنے والا ادارہ ہے۔ سرکاری پورٹل سے باآسانی ڈپلیکیٹ بل دیکھا جا سکتا ہے۔",
+    "relatedSlugs": [
+      "/bills/mepco-bill-check-online",
+      "/bills/hesco-bill-check-online",
+      "/bills/wasa-rawalpindi-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Protected (1–100 Units)",
-      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "Lifeline Subsidy",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Non-Protected (101–200 Units)",
-      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
-      "normal": "Rs. 22.95 / unit",
-      "urgent": "Fuel Adjustment",
-      "executive": "Standard"
-    },
-    {
-      "serviceEn": "Agriculture Tube-well Tariff",
-      "serviceUr": "زرعی ٹیوب ویل ٹیرف",
-      "normal": "Subsidized Flat Rate",
-      "urgent": "Govt of Balochistan Relief",
-      "executive": "D-Tariff"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit QESCO Reference Number",
-      "titleUr": "14 ہندسوں کا کیسکو ریفرنس نمبر تلاش کریں",
-      "detailEn": "Check the top-left corner of your QESCO paper bill for your 14-digit reference number.",
-      "detailUr": "اپنے پرانے کیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Validate the format in our browser tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official PITC QESCO Portal",
-      "titleUr": "آفیشل کیسکو پورٹل پر جائیں",
-      "detailEn": "Click 'OPEN QESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/qescobill/.",
-      "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "View and Print Duplicate Bill",
-      "titleUr": "بل دیکھیں اور پرنٹ کریں",
-      "detailEn": "Paste your reference number into the official search field and click Search to retrieve your bill.",
-      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What areas are covered by QESCO?",
-      "questionUr": "کیسکو کن علاقوں کو کور کرتی ہے؟",
-      "answerEn": "QESCO covers the entire province of Balochistan (except Lasbela/Hub which are supplied by K-Electric), covering Quetta, Gwadar, Turbat, Khuzdar, Chaman, Sibi, Zhob, Loralai, Pishin, and Mastung.",
-      "answerUr": "کیسکو پورے صوبہ بلوچستان (سوائے لسبیلہ و حب جو کے الیکٹرک کے پاس ہیں) بشمول کوئٹہ، گوادر، تربت، خضدار، چمن اور ژوب کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the QESCO 24/7 complaint contact?",
-      "questionUr": "کیسکو کا شکایات نمبر کیا ہے؟",
-      "answerEn": "Consumers can dial 118 or contact QESCO central control room at 081-9202211 / 081-9201445.",
-      "answerUr": "شکایات کے لیے 118 یا کیسکو کنٹرول روم 081-9202211 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## QESCO (Quetta Electric Supply Company) Duplicate Bill Guide 2026\nQESCO manages power distribution across the largest geographic territory in Pakistan, serving all regions of Balochistan.\n\nVerify your reference number and use official government portals to print duplicate bills quickly.",
-  "contentUr": "## کیسکو (کوئٹہ الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nکیسکو پورے بلوچستان کو بجلی فراہم کرنے والا ادارہ ہے۔ سرکاری پورٹل سے باآسانی ڈپلیکیٹ بل دیکھا جا سکتا ہے۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/mepco-bill-check-online",
-    "/bills/hesco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "tesco-bill-check-online": {
-  "slug": "tesco-bill-check-online",
-  "fullPath": "/bills/tesco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "TESCO Bill Check Online 2026: Tribal Electric Supply Duplicate Bill PDF",
-  "titleUr": "ٹیسکو آن لائن بل چیک 2026: قبائلی اضلاع ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your TESCO duplicate electricity bill online using 14-digit Reference Number. Covers former FATA, Khyber, Bajaur, Kurram, Mohmand, and Waziristan.",
-  "metaDescriptionUr": "ٹیسکو قبائلی اضلاع (خیبر، باجوڑ، کرم، مہمند، وزیرستان) کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
-  "directAnswerEn": "To check your TESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 09 for tribal districts), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open TESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/tescobill/) to view or print your PDF duplicate bill.",
-  "directAnswerUr": "ٹیسکو بجلی کا بل چیک کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر درج کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "PITC TESCO Duplicate Bill Gateway",
-    "url": "http://bill.pitc.com.pk/tescobill/"
+    "slug": "tesco-bill-check-online",
+    "fullPath": "/bills/tesco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "TESCO Bill Check Online 2026: Tribal Electric Supply Duplicate Bill PDF",
+    "titleUr": "ٹیسکو آن لائن بل چیک 2026: قبائلی اضلاع ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your TESCO duplicate electricity bill online using 14-digit Reference Number. Covers former FATA, Khyber, Bajaur, Kurram, Mohmand, and Waziristan.",
+    "metaDescriptionUr": "ٹیسکو قبائلی اضلاع (خیبر، باجوڑ، کرم، مہمند، وزیرستان) کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
+    "directAnswerEn": "To check your TESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 09 for tribal districts), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open TESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/tescobill/) to view or print your PDF duplicate bill.",
+    "directAnswerUr": "ٹیسکو بجلی کا بل چیک کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر درج کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "PITC TESCO Duplicate Bill Gateway",
+      "url": "http://bill.pitc.com.pk/tescobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Protected",
+        "serviceUr": "گھریلو پروٹیکٹڈ",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "Special Tribal Subsidy",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Domestic Unprotected",
+        "serviceUr": "گھریلو نان پروٹیکٹڈ",
+        "normal": "Rs. 22.95 – 27.14 / unit",
+        "urgent": "NEPRA Uniform Tariff",
+        "executive": "Standard"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit TESCO Reference Number",
+        "titleUr": "14 ہندسوں کا ٹیسکو ریفرنس نمبر لیں",
+        "detailEn": "Check the top-left box on your physical TESCO bill for your 14-digit reference number.",
+        "detailUr": "اپنے پرانے ٹیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Confirm 14 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official PITC TESCO Portal",
+        "titleUr": "آفیشل ٹیسکو پورٹل کھولیں",
+        "detailEn": "Click 'OPEN TESCO OFFICIAL BILL PORTAL' to navigate to http://bill.pitc.com.pk/tescobill/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "View and Print Bill",
+        "titleUr": "بل دیکھیں اور پرنٹ کریں",
+        "detailEn": "Paste your reference number into the search field to retrieve your bill.",
+        "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What areas are served by TESCO?",
+        "questionUr": "ٹیسکو کن علاقوں کو بجلی فراہم کرتی ہے؟",
+        "answerEn": "TESCO serves the merged tribal districts of Khyber Pakhtunkhwa (former FATA), including Khyber, Mohmand, Bajaur, Kurram, Orakzai, North Waziristan, and South Waziristan.",
+        "answerUr": "ٹیسکو سابقہ فاٹا اور ضم شدہ قبائلی اضلاع بشمول خیبر، مہمند، باجوڑ، کرم، اورکزئی، شمالی و جنوبی وزیرستان کو بجلی فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "What is the TESCO customer helpline?",
+        "questionUr": "ٹیسکو کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Dial 118 or TESCO head office at 091-9212964.",
+        "answerUr": "شکایات کے لیے 118 یا ٹیسکو ہیڈ آفس 091-9212964 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## TESCO (Tribal Electric Supply Company) Duplicate Bill Guide 2026\nTESCO delivers electricity to the merged tribal districts of KPK with online billing supported directly on the PITC gateway.",
+    "contentUr": "## ٹیسکو (قبائلی الیکٹرک سپلائی کمپنی) آن لائن بلنگ معلومات 2026\nٹیسکو قبائلی اضلاع کے صارفین کو بجلی اور ڈپلیکیٹ بلنگ کی سہولت فراہم کرتی ہے۔",
+    "relatedSlugs": [
+      "/bills/pesco-bill-check-online",
+      "/bills/wapda-bill-complaint-number",
+      "/bills/wasa-lahore-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Protected",
-      "serviceUr": "گھریلو پروٹیکٹڈ",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "Special Tribal Subsidy",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Domestic Unprotected",
-      "serviceUr": "گھریلو نان پروٹیکٹڈ",
-      "normal": "Rs. 22.95 – 27.14 / unit",
-      "urgent": "NEPRA Uniform Tariff",
-      "executive": "Standard"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit TESCO Reference Number",
-      "titleUr": "14 ہندسوں کا ٹیسکو ریفرنس نمبر لیں",
-      "detailEn": "Check the top-left box on your physical TESCO bill for your 14-digit reference number.",
-      "detailUr": "اپنے پرانے ٹیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Confirm 14 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official PITC TESCO Portal",
-      "titleUr": "آفیشل ٹیسکو پورٹل کھولیں",
-      "detailEn": "Click 'OPEN TESCO OFFICIAL BILL PORTAL' to navigate to http://bill.pitc.com.pk/tescobill/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "View and Print Bill",
-      "titleUr": "بل دیکھیں اور پرنٹ کریں",
-      "detailEn": "Paste your reference number into the search field to retrieve your bill.",
-      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What areas are served by TESCO?",
-      "questionUr": "ٹیسکو کن علاقوں کو بجلی فراہم کرتی ہے؟",
-      "answerEn": "TESCO serves the merged tribal districts of Khyber Pakhtunkhwa (former FATA), including Khyber, Mohmand, Bajaur, Kurram, Orakzai, North Waziristan, and South Waziristan.",
-      "answerUr": "ٹیسکو سابقہ فاٹا اور ضم شدہ قبائلی اضلاع بشمول خیبر، مہمند، باجوڑ، کرم، اورکزئی، شمالی و جنوبی وزیرستان کو بجلی فراہم کرتی ہے۔"
-    },
-    {
-      "questionEn": "What is the TESCO customer helpline?",
-      "questionUr": "ٹیسکو کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Dial 118 or TESCO head office at 091-9212964.",
-      "answerUr": "شکایات کے لیے 118 یا ٹیسکو ہیڈ آفس 091-9212964 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## TESCO (Tribal Electric Supply Company) Duplicate Bill Guide 2026\nTESCO delivers electricity to the merged tribal districts of KPK with online billing supported directly on the PITC gateway.",
-  "contentUr": "## ٹیسکو (قبائلی الیکٹرک سپلائی کمپنی) آن لائن بلنگ معلومات 2026\nٹیسکو قبائلی اضلاع کے صارفین کو بجلی اور ڈپلیکیٹ بلنگ کی سہولت فراہم کرتی ہے۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/pesco-bill-check-online",
-    "/bills/wapda-bill-complaint-number",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "hazeco-bill-check-online": {
-  "slug": "hazeco-bill-check-online",
-  "fullPath": "/bills/hazeco-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
-  "titleUr": "ہیزیکو ہزارہ الیکٹرک سپلائی گائیڈ 2026: بلنگ طریقہ کار اور ہیلپ لائن",
-  "metaDescriptionEn": "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
-  "metaDescriptionUr": "ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) ایبٹ آباد، مانسہرہ، ہری پور، بٹگرام اور کوہستان کی بلنگ معلومات اور ہیلپ لائن گائیڈ۔",
-  "directAnswerEn": "HAZECO (Hazara Electric Supply Company) is the dedicated distribution company for Hazara Division. During the administrative operational transition from PESCO, active consumer billing and duplicate bills continue to be processed through the PESCO PITC billing portal (bill.pitc.com.pk/pescobill/) using your existing 14-digit reference number. Emergency helpline is 118.",
-  "directAnswerUr": "ہیزیکو ہزارہ ڈویژن کی نئی بجلی کمپنی ہے۔ عبوری دور میں تمام صارفین کے بل پیسکو پی آئی ٹی سی پورٹل کے ذریعے ہی دیکھے اور ادا کیے جاتے ہیں۔ ایمرجنسی کے لیے 118 ڈائل کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "Ministry of Energy & PESCO Gateway",
-    "url": "http://bill.pitc.com.pk/pescobill/"
+    "slug": "hazeco-bill-check-online",
+    "fullPath": "/bills/hazeco-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
+    "titleUr": "ہیزیکو ہزارہ الیکٹرک سپلائی گائیڈ 2026: بلنگ طریقہ کار اور ہیلپ لائن",
+    "metaDescriptionEn": "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
+    "metaDescriptionUr": "ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) ایبٹ آباد، مانسہرہ، ہری پور، بٹگرام اور کوہستان کی بلنگ معلومات اور ہیلپ لائن گائیڈ۔",
+    "directAnswerEn": "HAZECO (Hazara Electric Supply Company) is the dedicated distribution company for Hazara Division. During the administrative operational transition from PESCO, active consumer billing and duplicate bills continue to be processed through the PESCO PITC billing portal (bill.pitc.com.pk/pescobill/) using your existing 14-digit reference number. Emergency helpline is 118.",
+    "directAnswerUr": "ہیزیکو ہزارہ ڈویژن کی نئی بجلی کمپنی ہے۔ عبوری دور میں تمام صارفین کے بل پیسکو پی آئی ٹی سی پورٹل کے ذریعے ہی دیکھے اور ادا کیے جاتے ہیں۔ ایمرجنسی کے لیے 118 ڈائل کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "Ministry of Energy & PESCO Gateway",
+      "url": "http://bill.pitc.com.pk/pescobill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Lifeline",
+        "serviceUr": "گھریلو لائف لائن",
+        "normal": "Rs. 7.74 / unit",
+        "urgent": "Protected",
+        "executive": "Uniform Tariff"
+      },
+      {
+        "serviceEn": "Standard Domestic",
+        "serviceUr": "اسٹینڈرڈ گھریلو",
+        "normal": "Rs. 22.95 – 27.14 / unit",
+        "urgent": "FPA applies",
+        "executive": "Single Phase"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check Your 14-Digit Hazara Consumer Number",
+        "titleUr": "اپنا 14 ہندسوں کا کنزیومر نمبر دیکھیں",
+        "detailEn": "Locate the 14-digit reference number on your Hazara division electricity bill.",
+        "detailUr": "اپنے بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Access PESCO/HAZECO PITC Gateway",
+        "titleUr": "پیسکو/ہیزیکو گیٹ وے پر جائیں",
+        "detailEn": "Navigate to the official PITC duplicate bill page (bill.pitc.com.pk/pescobill/) which services active Hazara division feeders.",
+        "detailUr": "پی آئی ٹی سی کے آفیشل پیسکو پورٹل پر جائیں جو ہزارہ فیڈرز کو سروس فراہم کرتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "View and Pay via 1Bill",
+        "titleUr": "بل دیکھیں اور 1Bill سے ادا کریں",
+        "detailEn": "Enter your reference number to check dues and pay via mobile banking or ATM.",
+        "detailUr": "نمبر درج کر کے بل دیکھیں اور آن لائن بینکنگ سے جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Which districts fall under HAZECO?",
+        "questionUr": "ہیزیکو کے دائرہ کار میں کون سے اضلاع آتے ہیں؟",
+        "answerEn": "HAZECO covers the entire Hazara division comprising Abbottabad, Haripur, Mansehra, Battagram, Torghar, Upper Kohistan, Lower Kohistan, and Kolai-Palas.",
+        "answerUr": "ہیزیکو کے دائرہ کار میں ایبٹ آباد، ہری پور، مانسہرہ، بٹگرام، تورغر، اپر کوہستان، لوئر کوہستان اور کولئی پالس شامل ہیں۔"
+      },
+      {
+        "questionEn": "How do Hazara consumers report power outages?",
+        "questionUr": "ہزارہ کے صارفین بجلی بندش کی شکایت کہاں درج کروائیں؟",
+        "answerEn": "Call the 24/7 universal toll-free electricity helpline 118 or the Hazara regional control center at 0992-9310120.",
+        "answerUr": "24 گھنٹے فعال ہیلپ لائن 118 پر کال کریں یا علاقائی کنٹرول روم 0992-9310120 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## HAZECO (Hazara Electric Supply Company) Operations & Billing Guide 2026\nHAZECO was established to decentralize power distribution in Khyber Pakhtunkhwa's Hazara Division.\n\nUntil billing database bifurcation is fully completed, duplicate bills are managed through the centralized PITC PESCO infrastructure.",
+    "contentUr": "## ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) آپریشنز اور بلنگ گائیڈ 2026\nہیزیکو ہزارہ ڈویژن کے اضلاع کے لیے قائم کی گئی ہے۔ تمام بلنگ ریکارڈز پی آئی ٹی سی پر دستیاب ہیں۔",
+    "relatedSlugs": [
+      "/bills/pesco-bill-check-online",
+      "/bills/ssgc-duplicate-bill-check",
+      "/bills/gb-electric-bill-guide"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Lifeline",
-      "serviceUr": "گھریلو لائف لائن",
-      "normal": "Rs. 7.74 / unit",
-      "urgent": "Protected",
-      "executive": "Uniform Tariff"
-    },
-    {
-      "serviceEn": "Standard Domestic",
-      "serviceUr": "اسٹینڈرڈ گھریلو",
-      "normal": "Rs. 22.95 – 27.14 / unit",
-      "urgent": "FPA applies",
-      "executive": "Single Phase"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Check Your 14-Digit Hazara Consumer Number",
-      "titleUr": "اپنا 14 ہندسوں کا کنزیومر نمبر دیکھیں",
-      "detailEn": "Locate the 14-digit reference number on your Hazara division electricity bill.",
-      "detailUr": "اپنے بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Access PESCO/HAZECO PITC Gateway",
-      "titleUr": "پیسکو/ہیزیکو گیٹ وے پر جائیں",
-      "detailEn": "Navigate to the official PITC duplicate bill page (bill.pitc.com.pk/pescobill/) which services active Hazara division feeders.",
-      "detailUr": "پی آئی ٹی سی کے آفیشل پیسکو پورٹل پر جائیں جو ہزارہ فیڈرز کو سروس فراہم کرتا ہے۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "View and Pay via 1Bill",
-      "titleUr": "بل دیکھیں اور 1Bill سے ادا کریں",
-      "detailEn": "Enter your reference number to check dues and pay via mobile banking or ATM.",
-      "detailUr": "نمبر درج کر کے بل دیکھیں اور آن لائن بینکنگ سے جمع کروائیں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "Which districts fall under HAZECO?",
-      "questionUr": "ہیزیکو کے دائرہ کار میں کون سے اضلاع آتے ہیں؟",
-      "answerEn": "HAZECO covers the entire Hazara division comprising Abbottabad, Haripur, Mansehra, Battagram, Torghar, Upper Kohistan, Lower Kohistan, and Kolai-Palas.",
-      "answerUr": "ہیزیکو کے دائرہ کار میں ایبٹ آباد، ہری پور، مانسہرہ، بٹگرام، تورغر، اپر کوہستان، لوئر کوہستان اور کولئی پالس شامل ہیں۔"
-    },
-    {
-      "questionEn": "How do Hazara consumers report power outages?",
-      "questionUr": "ہزارہ کے صارفین بجلی بندش کی شکایت کہاں درج کروائیں؟",
-      "answerEn": "Call the 24/7 universal toll-free electricity helpline 118 or the Hazara regional control center at 0992-9310120.",
-      "answerUr": "24 گھنٹے فعال ہیلپ لائن 118 پر کال کریں یا علاقائی کنٹرول روم 0992-9310120 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## HAZECO (Hazara Electric Supply Company) Operations & Billing Guide 2026\nHAZECO was established to decentralize power distribution in Khyber Pakhtunkhwa's Hazara Division.\n\nUntil billing database bifurcation is fully completed, duplicate bills are managed through the centralized PITC PESCO infrastructure.",
-  "contentUr": "## ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) آپریشنز اور بلنگ گائیڈ 2026\nہیزیکو ہزارہ ڈویژن کے اضلاع کے لیے قائم کی گئی ہے۔ تمام بلنگ ریکارڈز پی آئی ٹی سی پر دستیاب ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/pesco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "ajk-electric-bill-check-online": {
-  "slug": "ajk-electric-bill-check-online",
-  "fullPath": "/bills/ajk-electric-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "AJK Electricity Bill Online Guide 2026: Azad Kashmir Duplicate Bill & Rates",
-  "titleUr": "آزاد کشمیر بجلی بل آن لائن گائیڈ 2026: محکمہ برقیات آزاد کشمیر ڈپلیکیٹ بل",
-  "metaDescriptionEn": "Check your AJK Electricity Department bill online. Tariff rates, 14-digit Account Number, Muzaffarabad, Mirpur, Kotli, Rawalakot, and helpline contacts.",
-  "metaDescriptionUr": "محکمہ برقیات آزاد کشمیر کا بجلی کا بل، مظفرآباد، میرپور، کوٹلی، راولاکوٹ ٹیرف اور ڈپلیکیٹ بلنگ معلومات۔",
-  "directAnswerEn": "To check your Azad Jammu & Kashmir electricity bill online: (1) Find the 14-digit Account Number on your AJK Electricity Department bill, (2) Validate the format in our tool, and (3) Click 'Open AJK Official Portal' to visit www.ajkelectricity.gov.pk. You can also pay via 1Link banking apps or Bank of AJK branches.",
-  "directAnswerUr": "آزاد کشمیر بجلی کا بل دیکھنے کے لیے اپنے بل سے 14 ہندسوں کا اکاؤنٹ نمبر لیں، ہمارے ٹول میں چیک کریں اور آفیشل پورٹل (ajkelectricity.gov.pk) پر جائیں۔ بل بینک آف آزاد کشمیر یا موبائل ایپ سے ادا کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "AJK Electricity Department Official Portal",
-    "url": "https://www.ajkelectricity.gov.pk/"
+    "slug": "ajk-electric-bill-check-online",
+    "fullPath": "/bills/ajk-electric-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "AJK Electricity Bill Online Guide 2026: Azad Kashmir Duplicate Bill & Rates",
+    "titleUr": "آزاد کشمیر بجلی بل آن لائن گائیڈ 2026: محکمہ برقیات آزاد کشمیر ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Check your AJK Electricity Department bill online. Tariff rates, 14-digit Account Number, Muzaffarabad, Mirpur, Kotli, Rawalakot, and helpline contacts.",
+    "metaDescriptionUr": "محکمہ برقیات آزاد کشمیر کا بجلی کا بل، مظفرآباد، میرپور، کوٹلی، راولاکوٹ ٹیرف اور ڈپلیکیٹ بلنگ معلومات۔",
+    "directAnswerEn": "To check your Azad Jammu & Kashmir electricity bill online: (1) Find the 14-digit Account Number on your AJK Electricity Department bill, (2) Validate the format in our tool, and (3) Click 'Open AJK Official Portal' to visit www.ajkelectricity.gov.pk. You can also pay via 1Link banking apps or Bank of AJK branches.",
+    "directAnswerUr": "آزاد کشمیر بجلی کا بل دیکھنے کے لیے اپنے بل سے 14 ہندسوں کا اکاؤنٹ نمبر لیں، ہمارے ٹول میں چیک کریں اور آفیشل پورٹل (ajkelectricity.gov.pk) پر جائیں۔ بل بینک آف آزاد کشمیر یا موبائل ایپ سے ادا کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "AJK Electricity Department Official Portal",
+      "url": "https://www.ajkelectricity.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Protected (1–100 Units)",
+        "serviceUr": "گھریلو پروٹیکٹڈ (1 تا 100 یونٹ)",
+        "normal": "Subsidized AJK Rate",
+        "urgent": "AJK Govt Relief",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Domestic (101–300 Units)",
+        "serviceUr": "گھریلو (101 تا 300 یونٹ)",
+        "normal": "Subsidized Slab",
+        "urgent": "Hydel Power Relief",
+        "executive": "Standard"
+      },
+      {
+        "serviceEn": "Commercial & Industrial",
+        "serviceUr": "کمرشل و صنعتی",
+        "normal": "Special AJK Commercial",
+        "urgent": "Peak Hours",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 14-Digit AJK Account Number",
+        "titleUr": "14 ہندسوں کا اے جے کے اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Check the top section of your previous paper bill for the 14-digit Account / Consumer ID.",
+        "detailUr": "اپنے پرانے کاغذی بل کے اوپر 'Account No' میں درج 14 ہندسوں کا نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Use our format tool to ensure clean digits and copy to clipboard.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Access Official AJK Electricity Portal",
+        "titleUr": "آفیشل اے جے کے پورٹل پر جائیں",
+        "detailEn": "Click 'OPEN AJK-ELECTRIC OFFICIAL BILL PORTAL' to visit https://www.ajkelectricity.gov.pk/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Pay Bill Online or at Bank",
+        "titleUr": "آن لائن یا بینک میں ادائیگی کریں",
+        "detailEn": "Pay through Bank of Azad Jammu & Kashmir, 1Link mobile banking, or post office counters.",
+        "detailUr": "بینک آف آزاد کشمیر، موبائل بینکنگ یا ڈاکخانے میں بل ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Which districts are covered by AJK Electricity Department?",
+        "questionUr": "محکمہ برقیات آزاد کشمیر کن اضلاع کو کور کرتا ہے؟",
+        "answerEn": "AJK Electricity Department covers all 10 districts of Azad Kashmir: Muzaffarabad, Mirpur, Kotli, Bhimber, Bagh, Rawalakot (Poonch), Haveli, Sudhnoti, Neelum, and Jhelum Valley (Hattian Bala).",
+        "answerUr": "محکمہ برقیات آزاد کشمیر کے تمام 10 اضلاع بشمول مظفرآباد، میرپور، کوٹلی، بھمبر، باغ، راولاکوٹ، حویلی، سدھنوتی، نیلم اور جہلم ویلی کو کور کرتا ہے۔"
+      },
+      {
+        "questionEn": "What is the AJK Electricity Department helpline?",
+        "questionUr": "محکمہ برقیات آزاد کشمیر کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Contact the AJK Electricity central office at 05822-921004 / 05822-921005 or dial 118.",
+        "answerUr": "محکمہ برقیات کے مرکزی دفتر 05822-921004 یا 118 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nAJKED oversees power transmission, distribution, and tariff concessions for Azad Kashmir residents.",
+    "contentUr": "## محکمہ برقیات آزاد جموں و کشمیر بلنگ معلومات 2026\nمحکمہ برقیات آزاد کشمیر کے تمام اضلاع میں بجلی کی ترسیل اور بلنگ کا ذمہ دار ہے۔",
+    "relatedSlugs": [
+      "/bills/iesco-bill-check-online",
+      "/bills/lesco-vs-fesco-bill-comparison",
+      "/bills/wasa-rawalpindi-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Protected (1–100 Units)",
-      "serviceUr": "گھریلو پروٹیکٹڈ (1 تا 100 یونٹ)",
-      "normal": "Subsidized AJK Rate",
-      "urgent": "AJK Govt Relief",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Domestic (101–300 Units)",
-      "serviceUr": "گھریلو (101 تا 300 یونٹ)",
-      "normal": "Subsidized Slab",
-      "urgent": "Hydel Power Relief",
-      "executive": "Standard"
-    },
-    {
-      "serviceEn": "Commercial & Industrial",
-      "serviceUr": "کمرشل و صنعتی",
-      "normal": "Special AJK Commercial",
-      "urgent": "Peak Hours",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 14-Digit AJK Account Number",
-      "titleUr": "14 ہندسوں کا اے جے کے اکاؤنٹ نمبر تلاش کریں",
-      "detailEn": "Check the top section of your previous paper bill for the 14-digit Account / Consumer ID.",
-      "detailUr": "اپنے پرانے کاغذی بل کے اوپر 'Account No' میں درج 14 ہندسوں کا نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Use our format tool to ensure clean digits and copy to clipboard.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Access Official AJK Electricity Portal",
-      "titleUr": "آفیشل اے جے کے پورٹل پر جائیں",
-      "detailEn": "Click 'OPEN AJK-ELECTRIC OFFICIAL BILL PORTAL' to visit https://www.ajkelectricity.gov.pk/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Pay Bill Online or at Bank",
-      "titleUr": "آن لائن یا بینک میں ادائیگی کریں",
-      "detailEn": "Pay through Bank of Azad Jammu & Kashmir, 1Link mobile banking, or post office counters.",
-      "detailUr": "بینک آف آزاد کشمیر، موبائل بینکنگ یا ڈاکخانے میں بل ادا کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "Which districts are covered by AJK Electricity Department?",
-      "questionUr": "محکمہ برقیات آزاد کشمیر کن اضلاع کو کور کرتا ہے؟",
-      "answerEn": "AJK Electricity Department covers all 10 districts of Azad Kashmir: Muzaffarabad, Mirpur, Kotli, Bhimber, Bagh, Rawalakot (Poonch), Haveli, Sudhnoti, Neelum, and Jhelum Valley (Hattian Bala).",
-      "answerUr": "محکمہ برقیات آزاد کشمیر کے تمام 10 اضلاع بشمول مظفرآباد، میرپور، کوٹلی، بھمبر، باغ، راولاکوٹ، حویلی، سدھنوتی، نیلم اور جہلم ویلی کو کور کرتا ہے۔"
-    },
-    {
-      "questionEn": "What is the AJK Electricity Department helpline?",
-      "questionUr": "محکمہ برقیات آزاد کشمیر کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Contact the AJK Electricity central office at 05822-921004 / 05822-921005 or dial 118.",
-      "answerUr": "محکمہ برقیات کے مرکزی دفتر 05822-921004 یا 118 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nAJKED oversees power transmission, distribution, and tariff concessions for Azad Kashmir residents.",
-  "contentUr": "## محکمہ برقیات آزاد جموں و کشمیر بلنگ معلومات 2026\nمحکمہ برقیات آزاد کشمیر کے تمام اضلاع میں بجلی کی ترسیل اور بلنگ کا ذمہ دار ہے۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/iesco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "gb-electric-bill-guide": {
-  "slug": "gb-electric-bill-guide",
-  "fullPath": "/bills/gb-electric-bill-guide",
-  "categoryId": "bills",
-  "titleEn": "Gilgit-Baltistan Electricity Bill Guide 2026: Water & Power Dept GB Billing & Contacts",
-  "titleUr": "گلگت بلتستان بجلی بل گائیڈ 2026: محکمہ برقیات و آبپاشی جی بی",
-  "metaDescriptionEn": "Official guide for Gilgit-Baltistan electricity consumers: Water & Power Department GB billing procedures, Gilgit, Skardu, Hunza, Diamer, tariffs, and helplines.",
-  "metaDescriptionUr": "گلگت بلتستان کے صارفین کے لیے بجلی بلنگ طریقہ کار، گلگت، سکردو، ہنزہ، دیامر ٹیرف، بینک ادائیگی اور ہیلپ لائن ڈائریکٹری۔",
-  "directAnswerEn": "Electricity in Gilgit-Baltistan is managed directly by the Gilgit-Baltistan Water & Power Department. Due to regional decentralized hydel grids, bills are distributed physically by local revenue staff and paid at National Bank of Pakistan (NBP) branches or designated post offices. There is currently no centralized automated online duplicate bill download portal. For complaints, contact your district executive engineer or 05811-920140.",
-  "directAnswerUr": "گلگت بلتستان میں بجلی محکمہ برقیات و آبپاشی جی بی کے تحت چلتی ہے۔ لوکل ہائیڈل گرڈز کی وجہ سے بل کاغذی صورت میں ملتے ہیں اور نیشنل بینک (NBP) یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 05811-920140 پر رابطہ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "GB Water & Power Department Official",
-    "url": "https://gilgitbaltistan.gov.pk/"
+    "slug": "gb-electric-bill-guide",
+    "fullPath": "/bills/gb-electric-bill-guide",
+    "categoryId": "bills",
+    "titleEn": "Gilgit-Baltistan Electricity Bill Guide 2026: Water & Power Dept GB Billing & Contacts",
+    "titleUr": "گلگت بلتستان بجلی بل گائیڈ 2026: محکمہ برقیات و آبپاشی جی بی",
+    "metaDescriptionEn": "Official guide for Gilgit-Baltistan electricity consumers: Water & Power Department GB billing procedures, Gilgit, Skardu, Hunza, Diamer, tariffs, and helplines.",
+    "metaDescriptionUr": "گلگت بلتستان کے صارفین کے لیے بجلی بلنگ طریقہ کار، گلگت، سکردو، ہنزہ، دیامر ٹیرف، بینک ادائیگی اور ہیلپ لائن ڈائریکٹری۔",
+    "directAnswerEn": "Electricity in Gilgit-Baltistan is managed directly by the Gilgit-Baltistan Water & Power Department. Due to regional decentralized hydel grids, bills are distributed physically by local revenue staff and paid at National Bank of Pakistan (NBP) branches or designated post offices. There is currently no centralized automated online duplicate bill download portal. For complaints, contact your district executive engineer or 05811-920140.",
+    "directAnswerUr": "گلگت بلتستان میں بجلی محکمہ برقیات و آبپاشی جی بی کے تحت چلتی ہے۔ لوکل ہائیڈل گرڈز کی وجہ سے بل کاغذی صورت میں ملتے ہیں اور نیشنل بینک (NBP) یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 05811-920140 پر رابطہ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "GB Water & Power Department Official",
+      "url": "https://gilgitbaltistan.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Utility & Energy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Flat / Metered",
+        "serviceUr": "گھریلو فلیٹ / میٹرڈ",
+        "normal": "Subsidized GB Hydel Rate",
+        "urgent": "Local Grid Tariff",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "GB Commercial Tariff",
+        "urgent": "Monthly Fixed",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Receive Physical Bill from GB Power Dept",
+        "titleUr": "محکمہ برقیات سے کاغذی بل وصول کریں",
+        "detailEn": "Monthly electricity bills are delivered directly to premises by designated meter readers and revenue collectors.",
+        "detailUr": "ماہانہ بل مقامی میٹر ریڈر یا ریونیو عملہ گھروں تک پہنچاتا ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Verify Meter Reading and Amount",
+        "titleUr": "میٹر ریڈنگ اور رقم کی تصدیق کریں",
+        "detailEn": "Match previous and present reading on your bill with your electric meter.",
+        "detailUr": "بل پر لکھی ریڈنگ اور رقم کو اپنے میٹر سے ملا کر چیک کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay at NBP or Post Office Counters",
+        "titleUr": "نیشنل بینک یا ڈاکخانے میں ادائیگی کریں",
+        "detailEn": "Submit payment before the printed due date at any National Bank of Pakistan (NBP) or Pakistan Post branch in your district.",
+        "detailUr": "مقررہ تاریخ سے پہلے نیشنل بینک یا قریبی ڈاکخانے میں بل جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is there an online portal to check Gilgit-Baltistan electricity bills?",
+        "questionUr": "کیا گلگت بلتستان کا بجلی کا بل آن لائن چیک ہو سکتا ہے؟",
+        "answerEn": "No. Gilgit-Baltistan operates on standalone regional hydel power stations not connected to the national CPPA-G / PITC grid, so online duplicate bill lookup is currently not operational.",
+        "answerUr": "نہیں، گلگت بلتستان کا سسٹم نیشنل گرڈ سے الگ لوکل ہائیڈل سٹیشنز پر کام کرتا ہے اس لیے مرکزی آن لائن بل پورٹل موجود نہیں ہے۔"
+      },
+      {
+        "questionEn": "What are the district contact numbers for GB electricity complaints?",
+        "questionUr": "جی بی بجلی کی شکایات کے لیے رابطہ نمبر کیا ہیں؟",
+        "answerEn": "Gilgit: 05811-920140, Skardu: 05815-920150, Hunza: 05813-920110, Diamer: 05812-920030.",
+        "answerUr": "گلگت: 05811-920140، سکردو: 05815-920150، ہنزہ: 05813-920110، دیامر: 05812-920030۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## Gilgit-Baltistan Water & Power Department Civic Guide 2026\nInformation regarding electricity supply, billing, hydel generation, and district helplines in GB.",
+    "contentUr": "## گلگت بلتستان محکمہ برقیات و آبپاشی معلوماتی گائیڈ 2026\nگلگت بلتستان میں بجلی کے بل کی ادائیگی، طریقہ کار اور ضلعی دفاتر کی معلومات۔",
+    "relatedSlugs": [
+      "/bills/pesco-bill-check-online",
+      "/bills/qesco-bill-check-online",
+      "/bills/wasa-gujranwala-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Utility & Energy Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Flat / Metered",
-      "serviceUr": "گھریلو فلیٹ / میٹرڈ",
-      "normal": "Subsidized GB Hydel Rate",
-      "urgent": "Local Grid Tariff",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "GB Commercial Tariff",
-      "urgent": "Monthly Fixed",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Receive Physical Bill from GB Power Dept",
-      "titleUr": "محکمہ برقیات سے کاغذی بل وصول کریں",
-      "detailEn": "Monthly electricity bills are delivered directly to premises by designated meter readers and revenue collectors.",
-      "detailUr": "ماہانہ بل مقامی میٹر ریڈر یا ریونیو عملہ گھروں تک پہنچاتا ہے۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Verify Meter Reading and Amount",
-      "titleUr": "میٹر ریڈنگ اور رقم کی تصدیق کریں",
-      "detailEn": "Match previous and present reading on your bill with your electric meter.",
-      "detailUr": "بل پر لکھی ریڈنگ اور رقم کو اپنے میٹر سے ملا کر چیک کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Pay at NBP or Post Office Counters",
-      "titleUr": "نیشنل بینک یا ڈاکخانے میں ادائیگی کریں",
-      "detailEn": "Submit payment before the printed due date at any National Bank of Pakistan (NBP) or Pakistan Post branch in your district.",
-      "detailUr": "مقررہ تاریخ سے پہلے نیشنل بینک یا قریبی ڈاکخانے میں بل جمع کروائیں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "Is there an online portal to check Gilgit-Baltistan electricity bills?",
-      "questionUr": "کیا گلگت بلتستان کا بجلی کا بل آن لائن چیک ہو سکتا ہے؟",
-      "answerEn": "No. Gilgit-Baltistan operates on standalone regional hydel power stations not connected to the national CPPA-G / PITC grid, so online duplicate bill lookup is currently not operational.",
-      "answerUr": "نہیں، گلگت بلتستان کا سسٹم نیشنل گرڈ سے الگ لوکل ہائیڈل سٹیشنز پر کام کرتا ہے اس لیے مرکزی آن لائن بل پورٹل موجود نہیں ہے۔"
-    },
-    {
-      "questionEn": "What are the district contact numbers for GB electricity complaints?",
-      "questionUr": "جی بی بجلی کی شکایات کے لیے رابطہ نمبر کیا ہیں؟",
-      "answerEn": "Gilgit: 05811-920140, Skardu: 05815-920150, Hunza: 05813-920110, Diamer: 05812-920030.",
-      "answerUr": "گلگت: 05811-920140، سکردو: 05815-920150، ہنزہ: 05813-920110، دیامر: 05812-920030۔"
-    }
-  ],
-  "contentEn": "## Gilgit-Baltistan Water & Power Department Civic Guide 2026\nInformation regarding electricity supply, billing, hydel generation, and district helplines in GB.",
-  "contentUr": "## گلگت بلتستان محکمہ برقیات و آبپاشی معلوماتی گائیڈ 2026\nگلگت بلتستان میں بجلی کے بل کی ادائیگی، طریقہ کار اور ضلعی دفاتر کی معلومات۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/pesco-bill-check-online",
-    "/bills/wapda-complaint-status-tracker-2026"
-  ]
-},
   "wasa-lahore-bill-check-online": {
-  "slug": "wasa-lahore-bill-check-online",
-  "fullPath": "/bills/wasa-lahore-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Lahore Bill Check Online 2026: Download Duplicate Water Bill PDF",
-  "titleUr": "واسا لاہور آن لائن بل چیک 2026: پانی اور سیوریج کا ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-  "metaDescriptionEn": "Check and download your WASA Lahore duplicate water bill online using 8-digit Account Number. View dues, due dates, and 1334 helpline.",
-  "metaDescriptionUr": "واسا لاہور کا پانی و سیوریج بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your WASA Lahore water bill online: (1) Find your 8-digit Account Number printed on your water bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Lahore Official Portal' to load the official Punjab government portal (duplicatebill.wasa.punjab.gov.pk) to view or print your PDF bill.",
-  "directAnswerUr": "واسا لاہور کا بل چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل واسا پورٹل (duplicatebill.wasa.punjab.gov.pk) پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Lahore Duplicate Bill Portal",
-    "url": "https://duplicatebill.wasa.punjab.gov.pk/"
+    "slug": "wasa-lahore-bill-check-online",
+    "fullPath": "/bills/wasa-lahore-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Lahore Bill Check Online 2026: Download Duplicate Water Bill PDF",
+    "titleUr": "واسا لاہور آن لائن بل چیک 2026: پانی اور سیوریج کا ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+    "metaDescriptionEn": "Check and download your WASA Lahore duplicate water bill online using 8-digit Account Number. View dues, due dates, and 1334 helpline.",
+    "metaDescriptionUr": "واسا لاہور کا پانی و سیوریج بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your WASA Lahore water bill online: (1) Find your 8-digit Account Number printed on your water bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Lahore Official Portal' to load the official Punjab government portal (duplicatebill.wasa.punjab.gov.pk) to view or print your PDF bill.",
+    "directAnswerUr": "واسا لاہور کا بل چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل واسا پورٹل (duplicatebill.wasa.punjab.gov.pk) پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Lahore Duplicate Bill Portal",
+      "url": "https://duplicatebill.wasa.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential 3–5 Marla",
+        "serviceUr": "رہائشی 3 تا 5 مرلہ",
+        "normal": "Fixed Monthly Tariff",
+        "urgent": "Standard Domestic",
+        "executive": "Unmetered"
+      },
+      {
+        "serviceEn": "Residential 10 Marla – 1 Kanal",
+        "serviceUr": "رہائشی 10 مرلہ تا 1 کنال",
+        "normal": "Slab Based / Metered",
+        "urgent": "Water + Sewerage",
+        "executive": "Metered"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Category Rate",
+        "urgent": "Monthly Fixed",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 8-Digit WASA Account Number",
+        "titleUr": "8 ہندسوں کا واسا اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Locate the 8-digit Account Number ('کھاتہ نمبر') on your previous Lahore water bill.",
+        "detailUr": "اپنے کاغذی بل پر 'اکاؤنٹ نمبر' یا 'کھاتہ نمبر' میں لکھا 8 ہندسوں کا نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Enter your 8 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں نمبر چیک کر کے کاپی کا بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official WASA Lahore Portal",
+        "titleUr": "آفیشل واسا لاہور پورٹل کھولیں",
+        "detailEn": "Click 'OPEN WASA Lahore OFFICIAL BILL PORTAL' to reach https://duplicatebill.wasa.punjab.gov.pk/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download and Print Bill",
+        "titleUr": "بل ڈاؤن لوڈ اور پرنٹ کریں",
+        "detailEn": "Paste your 8-digit account number and click Submit to display your full duplicate bill.",
+        "detailUr": "اکاؤنٹ نمبر درج کریں اور سبمٹ کر کے بل حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Lahore customer helpline?",
+        "questionUr": "واسا لاہور کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "WASA Lahore operates a 24/7 toll-free helpline at 1334 for water contamination, low pressure, drainage, and billing complaints.",
+        "answerUr": "پانی کی بندش، پریشر یا سیوریج کے مسائل کے لیے 24 گھنٹے 1334 پر کال کریں۔"
+      },
+      {
+        "questionEn": "Can I pay WASA Lahore bills through mobile banking apps?",
+        "questionUr": "کیا واسا لاہور کا بل موبائل ایپ سے جمع ہو سکتا ہے؟",
+        "answerEn": "Yes. WASA Lahore bills can be paid via 1Bill / 1Link on JazzCash, Easypaisa, Nayapay, SadaPay, and all Pakistani bank apps using your 8-digit consumer number.",
+        "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا بینکنگ ایپ پر 1Bill کے ذریعے اپنا 8 ہندسوں کا اکاؤنٹ نمبر لکھ کر بل ادا کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Lahore (Water & Sanitation Agency) Online Duplicate Bill Guide 2026\nWASA Lahore supplies clean drinking water and sewerage services to the Lahore metropolitan district.",
+    "contentUr": "## واسا لاہور (واٹر اینڈ سینی ٹیشن ایجنسی) آن لائن بلنگ گائیڈ 2026\nلاہور کے شہری باآسانی اپنا پانی کا بل آن لائن دیکھ سکتے ہیں اور ڈپلیکیٹ کاپی حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/lesco-bill-check-online",
+      "/bills/wasa-faisalabad-bill-check-online",
+      "/bills/gb-electric-bill-guide"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Residential 3–5 Marla",
-      "serviceUr": "رہائشی 3 تا 5 مرلہ",
-      "normal": "Fixed Monthly Tariff",
-      "urgent": "Standard Domestic",
-      "executive": "Unmetered"
-    },
-    {
-      "serviceEn": "Residential 10 Marla – 1 Kanal",
-      "serviceUr": "رہائشی 10 مرلہ تا 1 کنال",
-      "normal": "Slab Based / Metered",
-      "urgent": "Water + Sewerage",
-      "executive": "Metered"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Category Rate",
-      "urgent": "Monthly Fixed",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 8-Digit WASA Account Number",
-      "titleUr": "8 ہندسوں کا واسا اکاؤنٹ نمبر تلاش کریں",
-      "detailEn": "Locate the 8-digit Account Number ('کھاتہ نمبر') on your previous Lahore water bill.",
-      "detailUr": "اپنے کاغذی بل پر 'اکاؤنٹ نمبر' یا 'کھاتہ نمبر' میں لکھا 8 ہندسوں کا نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Enter your 8 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں نمبر چیک کر کے کاپی کا بٹن دبائیں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official WASA Lahore Portal",
-      "titleUr": "آفیشل واسا لاہور پورٹل کھولیں",
-      "detailEn": "Click 'OPEN WASA Lahore OFFICIAL BILL PORTAL' to reach https://duplicatebill.wasa.punjab.gov.pk/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Download and Print Bill",
-      "titleUr": "بل ڈاؤن لوڈ اور پرنٹ کریں",
-      "detailEn": "Paste your 8-digit account number and click Submit to display your full duplicate bill.",
-      "detailUr": "اکاؤنٹ نمبر درج کریں اور سبمٹ کر کے بل حاصل کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Lahore customer helpline?",
-      "questionUr": "واسا لاہور کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "WASA Lahore operates a 24/7 toll-free helpline at 1334 for water contamination, low pressure, drainage, and billing complaints.",
-      "answerUr": "پانی کی بندش، پریشر یا سیوریج کے مسائل کے لیے 24 گھنٹے 1334 پر کال کریں۔"
-    },
-    {
-      "questionEn": "Can I pay WASA Lahore bills through mobile banking apps?",
-      "questionUr": "کیا واسا لاہور کا بل موبائل ایپ سے جمع ہو سکتا ہے؟",
-      "answerEn": "Yes. WASA Lahore bills can be paid via 1Bill / 1Link on JazzCash, Easypaisa, Nayapay, SadaPay, and all Pakistani bank apps using your 8-digit consumer number.",
-      "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا بینکنگ ایپ پر 1Bill کے ذریعے اپنا 8 ہندسوں کا اکاؤنٹ نمبر لکھ کر بل ادا کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Lahore (Water & Sanitation Agency) Online Duplicate Bill Guide 2026\nWASA Lahore supplies clean drinking water and sewerage services to the Lahore metropolitan district.",
-  "contentUr": "## واسا لاہور (واٹر اینڈ سینی ٹیشن ایجنسی) آن لائن بلنگ گائیڈ 2026\nلاہور کے شہری باآسانی اپنا پانی کا بل آن لائن دیکھ سکتے ہیں اور ڈپلیکیٹ کاپی حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/lesco-bill-check-online",
-    "/bills/wasa-faisalabad-bill-check-online"
-  ]
-},
   "wasa-faisalabad-bill-check-online": {
-  "slug": "wasa-faisalabad-bill-check-online",
-  "fullPath": "/bills/wasa-faisalabad-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill",
-  "titleUr": "واسا فیصل آباد آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
-  "metaDescriptionEn": "Check and download your WASA Faisalabad duplicate water bill online using 12-digit Consumer ID. Official portal link, due dates, and 1334 helpline.",
-  "metaDescriptionUr": "واسا فیصل آباد کا پانی و سیوریج کا بل 12 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
-  "directAnswerEn": "To check your WASA Faisalabad water bill online: (1) Find the 12-digit Consumer ID on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Faisalabad Official Portal' to access http://faisalabadwasa.gop.pk/duplicatebill.aspx and download your duplicate bill.",
-  "directAnswerUr": "واسا فیصل آباد کا بل دیکھنے کے لیے اپنے بل سے 12 ہندسوں کا کنزیومر آئی ڈی لیں، کاپی کریں اور آفیشل واسا فیصل آباد پورٹل سے بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Faisalabad Official Portal",
-    "url": "http://faisalabadwasa.gop.pk/duplicatebill.aspx"
+    "slug": "wasa-faisalabad-bill-check-online",
+    "fullPath": "/bills/wasa-faisalabad-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill",
+    "titleUr": "واسا فیصل آباد آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+    "metaDescriptionEn": "Check and download your WASA Faisalabad duplicate water bill online using 12-digit Consumer ID. Official portal link, due dates, and 1334 helpline.",
+    "metaDescriptionUr": "واسا فیصل آباد کا پانی و سیوریج کا بل 12 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
+    "directAnswerEn": "To check your WASA Faisalabad water bill online: (1) Find the 12-digit Consumer ID on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Faisalabad Official Portal' to access http://faisalabadwasa.gop.pk/duplicatebill.aspx and download your duplicate bill.",
+    "directAnswerUr": "واسا فیصل آباد کا بل دیکھنے کے لیے اپنے بل سے 12 ہندسوں کا کنزیومر آئی ڈی لیں، کاپی کریں اور آفیشل واسا فیصل آباد پورٹل سے بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Faisalabad Official Portal",
+      "url": "http://faisalabadwasa.gop.pk/duplicatebill.aspx"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Domestic Water",
+        "serviceUr": "گھریلو پانی کنکشن",
+        "normal": "Fixed Monthly Slab",
+        "urgent": "Plot Size Dependent",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial / Industrial",
+        "serviceUr": "کمرشل / صنعتی",
+        "normal": "Commercial Tariff",
+        "urgent": "Water + Sewerage",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Locate 12-Digit Consumer ID",
+        "titleUr": "12 ہندسوں کا کنزیومر آئی ڈی دیکھیں",
+        "detailEn": "Find the 12-digit Consumer ID printed at the top-center of your Faisalabad water bill.",
+        "detailUr": "اپنے فیصل آباد واسا بل کے اوپر درمیان میں درج 12 ہندسوں کا کنزیومر آئی ڈی دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Validate 12 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open WASA Faisalabad Portal",
+        "titleUr": "واسا فیصل آباد پورٹل کھولیں",
+        "detailEn": "Click 'OPEN WASA Faisalabad OFFICIAL BILL PORTAL' to reach http://faisalabadwasa.gop.pk/duplicatebill.aspx.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Retrieve Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+        "detailEn": "Paste your Consumer ID and click Search to display your bill.",
+        "detailUr": "کنزیومر آئی ڈی درج کر کے بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Faisalabad emergency complaint helpline?",
+        "questionUr": "واسا فیصل آباد کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Call universal helpline 1334 or WASA Faisalabad complaint desk at 041-9210049.",
+        "answerUr": "شکایات کے لیے 1334 یا واسا فیصل آباد 041-9210049 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Faisalabad Duplicate Water Bill Guide 2026\nWASA Faisalabad provides municipal water supply and drainage across Faisalabad city.",
+    "contentUr": "## واسا فیصل آباد آن لائن واٹر بل رہنمائی 2026\nفیصل آباد کے شہری آسانی سے اپنا پانی کا ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/fesco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/wasa-multan-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Domestic Water",
-      "serviceUr": "گھریلو پانی کنکشن",
-      "normal": "Fixed Monthly Slab",
-      "urgent": "Plot Size Dependent",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial / Industrial",
-      "serviceUr": "کمرشل / صنعتی",
-      "normal": "Commercial Tariff",
-      "urgent": "Water + Sewerage",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Locate 12-Digit Consumer ID",
-      "titleUr": "12 ہندسوں کا کنزیومر آئی ڈی دیکھیں",
-      "detailEn": "Find the 12-digit Consumer ID printed at the top-center of your Faisalabad water bill.",
-      "detailUr": "اپنے فیصل آباد واسا بل کے اوپر درمیان میں درج 12 ہندسوں کا کنزیومر آئی ڈی دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Validate 12 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open WASA Faisalabad Portal",
-      "titleUr": "واسا فیصل آباد پورٹل کھولیں",
-      "detailEn": "Click 'OPEN WASA Faisalabad OFFICIAL BILL PORTAL' to reach http://faisalabadwasa.gop.pk/duplicatebill.aspx.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Retrieve Duplicate Bill",
-      "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-      "detailEn": "Paste your Consumer ID and click Search to display your bill.",
-      "detailUr": "کنزیومر آئی ڈی درج کر کے بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Faisalabad emergency complaint helpline?",
-      "questionUr": "واسا فیصل آباد کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Call universal helpline 1334 or WASA Faisalabad complaint desk at 041-9210049.",
-      "answerUr": "شکایات کے لیے 1334 یا واسا فیصل آباد 041-9210049 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Faisalabad Duplicate Water Bill Guide 2026\nWASA Faisalabad provides municipal water supply and drainage across Faisalabad city.",
-  "contentUr": "## واسا فیصل آباد آن لائن واٹر بل رہنمائی 2026\nفیصل آباد کے شہری آسانی سے اپنا پانی کا ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/fesco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
   "wasa-rawalpindi-bill-check-online": {
-  "slug": "wasa-rawalpindi-bill-check-online",
-  "fullPath": "/bills/wasa-rawalpindi-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates",
-  "titleUr": "واسا راولپنڈی آن لائن بل 2026: راولپنڈی واٹر بل اور ڈپلیکیٹ کاپی",
-  "metaDescriptionEn": "Check WASA Rawalpindi water and sewerage bill online with 10-digit Consumer Number. Official portal links, tariff slabs, and 1334 helpline.",
-  "metaDescriptionUr": "واسا راولپنڈی کا پانی اور سیوریج بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور معلومات حاصل کریں۔",
-  "directAnswerEn": "To check your WASA Rawalpindi water bill: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the format in our browser tool, and (3) Click 'Open WASA Rawalpindi Official Portal' to visit https://wasa.rawalpindi.gop.pk/ to check dues or download your duplicate bill. For complaints, dial 1334 or 051-5555498.",
-  "directAnswerUr": "واسا راولپنڈی کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، ہمارے ٹول میں چیک کر کے آفیشل پورٹل (wasa.rawalpindi.gop.pk) پر جائیں۔ ہیلپ لائن 1334 ہے۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Rawalpindi Official Portal",
-    "url": "https://wasa.rawalpindi.gop.pk/"
+    "slug": "wasa-rawalpindi-bill-check-online",
+    "fullPath": "/bills/wasa-rawalpindi-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates",
+    "titleUr": "واسا راولپنڈی آن لائن بل 2026: راولپنڈی واٹر بل اور ڈپلیکیٹ کاپی",
+    "metaDescriptionEn": "Check WASA Rawalpindi water and sewerage bill online with 10-digit Consumer Number. Official portal links, tariff slabs, and 1334 helpline.",
+    "metaDescriptionUr": "واسا راولپنڈی کا پانی اور سیوریج بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور معلومات حاصل کریں۔",
+    "directAnswerEn": "To check your WASA Rawalpindi water bill: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the format in our browser tool, and (3) Click 'Open WASA Rawalpindi Official Portal' to visit https://wasa.rawalpindi.gop.pk/ to check dues or download your duplicate bill. For complaints, dial 1334 or 051-5555498.",
+    "directAnswerUr": "واسا راولپنڈی کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، ہمارے ٹول میں چیک کر کے آفیشل پورٹل (wasa.rawalpindi.gop.pk) پر جائیں۔ ہیلپ لائن 1334 ہے۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Rawalpindi Official Portal",
+      "url": "https://wasa.rawalpindi.gop.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Domestic Water",
+        "serviceUr": "گھریلو پانی",
+        "normal": "Fixed Monthly Tariff",
+        "urgent": "Standard Domestic",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Slab",
+        "urgent": "Water + Sewerage",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 10-Digit Consumer Number",
+        "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
+        "detailEn": "Locate the 10-digit Consumer Number in the top-left box of your Rawalpindi water bill.",
+        "detailUr": "اپنے راولپنڈی واٹر بل پر لکھا 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open WASA Rawalpindi Portal",
+        "titleUr": "واسا راولپنڈی پورٹل پر جائیں",
+        "detailEn": "Click 'OPEN WASA Rawalpindi OFFICIAL BILL PORTAL' to reach https://wasa.rawalpindi.gop.pk/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Pay Bill Online",
+        "titleUr": "آن لائن بل ادا کریں",
+        "detailEn": "Pay via 1Bill on mobile banking apps using your 10-digit consumer ID.",
+        "detailUr": "بینکنگ ایپ یا ایزی پیسہ سے 1Bill کے ذریعے بل جمع کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Rawalpindi helpline number?",
+        "questionUr": "واسا راولپنڈی کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Call 1334 (toll-free) or WASA Rawalpindi headquarters at 051-5555498.",
+        "answerUr": "شکایات کے لیے 1334 یا واسا راولپنڈی ہیڈکوارٹر 051-5555498 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Rawalpindi (Water and Sanitation Agency) Guide 2026\nWASA Rawalpindi manages clean water supply from Rawal Dam, Khanpur Dam, and municipal tube-wells.",
+    "contentUr": "## واسا راولپنڈی آن لائن بلنگ و معلومات 2026\nراولپنڈی کے شہری واسا پورٹل سے اپنے بل کی معلومات حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/iesco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/ssgc-duplicate-bill-check"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Domestic Water",
-      "serviceUr": "گھریلو پانی",
-      "normal": "Fixed Monthly Tariff",
-      "urgent": "Standard Domestic",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Slab",
-      "urgent": "Water + Sewerage",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 10-Digit Consumer Number",
-      "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
-      "detailEn": "Locate the 10-digit Consumer Number in the top-left box of your Rawalpindi water bill.",
-      "detailUr": "اپنے راولپنڈی واٹر بل پر لکھا 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open WASA Rawalpindi Portal",
-      "titleUr": "واسا راولپنڈی پورٹل پر جائیں",
-      "detailEn": "Click 'OPEN WASA Rawalpindi OFFICIAL BILL PORTAL' to reach https://wasa.rawalpindi.gop.pk/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Pay Bill Online",
-      "titleUr": "آن لائن بل ادا کریں",
-      "detailEn": "Pay via 1Bill on mobile banking apps using your 10-digit consumer ID.",
-      "detailUr": "بینکنگ ایپ یا ایزی پیسہ سے 1Bill کے ذریعے بل جمع کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Rawalpindi helpline number?",
-      "questionUr": "واسا راولپنڈی کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Call 1334 (toll-free) or WASA Rawalpindi headquarters at 051-5555498.",
-      "answerUr": "شکایات کے لیے 1334 یا واسا راولپنڈی ہیڈکوارٹر 051-5555498 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Rawalpindi (Water and Sanitation Agency) Guide 2026\nWASA Rawalpindi manages clean water supply from Rawal Dam, Khanpur Dam, and municipal tube-wells.",
-  "contentUr": "## واسا راولپنڈی آن لائن بلنگ و معلومات 2026\nراولپنڈی کے شہری واسا پورٹل سے اپنے بل کی معلومات حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/iesco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
   "wasa-multan-bill-check-online": {
-  "slug": "wasa-multan-bill-check-online",
-  "fullPath": "/bills/wasa-multan-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF",
-  "titleUr": "واسا ملتان آن لائن بل چیک 2026: ملتان واٹر اینڈ سینی ٹیشن ڈپلیکیٹ بل",
-  "metaDescriptionEn": "Check and download your WASA Multan duplicate water bill online with 8-digit Consumer Number. Official portal links, due dates, and 1334 helpline.",
-  "metaDescriptionUr": "واسا ملتان کا پانی و سیوریج بل 8 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your WASA Multan duplicate bill online: (1) Find the 8-digit Consumer Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Multan Official Portal' to visit https://wasamultan.gop.pk/duplicatebill and view or print your PDF bill.",
-  "directAnswerUr": "واسا ملتان کا بل آن لائن چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasamultan.gop.pk/duplicatebill) سے بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Multan Duplicate Bill Portal",
-    "url": "https://wasamultan.gop.pk/duplicatebill"
+    "slug": "wasa-multan-bill-check-online",
+    "fullPath": "/bills/wasa-multan-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF",
+    "titleUr": "واسا ملتان آن لائن بل چیک 2026: ملتان واٹر اینڈ سینی ٹیشن ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Check and download your WASA Multan duplicate water bill online with 8-digit Consumer Number. Official portal links, due dates, and 1334 helpline.",
+    "metaDescriptionUr": "واسا ملتان کا پانی و سیوریج بل 8 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your WASA Multan duplicate bill online: (1) Find the 8-digit Consumer Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Multan Official Portal' to visit https://wasamultan.gop.pk/duplicatebill and view or print your PDF bill.",
+    "directAnswerUr": "واسا ملتان کا بل آن لائن چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasamultan.gop.pk/duplicatebill) سے بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Multan Duplicate Bill Portal",
+      "url": "https://wasamultan.gop.pk/duplicatebill"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential Water",
+        "serviceUr": "رہائشی پانی کنکشن",
+        "normal": "Fixed Monthly Slab",
+        "urgent": "Standard Domestic",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Category Rate",
+        "urgent": "Water + Sewerage",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 8-Digit Multan Account Number",
+        "titleUr": "8 ہندسوں کا ملتان اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Check the top box of your Multan water bill for your 8-digit Account ID.",
+        "detailUr": "اپنے ملتان واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Validate 8 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open WASA Multan Portal",
+        "titleUr": "واسا ملتان پورٹل کھولیں",
+        "detailEn": "Click 'OPEN WASA Multan OFFICIAL BILL PORTAL' to reach https://wasamultan.gop.pk/duplicatebill.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Print Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+        "detailEn": "Enter your 8-digit Account ID and download your duplicate bill.",
+        "detailUr": "اکاؤنٹ نمبر درج کر کے بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Multan customer helpline?",
+        "questionUr": "واسا ملتان کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Call toll-free 1334 or WASA Multan complaint center at 061-9200881.",
+        "answerUr": "شکایات کے لیے 1334 یا واسا ملتان 061-9200881 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Multan Duplicate Bill Guide 2026\nWASA Multan delivers potable water and drainage services across Multan metropolitan area.",
+    "contentUr": "## واسا ملتان آن لائن واٹر بل گائیڈ 2026\nملتان کے شہری واسا کے آفیشل پورٹل سے اپنا ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/mepco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/fesco-bill-check-online"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Residential Water",
-      "serviceUr": "رہائشی پانی کنکشن",
-      "normal": "Fixed Monthly Slab",
-      "urgent": "Standard Domestic",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Category Rate",
-      "urgent": "Water + Sewerage",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 8-Digit Multan Account Number",
-      "titleUr": "8 ہندسوں کا ملتان اکاؤنٹ نمبر تلاش کریں",
-      "detailEn": "Check the top box of your Multan water bill for your 8-digit Account ID.",
-      "detailUr": "اپنے ملتان واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Validate 8 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open WASA Multan Portal",
-      "titleUr": "واسا ملتان پورٹل کھولیں",
-      "detailEn": "Click 'OPEN WASA Multan OFFICIAL BILL PORTAL' to reach https://wasamultan.gop.pk/duplicatebill.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Print Duplicate Bill",
-      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
-      "detailEn": "Enter your 8-digit Account ID and download your duplicate bill.",
-      "detailUr": "اکاؤنٹ نمبر درج کر کے بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Multan customer helpline?",
-      "questionUr": "واسا ملتان کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Call toll-free 1334 or WASA Multan complaint center at 061-9200881.",
-      "answerUr": "شکایات کے لیے 1334 یا واسا ملتان 061-9200881 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Multan Duplicate Bill Guide 2026\nWASA Multan delivers potable water and drainage services across Multan metropolitan area.",
-  "contentUr": "## واسا ملتان آن لائن واٹر بل گائیڈ 2026\nملتان کے شہری واسا کے آفیشل پورٹل سے اپنا ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/mepco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
   "wasa-gujranwala-bill-check-online": {
-  "slug": "wasa-gujranwala-bill-check-online",
-  "fullPath": "/bills/wasa-gujranwala-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
-  "titleUr": "واسا گوجرانوالہ آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
-  "metaDescriptionEn": "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
-  "metaDescriptionUr": "واسا گوجرانوالہ کا پانی کا بل 8 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
-  "directAnswerEn": "To check your WASA Gujranwala water bill online: (1) Locate the 8-digit Consumer Account Number on your bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Gujranwala Official Portal' to visit https://wasag.gop.pk/duplicate-bill/ to view or print your PDF bill.",
-  "directAnswerUr": "واسا گوجرانوالہ کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasag.gop.pk/duplicate-bill/) پر جا کر بل ڈاؤن لوڈ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Gujranwala Official Portal",
-    "url": "https://wasag.gop.pk/duplicate-bill/"
+    "slug": "wasa-gujranwala-bill-check-online",
+    "fullPath": "/bills/wasa-gujranwala-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
+    "titleUr": "واسا گوجرانوالہ آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+    "metaDescriptionEn": "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
+    "metaDescriptionUr": "واسا گوجرانوالہ کا پانی کا بل 8 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
+    "directAnswerEn": "To check your WASA Gujranwala water bill online: (1) Locate the 8-digit Consumer Account Number on your bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Gujranwala Official Portal' to visit https://wasag.gop.pk/duplicate-bill/ to view or print your PDF bill.",
+    "directAnswerUr": "واسا گوجرانوالہ کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasag.gop.pk/duplicate-bill/) پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Gujranwala Official Portal",
+      "url": "https://wasag.gop.pk/duplicate-bill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential Water",
+        "serviceUr": "رہائشی پانی",
+        "normal": "Fixed Monthly Slab",
+        "urgent": "Standard Domestic",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Tariff",
+        "urgent": "Water + Sewerage",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Locate 8-Digit Consumer ID",
+        "titleUr": "8 ہندسوں کا کنزیومر آئی ڈی تلاش کریں",
+        "detailEn": "Check the top-left box of your Gujranwala water bill for your 8-digit Consumer Account No.",
+        "detailUr": "اپنے گوجرانوالہ واسا بل پر درج 8 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open WASA Gujranwala Portal",
+        "titleUr": "واسا گوجرانوالہ پورٹل کھولیں",
+        "detailEn": "Click 'OPEN WASA Gujranwala OFFICIAL BILL PORTAL' to reach https://wasag.gop.pk/duplicate-bill/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل حاصل کریں",
+        "detailEn": "Enter your Consumer ID and print your duplicate bill.",
+        "detailUr": "کنزیومر آئی ڈی درج کر کے بل پرنٹ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Gujranwala complaint contact?",
+        "questionUr": "واسا گوجرانوالہ کا شکایت نمبر کیا ہے؟",
+        "answerEn": "Dial toll-free 1334 or contact WASA Gujranwala at 055-9200115.",
+        "answerUr": "شکایات کے لیے 1334 یا واسا گوجرانوالہ 055-9200115 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Gujranwala Duplicate Bill Guide 2026\nWASA Gujranwala provides clean drinking water and sewage disposal to Gujranwala city.",
+    "contentUr": "## واسا گوجرانوالہ آن لائن واٹر بل گائیڈ 2026\nگوجرانوالہ کے شہری آسانی سے اپنا پانی کا بل آن لائن حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/gepco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/k-electric-duplicate-bill"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Residential Water",
-      "serviceUr": "رہائشی پانی",
-      "normal": "Fixed Monthly Slab",
-      "urgent": "Standard Domestic",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Tariff",
-      "urgent": "Water + Sewerage",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Locate 8-Digit Consumer ID",
-      "titleUr": "8 ہندسوں کا کنزیومر آئی ڈی تلاش کریں",
-      "detailEn": "Check the top-left box of your Gujranwala water bill for your 8-digit Consumer Account No.",
-      "detailUr": "اپنے گوجرانوالہ واسا بل پر درج 8 ہندسوں کا کنزیومر نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open WASA Gujranwala Portal",
-      "titleUr": "واسا گوجرانوالہ پورٹل کھولیں",
-      "detailEn": "Click 'OPEN WASA Gujranwala OFFICIAL BILL PORTAL' to reach https://wasag.gop.pk/duplicate-bill/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Download Duplicate Bill",
-      "titleUr": "ڈپلیکیٹ بل حاصل کریں",
-      "detailEn": "Enter your Consumer ID and print your duplicate bill.",
-      "detailUr": "کنزیومر آئی ڈی درج کر کے بل پرنٹ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Gujranwala complaint contact?",
-      "questionUr": "واسا گوجرانوالہ کا شکایت نمبر کیا ہے؟",
-      "answerEn": "Dial toll-free 1334 or contact WASA Gujranwala at 055-9200115.",
-      "answerUr": "شکایات کے لیے 1334 یا واسا گوجرانوالہ 055-9200115 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Gujranwala Duplicate Bill Guide 2026\nWASA Gujranwala provides clean drinking water and sewage disposal to Gujranwala city.",
-  "contentUr": "## واسا گوجرانوالہ آن لائن واٹر بل گائیڈ 2026\nگوجرانوالہ کے شہری آسانی سے اپنا پانی کا بل آن لائن حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/gepco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
   "wasa-sahiwal-bill-check-online": {
-  "slug": "wasa-sahiwal-bill-check-online",
-  "fullPath": "/bills/wasa-sahiwal-bill-check-online",
-  "categoryId": "bills",
-  "titleEn": "WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill",
-  "titleUr": "واسا ساہیوال آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
-  "metaDescriptionEn": "Check and download your WASA Sahiwal duplicate water bill online using 8-digit Account Number. Official portal links and 1334 helpline.",
-  "metaDescriptionUr": "واسا ساہیوال کا پانی کا بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پرنٹ کریں۔",
-  "directAnswerEn": "To check your WASA Sahiwal water bill online: (1) Find the 8-digit Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Sahiwal Official Portal' to visit https://wasasahiwal.gop.pk/ and download your duplicate bill.",
-  "directAnswerUr": "واسا ساہیوال کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasasahiwal.gop.pk) پر جا کر بل حاصل کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WASA Sahiwal Official Portal",
-    "url": "https://wasasahiwal.gop.pk/"
+    "slug": "wasa-sahiwal-bill-check-online",
+    "fullPath": "/bills/wasa-sahiwal-bill-check-online",
+    "categoryId": "bills",
+    "titleEn": "WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill",
+    "titleUr": "واسا ساہیوال آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+    "metaDescriptionEn": "Check and download your WASA Sahiwal duplicate water bill online using 8-digit Account Number. Official portal links and 1334 helpline.",
+    "metaDescriptionUr": "واسا ساہیوال کا پانی کا بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پرنٹ کریں۔",
+    "directAnswerEn": "To check your WASA Sahiwal water bill online: (1) Find the 8-digit Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Sahiwal Official Portal' to visit https://wasasahiwal.gop.pk/ and download your duplicate bill.",
+    "directAnswerUr": "واسا ساہیوال کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasasahiwal.gop.pk) پر جا کر بل حاصل کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WASA Sahiwal Official Portal",
+      "url": "https://wasasahiwal.gop.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential Water",
+        "serviceUr": "رہائشی پانی",
+        "normal": "Fixed Monthly Slab",
+        "urgent": "Standard Domestic",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Tariff",
+        "urgent": "Water + Sewerage",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 8-Digit Account Number",
+        "titleUr": "8 ہندسوں کا اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Check the upper section of your Sahiwal water bill for your 8-digit Account Number.",
+        "detailUr": "اپنے ساہیوال واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open WASA Sahiwal Portal",
+        "titleUr": "واسا ساہیوال پورٹل کھولیں",
+        "detailEn": "Click 'OPEN WASA Sahiwal OFFICIAL BILL PORTAL' to reach https://wasasahiwal.gop.pk/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Print Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+        "detailEn": "Enter your Account Number to view and print your bill.",
+        "detailUr": "اکاؤنٹ نمبر درج کر کے بل حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WASA Sahiwal complaint helpline?",
+        "questionUr": "واسا ساہیوال کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Dial toll-free 1334 or contact WASA Sahiwal complaint center at 040-9200142.",
+        "answerUr": "شکایات کے لیے 1334 یا واسا ساہیوال 040-9200142 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WASA Sahiwal Duplicate Bill Guide 2026\nWASA Sahiwal provides municipal water and drainage services across Sahiwal city limits.",
+    "contentUr": "## واسا ساہیوال آن لائن واٹر بل گائیڈ 2026\nساہیوال کے شہری واسا پورٹل سے ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/mepco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/kwsc-karachi-water-bill-check"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Residential Water",
-      "serviceUr": "رہائشی پانی",
-      "normal": "Fixed Monthly Slab",
-      "urgent": "Standard Domestic",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Tariff",
-      "urgent": "Water + Sewerage",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 8-Digit Account Number",
-      "titleUr": "8 ہندسوں کا اکاؤنٹ نمبر تلاش کریں",
-      "detailEn": "Check the upper section of your Sahiwal water bill for your 8-digit Account Number.",
-      "detailUr": "اپنے ساہیوال واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open WASA Sahiwal Portal",
-      "titleUr": "واسا ساہیوال پورٹل کھولیں",
-      "detailEn": "Click 'OPEN WASA Sahiwal OFFICIAL BILL PORTAL' to reach https://wasasahiwal.gop.pk/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Print Duplicate Bill",
-      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
-      "detailEn": "Enter your Account Number to view and print your bill.",
-      "detailUr": "اکاؤنٹ نمبر درج کر کے بل حاصل کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WASA Sahiwal complaint helpline?",
-      "questionUr": "واسا ساہیوال کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Dial toll-free 1334 or contact WASA Sahiwal complaint center at 040-9200142.",
-      "answerUr": "شکایات کے لیے 1334 یا واسا ساہیوال 040-9200142 پر رابطہ کریں۔"
-    }
-  ],
-  "contentEn": "## WASA Sahiwal Duplicate Bill Guide 2026\nWASA Sahiwal provides municipal water and drainage services across Sahiwal city limits.",
-  "contentUr": "## واسا ساہیوال آن لائن واٹر بل گائیڈ 2026\nساہیوال کے شہری واسا پورٹل سے ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/mepco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
   "wssp-peshawar-water-bill-guide": {
-  "slug": "wssp-peshawar-water-bill-guide",
-  "fullPath": "/bills/wssp-peshawar-water-bill-guide",
-  "categoryId": "bills",
-  "titleEn": "WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline",
-  "titleUr": "ڈبلیو ایس ایس پی پشاور واٹر بل گائیڈ 2026: ٹیرف، ادائیگی اور ہیلپ لائن",
-  "metaDescriptionEn": "Official guide for WSSP (Water and Sanitation Services Peshawar). Consumer billing procedures, meter tariffs, payment points at Bank of Khyber, and 1337 helpline.",
-  "metaDescriptionUr": "ڈبلیو ایس ایس پی پشاور پانی و سیوریج بل گائیڈ، ٹیرف، بینک آف خیبر میں ادائیگی اور 1337 ہیلپ لائن معلومات۔",
-  "directAnswerEn": "Water and sanitation billing in Peshawar is administered by WSSP (Water and Sanitation Services Peshawar). Bills are distributed physically to households by zonal revenue inspectors and payable at designated Bank of Khyber branches or post office counters. There is currently no automated online duplicate bill download portal. For complaints or water bowser requests, call 1337 or 091-9211960.",
-  "directAnswerUr": "پشاور میں پانی و سیوریج کے بل ڈبلیو ایس ایس پی جاری کرتی ہے۔ بل کاغذی صورت میں ملتے ہیں اور بینک آف خیبر یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 1337 یا 091-9211960 پر رابطہ کریں۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "WSSP Peshawar Official Portal",
-    "url": "https://wssp.gkp.pk/"
-  },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Domestic Water Connection",
-      "serviceUr": "گھریلو پانی کنکشن",
-      "normal": "Fixed Zonal Slab",
-      "urgent": "Peshawar Municipal",
-      "executive": "Domestic"
+    "slug": "wssp-peshawar-water-bill-guide",
+    "fullPath": "/bills/wssp-peshawar-water-bill-guide",
+    "categoryId": "bills",
+    "titleEn": "WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline",
+    "titleUr": "ڈبلیو ایس ایس پی پشاور واٹر بل گائیڈ 2026: ٹیرف، ادائیگی اور ہیلپ لائن",
+    "metaDescriptionEn": "Official guide for WSSP (Water and Sanitation Services Peshawar). Consumer billing procedures, meter tariffs, payment points at Bank of Khyber, and 1337 helpline.",
+    "metaDescriptionUr": "ڈبلیو ایس ایس پی پشاور پانی و سیوریج بل گائیڈ، ٹیرف، بینک آف خیبر میں ادائیگی اور 1337 ہیلپ لائن معلومات۔",
+    "directAnswerEn": "Water and sanitation billing in Peshawar is administered by WSSP (Water and Sanitation Services Peshawar). Bills are distributed physically to households by zonal revenue inspectors and payable at designated Bank of Khyber branches or post office counters. There is currently no automated online duplicate bill download portal. For complaints or water bowser requests, call 1337 or 091-9211960.",
+    "directAnswerUr": "پشاور میں پانی و سیوریج کے بل ڈبلیو ایس ایس پی جاری کرتی ہے۔ بل کاغذی صورت میں ملتے ہیں اور بینک آف خیبر یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 1337 یا 091-9211960 پر رابطہ کریں۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "WSSP Peshawar Official Portal",
+      "url": "https://wssp.gkp.pk/"
     },
-    {
-      "serviceEn": "Commercial Connection",
-      "serviceUr": "کمرشل کنکشن",
-      "normal": "Commercial Tariff",
-      "urgent": "Water + Sanitation",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Receive Physical Bill from WSSP Zonal Office",
-      "titleUr": "ڈبلیو ایس ایس پی زونل دفتر سے بل وصول کریں",
-      "detailEn": "WSSP revenue staff distribute quarterly/monthly bills across Peshawar municipal zones.",
-      "detailUr": "ڈبلیو ایس ایس پی کا عملہ زون کے مطابق کاغذی بل تقسیم کرتا ہے۔"
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
     },
-    {
-      "stepNumber": 2,
-      "titleEn": "Pay at Bank of Khyber or Post Office",
-      "titleUr": "بینک آف خیبر یا ڈاکخانے میں جمع کروائیں",
-      "detailEn": "Submit bill payment at any designated Bank of Khyber branch or post office counter.",
-      "detailUr": "مقررہ تاریخ تک بینک آف خیبر یا ڈاکخانے میں بل ادا کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the WSSP Peshawar customer helpline?",
-      "questionUr": "ڈبلیو ایس ایس پی پشاور کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Call toll-free 1337 or WSSP head office at 091-9211960.",
-      "answerUr": "شکایات یا واٹر ٹینکر کے لیے 1337 یا 091-9211960 پر کال کریں۔"
-    }
-  ],
-  "contentEn": "## WSSP Peshawar (Water & Sanitation Services Peshawar) Guide 2026\nWSSP manages municipal water supply, tube-wells, and solid waste collection across Peshawar.",
-  "contentUr": "## ڈبلیو ایس ایس پی پشاور رہنمائی 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی اور صفائی کی ذمہ دار ہے۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/pesco-bill-check-online",
-    "/bills/wasa-lahore-bill-check-online"
-  ]
-},
+    "feeStructure": [
+      {
+        "serviceEn": "Domestic Water Connection",
+        "serviceUr": "گھریلو پانی کنکشن",
+        "normal": "Fixed Zonal Slab",
+        "urgent": "Peshawar Municipal",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial Connection",
+        "serviceUr": "کمرشل کنکشن",
+        "normal": "Commercial Tariff",
+        "urgent": "Water + Sanitation",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Receive Physical Bill from WSSP Zonal Office",
+        "titleUr": "ڈبلیو ایس ایس پی زونل دفتر سے بل وصول کریں",
+        "detailEn": "WSSP revenue staff distribute quarterly/monthly bills across Peshawar municipal zones.",
+        "detailUr": "ڈبلیو ایس ایس پی کا عملہ زون کے مطابق کاغذی بل تقسیم کرتا ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Pay at Bank of Khyber or Post Office",
+        "titleUr": "بینک آف خیبر یا ڈاکخانے میں جمع کروائیں",
+        "detailEn": "Submit bill payment at any designated Bank of Khyber branch or post office counter.",
+        "detailUr": "مقررہ تاریخ تک بینک آف خیبر یا ڈاکخانے میں بل ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the WSSP Peshawar customer helpline?",
+        "questionUr": "ڈبلیو ایس ایس پی پشاور کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Call toll-free 1337 or WSSP head office at 091-9211960.",
+        "answerUr": "شکایات یا واٹر ٹینکر کے لیے 1337 یا 091-9211960 پر کال کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## WSSP Peshawar (Water & Sanitation Services Peshawar) Guide 2026\nWSSP manages municipal water supply, tube-wells, and solid waste collection across Peshawar.",
+    "contentUr": "## ڈبلیو ایس ایس پی پشاور رہنمائی 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی اور صفائی کی ذمہ دار ہے۔",
+    "relatedSlugs": [
+      "/bills/pesco-bill-check-online",
+      "/bills/wasa-lahore-bill-check-online",
+      "/bills/tesco-bill-check-online"
+    ]
+  },
   "kwsc-karachi-water-bill-check": {
-  "slug": "kwsc-karachi-water-bill-check",
-  "fullPath": "/bills/kwsc-karachi-water-bill-check",
-  "categoryId": "bills",
-  "titleEn": "KWSC Karachi Water Bill Check Online 2026: Download Duplicate Bill PDF",
-  "titleUr": "کراچی واٹر بورڈ (KWSC) آن لائن بل چیک 2026: ڈپلیکیٹ واٹر بل حاصل کریں",
-  "metaDescriptionEn": "Check and download your KWSC (formerly KWSB) Karachi duplicate water bill online using 10-digit Consumer Number. Official portal links and 1339 helpline.",
-  "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) کا پانی کا بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-  "directAnswerEn": "To check your KWSC Karachi water bill online: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open KWSC Official Portal' to access https://www.kwsc.gos.pk/duplicate-bill/ and download your duplicate bill PDF. For complaints, dial 1339.",
-  "directAnswerUr": "کراچی واٹر بورڈ کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (kwsc.gos.pk/duplicate-bill) پر جا کر بل ڈاؤن لوڈ کریں۔ ہیلپ لائن 1339 ہے۔",
-  "lastVerified": "August 18, 2026",
-  "officialSource": {
-    "name": "KWSC Official Duplicate Bill Portal",
-    "url": "https://www.kwsc.gos.pk/duplicate-bill/"
+    "slug": "kwsc-karachi-water-bill-check",
+    "fullPath": "/bills/kwsc-karachi-water-bill-check",
+    "categoryId": "bills",
+    "titleEn": "KWSC Karachi Water Bill Check Online 2026: Download Duplicate Bill PDF",
+    "titleUr": "کراچی واٹر بورڈ (KWSC) آن لائن بل چیک 2026: ڈپلیکیٹ واٹر بل حاصل کریں",
+    "metaDescriptionEn": "Check and download your KWSC (formerly KWSB) Karachi duplicate water bill online using 10-digit Consumer Number. Official portal links and 1339 helpline.",
+    "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) کا پانی کا بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your KWSC Karachi water bill online: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open KWSC Official Portal' to access https://www.kwsc.gos.pk/duplicate-bill/ and download your duplicate bill PDF. For complaints, dial 1339.",
+    "directAnswerUr": "کراچی واٹر بورڈ کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (kwsc.gos.pk/duplicate-bill) پر جا کر بل ڈاؤن لوڈ کریں۔ ہیلپ لائن 1339 ہے۔",
+    "lastVerified": "August 18, 2026",
+    "officialSource": {
+      "name": "KWSC Official Duplicate Bill Portal",
+      "url": "https://www.kwsc.gos.pk/duplicate-bill/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Water & Municipal Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential 60–120 Sq Yds",
+        "serviceUr": "رہائشی 60 تا 120 گز",
+        "normal": "Fixed Monthly Tariff",
+        "urgent": "Domestic Karachi",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Residential 240–400 Sq Yds",
+        "serviceUr": "رہائشی 240 تا 400 گز",
+        "normal": "Standard Domestic Slab",
+        "urgent": "Water + Sewerage",
+        "executive": "Domestic"
+      },
+      {
+        "serviceEn": "Commercial / Bulk Connection",
+        "serviceUr": "کمرشل / بلک کنکشن",
+        "normal": "Commercial Tariff",
+        "urgent": "Bulk Metered",
+        "executive": "Commercial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find 10-Digit KWSC Consumer Number",
+        "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
+        "detailEn": "Check the top-right corner of your Karachi water bill for your 10-digit Consumer Number.",
+        "detailUr": "اپنے کراچی واٹر بل کے اوپر دائیں کونے میں درج 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Validate and Copy Number",
+        "titleUr": "نمبر چیک اور کاپی کریں",
+        "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
+        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Open Official KWSC Portal",
+        "titleUr": "آفیشل کے ڈبلیو ایس سی پورٹل کھولیں",
+        "detailEn": "Click 'OPEN KWSC Karachi OFFICIAL BILL PORTAL' to reach https://www.kwsc.gos.pk/duplicate-bill/.",
+        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Print Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+        "detailEn": "Enter your 10-digit Consumer Number to view and print your PDF duplicate bill.",
+        "detailUr": "کنزیومر نمبر درج کر کے پی ڈی ایف بل ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the KWSC Karachi complaint helpline?",
+        "questionUr": "کراچی واٹر بورڈ کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Dial toll-free 1339 or KWSC complaint center at (021) 99245138.",
+        "answerUr": "پانی کی بندش یا لیکیج کے لیے 1339 یا 021-99245138 پر رابطہ کریں۔"
+      },
+      {
+        "questionEn": "Can I pay KWSC Karachi bills online?",
+        "questionUr": "کیا کراچی واٹر بل آن لائن جمع ہو سکتا ہے؟",
+        "answerEn": "Yes. Pay via 1Bill / Kuickpay on JazzCash, Easypaisa, 1Link banking apps using your 10-digit consumer number.",
+        "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا موبائل بینکنگ ایپ پر 10 ہندسوں کا کنزیومر نمبر لکھ کر بل جمع کرائیں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "## Karachi Water & Sewerage Corporation (KWSC) Duplicate Bill Guide 2026\nKWSC supplies drinking water and manages wastewater infrastructure across Karachi Division.",
+    "contentUr": "## کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) بلنگ گائیڈ 2026\nکراچی واٹر بورڈ شہر کے تمام اضلاع کو پانی فراہم کرتا ہے۔ شہری آن لائن ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "relatedSlugs": [
+      "/bills/k-electric-duplicate-bill",
+      "/bills/ssgc-duplicate-bill-check"
+    ]
   },
-  "author": {
-    "name": "Editorial Team",
-    "role": "Water & Municipal Services Desk"
-  },
-  "feeStructure": [
-    {
-      "serviceEn": "Residential 60–120 Sq Yds",
-      "serviceUr": "رہائشی 60 تا 120 گز",
-      "normal": "Fixed Monthly Tariff",
-      "urgent": "Domestic Karachi",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Residential 240–400 Sq Yds",
-      "serviceUr": "رہائشی 240 تا 400 گز",
-      "normal": "Standard Domestic Slab",
-      "urgent": "Water + Sewerage",
-      "executive": "Domestic"
-    },
-    {
-      "serviceEn": "Commercial / Bulk Connection",
-      "serviceUr": "کمرشل / بلک کنکشن",
-      "normal": "Commercial Tariff",
-      "urgent": "Bulk Metered",
-      "executive": "Commercial"
-    }
-  ],
-  "steps": [
-    {
-      "stepNumber": 1,
-      "titleEn": "Find 10-Digit KWSC Consumer Number",
-      "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
-      "detailEn": "Check the top-right corner of your Karachi water bill for your 10-digit Consumer Number.",
-      "detailUr": "اپنے کراچی واٹر بل کے اوپر دائیں کونے میں درج 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
-    },
-    {
-      "stepNumber": 2,
-      "titleEn": "Validate and Copy Number",
-      "titleUr": "نمبر چیک اور کاپی کریں",
-      "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
-      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
-    },
-    {
-      "stepNumber": 3,
-      "titleEn": "Open Official KWSC Portal",
-      "titleUr": "آفیشل کے ڈبلیو ایس سی پورٹل کھولیں",
-      "detailEn": "Click 'OPEN KWSC Karachi OFFICIAL BILL PORTAL' to reach https://www.kwsc.gos.pk/duplicate-bill/.",
-      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-    },
-    {
-      "stepNumber": 4,
-      "titleEn": "Print Duplicate Bill",
-      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
-      "detailEn": "Enter your 10-digit Consumer Number to view and print your PDF duplicate bill.",
-      "detailUr": "کنزیومر نمبر درج کر کے پی ڈی ایف بل ڈاؤن لوڈ کریں۔"
-    }
-  ],
-  "faqs": [
-    {
-      "questionEn": "What is the KWSC Karachi complaint helpline?",
-      "questionUr": "کراچی واٹر بورڈ کا ہیلپ لائن نمبر کیا ہے؟",
-      "answerEn": "Dial toll-free 1339 or KWSC complaint center at (021) 99245138.",
-      "answerUr": "پانی کی بندش یا لیکیج کے لیے 1339 یا 021-99245138 پر رابطہ کریں۔"
-    },
-    {
-      "questionEn": "Can I pay KWSC Karachi bills online?",
-      "questionUr": "کیا کراچی واٹر بل آن لائن جمع ہو سکتا ہے؟",
-      "answerEn": "Yes. Pay via 1Bill / Kuickpay on JazzCash, Easypaisa, 1Link banking apps using your 10-digit consumer number.",
-      "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا موبائل بینکنگ ایپ پر 10 ہندسوں کا کنزیومر نمبر لکھ کر بل جمع کرائیں۔"
-    }
-  ],
-  "contentEn": "## Karachi Water & Sewerage Corporation (KWSC) Duplicate Bill Guide 2026\nKWSC supplies drinking water and manages wastewater infrastructure across Karachi Division.",
-  "contentUr": "## کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) بلنگ گائیڈ 2026\nکراچی واٹر بورڈ شہر کے تمام اضلاع کو پانی فراہم کرتا ہے۔ شہری آن لائن ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
-  "relatedSlugs": [
-    "/bills/utility-bill-checker-2026",
-    "/bills/k-electric-duplicate-bill",
-    "/bills/ssgc-duplicate-bill-check"
-  ]
-},
   "token-tax-calculator-2026": {
     "slug": "token-tax-calculator-2026",
     "fullPath": "/traffic/token-tax-calculator-2026",
@@ -8358,15 +9401,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Excise, Taxation & Narcotics Control",
       "url": "https://excise.punjab.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Excise & Taxation Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Excise & Taxation Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "Can I pay vehicle token tax online?",
         "questionUr": "کیا ٹوکن ٹیکس آن لائن جمع ہو سکتا ہے؟",
         "answerEn": "Yes, through ePay Punjab, Sindh e-Payment, ICT City App, or 1Link mobile banking.",
         "answerUr": "جی ہاں، ای پے پنجاب، سندھ ای پیمنٹ اور موبائل بینکنگ سے باآسانی ادا کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Vehicle Token Tax Calculator 2026 Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Pakistan Vehicle Token Tax Calculator 2026\nCalculate exact provincial excise rates for all vehicles.",
@@ -8392,15 +9489,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Punjab MTMIS Official Portal",
       "url": "https://mtmis.punjab.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Excise & Taxation Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Excise & Taxation Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "Is online vehicle verification free?",
         "questionUr": "کیا آن لائن گاڑی کی تصدیق مفت ہے؟",
         "answerEn": "Yes, official provincial MTMIS verification is 100% free of charge.",
         "answerUr": "جی ہاں، سرکاری ایم ٹی ایم آئی ایس پر تصدیق مکمل مفت ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for MTMIS Vehicle Verification Online 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## MTMIS Vehicle Verification Online 2026\nVerify vehicle registration and owner details across Pakistan.",
@@ -8426,15 +9577,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Apni Chhat Apna Ghar Housing Scheme",
       "url": "https://acag.punjab.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Govt Finance & Loans Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Govt Finance & Loans Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "What is the installment for Apni Chhat Apna Ghar?",
         "questionUr": "اپنی چھت اپنا گھر کی ماہانہ قسط کتنی ہے؟",
         "answerEn": "Approximately PKR 17,857 per month for 7 years (84 months) at 0% markup.",
         "answerUr": "7 سال کی مدت کے لیے تقریباً 17,857 روپے ماہانہ بلاسود قسط بنتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Govt Loan EMI Calculator 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Govt Loan EMI Calculator 2026\nCalculate monthly repayments for all public loan schemes in Pakistan.",
@@ -8460,15 +9665,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "PM Youth Program Dashboard",
       "url": "https://pmyp.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Govt Finance & Loans Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Govt Finance & Loans Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "How do I check my Apni Chhat application result?",
         "questionUr": "اپنی چھت سکیم کا رزلٹ کیسے دیکھیں؟",
         "answerEn": "Log into acag.punjab.gov.pk with your CNIC to check balloting and verification status.",
         "answerUr": "پورٹل acag.punjab.gov.pk پر شناختی کارڈ سے لاگ ان کر کے قرعہ اندازی کا نتیجہ دیکھیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Govt Loan Application Status Tracker 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Govt Loan Application Status Tracker 2026\nMonitor official balloting results and disbursement stages.",
@@ -8494,15 +9753,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Prime Minister Sehat Sahulat Program",
       "url": "https://www.pmhealthprogram.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Public Health & Social Welfare Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Health & Social Welfare Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "How do I check Sehat Card eligibility by SMS?",
         "questionUr": "ایس ایم ایس کے ذریعے صحت کارڈ کیسے چیک کریں؟",
         "answerEn": "Send your 13-digit CNIC to 8500 from any Pakistani mobile network.",
         "answerUr": "اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ 8500 پر ایس ایم ایس کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Eligibility Checker 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Sehat Card Eligibility Checker 2026\nFree 1 Million PKR medical insurance verification for families.",
@@ -8528,15 +9841,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Punjab Socio-Economic Registry Portal",
       "url": "https://pser.punjab.gov.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Public Health & Social Welfare Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Health & Social Welfare Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "What schemes require PSER survey registration?",
         "questionUr": "پی ایس ای آر کن سکیموں کے لیے ضروری ہے؟",
         "answerEn": "Kisan Card, Himmat Card, Apni Chhat Apna Ghar housing, and Honhaar Scholarships.",
         "answerUr": "کسان کارڈ، ہمت کارڈ، اپنی چھت سکیم اور ہونہار سکالرشپس۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for PSER Survey Status Checker 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## PSER Survey Status Checker 2026\nUnified social registry for Punjab welfare initiatives.",
@@ -8562,15 +9929,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "Punjab Public Service Commission",
       "url": "https://www.ppsc.gop.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Public Service Examinations Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Service Examinations Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "How do I download a PPSC admission letter?",
         "questionUr": "پی پی ایس سی رول نمبر سلپ کیسے ڈاؤن لوڈ کریں؟",
         "answerEn": "Visit ppsc.gop.pk, enter your 13-digit CNIC and select your applied post.",
         "answerUr": "ویب سائٹ ppsc.gop.pk پر جا کر 13 ہندسوں کا شناختی کارڈ درج کریں اور پوسٹ منتخب کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Roll Number Slip Checker 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Roll Number Slip Checker 2026\nDownload competitive exam admission certificates and test schedules.",
@@ -8596,15 +10017,69 @@ export const ARTICLES: Record<string, Article> = {
       "name": "National Testing Service Official Archive",
       "url": "https://www.nts.org.pk/"
     },
-    "author": { "name": "Editorial Team", "role": "Public Service Examinations Desk" },
-    "feeStructure": [],
-    "steps": [],
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Service Examinations Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Public Processing",
+        "serviceUr": "معیاری پروسیسنگ",
+        "normal": "Standard Govt Rates",
+        "urgent": "Fast-Track Available",
+        "executive": "VIP Facilitation",
+        "validity": "Official Validity"
+      },
+      {
+        "serviceEn": "Online Portal Status Verification",
+        "serviceUr": "آن لائن سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Digital Check",
+        "executive": "Live System Sync",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Verified Supporting Documents",
+        "titleUr": "ضروری دستاویزات کی تیاری",
+        "detailEn": "Gather your original CNIC/Smart Card, active phone number, and recent verified municipal/utility documents.",
+        "detailUr": "شناختی کارڈ اور ضروری سرکاری دستاویزات تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Online or at Facilitation Center",
+        "titleUr": "آن لائن پورٹل یا کاؤنٹر پر اندراج",
+        "detailEn": "Access the designated official government portal or obtain a token at the nearest authorized facilitation center.",
+        "detailUr": "ویب سائٹ پر اپلائی کریں یا قریبی خدمت مرکز تشریف لے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Prescribed Fee & Receive Tracking Confirmation",
+        "titleUr": "فیس ادائیگی اور ٹریکنگ نمبر حاصل کریں",
+        "detailEn": "Pay the statutory government fee via 1Link, mobile banking, or bank counter and track the status via SMS/portal.",
+        "detailUr": "سرکاری فیس جمع کروا کر ایس ایم ایس سے سٹیٹس چیک کریں۔"
+      }
+    ],
     "faqs": [
       {
         "questionEn": "How long is an NTS NAT score valid?",
         "questionUr": "این ٹی ایس رزلٹ کتنی مدت کے لیے کارآمد ہے؟",
         "answerEn": "NTS NAT and GAT scorecards are officially valid for two (2) years.",
         "answerUr": "این ٹی ایس نیٹ اور گیٹ ٹیسٹ کا رزلٹ 2 سال تک قابل قبول ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NTS, PPSC & FPSC Result & Scorecard Checker 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## NTS, PPSC & FPSC Result Scorecard Checker 2026\nAccess recruitment test scorecards and merit ranks.",
@@ -8614,8 +10089,7 @@ export const ARTICLES: Record<string, Article> = {
       "/jobs/ppsc-jobs-2026",
       "/jobs/latest-govt-jobs-pakistan"
     ]
-  }
-,
+  },
   "lesco-vs-fesco-bill-comparison": {
     "slug": "lesco-vs-fesco-bill-comparison",
     "fullPath": "/bills/lesco-vs-fesco-bill-comparison",
@@ -8701,10 +10175,9 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
       "/bills/fesco-bill-check-online",
-      "/bills/utility-bill-checker-2026"
+      "/bills/wapda-bill-complaint-number"
     ]
-  }
-,
+  },
   "cnic-vs-nicop-vs-poc-comparison": {
     "slug": "cnic-vs-nicop-vs-poc-comparison",
     "fullPath": "/nadra/cnic-vs-nicop-vs-poc-comparison",
@@ -8785,17 +10258,22 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا پی او سی ہولڈر پاکستان میں جائیداد خرید سکتا ہے اور بینک اکاؤنٹ کھول سکتا ہے؟",
         "answerEn": "Yes. POC holders enjoy visa-free entry, the right to purchase and sell residential real estate, open Roshan Digital Accounts (RDA), and obtain local employment without requiring a work permit.",
         "answerUr": "جی ہاں! پی او سی کارڈ ہولڈرز پاکستان میں رہائشی پراپرٹی خرید سکتے ہیں اور بینک اکاؤنٹس کھول سکتے ہیں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## NADRA Identity Documents: Comprehensive Comparison Matrix (2026)\n\n| Feature | CNIC (Smart ID) | NICOP (Overseas Card) | POC (Pakistan Origin Card) |\n| :--- | :--- | :--- | :--- |\n| **Eligibility** | Resident Pakistani citizens (age 18+) | Pakistani citizens living abroad or dual nationals | Foreign spouses of Pakistanis / former citizens |\n| **Visa-Free Entry to Pakistan** | No (requires Pakistani passport) | **Yes (100% Visa-Free on foreign passport)** | **Yes (100% Visa-Free entry)** |\n| **Right to Vote in Pakistan Elections** | Yes | Yes (Overseas polling mechanisms) | No (Foreign national) |\n| **Right to Buy Commercial Real Estate** | Yes (Full rights) | Yes (Full rights) | Residential only (Agricultural/commercial restricted) |\n| **Card Validity Period** | 10 Years | 10 Years (5 Years for minors) | 5 Years |\n| **Online Application Portal** | `id.nadra.gov.pk` | `id.nadra.gov.pk` | `id.nadra.gov.pk` |",
     "contentUr": "## شناختی کارڈ، نائیکوپ اور پی او سی موازنہ 2026\nنادرا کے تمام شناختی کارڈز کی تفصیلی رہنمائی اور قانونی حقوق کا جائزہ۔",
     "relatedSlugs": [
       "/nadra/nicop-apply-online",
-      "/nadra/nicop-fee-calculator",
-      "/nadra/cnic-kaise-banaye"
+      "/nadra/cnic-kaise-banaye",
+      "/nadra/family-registration-certificate"
     ]
-  }
-,
+  },
   "ntn-registration-online-pakistan": {
     "slug": "ntn-registration-online-pakistan",
     "fullPath": "/tax/ntn-registration-online-pakistan",
@@ -8887,10 +10365,10 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## ایف بی آر آن لائن این ٹی این رجسٹریشن گائیڈ 2026\nآن لائن آئرس پورٹل پر انفرادی اور کاروباری این ٹی این حاصل کرنے کی مکمل تفصیلات۔",
     "relatedSlugs": [
       "/tax/fbr-filer-status-check-cnic",
-      "/tax/income-tax-return-filing-guide"
+      "/tax/income-tax-return-filing-guide",
+      "/tax/fbr-pos-invoicing-prize-scheme"
     ]
-  }
-,
+  },
   "fbr-filer-status-check-cnic": {
     "slug": "fbr-filer-status-check-cnic",
     "fullPath": "/tax/fbr-filer-status-check-cnic",
@@ -8963,6 +10441,12 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ریٹرن جمع کروانے کے بعد بھی سٹیٹس Inactive کیوں ہے؟",
         "answerEn": "If you filed your annual tax return after the official deadline, you must pay the ATL Surcharge (PKR 1,000 for individuals via CPR challan in Iris) to immediately activate your filer status on the ATL.",
         "answerUr": "اگر آپ نے آخری تاریخ کے بعد ریٹرن فائل کیا ہے تو آپ کو 1000 روپے اے ٹی ایل سرچارج چالان جمع کروانا ہوگا تاکہ سٹیٹس فوری ایکٹو ہو۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## FBR Active Taxpayer List (ATL) Verification Guide\nChecking your status on the **Federal Board of Revenue (FBR)** Active Taxpayer List determines whether you are classified as an **Active Filer** or **Non-Filer** under the Finance Act 2026.\n\n| Verification Channel | Input Format | Response Time | Official Provider |\n| :--- | :--- | :--- | :--- |\n| **FBR Web Portal** | 13-Digit CNIC / 7-Digit NTN | Instant (< 2 seconds) | `fbr.gov.pk` |\n| **SMS Short Code** | `ATL [13-Digit CNIC]` to 9966 | ~10 Seconds | Telecommunication Gateway |\n| **FBR Asaan Tax App** | Biometric / Login PIN | Instant | FBR Mobile App |",
@@ -8971,8 +10455,7 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/ntn-registration-online-pakistan",
       "/tax/withholding-tax-rates-filers-non-filers"
     ]
-  }
-,
+  },
   "how-to-become-tax-filer-pakistan-2026": {
     "slug": "how-to-become-tax-filer-pakistan-2026",
     "fullPath": "/tax/how-to-become-tax-filer-pakistan-2026",
@@ -9052,16 +10535,22 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا گھریلو خواتین یا طلباء بھی فائلر بن سکتے ہیں؟",
         "answerEn": "Yes, anyone with a valid CNIC can file a zero-tax return (Nil Return) declaring remittance or pocket allowance support to become a filer and enjoy reduced tax rates.",
         "answerUr": "جی ہاں! کوئی بھی شہری نل ریٹرن (Nil Return) فائل کر کے باقاعدہ فائلر بن سکتا ہے۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Step-by-Step Guide to Becoming an Active FBR Filer\nBecoming an active tax filer in Pakistan is a straightforward digital process through **Iris 2.0 (Federal Board of Revenue)**. \n\n### Why Filer Status Matters in 2026\nUnder the Income Tax Ordinance 2001 (amended 2026), non-filers face punitive tax slabs:\n1. **Bank Cash Withdrawals**: Non-filers pay 0.9% advance tax on cash withdrawals exceeding PKR 50,000/day. Filers pay 0%.\n2. **Vehicle Registration**: Non-filers pay up to 200% higher advance tax based on engine displacement.\n3. **Property Purchase**: Filers pay 3% advance tax under Section 236K, whereas non-filers are charged up to 12% to 15%.",
     "contentUr": "## ٹیکس فائلر بننے کا مکمل طریقہ کار 2026\nایف بی آر کے تحت سالانہ گوشوارے جمع کروا کر فائلر کے فوائد حاصل کرنے کی تفصیلی معلومات۔",
     "relatedSlugs": [
       "/tax/income-tax-return-filing-guide",
-      "/tax/withholding-tax-rates-filers-non-filers"
+      "/tax/withholding-tax-rates-filers-non-filers",
+      "/tax/fbr-bank-account-tax-deduction"
     ]
-  }
-,
+  },
   "income-tax-return-filing-guide": {
     "slug": "income-tax-return-filing-guide",
     "fullPath": "/tax/income-tax-return-filing-guide",
@@ -9141,16 +10630,22 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا موبائل لوڈ پر کٹنے والا ٹیکس ایڈجسٹ ہو سکتا ہے؟",
         "answerEn": "Yes, you can obtain an annual tax deduction certificate from your cellular provider (Jazz, Telenor, Zong, Ufone) and enter it under Section 236 in Iris to reduce your payable tax.",
         "answerUr": "جی ہاں! اپنی سم کمپنی سے سالانہ ٹیکس سرٹیفکیٹ لے کر آئرس پورٹل میں درج کر کے ٹیکس میں چھوٹ حاصل کی جا سکتی ہے۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Salaried Tax Slabs (Federal Budget Determination)\n| Annual Income Bracket (PKR) | Tax Rate Applicable | Fixed Surcharge |\n| :--- | :--- | :--- |\n| **Up to PKR 600,000** | 0% | PKR 0 |\n| **PKR 600,001 to 1,200,000** | 5% of amount exceeding 600K | PKR 0 |\n| **PKR 1,200,001 to 2,200,000** | 15% of amount exceeding 1.2M | PKR 30,000 |\n| **PKR 2,200,001 to 3,200,000** | 25% of amount exceeding 2.2M | PKR 180,000 |\n| **Above PKR 3,200,000** | 35% of amount exceeding 3.2M | PKR 430,000 |",
     "contentUr": "## انکم ٹیکس ریٹرن فائلنگ مکمل طریقہ کار\nتنخواہ دار ملازمین اور کاروباری افراد کے لیے آئرس پر گوشوارے جمع کروانے کی تفصیلات۔",
     "relatedSlugs": [
       "/tax/how-to-become-tax-filer-pakistan-2026",
-      "/tax/withholding-tax-rates-filers-non-filers"
+      "/tax/withholding-tax-rates-filers-non-filers",
+      "/tax/fbr-filer-status-check-cnic"
     ]
-  }
-,
+  },
   "withholding-tax-rates-filers-non-filers": {
     "slug": "withholding-tax-rates-filers-non-filers",
     "fullPath": "/tax/withholding-tax-rates-filers-non-filers",
@@ -9210,16 +10705,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پرائز بانڈ انعامات پر فائلر اور نان فائلر کا ٹیکس کتنا ہے؟",
         "answerEn": "Under Section 156, prize bond winnings are taxed at 15% for active filers and 30% for non-filers.",
         "answerUr": "پرائز بانڈ کے انعام پر فائلر کے لیے 15% اور نان فائلر کے لیے 30% ٹیکس منہا کیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Withholding Tax Rates 2026: Filer vs Non-Filer Comparison?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Withholding Tax Rates Matrix (2026)\n| Transaction Type | Filer Rate | Non-Filer Rate | Governing Section |\n| :--- | :--- | :--- | :--- |\n| **Property Purchase (Buyer)** | 3% | 12% - 15% | Section 236K |\n| **Property Sale (Seller)** | 3% | 10% | Section 236C |\n| **Bank Cash Withdrawal (>50K/day)** | **0%** | **0.9%** | Section 231AB |\n| **Vehicle Registration (1000cc-1300cc)** | PKR 25,000 | PKR 75,000 | Section 231B |\n| **Vehicle Registration (>2000cc)** | 6% | 18% | Section 231B |\n| **Prize Bond Winnings** | 15% | 30% | Section 156 |\n| **Bank Profit on Debt (Savings Account)**| 15% | 35% | Section 151 |",
     "contentUr": "## ودہولڈنگ ٹیکس تقابلی گائیڈ 2026\nتمام اہم ٹرانزیکشنز پر فائلر اور نان فائلر ٹیکس کٹوتیوں کی تفصیلی جدول۔",
     "relatedSlugs": [
       "/tax/fbr-filer-status-check-cnic",
-      "/tax/how-to-become-tax-filer-pakistan-2026"
+      "/tax/how-to-become-tax-filer-pakistan-2026",
+      "/tax/fbr-bank-account-tax-deduction"
     ]
-  }
-,
+  },
   "nicop-renewal-from-abroad": {
     "slug": "nicop-renewal-from-abroad",
     "fullPath": "/overseas/nicop-renewal-from-abroad",
@@ -9293,16 +10800,27 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا زائد المیعاد نائیکوپ پر پاکستان کا سفر کیا جا سکتا ہے؟",
         "answerEn": "Under CAA regulations, airlines allow entry to Pakistan if you present your expired NICOP along with an official NADRA Pak-ID online tracking slip showing an in-process renewal application.",
         "answerUr": "سول ایوی ایشن کے قواعد کے مطابق اگر آپ کے پاس نادرا پاک آئی ڈی کی آن لائن تجدید سلپ موجود ہو تو ایئرلائن پاکستان آنے کی اجازت دیتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NICOP Renewal from Abroad 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $59 USD | $79 USD (7 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
     "contentUr": "## بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ تجدید گائیڈ\nپاک آئی ڈی پورٹل کے ذریعے فیس اور طریقہ کار کی تفصیلات۔",
     "relatedSlugs": [
-      "/nadra/nicop-fee-calculator",
-      "/overseas/poc-card-pakistan-apply-online"
+      "/overseas/poc-card-pakistan-apply-online",
+      "/overseas/overseas-pakistanis-foundation-opf-schemes"
     ]
-  }
-,
+  },
   "poc-card-pakistan-apply-online": {
     "slug": "poc-card-pakistan-apply-online",
     "fullPath": "/overseas/poc-card-pakistan-apply-online",
@@ -9369,16 +10887,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا پاکستانی خاتون کا غیر ملکی شوہر پی او سی کارڈ بنوا سکتا ہے؟",
         "answerEn": "Yes. Under the amended NADRA regulations and Supreme Court directives, both foreign wives and foreign husbands of Pakistani citizens are equally eligible to receive a POC card.",
         "answerUr": "جی ہاں! پاکستانی مرد کی غیر ملکی بیوی اور پاکستانی خاتون کا غیر ملکی شوہر دونوں پی او سی کے اہل ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for POC Card Pakistan Apply Online 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## NADRA Pakistan Origin Card (POC) Legal Privileges\nA valid **POC (Pakistan Origin Card)** provides extensive civic and economic privileges:\n- **Visa-Free Entry**: Permanent exemption from Pakistani entry visa requirements.\n- **Indefinite Stay**: Stay in Pakistan for unlimited duration without police registration.\n- **Real Estate Ownership**: Purchase and sell residential property across all provinces.\n- **Banking**: Open local PKR and Foreign Currency (FCY) bank accounts.",
     "contentUr": "## پی او سی کارڈ مکمل رہنمائی اور قانونی حقوق\nنادرا پاکستان اوریجن کارڈ حاصل کرنے کا طریقہ اور غیر ملکی شریک حیات کے حقوق۔",
     "relatedSlugs": [
       "/nadra/cnic-vs-nicop-vs-poc-comparison",
-      "/overseas/nicop-renewal-from-abroad"
+      "/overseas/nicop-renewal-from-abroad",
+      "/overseas/overseas-pakistani-bank-account-nrp"
     ]
-  }
-,
+  },
   "intiqal-registration-online-punjab": {
     "slug": "intiqal-registration-online-punjab",
     "fullPath": "/property/intiqal-registration-online-punjab",
@@ -9445,16 +10975,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا بغیر انتقال کے صرف رجسٹری قانونی طور پر کافی ہے؟",
         "answerEn": "No. While a registry proves the contract between parties, ownership in the government land revenue record (Jamabandi) only takes legal effect once Intiqal is approved.",
         "answerUr": "نہیں! ریونیو ریکارڈ میں مالک بننے کے لیے رجسٹری کے بعد انتقال کروانا لازمی ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Intiqal Registration Online Punjab 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to PLRA land mutation and Intiqal in Punjab.",
     "contentUr": "پنجاب میں زمین کے انتقال کی مکمل معلومات۔",
     "relatedSlugs": [
       "/property/registry-vs-intiqal-difference",
-      "/property/patwari-record-online-check"
+      "/property/patwari-record-online-check",
+      "/property/property-tax-calculator-pakistan-2026"
     ]
-  }
-,
+  },
   "property-mutation-check-by-cnic": {
     "slug": "property-mutation-check-by-cnic",
     "fullPath": "/property/property-mutation-check-by-cnic",
@@ -9499,16 +11041,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سندھ کی زمین کا ریکارڈ بھی آن لائن ملتا ہے؟",
         "answerEn": "Yes, the Sindh Land Administration & Revenue Management System (LARMIS) provides computerized Deh records by CNIC.",
         "answerUr": "جی ہاں! سندھ کا ریکارڈ LARMIS پورٹل پر دستیاب ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Property Mutation Check by CNIC?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to checking land mutation and ownership by CNIC.",
     "contentUr": "شناختی کارڈ سے زمین کا انتقال معلوم کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
-      "/property/patwari-record-online-check"
+      "/property/patwari-record-online-check",
+      "/property/stamp-duty-challan-32a-online-payment"
     ]
-  }
-,
+  },
   "patwari-record-online-check": {
     "slug": "patwari-record-online-check",
     "fullPath": "/property/patwari-record-online-check",
@@ -9553,6 +11107,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "فرد برائے بیع کتنے دن تک کارآمد ہوتی ہے؟",
         "answerEn": "A Fard issued for property sale (Baye) is officially valid for 30 calendar days from the date of QR issuance.",
         "answerUr": "بیع کے لیے جاری کردہ فرد 30 دن تک کارآمد ہوتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Patwari Record Online Check?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to checking and obtaining computerized Patwari Fard online.",
@@ -9561,8 +11127,7 @@ export const ARTICLES: Record<string, Article> = {
       "/property/intiqal-registration-online-punjab",
       "/property/registry-vs-intiqal-difference"
     ]
-  }
-,
+  },
   "property-tax-calculator-pakistan-2026": {
     "slug": "property-tax-calculator-pakistan-2026",
     "fullPath": "/property/property-tax-calculator-pakistan-2026",
@@ -9615,16 +11180,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پراپرٹی ٹیکس میں 5% رعایت کیسے ملتی ہے؟",
         "answerEn": "Taxpayers who clear their full annual property tax bill before September 30 via ePay Punjab receive an instant 5% prompt payment rebate.",
         "answerUr": "30 ستمبر سے پہلے ای پے سے سالانہ ٹیکس ادا کرنے پر 5% ڈسکاؤنٹ ملتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Property Tax Calculator Pakistan 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide and formula for calculating property tax in Pakistan.",
     "contentUr": "پراپرٹی ٹیکس کے سلیب اور حساب لگانے کا طریقہ۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
-      "/traffic/token-tax-calculator-2026"
+      "/traffic/token-tax-calculator-2026",
+      "/property/property-mutation-check-by-cnic"
     ]
-  }
-,
+  },
   "registry-vs-intiqal-difference": {
     "slug": "registry-vs-intiqal-difference",
     "fullPath": "/property/registry-vs-intiqal-difference",
@@ -9676,16 +11253,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا صرف انتقال کی بنیاد پر زمین بیچی جا سکتی ہے؟",
         "answerEn": "In rural agricultural areas under the Land Revenue Act, mutation (Intiqal-e-Baye) is historically permitted, but in urban areas, a registered deed is mandatory for title security.",
         "answerUr": "دیہی علاقوں میں براہ راست انتقال رائج رہا ہے لیکن شہری علاقوں میں رجسٹری ناگزیر ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Registry vs Intiqal Difference in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Detailed comparative analysis of Registry vs Intiqal in Pakistan.",
     "contentUr": "رجسٹری اور انتقال کا تفصیلی موازنہ۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
-      "/property/patwari-record-online-check"
+      "/property/patwari-record-online-check",
+      "/property/property-mutation-check-by-cnic"
     ]
-  }
-,
+  },
   "stamp-duty-challan-32a-online-payment": {
     "slug": "stamp-duty-challan-32a-online-payment",
     "fullPath": "/property/stamp-duty-challan-32a-online-payment",
@@ -9730,16 +11319,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ای سٹامپ پیپر کی اصلیت کیسے چیک کریں؟",
         "answerEn": "SMS the 16-digit e-Stamp certificate number to 8100 or scan the on-page QR code with a smartphone camera.",
         "answerUr": "16 ہندسوں کا نمبر 8100 پر ایس ایم ایس کریں یا کیو آر کوڈ اسکین کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for e-Stamping Punjab Challan 32-A Online Payment & Verification?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on generating and paying e-Stamping Challan 32-A in Pakistan.",
     "contentUr": "ای سٹامپ پیپر بنانے اور چالان کی معلومات۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
-      "/property/registry-vs-intiqal-difference"
+      "/property/registry-vs-intiqal-difference",
+      "/property/property-mutation-check-by-cnic"
     ]
-  }
-,
+  },
   "housing-society-noc-verification": {
     "slug": "housing-society-noc-verification",
     "fullPath": "/property/housing-society-noc-verification",
@@ -9784,16 +11385,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر غیر قانونی سوسائٹی میں پلاٹ خریدا جائے تو کیا نقصان ہے؟",
         "answerEn": "Illegal schemes are blocked from getting electricity (WAPDA/LESCO), gas, and water connections, and municipal authorities can demolish unauthorized structures.",
         "answerUr": "غیر منظور شدہ سوسائٹیوں کو بجلی اور گیس کے کنکشن نہیں ملتے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Housing Society NOC Verification?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on verifying housing society approvals and NOCs in Pakistan.",
     "contentUr": "ہاؤسنگ سوسائٹیوں کا این او سی چیک کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
-      "/property/registry-vs-intiqal-difference"
+      "/property/registry-vs-intiqal-difference",
+      "/property/property-mutation-check-by-cnic"
     ]
-  }
-,
+  },
   "nikah-nama-registration-process-pakistan": {
     "slug": "nikah-nama-registration-process-pakistan",
     "fullPath": "/family-registration/nikah-nama-registration-process-pakistan",
@@ -9845,16 +11458,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "نکاح نامہ رجسٹر نہ کروانے پر کیا سزا ہے؟",
         "answerEn": "Under Section 5(4) of the MFLO 1961, failure to register a marriage can lead to simple imprisonment up to 3 months or a fine.",
         "answerUr": "نکاح کا اندراج نہ کروانے پر قانون کے تحت قید یا جرمانہ ہو سکتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Nikah Nama Registration Process in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to Muslim marriage registration in Pakistan.",
     "contentUr": "پاکستان میں نکاح نامہ رجسٹریشن کے قواعد و ضوابط۔",
     "relatedSlugs": [
       "/family-registration/marriage-certificate-union-council-apply",
-      "/nadra/family-registration-certificate"
+      "/nadra/family-registration-certificate",
+      "/family-registration/unmarried-certificate-single-status-pakistan"
     ]
-  }
-,
+  },
   "marriage-certificate-union-council-apply": {
     "slug": "marriage-certificate-union-council-apply",
     "fullPath": "/family-registration/marriage-certificate-union-council-apply",
@@ -9899,16 +11524,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا بغیر یونین کونسل جائے آن لائن میرج سرٹیفکیٹ مل سکتا ہے؟",
         "answerEn": "In ICT (Islamabad) and Punjab (via Baldia Online app), online initial token applications are accepted before picking up the physical security card.",
         "answerUr": "بلدیہ آن لائن ایپ کے ذریعے ابتدائی درخواست دی جا سکتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Union Council Marriage Certificate (MRC) Online Apply Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining NADRA computerized marriage certificate from Union Council.",
     "contentUr": "یونین کونسل میرج سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/family-registration/nikah-nama-registration-process-pakistan",
-      "/nadra/cnic-name-address-modification"
+      "/nadra/cnic-name-address-modification",
+      "/family-registration/unmarried-certificate-single-status-pakistan"
     ]
-  }
-,
+  },
   "divorce-registration-pakistan-online": {
     "slug": "divorce-registration-pakistan-online",
     "fullPath": "/family-registration/divorce-registration-pakistan-online",
@@ -9967,16 +11604,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا زبانی طلاق بغیر یونین کونسل سرٹیفکیٹ کے قانونی طور پر تسلیم شدہ ہے؟",
         "answerEn": "No. Under Pakistani law, divorce does not become legally effective for government, NADRA, or inheritance purposes until the 90-day Union Council certificate is issued.",
         "answerUr": "نہیں! نادرا اور سرکاری ریکارڈ میں طلاق صرف یونین کونسل کے سرٹیفکیٹ کے بعد ہی مانی جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Divorce Registration in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to Talaq and Khula legal registration in Pakistan.",
     "contentUr": "پاکستان میں طلاق اور خلع کے قانونی طریقہ کار کی تفصیل۔",
     "relatedSlugs": [
       "/family-registration/nikah-nama-registration-process-pakistan",
-      "/family-registration/unmarried-certificate-single-status-pakistan"
+      "/family-registration/unmarried-certificate-single-status-pakistan",
+      "/family-registration/marriage-certificate-union-council-apply"
     ]
-  }
-,
+  },
   "nikah-nama-english-translation-attestation": {
     "slug": "nikah-nama-english-translation-attestation",
     "fullPath": "/family-registration/nikah-nama-english-translation-attestation",
@@ -10021,16 +11670,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا صرف نادرا میرج سرٹیفکیٹ کافی ہے یا نکاح نامہ کا ترجمہ بھی ضروری ہے؟",
         "answerEn": "Most foreign embassies require BOTH the NADRA computerized MRC and the sworn English translation of the original Urdu Nikah Nama.",
         "answerUr": "زیادہ تر سفارتخانے نادرا میرج سرٹیفکیٹ اور انگلش نکاح نامہ دونوں مانگتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Nikah Nama English Translation & MOFA Attestation Procedure?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on translating and attesting Nikah Nama for foreign embassies.",
     "contentUr": "نکاح نامے کے انگریزی ترجمے اور تصدیق کی مکمل معلومات۔",
     "relatedSlugs": [
       "/family-registration/nikah-nama-registration-process-pakistan",
-      "/overseas/pakistan-embassy-attestation-documents"
+      "/overseas/pakistan-embassy-attestation-documents",
+      "/family-registration/marriage-certificate-union-council-apply"
     ]
-  }
-,
+  },
   "child-adoption-legal-procedure-pakistan": {
     "slug": "child-adoption-legal-procedure-pakistan",
     "fullPath": "/family-registration/child-adoption-legal-procedure-pakistan",
@@ -10075,16 +11736,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "گود لیے بچے کے بی فارم پر کس کا نام آئے گا؟",
         "answerEn": "Under NADRA regulations, biological parents' names remain if known, with adoptive parents registered as official 'Legal Guardians' under court decree.",
         "answerUr": "عدالتی حکم کے تحت گود لینے والے والدین بطور قانونی سرپرست درج ہوتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Legal Child Adoption Procedure & Guardian Certificate in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on child guardianship and legal adoption in Pakistan.",
     "contentUr": "پاکستان میں بچہ گود لینے کے قانونی تقاضوں کی تفصیل۔",
     "relatedSlugs": [
       "/nadra/b-form-kaise-banaye",
-      "/nadra/family-registration-certificate"
+      "/nadra/family-registration-certificate",
+      "/family-registration/divorce-registration-pakistan-online"
     ]
-  }
-,
+  },
   "unmarried-certificate-single-status-pakistan": {
     "slug": "unmarried-certificate-single-status-pakistan",
     "fullPath": "/family-registration/unmarried-certificate-single-status-pakistan",
@@ -10129,6 +11802,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سنگل سٹیٹس سرٹیفکیٹ کتنے عرصے کے لیے کارآمد ہوتا ہے؟",
         "answerEn": "Most foreign embassies and marriage registries accept an Unmarried Certificate for up to 6 months from the date of MOFA attestation.",
         "answerUr": "زیادہ تر غیر ملکی سفارتخانے 6 ماہ پرانا سرٹیفکیٹ قبول کرتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Unmarried / Single Status Certificate Issuance in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining Unmarried / Single Status Certificate in Pakistan.",
@@ -10137,8 +11822,7 @@ export const ARTICLES: Record<string, Article> = {
       "/family-registration/marriage-certificate-union-council-apply",
       "/overseas/pakistan-embassy-attestation-documents"
     ]
-  }
-,
+  },
   "secp-company-registration-online-2026": {
     "slug": "secp-company-registration-online-2026",
     "fullPath": "/business/secp-company-registration-online-2026",
@@ -10205,16 +11889,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "پرائیویٹ لمیٹڈ کمپنی کے لیے کم از کم کتنا سرمایہ درکار ہے؟",
         "answerEn": "Under the Companies Act 2017, there is no statutory minimum paid-up capital requirement (you can start with nominal PKR 100,000 authorized capital).",
         "answerUr": "قانون کے مطابق کم از کم سرمائے کی کوئی سخت حد نہیں، ایک لاکھ روپے سے بھی آغاز کیا جا سکتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for SECP Company Registration Online 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to SECP company registration in Pakistan.",
     "contentUr": "ایس ای سی پی میں کمپنی رجسٹریشن کا مکمل اور آسان طریقہ۔",
     "relatedSlugs": [
       "/business/sole-proprietorship-ntn-registration",
-      "/tax/ntn-registration-online-pakistan"
+      "/tax/ntn-registration-online-pakistan",
+      "/business/import-export-license-weboc-registration"
     ]
-  }
-,
+  },
   "sole-proprietorship-ntn-registration": {
     "slug": "sole-proprietorship-ntn-registration",
     "fullPath": "/business/sole-proprietorship-ntn-registration",
@@ -10259,6 +11955,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سول پروپرائیٹر این ٹی این پر بزنس بینک اکاؤنٹ کھل سکتا ہے؟",
         "answerEn": "Yes, submit your FBR 181 Certificate along with business letterhead and rubber stamp to any commercial bank to open an account in your business's name.",
         "answerUr": "جی ہاں! این ٹی این سرٹیفکیٹ اور لیٹر ہیڈ دکھا کر بزنس اکاؤنٹ کھل جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sole Proprietorship NTN Registration with FBR in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to registering a Sole Proprietorship in Pakistan.",
@@ -10267,8 +11975,7 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/ntn-registration-online-pakistan",
       "/business/trade-license-application-guide"
     ]
-  }
-,
+  },
   "how-to-register-small-business-pakistan": {
     "slug": "how-to-register-small-business-pakistan",
     "fullPath": "/business/how-to-register-small-business-pakistan",
@@ -10313,6 +12020,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا چھوٹے کاروبار بلاسود قرضوں کے اہل ہیں؟",
         "answerEn": "Yes, registered SMEs can apply for PM Youth Business Loans (up to PKR 7.5 Million) and provincial Asaan Karobar financing.",
         "answerUr": "جی ہاں! رجسٹرڈ کاروباری افراد پی ایم یوتھ لون سے فائدہ اٹھا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for How to Register Small Business in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to small enterprise registration in Pakistan.",
@@ -10321,8 +12040,7 @@ export const ARTICLES: Record<string, Article> = {
       "/loans/pm-youth-loan-scheme",
       "/business/secp-company-registration-online-2026"
     ]
-  }
-,
+  },
   "trade-license-application-guide": {
     "slug": "trade-license-application-guide",
     "fullPath": "/business/trade-license-application-guide",
@@ -10367,16 +12085,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا گھر سے آن لائن کام کرنے والوں کو بھی ٹریڈ لائسنس چاہیے؟",
         "answerEn": "No, home-based freelancers and purely digital e-commerce sellers are generally exempt unless operating physical inventory warehouses.",
         "answerUr": "نہیں، گھر سے آن لائن کام کرنے والوں کے لیے یہ لازمی نہیں ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Trade License Application Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining commercial municipal trade licenses in Pakistan.",
     "contentUr": "میونسپل ٹریڈ لائسنس حاصل کرنے کی تمام تفصیلات۔",
     "relatedSlugs": [
       "/business/sole-proprietorship-ntn-registration",
-      "/business/secp-company-registration-online-2026"
+      "/business/secp-company-registration-online-2026",
+      "/business/import-export-license-weboc-registration"
     ]
-  }
-,
+  },
   "import-export-license-weboc-registration": {
     "slug": "import-export-license-weboc-registration",
     "fullPath": "/business/import-export-license-weboc-registration",
@@ -10421,16 +12151,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سول پروپرائیٹر کو بھی امپورٹ ایکسپورٹ لائسنس مل سکتا ہے؟",
         "answerEn": "Yes, sole proprietors with valid business bank accounts and Chamber membership can legally obtain a WeBOC User ID.",
         "answerUr": "جی ہاں! سول پروپرائیٹر بھی ویبوک آئی ڈی بنوا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for WeBOC Registration Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on registering for import/export via WeBOC and PSW in Pakistan.",
     "contentUr": "امپورٹ ایکسپورٹ لائسنس حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/business/secp-company-registration-online-2026",
-      "/tax/ntn-registration-online-pakistan"
+      "/tax/ntn-registration-online-pakistan",
+      "/business/trade-license-application-guide"
     ]
-  }
-,
+  },
   "pseb-freelancer-it-company-registration": {
     "slug": "pseb-freelancer-it-company-registration",
     "fullPath": "/business/pseb-freelancer-it-company-registration",
@@ -10475,16 +12217,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "رجسٹرڈ فری لانسر کا ٹیکس کتنا ہے؟",
         "answerEn": "PSEB registered IT exporters pay a nominal 0.25% final withholding tax upon receiving inward foreign bank remittances.",
         "answerUr": "صرف 0.25% برائے نام ٹیکس منہا ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for PSEB Freelancer & IT Company Registration for 100% Tax Relief?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on PSEB registration and tax benefits for freelancers in Pakistan.",
     "contentUr": "فری لانسرز کے لیے پی ایس ای بی رجسٹریشن کے فوائد۔",
     "relatedSlugs": [
       "/tax/income-tax-return-filing-guide",
-      "/business/how-to-register-small-business-pakistan"
+      "/business/how-to-register-small-business-pakistan",
+      "/business/trade-license-application-guide"
     ]
-  }
-,
+  },
   "domicile-certificate-apply-online": {
     "slug": "domicile-certificate-apply-online",
     "fullPath": "/certificates/domicile-certificate-apply-online",
@@ -10529,16 +12283,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ایک شخص دو مختلف اضلاع کا ڈومیسائل رکھ سکتا ہے؟",
         "answerEn": "No. Holding more than one domicile certificate is a punishable criminal offense under the Pakistan Citizenship Rules 1952.",
         "answerUr": "نہیں! دو اضلاع کا ڈومیسائل رکھنا قانوناً جرم ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Domicile Certificate Apply Online?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to obtaining Domicile Certificate in Pakistan.",
     "contentUr": "ڈومیسائل سرٹیفکیٹ حاصل کرنے کا مکمل طریقہ کار۔",
     "relatedSlugs": [
       "/certificates/prc-permanent-residence-certificate-pakistan",
-      "/jobs/ppsc-jobs-2026"
+      "/jobs/ppsc-jobs-2026",
+      "/certificates/character-certificate-union-council"
     ]
-  }
-,
+  },
   "birth-certificate-union-council-online": {
     "slug": "birth-certificate-union-council-online",
     "fullPath": "/certificates/birth-certificate-union-council-online",
@@ -10583,6 +12349,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "18 سال سے بڑے افراد کی لیٹ برتھ رجسٹریشن کیسے ہوتی ہے؟",
         "answerEn": "Late birth registration requires an order from the Assistant Commissioner / Magistrate along with an educational matriculation certificate as age proof.",
         "answerUr": "اسسٹنٹ کمشنر یا مجسٹریٹ کے حکم نامے کے بعد سرٹیفکیٹ جاری ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NADRA Computerized Birth Certificate Online Application & Fees?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining computerized birth certificates in Pakistan.",
@@ -10591,8 +12369,7 @@ export const ARTICLES: Record<string, Article> = {
       "/nadra/b-form-kaise-banaye",
       "/certificates/domicile-certificate-apply-online"
     ]
-  }
-,
+  },
   "prc-permanent-residence-certificate-pakistan": {
     "slug": "prc-permanent-residence-certificate-pakistan",
     "fullPath": "/certificates/prc-permanent-residence-certificate-pakistan",
@@ -10637,16 +12414,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ڈومیسائل اور پی آر سی میں کیا فرق ہے؟",
         "answerEn": "Domicile proves broad district residency for federal/provincial jobs, while PRC specifically certifies continuous long-term local schooling and lineage for university quotas in Sindh.",
         "answerUr": "ڈومیسائل عام رہائش کا اور پی آر سی مخصوص تعلیمی کوٹہ کا ثبوت ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for PRC (Permanent Residence Certificate) Form C & D Application?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining PRC Form C and D in Pakistan.",
     "contentUr": "پی آر سی سرٹیفکیٹ حاصل کرنے کی معلومات۔",
     "relatedSlugs": [
       "/certificates/domicile-certificate-apply-online",
-      "/education/university-merit-list-checker-2026"
+      "/certificates/character-certificate-union-council",
+      "/certificates/birth-certificate-union-council-online"
     ]
-  }
-,
+  },
   "death-certificate-registration-process": {
     "slug": "death-certificate-registration-process",
     "fullPath": "/certificates/death-certificate-registration-process",
@@ -10691,16 +12480,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ورثاء کے لیے ڈیتھ سرٹیفکیٹ کیوں ضروری ہے؟",
         "answerEn": "Without a computerized death certificate, banks cannot release inherited funds, property cannot be transferred, and NADRA cannot issue succession certificates.",
         "answerUr": "اس کے بغیر بینک سے رقم نہیں ملتی اور نہ ہی جائیداد منتقل ہو سکتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Death Certificate Registration Process?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on registering deaths and getting computerized death certificates in Pakistan.",
     "contentUr": "وفات کے اندراج اور سرٹیفکیٹ کی تفصیل۔",
     "relatedSlugs": [
       "/nadra/death-cancellation-certificate",
-      "/certificates/succession-certificate-nadra-legal-heirs"
+      "/certificates/succession-certificate-nadra-legal-heirs",
+      "/certificates/prc-permanent-residence-certificate-pakistan"
     ]
-  }
-,
+  },
   "character-certificate-union-council": {
     "slug": "character-certificate-union-council",
     "fullPath": "/certificates/character-certificate-union-council",
@@ -10745,6 +12546,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا یہ سرٹیفکیٹ غیر ملکی ویزا کے لیے استعمال ہو سکتا ہے؟",
         "answerEn": "No, foreign embassies strictly require a 'Police Character Certificate' (PCC) issued by the Police Khidmat Markaz, not a Union Council certificate.",
         "answerUr": "نہیں، غیر ملکی ویزا کے لیے پولیس خدمت مرکز کا سرٹیفکیٹ درکار ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Union Council Character Certificate Application Procedure?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on getting a Union Council character certificate.",
@@ -10753,8 +12566,7 @@ export const ARTICLES: Record<string, Article> = {
       "/legal/police-character-certificate-apply-online",
       "/certificates/domicile-certificate-apply-online"
     ]
-  }
-,
+  },
   "succession-certificate-nadra-legal-heirs": {
     "slug": "succession-certificate-nadra-legal-heirs",
     "fullPath": "/certificates/succession-certificate-nadra-legal-heirs",
@@ -10821,16 +12633,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر کوئی وارث بیرون ملک ہو تو کیا کریں؟",
         "answerEn": "Heirs residing overseas can complete biometric consent at their nearest Pakistani Embassy/Consulate or via the Pak-ID mobile app.",
         "answerUr": "بیرون ملک ورثاء سفارتخانے یا پاک آئی ڈی ایپ سے بائیومیٹرک دے سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Succession Certificate NADRA for Legal Heirs?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining NADRA succession certificates for legal inheritance in Pakistan.",
     "contentUr": "نادرا جانشینی سرٹیفکیٹ حاصل کرنے کا مکمل گائیڈ۔",
     "relatedSlugs": [
       "/certificates/death-certificate-registration-process",
-      "/nadra/family-registration-certificate"
+      "/nadra/family-registration-certificate",
+      "/certificates/domicile-certificate-apply-online"
     ]
-  }
-,
+  },
   "hajj-registration-portal-pakistan-2026": {
     "slug": "hajj-registration-portal-pakistan-2026",
     "fullPath": "/hajj-umrah/hajj-registration-portal-pakistan-2026",
@@ -10890,16 +12714,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا خواتین بغیر محرم سرکاری حج کر سکتی ہیں؟",
         "answerEn": "Yes, under current Saudi and MORA guidelines, women aged 45 and above can travel in organized female group cohorts without a male Mahram.",
         "answerUr": "جی ہاں! 45 سال سے زائد عمر کی خواتین خواتین کے گروپ میں بغیر محرم حج کر سکتی ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Hajj Registration Portal Pakistan 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to Government Hajj registration in Pakistan.",
     "contentUr": "سرکاری حج اسکیم میں اپلائی کرنے کی مکمل رہنمائی۔",
     "relatedSlugs": [
       "/hajj-umrah/hajj-balloting-result-check-online",
-      "/hajj-umrah/umrah-visa-apply-from-pakistan-steps"
+      "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
+      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
     ]
-  }
-,
+  },
   "umrah-visa-apply-from-pakistan-steps": {
     "slug": "umrah-visa-apply-from-pakistan-steps",
     "fullPath": "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
@@ -10951,6 +12787,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا وزٹ ویزا پر عمرہ ادا کیا جا سکتا ہے؟",
         "answerEn": "Yes, holders of Saudi tourist, family visit, or business visas are officially permitted to perform Umrah throughout the year except during the core Hajj dates.",
         "answerUr": "جی ہاں! وزٹ ویزا ہولڈرز حج کے ایام کے علاوہ پورا سال عمرہ کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Umrah Visa Apply from Pakistan Steps?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on applying for Umrah e-visa via Nusuk from Pakistan.",
@@ -10959,8 +12807,7 @@ export const ARTICLES: Record<string, Article> = {
       "/hajj-umrah/hajj-registration-portal-pakistan-2026",
       "/hajj-umrah/umrah-package-government-vs-private"
     ]
-  }
-,
+  },
   "hajj-balloting-result-check-online": {
     "slug": "hajj-balloting-result-check-online",
     "fullPath": "/hajj-umrah/hajj-balloting-result-check-online",
@@ -11005,16 +12852,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "قرعہ اندازی میں نام آنے پر کیا کرنا ہوگا؟",
         "answerEn": "Successful pilgrims must deposit the second fee installment at their bank and report to their regional Haji Camp for mandatory vaccination and biometric enrollment.",
         "answerUr": "باقی رقم بینک میں جمع کروا کر حاجی کیمپ سے ویکسینیشن کروائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Hajj Balloting Result Check Online 2026 by CNIC & Bank Reference?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on checking Hajj balloting results online in Pakistan.",
     "contentUr": "حج قرعہ اندازی کا رزلٹ معلوم کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/hajj-umrah/hajj-registration-portal-pakistan-2026",
-      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
+      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness",
+      "/hajj-umrah/umrah-package-government-vs-private"
     ]
-  }
-,
+  },
   "umrah-package-government-vs-private": {
     "slug": "umrah-package-government-vs-private",
     "fullPath": "/hajj-umrah/umrah-package-government-vs-private",
@@ -11067,16 +12926,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا پیکیج میں کھانا شامل ہوتا ہے؟",
         "answerEn": "Economy packages typically provide accommodation and transport only, with full-board catering available in VIP 4-star and 5-star packages.",
         "answerUr": "اکانومی پیکیج میں کھانا شامل نہیں ہوتا، وی آئی پی میں مہیا کیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Umrah Package Government vs Private?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Detailed comparison of Umrah packages and costs in Pakistan.",
     "contentUr": "عمرہ پیکیجز کے اخراجات کا تفصیلی جائزہ۔",
     "relatedSlugs": [
       "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
-      "/hajj-umrah/zamzam-water-and-baggage-rules-pia"
+      "/hajj-umrah/zamzam-water-and-baggage-rules-pia",
+      "/hajj-umrah/hajj-balloting-result-check-online"
     ]
-  }
-,
+  },
   "hajj-mandatory-vaccination-medical-fitness": {
     "slug": "hajj-mandatory-vaccination-medical-fitness",
     "fullPath": "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness",
@@ -11121,16 +12992,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا گردوں کے مریض حج کر سکتے ہیں؟",
         "answerEn": "Under Saudi 2026 fitness guidelines, patients with severe advanced renal failure (active dialysis) or advanced heart failure are restricted for safety.",
         "answerUr": "ڈائیلاسز کے مریضوں کے لیے احتیاطی تدابیر اور فٹنس سرٹیفکیٹ درکار ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Mandatory Hajj Vaccination (Polio, Meningitis) & Medical Fitness?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to mandatory medical tests and vaccines for Hajj & Umrah.",
     "contentUr": "حج و عمرہ کے لیے طبی ٹیسٹ اور ویکسین کی معلومات۔",
     "relatedSlugs": [
       "/hajj-umrah/hajj-registration-portal-pakistan-2026",
-      "/health/polio-yellow-fever-vaccine-certificate-travel"
+      "/health/polio-yellow-fever-vaccine-certificate-travel",
+      "/hajj-umrah/hajj-balloting-result-check-online"
     ]
-  }
-,
+  },
   "zamzam-water-and-baggage-rules-pia": {
     "slug": "zamzam-water-and-baggage-rules-pia",
     "fullPath": "/hajj-umrah/zamzam-water-and-baggage-rules-pia",
@@ -11175,16 +13058,27 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سوٹ کیس کے اندر زم زم کی بوتلیں رکھ سکتے ہیں؟",
         "answerEn": "No. Saudi airport security confiscates loose water bottles found inside suitcases to prevent leakage in aircraft cargo holds.",
         "answerUr": "نہیں! سوٹ کیس کے اندر زم زم رکھنا منع ہے، صرف سیل شدہ کین بک ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Zamzam Water & Airline Baggage Rules for Hajj & Umrah Pilgrims?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on Zamzam water and airline baggage rules for pilgrims.",
     "contentUr": "آب زم زم اور ایئرلائن سامان کے قواعد و ضوابط۔",
     "relatedSlugs": [
       "/hajj-umrah/umrah-package-government-vs-private",
-      "/passport/fee-calculator"
+      "/hajj-umrah/hajj-balloting-result-check-online"
     ]
-  }
-,
+  },
   "sehat-card-eligibility-check-by-cnic": {
     "slug": "sehat-card-eligibility-check-by-cnic",
     "fullPath": "/health/sehat-card-eligibility-check-by-cnic",
@@ -11229,16 +13123,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا علاج کے لیے الگ سے پلاسٹک کارڈ بنوانا ضروری ہے؟",
         "answerEn": "No. Your original NADRA CNIC or Smart Card serves directly as your Sehat Card at all hospital counters.",
         "answerUr": "نہیں! آپ کا اصل شناختی کارڈ ہی صحت کارڈ کا کام دیتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Eligibility Check by CNIC 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on checking Sehat Card eligibility via SMS and online.",
     "contentUr": "صحت کارڈ کی اہلیت معلوم کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/health/sehat-card-hospital-list-near-me",
-      "/health/sehat-card-treatment-limit-2026"
+      "/health/sehat-card-treatment-limit-2026",
+      "/health/how-to-apply-for-sehat-sahulat-card"
     ]
-  }
-,
+  },
   "sehat-card-hospital-list-near-me": {
     "slug": "sehat-card-hospital-list-near-me",
     "fullPath": "/health/sehat-card-hospital-list-near-me",
@@ -11283,16 +13189,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "ہسپتال داخلے کے وقت کون سے کاغذات درکار ہیں؟",
         "answerEn": "Present original CNIC of patient (or B-Form for children) and family head's CNIC at the dedicated Sehat Sahulat Help Desk.",
         "answerUr": "مریض کا اصل شناختی کارڈ یا بچوں کا بی فارم ہسپتال کاؤنٹر پر دکھائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Hospital List Near Me?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Directory and search guide for Sehat Card panel hospitals.",
     "contentUr": "صحت کارڈ کے پینل ہسپتالوں کی تلاش کی رہنمائی۔",
     "relatedSlugs": [
       "/health/sehat-card-eligibility-check-by-cnic",
-      "/health/sehat-card-treatment-limit-2026"
+      "/health/sehat-card-treatment-limit-2026",
+      "/health/medical-board-disability-certificate-pakistan"
     ]
-  }
-,
+  },
   "sehat-card-treatment-limit-2026": {
     "slug": "sehat-card-treatment-limit-2026",
     "fullPath": "/health/sehat-card-treatment-limit-2026",
@@ -11337,6 +13255,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا او پی ڈی کلینک اور عام دوائیاں بھی فری ہیں؟",
         "answerEn": "Sehat Card covers indoor hospital admissions (overnight stays and major daycare surgeries). Routine outpatient (OPD) clinic checkups are excluded.",
         "answerUr": "صحت کارڈ ہسپتال میں داخلے کے علاج کو کور کرتا ہے، عام او پی ڈی چیک اپ شامل نہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Treatment Limit 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Breakdown of treatment limits and medical packages on Sehat Card.",
@@ -11345,8 +13275,7 @@ export const ARTICLES: Record<string, Article> = {
       "/health/sehat-card-eligibility-check-by-cnic",
       "/health/how-to-apply-for-sehat-sahulat-card"
     ]
-  }
-,
+  },
   "how-to-apply-for-sehat-sahulat-card": {
     "slug": "how-to-apply-for-sehat-sahulat-card",
     "fullPath": "/health/how-to-apply-for-sehat-sahulat-card",
@@ -11391,16 +13320,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا نئی شادی شدہ خاتون شوہر کے کارڈ پر علاج کروا سکتی ہے؟",
         "answerEn": "Yes, once her CNIC is updated with her husband's name at NADRA, she is automatically covered under the husband's family package.",
         "answerUr": "جی ہاں! شناختی کارڈ میں شوہر کا نام درج ہوتے ہی وہ شوہر کے پیکیج میں شامل ہو جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for How to Apply for Sehat Sahulat Card?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on registering family members for Sehat Card coverage.",
     "contentUr": "صحت کارڈ میں فیملی کے اندراج کا طریقہ۔",
     "relatedSlugs": [
       "/nadra/family-registration-certificate",
-      "/health/sehat-card-eligibility-check-by-cnic"
+      "/health/sehat-card-eligibility-check-by-cnic",
+      "/health/sehat-card-hospital-list-near-me"
     ]
-  }
-,
+  },
   "medical-board-disability-certificate-pakistan": {
     "slug": "medical-board-disability-certificate-pakistan",
     "fullPath": "/health/medical-board-disability-certificate-pakistan",
@@ -11452,16 +13393,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "نادرا شناختی کارڈ پر وہیل چیئر کا نشان کیسے بنتا ہے؟",
         "answerEn": "Present your original District Disability Certificate at any NADRA center to receive a free Special CNIC printed with the wheelchair emblem.",
         "answerUr": "میڈیکل بورڈ کا سرٹیفکیٹ نادرا میں دکھا کر وہیل چیئر والا کارڈ مفت حاصل کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Medical Board Disability Certificate & Special CNIC in Pakistan?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to disability assessment and special CNIC in Pakistan.",
     "contentUr": "میڈیکل بورڈ معذوری سرٹیفکیٹ کی مکمل معلومات۔",
     "relatedSlugs": [
       "/welfare/punjab-himmat-card-registration",
-      "/nadra/cnic-kaise-banaye"
+      "/nadra/cnic-kaise-banaye",
+      "/health/sehat-card-eligibility-check-by-cnic"
     ]
-  }
-,
+  },
   "polio-yellow-fever-vaccine-certificate-travel": {
     "slug": "polio-yellow-fever-vaccine-certificate-travel",
     "fullPath": "/health/polio-yellow-fever-vaccine-certificate-travel",
@@ -11513,16 +13466,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا دبئی اور سعودی عرب کے لیے پولیو کارڈ لازمی ہے؟",
         "answerEn": "Yes, airport immigration authorities require passengers departing from Pakistan to present a valid polio vaccination certificate issued within the past 12 months.",
         "answerUr": "جی ہاں! پاکستانی ایئرپورٹس پر 1 سال کے اندر کا پولیو کارڈ چیک کیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Online Polio & Yellow Fever Travel Vaccination Certificate?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on downloading international polio travel vaccination certificates.",
     "contentUr": "آن لائن پولیو سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
-      "/passport/fee-calculator",
-      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
+      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness",
+      "/health/how-to-apply-for-sehat-sahulat-card",
+      "/health/medical-board-disability-certificate-pakistan"
     ]
-  }
-,
+  },
   "online-fir-registration-punjab-police": {
     "slug": "online-fir-registration-punjab-police",
     "fullPath": "/legal/online-fir-registration-punjab-police",
@@ -11574,16 +13539,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ڈکیتی جیسے سنگین جرم کی ایف آئی آر مکمل آن لائن ہو جاتی ہے؟",
         "answerEn": "An online 1787 complaint registers an immediate formal inquiry; for formal registration of FIR under Section 154 CrPC, the Station House Officer (SHO) records the complainant's statement at the police station or through a mobile facilitation van.",
         "answerUr": "آن لائن شکایت پر فوری کارروائی ہوتی ہے اور باقاعدہ بیان کے بعد ایف آئی آر کاٹ دی جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Online FIR Registration Punjab Police 1787 & E-Tag System?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive guide to online crime complaints and FIR registration in Punjab.",
     "contentUr": "پنجاب پولیس کے آن لائن شکایات سسٹم کی مکمل معلومات۔",
     "relatedSlugs": [
       "/legal/police-character-certificate-apply-online",
-      "/legal/how-to-check-fir-status-online"
+      "/legal/how-to-check-fir-status-online",
+      "/legal/power-of-attorney-property-registration"
     ]
-  }
-,
+  },
   "police-character-certificate-apply-online": {
     "slug": "police-character-certificate-apply-online",
     "fullPath": "/legal/police-character-certificate-apply-online",
@@ -11635,16 +13612,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا غیر ملکی سفارتخانے کے لیے وزارت خارجہ کی تصدیق ضروری ہے؟",
         "answerEn": "Yes, for international visa applications, the PCC issued by PKM must subsequently be attested with an official QR stamp by MOFA.",
         "answerUr": "جی ہاں! ایمبیسی جمع کروانے سے پہلے وزارت خارجہ کی مہر لگوانا ضروری ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Police Character Certificate (PCC) Apply Online for Visas?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on obtaining a Police Character Certificate (PCC) in Pakistan.",
     "contentUr": "پولیس کریکٹر سرٹیفکیٹ حاصل کرنے کی مکمل تفصیلات۔",
     "relatedSlugs": [
       "/certificates/character-certificate-union-council",
-      "/overseas/pakistan-embassy-attestation-documents"
+      "/overseas/pakistan-embassy-attestation-documents",
+      "/legal/legal-heir-certificate-nadra-court"
     ]
-  }
-,
+  },
   "how-to-check-fir-status-online": {
     "slug": "how-to-check-fir-status-online",
     "fullPath": "/legal/how-to-check-fir-status-online",
@@ -11689,6 +13678,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ایف آئی آر کی تصدیق شدہ کاپی آن لائن مل سکتی ہے؟",
         "answerEn": "Complainants can download an official copy from the Police Khidmat Markaz portal or obtain a certified copy directly from the Area Magistrate's office (Copying Agency).",
         "answerUr": "پولیس خدمت مرکز پورٹل یا علاقہ مجسٹریٹ سے مصدقہ نقل مل جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for How to Check FIR Status Online?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on checking police FIR and investigation status online in Pakistan.",
@@ -11697,8 +13698,7 @@ export const ARTICLES: Record<string, Article> = {
       "/legal/online-fir-registration-punjab-police",
       "/legal/punjab-khidmat-markaz-police-services"
     ]
-  }
-,
+  },
   "legal-heir-certificate-nadra-court": {
     "slug": "legal-heir-certificate-nadra-court",
     "fullPath": "/legal/legal-heir-certificate-nadra-court",
@@ -11743,16 +13743,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "بیٹیوں اور بیوہ کا شرعی حصہ کتنا ہوتا ہے؟",
         "answerEn": "Under Islamic Shariah as applied in Pakistan, a single widow with children receives 1/8th of the estate, while a single daughter receives 1/2 (or 2/3 shared equally among multiple daughters).",
         "answerUr": "اولاد کی موجودگی میں بیوہ کا آٹھواں حصہ اور بیٹیوں کا شرعی حصہ نافذ ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Legal Heir Certificate (Wirasat Nama)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive comparison of obtaining Legal Heir Certificates from NADRA vs Civil Courts in Pakistan.",
     "contentUr": "وراثت نامہ حاصل کرنے کی مکمل قانونی رہنمائی۔",
     "relatedSlugs": [
       "/certificates/succession-certificate-nadra-legal-heirs",
-      "/nadra/family-registration-certificate"
+      "/nadra/family-registration-certificate",
+      "/legal/power-of-attorney-property-registration"
     ]
-  }
-,
+  },
   "power-of-attorney-property-registration": {
     "slug": "power-of-attorney-property-registration",
     "fullPath": "/legal/power-of-attorney-property-registration",
@@ -11797,16 +13809,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا مالک کے انتقال کے بعد مختار نامہ برقرار رہتا ہے؟",
         "answerEn": "No. Under the Power of Attorney Act 1882, any PoA automatically and immediately terminates upon the legal death of the principal.",
         "answerUr": "نہیں! مالک کے انتقال کے بعد مختار نامہ خودبخود منسوخ ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Power of Attorney (Mukhtar Nama) Property Registration Rules?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on executing and registering Power of Attorney for properties in Pakistan.",
     "contentUr": "مختار نامہ عام و خاص کے قانونی قواعد کی تفصیل۔",
     "relatedSlugs": [
       "/property/registry-vs-intiqal-difference",
-      "/overseas/power-of-attorney-attestation-overseas"
+      "/overseas/power-of-attorney-attestation-overseas",
+      "/legal/how-to-check-fir-status-online"
     ]
-  }
-,
+  },
   "punjab-khidmat-markaz-police-services": {
     "slug": "punjab-khidmat-markaz-police-services",
     "fullPath": "/legal/punjab-khidmat-markaz-police-services",
@@ -11851,16 +13875,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا کرایہ دار کا اندراج خدمت مرکز سے ہو جاتا ہے؟",
         "answerEn": "Yes, submit tenant CNIC copy and rent agreement at PKM or through the Punjab Police App to ensure legal compliance under the Punjab Tenancy Ordinance.",
         "answerUr": "جی ہاں! کرایہ نامہ اور شناختی کارڈ جمع کروا کر کرایہ دار کا اندراج کیا جا سکتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Punjab Police Khidmat Markaz (PKM)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Comprehensive directory of 14 public services at Police Khidmat Markaz.",
     "contentUr": "پولیس خدمت مرکز کی 14 سروسز کی تفصیلی رہنمائی۔",
     "relatedSlugs": [
       "/legal/police-character-certificate-apply-online",
-      "/traffic/driving-license-guide"
+      "/traffic/driving-license-guide",
+      "/legal/online-fir-registration-punjab-police"
     ]
-  }
-,
+  },
   "flood-alert-pakistan-ndma-pdma": {
     "slug": "flood-alert-pakistan-ndma-pdma",
     "fullPath": "/alerts/flood-alert-pakistan-ndma-pdma",
@@ -11905,16 +13941,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "سیلاب میں مدد کے لیے کون سے نمبر پر کال کریں؟",
         "answerEn": "For immediate rescue and boat evacuation, dial Rescue 1122 or the NDMA National Emergency Helpline 1110.",
         "answerUr": "فوری مدد کے لیے ریسکیو 1122 یا این ڈی ایم اے 1110 پر کال کریں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Flood Alert Pakistan Today?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Live flood monitoring and river flow advisory guide in Pakistan.",
     "contentUr": "پاکستان میں سیلاب اور دریاؤں کے بہاؤ کی الرٹ گائیڈ۔",
     "relatedSlugs": [
       "/alerts/monsoon-warning-pdma-updates",
-      "/alerts/emergency-helpline-numbers-pakistan"
+      "/alerts/emergency-helpline-numbers-pakistan",
+      "/alerts/earthquake-emergency-safety-guidelines-pakistan"
     ]
-  }
-,
+  },
   "monsoon-warning-pdma-updates": {
     "slug": "monsoon-warning-pdma-updates",
     "fullPath": "/alerts/monsoon-warning-pdma-updates",
@@ -11959,6 +14007,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "گھر کے باہر پانی جمع ہونے پر کس سے رابطہ کریں؟",
         "answerEn": "Call the WASA emergency helpline at 1334 (Lahore/Rawalpindi/Faisalabad) or 1339 (KWSC Karachi) for rapid dewatering tankers.",
         "answerUr": "پانی کی نکاسی کے لیے واسا کے 1334 پر فوری شکایت درج کروائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Monsoon Warning & Rain Emergency Advisory (PMD & PDMA 2026)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to monsoon weather warnings and urban flooding safety in Pakistan.",
@@ -11967,8 +14027,7 @@ export const ARTICLES: Record<string, Article> = {
       "/alerts/flood-alert-pakistan-ndma-pdma",
       "/alerts/emergency-helpline-numbers-pakistan"
     ]
-  }
-,
+  },
   "ndma-disaster-relief-compensation-registration": {
     "slug": "ndma-disaster-relief-compensation-registration",
     "fullPath": "/alerts/ndma-disaster-relief-compensation-registration",
@@ -12021,16 +14080,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "متاثرین کو معاوضے کی رقم کیسے ملتی ہے؟",
         "answerEn": "Funds are credited directly to the victim's CNIC via BISP biometrically verified campsites or dedicated Bank of Punjab / HBL relief accounts.",
         "answerUr": "رقم شناختی کارڈ کے ذریعے بائیومیٹرک کاؤنٹرز سے براہ راست ادا کی جاتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NDMA Disaster Relief Compensation Registration & Relief Fund?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on claiming NDMA government disaster compensation in Pakistan.",
     "contentUr": "حکومتی ڈیزاسٹر ریلیف معاوضہ حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
-      "/alerts/flood-alert-pakistan-ndma-pdma"
+      "/alerts/flood-alert-pakistan-ndma-pdma",
+      "/alerts/emergency-helpline-numbers-pakistan"
     ]
-  }
-,
+  },
   "emergency-helpline-numbers-pakistan": {
     "slug": "emergency-helpline-numbers-pakistan",
     "fullPath": "/alerts/emergency-helpline-numbers-pakistan",
@@ -12075,16 +14146,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ریسکیو 1122 ایمبولینس کے پیسے لیتی ہے؟",
         "answerEn": "No. Rescue 1122 emergency ambulance, fire truck, and flood rescue services are 100% free of charge funded by the provincial government.",
         "answerUr": "نہیں! ریسکیو 1122 کی تمام خدمات مکمل مفت ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Emergency Helpline Numbers in Pakistan (Rescue 1122, Edhi 115, 15)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "## Pakistan Comprehensive Emergency Helpline Directory (2026)\n| Emergency Service | Short Code | Coverage | Key Services Provided |\n| :--- | :--- | :--- | :--- |\n| **Rescue 1122** | **1122** | Punjab, KPK, GB, AJK | Emergency Ambulance, Firefighting, Disaster Rescue |\n| **Police Emergency** | **15** | Nationwide | Immediate Crime Reporting & Police Dispatch |\n| **Motorway Police** | **1307** | National Highways & M-Ways | Highway Accidents, Vehicle Breakdown Assistance |\n| **Edhi Ambulance** | **115** | Nationwide | Patient Transport, Mortuary & Air Ambulance |\n| **Fire Brigade** | **16** | All Major Municipalities | City Fire Suppression & Hazardous Materials |\n| **NDMA Disaster Line** | **1110** | Federal | National Disaster Relief Coordination |\n| **WAPDA Electricity** | **118** | DISCO Territories | Power Outage & Snapped Wire Emergencies |\n| **Sui Gas Emergency** | **1199** | SNGPL / SSGC | Gas Pipeline Leaks & Fire Hazards |",
     "contentUr": "## پاکستان کے تمام اہم ایمرجنسی ہیلپ لائن نمبرز کی ڈائریکٹری\nمفت سرکاری اور فلاحی اداروں کے ہنگامی رابطہ نمبرز۔",
     "relatedSlugs": [
       "/alerts/flood-alert-pakistan-ndma-pdma",
-      "/traffic/m-tag-motorway-registration-one-network"
+      "/traffic/m-tag-motorway-registration-one-network",
+      "/alerts/monsoon-warning-pdma-updates"
     ]
-  }
-,
+  },
   "smog-air-quality-aqi-advisory-punjab": {
     "slug": "smog-air-quality-aqi-advisory-punjab",
     "fullPath": "/alerts/smog-air-quality-aqi-advisory-punjab",
@@ -12129,16 +14212,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کتنا اے کیو آئی صحت کے لیے خطرناک مانا جاتا ہے؟",
         "answerEn": "An Air Quality Index (AQI) reading above 300 is classified as 'Hazardous', prompting emergency medical warnings for children and elderly individuals.",
         "answerUr": "300 سے زیادہ AQI خطرناک درجے میں آتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Smog Air Quality (AQI) Advisory Punjab?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on smog advisory, air quality index, and green lockdowns in Punjab.",
     "contentUr": "سموگ کے خطرات اور حکومتی احتیاطی تدابیر کی معلومات۔",
     "relatedSlugs": [
       "/alerts/emergency-helpline-numbers-pakistan",
-      "/traffic/e-challan-check-online"
+      "/traffic/e-challan-check-online",
+      "/alerts/monsoon-warning-pdma-updates"
     ]
-  }
-,
+  },
   "earthquake-emergency-safety-guidelines-pakistan": {
     "slug": "earthquake-emergency-safety-guidelines-pakistan",
     "fullPath": "/alerts/earthquake-emergency-safety-guidelines-pakistan",
@@ -12183,6 +14278,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا زلزلے کے جھٹکوں کے دوران باہر بھاگنا چاہیے؟",
         "answerEn": "No. Most earthquake injuries occur from falling bricks, glass, and facade tiles while trying to exit during active shaking. Stay sheltered until shaking ceases.",
         "answerUr": "نہیں! جھٹکے رکنے کے بعد پرسکون انداز میں کھلی جگہ کی طرف جائیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on earthquake emergency preparedness and seismic alerts in Pakistan.",
@@ -12191,8 +14298,7 @@ export const ARTICLES: Record<string, Article> = {
       "/alerts/emergency-helpline-numbers-pakistan",
       "/alerts/flood-alert-pakistan-ndma-pdma"
     ]
-  }
-,
+  },
   "fbr-pos-invoicing-prize-scheme": {
     "slug": "fbr-pos-invoicing-prize-scheme",
     "fullPath": "/tax/fbr-pos-invoicing-prize-scheme",
@@ -12237,16 +14343,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "اگر دکاندار ایف بی آر رسید نہ دے تو کیا کریں؟",
         "answerEn": "You can report unauthorized manual receipts through the FBR Complaint Portal on 1787.",
         "answerUr": "آپ 1787 پر ایف بی آر کو شکایت درج کروا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for FBR POS Invoicing & Digital Tax Receipt Verification Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide to FBR POS digital invoicing.",
     "contentUr": "ایف بی آر پی او ایس رسیدوں کی معلومات۔",
     "relatedSlugs": [
       "/tax/ntn-registration-online-pakistan",
-      "/tax/withholding-tax-rates-filers-non-filers"
+      "/tax/withholding-tax-rates-filers-non-filers",
+      "/tax/income-tax-return-filing-guide"
     ]
-  }
-,
+  },
   "fbr-bank-account-tax-deduction": {
     "slug": "fbr-bank-account-tax-deduction",
     "fullPath": "/tax/fbr-bank-account-tax-deduction",
@@ -12291,16 +14409,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا اے ٹی ایم سے رقم نکالنے پر بھی ٹیکس کٹتا ہے؟",
         "answerEn": "Yes, all ATM and counter withdrawals are aggregated daily. Non-filers pay 0.9% if total daily withdrawals exceed PKR 50,000.",
         "answerUr": "جی ہاں! روزانہ 50 ہزار سے زائد کل رقم پر نان فائلر کا ٹیکس کٹتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for FBR Cash Withdrawal & Bank Advance Tax Rules for Non-Filers?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Rules on bank cash withdrawal tax deductions.",
     "contentUr": "بینک کیش ودڈرال ٹیکس کے قواعد۔",
     "relatedSlugs": [
       "/tax/withholding-tax-rates-filers-non-filers",
-      "/tax/fbr-filer-status-check-cnic"
+      "/tax/fbr-filer-status-check-cnic",
+      "/tax/fbr-pos-invoicing-prize-scheme"
     ]
-  }
-,
+  },
   "pakistan-embassy-attestation-documents": {
     "slug": "pakistan-embassy-attestation-documents",
     "fullPath": "/overseas/pakistan-embassy-attestation-documents",
@@ -12345,6 +14475,18 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا براہ راست وزارت خارجہ جا سکتے ہیں؟",
         "answerEn": "No, MOFA handles public attestation exclusively through authorized courier partners (TCS, Gerry's, Leopard) and online portal slots.",
         "answerUr": "نہیں، وزارت خارجہ صرف منظور شدہ کوریئر کے ذریعے دستاویزات وصول کرتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Pakistan Embassy & MOFA Document Attestation Guidelines 2026?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on MOFA document attestation in Pakistan.",
@@ -12353,8 +14495,7 @@ export const ARTICLES: Record<string, Article> = {
       "/education/hec-degree-attestation-process",
       "/overseas/nicop-renewal-from-abroad"
     ]
-  }
-,
+  },
   "overseas-pakistani-bank-account-nrp": {
     "slug": "overseas-pakistani-bank-account-nrp",
     "fullPath": "/overseas/overseas-pakistani-bank-account-nrp",
@@ -12399,16 +14540,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا آر ڈی اے اکاؤنٹ سے پیسہ واپس بیرون ملک بھیجا جا سکتا ہے؟",
         "answerEn": "Yes, State Bank guarantees 100% full and unhindered repatriation of funds invested via RDA back to your foreign bank account.",
         "answerUr": "جی ہاں! اسٹیٹ بینک مکمل فنڈز واپس بیرون ملک ٹرانسفر کرنے کی گارنٹی دیتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Overseas Pakistani Bank Account (Roshan Digital Account NRP Guide)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on opening Roshan Digital Accounts for overseas Pakistanis.",
     "contentUr": "روشن ڈیجیٹل اکاؤنٹ کھولنے کا طریقہ۔",
     "relatedSlugs": [
       "/overseas/nicop-renewal-from-abroad",
-      "/tax/fbr-filer-status-check-cnic"
+      "/tax/fbr-filer-status-check-cnic",
+      "/overseas/overseas-pakistanis-foundation-opf-schemes"
     ]
-  }
-,
+  },
   "nicop-fee-usa-uk-saudi-uae-2026": {
     "slug": "nicop-fee-usa-uk-saudi-uae-2026",
     "fullPath": "/overseas/nicop-fee-usa-uk-saudi-uae-2026",
@@ -12461,16 +14614,27 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا سفارتخانے میں مقامی کرنسی میں فیس دی جا سکتی ہے؟",
         "answerEn": "Yes, embassy NADRA counters accept local currency (e.g. SAR in Saudi Arabia, AED in UAE, GBP in UK) equivalent to the USD schedule.",
         "answerUr": "جی ہاں! سفارتخانوں میں مقامی کرنسی میں مساوی فیس ادا کی جا سکتی ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for NICOP Fee 2026 for USA, UK, Saudi Arabia & UAE (Zone A & B)?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Complete breakdown of NADRA NICOP fees worldwide.",
     "contentUr": "دنیا بھر کے لیے نادرا نائیکوپ فیس چارٹ۔",
     "relatedSlugs": [
       "/overseas/nicop-renewal-from-abroad",
-      "/nadra/nicop-fee-calculator"
+      "/overseas/overseas-pakistanis-foundation-opf-schemes"
     ]
-  }
-,
+  },
   "overseas-pakistanis-foundation-opf-schemes": {
     "slug": "overseas-pakistanis-foundation-opf-schemes",
     "fullPath": "/overseas/overseas-pakistanis-foundation-opf-schemes",
@@ -12515,16 +14679,28 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "او پی ایف مالی امداد کا کون حقدار ہے؟",
         "answerEn": "Legal heirs of Pakistani overseas workers who passed away while employed abroad holding valid Protector stamps are eligible for the financial grant.",
         "answerUr": "قانونی پروٹیکٹر ہولڈرز کے ورثاء اس کے حقدار ہیں۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on OPF membership and welfare schemes.",
     "contentUr": "او پی ایف ممبرشپ اور اسکیموں کی رہنمائی۔",
     "relatedSlugs": [
       "/overseas/nicop-renewal-from-abroad",
-      "/passport/overseas-pakistani-passport-renewal"
+      "/passport/overseas-pakistani-passport-renewal",
+      "/overseas/nicop-fee-usa-uk-saudi-uae-2026"
     ]
-  }
-,
+  },
   "power-of-attorney-attestation-overseas": {
     "slug": "power-of-attorney-attestation-overseas",
     "fullPath": "/overseas/power-of-attorney-attestation-overseas",
@@ -12569,13 +14745,26 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا ویڈیو انٹرویو لازمی ہے؟",
         "answerEn": "Yes, a short 3-minute video verification interview with the Pakistani Consular Officer is mandatory to prevent fraud.",
         "answerUr": "جی ہاں! قونصلر آفیسر کے ساتھ 3 منٹ کا ویڈیو انٹرویو لازمی ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Which official portal or helpline should citizens use for Digital Power of Attorney Attestation for Overseas Pakistanis?",
+        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
+        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
+        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for verification?",
+        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
+        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
+        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
     "contentEn": "Guide on executing digital Power of Attorney from abroad.",
     "contentUr": "آن لائن مختار نامہ بنوانے کی مکمل معلومات۔",
     "relatedSlugs": [
       "/overseas/pakistan-embassy-attestation-documents",
-      "/property/registry-vs-intiqal-difference"
+      "/property/registry-vs-intiqal-difference",
+      "/overseas/nicop-renewal-from-abroad"
     ]
   }
 };

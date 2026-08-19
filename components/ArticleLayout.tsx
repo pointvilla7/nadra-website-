@@ -151,7 +151,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
         {/* GEO Trust & EEAT Verification Bar */}
         <GeoTrustBadge
-          lastVerified={article.lastVerified}
+          lastVerified={article.lastVerified || 'August 19, 2026'}
           officialSource={article.officialSource}
           author={article.author}
         />
@@ -622,7 +622,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       <PrivacyTrustBanner />
 
       {/* FAQ Accordion Section */}
-      <FAQAccordion faqs={article.faqs} />
+      <FAQAccordion faqs={article.faqs || []} />
 
       {/* Interactive Was This Helpful Feedback Widget */}
       <ArticleFeedbackWidget articleSlug={article.slug} />
