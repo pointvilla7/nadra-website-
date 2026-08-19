@@ -6703,4 +6703,1509 @@ export const ARTICLES: Record<string, Article> = {
       }
     ]
   }
+,
+  "gepco-bill-check-online": {
+  "slug": "gepco-bill-check-online",
+  "fullPath": "/bills/gepco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "GEPCO Bill Check Online 2026: Gujranwala Electric Duplicate Bill PDF",
+  "titleUr": "گیپکو آن لائن بل چیک 2026: گوجرانوالہ ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your GEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
+  "metaDescriptionUr": "گیپکو گوجرانوالہ، سیالکوٹ، گجرات، حافظ آباد اور نارووال کا آن لائن بجلی کا بل 14 ہندسوں والے ریفرنس نمبر سے چیک اور ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your GEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 11 or 12 for Gujranwala division), (2) Validate the number in our tool and copy it, and (3) Click 'Open GEPCO Official Portal' to access the official PITC server (bill.pitc.com.pk/gepcobill/) to view or print your PDF bill.",
+  "directAnswerUr": "گیپکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں تصدیق کر کے کاپی کریں اور آفیشل پورٹل کے بٹن پر کلک کر کے اصل پی ڈی ایف بل حاصل کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC GEPCO Duplicate Bill Gateway",
+    "url": "http://bill.pitc.com.pk/gepcobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Protected Consumer (1–100 Units)",
+      "serviceUr": "پروٹیکٹڈ صارف (1 تا 100 یونٹ)",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "Exempt from fixed charges",
+      "executive": "NEPRA Lifeline"
+    },
+    {
+      "serviceEn": "Non-Protected (101–200 Units)",
+      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+      "normal": "Rs. 22.95 / unit",
+      "urgent": "Fuel Adjustment applies",
+      "executive": "Single Phase"
+    },
+    {
+      "serviceEn": "Unprotected (201–300 Units)",
+      "serviceUr": "201 تا 300 یونٹ سلیب",
+      "normal": "Rs. 27.14 / unit",
+      "urgent": "FPA + GST + TV Fee",
+      "executive": "Standard"
+    },
+    {
+      "serviceEn": "301–700 Units Slab",
+      "serviceUr": "301 تا 700 یونٹ سلیب",
+      "normal": "Rs. 35.24 – 42.10 / unit",
+      "urgent": "Standard Domestic",
+      "executive": "Peak Hours Extra"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit GEPCO Reference Number",
+      "titleUr": "14 ہندسوں کا گیپکو ریفرنس نمبر تلاش کریں",
+      "detailEn": "Locate the 14-digit reference number printed in the top-left box of your GEPCO bill (e.g., 12 12345 6789012).",
+      "detailUr": "اپنے گیپکو کے پرانے بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر کی تصدیق اور کاپی کریں",
+      "detailEn": "Type the digits into our format checker above and click 'Copy Number' to store it on your clipboard.",
+      "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official PITC GEPCO Gateway",
+      "titleUr": "آفیشل گیپکو پورٹل کھولیں",
+      "detailEn": "Click the gold 'OPEN GEPCO OFFICIAL BILL PORTAL' button to open the official PITC page in a new tab.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کریں تاکہ سرکاری ویب سائٹ کھل جائے۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Paste Number & Print PDF",
+      "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
+      "detailEn": "Paste your reference number into the official search field and press Search to view your complete bill with due date and barcode.",
+      "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل دیکھ کر پی ڈی ایف ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Which cities are covered under GEPCO?",
+      "questionUr": "گیپکو کن شہروں کو بجلی فراہم کرتی ہے؟",
+      "answerEn": "GEPCO provides electricity distribution to Gujranwala, Gujrat, Sialkot, Hafizabad, Narowal, and Mandi Bahauddin districts in Punjab.",
+      "answerUr": "گیپکو گوجرانوالہ، گجرات، سیالکوٹ، حافظ آباد، نارووال اور منڈی بہاؤالدین کے اضلاع کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the official GEPCO complaint helpline?",
+      "questionUr": "گیپکو کا آفیشل ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "GEPCO consumers can dial the nationwide 24/7 toll-free helpline 118 or GEPCO Head Office at 055-9200516.",
+      "answerUr": "گیپکو صارفین 24 گھنٹے 118 پر مفت کال کر سکتے ہیں یا ہیڈ آفس 055-9200516 پر رابطہ کر سکتے ہیں۔"
+    },
+    {
+      "questionEn": "How do I pay my GEPCO bill online?",
+      "questionUr": "گیپکو بل آن لائن کیسے ادا کریں؟",
+      "answerEn": "You can pay via 1Bill on mobile banking apps (JazzCash, Easypaisa, HBL, Meezan, Nayapay) using your 14-digit reference number.",
+      "answerUr": "آپ ایزی پیسہ، جاز کیش یا کسی بھی بینک ایپ پر 1Bill کے ذریعے اپنا 14 ہندسوں کا ریفرنس نمبر درج کر کے بل جمع کرا سکتے ہیں۔"
+    }
+  ],
+  "contentEn": "## GEPCO (Gujranwala Electric Power Company) Online Billing Guide 2026\nGEPCO supplies electric power to over 4 million consumers across the industrial heartland of Punjab, including Gujranwala, Sialkot, and Gujrat.\n\n### How to Retrieve Your GEPCO Duplicate Bill Online\n1. Locate your **14-Digit Reference Number** on any previous paper bill.\n2. Ensure it begins with the correct subdivision code (typically `11` or `12`).\n3. Copy the clean numeric string using our one-click validator above.\n4. Access the official PITC duplicate portal (`http://bill.pitc.com.pk/gepcobill/`) and download your print-ready PDF duplicate bill.",
+  "contentUr": "## گیپکو (گوجرانوالہ الیکٹرک پاور کمپنی) آن لائن بلنگ گائیڈ 2026\nگیپکو پنجاب کے بڑے صنعتی اضلاع گوجرانوالہ، سیالکوٹ، گجرات، نارووال اور حافظ آباد کو بجلی فراہم کرتی ہے۔\n\nآن لائن ڈپلیکیٹ بلنگ سسٹم کی مدد سے صارفین گھر بیٹھے اپنا بجلی کا بل دیکھ سکتے ہیں اور بروقت ادائیگی کر کے لیٹ فیس سرچارج سے بچ سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/lesco-bill-check-online",
+    "/bills/fesco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "hesco-bill-check-online": {
+  "slug": "hesco-bill-check-online",
+  "fullPath": "/bills/hesco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
+  "titleUr": "حیسکو آن لائن بل چیک 2026: حیدرآباد ڈپلیکیٹ بجلی کا بل حاصل کریں",
+  "metaDescriptionEn": "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
+  "metaDescriptionUr": "حیسکو حیدرآباد، میرپورخاص، جامشورو، مٹیاری، بدین اور ٹھٹہ کا بجلی کا بل آن لائن چیک کریں اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your HESCO duplicate bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 22), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open HESCO Official Portal' to load the official PITC gateway (bill.pitc.com.pk/hescobill/) to view or print your bill.",
+  "directAnswerUr": "حیسکو بجلی کا بل آن لائن دیکھنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC HESCO Duplicate Bill Portal",
+    "url": "http://bill.pitc.com.pk/hescobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Lifeline (1–50 Units)",
+      "serviceUr": "لائف لائن (1 تا 50 یونٹ)",
+      "normal": "Rs. 3.95 / unit",
+      "urgent": "No fixed charges",
+      "executive": "Protected"
+    },
+    {
+      "serviceEn": "Protected (51–100 Units)",
+      "serviceUr": "پروٹیکٹڈ (51 تا 100 یونٹ)",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "FPA applies",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Non-Protected (101–200 Units)",
+      "serviceUr": "101 تا 200 یونٹ سلیب",
+      "normal": "Rs. 22.95 / unit",
+      "urgent": "Standard charges",
+      "executive": "Single Phase"
+    },
+    {
+      "serviceEn": "201–300 Units Slab",
+      "serviceUr": "201 تا 300 یونٹ سلیب",
+      "normal": "Rs. 27.14 / unit",
+      "urgent": "Taxes & TV Fee",
+      "executive": "Standard"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit HESCO Reference Number",
+      "titleUr": "14 ہندسوں کا حیسکو ریفرنس نمبر تلاش کریں",
+      "detailEn": "Locate the 14-digit reference number printed in the top-left box of your previous HESCO electricity bill.",
+      "detailUr": "اپنے پرانے حیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Enter your reference number into our format tool and click 'Copy Number' for one-click pasting.",
+      "detailUr": "ہمارے ٹول میں نمبر درج کریں اور کاپی کا بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official HESCO Portal",
+      "titleUr": "آفیشل حیسکو پورٹل کھولیں",
+      "detailEn": "Click 'OPEN HESCO OFFICIAL BILL PORTAL' to navigate directly to http://bill.pitc.com.pk/hescobill/.",
+      "detailUr": "سرکاری پورٹل کے بٹن پر کلک کر کے PITC کی آفیشل ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "View and Save Bill PDF",
+      "titleUr": "بل دیکھیں اور پی ڈی ایف محفوظ کریں",
+      "detailEn": "Paste your reference number and click Search to display your current month bill, due date, and payable amount.",
+      "detailUr": "نمبر پیسٹ کر کے سرچ دبائیں اور اپنا مکمل بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What areas does HESCO cover in Sindh?",
+      "questionUr": "حیسکو سندھ کے کن اضلاع کو کور کرتی ہے؟",
+      "answerEn": "HESCO covers 12 districts in southern and central Sindh including Hyderabad, Jamshoro, Matiari, Tando Allahyar, Tando Muhammad Khan, Mirpurkhas, Thatta, Badin, Sajawal, and Nawabshah.",
+      "answerUr": "حیسکو حیدرآباد، جامشورو، مٹیاری، ٹنڈو الہ یار، ٹنڈو محمد خان، میرپورخاص، ٹھٹہ، بدین اور نوابشاہ کے اضلاع کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the HESCO customer emergency helpline?",
+      "questionUr": "حیسکو کا ایمرجنسی ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "You can report outages or billing disputes 24/7 by calling 118 or the HESCO helpline at 022-9260161.",
+      "answerUr": "بجلی کی بندش یا بل کے مسائل کے لیے 118 پر کال کریں یا حیسکو ہیلپ لائن 022-9260161 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## HESCO (Hyderabad Electric Supply Company) Duplicate Bill Guide 2026\nHESCO distributes electricity across southern Sindh districts. Consumers can easily download and print duplicate bills through official PITC servers without visiting customer care centers.",
+  "contentUr": "## حیسکو (حیدرآباد الیکٹرک سپلائی کمپنی) آن لائن بلنگ رہنمائی 2026\nحیسکو سندھ کے 12 اضلاع کو بجلی فراہم کرتی ہے۔ صارفین پی آئی ٹی سی کے آفیشل پورٹل سے اپنا بل آن لائن حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/sepco-bill-check-online",
+    "/bills/k-electric-duplicate-bill",
+    "/bills/wapda-bill-complaint-number"
+  ]
+},
+  "sepco-bill-check-online": {
+  "slug": "sepco-bill-check-online",
+  "fullPath": "/bills/sepco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "SEPCO Bill Check Online 2026: Sukkur Electric Duplicate Bill PDF",
+  "titleUr": "سیپکو آن لائن بل چیک 2026: سکھر الیکٹرک ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your SEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, and Jacobabad.",
+  "metaDescriptionUr": "سیپکو سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور اور جیکب آباد کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف حاصل کریں۔",
+  "directAnswerEn": "To check your SEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 25 for Sukkur division), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open SEPCO Official Portal' to open http://bill.pitc.com.pk/sepcobill/ and print your bill.",
+  "directAnswerUr": "سیپکو کا بل آن لائن چیک کرنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر درج کریں، کاپی کریں اور آفیشل پورٹل بٹن پر کلک کر کے اصل بل دیکھیں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC SEPCO Duplicate Bill Portal",
+    "url": "http://bill.pitc.com.pk/sepcobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Protected (1–100 Units)",
+      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "NEPRA Lifeline",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Non-Protected (101–200 Units)",
+      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+      "normal": "Rs. 22.95 / unit",
+      "urgent": "Fuel Adjustment",
+      "executive": "Single Phase"
+    },
+    {
+      "serviceEn": "Commercial Single Phase",
+      "serviceUr": "کمرشل سنگل فیز",
+      "normal": "Rs. 38.50 – 44.20 / unit",
+      "urgent": "Sales Tax Applies",
+      "executive": "A-2 Tariff"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit SEPCO Reference Number",
+      "titleUr": "14 ہندسوں کا سیپکو ریفرنس نمبر لیں",
+      "detailEn": "Check the upper left portion of your previous SEPCO paper bill for your 14-digit reference number.",
+      "detailUr": "اپنے پرانے سیپکو بل کے اوپر بائیں خانے میں لکھا 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate Format and Copy",
+      "titleUr": "فارمیٹ چیک کر کے کاپی کریں",
+      "detailEn": "Ensure exact 14 digits and click 'Copy Number' to keep it ready.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official PITC SEPCO Gateway",
+      "titleUr": "آفیشل سیپکو پورٹل پر جائیں",
+      "detailEn": "Click 'OPEN SEPCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/sepcobill/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ کھولیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Search and Download PDF",
+      "titleUr": "سرچ کر کے پی ڈی ایف بل حاصل کریں",
+      "detailEn": "Paste your reference number into the official box and click Search to retrieve your full duplicate bill.",
+      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل پرنٹ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What regions are under SEPCO jurisdiction?",
+      "questionUr": "سیپکو کے دائرہ اختیار میں کون سے اضلاع شامل ہیں؟",
+      "answerEn": "SEPCO covers northern Sindh districts including Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, Jacobabad, Kashmore, Naushahro Feroze, and Kamber-Shahdadkot.",
+      "answerUr": "سیپکو شمالی سندھ کے اضلاع سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور، جیکب آباد، کشمور اور نوشہرو فیروز کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the SEPCO helpline for power breakdowns?",
+      "questionUr": "سیپکو کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "SEPCO consumers can call the 24/7 universal helpline 118 or SEPCO complaint cell at 071-9310795.",
+      "answerUr": "شکایات اور خرابی کی اطلاع کے لیے 118 یا سیپکو ہیلپ لائن 071-9310795 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## SEPCO (Sukkur Electric Power Company) Duplicate Bill Guide 2026\nSEPCO serves upper Sindh. Get full duplicate bill access directly via official government gateways.",
+  "contentUr": "## سیپکو (سکھر الیکٹرک پاور کمپنی) آن لائن بلنگ معلومات 2026\nسیپکو شمالی سندھ کے صارفین کو ڈپلیکیٹ بلنگ اور کسٹمر کیئر فراہم کرتی ہے۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/hesco-bill-check-online",
+    "/bills/mepco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "pesco-bill-check-online": {
+  "slug": "pesco-bill-check-online",
+  "fullPath": "/bills/pesco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "PESCO Bill Check Online 2026: Peshawar Electric Duplicate Bill PDF",
+  "titleUr": "پیسکو آن لائن بل چیک 2026: پشاور الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your PESCO electricity duplicate bill online using 14-digit Reference Number. Covers Peshawar, Mardan, Swat, Abbottabad, Bannu, and D.I. Khan.",
+  "metaDescriptionUr": "پیسکو پشاور، مردان، سوات، ایبٹ آباد، بنوں اور ڈی آئی خان کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your PESCO duplicate electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 08 for KPK zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open PESCO Official Portal' to access the official PITC gateway (bill.pitc.com.pk/pescobill/) to view or print your PDF bill.",
+  "directAnswerUr": "پیسکو بجلی کا بل آن لائن حاصل کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC PESCO Duplicate Bill Gateway",
+    "url": "http://bill.pitc.com.pk/pescobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Protected (1–100 Units)",
+      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "Lifeline Subsidy",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Non-Protected (101–200 Units)",
+      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+      "normal": "Rs. 22.95 / unit",
+      "urgent": "FPA applies",
+      "executive": "Standard"
+    },
+    {
+      "serviceEn": "201–300 Units Slab",
+      "serviceUr": "201 تا 300 یونٹ",
+      "normal": "Rs. 27.14 / unit",
+      "urgent": "Taxes & TV Fee",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial A-2",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Rs. 39.20 – 45.00 / unit",
+      "urgent": "Sales Tax applies",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit PESCO Reference Number",
+      "titleUr": "14 ہندسوں کا پیسکو ریفرنس نمبر تلاش کریں",
+      "detailEn": "Locate the 14-digit reference number printed in the top-left section of your PESCO paper bill.",
+      "detailUr": "اپنے پیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Enter your reference number into our validator and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں نمبر درج کر کے فارمیٹ چیک کریں اور کاپی کا بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official PITC PESCO Portal",
+      "titleUr": "آفیشل پیسکو پورٹل کھولیں",
+      "detailEn": "Click the gold button 'OPEN PESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/pescobill/.",
+      "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Paste & Print Duplicate Bill",
+      "titleUr": "نمبر پیسٹ کر کے بل پرنٹ کریں",
+      "detailEn": "Paste your reference number in the official search box and click Search to view, print, or download your PDF bill.",
+      "detailUr": "سرکاری پورٹل پر نمبر پیسٹ کریں اور بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Which areas are served by PESCO in Khyber Pakhtunkhwa?",
+      "questionUr": "پیسکو خیبر پختونخوا کے کن اضلاع کو بجلی فراہم کرتی ہے؟",
+      "answerEn": "PESCO supplies electricity across most of KPK, including Peshawar, Mardan, Swat, Swabi, Nowshera, Charsadda, Abbottabad, Haripur, Mansehra, Kohat, Karak, Bannu, Lakki Marwat, and D.I. Khan.",
+      "answerUr": "پیسکو پشاور، مردان، سوات، صوابی، نوشہرہ، چارسدہ، ایبٹ آباد، ہری پور، مانسہرہ، کوہاٹ، بنوں اور ڈی آئی خان سمیت بیشتر کے پی کے کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the PESCO emergency complaint number?",
+      "questionUr": "پیسکو کا ایمرجنسی شکایت نمبر کیا ہے؟",
+      "answerEn": "Dial 118 (toll-free 24/7) or PESCO central complaint cell at 091-9212010 or 091-9212028.",
+      "answerUr": "کسی بھی شکایت کے لیے 118 پر کال کریں یا پیسکو شکایات سیل 091-9212010 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## PESCO (Peshawar Electric Supply Company) Duplicate Bill Guide 2026\nPESCO is the primary power utility for Khyber Pakhtunkhwa serving millions of consumers across valleys and urban centers.\n\nUse our one-click format validator and direct deep-link to the official PITC gateway to view and print your duplicate bill without delays.",
+  "contentUr": "## پیسکو (پشاور الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nپیسکو خیبر پختونخوا کا سب سے بڑا بجلی کا ادارہ ہے۔ آفیشل پورٹل کے ذریعے صارفین اپنا ڈپلیکیٹ بل حاصل کر کے آن لائن جمع کروا سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/tesco-bill-check-online",
+    "/bills/hazeco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "qesco-bill-check-online": {
+  "slug": "qesco-bill-check-online",
+  "fullPath": "/bills/qesco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "QESCO Bill Check Online 2026: Quetta Electric Duplicate Bill PDF",
+  "titleUr": "کیسکو آن لائن بل چیک 2026: کوئٹہ الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your QESCO electricity bill online using 14-digit Reference Number. Covers Quetta, Gwadar, Khuzdar, Chaman, Sibi, Loralai, and all Balochistan.",
+  "metaDescriptionUr": "کیسکو کوئٹہ، گوادر، خضدار، چمن، سبی اور پورے بلوچستان کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your QESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 26 for Balochistan zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open QESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/qescobill/) to view or print your PDF bill.",
+  "directAnswerUr": "کیسکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC QESCO Duplicate Bill Gateway",
+    "url": "http://bill.pitc.com.pk/qescobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Protected (1–100 Units)",
+      "serviceUr": "پروٹیکٹڈ (1 تا 100 یونٹ)",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "Lifeline Subsidy",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Non-Protected (101–200 Units)",
+      "serviceUr": "نان پروٹیکٹڈ (101 تا 200 یونٹ)",
+      "normal": "Rs. 22.95 / unit",
+      "urgent": "Fuel Adjustment",
+      "executive": "Standard"
+    },
+    {
+      "serviceEn": "Agriculture Tube-well Tariff",
+      "serviceUr": "زرعی ٹیوب ویل ٹیرف",
+      "normal": "Subsidized Flat Rate",
+      "urgent": "Govt of Balochistan Relief",
+      "executive": "D-Tariff"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit QESCO Reference Number",
+      "titleUr": "14 ہندسوں کا کیسکو ریفرنس نمبر تلاش کریں",
+      "detailEn": "Check the top-left corner of your QESCO paper bill for your 14-digit reference number.",
+      "detailUr": "اپنے پرانے کیسکو بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Validate the format in our browser tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official PITC QESCO Portal",
+      "titleUr": "آفیشل کیسکو پورٹل پر جائیں",
+      "detailEn": "Click 'OPEN QESCO OFFICIAL BILL PORTAL' to reach http://bill.pitc.com.pk/qescobill/.",
+      "detailUr": "آفیشل پورٹل کے بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "View and Print Duplicate Bill",
+      "titleUr": "بل دیکھیں اور پرنٹ کریں",
+      "detailEn": "Paste your reference number into the official search field and click Search to retrieve your bill.",
+      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What areas are covered by QESCO?",
+      "questionUr": "کیسکو کن علاقوں کو کور کرتی ہے؟",
+      "answerEn": "QESCO covers the entire province of Balochistan (except Lasbela/Hub which are supplied by K-Electric), covering Quetta, Gwadar, Turbat, Khuzdar, Chaman, Sibi, Zhob, Loralai, Pishin, and Mastung.",
+      "answerUr": "کیسکو پورے صوبہ بلوچستان (سوائے لسبیلہ و حب جو کے الیکٹرک کے پاس ہیں) بشمول کوئٹہ، گوادر، تربت، خضدار، چمن اور ژوب کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the QESCO 24/7 complaint contact?",
+      "questionUr": "کیسکو کا شکایات نمبر کیا ہے؟",
+      "answerEn": "Consumers can dial 118 or contact QESCO central control room at 081-9202211 / 081-9201445.",
+      "answerUr": "شکایات کے لیے 118 یا کیسکو کنٹرول روم 081-9202211 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## QESCO (Quetta Electric Supply Company) Duplicate Bill Guide 2026\nQESCO manages power distribution across the largest geographic territory in Pakistan, serving all regions of Balochistan.\n\nVerify your reference number and use official government portals to print duplicate bills quickly.",
+  "contentUr": "## کیسکو (کوئٹہ الیکٹرک سپلائی کمپنی) آن لائن بلنگ گائیڈ 2026\nکیسکو پورے بلوچستان کو بجلی فراہم کرنے والا ادارہ ہے۔ سرکاری پورٹل سے باآسانی ڈپلیکیٹ بل دیکھا جا سکتا ہے۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/mepco-bill-check-online",
+    "/bills/hesco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "tesco-bill-check-online": {
+  "slug": "tesco-bill-check-online",
+  "fullPath": "/bills/tesco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "TESCO Bill Check Online 2026: Tribal Electric Supply Duplicate Bill PDF",
+  "titleUr": "ٹیسکو آن لائن بل چیک 2026: قبائلی اضلاع ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your TESCO duplicate electricity bill online using 14-digit Reference Number. Covers former FATA, Khyber, Bajaur, Kurram, Mohmand, and Waziristan.",
+  "metaDescriptionUr": "ٹیسکو قبائلی اضلاع (خیبر، باجوڑ، کرم، مہمند، وزیرستان) کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your TESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 09 for tribal districts), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open TESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/tescobill/) to view or print your PDF duplicate bill.",
+  "directAnswerUr": "ٹیسکو بجلی کا بل چیک کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر درج کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "PITC TESCO Duplicate Bill Gateway",
+    "url": "http://bill.pitc.com.pk/tescobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Protected",
+      "serviceUr": "گھریلو پروٹیکٹڈ",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "Special Tribal Subsidy",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Domestic Unprotected",
+      "serviceUr": "گھریلو نان پروٹیکٹڈ",
+      "normal": "Rs. 22.95 – 27.14 / unit",
+      "urgent": "NEPRA Uniform Tariff",
+      "executive": "Standard"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit TESCO Reference Number",
+      "titleUr": "14 ہندسوں کا ٹیسکو ریفرنس نمبر لیں",
+      "detailEn": "Check the top-left box on your physical TESCO bill for your 14-digit reference number.",
+      "detailUr": "اپنے پرانے ٹیسکو بل کے اوپر بائیں کونے میں درج 14 ہندسوں کا ریفرنس نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Confirm 14 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official PITC TESCO Portal",
+      "titleUr": "آفیشل ٹیسکو پورٹل کھولیں",
+      "detailEn": "Click 'OPEN TESCO OFFICIAL BILL PORTAL' to navigate to http://bill.pitc.com.pk/tescobill/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "View and Print Bill",
+      "titleUr": "بل دیکھیں اور پرنٹ کریں",
+      "detailEn": "Paste your reference number into the search field to retrieve your bill.",
+      "detailUr": "نمبر پیسٹ کر کے سرچ کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What areas are served by TESCO?",
+      "questionUr": "ٹیسکو کن علاقوں کو بجلی فراہم کرتی ہے؟",
+      "answerEn": "TESCO serves the merged tribal districts of Khyber Pakhtunkhwa (former FATA), including Khyber, Mohmand, Bajaur, Kurram, Orakzai, North Waziristan, and South Waziristan.",
+      "answerUr": "ٹیسکو سابقہ فاٹا اور ضم شدہ قبائلی اضلاع بشمول خیبر، مہمند، باجوڑ، کرم، اورکزئی، شمالی و جنوبی وزیرستان کو بجلی فراہم کرتی ہے۔"
+    },
+    {
+      "questionEn": "What is the TESCO customer helpline?",
+      "questionUr": "ٹیسکو کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Dial 118 or TESCO head office at 091-9212964.",
+      "answerUr": "شکایات کے لیے 118 یا ٹیسکو ہیڈ آفس 091-9212964 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## TESCO (Tribal Electric Supply Company) Duplicate Bill Guide 2026\nTESCO delivers electricity to the merged tribal districts of KPK with online billing supported directly on the PITC gateway.",
+  "contentUr": "## ٹیسکو (قبائلی الیکٹرک سپلائی کمپنی) آن لائن بلنگ معلومات 2026\nٹیسکو قبائلی اضلاع کے صارفین کو بجلی اور ڈپلیکیٹ بلنگ کی سہولت فراہم کرتی ہے۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/pesco-bill-check-online",
+    "/bills/wapda-bill-complaint-number",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "hazeco-bill-check-online": {
+  "slug": "hazeco-bill-check-online",
+  "fullPath": "/bills/hazeco-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
+  "titleUr": "ہیزیکو ہزارہ الیکٹرک سپلائی گائیڈ 2026: بلنگ طریقہ کار اور ہیلپ لائن",
+  "metaDescriptionEn": "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
+  "metaDescriptionUr": "ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) ایبٹ آباد، مانسہرہ، ہری پور، بٹگرام اور کوہستان کی بلنگ معلومات اور ہیلپ لائن گائیڈ۔",
+  "directAnswerEn": "HAZECO (Hazara Electric Supply Company) is the dedicated distribution company for Hazara Division. During the administrative operational transition from PESCO, active consumer billing and duplicate bills continue to be processed through the PESCO PITC billing portal (bill.pitc.com.pk/pescobill/) using your existing 14-digit reference number. Emergency helpline is 118.",
+  "directAnswerUr": "ہیزیکو ہزارہ ڈویژن کی نئی بجلی کمپنی ہے۔ عبوری دور میں تمام صارفین کے بل پیسکو پی آئی ٹی سی پورٹل کے ذریعے ہی دیکھے اور ادا کیے جاتے ہیں۔ ایمرجنسی کے لیے 118 ڈائل کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "Ministry of Energy & PESCO Gateway",
+    "url": "http://bill.pitc.com.pk/pescobill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Lifeline",
+      "serviceUr": "گھریلو لائف لائن",
+      "normal": "Rs. 7.74 / unit",
+      "urgent": "Protected",
+      "executive": "Uniform Tariff"
+    },
+    {
+      "serviceEn": "Standard Domestic",
+      "serviceUr": "اسٹینڈرڈ گھریلو",
+      "normal": "Rs. 22.95 – 27.14 / unit",
+      "urgent": "FPA applies",
+      "executive": "Single Phase"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Check Your 14-Digit Hazara Consumer Number",
+      "titleUr": "اپنا 14 ہندسوں کا کنزیومر نمبر دیکھیں",
+      "detailEn": "Locate the 14-digit reference number on your Hazara division electricity bill.",
+      "detailUr": "اپنے بل کے اوپر بائیں خانے میں درج 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Access PESCO/HAZECO PITC Gateway",
+      "titleUr": "پیسکو/ہیزیکو گیٹ وے پر جائیں",
+      "detailEn": "Navigate to the official PITC duplicate bill page (bill.pitc.com.pk/pescobill/) which services active Hazara division feeders.",
+      "detailUr": "پی آئی ٹی سی کے آفیشل پیسکو پورٹل پر جائیں جو ہزارہ فیڈرز کو سروس فراہم کرتا ہے۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "View and Pay via 1Bill",
+      "titleUr": "بل دیکھیں اور 1Bill سے ادا کریں",
+      "detailEn": "Enter your reference number to check dues and pay via mobile banking or ATM.",
+      "detailUr": "نمبر درج کر کے بل دیکھیں اور آن لائن بینکنگ سے جمع کروائیں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Which districts fall under HAZECO?",
+      "questionUr": "ہیزیکو کے دائرہ کار میں کون سے اضلاع آتے ہیں؟",
+      "answerEn": "HAZECO covers the entire Hazara division comprising Abbottabad, Haripur, Mansehra, Battagram, Torghar, Upper Kohistan, Lower Kohistan, and Kolai-Palas.",
+      "answerUr": "ہیزیکو کے دائرہ کار میں ایبٹ آباد، ہری پور، مانسہرہ، بٹگرام، تورغر، اپر کوہستان، لوئر کوہستان اور کولئی پالس شامل ہیں۔"
+    },
+    {
+      "questionEn": "How do Hazara consumers report power outages?",
+      "questionUr": "ہزارہ کے صارفین بجلی بندش کی شکایت کہاں درج کروائیں؟",
+      "answerEn": "Call the 24/7 universal toll-free electricity helpline 118 or the Hazara regional control center at 0992-9310120.",
+      "answerUr": "24 گھنٹے فعال ہیلپ لائن 118 پر کال کریں یا علاقائی کنٹرول روم 0992-9310120 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## HAZECO (Hazara Electric Supply Company) Operations & Billing Guide 2026\nHAZECO was established to decentralize power distribution in Khyber Pakhtunkhwa's Hazara Division.\n\nUntil billing database bifurcation is fully completed, duplicate bills are managed through the centralized PITC PESCO infrastructure.",
+  "contentUr": "## ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) آپریشنز اور بلنگ گائیڈ 2026\nہیزیکو ہزارہ ڈویژن کے اضلاع کے لیے قائم کی گئی ہے۔ تمام بلنگ ریکارڈز پی آئی ٹی سی پر دستیاب ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/pesco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "ajk-electric-bill-check-online": {
+  "slug": "ajk-electric-bill-check-online",
+  "fullPath": "/bills/ajk-electric-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "AJK Electricity Bill Online Guide 2026: Azad Kashmir Duplicate Bill & Rates",
+  "titleUr": "آزاد کشمیر بجلی بل آن لائن گائیڈ 2026: محکمہ برقیات آزاد کشمیر ڈپلیکیٹ بل",
+  "metaDescriptionEn": "Check your AJK Electricity Department bill online. Tariff rates, 14-digit Account Number, Muzaffarabad, Mirpur, Kotli, Rawalakot, and helpline contacts.",
+  "metaDescriptionUr": "محکمہ برقیات آزاد کشمیر کا بجلی کا بل، مظفرآباد، میرپور، کوٹلی، راولاکوٹ ٹیرف اور ڈپلیکیٹ بلنگ معلومات۔",
+  "directAnswerEn": "To check your Azad Jammu & Kashmir electricity bill online: (1) Find the 14-digit Account Number on your AJK Electricity Department bill, (2) Validate the format in our tool, and (3) Click 'Open AJK Official Portal' to visit www.ajkelectricity.gov.pk. You can also pay via 1Link banking apps or Bank of AJK branches.",
+  "directAnswerUr": "آزاد کشمیر بجلی کا بل دیکھنے کے لیے اپنے بل سے 14 ہندسوں کا اکاؤنٹ نمبر لیں، ہمارے ٹول میں چیک کریں اور آفیشل پورٹل (ajkelectricity.gov.pk) پر جائیں۔ بل بینک آف آزاد کشمیر یا موبائل ایپ سے ادا کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "AJK Electricity Department Official Portal",
+    "url": "https://www.ajkelectricity.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Protected (1–100 Units)",
+      "serviceUr": "گھریلو پروٹیکٹڈ (1 تا 100 یونٹ)",
+      "normal": "Subsidized AJK Rate",
+      "urgent": "AJK Govt Relief",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Domestic (101–300 Units)",
+      "serviceUr": "گھریلو (101 تا 300 یونٹ)",
+      "normal": "Subsidized Slab",
+      "urgent": "Hydel Power Relief",
+      "executive": "Standard"
+    },
+    {
+      "serviceEn": "Commercial & Industrial",
+      "serviceUr": "کمرشل و صنعتی",
+      "normal": "Special AJK Commercial",
+      "urgent": "Peak Hours",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 14-Digit AJK Account Number",
+      "titleUr": "14 ہندسوں کا اے جے کے اکاؤنٹ نمبر تلاش کریں",
+      "detailEn": "Check the top section of your previous paper bill for the 14-digit Account / Consumer ID.",
+      "detailUr": "اپنے پرانے کاغذی بل کے اوپر 'Account No' میں درج 14 ہندسوں کا نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Use our format tool to ensure clean digits and copy to clipboard.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Access Official AJK Electricity Portal",
+      "titleUr": "آفیشل اے جے کے پورٹل پر جائیں",
+      "detailEn": "Click 'OPEN AJK-ELECTRIC OFFICIAL BILL PORTAL' to visit https://www.ajkelectricity.gov.pk/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Pay Bill Online or at Bank",
+      "titleUr": "آن لائن یا بینک میں ادائیگی کریں",
+      "detailEn": "Pay through Bank of Azad Jammu & Kashmir, 1Link mobile banking, or post office counters.",
+      "detailUr": "بینک آف آزاد کشمیر، موبائل بینکنگ یا ڈاکخانے میں بل ادا کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Which districts are covered by AJK Electricity Department?",
+      "questionUr": "محکمہ برقیات آزاد کشمیر کن اضلاع کو کور کرتا ہے؟",
+      "answerEn": "AJK Electricity Department covers all 10 districts of Azad Kashmir: Muzaffarabad, Mirpur, Kotli, Bhimber, Bagh, Rawalakot (Poonch), Haveli, Sudhnoti, Neelum, and Jhelum Valley (Hattian Bala).",
+      "answerUr": "محکمہ برقیات آزاد کشمیر کے تمام 10 اضلاع بشمول مظفرآباد، میرپور، کوٹلی، بھمبر، باغ، راولاکوٹ، حویلی، سدھنوتی، نیلم اور جہلم ویلی کو کور کرتا ہے۔"
+    },
+    {
+      "questionEn": "What is the AJK Electricity Department helpline?",
+      "questionUr": "محکمہ برقیات آزاد کشمیر کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Contact the AJK Electricity central office at 05822-921004 / 05822-921005 or dial 118.",
+      "answerUr": "محکمہ برقیات کے مرکزی دفتر 05822-921004 یا 118 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nAJKED oversees power transmission, distribution, and tariff concessions for Azad Kashmir residents.",
+  "contentUr": "## محکمہ برقیات آزاد جموں و کشمیر بلنگ معلومات 2026\nمحکمہ برقیات آزاد کشمیر کے تمام اضلاع میں بجلی کی ترسیل اور بلنگ کا ذمہ دار ہے۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/iesco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "gb-electric-bill-guide": {
+  "slug": "gb-electric-bill-guide",
+  "fullPath": "/bills/gb-electric-bill-guide",
+  "categoryId": "bills",
+  "titleEn": "Gilgit-Baltistan Electricity Bill Guide 2026: Water & Power Dept GB Billing & Contacts",
+  "titleUr": "گلگت بلتستان بجلی بل گائیڈ 2026: محکمہ برقیات و آبپاشی جی بی",
+  "metaDescriptionEn": "Official guide for Gilgit-Baltistan electricity consumers: Water & Power Department GB billing procedures, Gilgit, Skardu, Hunza, Diamer, tariffs, and helplines.",
+  "metaDescriptionUr": "گلگت بلتستان کے صارفین کے لیے بجلی بلنگ طریقہ کار، گلگت، سکردو، ہنزہ، دیامر ٹیرف، بینک ادائیگی اور ہیلپ لائن ڈائریکٹری۔",
+  "directAnswerEn": "Electricity in Gilgit-Baltistan is managed directly by the Gilgit-Baltistan Water & Power Department. Due to regional decentralized hydel grids, bills are distributed physically by local revenue staff and paid at National Bank of Pakistan (NBP) branches or designated post offices. There is currently no centralized automated online duplicate bill download portal. For complaints, contact your district executive engineer or 05811-920140.",
+  "directAnswerUr": "گلگت بلتستان میں بجلی محکمہ برقیات و آبپاشی جی بی کے تحت چلتی ہے۔ لوکل ہائیڈل گرڈز کی وجہ سے بل کاغذی صورت میں ملتے ہیں اور نیشنل بینک (NBP) یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 05811-920140 پر رابطہ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "GB Water & Power Department Official",
+    "url": "https://gilgitbaltistan.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility & Energy Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Flat / Metered",
+      "serviceUr": "گھریلو فلیٹ / میٹرڈ",
+      "normal": "Subsidized GB Hydel Rate",
+      "urgent": "Local Grid Tariff",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "GB Commercial Tariff",
+      "urgent": "Monthly Fixed",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Receive Physical Bill from GB Power Dept",
+      "titleUr": "محکمہ برقیات سے کاغذی بل وصول کریں",
+      "detailEn": "Monthly electricity bills are delivered directly to premises by designated meter readers and revenue collectors.",
+      "detailUr": "ماہانہ بل مقامی میٹر ریڈر یا ریونیو عملہ گھروں تک پہنچاتا ہے۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Verify Meter Reading and Amount",
+      "titleUr": "میٹر ریڈنگ اور رقم کی تصدیق کریں",
+      "detailEn": "Match previous and present reading on your bill with your electric meter.",
+      "detailUr": "بل پر لکھی ریڈنگ اور رقم کو اپنے میٹر سے ملا کر چیک کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Pay at NBP or Post Office Counters",
+      "titleUr": "نیشنل بینک یا ڈاکخانے میں ادائیگی کریں",
+      "detailEn": "Submit payment before the printed due date at any National Bank of Pakistan (NBP) or Pakistan Post branch in your district.",
+      "detailUr": "مقررہ تاریخ سے پہلے نیشنل بینک یا قریبی ڈاکخانے میں بل جمع کروائیں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Is there an online portal to check Gilgit-Baltistan electricity bills?",
+      "questionUr": "کیا گلگت بلتستان کا بجلی کا بل آن لائن چیک ہو سکتا ہے؟",
+      "answerEn": "No. Gilgit-Baltistan operates on standalone regional hydel power stations not connected to the national CPPA-G / PITC grid, so online duplicate bill lookup is currently not operational.",
+      "answerUr": "نہیں، گلگت بلتستان کا سسٹم نیشنل گرڈ سے الگ لوکل ہائیڈل سٹیشنز پر کام کرتا ہے اس لیے مرکزی آن لائن بل پورٹل موجود نہیں ہے۔"
+    },
+    {
+      "questionEn": "What are the district contact numbers for GB electricity complaints?",
+      "questionUr": "جی بی بجلی کی شکایات کے لیے رابطہ نمبر کیا ہیں؟",
+      "answerEn": "Gilgit: 05811-920140, Skardu: 05815-920150, Hunza: 05813-920110, Diamer: 05812-920030.",
+      "answerUr": "گلگت: 05811-920140، سکردو: 05815-920150، ہنزہ: 05813-920110، دیامر: 05812-920030۔"
+    }
+  ],
+  "contentEn": "## Gilgit-Baltistan Water & Power Department Civic Guide 2026\nInformation regarding electricity supply, billing, hydel generation, and district helplines in GB.",
+  "contentUr": "## گلگت بلتستان محکمہ برقیات و آبپاشی معلوماتی گائیڈ 2026\nگلگت بلتستان میں بجلی کے بل کی ادائیگی، طریقہ کار اور ضلعی دفاتر کی معلومات۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/pesco-bill-check-online",
+    "/bills/wapda-complaint-status-tracker-2026"
+  ]
+},
+  "wasa-lahore-bill-check-online": {
+  "slug": "wasa-lahore-bill-check-online",
+  "fullPath": "/bills/wasa-lahore-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Lahore Bill Check Online 2026: Download Duplicate Water Bill PDF",
+  "titleUr": "واسا لاہور آن لائن بل چیک 2026: پانی اور سیوریج کا ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+  "metaDescriptionEn": "Check and download your WASA Lahore duplicate water bill online using 8-digit Account Number. View dues, due dates, and 1334 helpline.",
+  "metaDescriptionUr": "واسا لاہور کا پانی و سیوریج بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your WASA Lahore water bill online: (1) Find your 8-digit Account Number printed on your water bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Lahore Official Portal' to load the official Punjab government portal (duplicatebill.wasa.punjab.gov.pk) to view or print your PDF bill.",
+  "directAnswerUr": "واسا لاہور کا بل چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل واسا پورٹل (duplicatebill.wasa.punjab.gov.pk) پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Lahore Duplicate Bill Portal",
+    "url": "https://duplicatebill.wasa.punjab.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Residential 3–5 Marla",
+      "serviceUr": "رہائشی 3 تا 5 مرلہ",
+      "normal": "Fixed Monthly Tariff",
+      "urgent": "Standard Domestic",
+      "executive": "Unmetered"
+    },
+    {
+      "serviceEn": "Residential 10 Marla – 1 Kanal",
+      "serviceUr": "رہائشی 10 مرلہ تا 1 کنال",
+      "normal": "Slab Based / Metered",
+      "urgent": "Water + Sewerage",
+      "executive": "Metered"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Category Rate",
+      "urgent": "Monthly Fixed",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 8-Digit WASA Account Number",
+      "titleUr": "8 ہندسوں کا واسا اکاؤنٹ نمبر تلاش کریں",
+      "detailEn": "Locate the 8-digit Account Number ('کھاتہ نمبر') on your previous Lahore water bill.",
+      "detailUr": "اپنے کاغذی بل پر 'اکاؤنٹ نمبر' یا 'کھاتہ نمبر' میں لکھا 8 ہندسوں کا نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Enter your 8 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں نمبر چیک کر کے کاپی کا بٹن دبائیں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official WASA Lahore Portal",
+      "titleUr": "آفیشل واسا لاہور پورٹل کھولیں",
+      "detailEn": "Click 'OPEN WASA Lahore OFFICIAL BILL PORTAL' to reach https://duplicatebill.wasa.punjab.gov.pk/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Download and Print Bill",
+      "titleUr": "بل ڈاؤن لوڈ اور پرنٹ کریں",
+      "detailEn": "Paste your 8-digit account number and click Submit to display your full duplicate bill.",
+      "detailUr": "اکاؤنٹ نمبر درج کریں اور سبمٹ کر کے بل حاصل کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Lahore customer helpline?",
+      "questionUr": "واسا لاہور کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "WASA Lahore operates a 24/7 toll-free helpline at 1334 for water contamination, low pressure, drainage, and billing complaints.",
+      "answerUr": "پانی کی بندش، پریشر یا سیوریج کے مسائل کے لیے 24 گھنٹے 1334 پر کال کریں۔"
+    },
+    {
+      "questionEn": "Can I pay WASA Lahore bills through mobile banking apps?",
+      "questionUr": "کیا واسا لاہور کا بل موبائل ایپ سے جمع ہو سکتا ہے؟",
+      "answerEn": "Yes. WASA Lahore bills can be paid via 1Bill / 1Link on JazzCash, Easypaisa, Nayapay, SadaPay, and all Pakistani bank apps using your 8-digit consumer number.",
+      "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا بینکنگ ایپ پر 1Bill کے ذریعے اپنا 8 ہندسوں کا اکاؤنٹ نمبر لکھ کر بل ادا کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Lahore (Water & Sanitation Agency) Online Duplicate Bill Guide 2026\nWASA Lahore supplies clean drinking water and sewerage services to the Lahore metropolitan district.",
+  "contentUr": "## واسا لاہور (واٹر اینڈ سینی ٹیشن ایجنسی) آن لائن بلنگ گائیڈ 2026\nلاہور کے شہری باآسانی اپنا پانی کا بل آن لائن دیکھ سکتے ہیں اور ڈپلیکیٹ کاپی حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/lesco-bill-check-online",
+    "/bills/wasa-faisalabad-bill-check-online"
+  ]
+},
+  "wasa-faisalabad-bill-check-online": {
+  "slug": "wasa-faisalabad-bill-check-online",
+  "fullPath": "/bills/wasa-faisalabad-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill",
+  "titleUr": "واسا فیصل آباد آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+  "metaDescriptionEn": "Check and download your WASA Faisalabad duplicate water bill online using 12-digit Consumer ID. Official portal link, due dates, and 1334 helpline.",
+  "metaDescriptionUr": "واسا فیصل آباد کا پانی و سیوریج کا بل 12 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your WASA Faisalabad water bill online: (1) Find the 12-digit Consumer ID on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Faisalabad Official Portal' to access http://faisalabadwasa.gop.pk/duplicatebill.aspx and download your duplicate bill.",
+  "directAnswerUr": "واسا فیصل آباد کا بل دیکھنے کے لیے اپنے بل سے 12 ہندسوں کا کنزیومر آئی ڈی لیں، کاپی کریں اور آفیشل واسا فیصل آباد پورٹل سے بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Faisalabad Official Portal",
+    "url": "http://faisalabadwasa.gop.pk/duplicatebill.aspx"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Domestic Water",
+      "serviceUr": "گھریلو پانی کنکشن",
+      "normal": "Fixed Monthly Slab",
+      "urgent": "Plot Size Dependent",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial / Industrial",
+      "serviceUr": "کمرشل / صنعتی",
+      "normal": "Commercial Tariff",
+      "urgent": "Water + Sewerage",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Locate 12-Digit Consumer ID",
+      "titleUr": "12 ہندسوں کا کنزیومر آئی ڈی دیکھیں",
+      "detailEn": "Find the 12-digit Consumer ID printed at the top-center of your Faisalabad water bill.",
+      "detailUr": "اپنے فیصل آباد واسا بل کے اوپر درمیان میں درج 12 ہندسوں کا کنزیومر آئی ڈی دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Validate 12 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open WASA Faisalabad Portal",
+      "titleUr": "واسا فیصل آباد پورٹل کھولیں",
+      "detailEn": "Click 'OPEN WASA Faisalabad OFFICIAL BILL PORTAL' to reach http://faisalabadwasa.gop.pk/duplicatebill.aspx.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Retrieve Duplicate Bill",
+      "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
+      "detailEn": "Paste your Consumer ID and click Search to display your bill.",
+      "detailUr": "کنزیومر آئی ڈی درج کر کے بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Faisalabad emergency complaint helpline?",
+      "questionUr": "واسا فیصل آباد کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Call universal helpline 1334 or WASA Faisalabad complaint desk at 041-9210049.",
+      "answerUr": "شکایات کے لیے 1334 یا واسا فیصل آباد 041-9210049 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Faisalabad Duplicate Water Bill Guide 2026\nWASA Faisalabad provides municipal water supply and drainage across Faisalabad city.",
+  "contentUr": "## واسا فیصل آباد آن لائن واٹر بل رہنمائی 2026\nفیصل آباد کے شہری آسانی سے اپنا پانی کا ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/fesco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "wasa-rawalpindi-bill-check-online": {
+  "slug": "wasa-rawalpindi-bill-check-online",
+  "fullPath": "/bills/wasa-rawalpindi-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates",
+  "titleUr": "واسا راولپنڈی آن لائن بل 2026: راولپنڈی واٹر بل اور ڈپلیکیٹ کاپی",
+  "metaDescriptionEn": "Check WASA Rawalpindi water and sewerage bill online with 10-digit Consumer Number. Official portal links, tariff slabs, and 1334 helpline.",
+  "metaDescriptionUr": "واسا راولپنڈی کا پانی اور سیوریج بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور معلومات حاصل کریں۔",
+  "directAnswerEn": "To check your WASA Rawalpindi water bill: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the format in our browser tool, and (3) Click 'Open WASA Rawalpindi Official Portal' to visit https://wasa.rawalpindi.gop.pk/ to check dues or download your duplicate bill. For complaints, dial 1334 or 051-5555498.",
+  "directAnswerUr": "واسا راولپنڈی کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، ہمارے ٹول میں چیک کر کے آفیشل پورٹل (wasa.rawalpindi.gop.pk) پر جائیں۔ ہیلپ لائن 1334 ہے۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Rawalpindi Official Portal",
+    "url": "https://wasa.rawalpindi.gop.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Domestic Water",
+      "serviceUr": "گھریلو پانی",
+      "normal": "Fixed Monthly Tariff",
+      "urgent": "Standard Domestic",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Slab",
+      "urgent": "Water + Sewerage",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 10-Digit Consumer Number",
+      "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
+      "detailEn": "Locate the 10-digit Consumer Number in the top-left box of your Rawalpindi water bill.",
+      "detailUr": "اپنے راولپنڈی واٹر بل پر لکھا 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open WASA Rawalpindi Portal",
+      "titleUr": "واسا راولپنڈی پورٹل پر جائیں",
+      "detailEn": "Click 'OPEN WASA Rawalpindi OFFICIAL BILL PORTAL' to reach https://wasa.rawalpindi.gop.pk/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Pay Bill Online",
+      "titleUr": "آن لائن بل ادا کریں",
+      "detailEn": "Pay via 1Bill on mobile banking apps using your 10-digit consumer ID.",
+      "detailUr": "بینکنگ ایپ یا ایزی پیسہ سے 1Bill کے ذریعے بل جمع کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Rawalpindi helpline number?",
+      "questionUr": "واسا راولپنڈی کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Call 1334 (toll-free) or WASA Rawalpindi headquarters at 051-5555498.",
+      "answerUr": "شکایات کے لیے 1334 یا واسا راولپنڈی ہیڈکوارٹر 051-5555498 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Rawalpindi (Water and Sanitation Agency) Guide 2026\nWASA Rawalpindi manages clean water supply from Rawal Dam, Khanpur Dam, and municipal tube-wells.",
+  "contentUr": "## واسا راولپنڈی آن لائن بلنگ و معلومات 2026\nراولپنڈی کے شہری واسا پورٹل سے اپنے بل کی معلومات حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/iesco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "wasa-multan-bill-check-online": {
+  "slug": "wasa-multan-bill-check-online",
+  "fullPath": "/bills/wasa-multan-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF",
+  "titleUr": "واسا ملتان آن لائن بل چیک 2026: ملتان واٹر اینڈ سینی ٹیشن ڈپلیکیٹ بل",
+  "metaDescriptionEn": "Check and download your WASA Multan duplicate water bill online with 8-digit Consumer Number. Official portal links, due dates, and 1334 helpline.",
+  "metaDescriptionUr": "واسا ملتان کا پانی و سیوریج بل 8 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your WASA Multan duplicate bill online: (1) Find the 8-digit Consumer Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Multan Official Portal' to visit https://wasamultan.gop.pk/duplicatebill and view or print your PDF bill.",
+  "directAnswerUr": "واسا ملتان کا بل آن لائن چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasamultan.gop.pk/duplicatebill) سے بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Multan Duplicate Bill Portal",
+    "url": "https://wasamultan.gop.pk/duplicatebill"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Residential Water",
+      "serviceUr": "رہائشی پانی کنکشن",
+      "normal": "Fixed Monthly Slab",
+      "urgent": "Standard Domestic",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Category Rate",
+      "urgent": "Water + Sewerage",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 8-Digit Multan Account Number",
+      "titleUr": "8 ہندسوں کا ملتان اکاؤنٹ نمبر تلاش کریں",
+      "detailEn": "Check the top box of your Multan water bill for your 8-digit Account ID.",
+      "detailUr": "اپنے ملتان واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Validate 8 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open WASA Multan Portal",
+      "titleUr": "واسا ملتان پورٹل کھولیں",
+      "detailEn": "Click 'OPEN WASA Multan OFFICIAL BILL PORTAL' to reach https://wasamultan.gop.pk/duplicatebill.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Print Duplicate Bill",
+      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+      "detailEn": "Enter your 8-digit Account ID and download your duplicate bill.",
+      "detailUr": "اکاؤنٹ نمبر درج کر کے بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Multan customer helpline?",
+      "questionUr": "واسا ملتان کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Call toll-free 1334 or WASA Multan complaint center at 061-9200881.",
+      "answerUr": "شکایات کے لیے 1334 یا واسا ملتان 061-9200881 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Multan Duplicate Bill Guide 2026\nWASA Multan delivers potable water and drainage services across Multan metropolitan area.",
+  "contentUr": "## واسا ملتان آن لائن واٹر بل گائیڈ 2026\nملتان کے شہری واسا کے آفیشل پورٹل سے اپنا ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/mepco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "wasa-gujranwala-bill-check-online": {
+  "slug": "wasa-gujranwala-bill-check-online",
+  "fullPath": "/bills/wasa-gujranwala-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
+  "titleUr": "واسا گوجرانوالہ آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+  "metaDescriptionEn": "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
+  "metaDescriptionUr": "واسا گوجرانوالہ کا پانی کا بل 8 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your WASA Gujranwala water bill online: (1) Locate the 8-digit Consumer Account Number on your bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Gujranwala Official Portal' to visit https://wasag.gop.pk/duplicate-bill/ to view or print your PDF bill.",
+  "directAnswerUr": "واسا گوجرانوالہ کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasag.gop.pk/duplicate-bill/) پر جا کر بل ڈاؤن لوڈ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Gujranwala Official Portal",
+    "url": "https://wasag.gop.pk/duplicate-bill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Residential Water",
+      "serviceUr": "رہائشی پانی",
+      "normal": "Fixed Monthly Slab",
+      "urgent": "Standard Domestic",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Tariff",
+      "urgent": "Water + Sewerage",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Locate 8-Digit Consumer ID",
+      "titleUr": "8 ہندسوں کا کنزیومر آئی ڈی تلاش کریں",
+      "detailEn": "Check the top-left box of your Gujranwala water bill for your 8-digit Consumer Account No.",
+      "detailUr": "اپنے گوجرانوالہ واسا بل پر درج 8 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open WASA Gujranwala Portal",
+      "titleUr": "واسا گوجرانوالہ پورٹل کھولیں",
+      "detailEn": "Click 'OPEN WASA Gujranwala OFFICIAL BILL PORTAL' to reach https://wasag.gop.pk/duplicate-bill/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Download Duplicate Bill",
+      "titleUr": "ڈپلیکیٹ بل حاصل کریں",
+      "detailEn": "Enter your Consumer ID and print your duplicate bill.",
+      "detailUr": "کنزیومر آئی ڈی درج کر کے بل پرنٹ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Gujranwala complaint contact?",
+      "questionUr": "واسا گوجرانوالہ کا شکایت نمبر کیا ہے؟",
+      "answerEn": "Dial toll-free 1334 or contact WASA Gujranwala at 055-9200115.",
+      "answerUr": "شکایات کے لیے 1334 یا واسا گوجرانوالہ 055-9200115 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Gujranwala Duplicate Bill Guide 2026\nWASA Gujranwala provides clean drinking water and sewage disposal to Gujranwala city.",
+  "contentUr": "## واسا گوجرانوالہ آن لائن واٹر بل گائیڈ 2026\nگوجرانوالہ کے شہری آسانی سے اپنا پانی کا بل آن لائن حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/gepco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "wasa-sahiwal-bill-check-online": {
+  "slug": "wasa-sahiwal-bill-check-online",
+  "fullPath": "/bills/wasa-sahiwal-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill",
+  "titleUr": "واسا ساہیوال آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
+  "metaDescriptionEn": "Check and download your WASA Sahiwal duplicate water bill online using 8-digit Account Number. Official portal links and 1334 helpline.",
+  "metaDescriptionUr": "واسا ساہیوال کا پانی کا بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your WASA Sahiwal water bill online: (1) Find the 8-digit Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Sahiwal Official Portal' to visit https://wasasahiwal.gop.pk/ and download your duplicate bill.",
+  "directAnswerUr": "واسا ساہیوال کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasasahiwal.gop.pk) پر جا کر بل حاصل کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WASA Sahiwal Official Portal",
+    "url": "https://wasasahiwal.gop.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Residential Water",
+      "serviceUr": "رہائشی پانی",
+      "normal": "Fixed Monthly Slab",
+      "urgent": "Standard Domestic",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Tariff",
+      "urgent": "Water + Sewerage",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 8-Digit Account Number",
+      "titleUr": "8 ہندسوں کا اکاؤنٹ نمبر تلاش کریں",
+      "detailEn": "Check the upper section of your Sahiwal water bill for your 8-digit Account Number.",
+      "detailUr": "اپنے ساہیوال واسا بل پر درج 8 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Confirm 8 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open WASA Sahiwal Portal",
+      "titleUr": "واسا ساہیوال پورٹل کھولیں",
+      "detailEn": "Click 'OPEN WASA Sahiwal OFFICIAL BILL PORTAL' to reach https://wasasahiwal.gop.pk/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Print Duplicate Bill",
+      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+      "detailEn": "Enter your Account Number to view and print your bill.",
+      "detailUr": "اکاؤنٹ نمبر درج کر کے بل حاصل کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WASA Sahiwal complaint helpline?",
+      "questionUr": "واسا ساہیوال کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Dial toll-free 1334 or contact WASA Sahiwal complaint center at 040-9200142.",
+      "answerUr": "شکایات کے لیے 1334 یا واسا ساہیوال 040-9200142 پر رابطہ کریں۔"
+    }
+  ],
+  "contentEn": "## WASA Sahiwal Duplicate Bill Guide 2026\nWASA Sahiwal provides municipal water and drainage services across Sahiwal city limits.",
+  "contentUr": "## واسا ساہیوال آن لائن واٹر بل گائیڈ 2026\nساہیوال کے شہری واسا پورٹل سے ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/mepco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "wssp-peshawar-water-bill-guide": {
+  "slug": "wssp-peshawar-water-bill-guide",
+  "fullPath": "/bills/wssp-peshawar-water-bill-guide",
+  "categoryId": "bills",
+  "titleEn": "WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline",
+  "titleUr": "ڈبلیو ایس ایس پی پشاور واٹر بل گائیڈ 2026: ٹیرف، ادائیگی اور ہیلپ لائن",
+  "metaDescriptionEn": "Official guide for WSSP (Water and Sanitation Services Peshawar). Consumer billing procedures, meter tariffs, payment points at Bank of Khyber, and 1337 helpline.",
+  "metaDescriptionUr": "ڈبلیو ایس ایس پی پشاور پانی و سیوریج بل گائیڈ، ٹیرف، بینک آف خیبر میں ادائیگی اور 1337 ہیلپ لائن معلومات۔",
+  "directAnswerEn": "Water and sanitation billing in Peshawar is administered by WSSP (Water and Sanitation Services Peshawar). Bills are distributed physically to households by zonal revenue inspectors and payable at designated Bank of Khyber branches or post office counters. There is currently no automated online duplicate bill download portal. For complaints or water bowser requests, call 1337 or 091-9211960.",
+  "directAnswerUr": "پشاور میں پانی و سیوریج کے بل ڈبلیو ایس ایس پی جاری کرتی ہے۔ بل کاغذی صورت میں ملتے ہیں اور بینک آف خیبر یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 1337 یا 091-9211960 پر رابطہ کریں۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "WSSP Peshawar Official Portal",
+    "url": "https://wssp.gkp.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Domestic Water Connection",
+      "serviceUr": "گھریلو پانی کنکشن",
+      "normal": "Fixed Zonal Slab",
+      "urgent": "Peshawar Municipal",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial Connection",
+      "serviceUr": "کمرشل کنکشن",
+      "normal": "Commercial Tariff",
+      "urgent": "Water + Sanitation",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Receive Physical Bill from WSSP Zonal Office",
+      "titleUr": "ڈبلیو ایس ایس پی زونل دفتر سے بل وصول کریں",
+      "detailEn": "WSSP revenue staff distribute quarterly/monthly bills across Peshawar municipal zones.",
+      "detailUr": "ڈبلیو ایس ایس پی کا عملہ زون کے مطابق کاغذی بل تقسیم کرتا ہے۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Pay at Bank of Khyber or Post Office",
+      "titleUr": "بینک آف خیبر یا ڈاکخانے میں جمع کروائیں",
+      "detailEn": "Submit bill payment at any designated Bank of Khyber branch or post office counter.",
+      "detailUr": "مقررہ تاریخ تک بینک آف خیبر یا ڈاکخانے میں بل ادا کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the WSSP Peshawar customer helpline?",
+      "questionUr": "ڈبلیو ایس ایس پی پشاور کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Call toll-free 1337 or WSSP head office at 091-9211960.",
+      "answerUr": "شکایات یا واٹر ٹینکر کے لیے 1337 یا 091-9211960 پر کال کریں۔"
+    }
+  ],
+  "contentEn": "## WSSP Peshawar (Water & Sanitation Services Peshawar) Guide 2026\nWSSP manages municipal water supply, tube-wells, and solid waste collection across Peshawar.",
+  "contentUr": "## ڈبلیو ایس ایس پی پشاور رہنمائی 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی اور صفائی کی ذمہ دار ہے۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/pesco-bill-check-online",
+    "/bills/wasa-lahore-bill-check-online"
+  ]
+},
+  "kwsc-karachi-water-bill-check": {
+  "slug": "kwsc-karachi-water-bill-check",
+  "fullPath": "/bills/kwsc-karachi-water-bill-check",
+  "categoryId": "bills",
+  "titleEn": "KWSC Karachi Water Bill Check Online 2026: Download Duplicate Bill PDF",
+  "titleUr": "کراچی واٹر بورڈ (KWSC) آن لائن بل چیک 2026: ڈپلیکیٹ واٹر بل حاصل کریں",
+  "metaDescriptionEn": "Check and download your KWSC (formerly KWSB) Karachi duplicate water bill online using 10-digit Consumer Number. Official portal links and 1339 helpline.",
+  "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) کا پانی کا بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+  "directAnswerEn": "To check your KWSC Karachi water bill online: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open KWSC Official Portal' to access https://www.kwsc.gos.pk/duplicate-bill/ and download your duplicate bill PDF. For complaints, dial 1339.",
+  "directAnswerUr": "کراچی واٹر بورڈ کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (kwsc.gos.pk/duplicate-bill) پر جا کر بل ڈاؤن لوڈ کریں۔ ہیلپ لائن 1339 ہے۔",
+  "lastVerified": "August 18, 2026",
+  "officialSource": {
+    "name": "KWSC Official Duplicate Bill Portal",
+    "url": "https://www.kwsc.gos.pk/duplicate-bill/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Water & Municipal Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Residential 60–120 Sq Yds",
+      "serviceUr": "رہائشی 60 تا 120 گز",
+      "normal": "Fixed Monthly Tariff",
+      "urgent": "Domestic Karachi",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Residential 240–400 Sq Yds",
+      "serviceUr": "رہائشی 240 تا 400 گز",
+      "normal": "Standard Domestic Slab",
+      "urgent": "Water + Sewerage",
+      "executive": "Domestic"
+    },
+    {
+      "serviceEn": "Commercial / Bulk Connection",
+      "serviceUr": "کمرشل / بلک کنکشن",
+      "normal": "Commercial Tariff",
+      "urgent": "Bulk Metered",
+      "executive": "Commercial"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Find 10-Digit KWSC Consumer Number",
+      "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
+      "detailEn": "Check the top-right corner of your Karachi water bill for your 10-digit Consumer Number.",
+      "detailUr": "اپنے کراچی واٹر بل کے اوپر دائیں کونے میں درج 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Validate and Copy Number",
+      "titleUr": "نمبر چیک اور کاپی کریں",
+      "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
+      "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Open Official KWSC Portal",
+      "titleUr": "آفیشل کے ڈبلیو ایس سی پورٹل کھولیں",
+      "detailEn": "Click 'OPEN KWSC Karachi OFFICIAL BILL PORTAL' to reach https://www.kwsc.gos.pk/duplicate-bill/.",
+      "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
+    },
+    {
+      "stepNumber": 4,
+      "titleEn": "Print Duplicate Bill",
+      "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
+      "detailEn": "Enter your 10-digit Consumer Number to view and print your PDF duplicate bill.",
+      "detailUr": "کنزیومر نمبر درج کر کے پی ڈی ایف بل ڈاؤن لوڈ کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the KWSC Karachi complaint helpline?",
+      "questionUr": "کراچی واٹر بورڈ کا ہیلپ لائن نمبر کیا ہے؟",
+      "answerEn": "Dial toll-free 1339 or KWSC complaint center at (021) 99245138.",
+      "answerUr": "پانی کی بندش یا لیکیج کے لیے 1339 یا 021-99245138 پر رابطہ کریں۔"
+    },
+    {
+      "questionEn": "Can I pay KWSC Karachi bills online?",
+      "questionUr": "کیا کراچی واٹر بل آن لائن جمع ہو سکتا ہے؟",
+      "answerEn": "Yes. Pay via 1Bill / Kuickpay on JazzCash, Easypaisa, 1Link banking apps using your 10-digit consumer number.",
+      "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا موبائل بینکنگ ایپ پر 10 ہندسوں کا کنزیومر نمبر لکھ کر بل جمع کرائیں۔"
+    }
+  ],
+  "contentEn": "## Karachi Water & Sewerage Corporation (KWSC) Duplicate Bill Guide 2026\nKWSC supplies drinking water and manages wastewater infrastructure across Karachi Division.",
+  "contentUr": "## کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) بلنگ گائیڈ 2026\nکراچی واٹر بورڈ شہر کے تمام اضلاع کو پانی فراہم کرتا ہے۔ شہری آن لائن ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/k-electric-duplicate-bill",
+    "/bills/ssgc-duplicate-bill-check"
+  ]
+}
 };

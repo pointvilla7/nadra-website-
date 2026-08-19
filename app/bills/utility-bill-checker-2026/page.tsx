@@ -169,13 +169,27 @@ export default function UtilityBillCheckerPage() {
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {[
-                  { name: 'LESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Lahore, Kasur, Okara, Sheikhupura', url: 'bill.pitc.com.pk/lescobill', href: 'http://bill.pitc.com.pk/lescobill/' },
-                  { name: 'IESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Islamabad, Rawalpindi, Attock, Jhelum', url: 'bill.pitc.com.pk/iescobill', href: 'http://bill.pitc.com.pk/iescobill/' },
-                  { name: 'FESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Faisalabad, Sargodha, Jhang, Chiniot', url: 'bill.pitc.com.pk/fescobill', href: 'http://bill.pitc.com.pk/fescobill/' },
-                  { name: 'MEPCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Multan, Sahiwal, Bahawalpur, D.G. Khan', url: 'bill.pitc.com.pk/mepcobill', href: 'http://bill.pitc.com.pk/mepcobill/' },
-                  { name: 'K-Electric', type: 'Electricity', format: '13-Digit Account No', region: 'Karachi, Dhabeji, Hub', url: 'ke.com.pk', href: 'https://www.ke.com.pk/customer-services/billls-and-e-payments/' },
-                  { name: 'SNGPL', type: 'Natural Gas', format: '11-Digit Consumer No', region: 'Punjab, KPK, Islamabad, AJK', url: 'sngpl.com.pk/web/bill', href: 'https://www.sngpl.com.pk/web/bill' },
-                  { name: 'SSGC', type: 'Natural Gas', format: '10-Digit Customer No', region: 'Sindh (Karachi, Hyderabad) & Balochistan', url: 'viewbill.ssgc.com.pk', href: 'https://viewbill.ssgc.com.pk/' },
+                  { name: 'LESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Lahore, Kasur, Okara, Sheikhupura, Nankana', url: 'bill.pitc.com.pk/lescobill', href: 'http://bill.pitc.com.pk/lescobill/' },
+                  { name: 'IESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Islamabad, Rawalpindi, Attock, Jhelum, Chakwal', url: 'bill.pitc.com.pk/iescobill', href: 'http://bill.pitc.com.pk/iescobill/' },
+                  { name: 'FESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Faisalabad, Sargodha, Jhang, T.T. Singh, Chiniot', url: 'bill.pitc.com.pk/fescobill', href: 'http://bill.pitc.com.pk/fescobill/' },
+                  { name: 'MEPCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Multan, Sahiwal, Bahawalpur, D.G. Khan, R.Y. Khan', url: 'bill.pitc.com.pk/mepcobill', href: 'http://bill.pitc.com.pk/mepcobill/' },
+                  { name: 'GEPCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Gujranwala, Gujrat, Sialkot, Hafizabad, Narowal', url: 'bill.pitc.com.pk/gepcobill', href: 'http://bill.pitc.com.pk/gepcobill/' },
+                  { name: 'HESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Hyderabad, Mirpurkhas, Jamshoro, Thatta, Badin', url: 'bill.pitc.com.pk/hescobill', href: 'http://bill.pitc.com.pk/hescobill/' },
+                  { name: 'SEPCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Sukkur, Larkana, Shikarpur, Ghotki, Khairpur', url: 'bill.pitc.com.pk/sepcobill', href: 'http://bill.pitc.com.pk/sepcobill/' },
+                  { name: 'PESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Peshawar, Mardan, Swat, Swabi, Kohat, Bannu, D.I. Khan', url: 'bill.pitc.com.pk/pescobill', href: 'http://bill.pitc.com.pk/pescobill/' },
+                  { name: 'QESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'All Balochistan (Quetta, Gwadar, Khuzdar, Chaman, Sibi)', url: 'bill.pitc.com.pk/qescobill', href: 'http://bill.pitc.com.pk/qescobill/' },
+                  { name: 'TESCO', type: 'Electricity', format: '14-Digit Reference No', region: 'Former FATA (Khyber, Kurram, Bajaur, Waziristan)', url: 'bill.pitc.com.pk/tescobill', href: 'http://bill.pitc.com.pk/tescobill/' },
+                  { name: 'K-Electric', type: 'Electricity', format: '13-Digit Account No', region: 'Karachi, Dhabeji, Gharo, Hub (Balochistan)', url: 'ke.com.pk/bills', href: 'https://www.ke.com.pk/customer-services/billls-and-e-payments/' },
+                  { name: 'AJK Electric', type: 'Electricity', format: '14-Digit Account No', region: 'Azad Kashmir (Muzaffarabad, Mirpur, Kotli, Rawalakot)', url: 'ajkelectricity.gov.pk', href: 'https://www.ajkelectricity.gov.pk/' },
+                  { name: 'SNGPL', type: 'Natural Gas', format: '11-Digit Consumer No', region: 'Punjab, Khyber Pakhtunkhwa, Islamabad & AJK', url: 'sngpl.com.pk/web/bill', href: 'https://www.sngpl.com.pk/web/bill' },
+                  { name: 'SSGC', type: 'Natural Gas', format: '10-Digit Customer No', region: 'Sindh (Karachi, Hyderabad, Sukkur) & Balochistan', url: 'viewbill.ssgc.com.pk', href: 'https://viewbill.ssgc.com.pk/' },
+                  { name: 'WASA Lahore', type: 'Water & Sewerage', format: '8-Digit Account No', region: 'Lahore Metropolitan Area', url: 'wasa.punjab.gov.pk', href: 'https://duplicatebill.wasa.punjab.gov.pk/' },
+                  { name: 'WASA Faisalabad', type: 'Water & Sewerage', format: '12-Digit Consumer ID', region: 'Faisalabad City & Suburbs', url: 'faisalabadwasa.gop.pk', href: 'http://faisalabadwasa.gop.pk/duplicatebill.aspx' },
+                  { name: 'WASA Rawalpindi', type: 'Water & Sewerage', format: '10-Digit Consumer No', region: 'Rawalpindi Municipal Area', url: 'wasa.rawalpindi.gop.pk', href: 'https://wasa.rawalpindi.gop.pk/' },
+                  { name: 'WASA Multan', type: 'Water & Sewerage', format: '8-Digit Consumer No', region: 'Multan Metropolitan Area', url: 'wasamultan.gop.pk', href: 'https://wasamultan.gop.pk/duplicatebill' },
+                  { name: 'WASA Gujranwala', type: 'Water & Sewerage', format: '8-Digit Consumer ID', region: 'Gujranwala City', url: 'wasag.gop.pk', href: 'https://wasag.gop.pk/duplicate-bill/' },
+                  { name: 'WASA Sahiwal', type: 'Water & Sewerage', format: '8-Digit Account No', region: 'Sahiwal City Area', url: 'wasasahiwal.gop.pk', href: 'https://wasasahiwal.gop.pk/' },
+                  { name: 'KWSC Karachi', type: 'Water & Sewerage', format: '10-Digit Consumer No', region: 'Karachi Division (All 7 Districts)', url: 'kwsc.gos.pk', href: 'https://www.kwsc.gos.pk/duplicate-bill/' },
                 ].map((row) => (
                   <tr key={row.name} className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                     <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">{row.name}</td>

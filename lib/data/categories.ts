@@ -95,11 +95,13 @@ export const CATEGORIES: Category[] = [
     badgeText: 'text-amber-800 dark:text-amber-300',
     popularSearches: [
       { en: 'Utility Bill Checker 2026', ur: 'یوٹیلیٹی بل چیکر 2026', slug: '/bills/utility-bill-checker-2026' },
-      { en: 'WAPDA Complaint Tracker', ur: 'واپڈا شکایات ٹریکر', slug: '/bills/wapda-complaint-status-tracker-2026' },
+      { en: 'PESCO Bill Check (KPK)', ur: 'پیسکو آن لائن بل (کے پی کے)', slug: '/bills/pesco-bill-check-online' },
+      { en: 'QESCO Bill Check (Balochistan)', ur: 'کیسکو آن لائن بل (بلوچستان)', slug: '/bills/qesco-bill-check-online' },
+      { en: 'GEPCO Bill Check', ur: 'گیپکو آن لائن بل', slug: '/bills/gepco-bill-check-online' },
       { en: 'LESCO Bill Check', ur: 'لیسکو آن لائن بل', slug: '/bills/lesco-bill-check-online' },
       { en: 'K-Electric Bill Download', ur: 'کے الیکٹرک بل ڈاؤن لوڈ', slug: '/bills/k-electric-duplicate-bill' },
-      { en: 'Sui Gas Online Bill', ur: 'سوئی گیس بل چیک', slug: '/bills/sui-gas-bill-check-online' },
-      { en: 'WAPDA Complaint Number', ur: 'واپڈا ہیلپ لائن نمبر', slug: '/bills/wapda-bill-complaint-number' },
+      { en: 'Sui Gas SNGPL & SSGC', ur: 'سوئی گیس بل چیک', slug: '/bills/sui-gas-bill-check-online' },
+      { en: 'WAPDA Complaint Tracker', ur: 'واپڈا شکایات ٹریکر', slug: '/bills/wapda-complaint-status-tracker-2026' },
     ],
   },
   {
