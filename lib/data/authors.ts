@@ -50,14 +50,24 @@ export const getAuthorForCategory = (categoryId: string): Author => {
   switch (categoryId) {
     case 'welfare':
     case 'education':
+    case 'health':
+    case 'family-registration':
+    case 'alerts':
       return AUTHORS['syeda-fatima-zahra'];
     case 'loans':
     case 'bills':
     case 'traffic':
+    case 'tax':
+    case 'business':
+    case 'property':
       return AUTHORS['usman-ali-raza'];
     case 'nadra':
     case 'passport':
     case 'jobs':
+    case 'overseas':
+    case 'certificates':
+    case 'hajj-umrah':
+    case 'legal':
     default:
       return AUTHORS['muhammad-tariq-khan'];
   }

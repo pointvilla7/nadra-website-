@@ -8795,4 +8795,3787 @@ export const ARTICLES: Record<string, Article> = {
       "/nadra/cnic-kaise-banaye"
     ]
   }
+,
+  "ntn-registration-online-pakistan": {
+    "slug": "ntn-registration-online-pakistan",
+    "fullPath": "/tax/ntn-registration-online-pakistan",
+    "categoryId": "tax",
+    "titleEn": "NTN Registration Online Pakistan 2026 – FBR Iris Step-by-Step",
+    "titleUr": "آن لائن این ٹی این رجسٹریشن پاکستان 2026 – ایف بی آر آئرس طریقہ",
+    "metaDescriptionEn": "Register National Tax Number (NTN) online in Pakistan for salaried, business, and freelancers via FBR Iris 2.0 (iris.fbr.gov.pk) in 15 minutes with zero fee.",
+    "metaDescriptionUr": "ایف بی آر آئرس پورٹل پر تنخواہ دار، کاروباری اور فری لانسرز کے لیے آن لائن این ٹی این رجسٹریشن 2026 کی مکمل رہنمائی اور فری طریقہ۔",
+    "directAnswerEn": "To register for a National Tax Number (NTN) online in Pakistan, visit the official Federal Board of Revenue (FBR) Iris portal at iris.fbr.gov.pk. Individual Pakistani citizens automatically use their 13-digit CNIC as their NTN after completing the 'Registration for Unregistered Person' form with their mobile number, email, and residential electricity meter reference number.",
+    "directAnswerUr": "پاکستان میں آن لائن این ٹی این (NTN) رجسٹر کروانے کے لیے ایف بی آر کے آئرس پورٹل iris.fbr.gov.pk پر جائیں۔ پاکستانی شہریوں کے لیے ان کا 13 ہندسوں کا شناختی کارڈ ہی این ٹی این کے طور پر ایکٹیویٹ ہوتا ہے۔ فارم میں موبائل نمبر، ای میل اور بجلی بل کا ریفرنس نمبر درج کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Iris Registration Portal",
+      "url": "https://iris.fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Individual NTN (Salaried / Freelancer)",
+        "serviceUr": "انفرادی این ٹی این (تنخواہ دار / فری لانسر)",
+        "normal": "100% FREE",
+        "urgent": "Instant (15 Mins)",
+        "executive": "FBR Iris Portal",
+        "validity": "Lifetime"
+      },
+      {
+        "serviceEn": "Business NTN (Sole Proprietorship)",
+        "serviceUr": "کاروباری این ٹی این (سول پروپرائیٹر)",
+        "normal": "100% FREE",
+        "urgent": "24-48 Hours",
+        "executive": "Form 181 Modification",
+        "validity": "Active Business"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Open FBR Iris Portal",
+        "titleUr": "ایف بی آر آئرس پورٹل کھولیں",
+        "detailEn": "Navigate to iris.fbr.gov.pk and click on 'Registration for Unregistered Person'.",
+        "detailUr": "ویب سائٹ iris.fbr.gov.pk پر جا کر رجسٹریشن پر کلک کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter CNIC & Biometric Registered SIM",
+        "titleUr": "شناختی کارڈ اور رجسٹرڈ سم درج کریں",
+        "detailEn": "Provide your 13-digit CNIC, active cell phone number registered in your own name, and email address.",
+        "detailUr": "اپنا 13 ہندسوں کا شناختی کارڈ، ذاتی سم نمبر اور ای میل درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Verify SMS & Email OTP Codes",
+        "titleUr": "او ٹی پی کوڈز کی تصدیق کریں",
+        "detailEn": "Submit the two separate 6-digit verification codes received via SMS and email.",
+        "detailUr": "موبائل اور ای میل پر موصول شدہ تصدیقی کوڈز درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Receive Password & PIN on Mobile",
+        "titleUr": "پاس ورڈ اور پن کوڈ حاصل کریں",
+        "detailEn": "Log into Iris using the system-generated credentials and download your 181 Taxpayer Certificate.",
+        "detailUr": "آئرس میں لاگ ان ہو کر اپنا این ٹی این سرٹیفکیٹ ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How much does FBR charge for online NTN registration?",
+        "questionUr": "ایف بی آر این ٹی این بنانے کی کیا فیس لیتا ہے؟",
+        "answerEn": "NTN registration on the official FBR Iris portal is 100% free of government charges. Beware of unauthorized online agents charging exorbitant processing fees.",
+        "answerUr": "ایف بی آر پورٹل پر این ٹی این بنوانا 100% مفت ہے، حکومت اس کی کوئی فیس وصول نہیں کرتی۔"
+      },
+      {
+        "questionEn": "Can I use my CNIC as an NTN number in Pakistan?",
+        "questionUr": "کیا شناختی کارڈ نمبر ہی این ٹی این نمبر ہوتا ہے؟",
+        "answerEn": "Yes, for individual taxpayers and sole proprietors, the 13-digit CNIC functions directly as the National Tax Number once activated in the Iris database.",
+        "answerUr": "جی ہاں! انفرادی ٹیکس دہندگان کے لیے 13 ہندسوں کا شناختی کارڈ ہی ان کا این ٹی این نمبر ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What documents are required for business NTN registration?",
+        "questionUr": "کاروباری این ٹی این کے لیے کون سے کاغذات درکار ہیں؟",
+        "answerEn": "You need a copy of your CNIC, electricity bill of business premises (commercial connection), rent agreement or property ownership documents, and business letterhead.",
+        "answerUr": "شناختی کارڈ، دکان/دفتر کا بجلی بل، کرایہ نامہ یا ملکیت کے کاغذات اور بزنس لیٹر ہیڈ درکار ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "## FBR Online NTN Registration Guide (2026)\nRegistering for a **National Tax Number (NTN)** with the **Federal Board of Revenue (FBR)** is the mandatory legal prerequisite for filing income tax returns, purchasing vehicles without penalty, opening corporate bank accounts, and qualifying for the Active Taxpayer List (ATL).\n\n| Taxpayer Category | Identifier Used | Required Documentation | Portal Gateway |\n| :--- | :--- | :--- | :--- |\n| **Salaried Individuals** | 13-Digit CNIC | CNIC, Personal Mobile SIM, Email | `iris.fbr.gov.pk` |\n| **IT Freelancers** | 13-Digit CNIC | CNIC, Bank Account Certificate | `iris.fbr.gov.pk` |\n| **Sole Proprietorship** | 13-Digit CNIC + Business Name | Rent Agreement, Utility Bill, Letterhead | `iris.fbr.gov.pk` (Form 181) |\n| **Pvt Ltd Company** | 7-Digit Corporate NTN | SECP Incorporation Certificate, Form 29 | `iris.fbr.gov.pk` |\n\n### Common Mistakes to Avoid\n- **Using a SIM not registered in your CNIC**: FBR biometric verification will automatically fail.\n- **Entering residential utility bill for commercial NTN**: Causes automatic audit flag under Section 181 of Income Tax Ordinance 2001.",
+    "contentUr": "## ایف بی آر آن لائن این ٹی این رجسٹریشن گائیڈ 2026\nآن لائن آئرس پورٹل پر انفرادی اور کاروباری این ٹی این حاصل کرنے کی مکمل تفصیلات۔",
+    "relatedSlugs": [
+      "/tax/fbr-filer-status-check-cnic",
+      "/tax/income-tax-return-filing-guide"
+    ]
+  }
+,
+  "fbr-filer-status-check-cnic": {
+    "slug": "fbr-filer-status-check-cnic",
+    "fullPath": "/tax/fbr-filer-status-check-cnic",
+    "categoryId": "tax",
+    "titleEn": "FBR Filer Status Check by CNIC 2026 – Active Taxpayer List (ATL)",
+    "titleUr": "ایف بی آر فائلر سٹیٹس چیک شناختی کارڈ سے 2026 – ایکٹو ٹیکس پیئر لسٹ",
+    "metaDescriptionEn": "Check FBR filer or non-filer status online 2026 by 13-digit CNIC or SMS 9966. Verify Active Taxpayer List (ATL) status to avoid 100% withholding tax penalty.",
+    "metaDescriptionUr": "شناختی کارڈ نمبر یا 9966 ایس ایم ایس کے ذریعے ایف بی آر فائلر سٹیٹس آن لائن چیک کریں اور اضافی ودہولڈنگ ٹیکس سے بچیں۔",
+    "directAnswerEn": "To check your FBR filer status online in 2026, visit fbr.gov.pk and open the Active Taxpayer List (ATL) inquiry tool, or SMS 'ATL <space> 13-digit CNIC' to 9966. If your status displays as 'Active', you qualify for reduced withholding tax rates on banking transactions, property, and vehicle registrations.",
+    "directAnswerUr": "ایف بی آر فائلر سٹیٹس چیک کرنے کے لیے fbr.gov.pk پر جا کر ایکٹو ٹیکس پیئر لسٹ (ATL) چیک کریں یا اپنے موبائل سے 'ATL <space> شناختی کارڈ نمبر' لکھ کر 9966 پر ایس ایم ایس بھیجیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Active Taxpayer List Portal",
+      "url": "https://fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online FBR ATL Inquiry",
+        "serviceUr": "آن لائن فائلر سٹیٹس چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Portal",
+        "executive": "FBR Web Gateway",
+        "validity": "Live Status"
+      },
+      {
+        "serviceEn": "SMS Verification via 9966",
+        "serviceUr": "ایس ایم ایس 9966 تصدیق",
+        "normal": "Standard SMS Rate (~PKR 2)",
+        "urgent": "Instant (10 Secs)",
+        "executive": "All Mobile Networks",
+        "validity": "Real-Time"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Open FBR Active Taxpayer Inquiry Tool",
+        "titleUr": "ایف بی آر اے ٹی ایل پورٹل کھولیں",
+        "detailEn": "Go to fbr.gov.pk and navigate to 'Online Services' -> 'Active Taxpayer List (Income Tax)'.",
+        "detailUr": "ویب سائٹ fbr.gov.pk پر جا کر ایکٹو ٹیکس پیئر انکوائری کھولیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select CNIC Parameter & Enter 13 Digits",
+        "titleUr": "شناختی کارڈ نمبر درج کریں",
+        "detailEn": "Choose 'CNIC' from the dropdown and type your 13-digit CNIC without dashes (e.g., 3520112345671).",
+        "detailUr": "بغیر ڈیش کے 13 ہندسوں کا شناختی کارڈ نمبر لکھیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Input Security Captcha & Submit",
+        "titleUr": "کیپچا کوڈ لکھ کر جمع کروائیں",
+        "detailEn": "Enter the verification captcha code displayed on screen and click 'Verify'.",
+        "detailUr": "سیکیورٹی کوڈ درج کر کے تصدیق کے بٹن پر کلک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I check my FBR filer status through SMS?",
+        "questionUr": "ایس ایم ایس کے ذریعے فائلر سٹیٹس کیسے چیک کریں؟",
+        "answerEn": "Type 'ATL' followed by a space and your 13-digit CNIC without dashes (e.g., ATL 3520212345678) and send it to 9966. You will receive an instant reply showing your Active/Inactive status.",
+        "answerUr": "موبائل میسج میں 'ATL' لکھ کر اسپیس دیں، پھر 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر 9966 پر بھیج دیں۔"
+      },
+      {
+        "questionEn": "Why is my status showing 'Inactive' even after filing tax return?",
+        "questionUr": "ریٹرن جمع کروانے کے بعد بھی سٹیٹس Inactive کیوں ہے؟",
+        "answerEn": "If you filed your annual tax return after the official deadline, you must pay the ATL Surcharge (PKR 1,000 for individuals via CPR challan in Iris) to immediately activate your filer status on the ATL.",
+        "answerUr": "اگر آپ نے آخری تاریخ کے بعد ریٹرن فائل کیا ہے تو آپ کو 1000 روپے اے ٹی ایل سرچارج چالان جمع کروانا ہوگا تاکہ سٹیٹس فوری ایکٹو ہو۔"
+      }
+    ],
+    "contentEn": "## FBR Active Taxpayer List (ATL) Verification Guide\nChecking your status on the **Federal Board of Revenue (FBR)** Active Taxpayer List determines whether you are classified as an **Active Filer** or **Non-Filer** under the Finance Act 2026.\n\n| Verification Channel | Input Format | Response Time | Official Provider |\n| :--- | :--- | :--- | :--- |\n| **FBR Web Portal** | 13-Digit CNIC / 7-Digit NTN | Instant (< 2 seconds) | `fbr.gov.pk` |\n| **SMS Short Code** | `ATL [13-Digit CNIC]` to 9966 | ~10 Seconds | Telecommunication Gateway |\n| **FBR Asaan Tax App** | Biometric / Login PIN | Instant | FBR Mobile App |",
+    "contentUr": "## ایف بی آر فائلر سٹیٹس اور اے ٹی ایل چیک گائیڈ\nآن لائن اور ایس ایم ایس کے ذریعے ایکٹو ٹیکس پیئر لسٹ میں اپنا نام تصدیق کرنے کا آسان طریقہ۔",
+    "relatedSlugs": [
+      "/tax/ntn-registration-online-pakistan",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
+  }
+,
+  "how-to-become-tax-filer-pakistan-2026": {
+    "slug": "how-to-become-tax-filer-pakistan-2026",
+    "fullPath": "/tax/how-to-become-tax-filer-pakistan-2026",
+    "categoryId": "tax",
+    "titleEn": "How to Become a Tax Filer in Pakistan (2026 Iris Complete Guide)",
+    "titleUr": "پاکستان میں ٹیکس فائلر بننے کا طریقہ 2026 – آئرس مکمل گائیڈ",
+    "metaDescriptionEn": "Learn how to become a tax filer in Pakistan 2026. Step-by-step FBR Iris registration, filing annual income tax return, wealth statement, and ATL activation.",
+    "metaDescriptionUr": "پاکستان میں ٹیکس فائلر بننے کا مکمل اور قانونی طریقہ۔ آئرس پورٹل پر انکم ٹیکس ریٹرن، ویلتھ سٹیٹمنٹ اور فائلر لسٹ میں نام شامل کرنے کی رہنمائی۔",
+    "directAnswerEn": "To become a tax filer in Pakistan in 2026, register on FBR Iris (iris.fbr.gov.pk) with your CNIC, fill out the Annual Income Tax Return Form 114(1) declaring your annual income and deductible taxes, complete Wealth Statement Form 116, and submit with your 4-digit verification PIN to be placed on the Active Taxpayer List (ATL).",
+    "directAnswerUr": "پاکستان میں فائلر بننے کے لیے ایف بی آر آئرس پورٹل iris.fbr.gov.pk پر لاگ ان کریں، انکم ٹیکس ریٹرن فارم 114 اور ویلتھ سٹیٹمنٹ فارم 116 پر اپنی سالانہ آمدن و اثاثے درج کریں اور 4 ہندسوں والے پن کوڈ سے فارم جمع کروائیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Iris Portal",
+      "url": "https://iris.fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Filer Registration (Timely Filing)",
+        "serviceUr": "وقت پر فائلنگ (سرکاری فیس)",
+        "normal": "100% FREE",
+        "urgent": "Instant on ATL Update",
+        "executive": "Official FBR Gateway",
+        "validity": "Tax Year 2026"
+      },
+      {
+        "serviceEn": "Late Filing ATL Surcharge (Individual)",
+        "serviceUr": "تاخیر سے فائلنگ پر اے ٹی ایل سرچارج",
+        "normal": "PKR 1,000",
+        "urgent": "Immediate Activation",
+        "executive": "National Bank / 1Link",
+        "validity": "Tax Year 2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Activate NTN on Iris Portal",
+        "titleUr": "آئرس پورٹل پر این ٹی این بنائیں",
+        "detailEn": "Log in at iris.fbr.gov.pk using your CNIC and secure password.",
+        "detailUr": "شناختی کارڈ اور پاس ورڈ سے آئرس لاگ ان کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Open Declaration Form 114(1)",
+        "titleUr": "ڈیکلریشن فارم 114 کھولیں",
+        "detailEn": "Select 'Declaration' -> 'Salary / Business Return' for Tax Year 2026.",
+        "detailUr": "ڈیکلریشن مینو میں جا کر سالانہ ریٹرن فارم منتخب کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Declare Income & Reconcile Wealth Statement",
+        "titleUr": "آمدن اور اثاثہ جات کی تفصیل لکھیں",
+        "detailEn": "Enter your gross receipts, bank balances, vehicles, property, and personal expenses under Section 116.",
+        "detailUr": "اپنی سالانہ آمدن، بینک بیلنس، جائیداد اور گھریلو اخراجات درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Verify with 4-Digit PIN & Submit",
+        "titleUr": "4 ہندسوں کے پن سے تصدیق کر کے جمع کریں",
+        "detailEn": "Enter your confidential transaction PIN to submit your return. Verify Active status on ATL next Monday.",
+        "detailUr": "اپنا ٹرانزیکشن پن کوڈ درج کر کے ریٹرن فائنل جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What are the key financial benefits of becoming an FBR filer?",
+        "questionUr": "ٹیکس فائلر بننے کے کیا مالی فوائد ہیں؟",
+        "answerEn": "Filers pay half the withholding tax rates on vehicle token tax, car purchases, property registration, bank cash withdrawals (0% for filers vs 0.9% for non-filers), and dividend income.",
+        "answerUr": "فائلر کو پراپرٹی خریدنے، گاڑی کے ٹوکن ٹیکس، بینک ٹرانزیکشنز اور منافع پر آدھا یا صفر ٹیکس دینا پڑتا ہے۔"
+      },
+      {
+        "questionEn": "Do housewives or students need to file a tax return to become filers?",
+        "questionUr": "کیا گھریلو خواتین یا طلباء بھی فائلر بن سکتے ہیں؟",
+        "answerEn": "Yes, anyone with a valid CNIC can file a zero-tax return (Nil Return) declaring remittance or pocket allowance support to become a filer and enjoy reduced tax rates.",
+        "answerUr": "جی ہاں! کوئی بھی شہری نل ریٹرن (Nil Return) فائل کر کے باقاعدہ فائلر بن سکتا ہے۔"
+      }
+    ],
+    "contentEn": "## Step-by-Step Guide to Becoming an Active FBR Filer\nBecoming an active tax filer in Pakistan is a straightforward digital process through **Iris 2.0 (Federal Board of Revenue)**. \n\n### Why Filer Status Matters in 2026\nUnder the Income Tax Ordinance 2001 (amended 2026), non-filers face punitive tax slabs:\n1. **Bank Cash Withdrawals**: Non-filers pay 0.9% advance tax on cash withdrawals exceeding PKR 50,000/day. Filers pay 0%.\n2. **Vehicle Registration**: Non-filers pay up to 200% higher advance tax based on engine displacement.\n3. **Property Purchase**: Filers pay 3% advance tax under Section 236K, whereas non-filers are charged up to 12% to 15%.",
+    "contentUr": "## ٹیکس فائلر بننے کا مکمل طریقہ کار 2026\nایف بی آر کے تحت سالانہ گوشوارے جمع کروا کر فائلر کے فوائد حاصل کرنے کی تفصیلی معلومات۔",
+    "relatedSlugs": [
+      "/tax/income-tax-return-filing-guide",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
+  }
+,
+  "income-tax-return-filing-guide": {
+    "slug": "income-tax-return-filing-guide",
+    "fullPath": "/tax/income-tax-return-filing-guide",
+    "categoryId": "tax",
+    "titleEn": "Income Tax Return Filing Guide Pakistan 2026 (Salaried & Business)",
+    "titleUr": "انکم ٹیکس ریٹرن فائلنگ گائیڈ 2026 – تنخواہ دار اور کاروباری افراد",
+    "metaDescriptionEn": "Complete tutorial for filing annual income tax returns in Pakistan 2026 on FBR Iris. Learn salaried tax slabs, wealth statement reconciliation, and Nil returns.",
+    "metaDescriptionUr": "ایف بی آر آئرس پر سالانہ انکم ٹیکس ریٹرن فائل کرنے کی مکمل رہنمائی۔ تنخواہ دار طبقے کے ٹیکس سلیب، ویلتھ ری کنسیلیشن اور نل ریٹرن کا طریقہ۔",
+    "directAnswerEn": "To file your annual income tax return in Pakistan for Tax Year 2026, log in to FBR Iris (iris.fbr.gov.pk), select Declaration Form 114(1), input your gross salary or business turnover, claim adjustable withholding taxes from your mobile and vehicle certificates, reconcile your net assets in Wealth Statement 116, and submit using your 4-digit PIN.",
+    "directAnswerUr": "سال 2026 کا انکم ٹیکس ریٹرن فائل کرنے کے لیے ایف بی آر آئرس iris.fbr.gov.pk پر لاگ ان کریں، فارم 114(1) میں اپنی سالانہ تنخواہ یا کاروباری آمدن درج کریں، گاڑی اور موبائل پر کٹنے والے ٹیکس ایڈجسٹ کریں اور ویلتھ سٹیٹمنٹ فارم 116 مکمل کر کے پن کوڈ سے جمع کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Iris Portal",
+      "url": "https://iris.fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Salaried Income Tax Return Submission",
+        "serviceUr": "تنخواہ دار طبقے کی ریٹرن فائلنگ",
+        "normal": "100% FREE (Govt)",
+        "urgent": "Immediate Acknowledgement",
+        "executive": "FBR Iris 2.0",
+        "validity": "Tax Year 2026"
+      },
+      {
+        "serviceEn": "Business Tax Audit Assessment",
+        "serviceUr": "کاروباری ٹیکس ڈیکلریشن",
+        "normal": "Self-Assessment (Sec 120)",
+        "urgent": "Instant CPR Generation",
+        "executive": "FBR Verified",
+        "validity": "Annual"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Log in to Iris 2.0 with CNIC & Password",
+        "titleUr": "آئرس میں لاگ ان کریں",
+        "detailEn": "Visit iris.fbr.gov.pk and enter your 13-digit CNIC and password.",
+        "detailUr": "شناختی کارڈ نمبر اور پاس ورڈ درج کر کے لاگ ان کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Fill Salary / Income Details (Code 1000)",
+        "titleUr": "تنخواہ اور آمدن کا اندراج کریں",
+        "detailEn": "Enter total annual gross salary received in Tax Year (July 1 to June 30).",
+        "detailUr": "سال بھر کی کل تنخواہ کا ریکارڈ درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Claim Adjustable Taxes (Mobile, Vehicle, Bank)",
+        "titleUr": "ایڈجسٹیبل ٹیکس کلیم کریں",
+        "detailEn": "Enter advance tax deducted on mobile cards, electricity bills, and motor vehicle token tax.",
+        "detailUr": "موبائل لوڈ، بجلی کے بل اور گاڑی پر ادا شدہ ٹیکس شامل کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Reconcile Wealth Statement & Net Assets",
+        "titleUr": "ویلتھ سٹیٹمنٹ کا بیلنس برابر کریں",
+        "detailEn": "Ensure 'Unreconciled Amount' in Section 116 is exactly ZERO before final submission.",
+        "detailUr": "یقینی بنائیں کہ غیر مطابقت شدہ رقم (Unreconciled Amount) بالکل صفر (0) ہو۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the minimum taxable income threshold for salaried persons in Pakistan?",
+        "questionUr": "تنخواہ دار افراد کے لیے ٹیکس سے مستثنیٰ سالانہ آمدن کتنی ہے؟",
+        "answerEn": "Under the 2026 tax slabs, annual taxable income up to PKR 600,000 (PKR 50,000/month) is subject to 0% income tax.",
+        "answerUr": "سالانہ 6 لاکھ روپے (50 ہزار روپے ماہانہ) تک کی تنخواہ پر انکم ٹیکس کی شرح 0% (مستثنیٰ) ہے۔"
+      },
+      {
+        "questionEn": "Can I adjust mobile phone tax against my annual income tax?",
+        "questionUr": "کیا موبائل لوڈ پر کٹنے والا ٹیکس ایڈجسٹ ہو سکتا ہے؟",
+        "answerEn": "Yes, you can obtain an annual tax deduction certificate from your cellular provider (Jazz, Telenor, Zong, Ufone) and enter it under Section 236 in Iris to reduce your payable tax.",
+        "answerUr": "جی ہاں! اپنی سم کمپنی سے سالانہ ٹیکس سرٹیفکیٹ لے کر آئرس پورٹل میں درج کر کے ٹیکس میں چھوٹ حاصل کی جا سکتی ہے۔"
+      }
+    ],
+    "contentEn": "## Salaried Tax Slabs (Federal Budget Determination)\n| Annual Income Bracket (PKR) | Tax Rate Applicable | Fixed Surcharge |\n| :--- | :--- | :--- |\n| **Up to PKR 600,000** | 0% | PKR 0 |\n| **PKR 600,001 to 1,200,000** | 5% of amount exceeding 600K | PKR 0 |\n| **PKR 1,200,001 to 2,200,000** | 15% of amount exceeding 1.2M | PKR 30,000 |\n| **PKR 2,200,001 to 3,200,000** | 25% of amount exceeding 2.2M | PKR 180,000 |\n| **Above PKR 3,200,000** | 35% of amount exceeding 3.2M | PKR 430,000 |",
+    "contentUr": "## انکم ٹیکس ریٹرن فائلنگ مکمل طریقہ کار\nتنخواہ دار ملازمین اور کاروباری افراد کے لیے آئرس پر گوشوارے جمع کروانے کی تفصیلات۔",
+    "relatedSlugs": [
+      "/tax/how-to-become-tax-filer-pakistan-2026",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
+  }
+,
+  "withholding-tax-rates-filers-non-filers": {
+    "slug": "withholding-tax-rates-filers-non-filers",
+    "fullPath": "/tax/withholding-tax-rates-filers-non-filers",
+    "categoryId": "tax",
+    "titleEn": "Withholding Tax Rates 2026: Filer vs Non-Filer Comparison",
+    "titleUr": "ودہولڈنگ ٹیکس ریٹس 2026 – فائلر بمقابلہ نان فائلر موازنہ",
+    "metaDescriptionEn": "Compare withholding tax (WHT) rates 2026 in Pakistan. Learn exact tax percentages on property purchase, vehicle registration, bank transactions, and prize bonds.",
+    "metaDescriptionUr": "پاکستان میں ودہولڈنگ ٹیکس ریٹس 2026 کا فائلر اور نان فائلر تقابلی جائزہ۔ جائیداد کی خرید و فروخت، گاڑی کے ٹوکن اور بینک ٹرانزیکشن پر ٹیکس شرح۔",
+    "directAnswerEn": "In Pakistan's 2026 tax framework, active filers enjoy significantly lower withholding tax rates compared to non-filers. For example, property purchase tax (Sec 236K) is 3% for filers vs up to 12%-15% for non-filers, bank cash withdrawals are 0% for filers vs 0.9% for non-filers, and vehicle registration taxes are doubled for non-filers.",
+    "directAnswerUr": "پاکستان کے ٹیکس قوانین 2026 کے مطابق فائلر کو نان فائلر کے مقابلے میں آدھا یا ایک تہائی ٹیکس ادا کرنا پڑتا ہے۔ جائیداد کی خریداری پر فائلر کے لیے ٹیکس 3% جبکہ نان فائلر کے لیے 12% تا 15% ہے، اور بینک سے کیش نکلوانے پر فائلر کا ٹیکس 0% ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Official Tax Slabs",
+      "url": "https://fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Property Purchase (Section 236K)",
+        "serviceUr": "پراپرٹی خریداری پر ٹیکس",
+        "normal": "3% for Filers",
+        "urgent": "12% to 15% for Non-Filers",
+        "executive": "FBR Prescribed",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Bank Cash Withdrawal > 50K (Sec 231A)",
+        "serviceUr": "بینک سے کیش نکلوانا (50 ہزار سے زائد)",
+        "normal": "0% for Filers",
+        "urgent": "0.9% for Non-Filers",
+        "executive": "Auto Bank Deduction",
+        "validity": "Active 2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check ATL Status Prior to Transaction",
+        "titleUr": "ٹرانزیکشن سے قبل فائلر سٹیٹس چیک کریں",
+        "detailEn": "Verify your status is 'Active' on fbr.gov.pk to prevent automated non-filer banking deductions.",
+        "detailUr": "ایف بی آر پورٹل پر اپنا سٹیٹس ایکٹو چیک کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Provide CNIC to Bank / Land Registrar",
+        "titleUr": "بینک یا رجسٹری آفس کو شناختی کارڈ دیں",
+        "detailEn": "The 1Link or Land Revenue system automatically queries FBR database to apply 3% filer rate.",
+        "detailUr": "شناختی کارڈ نمبر درج ہوتے ہی سسٹم ازخود 3% ٹیکس لاگو کرے گا۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the tax on prize bond winnings for filers vs non-filers?",
+        "questionUr": "پرائز بانڈ انعامات پر فائلر اور نان فائلر کا ٹیکس کتنا ہے؟",
+        "answerEn": "Under Section 156, prize bond winnings are taxed at 15% for active filers and 30% for non-filers.",
+        "answerUr": "پرائز بانڈ کے انعام پر فائلر کے لیے 15% اور نان فائلر کے لیے 30% ٹیکس منہا کیا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "## Withholding Tax Rates Matrix (2026)\n| Transaction Type | Filer Rate | Non-Filer Rate | Governing Section |\n| :--- | :--- | :--- | :--- |\n| **Property Purchase (Buyer)** | 3% | 12% - 15% | Section 236K |\n| **Property Sale (Seller)** | 3% | 10% | Section 236C |\n| **Bank Cash Withdrawal (>50K/day)** | **0%** | **0.9%** | Section 231AB |\n| **Vehicle Registration (1000cc-1300cc)** | PKR 25,000 | PKR 75,000 | Section 231B |\n| **Vehicle Registration (>2000cc)** | 6% | 18% | Section 231B |\n| **Prize Bond Winnings** | 15% | 30% | Section 156 |\n| **Bank Profit on Debt (Savings Account)**| 15% | 35% | Section 151 |",
+    "contentUr": "## ودہولڈنگ ٹیکس تقابلی گائیڈ 2026\nتمام اہم ٹرانزیکشنز پر فائلر اور نان فائلر ٹیکس کٹوتیوں کی تفصیلی جدول۔",
+    "relatedSlugs": [
+      "/tax/fbr-filer-status-check-cnic",
+      "/tax/how-to-become-tax-filer-pakistan-2026"
+    ]
+  }
+,
+  "nicop-renewal-from-abroad": {
+    "slug": "nicop-renewal-from-abroad",
+    "fullPath": "/overseas/nicop-renewal-from-abroad",
+    "categoryId": "overseas",
+    "titleEn": "NICOP Renewal from Abroad 2026 – Pak-ID App & Embassy Guide",
+    "titleUr": "بیرون ملک نائیکوپ آن لائن تجدید 2026 – پاک آئی ڈی ایپ و ایمبیسی گائیڈ",
+    "metaDescriptionEn": "Renew your expired NADRA NICOP online from USA, UK, Canada, Saudi Arabia & UAE via the Pak-ID Mobile App or web portal. Get doorstep home delivery worldwide.",
+    "metaDescriptionUr": "امریکہ، برطانیہ، سعودی عرب اور خلیجی ممالک سے نائیکوپ کی آن لائن تجدید کا مکمل طریقہ۔ پاک آئی ڈی ایپ سے بائیومیٹرک فنگر پرنٹ اور ہوم ڈلیوری۔",
+    "directAnswerEn": "Overseas Pakistanis can renew their expired NICOP online from anywhere in the world using the official NADRA Pak-ID app (id.nadra.gov.pk). You do not need to visit a Pakistani embassy: simply capture your live photograph and fingerprint biometrics using your smartphone camera, pay via international credit card, and receive your card via DHL courier within 7-10 business days.",
+    "directAnswerUr": "بیرون ملک مقیم پاکستانی نادرا کی پاک آئی ڈی موبائل ایپ (id.nadra.gov.pk) کے ذریعے گھر بیٹھے نائیکوپ کی تجدید کروا سکتے ہیں۔ اپنے اسمارٹ فون کیمرے سے بائیومیٹرک فنگر پرنٹس اور تصویر اسکین کریں، بین الاقوامی کارڈ سے فیس ادا کریں اور ڈی ایچ ایل کے ذریعے 7 تا 10 دنوں میں کارڈ حاصل کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Pak-ID Official Web Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "NICOP Renewal (Zone A: US, UK, Canada, Europe)",
+        "serviceUr": "نائیکوپ تجدید (زون اے: امریکہ، برطانیہ، یورپ)",
+        "normal": "$39 USD (31 Days)",
+        "urgent": "$59 USD (15 Days)",
+        "executive": "$79 USD (7 Days)",
+        "validity": "10 Years"
+      },
+      {
+        "serviceEn": "NICOP Renewal (Zone B: Saudi Arabia, UAE, Gulf)",
+        "serviceUr": "نائیکوپ تجدید (زون بی: سعودی عرب، متحدہ عرب امارات)",
+        "normal": "$20 USD (31 Days)",
+        "urgent": "$30 USD (15 Days)",
+        "executive": "$40 USD (7 Days)",
+        "validity": "10 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Download Pak-ID App & Create Account",
+        "titleUr": "پاک آئی ڈی ایپ ڈاؤن لوڈ کر کے اکاؤنٹ بنائیں",
+        "detailEn": "Install 'Pak-ID' from Google Play or Apple App Store and register with an active email address.",
+        "detailUr": "گوگل پلے یا ایپ اسٹور سے پاک آئی ڈی ایپ ڈاؤن لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select 'Renewal of Identity Document'",
+        "titleUr": "شناختی کارڈ تجدید کا انتخاب کریں",
+        "detailEn": "Enter your 13-digit NICOP number and verify your previous identity details.",
+        "detailUr": "اپنا 13 ہندسوں کا نائیکوپ نمبر درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Capture Biometrics & Smartphone Photo",
+        "titleUr": "کیمرے سے فنگر پرنٹس اور تصویر اسکین کریں",
+        "detailEn": "Use the built-in optical finger scanner on your phone camera against a plain white background.",
+        "detailUr": "موبائل کیمرے کے سامنے انگلیاں رکھ کر بائیومیٹرک تصدیق مکمل کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Pay Online & Track International Courier",
+        "titleUr": "آن لائن فیس ادا کر کے ڈی ایچ ایل ٹریکنگ لیں",
+        "detailEn": "Pay using Visa, MasterCard, or UnionPay and receive direct DHL tracking number via email.",
+        "detailUr": "کریڈٹ کارڈ سے فیس ادا کریں اور ہوم ڈلیوری ٹریک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I travel to Pakistan on an expired NICOP card?",
+        "questionUr": "کیا زائد المیعاد نائیکوپ پر پاکستان کا سفر کیا جا سکتا ہے؟",
+        "answerEn": "Under CAA regulations, airlines allow entry to Pakistan if you present your expired NICOP along with an official NADRA Pak-ID online tracking slip showing an in-process renewal application.",
+        "answerUr": "سول ایوی ایشن کے قواعد کے مطابق اگر آپ کے پاس نادرا پاک آئی ڈی کی آن لائن تجدید سلپ موجود ہو تو ایئرلائن پاکستان آنے کی اجازت دیتی ہے۔"
+      }
+    ],
+    "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $59 USD | $79 USD (7 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
+    "contentUr": "## بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ تجدید گائیڈ\nپاک آئی ڈی پورٹل کے ذریعے فیس اور طریقہ کار کی تفصیلات۔",
+    "relatedSlugs": [
+      "/nadra/nicop-fee-calculator",
+      "/overseas/poc-card-pakistan-apply-online"
+    ]
+  }
+,
+  "poc-card-pakistan-apply-online": {
+    "slug": "poc-card-pakistan-apply-online",
+    "fullPath": "/overseas/poc-card-pakistan-apply-online",
+    "categoryId": "overseas",
+    "titleEn": "POC Card Pakistan Apply Online 2026 – NADRA Foreign Spouse Card",
+    "titleUr": "پی او سی کارڈ آن لائن اپلائی 2026 – غیر ملکی شریک حیات نادرا کارڈ",
+    "metaDescriptionEn": "Apply online for Pakistan Origin Card (POC) 2026 for foreign spouses of Pakistani citizens. Visa-free travel, property purchase rights, and Pak-ID application steps.",
+    "metaDescriptionUr": "پاکستانی شہریوں کے غیر ملکی شوہر یا بیوی کے لیے پی او سی کارڈ آن لائن بنوانے کا مکمل طریقہ، فیس اور نادرا دستاویزات کی تفصیل۔",
+    "directAnswerEn": "Foreign spouses married to Pakistani citizens and former Pakistani nationals who renounced their citizenship can apply for a Pakistan Origin Card (POC) online at id.nadra.gov.pk. The card grants lifetime visa-free entry to Pakistan, permission to open bank accounts, and the legal right to purchase and own residential real estate in Pakistan.",
+    "directAnswerUr": "پاکستانی شہریوں کے غیر ملکی شریک حیات (بیوی یا شوہر) نادرا کے پاک آئی ڈی پورٹل id.nadra.gov.pk پر پاکستان اوریجن کارڈ (POC) کے لیے آن لائن درخواست دے سکتے ہیں۔ پی او سی کارڈ بغیر ویزا پاکستان میں لامحدود قیام اور رہائشی جائیداد خریدنے کا قانونی حق دیتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Pak-ID Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "New POC Card (Foreign Spouse / Ex-Citizen)",
+        "serviceUr": "نیا پی او سی کارڈ (غیر ملکی شریک حیات)",
+        "normal": "$150 USD (31 Days)",
+        "urgent": "$250 USD (15 Days)",
+        "executive": "$350 USD (7 Days)",
+        "validity": "5 Years"
+      },
+      {
+        "serviceEn": "POC Card Renewal",
+        "serviceUr": "پی او سی کارڈ تجدید",
+        "normal": "$150 USD",
+        "urgent": "$250 USD",
+        "executive": "$350 USD",
+        "validity": "5 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register on Pak-ID Portal",
+        "titleUr": "پاک آئی ڈی پورٹل پر لاگ ان کریں",
+        "detailEn": "Go to id.nadra.gov.pk and start a new application under 'Pakistan Origin Card (POC)'.",
+        "detailUr": "ویب سائٹ id.nadra.gov.pk پر پی او سی کا انتخاب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Upload Marriage & Spouse Verification Documents",
+        "titleUr": "شادی کا تصدیق شدہ سرٹیفکیٹ اپلوڈ کریں",
+        "detailEn": "Upload registered Marriage Certificate (MRC/Nikah Nama), Pakistani spouse's valid CNIC/NICOP, and foreign passport copy.",
+        "detailUr": "شادی سرٹیفکیٹ، پاکستانی شریک حیات کا شناختی کارڈ اور غیر ملکی پاسپورٹ اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Provide Biometrics & Submit",
+        "titleUr": "بائیومیٹرک فنگر پرنٹس دے کر فیس ادا کریں",
+        "detailEn": "Complete digital finger scanning via the mobile app and pay processing fee in USD.",
+        "detailUr": "موبائل ایپ سے فنگر پرنٹس اسکین کر کے کریڈٹ کارڈ سے فیس ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a foreign husband of a Pakistani woman get a POC card?",
+        "questionUr": "کیا پاکستانی خاتون کا غیر ملکی شوہر پی او سی کارڈ بنوا سکتا ہے؟",
+        "answerEn": "Yes. Under the amended NADRA regulations and Supreme Court directives, both foreign wives and foreign husbands of Pakistani citizens are equally eligible to receive a POC card.",
+        "answerUr": "جی ہاں! پاکستانی مرد کی غیر ملکی بیوی اور پاکستانی خاتون کا غیر ملکی شوہر دونوں پی او سی کے اہل ہیں۔"
+      }
+    ],
+    "contentEn": "## NADRA Pakistan Origin Card (POC) Legal Privileges\nA valid **POC (Pakistan Origin Card)** provides extensive civic and economic privileges:\n- **Visa-Free Entry**: Permanent exemption from Pakistani entry visa requirements.\n- **Indefinite Stay**: Stay in Pakistan for unlimited duration without police registration.\n- **Real Estate Ownership**: Purchase and sell residential property across all provinces.\n- **Banking**: Open local PKR and Foreign Currency (FCY) bank accounts.",
+    "contentUr": "## پی او سی کارڈ مکمل رہنمائی اور قانونی حقوق\nنادرا پاکستان اوریجن کارڈ حاصل کرنے کا طریقہ اور غیر ملکی شریک حیات کے حقوق۔",
+    "relatedSlugs": [
+      "/nadra/cnic-vs-nicop-vs-poc-comparison",
+      "/overseas/nicop-renewal-from-abroad"
+    ]
+  }
+,
+  "intiqal-registration-online-punjab": {
+    "slug": "intiqal-registration-online-punjab",
+    "fullPath": "/property/intiqal-registration-online-punjab",
+    "categoryId": "property",
+    "titleEn": "Intiqal Registration Online Punjab 2026 – PLRA Land Mutation",
+    "titleUr": "آن لائن انتقال اراضی پنجاب 2026 – پی ایل آر اے میوٹیشن گائیڈ",
+    "metaDescriptionEn": "Register property Intiqal (mutation) online in Punjab via PLRA (punjab-zameen.gov.pk). Check Arazi Record Center token fees, registry mutation, and inheritance Fard.",
+    "metaDescriptionUr": "پنجاب لینڈ ریکارڈ اتھارٹی (PLRA) کے ذریعے آن لائن انتقال اراضی، اراضی ریکارڈ سنٹر ٹوکن فیس، بیع نامہ اور وراثتی انتقال کا مکمل طریقہ۔",
+    "directAnswerEn": "Property Intiqal (land mutation) in Punjab can be initiated online via the Punjab Land Records Authority (PLRA) portal at punjab-zameen.gov.pk. Intiqal officially transfers the revenue ownership record in the government register (Jamabandi) following a registered sale deed (Baye-Nama) or inheritance succession, costing a standardized 3% mutation fee at computerized Arazi Record Centers (ARC).",
+    "directAnswerUr": "پنجاب میں آن لائن انتقال اراضی پی ایل آر اے کی ویب سائٹ punjab-zameen.gov.pk کے ذریعے کروایا جا سکتا ہے۔ رجسٹری (بیع نامہ) یا وراثت کے بعد سرکاری ریکارڈ میں نام کی منتقلی کے لیے اراضی ریکارڈ سنٹر (ARC) پر 3% انتقال فیس جمع کروائی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Land Records Authority (PLRA)",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Intiqal Fee (Baye / Sale Mutation)",
+        "serviceUr": "انتقال بیع فیس",
+        "normal": "3% of DC Valuation",
+        "urgent": "Computerized ARC",
+        "executive": "PLRA Portal",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Intiqal-e-Wirasat (Inheritance Mutation)",
+        "serviceUr": "وراثتی انتقال فیس",
+        "normal": "PKR 500 / Transaction",
+        "urgent": "Legal Heirs Biometric",
+        "executive": "ARC Center",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Book ARC Appointment Online",
+        "titleUr": "آن لائن ٹوکن حاصل کریں",
+        "detailEn": "Book a computerized token slot on punjab-zameen.gov.pk.",
+        "detailUr": "اراضی ریکارڈ سنٹر کے لیے آن لائن وقت لیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Biometric Verification of Buyer & Seller",
+        "titleUr": "خریدار و فروخت کنندہ کی تصدیق",
+        "detailEn": "Visit Arazi Record Center with CNICs and original Sale Deed.",
+        "detailUr": "اصل رجسٹری اور شناختی کارڈ کے ساتھ سنٹر جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Challan 32-A & Receive Fard",
+        "titleUr": "چالان جمع کروا کر فرد حاصل کریں",
+        "detailEn": "Pay government fees via e-Stamping portal and obtain computerized Intiqal confirmation.",
+        "detailUr": "فیس ادا کر کے تصدیق شدہ انتقال کاپی لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is a registered Sale Deed valid without Intiqal?",
+        "questionUr": "کیا بغیر انتقال کے صرف رجسٹری قانونی طور پر کافی ہے؟",
+        "answerEn": "No. While a registry proves the contract between parties, ownership in the government land revenue record (Jamabandi) only takes legal effect once Intiqal is approved.",
+        "answerUr": "نہیں! ریونیو ریکارڈ میں مالک بننے کے لیے رجسٹری کے بعد انتقال کروانا لازمی ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to PLRA land mutation and Intiqal in Punjab.",
+    "contentUr": "پنجاب میں زمین کے انتقال کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/property/registry-vs-intiqal-difference",
+      "/property/patwari-record-online-check"
+    ]
+  }
+,
+  "property-mutation-check-by-cnic": {
+    "slug": "property-mutation-check-by-cnic",
+    "fullPath": "/property/property-mutation-check-by-cnic",
+    "categoryId": "property",
+    "titleEn": "Property Mutation Check by CNIC – PLRA Arazi Record Center",
+    "titleUr": "پراپرٹی انتقال چیک بذریعہ شناختی کارڈ – اراضی ریکارڈ سنٹر",
+    "metaDescriptionEn": "Check property mutation (Intiqal) status online in Pakistan by 13-digit CNIC. Verify digital land ownership, Khewat number, and plot dimensions across Punjab & Sindh.",
+    "metaDescriptionUr": "شناختی کارڈ نمبر کے ذریعے جائیداد کا انتقال اور ملکیتی رقبہ آن لائن چیک کریں۔ کھیوٹ نمبر، خسرہ اور اراضی ریکارڈ کی تصدیق۔",
+    "directAnswerEn": "To check property mutation status by CNIC in Punjab, access the PLRA portal at punjab-zameen.gov.pk and select 'Search Land Record'. Choose your District, Tehsil, and Village (Mauza), then input your 13-digit CNIC without dashes to instantly view your registered Khewat, Khasra numbers, total Kanal/Marla area, and certified mutation history.",
+    "directAnswerUr": "پنجاب میں شناختی کارڈ سے انتقال چیک کرنے کے لیے punjab-zameen.gov.pk پر جا کر ضلع، تحصیل اور موضع منتخب کریں اور اپنا 13 ہندسوں کا شناختی کارڈ درج کریں۔ سسٹم آپ کی ملکیت کا کھیوٹ، رقبہ اور انتقال سٹیٹس دکھا دے گا۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "PLRA Land Record Portal",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online Mutation Search",
+        "serviceUr": "آن لائن انتقال سرچ",
+        "normal": "100% FREE",
+        "urgent": "Instant Web Portal",
+        "executive": "PLRA Digital",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Enter Mauza & CNIC",
+        "titleUr": "موضع اور شناختی کارڈ درج کریں",
+        "detailEn": "Select your village and enter CNIC to search land records.",
+        "detailUr": "علاقہ منتخب کر کے شناختی کارڈ سے تلاش کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I check Sindh land records by CNIC online?",
+        "questionUr": "کیا سندھ کی زمین کا ریکارڈ بھی آن لائن ملتا ہے؟",
+        "answerEn": "Yes, the Sindh Land Administration & Revenue Management System (LARMIS) provides computerized Deh records by CNIC.",
+        "answerUr": "جی ہاں! سندھ کا ریکارڈ LARMIS پورٹل پر دستیاب ہے۔"
+      }
+    ],
+    "contentEn": "Guide to checking land mutation and ownership by CNIC.",
+    "contentUr": "شناختی کارڈ سے زمین کا انتقال معلوم کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/patwari-record-online-check"
+    ]
+  }
+,
+  "patwari-record-online-check": {
+    "slug": "patwari-record-online-check",
+    "fullPath": "/property/patwari-record-online-check",
+    "categoryId": "property",
+    "titleEn": "Patwari Record Online Check – Computerized Fard Malkiat Download",
+    "titleUr": "پٹوار ریکارڈ آن لائن چیک – کمپیوٹرائزڈ فرد ملکیت ڈاؤن لوڈ",
+    "metaDescriptionEn": "Download computerized Fard Malkiat (فرد ملکیت) online in Pakistan for property sale, electricity connection, and court bail via Arazi Record Center (ARC).",
+    "metaDescriptionUr": "پنجاب و سندھ میں کمپیوٹرائزڈ فرد ملکیت آن لائن حاصل کرنے کا طریقہ۔ بجلی میٹر، ضمانت اور بیع کے لیے بااعتماد فرد ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "Computerized Fard Malkiat (Land Ownership Certificate) can be downloaded directly online through the PLRA digital portal or mobile app (Dastak / PLRA Mobile). For a certified official Fard with QR security code, users can book an appointment at any computerized Arazi Record Center (ARC), pay the standard PKR 300 government fee, and receive the Fard in 10 minutes.",
+    "directAnswerUr": "کمپیوٹرائزڈ فرد ملکیت پی ایل آر اے کی ویب سائٹ یا قریبی اراضی ریکارڈ سنٹر سے حاصل کی جا سکتی ہے۔ سرکاری فیس 300 روپے ادا کر کے 10 منٹ میں تصدیق شدہ فرد برائے بیع، ضمانت یا یوٹیلیٹی کنکشن حاصل کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "PLRA Fard Issuance Service",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Official Computerized Fard",
+        "serviceUr": "کمپیوٹرائزڈ فرد سرکاری فیس",
+        "normal": "PKR 300 / Page",
+        "urgent": "Instant QR Issuance",
+        "executive": "ARC Center / App",
+        "validity": "30 Days"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Purpose of Fard",
+        "titleUr": "فرد کا مقصد منتخب کریں",
+        "detailEn": "Choose between 'Baye' (Sale), 'Bail' (Zamanat), or 'Information'.",
+        "detailUr": "فرد کا مقصد برائے بیع یا ضمانت بتائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long is an official Fard valid for property transfer?",
+        "questionUr": "فرد برائے بیع کتنے دن تک کارآمد ہوتی ہے؟",
+        "answerEn": "A Fard issued for property sale (Baye) is officially valid for 30 calendar days from the date of QR issuance.",
+        "answerUr": "بیع کے لیے جاری کردہ فرد 30 دن تک کارآمد ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide to checking and obtaining computerized Patwari Fard online.",
+    "contentUr": "کمپیوٹرائزڈ فرد ملکیت حاصل کرنے کی معلومات۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/registry-vs-intiqal-difference"
+    ]
+  }
+,
+  "property-tax-calculator-pakistan-2026": {
+    "slug": "property-tax-calculator-pakistan-2026",
+    "fullPath": "/property/property-tax-calculator-pakistan-2026",
+    "categoryId": "property",
+    "titleEn": "Property Tax Calculator Pakistan 2026 – Urban Property Slabs",
+    "titleUr": "پراپرٹی ٹیکس کیلکولیٹر پاکستان 2026 – ایکسائز شہری ٹیکس سلیب",
+    "metaDescriptionEn": "Calculate Punjab and Sindh urban property tax (UIPT) for 5 Marla, 10 Marla, and 1 Kanal houses. Learn annual tax exemptions, commercial rates, and rebate discounts.",
+    "metaDescriptionUr": "پنجاب اور سندھ میں 5 مرلہ، 10 مرلہ اور 1 کنال مکانات پر سالانہ پراپرٹی ٹیکس کا حساب لگائیں۔ 5 مرلہ ٹیکس چھوٹ اور آن لائن ادائیگی۔",
+    "directAnswerEn": "Urban Immovable Property Tax (UIPT) in Pakistan is levied annually by provincial Excise, Taxation & Narcotics Control departments based on covered area and annual rental value (ARV). In Punjab, residential houses up to 5 Marla (Category A/B/C/D ratings) are 100% exempt from property tax, while properties above 5 Marla pay tiered rates calculated on square footage.",
+    "directAnswerUr": "شہری پراپرٹی ٹیکس ایکسائز ڈیپارٹمنٹ کی طرف سے سالانہ وصول کیا جاتا ہے۔ پنجاب میں 5 مرلہ تک کے رہائشی مکانات کو پراپرٹی ٹیکس سے 100% چھوٹ حاصل ہے، جبکہ 5 مرلہ سے بڑے گھروں اور کمرشل عمارتوں پر سلیب کے مطابق ٹیکس لاگو ہوتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Excise Property Tax Portal",
+      "url": "https://excise.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Residential House (Up to 5 Marla)",
+        "serviceUr": "رہائشی مکان (5 مرلہ تک)",
+        "normal": "100% EXEMPT (PKR 0)",
+        "urgent": "Government Waiver",
+        "executive": "Punjab Excise",
+        "validity": "Annual"
+      },
+      {
+        "serviceEn": "Residential House (10 Marla to 1 Kanal)",
+        "serviceUr": "رہائشی مکان (10 مرلہ تا 1 کنال)",
+        "normal": "PKR 4,000 - 12,000 / Yr",
+        "urgent": "5% Early Rebate",
+        "executive": "Excise ePay",
+        "validity": "Annual"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Locate Property PIN on Excise Challan",
+        "titleUr": "پراپرٹی پن نمبر تلاش کریں",
+        "detailEn": "Find your 16-digit Property PIN on previous excise PT-10 bills.",
+        "detailUr": "پچھلے پراپرٹی ٹیکس بل سے پن نمبر دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to get a 5% discount on annual property tax?",
+        "questionUr": "پراپرٹی ٹیکس میں 5% رعایت کیسے ملتی ہے؟",
+        "answerEn": "Taxpayers who clear their full annual property tax bill before September 30 via ePay Punjab receive an instant 5% prompt payment rebate.",
+        "answerUr": "30 ستمبر سے پہلے ای پے سے سالانہ ٹیکس ادا کرنے پر 5% ڈسکاؤنٹ ملتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide and formula for calculating property tax in Pakistan.",
+    "contentUr": "پراپرٹی ٹیکس کے سلیب اور حساب لگانے کا طریقہ۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/traffic/token-tax-calculator-2026"
+    ]
+  }
+,
+  "registry-vs-intiqal-difference": {
+    "slug": "registry-vs-intiqal-difference",
+    "fullPath": "/property/registry-vs-intiqal-difference",
+    "categoryId": "property",
+    "titleEn": "Registry vs Intiqal Difference in Pakistan – Legal Rights Explained",
+    "titleUr": "رجسٹری بمقابلہ انتقال فرق 2026 – قانونی حقوق اور ملکیتی تحفظ",
+    "metaDescriptionEn": "Understand the critical legal differences between Registry (Sale Deed) and Intiqal (Mutation) in Pakistani real estate law. Protect your plot from fraudulent double-sale.",
+    "metaDescriptionUr": "رجسٹری (بیع نامہ) اور انتقال (میوٹیشن) میں بنیادی قانونی فرق۔ زمین و جائیداد کی خریداری میں دھوکہ دہی سے بچنے کی اہم ترین معلومات۔",
+    "directAnswerEn": "A Registry (Sale Deed / Baye-Nama) is a registered bilateral legal contract executed under the Registration Act 1908 before a Sub-Registrar establishing title between buyer and seller. Intiqal (Mutation) is the subsequent administrative entry in the government Land Revenue Record (Jamabandi). Full legal protection requires BOTH a registered deed and an approved computerized Intiqal.",
+    "directAnswerUr": "رجسٹری (بیع نامہ) خریدار اور بیچنے والے کے درمیان سب رجسٹرار کے سامنے تصدیق شدہ قانونی معاہدہ ہے، جبکہ انتقال (Intiqal) سرکاری ریونیو ریکارڈ (جمع بندی) میں خریدار کا نام بطور مالک درج کرنے کا عمل ہے۔ مکمل قانونی تحفظ کے لیے رجسٹری اور انتقال دونوں کا ہونا لازمی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Land Records Authority",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Sub-Registrar Registry Stamp Duty",
+        "serviceUr": "رجسٹری اسٹامپ ڈیوٹی",
+        "normal": "1% - 3% of DC Rate",
+        "urgent": "e-Stamping",
+        "executive": "Revenue Dept",
+        "validity": "Permanent Title"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Step 1: Execute Registry via Sub-Registrar",
+        "titleUr": "مرحلہ 1: سب رجسٹرار سے رجسٹری",
+        "detailEn": "Sign and register deed on e-Stamp paper.",
+        "detailUr": "ای سٹامپ پر رجسٹری کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Step 2: Enter Intiqal at Arazi Record Center",
+        "titleUr": "مرحلہ 2: اراضی ریکارڈ پر انتقال",
+        "detailEn": "Submit copy to PLRA to transfer Jamabandi.",
+        "detailUr": "پی ایل آر اے میں انتقال کا اندراج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can someone sell land based on an Intiqal without a Registry?",
+        "questionUr": "کیا صرف انتقال کی بنیاد پر زمین بیچی جا سکتی ہے؟",
+        "answerEn": "In rural agricultural areas under the Land Revenue Act, mutation (Intiqal-e-Baye) is historically permitted, but in urban areas, a registered deed is mandatory for title security.",
+        "answerUr": "دیہی علاقوں میں براہ راست انتقال رائج رہا ہے لیکن شہری علاقوں میں رجسٹری ناگزیر ہے۔"
+      }
+    ],
+    "contentEn": "Detailed comparative analysis of Registry vs Intiqal in Pakistan.",
+    "contentUr": "رجسٹری اور انتقال کا تفصیلی موازنہ۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/patwari-record-online-check"
+    ]
+  }
+,
+  "stamp-duty-challan-32a-online-payment": {
+    "slug": "stamp-duty-challan-32a-online-payment",
+    "fullPath": "/property/stamp-duty-challan-32a-online-payment",
+    "categoryId": "property",
+    "titleEn": "e-Stamping Punjab Challan 32-A Online Payment & Verification",
+    "titleUr": "ای سٹامپ پنجاب چالان 32-A آن لائن ادائیگی اور تصدیق",
+    "metaDescriptionEn": "Generate and pay e-Stamp non-judicial stamp papers online in Punjab via estamp.punjab.gov.pk. Pay Challan 32-A for property registry, rent agreements, and affidavits.",
+    "metaDescriptionUr": "ای سٹامپ پیپر آن لائن بنانے کا طریقہ۔ پراپرٹی رجسٹری، کرایہ نامہ اور بیان حلفی کے لیے چالان 32-A کی آن لائن ادائیگی اور تصدیق۔",
+    "directAnswerEn": "e-Stamping Punjab (estamp.punjab.gov.pk) allows citizens to generate electronic judicial and non-judicial stamp papers online within 5 minutes. After entering property DC rate valuation parameters, the system creates a 16-digit Challan 32-A (PSID) payable via 1Link, mobile banking apps, or National Bank branches before printing the high-security e-Stamp paper.",
+    "directAnswerUr": "پنجاب میں ای سٹامپ پیپر بنانے کے لیے estamp.punjab.gov.pk پر جا کر چالان 32-A حاصل کریں۔ 1Link یا موبائل بینکنگ سے فیس ادا کر کے کیو آر کوڈ والا اصل ای سٹامپ پیپر پرنٹ کروائیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab e-Stamping Portal (PITB)",
+      "url": "https://estamp.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Affidavit / Statement (PKR 100 Stamp)",
+        "serviceUr": "بیان حلفی سٹامپ پیپر",
+        "normal": "PKR 100 / Paper",
+        "urgent": "Instant Print",
+        "executive": "Bank of Punjab / NBP",
+        "validity": "Valid"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Fill e-Stamping Form Online",
+        "titleUr": "آن لائن فارم بھریں",
+        "detailEn": "Select District, Tehsil, and transaction type on estamp.punjab.gov.pk.",
+        "detailUr": "ضلع اور معاہدے کی قسم درج کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I verify the authenticity of an e-Stamp paper?",
+        "questionUr": "ای سٹامپ پیپر کی اصلیت کیسے چیک کریں؟",
+        "answerEn": "SMS the 16-digit e-Stamp certificate number to 8100 or scan the on-page QR code with a smartphone camera.",
+        "answerUr": "16 ہندسوں کا نمبر 8100 پر ایس ایم ایس کریں یا کیو آر کوڈ اسکین کریں۔"
+      }
+    ],
+    "contentEn": "Guide on generating and paying e-Stamping Challan 32-A in Pakistan.",
+    "contentUr": "ای سٹامپ پیپر بنانے اور چالان کی معلومات۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/registry-vs-intiqal-difference"
+    ]
+  }
+,
+  "housing-society-noc-verification": {
+    "slug": "housing-society-noc-verification",
+    "fullPath": "/property/housing-society-noc-verification",
+    "categoryId": "property",
+    "titleEn": "Housing Society NOC Verification – LDA, CDA, RDA Approved Schemes",
+    "titleUr": "ہاؤسنگ سوسائٹی این او سی تصدیق – ایل ڈی اے، سی ڈی اے، آر ڈی اے",
+    "metaDescriptionEn": "Verify approved legal status and NOC of housing societies in Islamabad (CDA), Rawalpindi (RDA), and Lahore (LDA) before buying residential or commercial plots.",
+    "metaDescriptionUr": "پلاٹ خریدنے سے قبل اسلام آباد (سی ڈی اے)، راولپنڈی (آر ڈی اے) اور لاہور (ایل ڈی اے) سے منظور شدہ قانونی ہاؤسنگ سوسائٹیز کا این او سی چیک کریں۔",
+    "directAnswerEn": "Before purchasing plots in Pakistani housing societies, buyers must verify their official No Objection Certificate (NOC) and approved layout plan (LOP). Verification portals include LDA (lda.gop.pk) for Lahore, CDA (cda.gov.pk) for Islamabad, and RDA (rda.gop.pk) for Rawalpindi, listing 100% illegal unapproved housing societies to protect consumer investments.",
+    "directAnswerUr": "کسی بھی ہاؤسنگ سوسائٹی میں پلاٹ خریدنے سے پہلے متعلقہ ترقیاتی ادارے سے اس کا این او سی اور لے آؤٹ پلان چیک کرنا لازمی ہے۔ اسلام آباد کے لیے CDA، لاہور کے لیے LDA اور راولپنڈی کے لیے RDA کی آفیشل ویب سائٹس پر منظور شدہ سوسائٹیز کی فہرست دیکھیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Capital Development Authority (CDA)",
+      "url": "https://cda.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online Society NOC Verification",
+        "serviceUr": "سوسائٹی این او سی سرچ",
+        "normal": "100% FREE",
+        "urgent": "Public Registry",
+        "executive": "Official Development Auth",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Search Official Portal by Society Name",
+        "titleUr": "ویب سائٹ پر سوسائٹی تلاش کریں",
+        "detailEn": "Check approved list on cda.gov.pk, lda.gop.pk, or rda.gop.pk.",
+        "detailUr": "منظور شدہ سوسائٹیوں کی فہرست میں نام دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What happens if I buy a plot in an illegal housing scheme?",
+        "questionUr": "اگر غیر قانونی سوسائٹی میں پلاٹ خریدا جائے تو کیا نقصان ہے؟",
+        "answerEn": "Illegal schemes are blocked from getting electricity (WAPDA/LESCO), gas, and water connections, and municipal authorities can demolish unauthorized structures.",
+        "answerUr": "غیر منظور شدہ سوسائٹیوں کو بجلی اور گیس کے کنکشن نہیں ملتے۔"
+      }
+    ],
+    "contentEn": "Guide on verifying housing society approvals and NOCs in Pakistan.",
+    "contentUr": "ہاؤسنگ سوسائٹیوں کا این او سی چیک کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/registry-vs-intiqal-difference"
+    ]
+  }
+,
+  "nikah-nama-registration-process-pakistan": {
+    "slug": "nikah-nama-registration-process-pakistan",
+    "fullPath": "/family-registration/nikah-nama-registration-process-pakistan",
+    "categoryId": "family-registration",
+    "titleEn": "Nikah Nama Registration Process in Pakistan – Union Council Rules",
+    "titleUr": "پاکستان میں نکاح نامہ رجسٹریشن کا مکمل طریقہ – یونین کونسل قواعد",
+    "metaDescriptionEn": "Step-by-step procedure for registering a Muslim Nikah Nama under the Muslim Family Laws Ordinance 1961 with Union Councils in Pakistan. Fees, columns, and legal rights.",
+    "metaDescriptionUr": "مسلم فیملی لاز آرڈیننس 1961 کے تحت یونین کونسل میں نکاح نامہ کا اندراج، نکاح خواں کے فرائض، کالمز کا اندراج اور فیس کی مکمل معلومات۔",
+    "directAnswerEn": "Under the Muslim Family Laws Ordinance 1961, every Muslim marriage in Pakistan must be solemnized on an official 4-copy Nikah Nama form by a government-licensed Nikah Registrar (Nikah Khawan). The registrar is legally obligated to submit the registered copy to the local Union Council within 30 days to obtain a Computerized Marriage Registration Certificate (MRC).",
+    "directAnswerUr": "مسلم فیملی لاز آرڈیننس کے تحت نکاح کا اندراج منظور شدہ نکاح رجسٹرار کے ذریعے 4 کاپیوں والے سرکاری نکاح نامے پر ہونا ضروری ہے۔ نکاح رجسٹرار پر لازم ہے کہ وہ 30 دن کے اندر یونین کونسل میں کاپی جمع کروا کر کمپیوٹرائزڈ میرج سرٹیفکیٹ جاری کروائے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government & Community Development",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Union Council Nikah Registration Fee",
+        "serviceUr": "یونین کونسل نکاح فیس",
+        "normal": "PKR 500 - 1,000",
+        "urgent": "Statutory Rate",
+        "executive": "Union Council",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Fill All 25 Columns of Nikah Nama",
+        "titleUr": "نکاح نامے کے تمام 25 کالم پُر کریں",
+        "detailEn": "Accurately record dower amount (Haq Mehr), CNICs of bride/groom, and witnesses.",
+        "detailUr": "حق مہر، گواہان اور شناختی کارڈ کی تفصیل لکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit to Union Council for Digital Entry",
+        "titleUr": "یونین کونسل میں اندراج کروائیں",
+        "detailEn": "Deliver 1 copy to the Secretary Union Council for NADRA computerized registration.",
+        "detailUr": "سیکرٹری یونین کونسل کے پاس اندراج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the penalty for failing to register a Nikah Nama?",
+        "questionUr": "نکاح نامہ رجسٹر نہ کروانے پر کیا سزا ہے؟",
+        "answerEn": "Under Section 5(4) of the MFLO 1961, failure to register a marriage can lead to simple imprisonment up to 3 months or a fine.",
+        "answerUr": "نکاح کا اندراج نہ کروانے پر قانون کے تحت قید یا جرمانہ ہو سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to Muslim marriage registration in Pakistan.",
+    "contentUr": "پاکستان میں نکاح نامہ رجسٹریشن کے قواعد و ضوابط۔",
+    "relatedSlugs": [
+      "/family-registration/marriage-certificate-union-council-apply",
+      "/nadra/family-registration-certificate"
+    ]
+  }
+,
+  "marriage-certificate-union-council-apply": {
+    "slug": "marriage-certificate-union-council-apply",
+    "fullPath": "/family-registration/marriage-certificate-union-council-apply",
+    "categoryId": "family-registration",
+    "titleEn": "Union Council Marriage Certificate (MRC) Online Apply Guide",
+    "titleUr": "یونین کونسل کمپیوٹرائزڈ شادی سرٹیفکیٹ (MRC) حاصل کرنے کا طریقہ",
+    "metaDescriptionEn": "Apply for a NADRA computerized Marriage Registration Certificate (MRC) from Union Council for passport update, spousal visa, and family registration.",
+    "metaDescriptionUr": "نادرا کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) یونین کونسل سے بنوانے کا طریقہ۔ پاسپورٹ میں شوہر کا نام، ویزا اور فیملی رجسٹریشن کے ضروری کاغذات۔",
+    "directAnswerEn": "A Computerized Marriage Registration Certificate (MRC) is issued on green-bordered NADRA security paper by the local Union Council where the marriage took place. Required for updating the wife's CNIC, spouse visas, and passport modifications, the MRC costs PKR 500-1,000 and is issued within 3-5 business days upon providing the original Nikah Nama and spouse CNICs.",
+    "directAnswerUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) نادرا کے سیکیورٹی پیپر پر متعلقہ یونین کونسل سے جاری ہوتا ہے۔ بیوی کے شناختی کارڈ میں شوہر کا نام درج کروانے اور ویزا کے لیے اصل نکاح نامہ اور شناختی کارڈ کی کاپی جمع کروا کر 3 سے 5 دنوں میں سرٹیفکیٹ حاصل کیا جا سکتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Department",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Computerized MRC Certificate",
+        "serviceUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ",
+        "normal": "PKR 500 - 1,000",
+        "urgent": "3 Business Days",
+        "executive": "Union Council",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Original Nikah Nama & CNICs",
+        "titleUr": "اصل نکاح نامہ اور شناختی کارڈ دیں",
+        "detailEn": "Provide Nikah Nama copy and CNIC copies of husband and wife.",
+        "detailUr": "میاں بیوی کے شناختی کارڈ اور نکاح نامہ جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I apply for an MRC online without visiting the Union Council?",
+        "questionUr": "کیا بغیر یونین کونسل جائے آن لائن میرج سرٹیفکیٹ مل سکتا ہے؟",
+        "answerEn": "In ICT (Islamabad) and Punjab (via Baldia Online app), online initial token applications are accepted before picking up the physical security card.",
+        "answerUr": "بلدیہ آن لائن ایپ کے ذریعے ابتدائی درخواست دی جا سکتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining NADRA computerized marriage certificate from Union Council.",
+    "contentUr": "یونین کونسل میرج سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/family-registration/nikah-nama-registration-process-pakistan",
+      "/nadra/cnic-name-address-modification"
+    ]
+  }
+,
+  "divorce-registration-pakistan-online": {
+    "slug": "divorce-registration-pakistan-online",
+    "fullPath": "/family-registration/divorce-registration-pakistan-online",
+    "categoryId": "family-registration",
+    "titleEn": "Divorce Registration in Pakistan – Talaq & Khula Certificate",
+    "titleUr": "پاکستان میں طلاق اور خلع کی قانونی رجسٹریشن اور سرٹیفکیٹ کا طریقہ",
+    "metaDescriptionEn": "Legal process for obtaining a computerized Divorce Certificate (Talaq / Khula) from Union Council in Pakistan under Section 7 of Muslim Family Laws Ordinance.",
+    "metaDescriptionUr": "مسلم فیملی لاز آرڈیننس کے سیکشن 7 کے تحت یونین کونسل سے کمپیوٹرائزڈ طلاق سرٹیفکیٹ، مصالحتی کونسل کے نوٹس اور 90 دن کی عدت کی قانونی تفصیل۔",
+    "directAnswerEn": "Divorce registration in Pakistan is governed by Section 7 of the Muslim Family Laws Ordinance 1961. The husband (for Talaq) or court decree holder (for Khula) must submit written notice to the local Union Council Chairman. The Union Council constitutes an Arbitration Council and issues a NADRA Computerized Divorce Certificate after the mandatory 90-day reconciliation period expires.",
+    "directAnswerUr": "پاکستان میں طلاق کی رجسٹریشن کے لیے یونین کونسل کو تحریری نوٹس دینا ضروری ہے۔ چیئرمین یونین کونسل مصالحتی کونسل تشکیل دیتا ہے اور 90 دن کی مصالحتی مدت گزرنے کے بعد نادرا کا کمپیوٹرائزڈ طلاق سرٹیفکیٹ (Divorce Certificate) جاری کرتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Arbitration Council",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Divorce Registration & Certificate",
+        "serviceUr": "طلاق سرٹیفکیٹ فیس",
+        "normal": "PKR 1,000 - 2,000",
+        "urgent": "After 90-Day Notice",
+        "executive": "Union Council",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Serve Notice to Union Council",
+        "titleUr": "یونین کونسل کو نوٹس دیں",
+        "detailEn": "Send formal written notice with copy to wife.",
+        "detailUr": "بیوی اور یونین کونسل کو قانونی نوٹس بھیجیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Complete 90-Day Arbitration Period",
+        "titleUr": "90 دن کا مصالحتی وقت گزاریں",
+        "detailEn": "Attend arbitration summons before Chairman.",
+        "detailUr": "مصالحتی کارروائی میں پیش ہوں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Receive Computerized Divorce Certificate",
+        "titleUr": "کمپیوٹرائزڈ طلاق سرٹیفکیٹ لیں",
+        "detailEn": "Obtain digital certificate for CNIC status update.",
+        "detailUr": "شناختی کارڈ میں سٹیٹس بدلنے کے لیے سرٹیفکیٹ لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is verbal divorce legally recognized without a Union Council certificate?",
+        "questionUr": "کیا زبانی طلاق بغیر یونین کونسل سرٹیفکیٹ کے قانونی طور پر تسلیم شدہ ہے؟",
+        "answerEn": "No. Under Pakistani law, divorce does not become legally effective for government, NADRA, or inheritance purposes until the 90-day Union Council certificate is issued.",
+        "answerUr": "نہیں! نادرا اور سرکاری ریکارڈ میں طلاق صرف یونین کونسل کے سرٹیفکیٹ کے بعد ہی مانی جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide to Talaq and Khula legal registration in Pakistan.",
+    "contentUr": "پاکستان میں طلاق اور خلع کے قانونی طریقہ کار کی تفصیل۔",
+    "relatedSlugs": [
+      "/family-registration/nikah-nama-registration-process-pakistan",
+      "/family-registration/unmarried-certificate-single-status-pakistan"
+    ]
+  }
+,
+  "nikah-nama-english-translation-attestation": {
+    "slug": "nikah-nama-english-translation-attestation",
+    "fullPath": "/family-registration/nikah-nama-english-translation-attestation",
+    "categoryId": "family-registration",
+    "titleEn": "Nikah Nama English Translation & MOFA Attestation Procedure",
+    "titleUr": "نکاح نامہ انگلش ترجمہ، نوٹری پبلک اور وزارت خارجہ سے تصدیق",
+    "metaDescriptionEn": "Get your Urdu Nikah Nama officially translated into English, notarized, and attested by the Ministry of Foreign Affairs (MOFA) for foreign spouse visa applications.",
+    "metaDescriptionUr": "غیر ملکی ویزا کے لیے اردو نکاح نامے کا باقاعدہ انگریزی ترجمہ، نوٹری پبلک کی مہر اور وزارت خارجہ (MOFA) سے تصدیق کروانے کا مکمل طریقہ۔",
+    "directAnswerEn": "For foreign visa and immigration applications (UK, US, Canada, Schengen, Gulf), Pakistani citizens must translate their Urdu Nikah Nama into English. The translation must be done by an official legal translator on legal letterhead, sworn before an Oath Commissioner / Notary Public, and attested by the Ministry of Foreign Affairs (MOFA) alongside the NADRA MRC.",
+    "directAnswerUr": "بیرون ملک ویزا اور امیگریشن کے لیے اردو نکاح نامے کا مستند قانونی مترجم سے انگریزی ترجمہ کروایا جاتا ہے۔ اس ترجمے پر اوتھ کمشنر کی مہر اور وزارت خارجہ (MOFA) سے تصدیق کروائی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Ministry of Foreign Affairs (MOFA)",
+      "url": "https://mofa.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Translation & Notary Public",
+        "serviceUr": "انگلش ترجمہ و نوٹری",
+        "normal": "PKR 1,500 - 2,500",
+        "urgent": "Same Day",
+        "executive": "Legal Translator",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Legal Translation of All 25 Columns",
+        "titleUr": "تمام کالمز کا مکمل ترجمہ",
+        "detailEn": "Ensure word-for-word translation matching original names and dates.",
+        "detailUr": "ناموں اور تاریخوں کی درست انگریزی لکھوائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is NADRA MRC sufficient or is English Nikah Nama also needed?",
+        "questionUr": "کیا صرف نادرا میرج سرٹیفکیٹ کافی ہے یا نکاح نامہ کا ترجمہ بھی ضروری ہے؟",
+        "answerEn": "Most foreign embassies require BOTH the NADRA computerized MRC and the sworn English translation of the original Urdu Nikah Nama.",
+        "answerUr": "زیادہ تر سفارتخانے نادرا میرج سرٹیفکیٹ اور انگلش نکاح نامہ دونوں مانگتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on translating and attesting Nikah Nama for foreign embassies.",
+    "contentUr": "نکاح نامے کے انگریزی ترجمے اور تصدیق کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/family-registration/nikah-nama-registration-process-pakistan",
+      "/overseas/pakistan-embassy-attestation-documents"
+    ]
+  }
+,
+  "child-adoption-legal-procedure-pakistan": {
+    "slug": "child-adoption-legal-procedure-pakistan",
+    "fullPath": "/family-registration/child-adoption-legal-procedure-pakistan",
+    "categoryId": "family-registration",
+    "titleEn": "Legal Child Adoption Procedure & Guardian Certificate in Pakistan",
+    "titleUr": "پاکستان میں بچہ گود لینے کا قانونی طریقہ اور گارڈین شپ سرٹیفکیٹ",
+    "metaDescriptionEn": "Complete legal process for child adoption in Pakistan under Guardians and Wards Act 1890. Guardian Court decree, NADRA B-Form / FRC update, and child welfare trust rules.",
+    "metaDescriptionUr": "گارڈین اینڈ وارڈز ایکٹ 1890 کے تحت بچہ گود لینے، گارڈین کورٹ سے سرپرستی ڈگری اور نادرا میں بچے کا بی فارم بنوانے کا قانونی طریقہ۔",
+    "directAnswerEn": "Because statutory adoption does not exist in traditional Pakistani civil law, child adoption is legally formalized as 'Legal Guardianship' under the Guardians and Wards Act 1890. Adoptive parents obtain a Guardian Certificate from the Family / Guardian Court, which is then submitted to NADRA to register the child and issue a computerized B-Form / Smart Card with the adoptive parents listed as legal guardians.",
+    "directAnswerUr": "پاکستان میں بچہ گود لینے کا عمل گارڈین اینڈ وارڈز ایکٹ کے تحت فیملی کورٹ سے 'گارڈین شپ سرٹیفکیٹ' کے ذریعے مکمل ہوتا ہے۔ عدالت کی ڈگری نادرا میں جمع کروا کر بچے کا بی فارم اور شناختی دستاویزات بنوائی جاتی ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Family Courts & Child Protection Bureau",
+      "url": "https://cpwb.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Guardian Court Decree Processing",
+        "serviceUr": "گارڈین کورٹ ڈگری",
+        "normal": "Court Fee PKR 500",
+        "urgent": "1-3 Months Proceedings",
+        "executive": "Family Court",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "File Guardianship Petition in Family Court",
+        "titleUr": "فیملی کورٹ میں درخواست دائر کریں",
+        "detailEn": "Submit petition under Section 7 of Guardians & Wards Act.",
+        "detailUr": "بچے کی سرپرستی کے لیے عدالت میں درخواست دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Whose father name appears on the adopted child's NADRA B-Form?",
+        "questionUr": "گود لیے بچے کے بی فارم پر کس کا نام آئے گا؟",
+        "answerEn": "Under NADRA regulations, biological parents' names remain if known, with adoptive parents registered as official 'Legal Guardians' under court decree.",
+        "answerUr": "عدالتی حکم کے تحت گود لینے والے والدین بطور قانونی سرپرست درج ہوتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on child guardianship and legal adoption in Pakistan.",
+    "contentUr": "پاکستان میں بچہ گود لینے کے قانونی تقاضوں کی تفصیل۔",
+    "relatedSlugs": [
+      "/nadra/b-form-kaise-banaye",
+      "/nadra/family-registration-certificate"
+    ]
+  }
+,
+  "unmarried-certificate-single-status-pakistan": {
+    "slug": "unmarried-certificate-single-status-pakistan",
+    "fullPath": "/family-registration/unmarried-certificate-single-status-pakistan",
+    "categoryId": "family-registration",
+    "titleEn": "Unmarried / Single Status Certificate Issuance in Pakistan",
+    "titleUr": "غیر شادی شدہ سرٹیفکیٹ (Single Status Certificate) حاصل کرنے کا طریقہ",
+    "metaDescriptionEn": "How to get an Unmarried Certificate (Single Status Certificate) in Pakistan for foreign marriages abroad from Union Council, Assistant Commissioner, and MOFA.",
+    "metaDescriptionUr": "بیرون ملک شادی کے لیے یونین کونسل، اسسٹنٹ کمشنر اور وزارت خارجہ سے غیر شادی شدہ (سنگل سٹیٹس) سرٹیفکیٹ بنوانے کا سرکاری طریقہ۔",
+    "directAnswerEn": "An Unmarried Certificate (also known as a Single Status or Bachelorhood Certificate) verifies that a Pakistani citizen is legally unmarried, divorced, or widowed. The certificate is issued by the local Union Council / Secretary on official letterhead, counter-verified by the Assistant Commissioner (AC), and attested by MOFA for citizens marrying abroad.",
+    "directAnswerUr": "غیر شادی شدہ سرٹیفکیٹ (Single Status Certificate) اس بات کی تصدیق کرتا ہے کہ شہری قانونی طور پر غیر شادی شدہ ہے۔ یہ سرٹیفکیٹ یونین کونسل جاری کرتی ہے، جس پر اسسٹنٹ کمشنر کی تصدیق اور وزارت خارجہ کی مہر لگوائی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "District Administration & Local Govt",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Single Status Certificate Processing",
+        "serviceUr": "سنگل سٹیٹس سرٹیفکیٹ فیس",
+        "normal": "PKR 1,000 - 2,000",
+        "urgent": "2-4 Business Days",
+        "executive": "Union Council & AC Office",
+        "validity": "6 Months"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Affidavit of Celibacy",
+        "titleUr": "غیر شادی شدہ ہونے کا بیان حلفی",
+        "detailEn": "Submit sworn affidavit signed by parents/witnesses on PKR 100 e-Stamp.",
+        "detailUr": "والدین کی طرف سے بیان حلفی تیار کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long is a Single Status Certificate valid for foreign embassies?",
+        "questionUr": "سنگل سٹیٹس سرٹیفکیٹ کتنے عرصے کے لیے کارآمد ہوتا ہے؟",
+        "answerEn": "Most foreign embassies and marriage registries accept an Unmarried Certificate for up to 6 months from the date of MOFA attestation.",
+        "answerUr": "زیادہ تر غیر ملکی سفارتخانے 6 ماہ پرانا سرٹیفکیٹ قبول کرتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining Unmarried / Single Status Certificate in Pakistan.",
+    "contentUr": "سنگل سٹیٹس سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/family-registration/marriage-certificate-union-council-apply",
+      "/overseas/pakistan-embassy-attestation-documents"
+    ]
+  }
+,
+  "secp-company-registration-online-2026": {
+    "slug": "secp-company-registration-online-2026",
+    "fullPath": "/business/secp-company-registration-online-2026",
+    "categoryId": "business",
+    "titleEn": "SECP Company Registration Online 2026 – Pvt Ltd Formation Guide",
+    "titleUr": "ایس ای سی پی کمپنی رجسٹریشن آن لائن 2026 – پرائیویٹ لمیٹڈ کمپنی طریقہ",
+    "metaDescriptionEn": "Register a Private Limited (Pvt Ltd) or Single Member Company (SMC) online in Pakistan via SECP eServices in 4 hours. Fees, Memorandum & Articles of Association.",
+    "metaDescriptionUr": "ایس ای سی پی ای سروسز پر پرائیویٹ لمیٹڈ کمپنی آن لائن رجسٹر کرنے کی مکمل معلومات۔ فیس، میمورنڈم، آرٹیکلز اور ڈیجیٹل سرٹیفکیٹ کا طریقہ۔",
+    "directAnswerEn": "To register a Private Limited (Pvt Ltd) or Single Member Company (SMC) in Pakistan, use the Securities and Exchange Commission of Pakistan (SECP) eServices portal at eservices.secp.gov.pk. The integrated digital process combines name reservation, incorporation filing, and automated FBR NTN / provincial tax registration within 4 to 24 hours.",
+    "directAnswerUr": "پاکستان میں پرائیویٹ لمیٹڈ کمپنی رجسٹر کرنے کے لیے ایس ای سی پی کے ای سروسز پورٹل eservices.secp.gov.pk پر درخواست دیں۔ نام کی منظوری، میمورنڈم اور آرٹیکلز جمع کروانے کے بعد 4 سے 24 گھنٹوں میں کمپنی کا ڈیجیٹل رجسٹریشن سرٹیفکیٹ اور این ٹی این جاری ہو جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Securities & Exchange Commission of Pakistan (SECP)",
+      "url": "https://www.secp.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "SECP Fast-Track Online Incorporation (Up to 100K Capital)",
+        "serviceUr": "کمپنی رجسٹریشن فیس (1 لاکھ سرمائے تک)",
+        "normal": "PKR 1,500 - 2,500",
+        "urgent": "Same Day (4 Hours)",
+        "executive": "eServices Digital",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Name Reservation Fee",
+        "serviceUr": "نام ریزرویشن فیس",
+        "normal": "PKR 200",
+        "urgent": "Instant Online",
+        "executive": "SECP Portal",
+        "validity": "60 Days"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Name Reservation on SECP eServices",
+        "titleUr": "کمپنی کا نام منظور کروائیں",
+        "detailEn": "Search and reserve a unique company name on eservices.secp.gov.pk.",
+        "detailUr": "ای سروسز پر منفرد نام منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Incorporation Form, MoA & AoA",
+        "titleUr": "میمورنڈم اور آرٹیکلز جمع کریں",
+        "detailEn": "Fill standard Memorandum and Articles of Association online.",
+        "detailUr": "کمپنی کا منشور اور قواعد آن لائن جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Fee Online & Download Incorporation Certificate",
+        "titleUr": "فیس ادا کر کے سرٹیفکیٹ حاصل کریں",
+        "detailEn": "Pay via 1Link/Debit Card and receive digital Digital Incorporation Certificate.",
+        "detailUr": "آن لائن فیس دے کر کارپوریشن سرٹیفکیٹ ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the minimum capital required to register a Pvt Ltd company in Pakistan?",
+        "questionUr": "پرائیویٹ لمیٹڈ کمپنی کے لیے کم از کم کتنا سرمایہ درکار ہے؟",
+        "answerEn": "Under the Companies Act 2017, there is no statutory minimum paid-up capital requirement (you can start with nominal PKR 100,000 authorized capital).",
+        "answerUr": "قانون کے مطابق کم از کم سرمائے کی کوئی سخت حد نہیں، ایک لاکھ روپے سے بھی آغاز کیا جا سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to SECP company registration in Pakistan.",
+    "contentUr": "ایس ای سی پی میں کمپنی رجسٹریشن کا مکمل اور آسان طریقہ۔",
+    "relatedSlugs": [
+      "/business/sole-proprietorship-ntn-registration",
+      "/tax/ntn-registration-online-pakistan"
+    ]
+  }
+,
+  "sole-proprietorship-ntn-registration": {
+    "slug": "sole-proprietorship-ntn-registration",
+    "fullPath": "/business/sole-proprietorship-ntn-registration",
+    "categoryId": "business",
+    "titleEn": "Sole Proprietorship NTN Registration with FBR in Pakistan",
+    "titleUr": "سول پروپرائیٹر شپ اور کاروباری این ٹی این رجسٹریشن ایف بی آر",
+    "metaDescriptionEn": "Register a Sole Proprietorship business in Pakistan on FBR Iris Form 181. Open a commercial business bank account and obtain Chamber of Commerce membership.",
+    "metaDescriptionUr": "ایف بی آر کے فارم 181 پر اپنی دکان یا انفرادی کاروبار کا این ٹی این بنانے کا طریقہ۔ بینک میں کاروباری اکاؤنٹ اور چیمبر ممبرشپ کے تقاضے۔",
+    "directAnswerEn": "A Sole Proprietorship is the simplest business structure in Pakistan, legally owned and managed by a single individual. To register, add your business name, trade activity, and premises address on FBR Iris (iris.fbr.gov.pk) via Form 181 (Modification of Registration). This takes 24 hours and is 100% free of government charges.",
+    "directAnswerUr": "سول پروپرائیٹر شپ اکیلے فرد کا انفرادی کاروبار کہلاتا ہے۔ اس کی رجسٹریشن کے لیے ایف بی آر آئرس پورٹل پر فارم 181 میں جا کر اپنے بزنس کا نام، دکان کا پتہ اور کمرشل بجلی کا بل شامل کریں۔ یہ عمل 100% مفت ہے اور 24 گھنٹے میں مکمل ہوتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR Iris Business Registry",
+      "url": "https://iris.fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Sole Proprietor FBR Registration",
+        "serviceUr": "سول پروپرائیٹر رجسٹریشن",
+        "normal": "100% FREE",
+        "urgent": "24 Hours Approval",
+        "executive": "FBR Iris Portal",
+        "validity": "Active"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Open Form 181 in Iris",
+        "titleUr": "آئرس میں فارم 181 کھولیں",
+        "detailEn": "Add business title and commercial activity code.",
+        "detailUr": "بزنس کا نام اور کیٹیگری درج کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I open a corporate bank account with a Sole Proprietor NTN?",
+        "questionUr": "کیا سول پروپرائیٹر این ٹی این پر بزنس بینک اکاؤنٹ کھل سکتا ہے؟",
+        "answerEn": "Yes, submit your FBR 181 Certificate along with business letterhead and rubber stamp to any commercial bank to open an account in your business's name.",
+        "answerUr": "جی ہاں! این ٹی این سرٹیفکیٹ اور لیٹر ہیڈ دکھا کر بزنس اکاؤنٹ کھل جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide to registering a Sole Proprietorship in Pakistan.",
+    "contentUr": "سول پروپرائیٹر شپ کاروبار رجسٹر کرنے کی رہنمائی۔",
+    "relatedSlugs": [
+      "/tax/ntn-registration-online-pakistan",
+      "/business/trade-license-application-guide"
+    ]
+  }
+,
+  "how-to-register-small-business-pakistan": {
+    "slug": "how-to-register-small-business-pakistan",
+    "fullPath": "/business/how-to-register-small-business-pakistan",
+    "categoryId": "business",
+    "titleEn": "How to Register Small Business in Pakistan – SME & SMEDA Guide",
+    "titleUr": "پاکستان میں چھوٹا کاروبار رجسٹر کروانے کا طریقہ – ایس ایم ای اور سمیڈا",
+    "metaDescriptionEn": "Step-by-step guide for small businesses, startups, and SMEs to register in Pakistan with SMEDA, FBR, and provincial revenue authorities for subsidized grants.",
+    "metaDescriptionUr": "اسٹارٹ اپس اور چھوٹے کاروباروں کو سمیڈا (SMEDA) اور ایف بی آر سے رجسٹر کروانے کا طریقہ۔ بلاسود قرضے اور حکومتی گرانٹس حاصل کرنے کی شرائط۔",
+    "directAnswerEn": "Registering a small business or startup in Pakistan involves three main legal pillars: securing a business name via Sole Proprietorship or SECP Pvt Ltd, activating a commercial NTN on FBR Iris, and enrolling with the Small and Medium Enterprises Development Authority (SMEDA) for subsidized business development grants and credit facilities.",
+    "directAnswerUr": "پاکستان میں چھوٹے کاروبار (SME) کی رجسٹریشن کے لیے ایف بی آر سے این ٹی این لینا، بینک اکاؤنٹ کھولنا اور سمیڈا (SMEDA) پورٹل پر رجسٹریشن کروانا شامل ہے۔ اس سے حکومتی مراعات اور کم شرح سود پر قرضوں کی سہولت ملتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "SMEDA Official Business Support Portal",
+      "url": "https://smeda.org/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "SMEDA One-Window SME Registration",
+        "serviceUr": "سمیڈا رجسٹریشن فیس",
+        "normal": "100% FREE",
+        "urgent": "Digital Portal",
+        "executive": "SMEDA Pakistan",
+        "validity": "Active"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register on SMEDA One-Window",
+        "titleUr": "سمیڈا ون ونڈو پر سائن اپ کریں",
+        "detailEn": "Access smeda.org and create enterprise profile.",
+        "detailUr": "ویب سائٹ پر اپنے کاروبار کی تفصیل لکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Are small businesses eligible for government interest-free loans?",
+        "questionUr": "کیا چھوٹے کاروبار بلاسود قرضوں کے اہل ہیں؟",
+        "answerEn": "Yes, registered SMEs can apply for PM Youth Business Loans (up to PKR 7.5 Million) and provincial Asaan Karobar financing.",
+        "answerUr": "جی ہاں! رجسٹرڈ کاروباری افراد پی ایم یوتھ لون سے فائدہ اٹھا سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to small enterprise registration in Pakistan.",
+    "contentUr": "پاکستان میں چھوٹے کاروبار کی قانونی رجسٹریشن کا طریقہ۔",
+    "relatedSlugs": [
+      "/loans/pm-youth-loan-scheme",
+      "/business/secp-company-registration-online-2026"
+    ]
+  }
+,
+  "trade-license-application-guide": {
+    "slug": "trade-license-application-guide",
+    "fullPath": "/business/trade-license-application-guide",
+    "categoryId": "business",
+    "titleEn": "Trade License Application Guide – Municipal Corporation Rules",
+    "titleUr": "ٹریڈ لائسنس حاصل کرنے کا طریقہ – میونسپل کارپوریشن قوانین",
+    "metaDescriptionEn": "Apply for a commercial Municipal Trade License in Lahore (MCL), Karachi (KMC), and Islamabad (MCI). Learn annual professional tax and shop registration fees.",
+    "metaDescriptionUr": "لاہور، کراچی اور اسلام آباد میں دکان اور کاروباری مرکز کے لیے میونسپل ٹریڈ لائسنس اور پروفیشنل ٹیکس کی فیس اور آن لائن فارم کا طریقہ۔",
+    "directAnswerEn": "A Municipal Trade License is a statutory permit issued by local municipal corporations (e.g., Metropolitan Corporation Lahore, KMC Karachi, MCI Islamabad) authorizing businesses to legally operate commercial premises within city limits. It ensures compliance with local health, fire safety, and environmental zoning laws.",
+    "directAnswerUr": "ٹریڈ لائسنس مقامی بلدیہ یا میونسپل کارپوریشن (MCL, KMC, MCI) سے جاری ہونے والا قانونی اجازت نامہ ہے جو کسی دکان یا دفتر کو شہر میں کاروبار چلانے کا حق دیتا ہے۔ یہ لائسنس ہیلتھ اور فائر سیفٹی کے معائنے کے بعد جاری کیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Department",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Annual Municipal Trade License",
+        "serviceUr": "سالانہ ٹریڈ لائسنس فیس",
+        "normal": "PKR 1,500 - 5,000 / Yr",
+        "urgent": "Category Based",
+        "executive": "Municipal Corporation",
+        "validity": "1 Year"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Application with Shop Lease",
+        "titleUr": "دکان کے کاغذات جمع کروائیں",
+        "detailEn": "Provide CNIC, rental deed, and commercial electricity bill.",
+        "detailUr": "کرایہ نامہ اور بجلی کا بل جمع کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is a trade license required for home-based online businesses?",
+        "questionUr": "کیا گھر سے آن لائن کام کرنے والوں کو بھی ٹریڈ لائسنس چاہیے؟",
+        "answerEn": "No, home-based freelancers and purely digital e-commerce sellers are generally exempt unless operating physical inventory warehouses.",
+        "answerUr": "نہیں، گھر سے آن لائن کام کرنے والوں کے لیے یہ لازمی نہیں ہے۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining commercial municipal trade licenses in Pakistan.",
+    "contentUr": "میونسپل ٹریڈ لائسنس حاصل کرنے کی تمام تفصیلات۔",
+    "relatedSlugs": [
+      "/business/sole-proprietorship-ntn-registration",
+      "/business/secp-company-registration-online-2026"
+    ]
+  }
+,
+  "import-export-license-weboc-registration": {
+    "slug": "import-export-license-weboc-registration",
+    "fullPath": "/business/import-export-license-weboc-registration",
+    "categoryId": "business",
+    "titleEn": "WeBOC Registration Guide – Import & Export License in Pakistan",
+    "titleUr": "ویبوک (WeBOC) رجسٹریشن اور پاکستان میں امپورٹ ایکسپورٹ لائسنس",
+    "metaDescriptionEn": "Complete guide to WeBOC (Web Based One Customs) and PSW (Pakistan Single Window) registration for import and export business. Chamber certificate & customs biometric.",
+    "metaDescriptionUr": "پاکستان میں امپورٹ ایکسپورٹ شروع کرنے کے لیے کسٹم کے ویبوک پورٹل اور پاکستان سنگل ونڈو (PSW) پر آن لائن رجسٹریشن کا مکمل طریقہ۔",
+    "directAnswerEn": "To import or export goods in Pakistan, businesses must register on WeBOC (Web Based One Customs) and the Pakistan Single Window (PSW) at psw.gov.pk. Requirements include an active business NTN, Sales Tax Registration (STRN), Chamber of Commerce membership, a dedicated commercial bank account, and biometric verification at Pakistan Customs Collectorates.",
+    "directAnswerUr": "پاکستان میں درآمد و برآمد (Import/Export) کے لیے کسٹم کے ویبوک (WeBOC) اور پاکستان سنگل ونڈو (psw.gov.pk) پر رجسٹر ہونا لازمی ہے۔ اس کے لیے سیلز ٹیکس نمبر (STRN)، چیمبر آف کامرس کا سرٹیفکیٹ اور کسٹم میں بائیومیٹرک تصدیق درکار ہوتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Pakistan Single Window (Customs)",
+      "url": "https://www.psw.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PSW Subscription & User ID",
+        "serviceUr": "پاکستان سنگل ونڈو آئی ڈی",
+        "normal": "PKR 5,000 (Govt Fee)",
+        "urgent": "Online Biometric",
+        "executive": "Pakistan Customs",
+        "validity": "2 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register on Pakistan Single Window",
+        "titleUr": "سنگل ونڈو پر رجسٹریشن",
+        "detailEn": "Create profile on psw.gov.pk with commercial NTN.",
+        "detailUr": "بزنس این ٹی این سے اکاؤنٹ بنائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can an individual with a Sole Proprietorship get a WeBOC ID?",
+        "questionUr": "کیا سول پروپرائیٹر کو بھی امپورٹ ایکسپورٹ لائسنس مل سکتا ہے؟",
+        "answerEn": "Yes, sole proprietors with valid business bank accounts and Chamber membership can legally obtain a WeBOC User ID.",
+        "answerUr": "جی ہاں! سول پروپرائیٹر بھی ویبوک آئی ڈی بنوا سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on registering for import/export via WeBOC and PSW in Pakistan.",
+    "contentUr": "امپورٹ ایکسپورٹ لائسنس حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/business/secp-company-registration-online-2026",
+      "/tax/ntn-registration-online-pakistan"
+    ]
+  }
+,
+  "pseb-freelancer-it-company-registration": {
+    "slug": "pseb-freelancer-it-company-registration",
+    "fullPath": "/business/pseb-freelancer-it-company-registration",
+    "categoryId": "business",
+    "titleEn": "PSEB Freelancer & IT Company Registration for 100% Tax Relief",
+    "titleUr": "پی ایس ای بی (PSEB) فری لانسر اور آئی ٹی کمپنی رجسٹریشن 2026",
+    "metaDescriptionEn": "Register with Pakistan Software Export Board (PSEB) to enjoy 0.25% reduced export tax, subsidized foreign office space, commercial forex accounts, and visa facilitation.",
+    "metaDescriptionUr": "پاکستان سافٹ ویئر ایکسپورٹ بورڈ میں فری لانسرز اور سافٹ ویئر ہاؤسز کی رجسٹریشن کا طریقہ۔ 100% ٹیکس چھوٹ اور فارن کرنسی اکاؤنٹ کی سہولیات۔",
+    "directAnswerEn": "The Pakistan Software Export Board (PSEB) under the Ministry of IT facilitates IT exporters and software freelancers. Registering at pseb.org.pk entitles developers to a concessionary 0.25% export withholding tax under Section 154A of Income Tax Ordinance, special foreign currency accounts holding up to 50% export proceeds, and subsidized tech park spaces.",
+    "directAnswerUr": "پاکستان سافٹ ویئر ایکسپورٹ بورڈ (PSEB) میں رجسٹریشن کے ذریعے آئی ٹی فری لانسرز اور کمپنیوں کو صرف 0.25% فائنل ٹیکس کی قانونی سہولت، بینکوں میں 50% ڈالر رکھنے کی اجازت اور بین الاقوامی ادائیگیوں میں آسانی فراہم کی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Pakistan Software Export Board (PSEB)",
+      "url": "https://pseb.org.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Individual Freelancer PSEB Registration",
+        "serviceUr": "فری لانسر رجسٹریشن فیس",
+        "normal": "PKR 1,000 / Yr",
+        "urgent": "Digital Certificate",
+        "executive": "PSEB Portal",
+        "validity": "1 Year"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Profile on PSEB Portal",
+        "titleUr": "آن لائن پورٹل پر اپلائی کریں",
+        "detailEn": "Provide CNIC, Upwork/Fiverr proof, and PRC bank certificates on pseb.org.pk.",
+        "detailUr": "شناختی کارڈ اور فری لانسنگ پروف اپلوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the tax rate on IT export remittances for PSEB registered freelancers?",
+        "questionUr": "رجسٹرڈ فری لانسر کا ٹیکس کتنا ہے؟",
+        "answerEn": "PSEB registered IT exporters pay a nominal 0.25% final withholding tax upon receiving inward foreign bank remittances.",
+        "answerUr": "صرف 0.25% برائے نام ٹیکس منہا ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on PSEB registration and tax benefits for freelancers in Pakistan.",
+    "contentUr": "فری لانسرز کے لیے پی ایس ای بی رجسٹریشن کے فوائد۔",
+    "relatedSlugs": [
+      "/tax/income-tax-return-filing-guide",
+      "/business/how-to-register-small-business-pakistan"
+    ]
+  }
+,
+  "domicile-certificate-apply-online": {
+    "slug": "domicile-certificate-apply-online",
+    "fullPath": "/certificates/domicile-certificate-apply-online",
+    "categoryId": "certificates",
+    "titleEn": "Domicile Certificate Apply Online – Punjab, Sindh, KPK & ICT Guide",
+    "titleUr": "ڈومیسائل سرٹیفکیٹ آن لائن اپلائی – پنجاب، سندھ، کے پی کے اور اسلام آباد",
+    "metaDescriptionEn": "Apply for a computerized Domicile Certificate online in Pakistan for government jobs, university admissions, and CSS/PPSC tests. Requirements, fees, and processing time.",
+    "metaDescriptionUr": "پنجاب، سندھ، خیبر پختونخوا اور اسلام آباد میں کمپیوٹرائزڈ ڈومیسائل آن لائن بنوانے کا طریقہ۔ سرکاری نوکریوں اور داخلوں کے لیے ضروری دستاویزات۔",
+    "directAnswerEn": "A Domicile Certificate is a vital legal document proving a citizen's permanent district residence under the Pakistan Citizenship Act 1951. In Punjab (via Dastak App / e-Khidmat), Sindh (via Sindh e-Portal), and Islamabad (via ICT City App), citizens can apply online with their CNIC, electricity bill, and land ownership/rent deed for PKR 200-500.",
+    "directAnswerUr": "ڈومیسائل سرٹیفکیٹ کسی ضلع میں مستقل رہائش کا قانونی ثبوت ہوتا ہے جو سرکاری ملازمتوں (PPSC/FPSC) اور یونیورسٹی کوٹہ کے لیے لازمی ہے۔ پنجاب میں ای خدمت مرکز، اسلام آباد میں آئی سی ٹی ایپ اور سندھ میں ای پورٹل کے ذریعے شناختی کارڈ اور بجلی بل جمع کروا کر 200 سے 500 روپے میں بنوایا جا سکتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "e-Khidmat Markaz Punjab",
+      "url": "https://services.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Computerized Domicile Certificate",
+        "serviceUr": "ڈومیسائل سرکاری فیس",
+        "normal": "PKR 200 - 500",
+        "urgent": "3 Business Days",
+        "executive": "e-Khidmat / AC Office",
+        "validity": "Lifetime"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Upload Proof of Residence",
+        "titleUr": "رہائش کا ثبوت فراہم کریں",
+        "detailEn": "Submit CNIC, 2 passport photos, utility bill, and educational certificate.",
+        "detailUr": "شناختی کارڈ، 2 تصاویر اور بجلی کا بل دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a person hold dual domicile certificates from two districts?",
+        "questionUr": "کیا ایک شخص دو مختلف اضلاع کا ڈومیسائل رکھ سکتا ہے؟",
+        "answerEn": "No. Holding more than one domicile certificate is a punishable criminal offense under the Pakistan Citizenship Rules 1952.",
+        "answerUr": "نہیں! دو اضلاع کا ڈومیسائل رکھنا قانوناً جرم ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to obtaining Domicile Certificate in Pakistan.",
+    "contentUr": "ڈومیسائل سرٹیفکیٹ حاصل کرنے کا مکمل طریقہ کار۔",
+    "relatedSlugs": [
+      "/certificates/prc-permanent-residence-certificate-pakistan",
+      "/jobs/ppsc-jobs-2026"
+    ]
+  }
+,
+  "birth-certificate-union-council-online": {
+    "slug": "birth-certificate-union-council-online",
+    "fullPath": "/certificates/birth-certificate-union-council-online",
+    "categoryId": "certificates",
+    "titleEn": "NADRA Computerized Birth Certificate Online Application & Fees",
+    "titleUr": "نادرا کمپیوٹرائزڈ پیدائش سرٹیفکیٹ آن لائن اپلائی اور یونین کونسل فیس",
+    "metaDescriptionEn": "Apply for a NADRA computerized Birth Certificate from Union Council in Pakistan. Necessary for child B-Form, school admission, and minor passport applications.",
+    "metaDescriptionUr": "بچے کے بی فارم، اسکول داخلے اور پاسپورٹ کے لیے نادرا کا کمپیوٹرائزڈ برتھ سرٹیفکیٹ یونین کونسل سے بنوانے کا طریقہ اور ہسپتال سلپ کے تقاضے۔",
+    "directAnswerEn": "A Computerized Birth Certificate is issued on green NADRA security paper by the local Union Council within whose jurisdiction the child was born. Required for generating a NADRA B-Form and child passport, parents must submit the hospital birth discharge slip, parents' valid CNICs, and pay the PKR 200-500 registration fee within 60 days of birth.",
+    "directAnswerUr": "کمپیوٹرائزڈ برتھ سرٹیفکیٹ یونین کونسل سے جاری ہوتا ہے جو بچے کا بی فارم اور پاسپورٹ بنوانے کے لیے لازمی ہے۔ بچے کی پیدائش کے 60 دن کے اندر ہسپتال کا کارڈ اور والدین کے شناختی کارڈ دکھا کر 200 سے 500 روپے میں سرٹیفکیٹ حاصل کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Department",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Birth Certificate (Within 60 Days)",
+        "serviceUr": "پیدائش سرٹیفکیٹ فیس",
+        "normal": "PKR 200 - 500",
+        "urgent": "3 Business Days",
+        "executive": "Union Council",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Provide Hospital Birth Report",
+        "titleUr": "ہسپتال کا برتھ کارڈ دکھائیں",
+        "detailEn": "Submit hospital discharge slip and parent CNICs.",
+        "detailUr": "ہسپتال سلپ اور والدین کے شناختی کارڈ دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to register a late birth certificate for an adult above 18?",
+        "questionUr": "18 سال سے بڑے افراد کی لیٹ برتھ رجسٹریشن کیسے ہوتی ہے؟",
+        "answerEn": "Late birth registration requires an order from the Assistant Commissioner / Magistrate along with an educational matriculation certificate as age proof.",
+        "answerUr": "اسسٹنٹ کمشنر یا مجسٹریٹ کے حکم نامے کے بعد سرٹیفکیٹ جاری ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining computerized birth certificates in Pakistan.",
+    "contentUr": "کمپیوٹرائزڈ پیدائش سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/nadra/b-form-kaise-banaye",
+      "/certificates/domicile-certificate-apply-online"
+    ]
+  }
+,
+  "prc-permanent-residence-certificate-pakistan": {
+    "slug": "prc-permanent-residence-certificate-pakistan",
+    "fullPath": "/certificates/prc-permanent-residence-certificate-pakistan",
+    "categoryId": "certificates",
+    "titleEn": "PRC (Permanent Residence Certificate) Form C & D Application",
+    "titleUr": "پی آر سی (Permanent Residence Certificate) فارم سی اور ڈی گائیڈ",
+    "metaDescriptionEn": "Apply for a Permanent Residence Certificate (PRC) in Sindh and other provinces for MDCAT, medical college quota, and government university admissions.",
+    "metaDescriptionUr": "سندھ اور دیگر صوبوں میں میڈیکل کالجز، ایم ڈی کیٹ اور انجینئرنگ داخلوں کے لیے پی آر سی (فارم سی اور ڈی) حاصل کرنے کا قانونی طریقہ۔",
+    "directAnswerEn": "A Permanent Residence Certificate (PRC) Form 'C' and Form 'D' is an essential statutory residency certificate mandatory in Sindh and other provinces for securing quota-based seats in government medical universities (MDCAT) and public engineering colleges. It is issued by the Deputy Commissioner (DC) Office alongside the Domicile certificate.",
+    "directAnswerUr": "پی آر سی (Permanent Residence Certificate) فارم سی اور فارم ڈی خاص طور پر سندھ میں میڈیکل اور انجینئرنگ کالجز میں کوٹہ داخلے کے لیے لازمی سرٹیفکیٹ ہے۔ یہ سرٹیفکیٹ ڈپٹی کمشنر (DC) آفس سے ڈومیسائل کے ساتھ جاری کیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Sindh e-Services / DC Office",
+      "url": "https://sindh.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PRC Form C / D Issuance",
+        "serviceUr": "پی آر سی فارم فیس",
+        "normal": "PKR 300 - 500",
+        "urgent": "5 Business Days",
+        "executive": "Deputy Commissioner Office",
+        "validity": "Lifetime"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Form C / D Application",
+        "titleUr": "فارم سی / ڈی جمع کروائیں",
+        "detailEn": "Attach parent Domicile, matric certificate, and electric bill.",
+        "detailUr": "والدین کا ڈومیسائل اور تعلیمی اسناد لگائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the difference between Domicile and PRC?",
+        "questionUr": "ڈومیسائل اور پی آر سی میں کیا فرق ہے؟",
+        "answerEn": "Domicile proves broad district residency for federal/provincial jobs, while PRC specifically certifies continuous long-term local schooling and lineage for university quotas in Sindh.",
+        "answerUr": "ڈومیسائل عام رہائش کا اور پی آر سی مخصوص تعلیمی کوٹہ کا ثبوت ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining PRC Form C and D in Pakistan.",
+    "contentUr": "پی آر سی سرٹیفکیٹ حاصل کرنے کی معلومات۔",
+    "relatedSlugs": [
+      "/certificates/domicile-certificate-apply-online",
+      "/education/university-merit-list-checker-2026"
+    ]
+  }
+,
+  "death-certificate-registration-process": {
+    "slug": "death-certificate-registration-process",
+    "fullPath": "/certificates/death-certificate-registration-process",
+    "categoryId": "certificates",
+    "titleEn": "Death Certificate Registration Process – Union Council & NADRA",
+    "titleUr": "نادرا کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ اور یونین کونسل وفات رجسٹریشن",
+    "metaDescriptionEn": "Step-by-step procedure to report death and obtain a NADRA Computerized Death Certificate for inheritance succession, bank account closure, and pension claims.",
+    "metaDescriptionUr": "یونین کونسل سے کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ، نادرا میں شناختی کارڈ منسوخی، بینک اکاؤنٹ بند کروانے اور پنشن کلیم کرنے کا طریقہ۔",
+    "directAnswerEn": "To register a death in Pakistan, legal heirs must report the passing to the local Union Council within 60 days with the hospital death summary or graveyard burial slip (Qabristan slip). The Union Council issues an official computerized Death Certificate on NADRA security paper, which is subsequently used at NADRA to cancel the deceased's CNIC and obtain a Succession Certificate.",
+    "directAnswerUr": "وفات کے اندراج کے لیے 60 دن کے اندر قبرستان کی پرچی یا ہسپتال ڈیتھ سلپ کے ساتھ متعلقہ یونین کونسل میں رپورٹ کریں۔ یونین کونسل سے کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ حاصل کر کے نادرا سے شناختی کارڈ کینسل کروائیں تاکہ وراثت اور پنشن کا عمل شروع ہو سکے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Department",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Computerized Death Certificate",
+        "serviceUr": "ڈیتھ سرٹیفکیٹ فیس",
+        "normal": "PKR 200 - 500",
+        "urgent": "3 Business Days",
+        "executive": "Union Council",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Burial Slip & Deceased CNIC",
+        "titleUr": "قبرستان کی پرچی اور شناختی کارڈ دیں",
+        "detailEn": "Provide cemetery receipt and CNICs of deceased and applicant.",
+        "detailUr": "قبرستان کی پرچی اور اصل شناختی کارڈ دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Why is the computerized death certificate necessary for legal heirs?",
+        "questionUr": "ورثاء کے لیے ڈیتھ سرٹیفکیٹ کیوں ضروری ہے؟",
+        "answerEn": "Without a computerized death certificate, banks cannot release inherited funds, property cannot be transferred, and NADRA cannot issue succession certificates.",
+        "answerUr": "اس کے بغیر بینک سے رقم نہیں ملتی اور نہ ہی جائیداد منتقل ہو سکتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on registering deaths and getting computerized death certificates in Pakistan.",
+    "contentUr": "وفات کے اندراج اور سرٹیفکیٹ کی تفصیل۔",
+    "relatedSlugs": [
+      "/nadra/death-cancellation-certificate",
+      "/certificates/succession-certificate-nadra-legal-heirs"
+    ]
+  }
+,
+  "character-certificate-union-council": {
+    "slug": "character-certificate-union-council",
+    "fullPath": "/certificates/character-certificate-union-council",
+    "categoryId": "certificates",
+    "titleEn": "Union Council Character Certificate Application Procedure",
+    "titleUr": "یونین کونسل کردار (Character Certificate) سرٹیفکیٹ حاصل کرنے کا طریقہ",
+    "metaDescriptionEn": "Obtain a certified Character Certificate from your local Union Council or Nazim / Councilor in Pakistan for college admissions and private employment.",
+    "metaDescriptionUr": "کالج داخلے اور نجی ملازمتوں کے لیے یونین کونسل یا چیئرمین سے تصدیق شدہ کیریکٹر سرٹیفکیٹ بنوانے کا آسان طریقہ۔",
+    "directAnswerEn": "A Union Council Character Certificate is a local civic verification issued by the Secretary or Chairman of your local ward confirming the applicant is a respectable resident of good moral character with no local community complaints. It is distinct from a Police Character Certificate (PCC) and is used for academic admissions and local jobs.",
+    "directAnswerUr": "یونین کونسل کیریکٹر سرٹیفکیٹ مقامی کونسلر یا سیکرٹری کی طرف سے جاری کیا جانے والا تصدیقی خط ہے جو شہری کے اچھے اخلاق اور رہائش کی تصدیق کرتا ہے۔ یہ پولیس کریکٹر سرٹیفکیٹ سے مختلف ہوتا ہے اور اسکول و کالج داخلے میں استعمال ہوتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Local Government Department",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Local Character Certificate",
+        "serviceUr": "کیریکٹر سرٹیفکیٹ فیس",
+        "normal": "PKR 100 - 300",
+        "urgent": "Same Day",
+        "executive": "Union Council Office",
+        "validity": "6 Months"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Provide CNIC & 2 Neighborhood Witnesses",
+        "titleUr": "شناختی کارڈ اور 2 گواہ دیں",
+        "detailEn": "Submit CNIC copy and get verification from two local councilors.",
+        "detailUr": "شناختی کارڈ اور محلے کے معززین کی تصدیق کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a Union Council character certificate be used for foreign visas?",
+        "questionUr": "کیا یہ سرٹیفکیٹ غیر ملکی ویزا کے لیے استعمال ہو سکتا ہے؟",
+        "answerEn": "No, foreign embassies strictly require a 'Police Character Certificate' (PCC) issued by the Police Khidmat Markaz, not a Union Council certificate.",
+        "answerUr": "نہیں، غیر ملکی ویزا کے لیے پولیس خدمت مرکز کا سرٹیفکیٹ درکار ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on getting a Union Council character certificate.",
+    "contentUr": "یونین کونسل کیریکٹر سرٹیفکیٹ کی معلومات۔",
+    "relatedSlugs": [
+      "/legal/police-character-certificate-apply-online",
+      "/certificates/domicile-certificate-apply-online"
+    ]
+  }
+,
+  "succession-certificate-nadra-legal-heirs": {
+    "slug": "succession-certificate-nadra-legal-heirs",
+    "fullPath": "/certificates/succession-certificate-nadra-legal-heirs",
+    "categoryId": "certificates",
+    "titleEn": "Succession Certificate NADRA for Legal Heirs – Law & Fees 2026",
+    "titleUr": "نادرا جانشینی سرٹیفکیٹ (Succession Certificate) فیس اور قانون 2026",
+    "metaDescriptionEn": "Get a Letter of Administration & Succession Certificate from NADRA in 15 days without lengthy civil court cases. Transfer deceased bank funds, shares, and vehicles.",
+    "metaDescriptionUr": "کورٹ کچہری کے بغیر نادرا سے صرف 15 دنوں میں جانشینی سرٹیفکیٹ اور لیٹر آف ایڈمنسٹریشن حاصل کرنے کا طریقہ اور فیس شیڈول 2026۔",
+    "directAnswerEn": "Under the Succession Certificates Act, NADRA issues legal Succession Certificates (for movable assets like bank accounts, prize bonds, shares) and Letters of Administration in just 15 days without civil court trials. Legal heirs provide the death certificate, complete biometric verification at any NADRA center, and verify a mandatory 14-day public newspaper notice.",
+    "directAnswerUr": "نادرا سکسیشن سرٹیفکیٹ ایکٹ کے تحت مرحوم کے بینک اکاؤنٹس، گاڑیوں اور حصص کی منتقلی کے لیے نادرا صرف 15 دنوں میں جانشینی سرٹیفکیٹ جاری کرتا ہے۔ تمام قانونی ورثاء نادرا سنٹر پر بائیومیٹرک تصدیق کرواتے ہیں اور اخبار میں 14 دن کا پبلک نوٹس دیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Succession Services",
+      "url": "https://succession.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Assets Value Up to PKR 100,000",
+        "serviceUr": "1 لاکھ روپے تک کے اثاثے",
+        "normal": "PKR 10,000",
+        "urgent": "15 Days Timeline",
+        "executive": "NADRA Centers",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Assets Value Above PKR 100,000",
+        "serviceUr": "1 لاکھ سے زائد مالیت کے اثاثے",
+        "normal": "PKR 20,000",
+        "urgent": "15 Days Timeline",
+        "executive": "NADRA Centers",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Initiate Online / Counter Application",
+        "titleUr": "آن لائن یا کاؤنٹر پر درخواست دیں",
+        "detailEn": "Provide deceased CNIC, Death Certificate, and FRC.",
+        "detailUr": "ڈیتھ سرٹیفکیٹ اور ایف آر سی جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Biometric Verification of All Legal Heirs",
+        "titleUr": "تمام ورثاء کی بائیومیٹرک تصدیق",
+        "detailEn": "All surviving heirs record biometrics at NADRA or via mobile app.",
+        "detailUr": "تمام ورثاء نادرا میں انگوٹھا لگائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "14-Day Public Notice & Digital Issuance",
+        "titleUr": "14 دن کا اخباری نوٹس اور سرٹیفکیٹ",
+        "detailEn": "NADRA publishes newspaper notice; if no dispute arises, certificate is issued.",
+        "detailUr": "اخباری اشتہار کے بعد اصل سرٹیفکیٹ جاری ہوتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What happens if one legal heir is abroad?",
+        "questionUr": "اگر کوئی وارث بیرون ملک ہو تو کیا کریں؟",
+        "answerEn": "Heirs residing overseas can complete biometric consent at their nearest Pakistani Embassy/Consulate or via the Pak-ID mobile app.",
+        "answerUr": "بیرون ملک ورثاء سفارتخانے یا پاک آئی ڈی ایپ سے بائیومیٹرک دے سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining NADRA succession certificates for legal inheritance in Pakistan.",
+    "contentUr": "نادرا جانشینی سرٹیفکیٹ حاصل کرنے کا مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/certificates/death-certificate-registration-process",
+      "/nadra/family-registration-certificate"
+    ]
+  }
+,
+  "hajj-registration-portal-pakistan-2026": {
+    "slug": "hajj-registration-portal-pakistan-2026",
+    "fullPath": "/hajj-umrah/hajj-registration-portal-pakistan-2026",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Hajj Registration Portal Pakistan 2026 – Government MORA Scheme",
+    "titleUr": "حج رجسٹریشن پورٹل پاکستان 2026 – سرکاری حج سکیم آن لائن فارم",
+    "metaDescriptionEn": "Register for Government Hajj Scheme 2026 online via Ministry of Religious Affairs (hajjinfo.org). Check Regular Scheme vs Sponsorship Scheme (US Dollars) quotas.",
+    "metaDescriptionUr": "وزارت مذہبی امور کے آفیشل پورٹل پر سرکاری حج اسکیم 2026 آن لائن اپلائی کرنے کا طریقہ۔ ریگولر اور فارن اسپانسرشپ اسکیم کی فیس اور شرائط۔",
+    "directAnswerEn": "The Ministry of Religious Affairs and Interfaith Harmony (MORA) manages online applications for the Government Hajj Scheme at hajjinfo.org and designated commercial banks. Pakistani citizens can apply under the Regular Scheme (balloting based in PKR) or the 100% balloting-exempt Sponsorship Scheme by remitting funds in US Dollars from abroad.",
+    "directAnswerUr": "وزارت مذہبی امور کی سرکاری حج اسکیم 2026 کے لیے آن لائن رجسٹریشن hajjinfo.org اور مجاز بینکوں کے ذریعے کی جاتی ہے۔ شہری ریگولر اسکیم (پاکستانی روپے) یا بغیر قرعہ اندازی اسپانسرشپ اسکیم (ڈالر ترسیلات) کے تحت درخواست دے سکتے ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Ministry of Religious Affairs (MORA)",
+      "url": "https://hajjinfo.org/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Government Regular Hajj Package",
+        "serviceUr": "سرکاری ریگولر حج پیکیج",
+        "normal": "PKR 1,075,000 - 1,150,000",
+        "urgent": "Balloting Quota",
+        "executive": "MORA / Banks",
+        "validity": "Hajj 2026"
+      },
+      {
+        "serviceEn": "Dollar Sponsorship Scheme (No Balloting)",
+        "serviceUr": "ڈالر اسپانسرشپ اسکیم (بغیر قرعہ اندازی)",
+        "normal": "$3,800 - $4,200 USD",
+        "urgent": "Guaranteed Seat",
+        "executive": "Foreign Remittance",
+        "validity": "Hajj 2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify Machine Readable Passport Validity",
+        "titleUr": "پاسپورٹ کی تاریخ چیک کریں",
+        "detailEn": "Ensure passport has at least 7 months validity with valid CNIC.",
+        "detailUr": "پاسپورٹ کی میعاد کم از کم 7 ماہ ہونی چاہیے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application at Designated Bank",
+        "titleUr": "مجاز بینک میں فارم جمع کروائیں",
+        "detailEn": "Deposit initial token advance in 15 designated banks (HBL, NBP, Meezan, etc.).",
+        "detailUr": "بینک میں ٹوکن رقم جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is a female pilgrim allowed without a Mahram in the Government Hajj Scheme?",
+        "questionUr": "کیا خواتین بغیر محرم سرکاری حج کر سکتی ہیں؟",
+        "answerEn": "Yes, under current Saudi and MORA guidelines, women aged 45 and above can travel in organized female group cohorts without a male Mahram.",
+        "answerUr": "جی ہاں! 45 سال سے زائد عمر کی خواتین خواتین کے گروپ میں بغیر محرم حج کر سکتی ہیں۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to Government Hajj registration in Pakistan.",
+    "contentUr": "سرکاری حج اسکیم میں اپلائی کرنے کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-balloting-result-check-online",
+      "/hajj-umrah/umrah-visa-apply-from-pakistan-steps"
+    ]
+  }
+,
+  "umrah-visa-apply-from-pakistan-steps": {
+    "slug": "umrah-visa-apply-from-pakistan-steps",
+    "fullPath": "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Umrah Visa Apply from Pakistan Steps – Nusuk Portal Complete Guide",
+    "titleUr": "پاکستان سے عمرہ ویزا اپلائی کرنے کا طریقہ 2026 – نسک (Nusuk) پورٹل",
+    "metaDescriptionEn": "Apply for Saudi tourist & Umrah e-visa directly from Pakistan via the official Nusuk portal (nusuk.sa). 90-day multiple entry visa fees, hotel booking, and Rawdah permits.",
+    "metaDescriptionUr": "سعودی عرب کے سرکاری نسک (Nusuk) پورٹل سے براہ راست 90 دن کا عمرہ ای ویزا حاصل کرنے کا طریقہ، فیس اور ریاض الجنہ پرمٹ کی مکمل تفصیل۔",
+    "directAnswerEn": "Pakistani pilgrims can apply for an Umrah e-visa directly online using the official Saudi Government Nusuk platform (nusuk.sa) or via authorized Umrah travel operators. The Saudi 90-day tourist/Umrah e-visa allows pilgrims to perform Umrah, travel freely across Makkah, Madinah, and all Saudi cities, and book Rawdah permits on the Nusuk app.",
+    "directAnswerUr": "پاکستانی شہری سعودی حکومت کے آفیشل 'نسک' (nusuk.sa) پورٹل کے ذریعے براہ راست 90 دن کا عمرہ ویزا حاصل کر سکتے ہیں۔ یہ ویزا پورے سعودی عرب میں سفر، عمرہ کی ادائیگی اور ریاض الجنہ میں نماز کے لیے پرمٹ بک کرنے کی اجازت دیتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Saudi Nusuk Official Portal",
+      "url": "https://www.nusuk.sa/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Official Saudi Umrah e-Visa Fee",
+        "serviceUr": "عمرہ ای ویزا سرکاری فیس",
+        "normal": "SAR 300 - 450 (PKR 25K-35K)",
+        "urgent": "Instant e-Visa (24 Hrs)",
+        "executive": "Nusuk Platform",
+        "validity": "90 Days"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Account on Nusuk.sa",
+        "titleUr": "نسک پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Register with valid Pakistani passport details.",
+        "detailUr": "پاسپورٹ سے نسک پر رجسٹر ہوں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Book Rawdah Permit on App",
+        "titleUr": "ریاض الجنہ پرمٹ حاصل کریں",
+        "detailEn": "Select prayer time slot in the Nusuk smartphone app.",
+        "detailUr": "ایپ سے ریاض الجنہ کا وقت منتخب کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I perform Umrah on a standard Saudi tourist visa?",
+        "questionUr": "کیا وزٹ ویزا پر عمرہ ادا کیا جا سکتا ہے؟",
+        "answerEn": "Yes, holders of Saudi tourist, family visit, or business visas are officially permitted to perform Umrah throughout the year except during the core Hajj dates.",
+        "answerUr": "جی ہاں! وزٹ ویزا ہولڈرز حج کے ایام کے علاوہ پورا سال عمرہ کر سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on applying for Umrah e-visa via Nusuk from Pakistan.",
+    "contentUr": "پاکستان سے آن لائن عمرہ ویزا حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026",
+      "/hajj-umrah/umrah-package-government-vs-private"
+    ]
+  }
+,
+  "hajj-balloting-result-check-online": {
+    "slug": "hajj-balloting-result-check-online",
+    "fullPath": "/hajj-umrah/hajj-balloting-result-check-online",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Hajj Balloting Result Check Online 2026 by CNIC & Bank Reference",
+    "titleUr": "حج قرعہ اندازی رزلٹ آن لائن چیک 2026 بذریعہ شناختی کارڈ",
+    "metaDescriptionEn": "Check Government Hajj balloting results 2026 online by 13-digit CNIC or bank tracking reference number. View successful applicant lists and waiting queue.",
+    "metaDescriptionUr": "وزارت مذہبی امور کا سرکاری حج قرعہ اندازی رزلٹ 2026 اپنے 13 ہندسوں والے شناختی کارڈ یا بینک ریفرنس سے فوری آن لائن دیکھیں۔",
+    "directAnswerEn": "To check the Government Hajj Scheme balloting results online, visit hajjinfo.org or mora.gov.pk. Enter your 13-digit CNIC number without dashes or your 8-digit Bank Application Tracking Number. Successful applicants receive instant confirmation alongside their assigned Hajj Group Organizer and regional Haji Camp details.",
+    "directAnswerUr": "سرکاری حج قرعہ اندازی کا رزلٹ آن لائن دیکھنے کے لیے hajjinfo.org پر جائیں اور اپنا 13 ہندسوں کا شناختی کارڈ نمبر درج کریں۔ کامیاب درخواست گزاروں کو ان کے حاجی کیمپ اور پیکیج کی تفصیلات فوری دکھا دی جاتی ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "MORA Hajj Inquiry Gateway",
+      "url": "https://hajjinfo.org/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online Balloting Verification",
+        "serviceUr": "قرعہ اندازی رزلٹ چیک",
+        "normal": "100% FREE",
+        "urgent": "Instant Online Check",
+        "executive": "MORA Official",
+        "validity": "Hajj 2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Enter CNIC on hajjinfo.org",
+        "titleUr": "شناختی کارڈ نمبر درج کریں",
+        "detailEn": "Input 13 digits without hyphens to search the balloting database.",
+        "detailUr": "ویب سائٹ پر شناختی کارڈ سے رزلٹ تلاش کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What should I do if my name is selected in the Hajj balloting?",
+        "questionUr": "قرعہ اندازی میں نام آنے پر کیا کرنا ہوگا؟",
+        "answerEn": "Successful pilgrims must deposit the second fee installment at their bank and report to their regional Haji Camp for mandatory vaccination and biometric enrollment.",
+        "answerUr": "باقی رقم بینک میں جمع کروا کر حاجی کیمپ سے ویکسینیشن کروائیں۔"
+      }
+    ],
+    "contentEn": "Guide on checking Hajj balloting results online in Pakistan.",
+    "contentUr": "حج قرعہ اندازی کا رزلٹ معلوم کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026",
+      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
+    ]
+  }
+,
+  "umrah-package-government-vs-private": {
+    "slug": "umrah-package-government-vs-private",
+    "fullPath": "/hajj-umrah/umrah-package-government-vs-private",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Umrah Package Government vs Private – Cost & Facility Comparison",
+    "titleUr": "سرکاری بمقابلہ پرائیویٹ عمرہ پیکیج 2026 – اخراجات اور سہولیات کا موازنہ",
+    "metaDescriptionEn": "Compare economy, 4-star, and 5-star Umrah packages in Pakistan for 2026. Differences in flight tickets, hotel distances from Haram, and group transport costs.",
+    "metaDescriptionUr": "پاکستان میں 15 اور 21 دن کے عمرہ پیکیجز کا تفصیلی موازنہ۔ حرم سے ہوٹل کا فاصلہ، ائیر لائن ٹکٹ اور پرائیویٹ ٹریول ایجنٹ پیکیج ریٹس 2026۔",
+    "directAnswerEn": "When planning Umrah from Pakistan, pilgrims choose between DIY individual booking via Nusuk and comprehensive group packages from private tour operators. Standard 15-day economy packages range from PKR 240,000 to PKR 320,000 (hotels 600m-900m from Haram), while 5-star VIP packages facing Clock Tower range from PKR 550,000 to PKR 900,000+.",
+    "directAnswerUr": "پاکستان سے 15 روزہ اکانومی عمرہ پیکیج کے اخراجات 2 لاکھ 40 ہزار سے 3 لاکھ 20 ہزار روپے تک ہیں جس میں ہوٹل حرم سے 600 تا 900 میٹر کے فاصلے پر ہوتے ہیں۔ جبکہ فائیو سٹار کلاک ٹاور پیکیجز 5 لاکھ 50 ہزار سے 9 لاکھ روپے سے زائد تک ہوتے ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Ministry of Religious Affairs",
+      "url": "https://mora.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Economy 15-Day Group Package",
+        "serviceUr": "اکانومی 15 روزہ پیکیج",
+        "normal": "PKR 240,000 - 320,000",
+        "urgent": "Includes Flight & Visa",
+        "executive": "Approved Tour Operator",
+        "validity": "2026"
+      },
+      {
+        "serviceEn": "5-Star VIP Executive Package (Haram View)",
+        "serviceUr": "فائیو سٹار وی آئی پی پیکیج",
+        "normal": "PKR 550,000 - 900,000",
+        "urgent": "Clock Tower / Front Rows",
+        "executive": "Luxury Transport",
+        "validity": "2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify Tour Operator License",
+        "titleUr": "ایجنٹ کا لائسنس چیک کریں",
+        "detailEn": "Verify the agent's Department of Tourist Services (DTS) registration number.",
+        "detailUr": "ایجنٹ کا سرکاری لائسنس تصدیق کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is food (full board) included in standard Umrah packages?",
+        "questionUr": "کیا پیکیج میں کھانا شامل ہوتا ہے؟",
+        "answerEn": "Economy packages typically provide accommodation and transport only, with full-board catering available in VIP 4-star and 5-star packages.",
+        "answerUr": "اکانومی پیکیج میں کھانا شامل نہیں ہوتا، وی آئی پی میں مہیا کیا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Detailed comparison of Umrah packages and costs in Pakistan.",
+    "contentUr": "عمرہ پیکیجز کے اخراجات کا تفصیلی جائزہ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
+      "/hajj-umrah/zamzam-water-and-baggage-rules-pia"
+    ]
+  }
+,
+  "hajj-mandatory-vaccination-medical-fitness": {
+    "slug": "hajj-mandatory-vaccination-medical-fitness",
+    "fullPath": "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Mandatory Hajj Vaccination (Polio, Meningitis) & Medical Fitness",
+    "titleUr": "حج و عمرہ لازمی ویکسینیشن (پولیو، گردن توڑ بخار) اور میڈیکل فٹنس",
+    "metaDescriptionEn": "Complete health requirements for Pakistani pilgrims: Meningococcal Meningitis vaccine, Oral Polio Vaccine (OPV) card, COVID-19 rules, and Haji Camp fitness tests.",
+    "metaDescriptionUr": "حج و عمرہ زائرین کے لیے لازمی ویکسینیشن اور میڈیکل فٹنس سرٹیفکیٹ کی تفصیلات۔ پولیو کارڈ، میننجائٹس ویکسین اور حاجی کیمپ ٹیسٹ کے قواعد۔",
+    "directAnswerEn": "The Saudi Ministry of Hajj strictly mandates two vaccines for all Pakistani pilgrims: Quadrivalent Meningococcal Meningitis (ACYW135) administered at least 10 days before arrival, and the Oral Polio Vaccine (OPV) certified on an official NADRA QR Polio Card. Health certificates are verified at regional Haji Camps before departure.",
+    "directAnswerUr": "سعودی وزارت صحت کے قوانین کے تحت تمام پاکستانی عازمین کے لیے گردن توڑ بخار (میننجائٹس ACYW135) اور پولیو ڈراپس (OPV) کی ویکسین لگوانا لازمی ہے۔ حاجی کیمپ سے ویکسینیشن کا تصدیق شدہ کارڈ ائیرپورٹ پر چیک کیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "National Institute of Health (NIH)",
+      "url": "https://nih.org.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Official Hajj Camp Vaccination Package",
+        "serviceUr": "حاجی کیمپ ویکسینیشن",
+        "normal": "100% FREE (Govt Hajj)",
+        "urgent": "Haji Camp Counters",
+        "executive": "NIH / Health Ministry",
+        "validity": "1 Year"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Report to Regional Haji Camp",
+        "titleUr": "حاجی کیمپ تشریف لے جائیں",
+        "detailEn": "Receive meningitis injection and oral polio drops.",
+        "detailUr": "حاجی کیمپ سے پولیو اور گردن توڑ بخار کے قطرے لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can an individual with chronic kidney dialysis perform Hajj?",
+        "questionUr": "کیا گردوں کے مریض حج کر سکتے ہیں؟",
+        "answerEn": "Under Saudi 2026 fitness guidelines, patients with severe advanced renal failure (active dialysis) or advanced heart failure are restricted for safety.",
+        "answerUr": "ڈائیلاسز کے مریضوں کے لیے احتیاطی تدابیر اور فٹنس سرٹیفکیٹ درکار ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide to mandatory medical tests and vaccines for Hajj & Umrah.",
+    "contentUr": "حج و عمرہ کے لیے طبی ٹیسٹ اور ویکسین کی معلومات۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026",
+      "/health/polio-yellow-fever-vaccine-certificate-travel"
+    ]
+  }
+,
+  "zamzam-water-and-baggage-rules-pia": {
+    "slug": "zamzam-water-and-baggage-rules-pia",
+    "fullPath": "/hajj-umrah/zamzam-water-and-baggage-rules-pia",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Zamzam Water & Airline Baggage Rules for Hajj & Umrah Pilgrims",
+    "titleUr": "آب زم زم اور ایئر لائن سامان کے وزن کے قوانین – پی آئی اے و سعودی ایئر",
+    "metaDescriptionEn": "Baggage allowance and official Zamzam water quota rules for PIA, Saudi Arabian Airlines, Airblue, and Serene Air for returning Hajj and Umrah passengers.",
+    "metaDescriptionUr": "عمرہ و حج سے واپسی پر 5 لیٹر آب زم زم، سامان کا وزن (بیگیج الاؤنس) اور پی آئی اے و سعودی ایئرلائنز کے ائیرپورٹ قوانین 2026۔",
+    "directAnswerEn": "Under Saudi General Authority of Civil Aviation (GACA) rules, every pilgrim departing from Jeddah (JED) or Madinah (MED) airports on a valid Umrah/Hajj visa is permitted to carry one 5-liter sealed container of Zamzam water completely free of charge outside their standard checked baggage allowance.",
+    "directAnswerUr": "سعودی ایوی ایشن (GACA) کے قوانین کے مطابق جدہ اور مدینہ ایئرپورٹ سے واپسی پر ہر حاجی اور عمرہ زائر کو 5 لیٹر آب زم زم کا پیک شدہ کین اپنے سامان کے علاوہ بالکل مفت ساتھ لانے کی اجازت ہے۔ زم زم کا کین ایئرپورٹ پر ہی خرید کر بک کیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Saudi GACA Aviation Authority",
+      "url": "https://gaca.gov.sa/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Official 5-Liter Sealed Zamzam Water Can",
+        "serviceUr": "5 لیٹر زم زم کین سرکاری قیمت",
+        "normal": "SAR 12.50 (PKR ~950)",
+        "urgent": "Airport Counter",
+        "executive": "King Abdullah Zamzam Factory",
+        "validity": "Sealed"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Purchase Factory-Sealed Can at Airport",
+        "titleUr": "ایئرپورٹ سے پیک شدہ کین خریدیں",
+        "detailEn": "Buy certified 5L can at dedicated airport holding bay.",
+        "detailUr": "ایئرپورٹ کاؤنٹر سے تصدیق شدہ زم زم کین خریدیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I pack Zamzam water bottles inside my checked suitcases?",
+        "questionUr": "کیا سوٹ کیس کے اندر زم زم کی بوتلیں رکھ سکتے ہیں؟",
+        "answerEn": "No. Saudi airport security confiscates loose water bottles found inside suitcases to prevent leakage in aircraft cargo holds.",
+        "answerUr": "نہیں! سوٹ کیس کے اندر زم زم رکھنا منع ہے، صرف سیل شدہ کین بک ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on Zamzam water and airline baggage rules for pilgrims.",
+    "contentUr": "آب زم زم اور ایئرلائن سامان کے قواعد و ضوابط۔",
+    "relatedSlugs": [
+      "/hajj-umrah/umrah-package-government-vs-private",
+      "/passport/fee-calculator"
+    ]
+  }
+,
+  "sehat-card-eligibility-check-by-cnic": {
+    "slug": "sehat-card-eligibility-check-by-cnic",
+    "fullPath": "/health/sehat-card-eligibility-check-by-cnic",
+    "categoryId": "health",
+    "titleEn": "Sehat Card Eligibility Check by CNIC 2026 – 8500 SMS & Portal",
+    "titleUr": "صحت کارڈ اہلیت چیک 2026 – 8500 ایس ایم ایس اور آن لائن پورٹل",
+    "metaDescriptionEn": "Check Sehat Sahulat Card eligibility online in 2026 by 13-digit CNIC or SMS to 8500. Free indoor medical treatment up to PKR 1 Million across empaneled hospitals.",
+    "metaDescriptionUr": "قومی شناختی کارڈ نمبر 8500 پر ایس ایم ایس کر کے یا آن لائن پورٹل سے صحت سہولت کارڈ کی اہلیت اور 10 لاکھ روپے تک مفت علاج کی تفصیل دیکھیں۔",
+    "directAnswerEn": "To check Sehat Sahulat Card eligibility, send your 13-digit CNIC without dashes to 8500 via SMS, or search your family status on the official portal at pmhealthprogram.gov.pk. Eligible families receive 100% cashless indoor hospital treatment up to PKR 1,000,000 per year at over 1,000 empaneled private and public hospitals.",
+    "directAnswerUr": "صحت سہولت پروگرام میں اپنی فیملی کی اہلیت جاننے کے لیے اپنا 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر 8500 پر ایس ایم ایس بھیجیں یا pmhealthprogram.gov.pk پر چیک کریں۔ اہل خاندانوں کو سالانہ 10 لاکھ روپے تک مفت علاج کی سہولت میسر ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Sehat Sahulat National Programme",
+      "url": "https://pmhealthprogram.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "SMS Eligibility Check (8500)",
+        "serviceUr": "ایس ایم ایس 8500 چیک",
+        "normal": "Standard SMS Rate (~PKR 2)",
+        "urgent": "Instant Reply",
+        "executive": "State Life / Govt",
+        "validity": "Annual"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "SMS CNIC to 8500",
+        "titleUr": "8500 پر شناختی کارڈ بھیجیں",
+        "detailEn": "Type your 13-digit CNIC and send to 8500.",
+        "detailUr": "بغیر ڈیش کے شناختی کارڈ 8500 پر بھیجیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need a separate physical plastic card to get hospital admission?",
+        "questionUr": "کیا علاج کے لیے الگ سے پلاسٹک کارڈ بنوانا ضروری ہے؟",
+        "answerEn": "No. Your original NADRA CNIC or Smart Card serves directly as your Sehat Card at all hospital counters.",
+        "answerUr": "نہیں! آپ کا اصل شناختی کارڈ ہی صحت کارڈ کا کام دیتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on checking Sehat Card eligibility via SMS and online.",
+    "contentUr": "صحت کارڈ کی اہلیت معلوم کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/health/sehat-card-hospital-list-near-me",
+      "/health/sehat-card-treatment-limit-2026"
+    ]
+  }
+,
+  "sehat-card-hospital-list-near-me": {
+    "slug": "sehat-card-hospital-list-near-me",
+    "fullPath": "/health/sehat-card-hospital-list-near-me",
+    "categoryId": "health",
+    "titleEn": "Sehat Card Hospital List Near Me – Panel Hospitals Directory",
+    "titleUr": "صحت کارڈ پینل ہسپتالوں کی لسٹ 2026 – پرائیویٹ اور سرکاری ہسپتال",
+    "metaDescriptionEn": "Search full list of Sehat Sahulat empaneled hospitals in Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, and Quetta. Find free treatment centers near you.",
+    "metaDescriptionUr": "لاہور، راولپنڈی، اسلام آباد، پشاور اور فیصل آباد میں صحت کارڈ کے منظور شدہ پرائیویٹ اور سرکاری ہسپتالوں کی تازہ ترین فہرست اور رابطہ نمبر۔",
+    "directAnswerEn": "The Sehat Sahulat Program covers over 1,000 empaneled hospitals across Pakistan, including premier private facilities like Shalamar Hospital, Doctors Hospital, Ittefaq Hospital, and major Teaching Hospitals. Patients can check their nearest panel hospital on pmhealthprogram.gov.pk by selecting their Province and District.",
+    "directAnswerUr": "صحت سہولت پروگرام کے تحت پاکستان بھر کے 1000 سے زائد پرائیویٹ اور سرکاری ہسپتال پینل پر موجود ہیں۔ اپنے قریبی پینل ہسپتال کی تفصیل جاننے کے لیے pmhealthprogram.gov.pk پر اپنا ضلع منتخب کریں یا ہیلپ لائن 0800-09009 پر رابطہ کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Sehat Sahulat Panel Directory",
+      "url": "https://pmhealthprogram.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Panel Hospital Treatment Search",
+        "serviceUr": "پینل ہسپتال تلاش",
+        "normal": "100% FREE",
+        "urgent": "Online Search",
+        "executive": "State Life Insurance",
+        "validity": "Active"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Province & District",
+        "titleUr": "اپنا صوبہ اور ضلع منتخب کریں",
+        "detailEn": "View list of private and public empaneled hospitals.",
+        "detailUr": "اپنے شہر کے پینل ہسپتالوں کی فہرست دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What documents must be presented at the hospital counter?",
+        "questionUr": "ہسپتال داخلے کے وقت کون سے کاغذات درکار ہیں؟",
+        "answerEn": "Present original CNIC of patient (or B-Form for children) and family head's CNIC at the dedicated Sehat Sahulat Help Desk.",
+        "answerUr": "مریض کا اصل شناختی کارڈ یا بچوں کا بی فارم ہسپتال کاؤنٹر پر دکھائیں۔"
+      }
+    ],
+    "contentEn": "Directory and search guide for Sehat Card panel hospitals.",
+    "contentUr": "صحت کارڈ کے پینل ہسپتالوں کی تلاش کی رہنمائی۔",
+    "relatedSlugs": [
+      "/health/sehat-card-eligibility-check-by-cnic",
+      "/health/sehat-card-treatment-limit-2026"
+    ]
+  }
+,
+  "sehat-card-treatment-limit-2026": {
+    "slug": "sehat-card-treatment-limit-2026",
+    "fullPath": "/health/sehat-card-treatment-limit-2026",
+    "categoryId": "health",
+    "titleEn": "Sehat Card Treatment Limit 2026 – PKR 10 Lakh Free Surgeries",
+    "titleUr": "صحت کارڈ علاج کی حد 2026 – 10 لاکھ روپے تک مفت سرجری و ادویات",
+    "metaDescriptionEn": "Detailed breakdown of PKR 1,000,000 annual Sehat Card coverage limit in Pakistan. Covered heart bypass, cancer chemo, dialysis, delivery, and neurosurgery.",
+    "metaDescriptionUr": "صحت کارڈ پر 10 لاکھ سالانہ مفت علاج کی تفصیلات۔ ہارٹ بائی پاس، کینسر، گردوں کا ڈائیلاسز، زچگی اور ادویات کے مکمل پیکیج کی معلومات۔",
+    "directAnswerEn": "The Sehat Sahulat Card provides PKR 1,000,000 (10 Lakh) annual indoor medical insurance per family. Coverage is divided into Priority Treatment (PKR 400,000 for heart surgeries, cancer chemotherapy, renal dialysis, neurosurgery) and Secondary Care (PKR 60,000 per admission for general surgeries, maternity delivery, and accidents) with reserve top-up funds.",
+    "directAnswerUr": "صحت کارڈ کے تحت ہر خاندان کو سالانہ 10 لاکھ روپے تک مفت علاج فراہم کیا جاتا ہے۔ اس میں دل کے آپریشن، بائی پاس، کینسر کے علاج، ڈائیلاسز، جنرل سرجری، نارمل و سی سیکشن زچگی اور ادویات کی تمام فیسیں شامل ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Sehat Sahulat Benefit Package",
+      "url": "https://pmhealthprogram.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Annual Family Insurance Limit",
+        "serviceUr": "سالانہ فیملی علاج حد",
+        "normal": "PKR 1,000,000 / Year",
+        "urgent": "100% Cashless",
+        "executive": "State Life Insurance Corp",
+        "validity": "Annual Renewable"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Pre-Authorization at Hospital Desk",
+        "titleUr": "ہسپتال کاؤنٹر پر داخلہ",
+        "detailEn": "Hospital sends digital request to State Life for cashless approval.",
+        "detailUr": "ہسپتال علاج کی منظوری آن لائن لیتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does Sehat Card cover OPD outdoor clinic visits and medicines?",
+        "questionUr": "کیا او پی ڈی کلینک اور عام دوائیاں بھی فری ہیں؟",
+        "answerEn": "Sehat Card covers indoor hospital admissions (overnight stays and major daycare surgeries). Routine outpatient (OPD) clinic checkups are excluded.",
+        "answerUr": "صحت کارڈ ہسپتال میں داخلے کے علاج کو کور کرتا ہے، عام او پی ڈی چیک اپ شامل نہیں۔"
+      }
+    ],
+    "contentEn": "Breakdown of treatment limits and medical packages on Sehat Card.",
+    "contentUr": "صحت کارڈ پر مفت سرجری اور علاج کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/health/sehat-card-eligibility-check-by-cnic",
+      "/health/how-to-apply-for-sehat-sahulat-card"
+    ]
+  }
+,
+  "how-to-apply-for-sehat-sahulat-card": {
+    "slug": "how-to-apply-for-sehat-sahulat-card",
+    "fullPath": "/health/how-to-apply-for-sehat-sahulat-card",
+    "categoryId": "health",
+    "titleEn": "How to Apply for Sehat Sahulat Card – Family Registration Guide",
+    "titleUr": "صحت کارڈ میں اپنا نام اور فیملی کا اندراج کیسے کروائیں؟ مکمل گائیڈ",
+    "metaDescriptionEn": "Learn how to register your family with NADRA to activate Sehat Card benefits. Link newborn children via B-Form and update marital status for universal coverage.",
+    "metaDescriptionUr": "صحت کارڈ میں فیملی کا نام شامل کروانے کا طریقہ۔ نادرا میں شادی اور بچوں کے اندراج (بی فارم) کے ذریعے مفت علاج کی سہولت حاصل کریں۔",
+    "directAnswerEn": "Citizens do not need to fill out a separate application form for the Sehat Sahulat Card; eligibility is pulled automatically from NADRA's Family Registration Database (FRC). To ensure your spouse and children are covered, update your marital status at NADRA and generate computerized B-Forms for all newborn children.",
+    "directAnswerUr": "صحت کارڈ کے لیے الگ سے کوئی فارم نہیں بھرنا پڑتا کیونکہ یہ نادرا کے فیملی ریکارڈ (FRC) سے منسلک ہے۔ اپنے شریک حیات اور بچوں کو مفت علاج میں شامل رکھنے کے لیے نادرا سے شادی کا اندراج اور بچوں کا بی فارم بنوانا ضروری ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Family Database & Sehat Sahulat",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "NADRA Family Record Update",
+        "serviceUr": "نادرا فیملی ریکارڈ اندراج",
+        "normal": "Standard NADRA Fee",
+        "urgent": "Automatic Sync",
+        "executive": "NADRA Centers",
+        "validity": "Lifetime"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Update Family Tree at NADRA",
+        "titleUr": "نادرا میں فیملی ٹری اپ ڈیٹ کریں",
+        "detailEn": "Ensure all family members appear on your computerized FRC.",
+        "detailUr": "نادرا سے تمام بچوں اور بیوی کا اندراج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a newly married wife use her husband's Sehat Card?",
+        "questionUr": "کیا نئی شادی شدہ خاتون شوہر کے کارڈ پر علاج کروا سکتی ہے؟",
+        "answerEn": "Yes, once her CNIC is updated with her husband's name at NADRA, she is automatically covered under the husband's family package.",
+        "answerUr": "جی ہاں! شناختی کارڈ میں شوہر کا نام درج ہوتے ہی وہ شوہر کے پیکیج میں شامل ہو جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on registering family members for Sehat Card coverage.",
+    "contentUr": "صحت کارڈ میں فیملی کے اندراج کا طریقہ۔",
+    "relatedSlugs": [
+      "/nadra/family-registration-certificate",
+      "/health/sehat-card-eligibility-check-by-cnic"
+    ]
+  }
+,
+  "medical-board-disability-certificate-pakistan": {
+    "slug": "medical-board-disability-certificate-pakistan",
+    "fullPath": "/health/medical-board-disability-certificate-pakistan",
+    "categoryId": "health",
+    "titleEn": "Medical Board Disability Certificate & Special CNIC in Pakistan",
+    "titleUr": "میڈیکل بورڈ معذوری سرٹیفکیٹ اور نادرا اسپیشل شناختی کارڈ گائیڈ",
+    "metaDescriptionEn": "Apply for a government Disability Certificate from District Medical Board. Get NADRA Special CNIC (Wheelchair Logo), 50% PIA/Rail fare discount, and job quotas.",
+    "metaDescriptionUr": "ڈسٹرکٹ میڈیکل بورڈ سے معذوری سرٹیفکیٹ حاصل کرنے کا طریقہ۔ نادرا کا وہیل چیئر لوگو والا شناختی کارڈ، پی آئی اے و ٹرین ٹکٹ میں 50% رعایت اور نوکری کوٹہ۔",
+    "directAnswerEn": "A Government Disability Certificate is issued by the District Assessment Board (DHQ Hospital) following a clinical examination. The certificate entitles persons with disabilities to obtain a NADRA Special CNIC (bearing the international wheelchair logo), 50% discount on Pakistan Railways and PIA airfare, duty-free custom car imports, and 3% government job quotas.",
+    "directAnswerUr": "سرکاری معذوری سرٹیفکیٹ ڈسٹرکٹ ہیڈ کوارٹر (DHQ) ہسپتال کے میڈیکل بورڈ کے معائنے کے بعد جاری ہوتا ہے۔ یہ سرٹیفکیٹ نادرا کے وہیل چیئر والے شناختی کارڈ، ریلوے اور پی آئی اے کے کرائے میں 50 فیصد رعایت اور سرکاری نوکریوں میں 3% کوٹہ کا حقدار بناتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Social Welfare Department & DHQ",
+      "url": "https://swd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Medical Board Assessment & Certificate",
+        "serviceUr": "میڈیکل بورڈ معائنہ فیس",
+        "normal": "100% FREE",
+        "urgent": "DHQ Board Schedule",
+        "executive": "Social Welfare Dept",
+        "validity": "Permanent / Review"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register with Social Welfare Office",
+        "titleUr": "سوشل ویلفیئر آفس میں درخواست دیں",
+        "detailEn": "Submit CNIC/B-Form and medical hospital reports.",
+        "detailUr": "ہسپتال رپورٹس اور شناختی کارڈ جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Appear before District Medical Board",
+        "titleUr": "میڈیکل بورڈ کے سامنے پیش ہوں",
+        "detailEn": "Undergo examination by DHQ medical specialists.",
+        "detailUr": "ڈاکٹرز کے سامنے معائنہ مکمل کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to get the wheelchair logo on my NADRA CNIC?",
+        "questionUr": "نادرا شناختی کارڈ پر وہیل چیئر کا نشان کیسے بنتا ہے؟",
+        "answerEn": "Present your original District Disability Certificate at any NADRA center to receive a free Special CNIC printed with the wheelchair emblem.",
+        "answerUr": "میڈیکل بورڈ کا سرٹیفکیٹ نادرا میں دکھا کر وہیل چیئر والا کارڈ مفت حاصل کریں۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to disability assessment and special CNIC in Pakistan.",
+    "contentUr": "میڈیکل بورڈ معذوری سرٹیفکیٹ کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/welfare/punjab-himmat-card-registration",
+      "/nadra/cnic-kaise-banaye"
+    ]
+  }
+,
+  "polio-yellow-fever-vaccine-certificate-travel": {
+    "slug": "polio-yellow-fever-vaccine-certificate-travel",
+    "fullPath": "/health/polio-yellow-fever-vaccine-certificate-travel",
+    "categoryId": "health",
+    "titleEn": "Online Polio & Yellow Fever Travel Vaccination Certificate",
+    "titleUr": "آن لائن پولیو اور یلو فیور ویکسینیشن سرٹیفکیٹ برائے بیرون ملک سفر",
+    "metaDescriptionEn": "Download international Polio Vaccination Certificate (OPV Card) with QR code online from NADRA NIMS portal (nims.nadra.gov.pk) for foreign travel.",
+    "metaDescriptionUr": "بیرون ملک سفر کے لیے نادرا نمز (NIMS) پورٹل سے کیو آر کوڈ والا آن لائن پولیو کارڈ اور یلو فیور ویکسینیشن سرٹیفکیٹ ڈاؤن لوڈ کرنے کا طریقہ۔",
+    "directAnswerEn": "Pakistani citizens traveling abroad are required by international health regulations to carry an official Polio Vaccination Card (OPV). After receiving polio drops at any government hospital or airport counter, travelers can instantly download their NADRA computerized Polio Certificate with QR verification on nims.nadra.gov.pk for a fee of PKR 100.",
+    "directAnswerUr": "بیرون ملک سفر کرنے والے تمام پاکستانی مسافروں کے لیے نادرا کا آن لائن پولیو کارڈ (OPV) لازمی ہے۔ سرکاری ہسپتال یا ایئرپورٹ کاؤنٹر سے قطرے پی کر نادرا نمز پورٹل nims.nadra.gov.pk سے 100 روپے فیس ادا کر کے کیو آر کوڈ والا سرٹیفکیٹ ڈاؤن لوڈ کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA NIMS Immunization Portal",
+      "url": "https://nims.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Computerized NIMS Polio Certificate",
+        "serviceUr": "آن لائن پولیو سرٹیفکیٹ فیس",
+        "normal": "PKR 100 (Online Download)",
+        "urgent": "Instant PDF",
+        "executive": "NIMS NADRA Portal",
+        "validity": "1 Year"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Administer Polio Drops at Govt Hospital",
+        "titleUr": "سرکاری ہسپتال سے قطرے پیئیں",
+        "detailEn": "Record entry on National Immunization Management System.",
+        "detailUr": "ہسپتال میں نادرا نمز پورٹل پر انٹری کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Download Certificate from nims.nadra.gov.pk",
+        "titleUr": "پورٹل سے سرٹیفکیٹ ڈاؤن لوڈ کریں",
+        "detailEn": "Enter CNIC and download PDF certificate with QR code.",
+        "detailUr": "شناختی کارڈ نمبر درج کر کے پی ڈی ایف سرٹیفکیٹ پرنٹ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is the polio travel certificate mandatory for UAE and Saudi Arabia?",
+        "questionUr": "کیا دبئی اور سعودی عرب کے لیے پولیو کارڈ لازمی ہے؟",
+        "answerEn": "Yes, airport immigration authorities require passengers departing from Pakistan to present a valid polio vaccination certificate issued within the past 12 months.",
+        "answerUr": "جی ہاں! پاکستانی ایئرپورٹس پر 1 سال کے اندر کا پولیو کارڈ چیک کیا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on downloading international polio travel vaccination certificates.",
+    "contentUr": "آن لائن پولیو سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/passport/fee-calculator",
+      "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
+    ]
+  }
+,
+  "online-fir-registration-punjab-police": {
+    "slug": "online-fir-registration-punjab-police",
+    "fullPath": "/legal/online-fir-registration-punjab-police",
+    "categoryId": "legal",
+    "titleEn": "Online FIR Registration Punjab Police 1787 & E-Tag System",
+    "titleUr": "آن لائن ایف آئی آر پنجاب پولیس 1787 اور ای ٹیگ سسٹم گائیڈ",
+    "metaDescriptionEn": "Register crime reports and lost document complaints online with Punjab Police via 1787 IG Helpline, Police Khidmat Markaz (PKM), or the official Mobile App.",
+    "metaDescriptionUr": "پنجاب پولیس 1787 آئی جی ہیلپ لائن اور پولیس خدمت مرکز کے ذریعے آن لائن ایف آئی آر اور چوری شدہ سامان کی ای ٹیگ شکایت درج کروانے کا طریقہ۔",
+    "directAnswerEn": "Punjab Police provides online crime reporting and lost document registration through the Inspector General (IG) 1787 Complaint Center, the Punjab Police Mobile App, and over 130 Police Khidmat Markaz (PKM) centers across the province. Minor lost document reports (lost CNIC, driving license, vehicle documents) generate an instant verified e-Tag report without visiting a police station.",
+    "directAnswerUr": "پنجاب پولیس 1787 ہیلپ لائن، موبائل ایپ اور پولیس خدمت مرکز (PKM) کے ذریعے آن لائن کرائم رپورٹنگ کی سہولت فراہم کرتی ہے۔ شناختی کارڈ، لائسنس یا دستاویزات گم ہونے پر تھانے جائے بغیر آن لائن تصدیق شدہ ای ٹیگ رپورٹ فوری جاری کی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Police 1787 Center",
+      "url": "https://punjabpolice.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online Complaint & e-Tag Report",
+        "serviceUr": "آن لائن ای ٹیگ رپورٹ",
+        "normal": "100% FREE",
+        "urgent": "Instant e-Tag",
+        "executive": "Punjab Police",
+        "validity": "Official Report"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Call 1787 or Open Punjab Police App",
+        "titleUr": "1787 پر کال کریں یا ایپ کھولیں",
+        "detailEn": "Provide your 13-digit CNIC, incident details, and location.",
+        "detailUr": "شناختی کارڈ اور وقوعہ کی تفصیل بتائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Receive 6-Digit e-Tag Complaint ID",
+        "titleUr": "ای ٹیگ نمبر حاصل کریں",
+        "detailEn": "Track investigation progress via SMS updates.",
+        "detailUr": "ایس ایم ایس سے تفتیش کی پیش رفت دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a cognizable criminal FIR (e.g. robbery) be lodged entirely online without signature?",
+        "questionUr": "کیا ڈکیتی جیسے سنگین جرم کی ایف آئی آر مکمل آن لائن ہو جاتی ہے؟",
+        "answerEn": "An online 1787 complaint registers an immediate formal inquiry; for formal registration of FIR under Section 154 CrPC, the Station House Officer (SHO) records the complainant's statement at the police station or through a mobile facilitation van.",
+        "answerUr": "آن لائن شکایت پر فوری کارروائی ہوتی ہے اور باقاعدہ بیان کے بعد ایف آئی آر کاٹ دی جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to online crime complaints and FIR registration in Punjab.",
+    "contentUr": "پنجاب پولیس کے آن لائن شکایات سسٹم کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/legal/police-character-certificate-apply-online",
+      "/legal/how-to-check-fir-status-online"
+    ]
+  }
+,
+  "police-character-certificate-apply-online": {
+    "slug": "police-character-certificate-apply-online",
+    "fullPath": "/legal/police-character-certificate-apply-online",
+    "categoryId": "legal",
+    "titleEn": "Police Character Certificate (PCC) Apply Online for Visas",
+    "titleUr": "پولیس کریکٹر سرٹیفکیٹ (PCC) آن لائن اپلائی برائے غیر ملکی ویزا",
+    "metaDescriptionEn": "Apply for an official Police Character Certificate (Clearance Certificate) in Pakistan via Police Khidmat Markaz (PKM). Required for foreign student and work visas.",
+    "metaDescriptionUr": "غیر ملکی ویزا، بیرون ملک ملازمت اور کینیڈا/یو کے امیگریشن کے لیے پولیس کریکٹر (کلیرنس) سرٹیفکیٹ بنوانے کا سرکاری طریقہ، فیس اور نادرا ویریفیکیشن۔",
+    "directAnswerEn": "A Police Character Certificate (PCC / Police Clearance) proves an individual has no criminal conviction history in Pakistan, which is mandatory for foreign work, student, and immigration visas (US, UK, Canada, Australia, Gulf). Citizens can apply at any computerized Police Khidmat Markaz (PKM) with their CNIC, passport, and photographs for PKR 500.",
+    "directAnswerUr": "پولیس کریکٹر سرٹیفکیٹ (PCC) اس بات کا تصدیق شدہ ثبوت ہے کہ شہری کا کوئی مجرمانہ ریکارڈ نہیں ہے۔ غیر ملکی اسٹوڈنٹ اور ورک ویزا کے لیے کسی بھی پولیس خدمت مرکز (PKM) پر شناختی کارڈ، پاسپورٹ اور 2 تصاویر کے ساتھ 500 روپے فیس جمع کروا کر 3 دن میں سرٹیفکیٹ حاصل کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Police Khidmat Markaz (PKM)",
+      "url": "https://pkm.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Police Clearance Certificate (PKM)",
+        "serviceUr": "پولیس کلیرنس سرٹیفکیٹ فیس",
+        "normal": "PKR 500 (Standard)",
+        "urgent": "3 Business Days",
+        "executive": "Police Khidmat Markaz",
+        "validity": "6 Months"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Nearest Police Khidmat Markaz",
+        "titleUr": "قریبی پولیس خدمت مرکز جائیں",
+        "detailEn": "Bring original CNIC, valid Passport, and affidavit of clean record.",
+        "detailUr": "شناختی کارڈ اور پاسپورٹ ہمراہ لائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Biometric & Local Police Station Verification",
+        "titleUr": "بائیومیٹرک اور تھانے سے تصدیق",
+        "detailEn": "Police Automated System cross-references CRO (Criminal Record Office).",
+        "detailUr": "سسٹم خودکار طریقے سے ریکارڈ کی تصدیق کرتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does the Police Character Certificate require MOFA attestation for foreign embassies?",
+        "questionUr": "کیا غیر ملکی سفارتخانے کے لیے وزارت خارجہ کی تصدیق ضروری ہے؟",
+        "answerEn": "Yes, for international visa applications, the PCC issued by PKM must subsequently be attested with an official QR stamp by MOFA.",
+        "answerUr": "جی ہاں! ایمبیسی جمع کروانے سے پہلے وزارت خارجہ کی مہر لگوانا ضروری ہے۔"
+      }
+    ],
+    "contentEn": "Guide on obtaining a Police Character Certificate (PCC) in Pakistan.",
+    "contentUr": "پولیس کریکٹر سرٹیفکیٹ حاصل کرنے کی مکمل تفصیلات۔",
+    "relatedSlugs": [
+      "/certificates/character-certificate-union-council",
+      "/overseas/pakistan-embassy-attestation-documents"
+    ]
+  }
+,
+  "how-to-check-fir-status-online": {
+    "slug": "how-to-check-fir-status-online",
+    "fullPath": "/legal/how-to-check-fir-status-online",
+    "categoryId": "legal",
+    "titleEn": "How to Check FIR Status Online – Police Investigation Tracker",
+    "titleUr": "ایف آئی آر کا آن لائن سٹیٹس اور تفتیش کی پیش رفت چیک کرنے کا طریقہ",
+    "metaDescriptionEn": "Track police FIR status online in Pakistan by FIR number, district, and police station via the Police Record Management System (PRMS) and 1787 SMS portal.",
+    "metaDescriptionUr": "ضلع، تھانہ اور ایف آئی آر نمبر کے ذریعے درج شدہ مقدمے کا آن لائن سٹیٹس، نامزد ملزمان اور تفتیشی افسر (IO) کا نام معلوم کرنے کا طریقہ۔",
+    "directAnswerEn": "To check the status of a registered FIR online in Pakistan, access the provincial police web portal (e.g. punjabpolice.gov.pk / pkm.punjab.gov.pk) or send your 6-digit complaint tracking ID via SMS to 1787. The system displays the nominated Investigation Officer (IO), current stage of investigation, challan submission date to the Magistrate, and court hearing schedule.",
+    "directAnswerUr": "آن لائن ایف آئی آر سٹیٹس جاننے کے لیے پنجاب پولیس کی ویب سائٹ پر جائیں یا اپنا ٹریکنگ نمبر 1787 پر ایس ایم ایس کریں۔ سسٹم تفتیشی افسر کا نام، تفتیش کی موجودہ پیش رفت اور عدالت میں چالان جمع ہونے کی تاریخ دکھا دے گا۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Police Record Management System (PRMS)",
+      "url": "https://punjabpolice.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Online FIR Tracking Inquiry",
+        "serviceUr": "ایف آئی آر ٹریکنگ",
+        "normal": "100% FREE",
+        "urgent": "Instant Web Status",
+        "executive": "Police Automated System",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select District & Police Station",
+        "titleUr": "ضلع اور متعلقہ تھانہ منتخب کریں",
+        "detailEn": "Enter FIR Number and year of registration.",
+        "detailUr": "ایف آئی آر نمبر اور سال درج کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a certified copy of an FIR be downloaded online?",
+        "questionUr": "کیا ایف آئی آر کی تصدیق شدہ کاپی آن لائن مل سکتی ہے؟",
+        "answerEn": "Complainants can download an official copy from the Police Khidmat Markaz portal or obtain a certified copy directly from the Area Magistrate's office (Copying Agency).",
+        "answerUr": "پولیس خدمت مرکز پورٹل یا علاقہ مجسٹریٹ سے مصدقہ نقل مل جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on checking police FIR and investigation status online in Pakistan.",
+    "contentUr": "ایف آئی آر کی آن لائن ٹریکنگ کی معلومات۔",
+    "relatedSlugs": [
+      "/legal/online-fir-registration-punjab-police",
+      "/legal/punjab-khidmat-markaz-police-services"
+    ]
+  }
+,
+  "legal-heir-certificate-nadra-court": {
+    "slug": "legal-heir-certificate-nadra-court",
+    "fullPath": "/legal/legal-heir-certificate-nadra-court",
+    "categoryId": "legal",
+    "titleEn": "Legal Heir Certificate (Wirasat Nama) – NADRA vs Civil Court",
+    "titleUr": "وراثت نامہ اور قانونی ورثاء سرٹیفکیٹ – نادرا بمقابلہ سول کورٹ طریقہ",
+    "metaDescriptionEn": "Learn how to obtain a Legal Heir Declaration (Wirasat Nama) in Pakistan. Understand the difference between a NADRA Succession Certificate and a Civil Court Declaration.",
+    "metaDescriptionUr": "مرحوم کی جائیداد کی تقسیم کے لیے قانونی ورثاء کا وراثت نامہ حاصل کرنے کا طریقہ۔ نادرا سکسیشن اور سول کورٹ ڈگری کا تفصیلی موازنہ۔",
+    "directAnswerEn": "A Legal Heir Certificate (Wirasat Nama / وارثت نامہ) establishes the rightful legal heirs of a deceased person under Islamic Shariah inheritance laws. For movable assets (bank balances, cars, shares), legal heirs can obtain a Succession Certificate from NADRA within 15 days. For disputed cases or immovable real estate, a declaration suit is filed in the Civil Court.",
+    "directAnswerUr": "وراثت نامہ مرحوم کے تمام شرعی و قانونی ورثاء کا تعین کرتا ہے۔ منقولہ جائیداد (بینک رقوم، گاڑی) کے لیے نادرا سے 15 دن میں سکسیشن سرٹیفکیٹ مل جاتا ہے، جبکہ غیر منقولہ جائیداد (مکان، زمین) کے لیے سول کورٹ سے ڈگری حاصل کی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Civil Courts & NADRA Succession",
+      "url": "https://succession.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "NADRA Legal Heir Succession (Movable)",
+        "serviceUr": "نادرا سکسیشن فیس",
+        "normal": "PKR 10,000 - 20,000",
+        "urgent": "15 Days Timeline",
+        "executive": "NADRA Centers",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Obtain NADRA Family Registration Certificate (FRC)",
+        "titleUr": "نادرا ایف آر سی حاصل کریں",
+        "detailEn": "Generate FRC by lineage to list all biological children and spouse.",
+        "detailUr": "مرحوم کی اولاد اور شریک حیات کا ایف آر سی بنوائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What shares do daughters and widows receive under Pakistani inheritance law?",
+        "questionUr": "بیٹیوں اور بیوہ کا شرعی حصہ کتنا ہوتا ہے؟",
+        "answerEn": "Under Islamic Shariah as applied in Pakistan, a single widow with children receives 1/8th of the estate, while a single daughter receives 1/2 (or 2/3 shared equally among multiple daughters).",
+        "answerUr": "اولاد کی موجودگی میں بیوہ کا آٹھواں حصہ اور بیٹیوں کا شرعی حصہ نافذ ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive comparison of obtaining Legal Heir Certificates from NADRA vs Civil Courts in Pakistan.",
+    "contentUr": "وراثت نامہ حاصل کرنے کی مکمل قانونی رہنمائی۔",
+    "relatedSlugs": [
+      "/certificates/succession-certificate-nadra-legal-heirs",
+      "/nadra/family-registration-certificate"
+    ]
+  }
+,
+  "power-of-attorney-property-registration": {
+    "slug": "power-of-attorney-property-registration",
+    "fullPath": "/legal/power-of-attorney-property-registration",
+    "categoryId": "legal",
+    "titleEn": "Power of Attorney (Mukhtar Nama) Property Registration Rules",
+    "titleUr": "مختار نامہ عام و خاص (Power of Attorney) جائیداد رجسٹریشن کے قواعد",
+    "metaDescriptionEn": "Complete legal rules for executing General Power of Attorney (Mukhtar Nama Am) and Special Power of Attorney (Mukhtar Nama Khas) for property in Pakistan.",
+    "metaDescriptionUr": "زمین و مکان کی خرید و فروخت کے لیے مختار نامہ عام اور مختار نامہ خاص کی قانونی شرائط، سب رجسٹرار کے سامنے تصدیق اور بائیومیٹرک قوانین۔",
+    "directAnswerEn": "A Power of Attorney (PoA / مختار نامہ) authorizes an agent to act on behalf of the principal in property transactions. A 'General Power of Attorney' (Mukhtar Nama Am) grants broad management and sale rights and requires mandatory registration before a Sub-Registrar on e-Stamp paper. A 'Special Power of Attorney' (Mukhtar Nama Khas) limits authority to a specific single act.",
+    "directAnswerUr": "مختار نامہ عام (General PoA) کسی نمائندے کو جائیداد کی فروخت اور دیکھ بھال کے تمام اختیارات دیتا ہے اور اس کی سب رجسٹرار کے سامنے رجسٹری لازمی ہے۔ جبکہ مختار نامہ خاص (Special PoA) صرف کسی ایک مخصوص کام (جیسے صرف کورٹ میں پیشی) کے لیے دیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Sub-Registrar Revenue Department",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "General Power of Attorney Stamp Duty",
+        "serviceUr": "مختار نامہ عام سٹامپ ڈیوٹی",
+        "normal": "2% of Property Value (Non-Blood)",
+        "urgent": "Nominal (Blood Relatives)",
+        "executive": "e-Stamping Portal",
+        "validity": "Valid until Revoked"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Draft PoA on e-Stamp Paper",
+        "titleUr": "ای سٹامپ پیپر پر تحریر کروائیں",
+        "detailEn": "Clearly define whether powers include the right to sell and receive consideration.",
+        "detailUr": "بیچنے اور رقم وصولی کا اختیار واضح لکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does a Power of Attorney remain valid after the death of the owner?",
+        "questionUr": "کیا مالک کے انتقال کے بعد مختار نامہ برقرار رہتا ہے؟",
+        "answerEn": "No. Under the Power of Attorney Act 1882, any PoA automatically and immediately terminates upon the legal death of the principal.",
+        "answerUr": "نہیں! مالک کے انتقال کے بعد مختار نامہ خودبخود منسوخ ہو جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on executing and registering Power of Attorney for properties in Pakistan.",
+    "contentUr": "مختار نامہ عام و خاص کے قانونی قواعد کی تفصیل۔",
+    "relatedSlugs": [
+      "/property/registry-vs-intiqal-difference",
+      "/overseas/power-of-attorney-attestation-overseas"
+    ]
+  }
+,
+  "punjab-khidmat-markaz-police-services": {
+    "slug": "punjab-khidmat-markaz-police-services",
+    "fullPath": "/legal/punjab-khidmat-markaz-police-services",
+    "categoryId": "legal",
+    "titleEn": "Punjab Police Khidmat Markaz (PKM) – 14 Public Citizen Services",
+    "titleUr": "پنجاب پولیس خدمت مرکز (PKM) – شہریوں کے لیے 14 بنیادی سہولیات",
+    "metaDescriptionEn": "Overview of 14 public services offered at Police Khidmat Markaz: character certificates, learner driving licenses, tenant registration, employee verification, and crime reports.",
+    "metaDescriptionUr": "پولیس خدمت مرکز میں فراہم کی جانے والی 14 عوامی سہولیات: لرنر لائسنس، کرایہ دار اندراج، ملازمین کی تصدیق اور گمشدگی رپورٹ کا طریقہ۔",
+    "directAnswerEn": "Punjab Police Khidmat Markaz (PKM) operates over 130 state-of-the-art facilitation centers across Punjab providing 14 citizen-centric services under one roof. Key services include Police Character Certificates, Learner Driving Licenses, Tenant Registration, Domestic Worker Biometric Verification, Copy of FIR, and Medico-Legal Certificates without visiting police stations.",
+    "directAnswerUr": "پنجاب پولیس خدمت مرکز (PKM) صوبے کے تمام اضلاع میں ایک ہی چھت کے نیچے 14 عوامی سہولیات فراہم کرتا ہے۔ ان میں پولیس کریکٹر سرٹیفکیٹ، لرنر ڈرائیونگ لائسنس، کرایہ داروں کا اندراج، گھریلو ملازمین کی تصدیق اور ایف آئی آر کی نقل شامل ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Police Khidmat Markaz Punjab",
+      "url": "https://pkm.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "One-Window Facilitation Services",
+        "serviceUr": "خدمت مرکز سہولیات",
+        "normal": "Govt Prescribed Fees",
+        "urgent": "Token System Queue",
+        "executive": "PKM Modern Centers",
+        "validity": "Immediate"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Take Computerized Token at Counter",
+        "titleUr": "کاؤنٹر سے ٹوکن حاصل کریں",
+        "detailEn": "Present your original CNIC at the reception desk.",
+        "detailUr": "اصل شناختی کارڈ دکھا کر ٹوکن لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I register my home tenant online through the PKM portal?",
+        "questionUr": "کیا کرایہ دار کا اندراج خدمت مرکز سے ہو جاتا ہے؟",
+        "answerEn": "Yes, submit tenant CNIC copy and rent agreement at PKM or through the Punjab Police App to ensure legal compliance under the Punjab Tenancy Ordinance.",
+        "answerUr": "جی ہاں! کرایہ نامہ اور شناختی کارڈ جمع کروا کر کرایہ دار کا اندراج کیا جا سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive directory of 14 public services at Police Khidmat Markaz.",
+    "contentUr": "پولیس خدمت مرکز کی 14 سروسز کی تفصیلی رہنمائی۔",
+    "relatedSlugs": [
+      "/legal/police-character-certificate-apply-online",
+      "/traffic/driving-license-guide"
+    ]
+  }
+,
+  "flood-alert-pakistan-ndma-pdma": {
+    "slug": "flood-alert-pakistan-ndma-pdma",
+    "fullPath": "/alerts/flood-alert-pakistan-ndma-pdma",
+    "categoryId": "alerts",
+    "titleEn": "Flood Alert Pakistan Today – NDMA & PDMA Live River Inflow Updates",
+    "titleUr": "سیلاب الرٹ پاکستان 2026 – این ڈی ایم اے اور پی ڈی ایم اے دریاؤں کے بہاؤ کے الرٹس",
+    "metaDescriptionEn": "Live flood warnings and river discharge monitoring for Indus, Chenab, Jhelum, Ravi, and Sutlej rivers. Tarbela and Mangla dam water levels and emergency flood advisories.",
+    "metaDescriptionUr": "دریائے سندھ، چناب، جہلم، راوی اور ستلج میں پانی کے بہاؤ کی تازہ ترین صورتحال۔ تربیلا، منگلا ڈیم لیول اور این ڈی ایم اے کے ہنگامی سیلاب الرٹس۔",
+    "directAnswerEn": "The National Disaster Management Authority (NDMA) and provincial PDMAs issue real-time flood monitoring bulletins for major Pakistani rivers (Indus, Jhelum, Chenab, Ravi, Sutlej). High flood warnings (exceeding 500,000 cusecs at Guddu/Sukkur barrages) trigger localized riverine evacuations coordinated through the 24/7 NDMA Emergency Operations Center (Helpline 1110).",
+    "directAnswerUr": "این ڈی ایم اے (NDMA) اور پی ڈی ایم اے دریاؤں میں پانی کے بہاؤ اور بیراجوں کی صورتحال پر روزانہ لائیو بلیٹن جاری کرتے ہیں۔ گڈو اور سکھر بیراج پر اونچے درجے کے سیلاب کی صورت میں ریڈ الرٹ جاری کیا جاتا ہے۔ ایمرجنسی میں این ڈی ایم اے ہیلپ لائن 1110 پر رابطہ کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "National Disaster Management Authority (NDMA)",
+      "url": "https://ndma.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Public Disaster & Flood Bulletins",
+        "serviceUr": "سیلاب الرٹ بلیٹن",
+        "normal": "100% FREE",
+        "urgent": "Live 24/7 Tracking",
+        "executive": "NDMA / PMD",
+        "validity": "Real-Time"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check Dam & Barrage Inflow",
+        "titleUr": "ڈیمز میں پانی کی آمد دیکھیں",
+        "detailEn": "Monitor Tarbela and Mangla water levels on ndma.gov.pk.",
+        "detailUr": "تربیلا اور منگلا ڈیم کا لیول چیک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the emergency helpline number for flood rescue in Pakistan?",
+        "questionUr": "سیلاب میں مدد کے لیے کون سے نمبر پر کال کریں؟",
+        "answerEn": "For immediate rescue and boat evacuation, dial Rescue 1122 or the NDMA National Emergency Helpline 1110.",
+        "answerUr": "فوری مدد کے لیے ریسکیو 1122 یا این ڈی ایم اے 1110 پر کال کریں۔"
+      }
+    ],
+    "contentEn": "Live flood monitoring and river flow advisory guide in Pakistan.",
+    "contentUr": "پاکستان میں سیلاب اور دریاؤں کے بہاؤ کی الرٹ گائیڈ۔",
+    "relatedSlugs": [
+      "/alerts/monsoon-warning-pdma-updates",
+      "/alerts/emergency-helpline-numbers-pakistan"
+    ]
+  }
+,
+  "monsoon-warning-pdma-updates": {
+    "slug": "monsoon-warning-pdma-updates",
+    "fullPath": "/alerts/monsoon-warning-pdma-updates",
+    "categoryId": "alerts",
+    "titleEn": "Monsoon Warning & Rain Emergency Advisory (PMD & PDMA 2026)",
+    "titleUr": "مون سون طوفانی بارشوں کی پیشگوئی اور اربن فلڈنگ ایمرجنسی الرٹ",
+    "metaDescriptionEn": "Live weather radar and monsoon rain alerts for Lahore, Karachi, Rawalpindi, Peshawar, and Islamabad. Urban flooding warnings, lightning safety, and WASA dewatering stations.",
+    "metaDescriptionUr": "محکمہ موسمیات (PMD) اور پی ڈی ایم اے کی مون سون بارشوں، نالہ لئی اور کراچی و لاہور میں اربن فلڈنگ کے ہنگامی حفاظتی اقدامات کی تفصیلات۔",
+    "directAnswerEn": "The Pakistan Meteorological Department (PMD) and Provincial Disaster Management Authorities (PDMA) issue urban flooding advisories during the summer monsoon season (July to September). Citizens in low-lying urban areas (Lahore, Karachi, Rawalpindi Nullah Lai) are advised to avoid electric poles, basement parking, and waterlogged underpasses during heavy downpours.",
+    "directAnswerUr": "محکمہ موسمیات (PMD) اور پی ڈی ایم اے مون سون کے دوران شدید بارشوں اور اربن فلڈنگ کے الرٹس جاری کرتے ہیں۔ نشیبی علاقوں کے رہائشیوں کو بجلی کے کھمبوں اور برساتی نالوں سے دور رہنے کی ہدایت کی جاتی ہے۔ نکاسی آب کے لیے واسا کے ایمرجنسی سنٹرز 1334 پر رابطہ کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Pakistan Meteorological Department (PMD)",
+      "url": "https://www.pmd.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Daily Weather Forecast & Monsoon Radar",
+        "serviceUr": "روزانہ موسمی پیشگوئی",
+        "normal": "100% FREE",
+        "urgent": "Live Satellite Radar",
+        "executive": "PMD National Center",
+        "validity": "Daily"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check Live Weather Radar on pmd.gov.pk",
+        "titleUr": "لائیو ویدر راڈار دیکھیں",
+        "detailEn": "Monitor cloud movements and rain intensity over your city.",
+        "detailUr": "اپنے شہر پر بادلوں اور بارش کا دباؤ دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What to do during urban waterlogging outside your home?",
+        "questionUr": "گھر کے باہر پانی جمع ہونے پر کس سے رابطہ کریں؟",
+        "answerEn": "Call the WASA emergency helpline at 1334 (Lahore/Rawalpindi/Faisalabad) or 1339 (KWSC Karachi) for rapid dewatering tankers.",
+        "answerUr": "پانی کی نکاسی کے لیے واسا کے 1334 پر فوری شکایت درج کروائیں۔"
+      }
+    ],
+    "contentEn": "Guide to monsoon weather warnings and urban flooding safety in Pakistan.",
+    "contentUr": "مون سون بارشوں اور ہنگامی احتیاطی تدابیر کی معلومات۔",
+    "relatedSlugs": [
+      "/alerts/flood-alert-pakistan-ndma-pdma",
+      "/alerts/emergency-helpline-numbers-pakistan"
+    ]
+  }
+,
+  "ndma-disaster-relief-compensation-registration": {
+    "slug": "ndma-disaster-relief-compensation-registration",
+    "fullPath": "/alerts/ndma-disaster-relief-compensation-registration",
+    "categoryId": "alerts",
+    "titleEn": "NDMA Disaster Relief Compensation Registration & Relief Fund",
+    "titleUr": "قدرتی آفات معاوضہ رجسٹریشن اور این ڈی ایم اے ریلیف فنڈ کلیم",
+    "metaDescriptionEn": "Apply for government financial compensation for flood, earthquake, and rain damage to houses and livestock via NDMA and BISP emergency relief disbursements.",
+    "metaDescriptionUr": "سیلاب، زلزلہ اور بارشوں سے مکانات اور مویشیوں کے نقصان پر حکومتی مالی معاوضہ حاصل کرنے کا طریقہ۔ این ڈی ایم اے اور بی ایس پی ایمرجنسی گرانٹ۔",
+    "directAnswerEn": "Victims of natural disasters (floods, earthquakes, hill torrents) in Pakistan receive statutory government compensation through joint NDMA, PDMA, and BISP emergency relief operations. Subsidies include PKR 1,000,000 for loss of life, PKR 500,000 for fully destroyed pucca houses, PKR 250,000 for partially damaged structures, and PKR 75,000 for lost livestock.",
+    "directAnswerUr": "سیلاب یا زلزلے سے متاثرہ شہری این ڈی ایم اے اور پی ڈی ایم اے کی مشترکہ سروے ٹیموں کے ذریعے مالی معاوضہ حاصل کر سکتے ہیں۔ مکمل تباہ شدہ مکان کے لیے 5 لاکھ روپے، جانی نقصان پر 10 لاکھ اور مویشیوں کے نقصان پر معاوضہ بی آئی ایس پی کاؤنٹرز سے دیا جاتا ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NDMA National Relief Framework",
+      "url": "https://ndma.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Fully Damaged House Compensation",
+        "serviceUr": "تباہ شدہ مکان معاوضہ",
+        "normal": "PKR 500,000 (Govt Grant)",
+        "urgent": "Direct Bank / BISP Transfer",
+        "executive": "NDMA / Federal Govt",
+        "validity": "Disaster Assessment"
+      },
+      {
+        "serviceEn": "Loss of Life Relief to Heirs",
+        "serviceUr": "جانی نقصان پر مالی امداد",
+        "normal": "PKR 1,000,000",
+        "urgent": "Immediate Cheque",
+        "executive": "State Relief Fund",
+        "validity": "Disaster Assessment"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register with Revenue Damage Assessment Survey",
+        "titleUr": "ریونیو سروے ٹیم کو نقصان لکھوائیں",
+        "detailEn": "Ensure Assistant Commissioner / Patwari records your CNIC and GPS photo of damage.",
+        "detailUr": "نقصان کے سروے میں اپنا شناختی کارڈ درج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How are disaster compensation funds disbursed to victims?",
+        "questionUr": "متاثرین کو معاوضے کی رقم کیسے ملتی ہے؟",
+        "answerEn": "Funds are credited directly to the victim's CNIC via BISP biometrically verified campsites or dedicated Bank of Punjab / HBL relief accounts.",
+        "answerUr": "رقم شناختی کارڈ کے ذریعے بائیومیٹرک کاؤنٹرز سے براہ راست ادا کی جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on claiming NDMA government disaster compensation in Pakistan.",
+    "contentUr": "حکومتی ڈیزاسٹر ریلیف معاوضہ حاصل کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/welfare/bisp-eligibility-check-by-cnic",
+      "/alerts/flood-alert-pakistan-ndma-pdma"
+    ]
+  }
+,
+  "emergency-helpline-numbers-pakistan": {
+    "slug": "emergency-helpline-numbers-pakistan",
+    "fullPath": "/alerts/emergency-helpline-numbers-pakistan",
+    "categoryId": "alerts",
+    "titleEn": "Emergency Helpline Numbers in Pakistan (Rescue 1122, Edhi 115, 15)",
+    "titleUr": "پاکستان کے تمام ہنگامی ہیلپ لائن نمبرز 2026 – ریسکیو 1122، پولیس 15",
+    "metaDescriptionEn": "Complete nationwide directory of toll-free emergency phone numbers: Rescue 1122, Police 15, Edhi 115, Motorway Police 1307, Fire Brigade 16, and Child Protection 1121.",
+    "metaDescriptionUr": "پاکستان بھر کے تمام 24 گھنٹے مفت ہنگامی فون نمبرز: ریسکیو 1122، پولیس مددگار 15، ایدھی ایمبولینس 115، موٹروے پولیس 1307 اور فائر بریگیڈ 16۔",
+    "directAnswerEn": "In case of emergency in Pakistan, dial Rescue 1122 for ambulance, fire, and disaster rescue; Police Helpline 15 for crime assistance; Edhi Foundation 115 for emergency patient transport; and National Highways & Motorway Police (NHMP) 1307 for highway breakdowns and accidents. All emergency numbers are 100% toll-free across all mobile networks.",
+    "directAnswerUr": "پاکستان میں کسی بھی ایمرجنسی کی صورت میں: ایمبولینس و آگ کے لیے ریسکیو 1122، پولیس کے لیے 15، ایدھی ایمبولینس کے لیے 115 اور موٹروے پر مدد کے لیے 1307 ڈائل کریں۔ تمام ایمرجنسی نمبرز ہر موبائل نیٹ ورک سے بالکل مفت ملتے ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "National Emergency Directory",
+      "url": "https://rescue.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Toll-Free Emergency Helpline Access",
+        "serviceUr": "مفت ایمرجنسی کال",
+        "normal": "100% FREE (Toll-Free)",
+        "urgent": "Immediate Response",
+        "executive": "Govt & Welfare Services",
+        "validity": "24/7"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Dial Relevant 4-Digit Short Code",
+        "titleUr": "متعلقہ 4 ہندسوں کا نمبر ملائیں",
+        "detailEn": "Clearly state your exact city, landmark, and nature of emergency.",
+        "detailUr": "اپنا صحیح پتہ اور ایمرجنسی کی نوعیت بتائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does Rescue 1122 charge any fee for patient ambulance transfer?",
+        "questionUr": "کیا ریسکیو 1122 ایمبولینس کے پیسے لیتی ہے؟",
+        "answerEn": "No. Rescue 1122 emergency ambulance, fire truck, and flood rescue services are 100% free of charge funded by the provincial government.",
+        "answerUr": "نہیں! ریسکیو 1122 کی تمام خدمات مکمل مفت ہیں۔"
+      }
+    ],
+    "contentEn": "## Pakistan Comprehensive Emergency Helpline Directory (2026)\n| Emergency Service | Short Code | Coverage | Key Services Provided |\n| :--- | :--- | :--- | :--- |\n| **Rescue 1122** | **1122** | Punjab, KPK, GB, AJK | Emergency Ambulance, Firefighting, Disaster Rescue |\n| **Police Emergency** | **15** | Nationwide | Immediate Crime Reporting & Police Dispatch |\n| **Motorway Police** | **1307** | National Highways & M-Ways | Highway Accidents, Vehicle Breakdown Assistance |\n| **Edhi Ambulance** | **115** | Nationwide | Patient Transport, Mortuary & Air Ambulance |\n| **Fire Brigade** | **16** | All Major Municipalities | City Fire Suppression & Hazardous Materials |\n| **NDMA Disaster Line** | **1110** | Federal | National Disaster Relief Coordination |\n| **WAPDA Electricity** | **118** | DISCO Territories | Power Outage & Snapped Wire Emergencies |\n| **Sui Gas Emergency** | **1199** | SNGPL / SSGC | Gas Pipeline Leaks & Fire Hazards |",
+    "contentUr": "## پاکستان کے تمام اہم ایمرجنسی ہیلپ لائن نمبرز کی ڈائریکٹری\nمفت سرکاری اور فلاحی اداروں کے ہنگامی رابطہ نمبرز۔",
+    "relatedSlugs": [
+      "/alerts/flood-alert-pakistan-ndma-pdma",
+      "/traffic/m-tag-motorway-registration-one-network"
+    ]
+  }
+,
+  "smog-air-quality-aqi-advisory-punjab": {
+    "slug": "smog-air-quality-aqi-advisory-punjab",
+    "fullPath": "/alerts/smog-air-quality-aqi-advisory-punjab",
+    "categoryId": "alerts",
+    "titleEn": "Smog Air Quality (AQI) Advisory Punjab – Green Lockdown Guidelines",
+    "titleUr": "سموگ ایئر کوالٹی انڈیکس (AQI) الرٹ پنجاب – گرین لاک ڈاؤن قواعد",
+    "metaDescriptionEn": "Live Air Quality Index (AQI) tracking for Lahore, Faisalabad, and Gujranwala. Smog season health precautions, school closure guidelines, and odd-even vehicle rules.",
+    "metaDescriptionUr": "لاہور، فیصل آباد اور گوجرانوالہ میں سموگ کی صورتحال، ایئر کوالٹی انڈیکس (AQI) الرٹس، اسکولوں کے اوقات اور اینٹی سموگ لاک ڈاؤن کی سرکاری ہدایات۔",
+    "directAnswerEn": "During the winter smog season (October to February), the Punjab Environment Protection Department monitors Air Quality Index (AQI) levels across Lahore and central Punjab. Hazardous AQI readings (> 300) trigger green lockdowns, mandatory N95 face masks, temporary school schedule shifts, and commercial market closures under the Punjab Environmental Protection Act.",
+    "directAnswerUr": "موسم سرما میں سموگ کے دوران محکمہ تحفظ ماحول ایئر کوالٹی انڈیکس (AQI) کی لائیو مانیٹرنگ کرتا ہے۔ شدید سموگ (AQI > 300) کی صورت میں گرین لاک ڈاؤن، ماسک کا لازمی استعمال اور اسکولوں کے اوقات میں تبدیلی کے حکومتی احکامات جاری کیے جاتے ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Punjab Environment Protection Agency (EPA)",
+      "url": "https://epd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Daily City AQI Public Advisory",
+        "serviceUr": "روزانہ ایئر کوالٹی الرٹ",
+        "normal": "100% FREE",
+        "urgent": "Real-Time Sensor Feed",
+        "executive": "Punjab EPA",
+        "validity": "Live"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Wear N95 Masks Outdoors",
+        "titleUr": "این 95 ماسک پہنیں",
+        "detailEn": "Protect lungs from hazardous PM2.5 microscopic particulates.",
+        "detailUr": "باہر نکلتے وقت ماسک لازمی لگائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What AQI reading is considered hazardous for human health in Pakistan?",
+        "questionUr": "کتنا اے کیو آئی صحت کے لیے خطرناک مانا جاتا ہے؟",
+        "answerEn": "An Air Quality Index (AQI) reading above 300 is classified as 'Hazardous', prompting emergency medical warnings for children and elderly individuals.",
+        "answerUr": "300 سے زیادہ AQI خطرناک درجے میں آتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on smog advisory, air quality index, and green lockdowns in Punjab.",
+    "contentUr": "سموگ کے خطرات اور حکومتی احتیاطی تدابیر کی معلومات۔",
+    "relatedSlugs": [
+      "/alerts/emergency-helpline-numbers-pakistan",
+      "/traffic/e-challan-check-online"
+    ]
+  }
+,
+  "earthquake-emergency-safety-guidelines-pakistan": {
+    "slug": "earthquake-emergency-safety-guidelines-pakistan",
+    "fullPath": "/alerts/earthquake-emergency-safety-guidelines-pakistan",
+    "categoryId": "alerts",
+    "titleEn": "Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub",
+    "titleUr": "زلزلہ ایمرجنسی سیفٹی گائیڈ لائنز اور محکمہ موسمیات سیزمک الرٹ سنٹر",
+    "metaDescriptionEn": "Real-time earthquake alerts in Pakistan from the National Seismic Monitoring Centre (NSMC). Emergency safety protocols: Drop, Cover, and Hold On guidelines.",
+    "metaDescriptionUr": "پاکستان میں زلزلہ کی پیشگی احتیاطی تدابیر، محکمہ موسمیات کے سیزمک الرٹس، جھٹکے محسوس ہونے پر جان بچانے کے سرکاری رہنما اصول۔",
+    "directAnswerEn": "The National Seismic Monitoring Centre (NSMC) under the Pakistan Meteorological Department tracks seismic activity across Pakistan's fault lines (Hindu Kush, Makran Subduction Zone, Chaman Fault). In the event of tremors, citizens must immediately follow the international 'Drop, Cover, and Hold On' protocol and evacuate high-rise buildings via staircases once shaking stops.",
+    "directAnswerUr": "محکمہ موسمیات کا نیشنل سیزمک مانیٹرنگ سنٹر پاکستان میں زلزلوں کی لائیو مانیٹرنگ کرتا ہے۔ زلزلے کے جھٹکے محسوس ہوتے ہی فوری طور پر 'جھکیں، پناہ لیں اور پکڑیں' (Drop, Cover, Hold On) کے اصول پر عمل کریں اور لفٹ کی بجائے سیڑھیاں استعمال کریں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "National Seismic Monitoring Centre (PMD)",
+      "url": "https://www.pmd.gov.pk/"
+    },
+    "author": {
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Seismic Monitoring & Earthquake Alerts",
+        "serviceUr": "زلزلہ مانیٹرنگ سروس",
+        "normal": "100% FREE",
+        "urgent": "Live Alert Center",
+        "executive": "PMD / NDMA",
+        "validity": "24/7"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Drop, Cover & Hold On",
+        "titleUr": "جھکیں، پناہ لیں اور پکڑیں",
+        "detailEn": "Take shelter under a sturdy table or interior desk.",
+        "detailUr": "مضبوط میز کے نیچے پناہ لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Should I run outside immediately while the building is actively shaking?",
+        "questionUr": "کیا زلزلے کے جھٹکوں کے دوران باہر بھاگنا چاہیے؟",
+        "answerEn": "No. Most earthquake injuries occur from falling bricks, glass, and facade tiles while trying to exit during active shaking. Stay sheltered until shaking ceases.",
+        "answerUr": "نہیں! جھٹکے رکنے کے بعد پرسکون انداز میں کھلی جگہ کی طرف جائیں۔"
+      }
+    ],
+    "contentEn": "Guide on earthquake emergency preparedness and seismic alerts in Pakistan.",
+    "contentUr": "زلزلے کی صورت میں حفاظتی تدابیر اور سیزمک الرٹس۔",
+    "relatedSlugs": [
+      "/alerts/emergency-helpline-numbers-pakistan",
+      "/alerts/flood-alert-pakistan-ndma-pdma"
+    ]
+  }
+,
+  "fbr-pos-invoicing-prize-scheme": {
+    "slug": "fbr-pos-invoicing-prize-scheme",
+    "fullPath": "/tax/fbr-pos-invoicing-prize-scheme",
+    "categoryId": "tax",
+    "titleEn": "FBR POS Invoicing & Digital Tax Receipt Verification Guide",
+    "titleUr": "ایف بی آر پوائنٹ آف سیل (POS) انوائس اور انعامی اسکیم رہنمائی",
+    "metaDescriptionEn": "Verify official FBR POS invoices on your shopping receipts via the Tax Asaan App. Win monthly cash prizes up to PKR 1 Million through the FBR Prize Scheme.",
+    "metaDescriptionUr": "شاپنگ رسیدوں پر ایف بی آر پی او ایس انوائس کی تصدیق کریں اور ماہانہ انعامی اسکیم میں لاکھوں روپے کے کیش انعامات جیتیں۔",
+    "directAnswerEn": "FBR POS Invoicing mandates tier-1 retail stores and restaurants in Pakistan to issue digital, barcode-enabled receipts integrated directly with the FBR tax network. Shoppers can verify receipt barcodes using the FBR Tax Asaan mobile app to enter the monthly lucky draw with cash prizes up to PKR 1,000,000.",
+    "directAnswerUr": "ایف بی آر پی او ایس انوائسنگ کے تحت تمام بڑے شاپنگ مالز کو کیو آر کوڈ والی رسید دینا لازمی ہے۔ گاہک ٹیکس آسان ایپ سے رسید اسکین کر کے ماہانہ انعامی قرعہ اندازی میں حصہ لے سکتے ہیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "FBR POS Integration Portal",
+      "url": "https://fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "POS Invoice Verification",
+        "serviceUr": "رسید تصدیق",
+        "normal": "100% FREE",
+        "urgent": "Instant QR Scan",
+        "executive": "Tax Asaan App",
+        "validity": "Monthly"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Scan Invoice QR Code",
+        "titleUr": "کیو آر کوڈ اسکین کریں",
+        "detailEn": "Scan the 16-digit FBR invoice number with Tax Asaan app.",
+        "detailUr": "ایپ سے رسید کا کیو آر کوڈ اسکین کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What if a store refuses to give an FBR POS receipt?",
+        "questionUr": "اگر دکاندار ایف بی آر رسید نہ دے تو کیا کریں؟",
+        "answerEn": "You can report unauthorized manual receipts through the FBR Complaint Portal on 1787.",
+        "answerUr": "آپ 1787 پر ایف بی آر کو شکایت درج کروا سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide to FBR POS digital invoicing.",
+    "contentUr": "ایف بی آر پی او ایس رسیدوں کی معلومات۔",
+    "relatedSlugs": [
+      "/tax/ntn-registration-online-pakistan",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
+  }
+,
+  "fbr-bank-account-tax-deduction": {
+    "slug": "fbr-bank-account-tax-deduction",
+    "fullPath": "/tax/fbr-bank-account-tax-deduction",
+    "categoryId": "tax",
+    "titleEn": "FBR Cash Withdrawal & Bank Advance Tax Rules for Non-Filers",
+    "titleUr": "بینک سے کیش نکلوانے پر ایف بی آر ٹیکس کٹوتی قوانین 2026",
+    "metaDescriptionEn": "Understand Section 231AB advance tax on bank cash withdrawals exceeding PKR 50,000 in Pakistan. Learn how filers get complete 0% tax exemption.",
+    "metaDescriptionUr": "بینک سے 50 ہزار سے زائد رقم نکلوانے پر 0.9 فیصد ٹیکس کٹوتی کے قواعد۔ فائلر کے لیے مکمل ٹیکس چھوٹ اور ری فنڈ کلیم کا طریقہ۔",
+    "directAnswerEn": "Under Section 231AB of the Income Tax Ordinance, commercial banks in Pakistan automatically deduct 0.9% advance withholding tax on aggregate cash withdrawals exceeding PKR 50,000 in a single day for non-filers. Active filers on the FBR ATL are 100% exempt from this deduction across all account types.",
+    "directAnswerUr": "انکم ٹیکس قانون کے تحت نان فائلر کے 50 ہزار سے زائد کیش نکلوانے پر 0.9% ٹیکس کٹتا ہے جبکہ فائلرز پر یہ ٹیکس 0% ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "State Bank of Pakistan & FBR Circular",
+      "url": "https://sbp.org.pk/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Cash Withdrawal Tax > 50K",
+        "serviceUr": "کیش ودڈرال ٹیکس",
+        "normal": "0% for Filers",
+        "urgent": "0.9% for Non-Filers",
+        "executive": "Commercial Banks",
+        "validity": "2026"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify ATL Status with Bank",
+        "titleUr": "بینک میں فائلر سٹیٹس دکھائیں",
+        "detailEn": "Provide CNIC to link bank record to active ATL list.",
+        "detailUr": "بینک میں اپنا شناختی کارڈ اپ ڈیٹ رکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is cash withdrawal tax deductible if I withdraw from an ATM?",
+        "questionUr": "کیا اے ٹی ایم سے رقم نکالنے پر بھی ٹیکس کٹتا ہے؟",
+        "answerEn": "Yes, all ATM and counter withdrawals are aggregated daily. Non-filers pay 0.9% if total daily withdrawals exceed PKR 50,000.",
+        "answerUr": "جی ہاں! روزانہ 50 ہزار سے زائد کل رقم پر نان فائلر کا ٹیکس کٹتا ہے۔"
+      }
+    ],
+    "contentEn": "Rules on bank cash withdrawal tax deductions.",
+    "contentUr": "بینک کیش ودڈرال ٹیکس کے قواعد۔",
+    "relatedSlugs": [
+      "/tax/withholding-tax-rates-filers-non-filers",
+      "/tax/fbr-filer-status-check-cnic"
+    ]
+  }
+,
+  "pakistan-embassy-attestation-documents": {
+    "slug": "pakistan-embassy-attestation-documents",
+    "fullPath": "/overseas/pakistan-embassy-attestation-documents",
+    "categoryId": "overseas",
+    "titleEn": "Pakistan Embassy & MOFA Document Attestation Guidelines 2026",
+    "titleUr": "پاکستانی سفارتخانہ اور وزارت خارجہ سے دستاویزات کی تصدیق 2026",
+    "metaDescriptionEn": "Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.",
+    "metaDescriptionUr": "وزارت خارجہ (MOFA) اور پاکستانی سفارتخانوں سے ڈگری، نکاح نامہ اور مختار نامہ کی تصدیق کا سرکاری طریقہ اور فیس۔",
+    "directAnswerEn": "Document attestation by the Ministry of Foreign Affairs (MOFA) and Pakistan Embassies verifies local Pakistani certificates for foreign immigration and overseas employment. All educational degrees must first be attested by HEC or IBCC, while marriage and birth certificates require Union Council computerized registration before submission to MOFA via authorized couriers or the online e-Attestation portal.",
+    "directAnswerUr": "وزارت خارجہ اور سفارتخانوں سے اسناد، نکاح نامہ اور پاور آف اٹارنی کی تصدیق کا سرکاری طریقہ۔ متعلقہ محکموں (HEC/IBCC) سے تصدیق کے بعد وزارت خارجہ کی مہر لگوائیں۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Ministry of Foreign Affairs (MOFA)",
+      "url": "https://mofa.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Educational Degree Attestation",
+        "serviceUr": "ڈگری تصدیق فیس",
+        "normal": "PKR 500 / Doc",
+        "urgent": "Courier Service",
+        "executive": "MOFA Official",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prior Attestation (HEC/IBCC)",
+        "titleUr": "محکمے سے ابتدائی تصدیق",
+        "detailEn": "Get initial seal from HEC (degrees) or IBCC (matric/inter).",
+        "detailUr": "ایچ ای سی یا آئی بی سی سی سے مہر لگوائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I walk into MOFA directly without appointment?",
+        "questionUr": "کیا براہ راست وزارت خارجہ جا سکتے ہیں؟",
+        "answerEn": "No, MOFA handles public attestation exclusively through authorized courier partners (TCS, Gerry's, Leopard) and online portal slots.",
+        "answerUr": "نہیں، وزارت خارجہ صرف منظور شدہ کوریئر کے ذریعے دستاویزات وصول کرتی ہے۔"
+      }
+    ],
+    "contentEn": "Guide on MOFA document attestation in Pakistan.",
+    "contentUr": "وزارت خارجہ سے دستاویزات کی تصدیق کا طریقہ۔",
+    "relatedSlugs": [
+      "/education/hec-degree-attestation-process",
+      "/overseas/nicop-renewal-from-abroad"
+    ]
+  }
+,
+  "overseas-pakistani-bank-account-nrp": {
+    "slug": "overseas-pakistani-bank-account-nrp",
+    "fullPath": "/overseas/overseas-pakistani-bank-account-nrp",
+    "categoryId": "overseas",
+    "titleEn": "Overseas Pakistani Bank Account (Roshan Digital Account NRP Guide)",
+    "titleUr": "روشن ڈیجیٹل بینک اکاؤنٹ گائیڈ 2026 – اوورسیز پاکستانی اکاؤنٹ",
+    "metaDescriptionEn": "Open a Roshan Digital Account (RDA) online from abroad in 48 hours. Invest in Naya Pakistan Certificates, stock market, and real estate with 0% tax friction.",
+    "metaDescriptionUr": "بیرون ملک سے روشن ڈیجیٹل اکاؤنٹ (RDA) 48 گھنٹوں میں کھولنے کا طریقہ۔ نیا پاکستان سرٹیفکیٹس اور پاکستان میں سرمایہ کاری کی مکمل تفصیل۔",
+    "directAnswerEn": "A Roshan Digital Account (RDA) allows Non-Resident Pakistanis (NRPs) to open local PKR and foreign currency (USD, GBP, EUR, AED, SAR) bank accounts online within 48 hours without visiting a branch. RDAs provide seamless money repatriation, direct utility bill payments in Pakistan, and access to high-yield Naya Pakistan Certificates.",
+    "directAnswerUr": "روشن ڈیجیٹل اکاؤنٹ (RDA) کے ذریعے بیرون ملک مقیم پاکستانی بغیر برانچ جائے آن لائن 48 گھنٹوں میں اکاؤنٹ کھول سکتے ہیں۔ اس سے پاکستان رقوم بھیجنے اور سرمایہ کاری کی مکمل سہولت ملتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "State Bank of Pakistan RDA Portal",
+      "url": "https://sbp.org.pk/rda/"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Loan Scheme Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "RDA Digital Account Opening",
+        "serviceUr": "اکاؤنٹ اوپننگ فیس",
+        "normal": "100% FREE",
+        "urgent": "48 Hours Processing",
+        "executive": "SBP Regulated Banks",
+        "validity": "Active"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Choose Partner Bank",
+        "titleUr": "بینک کا انتخاب کریں",
+        "detailEn": "Select from Meezan, HBL, UBL, MCB, Bank Alfalah RDA portals.",
+        "detailUr": "پسندیدہ بینک کے پورٹل پر جائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I repatriate funds out of Pakistan from an RDA account?",
+        "questionUr": "کیا آر ڈی اے اکاؤنٹ سے پیسہ واپس بیرون ملک بھیجا جا سکتا ہے؟",
+        "answerEn": "Yes, State Bank guarantees 100% full and unhindered repatriation of funds invested via RDA back to your foreign bank account.",
+        "answerUr": "جی ہاں! اسٹیٹ بینک مکمل فنڈز واپس بیرون ملک ٹرانسفر کرنے کی گارنٹی دیتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on opening Roshan Digital Accounts for overseas Pakistanis.",
+    "contentUr": "روشن ڈیجیٹل اکاؤنٹ کھولنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/overseas/nicop-renewal-from-abroad",
+      "/tax/fbr-filer-status-check-cnic"
+    ]
+  }
+,
+  "nicop-fee-usa-uk-saudi-uae-2026": {
+    "slug": "nicop-fee-usa-uk-saudi-uae-2026",
+    "fullPath": "/overseas/nicop-fee-usa-uk-saudi-uae-2026",
+    "categoryId": "overseas",
+    "titleEn": "NICOP Fee 2026 for USA, UK, Saudi Arabia & UAE (Zone A & B)",
+    "titleUr": "نائیکوپ فیس برائے امریکہ، برطانیہ، سعودی عرب اور دبئی 2026",
+    "metaDescriptionEn": "Official NADRA NICOP fee chart 2026 for Zone A and Zone B countries. Compare normal, urgent, and executive rates in USD, GBP, SAR, AED, and PKR.",
+    "metaDescriptionUr": "نادرا نائیکوپ فیس شیڈول 2026 برائے زون اے و زون بی۔ امریکہ، برطانیہ، یورپ اور خلیجی ممالک کے لیے نارمل، ارجنٹ اور ایگزیکٹو فیس کی تفصیل۔",
+    "directAnswerEn": "NADRA classifies NICOP application fees into two geographical zones. Zone A countries (USA, UK, Canada, Australia, Europe) have official fees of $39 USD (Normal), $59 USD (Urgent), and $79 USD (Executive). Zone B countries (Saudi Arabia, UAE, Qatar, Oman, Bahrain, Kuwait) have fees of $20 USD (Normal), $30 USD (Urgent), and $40 USD (Executive).",
+    "directAnswerUr": "نادرا نائیکوپ فیس چارٹ 2026: زون اے کے لیے 39 ڈالر نارمل، 59 ڈالر ارجنٹ اور 79 ڈالر ایگزیکٹو ہے؛ جبکہ زون بی (خلیجی ممالک) کے لیے 20 ڈالر نارمل، 30 ڈالر ارجنٹ اور 40 ڈالر ایگزیکٹو ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Official Fee Chart",
+      "url": "https://id.nadra.gov.pk/fee/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Zone A (USA, UK, Europe, Canada)",
+        "serviceUr": "زون اے فیس",
+        "normal": "$39 USD (31 Days)",
+        "urgent": "$59 USD (15 Days)",
+        "executive": "$79 USD (7 Days)",
+        "validity": "10 Years"
+      },
+      {
+        "serviceEn": "Zone B (Saudi, UAE, Gulf Countries)",
+        "serviceUr": "زون بی فیس",
+        "normal": "$20 USD (31 Days)",
+        "urgent": "$30 USD (15 Days)",
+        "executive": "$40 USD (7 Days)",
+        "validity": "10 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Identify Country Zone",
+        "titleUr": "اپنا ملکی زون دیکھیں",
+        "detailEn": "Check whether your country of residence is in Zone A or Zone B.",
+        "detailUr": "فیس لسٹ میں اپنا ملک دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I pay NICOP fees in local currency at Pakistani embassies?",
+        "questionUr": "کیا سفارتخانے میں مقامی کرنسی میں فیس دی جا سکتی ہے؟",
+        "answerEn": "Yes, embassy NADRA counters accept local currency (e.g. SAR in Saudi Arabia, AED in UAE, GBP in UK) equivalent to the USD schedule.",
+        "answerUr": "جی ہاں! سفارتخانوں میں مقامی کرنسی میں مساوی فیس ادا کی جا سکتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete breakdown of NADRA NICOP fees worldwide.",
+    "contentUr": "دنیا بھر کے لیے نادرا نائیکوپ فیس چارٹ۔",
+    "relatedSlugs": [
+      "/overseas/nicop-renewal-from-abroad",
+      "/nadra/nicop-fee-calculator"
+    ]
+  }
+,
+  "overseas-pakistanis-foundation-opf-schemes": {
+    "slug": "overseas-pakistanis-foundation-opf-schemes",
+    "fullPath": "/overseas/overseas-pakistanis-foundation-opf-schemes",
+    "categoryId": "overseas",
+    "titleEn": "Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide",
+    "titleUr": "اوورسیز پاکستانیز فاؤنڈیشن (OPF) ممبرشپ، پلاٹ اور تعلیمی مراعات",
+    "metaDescriptionEn": "Explore Overseas Pakistanis Foundation (OPF) welfare schemes: housing society quotas, OPF school discounts, financial aid for deceased workers, and duty-free allowances.",
+    "metaDescriptionUr": "اوورسیز پاکستانیز فاؤنڈیشن کی فلاحی اسکیمیں: رہائشی پلاٹس، تعلیمی وظائف اور بیرون ملک انتقال کر جانے والوں کے ورثاء کے لیے مالی امداد کی تفصیل۔",
+    "directAnswerEn": "The Overseas Pakistanis Foundation (OPF) provides institutional welfare services to registered expatriates. Key benefits include reserved housing quotas in OPF housing schemes (Islamabad, Lahore, Peshawar), 50% tuition fee concessions at OPF public schools, airport CIP lounge access, and PKR 1,000,000 emergency financial relief for deceased or disabled overseas workers.",
+    "directAnswerUr": "اوورسیز پاکستانیز فاؤنڈیشن (OPF) رجسٹرڈ ورکرز کو ہاؤسنگ اسکیموں میں پلاٹ، اسکول فیس میں 50% رعایت اور انتقال پر ورثاء کو 10 لاکھ روپے مالی امداد دیتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "Overseas Pakistanis Foundation (OPF)",
+      "url": "https://opf.org.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "OPF Lifetime Membership Card",
+        "serviceUr": "او پی ایف تاحیات کارڈ",
+        "normal": "PKR 2,000",
+        "urgent": "Online Issuance",
+        "executive": "OPF Portal",
+        "validity": "Lifetime"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Register on OPF Web Portal",
+        "titleUr": "او پی ایف پورٹل پر لاگ ان کریں",
+        "detailEn": "Submit Foreign Protector stamp or valid foreign work visa copy.",
+        "detailUr": "پروٹیکٹر یا ورک ویزا کی کاپی جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Who is eligible for OPF financial compensation grant?",
+        "questionUr": "او پی ایف مالی امداد کا کون حقدار ہے؟",
+        "answerEn": "Legal heirs of Pakistani overseas workers who passed away while employed abroad holding valid Protector stamps are eligible for the financial grant.",
+        "answerUr": "قانونی پروٹیکٹر ہولڈرز کے ورثاء اس کے حقدار ہیں۔"
+      }
+    ],
+    "contentEn": "Guide on OPF membership and welfare schemes.",
+    "contentUr": "او پی ایف ممبرشپ اور اسکیموں کی رہنمائی۔",
+    "relatedSlugs": [
+      "/overseas/nicop-renewal-from-abroad",
+      "/passport/overseas-pakistani-passport-renewal"
+    ]
+  }
+,
+  "power-of-attorney-attestation-overseas": {
+    "slug": "power-of-attorney-attestation-overseas",
+    "fullPath": "/overseas/power-of-attorney-attestation-overseas",
+    "categoryId": "overseas",
+    "titleEn": "Digital Power of Attorney Attestation for Overseas Pakistanis",
+    "titleUr": "اوورسیز پاکستانیوں کے لیے ڈیجیٹل پاور آف اٹارنی (مختار نامہ) تصدیق",
+    "metaDescriptionEn": "Execute and attest a digital Power of Attorney (PoA) from abroad without visiting an embassy via NADRA's online PoA portal (poa.nadra.gov.pk) with video interview.",
+    "metaDescriptionUr": "نادرا ڈیجیٹل پورٹل کے ذریعے بیرون ملک سے آن لائن پاور آف اٹارنی (مختار نامہ) بنوانے، ویڈیو تصدیق اور پاکستان میں رجسٹری کا طریقہ۔",
+    "directAnswerEn": "NADRA's Digital Power of Attorney portal (poa.nadra.gov.pk) allows overseas Pakistanis to legally execute general or special power of attorney without physically visiting a Pakistani embassy. The process involves uploading the draft, biometric verification through the Pak-ID app, an online video interview with a consular officer, and direct digital dispatch to the Ministry of Foreign Affairs (MOFA) in Pakistan.",
+    "directAnswerUr": "نادرا کے ڈیجیٹل پاور آف اٹارنی پورٹل poa.nadra.gov.pk کے ذریعے بیرون ملک مقیم شہری بغیر ایمبیسی جائے آن لائن مختار نامہ بنوا سکتے ہیں۔ اس میں نادرا ایپ سے فنگر پرنٹ اور قونصلر کے ساتھ ویڈیو انٹرویو کے ذریعے قانونی تصدیق کی جاتی ہے۔",
+    "lastVerified": "August 19, 2026",
+    "officialSource": {
+      "name": "NADRA Digital Power of Attorney Portal",
+      "url": "https://poa.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Digital PoA Application & Video Attestation",
+        "serviceUr": "ڈیجیٹل پاور آف اٹارنی فیس",
+        "normal": "$36 USD (Executant)",
+        "urgent": "$72 USD (Multi-Executant)",
+        "executive": "NADRA PoA",
+        "validity": "Permanent"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Upload PoA Draft",
+        "titleUr": "مختار نامہ ڈرافٹ اپلوڈ کریں",
+        "detailEn": "Provide attorney's CNIC in Pakistan and scan of draft.",
+        "detailUr": "پاکستان میں نمائندے کا شناختی کارڈ اور تحریر اپلوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is video interview mandatory for overseas PoA?",
+        "questionUr": "کیا ویڈیو انٹرویو لازمی ہے؟",
+        "answerEn": "Yes, a short 3-minute video verification interview with the Pakistani Consular Officer is mandatory to prevent fraud.",
+        "answerUr": "جی ہاں! قونصلر آفیسر کے ساتھ 3 منٹ کا ویڈیو انٹرویو لازمی ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Guide on executing digital Power of Attorney from abroad.",
+    "contentUr": "آن لائن مختار نامہ بنوانے کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/overseas/pakistan-embassy-attestation-documents",
+      "/property/registry-vs-intiqal-difference"
+    ]
+  }
 };

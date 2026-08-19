@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles } from 'lucide-react';
+import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles, Calculator, Globe, Building, Users, Award, Compass, Activity, Scale, CloudLightning } from 'lucide-react';
 import { Category } from '@/lib/data/categories';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
@@ -31,6 +31,24 @@ const getCategoryIcon = (iconName: string, color: string) => {
       return <HeartHandshake {...props} />;
     case 'Car':
       return <Car {...props} />;
+    case 'Calculator':
+      return <Calculator {...props} />;
+    case 'Globe':
+      return <Globe {...props} />;
+    case 'Building':
+      return <Building {...props} />;
+    case 'Users':
+      return <Users {...props} />;
+    case 'Award':
+      return <Award {...props} />;
+    case 'Compass':
+      return <Compass {...props} />;
+    case 'Activity':
+      return <Activity {...props} />;
+    case 'Scale':
+      return <Scale {...props} />;
+    case 'CloudLightning':
+      return <CloudLightning {...props} />;
     default:
       return <Sparkles {...props} />;
   }

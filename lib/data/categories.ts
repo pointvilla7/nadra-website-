@@ -16,176 +16,756 @@ export interface Category {
 
 export const CATEGORIES: Category[] = [
   {
-    id: 'nadra',
-    slug: 'nadra',
-    nameEn: 'NADRA Services',
-    nameUr: 'نادرا سروسز',
-    taglineEn: 'CNIC, B-Form, NICOP & Family Certificates',
-    taglineUr: 'شناختی کارڈ، بی فارم، نائیکوپ اور فیملی سرٹیفکیٹ',
-    descriptionEn: 'Complete official step-by-step guides for NADRA identity cards, online renewal, fee structures, application tracking, and family certificates.',
-    descriptionUr: 'نادرا شناختی کارڈ، آن لائن تجدید، فیس کی تفصیلات، ٹریکنگ اور فیملی سرٹیفکیٹ کی مکمل اور آسان ترین معلوماتی رہنمائی۔',
-    iconName: 'CreditCard',
-    accentColor: '#A02334',
-    badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
-    badgeText: 'text-doc-seal dark:text-red-300',
-    popularSearches: [
-      { en: 'NICOP Fee Calculator', ur: 'نائیکوپ فیس کیلکولیٹر', slug: '/nadra/nicop-fee-calculator' },
-      { en: 'B-Form / FRC Status Check', ur: 'بی فارم و ایف آر سی سٹیٹس', slug: '/nadra/b-form-frc-status-check' },
-      { en: 'CNIC Online Apply', ur: 'شناختی کارڈ آن لائن درخواست', slug: '/nadra/cnic-kaise-banaye' },
-      { en: 'NADRA Card Fee 2026', ur: 'نادرا کارڈ فیس 2026', slug: '/nadra/nadra-card-fee' },
-      { en: 'NADRA Application Tracking', ur: 'نادرا شناختی کارڈ ٹریکنگ', slug: '/nadra/tracking-id' },
-      { en: 'NICOP Renewal', ur: 'نائیکوپ کی آن لائن تجدید', slug: '/nadra/nicop-apply-online' },
-    ],
+    "id": "nadra",
+    "slug": "nadra",
+    "nameEn": "NADRA Services",
+    "nameUr": "نادرا سروسز",
+    "taglineEn": "CNIC, B-Form, NICOP & Family Certificates",
+    "taglineUr": "شناختی کارڈ، بی فارم، نائیکوپ اور فیملی سرٹیفکیٹ",
+    "descriptionEn": "Complete official step-by-step guides for NADRA identity cards, online renewal, fee structures, application tracking, and family certificates.",
+    "descriptionUr": "نادرا شناختی کارڈ، آن لائن تجدید، فیس کی تفصیلات، ٹریکنگ اور فیملی سرٹیفکیٹ کی مکمل اور آسان ترین معلوماتی رہنمائی۔",
+    "iconName": "CreditCard",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "NICOP Fee Calculator",
+        "ur": "نائیکوپ فیس کیلکولیٹر",
+        "slug": "/nadra/nicop-fee-calculator"
+      },
+      {
+        "en": "B-Form / FRC Status Check",
+        "ur": "بی فارم و ایف آر سی سٹیٹس",
+        "slug": "/nadra/b-form-frc-status-check"
+      },
+      {
+        "en": "CNIC Online Apply",
+        "ur": "شناختی کارڈ آن لائن درخواست",
+        "slug": "/nadra/cnic-kaise-banaye"
+      },
+      {
+        "en": "NADRA Card Fee 2026",
+        "ur": "نادرا کارڈ فیس 2026",
+        "slug": "/nadra/nadra-card-fee"
+      },
+      {
+        "en": "NADRA Application Tracking",
+        "ur": "نادرا شناختی کارڈ ٹریکنگ",
+        "slug": "/nadra/tracking-id"
+      },
+      {
+        "en": "NICOP Renewal",
+        "ur": "نائیکوپ کی آن لائن تجدید",
+        "slug": "/nadra/nicop-apply-online"
+      }
+    ]
   },
   {
-    id: 'passport',
-    slug: 'passport',
-    nameEn: 'Passport & Travel',
-    nameUr: 'پاسپورٹ اور ٹریول',
-    taglineEn: 'Official Fees, Online Apply & Office Contacts',
-    taglineUr: 'پاسپورٹ فیس، آن لائن اپلائی اور رابطہ ڈائریکٹری',
-    descriptionEn: 'Verified guides for Directorate General of Immigration & Passports: fee tables 2026, e-Passport applications, renewal documents, and office directory.',
-    descriptionUr: 'پاکستان پاسپورٹ کی فیس 2026، ای پاسپورٹ آن لائن اپلائی، تجدید کے ضروری کاغذات اور پاسپورٹ دفاتر کا مکمل پتہ و فون نمبر۔',
-    iconName: 'Plane',
-    accentColor: '#1B2A4A',
-    badgeBg: 'bg-doc-ink/10 dark:bg-slate-800',
-    badgeText: 'text-doc-ink dark:text-slate-200',
-    popularSearches: [
-      { en: 'Passport Fee Calculator', ur: 'پاسپورٹ فیس کیلکولیٹر', slug: '/passport/fee-calculator' },
-      { en: 'Passport Tracking Status', ur: 'پاسپورٹ ٹریکنگ سٹیٹس', slug: '/passport/tracking-status' },
-      { en: 'Passport Fee 2026', ur: 'پاسپورٹ فیس 2026', slug: '/passport/fee-2026' },
-      { en: 'e-Passport Online Apply', ur: 'ای پاسپورٹ آن لائن درخواست', slug: '/passport/online-apply' },
-      { en: 'Passport Renewal Docs', ur: 'پاسپورٹ تجدید کے کاغذات', slug: '/passport/renewal-documents' },
-    ],
+    "id": "passport",
+    "slug": "passport",
+    "nameEn": "Passport & Travel",
+    "nameUr": "پاسپورٹ اور ٹریول",
+    "taglineEn": "Official Fees, Online Apply & Office Contacts",
+    "taglineUr": "پاسپورٹ فیس، آن لائن اپلائی اور رابطہ ڈائریکٹری",
+    "descriptionEn": "Verified guides for Directorate General of Immigration & Passports: fee tables 2026, e-Passport applications, renewal documents, and office directory.",
+    "descriptionUr": "پاکستان پاسپورٹ کی فیس 2026، ای پاسپورٹ آن لائن اپلائی، تجدید کے ضروری کاغذات اور پاسپورٹ دفاتر کا مکمل پتہ و فون نمبر۔",
+    "iconName": "Plane",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "Passport Fee Calculator",
+        "ur": "پاسپورٹ فیس کیلکولیٹر",
+        "slug": "/passport/fee-calculator"
+      },
+      {
+        "en": "Passport Tracking Status",
+        "ur": "پاسپورٹ ٹریکنگ سٹیٹس",
+        "slug": "/passport/tracking-status"
+      },
+      {
+        "en": "Passport Fee 2026",
+        "ur": "پاسپورٹ فیس 2026",
+        "slug": "/passport/fee-2026"
+      },
+      {
+        "en": "e-Passport Online Apply",
+        "ur": "ای پاسپورٹ آن لائن درخواست",
+        "slug": "/passport/online-apply"
+      },
+      {
+        "en": "Passport Renewal Docs",
+        "ur": "پاسپورٹ تجدید کے کاغذات",
+        "slug": "/passport/renewal-documents"
+      }
+    ]
   },
   {
-    id: 'education',
-    slug: 'education',
-    nameEn: 'Education',
-    nameUr: 'تعلیم اور رزلٹ',
-    taglineEn: 'Board Results, Admissions & Scholarships',
-    taglineUr: 'بورڈ رزلٹ، یونیورسٹی ایڈمیشن اور سکالرشپس',
-    descriptionEn: 'BISE board exam result portals, public university admission deadlines, HEC national scholarships, NUST entry test guides, and CSS preparation.',
-    descriptionUr: 'تمام تعلیمی بورڈز کے آن لائن نتائج، یونیورسٹی داخلے، ایچ ای سی سکالرشپس، نسٹ داخلہ اور سی ایس ایس امتحان کی مکمل تیاری۔',
-    iconName: 'GraduationCap',
-    accentColor: '#B08D57',
-    badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
-    badgeText: 'text-amber-800 dark:text-amber-300',
-    popularSearches: [
-      { en: 'BISE Result Checker 2026', ur: 'بورڈ رزلٹ چیکر 2026', slug: '/education/bise-result-checker-2026' },
-      { en: 'University Merit List 2026', ur: 'یونیورسٹی میرٹ لسٹ 2026', slug: '/education/university-merit-list-checker-2026' },
-      { en: 'HEC Scholarship Status', ur: 'HEC سکالرشپ سٹیٹس', slug: '/education/hec-scholarship-status-2026' },
-      { en: 'BISE Lahore Result 2026', ur: 'لاہور بورڈ رزلٹ 2026', slug: '/education/bise-lahore-result-2026' },
-      { en: 'PU Admissions 2026', ur: 'پنجاب یونیورسٹی ایڈمیشن', slug: '/education/punjab-university-admission-2026' },
-      { en: 'CSS Book List', ur: 'سی ایس ایس کی کتب', slug: '/education/css-preparation-books' },
-    ],
+    "id": "education",
+    "slug": "education",
+    "nameEn": "Education",
+    "nameUr": "تعلیم اور رزلٹ",
+    "taglineEn": "Board Results, Admissions & Scholarships",
+    "taglineUr": "بورڈ رزلٹ، یونیورسٹی ایڈمیشن اور سکالرشپس",
+    "descriptionEn": "BISE board exam result portals, public university admission deadlines, HEC national scholarships, NUST entry test guides, and CSS preparation.",
+    "descriptionUr": "تمام تعلیمی بورڈز کے آن لائن نتائج، یونیورسٹی داخلے، ایچ ای سی سکالرشپس، نسٹ داخلہ اور سی ایس ایس امتحان کی مکمل تیاری۔",
+    "iconName": "GraduationCap",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "BISE Result Checker 2026",
+        "ur": "بورڈ رزلٹ چیکر 2026",
+        "slug": "/education/bise-result-checker-2026"
+      },
+      {
+        "en": "University Merit List 2026",
+        "ur": "یونیورسٹی میرٹ لسٹ 2026",
+        "slug": "/education/university-merit-list-checker-2026"
+      },
+      {
+        "en": "HEC Scholarship Status",
+        "ur": "HEC سکالرشپ سٹیٹس",
+        "slug": "/education/hec-scholarship-status-2026"
+      },
+      {
+        "en": "BISE Lahore Result 2026",
+        "ur": "لاہور بورڈ رزلٹ 2026",
+        "slug": "/education/bise-lahore-result-2026"
+      },
+      {
+        "en": "PU Admissions 2026",
+        "ur": "پنجاب یونیورسٹی ایڈمیشن",
+        "slug": "/education/punjab-university-admission-2026"
+      },
+      {
+        "en": "CSS Book List",
+        "ur": "سی ایس ایس کی کتب",
+        "slug": "/education/css-preparation-books"
+      }
+    ]
   },
   {
-    id: 'bills',
-    slug: 'bills',
-    nameEn: 'Utility Bills',
-    nameUr: 'یوٹیلیٹی بلز',
-    taglineEn: 'LESCO, K-Electric, Sui Gas & Complaints',
-    taglineUr: 'لیسکو، کے الیکٹرک، سوئی گیس بلز اور شکایات',
-    descriptionEn: 'Instant duplicate bill download tools for LESCO, K-Electric, Sui Gas (SNGPL/SSGC), plus official WAPDA electricity complaint numbers.',
-    descriptionUr: 'لیسکو، کے الیکٹرک اور سوئی گیس کا آن لائن ڈپلیکیٹ بل دیکھیں اور ڈاؤن لوڈ کریں۔ واٹ ڈا ہیلپ لائن نمبرز اور شکایات در ج کروائیں۔',
-    iconName: 'FileText',
-    accentColor: '#B08D57',
-    badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
-    badgeText: 'text-amber-800 dark:text-amber-300',
-    popularSearches: [
-      { en: 'Utility Bill Checker 2026', ur: 'یوٹیلیٹی بل چیکر 2026', slug: '/bills/utility-bill-checker-2026' },
-      { en: 'PESCO Bill Check (KPK)', ur: 'پیسکو آن لائن بل (کے پی کے)', slug: '/bills/pesco-bill-check-online' },
-      { en: 'QESCO Bill Check (Balochistan)', ur: 'کیسکو آن لائن بل (بلوچستان)', slug: '/bills/qesco-bill-check-online' },
-      { en: 'GEPCO Bill Check', ur: 'گیپکو آن لائن بل', slug: '/bills/gepco-bill-check-online' },
-      { en: 'LESCO Bill Check', ur: 'لیسکو آن لائن بل', slug: '/bills/lesco-bill-check-online' },
-      { en: 'K-Electric Bill Download', ur: 'کے الیکٹرک بل ڈاؤن لوڈ', slug: '/bills/k-electric-duplicate-bill' },
-      { en: 'Sui Gas SNGPL & SSGC', ur: 'سوئی گیس بل چیک', slug: '/bills/sui-gas-bill-check-online' },
-      { en: 'WAPDA Complaint Tracker', ur: 'واپڈا شکایات ٹریکر', slug: '/bills/wapda-complaint-status-tracker-2026' },
-    ],
+    "id": "bills",
+    "slug": "bills",
+    "nameEn": "Utility Bills",
+    "nameUr": "یوٹیلیٹی بلز",
+    "taglineEn": "LESCO, K-Electric, Sui Gas & Complaints",
+    "taglineUr": "لیسکو، کے الیکٹرک، سوئی گیس بلز اور شکایات",
+    "descriptionEn": "Instant duplicate bill download tools for LESCO, K-Electric, Sui Gas (SNGPL/SSGC), plus official WAPDA electricity complaint numbers.",
+    "descriptionUr": "لیسکو، کے الیکٹرک اور سوئی گیس کا آن لائن ڈپلیکیٹ بل دیکھیں اور ڈاؤن لوڈ کریں۔ واٹ ڈا ہیلپ لائن نمبرز اور شکایات در ج کروائیں۔",
+    "iconName": "FileText",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "Utility Bill Checker 2026",
+        "ur": "یوٹیلیٹی بل چیکر 2026",
+        "slug": "/bills/utility-bill-checker-2026"
+      },
+      {
+        "en": "FESCO Bill Online Check",
+        "ur": "فیسکو آن لائن بل",
+        "slug": "/bills/fesco-bill-check-online"
+      },
+      {
+        "en": "LESCO Bill Check",
+        "ur": "لیسکو آن لائن بل",
+        "slug": "/bills/lesco-bill-check-online"
+      },
+      {
+        "en": "K-Electric Bill Download",
+        "ur": "کے الیکٹرک بل ڈاؤن لوڈ",
+        "slug": "/bills/k-electric-duplicate-bill"
+      },
+      {
+        "en": "Sui Gas SNGPL & SSGC",
+        "ur": "سوئی گیس بل چیک",
+        "slug": "/bills/sui-gas-bill-check-online"
+      },
+      {
+        "en": "WAPDA Complaint Tracker",
+        "ur": "واپڈا شکایات ٹریکر",
+        "slug": "/bills/wapda-complaint-status-tracker-2026"
+      }
+    ]
   },
   {
-    id: 'jobs',
-    slug: 'jobs',
-    nameEn: 'Jobs Portal',
-    nameUr: 'نوکریاں اور ملازمتیں',
-    taglineEn: 'Latest Federal & Provincial Govt Vacancies',
-    taglineUr: 'سرکاری نوکریاں، پی پی ایس سی اور این ٹی ایس',
-    descriptionEn: 'Daily updated announcements for Federal & Provincial government vacancies in Pakistan, PPSC upcoming tests, and NTS job alerts.',
-    descriptionUr: 'وفاقی اور صوبائی حکومت کی نئی ملازمتیں، پنجاب پبلک سروس کمیشن (PPSC) اور این ٹی ایس ٹیسٹس کی تازہ ترین معلومات۔',
-    iconName: 'Briefcase',
-    accentColor: '#A02334',
-    badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
-    badgeText: 'text-doc-seal dark:text-red-300',
-    popularSearches: [
-      { en: 'Roll Number Slip 2026', ur: 'رول نمبر سلپ چیکر 2026', slug: '/jobs/roll-number-slip-checker-2026' },
-      { en: 'NTS & PPSC Results 2026', ur: 'این ٹی ایس و پی پی ایس سی رزلٹس', slug: '/jobs/nts-result-scorecard-checker-2026' },
-      { en: 'Govt Jobs Pakistan 2026', ur: 'سرکاری نوکریاں 2026', slug: '/jobs/latest-govt-jobs-pakistan' },
-      { en: 'PPSC Jobs Today', ur: 'پی پی ایس سی نئی نوکریاں', slug: '/jobs/ppsc-jobs-2026' },
-      { en: 'FPSC Online Apply', ur: 'ایف پی ایس سی آن لائن درخواست', slug: '/jobs/fpsc-online-apply-procedure' },
-    ],
+    "id": "jobs",
+    "slug": "jobs",
+    "nameEn": "Jobs Portal",
+    "nameUr": "نوکریاں اور ملازمتیں",
+    "taglineEn": "Latest Federal & Provincial Govt Vacancies",
+    "taglineUr": "سرکاری نوکریاں، پی پی ایس سی اور این ٹی ایس",
+    "descriptionEn": "Daily updated announcements for Federal & Provincial government vacancies in Pakistan, PPSC upcoming tests, and NTS job alerts.",
+    "descriptionUr": "وفاقی اور صوبائی حکومت کی نئی ملازمتیں، پنجاب پبلک سروس کمیشن (PPSC) اور این ٹی ایس ٹیسٹس کی تازہ ترین معلومات۔",
+    "iconName": "Briefcase",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Roll Number Slip 2026",
+        "ur": "رول نمبر سلپ چیکر 2026",
+        "slug": "/jobs/roll-number-slip-checker-2026"
+      },
+      {
+        "en": "NTS & PPSC Results 2026",
+        "ur": "این ٹی ایس و پی پی ایس سی رزلٹس",
+        "slug": "/jobs/nts-result-scorecard-checker-2026"
+      },
+      {
+        "en": "Govt Jobs Pakistan 2026",
+        "ur": "سرکاری نوکریاں 2026",
+        "slug": "/jobs/latest-govt-jobs-pakistan"
+      },
+      {
+        "en": "PPSC Jobs Today",
+        "ur": "پی پی ایس سی نئی نوکریاں",
+        "slug": "/jobs/ppsc-jobs-2026"
+      },
+      {
+        "en": "FPSC Online Apply",
+        "ur": "ایف پی ایس سی آن لائن درخواست",
+        "slug": "/jobs/fpsc-online-apply-procedure"
+      }
+    ]
   },
   {
-    id: 'loans',
-    slug: 'loans',
-    nameEn: 'Govt Loans',
-    nameUr: 'سرکاری قرضہ سکیمیں',
-    taglineEn: 'Apni Chhat Apna Ghar, PM Youth & Kamyab Jawan',
-    taglineUr: 'اپنی چھت اپنا گھر، پی ایم یوتھ اور کامیاب جوان قرضے',
-    descriptionEn: 'Verified guides for Government Interest-Free & Micro-Loan Schemes: Apni Chhat Apna Ghar (1.5 Million PKR), PM Youth Business Loan, Mera Ghar Ashiana, and Asaan Karobar.',
-    descriptionUr: 'حکومت پاکستان کی بلا سود اور کم شرح سود قرضہ سکیمیں: اپنی چھت اپنا گھر (15 لاکھ روپے)، پرائم منسٹر یوتھ لون، آسان کاروبار اور کامیاب جوان سکیم۔',
-    iconName: 'Landmark',
-    accentColor: '#B08D57',
-    badgeBg: 'bg-doc-brass/10 dark:bg-amber-950/40',
-    badgeText: 'text-amber-800 dark:text-amber-300',
-    popularSearches: [
-      { en: 'Govt Loan EMI Calculator', ur: 'قرضہ قسط کیلکولیٹر 2026', slug: '/loans/emi-calculator-2026' },
-      { en: 'Loan Status Tracker 2026', ur: 'لون سٹیٹس ٹریکر 2026', slug: '/loans/loan-application-status-tracker-2026' },
-      { en: 'Apni Chhat Apna Ghar Apply', ur: 'اپنی چھت اپنا گھر آن لائن اپلائی', slug: '/loans/apni-chhat-apna-ghar' },
-      { en: 'PM Youth Loan 2026', ur: 'پی ایم یوتھ لون سکیم', slug: '/loans/pm-youth-loan-scheme' },
-      { en: 'Akhuwat Interest-Free Loan', ur: 'اخوت بلاسود قرضہ فارم', slug: '/loans/akhuwat-interest-free-loan-application' },
-    ],
+    "id": "loans",
+    "slug": "loans",
+    "nameEn": "Govt Loans",
+    "nameUr": "سرکاری قرضہ سکیمیں",
+    "taglineEn": "Apni Chhat Apna Ghar, PM Youth & Kamyab Jawan",
+    "taglineUr": "اپنی چھت اپنا گھر، پی ایم یوتھ اور کامیاب جوان قرضے",
+    "descriptionEn": "Verified guides for Government Interest-Free & Micro-Loan Schemes: Apni Chhat Apna Ghar (1.5 Million PKR), PM Youth Business Loan, Mera Ghar Ashiana, and Asaan Karobar.",
+    "descriptionUr": "حکومت پاکستان کی بلا سود اور کم شرح سود قرضہ سکیمیں: اپنی چھت اپنا گھر (15 لاکھ روپے)، پرائم منسٹر یوتھ لون، آسان کاروبار اور کامیاب جوان سکیم۔",
+    "iconName": "Landmark",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "Govt Loan EMI Calculator",
+        "ur": "قرضہ قسط کیلکولیٹر 2026",
+        "slug": "/loans/emi-calculator-2026"
+      },
+      {
+        "en": "Loan Status Tracker 2026",
+        "ur": "لون سٹیٹس ٹریکر 2026",
+        "slug": "/loans/loan-application-status-tracker-2026"
+      },
+      {
+        "en": "Apni Chhat Apna Ghar Apply",
+        "ur": "اپنی چھت اپنا گھر آن لائن اپلائی",
+        "slug": "/loans/apni-chhat-apna-ghar"
+      },
+      {
+        "en": "PM Youth Loan 2026",
+        "ur": "پی ایم یوتھ لون سکیم",
+        "slug": "/loans/pm-youth-loan-scheme"
+      },
+      {
+        "en": "Akhuwat Interest-Free Loan",
+        "ur": "اخوت بلاسود قرضہ فارم",
+        "slug": "/loans/akhuwat-interest-free-loan-application"
+      }
+    ]
   },
   {
-    id: 'welfare',
-    slug: 'welfare',
-    nameEn: 'Social Welfare & Relief',
-    nameUr: 'بے نظیر و احساس پروگرام',
-    taglineEn: 'BISP 8171 Portal, PSER Survey, Taleemi Wazaif & Sehat Card',
-    taglineUr: 'بی ایس پی 8171 پورٹل، پی ایس ای آر سروے اور کفالت کاؤنٹر',
-    descriptionEn: 'Official guidance for BISP 8171 CNIC eligibility check, Benazir Kafaalat 10,500 PKR schedule, PSER Punjab survey, Taleemi Wazaif, Laptop Scheme, and Sehat Card.',
-    descriptionUr: 'بے نظیر انکم سپورٹ پروگرام (BISP 8171) آن لائن اہلیت چیک، کفالت قسط، پی ایس ای آر سروے رجسٹریشن، تعلیمی وظائف اور صحت سہولت کارڈ۔',
-    iconName: 'HeartHandshake',
-    accentColor: '#A02334',
-    badgeBg: 'bg-doc-seal/10 dark:bg-doc-seal/20',
-    badgeText: 'text-doc-seal dark:text-red-300',
-    popularSearches: [
-      { en: 'Sehat Card Eligibility Check', ur: 'صحت کارڈ اہلیت چیکر 2026', slug: '/welfare/sehat-card-eligibility-checker-2026' },
-      { en: 'PSER Survey Status 2026', ur: 'پی ایس ای آر سروے چیکر 2026', slug: '/welfare/pser-survey-status-checker-2026' },
-      { en: 'BISP 8171 CNIC Check', ur: 'بی ایس پی 8171 شناختی کارڈ آن لائن', slug: '/welfare/bisp-eligibility-check-by-cnic' },
-      { en: 'Kafaalat Payment Date', ur: 'بینظیر کفالت قسط شیڈول', slug: '/welfare/kafaalat-amount-schedule' },
-      { en: 'Kisan Card Punjab', ur: 'کسان کارڈ آن لائن اپلائی', slug: '/welfare/kisan-card-punjab-apply-online' },
-    ],
+    "id": "welfare",
+    "slug": "welfare",
+    "nameEn": "Social Welfare & Relief",
+    "nameUr": "بے نظیر و احساس پروگرام",
+    "taglineEn": "BISP 8171 Portal, PSER Survey, Taleemi Wazaif & Sehat Card",
+    "taglineUr": "بی ایس پی 8171 پورٹل، پی ایس ای آر سروے اور کفالت کاؤنٹر",
+    "descriptionEn": "Official guidance for BISP 8171 CNIC eligibility check, Benazir Kafaalat 10,500 PKR schedule, PSER Punjab survey, Taleemi Wazaif, Laptop Scheme, and Sehat Card.",
+    "descriptionUr": "بے نظیر انکم سپورٹ پروگرام (BISP 8171) آن لائن اہلیت چیک، کفالت قسط، پی ایس ای آر سروے رجسٹریشن، تعلیمی وظائف اور صحت سہولت کارڈ۔",
+    "iconName": "HeartHandshake",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Sehat Card Eligibility Check",
+        "ur": "صحت کارڈ اہلیت چیکر 2026",
+        "slug": "/welfare/sehat-card-eligibility-checker-2026"
+      },
+      {
+        "en": "PSER Survey Status 2026",
+        "ur": "پی ایس ای آر سروے چیکر 2026",
+        "slug": "/welfare/pser-survey-status-checker-2026"
+      },
+      {
+        "en": "BISP 8171 CNIC Check",
+        "ur": "بی ایس پی 8171 شناختی کارڈ آن لائن",
+        "slug": "/welfare/bisp-eligibility-check-by-cnic"
+      },
+      {
+        "en": "Kafaalat Payment Date",
+        "ur": "بینظیر کفالت قسط شیڈول",
+        "slug": "/welfare/kafaalat-amount-schedule"
+      },
+      {
+        "en": "Kisan Card Punjab",
+        "ur": "کسان کارڈ آن لائن اپلائی",
+        "slug": "/welfare/kisan-card-punjab-apply-online"
+      }
+    ]
   },
   {
-    id: 'traffic',
-    slug: 'traffic',
-    nameEn: 'Traffic & Vehicle Services',
-    nameUr: 'ٹریفک و گاڑیوں کی سروسز',
-    taglineEn: 'E-Challan Check, Token Tax, Driving License & Transfer',
-    taglineUr: 'ای چالان آن لائن، ٹوکن ٹیکس اور ڈرائیونگ لائسنس',
-    descriptionEn: 'Online PSCA E-Challan lookup by CNIC & vehicle registration, Excise Token Tax calculator, DLIMS driving license renewals, and vehicle ownership transfer guides.',
-    descriptionUr: 'ای چالان آن لائن چیک (پنجاب، سندھ، اسلام آباد)، یکمشت ٹوکن ٹیکس کی ادائیگی، ڈرائیونگ لائسنس رینیول اور گاڑی کی بائے نیم منتقلی کا مکمل گائیڈ۔',
-    iconName: 'Car',
-    accentColor: '#1B2A4A',
-    badgeBg: 'bg-doc-ink/10 dark:bg-slate-800',
-    badgeText: 'text-doc-ink dark:text-slate-200',
-    popularSearches: [
-      { en: 'Token Tax Calculator 2026', ur: 'ٹوکن ٹیکس کیلکولیٹر 2026', slug: '/traffic/token-tax-calculator-2026' },
-      { en: 'Vehicle Verification MTMIS', ur: 'گاڑی کی تصدیق ایم ٹی ایم آئی ایس', slug: '/traffic/vehicle-verification-online-2026' },
-      { en: 'E-Challan Online Check', ur: 'ای چالان آن لائن چیک پنجاب', slug: '/traffic/e-challan-check-online' },
-      { en: 'Driving License DLIMS', ur: 'ڈرائیونگ لائسنس آن لائن اپلائی', slug: '/traffic/driving-license-guide' },
-      { en: 'M-Tag Registration', ur: 'موٹروے ایم ٹیگ رجسٹریشن', slug: '/traffic/m-tag-motorway-registration-one-network' },
-    ],
+    "id": "traffic",
+    "slug": "traffic",
+    "nameEn": "Traffic & Vehicle Services",
+    "nameUr": "ٹریفک و گاڑیوں کی سروسز",
+    "taglineEn": "E-Challan Check, Token Tax, Driving License & Transfer",
+    "taglineUr": "ای چالان آن لائن، ٹوکن ٹیکس اور ڈرائیونگ لائسنس",
+    "descriptionEn": "Online PSCA E-Challan lookup by CNIC & vehicle registration, Excise Token Tax calculator, DLIMS driving license renewals, and vehicle ownership transfer guides.",
+    "descriptionUr": "ای چالان آن لائن چیک (پنجاب، سندھ، اسلام آباد)، یکمشت ٹوکن ٹیکس کی ادائیگی، ڈرائیونگ لائسنس رینیول اور گاڑی کی بائے نیم منتقلی کا مکمل گائیڈ۔",
+    "iconName": "Car",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "Token Tax Calculator 2026",
+        "ur": "ٹوکن ٹیکس کیلکولیٹر 2026",
+        "slug": "/traffic/token-tax-calculator-2026"
+      },
+      {
+        "en": "Vehicle Verification MTMIS",
+        "ur": "گاڑی کی تصدیق ایم ٹی ایم آئی ایس",
+        "slug": "/traffic/vehicle-verification-online-2026"
+      },
+      {
+        "en": "E-Challan Online Check",
+        "ur": "ای چالان آن لائن چیک پنجاب",
+        "slug": "/traffic/e-challan-check-online"
+      },
+      {
+        "en": "Driving License DLIMS",
+        "ur": "ڈرائیونگ لائسنس آن لائن اپلائی",
+        "slug": "/traffic/driving-license-guide"
+      },
+      {
+        "en": "M-Tag Registration",
+        "ur": "موٹروے ایم ٹیگ رجسٹریشن",
+        "slug": "/traffic/m-tag-motorway-registration-one-network"
+      }
+    ]
   },
+  {
+    "id": "tax",
+    "slug": "tax",
+    "nameEn": "Tax & FBR Services",
+    "nameUr": "ٹیکس اور ایف بی آر سروسز",
+    "taglineEn": "NTN Registration, Filer Status, Iris Portal & Active Taxpayer List",
+    "taglineUr": "این ٹی این رجسٹریشن، فائلر سٹیٹس اور انکم ٹیکس گوشوارے",
+    "descriptionEn": "Complete guides for FBR online NTN registration, checking active taxpayer list (ATL) status by CNIC, salaried & business tax return filing on Iris 2.0, and withholding tax rates.",
+    "descriptionUr": "ایف بی آر آن لائن این ٹی این رجسٹریشن، شناختی کارڈ سے ایکٹو ٹیکس پیئر لسٹ چیک، آئرس پورٹل پر انکم ٹیکس ریٹرن اور فائلر و نان فائلر ٹیکس شرح۔",
+    "iconName": "Calculator",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "NTN Registration Online",
+        "ur": "این ٹی این آن لائن رجسٹریشن",
+        "slug": "/tax/ntn-registration-online-pakistan"
+      },
+      {
+        "en": "FBR Filer Status Check",
+        "ur": "ایف بی آر فائلر سٹیٹس چیک",
+        "slug": "/tax/fbr-filer-status-check-cnic"
+      },
+      {
+        "en": "How to Become Tax Filer",
+        "ur": "ٹیکس فائلر بننے کا طریقہ",
+        "slug": "/tax/how-to-become-tax-filer-pakistan-2026"
+      },
+      {
+        "en": "Income Tax Return Guide",
+        "ur": "انکم ٹیکس ریٹرن فائلنگ",
+        "slug": "/tax/income-tax-return-filing-guide"
+      },
+      {
+        "en": "Withholding Tax Rates 2026",
+        "ur": "ودہولڈنگ ٹیکس ریٹس 2026",
+        "slug": "/tax/withholding-tax-rates-filers-non-filers"
+      }
+    ]
+  },
+  {
+    "id": "overseas",
+    "slug": "overseas",
+    "nameEn": "Overseas Pakistanis Hub",
+    "nameUr": "اوورسیز پاکستانیز ڈیسک",
+    "taglineEn": "NICOP Renewal, POC Cards, Embassy Attestation & Roshan Digital Accounts",
+    "taglineUr": "نائیکوپ تجدید، پی او سی، سفارتخانہ تصدیق اور روشن ڈیجیٹل اکاؤنٹ",
+    "descriptionEn": "Official procedures for overseas Pakistanis: Pak-ID online NICOP renewal, Pakistan Origin Cards (POC), Embassy & MOFA document attestation, and NRP bank accounts.",
+    "descriptionUr": "بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ آن لائن تجدید، پی او سی کارڈ، سفارتخانے سے دستاویزات کی تصدیق اور روشن ڈیجیٹل بینک اکاؤنٹ کی رہنمائی۔",
+    "iconName": "Globe",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "NICOP Renewal from Abroad",
+        "ur": "بیرون ملک نائیکوپ تجدید",
+        "slug": "/overseas/nicop-renewal-from-abroad"
+      },
+      {
+        "en": "POC Card Apply Online",
+        "ur": "پی او سی کارڈ آن لائن درخواست",
+        "slug": "/overseas/poc-card-pakistan-apply-online"
+      },
+      {
+        "en": "Embassy Attestation Docs",
+        "ur": "سفارتخانہ تصدیق کے کاغذات",
+        "slug": "/overseas/pakistan-embassy-attestation-documents"
+      },
+      {
+        "en": "Roshan Digital Account",
+        "ur": "روشن ڈیجیٹل بینک اکاؤنٹ",
+        "slug": "/overseas/overseas-pakistani-bank-account-nrp"
+      },
+      {
+        "en": "NICOP Fee 2026 (USA/UK/Gulf)",
+        "ur": "نائیکوپ فیس برائے زون اے و بی",
+        "slug": "/overseas/nicop-fee-usa-uk-saudi-uae-2026"
+      }
+    ]
+  },
+  {
+    "id": "property",
+    "slug": "property",
+    "nameEn": "Property & Land Mutation",
+    "nameUr": "زمین، جائیداد اور انتقال",
+    "taglineEn": "PLRA Intiqal, Fard Malkiat, Property Tax & Housing Society NOCs",
+    "taglineUr": "پنجاب لینڈ ریکارڈ انتقال، فرد ملکیت اور پراپرٹی ٹیکس",
+    "descriptionEn": "Verified guides for Punjab Land Record Authority (PLRA) online Intiqal, checking property mutation by CNIC, computerized Fard download, and e-Stamping Challan 32-A.",
+    "descriptionUr": "اراضی ریکارڈ سنٹر کے ذریعے آن لائن انتقال، شناختی کارڈ سے فرد ملکیت، رجسٹری بمقابلہ انتقال کا قانونی فرق اور ای سٹامپ پیپر چالان 32-A۔",
+    "iconName": "Building",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Intiqal Online Punjab PLRA",
+        "ur": "آن لائن انتقال اراضی پنجاب",
+        "slug": "/property/intiqal-registration-online-punjab"
+      },
+      {
+        "en": "Property Mutation Check CNIC",
+        "ur": "پراپرٹی انتقال چیک بذریعہ شناختی کارڈ",
+        "slug": "/property/property-mutation-check-by-cnic"
+      },
+      {
+        "en": "Patwari Fard Online Check",
+        "ur": "پٹوار کمپیوٹرائزڈ فرد آن لائن",
+        "slug": "/property/patwari-record-online-check"
+      },
+      {
+        "en": "Property Tax Slabs 2026",
+        "ur": "پراپرٹی ٹیکس سلیب 2026",
+        "slug": "/property/property-tax-calculator-pakistan-2026"
+      },
+      {
+        "en": "Registry vs Intiqal Difference",
+        "ur": "رجسٹری بمقابلہ انتقال فرق",
+        "slug": "/property/registry-vs-intiqal-difference"
+      }
+    ]
+  },
+  {
+    "id": "family-registration",
+    "slug": "family-registration",
+    "nameEn": "Marriage & Family Registration",
+    "nameUr": "نکاح، شادی اور فیملی رجسٹریشن",
+    "taglineEn": "Nikah Nama Registration, Marriage Certificates & Talaq / Khula Rules",
+    "taglineUr": "نکاح نامہ رجسٹریشن، کمپیوٹرائزڈ شادی سرٹیفکیٹ اور طلاق/خلع قوانین",
+    "descriptionEn": "Official Union Council & NADRA procedures for Nikah Nama registration, computerized marriage certificates (MRC), divorce certificates, and English translation attestation.",
+    "descriptionUr": "یونین کونسل اور نادرا کا کمپیوٹرائزڈ نکاح نامہ، میرج رجسٹریشن سرٹیفکیٹ (MRC)، طلاق و خلع کا قانونی طریقہ اور وزارت خارجہ تصدیق۔",
+    "iconName": "Users",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "Nikah Nama Registration",
+        "ur": "نکاح نامہ رجسٹریشن کا طریقہ",
+        "slug": "/family-registration/nikah-nama-registration-process-pakistan"
+      },
+      {
+        "en": "Union Council Marriage Cert",
+        "ur": "یونین کونسل شادی سرٹیفکیٹ",
+        "slug": "/family-registration/marriage-certificate-union-council-apply"
+      },
+      {
+        "en": "Divorce Registration Online",
+        "ur": "طلاق و خلع رجسٹریشن کا طریقہ",
+        "slug": "/family-registration/divorce-registration-pakistan-online"
+      },
+      {
+        "en": "Nikah Nama English MOFA",
+        "ur": "نکاح نامہ انگلش ترجمہ و تصدیق",
+        "slug": "/family-registration/nikah-nama-english-translation-attestation"
+      },
+      {
+        "en": "Child Legal Adoption Guide",
+        "ur": "بچہ گود لینے کا قانونی طریقہ",
+        "slug": "/family-registration/child-adoption-legal-procedure-pakistan"
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "slug": "business",
+    "nameEn": "Business & SECP Registration",
+    "nameUr": "کاروبار اور ایس ای سی پی رجسٹریشن",
+    "taglineEn": "SECP Company Formation, Sole Proprietorship, Trade Licenses & PSEB",
+    "taglineUr": "کمپنی رجسٹریشن، سول پروپرائیٹر شپ اور ٹریڈ لائسنس",
+    "descriptionEn": "Step-by-step corporate registration guides for SECP Private Limited (Pvt Ltd) companies, sole proprietorship NTN, municipal trade licenses, and PSEB freelancer IT incentives.",
+    "descriptionUr": "سیکیورٹیز اینڈ ایکسچینج کمیشن (SECP) کمپنی رجسٹریشن، سول پروپرائیٹر ٹیکس نمبر، بلدیاتی ٹریڈ لائسنس اور آئی ٹی کمپنیوں کی پی ایس ای بی رجسٹریشن۔",
+    "iconName": "Briefcase",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "SECP Company Online 2026",
+        "ur": "ایس ای سی پی کمپنی رجسٹریشن 2026",
+        "slug": "/business/secp-company-registration-online-2026"
+      },
+      {
+        "en": "Sole Proprietorship NTN",
+        "ur": "سول پروپرائیٹر این ٹی این",
+        "slug": "/business/sole-proprietorship-ntn-registration"
+      },
+      {
+        "en": "Small Business Registration",
+        "ur": "چھوٹے کاروبار کی رجسٹریشن",
+        "slug": "/business/how-to-register-small-business-pakistan"
+      },
+      {
+        "en": "Trade License Application",
+        "ur": "ٹریڈ لائسنس فارم و فیس",
+        "slug": "/business/trade-license-application-guide"
+      },
+      {
+        "en": "PSEB Freelancer Tax Exemption",
+        "ur": "فری لانسر ٹیکس چھوٹ رجسٹریشن",
+        "slug": "/business/pseb-freelancer-it-company-registration"
+      }
+    ]
+  },
+  {
+    "id": "certificates",
+    "slug": "certificates",
+    "nameEn": "Birth, Death & Domicile",
+    "nameUr": "پیدائش، وفات اور ڈومیسائل",
+    "taglineEn": "NADRA Birth Certificates, Domicile Online, PRC & Death Registration",
+    "taglineUr": "کمپیوٹرائزڈ پیدائش سرٹیفکیٹ، ڈومیسائل اور ڈیتھ سرٹیفکیٹ",
+    "descriptionEn": "Verified guidance for issuing NADRA computerized Birth Certificates, online Domicile certificate applications across Punjab, Sindh & KPK, PRC certificates, and Death reporting.",
+    "descriptionUr": "یونین کونسل و نادرا کا پیدائش سرٹیفکیٹ، ڈومیسائل آن لائن اپلائی (پنجاب، سندھ، کے پی کے)، پی آر سی فارم سی اور وفات کا اندراج۔",
+    "iconName": "Award",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Domicile Certificate Online",
+        "ur": "ڈومیسائل آن لائن اپلائی",
+        "slug": "/certificates/domicile-certificate-apply-online"
+      },
+      {
+        "en": "Birth Certificate Online Apply",
+        "ur": "پیدائش سرٹیفکیٹ یونین کونسل",
+        "slug": "/certificates/birth-certificate-union-council-online"
+      },
+      {
+        "en": "PRC Certificate Sindh / Punjab",
+        "ur": "پی آر سی سرٹیفکیٹ فارم",
+        "slug": "/certificates/prc-permanent-residence-certificate-pakistan"
+      },
+      {
+        "en": "Death Certificate Process",
+        "ur": "وفات سرٹیفکیٹ نادرا طریقہ",
+        "slug": "/certificates/death-certificate-registration-process"
+      },
+      {
+        "en": "Succession Certificate Guide",
+        "ur": "جانشینی سرٹیفکیٹ نادرا",
+        "slug": "/certificates/succession-certificate-nadra-legal-heirs"
+      }
+    ]
+  },
+  {
+    "id": "hajj-umrah",
+    "slug": "hajj-umrah",
+    "nameEn": "Hajj & Umrah Services",
+    "nameUr": "حج و عمرہ رہنمائی ڈیسک",
+    "taglineEn": "MORA Hajj Application, Nusuk Umrah Visa, Balloting & Medical Fitness",
+    "taglineUr": "حج درخواست پورٹل، نسک عمرہ ویزا اور قرعہ اندازی رزلٹ",
+    "descriptionEn": "Ministry of Religious Affairs (MORA) Government Hajj registration, Nusuk online Umrah visa application steps, Hajj balloting result check by CNIC, and mandatory vaccination rules.",
+    "descriptionUr": "وزارت مذہبی امور کی سرکاری حج اسکیم رجسٹریشن، نسک پورٹل سے عمرہ ویزا، شناختی کارڈ سے حج قرعہ اندازی رزلٹ اور پولیو/میننجائٹس ویکسینیشن۔",
+    "iconName": "Compass",
+    "accentColor": "#B08D57",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-amber-800 dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "Hajj Portal Pakistan 2026",
+        "ur": "حج رجسٹریشن پورٹل 2026",
+        "slug": "/hajj-umrah/hajj-registration-portal-pakistan-2026"
+      },
+      {
+        "en": "Umrah Visa Apply from PK",
+        "ur": "پاکستان سے عمرہ ویزا اپلائی",
+        "slug": "/hajj-umrah/umrah-visa-apply-from-pakistan-steps"
+      },
+      {
+        "en": "Hajj Balloting Result CNIC",
+        "ur": "حج قرعہ اندازی رزلٹ چیک",
+        "slug": "/hajj-umrah/hajj-balloting-result-check-online"
+      },
+      {
+        "en": "Govt vs Private Umrah Cost",
+        "ur": "سرکاری بمقابلہ پرائیویٹ عمرہ پیکیج",
+        "slug": "/hajj-umrah/umrah-package-government-vs-private"
+      },
+      {
+        "en": "Hajj Medical Fitness Test",
+        "ur": "حج میڈیکل فٹنس اور ویکسین",
+        "slug": "/hajj-umrah/hajj-mandatory-vaccination-medical-fitness"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "slug": "health",
+    "nameEn": "Health & Sehat Card Hub",
+    "nameUr": "صحت سہولت و ہسپتال ڈائریکٹری",
+    "taglineEn": "Sehat Card Hospital List, Treatment Limits, CNIC Check & Medical Boards",
+    "taglineUr": "صحت کارڈ ہسپتال لسٹ، 10 لاکھ علاج حد اور اہلیت چیک",
+    "descriptionEn": "Comprehensive guide for Sehat Sahulat Card: check eligibility via 8500 SMS, 1,000,000 PKR annual indoor treatment limits, panel hospital search, and disability certificates.",
+    "descriptionUr": "صحت سہولت پروگرام کی مکمل تفصیلات: 8500 ایس ایم ایس سے اہلیت معلوم کریں، پینل ہسپتالوں کی فہرست، 10 لاکھ تک مفت علاج اور میڈیکل بورڈ سرٹیفکیٹ۔",
+    "iconName": "Activity",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Sehat Card Check by CNIC",
+        "ur": "صحت کارڈ اہلیت شناختی کارڈ سے",
+        "slug": "/health/sehat-card-eligibility-check-by-cnic"
+      },
+      {
+        "en": "Panel Hospital List Near Me",
+        "ur": "پینل ہسپتالوں کی مکمل فہرست",
+        "slug": "/health/sehat-card-hospital-list-near-me"
+      },
+      {
+        "en": "Sehat Card Treatment Limit",
+        "ur": "صحت کارڈ مفت علاج حد 2026",
+        "slug": "/health/sehat-card-treatment-limit-2026"
+      },
+      {
+        "en": "Apply for Sehat Sahulat Card",
+        "ur": "صحت کارڈ میں فیملی کا اندراج",
+        "slug": "/health/how-to-apply-for-sehat-sahulat-card"
+      },
+      {
+        "en": "Disability Medical Board Cert",
+        "ur": "معذوری سرٹیفکیٹ میڈیکل بورڈ",
+        "slug": "/health/medical-board-disability-certificate-pakistan"
+      }
+    ]
+  },
+  {
+    "id": "legal",
+    "slug": "legal",
+    "nameEn": "Police & Legal Services",
+    "nameUr": "پولیس، ایف آئی آر اور قانونی سروسز",
+    "taglineEn": "Online FIR Registration, Police Character Certificate (PCC) & PKM Centers",
+    "taglineUr": "آن لائن ایف آئی آر، پولیس کریکٹر سرٹیفکیٹ اور خدمت مرکز",
+    "descriptionEn": "Official police portals and court guidelines: Punjab Police 1787 online FIR complaints, Police Character Certificate (PCC) for visas, PKM services, and Power of Attorney.",
+    "descriptionUr": "پنجاب پولیس آن لائن ایف آئی آر اندراج (1787)، غیر ملکی ویزا کے لیے پولیس کریکٹر سرٹیفکیٹ (PCC)، پولیس خدمت مرکز اور قانونی مختار نامہ۔",
+    "iconName": "Scale",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "Online FIR Punjab Police 1787",
+        "ur": "آن لائن ایف آئی آر اندراج",
+        "slug": "/legal/online-fir-registration-punjab-police"
+      },
+      {
+        "en": "Police Character Cert (PCC)",
+        "ur": "پولیس کریکٹر سرٹیفکیٹ فارم",
+        "slug": "/legal/police-character-certificate-apply-online"
+      },
+      {
+        "en": "Check FIR Status Online",
+        "ur": "ایف آئی آر کا آن لائن سٹیٹس",
+        "slug": "/legal/how-to-check-fir-status-online"
+      },
+      {
+        "en": "Legal Heir Declaration (Wirasat)",
+        "ur": "وراثت نامہ و جانشینی ڈیکلریشن",
+        "slug": "/legal/legal-heir-certificate-nadra-court"
+      },
+      {
+        "en": "Police Khidmat Markaz PKM",
+        "ur": "پولیس خدمت مرکز 14 سہولیات",
+        "slug": "/legal/punjab-khidmat-markaz-police-services"
+      }
+    ]
+  },
+  {
+    "id": "alerts",
+    "slug": "alerts",
+    "nameEn": "Disaster & Emergency Alerts",
+    "nameUr": "قدرتی آفات اور ہنگامی الرٹس",
+    "taglineEn": "NDMA Flood Alerts, Monsoon Warnings, Disaster Relief & 1122 Helplines",
+    "taglineUr": "سیلاب الرٹ، مون سون الرٹس اور ایمرجنسی ہیلپ لائن 1122",
+    "descriptionEn": "Live disaster tracking and safety advisories: National Disaster Management Authority (NDMA) flood alerts, PMD monsoon rainfall forecasts, and 24/7 rescue helpline directories.",
+    "descriptionUr": "این ڈی ایم اے سیلاب و بارشوں کے الرٹس، مون سون وارننگ، قدرتی آفات ریلیف فنڈ رجسٹریشن اور 24 گھنٹے ہنگامی ہیلپ لائن نمبرز (ریسکیو 1122، ایدھی 115)۔",
+    "iconName": "CloudLightning",
+    "accentColor": "#A02334",
+    "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
+    "badgeText": "text-doc-seal dark:text-red-300",
+    "popularSearches": [
+      {
+        "en": "Flood Alert NDMA / PDMA",
+        "ur": "سیلاب و دریاؤں کا تازہ ترین الرٹ",
+        "slug": "/alerts/flood-alert-pakistan-ndma-pdma"
+      },
+      {
+        "en": "Monsoon Rain Emergency Warning",
+        "ur": "مون سون طوفانی بارشوں کی پیشگوئی",
+        "slug": "/alerts/monsoon-warning-pdma-updates"
+      },
+      {
+        "en": "NDMA Relief Compensation",
+        "ur": "نقصانات کا ریلیف معاوضہ فارم",
+        "slug": "/alerts/ndma-disaster-relief-compensation-registration"
+      },
+      {
+        "en": "24/7 Emergency Helplines",
+        "ur": "پاکستان کے تمام ایمرجنسی نمبرز",
+        "slug": "/alerts/emergency-helpline-numbers-pakistan"
+      },
+      {
+        "en": "Smog AQI Advisory Punjab",
+        "ur": "سموگ ایئر کوالٹی انڈیکس الرٹ",
+        "slug": "/alerts/smog-air-quality-aqi-advisory-punjab"
+      }
+    ]
+  }
 ];
