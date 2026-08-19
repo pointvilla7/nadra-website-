@@ -29,6 +29,9 @@ import dynamic from 'next/dynamic';
 import { PrivacyTrustBanner } from '@/components/PrivacyTrustBanner';
 import { TextToSpeechButton } from '@/components/TextToSpeechButton';
 import { ArticleFeaturedImage } from '@/components/ArticleFeaturedImage';
+import { DocumentSampleMockup, DocumentType } from '@/components/DocumentSampleMockup';
+import { ProcessFlowDiagram } from '@/components/ProcessFlowDiagram';
+import { ComparisonInfographic } from '@/components/ComparisonInfographic';
 import { EligibilityChecklistWidget } from '@/components/EligibilityChecklistWidget';
 import { MarkdownContent } from '@/components/MarkdownContent';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
@@ -97,6 +100,21 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       setTimeout(() => setCopiedLink(false), 2000);
     }
   };
+
+  // Detect if article qualifies for a generic document specimen mockup
+  const getDocumentMockupType = (): DocumentType | null => {
+    const s = article.slug.toLowerCase();
+    if (s.includes('cnic') || s.includes('nicop') || s.includes('b-form') || s.includes('poc-card') || s.includes('frc')) return 'cnic';
+    if (s.includes('passport')) return 'passport';
+    if (s.includes('nikah') || s.includes('marriage') || s.includes('divorce') || s.includes('single-status')) return 'nikahnama';
+    if (s.includes('fard') || s.includes('intiqal') || s.includes('mutation') || s.includes('patwari')) return 'fard';
+    if (s.includes('estamp') || s.includes('stamp-duty') || s.includes('challan-32a')) return 'estamp';
+    if (s.includes('sehat-card')) return 'sehatcard';
+    if (s.includes('domicile') || s.includes('prc')) return 'domicile';
+    if (s.includes('ntn') || s.includes('tax-filer') || s.includes('income-tax') || s.includes('withholding-tax')) return 'ntn';
+    return null;
+  };
+  const docType = getDocumentMockupType();
 
   return (
     <article className="space-y-8 animate-fadeIn">
@@ -189,6 +207,30 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         </a>
       </div>
 
+      {/* 1. AEO Featured Snippet Direct Answer Box (Always 1st Visible Content above the fold) */}
+      <DirectAnswerBox
+        answerEn={article.directAnswerEn}
+        answerUr={article.directAnswerUr}
+        topicTitleEn={article.titleEn}
+        topicTitleUr={article.titleUr}
+      />
+
+      {/* 2. Custom Original Vector Topic Illustration / Graphic */}
+      <ArticleFeaturedImage
+        categoryId={article.categoryId}
+        slug={article.slug}
+        titleEn={t(article.titleEn, article.titleUr)}
+      />
+
+      {/* 3. Labeled Document Specimen Mockup (if page references official document) */}
+      {docType && (
+        <DocumentSampleMockup
+          documentType={docType}
+          captionEn={`Official ${docType.toUpperCase()} format reference under Government of Pakistan regulations.`}
+          captionUr={`حکومت پاکستان کے قواعد کے تحت تصدیق شدہ سرکاری نمونہ۔`}
+        />
+      )}
+
       {/* View Mode Toggle Bar (Full Article vs Interactive Step Wizard) */}
       {article.steps && article.steps.length > 0 && (
         <div className="flex items-center justify-between bg-doc-ink/5 dark:bg-slate-800/80 border border-doc-brass/30 p-2.5 rounded-xl">
@@ -220,21 +262,6 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           </div>
         </div>
       )}
-
-      {/* Custom Original Vector Topic Illustration / Graphic */}
-      <ArticleFeaturedImage
-        categoryId={article.categoryId}
-        slug={article.slug}
-        titleEn={t(article.titleEn, article.titleUr)}
-      />
-
-      {/* AEO Featured Snippet Direct Answer Box (Summary Box at top) */}
-      <DirectAnswerBox
-        answerEn={article.directAnswerEn}
-        answerUr={article.directAnswerUr}
-        topicTitleEn={article.titleEn}
-        topicTitleUr={article.titleUr}
-      />
 
       {/* Tasteful Top Ad Zone */}
       <AdPlacementZone slotId="top-article" format="horizontal" />
@@ -365,6 +392,9 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
             </h2>
           </div>
 
+          {/* Process Flow Diagram */}
+          <ProcessFlowDiagram categorySlug={article.categoryId} />
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {article.steps.map((st) => (
               <div
@@ -389,6 +419,179 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
             ))}
           </div>
         </section>
+      )}
+
+      {/* Comparison Infographic for Comparative Guides */}
+      {article.slug === 'lesco-vs-fesco-bill-comparison' && (
+        <ComparisonInfographic
+          titleEn="LESCO vs FESCO: Electricity Distribution Comparison 2026"
+          titleUr="لیسکو بمقابلہ فیسکو بجلی ڈسٹری بیوشن موازنہ 2026"
+          nameAEn="LESCO (Lahore Electric)"
+          nameAUr="لیسکو (لاہور ریجن)"
+          nameBEn="FESCO (Faisalabad Electric)"
+          nameBUr="فیسکو (فیصل آباد ریجن)"
+          rows={[
+            {
+              featureEn: 'Coverage Districts',
+              featureUr: 'زیر انتظام اضلاع',
+              itemAEn: 'Lahore, Kasur, Okara, Sheikhupura, Nankana',
+              itemAUr: 'لاہور، قصور، اوکاڑہ، شیخوپورہ، ننکانہ',
+              itemBEn: 'Faisalabad, Jhang, Toba Tek Singh, Chiniot, Sargodha',
+              itemBUr: 'فیصل آباد، جھنگ، ٹوبہ ٹیک سنگھ، چنیوٹ، سرگودھا'
+            },
+            {
+              featureEn: 'Reference Number',
+              featureUr: 'ریفرنس نمبر فارمیٹ',
+              itemAEn: '14 Digits + Batch Code (U/R)',
+              itemAUr: '14 ہندسے مع بیچ کوڈ',
+              itemBEn: '14 Digits + Batch Code (U/R)',
+              itemBUr: '14 ہندسے مع بیچ کوڈ'
+            },
+            {
+              featureEn: 'Tariff Rate Slabs',
+              featureUr: 'یونٹ ریٹ سلیب',
+              itemAEn: 'Standard NEPRA Uniform Tariff',
+              itemAUr: 'نیپرا یکساں ریٹ',
+              itemBEn: 'Standard NEPRA Uniform Tariff',
+              itemBUr: 'نیپرا یکساں ریٹ'
+            },
+            {
+              featureEn: 'Helpline & Complaints',
+              featureUr: 'ہیلپ لائن و شکایات',
+              itemAEn: '118 / 042-99204814',
+              itemAUr: '118 / 042-99204814',
+              itemBEn: '118 / 041-9220184',
+              itemBUr: '118 / 041-9220184'
+            }
+          ]}
+        />
+      )}
+
+      {article.slug === 'cnic-vs-nicop-vs-poc-comparison' && (
+        <ComparisonInfographic
+          titleEn="CNIC vs NICOP vs POC: Identity Card Comparison 2026"
+          titleUr="شناختی کارڈ بمقابلہ نائیکوپ بمقابلہ پی او سی موازنہ"
+          nameAEn="CNIC / Smart Card"
+          nameAUr="قومی شناختی کارڈ (CNIC)"
+          nameBEn="NICOP (Overseas Card)"
+          nameBUr="نائیکوپ (اوورسیز کارڈ)"
+          rows={[
+            {
+              featureEn: 'Target Citizens',
+              featureUr: 'اہل شہری',
+              itemAEn: 'Resident Pakistani Citizens (18+)',
+              itemAUr: 'پاکستان میں مقیم شہری',
+              itemBEn: 'Overseas Pakistanis & Dual Citizens',
+              itemBUr: 'اوورسیز اور دوہری شہریت والے'
+            },
+            {
+              featureEn: 'Visa-Free Pakistan Entry',
+              featureUr: 'بغیر ویزا پاکستان آمد',
+              itemAEn: 'Domestic ID (Requires Passport)',
+              itemAUr: 'ملکی کارڈ (سفر پر پاسپورٹ درکار)',
+              itemBEn: '100% Visa-Free Entry with Foreign Passport',
+              itemBUr: 'غیر ملکی پاسپورٹ پر بغیر ویزا انٹری'
+            },
+            {
+              featureEn: 'Official Fee',
+              featureUr: 'سرکاری فیس',
+              itemAEn: 'PKR 750 (Smart Normal)',
+              itemAUr: '750 روپے',
+              itemBEn: '$39 USD (Zone A) / $20 USD (Zone B)',
+              itemBUr: '39 ڈالر (زون اے) / 20 ڈالر (زون بی)'
+            },
+            {
+              featureEn: 'Validity Period',
+              featureUr: 'میعاد',
+              itemAEn: '10 Years / Lifetime (60+)',
+              itemAUr: '10 سال یا تاحیات',
+              itemBEn: '10 Years Renewable',
+              itemBUr: '10 سال'
+            }
+          ]}
+        />
+      )}
+
+      {article.slug === 'registry-vs-intiqal-difference' && (
+        <ComparisonInfographic
+          titleEn="Registry vs Intiqal: Property Legal Rights Comparison 2026"
+          titleUr="رجسٹری بمقابلہ انتقال: ملکیتی حقوق کا قانونی موازنہ"
+          nameAEn="Registry (Sale Deed / بیع نامہ)"
+          nameAUr="رجسٹری (بیع نامہ)"
+          nameBEn="Intiqal (Mutation / انتقال)"
+          nameBUr="انتقال (میوٹیشن)"
+          rows={[
+            {
+              featureEn: 'Governing Authority',
+              featureUr: 'متعلقہ ادارہ',
+              itemAEn: 'Sub-Registrar (Registration Act 1908)',
+              itemAUr: 'سب رجسٹرار (رجسٹریشن ایکٹ)',
+              itemBEn: 'Revenue Dept / PLRA (Land Revenue Act)',
+              itemBUr: 'اراضی ریکارڈ سنٹر / پٹوار'
+            },
+            {
+              featureEn: 'Legal Significance',
+              featureUr: 'قانونی حیثیت',
+              itemAEn: 'Registered Contractual Deed between Parties',
+              itemAUr: 'فریقین کا تصدیق شدہ معاہدہ بیع',
+              itemBEn: 'Government Fiscal Ownership Record Entry',
+              itemBUr: 'سرکاری جمع بندی میں نام کی تبدیلی'
+            },
+            {
+              featureEn: 'Court Evidentiary Value',
+              featureUr: 'عدالتی ثبوت کی حیثیت',
+              itemAEn: 'Strong Primary Legal Evidence of Title',
+              itemAUr: 'ملکیت کا بنیادی اور مضبوط ثبوت',
+              itemBEn: 'Rebuttable Fiscal Entry (Requires Valid Deed)',
+              itemBUr: 'انتظامی اندراج (اصل بیع نامہ ضروری)'
+            }
+          ]}
+        />
+      )}
+
+      {article.slug === 'withholding-tax-rates-filers-non-filers' && (
+        <ComparisonInfographic
+          titleEn="Withholding Tax Rates: Active Filer vs Non-Filer Slabs 2026"
+          titleUr="ود ہولڈنگ ٹیکس سلیب: فائلر بمقابلہ نان فائلر تقابل 2026"
+          nameAEn="Active Tax Filer (ATL)"
+          nameAUr="ایکٹو ٹیکس فائلر"
+          nameBEn="Non-Filer / Late Filer"
+          nameBUr="نان فائلر"
+          rows={[
+            {
+              featureEn: 'Bank Cash Withdrawal (>50K/Day)',
+              featureUr: 'بینک کیش ودڈرال (50 ہزار سے زائد)',
+              itemAEn: '0% Exemption (Zero Deduction)',
+              itemAUr: '0% (کوئی کٹوتی نہیں)',
+              itemBEn: '0.9% Advance Tax (Sec 231AB)',
+              itemBUr: '0.9% ایڈوانس ٹیکس'
+            },
+            {
+              featureEn: 'Property Purchase (Sec 236K)',
+              featureUr: 'جائیداد خریداری پر ایڈوانس ٹیکس',
+              itemAEn: '3% Standard Rate',
+              itemAUr: '3% بنیادی ریٹ',
+              itemBEn: '12% to 15% Surcharge Rate',
+              itemBUr: '12% سے 15% بھاری ٹیکس'
+            },
+            {
+              featureEn: 'Motor Vehicle Registration',
+              featureUr: 'گاڑی کی رجسٹریشن ٹیکس',
+              itemAEn: 'Standard Engine CC Base Rate',
+              itemAUr: 'معیاری سی سی ریٹ',
+              itemBEn: '100% to 200% Punitive Surcharge',
+              itemBUr: 'ڈبل یا ٹرپل ٹیکس'
+            },
+            {
+              featureEn: 'Bank Profit & Dividends',
+              featureUr: 'بینک منافع و ڈیویڈنڈ',
+              itemAEn: '15% Final Withholding',
+              itemAUr: '15% فائنل ٹیکس',
+              itemBEn: '30% Punitive Withholding Rate',
+              itemBUr: '30% کٹوتی'
+            }
+          ]}
+        />
       )}
 
       {/* Main Body Content Text with Premium Typography */}
