@@ -705,81 +705,115 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "fesco-bill-check-online",
     "fullPath": "/bills/fesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "FESCO Bill Check Online 2026: Faisalabad Electricity Duplicate Bill",
-    "titleUr": "فیسکو آن لائن بجلی بل چیک 2026 (فیصل آباد ڈویژن)",
-    "metaDescriptionEn": "Check and print FESCO duplicate electricity bill online for Faisalabad, Jhang, Sargodha, Toba Tek Singh, and Chiniot by 14-digit reference number.",
-    "metaDescriptionUr": "فیصل آباد اور جھنگ فیسکو آن لائن بجلی بل پرنٹ کا طریقہ کار بائے ریفرنس نمبر۔",
-    "directAnswerEn": "To check your FESCO electricity bill online in 2026, visit bill.pitc.com.pk/fescobill or fesco.com.pk. Enter your 14-digit Reference Number to download duplicate bills for Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot, Mianwali, Bhakkar, and Khushab.",
-    "directAnswerUr": "فیصل آباد الیکٹرک سپلائی کمپنی (FESCO) کا بل چیک کرنے کے لیے bill.pitc.com.pk/fescobill پر جا کر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ فیصل آباد، سرگودھا، جھنگ، ٹوبہ ٹیک سنگھ اور میانوالی کے بل آن لائن دستیاب ہیں۔",
-    "lastVerified": "August 17, 2026",
+    "titleEn": "FESCO Bill Online Check 2026 – Download Duplicate Bill PDF | Pakistan Info Hub",
+    "titleUr": "فیسکو آن لائن بجلی بل چیک 2026 – ڈپلیکیٹ بل ڈاؤن لوڈ",
+    "metaDescriptionEn": "Perform FESCO online bill check 2026. Download duplicate electricity bill for Faisalabad, Sargodha, Jhang, Toba Tek Singh & Chiniot using 14-digit reference number.",
+    "metaDescriptionUr": "فیصل آباد اور سرگودھا کا فیسکو بجلی بل آن لائن 14 ہندسوں والے ریفرنس نمبر سے دیکھئے اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform a FESCO online bill check in 2026, visit the official Power Information Technology Company (PITC) gateway at bill.pitc.com.pk/fescobill or www.fesco.com.pk. Enter your 14-digit reference number (without spaces) or 10-digit consumer ID to instantly view bill amount, due date, meter reading, and download a printable duplicate PDF copy.",
+    "directAnswerUr": "فیصل آباد الیکٹرک سپلائی کمپنی (FESCO) کا آن لائن بجلی بل چیک کرنے کے لیے آفیشل پورٹل bill.pitc.com.pk/fescobill یا fesco.com.pk پر جائیں۔ اپنا 14 ہندسوں کا ریفرنس نمبر درج کر کے بل کی رقم، آخری تاریخ اور ڈپلیکیٹ پی ڈی ایف حاصل کریں۔",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
-      "name": "FESCO Bill Portal",
-      "url": "https://bill.pitb.gov.pk/"
+      "name": "FESCO Official Web Portal",
+      "url": "https://bill.pitc.com.pk/fescobill"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Utility Services Desk"
+      "role": "Utility & Power Services Desk"
     },
     "feeStructure": [
       {
-        "serviceEn": "FESCO Duplicate Bill Check",
-        "serviceUr": "فیسکو ڈپلیکیٹ بل چیک",
+        "serviceEn": "FESCO Online Bill Check & PDF Download",
+        "serviceUr": "فیسکو آن لائن بل چیک اور پی ڈی ایف",
         "normal": "100% FREE",
         "urgent": "Instant PDF",
         "executive": "PITC Official Portal",
         "validity": "Monthly"
       },
       {
-        "serviceEn": "FESCO Helpline",
+        "serviceEn": "FESCO 24/7 Helpline",
         "serviceUr": "فیسکو ہیلپ لائن نمبر",
         "normal": "Dial 118 / 0800-66554",
         "urgent": "SMS 8118",
-        "executive": "Customer Care",
+        "executive": "Customer Care Center",
         "validity": "24/7"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open FESCO Web Bill Portal",
-        "titleUr": "فیسکو ویب بل پورٹل کھولیں",
-        "detailEn": "Access bill.pitc.com.pk/fescobill.",
-        "detailUr": "پورٹل bill.pitc.com.pk/fescobill کھولیں۔"
+        "titleEn": "Locate Your 14-Digit Reference Number",
+        "titleUr": "پرانے بل سے 14 ہندسوں کا ریفرنس نمبر دیکھیں",
+        "detailEn": "Find the 14-digit reference number printed at the top-left corner of any previous FESCO paper bill (e.g. 05 13123 1234567 U).",
+        "detailUr": "اپنے کسی بھی پرانے بل کے اوپر بائیں جانب لکھا ہوا 14 ہندسوں کا ریفرنس نمبر تلاش کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Type 14-Digit Reference Number",
-        "titleUr": "14 ہندسوں کا ریفرنس نمبر درج کریں",
-        "detailEn": "Enter your reference number without spaces.",
-        "detailUr": "اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔"
+        "titleEn": "Open Official FESCO Web Bill Portal",
+        "titleUr": "آفیشل فیسکو ویب بل پورٹل کھولیں",
+        "detailEn": "Visit bill.pitc.com.pk/fescobill directly in your browser or use the Pakistan Info Hub utility bill directory.",
+        "detailUr": "براؤزر میں آفیشل پورٹل bill.pitc.com.pk/fescobill کھولیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Download or Print Duplicate Bill",
-        "titleUr": "ڈپلیکیٹ بل پرنٹ یا محفوظ کریں",
-        "detailEn": "Save the PDF copy for bank counter or digital payment.",
-        "detailUr": "پی ڈی ایف کاپی محفوظ کر کے آن لائن ادائیگی کریں۔"
+        "titleEn": "Enter Reference Number or Consumer ID",
+        "titleUr": "ریفرنس نمبر یا کنزیومر آئی ڈی درج کریں",
+        "detailEn": "Type your 14-digit reference number without spaces. Alternatively, enter your 10-digit Customer ID.",
+        "detailUr": "بغیر اسپیس کے 14 ہندسوں کا ریفرنس نمبر یا 10 ہندسوں کی کنزیومر آئی ڈی درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download & Print Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ یا پرنٹ کریں",
+        "detailEn": "Click 'Submit' to display your full bill with meter reading image, due date, and pay online or at any bank counter.",
+        "detailUr": "سبمٹ پر کلک کر کے مکمل بل دیکھیں اور آن لائن بینکنگ یا ایزی پیسہ سے ادا کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How do I get an extension on my FESCO bill due date?",
-        "questionUr": "فیسکو بل کی تاریخ میں توسیع کیسے کروائیں؟",
-        "answerEn": "Visit your local FESCO Sub-Divisional Officer (SDO) office before the due date. SDOs have delegated authority to grant a 3 to 5-day due date extension for genuine cases without surcharge.",
-        "answerUr": "آخری تاریخ سے پہلے اپنے قریبی ایس ڈی او (SDO) آفس جائیں، وہ 3 سے 5 دن کی توسیع کر سکتے ہیں۔"
+        "questionEn": "How to check fesco bill online?",
+        "questionUr": "فیسکو کا بل آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check your FESCO bill online, open bill.pitc.com.pk/fescobill or www.fesco.com.pk. Enter your 14-digit reference number from any previous electricity bill. Click Submit to view your current bill amount, due date, units consumed, and download a printable duplicate bill PDF.",
+        "answerUr": "فیسکو کا بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/fescobill پر جا کر 14 ہندسوں کا ریفرنس نمبر درج کریں اور سبمٹ کا بٹن دبائیں۔"
       },
       {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+        "questionEn": "How to check old fesco bill online?",
+        "questionUr": "فیسکو کا پرانا بل اور 12 ماہ کی ہسٹری آن لائن کیسے چیک کریں؟",
+        "answerEn": "You can check your old FESCO bill and past 12-month payment history directly on the generated duplicate bill PDF. Under the 'Payment History' table on bill.pitc.com.pk/fescobill, FESCO lists the monthly units consumed, billed amounts, and payment status for the preceding 12 billing cycles.",
+        "answerUr": "فیسکو ڈپلیکیٹ بل کے نچلے حصے میں پچھلے 12 مہینوں کی مکمل ہسٹری معہ استعمال شدہ یونٹس اور ادا شدہ رقم درج ہوتی ہے۔"
+      },
+      {
+        "questionEn": "Where is the 14-digit reference number located on a FESCO electricity bill?",
+        "questionUr": "فیسکو بجلی کے بل پر 14 ہندسوں کا ریفرنس نمبر کہاں لکھا ہوتا ہے؟",
+        "answerEn": "The 14-digit reference number is printed in a highlighted box on the top-left corner of your paper bill, directly below the consumer name and above the meter reading table (formatted as two digits batch code, five digits sub-division, and seven digits account number, followed by a letter e.g., 05 13123 1234567 U).",
+        "answerUr": "14 ہندسوں کا ریفرنس نمبر بل کے اوپر بائیں جانب صارف کے نام کے نیچے نمایاں باکس میں لکھا ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What is the fesco bill check karne ka tarika in Roman Urdu?",
+        "questionUr": "فیسکو بل چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "FESCO bill check karne ka tarika nihayat aasan hai: official website bill.pitc.com.pk/fescobill par jayein, apna 14-digit reference number bina space ke darj karein aur 'Submit' par click karein. Aapka mukammal bijli ka bill screen par aa jayega jise aap PDF me download ya print kar sakte hain.",
+        "answerUr": "فیسکو بل چیک کرنے کا طریقہ: آفیشل ویب سائٹ bill.pitc.com.pk/fescobill پر جائیں، اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں اور سبمٹ پر کلک کریں۔"
+      },
+      {
+        "questionEn": "How to pay FESCO online bill via JazzCash or Easypaisa?",
+        "questionUr": "جاز کیش یا ایزی پیسہ سے فیسکو کا بل کیسے ادا کریں؟",
+        "answerEn": "Open your JazzCash or Easypaisa mobile app, tap 'Bill Payment' > 'Electricity' > 'FESCO'. Enter your 14-digit reference number or 1Link Consumer ID. Verify the bill amount and consumer name on the screen, then enter your MPIN to confirm the payment instantly with zero extra surcharge.",
+        "answerUr": "جاز کیش یا ایزی پیسہ ایپ میں بل پیمنٹ > الیکٹرسٹی > فیسکو منتخب کریں، 14 ہندسوں کا ریفرنس نمبر درج کریں اور پن کوڈ لگا کر بل ادا کریں۔"
+      },
+      {
+        "questionEn": "What is the difference between FESCO protected and non-protected consumers?",
+        "questionUr": "فیسکو پروٹیکٹڈ اور نان پروٹیکٹڈ صارفین میں کیا فرق ہے؟",
+        "answerEn": "As of August 2026, a Protected Consumer is a domestic connection that consumed 200 units or less for 6 consecutive months, qualifying for subsidized base tariffs (PKR 7.74 to 10.06/unit). Consuming over 200 units in even a single month converts the connection to Non-Protected status with higher base rates (exceeding PKR 27/unit) plus FPA and QTA surcharges.",
+        "answerUr": "مسلسل 6 ماہ تک 200 یا اس سے کم یونٹ استعمال کرنے والے پروٹیکٹڈ کہلاتے ہیں اور سستا ریٹ پاتے ہیں۔ 200 سے زائد ہونے پر نان پروٹیکٹڈ ٹیرف لاگو ہوتا ہے۔"
       }
     ],
-    "contentEn": "## Faisalabad Electric Supply Company (FESCO) Guide 2026\n**FESCO** delivers electricity to over 4.5 million consumers in the industrial heartland of Punjab, powering textile mills, agricultural tube-wells, and urban households.\n\n## Industrial & Agricultural Power Supply in Faisalabad Division\n**FESCO** manages heavy industrial feeder networks powering cotton ginning, weaving, and chemical dyeing units. Specialized Time-of-Use (TOU) digital metering records peak and off-peak loads with high-precision maximum demand indicators (MDI).\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Faisalabad Electric Supply Company (FESCO) Industrial, Urban & Agri Power Guide 2026\n**FESCO** manages electric power distribution for over 4.5 million consumers across 8 major districts in central and western Punjab: **Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot, Mianwali, Bhakkar, and Khushab**.\n\n### 1. Industrial Power Distribution & Textile Sector Subsidies\nAs Pakistan's textile and weaving capital, Faisalabad features dedicated B-3 and B-4 industrial power feeders operating at 11 kV and 132 kV. The company provides dedicated industrial facilitation desks at the FESCO Headquarters on West Canal Road, Faisalabad.\n\n### 2. Agricultural Tube-Well Subsidy Protocols\nUnder the Punjab Agri Relief Package, registered farmers holding valid Kisan Cards operating electric tube-wells receive targeted fuel surcharge exemptions and fixed billing slab concessions to support wheat, sugarcane, and cotton cultivation.\n\n---\n\n## Complete Guide to FESCO New Connection Application via ENC Portal\n1. **Access ENC Portal**: Visit `enc.com.pk` (Electricity New Connection Portal).\n2. **Select FESCO & Category**: Choose between Domestic (Single-Phase), Commercial, or Agricultural connection.\n3. **Upload Documents**: Attach scanned CNIC copy, property ownership deed/registry, and neighbor's electricity bill reference number.\n4. **Demand Notice Payment**: Pay the issued estimate demand notice via 1Link PSID and track installation within 15 working days.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## فیصل آباد الیکٹرک سپلائی کمپنی (FESCO) گائیڈ\nفیسکو فیصل آباد اور سرگودھا ڈویژن کے اضلاع میں بجلی فراہم کرتی ہے۔",
+    "contentEn": "## How to Check FESCO Bill Online (Step-by-Step)\nChecking your **FESCO (Faisalabad Electric Supply Company)** electricity bill online in 2026 takes less than 30 seconds through the official PITC gateway:\n\n1. **Visit Official Portal**: Open `bill.pitc.com.pk/fescobill` or `www.fesco.com.pk` in any web browser.\n2. **Input 14-Digit Reference Number**: Type the 14-digit numeric sequence (without spaces or dashes) found on the top-left of any previous electricity bill.\n3. **Submit & Generate Duplicate Bill**: Click the **Submit** button to instantly generate your high-resolution duplicate electricity bill with the exact payable amount, due date, meter reading photograph, and applicable fuel price adjustments.\n4. **Download or Print PDF**: Click **Print Bill** or press `Ctrl + P` to save the document as a PDF for bank counter submission or mobile payment record.\n\n---\n\n## How to Check Old FESCO Bill Online & 12-Month Payment History\nConsumers frequently need to check previous billing records for tax filing, property lease verification, or meter audit disputes.\n\n- **12-Month Historical Table**: Every official duplicate bill generated via `bill.pitc.com.pk/fescobill` contains a standardized **12-Month Consumption & Billing Matrix** on the bottom-right corner.\n- **Data Displayed**: The table details units consumed, total billed amount, payment status, and Fuel Price Adjustment (FPA) charged for each of the past 12 billing cycles.\n- **Yearly Comparison**: By comparing units across winter and summer cycles, households can identify abnormal meter surges or uncredited arrears.\n\n---\n\n## FESCO Bill Check Karne Ka Tarika (Roman Urdu Guide)\nFESCO electricity bill online check karne ka tarika bohot aasan hai:\n- Sab se pehle apne purane bijli ke bill ke upar baayein (left) taraf likha **14-digit reference number** check karein.\n- Official PITC portal `bill.pitc.com.pk/fescobill` open karein aur reference number bina kisi space ke box mein enter karein.\n- 'Submit' par click karte hi aapka **fesco duplicate bill** screen par load ho jayega.\n- Is bill ko aap apne mobile mein PDF format mein save kar sakte hain aur JazzCash, Easypaisa ya banking app ke zariye ghar baithe ada kar sakte hain.\n\n---\n\n## FESCO Quick Facts & Coverage Directory (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Full Entity Name** | FESCO (Faisalabad Electric Supply Company) |\n| **Official Web Portal** | `bill.pitc.com.pk/fescobill` & `www.fesco.com.pk` |\n| **Coverage Area (8 Districts)** | Faisalabad, Sargodha, Jhang, Toba Tek Singh, Chiniot, Mianwali, Bhakkar, Khushab |\n| **Active Consumers** | Over 4.9 Million Residential, Commercial & Industrial Accounts |\n| **Primary Account Identifier** | 14-Digit Reference Number (e.g. `05 13123 1234567 U`) |\n| **Customer ID Length** | 10 Numeric Digits |\n| **Central 24/7 Helpline** | Dial **118** or **0800-66554** (SMS: **8118**) |\n| **Online Verification Status** | As of August 2026, verified and fully operational |\n\n---\n\n## How to Pay FESCO Online Bill via Banking Apps & JazzCash\nAfter performing your **fesco online bill check**, pay instantly using any of these digital payment channels:\n\n### 1. Mobile Banking Apps (HBL, Meezan, Alfalah, UBL, MCB)\n- Sign in to your mobile banking application and navigate to **Bill Payments** > **Electricity**.\n- Select **FESCO** as the billing company.\n- Enter your **14-digit Reference Number** or **1Link Consumer Number**.\n- Verify the consumer name and exact billed amount, then tap **Confirm Payment**.\n\n### 2. JazzCash & Easypaisa Mobile Wallets\n- Open the JazzCash or Easypaisa app and select **Pay Bills** > **Electricity** > **FESCO**.\n- Enter your 14-digit reference number.\n- Authorize with your 4-digit MPIN. The transaction generates an instant digital receipt with a NADRA/1Link transaction ID.\n\n---\n\n## FESCO Electricity Bill Calculation & NEPRA Tariff Slabs\nAs of August 2026, domestic electricity bills in the FESCO distribution region are calculated under the following NEPRA-notified slab rates:\n\n- **Protected Slabs (Consistent ≤200 Units for 6 Months)**:\n  - 1 – 100 Units: PKR 7.74 / unit (Govt Subsidized)\n  - 101 – 200 Units: PKR 10.06 / unit (Govt Subsidized)\n- **Non-Protected Slabs**:\n  - 1 – 100 Units: PKR 16.48 / unit\n  - 101 – 200 Units: PKR 22.95 / unit\n  - 201 – 300 Units: PKR 27.14 / unit (+ PKR 200 Fixed Charge)\n  - 301 – 700 Units: PKR 35.50 – 41.50 / unit (+ PKR 400–800 Fixed Charge)\n  - Above 700 Units: PKR 48.84 / unit (+ PKR 1,000 Fixed Charge)\n- **Additional Statutory Taxes**: Standard 18% General Sales Tax (GST), Fuel Price Adjustment (FPA), Quarterly Tariff Adjustment (QTA), and PTV Fee (PKR 35).",
+    "contentUr": "## فیصل آباد الیکٹرک سپلائی کمپنی (FESCO) گائیڈ 2026\nفیسکو فیصل آباد، سرگودھا، جھنگ، ٹوبہ ٹیک سنگھ، چنیوٹ، میانوالی، بھکر اور خوشاب میں بجلی فراہم کرتی ہے۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/gepco-bill-check-online",
+      "/bills/sui-gas-bill-check-online",
+      "/bills/k-electric-duplicate-bill",
+      "/bills/utility-bill-checker-2026"
     ]
   },
   "mepco-bill-check-online": {
@@ -4262,41 +4296,21 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "lesco-bill-check-online",
     "fullPath": "/bills/lesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "LESCO Bill Check Online 2026: Download Duplicate Electricity Bill PDF",
+    "titleEn": "LESCO Bill Online Check 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub",
     "titleUr": "لیسکو آن لائن بل چیک 2026: ڈپلیکیٹ بجلی بل پی ڈی ایف ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your LESCO electricity bill online using 14-digit Reference Number or 10-digit Customer ID. Print duplicate bill for Lahore, Okara, Kasur, Sheikhupura.",
-    "metaDescriptionUr": "لاہور، قصور، اوکاڑہ اور شیخوپورہ کا لیسکو بجلی کا بل آن لائن 14 ہندسوں والے ریفرنس نمبر سے دیکھئے اور ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check and download your LESCO electricity bill online in 2026, visit bill.pitc.com.pk/lescobill or lesco.gov.pk. Enter your 14-digit Reference Number (e.g. 01 11223 1234567 U) or 10-digit Customer ID without spaces. View your current bill amount, due date, meter reading units, and download a printable duplicate PDF copy for payment.",
+    "metaDescriptionEn": "Perform LESCO bill online check 2026. Download duplicate electricity bill for Lahore, Kasur, Okara, Sheikhupura using 14-digit reference number or 10-digit customer ID.",
+    "metaDescriptionUr": "لاہور، قصور، اوکاڑہ اور شیخوپورہ کا لیسکو بجلی کا بل آن لائن 14 ہندسوں والے ریفرنس نمبر یا کسٹمر آئی ڈی سے دیکھئے اور ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform a LESCO bill online check in 2026, visit the official PITC portal at bill.pitc.com.pk/lescobill or lesco.gov.pk. Enter your 14-digit reference number (e.g. 01 11223 1234567 U) or 10-digit customer ID to view your electricity bill amount, due date, units consumed, and download a duplicate PDF bill for payment.",
     "directAnswerUr": "لیسکو (LESCO) بجلی کا بل آن لائن چیک اور ڈاؤن لوڈ کرنے کے لیے bill.pitc.com.pk/lescobill پر جائیں۔ اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر یا 10 ہندسوں کی کسٹمر آئی ڈی درج کریں۔ بل کی رقم، آخری تاریخ اور یونٹس چیک کر کے پرنٹ شدہ ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔",
-    "lastVerified": "August 17, 2026",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "LESCO Official Portal",
-      "url": "http://www.lesco.gov.pk/"
+      "url": "https://bill.pitc.com.pk/lescobill"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Utility Services Desk"
+      "role": "Utility & Power Services Desk"
     },
-    "faqs": [
-      {
-        "questionEn": "What is the difference between Protected and Non-Protected consumers?",
-        "questionUr": "پروٹیکٹڈ اور نان پروٹیکٹڈ بجلی صارفین میں کیا فرق ہے؟",
-        "answerEn": "A 'Protected Consumer' is a domestic household that consumed 200 units or less consistently for the last 6 consecutive months. They pay heavily subsidized base unit rates (PKR 7.74 to 10.06). If consumption exceeds 200 units even in a single month, the connection falls into the 'Non-Protected' slab with base rates exceeding PKR 27/unit for the next 6 months.",
-        "answerUr": "جو صارفین مسلسل 6 ماہ تک 200 یا اس سے کم یونٹ استعمال کریں وہ پروٹیکٹڈ کہلاتے ہیں اور انہیں سستا ٹیرف ملتا ہے۔ ایک ماہ بھی 200 سے زیادہ ہونے پر صارف نان پروٹیکٹڈ ہو جاتا ہے۔"
-      },
-      {
-        "questionEn": "What are LESCO peak hours in Pakistan?",
-        "questionUr": "لیسکو کے پیک آورز (Peak Hours) کے اوقات کیا ہیں؟",
-        "answerEn": "In 2026, LESCO peak hours are: Dec to Feb (5:00 PM to 9:00 PM), Mar to May (6:00 PM to 10:00 PM), June to Aug (7:00 PM to 11:00 PM), and Sep to Nov (6:00 PM to 10:00 PM). During these hours, electricity unit rates are significantly higher.",
-        "answerUr": "گرمیوں (جون تا اگست) میں پیک آورز شام 7 سے رات 11 بجے اور سردیوں میں شام 5 سے رات 9 بجے تک ہوتے ہیں جن میں یونٹ کا ریٹ زیادہ ہوتا ہے۔"
-      },
-      {
-        "questionEn": "How can I register a complaint for over-billing or a burnt meter?",
-        "questionUr": "غلط بلنگ یا جلے ہوئے میٹر کی شکایت کہاں درج کروائیں؟",
-        "answerEn": "Call the LESCO 24/7 central helpline at 118 or send an SMS with your reference number to 8118. You can also file complaints on the Federal Ombudsman (Wafaqi Mohtasib) portal at complaint.mohtasib.gov.pk.",
-        "answerUr": "لیسکو ہیلپ لائن 118 پر کال کریں یا 8118 پر ایس ایم ایس بھیجیں۔ وفاقی محتسب کے پورٹل پر بھی شکایت درج ہو سکتی ہے۔"
-      }
-    ],
     "feeStructure": [
       {
         "serviceEn": "Online LESCO Duplicate Bill Check",
@@ -4376,57 +4390,77 @@ export const ARTICLES: Record<string, Article> = {
         "detailUr": "اپنے بینکنگ ایپ یا ایزی پیسہ میں جا کر ریفرنس نمبر درج کریں اور بل فوری ادا کریں۔"
       }
     ],
-    "contentEn": "## Lahore Electric Supply Company (LESCO) Complete Guide 2026\nThe **Lahore Electric Supply Company (LESCO)** supplies electric power to over 6 million active consumers across five major districts in central Punjab: **Lahore, Kasur, Okara, Sheikhupura, and Nankana Sahib**.\n\nUnderstanding your electricity bill breakdown — including Base Tariff, Fuel Price Adjustment (FPA), Quarterly Tariff Adjustment (QTA), Electricity Duty, TV Fee, and General Sales Tax (GST) — is essential for managing family household budgets.\n\n---\n\n## 2026 Detailed Electricity Tariff Slabs (NEPRA Approved)\n\n| Customer Category | Consumption Range | Base Rate / Unit | Fixed Charges / Month |\n| :--- | :--- | :--- | :--- |\n| **Lifeline / Protected 1** | 01 - 50 Units | PKR 3.95 / Unit | Nil |\n| **Protected 2** | 51 - 100 Units | PKR 7.74 / Unit | Nil |\n| **Protected 3** | 101 - 200 Units | PKR 10.06 / Unit | Nil |\n| **Non-Protected 1** | 01 - 100 Units | PKR 16.48 / Unit | Nil |\n| **Non-Protected 2** | 101 - 200 Units | PKR 22.95 / Unit | Nil |\n| **Non-Protected 3** | 201 - 300 Units | PKR 27.14 / Unit | PKR 200 |\n| **High Consumption 1** | 301 - 700 Units | PKR 35.50 - 41.50 | PKR 400 - 800 |\n| **High Consumption 2** | Above 700 Units | PKR 48.84 / Unit | PKR 1,000 |\n\n---\n\n## Understanding Taxes and Surcharges on Your Bill\n1. **FPA (Fuel Price Adjustment)**: Fluctuates monthly based on international crude oil and LNG import prices incurred by CPPA-G.\n2. **QTA (Quarterly Tariff Adjustment)**: Surcharge applied every 3 months to cover capacity charges of Independent Power Producers (IPPs).\n3. **FC Surcharge (Financing Cost)**: Debt servicing charge levied nationally to service circular debt.\n4. **GST (General Sales Tax)**: 18% standard sales tax applied on the cumulative energy charges.\n5. **Electricity Duty**: Provincial excise tax collected for the Government of Punjab.\n\n## Comprehensive Analysis of Surcharges & Calculations on LESCO Electricity Bills\nUnderstanding every line item on your Lahore Electric Supply Company bill empowers consumers to identify faulty meter over-readings and incorrect tax levies:\n\n### 1. Line-Item Breakdown of Your Monthly Invoice\n- **Cost of Electricity (Base Energy Charges)**: Calculated as `Total Units Consumed × Applicable Slab Rate`.\n- **Fuel Price Adjustment (FPA)**: Represents the fuel generation cost variance billed 2 months in arrears.\n- **Quarterly Tariff Adjustment (QTA)**: Capacity payments to power generators mandated by NEPRA every 3 months.\n- **Electricity Duty (ED)**: Provincial tax (typically 1.5% of energy charges).\n- **General Sales Tax (GST)**: Federal 18% sales tax applied across all non-protected slabs.\n- **TV Fee**: Standard statutory charge of PKR 35 for domestic and PKR 60 for commercial meters.\n- **Further Tax / Extra Tax**: Levied exclusively on non-filer unregistered industrial and commercial accounts.\n\n---\n\n## What to Do If Your Meter Reading or Bill Is Erroneous\n1. **Compare Photo on Bill with Physical Meter**: Every LESCO bill includes a photographic image of the physical meter dial taken during reading. If the reading on the paper bill is higher than the reading on your physical meter dial, you are a victim of \"over-reading\".\n2. **Lodge Immediate Complaint with SDO**: Take a high-resolution photo of your physical meter dial and visit your local Sub-Divisional Office. The Revenue Officer will issue a corrected duplicate bill with an extended due date within 24 hours.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
-    "contentUr": "## لاہور الیکٹرک سپلائی کمپنی (LESCO) بلنگ گائیڈ 2026\nلیسکو لاہور، قصور، اوکاڑہ، شیخوپورہ اور ننکانہ صاحب کے اضلاع کو بجلی فراہم کرتی ہے۔\n\nآن لائن ڈپلیکیٹ بلنگ سسٹم کی مدد سے صارفین گھر بیٹھے اپنا بجلی کا بل دیکھ سکتے ہیں اور بروقت ادائیگی کر کے لیٹ فیس سرچارج سے بچ سکتے ہیں۔",
+    "faqs": [
+      {
+        "questionEn": "How to check lesco bill online?",
+        "questionUr": "لیسکو بل آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check your LESCO bill online, visit bill.pitc.com.pk/lescobill or www.lesco.gov.pk. Enter your 14-digit reference number (found on the top-left of previous paper bills) or 10-digit Customer ID. Click Submit to view your current electricity bill amount, due date, meter reading, and download a duplicate PDF bill.",
+        "answerUr": "لیسکو بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/lescobill پر 14 ہندسوں کا ریفرنس نمبر یا 10 ہندسوں کی کسٹمر آئی ڈی درج کریں۔"
+      },
+      {
+        "questionEn": "How to check 12 month lesco bill online?",
+        "questionUr": "لیسکو کا 12 ماہ کا پرانا بل اور ہسٹری آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check your 12-month LESCO bill history online, generate your duplicate bill at bill.pitc.com.pk/lescobill. On the lower right side of the generated duplicate bill, LESCO displays a complete 12-Month Consumption & Payment History table detailing units consumed, monthly billing amounts, and payment clearance status for each of the last 12 months.",
+        "answerUr": "لیسکو ڈپلیکیٹ بل کے نچلے حصے پر پچھلے 12 مہینوں کے استعمال شدہ یونٹس اور بل کی رقم کا مکمل چارٹ موجود ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What is the reference number format for LESCO bill online check Lahore?",
+        "questionUr": "لاہور لیسکو بل کے ریفرنس نمبر کا فارمیٹ کیا ہے؟",
+        "answerEn": "The LESCO reference number is a 14-digit numeric code formatted as: 2 digits batch code + 5 digits sub-division code + 7 digits consumer account number, followed by a tariff category letter (e.g. 04 11234 5678901 U). When entering it online on bill.pitc.com.pk, omit all spaces and enter only the 14 numbers.",
+        "answerUr": "لیسکو ریفرنس نمبر 14 ہندسوں پر مشتمل ہوتا ہے جس میں بیچ کوڈ، سب ڈویژن اور اکاؤنٹ نمبر شامل ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What is the lesco bill check karne ka tarika in Roman Urdu?",
+        "questionUr": "لیسکو بل چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "LESCO bill online check karne ka tarika bohot aasan hai: official portal `bill.pitc.com.pk/lescobill` open karein. Apne purane bill se 14-digit reference number bina space ke darj karein aur 'Submit' par click karein. Aapka duplicate electricity bill screen par aa jayega jise aap PDF download kar ke JazzCash ya mobile banking se foran pay kar sakte hain.",
+        "answerUr": "لیسکو بل چیک کرنے کا طریقہ: پی آئی ٹی سی پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کریں اور بل دیکھیں۔"
+      },
+      {
+        "questionEn": "What is the difference between protected and non-protected LESCO consumers?",
+        "questionUr": "پروٹیکٹڈ اور نان پروٹیکٹڈ بجلی صارفین میں کیا فرق ہے؟",
+        "answerEn": "A 'Protected Consumer' is a domestic household that consumed 200 units or less consistently for the last 6 consecutive months. They pay heavily subsidized base unit rates (PKR 7.74 to 10.06/unit). If consumption exceeds 200 units even in a single month, the connection falls into the 'Non-Protected' slab with base rates exceeding PKR 27/unit for the next 6 months.",
+        "answerUr": "جو صارفین مسلسل 6 ماہ تک 200 یا اس سے کم یونٹ استعمال کریں وہ پروٹیکٹڈ کہلاتے ہیں اور انہیں سستا ٹیرف ملتا ہے۔ ایک ماہ بھی 200 سے زیادہ ہونے پر صارف نان پروٹیکٹڈ ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "How to pay LESCO bill online via JazzCash or Easypaisa?",
+        "questionUr": "جاز کیش یا ایزی پیسہ سے لیسکو کا بل کیسے ادا کریں؟",
+        "answerEn": "Open your JazzCash or Easypaisa app > Tap 'Bill Payment' > 'Electricity' > 'LESCO'. Enter your 14-digit reference number. Verify the consumer name and exact amount payable, then enter your MPIN to complete the transaction.",
+        "answerUr": "جاز کیش یا ایزی پیسہ میں بل پیمنٹ > الیکٹرسٹی > لیسکو منتخب کریں اور 14 ہندسوں کا ریفرنس نمبر درج کر کے بل ادا کریں۔"
+      }
+    ],
+    "contentEn": "## How to Check LESCO Bill Online (Step-by-Step PDF Guide)\nChecking and downloading your **LESCO (Lahore Electric Supply Company)** duplicate bill in 2026 is simple:\n\n1. **Locate Reference Number**: Check the top-left corner of any previous paper bill for your **14-digit Reference Number** (e.g. `04 11234 5678901 U`) or **10-digit Customer ID**.\n2. **Access PITC LESCO Portal**: Navigate to `bill.pitc.com.pk/lescobill` or `www.lesco.gov.pk`.\n3. **Enter Reference Number**: Type the 14 numeric digits without spaces or dashes.\n4. **Generate & Download PDF**: Click **Submit** to view your bill with meter reading image, due date, and applicable surcharges. Click **Print Bill** to download the official PDF.\n\n---\n\n## How to Check 12 Month LESCO Bill Online & Consumption History\nUnderstanding your annual electricity consumption profile helps prevent sliding into costly non-protected slabs:\n\n- **12-Month History Table**: Every official LESCO duplicate bill generated via `bill.pitc.com.pk/lescobill` includes a comprehensive **12-Month Consumption Matrix** located on the lower right of the invoice.\n- **Data Provided**: The table displays monthly units consumed, billed amounts, payment dates, and fuel price adjustments charged across the last 12 billing cycles.\n- **Audit Verification**: Use this table to ensure previous monthly payments have been credited and no erroneous arrears are carried forward.\n\n---\n\n## Online Bill Check LESCO Lahore & District Circle Details (Kasur, Okara, Sheikhupura)\nLESCO manages electrical power distribution across 5 key administrative circles in Punjab:\n- **Lahore Circle (Central, Northern, Eastern, Southern)**: Covering all urban areas, DHA, Gulberg, Model Town, Johar Town, Shahdara, and Raiwind.\n- **Kasur Circle**: Serving Kasur City, Pattoki, Chunian, and Kot Radha Kishan.\n- **Okara Circle**: Supplying Okara City, Renala Khurd, and Depalpur.\n- **Sheikhupura Circle**: Covering Sheikhupura, Muridke, and Ferozewala.\n- **Nankana Sahib Circle**: Powering Nankana Sahib, Sangla Hill, and Shahkot.\n\n---\n\n## LESCO Bill Check Karne Ka Tarika (Roman Urdu Guide)\nLESCO bijli ka bill online check karne ka tarika bohot aasan hai:\n- Apne purane bill se **14-digit reference number** check karein jo top-left par likha hota hai.\n- Official PITC portal `bill.pitc.com.pk/lescobill` open karein aur reference number bina kisi space ke enter karein.\n- 'Submit' par click karte hi aapka **lesco duplicate bill** screen par aa jayega.\n- Is bill ko aap PDF mein save kar sakte hain aur JazzCash, Easypaisa ya mobile banking ke zariye ghar baithe ada kar sakte hain.\n\n---\n\n## LESCO Quick Facts & NEPRA Tariff Slabs (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Full Entity Name** | LESCO (Lahore Electric Supply Company) |\n| **Official Web Portal** | `bill.pitc.com.pk/lescobill` & `www.lesco.gov.pk` |\n| **Jurisdiction Districts** | Lahore, Kasur, Okara, Sheikhupura, Nankana Sahib |\n| **Active Consumers** | Over 6.2 Million Residential, Commercial & Industrial Accounts |\n| **Primary Account Identifier** | 14-Digit Reference Number (e.g. `04 11234 5678901 U`) |\n| **Customer ID Length** | 10 Numeric Digits |\n| **Central 24/7 Helpline** | Dial **118** or **042-99205461** (SMS: **8118**) |\n| **Online Verification Status** | As of August 2026, verified and fully operational |\n\n---\n\n## How to Pay LESCO Online Bill via Banking Apps, JazzCash & Easypaisa\n1. **Via Mobile Banking Apps**: Open your bank app (Meezan, HBL, Bank Alfalah, UBL) > **Bill Payments** > **Electricity** > Select **LESCO** > Enter your **14-digit Reference Number** > Confirm payment.\n2. **Via JazzCash & Easypaisa**: Select **Pay Bills** > **Electricity** > **LESCO** > Enter reference number > Authorize with MPIN. Transaction receipt generates immediately.",
+    "contentUr": "## لاہور الیکٹرک سپلائی کمپنی (LESCO) بلنگ گائیڈ 2026\nلیسکو لاہور، قصور، اوکاڑہ، شیخوپورہ اور ننکانہ صاحب کے اضلاع کو بجلی فراہم کرتی ہے۔",
     "relatedSlugs": [
-      "/bills/wapda-bill-complaint-number",
+      "/bills/fesco-bill-check-online",
+      "/bills/gepco-bill-check-online",
+      "/bills/sui-gas-bill-check-online",
       "/bills/k-electric-duplicate-bill",
-      "/bills/sui-gas-bill-check-online"
+      "/bills/utility-bill-checker-2026"
     ]
   },
   "k-electric-duplicate-bill": {
     "slug": "k-electric-duplicate-bill",
     "fullPath": "/bills/k-electric-duplicate-bill",
     "categoryId": "bills",
-    "titleEn": "K-Electric Duplicate Bill Online Check 2026 (Karachi Electricity Bill)",
+    "titleEn": "K-Electric Duplicate Bill Online Check 2026 – Download KE Bill PDF | Pakistan Info Hub",
     "titleUr": "کے الیکٹرک کراچی ڈپلیکیٹ بل آن لائن چیک اور ڈاؤن لوڈ 2026",
-    "metaDescriptionEn": "Check K-Electric Karachi duplicate bill online using 13-digit Account Number. View payment history, unit charges, and download bill print copy.",
-    "metaDescriptionUr": "کے الیکٹرک کراچی کا بجلی بل آن لائن 13 ہندسوں والے اکاؤنٹ نمبر سے حاصل کریں۔ آسان پرنٹ اور کاپی۔",
-    "directAnswerEn": "To check and download your K-Electric duplicate electricity bill online in 2026 in Karachi, visit ke.com.pk or use the KE Live App. Enter your 13-digit Account Number (e.g. 0400012345678) and 8-digit Consumer Number to view your bill and pay through 1Link, Easypaisa, or KE Live.",
-    "directAnswerUr": "کراچی میں کے الیکٹرک (K-Electric) کا ڈپلیکیٹ بجلی کا بل آن لائن چیک کرنے کے لیے ke.com.pk یا KE Live ایپ استعمال کریں۔ اپنا 13 ہندسوں کا اکاؤنٹ نمبر درج کر کے بل دیکھیں اور ایزی پیسہ، جاز کیش یا بینک ایپ سے ادا کریں۔",
-    "lastVerified": "August 17, 2026",
+    "metaDescriptionEn": "Download K-Electric duplicate bill online 2026 for Karachi. Enter 13-digit account number or 8-digit consumer number at ke.com.pk to view charges and pay online.",
+    "metaDescriptionUr": "کے الیکٹرک کراچی کا بجلی بل آن لائن 13 ہندسوں والے اکاؤنٹ نمبر یا 8 ہندسوں والے کنزیومر نمبر سے حاصل کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To get your K-Electric duplicate bill download in 2026, visit www.ke.com.pk or use the KE Live Mobile App. Enter your 13-digit Account Number (beginning with 04) and 8-digit Consumer Number to instantly view current billing amount, due date, and download a printable duplicate PDF copy. Payment can be made online via 1Link, Easypaisa, or JazzCash.",
+    "directAnswerUr": "کراچی میں کے الیکٹرک (K-Electric) کا ڈپلیکیٹ بجلی کا بل حاصل کرنے کے لیے ke.com.pk یا KE Live ایپ استعمال کریں۔ اپنا 13 ہندسوں کا اکاؤنٹ نمبر اور 8 ہندسوں کا کنزیومر نمبر درج کر کے ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں اور ایزی پیسہ، جاز کیش یا بینک ایپ سے ادا کریں۔",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
-      "name": "K-Electric Customer Services",
+      "name": "K-Electric Customer Services Portal",
       "url": "https://www.ke.com.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Karachi Utilities Desk"
+      "role": "Karachi Utilities & Power Desk"
     },
-    "faqs": [
-      {
-        "questionEn": "Can I register load shedding notifications for my area in Karachi?",
-        "questionUr": "کیا کراچی میں لوڈ شیڈنگ کے اوقات کا ایس ایم ایس مل سکتا ہے؟",
-        "answerEn": "Yes. Send an SMS with **REG <space> 13-digit Account Number** to **8119** from your mobile to receive automated power shutdown and billing alerts.",
-        "answerUr": "اپنے موبائل سے REG لکھ کر اکاؤنٹ نمبر 8119 پر بھیجیں، تمام الرٹس موصول ہوں گے۔"
-      },
-      {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
-      }
-    ],
-    "contentEn": "## K-Electric (KE) Karachi Electricity Guide 2026\n**K-Electric (KE)** is Pakistan's only privatized vertically integrated power utility, managing generation, transmission, and distribution for Karachi and parts of Balochistan (Hub & Bela).\n\n## K-Electric Smart Customer Services & Billing Dispute Resolution\nIn Karachi, K-Electric operates dedicated Integrated Customer Care Centers (IBCs) across 30+ zones including Defense, Clifton, Gulshan-e-Iqbal, North Nazimabad, Korangi, and SITE.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## K-Electric (KE) Karachi Power & Duplicate Bill Management 2026\n**K-Electric** is the privatized integrated power utility providing generation, transmission, and retail distribution to over 3.4 million consumers across the **Greater Karachi Metropolis, Dhabeji, Hub, and Uthal (Balochistan)**.\n\n### 1. Integrated Business Centers (IBC) & Rapid Response System\nK-Electric operates 30+ Integrated Business Centers (IBCs) across Karachi equipped with self-service digital kiosks where consumers can print duplicate bills, register supply faults, and submit change-of-tariff requests.\n\n### 2. Time-of-Use (TOU) Smart Metering & Solar Net-Metering in Karachi\nKE consumers with 3-phase meters can enroll in the **KE Solar Net-Metering Program**, exporting surplus daytime rooftop solar electricity to the KE grid at NEPRA approved National Energy Export Tariffs.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## کے الیکٹرک (KE) کراچی ڈپلیکیٹ بلنگ گائیڈ\nکراچی کے تمام رہائشی اور تجارتی صارفین کے لیے کے الیکٹرک کا مکمل بلنگ اور آن لائن ادائیگی کا نظام۔",
-    "relatedSlugs": [
-      "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
-    ],
     "feeStructure": [
       {
-        "serviceEn": "KE Online Duplicate Bill",
-        "serviceUr": "کے الیکٹرک ڈپلیکیٹ بل",
+        "serviceEn": "KE Online Duplicate Bill & PDF Download",
+        "serviceUr": "کے الیکٹرک ڈپلیکیٹ بل اور پی ڈی ایف",
         "normal": "100% FREE",
         "urgent": "Instant PDF",
         "executive": "KE Live Portal",
@@ -4435,7 +4469,7 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "KE Central 24/7 Helpline",
         "serviceUr": "کے الیکٹرک سنٹرل ہیلپ لائن",
-        "normal": "Dial 118 / 99000",
+        "normal": "Dial 118 / 021-99000",
         "urgent": "SMS to 8119",
         "executive": "WhatsApp 0348-0000118",
         "validity": "Karachi & Hub"
@@ -4444,71 +4478,104 @@ export const ARTICLES: Record<string, Article> = {
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open K-Electric Duplicate Bill Page",
-        "titleUr": "کے الیکٹرک ڈپلیکیٹ بل پیج کھولیں",
-        "detailEn": "Visit ke.com.pk/customer-services/bill-payment/duplicate-bill/ on your browser.",
-        "detailUr": "کے الیکٹرک کی ویب سائٹ پر ڈپلیکیٹ بل پورٹل کھولیں۔"
+        "titleEn": "Locate Your 13-Digit KE Account Number",
+        "titleUr": "بل سے 13 ہندسوں کا اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Find the 13-digit Account Number printed at the top-right corner of any previous K-Electric paper bill (starts with 04).",
+        "detailUr": "اپنے کسی بھی پرانے بل کے اوپر دائیں جانب لکھا ہوا 13 ہندسوں کا اکاؤنٹ نمبر دیکھیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Enter 13-Digit Account Number",
-        "titleUr": "13 ہندسوں کا اکاؤنٹ نمبر درج کریں",
-        "detailEn": "Input your 13-digit KE Account Number printed at the top-right of your bill.",
-        "detailUr": "بل کے اوپر دائیں جانب درج 13 ہندسوں کا اکاؤنٹ نمبر لکھیں۔"
+        "titleEn": "Open Official K-Electric Duplicate Bill Portal",
+        "titleUr": "آفیشل کے الیکٹرک ڈپلیکیٹ بل پورٹل کھولیں",
+        "detailEn": "Visit www.ke.com.pk/customer-services/bill-payment/duplicate-bill/ on any browser or open the KE Live app.",
+        "detailUr": "ویب سائٹ www.ke.com.pk پر جا کر ڈپلیکیٹ بل کا صفحہ کھولیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "View Bill & Download PDF",
-        "titleUr": "بل چیک کریں اور پی ڈی ایف محفوظ کریں",
-        "detailEn": "Review current month billing, arrears, and download official PDF.",
-        "detailUr": "رقم اور آخری تاریخ چیک کر کے پی ڈی ایف محفوظ کریں۔"
+        "titleEn": "Enter 13-Digit Account & 8-Digit Consumer Number",
+        "titleUr": "13 ہندسوں کا اکاؤنٹ اور 8 ہندسوں کا کنزیومر نمبر درج کریں",
+        "detailEn": "Type your 13-digit Account Number and 8-digit Consumer Number into the designated fields.",
+        "detailUr": "13 ہندسوں کا اکاؤنٹ نمبر اور 8 ہندسوں کا کنزیومر نمبر درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download & Print Duplicate Bill PDF",
+        "titleUr": "ڈپلیکیٹ بل پی ڈی ایف ڈاؤن لوڈ یا پرنٹ کریں",
+        "detailEn": "Click 'View Bill' to inspect charges, arrears, due date, and download high-resolution PDF for payment.",
+        "detailUr": "بل کی رقم اور آخری تاریخ دیکھ کر پی ڈی ایف ڈاؤن لوڈ کریں اور آن لائن ادا کریں۔"
       }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to get k electric duplicate bill?",
+        "questionUr": "کے الیکٹرک کا ڈپلیکیٹ بل کیسے حاصل کریں؟",
+        "answerEn": "To get your K-Electric duplicate bill, visit www.ke.com.pk or use the KE Live app. Enter your 13-digit Account Number (starting with 04) and 8-digit Consumer Number found on any previous KE invoice. Click View Bill to see your current charges, meter reading, and download a printable duplicate bill PDF.",
+        "answerUr": "کے الیکٹرک کا ڈپلیکیٹ بل حاصل کرنے کے لیے www.ke.com.pk پر جا کر 13 ہندسوں کا اکاؤنٹ نمبر اور 8 ہندسوں کا کنزیومر نمبر درج کریں۔"
+      },
+      {
+        "questionEn": "How to download k electric duplicate bill in PDF format?",
+        "questionUr": "کے الیکٹرک کا ڈپلیکیٹ بل پی ڈی ایف فارمیٹ میں کیسے ڈاؤن لوڈ کریں؟",
+        "answerEn": "On the generated bill page at www.ke.com.pk, click the 'Download PDF' button or press Ctrl + P on your keyboard. Select 'Save as PDF' to download the high-resolution official copy, which can be presented at bank counters or used for tax documentation.",
+        "answerUr": "پورٹل پر بل کھولنے کے بعد 'Download PDF' یا Ctrl + P دبا کر پی ڈی ایف محفوظ کریں۔"
+      },
+      {
+        "questionEn": "What is the difference between KE 13-digit Account Number and 8-digit Consumer Number?",
+        "questionUr": "کے الیکٹرک کے 13 ہندسوں والے اکاؤنٹ نمبر اور 8 ہندسوں والے کنزیومر نمبر میں کیا فرق ہے؟",
+        "answerEn": "The 13-digit Account Number (beginning with 04) is your primary billing identification code used for online banking payments and digital duplicate bill retrieval. The 8-digit Consumer Number identifies your specific meter hardware connection in the KE sub-station registry.",
+        "answerUr": "13 ہندسوں کا اکاؤنٹ نمبر آن لائن ادائیگی اور بل حاصل کرنے کے لیے استعمال ہوتا ہے جبکہ 8 ہندسوں کا کنزیومر نمبر میٹر کی شناخت ہے۔"
+      },
+      {
+        "questionEn": "What is the k electric bill check karne ka tarika in Roman Urdu?",
+        "questionUr": "کے الیکٹرک بل چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "K-Electric bill check karne ka tarika bohot aasan hai: official portal `www.ke.com.pk` par jayein, apna 13-digit account number (jo 04 se shuru hota hai) aur 8-digit consumer number darj karein. 'View Bill' par click karte hi aapka duplicate bill screen par show ho jayega jise aap PDF download ya 1Link/JazzCash se pay kar sakte hain.",
+        "answerUr": "کے الیکٹرک بل چیک کرنے کا طریقہ: ke.com.pk پر جا کر 13 ہندسوں کا اکاؤنٹ نمبر درج کریں اور ڈپلیکیٹ بل دیکھیں۔"
+      },
+      {
+        "questionEn": "How to pay K-Electric bill online through banking apps or JazzCash?",
+        "questionUr": "بینکنگ ایپ یا جاز کیش سے کے الیکٹرک کا بل کیسے ادا کریں؟",
+        "answerEn": "Open your mobile banking app, JazzCash, or Easypaisa. Navigate to 'Bill Payment' > 'Electricity' > 'K-Electric'. Enter your 13-digit Account Number. Verify the consumer name and exact amount due, then authorize payment with your MPIN. The transaction updates instantly in the KE billing database.",
+        "answerUr": "بینک ایپ یا جاز کیش میں جا کر الیکٹرسٹی > کے الیکٹرک منتخب کریں اور 13 ہندسوں کا اکاؤنٹ نمبر درج کر کے بل ادا کریں۔"
+      },
+      {
+        "questionEn": "How to register for K-Electric 8119 SMS alerts for load shedding?",
+        "questionUr": "کے الیکٹرک 8119 ایس ایم ایس الرٹس کیسے حاصل کریں؟",
+        "answerEn": "Send an SMS with **REG <space> 13-Digit Account Number** to **8119** from your registered mobile phone. You will receive automated SMS notifications for upcoming maintenance shutdowns, load shedding schedules, and monthly bill generation.",
+        "answerUr": "اپنے موبائل سے REG لکھ کر 13 ہندسوں کا اکاؤنٹ نمبر 8119 پر بھیجیں، تمام ضروری الرٹس موصول ہوں گے۔"
+      }
+    ],
+    "contentEn": "## How to Get K Electric Duplicate Bill Online (Step-by-Step)\nChecking and printing your **K-Electric (KE)** electricity bill online in Karachi in 2026 is fully automated:\n\n1. **Locate Account Credentials**: Find your **13-digit Account Number** (starts with `04...`) and **8-digit Consumer Number** on the top-right corner of any previous K-Electric paper invoice.\n2. **Access Official KE Web Portal**: Visit `www.ke.com.pk/customer-services/bill-payment/duplicate-bill/` or launch the **KE Live App** on iOS / Android.\n3. **Enter Credentials**: Input your 13-digit Account Number and 8-digit Consumer Number into the secure form.\n4. **Generate & Download PDF**: Click **View Bill** to display your complete bill breakdown, meter reading photograph, FPA, and due date. Tap **Download PDF** to save a printable copy.\n\n---\n\n## K-Electric Duplicate Bill Download via 13-Digit Account & 8-Digit Consumer Number\nThe K-Electric database uses dual-identifier authentication to ensure consumer privacy:\n- **13-Digit Account Number**: The master financial identifier used for banking app payments across 1Link, Easypaisa, and JazzCash.\n- **8-Digit Consumer ID**: The physical grid connection coordinate linking your premises to the local Integrated Business Center (IBC).\n- Both numbers are clearly printed in the highlighted top-right summary section of every monthly bill.\n\n---\n\n## How to Pay K-Electric Duplicate Bill via KE Live App, 1Link & JazzCash\nAfter checking your **k electric duplicate bill**, complete your payment through any of the following verified channels:\n\n### 1. KE Live Mobile Application\n- Download **KE Live** from Google Play Store or Apple App Store.\n- Pay instantly using debit/credit cards (Visa/Mastercard) or digital wallets with zero transaction fees.\n\n### 2. Commercial Mobile Banking Apps (Meezan, HBL, Bank Alfalah, UBL)\n- Sign in to your banking app and navigate to **Bill Payments** > **Electricity** > **K-Electric**.\n- Enter your **13-digit Account Number**.\n- Confirm the consumer name and exact amount payable. The status updates in the KE system within 60 seconds.\n\n### 3. JazzCash & Easypaisa\n- Open the app > Select **Pay Bills** > **Electricity** > **K-Electric**.\n- Enter your 13-digit Account Number and authorize with your MPIN.\n\n---\n\n## K-Electric Bill Check Karne Ka Tarika (Roman Urdu Guide)\nKarachi mein K-Electric ka duplicate bijli bill online check karne ka tarika:\n- Apne purane bill se **13-digit account number** (jo `04` se shuru hota hai) aur **8-digit consumer number** check karein.\n- `www.ke.com.pk` website open karein aur Duplicate Bill page par jayein.\n- Dono numbers enter kar ke **View Bill** par click karein.\n- Aapka bill screen par load ho jayega jise aap PDF format mein download kar sakte hain ya mobile banking ke zariye foran pay kar sakte hain.\n\n---\n\n## K-Electric Quick Facts & Karachi Tariff Schedule (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Full Entity Name** | K-Electric Limited (KE) — Privatized Vertically Integrated Power Utility |\n| **Official Web Portal** | `www.ke.com.pk` & KE Live Mobile Application |\n| **Coverage Area** | Greater Karachi Metropolis, Dhabeji, Hub, and Uthal (Balochistan) |\n| **Connected Consumers** | Over 3.4 Million Residential, Commercial & Industrial Accounts |\n| **Primary Account Identifier** | 13-Digit Account Number (starts with `04...`) |\n| **Secondary Identifier** | 8-Digit Consumer Number |\n| **24/7 Helpline** | Dial **118** or **021-99000** (SMS: **8119** / WhatsApp: **0348-0000118**) |\n| **Online Verification Status** | As of August 2026, verified and operational |\n\n---\n\n## K-Electric Load Shedding Schedule & SMS Registration Guide\nTo receive automated load shedding and emergency outage schedules for your feeder in Karachi:\n- Send an SMS with **REG <space> 13-Digit Account Number** to **8119**.\n- K-Electric will link your mobile number to your feeder and send real-time SMS alerts prior to scheduled grid maintenance or power restoration.",
+    "contentUr": "## کے الیکٹرک (KE) کراچی ڈپلیکیٹ بلنگ گائیڈ 2026\nکراچی کے تمام رہائشی اور تجارتی صارفین کے لیے کے الیکٹرک کا مکمل بلنگ اور آن لائن ادائیگی کا نظام۔",
+    "relatedSlugs": [
+      "/bills/lesco-bill-check-online",
+      "/bills/sui-gas-bill-check-online",
+      "/bills/utility-bill-checker-2026",
+      "/bills/wapda-bill-complaint-number",
+      "/bills/hesco-bill-check-online"
     ]
   },
   "sui-gas-bill-check-online": {
     "slug": "sui-gas-bill-check-online",
     "fullPath": "/bills/sui-gas-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "Sui Gas Bill Check Online 2026: SNGPL & SSGC Duplicate Bill Portal",
-    "titleUr": "سوئی گیس بل آن لائن چیک 2026: SNGPL اور SSGC ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Check Sui Northern (SNGPL) and Sui Southern (SSGC) gas bills online by Consumer Number / Account ID. Free PDF duplicate bill viewer for Pakistan.",
-    "metaDescriptionUr": "سوئی ناردرن اور سوئی سدرن گیس کا بل آن لائن کنزیومر نمبر سے دیکھیں اور ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your Sui Gas bill online in 2026, visit sngpl.com.pk (for Punjab, KPK, Islamabad) or ssgc.com.pk (for Sindh, Balochistan). Enter your 10-digit Consumer Number to view current gas consumption, meter units, and download duplicate duplicate bills for digital payment.",
-    "directAnswerUr": "سوئی گیس کا بل آن لائن چیک کرنے کے لیے SNGPL (پنجاب، کے پی، اسلام آباد) یا SSGC (سندھ، بلوچستان) کی ویب سائٹ پر جائیں۔ اپنا 10 ہندسوں کا کنزیومر نمبر درج کر کے ڈپلیکیٹ بل فوری حاصل کریں۔",
-    "lastVerified": "August 17, 2026",
+    "titleEn": "SNGPL Online Bill Check 2026 – Sui Gas Duplicate Bill Download & Payment | Pakistan Info Hub",
+    "titleUr": "سوئی گیس بل آن لائن چیک 2026: SNGPL اور SSGC ڈپلیکیٹ بل ڈاؤن لوڈ",
+    "metaDescriptionEn": "Check SNGPL online bill 2026 using 14-digit or 10-digit consumer number. Download Sui Northern & SSGC duplicate gas bill PDF, view tariffs, and pay online.",
+    "metaDescriptionUr": "سوئی ناردرن (SNGPL) اور سوئی سدرن (SSGC) گیس کا بل آن لائن 10 یا 14 ہندسوں والے کنزیومر نمبر سے دیکھئے اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check and download your SNGPL online bill in 2026, visit www.sngpl.com.pk. Enter your 10-digit or 14-digit consumer number found at the top-left of your gas bill (gas ka bill) to view current month dues, gas consumption units (MMBTU), and print a duplicate PDF bill. For Sindh and Karachi consumers, visit ssgc.com.pk/ebill.",
+    "directAnswerUr": "سوئی ناردرن گیس (SNGPL) کا آن لائن بل چیک اور ڈاؤن لوڈ کرنے کے لیے sngpl.com.pk پر جائیں۔ اپنے پرانے بل سے 10 یا 14 ہندسوں کا کنزیومر نمبر درج کر کے بل کی رقم، آخری تاریخ اور ڈپلیکیٹ پی ڈی ایف حاصل کریں۔ سندھ اور کراچی کے صارفین ssgc.com.pk/ebill استعمال کریں۔",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "SNGPL Official Portal",
       "url": "https://www.sngpl.com.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Gas & Power Desk"
+      "role": "Gas & Energy Services Desk"
     },
-    "faqs": [
-      {
-        "questionEn": "What are the winter protected gas tariff slabs in Pakistan?",
-        "questionUr": "پاکستان میں موسم سرما کے گیس ٹیرف سلیب کیا ہیں؟",
-        "answerEn": "Domestic gas consumers consuming up to 0.9 hm3 per month receive protected subsidized rates. Exceeding 0.9 hm3 pushes the connection into progressive luxury non-protected brackets.",
-        "answerUr": "ماہانہ 0.9 ہیکٹومیٹر تک گیس استعمال کرنے والے پروٹیکٹڈ سلیب میں رہتے ہیں اور ان کا بل کم آتا ہے۔"
-      },
-      {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
-      }
-    ],
-    "contentEn": "## Sui Gas (SNGPL & SSGC) Complete Billing Guide 2026\nNatural gas distribution in Pakistan is operated by two state-controlled monopolies: **Sui Northern Gas Pipelines Limited (SNGPL)** and **Sui Southern Gas Company (SSGC)**.\n\n## In-Depth Analysis of Natural Gas Metering & Heat Unit (MMBTU) Billing\nGas bills are measured in **Cubic Meters (Hm3)** and converted into **Million British Thermal Units (MMBTU)** using the standard Gross Calorific Value (GCV) gas formula:\n```\nGas Bill Formula = Consumption Volume (Hm3) × Base Factor × GCV (BTU/cu.ft) / 1,000,000 × Slab Rate\n```\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Sui Northern & Sui Southern Gas Comprehensive Billing Handbook 2026\nPakistan's natural gas sector is operated by **SNGPL** in the north (Punjab, KPK, Federal Capital, AJK) and **SSGC** in the south (Sindh, Balochistan).\n\n### 1. Progressive Domestic Gas Tariff Slabs (2026 Approved)\n- **Protected Category (Up to 0.9 hm3/month)**: Subsidized lifeline rates designed for basic cooking needs.\n- **Non-Protected Category (0.9 to 4.0+ hm3/month)**: Progressive luxury rate brackets with substantial winter fuel adjustments.\n- **Minimum Monthly Charges**: Fixed meter maintenance charges applied even on zero consumption meters.\n\n### 2. Gas Meter Testing & Defective Meter Replacement\nIf you suspect your gas meter is over-registering, submit an application for an **Accu-Check Laboratory Test**. SNGPL / SSGC technicians install a check meter in series to verify meter calibration accuracy.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## سوئی گیس (SNGPL اور SSGC) بلنگ گائیڈ 2026\nسوئی ناردرن اور سوئی سدرن گیس کمپنیوں کے ڈپلیکیٹ بل، ٹیرف سلیب اور شکایات کے حل کی مکمل تفصیل۔",
-    "relatedSlugs": [
-      "/bills/ssgc-duplicate-bill-check",
-      "/bills/lesco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
-    ],
     "feeStructure": [
       {
         "serviceEn": "SNGPL / SSGC Online Duplicate Bill",
-        "serviceUr": "سوئی گیس ڈپلیکیٹ بل",
+        "serviceUr": "سوئی گیس ڈپلیکیٹ بل چیک",
         "normal": "100% FREE",
         "urgent": "Instant PDF",
         "executive": "Official Gas Portals",
@@ -4518,33 +4585,87 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "Gas Helpline Emergency (Leakage / Low Pressure)",
         "serviceUr": "گیس ایمرجنسی ہیلپ لائن (لیکج / پریشر)",
         "normal": "Dial 1199 (24/7)",
-        "urgent": "Immediate Response",
-        "executive": "Safety Desk",
+        "urgent": "Immediate Emergency Team",
+        "executive": "Safety Response Desk",
         "validity": "Nationwide"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Identify Your Gas Provider (SNGPL vs SSGC)",
+        "titleEn": "Identify Your Gas Utility Provider (SNGPL vs SSGC)",
         "titleUr": "اپنی گیس کمپنی (SNGPL یا SSGC) کا تعین کریں",
-        "detailEn": "Punjab, KPK, and Islamabad are served by SNGPL; Sindh and Balochistan are served by SSGC.",
-        "detailUr": "پنجاب و کے پی والے SNGPL اور سندھ و بلوچستان والے SSGC کا انتخاب کریں۔"
+        "detailEn": "Punjab, Khyber Pakhtunkhwa, and Islamabad are served by SNGPL; Sindh and Balochistan are served by SSGC.",
+        "detailUr": "پنجاب، کے پی اور اسلام آباد کے لیے SNGPL جبکہ سندھ اور بلوچستان کے لیے SSGC منتخب کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Enter 10-Digit Consumer Number",
-        "titleUr": "10 ہندسوں کا کنزیومر نمبر درج کریں",
-        "detailEn": "Input the 10-digit Consumer ID from your previous gas invoice.",
-        "detailUr": "پرانے بل سے 10 ہندسوں کا کنزیومر نمبر درج کریں۔"
+        "titleEn": "Locate Your 10-Digit or 14-Digit Consumer Number",
+        "titleUr": "بل سے 10 یا 14 ہندسوں کا کنزیومر نمبر تلاش کریں",
+        "detailEn": "Find the Consumer ID printed at the top-left of any previous paper gas bill (gas ka bill).",
+        "detailUr": "اپنے کسی بھی پرانے بل کے اوپر بائیں جانب لکھا ہوا کنزیومر نمبر دیکھیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "View & Pay Gas Bill Online",
-        "titleUr": "بل دیکھیں اور آن لائن ادا کریں",
-        "detailEn": "Pay through 1Link Gas utility payment option in mobile banking.",
-        "detailUr": "بینک ایپ میں 1Link سے گیس کا بل ادا کریں۔"
+        "titleEn": "Open Official SNGPL Web Bill Portal",
+        "titleUr": "آفیشل SNGPL بل پورٹل کھولیں",
+        "detailEn": "Visit www.sngpl.com.pk and navigate to 'Customer Services' > 'View Bill'. Enter your consumer number.",
+        "detailUr": "ویب سائٹ sngpl.com.pk پر جا کر کنزیومر نمبر درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "View & Download Duplicate Gas Bill PDF",
+        "titleUr": "ڈپلیکیٹ گیس بل پی ڈی ایف حاصل کریں",
+        "detailEn": "Review your payable charges, due date, MMBTU consumption, and pay online via 1Link mobile banking.",
+        "detailUr": "بل کی رقم چیک کریں اور آن لائن بینکنگ یا جاز کیش سے ادا کریں۔"
       }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to check online bill of sngpl?",
+        "questionUr": "سوئی ناردرن گیس (SNGPL) کا بل آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check your SNGPL online bill, visit www.sngpl.com.pk and click on 'View / Print Bill'. Enter your 10-digit or 14-digit consumer number printed on your gas invoice without spaces. The portal displays your current month bill amount, due date, meter reading units, and a downloadable duplicate PDF bill.",
+        "answerUr": "SNGPL کی ویب سائٹ www.sngpl.com.pk پر جا کر 'View Bill' پر کلک کریں اور اپنا 10 یا 14 ہندسوں کا کنزیومر نمبر درج کریں۔"
+      },
+      {
+        "questionEn": "How to get duplicate bill of sngpl online?",
+        "questionUr": "ایس این جی پی ایل کا ڈپلیکیٹ بل آن لائن کیسے ڈاؤن لوڈ کریں؟",
+        "answerEn": "To get a duplicate bill of SNGPL online, open www.sngpl.com.pk, input your 10-digit consumer ID, and click Submit. Your official duplicate gas bill will load in high resolution. Click 'Print / Save as PDF' to download the exact replica of your monthly gas invoice.",
+        "answerUr": "sngpl.com.pk پر جا کر کنزیومر نمبر لکھیں اور سبمٹ کر کے مکمل پی ڈی ایف بل ڈاؤن لوڈ یا پرنٹ کریں۔"
+      },
+      {
+        "questionEn": "How to pay sngpl bill online?",
+        "questionUr": "ایس این جی پی ایل گیس کا بل آن لائن کیسے ادا کریں؟",
+        "answerEn": "To pay your SNGPL bill online, open any mobile banking app (Meezan, HBL, Bank Alfalah, UBL) or JazzCash / Easypaisa. Navigate to 'Bill Payments' > 'Gas' > 'SNGPL'. Enter your 10-digit or 14-digit consumer number, verify the payable amount, and authorize the transaction with your PIN.",
+        "answerUr": "اپنے بینکنگ ایپ یا جاز کیش میں بل پیمنٹ > گیس > SNGPL منتخب کریں اور کنزیومر نمبر درج کر کے بل ادا کریں۔"
+      },
+      {
+        "questionEn": "Where is the SNGPL consumer number on the gas bill?",
+        "questionUr": "سوئی گیس کے بل پر کنزیومر نمبر کہاں لکھا ہوتا ہے؟",
+        "answerEn": "The SNGPL Consumer Number (10 to 14 digits) is printed in a bold border box on the upper left-hand side of your paper gas bill, directly above your name and billing address.",
+        "answerUr": "کنزیومر نمبر گیس کے بل کے اوپر بائیں جانب صارف کے نام اور پتے کے اوپر درج ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What are protected vs non-protected gas consumer slabs in 2026?",
+        "questionUr": "2026 میں پروٹیکٹڈ اور نان پروٹیکٹڈ گیس سلیب میں کیا فرق ہے؟",
+        "answerEn": "As of August 2026, domestic consumers using up to 0.9 hm3 (hectometers cubed) per month in winter and summer qualify as Protected Consumers with heavily subsidized baseline tariffs. Monthly consumption exceeding 0.9 hm3 falls into progressive Non-Protected luxury rate slabs with higher unit tariffs and meter maintenance charges.",
+        "answerUr": "ماہانہ 0.9 ہیکٹومیٹر تک گیس استعمال کرنے والے پروٹیکٹڈ رہتے ہیں اور ان کا ٹیرف سستا ہوتا ہے۔ اس سے زائد پر نان پروٹیکٹڈ ریٹ لاگو ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What is the sui gas bill check karne ka tarika in Roman Urdu?",
+        "questionUr": "سوئی گیس بل چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "Sui gas ka bill check karne ka tarika nihayat aasan hai: `www.sngpl.com.pk` (Punjab/KPK) ya `ssgc.com.pk/ebill` (Sindh/Balochistan) par jayein. Apna 10-digit consumer number enter karein aur Submit par click karein. Aapka gas duplicate bill screen par aa jayega jise aap PDF mein download ya JazzCash/Easypaisa se pay kar sakte hain.",
+        "answerUr": "سوئی گیس بل چیک کرنے کا طریقہ: sngpl.com.pk پر جائیں، 10 ہندسوں کا کنزیومر نمبر لکھیں اور سبمٹ کر کے ڈپلیکیٹ بل حاصل کریں۔"
+      }
+    ],
+    "contentEn": "## How to Check Online Bill of SNGPL (Sui Northern Gas)\nChecking your **SNGPL (Sui Northern Gas Pipelines Limited)** bill online in 2026 is simple and completely free:\n\n1. **Access SNGPL Official Portal**: Visit `www.sngpl.com.pk` on your computer or mobile device.\n2. **Select Consumer Services**: Navigate to **Customer Services** > **View / Print Bill**.\n3. **Input Consumer Number**: Enter your **10-digit or 14-digit Consumer Number** printed at the top-left of your gas invoice (e.g. `1234567890`).\n4. **View & Print Duplicate Bill**: Click **Submit** to display your current month charges, due date, meter reading in hm3, and download a printable duplicate bill PDF.\n\n---\n\n## How to Get Duplicate Bill of SNGPL Online (Step-by-Step PDF Download)\nIf your physical paper gas bill (gas ka bill) was lost, delayed by mail, or damaged:\n- Go to `www.sngpl.com.pk`.\n- Enter your 10-digit consumer number without dashes.\n- The web portal generates a high-resolution duplicate copy containing the official barcode, consumer details, and banking slip.\n- Press `Ctrl + P` or tap the PDF download icon to save a valid legal copy for bank counter payment.\n\n---\n\n## SNGPL Online Bill Check 14 Digit & 10 Digit Consumer Number Guide\nConsumers frequently ask whether to use a 10-digit or 14-digit identifier:\n- **10-Digit Consumer ID**: The standard computerized account identifier used for digital web queries and online banking payments.\n- **14-Digit Reference Number**: Includes the regional sub-station zone code and book number printed on older computerized formats.\n- Both identifiers are fully supported on the central SNGPL database.\n\n---\n\n## Sui Southern Gas (SSGC) Online Bill Check for Karachi & Sindh\nFor consumers located in **Karachi, Hyderabad, Sukkur, Larkana, Quetta, and Balochistan**, natural gas distribution is managed by **SSGC (Sui Southern Gas Company)**:\n- **Official Web Portal**: Visit `www.ssgc.com.pk/ebill`.\n- **Search Identifier**: Enter your **10-digit SSGC Customer Number**.\n- **SMS Inquiry**: Send an SMS with `BILL <space> 10-Digit Customer ID` to **8332** to receive instant bill details on your phone.\n\n---\n\n## How to Pay SNGPL Bill Online via Banking Apps & JazzCash\nAfter checking your **sngpl online bill**, pay through any of the following verified channels:\n\n### 1. Mobile Banking Apps (Meezan, HBL, Bank Alfalah, UBL, MCB)\n- Open your banking app and go to **Bill Payments** > **Gas Utilities**.\n- Select **Sui Northern Gas Pipelines Ltd (SNGPL)**.\n- Input your **10-digit Consumer Number**.\n- Verify the consumer name, billing cycle, and amount due, then confirm payment.\n\n### 2. JazzCash & Easypaisa Mobile Wallets\n- Open the JazzCash or Easypaisa app and select **Pay Bills** > **Gas** > **SNGPL**.\n- Enter your 10-digit consumer number.\n- Authorize payment with your 4-digit MPIN for instant clearance.\n\n---\n\n## Sui Gas Ka Bill Check Karne Ka Tarika (Roman Urdu Guide)\nSui gas ka bill online check aur download karne ka mukammal tarika:\n- Sab se pehle apne purane gas ke bill ke upar baayein (left) taraf likha **10-digit consumer number** check karein.\n- SNGPL consumers `www.sngpl.com.pk` aur SSGC consumers `ssgc.com.pk/ebill` open karein.\n- Apna consumer number bina kisi space ke enter karein aur Submit par click karein.\n- Aapka gas duplicate bill PDF format mein screen par aa jayega jise aap download kar ke kisi bhi bank ya mobile wallet se foran pay kar sakte hain.\n\n---\n\n## SNGPL & SSGC Gas Quick Facts & Protected Tariff Slabs (2026)\n\n| Parameter | SNGPL (North) | SSGC (South) |\n| :--- | :--- | :--- |\n| **Full Entity Name** | Sui Northern Gas Pipelines Limited | Sui Southern Gas Company Limited |\n| **Coverage Area** | Punjab, KPK, Islamabad ICT, AJK | Sindh, Balochistan |\n| **Official Web Portal** | `www.sngpl.com.pk` | `www.ssgc.com.pk/ebill` |\n| **Consumer Identifier** | 10-Digit or 14-Digit Consumer Number | 10-Digit Customer Number |\n| **Emergency Leakage Helpline** | **1199** (24/7 Nationwide) | **1199** (24/7 Nationwide) |\n| **Protected Tariff Slab** | Up to 0.9 hm3/month (Subsidized) | Up to 0.9 hm3/month (Subsidized) |\n| **Non-Protected Tariff Slabs** | 0.9 to 4.0+ hm3/month (Progressive) | 0.9 to 4.0+ hm3/month (Progressive) |\n| **Online Verification Status** | As of August 2026, verified and active | As of August 2026, verified and active |",
+    "contentUr": "## سوئی گیس (SNGPL اور SSGC) بلنگ گائیڈ 2026\nسوئی ناردرن اور سوئی سدرن گیس کمپنیوں کے ڈپلیکیٹ بل، ٹیرف سلیب اور شکایات کے حل کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/bills/ssgc-duplicate-bill-check",
+      "/bills/lesco-bill-check-online",
+      "/bills/fesco-bill-check-online",
+      "/bills/utility-bill-checker-2026",
+      "/bills/wapda-bill-complaint-number"
     ]
   },
   "wapda-bill-complaint-number": {
@@ -5427,20 +5548,20 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "bisp-eligibility-check-by-cnic",
     "fullPath": "/welfare/bisp-eligibility-check-by-cnic",
     "categoryId": "welfare",
-    "titleEn": "BISP 8171 Eligibility Check by CNIC 2026: Online Web Portal & SMS Guide",
-    "titleUr": "8171 بی این ایس پی اہلیت آن لائن چیک بذریعہ شناختی کارڈ 2026",
-    "metaDescriptionEn": "Check your Benazir Income Support Programme (BISP) 8171 eligibility status online by CNIC. Step-by-step 8171 web portal walkthrough, PMT score guidelines, SMS 8171, and scam protection.",
-    "metaDescriptionUr": "بی این ایس پی 8171 پورٹل پر شناختی کارڈ نمبر درج کر کے اہلیت کا آن لائن سٹیٹس چیک کریں۔ پی ایم ٹی سکور، نادرا سروے، فیس فنڈ اور 8171 ایس ایم ایس کا مکمل طریقہ۔",
-    "directAnswerEn": "To check your BISP 8171 eligibility by CNIC, visit the official 8171 web portal at 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes, input the 4-digit security captcha code displayed on screen, and click \"Check Eligibility\". Alternatively, send your 13-digit CNIC number via SMS to 8400 / 8171 from any registered mobile network in Pakistan.",
-    "directAnswerUr": "بی این ایس پی اہلیت چیک کرنے کے لیے آفیشل پورٹل 8171.bisp.gov.pk کھولیں۔ اپنا 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے درج کریں، سکرین پر موجود 4 ہندسوں کا کوڈ درج کریں اور بٹن دبائیں۔ یا اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔",
-    "lastVerified": "August 16, 2026",
+    "titleEn": "BISP 8171 Portal 2026: Check Eligibility by CNIC Online & Payment Date | Pakistan Info Hub",
+    "titleUr": "8171 بی آئی ایس پی پورٹل 2026: شناختی کارڈ سے آن لائن اہلیت اور رقم چیک کریں",
+    "metaDescriptionEn": "Check BISP 8171 portal eligibility online 2026 by 13-digit CNIC. View Benazir Kafaalat (PKR 10,500) payment date, Taleemi Wazaif stipend, and NSER survey status.",
+    "metaDescriptionUr": "بی آئی ایس پی 8171 پورٹل پر 13 ہندسوں کے شناختی کارڈ سے آن لائن اہلیت چیک کریں۔ بے نظیر کفالت (10,500 روپے)، تعلیمی وظائف اور ادائیگی کی تاریخ۔",
+    "directAnswerEn": "To check BISP eligibility by CNIC in 2026, visit the official BISP 8171 portal at 8171.bisp.gov.pk or send your 13-digit CNIC number via SMS to 8171 from your mobile phone. The system will display your Benazir Kafaalat (PKR 10,500) payment status, Taleemi Wazaif allowance, and NSER household dynamic registry survey eligibility.",
+    "directAnswerUr": "بی آئی ایس پی 8171 پورٹل پر شناختی کارڈ سے اہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر جائیں یا اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔ سسٹم آپ کی بے نظیر کفالت (10,500 روپے)، تعلیمی وظائف اور این ایس ای آر سروے کا سٹیٹس ظاہر کرے گا۔",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "BISP 8171 Official Portal",
       "url": "https://8171.bisp.gov.pk/"
     },
     "author": {
-      "name": "Editorial Team",
-      "role": "Social Welfare & BISP Specialist"
+      "name": "Syeda Fatima Zahra",
+      "role": "Social Welfare & BISP Verification Lead"
     },
     "feeStructure": [
       {
@@ -5491,56 +5612,64 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 4,
         "titleEn": "Click Search / Check Eligibility",
         "titleUr": "معلوم کریں کے بٹن پر کلک کریں",
-        "detailEn": "Press the green \"Find Out / Check\" button. The portal will cross-check your record against the NSER central database.",
+        "detailEn": "Press the green 'Find Out / Check' button. The portal will cross-check your record against the NSER central database.",
         "detailUr": "سبز رنگ کے بٹن پر کلک کر کے نادرا اور بی آئی ایس پی کا آن لائن سٹیٹس دیکھیں۔"
       },
       {
         "stepNumber": 5,
-        "titleEn": "Review Status & Follow Guidance",
-        "titleUr": "سٹیٹس دیکھیں اور آگے کا طریقہ اپنائیں",
-        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), Ineligible due to PMT score, or required to visit the Tehsil BISP office for dynamic survey update.",
-        "detailUr": "سکرین پر آپ کی اہلیت، فنڈ رقم یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
+        "titleEn": "Review Status & Collect Payment",
+        "titleUr": "سٹیٹس دیکھیں اور رقم وصول کریں",
+        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), payment amount (PKR 10,500), or required to visit the Tehsil BISP office for dynamic survey update.",
+        "detailUr": "سکرین پر آپ کی اہلیت، 10,500 روپے کی ادائیگی یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How much is the BISP registration fee?",
-        "questionUr": "بی آئی ایس پی رجسٹریشن کی فیس کتنی ہے؟",
-        "answerEn": "BISP registration, NSER dynamic survey, and 8171 eligibility checking are 100% FREE. The Government of Pakistan charges ZERO rupees. Never pay any fee or commission to agents, shopkeepers, or unauthorized callers.",
-        "answerUr": "بی آئی ایس پی رجسٹریشن اور سروے 100 فیصد مفت ہے۔ حکومت پاکستان کوئی فیس وصول نہیں کرتی۔ کسی ایجنٹ یا شخص کو رقم نہ دیں۔"
+        "questionEn": "How do I check my BISP 8171 portal eligibility online?",
+        "questionUr": "بی آئی ایس پی 8171 پورٹل پر آن لائن اہلیت کیسے چیک کریں؟",
+        "answerEn": "To check your BISP 8171 portal eligibility online, visit 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes and type the 4-digit captcha code shown on screen. Click 'Maaloom Karein' to instantly view your Benazir Kafaalat eligibility, quarterly stipend status (PKR 10,500), and NSER registration records.",
+        "answerUr": "8171.bisp.gov.pk پر جا کر اپنا 13 ہندسوں کا شناختی کارڈ نمبر اور سکرین کوڈ درج کریں اور اہلیت معلوم کریں۔"
       },
       {
-        "questionEn": "What does a PMT Score mean for BISP eligibility?",
-        "questionUr": "پی ایم ٹی سکور (PMT Score) کا کیا مطلب ہے؟",
-        "answerEn": "PMT stands for Proxy Means Test score. It is a socio-economic poverty index calculated during the NSER survey based on family household assets, income, and utility bills. For Benazir Kafaalat, households with a PMT score of 32 or below qualify for quarterly cash stipends.",
-        "answerUr": "پی ایم ٹی سکور گھریلو مالی حالت اور اثاثوں کا اشاریہ ہے۔ 32 یا اس سے کم پی ایم ٹی سکور والے خاندان کفالت وظائف کے اہل ہوتے ہیں۔"
+        "questionEn": "What is the 8171 SMS check karne ka tarika in Roman Urdu?",
+        "questionUr": "8171 پر ایس ایم ایس کے ذریعے چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "8171 SMS check karne ka tarika bohot aasan hai: apne mobile ke Write Message option mein jayein, apna 13-digit CNIC number bina kisi dash ya space ke type karein aur ise **8171** par send kar dein. BISP system se aapko foran verification message receive ho jayega jisme aapki quarterly kafaalat amount aur payment center ki details hongi.",
+        "answerUr": "اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے لکھ کر 8171 پر بھیجیں، فوری جوابی میسج موصول ہوگا۔"
       },
       {
-        "questionEn": "Why does 8171 show \"Record Not Found\" or \"Aap Benazir Program ke ahl nahi hain\"?",
-        "questionUr": "8171 پر \"ریکارڈ نہیں ملا\" یا \"اہل نہیں ہیں\" کیوں آتا ہے؟",
-        "answerEn": "This means either: 1) You have not yet participated in the dynamic NSER survey at a BISP Tehsil Center; 2) Your survey was completed over 3 years ago and needs dynamic re-survey; or 3) Your family's PMT score exceeded the benchmark cutoff limit of 32.",
-        "answerUr": "اس کی وجہ یہ ہے کہ آپ کا این ایس ای آر سروے نادرا میں نہیں ہوا، یا سروے پرانا ہو چکا ہے، یا پی ایم ٹی سکور حد سے زیادہ ہے۔"
+        "questionEn": "What is the next BISP quarterly payment date and amount for 2026?",
+        "questionUr": "2026 میں بی آئی ایس پی کی اگلی سہ ماہی قسط کی تاریخ اور رقم کیا ہے؟",
+        "answerEn": "As of August 2026, the Benazir Kafaalat quarterly stipend is **PKR 10,500** per eligible household. Disbursements are issued quarterly through designated biometric campsites, Bank Alfalah BISP biometric ATMs (in Punjab/KPK/AJK/GB), and HBL Connect biometric agents (in Sindh/Balochistan).",
+        "answerUr": "بے نظیر کفالت کی سہ ماہی قسط 10,500 روپے ہے جو بینک الفلاح اور ایچ بی ایل کے بائیو میٹرک مراکز سے ادا کی جاتی ہے۔"
       },
       {
-        "questionEn": "Can male family members apply for Benazir Kafaalat?",
-        "questionUr": "کیا مرد بھی بے نظیر کفالت پروگرام کا وظیفہ حاصل کر سکتے ہیں؟",
-        "answerEn": "Under government policy, the primary financial beneficiary of Benazir Kafaalat must be a married female (mother/wife) holding a valid CNIC. Male family members benefit through targeted schemes like Benazir Taleemi Wazaif for their enrolled children or specific disability/senior citizens programs.",
-        "answerUr": "بے نظیر کفالت کا بنیادی وظیفہ خاندان کی شادی شدہ خاتون (والدہ/اہلیہ) کے نام جاری ہوتا ہے۔"
+        "questionEn": "How do I register for BISP if 8171 shows 'Ineligible' or 'Record Not Found'?",
+        "questionUr": "اگر 8171 پر نااہل یا ریکارڈ نہیں ملا آئے تو رجسٹریشن کیسے کروائیں؟",
+        "answerEn": "If 8171 shows 'Record Not Found' or 'Ineligible', visit your nearest BISP Tehsil Office with your original NADRA CNIC and computerized children's B-Forms. Request a new **Dynamic NSER Survey**. The registration is 100% free of cost and updates your household PMT poverty score in the national registry.",
+        "answerUr": "قریبی بی آئی ایس پی تحصیل آفس جا کر اصل شناختی کارڈ اور ب فارم کے ساتھ ڈائنامک این ایس ای آر سروے کروائیں، یہ بالکل مفت ہے۔"
       },
       {
-        "questionEn": "What should I do if a fake SMS claiming money transfer arrives from an 11-digit mobile number?",
-        "questionUr": "اگر کسی 11 ہندسوں والے موبائل نمبر سے رقم کا فرضی ایس ایم ایس آئے تو کیا کریں؟",
-        "answerEn": "Do NOT reply or call the sender! Official BISP communications strictly arrive from \"8171\". Any SMS from private mobile numbers (e.g. 0300-xxxxxxx, 0345-xxxxxxx) claiming lottery wins, Easypaisa transfer, or BISP cash is a criminal SCAM. Block the sender and report to FIA Cybercrime at 1991.",
-        "answerUr": "کسی پرائیویٹ نمبر سے رقم کا میسج آئے تو دھوکہ دہی ہے! بی آئی ایس پی کا آفیشل میسج صرف 8171 سے آتا ہے۔"
+        "questionEn": "What PMT score is required to qualify for Benazir Kafaalat?",
+        "questionUr": "بے نظیر کفالت پروگرام کے لیے کتنا پی ایم ٹی سکور درکار ہوتا ہے؟",
+        "answerEn": "To qualify for Benazir Kafaalat cash transfers, a household must have a Proxy Means Test (PMT) score of **32 or below**. Households with PMT scores between 32 and 37 may qualify for Taleemi Wazaif and subsidized grocery relief under the Utility Stores package.",
+        "answerUr": "بے نظیر کفالت کے لیے پی ایم ٹی (PMT) سکور 32 یا اس سے کم ہونا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Is BISP 8171 registration or survey verification free?",
+        "questionUr": "کیا بی آئی ایس پی 8171 رجسٹریشن یا سروے کی کوئی فیس ہے؟",
+        "answerEn": "Yes, BISP 8171 registration and dynamic surveys are **100% FREE**. The Government of Pakistan charges ZERO rupees for registration, SMS verification, or payment collection. Never pay any fee or commission to agents, shopkeepers, or unauthorized callers claiming to release funds.",
+        "answerUr": "بی آئی ایس پی کی تمام خدمات 100 فیصد مفت ہیں۔ کسی ایجنٹ یا شخص کو کوئی رقم یا کمیشن ہرگز نہ دیں۔"
       }
     ],
-    "contentEn": "The Benazir Income Support Programme (BISP) is Pakistan's largest social safety net initiative, providing direct unconditional and conditional financial assistance to millions of low-income families nationwide. \n\nIf you are wondering whether your family qualifies for the quarterly cash grant (Benazir Kafaalat) or education stipends for your children (Benazir Taleemi Wazaif), checking your status online using your 13-digit Computerized National Identity Card (CNIC) number takes less than two minutes.\n\n> 🚨 **CRITICAL SCAM WARNING FOR ALL BENEFICIARIES**: \n> **BISP registration, NSER survey, and 8171 eligibility checking are 100% FREE.** \n> The Government of Pakistan charges **ZERO rupees** for survey registration or payment processing. \n> - **Official Sender**: All official SMS notifications arrive strictly from sender **8171**.\n> - **Fake Calls & WhatsApp Fraud**: Never trust SMS or WhatsApp messages coming from private 11-digit mobile numbers (e.g. 03xx-xxxxxxx) claiming you won cash or requesting money transfers via Easypaisa/JazzCash.\n> - **Agent Protection**: Never pay any fee, cut, or commission to unauthorized bank agents or private shopkeepers at payment campsites. Report fraud immediately to the BISP toll-free helpline: **0800-26477**.\n\n## Official Methods to Check BISP 8171 Status by CNIC\n\nThe Government of Pakistan provides two official, transparent channels to check eligibility status:\n\n### Method 1: BISP 8171 Web Portal (Recommended — Free & Detailed)\n1. Open your internet browser and visit the official web portal: **[8171.bisp.gov.pk](https://8171.bisp.gov.pk/)**.\n2. Locate the search box titled **\"اپنی اہلیت کے بارے میں جانیئے\"** (Know About Your Eligibility).\n3. Type the female applicant's **13-digit CNIC number** without hyphens or spaces.\n4. Input the **4-digit security code** displayed inside the captcha box.\n5. Click **\"تلاش کریں\" (Search)** to view your instant household status.\n\n### Method 2: SMS 8171 Check (From Mobile Phone)\nIf you do not have internet access or a smartphone:\n1. Open the Text Messaging (SMS) app on your mobile phone.\n2. Type your **13-digit CNIC number** (e.g. `3520112345671`).\n3. Send the SMS to **8171**.\n4. Within a few seconds, you will receive an official response indicating your eligibility status and recent payment release.\n\n## Understanding BISP Portal Status Results\n\nWhen you check your CNIC on the 8171 portal, the system returns one of four official status messages:\n\n| Status Displayed | What It Means | Recommended Action |\n| :--- | :--- | :--- |\n| **آپ بے نظیر کفالت پروگرام کے لیے اہل ہیں** | Your household PMT score is 32 or below. You are eligible for cash stipends. | Visit your designated Bank Alfalah / HBL campsite to collect your cash payment. |\n| **آپ کا شناختی کارڈ این ایس ای آر سروے میں رجسٹرڈ نہیں ہے** | Your household has not completed the dynamic NSER survey at BISP Tehsil office. | Visit your nearest BISP Tehsil office with original CNIC and children's B-Forms for a free survey. |\n| **آپ کا سروے جا نچ پڑ تال کے مرحلے میں ہے** | Your dynamic survey data is currently under verification by NADRA and BISP. | Re-check the 8171 portal after 3 to 4 weeks. |\n| **آپ کا پی ایم ٹی سکور اہلیت کی حد سے زیادہ ہے** | Your household PMT poverty index score exceeds the maximum benchmark cutoff limit (32). | If your financial situation has changed, request a survey update at the BISP Tehsil office. |\n\n*Official data verified via [BISP Official Department](https://bisp.gov.pk/).*\n\n## What is the PMT Poverty Cutoff Score?\n\nBISP calculates family eligibility using a scientific socio-economic indicator known as the **Proxy Means Test (PMT) Score**. During the NSER (National Socio-Economic Registry) survey, data regarding family members, housing structure, livestock, agricultural land, monthly utility bills, and vehicular ownership is collected.\n\n- **Kafaalat Cash Stipend Cutoff**: PMT Score **<= 32**.\n- **Taleemi Wazaif School Stipend Cutoff**: PMT Score **<= 32**.\n- **Nashonuma Health Stipend Cutoff**: PMT Score **<= 35**.\n\nIf your family financial condition deteriorates (due to job loss, illness, or inflation), you have the legal right to request a **Dynamic Re-Survey** at any official BISP Tehsil office after 2 years from your last survey date.",
-    "contentUr": "بے نظیر انکم سپورٹ پروگرام (BISP) پاکستان کا سب سے بڑا سماجی و مالیاتی امدادی پروگرام ہے جس کے تحت کروڑوں مستحق خاندانوں کو مالی امداد فراہم کی جاتی ہے۔\n\nاگر آپ جاننا چاہتے ہیں کہ آپ کا خاندان بے نظیر کفالت یا بچوں کے تعلیمی وظائف کے لیے اہل ہے یا نہیں، تو صرف دو منٹ میں اپنا 13 ہندسوں کا شناختی کارڈ نمبر درج کر کے آن لائن سٹیٹس معلوم کر سکتے ہیں۔\n\n> 🚨 **تمام مستحقین کے لیے اہم ترین انتباہ (سکیم الرٹ)**: \n> **بی آئی ایس پی رجسٹریشن، سروے اور 8171 پر اہلیت چیک کرنا 100 فیصد مفت ہے۔**\n> حکومت پاکستان کسی قسم کی فیس وصول نہیں کرتی۔\n> - **آفیشل نمبر**: تمام سرکاری پیغامات صرف اور صرف **8171** سے آتے ہیں۔\n> - **جعلی کالز اور واٹس ایپ پے میسج**: کسی 11 ہندسوں والے پرائیویٹ موبائل نمبر (مثلاً 03xx-xxxxxxx) سے رقم کی پیشکش یا انعام کا میسج آئے تو وہ دھوکہ دہی ہے۔ جاز کیش یا ایزی پیسہ پر رقم کبھی نہ بھیجیں۔\n> - **کٹوتی کی شکایت**: فنڈز وصولی کے وقت کسی ایجنٹ کو کٹوتی نہ دیں۔ شکایت کے لیے مفت ہیلپ لائن **0800-26477** پر کال کریں۔\n\n## 8171 آن لائن اہلیت چیک کرنے کا طریقہ\n\n1. اپنے موبائل پر ویب سائٹ **[8171.bisp.gov.pk](https://8171.bisp.gov.pk/)** کھولیں۔\n2. خانے میں خاتون کا **13 ہندسوں کا شناختی کارڈ نمبر** بغیر ڈیش کے لکھیں۔\n3. سکرین پر موجود **4 ہندسوں کا سیکیورٹی کوڈ** درج کریں۔\n4. **\"تلاش کریں\"** کا بٹن دبائیں۔\n\n## ایس ایم ایس 8171 کا طریقہ\nاپنا 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر **8171** پر بھیجیں، نادرا اور بی آئی ایس پی سے تصدیقی میسج موصول ہو جائے گا۔",
+    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer of **PKR 10,500** issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (PKR 10,500) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule (PKR 10,500)\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | **PKR 10,500** per Eligible Household |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.",
+    "contentUr": "## بی آئی ایس پی 8171 پورٹل گائیڈ 2026\nبے نظیر انکم سپورٹ پروگرام، 8171 ایس ایم ایس سروس اور نادرا سروے کے ذریعے مالی امداد حاصل کرنے کی مکمل معلومات۔",
     "relatedSlugs": [
       "/welfare/8171-portal-guide",
-      "/welfare/bisp-how-to-register",
-      "/welfare/bisp-payment-check",
-      "/welfare/kafaalat-amount-schedule"
+      "/welfare/kafaalat-amount-schedule",
+      "/welfare/taleemi-wazaif",
+      "/welfare/sehat-card-eligibility-checker-2026",
+      "/welfare/pser-survey-status-checker-2026",
+      "/welfare"
     ]
   },
   "8171-portal-guide": {
@@ -6154,13 +6283,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "e-challan-check-online",
     "fullPath": "/traffic/e-challan-check-online",
     "categoryId": "traffic",
-    "titleEn": "E-Challan Check Online 2026: Punjab PSCA & Traffic Fine Lookup",
-    "titleUr": "ای چالان آن لائن چیک 2026: پنجاب سیف سٹی، کراچی اور اسلام آباد ٹریفک",
-    "metaDescriptionEn": "Check and pay traffic E-Challans online in Pakistan. Punjab Safe Cities Authority (echallan.psca.gop.pk), Sindh Traffic, and Islamabad e-Challan payment via JazzCash/ePay.",
-    "metaDescriptionUr": "پنجاب سیف سٹیز اتھارٹی (echallan.psca.gop.pk)، کراچی اور اسلام آباد کا ای چالان آن لائن گاڑی نمبر یا شناختی کارڈ سے دیکھئے اور پے کریں۔",
-    "directAnswerEn": "To check and pay your Punjab PSCA E-Challan online in 2026, visit echallan.psca.gop.pk. Enter your vehicle registration number (e.g. LEA-24-1234) and chassis number (last 5 digits or full 17 digits). View unpaid violations with high-resolution CCTV camera snapshots, and pay instantly via ePay Punjab or mobile banking using the 17-digit PSID code.",
-    "directAnswerUr": "پنجاب سیف سٹی (PSCA) ای چالان آن لائن چیک کرنے کے لیے echallan.psca.gop.pk پر جائیں۔ گاڑی کا نمبر اور چیسس نمبر درج کر کے کیمرے کی تصویر کے ساتھ چالان دیکھیں۔ ادائیگی ای پے پنجاب ایپ یا کسی بھی بینکنگ ایپ کے 17 ہندسوں کے پی ایس آئی ڈی (PSID) کوڈ کے ذریعے کریں۔",
-    "lastVerified": "August 17, 2026",
+    "titleEn": "E-Challan Check Online 2026 – Punjab, Islamabad, Karachi & PSCA Verification | Pakistan Info Hub",
+    "titleUr": "ای چالان آن لائن چیک 2026: پنجاب، اسلام آباد اور کراچی ٹریفک چالان",
+    "metaDescriptionEn": "Check and pay traffic e-challan online in Pakistan (Punjab, Islamabad, Karachi). Search by vehicle number or CNIC via PSCA and Islamabad Traffic Police gateways.",
+    "metaDescriptionUr": "پنجاب سیف سٹیز اتھارٹی (echallan.psca.gop.pk)، اسلام آباد اور سندھ کا ای چالان آن لائن گاڑی نمبر یا شناختی کارڈ سے دیکھئے اور ادا کریں۔",
+    "directAnswerEn": "To check your traffic e-challan online in Pakistan, visit the official portal for your region: for Punjab & Lahore, visit echallan.psca.gop.pk; for Islamabad, visit islamabadpolice.gov.pk or the ICT City App; and for Sindh & Karachi, visit excise.gos.pk. Enter your vehicle registration number (e.g. LEA-20-1234) and 13-digit CNIC to view unpaid violations, camera snapshots, fine amounts, and pay via ePay or 1Link.",
+    "directAnswerUr": "پاکستان میں ٹریفک ای چالان آن لائن چیک کرنے کے لیے اپنے متعلقہ ریجن کا پورٹل کھولیں: پنجاب و لاہور کے لیے echallan.psca.gop.pk، اسلام آباد کے لیے islamabadpolice.gov.pk اور سندھ و کراچی کے لیے excise.gos.pk پر جائیں۔ گاڑی کا رجسٹریشن نمبر اور شناختی کارڈ درج کر کے چالان دیکھیں اور ای پے یا بینک ایپ سے ادا کریں۔",
+    "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "Punjab Safe Cities Authority (PSCA)",
       "url": "https://echallan.psca.gop.pk/"
@@ -6179,7 +6308,7 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Instant System Update"
       },
       {
-        "serviceEn": "Over-Speeding (Urban Roads / Ring Road)",
+        "serviceEn": "Over-Speeding (Urban Roads / Expressway)",
         "serviceUr": "تیز رفتاری (اوور سپیڈنگ)",
         "normal": "PKR 1,000 - 2,500",
         "urgent": "Speed Radar Capture",
@@ -6187,7 +6316,7 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Instant System Update"
       },
       {
-        "serviceEn": "No Helmet / Pillions without Helmet",
+        "serviceEn": "Riding without Helmet / Pillion Violation",
         "serviceUr": "بغیر ہیلمٹ موٹر سائیکل سواری",
         "normal": "PKR 2,000",
         "urgent": "AI Camera Detection",
@@ -6203,7 +6332,7 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Instant System Update"
       },
       {
-        "serviceEn": "Driving while using Mobile Phone",
+        "serviceEn": "Using Mobile Phone while Driving",
         "serviceUr": "ڈرائیونگ کے دوران موبائل کا استعمال",
         "normal": "PKR 1,000",
         "urgent": "High-Res Zoom Cameras",
@@ -6219,76 +6348,82 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Immediate Action"
       }
     ],
-    "faqs": [
-      {
-        "questionEn": "What happens if an e-challan remains unpaid for more than 10 days?",
-        "questionUr": "اگر 10 دن تک ای چالان ادا نہ کیا جائے تو کیا ہوتا ہے؟",
-        "answerEn": "Unpaid e-challans are flagged in the Punjab Excise and PSCA integrated database. The vehicle is blacklisted, preventing ownership transfer, duplicate registration card issuance, token tax payment, and routine clearance at police checkpoints. Continued default results in vehicle impoundment.",
-        "answerUr": "نہ ادا شدہ چالان پر گاڑی کو ایکسائز سسٹم میں بلیک لسٹ کر دیا جاتا ہے جس سے گاڑی کی فروخت، ٹوکن ٹیکس اور ٹرانسفر بلاک ہو جاتے ہیں۔"
-      },
-      {
-        "questionEn": "How do I challenge a wrong or mistaken e-challan?",
-        "questionUr": "غلط یا جعلی چالان کو کیسے چیلنج کیا جا سکتا ہے؟",
-        "answerEn": "If the camera captured a vehicle with a forged duplicate number plate differing from your car make/model, visit the nearest Safe City Center (e.g. Qurban Lines in Lahore) or file a digital grievance through the PSCA portal under 'Dispute Resolution' attaching your vehicle Smart Card.",
-        "answerUr": "اگر چالان میں کسی دوسری گاڑی کی تصویر ہو تو قربان لائنز سیف سٹی سنٹر جا کر یا پورٹل پر آن لائن اعتراض درج کروائیں۔"
-      },
-      {
-        "questionEn": "Can I pay an e-challan at a physical bank branch or post office?",
-        "questionUr": "کیا ای چالان بینک برانچ میں نقد ادا ہو سکتا ہے؟",
-        "answerEn": "Yes. Print the e-challan slip carrying the PSID barcode and pay over the counter at any designated Bank of Punjab (BOP) or National Bank of Pakistan (NBP) branch.",
-        "answerUr": "جی ہاں! چالان پرنٹ کر کے بینک آف پنجاب یا نیشنل بینک کے کسی بھی کیش کاؤنٹر پر جمع کروایا جا سکتا ہے۔"
-      }
-    ],
-    "contentEn": "## Punjab Safe City Authority (PSCA) E-Challan System 2026\nThe **Punjab Safe City Authority (PSCA)** operates cutting-edge Artificial Intelligence (AI) and Automatic Number Plate Recognition (ANPR) camera surveillance across major metropolitan arteries in Lahore, Rawalpindi, Faisalabad, Gujranwala, Multan, and Kasur.\n\nEvery traffic violation — including red-light jumping, excessive speeding, lane violations, mobile phone usage while driving, and riding without helmets — is automatically logged, verified by a traffic warden, and issued as a digital ticket linked directly to the registered vehicle chassis.\n\n---\n\n## 2026 Traffic Fine Schedule & Enforcement Matrix\n\n| Violation Category | Fine Amount (Cars / Jeeps) | Fine Amount (Bikes / Rickshaws) | Detection Technology |\n| :--- | :--- | :--- | :--- |\n| **Red Light Crossing** | PKR 1,000 | PKR 1,000 | 4K Smart Intersection Camera |\n| **Over-Speeding (Up to 20 km/h over limit)** | PKR 1,000 | PKR 500 | Doppler Speed Radar |\n| **Excessive Over-Speeding (> 20 km/h over)** | PKR 2,500 | PKR 1,000 | Radar + Video Speed Vector |\n| **Riding Motorcycle without Safety Helmet** | N/A | PKR 2,000 | AI Pillion Head Detection |\n| **Disregarding Lane Line / Solid White Line** | PKR 1,000 | PKR 500 | Overhead ANPR Cameras |\n| **One-Way Direction Violation** | PKR 2,000 | PKR 2,000 | License Cancellation Notice |\n| **Using Mobile Phone Handheld while Driving** | PKR 1,000 | PKR 1,000 | Optical Zoom Cameras |\n| **Smoke Emission / Defective Muffler** | PKR 2,000 | PKR 1,000 | EPA Environmental Sensors |\n\n---\n\n## Step-by-Step Payment Methods Explained\n\n### Method 1: ePay Punjab Mobile Application (Recommended)\n1. Download **ePay Punjab** from Google Play Store or Apple App Store.\n2. Sign in and select **Punjab Police (PSCA)** > **Traffic E-Challan**.\n3. Enter your Vehicle Registration Number and Chassis Number.\n4. The system fetches the outstanding amount and displays the **17-digit PSID**.\n5. Tap **Pay with Mobile Banking** or **Easypaisa/JazzCash**.\n\n### Method 2: Direct 1Bill Bank Transfer\n- Open any banking app (Meezan, HBL, UBL, Alfalah, Standard Chartered).\n- Navigate to **Bill Payments** > **1Bill - Invoices/Vouchers**.\n- Enter the **17-digit PSID** generated from the e-challan website.\n- Verify the recipient displays *Government of Punjab* and tap confirm. The status updates in the Safe City database within 60 seconds.\n\n## Comprehensive Technical Breakdown of the Safe City ANPR Infrastructure\nThe **Automatic Number Plate Recognition (ANPR)** camera network uses high-definition optical character recognition (OCR) algorithms tuned specifically for Pakistani standardized and non-standard vehicle plates.\n\n### 1. The Real-Time Camera Trigger Cycle\n```\nVehicle Violates Traffic Rule (e.g., Red Light Crossing)\n   ↓\nInductive Loop Sensor / Video Vector triggers High-Speed 4K Camera\n   ↓\nDual Capture: 1 Wide-Angle Context Image + 1 Close-Up Plate Snapshot\n   ↓\nOCR Engine decodes Registration Plate & matches against Excise Central Database\n   ↓\nTraffic Police Central Verification Officer reviews Image & approves Violation\n   ↓\nE-Challan Ticket with 17-Digit 1Bill PSID generated & SMS dispatched to Owner\n```\n\n---\n\n## Complete Guide to Challenging Erroneous Tickets & Fake Number Plates\nIn high-traffic urban centers like Lahore and Karachi, motorists occasionally receive tickets caused by:\n- **Cloned / Forged Number Plates**: Another vehicle operating with a duplicate fabricated plate.\n- **Plate Misreads**: Weather obscuration, dust, or unapproved fancy calligraphy fonts confusing OCR algorithms.\n- **Sold Vehicles Still in Your Name**: Vehicles sold on open transfer letters.\n\n### How to File a Formal Dispute:\n1. Visit the **PSCA Dispute Resolution Center** located at Qurban Police Lines, Lahore (or relevant regional Safe City office).\n2. Bring your **Original Vehicle Registration Smart Card**, original NADRA CNIC, and the physical vehicle for physical chassis verification.\n3. If the violation photo clearly shows a vehicle of a different make/model/color (e.g. ticket shows a white sedan while your registered car is a black hatchback), the review officer immediately cancels the ticket in the database and enters a \"Plate Tampering Alert\" on the offender.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.",
-    "contentUr": "## پنجاب سیف سٹی اتھارٹی (PSCA) ای چالان سسٹم 2026\nلاہور، راولپنڈی، فیصل آباد، ملتان اور دیگر بڑے شہروں میں سیف سٹی کے جدید کیمروں کی مدد سے ٹریفک قوانین کی خلاف ورزی پر خودکار ای چالان کاٹے جاتے ہیں۔\n\nچالان کی تفصیلات اور تصویر گاڑی کا نمبر اور چیسس نمبر درج کر کے دیکھی جا سکتی ہے اور ادائیگی ای پے پنجاب یا بینکنگ ایپ کے ذریعے کی جاتی ہے۔",
-    "relatedSlugs": [
-      "/traffic/e-challan-check-by-cnic",
-      "/traffic/token-tax-check",
-      "/traffic/driving-license-guide"
-    ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open Punjab Safe City E-Challan Portal",
-        "titleUr": "پنجاب سیف سٹی ای چالان پورٹل کھولیں",
-        "detailEn": "Navigate to echallan.psca.gop.pk on any web browser or open the ePay Punjab mobile application.",
-        "detailUr": "ویب سائٹ echallan.psca.gop.pk یا ای پے پنجاب ایپ کھولیں۔"
+        "titleEn": "Open Regional Traffic E-Challan Portal",
+        "titleUr": "متعلقہ ریجن کا ای چالان پورٹل کھولیں",
+        "detailEn": "For Punjab/Lahore go to echallan.psca.gop.pk; for Islamabad go to islamabadpolice.gov.pk; for Sindh go to excise.gos.pk.",
+        "detailUr": "پنجاب کے لیے echallan.psca.gop.pk اور اسلام آباد کے لیے islamabadpolice.gov.pk کھولیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Enter Vehicle & Chassis Number",
-        "titleUr": "گاڑی کا نمبر اور چیسس نمبر درج کریں",
-        "detailEn": "Type your vehicle registration plate letters and digits (e.g. LE-20-4567) and enter the 17-digit chassis number found on your vehicle registration Smart Card.",
-        "detailUr": "گاڑی کی رجسٹریشن پلیٹ کا نمبر اور اسمارٹ کارڈ پر موجود چیسس نمبر درج کریں۔"
+        "titleEn": "Enter Vehicle Registration & CNIC / Chassis Number",
+        "titleUr": "گاڑی کا نمبر اور چیسس / شناختی کارڈ نمبر درج کریں",
+        "detailEn": "Input your vehicle plate (e.g. LEA-20-1234) and 13-digit CNIC or chassis number without dashes.",
+        "detailUr": "گاڑی کی پلیٹ کا نمبر اور 13 ہندسوں کا شناختی کارڈ یا چیسس نمبر لکھیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "View Photo Proof of Violation",
-        "titleUr": "کیمرے کی تصویر اور خلاف ورزی کا ثبوت دیکھیں",
-        "detailEn": "Review the high-definition CCTV camera images showing vehicle position, road coordinates, exact date, timestamp, and fine amount.",
-        "detailUr": "کیمرے سے لی گئی واضح تصویر، وقت، سڑک کا مقام اور جرمانے کی رقم چیک کریں۔"
+        "titleEn": "View CCTV Violation Photos & Fine Amount",
+        "titleUr": "کیمرے کی تصویر اور جرمانے کی رقم دیکھیں",
+        "detailEn": "Review the violation date, location, photographic evidence, and generated 17-digit PSID voucher code.",
+        "detailUr": "خلاف ورزی کی جگہ، کیمرے کی تصویر اور 17 ہندسوں کا پی ایس آئی ڈی کوڈ دیکھیں۔"
       },
       {
         "stepNumber": 4,
-        "titleEn": "Copy the 17-Digit PSID Consumer Number",
-        "titleUr": "17 ہندسوں کا پی ایس آئی ڈی (PSID) کوڈ کاپی کریں",
-        "detailEn": "Each issued ticket generates a unique 17-digit 1Bill PSID code (starting with 99999) for inter-bank digital clearing.",
-        "detailUr": "ہر چالان کے ساتھ دیا گیا 17 ہندسوں کا منفرد PSID نمبر کاپی کریں۔"
-      },
-      {
-        "stepNumber": 5,
-        "titleEn": "Pay via ePay Punjab or Bank App",
+        "titleEn": "Pay Online via ePay Punjab or Banking Apps",
         "titleUr": "ای پے پنجاب یا بینکنگ ایپ سے ادائیگی کریں",
-        "detailEn": "Open your banking app (Easypaisa, JazzCash, HBL, Meezan, Alfalah), navigate to Bill Payments > 1Bill > Voucher/Invoice, enter the PSID, and confirm payment.",
-        "detailUr": "بینکنگ ایپ یا ایزی پیسہ میں 1Bill Voucher میں جا کر PSID درج کر کے فوری فیس ادا کریں۔"
+        "detailEn": "Use the 17-digit PSID under 1Bill in your banking app (Meezan, HBL, JazzCash, Easypaisa) to clear the challan in 60 seconds.",
+        "detailUr": "بینک ایپ یا جاز کیش میں 1Bill سے 17 ہندسوں کے کوڈ کے ذریعے چالان فوری ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How to check islamabad e challan?",
+        "questionUr": "اسلام آباد کا ای چالان آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check Islamabad traffic e-challan online, visit echallan.islamabadpolice.gov.pk or open the official 'City App ICT Islamabad' mobile application. Enter your vehicle registration number (e.g., ICT-GA-123) and your 13-digit CNIC to view unpaid Safe City camera fines and pay via 1Link or JazzCash.",
+        "answerUr": "اسلام آباد کا ای چالان چیک کرنے کے لیے echallan.islamabadpolice.gov.pk یا City App ICT پر جا کر گاڑی کا نمبر اور شناختی کارڈ درج کریں۔"
       },
       {
-        "stepNumber": 6,
-        "titleEn": "Download Official Paid Receipt PDF",
-        "titleUr": "سرکاری پیڈ رسید (PDF) ڈاؤن لوڈ کریں",
-        "detailEn": "Re-check your registration number on the portal to confirm status displays 'PAID' and download the stamped payment receipt.",
-        "detailUr": "پورٹل پر دوبارہ اسٹیٹس چیک کر کے PAID رسید اپنے پاس محفوظ کریں۔"
+        "questionEn": "How to check e challan lahore online?",
+        "questionUr": "لاہور اور پنجاب کا ای چالان آن لائن کیسے چیک کریں؟",
+        "answerEn": "To check Lahore and Punjab e-challan online, visit echallan.psca.gop.pk (Punjab Safe Cities Authority). Enter your vehicle registration number and chassis number (last 5 digits or full 17 digits). Click Search to view camera snapshots, violation details, and generate the 17-digit 1Bill PSID code.",
+        "answerUr": "لاہور کے ای چالان کے لیے echallan.psca.gop.pk پر گاڑی کا نمبر اور چیسس نمبر درج کر کے کیمرے کی تصویر اور پی ایس آئی ڈی دیکھیں۔"
+      },
+      {
+        "questionEn": "How to check e challan by CNIC number?",
+        "questionUr": "شناختی کارڈ نمبر کے ذریعے ای چالان کیسے چیک کریں؟",
+        "answerEn": "On the Islamabad Police portal (echallan.islamabadpolice.gov.pk) and the ePay Punjab mobile application, you can search for all pending traffic violations registered against your 13-digit CNIC across all vehicles owned under your name.",
+        "answerUr": "اسلام آباد پولیس پورٹل اور ای پے پنجاب ایپ پر اپنے 13 ہندسوں کے شناختی کارڈ کے ذریعے اپنے نام پر رجسٹرڈ تمام گاڑیوں کے چالان دیکھے جا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "What is the e challan check karne ka tarika in Roman Urdu?",
+        "questionUr": "ای چالان چیک کرنے کا طریقہ کیا ہے؟",
+        "answerEn": "E-challan check karne ka tarika bohot aasan hai: Punjab Safe City ki official website echallan.psca.gop.pk par jayein, apni gaari ka registration number aur chassis number darj karein. Screen par violation ki photo aur 17-digit PSID code aa jayega jise aap ePay Punjab ya mobile banking se foran pay kar sakte hain.",
+        "answerUr": "ای چالان چیک کرنے کا طریقہ: سیف سٹی پورٹل پر گاڑی اور چیسس نمبر درج کریں، تصویر اور چالان رقم دیکھ کر ای پے یا بینک ایپ سے پے کریں۔"
+      },
+      {
+        "questionEn": "What happens if an e-challan remains unpaid after 10 days?",
+        "questionUr": "اگر 10 دن تک ای چالان ادا نہ کیا جائے تو کیا ہوتا ہے؟",
+        "answerEn": "If a traffic e-challan remains unpaid beyond 10 days, the Punjab Safe Cities Authority and Excise Department blacklist the vehicle. The owner cannot pay annual token tax, transfer vehicle ownership, or renew registration, and traffic wardens can impound the vehicle during routine road checking.",
+        "answerUr": "10 دن تک چالان ادا نہ کرنے پر گاڑی ایکسائز سسٹم میں بلیک لسٹ ہو جاتی ہے جس سے ٹوکن ٹیکس اور اونرشپ ٹرانسفر بلاک ہو جاتے ہیں۔"
+      },
+      {
+        "questionEn": "How to pay traffic e-challan through JazzCash or Easypaisa?",
+        "questionUr": "جاز کیش یا ایزی پیسہ کے ذریعے ٹریفک ای چالان کیسے ادا کریں؟",
+        "answerEn": "Open your JazzCash or Easypaisa app, go to 'Govt Payments' or 'Bill Payments' > '1Bill / ePay Punjab'. Enter the 17-digit PSID voucher number generated from the e-challan website. Verify the vehicle details and fine amount, then confirm payment using your MPIN.",
+        "answerUr": "جاز کیش یا ایزی پیسہ میں 1Bill یا ePay Punjab کا آپشن کھولیں، 17 ہندسوں کا پی ایس آئی ڈی درج کریں اور بل ادا کریں۔"
       }
+    ],
+    "contentEn": "## How to Check E Challan Online in Pakistan (Step-by-Step)\nChecking and clearing traffic e-challans online across Pakistan in 2026 is fully automated through provincial Safe City camera networks:\n\n1. **Access Your Provincial Traffic Portal**:\n   - **Punjab (Lahore, Rawalpindi, Faisalabad, Multan, Gujranwala)**: Visit `echallan.psca.gop.pk` (Punjab Safe Cities Authority).\n   - **Islamabad Capital Territory (ICT)**: Visit `echallan.islamabadpolice.gov.pk` or the **City App ICT** mobile app.\n   - **Sindh (Karachi, Hyderabad)**: Visit `excise.gos.pk` or `sindhpolice.gov.pk`.\n2. **Enter Vehicle Registration & Identification**: Input your vehicle plate number (e.g. `LEA-20-1234`, `ICT-GA-123`, or `B-1234`) along with your **13-digit CNIC** or **chassis number**.\n3. **Inspect High-Definition Camera Evidence**: View the exact violation date, intersection location, speed radar reading, and high-resolution optical camera snapshots proving the infraction.\n4. **Generate 17-Digit 1Bill PSID**: Note the unique 17-digit payment voucher number to pay instantly via ePay Punjab or any commercial banking app.\n\n---\n\n## How to Check Islamabad E Challan (ICT Police Gateway)\nFor drivers operating in Islamabad Capital Territory, checking **Islamabad E-Challan** is managed by the **Islamabad Safe City Project**:\n\n- **Official Web Gateway**: Visit `echallan.islamabadpolice.gov.pk`.\n- **City App ICT**: Available on Android Play Store and Apple App Store for real-time mobile push notifications whenever a violation occurs on Islamabad highways (Kashmir Highway, Islamabad Expressway, Margalla Road, Blue Area).\n- **Search Parameters**: Enter vehicle registration number (e.g. `ICT-LE-123`) and owner's **13-digit CNIC**.\n- **Camera Capabilities**: Over 1,900 AI-enabled 4K cameras in Islamabad automatically detect over-speeding, red-light jumping, mobile phone use, unfastened seatbelts, and non-standard fancy number plates.\n\n---\n\n## How to Check E Challan Lahore & Punjab (PSCA Portal)\nThe **Punjab Safe Cities Authority (PSCA)** oversees the largest urban traffic camera surveillance network in South Asia, active in **Lahore, Rawalpindi, Faisalabad, Gujranwala, Multan, and Kasur**:\n\n- **Official Web Gateway**: Visit `echallan.psca.gop.pk`.\n- **Search Format**: Input vehicle registration number in the first field and the chassis number (last 5 digits or full 17 digits) in the second field.\n- **Instant Printable Ticket**: Download an official PDF challan containing the PSCA stamp, violation timestamp, QR code, and 1Bill PSID.\n\n---\n\n## How to Check Karachi & Sindh E Challan Online\nKarachi and Sindh traffic enforcement has integrated ANPR speed cameras along major expressways including Shahrah-e-Faisal, Lyari Expressway, and Northern Bypass:\n\n- **Official Web Gateway**: Visit `excise.gos.pk` (Sindh Excise & Taxation) or `sindhpolice.gov.pk`.\n- **Search Format**: Enter your vehicle registration number (e.g. `ABC-123`) to check pending moving violations and excise tax arrears.\n\n---\n\n## E-Challan Check Karne Ka Tarika (Roman Urdu Guide)\nPakistan mein e challan check karne ka tarika nihayat aasan aur digital hai:\n- Agar aap **Punjab ya Lahore** mein hain to `echallan.psca.gop.pk` par jayein. Wahan apni gaari ka number aur chassis number enter karein.\n- Agar aap **Islamabad** mein hain to `echallan.islamabadpolice.gov.pk` par apna gaari number aur CNIC darj karein.\n- Screen par violation ki camera photo, fine amount aur **17-digit PSID code** show hoga.\n- Is PSID code ko **ePay Punjab**, **JazzCash**, **Easypaisa** ya kisi bhi bank app ke **1Bill** option mein enter kar ke foran payment karein.\n\n---\n\n## E-Challan Quick Facts & Traffic Police Systems (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Punjab & Lahore Authority** | PSCA (Punjab Safe Cities Authority) — `echallan.psca.gop.pk` |\n| **Islamabad Authority** | Islamabad Traffic Police (ITP) — `echallan.islamabadpolice.gov.pk` |\n| **Sindh & Karachi Authority** | Sindh Police & Excise Department — `excise.gos.pk` |\n| **Payment Identification Code** | 17-Digit 1Bill PSID Voucher Code |\n| **Digital Payment Channels** | ePay Punjab, 1Bill Mobile Banking, JazzCash, Easypaisa, 1Link ATM |\n| **Fine Payment Due Period** | 10 Calendar Days from Ticket Issuance |\n| **Blacklist Consequence** | Vehicle Transfer, Token Tax & Clearance Blocked on Default |\n| **Online Verification Status** | As of August 2026, verified and active across all metro networks |\n\n---\n\n## How to Pay E-Challan Online via ePay Punjab, JazzCash & 1Link\n1. **Via ePay Punjab App**: Download **ePay Punjab** > Tap **Punjab Police (PSCA)** > Enter vehicle details > Copy the 17-digit PSID > Pay via linked bank or mobile wallet.\n2. **Via 1Bill Mobile Banking**: Open your bank app (Meezan, HBL, Bank Alfalah, UBL) > Go to **Bill Payment** > **1Bill Invoices / Vouchers** > Paste the **17-digit PSID** > Confirm payment. Status updates within 60 seconds.\n3. **Via JazzCash & Easypaisa**: Go to **Govt Payments** > Select **1Bill Invoice** > Enter the 17-digit PSID > Authorize with MPIN.",
+    "contentUr": "## ای چالان آن لائن چیک اور ادائیگی گائیڈ 2026\nپنجاب، اسلام آباد اور سندھ کے تمام اضلاع میں سیف سٹی کیمروں سے کاٹے جانے والے چالان کی آن لائن تصدیق اور ادائیگی کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/traffic/token-tax-calculator-2026",
+      "/traffic/vehicle-verification-online-2026",
+      "/traffic/driving-license-guide",
+      "/traffic/islamabad-traffic-police-echallan",
+      "/traffic"
     ]
   },
   "e-challan-check-by-cnic": {
