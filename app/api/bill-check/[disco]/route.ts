@@ -106,42 +106,18 @@ export async function POST(
     const initUrl = `http://bill.pitc.com.pk/${pitcFolder}/`;
     const postUrl = `http://bill.pitc.com.pk/${pitcFolder}/general`;
 
-    // 2. Deterministic Fallback Generator
-    // This allows local dev & cloud deployments to have high-fidelity interactive lookups even if PITC blocks our IP.
-    const generateFallbackData = (): BillResult => {
-      // Create a pseudo-random value based on reference number
-      const numSeed = Array.from(referenceNo).reduce((acc, char) => acc + parseInt(char, 10), 0);
-      const nameIndex = numSeed % 5;
-      const names = ['Muhammad Asif', 'Tariq Mehmood', 'Yaseen Khan', 'Sajid Ali', 'Zubair Ahmad'];
-      const consumerName = names[nameIndex];
-
-      const units = 150 + (numSeed * 3) % 250; // 150 to 400 units
-      const basePayable = units * (units > 200 ? 28 : 10);
-      const payableWithinDue = Math.round(basePayable);
-      const payableAfterDue = Math.round(payableWithinDue * 1.08);
-
-      const today = new Date();
-      const nextWeek = new Date();
-      nextWeek.setDate(today.getDate() + 7);
-
-      const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-      const billMonth = `${months[today.getMonth()]} ${today.getFullYear()}`;
-      const dueDate = nextWeek.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).replace(/ /g, '-').toUpperCase();
-
-      return {
-        found: true,
-        provider: providerCode,
+    // 2. Return Fallback Redirect on Scraping Issues
+    const returnFallbackRedirect = (): NextResponse => {
+      const pitcFolder = SUPPORTED_DISCOS[discoKey] || 'lescobill';
+      const officialUrl = `https://bill.pitc.com.pk/${pitcFolder}/`;
+      return NextResponse.json({
+        found: false,
+        provider: `${providerCode} Electricity`,
         referenceNo,
-        consumerName,
-        billMonth,
-        dueDate,
-        payableWithinDue: payableWithinDue.toLocaleString('en-PK'),
-        payableAfterDue: payableAfterDue.toLocaleString('en-PK'),
-        unitsConsumed: String(units),
-        officialUrl: initUrl,
-        status: 'ESTIMATED_FALLBACK',
-        message: 'The official billing server blocked our cloud query. Displaying estimated duplicate bill records based on your Reference Number.',
-      };
+        officialUrl,
+        status: 'CAPTCHA_REQUIRED',
+        message: `We couldn't fetch your live bill details directly right now due to official server security limitations. Please complete verification directly on the official portal below.`,
+      });
     };
 
     // 3. Attempt live scraping
@@ -160,7 +136,7 @@ export async function POST(
 
       if (!initRes.ok) {
         clearTimeout(timeoutId);
-        return NextResponse.json(generateFallbackData());
+        return returnFallbackRedirect();
       }
 
       const setCookies = initRes.headers.get('set-cookie') || '';
@@ -207,7 +183,7 @@ export async function POST(
       clearTimeout(timeoutId);
 
       if (!postRes.ok) {
-        return NextResponse.json(generateFallbackData());
+        return returnFallbackRedirect();
       }
 
       const billHtml = await postRes.text();
@@ -263,8 +239,8 @@ export async function POST(
 
       return NextResponse.json(result);
     } catch (scrapeError) {
-      // Fetch failed or timed out — return estimated fallback
-      return NextResponse.json(generateFallbackData());
+      // Fetch failed or timed out — return redirect fallback
+      return returnFallbackRedirect();
     }
   } catch (error: any) {
     return NextResponse.json(

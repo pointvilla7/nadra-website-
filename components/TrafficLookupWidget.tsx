@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Car, Search, ExternalLink, ShieldCheck, CheckCircle2, MapPin, ChevronDown } from 'lucide-react';
+import { Car, Search, ExternalLink, ShieldCheck, CheckCircle2, MapPin, ChevronDown, AlertTriangle } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 
 export const TrafficLookupWidget: React.FC = () => {
@@ -176,62 +176,87 @@ export const TrafficLookupWidget: React.FC = () => {
       {/* Results Drawer */}
       {searched && result && !loading && (
         <div className="mt-6 pt-6 border-t border-purple-900/60 animate-fadeIn space-y-4 font-sans text-white">
-          <div className="p-4 rounded-xl bg-slate-950/90 border border-purple-500/50 text-purple-100 text-xs space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="font-bold text-sm text-purple-300 flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                {t(`Verified Query: ${result.vehicleRegistration}`, `تصدیق شدہ معلومات: ${result.vehicleRegistration}`)}
-              </span>
-              <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 font-mono text-[10px]">
-                {result.status}
-              </span>
-            </div>
-
-            {result.challansCount > 0 ? (
-              <div className="space-y-3">
-                <p className="text-amber-400 font-bold">
-                  ⚠️ {t(`Found ${result.challansCount} unpaid traffic challan(s) totaling PKR ${result.totalAmountPending}`, `گاڑی کے نام پر ${result.challansCount} غیر ادا شدہ چالان (کل رقم: ${result.totalAmountPending} روپے) پائے گئے`)}
-                </p>
-                <div className="border border-purple-900/60 rounded-lg overflow-hidden">
-                  <div className="bg-purple-950/40 p-2.5 grid grid-cols-4 font-mono text-[9px] uppercase border-b border-purple-900/60 text-purple-300 font-bold">
-                    <span>{t('Challan ID', 'چالان نمبر')}</span>
-                    <span className="col-span-2 text-center">{t('Violation Details & Location', 'خلاف ورزی اور مقام')}</span>
-                    <span className="text-right">{t('Amount', 'رقم')}</span>
-                  </div>
-                  {result.challanList.map((ch: any, idx: number) => (
-                    <div key={idx} className="p-2.5 grid grid-cols-4 border-b border-purple-950/40 last:border-b-0 text-slate-200">
-                      <span className="font-mono text-[10px]">{ch.id}</span>
-                      <span className="col-span-2 text-[10px] leading-tight">
-                        <span className="font-bold block">{ch.violation}</span>
-                        <span className="text-slate-400 block mt-0.5 text-[9px]">{ch.location} ({ch.date})</span>
-                      </span>
-                      <span className="text-right text-rose-400 font-mono font-bold">PKR {ch.amount}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <p className="text-emerald-400 font-bold">
-                ✅ {t('No unpaid challans found for this vehicle. Your record is clean!', 'اس گاڑی کے خلاف کوئی بقایا چالان نہیں ملا۔ ریکارڈ بالکل صاف ہے!')}
+          {result.status === 'DEGRADED' ? (
+            <div className="p-4 rounded-xl bg-slate-950/90 border border-amber-500/50 text-amber-100 text-xs space-y-3">
+              <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
+                <AlertTriangle className="w-4 h-4 text-amber-400" />
+                <span>{t('Direct Query Offline', 'آن لائن تصدیق عارضی طور پر بند ہے')}</span>
               </p>
-            )}
+              <p className="leading-relaxed text-slate-350">
+                {result.message}
+              </p>
+              <div className="pt-2">
+                <a
+                  href={result.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
+                >
+                  <span>{t('Open Official PSCA Portal', 'آفیشل پورٹل کھولیں')}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="p-4 rounded-xl bg-slate-950/90 border border-purple-500/50 text-purple-100 text-xs space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-sm text-purple-300 flex items-center gap-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                    {t(`Verified Query: ${result.vehicleRegistration}`, `تصدیق شدہ معلومات: ${result.vehicleRegistration}`)}
+                  </span>
+                  <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 font-mono text-[10px]">
+                    {result.status}
+                  </span>
+                </div>
 
-            <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
-              ⚠️ {result.message}
-            </p>
-          </div>
+                {result.challansCount > 0 ? (
+                  <div className="space-y-3">
+                    <p className="text-amber-400 font-bold">
+                      ⚠️ {t(`Found ${result.challansCount} unpaid traffic challan(s) totaling PKR ${result.totalAmountPending}`, `گاڑی کے نام پر ${result.challansCount} غیر ادا شدہ چالان (کل رقم: ${result.totalAmountPending} روپے) پائے گئے`)}
+                    </p>
+                    <div className="border border-purple-900/60 rounded-lg overflow-hidden">
+                      <div className="bg-purple-950/40 p-2.5 grid grid-cols-4 font-mono text-[9px] uppercase border-b border-purple-900/60 text-purple-300 font-bold">
+                        <span>{t('Challan ID', 'چالان نمبر')}</span>
+                        <span className="col-span-2 text-center">{t('Violation Details & Location', 'خلاف ورزی اور مقام')}</span>
+                        <span className="text-right">{t('Amount', 'رقم')}</span>
+                      </div>
+                      {result.challanList.map((ch: any, idx: number) => (
+                        <div key={idx} className="p-2.5 grid grid-cols-4 border-b border-purple-950/40 last:border-b-0 text-slate-200">
+                          <span className="font-mono text-[10px]">{ch.id}</span>
+                          <span className="col-span-2 text-[10px] leading-tight">
+                            <span className="font-bold block">{ch.violation}</span>
+                            <span className="text-slate-400 block mt-0.5 text-[9px]">{ch.location} ({ch.date})</span>
+                          </span>
+                          <span className="text-right text-rose-400 font-mono font-bold">PKR {ch.amount}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-emerald-400 font-bold">
+                    ✅ {t('No unpaid challans found for this vehicle. Your record is clean!', 'اس گاڑی کے خلاف کوئی بقایا چالان نہیں ملا۔ ریکارڈ بالکل صاف ہے!')}
+                  </p>
+                )}
 
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <a
-              href={result.officialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
-            >
-              <span>{t(`Verify on Official Portal`, 'آفیشل پورٹل پر تصدیق کریں')}</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-          </div>
+                <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
+                  ⚠️ {result.message}
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-3">
+                <a
+                  href={result.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
+                >
+                  <span>{t(`Verify on Official Portal`, 'آفیشل پورٹل پر تصدیق کریں')}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </>
+          )}
         </div>
       )}
 

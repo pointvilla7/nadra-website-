@@ -43,103 +43,45 @@ export async function POST(
           return NextResponse.json({ success: false, message: 'Invalid 13-digit CNIC.' }, { status: 400 });
         }
 
-        const isEligible = parseInt(cnic[12], 10) % 2 === 0; // Even CNICs are eligible in mock data
-
         return NextResponse.json({
           success: true,
           cnic,
-          status: isEligible ? 'ELIGIBLE' : 'INELIGIBLE',
-          surveyStatus: 'NSER Survey Completed',
-          pmtScore: isEligible ? '24.5' : '38.2',
-          programName: 'Benazir Kafaalat Program (Quarterly Payment Schedule)',
-          allocatedAmount: isEligible ? 'PKR 10,500' : 'N/A',
-          paymentStatus: isEligible ? 'Payment Cleared & Active (Collect from nearest POS center)' : 'Ineligible based on household income index',
-          bankName: 'HBL Konnect (Punjab/Sindh/ICT) / Bank Al Falah (KPK/Balochistan)',
+          status: 'DEGRADED',
           officialUrl: 'https://8171.bisp.gov.pk/',
-          helpline: '0800-26477',
-          message: 'Official verification is strictly through 8171 SMS or official portal. This in-page lookup verifies NSER status format.',
+          message: 'Direct online query is currently unavailable on cloud servers due to security/CAPTCHA restrictions. Please click the button below to check your eligibility on the official 8171 BISP portal.',
         });
       }
 
       case 'bise': {
         const rollNo = String(body.rollNo || '').trim().replace(/[^0-9]/g, '');
-        const board = String(body.board || '').trim();
+        const board = String(body.board || 'bise-lahore').toLowerCase();
         if (!rollNo || rollNo.length < 5 || rollNo.length > 8) {
           return NextResponse.json({ success: false, message: 'Roll number must be 5 to 8 digits.' }, { status: 400 });
         }
-
-        const seed = Array.from(rollNo).reduce((acc, char) => acc + parseInt(char, 10), 0);
-        const totalMarks = 1100;
-        const obtainedMarks = 680 + (seed * 7) % 400; // 680 to 1080
-        const percentage = ((obtainedMarks / totalMarks) * 100).toFixed(1);
-        const isPass = obtainedMarks >= 363; // 33% passing marks
 
         return NextResponse.json({
           success: true,
           rollNo,
           board: board.toUpperCase(),
-          studentName: seed % 2 === 0 ? 'Ahmad Raza' : 'Fatima Bibi',
-          examType: 'SSC (Matric) Annual Examination',
-          passingYear: '2026',
-          status: isPass ? 'PASS' : 'FAIL',
-          marksObtained: obtainedMarks,
-          totalMarks,
-          percentage: `${percentage}%`,
-          grade: obtainedMarks > 950 ? 'A+' : obtainedMarks > 850 ? 'A' : obtainedMarks > 750 ? 'B' : 'C',
-          subjects: [
-            { name: 'Mathematics', marks: 75 + (seed % 25), total: 100 },
-            { name: 'Physics', marks: 60 + (seed % 15), total: 75 },
-            { name: 'Chemistry', marks: 55 + (seed % 20), total: 75 },
-            { name: 'English', marks: 45 + (seed % 30), total: 75 },
-            { name: 'Urdu', marks: 50 + (seed % 25), total: 75 },
-          ],
-          officialUrl: 'https://www.biselahore.com/', // placeholder or board specific
-          message: 'Showing verified formatting preview scorecard. For official gazette logs, visit your respective board portal.',
+          status: 'DEGRADED',
+          officialUrl: 'https://www.biselahore.com/',
+          message: 'Direct online gazette lookup is currently unavailable on cloud servers due to official portal restrictions. Please verify directly on the official board portal.',
         });
       }
 
       case 'traffic':
       case 'echallan': {
         const vehicleNo = String(body.vehicleNo || '').trim().toUpperCase();
-        const chassisNo = String(body.chassisNo || '').trim().toUpperCase();
-
         if (!vehicleNo) {
           return NextResponse.json({ success: false, message: 'Vehicle Registration Number is required.' }, { status: 400 });
         }
 
-        const seed = Array.from(vehicleNo).reduce((acc, char) => acc + char.charCodeAt(0), 0);
-        const hasChallan = seed % 2 === 0;
-
         return NextResponse.json({
           success: true,
           vehicleRegistration: vehicleNo,
-          chassisNo: chassisNo || 'Not Provided',
-          status: 'INQUIRY COMPLETED',
-          challansCount: hasChallan ? 2 : 0,
-          totalAmountPending: hasChallan ? 700 : 0,
-          challanList: hasChallan
-            ? [
-                {
-                  id: 'CH-2026-92810',
-                  violation: 'Overspeeding (Section 29 Motor Vehicle Act)',
-                  location: 'Lahore Ring Road (Saggian Interchange)',
-                  date: '2026-08-10',
-                  amount: 500,
-                  status: 'UNPAID',
-                },
-                {
-                  id: 'CH-2026-83710',
-                  violation: 'Line/Lane Violation (No Indicator)',
-                  location: 'Mall Road, near Governor House',
-                  date: '2026-08-12',
-                  amount: 200,
-                  status: 'UNPAID',
-                },
-              ]
-            : [],
-          officialSource: 'Punjab Safe Cities Authority (PSCA) / Excise Portal',
+          status: 'DEGRADED',
           officialUrl: 'https://echallan.psca.gop.pk/',
-          message: 'E-Challan records fetched. Image proof and bank payment via ePay Punjab require official portal verification.',
+          message: 'Direct online E-Challan query is currently unavailable on cloud servers. Please check your violations directly on the official Punjab Safe Cities Authority (PSCA) portal.',
         });
       }
 
@@ -149,28 +91,12 @@ export async function POST(
           return NextResponse.json({ success: false, message: 'Vehicle Registration Number is required.' }, { status: 400 });
         }
 
-        const seed = Array.from(vehicleNo).reduce((acc, char) => acc + char.charCodeAt(0), 0);
-        const ownerNames = ['Muhammad Siddique', 'Imran Khan', 'Ayesha Bibi', 'Tariq Butt', 'Naveed Mughal'];
-        const vehicles = ['Honda Civic 1.8 i-VTEC', 'Toyota Corolla GLi', 'Suzuki Cultus VXL', 'Honda CD-70 Motorcycle'];
-
-        const ownerName = ownerNames[seed % ownerNames.length];
-        const vehicleModel = vehicles[seed % vehicles.length];
-        const engineSize = vehicleModel.includes('CD-70') ? '70 cc' : vehicleModel.includes('Cultus') ? '998 cc' : vehicleModel.includes('Corolla') ? '1299 cc' : '1799 cc';
-
         return NextResponse.json({
           success: true,
           vehicleRegistration: vehicleNo,
-          ownerName,
-          fatherName: 'Muhammad Yaqoob',
-          makerModel: vehicleModel,
-          registrationDate: `2024-03-${10 + (seed % 15)}`,
-          engineNumber: `ENG-${100000 + (seed * 11) % 899999}`,
-          chassisNumber: `CHA-${200000 + (seed * 17) % 799999}`,
-          taxPaidStatus: 'PAID',
-          taxPaidUntil: '2026-06-30',
-          vehicleStatus: 'REGISTERED / ACTIVE',
-          officialSource: 'Excise & Taxation Dept MTMIS',
-          officialUrl: 'https://mtmis.punjab.gov.pk/',
+          status: 'DEGRADED',
+          officialUrl: 'https://excise.punjab.gov.pk/',
+          message: 'Direct MTMIS vehicle query is currently unavailable on cloud servers due to source server restrictions. Please verify directly on the official Excise Department portal.',
         });
       }
 
@@ -180,23 +106,12 @@ export async function POST(
           return NextResponse.json({ success: false, message: 'Invalid 13-digit CNIC.' }, { status: 400 });
         }
 
-        const isEligible = parseInt(cnic[12], 10) % 2 === 0;
-
         return NextResponse.json({
           success: true,
           cnic,
-          status: isEligible ? 'ELIGIBLE' : 'PENDING_VERIFICATION',
-          eligibilityDetails: isEligible
-            ? 'Eligible for Sehat Sahulat Universal Health Card'
-            : 'CNIC format validated. Records show pending state or incomplete family details (Nikkah/B-Form not linked).',
-          annualLimit: 'PKR 1,000,000 per family per year',
-          beneficiaryName: isEligible ? 'Muhammad Ali (Family Head)' : 'Citizen',
-          cardNo: isEligible ? `SHS-35202-${cnic.substring(5, 12)}-1` : 'N/A',
-          hospitalAccess: 'Access to 800+ empaneled private and public hospitals nationwide (Indoor Treatment)',
-          smsCode: '8500',
+          status: 'DEGRADED',
           officialUrl: 'https://www.pmhealthprogram.gov.pk/',
-          helpline: '0800-07582',
-          message: 'Verification format matched. Send CNIC to SMS 8500 to receive your official family status ticket via government gateway.',
+          message: 'Direct online Sehat Card eligibility check is currently offline. Please send your CNIC via SMS to 8500 or check directly on the official portal.',
         });
       }
 
@@ -206,20 +121,12 @@ export async function POST(
           return NextResponse.json({ success: false, message: 'Invalid 13-digit CNIC.' }, { status: 400 });
         }
 
-        const isRegistered = parseInt(cnic[12], 10) % 2 === 0;
-
         return NextResponse.json({
           success: true,
           cnic,
-          registrationStatus: isRegistered ? 'REGISTERED' : 'NOT_FOUND',
-          surveyDate: isRegistered ? '2025-11-14' : 'N/A',
-          povertyIndexScore: isRegistered ? '26.8' : 'N/A',
-          linkedSchemes: isRegistered
-            ? ['Kisan Card (Eligible)', 'Himmat Card (Eligible)', 'Apni Chhat Housing (Eligible)', 'Honhaar Scholarship (Eligible)']
-            : ['No active survey record found under this CNIC. Please register at pser.punjab.gov.pk or visit your local registration center.'],
+          status: 'DEGRADED',
           officialUrl: 'https://pser.punjab.gov.pk/',
-          helpline: '0800-03000',
-          message: 'PSER check complete. Registration is 100% free at designated Punjab Socio-Economic Registry centers.',
+          message: 'Direct PSER registry query is currently offline on cloud servers. Please check your registration status directly on the official PSER portal.',
         });
       }
 
@@ -229,24 +136,12 @@ export async function POST(
           return NextResponse.json({ success: false, message: 'Enter a valid CNIC or Roll Number.' }, { status: 400 });
         }
 
-        const seed = Array.from(cnic).reduce((acc, char) => acc + parseInt(char, 10), 0);
-        const score = 48 + (seed * 3) % 45; // 48 to 93 marks
-        const isQualified = score >= 50;
-
         return NextResponse.json({
           success: true,
           identifier: cnic,
-          candidateName: seed % 2 === 0 ? 'Asad Ali' : 'Kiran Shahzadi',
-          testTitle: 'NTS National Aptitude Test (NAT-I) / PPSC General Recruitment Test',
-          testDate: '2026-06-15',
-          rollNo: `RL-${10000 + (seed * 9) % 89999}`,
-          score,
-          totalMarks: 100,
-          status: isQualified ? 'QUALIFIED' : 'NOT_QUALIFIED',
-          percentile: `${60 + (seed * 2) % 38}%`,
-          center: 'Government College University (GCU), Main Hall, Lahore',
+          status: 'DEGRADED',
           officialUrl: 'https://www.nts.org.pk/',
-          message: 'Showing formatted scorecard verification preview.',
+          message: 'Direct NTS Roll Number/Result lookup is currently unavailable on cloud servers due to security controls. Please query directly on the official NTS website.',
         });
       }
 

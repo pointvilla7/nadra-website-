@@ -193,22 +193,45 @@ export const PserSurveyChecker: React.FC = () => {
         {/* Verified & Guided Access */}
         {validated && result && !loading && (
           <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
-            <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
-              <div className="flex items-center gap-2">
-                <FileCheck className="w-5 h-5 text-emerald-400" />
-                <div>
-                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('PSER REGISTRY TICKET', 'پی ایس ای آر تصدیق')}</p>
-                  <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
+            {result.status === 'DEGRADED' ? (
+              <div className="p-4 rounded-xl bg-slate-900 border border-amber-500/50 text-amber-100 text-xs space-y-3">
+                <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
+                  <AlertCircle className="w-4 h-4 text-amber-400" />
+                  <span>{t('Direct Query Offline', 'آن لائن پی ایس ای آر تصدیق عارضی طور پر بند ہے')}</span>
+                </p>
+                <p className="leading-relaxed text-slate-300">
+                  {result.message}
+                </p>
+                <div className="pt-2">
+                  <a
+                    href={result.officialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
+                  >
+                    <span>{t('Open Official PSER Portal', 'آفیشل پورٹل کھولیں')}</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 </div>
               </div>
-              <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
-                result.registrationStatus === 'REGISTERED' 
-                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
-                  : 'bg-rose-500/20 text-rose-300 border-rose-500/30'
-              }`}>
-                {result.registrationStatus}
-              </span>
-            </div>
+            ) : (
+              <>
+                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
+                  <div className="flex items-center gap-2">
+                    <FileCheck className="w-5 h-5 text-emerald-400" />
+                    <div>
+                      <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('PSER REGISTRY TICKET', 'پی ایس ای آر تصدیق')}</p>
+                      <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
+                    </div>
+                  </div>
+                  <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
+                    result.registrationStatus === 'REGISTERED' 
+                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
+                      : 'bg-rose-500/20 text-rose-300 border-rose-500/30'
+                  }`}>
+                    {result.registrationStatus}
+                  </span>
+                </div>
 
             {/* PSER Details Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
@@ -252,6 +275,8 @@ export const PserSurveyChecker: React.FC = () => {
                 <span>Helpline: 0800-03000 (PITB PSER Support Helpline)</span>
               </span>
             </div>
+              </>
+            )}
           </div>
         )}
 
