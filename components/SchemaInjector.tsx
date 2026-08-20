@@ -38,10 +38,10 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Pakistan Info Hub',
-    url: 'https://pakistaninfohub.com',
+    url: 'https://www.pakistaninfohub.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://pakistaninfohub.com/icon.png',
+      url: 'https://www.pakistaninfohub.com/icon.png',
     },
     description: 'Verified civic and public services information directory for Pakistan.',
     sameAs: [
@@ -55,10 +55,10 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Pakistan Info Hub',
-    url: 'https://pakistaninfohub.com',
+    url: 'https://www.pakistaninfohub.com',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://pakistaninfohub.com/tracker?q={search_term_string}',
+      target: 'https://www.pakistaninfohub.com/tracker?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   });
@@ -69,14 +69,14 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: `${categoryName} Verified Guides & Services 2026`,
-      url: `https://pakistaninfohub.com/${categoryArticles[0]?.categoryId || ''}`,
+      url: `https://www.pakistaninfohub.com/${categoryArticles[0]?.categoryId || ''}`,
       mainEntity: {
         '@type': 'ItemList',
         itemListElement: categoryArticles.map((art, idx) => ({
           '@type': 'ListItem',
           position: idx + 1,
           name: art.titleEn,
-          url: `https://pakistaninfohub.com${art.fullPath}`,
+          url: `https://www.pakistaninfohub.com${art.fullPath}`,
         })),
       },
     });
@@ -92,15 +92,15 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': `https://pakistaninfohub.com/authors/${authorData.slug}#person`,
+      '@id': `https://www.pakistaninfohub.com/authors/${authorData.slug}#person`,
       name: authorData.name,
       jobTitle: authorData.role,
       description: authorData.bioEn,
-      url: `https://pakistaninfohub.com/authors/${authorData.slug}`,
+      url: `https://www.pakistaninfohub.com/authors/${authorData.slug}`,
       worksFor: {
         '@type': 'Organization',
         name: 'Pakistan Info Hub',
-        url: 'https://pakistaninfohub.com',
+        url: 'https://www.pakistaninfohub.com',
       },
     });
 
@@ -114,24 +114,51 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
       dateModified: isoDateModified,
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://pakistaninfohub.com${article.fullPath}`,
+        '@id': `https://www.pakistaninfohub.com${article.fullPath}`,
       },
       author: {
         '@type': 'Person',
-        '@id': `https://pakistaninfohub.com/authors/${authorData.slug}#person`,
+        '@id': `https://www.pakistaninfohub.com/authors/${authorData.slug}#person`,
         name: authorData.name,
-        url: `https://pakistaninfohub.com/authors/${authorData.slug}`,
+        url: `https://www.pakistaninfohub.com/authors/${authorData.slug}`,
       },
       publisher: {
         '@type': 'Organization',
         name: 'Pakistan Info Hub',
-        url: 'https://pakistaninfohub.com',
+        url: 'https://www.pakistaninfohub.com',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://pakistaninfohub.com/icon.png',
+          url: 'https://www.pakistaninfohub.com/icon.png',
         },
       },
     });
+
+    // WebApplication Schema for Interactive Tools
+    const isInteractiveTool = 
+      article.slug.includes('check') || 
+      article.slug.includes('status') || 
+      article.slug.includes('tracker') || 
+      article.slug.includes('calculator') || 
+      article.slug.includes('verification') || 
+      article.slug.includes('duplicate-bill') ||
+      article.slug.includes('slip');
+
+    if (isInteractiveTool) {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: article.titleEn,
+        operatingSystem: 'All',
+        applicationCategory: 'UtilitiesApplication',
+        browserRequirements: 'Requires JavaScript. Requires HTML5.',
+        url: `https://www.pakistaninfohub.com${article.fullPath}`,
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'PKR',
+        },
+      });
+    }
   }
 
   // FAQPage Schema
@@ -163,7 +190,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
         position: st.stepNumber,
         name: st.titleEn,
         text: st.detailEn,
-        url: `https://pakistaninfohub.com${article.fullPath}#step-${st.stepNumber}`,
+        url: `https://www.pakistaninfohub.com${article.fullPath}#step-${st.stepNumber}`,
         itemListElement: [
           {
             '@type': 'HowToDirection',
@@ -184,15 +211,15 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://pakistaninfohub.com',
+          item: 'https://www.pakistaninfohub.com',
         },
         ...breadcrumbs.map((b, idx) => ({
           '@type': 'ListItem',
           position: idx + 2,
           name: b.nameEn,
           item: b.url
-            ? (b.url.startsWith('http') ? b.url : `https://pakistaninfohub.com${b.url}`)
-            : (article ? `https://pakistaninfohub.com${article.fullPath}` : undefined),
+            ? (b.url.startsWith('http') ? b.url : `https://www.pakistaninfohub.com${b.url}`)
+            : (article ? `https://www.pakistaninfohub.com${article.fullPath}` : undefined),
         })),
       ],
     });
