@@ -169,6 +169,11 @@ export const Footer: React.FC = () => {
                   {t('Contact Us', 'رابطہ فارم')}
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="hover:text-doc-brass transition font-semibold text-doc-brass">
+                  {t('HTML Site Sitemap', 'سائٹ میپ ڈائریکٹری')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -178,9 +183,16 @@ export const Footer: React.FC = () => {
           <p>© 2026 PakistanInfoHub.com. All rights reserved. Registered Public Information Directory 🇵🇰</p>
           <div className="flex items-center gap-4 font-mono text-[11px]">
             <span className="flex items-center gap-1 text-doc-brass">
-              <Globe className="w-3.5 h-3.5" />
-              <span>Domain: PakistanInfoHub.com</span>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>{t('ALL SYSTEMS NOMINAL', 'تمام سروسز فعال')}</span>
             </span>
+            <Link href="/sitemap" className="hover:text-white transition">
+              HTML SITEMAP
+            </Link>
+            <span className="text-slate-600">|</span>
+            <a href="/sitemap.xml" className="hover:text-white transition" target="_blank">
+              XML SITEMAP
+            </a>
           </div>
         </div>
       </div>

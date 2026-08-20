@@ -74,14 +74,25 @@ export const CrossCategoryRelated: React.FC<CrossCategoryRelatedProps> = ({
   const bridgePaths = TOPICAL_BRIDGES[currentArticle.categoryId] || [];
   
   // Resolve article objects from paths
-  const suggestedArticles: Article[] = bridgePaths
+  let suggestedArticles: Article[] = bridgePaths
     .map((path) => {
       const slug = path.split('/').pop() || '';
       return ARTICLES[slug];
     })
     .filter(Boolean)
-    .filter((art) => art.slug !== currentArticle.slug)
-    .slice(0, 4);
+    .filter((art) => art.slug !== currentArticle.slug);
+
+  // Automatically backfill from the same category to guarantee 5-8 high-relevance links
+  if (suggestedArticles.length < 6) {
+    const sameCategory = Object.values(ARTICLES)
+      .filter((art) => art.categoryId === currentArticle.categoryId && art.slug !== currentArticle.slug);
+    suggestedArticles = [...suggestedArticles, ...sameCategory];
+  }
+
+  // Filter unique items and slice to 5-8 (7 is the sweet spot)
+  suggestedArticles = suggestedArticles
+    .filter((art, index, self) => self.findIndex((a) => a.slug === art.slug) === index)
+    .slice(0, 7);
 
   if (suggestedArticles.length === 0) return null;
 
