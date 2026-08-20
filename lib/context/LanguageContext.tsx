@@ -81,6 +81,10 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const savedLang = localStorage.getItem('pih_language') as Language;
     if (savedLang && (savedLang === 'en' || savedLang === 'ur' || savedLang === 'roman')) {
       setLanguageState(savedLang);
+      if (typeof document !== 'undefined') {
+        document.documentElement.lang = savedLang === 'ur' ? 'ur' : 'en';
+        document.documentElement.dir = savedLang === 'ur' ? 'rtl' : 'ltr';
+      }
     }
     const savedSize = localStorage.getItem('pih_fontsize') as FontSize;
     if (savedSize && (savedSize === 'sm' || savedSize === 'md' || savedSize === 'lg')) {

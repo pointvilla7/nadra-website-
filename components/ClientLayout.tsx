@@ -55,7 +55,7 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
       {isSearchOpen && (
         <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       )}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24 sm:pb-12">
         {children}
       </main>
       <Footer />

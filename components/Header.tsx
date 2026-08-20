@@ -107,13 +107,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               </button>
 
               {langMenuOpen && (
-                <div className="absolute right-0 top-full mt-1 w-36 bg-white dark:bg-doc-dark-card border border-doc-brass/40 rounded-lg shadow-xl py-1 z-50 text-xs text-doc-ink dark:text-slate-200">
+                <div className="absolute end-0 top-full mt-1 w-36 bg-white dark:bg-doc-dark-card border border-doc-brass/40 rounded-lg shadow-xl py-1 z-50 text-xs text-doc-ink dark:text-slate-200">
                   <button
                     onClick={() => {
                       setLanguage('en');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-left px-3 py-1.5 font-medium hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full text-start px-3 py-1.5 font-medium hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'en' ? 'bg-doc-brass/15 font-bold text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -124,7 +124,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLanguage('ur');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-left px-3 py-1.5 font-serif font-bold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full text-start px-3 py-1.5 font-serif font-bold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'ur' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLanguage('roman');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-left px-3 py-1.5 font-sans font-semibold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full text-start px-3 py-1.5 font-sans font-semibold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'roman' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -151,14 +151,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
       {/* Main Header Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group shrink-0">
           <div className="w-10 h-10 rounded-xl bg-doc-ink text-doc-brass border border-doc-brass/40 flex items-center justify-center font-bold text-xl shadow-doc-card transition-transform group-hover:scale-105 shrink-0">
             🇵🇰
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-serif font-extrabold text-xl tracking-tight text-doc-ink dark:text-doc-dark-paper">
-                Pakistan Info Hub
+              <span className="font-serif font-extrabold text-lg sm:text-xl tracking-tight text-doc-ink dark:text-doc-dark-paper">
+                {language === 'ur' ? 'پاکستان انفو ہب' : 'Pakistan Info Hub'}
               </span>
               <span className="text-[10px] uppercase font-mono font-extrabold tracking-wider px-1.5 py-0.5 rounded bg-gradient-to-r from-doc-brass to-amber-500 text-doc-ink shadow-xs">
                 2026
@@ -197,7 +197,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             {dropdownOpen && (
               <div
                 onMouseLeave={() => setDropdownOpen(false)}
-                className="absolute top-full left-0 mt-1 w-64 doc-card rounded-xl shadow-2xl py-2 z-50 animate-fadeIn"
+                className="absolute top-full start-0 mt-1 w-64 doc-card rounded-xl shadow-2xl py-2 z-50 animate-fadeIn"
               >
                 {CATEGORIES.map((cat) => (
                   <Link

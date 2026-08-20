@@ -323,3 +323,62 @@ body {
   transform: translateZ(0);
 }
 
+/* ── RTL & Urdu Layout Enhancements ── */
+[dir="rtl"] {
+  text-align: start;
+}
+
+[dir="rtl"] .font-serif,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  font-family: var(--font-urdu), 'Noto Nastaliq Urdu', 'Noto Sans Arabic', 'Segoe UI', serif;
+  line-height: 1.65;
+  letter-spacing: normal;
+}
+
+[dir="rtl"] .urdu-text {
+  font-family: var(--font-urdu), 'Noto Nastaliq Urdu', 'Noto Sans Arabic', 'Segoe UI', serif;
+  line-height: 1.8;
+}
+
+/* Category pills horizontal scroll indicators */
+.category-scroll-container {
+  position: relative;
+}
+
+.category-scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.2s ease;
+}
+
+/* LTR fade on right */
+[dir="ltr"] .category-scroll-container::after,
+html:not([dir="rtl"]) .category-scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(247, 244, 236, 0.95), transparent);
+}
+
+.dark [dir="ltr"] .category-scroll-container::after,
+.dark html:not([dir="rtl"]) .category-scroll-container::after {
+  background: linear-gradient(to left, rgba(18, 25, 43, 0.95), transparent);
+}
+
+/* RTL fade on left */
+[dir="rtl"] .category-scroll-container::after {
+  left: 0;
+  right: auto;
+  background: linear-gradient(to right, rgba(247, 244, 236, 0.95), transparent);
+}
+
+.dark [dir="rtl"] .category-scroll-container::after {
+  background: linear-gradient(to right, rgba(18, 25, 43, 0.95), transparent);
+}
+
+

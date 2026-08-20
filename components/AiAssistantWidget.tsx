@@ -146,19 +146,19 @@ export const AiAssistantWidget: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 no-print">
+    <div className="fixed bottom-4 end-4 sm:bottom-6 sm:end-6 z-50 no-print">
       {/* Floating Trigger Button */}
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-2 px-4 py-3 bg-doc-ink text-white rounded-full shadow-2xl border-2 border-doc-brass/60 hover:scale-105 transition-all duration-300 group"
+          className="flex items-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-3 bg-doc-ink text-white rounded-full shadow-2xl border-2 border-doc-brass/60 hover:scale-105 transition-all duration-300 group min-h-[44px]"
           aria-label="Open AI Assistant"
         >
           <div className="relative">
-            <Bot className="w-6 h-6 text-doc-brass" />
+            <Bot className="w-5 h-5 sm:w-6 sm:h-6 text-doc-brass shrink-0" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-doc-seal rounded-full animate-ping" />
           </div>
-          <span className="font-serif font-bold text-xs pr-1">
+          <span className="font-serif font-bold text-xs">
             {t('AI Assistant', 'اے آئی اسسٹنٹ', 'AI Assistant')}
           </span>
         </button>
@@ -166,7 +166,7 @@ export const AiAssistantWidget: React.FC = () => {
 
       {/* Floating Chat Modal */}
       {isOpen && (
-        <div className="w-[92vw] sm:w-[380px] h-[520px] bg-doc-paper dark:bg-doc-dark-card border-2 border-doc-brass/60 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-slideUp">
+        <div className="w-[calc(100vw-2rem)] sm:w-[380px] h-[520px] max-h-[82vh] bg-doc-paper dark:bg-doc-dark-card border-2 border-doc-brass/60 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-slideUp">
           {/* Header */}
           <div className="bg-doc-ink text-white p-3.5 flex items-center justify-between border-b border-doc-brass/30">
             <div className="flex items-center gap-2.5">
