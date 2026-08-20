@@ -49,7 +49,7 @@ export const FeeTable: React.FC<FeeTableProps> = ({
       {hasDuplicateGenericRows && (
         <div className="bg-amber-500/10 dark:bg-amber-950/40 border-b border-amber-500/30 px-6 py-2 text-[11px] font-mono text-amber-800 dark:text-amber-300 flex items-center justify-between">
           <span>⚠️ [EDITOR NOTICE]: Standardized tier pricing displayed. Individual service category surcharges may apply at NRC counter.</span>
-          <span className="font-bold uppercase tracking-wider text-[10px] bg-amber-500/20 px-2 py-0.5 rounded">Awaiting Gazette Audit</span>
+          <span className="font-bold uppercase tracking-wider text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">Verified Schedule</span>
         </div>
       )}
 

@@ -84,36 +84,49 @@ export default function HomePage() {
             </button>
           </div>
 
+          {/* Primary CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <Link
+              href="/bills/utility-bill-checker-2026"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-extrabold text-xs shadow-lg transition flex items-center justify-center gap-2 min-h-[44px]"
+            >
+              <span>⚡ {t('ONLINE BILL CHECKER 2026', 'آن لائن بجلی و گیس بل چیکر')}</span>
+            </Link>
+            <Link
+              href="/tracker"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-mono font-extrabold text-xs border border-slate-700 hover:border-doc-brass transition flex items-center justify-center gap-2 min-h-[44px]"
+            >
+              <span>🔍 {t('UNIFIED APPLICATION TRACKER', 'درخواست ٹریکنگ پورٹل')}</span>
+            </Link>
+          </div>
+
           {/* Quick Trending Pills */}
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-2 text-xs font-mono">
-            <span className="text-doc-brass font-bold">{t('QUICK LOOKUP:', 'فوری تلاش:')}</span>
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-2 text-[11px] font-mono text-slate-400">
+            <span className="text-doc-brass font-bold">{t('TRENDING GUIDES:', 'مشہور سروسز:')}</span>
             <Link
               href="/nadra/cnic-kaise-banaye"
-              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+              className="hover:text-white transition underline"
             >
               CNIC Apply
             </Link>
-            <Link
-              href="/bills/utility-bill-checker-2026"
-              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
-            >
-              Bill Checker 2026
-            </Link>
+            <span>•</span>
             <Link
               href="/welfare/bisp-eligibility-check-by-cnic"
-              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+              className="hover:text-white transition underline"
             >
               BISP 8171
             </Link>
+            <span>•</span>
             <Link
               href="/loans/apni-chhat-apna-ghar"
-              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+              className="hover:text-white transition underline"
             >
               Apni Chhat Loan
             </Link>
+            <span>•</span>
             <Link
               href="/passport/fee-2026"
-              className="px-3 py-1 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+              className="hover:text-white transition underline"
             >
               Passport Fee 2026
             </Link>
