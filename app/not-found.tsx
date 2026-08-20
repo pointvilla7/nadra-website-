@@ -52,35 +52,54 @@ export default function NotFound() {
               placeholder={t('Search passport fees, CNIC, BISP 8171...', 'سرچ کریں: نادرا، پاسپورٹ، 8171...')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-3.5 pl-11 pr-24 text-xs sm:text-sm bg-white dark:bg-doc-dark-base border-2 border-doc-brass/30 rounded-xl focus:outline-none focus:border-doc-seal text-doc-ink dark:text-slate-100 shadow-sm"
+              className="w-full px-4 py-3.5 pl-11 pr-24 text-xs sm:text-sm bg-white dark:bg-doc-dark-base border-2 border-doc-brass/40 rounded-xl focus:outline-none focus:border-doc-brass text-doc-ink dark:text-slate-100 shadow-sm font-sans"
             />
             <Search className="w-4 h-4 text-doc-brass absolute left-4 top-4" />
             <button
               type="submit"
-              className="absolute right-1.5 top-1.5 bottom-1.5 px-4 bg-doc-seal hover:bg-doc-seal/90 text-white font-mono font-bold text-xs rounded-lg transition shadow-sm"
+              className="absolute right-1.5 top-1.5 bottom-1.5 px-4 bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-extrabold text-xs rounded-lg transition shadow-xs"
             >
               {t('Search', 'تلاش')}
             </button>
           </div>
         </form>
 
-        {/* Quick Category Suggestions */}
+        {/* Popular Trending Guides Direct Links */}
         <div className="space-y-3 pt-4 border-t border-doc-brass/20">
           <div className="flex items-center justify-center gap-2 text-xs font-serif font-bold text-doc-brass">
             <Compass className="w-4 h-4" />
-            <span>{t('Browse Popular Official Directories:', 'مقبول سروسز کی فہرست:')}</span>
+            <span>{t('Popular Verified Civic Guides:', 'مقبول ترین مصدقہ رہنمائی:')}</span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            {CATEGORIES.slice(0, 6).map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/${cat.slug}`}
-                className="px-3 py-1.5 rounded-lg bg-white dark:bg-doc-dark-base border border-doc-brass/30 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-doc-brass hover:text-doc-seal transition shadow-sm"
-              >
-                {t(cat.nameEn, cat.nameUr)}
-              </Link>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-lg mx-auto text-left">
+            <Link
+              href="/nadra/cnic-kaise-banaye"
+              className="p-3 rounded-xl bg-white dark:bg-doc-dark-base border border-doc-brass/30 hover:border-doc-brass hover:shadow-sm text-xs font-semibold text-slate-800 dark:text-slate-200 transition flex items-center justify-between group"
+            >
+              <span>🪪 {t('NADRA CNIC Apply Guide', 'نادرا شناختی کارڈ رہنمائی')}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-doc-brass transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="/welfare/bisp-eligibility-check-by-cnic"
+              className="p-3 rounded-xl bg-white dark:bg-doc-dark-base border border-doc-brass/30 hover:border-doc-brass hover:shadow-sm text-xs font-semibold text-slate-800 dark:text-slate-200 transition flex items-center justify-between group"
+            >
+              <span>📋 {t('BISP 8171 Portal Check', 'بے نظیر 8171 اہلیت چیک')}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-doc-brass transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="/bills/lesco-bill-check-online"
+              className="p-3 rounded-xl bg-white dark:bg-doc-dark-base border border-doc-brass/30 hover:border-doc-brass hover:shadow-sm text-xs font-semibold text-slate-800 dark:text-slate-200 transition flex items-center justify-between group"
+            >
+              <span>⚡ {t('LESCO Electricity Bill', 'لیسکو آن لائن بجلی بل')}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-doc-brass transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="/passport/fee-2026"
+              className="p-3 rounded-xl bg-white dark:bg-doc-dark-base border border-doc-brass/30 hover:border-doc-brass hover:shadow-sm text-xs font-semibold text-slate-800 dark:text-slate-200 transition flex items-center justify-between group"
+            >
+              <span>🛂 {t('Passport Fee Schedule 2026', 'پاسپورٹ فیس شیڈول 2026')}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-doc-brass transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
 
@@ -88,7 +107,7 @@ export default function NotFound() {
         <div className="pt-2">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-doc-ink hover:bg-doc-ink/90 text-white font-mono font-bold text-xs rounded-xl border border-doc-brass/30 transition shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-doc-ink hover:bg-slate-850 text-white font-mono font-bold text-xs rounded-xl border border-doc-brass/40 hover:border-doc-brass transition shadow-md min-h-[44px]"
           >
             <Home className="w-4 h-4 text-doc-brass" />
             <span>{t('Return to Portal Homepage', 'صفحہ اول پر جائیں')}</span>

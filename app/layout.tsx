@@ -4,6 +4,7 @@ import { Inter, Lora, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { ClientLayout } from '@/components/ClientLayout';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 
 // ─── Core fonts: loaded eagerly, display: swap prevents FOIT ───────────────
 const sansFont = Inter({
@@ -75,10 +76,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/icon.svg', type: 'image/svg+xml' },
     ],
     apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
+  manifest: '/site.webmanifest',
   robots: {
     index: true,
     follow: true,
@@ -91,9 +95,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION
-    ? { verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION } }
-    : {}),
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || 'google0fa1afe950f3fb07',
+  },
 };
 
 export default function RootLayout({
@@ -106,9 +110,11 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#1B2A4A" />
 
         {/* ── Preconnect to Google Fonts CDN (avoids extra DNS+TCP round-trips) */}
@@ -119,30 +125,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//id.nadra.gov.pk" />
         <link rel="dns-prefetch" href="//onlinemrp.dgip.gov.pk" />
         <link rel="dns-prefetch" href="//bisp.gov.pk" />
-
-        {/* ── GA4 — only injected if env var provided ── */}
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', { send_page_view: true });
-                `,
-              }}
-            />
-          </>
-        )}
       </head>
       <body>
         <ClientLayout>{children}</ClientLayout>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
