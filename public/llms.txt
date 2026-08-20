@@ -5,25 +5,25 @@
 Pakistan Info Hub provides independent, factual, and 100% verified step-by-step civic guidance for Pakistani citizens and the global overseas diaspora. All procedures cite official government authorities (NADRA, DGIP, FBR, SECP, MORA, PLRA, State Bank of Pakistan, and Provincial Police Departments).
 
 ## Primary Category Hubs
-- NADRA Services: https://pakistaninfohub.com/nadra (CNIC, B-Form, NICOP, FRC, Succession)
-- Passport & Travel: https://pakistaninfohub.com/passport (e-Passport, Fee Calculator, Tracking)
-- Education & Boards: https://pakistaninfohub.com/education (BISE Results, HEC Attestation, Merit Lists)
-- Utility Bills & DISCOs: https://pakistaninfohub.com/bills (LESCO, FESCO, K-Electric, Sui Gas SNGPL)
-- Govt Loans & Housing: https://pakistaninfohub.com/loans (Apni Chhat Apna Ghar, PM Youth Loan)
-- Social Welfare & Relief: https://pakistaninfohub.com/welfare (BISP 8171, PSER Survey, Kafaalat)
-- Traffic & Vehicle Services: https://pakistaninfohub.com/traffic (PSCA E-Challan, Token Tax, Driving License)
-- Tax & FBR Services: https://pakistaninfohub.com/tax (NTN Registration, Filer Status, Iris Return)
-- Overseas Pakistanis Hub: https://pakistaninfohub.com/overseas (NICOP Renewal, POC Card, RDA Bank Account)
-- Property & Land Mutation: https://pakistaninfohub.com/property (PLRA Intiqal, Fard Malkiat, Property Tax)
-- Marriage & Family: https://pakistaninfohub.com/family-registration (Nikah Nama, MRC Certificate, Divorce)
-- Business & SECP: https://pakistaninfohub.com/business (SECP Pvt Ltd, Sole Proprietor, PSEB Freelancers)
-- Birth, Death & Domicile: https://pakistaninfohub.com/certificates (Domicile Online, Birth Certificate, PRC)
-- Hajj & Umrah Services: https://pakistaninfohub.com/hajj-umrah (Government Hajj Portal, Nusuk Visa, Balloting)
-- Health & Sehat Card: https://pakistaninfohub.com/health (Sehat Card 8500 Check, Panel Hospitals, 10 Lakh Limit)
-- Police & Legal Services: https://pakistaninfohub.com/legal (Punjab Police 1787 FIR, Police Clearance PCC)
-- Disaster & Emergency Alerts: https://pakistaninfohub.com/alerts (NDMA Flood Alerts, 1122 Helplines, Smog AQI)
+- NADRA Services: https://www.pakistaninfohub.com/nadra (CNIC, B-Form, NICOP, FRC, Succession)
+- Passport & Travel: https://www.pakistaninfohub.com/passport (e-Passport, Fee Calculator, Tracking)
+- Education & Boards: https://www.pakistaninfohub.com/education (BISE Results, HEC Attestation, Merit Lists)
+- Utility Bills & DISCOs: https://www.pakistaninfohub.com/bills (LESCO, FESCO, K-Electric, Sui Gas SNGPL)
+- Govt Loans & Housing: https://www.pakistaninfohub.com/loans (Apni Chhat Apna Ghar, PM Youth Loan)
+- Social Welfare & Relief: https://www.pakistaninfohub.com/welfare (BISP 8171, PSER Survey, Kafaalat)
+- Traffic & Vehicle Services: https://www.pakistaninfohub.com/traffic (PSCA E-Challan, Token Tax, Driving License)
+- Tax & FBR Services: https://www.pakistaninfohub.com/tax (NTN Registration, Filer Status, Iris Return)
+- Overseas Pakistanis Hub: https://www.pakistaninfohub.com/overseas (NICOP Renewal, POC Card, RDA Bank Account)
+- Property & Land Mutation: https://www.pakistaninfohub.com/property (PLRA Intiqal, Fard Malkiat, Property Tax)
+- Marriage & Family: https://www.pakistaninfohub.com/family-registration (Nikah Nama, MRC Certificate, Divorce)
+- Business & SECP: https://www.pakistaninfohub.com/business (SECP Pvt Ltd, Sole Proprietor, PSEB Freelancers)
+- Birth, Death & Domicile: https://www.pakistaninfohub.com/certificates (Domicile Online, Birth Certificate, PRC)
+- Hajj & Umrah Services: https://www.pakistaninfohub.com/hajj-umrah (Government Hajj Portal, Nusuk Visa, Balloting)
+- Health & Sehat Card: https://www.pakistaninfohub.com/health (Sehat Card 8500 Check, Panel Hospitals, 10 Lakh Limit)
+- Police & Legal Services: https://www.pakistaninfohub.com/legal (Punjab Police 1787 FIR, Police Clearance PCC)
+- Disaster & Emergency Alerts: https://www.pakistaninfohub.com/alerts (NDMA Flood Alerts, 1122 Helplines, Smog AQI)
 
 ## Contact & Editorial Policy
-- Editorial Review Board: https://pakistaninfohub.com/editorial-team
+- Editorial Review Board: https://www.pakistaninfohub.com/editorial-team
 - Contact Helpline: +92 (51) 843-9200
-- Official Sitemap: https://pakistaninfohub.com/sitemap.xml
+- Official Sitemap: https://www.pakistaninfohub.com/sitemap.xml

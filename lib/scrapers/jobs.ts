@@ -52,7 +52,7 @@ export async function runJobsScraper(): Promise<{ success: boolean; totalJobs: n
     // Fetch attempt 1: PPSC Public Recruitment Feed
     try {
       const ppscRes = await fetch('https://www.ppsc.gop.pk/', {
-        headers: { 'User-Agent': 'PakistanInfoHub-Bot/1.0 (+https://pakistaninfohub.com)' },
+        headers: { 'User-Agent': 'PakistanInfoHub-Bot/1.0 (+https://www.pakistaninfohub.com)' },
         next: { revalidate: 3600 },
       });
       if (ppscRes.ok) {
@@ -75,7 +75,7 @@ export async function runJobsScraper(): Promise<{ success: boolean; totalJobs: n
     // Fetch attempt 2: FPSC Public Recruitment Portal
     try {
       const fpscRes = await fetch('https://fpsc.gov.pk/', {
-        headers: { 'User-Agent': 'PakistanInfoHub-Bot/1.0 (+https://pakistaninfohub.com)' },
+        headers: { 'User-Agent': 'PakistanInfoHub-Bot/1.0 (+https://www.pakistaninfohub.com)' },
         next: { revalidate: 3600 },
       });
       if (fpscRes.ok) {
