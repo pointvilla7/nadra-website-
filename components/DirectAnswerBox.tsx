@@ -79,9 +79,9 @@ export const DirectAnswerBox: React.FC<DirectAnswerBoxProps> = ({
         <ShieldCheck className="w-6 h-6 text-doc-brass shrink-0 mt-0.5" />
         <div className="space-y-1">
           {topicTitleEn && (
-            <h4 className="text-xs font-serif font-bold text-doc-brass uppercase tracking-wide">
-              {t(topicTitleEn, topicTitleUr)}
-            </h4>
+            <h3 className="text-sm sm:text-base font-serif font-extrabold text-doc-brass tracking-wide mb-1 leading-snug">
+              {t(`How to Check or Verify: ${topicTitleEn}`, `${topicTitleUr} کو کیسے چیک اور تصدیق کریں؟`)}
+            </h3>
           )}
           <p className="text-sm md:text-base font-medium text-slate-100 leading-relaxed">
             {currentAnswer}
