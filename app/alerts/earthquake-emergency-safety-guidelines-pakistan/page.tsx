@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub',
-  description: 'Real-time earthquake alerts in Pakistan from the National Seismic Monitoring Centre (NSMC). Emergency safety protocols: Drop, Cover, and Hold On guidelines.',
+  title: "Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub",
+  description: "Real-time earthquake alerts in Pakistan from the National Seismic Monitoring Centre (NSMC). Emergency safety protocols: Drop, Cover, and Hold On guidelines.",
   openGraph: {
-    title: 'Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub',
-    description: 'Real-time earthquake alerts in Pakistan from the National Seismic Monitoring Centre (NSMC). Emergency safety protocols: Drop, Cover, and Hold On guidelines.',
+    title: "Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub",
+    description: "Real-time earthquake alerts in Pakistan from the National Seismic Monitoring Centre (NSMC). Emergency safety protocols: Drop, Cover, and Hold On guidelines.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/alerts/earthquake-emergency-safety-guidelines-pakistan',
   },

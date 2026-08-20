@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NADRA CNIC Renewal Online Guide 2026: Mobile App & Portal Process',
-  description: 'Step-by-step online CNIC renewal guide using the Pak-ID app and web portal. Learn fingerprint scanning tips, photo specs, fee rates (PKR 750), and home delivery timelines.',
+  title: "NADRA CNIC Renewal Online Guide 2026: Mobile App & Portal Process",
+  description: "Step-by-step online CNIC renewal guide using the Pak-ID app and web portal. Learn fingerprint scanning tips, photo specs, fee rates (PKR 750), and home delivery timelines.",
   openGraph: {
-    title: 'NADRA CNIC Renewal Online Guide 2026: Mobile App & Portal Process',
-    description: 'Step-by-step online CNIC renewal guide using the Pak-ID app and web portal. Learn fingerprint scanning tips, photo specs, fee rates (PKR 750), and home delivery timelines.',
+    title: "NADRA CNIC Renewal Online Guide 2026: Mobile App & Portal Process",
+    description: "Step-by-step online CNIC renewal guide using the Pak-ID app and web portal. Learn fingerprint scanning tips, photo specs, fee rates (PKR 750), and home delivery timelines.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/nadra/card-renewal-online',
   },

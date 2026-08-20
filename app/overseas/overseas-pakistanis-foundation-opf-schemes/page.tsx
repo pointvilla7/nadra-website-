@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide',
-  description: 'Explore Overseas Pakistanis Foundation (OPF) welfare schemes: housing society quotas, OPF school discounts, financial aid for deceased workers, and duty-free allowances.',
+  title: "Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide",
+  description: "Explore Overseas Pakistanis Foundation (OPF) welfare schemes: housing society quotas, OPF school discounts, financial aid for deceased workers, and duty-free allowances.",
   openGraph: {
-    title: 'Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide',
-    description: 'Explore Overseas Pakistanis Foundation (OPF) welfare schemes: housing society quotas, OPF school discounts, financial aid for deceased workers, and duty-free allowances.',
+    title: "Overseas Pakistanis Foundation (OPF) Schemes & Benefits Guide",
+    description: "Explore Overseas Pakistanis Foundation (OPF) welfare schemes: housing society quotas, OPF school discounts, financial aid for deceased workers, and duty-free allowances.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/overseas/overseas-pakistanis-foundation-opf-schemes',
   },

@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'PSER Survey Registration Punjab 2026: Portal Guide & Status Check',
-  description: 'Complete guide to Punjab Socio-Economic Registry (PSER) survey registration. Register online at pser.punjab.gov.pk for CM targeted subsidy schemes.',
+  title: "PSER Survey Registration Punjab 2026: Portal Guide & Status Check",
+  description: "Complete guide to Punjab Socio-Economic Registry (PSER) survey registration. Register online at pser.punjab.gov.pk for CM targeted subsidy schemes.",
   openGraph: {
-    title: 'PSER Survey Registration Punjab 2026: Portal Guide & Status Check',
-    description: 'Complete guide to Punjab Socio-Economic Registry (PSER) survey registration. Register online at pser.punjab.gov.pk for CM targeted subsidy schemes.',
+    title: "PSER Survey Registration Punjab 2026: Portal Guide & Status Check",
+    description: "Complete guide to Punjab Socio-Economic Registry (PSER) survey registration. Register online at pser.punjab.gov.pk for CM targeted subsidy schemes.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/welfare/pser-survey-registration',
   },

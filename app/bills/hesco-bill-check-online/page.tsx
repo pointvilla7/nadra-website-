@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
-  description: "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
+  title: "HESCO Bill Online Check 2026 – Hyderabad & Lower Sindh Duplicate Bill | Pakistan Info Hub",
+  description: "Check HESCO bill online 2026. Download duplicate electricity bill for Hyderabad, Jamshoro, Thatta, Badin, Mirpurkhas, Nawabshah by 14-digit reference number.",
   openGraph: {
-    title: "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
-    description: "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
+    title: "HESCO Bill Online Check 2026 – Hyderabad & Lower Sindh Duplicate Bill | Pakistan Info Hub",
+    description: "Check HESCO bill online 2026. Download duplicate electricity bill for Hyderabad, Jamshoro, Thatta, Badin, Mirpurkhas, Nawabshah by 14-digit reference number.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/bills/hesco-bill-check-online',
   },

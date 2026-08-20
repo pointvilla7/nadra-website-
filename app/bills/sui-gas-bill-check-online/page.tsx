@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SNGPL Online Bill Check 2026 – Sui Gas Duplicate Bill Download & Payment | Pakistan Info Hub',
-  description: 'Check SNGPL online bill 2026 using 14-digit or 10-digit consumer number. Download Sui Northern & SSGC duplicate gas bill PDF, view tariffs, and pay online.',
+  title: "SNGPL Sui Gas Bill Online Check 2026 – Punjab & KPK Duplicate Gas Bill | Pakistan Info Hub",
+  description: "SNGPL gas bill check online 2026. Check duplicate Sui Northern gas bill for Lahore, Rawalpindi, Islamabad, Peshawar, Faisalabad, Multan with 11-digit consumer number.",
   openGraph: {
-    title: 'SNGPL Online Bill Check 2026 – Sui Gas Duplicate Bill Download & Payment | Pakistan Info Hub',
-    description: 'Check SNGPL online bill 2026 using 14-digit or 10-digit consumer number. Download Sui Northern & SSGC duplicate gas bill PDF, view tariffs, and pay online.',
+    title: "SNGPL Sui Gas Bill Online Check 2026 – Punjab & KPK Duplicate Gas Bill | Pakistan Info Hub",
+    description: "SNGPL gas bill check online 2026. Check duplicate Sui Northern gas bill for Lahore, Rawalpindi, Islamabad, Peshawar, Faisalabad, Multan with 11-digit consumer number.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/bills/sui-gas-bill-check-online',
   },

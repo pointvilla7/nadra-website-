@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NADRA CNIC Modification Guide 2026: Name, Address & Marital Status',
-  description: 'Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.',
+  title: "NADRA CNIC Modification Guide 2026: Name, Address & Marital Status",
+  description: "Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.",
   openGraph: {
-    title: 'NADRA CNIC Modification Guide 2026: Name, Address & Marital Status',
-    description: 'Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.',
+    title: "NADRA CNIC Modification Guide 2026: Name, Address & Marital Status",
+    description: "Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/nadra/cnic-name-address-modification',
   },

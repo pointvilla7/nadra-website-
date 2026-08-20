@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How to Apply for New NADRA CNIC in Pakistan (2026 Complete Guide)',
-  description: 'Complete step-by-step guide to apply for a new NADRA Smart CNIC in Pakistan. Verified 2026 fee table, mandatory document checklist, biometric attestation rules, Pak-ID app, and tracking.',
+  title: "How to Apply for New NADRA CNIC in Pakistan (2026 Complete Guide)",
+  description: "Complete step-by-step guide to apply for a new NADRA Smart CNIC in Pakistan. Verified 2026 fee table, mandatory document checklist, biometric attestation rules, Pak-ID app, and tracking.",
   openGraph: {
-    title: 'How to Apply for New NADRA CNIC in Pakistan (2026 Complete Guide)',
-    description: 'Complete step-by-step guide to apply for a new NADRA Smart CNIC in Pakistan. Verified 2026 fee table, mandatory document checklist, biometric attestation rules, Pak-ID app, and tracking.',
+    title: "How to Apply for New NADRA CNIC in Pakistan (2026 Complete Guide)",
+    description: "Complete step-by-step guide to apply for a new NADRA Smart CNIC in Pakistan. Verified 2026 fee table, mandatory document checklist, biometric attestation rules, Pak-ID app, and tracking.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/nadra/cnic-kaise-banaye',
   },

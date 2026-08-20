@@ -21,14 +21,11 @@ import { ShieldCheck, MessageSquare, ExternalLink, HelpCircle, FileCheck, ArrowR
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Passport Tracking Status 2026: Track via Token & SMS 9988',
-  description: 'Track your Pakistani passport status online at tracking.dgip.gov.pk or via SMS 9988. Free guided lookup for MRP and e-Passport printing and delivery.',
-  alternates: {
-    canonical: 'https://www.pakistaninfohub.com/passport/tracking-status',
-  },
+  title: "Passport Tracking Status Online 2026: Track via Token Number & SMS 9988",
+  description: "Track Pakistani passport application delivery status online or via SMS 9988. Enter 11-digit token number or tracking code to know printing and dispatch status.",
   openGraph: {
-    title: 'Passport Tracking Status 2026: Track via Token & SMS 9988',
-    description: 'Track your Pakistani passport status online at tracking.dgip.gov.pk or via SMS 9988. Free guided lookup for MRP and e-Passport printing and delivery.',
+    title: "Passport Tracking Status Online 2026: Track via Token Number & SMS 9988",
+    description: "Track Pakistani passport application delivery status online or via SMS 9988. Enter 11-digit token number or tracking code to know printing and dispatch status.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/passport/tracking-status',
   },

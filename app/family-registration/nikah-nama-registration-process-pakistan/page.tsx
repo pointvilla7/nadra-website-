@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nikah Nama Registration Process in Pakistan – Union Council Rules',
-  description: 'Step-by-step procedure for registering a Muslim Nikah Nama under the Muslim Family Laws Ordinance 1961 with Union Councils in Pakistan. Fees, columns, and legal rights.',
+  title: "Nikah Nama Registration Process in Pakistan – Union Council Rules",
+  description: "Step-by-step procedure for registering a Muslim Nikah Nama under the Muslim Family Laws Ordinance 1961 with Union Councils in Pakistan. Fees, columns, and legal rights.",
   openGraph: {
-    title: 'Nikah Nama Registration Process in Pakistan – Union Council Rules',
-    description: 'Step-by-step procedure for registering a Muslim Nikah Nama under the Muslim Family Laws Ordinance 1961 with Union Councils in Pakistan. Fees, columns, and legal rights.',
+    title: "Nikah Nama Registration Process in Pakistan – Union Council Rules",
+    description: "Step-by-step procedure for registering a Muslim Nikah Nama under the Muslim Family Laws Ordinance 1961 with Union Councils in Pakistan. Fees, columns, and legal rights.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/family-registration/nikah-nama-registration-process-pakistan',
   },

@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'KPK Excise Online Vehicle Verification & Token Tax Guide 2026',
-  description: 'Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.',
+  title: "KPK Excise Online Vehicle Verification & Token Tax Guide 2026",
+  description: "Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.",
   openGraph: {
-    title: 'KPK Excise Online Vehicle Verification & Token Tax Guide 2026',
-    description: 'Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.',
+    title: "KPK Excise Online Vehicle Verification & Token Tax Guide 2026",
+    description: "Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/traffic/kpk-excise-vehicle-verification',
   },

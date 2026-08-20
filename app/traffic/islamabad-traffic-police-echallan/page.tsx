@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026',
-  description: 'Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.',
+  title: "Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026",
+  description: "Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.",
   openGraph: {
-    title: 'Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026',
-    description: 'Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.',
+    title: "Islamabad Traffic Police (ICT) E-Challan Check & DLIMS Guide 2026",
+    description: "Check ICT Islamabad e-challan online by vehicle number, ICT Smart Challan payment via JazzCash/1Link, and Islamabad driving license verification.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/traffic/islamabad-traffic-police-echallan',
   },

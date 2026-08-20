@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'LESCO Bill Online Check 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub',
-  description: 'Perform LESCO bill online check 2026. Download duplicate electricity bill for Lahore, Kasur, Okara, Sheikhupura using 14-digit reference number or 10-digit customer ID.',
+  title: "LESCO Bill Online Check 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub",
+  description: "Perform LESCO bill online check 2026. Download duplicate electricity bill for Lahore, Kasur, Okara, Sheikhupura using 14-digit reference number or 10-digit customer ID.",
   openGraph: {
-    title: 'LESCO Bill Online Check 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub',
-    description: 'Perform LESCO bill online check 2026. Download duplicate electricity bill for Lahore, Kasur, Okara, Sheikhupura using 14-digit reference number or 10-digit customer ID.',
+    title: "LESCO Bill Online Check 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub",
+    description: "Perform LESCO bill online check 2026. Download duplicate electricity bill for Lahore, Kasur, Okara, Sheikhupura using 14-digit reference number or 10-digit customer ID.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/bills/lesco-bill-check-online',
   },

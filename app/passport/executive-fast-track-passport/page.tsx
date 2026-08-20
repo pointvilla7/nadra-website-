@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026',
-  description: 'Get a Pakistani passport in 24 hours via DGIP Fast Track counters in Islamabad, Lahore, Karachi & Rawalpindi. Fee table, fast track counters, and rules.',
+  title: "Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026",
+  description: "Get a Pakistani passport in 24 hours via DGIP Fast Track counters in Islamabad, Lahore, Karachi & Rawalpindi. Fee table, fast track counters, and rules.",
   openGraph: {
-    title: 'Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026',
-    description: 'Get a Pakistani passport in 24 hours via DGIP Fast Track counters in Islamabad, Lahore, Karachi & Rawalpindi. Fee table, fast track counters, and rules.',
+    title: "Pakistani Executive Fast Track Passport 24-Hour Delivery Guide 2026",
+    description: "Get a Pakistani passport in 24 hours via DGIP Fast Track counters in Islamabad, Lahore, Karachi & Rawalpindi. Fee table, fast track counters, and rules.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/passport/executive-fast-track-passport',
   },

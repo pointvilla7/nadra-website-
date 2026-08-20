@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pakistan Embassy & MOFA Document Attestation Guidelines 2026',
-  description: 'Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.',
+  title: "Pakistan Embassy & MOFA Document Attestation Guidelines 2026",
+  description: "Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.",
   openGraph: {
-    title: 'Pakistan Embassy & MOFA Document Attestation Guidelines 2026',
-    description: 'Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.',
+    title: "Pakistan Embassy & MOFA Document Attestation Guidelines 2026",
+    description: "Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/overseas/pakistan-embassy-attestation-documents',
   },

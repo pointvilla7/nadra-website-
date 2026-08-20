@@ -752,12 +752,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "iesco-bill-check-online",
     "fullPath": "/bills/iesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "IESCO Bill Check Online 2026: Islamabad Electricity Duplicate Bill",
-    "titleUr": "آئیسکو آن لائن بجلی بل چیک 2026 (اسلام آباد و راولپنڈی)",
-    "metaDescriptionEn": "Check and print IESCO duplicate bill online by 14-digit reference number. Islamabad, Rawalpindi, Attock, Chakwal, and Jhelum electricity bill check.",
-    "metaDescriptionUr": "اسلام آباد اور راولپنڈی آئیسکو آن لائن بجلی بل ڈپلیکیٹ پرنٹ بائے 14 ہندسوں کا ریفرنس نمبر۔",
-    "directAnswerEn": "To check your IESCO electricity bill online in 2026, visit bill.pitc.com.pk/iescobill or iesco.com.pk. Enter your 14-digit Reference Number or 10-digit Customer ID to check duplicate bills for Islamabad, Rawalpindi, Attock, Jhelum, and Chakwal with direct payment via 1Link.",
-    "directAnswerUr": "اسلام آباد الیکٹرک سپلائی کمپنی (IESCO) کا بل چیک کرنے کے لیے bill.pitc.com.pk/iescobill پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ اسلام آباد، راولپنڈی، اٹک، جہلم اور چکوال کے صارفین ڈپلیکیٹ بل حاصل کر کے فوری آن لائن ادا کر سکتے ہیں۔",
+    "titleEn": "IESCO Bill Check Online 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub",
+    "titleUr": "آئیسکو آن لائن بجلی بل چیک 2026 – ڈپلیکیٹ بل ڈاؤن لوڈ (اسلام آباد و راولپنڈی)",
+    "metaDescriptionEn": "Perform IESCO bill check online 2026. Download duplicate electricity bill for Islamabad, Rawalpindi, Attock, Jhelum, Chakwal using 14-digit reference number.",
+    "metaDescriptionUr": "آئیسکو آن لائن بجلی بل چیک 2026۔ اسلام آباد، راولپنڈی، اٹک، جہلم اور چکوال کا ڈپلیکیٹ بل 14 ہندسوں والے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform an IESCO online bill check in 2026, visit http://bill.pitc.com.pk/iescobill/ or iesco.com.pk. Enter your 14-digit Reference Number or 10-digit Customer ID from the top header of any previous bill to view, print, or download your official duplicate electricity bill PDF for Islamabad, Rawalpindi, Attock, Jhelum, or Chakwal.",
+    "directAnswerUr": "آئیسکو بجلی کا آن لائن بل چیک کرنے کے لیے آفیشل پورٹل bill.pitc.com.pk/iescobill پر جائیں اور اپنے بل پر درج 14 ہندسوں کا ریفرنس نمبر یا 10 ہندسوں کا کسٹمر شناختی نمبر درج کریں۔ اسلام آباد اور راولپنڈی ریجن کا ڈپلیکیٹ بل پی ڈی ایف فوری دستیاب ہوگا۔",
     "lastVerified": "August 17, 2026",
     "officialSource": {
       "name": "IESCO / PITB Bill Gateway",
@@ -809,6 +809,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to check IESCO bill online in Islamabad and Rawalpindi?",
+              "questionUr": "اسلام آباد اور راولپنڈی میں آئیسکو بجلی کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Locate your 14-digit Reference Number (or 10-digit Consumer ID) printed in the upper box of your electricity bill. Open the official PITC IESCO portal (bill.pitc.com.pk/iescobill/), enter the digits without spaces or hyphens, and click Submit to instantly view your bill amount, due date, and download a printable duplicate bill PDF.",
+              "answerUr": "اپنے پرانے بجلی کے بل کے اوپری حصے میں درج 14 ہندسوں والا ریفرنس نمبر تلاش کریں۔ آفیشل PITC آئیسکو ویب سائٹ پر بغیر ڈیش کے نمبر درج کریں اور سبمٹ پر کلک کریں۔ آپ کے سامنے بل کی رقم، آخری تاریخ اور پرنٹ ایبل ڈپلیکیٹ بل کھل جائے گا۔"
+      },
       {
         "questionEn": "Which districts are covered by IESCO?",
         "questionUr": "آئیسکو میں کون سے اضلاع شامل ہیں؟",
@@ -953,12 +959,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "mepco-bill-check-online",
     "fullPath": "/bills/mepco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "MEPCO Bill Check Online 2026: Multan Electricity Duplicate Bill",
-    "titleUr": "میپکو آن لائن بجلی بل چیک 2026 (ملتان و جنوبی پنجاب)",
-    "metaDescriptionEn": "MEPCO online duplicate bill check for Multan, Sahiwal, D.G. Khan, Bahawalpur, Rahim Yar Khan & Khanewal. Print duplicate bill by 14-digit reference number.",
-    "metaDescriptionUr": "میپکو ملتان اور جنوبی پنجاب کا آن لائن بجلی بل ڈپلیکیٹ پرنٹ اور بل ادائیگی۔",
-    "directAnswerEn": "To check your MEPCO electricity bill online in 2026, visit bill.pitc.com.pk/mepcobill or mepco.com.pk. Enter your 14-digit Reference Number to download duplicate bills across South Punjab including Multan, Bahawalpur, D.G. Khan, Sahiwal, Rahim Yar Khan, and Muzaffargarh.",
-    "directAnswerUr": "ملتان الیکٹرک پاور کمپنی (MEPCO) کا بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/mepcobill پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ ملتان، بہاولپور، ڈیرہ غازی خان اور رحیم یار خان کے ڈپلیکیٹ بل فوری ڈاؤن لوڈ کریں۔",
+    "titleEn": "MEPCO Bill Online Check 2026 – South Punjab Duplicate Electricity Bill | Pakistan Info Hub",
+    "titleUr": "میپکو آن لائن بجلی بل چیک 2026 – ملتان و جنوبی پنجاب ڈپلیکیٹ بل",
+    "metaDescriptionEn": "MEPCO bill online check 2026. Check and print duplicate electricity bill for Multan, Bahawalpur, D.G. Khan, Rahim Yar Khan, Sahiwal using 14-digit reference number.",
+    "metaDescriptionUr": "میپکو آن لائن بجلی بل چیک 2026۔ ملتان، بہاولپور، ڈی جی خان، رحیم یار خان اور ساہیوال کا ڈپلیکیٹ بل آن لائن چیک اور ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform a MEPCO bill online check in 2026, navigate to the official PITC portal at http://bill.pitc.com.pk/mepcobill/. Enter your 14-digit Reference Number without spaces to check your current bill amount, units consumed, and download a duplicate copy for all South Punjab districts including Multan, Bahawalpur, D.G. Khan, and Sahiwal.",
+    "directAnswerUr": "میپکو آن لائن بل 2026 چیک کرنے کے لیے PITC پورٹل bill.pitc.com.pk/mepcobill پر جائیں اور 14 ہندسوں کا ریفرنس نمبر درج کریں۔ ملتان، بہاولپور، رحیم یار خان اور ڈی جی خان کے صارفین اپنا بل فوری دیکھ اور پرنٹ کر سکتے ہیں۔",
     "lastVerified": "August 17, 2026",
     "officialSource": {
       "name": "MEPCO Official Bill Gateway",
@@ -1011,6 +1017,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check MEPCO bill online for South Punjab districts?",
+              "questionUr": "جنوبی پنجاب کے اضلاع کے لیے میپکو بجلی کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "To check your MEPCO bill across South Punjab (Multan, Bahawalpur, D.G. Khan, Rahim Yar Khan, Sahiwal, Muzaffargarh, Vehari), enter your 14-digit numeric reference number on the official PITC MEPCO portal. The system generates an exact duplicate bill with consumer barcode for payment via JazzCash, Easypaisa, or 1Link banking apps.",
+              "answerUr": "میپکو بل چیک کرنے کے لیے اپنے 14 ہندسوں والے ریفرنس نمبر کو آفیشل پورٹل پر درج کریں۔ سسٹم بارکوڈ کے ساتھ مکمل ڈپلیکیٹ بل فراہم کرتا ہے جسے جاز کیش، ایزی پیسہ یا بینکنگ ایپ کے ذریعے ادا کیا جا سکتا ہے۔"
+      },
+      {
         "questionEn": "What is the MEPCO jurisdiction area?",
         "questionUr": "میپکو کا دائرہ اختیار کون سے اضلاع پر ہے؟",
         "answerEn": "MEPCO is the largest DISCO in Pakistan by geographic area, covering 13 districts in South Punjab.",
@@ -1041,12 +1053,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "ssgc-duplicate-bill-check",
     "fullPath": "/bills/ssgc-duplicate-bill-check",
     "categoryId": "bills",
-    "titleEn": "SSGC Sui Southern Gas Bill Online Check 2026: Sindh & Balochistan",
-    "titleUr": "ایس ایس جی سی سوئی سدرن گیس بل آن لائن چیک 2026 (سندھ و بلوچستان)",
-    "metaDescriptionEn": "Check and print SSGC duplicate gas bill online for Karachi, Hyderabad, Quetta, and Sukkur by 10-digit Customer Number. Official SSGC bill portal.",
-    "metaDescriptionUr": "کراچی، حیدرآباد اور کوئٹہ ایس ایس جی سی گیس بل آن لائن چیک بذریعہ 10 ہندسوں کا کسٹمر نمبر۔",
-    "directAnswerEn": "To check your SSGC (Sui Southern Gas Company) bill online in 2026 for Karachi, Hyderabad, Quetta, and Sukkur, visit ssgc.com.pk/ebill. Enter your 10-digit Customer Number without dashes to download your duplicate gas bill and pay via Easypaisa, JazzCash, or 1Link.",
-    "directAnswerUr": "سوئی سدرن گیس کمپنی (SSGC) کا بل کراچی، حیدرآباد اور کوئٹہ کے لیے آن لائن چیک کرنے کے لیے ssgc.com.pk/ebill پر جائیں۔ اپنا 10 ہندسوں کا کسٹمر نمبر درج کر کے ڈپلیکیٹ بل ڈاؤن لوڈ کریں اور آن لائن ادا کریں۔",
+    "titleEn": "SSGC Duplicate Bill Check 2026 – Karachi, Sindh & Balochistan Gas Bill | Pakistan Info Hub",
+    "titleUr": "ایس ایس جی سی ڈپلیکیٹ گیس بل چیک 2026 – کراچی، سندھ و بلوچستان",
+    "metaDescriptionEn": "Check SSGC duplicate bill online 2026. View and print Sui Southern gas bill for Karachi, Hyderabad, Quetta, Sukkur using 10-digit customer number.",
+    "metaDescriptionUr": "ایس ایس جی سی ڈپلیکیٹ گیس بل چیک 2026۔ کراچی، حیدرآباد، کوئٹہ اور سکھر کا سوئی سدرن گیس بل 10 ہندسوں والے کسٹمر نمبر سے چیک کریں۔",
+    "directAnswerEn": "To check your SSGC duplicate gas bill online in 2026, visit the official Sui Southern portal at https://www.ssgc.com.pk/customer-service/duplicate-bill/. Enter your 10-digit Customer Number to view, verify, and download your latest gas bill PDF.",
+    "directAnswerUr": "سوئی سدرن (SSGC) کا ڈپلیکیٹ گیس بل آن لائن چیک کرنے کے لیے ssgc.com.pk پر جائیں اور اپنا 10 ہندسوں کا کسٹمر نمبر درج کریں۔ کراچی اور بلوچستان کے صارفین کا بل فوری دستیاب ہوگا۔",
     "lastVerified": "August 17, 2026",
     "officialSource": {
       "name": "SSGC Customer Web Portal",
@@ -1098,6 +1110,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to download SSGC duplicate gas bill online in Karachi?",
+              "questionUr": "کراچی میں سوئی سدرن (SSGC) کا ڈپلیکیٹ گیس بل آن لائن کیسے ڈاؤن لوڈ کریں؟",
+              "answerEn": "To download your SSGC bill in Karachi, Hyderabad, or Quetta, enter your 10-digit Customer Number on the official SSGC duplicate bill page. The system provides a downloadable PDF with billing details and consumer barcode.",
+              "answerUr": "کراچی اور حیدرآباد کے صارفین آفیشل SSGC پورٹل پر اپنا 10 ہندسوں کا کسٹمر نمبر درج کر کے بارکوڈ شدہ اصل ڈپلیکیٹ بل پی ڈی ایف فارمیٹ میں ڈاؤن لوڈ کر سکتے ہیں۔"
+      },
       {
         "questionEn": "How do I report low gas pressure in winter in Karachi or Quetta?",
         "questionUr": "کراچی یا کوئٹہ میں کم گیس پریشر کی شکایت کیسے درج کروائیں؟",
@@ -1285,7 +1303,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "BISE Rawalpindi matric and FSc result gazette lookup guide.",
+    "contentEn": "BISE Rawalpindi matric and FSc result gazette lookup guide.\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
     "contentUr": "راولپنڈی بورڈ کے رزلٹ اور مارکس شیٹ کا مکمل گائیڈ۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
@@ -1350,7 +1368,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "BISE Faisalabad SSC & HSSC board exam result gazette portal.",
+    "contentEn": "BISE Faisalabad SSC & HSSC board exam result gazette portal.\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
     "contentUr": "فیصل آباد بورڈ میٹرک و انٹر رزلٹ کی مکمل تفصیل۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
@@ -1414,7 +1432,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "FBISE Federal Board Islamabad matriculation and intermediate gazette result lookup.",
+    "contentEn": "FBISE Federal Board Islamabad matriculation and intermediate gazette result lookup.\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
     "contentUr": "فیڈرل بورڈ اسلام آباد کے آن لائن رزلٹ اور ڈی ایم سی کی مکمل معلومات۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
@@ -4454,7 +4472,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "eservices.hec.gov.pk پر پروفائل بنا کر ڈگری اپلوڈ کریں اور فیس ادا کریں۔"
       }
     ],
-    "contentEn": "BISE Lahore conducts matriculation and intermediate board exams for Lahore, Kasur, Sheikhupura, and Nankana Sahib districts.\n\n> 💡 **ALL PAKISTAN RESULT TOOL**: \n> You can check results for all 25 Pakistani BISE boards on our [All Pakistan Board Result Checker](/education/bise-result-check-2026).",
+    "contentEn": "BISE Lahore conducts matriculation and intermediate board exams for Lahore, Kasur, Sheikhupura, and Nankana Sahib districts.\n\n> 💡 **ALL PAKISTAN RESULT TOOL**: \n> You can check results for all 25 Pakistani BISE boards on our [All Pakistan Board Result Checker](/education/bise-result-check-2026).\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
     "contentUr": "لاہور بورڈ سالانہ امتحانات کے نتائج اپنی آفیشل ویب سائٹ پر جاری کرتا ہے۔",
     "relatedSlugs": [
       "/education/bise-result-check-2026",
@@ -4548,7 +4566,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "امتحان کے دن آفیشل ویب سائٹ سے بورڈ کا مکمل پی ڈی ایف گزٹ ڈاؤن لوڈ کر کے اپنے نام سے تلاش کریں۔"
       }
     ],
-    "contentEn": "Every academic year, over 4 million students across Pakistan sit for secondary (Matric Part 1 & Part 2 / Class 9th & 10th) and higher secondary (Intermediate Part 1 & Part 2 / Class 11th & 12th) examinations conducted by the 25 primary Boards of Intermediate and Secondary Education (BISE).\n\nNavigating multiple outdated government servers during result day can be frustrating due to heavy server traffic. Our All-Pakistan BISE Result Assistant eliminates server congestion by connecting you directly to verified gazette endpoints for every province.\n\n---\n\n## All Pakistan BISE Education Board Results Portal 2026\n\nPakistan's examination system is organized provincially, supervised by the Inter Board Coordination Commission (IBCC). Each board manages affiliated public and private schools and colleges in its assigned administrative districts.\n\n### 1. BISE Lahore Result 2026 (9th, 10th & Inter)\nBISE Lahore is Punjab's largest educational board, serving students across Lahore, Kasur, Sheikhupura, and Nankana Sahib. The Matric annual result is traditionally declared in July/August, followed by the Intermediate (FSc Pre-Engineering, Pre-Medical, ICS, FA, and Commerce) results in September. Students can check their result at result.biselahore.com or by texting their 6-digit Roll Number to 800291.\n\n### 2. BISE Karachi Result 2026 (BSEK & BIEK)\nIn Karachi, secondary education is split into two specialized boards:\n- BSEK Karachi: Manages SSC Part 1 (Class 9th) and SSC Part 2 (Class 10th) exams. Results are published on bsek.edu.pk.\n- BIEK Karachi: Manages HSSC Part 1 (Class 11th) and HSSC Part 2 (Class 12th) exams across Science, General Science, Commerce, and Humanities. Results are hosted at biek.edu.pk.\n- Both Karachi boards support SMS verification via code 8583.\n\n### 3. BISE Multan Result 2026\nBISE Multan covers districts including Multan, Khanewal, Vehari, and Lodhran. Results for SSC and HSSC annual exams are accessible on bisemultan.edu.pk. Candidates can also verify marks by sending an SMS to 800293.\n\n### 4. BISE Rawalpindi Result 2026\nBISE Rawalpindi caters to Rawalpindi, Attock, Chakwal, and Jhelum districts. Candidates can query their marks card on biserawalpindi.edu.pk or text their roll number to 800296.\n\n### 5. BISE Faisalabad Result 2026\nBISE Faisalabad manages exams for Faisalabad, Jhang, Toba Tek Singh, and Chiniot. Official result lookup is hosted at bisefsd.edu.pk with SMS verification on 800299.\n\n### 6. BISE Peshawar Result 2026\nBISE Peshawar is Khyber Pakhtunkhwa's flagship education board, presiding over Peshawar, Charsadda, and Chitral. Results are released on bisep.edu.pk and via SMS code 8333.\n\n### 7. Federal Board Result 2026 (FBISE Islamabad)\nThe Federal Board of Intermediate and Secondary Education (FBISE) conducts exams for cantonment schools, overseas Pakistani institutions, and federal territory schools across Pakistan and international missions. FBISE offers direct roll number search and e-marksheets at fbise.edu.pk and SMS alerts on 5050.\n\n---\n\n## 9th & 10th Class Gazette Results 2026 Across Pakistan\n\nWhether you are checking SSC Part 1 (9th Class) or SSC Part 2 (10th Class Matric), board results follow strict evaluation procedures. Position holders are announced one day prior to public portal releases at official press ceremonies.\n\n---\n\n## How Paper Rechecking & Recounting Works\n\nIf your declared marks differ significantly from your expectation, every BISE board provides a formal Rechecking & Recounting Facility:\n1. Application Window: Must be submitted within 15 days of official result declaration.\n2. Scope of Rechecking: Under BISE regulations, rechecking covers recounting of total marks, verifying that all answer booklet pages are marked, and ensuring correct transfer of marks from answer sheets to the result ledger.\n3. Fee Structure: Nominal per-subject rechecking fee (typically PKR 1,000 to PKR 1,500 per paper) payable via bank challan.\n\n---\n\n> 🛡️ INDEPENDENT PLATFORM DISCLAIMER\n> Pakistan Info Hub is a free, independent civic information portal. We are not affiliated with any BISE board or the Ministry of Federal Education. All roll numbers are processed client-side without storing personal candidate data.",
+    "contentEn": "Every academic year, over 4 million students across Pakistan sit for secondary (Matric Part 1 & Part 2 / Class 9th & 10th) and higher secondary (Intermediate Part 1 & Part 2 / Class 11th & 12th) examinations conducted by the 25 primary Boards of Intermediate and Secondary Education (BISE).\n\nNavigating multiple outdated government servers during result day can be frustrating due to heavy server traffic. Our All-Pakistan BISE Result Assistant eliminates server congestion by connecting you directly to verified gazette endpoints for every province.\n\n---\n\n## All Pakistan BISE Education Board Results Portal 2026\n\nPakistan's examination system is organized provincially, supervised by the Inter Board Coordination Commission (IBCC). Each board manages affiliated public and private schools and colleges in its assigned administrative districts.\n\n### 1. BISE Lahore Result 2026 (9th, 10th & Inter)\nBISE Lahore is Punjab's largest educational board, serving students across Lahore, Kasur, Sheikhupura, and Nankana Sahib. The Matric annual result is traditionally declared in July/August, followed by the Intermediate (FSc Pre-Engineering, Pre-Medical, ICS, FA, and Commerce) results in September. Students can check their result at result.biselahore.com or by texting their 6-digit Roll Number to 800291.\n\n### 2. BISE Karachi Result 2026 (BSEK & BIEK)\nIn Karachi, secondary education is split into two specialized boards:\n- BSEK Karachi: Manages SSC Part 1 (Class 9th) and SSC Part 2 (Class 10th) exams. Results are published on bsek.edu.pk.\n- BIEK Karachi: Manages HSSC Part 1 (Class 11th) and HSSC Part 2 (Class 12th) exams across Science, General Science, Commerce, and Humanities. Results are hosted at biek.edu.pk.\n- Both Karachi boards support SMS verification via code 8583.\n\n### 3. BISE Multan Result 2026\nBISE Multan covers districts including Multan, Khanewal, Vehari, and Lodhran. Results for SSC and HSSC annual exams are accessible on bisemultan.edu.pk. Candidates can also verify marks by sending an SMS to 800293.\n\n### 4. BISE Rawalpindi Result 2026\nBISE Rawalpindi caters to Rawalpindi, Attock, Chakwal, and Jhelum districts. Candidates can query their marks card on biserawalpindi.edu.pk or text their roll number to 800296.\n\n### 5. BISE Faisalabad Result 2026\nBISE Faisalabad manages exams for Faisalabad, Jhang, Toba Tek Singh, and Chiniot. Official result lookup is hosted at bisefsd.edu.pk with SMS verification on 800299.\n\n### 6. BISE Peshawar Result 2026\nBISE Peshawar is Khyber Pakhtunkhwa's flagship education board, presiding over Peshawar, Charsadda, and Chitral. Results are released on bisep.edu.pk and via SMS code 8333.\n\n### 7. Federal Board Result 2026 (FBISE Islamabad)\nThe Federal Board of Intermediate and Secondary Education (FBISE) conducts exams for cantonment schools, overseas Pakistani institutions, and federal territory schools across Pakistan and international missions. FBISE offers direct roll number search and e-marksheets at fbise.edu.pk and SMS alerts on 5050.\n\n---\n\n## 9th & 10th Class Gazette Results 2026 Across Pakistan\n\nWhether you are checking SSC Part 1 (9th Class) or SSC Part 2 (10th Class Matric), board results follow strict evaluation procedures. Position holders are announced one day prior to public portal releases at official press ceremonies.\n\n---\n\n## How Paper Rechecking & Recounting Works\n\nIf your declared marks differ significantly from your expectation, every BISE board provides a formal Rechecking & Recounting Facility:\n1. Application Window: Must be submitted within 15 days of official result declaration.\n2. Scope of Rechecking: Under BISE regulations, rechecking covers recounting of total marks, verifying that all answer booklet pages are marked, and ensuring correct transfer of marks from answer sheets to the result ledger.\n3. Fee Structure: Nominal per-subject rechecking fee (typically PKR 1,000 to PKR 1,500 per paper) payable via bank challan.\n\n---\n\n> 🛡️ INDEPENDENT PLATFORM DISCLAIMER\n> Pakistan Info Hub is a free, independent civic information portal. We are not affiliated with any BISE board or the Ministry of Federal Education. All roll numbers are processed client-side without storing personal candidate data.\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
     "contentUr": "پاکستان میں ہر سال 40 لاکھ سے زائد طلباء میٹرک (نویں و دسویں) اور انٹر میڈیٹ (گیارہویں و بارہویں) کے سالانہ امتحانات میں شرکت کرتے ہیں۔\n\nرزلٹ والے دن آفیشل سرورز پر شدید ٹریفک کی وجہ سے سائٹ ڈاؤن ہو جاتی ہے۔ ہمارے اس پورٹل کے ذریعے آپ بغیر کسی تاخیر کے اپنے بورڈ کی آفیشل رزلٹ ویب سائٹ تک رسائی حاصل کر سکتے ہیں۔\n\n---\n\n## تمام پاکستانی تعلیمی بورڈز کا رزلٹ پورٹل 2026\n\n### 1. بی آئی ایس ای لاہور رزلٹ 2026\nلاہور بورڈ پنجاب کا سب سے بڑا تعلیمی ادارہ ہے۔ رزلٹ biselahore.com پر دیکھ سکتے ہیں یا 800291 پر ایس ایم ایس کر سکتے ہیں۔\n\n### 2. کراچی میٹرک و انٹر بورڈ رزلٹ\nکراچی میں نویں اور دسویں کا رزلٹ BSEK (bsek.edu.pk) پر جبکہ انٹر کا رزلٹ BIEK (biek.edu.pk) پر جاری ہوتا ہے۔ ایس ایم ایس کوڈ 8583 ہے۔\n\n### 3. ملتان، راولپنڈی، فیصل آباد اور پشاور بورڈز\nان تمام بورڈز کے رزلٹ آفیشل لنکس اور ایس ایم ایس کوڈز پورٹل پر موجود ہیں۔",
     "relatedSlugs": [
       "/education/bise-lahore-result-2026",
@@ -5210,12 +5228,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "sui-gas-bill-check-online",
     "fullPath": "/bills/sui-gas-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "SNGPL Online Bill Check 2026 – Sui Gas Duplicate Bill Download & Payment | Pakistan Info Hub",
-    "titleUr": "سوئی گیس بل آن لائن چیک 2026: SNGPL اور SSGC ڈپلیکیٹ بل ڈاؤن لوڈ",
-    "metaDescriptionEn": "Check SNGPL online bill 2026 using 14-digit or 10-digit consumer number. Download Sui Northern & SSGC duplicate gas bill PDF, view tariffs, and pay online.",
-    "metaDescriptionUr": "سوئی ناردرن (SNGPL) اور سوئی سدرن (SSGC) گیس کا بل آن لائن 10 یا 14 ہندسوں والے کنزیومر نمبر سے دیکھئے اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check and download your SNGPL online bill in 2026, visit www.sngpl.com.pk. Enter your 10-digit or 14-digit consumer number found at the top-left of your gas bill (gas ka bill) to view current month dues, gas consumption units (MMBTU), and print a duplicate PDF bill. For Sindh and Karachi consumers, visit ssgc.com.pk/ebill.",
-    "directAnswerUr": "سوئی ناردرن گیس (SNGPL) کا آن لائن بل چیک اور ڈاؤن لوڈ کرنے کے لیے sngpl.com.pk پر جائیں۔ اپنے پرانے بل سے 10 یا 14 ہندسوں کا کنزیومر نمبر درج کر کے بل کی رقم، آخری تاریخ اور ڈپلیکیٹ پی ڈی ایف حاصل کریں۔ سندھ اور کراچی کے صارفین ssgc.com.pk/ebill استعمال کریں۔",
+    "titleEn": "SNGPL Sui Gas Bill Online Check 2026 – Punjab & KPK Duplicate Gas Bill | Pakistan Info Hub",
+    "titleUr": "سوئی گیس آن لائن بل چیک 2026 (SNGPL) – پنجاب و کے پی کے ڈپلیکیٹ گیس بل",
+    "metaDescriptionEn": "SNGPL gas bill check online 2026. Check duplicate Sui Northern gas bill for Lahore, Rawalpindi, Islamabad, Peshawar, Faisalabad, Multan with 11-digit consumer number.",
+    "metaDescriptionUr": "سوئی ناردرن گیس (SNGPL) آن لائن بل چیک 2026۔ لاہور، راولپنڈی، اسلام آباد اور پشاور کا ڈپلیکیٹ گیس بل 11 ہندسوں کے کنزیومر نمبر سے حاصل کریں۔",
+    "directAnswerEn": "To check your SNGPL Sui Gas bill online in 2026, visit https://www.sngpl.com.pk/web/bill. Enter your 11-digit Consumer Number (found on the top-right of your gas bill) to view, print, or download your official duplicate Sui Northern gas bill PDF.",
+    "directAnswerUr": "سوئی ناردرن (SNGPL) گیس کا بل آن لائن چیک کرنے کے لیے آفیشل ویب سائٹ sngpl.com.pk پر جائیں اور 11 ہندسوں کا کنزیومر نمبر درج کریں۔ پنجاب، اسلام آباد اور کے پی کے صارفین کا ڈپلیکیٹ بل فوری ڈاؤن لوڈ ہو جائے گا۔",
     "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "SNGPL Official Portal",
@@ -5274,6 +5292,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to check SNGPL Sui Gas bill online by consumer number?",
+              "questionUr": "کنزیومر نمبر کے ذریعے سوئی گیس (SNGPL) کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Locate the 11-digit Consumer ID on the upper-right corner of your SNGPL bill. Open the official SNGPL customer portal, enter the 11 digits without spaces, and click submit. You can view current meter units (Hm3 / MMBTU), billing month, and due dates.",
+              "answerUr": "اپنے سوئی گیس بل کے اوپری دائیں کونے سے 11 ہندسوں کا کنزیومر نمبر دیکھیں۔ آفیشل SNGPL پورٹل پر یہ نمبر درج کریں تاکہ موجودہ یونٹس، گیس پریشر چارجز اور آخری تاریخ معلوم ہو سکے۔"
+      },
       {
         "questionEn": "How to check online bill of sngpl?",
         "questionUr": "سوئی ناردرن گیس (SNGPL) کا بل آن لائن کیسے چیک کریں؟",
@@ -6361,7 +6385,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "بی آئی ایس پی کی تمام خدمات 100 فیصد مفت ہیں۔ کسی ایجنٹ یا شخص کو کوئی رقم یا کمیشن ہرگز نہ دیں۔"
       }
     ],
-    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer of **PKR 10,500** issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (PKR 10,500) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule (PKR 10,500)\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | **PKR 10,500** per Eligible Household |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.",
+    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer of **PKR 10,500** issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (PKR 10,500) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule (PKR 10,500)\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | **PKR 10,500** per Eligible Household |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "## بی آئی ایس پی 8171 پورٹل گائیڈ 2026\nبے نظیر انکم سپورٹ پروگرام، 8171 ایس ایم ایس سروس اور نادرا سروے کے ذریعے مالی امداد حاصل کرنے کی مکمل معلومات۔",
     "relatedSlugs": [
       "/welfare/8171-portal-guide",
@@ -6440,7 +6464,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (PKR 10,500 - 13,500) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.",
+    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (PKR 10,500 - 13,500) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "**8171 ویب پورٹل** (8171.bisp.gov.pk) حکومت پاکستان کا آفیشل اور شفاف پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: بی آئی ایس پی کی تمام سروسز **100 فیصد مفت** ہیں۔ کسی ایجنٹ یا جعلی ویب سائٹ پر اعتبار نہ کریں۔ سرکاری سائٹس کے آخر میں **.gov.pk** ہوتا ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
@@ -6598,7 +6622,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct PKR 500, PKR 1,000, or any amount from your PKR 10,500 cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)",
+    "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct PKR 500, PKR 1,000, or any amount from your PKR 10,500 cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "بے نظیر کفالت کی رقم کا حصول آپ کا قانونی حق ہے۔\n\n> 🚨 **سکیم الرٹ**: **پوری 10,500 روپے کی رقم وصول کریں۔** اگر کوئی ایجنٹ کٹوتی کرے تو بی آئی ایس پی ٹول فری ہیلپ لائن **0800-26477** پر شکایت درج کروائیں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
@@ -6756,7 +6780,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Current official quarterly payment is PKR 10,500.** \n> Always collect your complete payment. Report any agent claiming partial payments or processing cuts to **0800-26477**.",
+    "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Current official quarterly payment is PKR 10,500.** \n> Always collect your complete payment. Report any agent claiming partial payments or processing cuts to **0800-26477**.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "**بے نظیر کفالت پروگرام** پاکستان کی غریب خواتین کو ہر تین ماہ بعد 10,500 روپے کی مالی امداد فراہم کرتا ہے۔\n\n> 🚨 **سکیم الرٹ**: **سرکاری قسط 10,500 روپے ہے۔** پوری رقم وصول کریں اور کٹوتی کی صورت میں 0800-26477 پر کال کریں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
@@ -7762,12 +7786,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "gepco-bill-check-online",
     "fullPath": "/bills/gepco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "GEPCO Bill Check Online 2026: Gujranwala Electric Duplicate Bill PDF",
-    "titleUr": "گیپکو آن لائن بل چیک 2026: گوجرانوالہ ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your GEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
-    "metaDescriptionUr": "گیپکو گوجرانوالہ، سیالکوٹ، گجرات، حافظ آباد اور نارووال کا آن لائن بجلی کا بل 14 ہندسوں والے ریفرنس نمبر سے چیک اور ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your GEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 11 or 12 for Gujranwala division), (2) Validate the number in our tool and copy it, and (3) Click 'Open GEPCO Official Portal' to access the official PITC server (bill.pitc.com.pk/gepcobill/) to view or print your PDF bill.",
-    "directAnswerUr": "گیپکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں تصدیق کر کے کاپی کریں اور آفیشل پورٹل کے بٹن پر کلک کر کے اصل پی ڈی ایف بل حاصل کریں۔",
+    "titleEn": "GEPCO Bill Online Check 2026 – Gujranwala Division Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "گیپکو آن لائن بجلی بل چیک 2026 – گوجرانوالہ و سیالکوٹ ڈپلیکیٹ بل",
+    "metaDescriptionEn": "GEPCO bill online check 2026. Check duplicate electricity bill for Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, Mandi Bahauddin by 14-digit reference number.",
+    "metaDescriptionUr": "گیپکو آن لائن بجلی بل چیک 2026۔ گوجرانوالہ، سیالکوٹ، گجرات، حافظ آباد اور نارووال کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے حاصل کریں۔",
+    "directAnswerEn": "To check your GEPCO electricity bill online in 2026, visit http://bill.pitc.com.pk/gepcobill/. Input your 14-digit Reference Number from any previous bill to view duplicate bill copies for Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
+    "directAnswerUr": "گیپکو بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/gepcobill پر اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ گوجرانوالہ، سیالکوٹ، گجرات اور نارووال کے صارفین کا تصدیق شدہ ڈپلیکیٹ بل فوری لوڈ ہو جائے گا۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC GEPCO Duplicate Bill Gateway",
@@ -7839,6 +7863,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check GEPCO bill online in Gujranwala and Sialkot?",
+              "questionUr": "گوجرانوالہ اور سیالکوٹ میں گیپکو بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Consumers in Gujranwala, Sialkot, Gujrat, and surrounding industrial zones can access their duplicate electricity bill by submitting their 14-digit reference number on the official PITC GEPCO portal. The duplicate bill displays current meter readings, fuel price adjustments (FPA), and payable due dates.",
+              "answerUr": "گوجرانوالہ، سیالکوٹ اور گجرات کے صنعتی و گھریلو صارفین PITC پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کر کے اپنے میٹر کی ریڈنگ، فیول ایڈجسٹمنٹ اور واجب الادا رقم چیک کر سکتے ہیں۔"
+      },
+      {
         "questionEn": "Which cities are covered under GEPCO?",
         "questionUr": "گیپکو کن شہروں کو بجلی فراہم کرتی ہے؟",
         "answerEn": "GEPCO provides electricity distribution to Gujranwala, Gujrat, Sialkot, Hafizabad, Narowal, and Mandi Bahauddin districts in Punjab.",
@@ -7869,12 +7899,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "hesco-bill-check-online",
     "fullPath": "/bills/hesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
-    "titleUr": "حیسکو آن لائن بل چیک 2026: حیدرآباد ڈپلیکیٹ بجلی کا بل حاصل کریں",
-    "metaDescriptionEn": "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
-    "metaDescriptionUr": "حیسکو حیدرآباد، میرپورخاص، جامشورو، مٹیاری، بدین اور ٹھٹہ کا بجلی کا بل آن لائن چیک کریں اور ڈپلیکیٹ پی ڈی ایف ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your HESCO duplicate bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 22), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open HESCO Official Portal' to load the official PITC gateway (bill.pitc.com.pk/hescobill/) to view or print your bill.",
-    "directAnswerUr": "حیسکو بجلی کا بل آن لائن دیکھنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ہمارے ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "HESCO Bill Online Check 2026 – Hyderabad & Lower Sindh Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "حیسکو آن لائن بجلی بل چیک 2026 – حیدرآباد و زیریں سندھ ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Check HESCO bill online 2026. Download duplicate electricity bill for Hyderabad, Jamshoro, Thatta, Badin, Mirpurkhas, Nawabshah by 14-digit reference number.",
+    "metaDescriptionUr": "حیسکو آن لائن بجلی بل چیک 2026۔ حیدرآباد، جامشورو، ٹھٹھہ، بدین اور میرپورخاص کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform a HESCO online bill check in 2026, visit http://bill.pitc.com.pk/hescobill/. Input your 14-digit Reference Number to generate your official duplicate electricity bill for Hyderabad, Jamshoro, Thatta, Badin, Mirpurkhas, and Shaheed Benazirabad.",
+    "directAnswerUr": "حیسکو کا بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/hescobill پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ حیدرآباد، جامشورو، ٹھٹھہ اور بدین کے صارفین اپنا ڈپلیکیٹ بل فوری دیکھ سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC HESCO Duplicate Bill Portal",
@@ -7946,6 +7976,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How can I check my HESCO electricity bill online for Hyderabad and Badin?",
+              "questionUr": "حیدرآباد اور بدین کے لیے حیسکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Visit the official PITC HESCO portal and type your 14-digit reference number found on any previous HESCO paper bill. You will get immediate access to your current payable amount, due date, and billing history across Hyderabad and lower Sindh districts.",
+              "answerUr": "پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لے کر آفیشل PITC حیسکو پورٹل پر درج کریں۔ حیدرآباد اور زیریں سندھ کے تمام اضلاع کا بل فوری اسکرین پر ظاہر ہو جائے گا۔"
+      },
+      {
         "questionEn": "What areas does HESCO cover in Sindh?",
         "questionUr": "حیسکو سندھ کے کن اضلاع کو کور کرتی ہے؟",
         "answerEn": "HESCO covers 12 districts in southern and central Sindh including Hyderabad, Jamshoro, Matiari, Tando Allahyar, Tando Muhammad Khan, Mirpurkhas, Thatta, Badin, Sajawal, and Nawabshah.",
@@ -7976,12 +8012,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "sepco-bill-check-online",
     "fullPath": "/bills/sepco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "SEPCO Bill Check Online 2026: Sukkur Electric Duplicate Bill PDF",
-    "titleUr": "سیپکو آن لائن بل چیک 2026: سکھر الیکٹرک ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your SEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, and Jacobabad.",
-    "metaDescriptionUr": "سیپکو سکھر، لاڑکانہ، شکارپور، گھوٹکی، خیرپور اور جیکب آباد کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف حاصل کریں۔",
-    "directAnswerEn": "To check your SEPCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 25 for Sukkur division), (2) Validate the format in our browser tool and click 'Copy Number', and (3) Click 'Open SEPCO Official Portal' to open http://bill.pitc.com.pk/sepcobill/ and print your bill.",
-    "directAnswerUr": "سیپکو کا بل آن لائن چیک کرنے کے لیے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر درج کریں، کاپی کریں اور آفیشل پورٹل بٹن پر کلک کر کے اصل بل دیکھیں۔",
+    "titleEn": "SEPCO Bill Check Online 2026 – Sukkur & Upper Sindh Duplicate Electricity Bill | Pakistan Info Hub",
+    "titleUr": "سیپکو آن لائن بجلی بل چیک 2026 – سکھر و بالائی سندھ ڈپلیکیٹ بل",
+    "metaDescriptionEn": "SEPCO bill check online 2026. Download duplicate electricity bill for Sukkur, Larkana, Khairpur, Ghotki, Shikarpur, Jacobabad using 14-digit reference number.",
+    "metaDescriptionUr": "سیپکو آن لائن بجلی بل چیک 2026۔ سکھر، لاڑکانہ، خیرپور، گھوٹکی اور جیکب آباد کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your SEPCO electricity bill online in 2026, open http://bill.pitc.com.pk/sepcobill/. Enter your 14-digit Reference Number to view and print duplicate electricity bills for Sukkur, Larkana, Khairpur, Ghotki, Shikarpur, and Jacobabad.",
+    "directAnswerUr": "سیپکو بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/sepcobill پر اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ سکھر، لاڑکانہ، خیرپور اور گھوٹکی کا آفیشل ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC SEPCO Duplicate Bill Portal",
@@ -8046,6 +8082,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check SEPCO electricity bill online in Sukkur and Larkana?",
+              "questionUr": "سکھر اور لاڑکانہ میں سیپکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "On the PITC SEPCO portal, enter your 14-digit reference number (found on your electricity bill header). The system displays your complete billing ledger, allowing you to print a barcode-enabled duplicate bill for payment via mobile wallets or banks.",
+              "answerUr": "سیپکو پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ سسٹم فوری طور پر بارکوڈ کے ساتھ مکمل ڈپلیکیٹ بل مہیا کرتا ہے جسے باآسانی ڈاؤن لوڈ اور ادا کیا جا سکتا ہے۔"
+      },
+      {
         "questionEn": "What regions are under SEPCO jurisdiction?",
         "questionUr": "سیپکو کے دائرہ اختیار میں کون سے اضلاع شامل ہیں؟",
         "answerEn": "SEPCO covers northern Sindh districts including Sukkur, Larkana, Shikarpur, Ghotki, Khairpur, Jacobabad, Kashmore, Naushahro Feroze, and Kamber-Shahdadkot.",
@@ -8075,12 +8117,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "pesco-bill-check-online",
     "fullPath": "/bills/pesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "PESCO Bill Check Online 2026: Peshawar Electric Duplicate Bill PDF",
-    "titleUr": "پیسکو آن لائن بل چیک 2026: پشاور الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your PESCO electricity duplicate bill online using 14-digit Reference Number. Covers Peshawar, Mardan, Swat, Abbottabad, Bannu, and D.I. Khan.",
-    "metaDescriptionUr": "پیسکو پشاور، مردان، سوات، ایبٹ آباد، بنوں اور ڈی آئی خان کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
-    "directAnswerEn": "To check your PESCO duplicate electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 08 for KPK zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open PESCO Official Portal' to access the official PITC gateway (bill.pitc.com.pk/pescobill/) to view or print your PDF bill.",
-    "directAnswerUr": "پیسکو بجلی کا بل آن لائن حاصل کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "PESCO Bill Check Online 2026 – KPK Duplicate Electricity Bill | Pakistan Info Hub",
+    "titleUr": "پیسکو آن لائن بجلی بل چیک 2026 – خیبر پختونخوا ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Perform PESCO bill check online 2026 for Khyber Pakhtunkhwa. Check duplicate bill for Peshawar, Mardan, Swat, Abbottabad, Bannu, Swabi using 14-digit reference number.",
+    "metaDescriptionUr": "پیسکو آن لائن بجلی بل چیک 2026 خیبر پختونخوا۔ پشاور، مردان، سوات، ایبٹ آباد اور بنوں کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your PESCO electricity bill online in 2026 across Khyber Pakhtunkhwa, visit http://bill.pitc.com.pk/pescobill/. Enter your 14-digit Reference Number to download duplicate bills for Peshawar, Mardan, Swat, Abbottabad, Swabi, Nowshera, and Bannu.",
+    "directAnswerUr": "خیبر پختونخوا میں پیسکو کا آن لائن بجلی بل چیک کرنے کے لیے bill.pitc.com.pk/pescobill پر جائیں اور 14 ہندسوں کا ریفرنس نمبر درج کریں۔ پشاور، مردان، سوات اور ایبٹ آباد کے صارفین اپنا بل فوری حاصل کر سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC PESCO Duplicate Bill Gateway",
@@ -8152,6 +8194,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check PESCO bill online across Khyber Pakhtunkhwa?",
+              "questionUr": "خیبر پختونخوا میں پیسکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Enter your 14-digit reference number on the official PITC PESCO portal without hyphens. The portal generates a high-resolution duplicate bill that can be saved as a PDF or printed for physical payment at any commercial bank branch or post office across KPK.",
+              "answerUr": "آفیشل PITC پیسکو پورٹل پر اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ سسٹم فوری طور پر تصدیق شدہ پی ڈی ایف بل جاری کرتا ہے جسے کسی بھی بینک برانچ یا پوسٹ آفس میں جمع کروایا جا سکتا ہے۔"
+      },
+      {
         "questionEn": "Which areas are served by PESCO in Khyber Pakhtunkhwa?",
         "questionUr": "پیسکو خیبر پختونخوا کے کن اضلاع کو بجلی فراہم کرتی ہے؟",
         "answerEn": "PESCO supplies electricity across most of KPK, including Peshawar, Mardan, Swat, Swabi, Nowshera, Charsadda, Abbottabad, Haripur, Mansehra, Kohat, Karak, Bannu, Lakki Marwat, and D.I. Khan.",
@@ -8182,12 +8230,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "qesco-bill-check-online",
     "fullPath": "/bills/qesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "QESCO Bill Check Online 2026: Quetta Electric Duplicate Bill PDF",
-    "titleUr": "کیسکو آن لائن بل چیک 2026: کوئٹہ الیکٹرک ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your QESCO electricity bill online using 14-digit Reference Number. Covers Quetta, Gwadar, Khuzdar, Chaman, Sibi, Loralai, and all Balochistan.",
-    "metaDescriptionUr": "کیسکو کوئٹہ، گوادر، خضدار، چمن، سبی اور پورے بلوچستان کا بجلی کا بل آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your QESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 26 for Balochistan zone), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open QESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/qescobill/) to view or print your PDF bill.",
-    "directAnswerUr": "کیسکو بجلی کا بل چیک کرنے کے لیے اپنے پرانے بل سے 14 ہندسوں کا ریفرنس نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "QESCO Bill Online Check 2026 – Quetta & Balochistan Electricity Bill | Pakistan Info Hub",
+    "titleUr": "کیسکو آن لائن بجلی بل چیک 2026 – کوئٹہ و بلوچستان ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Perform QESCO bill online check 2026 for Balochistan. Check duplicate bill for Quetta, Gwadar, Khuzdar, Turbat, Loralai, Sibi, Zhob, Chaman with 14-digit reference number.",
+    "metaDescriptionUr": "کیسکو آن لائن بجلی بل چیک 2026 بلوچستان۔ کوئٹہ، گوادر، خضدار اور تربت کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your QESCO electricity bill online in 2026 across Balochistan, visit http://bill.pitc.com.pk/qescobill/. Enter your 14-digit Reference Number to retrieve duplicate bills for Quetta, Gwadar, Khuzdar, Turbat, Sibi, Loralai, and Zhob.",
+    "directAnswerUr": "بلوچستان میں کیسکو کا بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/qescobill پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ کوئٹہ، گوادر اور خضدار کے صارفین کا ڈپلیکیٹ بل فوری دستیاب ہوگا۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC QESCO Duplicate Bill Gateway",
@@ -8252,6 +8300,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to perform QESCO bill check online for Quetta and Gwadar?",
+              "questionUr": "کوئٹہ اور گوادر کے لیے کیسکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Consumers across Quetta and coastal Balochistan can enter their 14-digit consumer reference number on the PITC QESCO portal. The system generates the latest duplicate bill including commercial, tube-well, and domestic tariffs.",
+              "answerUr": "کوئٹہ، گوادر اور دیگر اضلاع کے گھریلو و زرعی صارفین پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کر کے اپنا مکمل بل اور ریڈنگ کی تفصیلات حاصل کر سکتے ہیں۔"
+      },
+      {
         "questionEn": "What areas are covered by QESCO?",
         "questionUr": "کیسکو کن علاقوں کو کور کرتی ہے؟",
         "answerEn": "QESCO covers the entire province of Balochistan (except Lasbela/Hub which are supplied by K-Electric), covering Quetta, Gwadar, Turbat, Khuzdar, Chaman, Sibi, Zhob, Loralai, Pishin, and Mastung.",
@@ -8282,12 +8336,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "tesco-bill-check-online",
     "fullPath": "/bills/tesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "TESCO Bill Check Online 2026: Tribal Electric Supply Duplicate Bill PDF",
-    "titleUr": "ٹیسکو آن لائن بل چیک 2026: قبائلی اضلاع ڈپلیکیٹ بجلی کا بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your TESCO duplicate electricity bill online using 14-digit Reference Number. Covers former FATA, Khyber, Bajaur, Kurram, Mohmand, and Waziristan.",
-    "metaDescriptionUr": "ٹیسکو قبائلی اضلاع (خیبر، باجوڑ، کرم، مہمند، وزیرستان) کا بجلی کا بل آن لائن چیک کریں اور پرنٹ کریں۔",
-    "directAnswerEn": "To check your TESCO electricity bill online: (1) Find the 14-digit Reference Number on your paper bill (starts with 09 for tribal districts), (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open TESCO Official Portal' to access the official PITC portal (bill.pitc.com.pk/tescobill/) to view or print your PDF duplicate bill.",
-    "directAnswerUr": "ٹیسکو بجلی کا بل چیک کرنے کے لیے اپنے بل سے 14 ہندسوں کا ریفرنس نمبر درج کر کے کاپی کریں اور آفیشل پورٹل پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "TESCO Bill Check Online 2026 – Tribal Districts Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "ٹیسکو آن لائن بجلی بل چیک 2026 – قبائلی اضلاع ڈپلیکیٹ بل",
+    "metaDescriptionEn": "TESCO bill check online 2026. Download duplicate electricity bill for Khyber, Bajaur, Mohmand, Kurram, Orakzai, North & South Waziristan using 14-digit reference number.",
+    "metaDescriptionUr": "ٹیسکو آن لائن بجلی بل چیک 2026۔ خیبر، باجوڑ، مہمند، کرم، اورکزئی اور وزیرستان کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To check your TESCO electricity bill online in 2026 for merged tribal districts, visit http://bill.pitc.com.pk/tescobill/. Enter your 14-digit Reference Number to check duplicate bills for Khyber, Bajaur, Mohmand, Kurram, Orakzai, and Waziristan.",
+    "directAnswerUr": "قبائلی اضلاع کے لیے ٹیسکو بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/tescobill پر جائیں اور اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ خیبر، باجوڑ اور وزیرستان کا ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "PITC TESCO Duplicate Bill Gateway",
@@ -8345,6 +8399,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How do consumers in merged tribal districts check their TESCO bill online?",
+              "questionUr": "قبائلی اضلاع کے صارفین ٹیسکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Consumers in Khyber, Bajaur, Mohmand, Kurram, Orakzai, and Waziristan can retrieve their duplicate electricity bill by entering their 14-digit reference number on the official PITC TESCO portal. This provides valid billing details for local bank and digital wallet payments.",
+              "answerUr": "ضم شدہ قبائلی اضلاع کے صارفین 14 ہندسوں کا ریفرنس نمبر درج کر کے اپنا تصدیق شدہ بل حاصل کر سکتے ہیں اور بینک یا ایزی پیسہ کے ذریعے جمع کروا سکتے ہیں۔"
+      },
+      {
         "questionEn": "What areas are served by TESCO?",
         "questionUr": "ٹیسکو کن علاقوں کو بجلی فراہم کرتی ہے؟",
         "answerEn": "TESCO serves the merged tribal districts of Khyber Pakhtunkhwa (former FATA), including Khyber, Mohmand, Bajaur, Kurram, Orakzai, North Waziristan, and South Waziristan.",
@@ -8375,12 +8435,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "hazeco-bill-check-online",
     "fullPath": "/bills/hazeco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
-    "titleUr": "ہیزیکو ہزارہ الیکٹرک سپلائی گائیڈ 2026: بلنگ طریقہ کار اور ہیلپ لائن",
-    "metaDescriptionEn": "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
-    "metaDescriptionUr": "ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) ایبٹ آباد، مانسہرہ، ہری پور، بٹگرام اور کوہستان کی بلنگ معلومات اور ہیلپ لائن گائیڈ۔",
-    "directAnswerEn": "HAZECO (Hazara Electric Supply Company) is the dedicated distribution company for Hazara Division. During the administrative operational transition from PESCO, active consumer billing and duplicate bills continue to be processed through the PESCO PITC billing portal (bill.pitc.com.pk/pescobill/) using your existing 14-digit reference number. Emergency helpline is 118.",
-    "directAnswerUr": "ہیزیکو ہزارہ ڈویژن کی نئی بجلی کمپنی ہے۔ عبوری دور میں تمام صارفین کے بل پیسکو پی آئی ٹی سی پورٹل کے ذریعے ہی دیکھے اور ادا کیے جاتے ہیں۔ ایمرجنسی کے لیے 118 ڈائل کریں۔",
+    "titleEn": "HAZECO Bill Check Online 2026 – Hazara Division Electricity Bill | Pakistan Info Hub",
+    "titleUr": "ہیزیکو آن لائن بجلی بل چیک 2026 – ہزارہ ڈویژن ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Perform HAZECO bill check online 2026. Download duplicate electricity bill for Abbottabad, Haripur, Mansehra, Battagram, Kohistan with 14-digit reference number.",
+    "metaDescriptionUr": "ہیزیکو آن لائن بجلی بل چیک 2026۔ ایبٹ آباد، ہری پور، مانسہرہ اور کوہستان کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے حاصل کریں۔",
+    "directAnswerEn": "To check your HAZECO (Hazara Electric Supply Company) bill online in 2026, visit http://bill.pitc.com.pk/pescobill/ (served under PESCO/HAZECO unified grid). Enter your 14-digit Reference Number to view duplicate bills for Abbottabad, Haripur, Mansehra, Battagram, and Kohistan.",
+    "directAnswerUr": "ہیزیکو (ہزارہ الیکٹرک) کا بجلی بل آن لائن چیک کرنے کے لیے PITC پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ ایبٹ آباد، ہری پور اور مانسہرہ کا ڈپلیکیٹ بل فوری دستیاب ہوگا۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "Ministry of Energy & PESCO Gateway",
@@ -8431,6 +8491,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check HAZECO electricity bill online in Hazara Division?",
+              "questionUr": "ہزارہ ڈویژن میں ہیزیکو کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Consumers in Abbottabad, Haripur, and Mansehra can enter their 14-digit reference number on the official PITC electricity portal to download high-resolution duplicate bills with printable barcodes.",
+              "answerUr": "ایبٹ آباد، ہری پور اور مانسہرہ کے صارفین PITC پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کر کے اپنا تصدیق شدہ بارکوڈ بل حاصل کر سکتے ہیں۔"
+      },
+      {
         "questionEn": "Which districts fall under HAZECO?",
         "questionUr": "ہیزیکو کے دائرہ کار میں کون سے اضلاع آتے ہیں؟",
         "answerEn": "HAZECO covers the entire Hazara division comprising Abbottabad, Haripur, Mansehra, Battagram, Torghar, Upper Kohistan, Lower Kohistan, and Kolai-Palas.",
@@ -8461,12 +8527,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "ajk-electric-bill-check-online",
     "fullPath": "/bills/ajk-electric-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "AJK Electricity Bill Online Guide 2026: Azad Kashmir Duplicate Bill & Rates",
-    "titleUr": "آزاد کشمیر بجلی بل آن لائن گائیڈ 2026: محکمہ برقیات آزاد کشمیر ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Check your AJK Electricity Department bill online. Tariff rates, 14-digit Account Number, Muzaffarabad, Mirpur, Kotli, Rawalakot, and helpline contacts.",
-    "metaDescriptionUr": "محکمہ برقیات آزاد کشمیر کا بجلی کا بل، مظفرآباد، میرپور، کوٹلی، راولاکوٹ ٹیرف اور ڈپلیکیٹ بلنگ معلومات۔",
-    "directAnswerEn": "To check your Azad Jammu & Kashmir electricity bill online: (1) Find the 14-digit Account Number on your AJK Electricity Department bill, (2) Validate the format in our tool, and (3) Click 'Open AJK Official Portal' to visit www.ajkelectricity.gov.pk. You can also pay via 1Link banking apps or Bank of AJK branches.",
-    "directAnswerUr": "آزاد کشمیر بجلی کا بل دیکھنے کے لیے اپنے بل سے 14 ہندسوں کا اکاؤنٹ نمبر لیں، ہمارے ٹول میں چیک کریں اور آفیشل پورٹل (ajkelectricity.gov.pk) پر جائیں۔ بل بینک آف آزاد کشمیر یا موبائل ایپ سے ادا کریں۔",
+    "titleEn": "AJK Electricity Bill Check Online 2026 – Azad Kashmir Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026 – اے جے کے ڈپلیکیٹ بل",
+    "metaDescriptionEn": "AJK electricity bill check online 2026. Download duplicate electricity bill for Muzaffarabad, Mirpur, Rawalakot, Kotli using consumer account number.",
+    "metaDescriptionUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026۔ مظفرآباد، میرپور، راولاکوٹ اور کوٹلی کا ڈپلیکیٹ بجلی بل آن لائن حاصل کریں۔",
+    "directAnswerEn": "To check your Azad Jammu & Kashmir (AJK) electricity bill online in 2026, visit the official AJK Electricity Department portal at https://ajked.gok.pk/. Enter your Consumer Account Number to download duplicate bills for Muzaffarabad, Mirpur, Rawalakot, and Kotli.",
+    "directAnswerUr": "آزاد کشمیر (AJK) کا بجلی بل آن لائن چیک کرنے کے لیے محکمہ برقیات آزاد کشمیر پورٹل ajked.gok.pk پر جائیں اور اپنا اکاؤنٹ نمبر درج کریں۔ مظفرآباد، میرپور اور راولاکوٹ کا ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "AJK Electricity Department Official Portal",
@@ -8530,6 +8596,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to check AJK electricity bill online in Muzaffarabad and Mirpur?",
+              "questionUr": "مظفرآباد اور میرپور میں آزاد کشمیر کا بجلی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Enter your consumer account number on the official AJK Electricity Department portal to view your latest billing units, arrears, and download a printable duplicate bill.",
+              "answerUr": "محکمہ برقیات آزاد کشمیر پورٹل پر اپنا اکاؤنٹ نمبر درج کر کے موجودہ یونٹس، بقایا جات اور پرنٹ ایبل ڈپلیکیٹ بل حاصل کریں۔"
+      },
       {
         "questionEn": "Which districts are covered by AJK Electricity Department?",
         "questionUr": "محکمہ برقیات آزاد کشمیر کن اضلاع کو کور کرتا ہے؟",
@@ -8647,12 +8719,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wasa-lahore-bill-check-online",
     "fullPath": "/bills/wasa-lahore-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "WASA Lahore Bill Check Online 2026: Download Duplicate Water Bill PDF",
-    "titleUr": "واسا لاہور آن لائن بل چیک 2026: پانی اور سیوریج کا ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-    "metaDescriptionEn": "Check and download your WASA Lahore duplicate water bill online using 8-digit Account Number. View dues, due dates, and 1334 helpline.",
-    "metaDescriptionUr": "واسا لاہور کا پانی و سیوریج بل 8 ہندسوں والے اکاؤنٹ نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your WASA Lahore water bill online: (1) Find your 8-digit Account Number printed on your water bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Lahore Official Portal' to load the official Punjab government portal (duplicatebill.wasa.punjab.gov.pk) to view or print your PDF bill.",
-    "directAnswerUr": "واسا لاہور کا بل چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا اکاؤنٹ نمبر لیں، ٹول میں چیک کر کے کاپی کریں اور آفیشل واسا پورٹل (duplicatebill.wasa.punjab.gov.pk) پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "WASA Lahore Bill Online Check 2026 – Water & Sewerage Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "واسا لاہور آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر اینڈ سیوریج بل",
+    "metaDescriptionEn": "WASA Lahore bill online check 2026. Download duplicate water and sanitation bill for Lahore city using 8-digit consumer number via WASA portal and ePay Punjab.",
+    "metaDescriptionUr": "واسا لاہور آن لائن پانی بل چیک 2026۔ 8 ہندسوں کے کنزیومر نمبر سے لاہور شہر کا ڈپلیکیٹ واٹر اور سیوریج بل آن لائن چیک اور ادا کریں۔",
+    "directAnswerEn": "To perform a WASA Lahore bill online check in 2026, visit https://wasa.punjab.gov.pk/. Enter your 8-digit Consumer Number (printed on your WASA water voucher) to check duplicate bills and generate 1Link PSID for online payment through ePay Punjab.",
+    "directAnswerUr": "واسا لاہور کا پانی بل آن لائن چیک کرنے کے لیے wasa.punjab.gov.pk پر جائیں اور اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ لاہور کے صارفین ڈپلیکیٹ بل دیکھنے کے ساتھ ای پے پنجاب سے آن لائن ادائیگی بھی کر سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "WASA Lahore Duplicate Bill Portal",
@@ -8717,6 +8789,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check WASA Lahore water bill online?",
+              "questionUr": "واسا لاہور کا پانی اور سیوریج کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Enter your 8-digit WASA consumer number on the Punjab WASA portal to retrieve your duplicate water bill. You can also generate an ePay Punjab Challan / PSID to pay directly via mobile banking apps or ATM without visiting a bank branch.",
+              "answerUr": "پنجاب واسا پورٹل پر اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ ڈپلیکیٹ بل حاصل کرنے کے بعد آپ ای پے پنجاب کے ذریعے کسی بھی بینکنگ ایپ سے باآسانی بل جمع کروا سکتے ہیں۔"
+      },
+      {
         "questionEn": "What is the WASA Lahore customer helpline?",
         "questionUr": "واسا لاہور کا ہیلپ لائن نمبر کیا ہے؟",
         "answerEn": "WASA Lahore operates a 24/7 toll-free helpline at 1334 for water contamination, low pressure, drainage, and billing complaints.",
@@ -8747,12 +8825,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wasa-faisalabad-bill-check-online",
     "fullPath": "/bills/wasa-faisalabad-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill",
-    "titleUr": "واسا فیصل آباد آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
-    "metaDescriptionEn": "Check and download your WASA Faisalabad duplicate water bill online using 12-digit Consumer ID. Official portal link, due dates, and 1334 helpline.",
-    "metaDescriptionUr": "واسا فیصل آباد کا پانی و سیوریج کا بل 12 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
-    "directAnswerEn": "To check your WASA Faisalabad water bill online: (1) Find the 12-digit Consumer ID on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Faisalabad Official Portal' to access http://faisalabadwasa.gop.pk/duplicatebill.aspx and download your duplicate bill.",
-    "directAnswerUr": "واسا فیصل آباد کا بل دیکھنے کے لیے اپنے بل سے 12 ہندسوں کا کنزیومر آئی ڈی لیں، کاپی کریں اور آفیشل واسا فیصل آباد پورٹل سے بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "WASA Faisalabad Bill Check Online 2026 – FDA Water Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر بل",
+    "metaDescriptionEn": "Perform WASA Faisalabad bill check online 2026. Check water & sewerage duplicate bill for Faisalabad using consumer number on official WASA portal.",
+    "metaDescriptionUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026۔ فیصل آباد شہر کا ڈپلیکیٹ واٹر اینڈ سیوریج بل آن لائن چیک اور ڈاؤن لوڈ کریں۔",
+    "directAnswerEn": "To perform a WASA Faisalabad bill check online in 2026, visit the official WASA FDA customer portal at https://wasa.punjab.gov.pk/. Input your 8-digit Consumer ID from your water voucher to download duplicate bills across Madina Town, Jinnah Colony, Peoples Colony, and Iqbal Town.",
+    "directAnswerUr": "واسا فیصل آباد پانی کا بل آن لائن چیک کرنے کے لیے واسا پورٹل پر اپنا 8 ہندسوں کا کنزیومر شناختی نمبر درج کریں۔ مدینہ ٹاؤن، پیپلز کالونی اور جناح کالونی کے صارفین اپنا ڈپلیکیٹ بل فوری حاصل کر سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "WASA Faisalabad Official Portal",
@@ -8810,6 +8888,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check WASA Faisalabad water bill online?",
+              "questionUr": "فیصل آباد میں واسا کا پانی کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Locate your 8-digit consumer number on any previous WASA Faisalabad bill. Submit this on the WASA customer service portal to instantly verify total dues, meter status, and print a duplicate bill for payment.",
+              "answerUr": "پرانے بل سے 8 ہندسوں کا کنزیومر نمبر دیکھ کر واسا پورٹل پر درج کریں۔ واجب الادا رقم، آخری تاریخ اور ڈپلیکیٹ واؤچر فوری دستیاب ہوگا۔"
+      },
+      {
         "questionEn": "What is the WASA Faisalabad emergency complaint helpline?",
         "questionUr": "واسا فیصل آباد کا ہیلپ لائن نمبر کیا ہے؟",
         "answerEn": "Call universal helpline 1334 or WASA Faisalabad complaint desk at 041-9210049.",
@@ -8840,12 +8924,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wasa-rawalpindi-bill-check-online",
     "fullPath": "/bills/wasa-rawalpindi-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates",
-    "titleUr": "واسا راولپنڈی آن لائن بل 2026: راولپنڈی واٹر بل اور ڈپلیکیٹ کاپی",
-    "metaDescriptionEn": "Check WASA Rawalpindi water and sewerage bill online with 10-digit Consumer Number. Official portal links, tariff slabs, and 1334 helpline.",
-    "metaDescriptionUr": "واسا راولپنڈی کا پانی اور سیوریج بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور معلومات حاصل کریں۔",
-    "directAnswerEn": "To check your WASA Rawalpindi water bill: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the format in our browser tool, and (3) Click 'Open WASA Rawalpindi Official Portal' to visit https://wasa.rawalpindi.gop.pk/ to check dues or download your duplicate bill. For complaints, dial 1334 or 051-5555498.",
-    "directAnswerUr": "واسا راولپنڈی کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، ہمارے ٹول میں چیک کر کے آفیشل پورٹل (wasa.rawalpindi.gop.pk) پر جائیں۔ ہیلپ لائن 1334 ہے۔",
+    "titleEn": "WASA Rawalpindi Bill Check Online 2026 – Water & Sanitation Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "واسا راولپنڈی آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر بل",
+    "metaDescriptionEn": "WASA Rawalpindi bill check online 2026. Check duplicate water bill for Rawalpindi & Murree using account number. Online payment through ePay Punjab.",
+    "metaDescriptionUr": "واسا راولپنڈی آن لائن پانی بل چیک 2026۔ راولپنڈی اور مری کا ڈپلیکیٹ واٹر اینڈ سینی ٹیشن بل آن لائن چیک کریں۔",
+    "directAnswerEn": "To check your WASA Rawalpindi water bill online in 2026, visit https://wasa.punjab.gov.pk/ or the WASA Rawalpindi portal. Enter your 8-digit Consumer Account Number to check payable water and sewerage charges and generate an ePay Punjab 1Link PSID for online payment.",
+    "directAnswerUr": "واسا راولپنڈی کا پانی کا بل آن لائن چیک کرنے کے لیے واسا پنجاب پورٹل پر اپنا 8 ہندسوں کا کنزیومر اکاؤنٹ نمبر درج کریں۔ راولپنڈی اور مری کے صارفین ڈپلیکیٹ بل دیکھنے کے ساتھ ای پے پنجاب سے آن لائن بل جمع کروا سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "WASA Rawalpindi Official Portal",
@@ -8903,6 +8987,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check and pay WASA Rawalpindi water bill online?",
+              "questionUr": "واسا راولپنڈی کا پانی کا بل آن لائن کیسے چیک اور ادا کریں؟",
+              "answerEn": "Enter your 8-digit WASA consumer number on the official Punjab WASA portal. You can view the full duplicate voucher with meter reading and pay via ePay Punjab on any mobile banking app using the generated 1Link PSID.",
+              "answerUr": "پنجاب واسا ویب سائٹ پر اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ آپ مکمل ڈپلیکیٹ بل دیکھ سکتے ہیں اور ای پے پنجاب کے ذریعے کسی بھی بینکنگ ایپ سے باآسانی ادائیگی کر سکتے ہیں۔"
+      },
+      {
         "questionEn": "What is the WASA Rawalpindi helpline number?",
         "questionUr": "واسا راولپنڈی کا ہیلپ لائن نمبر کیا ہے؟",
         "answerEn": "Call 1334 (toll-free) or WASA Rawalpindi headquarters at 051-5555498.",
@@ -8933,12 +9023,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wasa-multan-bill-check-online",
     "fullPath": "/bills/wasa-multan-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF",
-    "titleUr": "واسا ملتان آن لائن بل چیک 2026: ملتان واٹر اینڈ سینی ٹیشن ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Check and download your WASA Multan duplicate water bill online with 8-digit Consumer Number. Official portal links, due dates, and 1334 helpline.",
-    "metaDescriptionUr": "واسا ملتان کا پانی و سیوریج بل 8 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your WASA Multan duplicate bill online: (1) Find the 8-digit Consumer Account Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Multan Official Portal' to visit https://wasamultan.gop.pk/duplicatebill and view or print your PDF bill.",
-    "directAnswerUr": "واسا ملتان کا بل آن لائن چیک کرنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasamultan.gop.pk/duplicatebill) سے بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "WASA Multan Bill Check Online 2026 – MDA Water & Sewerage Bill | Pakistan Info Hub",
+    "titleUr": "واسا ملتان آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر بل",
+    "metaDescriptionEn": "WASA Multan bill check online 2026. Check duplicate water & sewerage bill for Multan city by consumer number. Online payment through ePay Punjab.",
+    "metaDescriptionUr": "واسا ملتان آن لائن پانی بل چیک 2026۔ ملتان شہر کا ڈپلیکیٹ واٹر بل 8 ہندسوں کے کنزیومر نمبر سے حاصل کریں۔",
+    "directAnswerEn": "To check your WASA Multan water bill online in 2026, navigate to https://wasa.punjab.gov.pk/. Enter your 8-digit Consumer Number to view current dues and generate ePay Punjab payment PSID for Multan city areas.",
+    "directAnswerUr": "واسا ملتان کا پانی کا بل آن لائن چیک کرنے کے لیے واسا پنجاب پورٹل پر 8 ہندسوں کا کنزیومر نمبر درج کریں۔ ملتان کے شہری ڈپلیکیٹ بل دیکھنے کے ساتھ آن لائن ادائیگی بھی کر سکتے ہیں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "WASA Multan Duplicate Bill Portal",
@@ -8996,6 +9086,12 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+              "questionEn": "How to check WASA Multan water bill online?",
+              "questionUr": "ملتان میں واسا کا پانی بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Enter your 8-digit consumer account number on the official Punjab WASA portal to retrieve your Multan water voucher and view meter readings and due dates.",
+              "answerUr": "واسا پورٹل پر اپنا 8 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ ملتان واٹر اینڈ سینی ٹیشن ایجنسی کا تصدیق شدہ بل فوری اسکرین پر آ جائے گا۔"
+      },
+      {
         "questionEn": "What is the WASA Multan customer helpline?",
         "questionUr": "واسا ملتان کا ہیلپ لائن نمبر کیا ہے؟",
         "answerEn": "Call toll-free 1334 or WASA Multan complaint center at 061-9200881.",
@@ -9026,12 +9122,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wasa-gujranwala-bill-check-online",
     "fullPath": "/bills/wasa-gujranwala-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
-    "titleUr": "واسا گوجرانوالہ آن لائن بل چیک 2026: ڈپلیکیٹ پانی کا بل حاصل کریں",
-    "metaDescriptionEn": "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
-    "metaDescriptionUr": "واسا گوجرانوالہ کا پانی کا بل 8 ہندسوں والے کنزیومر آئی ڈی سے آن لائن چیک کریں اور پرنٹ کریں۔",
-    "directAnswerEn": "To check your WASA Gujranwala water bill online: (1) Locate the 8-digit Consumer Account Number on your bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open WASA Gujranwala Official Portal' to visit https://wasag.gop.pk/duplicate-bill/ to view or print your PDF bill.",
-    "directAnswerUr": "واسا گوجرانوالہ کا بل دیکھنے کے لیے اپنے بل سے 8 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (wasag.gop.pk/duplicate-bill/) پر جا کر بل ڈاؤن لوڈ کریں۔",
+    "titleEn": "WASA Gujranwala Bill Check Online 2026 – GDA Water Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "واسا گوجرانوالہ آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر بل",
+    "metaDescriptionEn": "WASA Gujranwala bill check online 2026. Check duplicate water and sanitation bill for Gujranwala city using 8-digit consumer number via Punjab WASA.",
+    "metaDescriptionUr": "واسا گوجرانوالہ آن لائن پانی بل چیک 2026۔ گوجرانوالہ شہر کا ڈپلیکیٹ واٹر بل آن لائن حاصل کریں۔",
+    "directAnswerEn": "To check your WASA Gujranwala water bill online in 2026, visit https://wasa.punjab.gov.pk/. Submit your 8-digit Consumer ID to view duplicate bills across Gujranwala city zones.",
+    "directAnswerUr": "واسا گوجرانوالہ پانی کا بل آن لائن چیک کرنے کے لیے واسا پورٹل پر 8 ہندسوں کا کنزیومر نمبر درج کریں اور ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "WASA Gujranwala Official Portal",
@@ -9088,6 +9184,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to check WASA Gujranwala water bill online?",
+              "questionUr": "گوجرانوالہ میں واسا کا پانی کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "Input your 8-digit consumer reference number on the Punjab WASA portal to download your official duplicate water and sewerage bill.",
+              "answerUr": "پنجاب واسا پورٹل پر 8 ہندسوں کا ریفرنس نمبر درج کر کے اپنا اصل ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+      },
       {
         "questionEn": "What is the WASA Gujranwala complaint contact?",
         "questionUr": "واسا گوجرانوالہ کا شکایت نمبر کیا ہے؟",
@@ -9291,12 +9393,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "kwsc-karachi-water-bill-check",
     "fullPath": "/bills/kwsc-karachi-water-bill-check",
     "categoryId": "bills",
-    "titleEn": "KWSC Karachi Water Bill Check Online 2026: Download Duplicate Bill PDF",
-    "titleUr": "کراچی واٹر بورڈ (KWSC) آن لائن بل چیک 2026: ڈپلیکیٹ واٹر بل حاصل کریں",
-    "metaDescriptionEn": "Check and download your KWSC (formerly KWSB) Karachi duplicate water bill online using 10-digit Consumer Number. Official portal links and 1339 helpline.",
-    "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) کا پانی کا بل 10 ہندسوں والے کنزیومر نمبر سے آن لائن چیک کریں اور پی ڈی ایف ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To check your KWSC Karachi water bill online: (1) Find the 10-digit Consumer Number on your paper bill, (2) Validate the number in our tool and click 'Copy Number', and (3) Click 'Open KWSC Official Portal' to access https://www.kwsc.gos.pk/duplicate-bill/ and download your duplicate bill PDF. For complaints, dial 1339.",
-    "directAnswerUr": "کراچی واٹر بورڈ کا بل چیک کرنے کے لیے اپنے بل سے 10 ہندسوں کا کنزیومر نمبر لیں، کاپی کریں اور آفیشل پورٹل (kwsc.gos.pk/duplicate-bill) پر جا کر بل ڈاؤن لوڈ کریں۔ ہیلپ لائن 1339 ہے۔",
+    "titleEn": "KWSC Karachi Water Bill Check Online 2026 – KWSB Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "کے ڈبلیو ایس سی کراچی پانی بل چیک 2026 – واٹر بورڈ ڈپلیکیٹ بل",
+    "metaDescriptionEn": "KWSC Karachi water bill check online 2026. Check and download Karachi Water & Sewerage Corporation duplicate bill by 10-digit consumer account number.",
+    "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC / KWSB) آن لائن بل چیک 2026۔ 10 ہندسوں کے اکاؤنٹ نمبر سے کراچی کا پانی کا ڈپلیکیٹ بل حاصل کریں۔",
+    "directAnswerEn": "To check your KWSC (formerly KWSB) Karachi water bill online in 2026, navigate to https://www.kwsc.gos.pk/. Enter your 10-digit Consumer Account Number to download your official duplicate water and sewerage bill.",
+    "directAnswerUr": "کراچی واٹر کارپوریشن (KWSC) کا بل آن لائن چیک کرنے کے لیے kwsc.gos.pk پر جائیں اور 10 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ کراچی کے تمام ٹاؤنز کا ڈپلیکیٹ بل فوری اسکرین پر ظاہر ہو جائے گا۔",
     "lastVerified": "August 18, 2026",
     "officialSource": {
       "name": "KWSC Official Duplicate Bill Portal",
@@ -9360,6 +9462,12 @@ export const ARTICLES: Record<string, Article> = {
       }
     ],
     "faqs": [
+      {
+              "questionEn": "How to check KWSC (KWSB) water bill online in Karachi?",
+              "questionUr": "کراچی واٹر بورڈ (KWSC) کا پانی کا بل آن لائن کیسے چیک کریں؟",
+              "answerEn": "To check your Karachi water and sewerage bill, open the KWSC official customer portal and type your 10-digit consumer number found on your physical water bill. The portal displays current dues, payment status, and a printable duplicate bill.",
+              "answerUr": "کراچی واٹر کارپوریشن پورٹل پر پرانے بل سے 10 ہندسوں کا کنزیومر نمبر درج کریں۔ آپ اپنے واجبات، آخری تاریخ اور ڈپلیکیٹ واؤچر فوری حاصل کر سکتے ہیں۔"
+      },
       {
         "questionEn": "What is the KWSC Karachi complaint helpline?",
         "questionUr": "کراچی واٹر بورڈ کا ہیلپ لائن نمبر کیا ہے؟",

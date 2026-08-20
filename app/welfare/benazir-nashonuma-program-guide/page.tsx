@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support',
-  description: 'Benazir Nashonuma Program eligibility, registration at Tehsil Nashonuma Centers, PKR 2,000 (boy) / PKR 2,500 (girl) monthly stipend for pregnant mothers & infants.',
+  title: "Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support",
+  description: "Benazir Nashonuma Program eligibility, registration at Tehsil Nashonuma Centers, PKR 2,000 (boy) / PKR 2,500 (girl) monthly stipend for pregnant mothers & infants.",
   openGraph: {
-    title: 'Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support',
-    description: 'Benazir Nashonuma Program eligibility, registration at Tehsil Nashonuma Centers, PKR 2,000 (boy) / PKR 2,500 (girl) monthly stipend for pregnant mothers & infants.',
+    title: "Benazir Nashonuma Program 2026: PKR 2,500 Monthly Cash & Food Support",
+    description: "Benazir Nashonuma Program eligibility, registration at Tehsil Nashonuma Centers, PKR 2,000 (boy) / PKR 2,500 (girl) monthly stipend for pregnant mothers & infants.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/welfare/benazir-nashonuma-program-guide',
   },

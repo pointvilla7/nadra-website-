@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
-  description: "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
+  title: "HAZECO Bill Check Online 2026 – Hazara Division Electricity Bill | Pakistan Info Hub",
+  description: "Perform HAZECO bill check online 2026. Download duplicate electricity bill for Abbottabad, Haripur, Mansehra, Battagram, Kohistan with 14-digit reference number.",
   openGraph: {
-    title: "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
-    description: "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
+    title: "HAZECO Bill Check Online 2026 – Hazara Division Electricity Bill | Pakistan Info Hub",
+    description: "Perform HAZECO bill check online 2026. Download duplicate electricity bill for Abbottabad, Haripur, Mansehra, Battagram, Kohistan with 14-digit reference number.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/bills/hazeco-bill-check-online',
   },

@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
-  description: "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
+  title: "WASA Gujranwala Bill Check Online 2026 – GDA Water Duplicate Bill | Pakistan Info Hub",
+  description: "WASA Gujranwala bill check online 2026. Check duplicate water and sanitation bill for Gujranwala city using 8-digit consumer number via Punjab WASA.",
   openGraph: {
-    title: "WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill",
-    description: "Check and download your WASA Gujranwala duplicate water bill online using 8-digit Consumer ID. Official duplicate bill portal and 1334 helpline.",
+    title: "WASA Gujranwala Bill Check Online 2026 – GDA Water Duplicate Bill | Pakistan Info Hub",
+    description: "WASA Gujranwala bill check online 2026. Check duplicate water and sanitation bill for Gujranwala city using 8-digit consumer number via Punjab WASA.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/bills/wasa-gujranwala-bill-check-online',
   },

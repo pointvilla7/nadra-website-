@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Registry vs Intiqal Difference in Pakistan – Legal Rights Explained',
-  description: 'Understand the critical legal differences between Registry (Sale Deed) and Intiqal (Mutation) in Pakistani real estate law. Protect your plot from fraudulent double-sale.',
+  title: "Registry vs Intiqal Difference in Pakistan – Legal Rights Explained",
+  description: "Understand the critical legal differences between Registry (Sale Deed) and Intiqal (Mutation) in Pakistani real estate law. Protect your plot from fraudulent double-sale.",
   openGraph: {
-    title: 'Registry vs Intiqal Difference in Pakistan – Legal Rights Explained',
-    description: 'Understand the critical legal differences between Registry (Sale Deed) and Intiqal (Mutation) in Pakistani real estate law. Protect your plot from fraudulent double-sale.',
+    title: "Registry vs Intiqal Difference in Pakistan – Legal Rights Explained",
+    description: "Understand the critical legal differences between Registry (Sale Deed) and Intiqal (Mutation) in Pakistani real estate law. Protect your plot from fraudulent double-sale.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/property/registry-vs-intiqal-difference',
   },
