@@ -37,28 +37,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/disclaimer',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date('2026-08-18'),
+    lastModified: new Date('2026-08-20'),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({
     url: `${baseUrl}/${cat.slug}`,
-    lastModified: new Date('2026-08-17'),
+    lastModified: new Date('2026-08-20'),
     changeFrequency: 'daily' as const,
     priority: 0.9,
   }));
 
   const authorPages = Object.keys(AUTHORS).map((slug) => ({
     url: `${baseUrl}/authors/${slug}`,
-    lastModified: new Date('2026-08-17'),
+    lastModified: new Date('2026-08-20'),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
   const articlePages = Object.values(ARTICLES).map((art) => {
-    const verifiedDate = art.lastVerified ? new Date(art.lastVerified) : new Date('2026-08-17');
-    const safeDate = !isNaN(verifiedDate.getTime()) ? verifiedDate : new Date('2026-08-17');
+    const verifiedDate = art.lastVerified ? new Date(art.lastVerified) : new Date('2026-08-20');
+    const safeDate = !isNaN(verifiedDate.getTime()) ? verifiedDate : new Date('2026-08-20');
 
     return {
       url: `${baseUrl}${art.fullPath}`,
