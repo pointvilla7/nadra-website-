@@ -1,13 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Inter, Lora, IBM_Plex_Mono } from 'next/font/google';
+import { Public_Sans, Fraunces, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { ClientLayout } from '@/components/ClientLayout';
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 
 // ─── Core fonts: loaded eagerly, display: swap prevents FOIT ───────────────
-const sansFont = Inter({
+const sansFont = Public_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
@@ -16,9 +16,9 @@ const sansFont = Inter({
   adjustFontFallback: false,
 });
 
-const serifFont = Lora({
+const serifFont = Fraunces({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['500', '600', '700'],
   variable: '--font-serif',
   display: 'swap',
   preload: true,

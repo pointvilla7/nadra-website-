@@ -1,102 +1,65 @@
-# Pakistan Info Hub — Design System Specifications (2026)
+# Pakistan Info Hub — Exact Design System Specifications (2026)
 
-This document establishes the official Design Tokens and UI guidelines for **Pakistan Info Hub**, delivering an authoritative, government-adjacent aesthetic that exceeds international digital-governance and civic fintech benchmarks while maintaining sub-second performance on mobile 3G/4G connections.
-
----
-
-## 🎨 1. Color Palette & Semantic Roles
-
-### Sovereign Authority & Base Palette
-*   **Deep Sovereign Navy (`#1B2A4A`)**: Primary brand color. Conveys constitutional authority, trust, and legal precision. Used for hero headers, primary cards, active navigation items, and dark UI surfaces.
-*   **Deep Sovereign Dark (`#12192B`, `#0E1729`)**: Core canvas background for Dark Mode and hero gradients.
-*   **Parchment Paper (`#F7F4EC`)**: Light mode canvas background. Warm, non-glare editorial paper texture.
-*   **Pure Card Surface (`#FFFFFF`)**: Crisp foreground card surface for maximum readability and physical depth.
-
-### Accent & Metallic Trims
-*   **Gazette Brass / Antique Gold (`#B08D57`)**: The official seal and accent color. Used for verified badges, borders, icons, focus rings, and high-trust highlights.
-*   **Gold Gradient (`from-[#B08D57] to-[#D97706]`)**: High-contrast, non-red CTA buttons, 2026 year badges, and primary search buttons.
-
-### Slate Neutral Scale
-| Token | Hex Value | Usage |
-| :--- | :--- | :--- |
-| `slate-50` | `#F8FAFC` | Ultra-light card tint |
-| `slate-100` | `#F1F5F9` | Divider lines & badge backgrounds |
-| `slate-200` | `#E2E8F0` | Default card borders |
-| `slate-400` | `#94A3B8` | Subtitle text & inactive icons |
-| `slate-500` | `#64748B` | Secondary captions & timestamps |
-| `slate-700` | `#334155` | High-contrast body copy |
-| `slate-800` | `#1E293B` | Dark mode card surface |
-| `slate-900` | `#0F172A` | Deep contrast container |
-
-### Semantic Colors
-*   **Success Emerald (`#059669`)**: Official Gazette verification checkmarks and active status tags.
-*   **Warning Amber (`#D97706`)**: Important notices and non-breaking information badges.
-*   **Danger Ruby (`#DC2626`)**: **Strictly reserved for genuine fraud warnings, disclaimer banners, and danger alerts.** Never used for general buttons or category styling.
+This document establishes the exact, non-negotiable Design Tokens and UI guidelines for **Pakistan Info Hub**, delivering a consistent, editorial civic fintech aesthetic.
 
 ---
 
-## 🔤 2. Typography Hierarchy
+## 🎨 1. Exact Color System
 
-### Font Families
-1.  **Display & Headings**: `Lora` (Serif, weights 600/700/800) — authoritative gazette document feel.
-2.  **Body & UI Text**: `Inter` (Sans-Serif, weights 400/500/600/700) — maximum legibility on mobile screens.
-3.  **Data & Codes**: `IBM Plex Mono` (Monospace, weights 600/700) — reference numbers, CNIC inputs, and tracking IDs.
-4.  **Urdu & RTL**: `Noto Nastaliq Urdu` & `Noto Sans Arabic` — authentic calligraphic Urdu display with `dir="rtl"` logical alignment.
+```css
+--color-navy-950: #0B1120;   /* darkest — hero & footer background */
+--color-navy-900: #111827;   /* section background variant & disclaimer bar */
+--color-navy-800: #1E2A3F;   /* card backgrounds on dark sections, borders */
+--color-cream-50:  #FAF9F6;  /* the ONLY light background color — ALL light sections & cards */
+--color-cream-100: #F3F1EC;  /* category icon circular background tint */
+--color-gold-600:  #B8860B;  /* primary accent — solid CTA buttons, badges, "2026" tag */
+--color-gold-500:  #D4A017;  /* primary accent hover/lighter variant */
+--color-emerald-600: #0F9D6D; /* SINGLE color for all verified/trust checkmark indicators */
+--color-red-600:   #C0362C;  /* RESERVED ONLY for disclaimer bar left accent & genuine errors */
+--color-slate-600: #475569;  /* body text on light backgrounds */
+--color-slate-300: #CBD5E1;  /* body text on dark backgrounds */
+--color-slate-100: #F1F5F9;  /* borders on light backgrounds */
+```
 
-### Type Scale Tokens
-*   **Hero H1 (`--text-h1`)**: `text-3xl sm:text-5xl font-serif font-extrabold tracking-tight leading-tight`
-*   **Section H2 (`--text-h2`)**: `text-2xl sm:text-3xl font-serif font-bold tracking-tight text-doc-ink dark:text-white`
-*   **Card / Subsection H3 (`--text-h3`)**: `text-lg sm:text-xl font-serif font-bold text-doc-ink dark:text-slate-100`
-*   **Body Regular (`--text-body`)**: `text-sm sm:text-base font-sans text-slate-700 dark:text-slate-300 leading-relaxed`
-*   **Small / Meta (`--text-small`)**: `text-xs sm:text-sm font-sans text-slate-500 dark:text-slate-400`
-*   **Caption / Data Pill (`--text-caption`)**: `text-[11px] font-mono font-bold uppercase tracking-wider`
-
----
-
-## 📐 3. Spacing, Radii & Physical Elevation
-
-### Spacing Scale (8px Grid)
-*   **Micro Spacing**: `gap-1.5` (6px), `gap-2` (8px), `gap-3` (12px)
-*   **Component Padding**: `p-4` (16px), `p-6` (24px), `p-8` (32px)
-*   **Section Vertical Separation**: `space-y-16 md:space-y-24` (64px to 96px)
-
-### Border Radius Hierarchy
-*   **Small (`rounded-lg` / 8px)**: Badges, chip tags, micro-buttons.
-*   **Medium (`rounded-xl` / 12px)**: Interactive inputs, action buttons, category pills.
-*   **Large (`rounded-2xl` / 16px)**: Standard content cards, FAQ containers, direct answer boxes.
-*   **Display (`rounded-3xl` / 24px)**: Hero section container, verified stamp modals.
-
-### Shadow & Elevation Depth
-*   **Resting Card (`shadow-doc-card`)**: `0 2px 12px -1px rgba(27, 42, 74, 0.06), 0 1px 3px rgba(27, 42, 74, 0.04)`
-*   **Hover Lift (`shadow-doc-hover`)**: `0 12px 28px -4px rgba(27, 42, 74, 0.12), 0 4px 8px -2px rgba(27, 42, 74, 0.04)` with `-2px` translateY.
-*   **Floating Tool Overlay (`shadow-2xl`)**: `0 20px 40px -12px rgba(0, 0, 0, 0.35)`
+### Color Rules
+1. **Light Sections**: Every light-background section and card on the entire site uses `#FAF9F6` (`--color-cream-50`). No separate `#FFFFFF` or beige backgrounds.
+2. **Dark Sections**: Hero and Footer ONLY use `#0B1120` (`--color-navy-950`).
+3. **Category Pills/Tags**: Clean uppercase text in `#475569` (`--color-slate-600`) with letter-spacing. No colored dots.
+4. **Verified Indicators**: Quiet `#0F9D6D` (`--color-emerald-600`) checkmark (16px) followed by plain text in `#475569` (`--color-slate-600`), no pill container.
+5. **Disclaimer Bar**: `#111827` (`--color-navy-900`) background with a 4px `#C0362C` (`--color-red-600`) left border accent.
+6. **Primary CTAs**: Solid `#B8860B` (`--color-gold-600`) background with white text, `#D4A017` on hover.
 
 ---
 
-## ⚡ 4. Standardized Component System
+## 🔤 2. Exact Typography
 
-### 1. Unified Badge Component
-*   **Stamp Variant**: Double-ring gold circular seal (`2026 GAZETTE VERIFIED`).
-*   **Pill Variant**: `px-3 py-1 rounded-full text-xs font-mono font-bold flex items-center gap-1.5`.
-*   **Status Tints**: Navy (`bg-doc-ink text-white`), Emerald (`bg-emerald-500/10 text-emerald-700 border-emerald-500/30`), Gold (`bg-doc-brass/15 text-amber-900 border-doc-brass/40`).
-
-### 2. Category Card Architecture
-*   **Icon Container**: Soft colored tinted square with `border border-current/20` and 24px icon.
-*   **Count Badge**: Distinct `8+ Verified Guides` monospace badge in top-right.
-*   **CTA Button**: High-trust Deep Navy + Gold trim button with smooth hover arrow motion.
-
-### 3. Redirect Tool Container (Honest Pattern)
-*   **Structure**:
-    1.  **Direct Answer / In Short Box**: Highlighted quick summary.
-    2.  **What You Need Box**: Checklist of reference numbers / CNIC requirements.
-    3.  **Step Wizard**: 3-step numbered validation flow.
-    4.  **Verified Official Portal Button**: Large high-contrast link with external lock icon and security notice.
+1. **Headings (H1–H4)**: `"Fraunces", serif` (Google Font).
+   - Weight: `600` for H1/H2, `500` for H3/H4.
+2. **Body Text, UI, Buttons, Labels**: `"Public Sans", sans-serif` (Google Font).
+   - Weight: `400` for body, `500` for emphasis, `600` for buttons and labels.
+3. **Urdu & RTL**: `Noto Nastaliq Urdu` & `Noto Sans Arabic` (system fallback + client loader).
+4. **Type Scale**:
+   - **H1**: `48px` desktop / `32px` mobile, line-height `1.1`, weight `600`
+   - **H2**: `32px` desktop / `24px` mobile, line-height `1.2`, weight `600`
+   - **H3**: `22px` desktop / `18px` mobile, line-height `1.3`, weight `500`
+   - **Body**: `16px`, line-height `1.6`, weight `400`
+   - **Small/Caption**: `13px`, line-height `1.5`, letter-spacing `0.02em`
 
 ---
 
-## ♿ 5. Accessibility & Motion Rules
+## 📐 3. Exact Spacing & Card Styling
 
-1.  **Fast Transitions**: Duration `160ms–240ms` using `cubic-bezier(0.16, 1, 0.3, 1)`.
-2.  **Focus Rings**: Clear 2px Antique Gold outline (`focus-visible:outline-[#B08D57]`) with 2px offset.
-3.  **Reduced Motion**: All CSS keyframe animations and transitions set to 0.01ms under `prefers-reduced-motion: reduce`.
-4.  **RTL Mirroring**: Full mirroring support using CSS logical properties (`start`/`end`, `margin-inline`, `text-start`).
+1. **Card Border Radius**: `12px` (`rounded-[12px]`). Buttons: `8px` (`rounded-[8px]`). Badges: `999px` (`rounded-full`).
+2. **Card Shadow**: `box-shadow: 0 1px 2px rgba(11,17,32,0.04), 0 4px 12px rgba(11,17,32,0.06);`
+3. **Card Hover**: `box-shadow: 0 4px 8px rgba(11,17,32,0.08), 0 8px 24px rgba(11,17,32,0.10); transform: translateY(-2px); transition: 200ms ease;`
+4. **Section Vertical Separation**: `96px` desktop / `48px` mobile (`space-y-12 sm:space-y-24`).
+5. **Card Internal Padding**: `32px` desktop / `20px` mobile (`p-5 sm:p-8`).
+6. **Grid Gaps**: `24px` (`gap-6`).
+
+---
+
+## ⚡ 4. Component Standards
+
+1. **Category Grid Icons**: `56px` (`w-14 h-14`) circular container with `#F3F1EC` (`--color-cream-100`) background, icon in `#1E2A3F` (`--color-navy-800`) sized at `28px` (`w-7 h-7`).
+2. **"8+ Guides" Badge**: Text in `#0F9D6D` (`--color-emerald-600`), transparent background, 1px border in `#0F9D6D`, fully rounded (`rounded-full`), small checkmark icon.
+3. **Article Card Tags**: Plain `#475569` (`--color-slate-600`) uppercase text with `0.05em` letter-spacing, no colored background.

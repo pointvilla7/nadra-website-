@@ -12,13 +12,13 @@ export const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-doc-ink text-slate-300 border-t-2 border-doc-brass mt-auto transition-colors">
-      {/* Official Government Disclaimer Banner */}
-      <div className="bg-doc-seal text-white border-b border-doc-brass/40 px-4 py-3 text-xs">
+    <footer className="bg-[#0B1120] text-slate-300 border-t border-[#1E2A3F] mt-auto transition-colors">
+      {/* Official Government Disclaimer Banner — De-escalated Navy & Red Accent */}
+      <div className="bg-[#111827] text-slate-300 border-b border-[#1E2A3F] border-s-4 border-s-[#C0362C] px-4 py-3 text-xs font-sans">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
           <div className="flex items-center gap-2 font-medium">
-            <ShieldAlert className="w-4 h-4 text-doc-paper shrink-0" />
-            <span>
+            <ShieldAlert className="w-4 h-4 text-[#C0362C] shrink-0" />
+            <span className="text-slate-300">
               {t(
                 'IMPORTANT DISCLAIMER: PakistanInfoHub.com is an independent public information portal. It is NOT affiliated with NADRA, DGIP, BISP, or any Government of Pakistan entity.',
                 'اہم اطلاع: پاکستان انفو ہب ایک آزاد عوامی معلوماتی پورٹل ہے۔ یہ نادرا، پاسپورٹ یا کسی بھی سرکاری ادارے کی آفیشل ویب سائٹ نہیں ہے۔'
@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
           </div>
           <Link
             href="/disclaimer"
-            className="underline font-bold text-doc-paper hover:text-white shrink-0 flex items-center gap-1"
+            className="underline font-semibold text-[#D4A017] hover:text-white shrink-0 flex items-center gap-1 transition"
           >
             <span>{t('Read Full Disclaimer', 'مکمل ڈس کلیمر پڑھیں')}</span>
             <ExternalLink className="w-3 h-3" />

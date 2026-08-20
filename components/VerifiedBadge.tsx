@@ -88,17 +88,15 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
     );
   }
 
-  // Variant 3: Card Badge (Guide Cards & Index Grids)
+  // Variant 3: Card Badge (Guide Cards & Index Grids) — Quiet, minimal checkmark + slate text
   if (variant === 'card') {
     return (
       <div
         role="status"
-        className={`relative inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-950/15 dark:bg-emerald-950/40 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-mono font-extrabold uppercase tracking-tight group hover:border-emerald-600 overflow-hidden transition-all duration-200 ${className}`}
+        className={`inline-flex items-center gap-1 text-xs font-sans text-[#475569] dark:text-slate-400 ${className}`}
       >
-        <CheckCircle2 aria-hidden="true" className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 transition-transform duration-200 group-hover:scale-110" />
-        <span>{t(labelEn, labelUr)}</span>
-        {/* Subtle Shimmer Highlight */}
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-400/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none motion-reduce:hidden" />
+        <CheckCircle2 aria-hidden="true" className="w-4 h-4 text-[#0F9D6D] shrink-0" />
+        <span className="font-medium">{t(labelEn, labelUr)}</span>
       </div>
     );
   }
@@ -107,9 +105,9 @@ export const VerifiedBadge: React.FC<VerifiedBadgeProps> = ({
   return (
     <span
       role="status"
-      className={`inline-flex items-center gap-1 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider group hover:text-emerald-600 transition-colors duration-200 ${className}`}
+      className={`inline-flex items-center gap-1 text-xs font-sans font-medium text-[#475569] dark:text-slate-400 ${className}`}
     >
-      <ShieldCheck aria-hidden="true" className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 transition-transform duration-200 group-hover:scale-110" />
+      <ShieldCheck aria-hidden="true" className="w-4 h-4 text-[#0F9D6D] shrink-0" />
       <span>{t(labelEn, labelUr)}</span>
     </span>
   );
