@@ -177,9 +177,9 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
         <button
           onClick={() => setIsAlertModalOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-2 bg-doc-seal text-white text-xs font-bold rounded-lg hover:bg-doc-seal/90 transition shadow-sm"
+          className="flex items-center gap-1.5 px-3 py-2 bg-slate-850 hover:bg-slate-800 border border-doc-brass/40 text-slate-100 text-xs font-bold rounded-lg transition shadow-xs"
         >
-          <Bell className="w-3.5 h-3.5" />
+          <Bell className="w-3.5 h-3.5 text-doc-brass" />
           <span>{t('Get Update Alerts', 'نوٹیفکیشن آن کریں', 'Get Alerts')}</span>
         </button>
 
@@ -200,7 +200,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
         <a
           href={`tel:${helplineNumber.replace(/[^0-9]/g, '')}`}
-          className="flex items-center gap-1.5 px-3 py-2 bg-doc-ink text-white text-xs font-mono font-bold rounded-lg hover:bg-doc-ink/90 transition ml-auto"
+          className="flex items-center gap-1.5 px-3 py-2 bg-doc-ink text-white text-xs font-mono font-bold rounded-lg hover:bg-slate-850 border border-doc-brass/40 transition ml-auto"
         >
           <PhoneCall className="w-3.5 h-3.5 text-doc-brass" />
           <span>{t(`Helpline: ${helplineNumber}`, `ہیلپ لائن: ${helplineNumber}`)}</span>
@@ -235,7 +235,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {article.steps && article.steps.length > 0 && (
         <div className="flex items-center justify-between bg-doc-ink/5 dark:bg-slate-800/80 border border-doc-brass/30 p-2.5 rounded-xl">
           <div className="flex items-center gap-2 text-xs font-serif font-bold text-doc-ink dark:text-slate-200">
-            <Eye className="w-4 h-4 text-doc-seal" />
+            <Eye className="w-4 h-4 text-doc-brass" />
             <span>{t('Choose View Format:', 'پڑھنے کا انداز منتخب کریں:')}</span>
           </div>
           <div className="flex items-center gap-1 bg-white dark:bg-doc-dark-base border border-slate-300 dark:border-slate-700 rounded-lg p-1">
@@ -253,8 +253,8 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
               onClick={() => setViewMode('wizard')}
               className={`px-3 py-1 text-xs font-bold rounded-md transition ${
                 viewMode === 'wizard'
-                  ? 'bg-doc-seal text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-doc-seal'
+                  ? 'bg-doc-brass text-doc-ink font-bold shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-doc-brass'
               }`}
             >
               🧙‍♂️ {t('Step Wizard', 'مرحلہ وار وزرڈ')}

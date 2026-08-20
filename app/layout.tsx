@@ -1,23 +1,23 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Montserrat, Newsreader, IBM_Plex_Mono } from 'next/font/google';
+import { Inter, Lora, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { ClientLayout } from '@/components/ClientLayout';
 
 // ─── Core fonts: loaded eagerly, display: swap prevents FOIT ───────────────
-const sansFont = Montserrat({
+const sansFont = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
   display: 'swap',
   preload: true,
   adjustFontFallback: false,
 });
 
-const serifFont = Newsreader({
+const serifFont = Lora({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-serif',
   display: 'swap',
   preload: true,

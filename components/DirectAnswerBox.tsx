@@ -40,7 +40,7 @@ export const DirectAnswerBox: React.FC<DirectAnswerBoxProps> = ({
       {/* Header Bar */}
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-doc-brass/30 pb-3">
         <div className="flex items-center gap-2">
-          <div className="px-2.5 py-0.5 rounded bg-doc-seal text-white font-mono text-[10px] font-bold tracking-widest uppercase flex items-center gap-1">
+          <div className="px-2.5 py-0.5 rounded bg-gradient-to-r from-doc-brass to-amber-500 text-doc-ink font-mono text-[10px] font-extrabold tracking-widest uppercase flex items-center gap-1 shadow-xs">
             <Zap className="w-3 h-3 fill-current" />
             <span>{t('In Short', 'مختصر خلاصہ', 'Mukhtasar Khulasa')}</span>
           </div>

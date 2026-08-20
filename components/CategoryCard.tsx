@@ -58,7 +58,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
   const { t } = useLanguage();
 
   return (
-    <div className="doc-card rounded-2xl p-6 transition-all duration-300 border border-doc-brass/30 border-t-4 border-t-doc-brass hover:border-doc-seal hover:scale-[1.01] hover:-translate-y-0.5 hover:shadow-xl flex flex-col justify-between group relative overflow-hidden">
+    <div className="doc-card rounded-2xl p-6 transition-all duration-300 border border-doc-brass/30 border-t-4 border-t-doc-brass hover:border-doc-brass hover:scale-[1.01] hover:-translate-y-0.5 flex flex-col justify-between group relative overflow-hidden">
       <div>
         {/* Header Icon + Badge */}
         <div className="flex items-center justify-between mb-4">
@@ -70,14 +70,14 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
 
         {/* Title */}
         <Link href={`/${category.slug}`}>
-          <h3 className="text-xl font-serif font-extrabold text-doc-ink dark:text-white group-hover:text-doc-seal dark:group-hover:text-red-400 transition mb-1">
+          <h3 className="text-xl font-serif font-extrabold text-doc-ink dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-300 transition mb-1">
             {t(category.nameEn, category.nameUr)}
           </h3>
         </Link>
         <p className="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-3">
           {t(category.taglineEn, category.taglineUr)}
         </p>
-        <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed mb-6 line-clamp-3">
+        <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed mb-6 line-clamp-3 font-sans">
           {t(category.descriptionEn, category.descriptionUr)}
         </p>
 
@@ -90,7 +90,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
             <Link
               key={i}
               href={item.slug}
-              className="flex items-center justify-between text-xs font-medium text-slate-800 dark:text-slate-200 hover:text-doc-seal dark:hover:text-red-400 transition py-0.5"
+              className="flex items-center justify-between text-xs font-medium text-slate-800 dark:text-slate-200 hover:text-amber-800 dark:hover:text-amber-300 transition py-0.5"
             >
               <span className="truncate">• {t(item.en, item.ur)}</span>
               <ChevronRight className="w-3 h-3 text-doc-brass shrink-0" />
@@ -99,13 +99,13 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
         </div>
       </div>
 
-      {/* Explore Button — High Contrast 44px Accessible CTA */}
+      {/* Explore Button — High Contrast 44px Accessible Navy & Gold CTA */}
       <Link
         href={`/${category.slug}`}
-        className="w-full min-h-[44px] py-3 px-4 rounded-xl text-xs font-extrabold font-mono flex items-center justify-center gap-2 transition-all duration-200 bg-gradient-to-r from-[#A02334] to-[#C72C41] hover:from-[#881B2B] hover:to-[#A02334] text-white shadow-md shadow-doc-seal/20 hover:scale-[1.02] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-seal"
+        className="w-full min-h-[44px] py-3 px-4 rounded-xl text-xs font-extrabold font-mono flex items-center justify-center gap-2 transition-all duration-200 bg-doc-ink hover:bg-slate-850 dark:bg-slate-800 dark:hover:bg-slate-750 text-white border border-doc-brass/40 hover:border-doc-brass shadow-sm hover:shadow-md hover:scale-[1.01] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-brass"
       >
         <span>{t(`EXPLORE ${category.nameEn.toUpperCase()}`, `${category.nameUr} فائلز`)}</span>
-        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        <ChevronRight className="w-4 h-4 text-doc-brass transition-transform group-hover:translate-x-1" />
       </Link>
     </div>
   );

@@ -27,14 +27,15 @@ export default function HomePage() {
   ].filter(Boolean);
 
   return (
-    <div className="space-y-12 md:space-y-20 animate-fadeIn pb-12">
+    <div className="space-y-16 md:space-y-24 animate-fadeIn pb-16">
       {/* Search Modal Trigger */}
       <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
       {/* HERO SECTION - VERIFIED DOCUMENT DESIGN */}
-      <section className="relative overflow-hidden rounded-3xl bg-doc-ink border-2 border-doc-brass/40 p-6 sm:p-10 text-white shadow-2xl">
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#1B2A4A] via-[#17243F] to-[#12192B] border-2 border-doc-brass/40 p-6 sm:p-10 text-white shadow-2xl">
         {/* Background Watermark Stamp Graphic */}
         <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 rounded-full border-8 border-dashed border-doc-brass/10 pointer-events-none" />
+        <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-doc-brass/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-3xl mx-auto text-center space-y-6">
           {/* Top Stamp Seal + Trust Badge */}
@@ -48,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Main Fraunces Serif Headline */}
+          {/* Main Lora Serif Headline */}
           <h1 className="text-3xl sm:text-5xl font-serif font-extrabold tracking-tight text-white leading-tight">
             {t(
               'Official Civic & Public Services Directory of Pakistan',
@@ -67,10 +68,10 @@ export default function HomePage() {
           <div className="pt-2">
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="w-full max-w-xl mx-auto flex items-center justify-between p-4 rounded-2xl bg-doc-paper dark:bg-slate-900 border-2 border-doc-brass/50 hover:border-doc-seal text-doc-ink dark:text-slate-200 shadow-2xl transition-all duration-300 group cursor-pointer"
+              className="w-full max-w-xl mx-auto flex items-center justify-between p-4 rounded-2xl bg-doc-paper dark:bg-slate-900 border-2 border-doc-brass/50 hover:border-doc-brass text-doc-ink dark:text-slate-200 shadow-2xl transition-all duration-300 group cursor-pointer"
             >
               <div className="flex items-center gap-3">
-                <Search className="w-5 h-5 text-doc-seal dark:text-red-400 group-hover:scale-110 transition-transform" />
+                <Search className="w-5 h-5 text-doc-brass group-hover:scale-110 transition-transform" />
                 <span className="text-sm md:text-base font-sans font-medium text-slate-500">
                   {t(
                     'Search CNIC, BISP 8171, Passport fee, LESCO bill...',
@@ -78,7 +79,7 @@ export default function HomePage() {
                   )}
                 </span>
               </div>
-              <span className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#A02334] to-[#C72C41] hover:from-[#881B2B] hover:to-[#A02334] text-white font-mono font-extrabold text-xs shadow-md shadow-doc-seal/30 transition-transform group-hover:scale-105 min-h-[44px]">
+              <span className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-extrabold text-xs shadow-md shadow-amber-950/20 transition-transform group-hover:scale-105 min-h-[44px]">
                 <span>{t('SEARCH DIRECTORY', 'تلاش کریں')}</span>
               </span>
             </button>
@@ -94,7 +95,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/tracker"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-mono font-extrabold text-xs border border-slate-700 hover:border-doc-brass transition flex items-center justify-center gap-2 min-h-[44px]"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-mono font-extrabold text-xs border border-doc-brass/40 hover:border-doc-brass transition flex items-center justify-center gap-2 min-h-[44px]"
             >
               <span>🔍 {t('UNIFIED APPLICATION TRACKER', 'درخواست ٹریکنگ پورٹل')}</span>
             </Link>

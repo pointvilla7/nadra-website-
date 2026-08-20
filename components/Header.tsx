@@ -58,21 +58,21 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               <Type className="w-3 h-3 text-doc-brass" />
               <button
                 onClick={() => setFontSize('sm')}
-                className={`px-1 rounded ${fontSize === 'sm' ? 'bg-doc-seal text-white font-bold' : 'opacity-70 hover:opacity-100'}`}
+                className={`px-1 rounded ${fontSize === 'sm' ? 'bg-doc-brass text-doc-ink font-bold' : 'opacity-70 hover:opacity-100'}`}
                 title="Small text"
               >
                 A-
               </button>
               <button
                 onClick={() => setFontSize('md')}
-                className={`px-1 rounded ${fontSize === 'md' ? 'bg-doc-seal text-white font-bold' : 'opacity-70 hover:opacity-100'}`}
+                className={`px-1 rounded ${fontSize === 'md' ? 'bg-doc-brass text-doc-ink font-bold' : 'opacity-70 hover:opacity-100'}`}
                 title="Medium text"
               >
                 A
               </button>
               <button
                 onClick={() => setFontSize('lg')}
-                className={`px-1 rounded ${fontSize === 'lg' ? 'bg-doc-seal text-white font-bold' : 'opacity-70 hover:opacity-100'}`}
+                className={`px-1 rounded ${fontSize === 'lg' ? 'bg-doc-brass text-doc-ink font-bold' : 'opacity-70 hover:opacity-100'}`}
                 title="Large text"
               >
                 A+
@@ -84,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               onClick={() => setLiteMode(!liteMode)}
               className={`flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-bold transition ${
                 liteMode
-                  ? 'bg-amber-500 text-slate-950'
+                  ? 'bg-amber-500 text-slate-950 shadow-sm'
                   : 'bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30'
               }`}
               title="Toggle low-data lite mode"
@@ -97,9 +97,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             <div className="relative">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center gap-1 px-2.5 py-0.5 rounded bg-doc-seal text-white font-semibold hover:opacity-90 transition shadow-sm text-xs"
+                className="flex items-center gap-1 px-2.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 border border-doc-brass/40 text-slate-100 font-semibold transition shadow-sm text-xs"
               >
-                <Globe className="w-3 h-3" />
+                <Globe className="w-3 h-3 text-doc-brass" />
                 <span>
                   {language === 'en' ? 'English' : language === 'ur' ? 'اردو' : 'Roman Urdu'}
                 </span>
@@ -114,7 +114,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLangMenuOpen(false);
                     }}
                     className={`w-full text-left px-3 py-1.5 font-medium hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
-                      language === 'en' ? 'bg-doc-seal/10 font-bold text-doc-seal' : ''
+                      language === 'en' ? 'bg-doc-brass/15 font-bold text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
                     English (UK)
@@ -125,7 +125,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLangMenuOpen(false);
                     }}
                     className={`w-full text-left px-3 py-1.5 font-serif font-bold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
-                      language === 'ur' ? 'bg-doc-seal/10 text-doc-seal' : ''
+                      language === 'ur' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
                     اردو (Nastaliq)
@@ -136,7 +136,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLangMenuOpen(false);
                     }}
                     className={`w-full text-left px-3 py-1.5 font-sans font-semibold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
-                      language === 'roman' ? 'bg-doc-seal/10 text-doc-seal' : ''
+                      language === 'roman' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
                     Roman Urdu 🇵🇰
@@ -160,7 +160,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               <span className="font-serif font-extrabold text-xl tracking-tight text-doc-ink dark:text-doc-dark-paper">
                 Pakistan Info Hub
               </span>
-              <span className="text-[10px] uppercase font-mono font-bold tracking-wider px-1.5 py-0.5 rounded bg-doc-seal text-white">
+              <span className="text-[10px] uppercase font-mono font-extrabold tracking-wider px-1.5 py-0.5 rounded bg-gradient-to-r from-doc-brass to-amber-500 text-doc-ink shadow-xs">
                 2026
               </span>
             </div>
@@ -178,7 +178,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
         <nav className="hidden md:flex items-center gap-1 lg:gap-2">
           <Link
             href="/"
-            className="px-3 py-2 rounded-lg text-sm font-semibold text-doc-ink dark:text-slate-200 hover:text-doc-seal dark:hover:text-red-400 transition"
+            className="px-3 py-2 rounded-lg text-sm font-semibold text-doc-ink dark:text-slate-200 hover:text-amber-800 dark:hover:text-amber-300 transition"
           >
             {t('Home', 'صفحہ اول', 'Home')}
           </Link>
@@ -188,7 +188,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               onMouseEnter={() => setDropdownOpen(true)}
-              className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-semibold text-doc-ink dark:text-slate-200 hover:text-doc-seal dark:hover:text-red-400 transition"
+              className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-semibold text-doc-ink dark:text-slate-200 hover:text-amber-800 dark:hover:text-amber-300 transition"
             >
               <span>{t('Categories', 'کیٹیگریز', 'Categories')}</span>
               <ChevronDown className="w-4 h-4 opacity-70" />
@@ -220,7 +220,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             <Link
               key={cat.id}
               href={`/${cat.slug}`}
-              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-doc-seal dark:hover:text-red-400 transition"
+              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-amber-800 dark:hover:text-amber-300 transition"
             >
               {t(cat.nameEn, cat.nameUr)}
             </Link>
@@ -232,10 +232,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           {/* Live Search Trigger Button */}
           <button
             onClick={onOpenSearch}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-doc-paper border border-doc-brass/40 text-xs font-medium transition"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-doc-paper border border-doc-brass/40 text-xs font-medium transition shadow-xs"
             aria-label="Open search dialog"
           >
-            <Search className="w-4 h-4 text-doc-seal dark:text-red-400" />
+            <Search className="w-4 h-4 text-doc-brass" />
             <span className="hidden sm:inline-block font-sans">
               {t('Search guide...', 'تلاش کریں...', 'Search guide...')}
             </span>
@@ -290,7 +290,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                 <button
                   onClick={() => setLanguage('en')}
                   className={`px-2 py-1 text-[11px] font-bold rounded transition ${
-                    language === 'en' ? 'bg-doc-seal text-white shadow-sm' : 'text-slate-400 hover:text-white'
+                    language === 'en' ? 'bg-doc-brass text-doc-ink shadow-sm' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   English
@@ -298,7 +298,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                 <button
                   onClick={() => setLanguage('ur')}
                   className={`px-2 py-1 text-[11px] font-bold rounded font-serif transition ${
-                    language === 'ur' ? 'bg-doc-seal text-white shadow-sm' : 'text-slate-400 hover:text-white'
+                    language === 'ur' ? 'bg-doc-brass text-doc-ink shadow-sm' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   اردو
@@ -306,7 +306,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                 <button
                   onClick={() => setLanguage('roman')}
                   className={`px-2 py-1 text-[11px] font-bold rounded transition ${
-                    language === 'roman' ? 'bg-doc-seal text-white shadow-sm' : 'text-slate-400 hover:text-white'
+                    language === 'roman' ? 'bg-doc-brass text-doc-ink shadow-sm' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   Roman
