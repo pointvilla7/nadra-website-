@@ -31,19 +31,20 @@ export default function HomePage() {
       {/* Search Modal Trigger */}
       <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
-      {/* HERO SECTION - VERIFIED DOCUMENT DESIGN */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#1B2A4A] via-[#17243F] to-[#12192B] border-2 border-doc-brass/40 p-6 sm:p-10 text-white shadow-2xl">
-        {/* Background Watermark Stamp Graphic */}
-        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 rounded-full border-8 border-dashed border-doc-brass/10 pointer-events-none" />
-        <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-doc-brass/10 rounded-full blur-3xl pointer-events-none" />
+      {/* HERO SECTION - REFINED SOVEREIGN CIVIC DIRECTORY DESIGN */}
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#131F37] via-[#1B2A4A] to-[#0E1729] border-2 border-doc-brass/40 p-6 sm:p-12 text-white shadow-2xl">
+        {/* Subtle Ambient Radial Light & Watermark Pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(176,141,87,0.18),rgba(255,255,255,0))] pointer-events-none" />
+        <div className="absolute top-0 right-0 -mt-16 -mr-16 w-96 h-96 rounded-full border-8 border-dashed border-doc-brass/15 pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-doc-brass/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-3xl mx-auto text-center space-y-6">
           {/* Top Stamp Seal + Trust Badge */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-staggerIn">
             <VerifiedBadge variant="stamp" />
-            <div className="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-doc-brass/40 pt-2 sm:pt-0 sm:pl-4">
+            <div className="text-center sm:text-start border-t sm:border-t-0 sm:border-s border-doc-brass/40 pt-2 sm:pt-0 sm:ps-4">
               <VerifiedBadge variant="inline" textEn="INDEPENDENTLY VERIFIED CIVIC DIRECTORY" textUr="آزادانہ مصدقہ عوامی ڈائریکٹری" />
-              <span className="text-xs text-slate-300 font-medium block mt-1">
+              <span className="text-xs text-slate-300 font-medium block mt-1 font-sans">
                 {t('100% Original Gazette Citations • Updated August 2026', 'مصدقہ 2026 • 100٪ اصلی معلومات')}
               </span>
             </div>
@@ -57,18 +58,18 @@ export default function HomePage() {
             )}
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans">
+          <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans font-normal">
             {t(
               'Verified step-by-step document procedures, fee schedules, online tracking tools for NADRA CNIC, Passports, BISE Education, Utility bills, Govt Loans, BISP 8171, and Traffic services.',
               'شناختی کارڈ، پاسپورٹ فیس، تعلیمی رزلٹ، کے الیکٹرک و لیسکو بل، بلا سود قرضے اور بے نظیر 8171 کی مصدقہ رہنمائی۔'
             )}
           </p>
 
-          {/* Big Search Bar Component */}
+          {/* Prominent Search Bar Component */}
           <div className="pt-2">
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="w-full max-w-xl mx-auto flex items-center justify-between p-4 rounded-2xl bg-doc-paper dark:bg-slate-900 border-2 border-doc-brass/50 hover:border-doc-brass text-doc-ink dark:text-slate-200 shadow-2xl transition-all duration-300 group cursor-pointer"
+              className="w-full max-w-xl mx-auto flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-slate-900 border-2 border-doc-brass/60 hover:border-doc-brass text-doc-ink dark:text-slate-200 shadow-2xl hover:shadow-doc-hover transition-all duration-300 group cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <Search className="w-5 h-5 text-doc-brass group-hover:scale-110 transition-transform" />
@@ -89,13 +90,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <Link
               href="/bills/utility-bill-checker-2026"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-extrabold text-xs shadow-lg transition flex items-center justify-center gap-2 min-h-[44px]"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-extrabold text-xs shadow-lg transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>⚡ {t('ONLINE BILL CHECKER 2026', 'آن لائن بجلی و گیس بل چیکر')}</span>
             </Link>
             <Link
               href="/tracker"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-mono font-extrabold text-xs border border-doc-brass/40 hover:border-doc-brass transition flex items-center justify-center gap-2 min-h-[44px]"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#12192B]/90 hover:bg-[#12192B] text-white font-mono font-extrabold text-xs border border-doc-brass/50 hover:border-doc-brass shadow-md transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>🔍 {t('UNIFIED APPLICATION TRACKER', 'درخواست ٹریکنگ پورٹل')}</span>
             </Link>
@@ -106,28 +107,28 @@ export default function HomePage() {
             <span className="text-doc-brass font-bold">{t('TRENDING GUIDES:', 'مشہور سروسز:')}</span>
             <Link
               href="/nadra/cnic-kaise-banaye"
-              className="hover:text-white transition underline"
+              className="hover:text-white transition underline underline-offset-2"
             >
               CNIC Apply
             </Link>
             <span>•</span>
             <Link
               href="/welfare/bisp-eligibility-check-by-cnic"
-              className="hover:text-white transition underline"
+              className="hover:text-white transition underline underline-offset-2"
             >
               BISP 8171
             </Link>
             <span>•</span>
             <Link
               href="/loans/apni-chhat-apna-ghar"
-              className="hover:text-white transition underline"
+              className="hover:text-white transition underline underline-offset-2"
             >
               Apni Chhat Loan
             </Link>
             <span>•</span>
             <Link
               href="/passport/fee-2026"
-              className="hover:text-white transition underline"
+              className="hover:text-white transition underline underline-offset-2"
             >
               Passport Fee 2026
             </Link>
@@ -140,51 +141,51 @@ export default function HomePage() {
 
       {/* TRUST INDICATORS BAR */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/40">
-          <div className="p-2.5 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
+        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/50 hover:shadow-doc-card bg-white dark:bg-doc-dark-card">
+          <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
             <CheckCircle2 className="w-5 h-5" />
           </div>
           <div>
             <h4 className="text-xs font-serif font-bold text-doc-ink dark:text-white">
               {t('Gazette Verified', 'مصدقہ معلومات')}
             </h4>
-            <p className="text-[11px] text-slate-500">{t('Official government sources', 'سرکاری گزٹ کے مطابق')}</p>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400">{t('Official government sources', 'سرکاری گزٹ کے مطابق')}</p>
           </div>
         </div>
 
-        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/40">
-          <div className="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300">
+        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/50 hover:shadow-doc-card bg-white dark:bg-doc-dark-card">
+          <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 shrink-0">
             <Clock className="w-5 h-5" />
           </div>
           <div>
             <h4 className="text-xs font-serif font-bold text-doc-ink dark:text-white">
               {t('Fresh 2026 Data', 'تازہ ترین 2026')}
             </h4>
-            <p className="text-[11px] text-slate-500 font-mono">{t('Verified August 2026', 'اگست 2026 اپڈیٹ')}</p>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 font-mono">{t('Verified August 2026', 'اگست 2026 اپڈیٹ')}</p>
           </div>
         </div>
 
-        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/40">
-          <div className="p-2.5 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300">
+        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/50 hover:shadow-doc-card bg-white dark:bg-doc-dark-card">
+          <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 shrink-0">
             <Zap className="w-5 h-5" />
           </div>
           <div>
             <h4 className="text-xs font-serif font-bold text-doc-ink dark:text-white">
               {t('Interactive Tools', 'آن لائن ٹولز')}
             </h4>
-            <p className="text-[11px] text-slate-500">{t('Instant bill & result lookup', 'بل اور رزلٹ چیک کریں')}</p>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400">{t('Instant bill & result lookup', 'بل اور رزلٹ چیک کریں')}</p>
           </div>
         </div>
 
-        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/40">
-          <div className="p-2.5 rounded-xl bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300">
+        <div className="doc-card p-4 rounded-2xl border border-doc-brass/20 flex items-center gap-3 transition-all hover:border-doc-brass/50 hover:shadow-doc-card bg-white dark:bg-doc-dark-card">
+          <div className="p-2.5 rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 shrink-0">
             <BookOpen className="w-5 h-5" />
           </div>
           <div>
             <h4 className="text-xs font-serif font-bold text-doc-ink dark:text-white">
               {t('Bilingual Support', 'اردو اور انگلش')}
             </h4>
-            <p className="text-[11px] text-slate-500">{t('Full RTL Urdu rendering', 'آسان اردو ترجمہ')}</p>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400">{t('Full RTL Urdu rendering', 'آسان اردو ترجمہ')}</p>
           </div>
         </div>
       </section>
@@ -195,12 +196,12 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-doc-seal" />
+                <Sparkles className="w-5 h-5 text-doc-brass" />
                 <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
                   {t('Verified Public Directory Categories', 'اہم کیٹیگریز اور شعبہ جات')}
                 </h2>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-sans">
                 {t('Purpose-built guides for Pakistani citizens and overseas Pakistanis.', 'شہریوں کی سہولت کے لیے خصوصی کیٹیگریز۔')}
               </p>
             </div>
@@ -222,7 +223,7 @@ export default function HomePage() {
         <section className="space-y-6 cv-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-doc-seal" />
+              <TrendingUp className="w-5 h-5 text-doc-brass" />
               <h2 className="text-2xl font-serif font-extrabold text-doc-ink dark:text-white">
                 {t('Most Requested Official Records (2026)', 'مقبول ترین معلومات اور فائلز')}
               </h2>
@@ -235,7 +236,7 @@ export default function HomePage() {
               return (
                 <div
                   key={article.slug}
-                  className="doc-card rounded-2xl p-6 border border-doc-brass/20 hover:border-doc-brass/50 hover:scale-[1.01] hover:-translate-y-0.5 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-md"
+                  className="doc-card rounded-2xl p-6 border border-doc-brass/25 hover:border-doc-brass hover:shadow-doc-hover hover:-translate-y-1 flex flex-col justify-between transition-all duration-300 group bg-white dark:bg-doc-dark-card"
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -246,26 +247,26 @@ export default function HomePage() {
                     </div>
 
                     <Link href={article.fullPath}>
-                      <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white group-hover:text-doc-seal transition line-clamp-2">
+                      <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
                         {t(article.titleEn, article.titleUr)}
                       </h3>
                     </Link>
 
-                    <p className="text-xs text-slate-700 dark:text-slate-300 line-clamp-3 leading-relaxed">
+                    <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed font-sans">
                       {t(article.directAnswerEn, article.directAnswerUr)}
                     </p>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-doc-brass/20 flex items-center justify-between font-mono text-[11px]">
-                    <span className="text-slate-500">
+                    <span className="text-slate-500 dark:text-slate-400">
                       {t('Verified:', 'تاریخ:')} {article.lastVerified}
                     </span>
                     <Link
                       href={article.fullPath}
-                      className="font-bold text-doc-seal dark:text-red-400 hover:underline flex items-center gap-1"
+                      className="font-bold text-amber-800 dark:text-amber-300 hover:underline flex items-center gap-1 group/link"
                     >
                       <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
+                      <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180 transition-transform group-hover/link:translate-x-0.5 rtl:group-hover/link:-translate-x-0.5" />
                     </Link>
                   </div>
                 </div>

@@ -200,7 +200,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
         <a
           href={`tel:${helplineNumber.replace(/[^0-9]/g, '')}`}
-          className="flex items-center gap-1.5 px-3 py-2 bg-doc-ink text-white text-xs font-mono font-bold rounded-lg hover:bg-slate-850 border border-doc-brass/40 transition ml-auto"
+          className="flex items-center gap-1.5 px-3 py-2 bg-doc-ink text-white text-xs font-mono font-bold rounded-lg hover:bg-slate-850 border border-doc-brass/40 transition ms-auto"
         >
           <PhoneCall className="w-3.5 h-3.5 text-doc-brass" />
           <span>{t(`Helpline: ${helplineNumber}`, `ہیلپ لائن: ${helplineNumber}`)}</span>

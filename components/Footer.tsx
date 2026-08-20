@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
 
           {/* Primary Portals Directory Column */}
           <div>
-            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-l-2 border-doc-brass pl-2">
+            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-s-2 border-doc-brass ps-2.5">
               {t('Portal Directory', 'اہم کیٹیگریز')}
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">
@@ -99,7 +99,7 @@ export const Footer: React.FC = () => {
 
           {/* Popular Services & Tools Column */}
           <div>
-            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-l-2 border-doc-brass pl-2">
+            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-s-2 border-doc-brass ps-2.5">
               {t('Popular Verified Guides', 'مشہور معلومات')}
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">
@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
 
           {/* Legal & About Column */}
           <div>
-            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-l-2 border-doc-brass pl-2">
+            <h3 className="text-white text-xs font-serif font-bold uppercase tracking-wider mb-4 border-s-2 border-doc-brass ps-2.5">
               {t('Trust & Legal', 'قانون و شفافیت')}
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">

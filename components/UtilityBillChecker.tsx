@@ -777,10 +777,10 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                     setErrorMsg(null);
                     setValidated(false);
                   }}
-                  className="w-full pl-4 pr-16 py-3 rounded-xl bg-doc-paper dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-700 text-doc-ink dark:text-white font-mono text-base font-bold placeholder-slate-400 focus:outline-none focus:border-doc-seal transition tracking-wider"
+                  className="w-full ps-4 pe-16 py-3 rounded-xl bg-doc-paper dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-700 text-doc-ink dark:text-white font-mono text-base font-bold placeholder-slate-400 focus:outline-none focus:border-doc-brass focus:ring-1 focus:ring-doc-brass transition tracking-wider"
                   aria-label={provider.refLabelEn}
                 />
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-mono text-slate-400">
+                <div className="absolute end-3 top-1/2 -translate-y-1/2 text-xs font-mono text-slate-400">
                   <span className={cleanRef.length === provider.digitLength ? 'text-emerald-500 font-bold' : ''}>
                     {cleanRef.length}
                   </span>
@@ -967,9 +967,9 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                 rel="nofollow noopener"
                 className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
               >
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4 shrink-0" />
                 <span>{t(`Check Your ${provider.shortName} Bill on the Official Portal →`, `آفیشل پورٹل پر اپنا ${provider.shortName} بل چیک کریں ←`)}</span>
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 shrink-0 rtl:rotate-180" />
               </a>
             </div>
           ) : (
