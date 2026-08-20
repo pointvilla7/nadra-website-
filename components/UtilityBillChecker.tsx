@@ -612,38 +612,14 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
     }
 
     setErrorMsg(null);
-    setLoading(true);
-    setBillResult(null);
-
-    fetch(`/api/bill-check/${activeProvider}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ referenceNo: clean }),
-    })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error('Server responded with error status');
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setLoading(false);
-        if (data.found || data.status === 'ESTIMATED_FALLBACK' || data.status === 'CAPTCHA_REQUIRED') {
-          setBillResult(data);
-          setValidated(true);
-        } else {
-          setErrorMsg(data.message || 'Bill details not found or gateway is down.');
-          setValidated(false);
-        }
-      })
-      .catch((err) => {
-        setLoading(false);
-        setErrorMsg(t(
-          'Could not reach verification gateway. Please check your internet or try the official portal below.',
-          'سرکاری گیٹ وے سے رابطہ نہیں ہو سکا۔ برائے مہربانی نیچے آفیشل پورٹل پر چیک کریں۔'
-        ));
-        setValidated(false);
-      });
+    setLoading(false);
+    setBillResult({
+      found: true,
+      status: 'CAPTCHA_REQUIRED',
+      referenceNo: clean,
+      message: ''
+    });
+    setValidated(true);
   };
 
   const handleCopy = () => {
@@ -920,7 +896,7 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
 
         {/* Validated State & Interactive Bill Details Card */}
         {validated && !errorMsg && billResult && (
-          billResult.status === 'CAPTCHA_REQUIRED' ? (
+          true ? (
             <div className="p-5 rounded-2xl bg-doc-ink border-2 border-doc-brass/60 space-y-4 relative overflow-hidden animate-fadeIn font-sans">
               <div
                 aria-hidden="true"
@@ -934,23 +910,37 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                   </div>
                   <div>
                     <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
-                      {t('Captcha Protection Active', 'سیکیورٹی کوڈ درکار ہے')}
+                      {t('Format Verified', 'نمبر فارمیٹ درست ہے')}
                     </p>
                     <p className="font-mono font-bold text-base text-white tracking-wider">
                       {cleanRef}
                     </p>
                   </div>
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-mono font-bold border border-amber-500/30">
+                <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
                   {provider.digitLength} DIGITS OK
                 </span>
               </div>
 
-              <div className="text-xs text-slate-300 space-y-2 leading-relaxed">
-                <p className="font-bold text-white text-sm">
-                  {t('Verification Process:', 'تصدیق کا طریقہ:')}
+              <div className="text-xs text-slate-300 space-y-3 pt-2">
+                <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-slate-800 pb-2">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                  <span>{t('Guide to View & Print Your Bill:', 'بل دیکھنے اور پرنٹ کرنے کا طریقہ:')}</span>
                 </p>
-                <p>{billResult.message}</p>
+                <div className="grid grid-cols-1 gap-2.5">
+                  <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                    <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                    <p className="leading-normal">{t('Click "COPY" below to copy your reference number.', 'اپنا ریفرنس نمبر کاپی کرنے کے لیے نیچے "COPY" پر کلک کریں۔')}</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                    <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                    <p className="leading-normal">{t(`Click the gold button below to open the official ${provider.shortName} duplicate bill page.`, `آفیشل ${provider.shortName} بلنگ صفحہ کھولنے کے لیے نیچے دیے گئے بٹن پر کلک کریں۔`)}</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                    <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                    <p className="leading-normal">{t('Paste the reference number in the input box, enter captcha if asked, and download/print your official PDF bill.', 'آفیشل پیج پر ریفرنس نمبر پیسٹ کریں اور اپنا آفیشل پی ڈی ایف بل ڈاؤن لوڈ یا پرنٹ کریں۔')}</p>
+                  </div>
+                </div>
               </div>
 
               <button
@@ -974,11 +964,11 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
               <a
                 href={provider.billCheckUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener"
                 className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
               >
                 <ExternalLink className="w-4 h-4" />
-                <span>{t(`OPEN ${provider.shortName} OFFICIAL PORTAL`, `${provider.shortName} آفیشل پورٹل کھولیں`)}</span>
+                <span>{t(`Check Your ${provider.shortName} Bill on the Official Portal →`, `آفیشل پورٹل پر اپنا ${provider.shortName} بل چیک کریں ←`)}</span>
                 <ChevronRight className="w-4 h-4" />
               </a>
             </div>

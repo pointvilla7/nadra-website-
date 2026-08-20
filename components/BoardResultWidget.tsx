@@ -98,29 +98,15 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
     }
 
     setErrorMsg('');
-    setLoading(true);
-    setResult(null);
-    setSearched(false);
-
-    fetch('/api/checker/bise', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ rollNo: cleanRoll, board: selectedBoardId }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data.success) {
-          setResult(data);
-          setSearched(true);
-        } else {
-          setErrorMsg(data.message || 'Error checking board result.');
-        }
-      })
-      .catch(() => {
-        setLoading(false);
-        setErrorMsg(t('Server lookup timed out. Please try verify below.', 'سرور لوڈ نہیں ہو سکا۔ برائے مہربانی آفیشل پورٹل پر چیک کریں۔'));
-      });
+    setErrorMsg('');
+    setLoading(false);
+    setResult({
+      success: true,
+      rollNo: cleanRoll,
+      status: 'READY',
+      officialUrl: getRedirectUrl() || activeBoard.resultUrl,
+    });
+    setSearched(true);
   };
 
   const handleCopy = () => {
@@ -336,104 +322,56 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
 
       {/* Scorecard Result Box */}
       {searched && result && !loading && (
-        <div className="p-6 rounded-2xl bg-slate-950 border border-doc-brass/50 text-white space-y-4 animate-fadeIn font-sans">
-          {result.status === 'DEGRADED' ? (
-            <div className="p-4 rounded-xl bg-slate-900 border border-amber-500/50 text-amber-100 text-xs space-y-3">
-              <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
-                <AlertCircle className="w-4 h-4 text-amber-400" />
-                <span>{t('Direct Gazette Lookup Offline', 'آن لائن رزلٹ تصدیق عارضی طور پر بند ہے')}</span>
-              </p>
-              <p className="leading-relaxed text-slate-300">
-                {result.message}
-              </p>
-              <div className="pt-2">
-                <a
-                  href={result.officialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
-                >
-                  <span>{t('Open Official Board Portal', 'آفیشل بورڈ پورٹل کھولیں')}</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+        <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 relative overflow-hidden font-sans">
+          <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+                <GraduationCap className="w-5 h-5 text-doc-brass" />
+              </div>
+              <div>
+                <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
+                  {t('Roll Number Format Verified', 'رول نمبر فارمیٹ درست ہے')}
+                </p>
+                <p className="font-mono font-bold text-base text-white tracking-wider">
+                  {result.rollNo}
+                </p>
               </div>
             </div>
-          ) : (
-            <>
-              <div className="flex justify-between items-center border-b border-slate-800 pb-3">
-                <div>
-                  <p className="text-[10px] font-mono text-doc-brass font-bold uppercase tracking-wider">
-                    {t('BISE Gazette Verification', 'بورڈ گزٹ تصدیق')}
-                  </p>
-                  <h4 className="font-serif font-extrabold text-sm text-white">
-                    {result.board} Scorecard 2026
-                  </h4>
-                </div>
-                <span className={`px-2.5 py-1 rounded text-[10px] font-mono font-bold ${result.status === 'PASS' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-rose-500/20 text-rose-400'}`}>
-                  {result.status}
-                </span>
-              </div>
+            <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+              VERIFIED
+            </span>
+          </div>
 
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
-                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Student Name', 'طالب علم کا نام')}</span>
-                  <span className="font-bold text-white">{result.studentName}</span>
-                </div>
-                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
-                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Roll Number', 'رول نمبر')}</span>
-                  <span className="font-mono font-bold text-white">{result.rollNo}</span>
-                </div>
-                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
-                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Marks Obtained', 'حاصل کردہ نمبر')}</span>
-                  <span className="font-bold text-white">{result.marksObtained} / {result.totalMarks} ({result.percentage})</span>
-                </div>
-                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
-                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Grade', 'گریڈ')}</span>
-                  <span className="font-bold text-emerald-400">{result.grade}</span>
-                </div>
+          <div className="text-xs text-slate-300 space-y-3 pt-2">
+            <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-slate-800 pb-2">
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <span>{t('Guide to View Your Result Gazette:', 'رزلٹ معلوم کرنے کا طریقہ:')}</span>
+            </p>
+            <div className="grid grid-cols-1 gap-2.5">
+              <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                <p className="leading-normal">{t(`Copy your roll number ${result.rollNo} to your clipboard.`, `اپنا رول نمبر ${result.rollNo} کاپی کریں۔`)}</p>
               </div>
-
-              {/* Subject-wise Marks Table */}
-              <div className="border border-slate-800 rounded-xl overflow-hidden text-xs">
-                <div className="bg-slate-900 px-3 py-2 text-slate-400 font-mono text-[9px] uppercase grid grid-cols-3 border-b border-slate-800">
-                  <span>{t('Subject', 'مضمون')}</span>
-                  <span className="text-center">{t('Marks Obtained', 'نمبر')}</span>
-                  <span className="text-right">{t('Total', 'کل')}</span>
-                </div>
-                {result.subjects.map((sub: any, idx: number) => (
-                  <div key={idx} className="px-3 py-2 grid grid-cols-3 border-b border-slate-900/60 last:border-b-0 last:border-b-0">
-                    <span className="font-medium text-slate-200">{sub.name}</span>
-                    <span className="text-center text-slate-300 font-mono">{sub.marks}</span>
-                    <span className="text-right text-slate-500 font-mono">{sub.total}</span>
-                  </div>
-                ))}
+              <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                <p className="leading-normal">{t(`Click the gold button below to navigate to the official ${activeBoard.nameEn} result portal.`, `آفیشل ${activeBoard.nameEn} رزلٹ پورٹل کھولنے کے لیے نیچے دیے گئے بٹن پر کلک کریں۔`)}</p>
               </div>
-
-              <p className="text-[10px] text-amber-300 bg-amber-950/20 border border-amber-900/30 p-2.5 rounded-xl leading-relaxed italic font-sans">
-                ⚠️ {result.message}
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-2 pt-1">
-                <button
-                  onClick={() => {
-                    if (typeof window !== 'undefined') window.print();
-                  }}
-                  className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition border border-slate-700 min-h-[40px]"
-                >
-                  <span>🖨️ {t('Print Result', 'پرنٹ رزلٹ')}</span>
-                </button>
-                <a
-                  href={activeBoard.resultUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-lg min-h-[40px]"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  <span>{t('Verify on Board Site', 'بورڈ ویب سائٹ پر دیکھیں')}</span>
-                </a>
+              <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                <p className="leading-normal">{t('Select your exam year/session, paste your roll number, and view your verified marksheet directly.', 'سرکاری پورٹل پر سال اور کلاس منتخب کریں، اپنا رول نمبر درج کریں اور رزلٹ حاصل کریں۔')}</p>
               </div>
-            </>
-          )}
+            </div>
+          </div>
+
+          <a
+            href={result.officialUrl}
+            target="_blank"
+            rel="nofollow noopener"
+            className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+          >
+            <span>{t(`Check Result on ${activeBoard.nameEn} Portal →`, `آفیشل پورٹل پر رزلٹ چیک کریں ←`)}</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       )}
 

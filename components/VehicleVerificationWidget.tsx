@@ -125,25 +125,15 @@ export const VehicleVerificationWidget: React.FC = () => {
     setResult(null);
     setValidated(false);
 
-    fetch('/api/checker/mtmis', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ vehicleNo: clean }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data.success) {
-          setResult(data);
-          setValidated(true);
-        } else {
-          setErrorMsg(data.message || 'Error checking vehicle status.');
-        }
-      })
-      .catch(() => {
-        setLoading(false);
-        setErrorMsg('Connection error. Please try again.');
-      });
+    setErrorMsg(null);
+    setLoading(false);
+    setResult({
+      success: true,
+      vehicleRegistration: clean,
+      status: 'VERIFICATION READY',
+      officialUrl: config.portalUrl,
+    });
+    setValidated(true);
   };
 
   const handleCopy = () => {
@@ -291,97 +281,59 @@ export const VehicleVerificationWidget: React.FC = () => {
         {/* Verified & Guided Access */}
         {validated && result && !loading && (
           <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
-            {result.status === 'DEGRADED' ? (
-              <div className="p-4 rounded-xl bg-slate-900 border border-amber-500/50 text-amber-100 text-xs space-y-3">
-                <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
-                  <AlertCircle className="w-4 h-4 text-amber-400" />
-                  <span>{t('Direct Query Offline', 'آن لائن وہیکل تصدیق عارضی طور پر بند ہے')}</span>
-                </p>
-                <p className="leading-relaxed text-slate-300">
-                  {result.message}
-                </p>
-                <div className="pt-2">
-                  <a
-                    href={result.officialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
-                  >
-                    <span>{t('Open Official MTMIS Portal', 'آفیشل پورٹل کھولیں')}</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+            {true ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+                      <Car className="w-5 h-5 text-doc-brass" />
+                    </div>
+                    <div>
+                      <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
+                        {t('Registration Format Verified', 'گاڑی کا نمبر درست ہے')}
+                      </p>
+                      <p className="font-mono font-bold text-base text-white tracking-wider">
+                        {result.vehicleRegistration}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+                    VERIFIED
+                  </span>
                 </div>
+
+                <div className="text-xs text-slate-300 space-y-3 pt-2">
+                  <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-slate-800 pb-2">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>{t('Guide to Verify Ownership & Details:', 'گاڑی کی ملکیت تصدیق کا طریقہ:')}</span>
+                  </p>
+                  <div className="grid grid-cols-1 gap-2.5">
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                      <p className="leading-normal">{t(`Copy vehicle registration number ${result.vehicleRegistration}.`, `گاڑی کا نمبر ${result.vehicleRegistration} کاپی کریں۔`)}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                      <p className="leading-normal">{t(`Click the gold button below to navigate to the official ${config.nameEn} page.`, `آفیشل ${config.nameEn} پیج کھولنے کے لیے نیچے دیے گئے بٹن پر کلک کریں۔`)}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                      <p className="leading-normal">{t('Enter registration number on the official MTMIS page to inspect active tax records, engine numbers, and owner details.', 'سرکاری پورٹل پر گاڑی کا نمبر درج کریں اور مالک کا نام، چیسس نمبر اور ٹوکن ٹیکس کی تفصیلات دیکھیں۔')}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href={result.officialUrl}
+                  target="_blank"
+                  rel="nofollow noopener"
+                  className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+                >
+                  <span>{t(`Check Ownership on Official MTMIS Portal →`, `آفیشل پورٹل پر گاڑی کی ملکیت چیک کریں ←`)}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
-            ) : (
-              <>
-                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
-                  <div className="flex items-center gap-2">
-                    <FileCheck className="w-5 h-5 text-emerald-400" />
-                    <div>
-                      <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('MTMIS VERIFICATION SUCCESSFUL', 'ایم ٹی ایم آئی ایس تصدیق')}</p>
-                      <p className="font-mono font-extrabold text-base tracking-wider">{result.vehicleRegistration}</p>
-                    </div>
-                  </div>
-                  <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
-                    {result.vehicleStatus}
-                  </span>
-                </div>
-
-                {/* MTMIS Details Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1 text-slate-200 font-sans">
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Owner Name', 'مالک کا نام')}</span>
-                    <span className="font-bold text-white text-sm">{result.ownerName}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Father Name', 'والد کا نام')}</span>
-                    <span className="font-bold text-white text-sm">{result.fatherName}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Maker / Model', 'گاڑی کی کمپنی اور ماڈل')}</span>
-                    <span className="font-bold text-white text-sm">{result.makerModel}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Registration Date', 'رجسٹریشن کی تاریخ')}</span>
-                    <span className="font-bold text-white text-sm">{result.registrationDate}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Engine Number', 'انجن نمبر')}</span>
-                    <span className="font-mono text-white text-sm">{result.engineNumber}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                    <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Chassis Number', 'چیسس نمبر')}</span>
-                    <span className="font-mono text-white text-sm">{result.chassisNumber}</span>
-                  </div>
-                  <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2 flex justify-between items-center">
-                    <div>
-                      <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Token Tax Status', 'ٹوکن ٹیکس کی تفصیل')}</span>
-                      <span className="font-bold text-white text-sm">{result.taxPaidStatus} (Until: {result.taxPaidUntil})</span>
-                    </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30 uppercase font-bold">PAID</span>
-                  </div>
-                </div>
-
-                <div className="space-y-2 pt-2">
-                  <a
-                    href={config.portalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-                  >
-                    <span>{t(`VERIFY LIVE ON OFFICIAL MTMIS PORTAL`, `آفیشل پورٹل پر براہ راست تصدیق کریں`)}</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
-
-                <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
-                  <span className="flex items-center gap-1">
-                    <Phone className="w-3.5 h-3.5 text-doc-brass" />
-                    <span>Helpline: {config.helpline}</span>
-                  </span>
-                </div>
-              </>
-            )}
+            ) : null}
           </div>
         )}
       </div>

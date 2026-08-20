@@ -25,25 +25,15 @@ export const BispCheckWidget: React.FC = () => {
     setResult(null);
     setSearched(false);
 
-    fetch('/api/checker/bisp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cnic: cleanCnic }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data.success) {
-          setResult(data);
-          setSearched(true);
-        } else {
-          setErrorMsg(data.message || 'Error checking BISP status.');
-        }
-      })
-      .catch(() => {
-        setLoading(false);
-        setErrorMsg('Connection error. Please try again.');
-      });
+    setErrorMsg('');
+    setLoading(false);
+    setResult({
+      success: true,
+      cnic: cleanCnic,
+      status: 'VERIFICATION READY',
+      officialUrl: 'https://8171.bisp.gov.pk/',
+    });
+    setSearched(true);
   };
 
   return (
@@ -131,46 +121,55 @@ export const BispCheckWidget: React.FC = () => {
       {/* Query Result Box */}
       {searched && result && !loading && (
         <div className="mt-6 pt-6 border-t border-emerald-800 animate-fadeIn space-y-4 font-sans text-white">
-          <div className="p-4 rounded-xl bg-slate-950/90 border border-emerald-500/50 text-emerald-100 text-xs space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="font-bold text-sm text-emerald-300 flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                {t('CNIC Verification Status:', 'شناختی کارڈ کی تصدیق:')} {result.cnic}
-              </span>
-              <span className="px-2 py-0.5 rounded bg-emerald-950 font-mono text-[10px] text-emerald-400 border border-emerald-700">
-                {result.status}
+          <div className="p-5 rounded-2xl bg-slate-950 border-2 border-emerald-500/40 space-y-4 relative overflow-hidden font-sans">
+            <div className="flex items-center justify-between border-b border-emerald-500/30 pb-3 gap-2">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] text-emerald-400 font-bold uppercase tracking-wider">
+                    {t('Format Verified', 'نمبر فارمیٹ درست ہے')}
+                  </p>
+                  <p className="font-mono font-bold text-base text-white tracking-wider">
+                    {result.cnic}
+                  </p>
+                </div>
+              </div>
+              <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+                CNIC OK
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
-              <div>
-                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('NSER Survey Status', 'سروے سٹیٹس')}</span>
-                <span className="font-semibold text-white">{result.surveyStatus} (Score: {result.pmtScore})</span>
-              </div>
-              <div>
-                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('Allocated Payment', 'مختص کردہ قسط')}</span>
-                <span className="font-semibold text-emerald-400">{result.allocatedAmount}</span>
-              </div>
-              <div className="sm:col-span-2">
-                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('Beneficiary Payment Status', 'ادائیگی کی تفصیل')}</span>
-                <span className="font-semibold text-white">{result.paymentStatus}</span>
+            <div className="text-xs text-slate-300 space-y-3 pt-2">
+              <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-emerald-800/40 pb-2">
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                <span>{t('Guide to Check BISP 8171 Status:', 'اهلیت معلوم کرنے کا طریقہ:')}</span>
+              </p>
+              <div className="grid grid-cols-1 gap-2.5">
+                <div className="flex items-start gap-2.5 bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-800/40">
+                  <span className="w-5 h-5 rounded-md bg-emerald-600 text-white font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                  <p className="leading-normal">{t(`Copy CNIC number ${result.cnic} to check.`, `شناختی کارڈ نمبر ${result.cnic} کو کاپی کریں۔`)}</p>
+                </div>
+                <div className="flex items-start gap-2.5 bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-800/40">
+                  <span className="w-5 h-5 rounded-md bg-emerald-600 text-white font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                  <p className="leading-normal">{t('Click the button below to open the official government 8171 portal in a new tab.', 'نیچے دیے گئے بٹن پر کلک کر کے سرکاری 8171 پورٹل کو نئے ٹیب میں کھولیں۔')}</p>
+                </div>
+                <div className="flex items-start gap-2.5 bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-800/40">
+                  <span className="w-5 h-5 rounded-md bg-emerald-600 text-white font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                  <p className="leading-normal">{t('Paste your CNIC, enter the 4-digit security code shown on the official page, and press Enter to view eligibility.', 'سرکاری پورٹل پر شناختی کارڈ درج کریں، تصویر میں دیا گیا 4 ہندسوں کا سیکیورٹی کوڈ لکھیں اور اہلیت معلوم کریں۔')}</p>
+                </div>
               </div>
             </div>
 
-            <p className="leading-relaxed border-t border-emerald-900/60 pt-2 text-[10px] text-slate-400 italic">
-              ⚠️ {result.message}
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center gap-3">
             <a
-              href={result.officialUrl}
+              href="https://8171.bisp.gov.pk/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-glow-emerald"
+              rel="nofollow noopener"
+              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
             >
-              <span>{t('Open Official 8171 BISP Web Portal', 'آفیشل 8171 پورٹل کھولیں')}</span>
-              <ExternalLink className="w-3.5 h-3.5" />
+              <span>{t('Check BISP Status on the Official Portal →', 'آفیشل 8171 پورٹل پر اہلیت چیک کریں ←')}</span>
+              <ExternalLink className="w-4 h-4" />
             </a>
           </div>
         </div>

@@ -59,25 +59,15 @@ export const PserSurveyChecker: React.FC = () => {
     setResult(null);
     setValidated(false);
 
-    fetch('/api/checker/pser', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cnic: cleanCnic }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data.success) {
-          setResult(data);
-          setValidated(true);
-        } else {
-          setErrorMsg(data.message || 'Error checking PSER status.');
-        }
-      })
-      .catch(() => {
-        setLoading(false);
-        setErrorMsg('Connection error. Please try again.');
-      });
+    setErrorMsg(null);
+    setLoading(false);
+    setResult({
+      success: true,
+      cnic: cleanCnic,
+      status: 'VERIFICATION READY',
+      officialUrl: 'https://pser.punjab.gov.pk/',
+    });
+    setValidated(true);
   };
 
   const handleCopy = () => {
@@ -193,90 +183,59 @@ export const PserSurveyChecker: React.FC = () => {
         {/* Verified & Guided Access */}
         {validated && result && !loading && (
           <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
-            {result.status === 'DEGRADED' ? (
-              <div className="p-4 rounded-xl bg-slate-900 border border-amber-500/50 text-amber-100 text-xs space-y-3">
-                <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
-                  <AlertCircle className="w-4 h-4 text-amber-400" />
-                  <span>{t('Direct Query Offline', 'آن لائن پی ایس ای آر تصدیق عارضی طور پر بند ہے')}</span>
-                </p>
-                <p className="leading-relaxed text-slate-300">
-                  {result.message}
-                </p>
-                <div className="pt-2">
-                  <a
-                    href={result.officialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
-                  >
-                    <span>{t('Open Official PSER Portal', 'آفیشل پورٹل کھولیں')}</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
-            ) : (
-              <>
-                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
-                  <div className="flex items-center gap-2">
-                    <FileCheck className="w-5 h-5 text-emerald-400" />
+            {true ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+                      <ShieldCheck className="w-5 h-5 text-doc-brass" />
+                    </div>
                     <div>
-                      <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('PSER REGISTRY TICKET', 'پی ایس ای آر تصدیق')}</p>
-                      <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
+                      <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
+                        {t('CNIC Format Verified', 'شناختی کارڈ فارمیٹ درست ہے')}
+                      </p>
+                      <p className="font-mono font-bold text-base text-white tracking-wider">
+                        {result.cnic}
+                      </p>
                     </div>
                   </div>
-                  <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
-                    result.registrationStatus === 'REGISTERED' 
-                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
-                      : 'bg-rose-500/20 text-rose-300 border-rose-500/30'
-                  }`}>
-                    {result.registrationStatus}
+                  <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+                    VERIFIED
                   </span>
                 </div>
 
-            {/* PSER Details Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Survey Compilation Date', 'سروے کے اندراج کی تاریخ')}</span>
-                <span className="font-bold text-white text-sm">{result.surveyDate}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Poverty Score Index', 'غربت کا انڈیکس سکور')}</span>
-                <span className="font-bold text-white text-sm">{result.povertyIndexScore}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Eligible Linked Schemes', 'منسلک سرکاری سکیمیں جن کے لیے اہل ہیں')}</span>
-                <div className="flex flex-wrap gap-1.5 mt-1">
-                  {result.linkedSchemes.map((scheme: string, idx: number) => (
-                    <span key={idx} className="px-2 py-0.5 rounded bg-slate-850 border border-slate-700 text-slate-300 text-[10px]">
-                      {scheme}
-                    </span>
-                  ))}
+                <div className="text-xs text-slate-300 space-y-3 pt-2">
+                  <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-slate-800 pb-2">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>{t('Guide to Check PSER Survey Status:', 'سروے اہلیت معلوم کرنے کا طریقہ:')}</span>
+                  </p>
+                  <div className="grid grid-cols-1 gap-2.5">
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                      <p className="leading-normal">{t(`Copy CNIC number ${result.cnic} to check.`, `شناختی کارڈ نمبر ${result.cnic} کاپی کریں۔`)}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                      <p className="leading-normal">{t('Click the gold button below to open the official Punjab Socio-Economic Registry portal.', 'نیچے دیے گئے بٹن پر کلک کر کے آفیشل پنجاب سوشل اکنامک رجسٹری پورٹل کھولیں۔')}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                      <p className="leading-normal">{t('Log in with your credentials or check survey status directly to view your PMT score and housing details.', 'سرکاری پورٹل پر شناختی کارڈ کے ساتھ سائن ان کریں اور اپنا پی ایم ٹی اسکور اور سروے کی تفصیلات دیکھیں۔')}</p>
+                    </div>
+                  </div>
                 </div>
+
+                <a
+                  href={result.officialUrl}
+                  target="_blank"
+                  rel="nofollow noopener"
+                  className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+                >
+                  <span>{t('Check PSER Registry on Official Portal →', 'آفیشل پورٹل پر PSER سروے کی تفصیل چیک کریں ←')}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
-            </div>
-
-            <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
-              ⚠️ {result.message}
-            </p>
-
-            <a
-              href="https://pser.punjab.gov.pk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-            >
-              <span>{t('OPEN OFFICIAL PSER PUNJAB PORTAL (PSER.PUNJAB.GOV.PK)', 'آفیشل پی ایس ای آر پنجاب پورٹل کھولیں')}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
-
-            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
-              <span className="flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5 text-doc-brass" />
-                <span>Helpline: 0800-03000 (PITB PSER Support Helpline)</span>
-              </span>
-            </div>
-              </>
-            )}
+            ) : null}
           </div>
         )}
 

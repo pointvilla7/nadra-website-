@@ -110,25 +110,15 @@ export const SehatCardChecker: React.FC = () => {
     setResult(null);
     setValidated(false);
 
-    fetch('/api/checker/sehat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cnic: cleanCnic }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLoading(false);
-        if (data.success) {
-          setResult(data);
-          setValidated(true);
-        } else {
-          setErrorMsg(data.message || 'Error checking eligibility status.');
-        }
-      })
-      .catch(() => {
-        setLoading(false);
-        setErrorMsg('Connection error. Please try again.');
-      });
+    setErrorMsg(null);
+    setLoading(false);
+    setResult({
+      success: true,
+      cnic: cleanCnic,
+      status: 'VERIFICATION READY',
+      officialUrl: region.portalUrl,
+    });
+    setValidated(true);
   };
 
   const handleCopy = () => {
@@ -270,105 +260,59 @@ export const SehatCardChecker: React.FC = () => {
         {/* Verified & Guided Access */}
         {validated && result && !loading && (
           <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
-            {result.status === 'DEGRADED' ? (
-              <div className="p-4 rounded-xl bg-slate-900 border border-amber-500/50 text-amber-100 text-xs space-y-3">
-                <p className="font-bold text-sm text-amber-300 flex items-center gap-1.5">
-                  <AlertCircle className="w-4 h-4 text-amber-400" />
-                  <span>{t('Direct Query Offline', 'آن لائن صحت کارڈ اہلیت تصدیق عارضی طور پر بند ہے')}</span>
-                </p>
-                <p className="leading-relaxed text-slate-300">
-                  {result.message}
-                </p>
-                <div className="pt-2">
-                  <a
-                    href={result.officialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
-                  >
-                    <span>{t('Open Official Sehat Portal', 'آفیشل صحت پورٹل کھولیں')}</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
-            ) : (
-              <>
-                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
-                  <div className="flex items-center gap-2">
-                    <FileCheck className="w-5 h-5 text-emerald-400" />
+            {true ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+                      <ShieldCheck className="w-5 h-5 text-doc-brass" />
+                    </div>
                     <div>
-                      <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('SEHAT CARD ELIGIBILITY TICKET', 'صحت کارڈ اہلیت')}</p>
-                      <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
+                      <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
+                        {t('CNIC Format Verified', 'قومی شناختی کارڈ نمبر درست ہے')}
+                      </p>
+                      <p className="font-mono font-bold text-base text-white tracking-wider">
+                        {result.cnic}
+                      </p>
                     </div>
                   </div>
-                  <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
-                    result.status === 'ELIGIBLE' 
-                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
-                      : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
-                  }`}>
-                    {result.status}
+                  <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+                    VERIFIED
                   </span>
                 </div>
 
-            {/* Eligibility Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Family Head Name', 'خاندان کے سربراہ کا نام')}</span>
-                <span className="font-bold text-white text-sm">{result.beneficiaryName}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Sehat Card Number', 'صحت کارڈ نمبر')}</span>
-                <span className="font-mono text-white text-sm">{result.cardNo}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Eligibility Details', 'اہلیت کی تفصیل')}</span>
-                <span className="font-semibold text-white text-sm">{result.eligibilityDetails}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Annual Insurance Limit', 'سالانہ علاج کی حد')}</span>
-                <span className="font-bold text-emerald-400 text-sm">{result.annualLimit}</span>
-              </div>
-              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
-                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Hospital Access Details', 'ہسپتال علاج کی تفصیل')}</span>
-                <span className="text-slate-300 text-[11px] leading-relaxed">{result.hospitalAccess}</span>
-              </div>
-            </div>
+                <div className="text-xs text-slate-300 space-y-3 pt-2">
+                  <p className="font-bold text-white text-sm flex items-center gap-1.5 border-b border-slate-800 pb-2">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>{t('Guide to Check Sehat Card Eligibility:', 'صحت کارڈ اہلیت چیک کرنے کا طریقہ:')}</span>
+                  </p>
+                  <div className="grid grid-cols-1 gap-2.5">
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">1</span>
+                      <p className="leading-normal">{t(`Copy CNIC number ${result.cnic} to check.`, `اپنا شناختی کارڈ نمبر ${result.cnic} کاپی کریں۔`)}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">2</span>
+                      <p className="leading-normal">{t('Click the gold button below to open the official PM Health check portal in a new tab.', 'نیچے دیے گئے بٹن پر کلک کر کے آفیشل صحت کارڈ پورٹل کو نئے ٹیب میں کھولیں۔')}</p>
+                    </div>
+                    <div className="flex items-start gap-2.5 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                      <span className="w-5 h-5 rounded-md bg-doc-brass text-doc-ink font-mono font-extrabold text-[11px] flex items-center justify-center shrink-0">3</span>
+                      <p className="leading-normal">{t('Paste your CNIC, solve security verification code, and press check to view your family head name and limits.', 'سرکاری پورٹل پر شناختی کارڈ درج کریں، سیکیورٹی کوڈ لکھیں اور اہلیت اور علاج کی حد معلوم کریں۔')}</p>
+                    </div>
+                  </div>
+                </div>
 
-            {/* Instant SMS Check Option */}
-            <div className="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/40 space-y-2 text-xs">
-              <div className="flex items-center gap-2 text-emerald-400 font-bold">
-                <MessageSquare className="w-4 h-4" />
-                <span>{t('Instant Free SMS Verification:', 'ایس ایم ایس کے ذریعے تصدیق:')}</span>
+                <a
+                  href={result.officialUrl}
+                  target="_blank"
+                  rel="nofollow noopener"
+                  className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+                >
+                  <span>{t('Check Sehat Card Status on Official Portal →', 'آفیشل پورٹل پر صحت کارڈ اہلیت چیک کریں ←')}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
-              <p className="text-slate-300 leading-relaxed">
-                {t(
-                  `Send your 13-digit CNIC "${result.cnic}" without dashes via SMS to ${result.smsCode} from any mobile. You will receive official eligibility confirmation directly from the government.`,
-                  `اپنے موبائل سے شناختی کارڈ نمبر "${result.cnic}" بغیر ڈیشز کے ${result.smsCode} پر ایس ایم ایس کریں تاکہ سرکاری جوابی پیغام مل سکے۔`
-                )}
-              </p>
-            </div>
-
-            {/* Direct Web Portal CTA */}
-            <div className="space-y-2 pt-2">
-              <a
-                href={region.portalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-              >
-                <span>{t(`VERIFY LIVE ON OFFICIAL ${region.nameEn.split('(')[0].toUpperCase()} PORTAL`, `آفیشل پورٹل پر لائیو تصدیق کریں`)}</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
-
-            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
-              <span className="flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5 text-doc-brass" />
-                <span>24/7 Helpline: {region.helpline}</span>
-              </span>
-            </div>
-              </>
-            )}
+            ) : null}
           </div>
         )}
       </div>
