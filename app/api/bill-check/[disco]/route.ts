@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getScraperHealth } from '@/lib/services/healthStorage';
 
 export const dynamic = 'force-dynamic';
 
@@ -56,6 +57,22 @@ export async function POST(
   try {
     const body = await request.json();
     const referenceNo = String(body.referenceNo || '').trim().replace(/[^0-9]/g, '');
+
+    // CHECK HEALTH DEGRADATION
+    const healthStatusList = await getScraperHealth();
+    const currentHealth = healthStatusList.find((h) => h.id === discoKey);
+    if (currentHealth && currentHealth.status === 'DEGRADED') {
+      const pitcFolder = SUPPORTED_DISCOS[discoKey] || 'lescobill';
+      const officialUrl = `https://bill.pitc.com.pk/${pitcFolder}/`;
+      return NextResponse.json({
+        found: false,
+        provider: `${providerCode} Electricity`,
+        referenceNo,
+        officialUrl,
+        status: 'CAPTCHA_REQUIRED',
+        message: `Direct query is currently undergoing maintenance. Please complete verification directly on the official portal.`,
+      });
+    }
 
     // 1. Check if it's a CAPTCHA-protected or non-PITC provider
     if (OTHER_PROVIDERS[discoKey]) {

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getScraperHealth } from '@/lib/services/healthStorage';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,6 +11,27 @@ export async function POST(
 
   try {
     const body = await request.json();
+
+    // CHECK HEALTH DEGRADATION
+    const healthStatusList = await getScraperHealth();
+    const currentHealth = healthStatusList.find((h) => h.id === type);
+    if (currentHealth && currentHealth.status === 'DEGRADED') {
+      let officialUrl = 'https://www.pakistaninfohub.com/';
+      if (type === 'bisp') officialUrl = 'https://8171.bisp.gov.pk/';
+      if (type === 'bise') officialUrl = 'https://www.biselahore.com/';
+      if (type === 'traffic') officialUrl = 'https://echallan.psca.gop.pk/';
+      if (type === 'mtmis') officialUrl = 'https://excise.punjab.gov.pk/';
+      if (type === 'sehat') officialUrl = 'https://www.pmhealthprogram.gov.pk/';
+      if (type === 'pser') officialUrl = 'https://pser.punjab.gov.pk/';
+      if (type === 'nts') officialUrl = 'https://www.nts.org.pk/';
+
+      return NextResponse.json({
+        success: false,
+        status: 'DEGRADED',
+        officialUrl,
+        message: `Direct query is currently undergoing maintenance. Please complete verification directly on the official portal.`,
+      });
+    }
 
     // Introduce a short simulated latency to give a premium feel with loading states
     await new Promise((resolve) => setTimeout(resolve, 800));
