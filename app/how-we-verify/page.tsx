@@ -17,7 +17,7 @@ export default function HowWeVerifyPage() {
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
           name: 'How We Verify Information | Editorial Methodology - Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/how-we-verify',
+          url: 'https://www.pakistaninfohub.com/how-we-verify',
           description: 'Learn how Pakistan Info Hub rigorously fact-checks, audits, and verifies civic information, official portal links, fee schedules, and welfare programs.',
         }}
       />

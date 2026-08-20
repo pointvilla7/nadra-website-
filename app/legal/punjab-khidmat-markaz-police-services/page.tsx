@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Punjab Police Khidmat Markaz (PKM) – 14 Public Citizen Services',
     description: 'Overview of 14 public services offered at Police Khidmat Markaz: character certificates, learner driving licenses, tenant registration, employee verification, and crime reports.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/legal/punjab-khidmat-markaz-police-services',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/legal/punjab-khidmat-markaz-police-services',
   },
 };
 

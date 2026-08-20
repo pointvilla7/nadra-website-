@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mera Ghar Mera Ashiana Housing Scheme 2026: Subsidized Home Financing',
     description: 'Guide for Mera Ghar Mera Ashiana Low-Cost Housing Financing 2026. Subsidized mortgage rates, Naya Pakistan Housing registration, eligibility by CNIC.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/loans/mera-ghar-mera-ashiana',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/loans/mera-ghar-mera-ashiana',
   },
 };
 

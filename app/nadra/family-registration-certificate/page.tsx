@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NADRA FRC Guide 2026: Apply Online for Family Registration Certificate',
     description: 'Complete guide to apply for NADRA Family Registration Certificate (FRC) online or at centers. Learn about FRC by Birth vs Marriage, fee PKR 1,000, and embassy visa uses.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/nadra/family-registration-certificate',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/nadra/family-registration-certificate',
   },
 };
 

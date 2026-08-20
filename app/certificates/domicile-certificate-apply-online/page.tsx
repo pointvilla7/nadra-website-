@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Domicile Certificate Apply Online – Punjab, Sindh, KPK & ICT Guide',
     description: 'Apply for a computerized Domicile Certificate online in Pakistan for government jobs, university admissions, and CSS/PPSC tests. Requirements, fees, and processing time.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/certificates/domicile-certificate-apply-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/certificates/domicile-certificate-apply-online',
   },
 };
 

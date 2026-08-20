@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HEC Scholarships 2026 in Pakistan & Abroad: Ehsaas, USAID & Foreign Schemes',
     description: 'Apply for HEC (Higher Education Commission) undergraduate and postgraduate scholarships in Pakistan. Ehsaas Undergraduate, Commonwealth, China, and Hungary scholarship guides.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/education/hec-scholarship-pakistan',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/education/hec-scholarship-pakistan',
   },
 };
 

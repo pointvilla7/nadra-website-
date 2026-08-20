@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'University Merit List Tracker 2026 – All Pakistan Universities',
     description: 'Direct links to official merit list portals for PU, UET, NUST, COMSATS, NED, and more.',
-    url: 'https://pakistaninfohub.com/education/university-merit-list-checker-2026',
+    url: 'https://www.pakistaninfohub.com/education/university-merit-list-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/education/university-merit-list-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/education/university-merit-list-checker-2026' },
 };
 
 const MeritListIndex = dynamic(
@@ -40,19 +40,19 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://pakistaninfohub.com/education' },
-        { '@type': 'ListItem', position: 3, name: 'University Merit List Checker 2026', item: 'https://pakistaninfohub.com/education/university-merit-list-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://www.pakistaninfohub.com/education' },
+        { '@type': 'ListItem', position: 3, name: 'University Merit List Checker 2026', item: 'https://www.pakistaninfohub.com/education/university-merit-list-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'University Merit List Tracker 2026',
       description: 'An index of official Pakistani university admission merit list portals with direct links and Ctrl+F search instructions.',
-      url: 'https://pakistaninfohub.com/education/university-merit-list-checker-2026',
+      url: 'https://www.pakistaninfohub.com/education/university-merit-list-checker-2026',
       applicationCategory: 'EducationalApplication',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'HowTo',

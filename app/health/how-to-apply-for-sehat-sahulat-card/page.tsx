@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Apply for Sehat Sahulat Card – Family Registration Guide',
     description: 'Learn how to register your family with NADRA to activate Sehat Card benefits. Link newborn children via B-Form and update marital status for universal coverage.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/health/how-to-apply-for-sehat-sahulat-card',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/health/how-to-apply-for-sehat-sahulat-card',
   },
 };
 

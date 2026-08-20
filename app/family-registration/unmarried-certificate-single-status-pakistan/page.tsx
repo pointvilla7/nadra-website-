@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Unmarried / Single Status Certificate Issuance in Pakistan',
     description: 'How to get an Unmarried Certificate (Single Status Certificate) in Pakistan for foreign marriages abroad from Union Council, Assistant Commissioner, and MOFA.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/family-registration/unmarried-certificate-single-status-pakistan',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/family-registration/unmarried-certificate-single-status-pakistan',
   },
 };
 

@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     title: 'Sehat Card Eligibility Checker 2026 – Check Status by CNIC Online',
     description:
       'Format validator, 8500 SMS instruction generator, and direct portal access for Pakistan Sehat Sahulat Card programs.',
-    url: 'https://pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026',
+    url: 'https://www.pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026' },
 };
 
 const SehatCardChecker = dynamic(
@@ -38,20 +38,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Social Welfare & Relief', item: 'https://pakistaninfohub.com/welfare' },
-        { '@type': 'ListItem', position: 3, name: 'Sehat Card Eligibility 2026', item: 'https://pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Social Welfare & Relief', item: 'https://www.pakistaninfohub.com/welfare' },
+        { '@type': 'ListItem', position: 3, name: 'Sehat Card Eligibility 2026', item: 'https://www.pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan Sehat Card Eligibility Checker 2026',
       description: 'Online directory and 8500 SMS guide for verifying Sehat Sahulat Card health insurance eligibility and empaneled hospitals.',
-      url: 'https://pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026',
+      url: 'https://www.pakistaninfohub.com/welfare/sehat-card-eligibility-checker-2026',
       applicationCategory: 'HealthApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

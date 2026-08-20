@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'SNGPL Online Bill Check 2026 – Sui Gas Duplicate Bill Download & Payment | Pakistan Info Hub',
     description: 'Check SNGPL online bill 2026 using 14-digit or 10-digit consumer number. Download Sui Northern & SSGC duplicate gas bill PDF, view tariffs, and pay online.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/sui-gas-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/sui-gas-bill-check-online',
   },
 };
 

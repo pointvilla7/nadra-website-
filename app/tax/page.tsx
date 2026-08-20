@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tax & FBR Services | Pakistan Info Hub',
     description: 'Complete verified guides for FBR online NTN registration, active taxpayer list status check, and salaried income tax return filing.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/tax',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/tax',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Tax & FBR Services | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/tax',
+          url: 'https://www.pakistaninfohub.com/tax',
           description: 'Complete verified guides for FBR online NTN registration, active taxpayer list status check, and salaried income tax return filing.',
         }}
       />

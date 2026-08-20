@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hajj & Umrah Services | Pakistan Info Hub',
     description: 'MORA Government Hajj scheme registration, Nusuk online Umrah visa application steps, and balloting results by CNIC.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/hajj-umrah',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/hajj-umrah',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Hajj & Umrah Services | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/hajj-umrah',
+          url: 'https://www.pakistaninfohub.com/hajj-umrah',
           description: 'MORA Government Hajj scheme registration, Nusuk online Umrah visa application steps, and balloting results by CNIC.',
         }}
       />

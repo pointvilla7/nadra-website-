@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Intiqal Registration Online Punjab 2026 – PLRA Land Mutation',
     description: 'Register property Intiqal (mutation) online in Punjab via PLRA (punjab-zameen.gov.pk). Check Arazi Record Center token fees, registry mutation, and inheritance Fard.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/property/intiqal-registration-online-punjab',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/property/intiqal-registration-online-punjab',
   },
 };
 

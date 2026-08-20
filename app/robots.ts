@@ -19,9 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: [
-      'https://pakistaninfohub.com/sitemap.xml',
-      'https://www.pakistaninfohub.com/sitemap.xml',
-    ],
+    sitemap: 'https://www.pakistaninfohub.com/sitemap.xml',
   };
 }

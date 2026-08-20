@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     title: 'MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK',
     description:
       'Format validator and guided one-click access to official provincial MTMIS vehicle registration and ownership databases.',
-    url: 'https://pakistaninfohub.com/traffic/vehicle-verification-online-2026',
+    url: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
 };
 
 const VehicleVerificationWidget = dynamic(
@@ -39,20 +39,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://pakistaninfohub.com/traffic' },
-        { '@type': 'ListItem', position: 3, name: 'Vehicle Verification Online 2026', item: 'https://pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://www.pakistaninfohub.com/traffic' },
+        { '@type': 'ListItem', position: 3, name: 'Vehicle Verification Online 2026', item: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'MTMIS Vehicle Verification Online 2026',
       description: 'Online directory and format validator for checking vehicle ownership, chassis numbers, and token tax across Pakistani provinces.',
-      url: 'https://pakistaninfohub.com/traffic/vehicle-verification-online-2026',
+      url: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

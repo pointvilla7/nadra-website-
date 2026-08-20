@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: AuthorPageProps): Promise<Met
     openGraph: {
       title: `${author.name} | Pakistan Info Hub Editorial Board`,
       description: author.bioEn,
-      url: `https://pakistaninfohub.com/authors/${author.slug}`,
+      url: `https://www.pakistaninfohub.com/authors/${author.slug}`,
     },
   };
 }
@@ -64,15 +64,15 @@ export default function AuthorProfilePage({ params }: AuthorPageProps) {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'Person',
-          '@id': `https://pakistaninfohub.com/authors/${author.slug}#person`,
+          '@id': `https://www.pakistaninfohub.com/authors/${author.slug}#person`,
           name: author.name,
           jobTitle: author.role,
           description: author.bioEn,
-          url: `https://pakistaninfohub.com/authors/${author.slug}`,
+          url: `https://www.pakistaninfohub.com/authors/${author.slug}`,
           worksFor: {
             '@type': 'Organization',
             name: 'Pakistan Info Hub',
-            url: 'https://pakistaninfohub.com',
+            url: 'https://www.pakistaninfohub.com',
           },
         }}
       />

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Punjab University (PU) Admission 2026: BS & Master Programs, Merit Formula',
     description: 'University of the Punjab Lahore admission guide 2026. Online admission portal (admissions.pu.edu.pk), PU entry test registration, fee structure, and merit calculator.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/education/punjab-university-admission-2026',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/education/punjab-university-admission-2026',
   },
 };
 

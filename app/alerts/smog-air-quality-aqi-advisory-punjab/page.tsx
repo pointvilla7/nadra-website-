@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Smog Air Quality (AQI) Advisory Punjab – Green Lockdown Guidelines',
     description: 'Live Air Quality Index (AQI) tracking for Lahore, Faisalabad, and Gujranwala. Smog season health precautions, school closure guidelines, and odd-even vehicle rules.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/alerts/smog-air-quality-aqi-advisory-punjab',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/alerts/smog-air-quality-aqi-advisory-punjab',
   },
 };
 

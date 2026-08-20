@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PRC (Permanent Residence Certificate) Form C & D Application',
     description: 'Apply for a Permanent Residence Certificate (PRC) in Sindh and other provinces for MDCAT, medical college quota, and government university admissions.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/certificates/prc-permanent-residence-certificate-pakistan',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/certificates/prc-permanent-residence-certificate-pakistan',
   },
 };
 

@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     title: 'PSER Survey Status Checker 2026 – Punjab Socio-Economic Registry',
     description:
       'Format validator and direct portal access for checking PSER survey completion, PMT score, and welfare scheme eligibility in Punjab.',
-    url: 'https://pakistaninfohub.com/welfare/pser-survey-status-checker-2026',
+    url: 'https://www.pakistaninfohub.com/welfare/pser-survey-status-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/welfare/pser-survey-status-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/welfare/pser-survey-status-checker-2026' },
 };
 
 const PserSurveyChecker = dynamic(
@@ -38,20 +38,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Social Welfare & Relief', item: 'https://pakistaninfohub.com/welfare' },
-        { '@type': 'ListItem', position: 3, name: 'PSER Survey Status 2026', item: 'https://pakistaninfohub.com/welfare/pser-survey-status-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Social Welfare & Relief', item: 'https://www.pakistaninfohub.com/welfare' },
+        { '@type': 'ListItem', position: 3, name: 'PSER Survey Status 2026', item: 'https://www.pakistaninfohub.com/welfare/pser-survey-status-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Punjab PSER Survey Status Checker 2026',
       description: 'Online guided navigator for checking household registration and PMT score in the Punjab Socio-Economic Registry.',
-      url: 'https://pakistaninfohub.com/welfare/pser-survey-status-checker-2026',
+      url: 'https://www.pakistaninfohub.com/welfare/pser-survey-status-checker-2026',
       applicationCategory: 'GovernmentApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

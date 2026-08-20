@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NADRA Executive Registration Center (NRC) Timings & Fast Track Fees',
     description: 'Find NADRA Executive Center locations in Lahore, Karachi, Islamabad, Rawalpindi & Peshawar. Saturday timings, executive CNIC fees, and VIP lounge processing.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/nadra/executive-center-timings-fees',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/nadra/executive-center-timings-fees',
   },
 };
 

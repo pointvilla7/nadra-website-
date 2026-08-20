@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Union Council Character Certificate Application Procedure',
     description: 'Obtain a certified Character Certificate from your local Union Council or Nazim / Councilor in Pakistan for college admissions and private employment.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/certificates/character-certificate-union-council',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/certificates/character-certificate-union-council',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'WeBOC Registration Guide – Import & Export License in Pakistan',
     description: 'Complete guide to WeBOC (Web Based One Customs) and PSW (Pakistan Single Window) registration for import and export business. Chamber certificate & customs biometric.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/business/import-export-license-weboc-registration',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/business/import-export-license-weboc-registration',
   },
 };
 

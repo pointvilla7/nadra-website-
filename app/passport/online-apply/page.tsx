@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'e-Passport Online Apply Portal 2026: Step-by-Step Registration',
     description: 'Learn how to apply for Pakistani passport renewal online via official DGIP portal onlinemrp.dgip.gov.pk. Photo specs, fee PSID, fingerprint form, and tracking.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/passport/online-apply',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/passport/online-apply',
   },
 };
 

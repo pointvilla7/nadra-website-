@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NTS Jobs Today 2026: National Testing Service Roll No Slip & Results',
     description: 'Latest NTS job announcements 2026, online application process, roll number slip download, answer key, and NAT/GAT test schedule.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/jobs/nts-jobs-today',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/jobs/nts-jobs-today',
   },
 };
 

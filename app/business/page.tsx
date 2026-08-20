@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Business & SECP Registration | Pakistan Info Hub',
     description: 'Official guides for SECP company incorporation, sole proprietorship NTN, municipal trade licenses, and PSEB freelancer registration.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/business',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/business',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Business & SECP Registration | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/business',
+          url: 'https://www.pakistaninfohub.com/business',
           description: 'Official guides for SECP company incorporation, sole proprietorship NTN, municipal trade licenses, and PSEB freelancer registration.',
         }}
       />

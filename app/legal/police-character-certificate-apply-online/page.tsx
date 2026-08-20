@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Police Character Certificate (PCC) Apply Online for Visas',
     description: 'Apply for an official Police Character Certificate (Clearance Certificate) in Pakistan via Police Khidmat Markaz (PKM). Required for foreign student and work visas.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/legal/police-character-certificate-apply-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/legal/police-character-certificate-apply-online',
   },
 };
 

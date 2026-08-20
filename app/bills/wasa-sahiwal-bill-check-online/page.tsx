@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill",
     description: "Check and download your WASA Sahiwal duplicate water bill online using 8-digit Account Number. Official portal links and 1334 helpline.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/wasa-sahiwal-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/wasa-sahiwal-bill-check-online',
   },
 };
 

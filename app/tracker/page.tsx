@@ -210,7 +210,7 @@ export default function UnifiedTrackerPage() {
           '@context': 'https://schema.org',
           '@type': 'WebPage',
           name: 'Unified Application Tracker | Passport, NADRA, BISP & Loans - Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/tracker',
+          url: 'https://www.pakistaninfohub.com/tracker',
           description:
             'Single unified tracking hub for Pakistan citizens to verify NADRA CNIC status, Passport tracking, BISP 8171 eligibility, and Govt loan applications.',
         }}

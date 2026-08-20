@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hajj Registration Portal Pakistan 2026 – Government MORA Scheme',
     description: 'Register for Government Hajj Scheme 2026 online via Ministry of Religious Affairs (hajjinfo.org). Check Regular Scheme vs Sponsorship Scheme (US Dollars) quotas.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/hajj-umrah/hajj-registration-portal-pakistan-2026',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/hajj-umrah/hajj-registration-portal-pakistan-2026',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pakistan Passport Office Directory 2026: Contacts & Addresses',
     description: 'Find addresses, phone numbers, and helpline of Regional Passport Offices in Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, Quetta, Multan, and Faisalabad.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/passport/office-contact-directory',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/passport/office-contact-directory',
   },
 };
 

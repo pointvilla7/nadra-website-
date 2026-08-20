@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Legal Child Adoption Procedure & Guardian Certificate in Pakistan',
     description: 'Complete legal process for child adoption in Pakistan under Guardians and Wards Act 1890. Guardian Court decree, NADRA B-Form / FRC update, and child welfare trust rules.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/family-registration/child-adoption-legal-procedure-pakistan',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/family-registration/child-adoption-legal-procedure-pakistan',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GEPCO Bill Check Online 2026: Gujranwala Electric Duplicate Bill PDF",
     description: "Check and download your GEPCO duplicate electricity bill online using 14-digit Reference Number. Covers Gujranwala, Sialkot, Gujrat, Hafizabad, Narowal, and Mandi Bahauddin.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/gepco-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/gepco-bill-check-online',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sole Proprietorship NTN Registration with FBR in Pakistan',
     description: 'Register a Sole Proprietorship business in Pakistan on FBR Iris Form 181. Open a commercial business bank account and obtain Chamber of Commerce membership.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/business/sole-proprietorship-ntn-registration',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/business/sole-proprietorship-ntn-registration',
   },
 };
 

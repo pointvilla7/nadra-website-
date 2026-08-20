@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     title: 'WAPDA Complaint Status Tracker 2026 – All Pakistan Electricity Companies',
     description:
       'Track your electricity complaint online via PITC CCMS, 118 call center, and 8118 SMS across all DISCOs.',
-    url: 'https://pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026',
+    url: 'https://www.pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026' },
 };
 
 const WAPDAComplaintTracker = dynamic(
@@ -40,9 +40,9 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Utility Bills', item: 'https://pakistaninfohub.com/bills' },
-        { '@type': 'ListItem', position: 3, name: 'WAPDA Complaint Status Tracker 2026', item: 'https://pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Utility Bills', item: 'https://www.pakistaninfohub.com/bills' },
+        { '@type': 'ListItem', position: 3, name: 'WAPDA Complaint Status Tracker 2026', item: 'https://www.pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026' },
       ],
     },
     {
@@ -50,11 +50,11 @@ const jsonLd = {
       name: 'WAPDA Complaint Status Tracker 2026',
       description:
         'A comprehensive guide and tool to track electricity complaint status across Pakistan via PITC CCMS, 118 helpline, and 8118 SMS.',
-      url: 'https://pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026',
+      url: 'https://www.pakistaninfohub.com/bills/wapda-complaint-status-tracker-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'HowTo',

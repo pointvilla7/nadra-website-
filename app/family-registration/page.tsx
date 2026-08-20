@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Marriage & Family Registration | Pakistan Info Hub',
     description: 'Step-by-step Union Council procedures for Nikah Nama registration, computerized marriage certificates, and divorce certificates.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/family-registration',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/family-registration',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Marriage & Family Registration | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/family-registration',
+          url: 'https://www.pakistaninfohub.com/family-registration',
           description: 'Step-by-step Union Council procedures for Nikah Nama registration, computerized marriage certificates, and divorce certificates.',
         }}
       />

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sehat Card Eligibility Check by CNIC 2026 – 8500 SMS & Portal',
     description: 'Check Sehat Sahulat Card eligibility online in 2026 by 13-digit CNIC or SMS to 8500. Free indoor medical treatment up to PKR 1 Million across empaneled hospitals.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/health/sehat-card-eligibility-check-by-cnic',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/health/sehat-card-eligibility-check-by-cnic',
   },
 };
 

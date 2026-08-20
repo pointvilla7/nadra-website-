@@ -24,6 +24,22 @@ const nextConfig = {
     minimumCacheTTL: 31536000, // 1 year
   },
 
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'pakistaninfohub.com',
+          },
+        ],
+        destination: 'https://www.pakistaninfohub.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       // Security headers on all routes

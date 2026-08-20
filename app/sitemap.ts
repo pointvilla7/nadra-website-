@@ -4,7 +4,7 @@ import { CATEGORIES } from '@/lib/data/categories';
 import { AUTHORS } from '@/lib/data/authors';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://pakistaninfohub.com';
+  const baseUrl = 'https://www.pakistaninfohub.com';
 
   const staticPages = [
     '',

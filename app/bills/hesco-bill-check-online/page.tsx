@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HESCO Bill Check Online 2026: Hyderabad Electric Duplicate Bill PDF",
     description: "Check and download your HESCO electricity bill online with 14-digit Reference Number. Covers Hyderabad, Mirpurkhas, Jamshoro, Matiari, Thatta, and Badin.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/hesco-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/hesco-bill-check-online',
   },
 };
 

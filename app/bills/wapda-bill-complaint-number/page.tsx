@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'WAPDA Complaint Numbers & Helplines 2026 (LESCO, MEPCO, IESCO)',
     description: 'Official electricity complaint helpline numbers for all DISCOs in Pakistan: 118 central emergency line, LESCO, FESCO, GEPCO, IESCO, MEPCO, PESCO, QESCO, HESCO.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/wapda-bill-complaint-number',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/wapda-bill-complaint-number',
   },
 };
 

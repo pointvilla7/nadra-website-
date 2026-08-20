@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HAZECO Hazara Electric Supply Guide 2026: Billing Status & Outage Helpline",
     description: "Official guide for HAZECO (Hazara Electric Supply Company). Coverage for Abbottabad, Mansehra, Haripur, Battagram, Kohistan, and Torghar with PESCO billing transition.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/hazeco-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/hazeco-bill-check-online',
   },
 };
 

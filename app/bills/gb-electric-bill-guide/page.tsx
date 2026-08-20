@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gilgit-Baltistan Electricity Bill Guide 2026: Water & Power Dept GB Billing & Contacts",
     description: "Official guide for Gilgit-Baltistan electricity consumers: Water & Power Department GB billing procedures, Gilgit, Skardu, Hunza, Diamer, tariffs, and helplines.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/gb-electric-bill-guide',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/gb-electric-bill-guide',
   },
 };
 

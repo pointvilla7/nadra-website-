@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     title: 'Official Utility Bill Portal Access 2026 – LESCO, K-Electric, SNGPL & SSGC',
     description:
       'Validate your reference number and get guided direct access to official duplicate bill portals for electricity, gas, and water utilities across Pakistan.',
-    url: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026',
+    url: 'https://www.pakistaninfohub.com/bills/utility-bill-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/bills/utility-bill-checker-2026' },
 };
 
 const UtilityBillChecker = dynamic(
@@ -41,9 +41,9 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Utility Bills', item: 'https://pakistaninfohub.com/bills' },
-        { '@type': 'ListItem', position: 3, name: 'Utility Bill Portal Access 2026', item: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Utility Bills', item: 'https://www.pakistaninfohub.com/bills' },
+        { '@type': 'ListItem', position: 3, name: 'Utility Bill Portal Access 2026', item: 'https://www.pakistaninfohub.com/bills/utility-bill-checker-2026' },
       ],
     },
     {
@@ -51,11 +51,11 @@ const jsonLd = {
       name: 'Utility Bill Portal Access & Format Validator 2026',
       description:
         'An interactive civic navigation tool to validate utility reference numbers and access official billing portals for LESCO, IESCO, FESCO, MEPCO, K-Electric, SNGPL, and SSGC.',
-      url: 'https://pakistaninfohub.com/bills/utility-bill-checker-2026',
+      url: 'https://www.pakistaninfohub.com/bills/utility-bill-checker-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'HowTo',

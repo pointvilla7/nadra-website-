@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     title: 'NTS, PPSC & FPSC Result & Scorecard Checker 2026 – Check by CNIC',
     description:
       'Format validator and direct portal gateway for checking competitive exam marks, percentiles, and interview merit lists.',
-    url: 'https://pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026',
+    url: 'https://www.pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026' },
 };
 
 const NtsResultScorecardHelper = dynamic(
@@ -38,20 +38,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Jobs Portal', item: 'https://pakistaninfohub.com/jobs' },
-        { '@type': 'ListItem', position: 3, name: 'Result & Scorecard Checker 2026', item: 'https://pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Jobs Portal', item: 'https://www.pakistaninfohub.com/jobs' },
+        { '@type': 'ListItem', position: 3, name: 'Result & Scorecard Checker 2026', item: 'https://www.pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan NTS, PPSC & FPSC Result Scorecard Checker 2026',
       description: 'Online directory and format validator for checking recruitment exam results, marks sheets, and interview qualifiers across Pakistani testing agencies.',
-      url: 'https://pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026',
+      url: 'https://www.pakistaninfohub.com/jobs/nts-result-scorecard-checker-2026',
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

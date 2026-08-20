@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   title: 'NADRA NICOP Fee Calculator 2026: Overseas Pakistani Card Fees by Zone',
   description: 'Calculate official NADRA NICOP fees instantly for Zone A (USA, UK, Europe, Canada, Australia) and Zone B (Saudi Arabia, UAE, GCC). Instant normal, urgent, and executive rates.',
   alternates: {
-    canonical: 'https://pakistaninfohub.com/nadra/nicop-fee-calculator',
+    canonical: 'https://www.pakistaninfohub.com/nadra/nicop-fee-calculator',
   },
   openGraph: {
     title: 'NADRA NICOP Fee Calculator 2026: Overseas Pakistani Card Fees by Zone',
     description: 'Calculate official NADRA NICOP fees instantly for Zone A and Zone B. Instant normal, urgent, and executive rates in USD.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/nadra/nicop-fee-calculator',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/nadra/nicop-fee-calculator',
   },
 };
 
@@ -78,7 +78,7 @@ export default function NicopFeeCalculatorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'NADRA NICOP Fee Calculator 2026',
-    url: 'https://pakistaninfohub.com/nadra/nicop-fee-calculator',
+    url: 'https://www.pakistaninfohub.com/nadra/nicop-fee-calculator',
     description: 'Instant official fee calculator for National Identity Card for Overseas Pakistanis (NICOP) based on country zone and processing speed.',
     applicationCategory: 'CivicUtilityApplication',
     operatingSystem: 'All',
@@ -92,7 +92,7 @@ export default function NicopFeeCalculatorPage() {
     provider: {
       '@type': 'Organization',
       name: 'Pakistan Info Hub',
-      url: 'https://pakistaninfohub.com',
+      url: 'https://www.pakistaninfohub.com',
     },
   };
 

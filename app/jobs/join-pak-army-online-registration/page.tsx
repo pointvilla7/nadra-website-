@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Join Pak Army Online Registration 2026: PMA Long Course & LCC',
     description: 'How to register online for Join Pak Army 2026. PMA Long Course, Lady Cadet Course (LCC), Technical Cadet Course, eligibility, physical test criteria, and AS&RC.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/jobs/join-pak-army-online-registration',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/jobs/join-pak-army-online-registration',
   },
 };
 

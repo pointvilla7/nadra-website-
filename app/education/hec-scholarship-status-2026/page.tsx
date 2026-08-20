@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HEC Scholarship Status 2026 – Guided Status Checker',
     description: 'Step-by-step guide to check your HEC scholarship application status at eportal.hec.gov.pk.',
-    url: 'https://pakistaninfohub.com/education/hec-scholarship-status-2026',
+    url: 'https://www.pakistaninfohub.com/education/hec-scholarship-status-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/education/hec-scholarship-status-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/education/hec-scholarship-status-2026' },
 };
 
 const HECScholarshipHelper = dynamic(
@@ -39,9 +39,9 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://pakistaninfohub.com/education' },
-        { '@type': 'ListItem', position: 3, name: 'HEC Scholarship Status 2026', item: 'https://pakistaninfohub.com/education/hec-scholarship-status-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://www.pakistaninfohub.com/education' },
+        { '@type': 'ListItem', position: 3, name: 'HEC Scholarship Status 2026', item: 'https://www.pakistaninfohub.com/education/hec-scholarship-status-2026' },
       ],
     },
     {
@@ -84,10 +84,10 @@ const jsonLd = {
       '@type': 'WebApplication',
       name: 'HEC Scholarship Status Helper 2026',
       description: 'A guided helper that provides step-by-step instructions to check HEC scholarship application status, since the portal requires authenticated login.',
-      url: 'https://pakistaninfohub.com/education/hec-scholarship-status-2026',
+      url: 'https://www.pakistaninfohub.com/education/hec-scholarship-status-2026',
       applicationCategory: 'EducationalApplication',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
   ],
 };

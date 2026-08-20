@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ramzan Relief Package 2026: Free Rashan Subsidy & Utility Stores Discount',
     description: 'Government Ramzan Relief Package 2026 guidelines: Free Rashan hamper delivery, Utility Stores subsidies on flour (Atta), sugar, ghee, and 8070 SMS check.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/welfare/ramzan-relief-package',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/welfare/ramzan-relief-package',
   },
 };
 

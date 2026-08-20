@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     title: 'Govt Loan EMI Calculator 2026 – Apni Chhat, PM Youth Loan',
     description:
       'Instant monthly installment and markup calculation for Pakistan government loan schemes and housing initiatives.',
-    url: 'https://pakistaninfohub.com/loans/emi-calculator-2026',
+    url: 'https://www.pakistaninfohub.com/loans/emi-calculator-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/loans/emi-calculator-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/loans/emi-calculator-2026' },
 };
 
 const LoanEmiCalculator = dynamic(
@@ -38,20 +38,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Govt Loans', item: 'https://pakistaninfohub.com/loans' },
-        { '@type': 'ListItem', position: 3, name: 'EMI Calculator 2026', item: 'https://pakistaninfohub.com/loans/emi-calculator-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Govt Loans', item: 'https://www.pakistaninfohub.com/loans' },
+        { '@type': 'ListItem', position: 3, name: 'EMI Calculator 2026', item: 'https://www.pakistaninfohub.com/loans/emi-calculator-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan Govt Loan EMI Calculator 2026',
       description: 'Online financial calculator for estimating monthly installments and markup for Pakistani government loan schemes.',
-      url: 'https://pakistaninfohub.com/loans/emi-calculator-2026',
+      url: 'https://www.pakistaninfohub.com/loans/emi-calculator-2026',
       applicationCategory: 'FinancialApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

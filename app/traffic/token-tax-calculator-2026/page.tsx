@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     title: 'Vehicle Token Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad',
     description:
       'Instant provincial excise token tax estimation for all engine capacities, vehicle types, and FBR filer tax status.',
-    url: 'https://pakistaninfohub.com/traffic/token-tax-calculator-2026',
+    url: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/traffic/token-tax-calculator-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026' },
 };
 
 const TokenTaxCalculator = dynamic(
@@ -39,20 +39,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://pakistaninfohub.com/traffic' },
-        { '@type': 'ListItem', position: 3, name: 'Token Tax Calculator 2026', item: 'https://pakistaninfohub.com/traffic/token-tax-calculator-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://www.pakistaninfohub.com/traffic' },
+        { '@type': 'ListItem', position: 3, name: 'Token Tax Calculator 2026', item: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan Vehicle Token Tax Calculator 2026',
       description: 'Online provincial excise motor vehicle tax and withholding tax calculator for Punjab, Sindh, Islamabad, KPK, and Balochistan.',
-      url: 'https://pakistaninfohub.com/traffic/token-tax-calculator-2026',
+      url: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

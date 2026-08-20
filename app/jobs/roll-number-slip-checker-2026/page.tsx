@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     title: 'Roll Number Slip Checker 2026 – FPSC, PPSC, SPSC, NTS Online',
     description:
       'Format validator and guided one-click portal access for downloading competitive exam roll number slips and test center call letters.',
-    url: 'https://pakistaninfohub.com/jobs/roll-number-slip-checker-2026',
+    url: 'https://www.pakistaninfohub.com/jobs/roll-number-slip-checker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/jobs/roll-number-slip-checker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/jobs/roll-number-slip-checker-2026' },
 };
 
 const RollNumberSlipChecker = dynamic(
@@ -39,20 +39,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Jobs Portal', item: 'https://pakistaninfohub.com/jobs' },
-        { '@type': 'ListItem', position: 3, name: 'Roll Number Slip Checker 2026', item: 'https://pakistaninfohub.com/jobs/roll-number-slip-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Jobs Portal', item: 'https://www.pakistaninfohub.com/jobs' },
+        { '@type': 'ListItem', position: 3, name: 'Roll Number Slip Checker 2026', item: 'https://www.pakistaninfohub.com/jobs/roll-number-slip-checker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan Roll Number Slip Checker 2026',
       description: 'Online directory and format validator for checking test centers and downloading admission letters for FPSC, PPSC, NTS, and provincial PSCs.',
-      url: 'https://pakistaninfohub.com/jobs/roll-number-slip-checker-2026',
+      url: 'https://www.pakistaninfohub.com/jobs/roll-number-slip-checker-2026',
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

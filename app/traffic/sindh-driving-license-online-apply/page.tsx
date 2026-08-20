@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sindh Driving License Online Guide 2026: DLIMS Karachi & Appointment',
     description: 'Apply online for Sindh Driving License (Karachi, Hyderabad, Sukkur) via dlims.sindh.gov.pk. Learner permit fee, appointment booking, and license renewal.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/traffic/sindh-driving-license-online-apply',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/traffic/sindh-driving-license-online-apply',
   },
 };
 

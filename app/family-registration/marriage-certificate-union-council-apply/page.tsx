@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Union Council Marriage Certificate (MRC) Online Apply Guide',
     description: 'Apply for a NADRA computerized Marriage Registration Certificate (MRC) from Union Council for passport update, spousal visa, and family registration.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/family-registration/marriage-certificate-union-council-apply',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/family-registration/marriage-certificate-union-council-apply',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CM Punjab Kisan Card Scheme 2026: 1.5 Lakh PKR Interest-Free Credit',
     description: 'Kisan Card Punjab 2026 apply online at kisancard.punjab.gov.pk. PKR 150,000 interest-free agricultural credit per season for seed, fertilizer, and pesticides.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/welfare/kisan-card-punjab-apply-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/welfare/kisan-card-punjab-apply-online',
   },
 };
 

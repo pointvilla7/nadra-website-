@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Property & Land Mutation | Pakistan Info Hub',
     description: 'Official PLRA online Intiqal guides, Arazi Record Center Fard Malkiat download, and property tax calculators.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/property',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/property',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Property & Land Mutation | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/property',
+          url: 'https://www.pakistaninfohub.com/property',
           description: 'Official PLRA online Intiqal guides, Arazi Record Center Fard Malkiat download, and property tax calculators.',
         }}
       />

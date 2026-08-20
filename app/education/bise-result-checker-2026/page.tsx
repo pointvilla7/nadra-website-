@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     title: 'BISE Result Checker 2026 – All Pakistan Boards',
     description:
       'Official links and SMS codes to check your 2026 Matric/Intermediate result from any BISE board in Pakistan.',
-    url: 'https://pakistaninfohub.com/education/bise-result-checker-2026',
+    url: 'https://www.pakistaninfohub.com/education/bise-result-checker-2026',
   },
   alternates: {
-    canonical: 'https://pakistaninfohub.com/education/bise-result-checker-2026',
+    canonical: 'https://www.pakistaninfohub.com/education/bise-result-checker-2026',
   },
 };
 
@@ -59,9 +59,9 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://pakistaninfohub.com/education' },
-        { '@type': 'ListItem', position: 3, name: 'BISE Result Checker 2026', item: 'https://pakistaninfohub.com/education/bise-result-checker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Education', item: 'https://www.pakistaninfohub.com/education' },
+        { '@type': 'ListItem', position: 3, name: 'BISE Result Checker 2026', item: 'https://www.pakistaninfohub.com/education/bise-result-checker-2026' },
       ],
     },
     {
@@ -69,11 +69,11 @@ const jsonLd = {
       name: 'BISE Result Checker 2026',
       description:
         'A guided tool that directs Pakistani students to the correct official board result portal and provides SMS shortcodes for checking Matric and Intermediate exam results.',
-      url: 'https://pakistaninfohub.com/education/bise-result-checker-2026',
+      url: 'https://www.pakistaninfohub.com/education/bise-result-checker-2026',
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'HowTo',

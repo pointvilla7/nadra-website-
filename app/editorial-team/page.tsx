@@ -40,7 +40,7 @@ export default function EditorialTeamPage() {
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
           name: 'Editorial Team & Research Board | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/editorial-team',
+          url: 'https://www.pakistaninfohub.com/editorial-team',
           description: 'Meet the expert civic researchers, public policy analysts, and editorial review board behind Pakistan Info Hub.',
         }}
       />

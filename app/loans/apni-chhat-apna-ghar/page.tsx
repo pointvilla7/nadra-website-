@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Apni Chhat Apna Ghar Scheme 2026: 1.5M PKR Housing Loan Apply',
     description: 'Apni Chhat Apna Ghar Housing Loan 2026 apply online at acag.punjab.gov.pk. 1.5 Million PKR interest-free loan rules, eligibility, and plot documents.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/loans/apni-chhat-apna-ghar',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/loans/apni-chhat-apna-ghar',
   },
 };
 

@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Pakistan Info Hub',
   shortName: 'PakistanInfoHub',
-  domain: 'pakistaninfohub.com',
-  url: 'https://pakistaninfohub.com',
+  domain: 'www.pakistaninfohub.com',
+  url: 'https://www.pakistaninfohub.com',
   currentYear: 2026,
   defaultYearString: '2026',
   editorialEmail: 'pakistaninfohub1@gmail.com',

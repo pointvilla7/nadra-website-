@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   title: 'Pakistan Passport Fee Calculator 2026: Calculate MRP & e-Passport Fees',
   description: 'Calculate official Pakistan Passport fees for Minor & Adult applicants (36, 72, 100 pages, and e-Passports). Instant Normal, Urgent & Fast Track rates in PKR.',
   alternates: {
-    canonical: 'https://pakistaninfohub.com/passport/fee-calculator',
+    canonical: 'https://www.pakistaninfohub.com/passport/fee-calculator',
   },
   openGraph: {
     title: 'Pakistan Passport Fee Calculator 2026: Calculate MRP & e-Passport Fees',
     description: 'Calculate official Pakistan Passport fees for Minor & Adult applicants (36, 72, 100 pages, and e-Passports). Instant Normal, Urgent & Fast Track rates in PKR.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/passport/fee-calculator',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/passport/fee-calculator',
   },
 };
 
@@ -78,7 +78,7 @@ export default function PassportFeeCalculatorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Pakistan Passport Fee Calculator 2026',
-    url: 'https://pakistaninfohub.com/passport/fee-calculator',
+    url: 'https://www.pakistaninfohub.com/passport/fee-calculator',
     description: 'Instant official fee calculator for Pakistani Machine Readable Passports (MRP) and chip-embedded e-Passports for minors and adults.',
     applicationCategory: 'CivicUtilityApplication',
     operatingSystem: 'All',
@@ -92,7 +92,7 @@ export default function PassportFeeCalculatorPage() {
     provider: {
       '@type': 'Organization',
       name: 'Pakistan Info Hub',
-      url: 'https://pakistaninfohub.com',
+      url: 'https://www.pakistaninfohub.com',
     },
   };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PPSC Jobs 2026: Punjab Public Service Commission Online Apply',
     description: 'PPSC upcoming jobs advertisement 2026, online application form at ppsc.gop.pk, challan form fee (PKR 600), exam planner, and admission letters.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/jobs/ppsc-jobs-2026',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/jobs/ppsc-jobs-2026',
   },
 };
 

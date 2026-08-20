@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FBR Cash Withdrawal & Bank Advance Tax Rules for Non-Filers',
     description: 'Understand Section 231AB advance tax on bank cash withdrawals exceeding PKR 50,000 in Pakistan. Learn how filers get complete 0% tax exemption.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/tax/fbr-bank-account-tax-deduction',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/tax/fbr-bank-account-tax-deduction',
   },
 };
 

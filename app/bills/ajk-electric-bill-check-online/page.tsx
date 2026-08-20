@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AJK Electricity Bill Online Guide 2026: Azad Kashmir Duplicate Bill & Rates",
     description: "Check your AJK Electricity Department bill online. Tariff rates, 14-digit Account Number, Muzaffarabad, Mirpur, Kotli, Rawalakot, and helpline contacts.",
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/ajk-electric-bill-check-online',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/ajk-electric-bill-check-online',
   },
 };
 

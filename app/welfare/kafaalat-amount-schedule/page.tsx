@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benazir Kafaalat Amount & Payment Schedule 2026 (PKR 10,500 Quarterly)',
     description: 'Check current Benazir Kafaalat cash stipend amount (PKR 10,500) and official 2026 disbursement schedule phases across districts in Pakistan.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/welfare/kafaalat-amount-schedule',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/welfare/kafaalat-amount-schedule',
   },
 };
 

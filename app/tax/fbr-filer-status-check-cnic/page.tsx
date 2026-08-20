@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FBR Filer Status Check by CNIC 2026 – Active Taxpayer List (ATL)',
     description: 'Check FBR filer or non-filer status online 2026 by 13-digit CNIC or SMS 9966. Verify Active Taxpayer List (ATL) status to avoid 100% withholding tax penalty.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/tax/fbr-filer-status-check-cnic',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/tax/fbr-filer-status-check-cnic',
   },
 };
 

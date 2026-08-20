@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'BISE Board Paper Rechecking & Recounting Procedure 2026',
     description: 'How to apply for BISE matric and FSc paper rechecking. Fee structure per subject (PKR 1,000â€“1,500), 15-day deadline, and online application form.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/education/bise-paper-rechecking-procedure',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/education/bise-paper-rechecking-procedure',
   },
 };
 

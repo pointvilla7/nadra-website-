@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Disaster & Emergency Alerts | Pakistan Info Hub',
     description: 'Live disaster tracking: NDMA flood alerts, PMD monsoon rainfall forecasts, and 24/7 rescue helpline directories.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/alerts',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/alerts',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Disaster & Emergency Alerts | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/alerts',
+          url: 'https://www.pakistaninfohub.com/alerts',
           description: 'Live disaster tracking: NDMA flood alerts, PMD monsoon rainfall forecasts, and 24/7 rescue helpline directories.',
         }}
       />

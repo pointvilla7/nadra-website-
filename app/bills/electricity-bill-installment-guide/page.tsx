@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Electricity Bill Extension & Installment Application Guide 2026',
     description: 'How to get electricity bill installments approved at LESCO, IESCO, K-Electric, MEPCO customer centers. NEPRA consumer rules, due date extension, and surge relief.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/bills/electricity-bill-installment-guide',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/bills/electricity-bill-installment-guide',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PSEB Freelancer & IT Company Registration for 100% Tax Relief',
     description: 'Register with Pakistan Software Export Board (PSEB) to enjoy 0.25% reduced export tax, subsidized foreign office space, commercial forex accounts, and visa facilitation.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/business/pseb-freelancer-it-company-registration',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/business/pseb-freelancer-it-company-registration',
   },
 };
 

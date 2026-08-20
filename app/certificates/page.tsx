@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Birth, Death & Domicile | Pakistan Info Hub',
     description: 'Official guidance for issuing NADRA computerized birth certificates, online domicile certificates, PRC, and death reporting.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/certificates',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/certificates',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Birth, Death & Domicile | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/certificates',
+          url: 'https://www.pakistaninfohub.com/certificates',
           description: 'Official guidance for issuing NADRA computerized birth certificates, online domicile certificates, PRC, and death reporting.',
         }}
       />

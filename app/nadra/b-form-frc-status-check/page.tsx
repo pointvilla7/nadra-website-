@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   title: 'B-Form / FRC Status — 3 Ways to Check Instantly: NADRA Guide 2026',
   description: 'Verified guide to check NADRA B-Form (CRC) and Family Registration Certificate (FRC) application status via SMS 8400, official Pak-ID portal, and collection centers.',
   alternates: {
-    canonical: 'https://pakistaninfohub.com/nadra/b-form-frc-status-check',
+    canonical: 'https://www.pakistaninfohub.com/nadra/b-form-frc-status-check',
   },
   openGraph: {
     title: 'B-Form / FRC Status — 3 Ways to Check Instantly: NADRA Guide 2026',
     description: 'Track your NADRA B-Form and FRC certificate status using official SMS 8400 and Pak-ID portal instructions.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/nadra/b-form-frc-status-check',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/nadra/b-form-frc-status-check',
   },
 };
 
@@ -86,21 +86,21 @@ export default function BFormFrcStatusCheckPage() {
         position: 1,
         name: 'Check via NADRA SMS Shortcode (8400)',
         text: 'From any mobile phone in Pakistan, create an SMS with your 12-digit NADRA tracking ID and send it to 8400. You will receive an instant reply showing In-Process, Printed, or Dispatched status.',
-        url: 'https://pakistaninfohub.com/nadra/b-form-frc-status-check#method-sms',
+        url: 'https://www.pakistaninfohub.com/nadra/b-form-frc-status-check#method-sms',
       },
       {
         '@type': 'HowToStep',
         position: 2,
         name: 'Check Online at id.nadra.gov.pk Portal',
         text: 'Visit the official NADRA Pak-ID portal (id.nadra.gov.pk), log in with your registered account credentials, and view your tracking ID under Existing Applications.',
-        url: 'https://pakistaninfohub.com/nadra/b-form-frc-status-check#method-online',
+        url: 'https://www.pakistaninfohub.com/nadra/b-form-frc-status-check#method-online',
       },
       {
         '@type': 'HowToStep',
         position: 3,
         name: 'Verify Status Labels & NRC Collection',
         text: 'Understand official status meanings: In-Process (under verification), Printed (certificate generated at Islamabad facility), or Dispatched (ready for counter pickup or courier delivery).',
-        url: 'https://pakistaninfohub.com/nadra/b-form-frc-status-check#method-labels',
+        url: 'https://www.pakistaninfohub.com/nadra/b-form-frc-status-check#method-labels',
       },
     ],
   };

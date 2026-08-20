@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     title: 'Govt Loan Application Status Tracker 2026 – Apni Chhat, PM Youth Loan',
     description:
       'Format validator and guided one-click access to official government loan application portals and balloting dashboards.',
-    url: 'https://pakistaninfohub.com/loans/loan-application-status-tracker-2026',
+    url: 'https://www.pakistaninfohub.com/loans/loan-application-status-tracker-2026',
   },
-  alternates: { canonical: 'https://pakistaninfohub.com/loans/loan-application-status-tracker-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/loans/loan-application-status-tracker-2026' },
 };
 
 const LoanStatusTracker = dynamic(
@@ -38,20 +38,20 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Govt Loans', item: 'https://pakistaninfohub.com/loans' },
-        { '@type': 'ListItem', position: 3, name: 'Loan Status Tracker 2026', item: 'https://pakistaninfohub.com/loans/loan-application-status-tracker-2026' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
+        { '@type': 'ListItem', position: 2, name: 'Govt Loans', item: 'https://www.pakistaninfohub.com/loans' },
+        { '@type': 'ListItem', position: 3, name: 'Loan Status Tracker 2026', item: 'https://www.pakistaninfohub.com/loans/loan-application-status-tracker-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
       name: 'Pakistan Govt Loan Application Status Tracker 2026',
       description: 'Online guided tracker for monitoring application status, balloting draws, and disbursement for Apni Chhat, PM Youth Loan, and Akhuwat.',
-      url: 'https://pakistaninfohub.com/loans/loan-application-status-tracker-2026',
+      url: 'https://www.pakistaninfohub.com/loans/loan-application-status-tracker-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
       isAccessibleForFree: true,
-      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://pakistaninfohub.com' },
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
     },
     {
       '@type': 'FAQPage',

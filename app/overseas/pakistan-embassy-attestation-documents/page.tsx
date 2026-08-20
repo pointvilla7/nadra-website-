@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pakistan Embassy & MOFA Document Attestation Guidelines 2026',
     description: 'Complete guide for attesting educational degrees, marriage certificates, power of attorney, and birth certificates from Pakistan Embassies and MOFA online.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/overseas/pakistan-embassy-attestation-documents',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/overseas/pakistan-embassy-attestation-documents',
   },
 };
 

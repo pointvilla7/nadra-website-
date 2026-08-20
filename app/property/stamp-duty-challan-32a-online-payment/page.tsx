@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'e-Stamping Punjab Challan 32-A Online Payment & Verification',
     description: 'Generate and pay e-Stamp non-judicial stamp papers online in Punjab via estamp.punjab.gov.pk. Pay Challan 32-A for property registry, rent agreements, and affidavits.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/property/stamp-duty-challan-32a-online-payment',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/property/stamp-duty-challan-32a-online-payment',
   },
 };
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'M-Tag Motorway Registration Guide 2026: One Network & Toll Recharge',
     description: 'How to get mandatory M-Tag sticker for Motorway travel (M-1, M-2, M-3, M-4, M-5). Toll plaza booth locations, CNIC registration, and One Network app recharge.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/traffic/m-tag-motorway-registration-one-network',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/traffic/m-tag-motorway-registration-one-network',
   },
 };
 

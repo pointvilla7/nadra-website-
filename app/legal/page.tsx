@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Police & Legal Services | Pakistan Info Hub',
     description: 'Official police portals: Punjab Police 1787 online FIR complaints, Police Character Certificate (PCC) for visas, and PKM services.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/legal',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/legal',
   },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Police & Legal Services | Pakistan Info Hub',
-          url: 'https://pakistaninfohub.com/legal',
+          url: 'https://www.pakistaninfohub.com/legal',
           description: 'Official police portals: Punjab Police 1787 online FIR complaints, Police Character Certificate (PCC) for visas, and PKM services.',
         }}
       />

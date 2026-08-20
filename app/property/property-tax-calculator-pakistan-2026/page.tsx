@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Property Tax Calculator Pakistan 2026 – Urban Property Slabs',
     description: 'Calculate Punjab and Sindh urban property tax (UIPT) for 5 Marla, 10 Marla, and 1 Kanal houses. Learn annual tax exemptions, commercial rates, and rebate discounts.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/property/property-tax-calculator-pakistan-2026',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/property/property-tax-calculator-pakistan-2026',
   },
 };
 

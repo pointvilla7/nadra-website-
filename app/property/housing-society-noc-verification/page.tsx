@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Housing Society NOC Verification – LDA, CDA, RDA Approved Schemes',
     description: 'Verify approved legal status and NOC of housing societies in Islamabad (CDA), Rawalpindi (RDA), and Lahore (LDA) before buying residential or commercial plots.',
-    images: [{ url: 'https://pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
-    url: 'https://pakistaninfohub.com/property/housing-society-noc-verification',
+    images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
+    url: 'https://www.pakistaninfohub.com/property/housing-society-noc-verification',
   },
 };
 
