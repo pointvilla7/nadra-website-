@@ -84,6 +84,8 @@ export const SehatCardChecker: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [validated, setValidated] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
 
   const region = SEHAT_REGIONS[activeRegion];
   const cleanCnic = cnicInput.replace(/[^0-9]/g, '');
@@ -104,7 +106,29 @@ export const SehatCardChecker: React.FC = () => {
     }
 
     setErrorMsg(null);
-    setValidated(true);
+    setLoading(true);
+    setResult(null);
+    setValidated(false);
+
+    fetch('/api/checker/sehat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ cnic: cleanCnic }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setValidated(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking eligibility status.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg('Connection error. Please try again.');
+      });
   };
 
   const handleCopy = () => {
@@ -235,53 +259,86 @@ export const SehatCardChecker: React.FC = () => {
           </div>
         )}
 
+        {/* Loading State */}
+        {loading && (
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+            <div className="h-20 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
+          </div>
+        )}
+
         {/* Verified & Guided Access */}
-        {validated && (
-          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn">
+        {validated && result && !loading && (
+          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
             <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
               <div className="flex items-center gap-2">
                 <FileCheck className="w-5 h-5 text-emerald-400" />
                 <div>
-                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">CNIC FORMAT VALIDATED</p>
-                  <p className="font-mono font-extrabold text-base tracking-wider">{cleanCnic}</p>
+                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('SEHAT CARD ELIGIBILITY TICKET', 'صحت کارڈ اہلیت')}</p>
+                  <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
-                READY
+              <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
+                result.status === 'ELIGIBLE' 
+                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
+                  : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+              }`}>
+                {result.status}
               </span>
             </div>
 
+            {/* Eligibility Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Family Head Name', 'خاندان کے سربراہ کا نام')}</span>
+                <span className="font-bold text-white text-sm">{result.beneficiaryName}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Sehat Card Number', 'صحت کارڈ نمبر')}</span>
+                <span className="font-mono text-white text-sm">{result.cardNo}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Eligibility Details', 'اہلیت کی تفصیل')}</span>
+                <span className="font-semibold text-white text-sm">{result.eligibilityDetails}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Annual Insurance Limit', 'سالانہ علاج کی حد')}</span>
+                <span className="font-bold text-emerald-400 text-sm">{result.annualLimit}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Hospital Access Details', 'ہسپتال علاج کی تفصیل')}</span>
+                <span className="text-slate-300 text-[11px] leading-relaxed">{result.hospitalAccess}</span>
+              </div>
+            </div>
+
             {/* Instant SMS Check Option */}
-            <div className="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/40 space-y-2 text-xs font-sans">
+            <div className="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/40 space-y-2 text-xs">
               <div className="flex items-center gap-2 text-emerald-400 font-bold">
                 <MessageSquare className="w-4 h-4" />
-                <span>{t('Instant Free SMS Eligibility Method (Recommended):', 'فوری مفت ایس ایم ایس کا طریقہ:')}</span>
+                <span>{t('Instant Free SMS Verification:', 'ایس ایم ایس کے ذریعے تصدیق:')}</span>
               </div>
               <p className="text-slate-300 leading-relaxed">
                 {t(
-                  `Send your 13-digit CNIC "${cleanCnic}" without dashes via SMS to 8500 from any Pakistani SIM. You will immediately receive your family card number, eligibility status, and empaneled hospitals.`,
-                  `اپنے موبائل سے شناختی کارڈ نمبر "${cleanCnic}" بغیر ڈیشز کے 8500 پر ایس ایم ایس کریں۔ فوری طور پر کارڈ نمبر اور اہلیت کا جوابی میسج موصول ہو جائے گا۔`
+                  `Send your 13-digit CNIC "${result.cnic}" without dashes via SMS to ${result.smsCode} from any mobile. You will receive official eligibility confirmation directly from the government.`,
+                  `اپنے موبائل سے شناختی کارڈ نمبر "${result.cnic}" بغیر ڈیشز کے ${result.smsCode} پر ایس ایم ایس کریں تاکہ سرکاری جوابی پیغام مل سکے۔`
                 )}
               </p>
             </div>
 
             {/* Direct Web Portal CTA */}
-            <div className="space-y-2">
-              <p className="font-bold text-xs text-white">
-                {t('Or Check Eligibility on Official Web Portal:', 'یا آفیشل ویب پورٹل سے تصدیق کریں:')}
-              </p>
+            <div className="space-y-2 pt-2">
               <a
                 href={region.portalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
               >
-                <span>{t(`OPEN OFFICIAL ${region.nameEn.split('(')[0].toUpperCase()} PORTAL`, `آفیشل پورٹل پر اہلیت دیکھیں`)}</span>
+                <span>{t(`VERIFY LIVE ON OFFICIAL ${region.nameEn.split('(')[0].toUpperCase()} PORTAL`, `آفیشل پورٹل پر لائیو تصدیق کریں`)}</span>
                 <ExternalLink className="w-4 h-4" />
               </a>
             </div>
 
-            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400 font-sans">
+            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
               <span className="flex items-center gap-1">
                 <Phone className="w-3.5 h-3.5 text-doc-brass" />
                 <span>24/7 Helpline: {region.helpline}</span>

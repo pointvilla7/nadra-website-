@@ -26,6 +26,9 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
   const [examClass, setExamClass] = useState<string>('10th');
   const [errorMsg, setErrorMsg] = useState<string>('');
   const [copied, setCopied] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [result, setResult] = useState<any>(null);
+  const [searched, setSearched] = useState<boolean>(false);
 
   // Filter boards by selected province
   const filteredBoards = EDUCATION_BOARDS.filter(
@@ -38,6 +41,8 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
   const handleProvinceChange = (prov: string) => {
     setSelectedProvince(prov);
     setErrorMsg('');
+    setSearched(false);
+    setResult(null);
     const matchingBoards = EDUCATION_BOARDS.filter((b) => prov === 'All' || b.province === prov);
     if (matchingBoards.length > 0) {
       setSelectedBoardId(matchingBoards[0].id);
@@ -80,10 +85,42 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
 
   const handleRedirect = (e: React.FormEvent) => {
     e.preventDefault();
-    const url = getRedirectUrl();
-    if (url && typeof window !== 'undefined') {
-      window.open(url, '_blank', 'noopener,noreferrer');
+    const cleanRoll = rollNo.replace(/[^0-9]/g, '');
+    if (cleanRoll.length < 5 || cleanRoll.length > 9) {
+      setErrorMsg(
+        t(
+          'Please enter a valid roll number (5-8 digits, e.g. 524109).',
+          'برائے مہربانی 5 سے 8 ہندسوں کا درست رول نمبر درج کریں (مثال: 524109)۔',
+          'Barae meharbani 5-8 digits drust roll number daraj karein (e.g. 524109).'
+        )
+      );
+      return;
     }
+
+    setErrorMsg('');
+    setLoading(true);
+    setResult(null);
+    setSearched(false);
+
+    fetch('/api/checker/bise', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ rollNo: cleanRoll, board: selectedBoardId }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setSearched(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking board result.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg(t('Server lookup timed out. Please try verify below.', 'سرور لوڈ نہیں ہو سکا۔ برائے مہربانی آفیشل پورٹل پر چیک کریں۔'));
+      });
   };
 
   const handleCopy = () => {
@@ -287,6 +324,93 @@ export const BoardResultWidget: React.FC<BoardResultWidgetProps> = ({
           </p>
         </div>
       </form>
+
+      {/* Loading State */}
+      {loading && (
+        <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+          <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+          <div className="h-8 bg-slate-300 dark:bg-slate-700 rounded w-2/3"></div>
+          <div className="h-20 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
+        </div>
+      )}
+
+      {/* Scorecard Result Box */}
+      {searched && result && !loading && (
+        <div className="p-6 rounded-2xl bg-slate-950 border border-doc-brass/50 text-white space-y-4 animate-fadeIn font-sans">
+          <div className="flex justify-between items-center border-b border-slate-800 pb-3">
+            <div>
+              <p className="text-[10px] font-mono text-doc-brass font-bold uppercase tracking-wider">
+                {t('BISE Gazette Verification', 'بورڈ گزٹ تصدیق')}
+              </p>
+              <h4 className="font-serif font-extrabold text-sm text-white">
+                {result.board} Scorecard 2026
+              </h4>
+            </div>
+            <span className={`px-2.5 py-1 rounded text-[10px] font-mono font-bold ${result.status === 'PASS' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-rose-500/20 text-rose-400'}`}>
+              {result.status}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 text-xs">
+            <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
+              <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Student Name', 'طالب علم کا نام')}</span>
+              <span className="font-bold text-white">{result.studentName}</span>
+            </div>
+            <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
+              <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Roll Number', 'رول نمبر')}</span>
+              <span className="font-mono font-bold text-white">{result.rollNo}</span>
+            </div>
+            <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
+              <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Marks Obtained', 'حاصل کردہ نمبر')}</span>
+              <span className="font-bold text-white">{result.marksObtained} / {result.totalMarks} ({result.percentage})</span>
+            </div>
+            <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
+              <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Grade', 'گریڈ')}</span>
+              <span className="font-bold text-emerald-400">{result.grade}</span>
+            </div>
+          </div>
+
+          {/* Subject-wise Marks Table */}
+          <div className="border border-slate-800 rounded-xl overflow-hidden text-xs">
+            <div className="bg-slate-900 px-3 py-2 text-slate-400 font-mono text-[9px] uppercase grid grid-cols-3 border-b border-slate-800">
+              <span>{t('Subject', 'مضمون')}</span>
+              <span className="text-center">{t('Marks Obtained', 'نمبر')}</span>
+              <span className="text-right">{t('Total', 'کل')}</span>
+            </div>
+            {result.subjects.map((sub: any, idx: number) => (
+              <div key={idx} className="px-3 py-2 grid grid-cols-3 border-b border-slate-900/60 last:border-b-0">
+                <span className="font-medium text-slate-200">{sub.name}</span>
+                <span className="text-center text-slate-300 font-mono">{sub.marks}</span>
+                <span className="text-right text-slate-500 font-mono">{sub.total}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[10px] text-amber-300 bg-amber-950/20 border border-amber-900/30 p-2.5 rounded-xl leading-relaxed italic font-sans">
+            ⚠️ {result.message}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-2 pt-1">
+            <button
+              onClick={() => {
+                if (typeof window !== 'undefined') window.print();
+              }}
+              className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition border border-slate-700 min-h-[40px]"
+            >
+              <span>🖨️ {t('Print Result', 'پرنٹ رزلٹ')}</span>
+            </button>
+            <a
+              href={activeBoard.resultUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-lg min-h-[40px]"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+              <span>{t('Verify on Board Site', 'بورڈ ویب سائٹ پر دیکھیں')}</span>
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* SMS Result Code Info Banner */}
       <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 text-xs flex items-start gap-2.5">

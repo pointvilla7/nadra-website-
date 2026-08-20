@@ -122,6 +122,8 @@ export const RollNumberSlipChecker: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [validated, setValidated] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
 
   const comm = COMMISSIONS[activeCommission];
   const cleanCnic = cnicInput.replace(/[^0-9]/g, '');
@@ -142,7 +144,35 @@ export const RollNumberSlipChecker: React.FC = () => {
     }
 
     setErrorMsg(null);
-    setValidated(true);
+    setValidated(false);
+
+    if (activeCommission === 'nts') {
+      setLoading(true);
+      setResult(null);
+
+      fetch('/api/checker/nts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ cnic: cleanCnic }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setLoading(false);
+          if (data.success) {
+            setResult(data);
+            setValidated(true);
+          } else {
+            setErrorMsg(data.message || 'Error checking NTS status.');
+          }
+        })
+        .catch(() => {
+          setLoading(false);
+          setErrorMsg('Connection error. Please try again.');
+        });
+    } else {
+      setResult(null);
+      setValidated(true);
+    }
   };
 
   const handleCopy = () => {
@@ -282,50 +312,134 @@ export const RollNumberSlipChecker: React.FC = () => {
           </div>
         )}
 
+        {/* Loading State */}
+        {loading && (
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+            <div className="h-20 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
+          </div>
+        )}
+
         {/* Verified & Guided Access */}
-        {validated && (
-          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn">
-            <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
-              <div className="flex items-center gap-2">
-                <FileCheck className="w-5 h-5 text-emerald-400" />
-                <div>
-                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">CNIC FORMAT VALIDATED</p>
-                  <p className="font-mono font-extrabold text-base tracking-wider">{cleanCnic}</p>
+        {validated && !loading && (
+          activeCommission === 'nts' && result ? (
+            <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
+              <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
+                <div className="flex items-center gap-2">
+                  <FileCheck className="w-5 h-5 text-emerald-400" />
+                  <div>
+                    <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('NTS ADMISSION SLIP TICKET', 'نیشنل ٹیسٹنگ سروس سلپ')}</p>
+                    <p className="font-mono font-extrabold text-base tracking-wider">{result.identifier}</p>
+                  </div>
+                </div>
+                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30 font-bold uppercase">
+                  {result.status}
+                </span>
+              </div>
+
+              {/* NTS Details Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Candidate Name', 'امیدوار کا نام')}</span>
+                  <span className="font-bold text-white text-sm">{result.candidateName}</span>
+                </div>
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Roll Number', 'رول نمبر')}</span>
+                  <span className="font-mono text-white text-sm font-bold">{result.rollNo}</span>
+                </div>
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Test Title', 'ٹیسٹ کا نام')}</span>
+                  <span className="font-bold text-white text-sm">{result.testTitle}</span>
+                </div>
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Test Date', 'ٹیسٹ کی تاریخ')}</span>
+                  <span className="font-bold text-white text-sm">{result.testDate}</span>
+                </div>
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Verification Score', 'حاصل کردہ نمبر')}</span>
+                  <span className="font-mono text-white text-sm font-bold">{result.score} / {result.totalMarks} ({result.percentile} Percentile)</span>
+                </div>
+                <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Designated Test Center', 'امتحانی سینٹر')}</span>
+                  <span className="text-slate-350 text-[11px] leading-relaxed">{result.center}</span>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
-                READY
-              </span>
-            </div>
 
-            <div className="text-xs text-slate-300 font-sans space-y-2">
-              <p className="font-bold text-white">
-                {t('Instructions to Download & Print Your Slip:', 'رول نمبر سلپ ڈاؤن لوڈ کرنے کا طریقہ:')}
+              <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
+                ⚠️ {result.message}
               </p>
-              <ol className="list-decimal list-inside space-y-1.5 text-xs text-slate-300 pl-1 leading-relaxed">
-                <li>{t('Click "COPY" to copy your 13-digit CNIC to clipboard.', 'پہلے کاپی کا بٹن دبائیں تاکہ شناختی کارڈ نمبر محفوظ ہو جائے۔')}</li>
-                <li>{t(`Click "OPEN OFFICIAL ${activeCommission.toUpperCase()} PORTAL" below.`, `نیچے دیے گئے آفیشل بٹن پر کلک کریں۔`)}</li>
-                <li>{t('Paste your CNIC into the admission slip query field and print your original PDF certificate with center instructions.', 'شناختی کارڈ پیسٹ کر کے اپنی رول نمبر سلپ پرنٹ کریں۔')}</li>
-              </ol>
-            </div>
 
-            <a
-              href={comm.portalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-            >
-              <span>{t(`OPEN OFFICIAL ${activeCommission.toUpperCase()} ADMISSION SLIP PORTAL`, `آفیشل ${activeCommission.toUpperCase()} پورٹل کھولیں`)}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+              <div className="flex flex-col sm:flex-row gap-2 pt-1">
+                <button
+                  onClick={() => {
+                    if (typeof window !== 'undefined') window.print();
+                  }}
+                  className="flex-1 py-2.5 px-4 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition border border-slate-700 min-h-[40px]"
+                >
+                  <span>🖨️ {t('Print Admission Slip', 'سلپ پرنٹ کریں')}</span>
+                </button>
+                <a
+                  href={comm.portalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-lg min-h-[40px]"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>{t('Verify on NTS Portal', 'آفیشل پورٹل پر دیکھیں')}</span>
+                </a>
+              </div>
 
-            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400 font-sans">
-              <span className="flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5 text-doc-brass" />
-                <span>Helpline: {comm.helpline}</span>
-              </span>
+              <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
+                <span className="flex items-center gap-1">
+                  <Phone className="w-3.5 h-3.5 text-doc-brass" />
+                  <span>Helpline: {comm.helpline}</span>
+                </span>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
+              <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
+                <div className="flex items-center gap-2">
+                  <FileCheck className="w-5 h-5 text-emerald-400" />
+                  <div>
+                    <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">CNIC FORMAT VALIDATED</p>
+                    <p className="font-mono font-extrabold text-base tracking-wider">{cleanCnic}</p>
+                  </div>
+                </div>
+                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
+                  READY
+                </span>
+              </div>
+
+              <div className="text-xs text-slate-300 space-y-2">
+                <p className="font-bold text-white">
+                  {t('Instructions to Download & Print Your Slip:', 'رول نمبر سلپ ڈاؤن لوڈ کرنے کا طریقہ:')}
+                </p>
+                <ol className="list-decimal list-inside space-y-1.5 text-xs text-slate-300 pl-1 leading-relaxed">
+                  <li>{t('Click "COPY" to copy your 13-digit CNIC to clipboard.', 'پہلے کاپی کا بٹن دبائیں تاکہ شناختی کارڈ نمبر محفوظ ہو جائے۔')}</li>
+                  <li>{t(`Click "OPEN OFFICIAL ${activeCommission.toUpperCase()} PORTAL" below.`, `نیچے دیے گئے آفیشل بٹن پر کلک کریں۔`)}</li>
+                  <li>{t('Paste your CNIC into the admission slip query field and print your original PDF certificate with center instructions.', 'شناختی کارڈ پیسٹ کر کے اپنی رول نمبر سلپ پرنٹ کریں۔')}</li>
+                </ol>
+              </div>
+
+              <a
+                href={comm.portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+              >
+                <span>{t(`OPEN OFFICIAL ${activeCommission.toUpperCase()} ADMISSION SLIP PORTAL`, `آفیشل ${activeCommission.toUpperCase()} پورٹل کھولیں`)}</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+
+              <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
+                <span className="flex items-center gap-1">
+                  <Phone className="w-3.5 h-3.5 text-doc-brass" />
+                  <span>Helpline: {comm.helpline}</span>
+                </span>
+              </div>
+            </div>
+          )
         )}
       </div>
 

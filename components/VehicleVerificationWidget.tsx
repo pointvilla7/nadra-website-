@@ -99,6 +99,8 @@ export const VehicleVerificationWidget: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [validated, setValidated] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
 
   const config = MTMIS_PORTALS[activeProvince];
 
@@ -119,7 +121,29 @@ export const VehicleVerificationWidget: React.FC = () => {
     }
 
     setErrorMsg(null);
-    setValidated(true);
+    setLoading(true);
+    setResult(null);
+    setValidated(false);
+
+    fetch('/api/checker/mtmis', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ vehicleNo: clean }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setValidated(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking vehicle status.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg('Connection error. Please try again.');
+      });
   };
 
   const handleCopy = () => {
@@ -256,42 +280,76 @@ export const VehicleVerificationWidget: React.FC = () => {
           </div>
         )}
 
+        {/* Loading State */}
+        {loading && (
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+            <div className="h-20 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
+          </div>
+        )}
+
         {/* Verified & Guided Access */}
-        {validated && (
-          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn">
+        {validated && result && !loading && (
+          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
             <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
               <div className="flex items-center gap-2">
                 <FileCheck className="w-5 h-5 text-emerald-400" />
                 <div>
-                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">FORMAT CONFIRMED</p>
-                  <p className="font-mono font-extrabold text-base tracking-wider">{vehicleNo.toUpperCase()}</p>
+                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('MTMIS VERIFICATION SUCCESSFUL', 'ایم ٹی ایم آئی ایس تصدیق')}</p>
+                  <p className="font-mono font-extrabold text-base tracking-wider">{result.vehicleRegistration}</p>
                 </div>
               </div>
               <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
-                READY
+                {result.vehicleStatus}
               </span>
             </div>
 
-            <div className="text-xs text-slate-300 font-sans space-y-2">
-              <p className="font-bold text-white">
-                {t('How to View Owner & Registration Details:', 'مالک اور گاڑی کی تفصیلات دیکھنے کا طریقہ:')}
-              </p>
-              <ol className="list-decimal list-inside space-y-1.5 text-xs text-slate-300 pl-1 leading-relaxed">
-                <li>{t('Click "COPY" to store your vehicle registration number on your clipboard.', 'پہلے کاپی کا بٹن دبائیں تاکہ نمبر کاپی ہو جائے۔')}</li>
-                <li>{t(`Click "OPEN ${activeProvince.toUpperCase()} OFFICIAL MTMIS PORTAL" below.`, `نیچے دیے گئے آفیشل ایم ٹی ایم آئی ایس پورٹل بٹن پر کلک کریں۔`)}</li>
-                <li>{t('Paste your number into the official search field and complete CAPTCHA to view complete vehicle records.', 'سرکاری پورٹل پر نمبر پیسٹ کریں اور کیپچا حل کر کے چیسس نمبر اور مالک کی تفصیلات دیکھیں۔')}</li>
-              </ol>
+            {/* MTMIS Details Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1 text-slate-200 font-sans">
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Owner Name', 'مالک کا نام')}</span>
+                <span className="font-bold text-white text-sm">{result.ownerName}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Father Name', 'والد کا نام')}</span>
+                <span className="font-bold text-white text-sm">{result.fatherName}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Maker / Model', 'گاڑی کی کمپنی اور ماڈل')}</span>
+                <span className="font-bold text-white text-sm">{result.makerModel}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Registration Date', 'رجسٹریشن کی تاریخ')}</span>
+                <span className="font-bold text-white text-sm">{result.registrationDate}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Engine Number', 'انجن نمبر')}</span>
+                <span className="font-mono text-white text-sm">{result.engineNumber}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Chassis Number', 'چیسس نمبر')}</span>
+                <span className="font-mono text-white text-sm">{result.chassisNumber}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2 flex justify-between items-center">
+                <div>
+                  <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Token Tax Status', 'ٹوکن ٹیکس کی تفصیل')}</span>
+                  <span className="font-bold text-white text-sm">{result.taxPaidStatus} (Until: {result.taxPaidUntil})</span>
+                </div>
+                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30 uppercase font-bold">PAID</span>
+              </div>
             </div>
 
-            <a
-              href={config.portalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-            >
-              <span>{t(`OPEN ${activeProvince.toUpperCase()} OFFICIAL MTMIS PORTAL`, `${activeProvince.toUpperCase()} آفیشل پورٹل کھولیں`)}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <div className="space-y-2 pt-2">
+              <a
+                href={config.portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+              >
+                <span>{t(`VERIFY LIVE ON OFFICIAL MTMIS PORTAL`, `آفیشل پورٹل پر براہ راست تصدیق کریں`)}</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
 
             <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
               <span className="flex items-center gap-1">

@@ -574,6 +574,8 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
   const [copied, setCopied] = useState(false);
   const [validated, setValidated] = useState(false);
   const [showDiagram, setShowDiagram] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [billResult, setBillResult] = useState<any>(null);
 
   const provider = PROVIDERS[activeProvider] || PROVIDERS.lesco;
 
@@ -583,6 +585,8 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
     setErrorMsg(null);
     setValidated(false);
     setCopied(false);
+    setLoading(false);
+    setBillResult(null);
   };
 
   const handleValidate = (e: React.FormEvent) => {
@@ -608,7 +612,38 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
     }
 
     setErrorMsg(null);
-    setValidated(true);
+    setLoading(true);
+    setBillResult(null);
+
+    fetch(`/api/bill-check/${activeProvider}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ referenceNo: clean }),
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Server responded with error status');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setLoading(false);
+        if (data.found || data.status === 'ESTIMATED_FALLBACK' || data.status === 'CAPTCHA_REQUIRED') {
+          setBillResult(data);
+          setValidated(true);
+        } else {
+          setErrorMsg(data.message || 'Bill details not found or gateway is down.');
+          setValidated(false);
+        }
+      })
+      .catch((err) => {
+        setLoading(false);
+        setErrorMsg(t(
+          'Could not reach verification gateway. Please check your internet or try the official portal below.',
+          'سرکاری گیٹ وے سے رابطہ نہیں ہو سکا۔ برائے مہربانی نیچے آفیشل پورٹل پر چیک کریں۔'
+        ));
+        setValidated(false);
+      });
   };
 
   const handleCopy = () => {
@@ -870,114 +905,172 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
           </div>
         )}
 
-        {/* Validated State — Guided Portal Access */}
-        {validated && !errorMsg && (
-          <div className="p-5 rounded-2xl bg-doc-ink border-2 border-doc-brass/60 space-y-4 relative overflow-hidden animate-fadeIn">
-            <div
-              aria-hidden="true"
-              className="absolute top-0 right-0 w-40 h-40 bg-doc-brass/10 rounded-full blur-2xl pointer-events-none"
-            />
-
-            {/* Confirmed Header */}
-            <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
-                  <Check className="w-5 h-5 text-emerald-400" />
-                </div>
-                <div>
-                  <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
-                    {t('Format Validated & Ready', 'نمبر فارمیٹ درست ہے')}
-                  </p>
-                  <p className="font-mono font-bold text-base text-white tracking-wider">
-                    {cleanRef}
-                  </p>
-                </div>
-              </div>
-
-              <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
-                {provider.digitLength} DIGITS OK
-              </span>
+        {/* Loading State */}
+        {loading && (
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+            <div className="h-8 bg-slate-300 dark:bg-slate-800 rounded w-2/3"></div>
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              <div className="h-12 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+              <div className="h-12 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
             </div>
-
-            {/* Next Steps Guide */}
-            <div className="text-xs text-slate-300 font-sans space-y-2">
-              <p className="font-bold text-white text-sm flex items-center gap-1.5">
-                <span>{t('How to View Your Duplicate Bill:', 'ڈپلیکیٹ بل دیکھنے کا طریقہ:')}</span>
-              </p>
-              <ol className="list-decimal list-inside space-y-1.5 text-slate-300 text-xs pl-1 leading-relaxed">
-                <li>
-                  {t('Click ', 'پہلے ')}
-                  <span className="font-bold text-doc-brass">"COPY NUMBER"</span>
-                  {t(' below to keep your number ready on your clipboard.', ' دبائیں تاکہ نمبر کاپی ہو جائے۔')}
-                </li>
-                <li>
-                  {t('Click ', 'پھر ')}
-                  <span className="font-bold text-white">"OPEN {provider.shortName} OFFICIAL PORTAL"</span>
-                  {t(' to open the official inquiry page in a new tab.', ' دبائیں — سرکاری پورٹل کھل جائے گا۔')}
-                </li>
-                <li>
-                  {t('Paste your number into the official search box and click "Search" to view or print your PDF bill.', 'سرکاری پورٹل پر سرچ باکس میں نمبر پیسٹ کریں اور سرچ کا بٹن دبائیں۔')}
-                </li>
-              </ol>
-            </div>
-
-            {/* Copy Button */}
-            <button
-              type="button"
-              onClick={handleCopy}
-              className="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-2 transition border border-slate-600"
-            >
-              {copied ? (
-                <>
-                  <Check className="w-4 h-4 text-emerald-400" />
-                  <span className="text-emerald-400 font-bold">COPIED TO CLIPBOARD!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-4 h-4 text-doc-brass" />
-                  <span>COPY {cleanRef} TO CLIPBOARD</span>
-                </>
-              )}
-            </button>
-
-            {/* Primary Action: Open Official Portal */}
-            <a
-              href={provider.billCheckUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span>{t(`OPEN ${provider.shortName} OFFICIAL BILL PORTAL`, `${provider.shortName} آفیشل پورٹل کھولیں`)}</span>
-              <ChevronRight className="w-4 h-4" />
-            </a>
-
-            {/* Provider Contextual Information */}
-            <div className="grid grid-cols-2 gap-2 pt-2 border-t border-doc-brass/20 text-xs">
-              <div className="bg-slate-800/80 rounded-xl p-3 space-y-0.5 border border-slate-700/50">
-                <p className="text-[10px] font-mono text-doc-brass uppercase tracking-wider font-bold">
-                  {t('Billing Cycle', 'بل کا دورانیہ')}
-                </p>
-                <p className="text-xs font-sans text-white font-medium">
-                  {t(provider.billCycle, provider.billCycleUr)}
-                </p>
-              </div>
-              <div className="bg-slate-800/80 rounded-xl p-3 space-y-0.5 border border-slate-700/50">
-                <p className="text-[10px] font-mono text-doc-brass uppercase tracking-wider font-bold">
-                  {t('Customer Helpline', 'ہیلپ لائن')}
-                </p>
-                <p className="text-xs font-sans text-white font-bold">
-                  <a
-                    href={`tel:${provider.helpline.split(' ')[0]}`}
-                    className="hover:text-doc-brass transition flex items-center gap-1"
-                  >
-                    <Phone className="w-3 h-3 text-doc-brass" />
-                    <span>{t(provider.helpline, provider.helplineUr)}</span>
-                  </a>
-                </p>
-              </div>
-            </div>
+            <div className="h-12 bg-slate-300 dark:bg-slate-700 rounded-xl w-full mt-4"></div>
           </div>
+        )}
+
+        {/* Validated State & Interactive Bill Details Card */}
+        {validated && !errorMsg && billResult && (
+          billResult.status === 'CAPTCHA_REQUIRED' ? (
+            <div className="p-5 rounded-2xl bg-doc-ink border-2 border-doc-brass/60 space-y-4 relative overflow-hidden animate-fadeIn font-sans">
+              <div
+                aria-hidden="true"
+                className="absolute top-0 right-0 w-40 h-40 bg-doc-brass/10 rounded-full blur-2xl pointer-events-none"
+              />
+
+              <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3 gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+                    <Info className="w-5 h-5 text-amber-400" />
+                  </div>
+                  <div>
+                    <p className="font-mono text-[10px] text-doc-brass font-bold uppercase tracking-wider">
+                      {t('Captcha Protection Active', 'سیکیورٹی کوڈ درکار ہے')}
+                    </p>
+                    <p className="font-mono font-bold text-base text-white tracking-wider">
+                      {cleanRef}
+                    </p>
+                  </div>
+                </div>
+                <span className="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-mono font-bold border border-amber-500/30">
+                  {provider.digitLength} DIGITS OK
+                </span>
+              </div>
+
+              <div className="text-xs text-slate-300 space-y-2 leading-relaxed">
+                <p className="font-bold text-white text-sm">
+                  {t('Verification Process:', 'تصدیق کا طریقہ:')}
+                </p>
+                <p>{billResult.message}</p>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-2 transition border border-slate-600"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-400" />
+                    <span className="text-emerald-400 font-bold">COPIED TO CLIPBOARD!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-4 h-4 text-doc-brass" />
+                    <span>COPY {cleanRef} TO CLIPBOARD</span>
+                  </>
+                )}
+              </button>
+
+              <a
+                href={provider.billCheckUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg min-h-[48px]"
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span>{t(`OPEN ${provider.shortName} OFFICIAL PORTAL`, `${provider.shortName} آفیشل پورٹل کھولیں`)}</span>
+                <ChevronRight className="w-4 h-4" />
+              </a>
+            </div>
+          ) : (
+            <div className="p-6 rounded-2xl bg-slate-950 border-2 border-doc-brass/60 text-white space-y-5 relative overflow-hidden animate-fadeIn font-sans">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-doc-brass/5 rounded-full blur-2xl pointer-events-none" />
+
+              {/* Card Header */}
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3 gap-2">
+                <div>
+                  <p className="text-[10px] font-mono text-doc-brass font-bold uppercase tracking-wider">
+                    {billResult.status === 'LIVE' ? t('LIVE VERIFIED BILL', 'براہ راست تصدیق شدہ بل') : t('ESTIMATED BILL RECORD', 'اندازہ شدہ بل ریکارڈ')}
+                  </p>
+                  <h4 className="font-serif font-extrabold text-base text-white tracking-wide">
+                    {provider.shortName} DUPLICATE BILL
+                  </h4>
+                </div>
+                <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold border ${
+                  billResult.status === 'LIVE' 
+                    ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
+                    : 'bg-amber-500/10 text-amber-400 border-amber-500/20'
+                }`}>
+                  {billResult.status}
+                </span>
+              </div>
+
+              {/* Bill Details Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Consumer Name', 'صارف کا نام')}</span>
+                  <span className="font-bold text-white text-sm">{billResult.consumerName}</span>
+                </div>
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Reference Number', 'ریفرنس نمبر')}</span>
+                  <span className="font-mono font-bold text-white text-sm tracking-wider">{billResult.referenceNo}</span>
+                </div>
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Billing Month', 'بل کا مہینہ')}</span>
+                  <span className="font-bold text-white text-sm">{billResult.billMonth}</span>
+                </div>
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Due Date', 'آخری تاریخ')}</span>
+                  <span className="font-bold text-rose-400 text-sm font-mono">{billResult.dueDate}</span>
+                </div>
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Units Consumed', 'استعمال شدہ یونٹس')}</span>
+                  <span className="font-bold text-emerald-400 text-sm font-mono">{billResult.unitsConsumed} Units</span>
+                </div>
+                <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 space-y-1">
+                  <span className="text-slate-500 block text-[10px] uppercase font-mono">{t('Amount Payable (Within Due Date)', 'قابل ادا رقم (آخری تاریخ تک)')}</span>
+                  <span className="font-bold text-white text-base font-mono">PKR {billResult.payableWithinDue}</span>
+                </div>
+              </div>
+
+              {/* Late Fee Box */}
+              {billResult.payableAfterDue && (
+                <div className="p-3 bg-rose-950/20 border border-rose-900/40 rounded-xl text-xs flex justify-between items-center">
+                  <span className="text-slate-300">{t('Amount Payable After Due Date (Late Fee):', 'آخری تاریخ کے بعد واجب الادا رقم (جرمانہ):')}</span>
+                  <span className="font-bold text-rose-400 font-mono">PKR {billResult.payableAfterDue}</span>
+                </div>
+              )}
+
+              {/* Fallback Notice */}
+              {billResult.status === 'ESTIMATED_FALLBACK' && (
+                <p className="text-[11px] text-amber-300/80 leading-relaxed italic bg-amber-950/20 border border-amber-900/30 p-2.5 rounded-xl">
+                  ⚠️ {t('The official utility server blocked direct API access. Showing estimated bill details. Please click verify below to view official print PDF.', 'سرکاری سرور نے رابطہ بلاک کیا۔ بل کا تخمینہ دکھایا جا رہا ہے۔ اصل بل کے لیے نیچے تصدیقی بٹن پر کلک کریں۔')}
+                </p>
+              )}
+
+              {/* Actions */}
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (typeof window !== 'undefined') window.print();
+                  }}
+                  className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-2 transition border border-slate-700 min-h-[44px]"
+                >
+                  <span>🖨️ {t('PRINT / DOWNLOAD BILL PDF', 'بل پرنٹ کریں')}</span>
+                </button>
+                <a
+                  href={provider.billCheckUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-doc-brass to-amber-500 hover:from-amber-500 hover:to-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>{t('VERIFY ON OFFICIAL PORTAL', 'سرکاری پورٹل پر تصدیق کریں')}</span>
+                </a>
+              </div>
+            </div>
+          )
         )}
       </div>
 

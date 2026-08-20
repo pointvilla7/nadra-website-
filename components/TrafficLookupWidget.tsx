@@ -11,6 +11,9 @@ export const TrafficLookupWidget: React.FC = () => {
   const [vehicleNo, setVehicleNo] = useState('');
   const [cnic, setCnic] = useState('');
   const [searched, setSearched] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
+  const [errorMsg, setErrorMsg] = useState('');
 
   const regionDetails = {
     punjab: {
@@ -37,8 +40,34 @@ export const TrafficLookupWidget: React.FC = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!vehicleNo.trim() && !cnic.trim()) return;
-    setSearched(true);
+    if (!vehicleNo.trim()) {
+      setErrorMsg(t('Please enter your vehicle registration number.', 'برائے مہربانی گاڑی کا رجسٹریشن نمبر درج کریں۔'));
+      return;
+    }
+    setErrorMsg('');
+    setLoading(true);
+    setResult(null);
+    setSearched(false);
+
+    fetch('/api/checker/traffic', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ vehicleNo, chassisNo: cnic }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setSearched(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking challan status.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg('Connection error. Please try again.');
+      });
   };
 
   return (
@@ -136,36 +165,70 @@ export const TrafficLookupWidget: React.FC = () => {
         </div>
       </form>
 
+      {/* Loading State */}
+      {loading && (
+        <div className="mt-6 pt-6 border-t border-purple-900/60 animate-pulse space-y-3 font-sans">
+          <div className="h-4 bg-purple-900/60 rounded w-1/4"></div>
+          <div className="h-20 bg-purple-900/60 rounded w-full"></div>
+        </div>
+      )}
+
       {/* Results Drawer */}
-      {searched && (
-        <div className="mt-6 pt-6 border-t border-purple-900/60 animate-fadeIn space-y-4">
-          <div className="p-4 rounded-xl bg-slate-950/90 border border-purple-500/50 text-purple-100 text-xs space-y-2">
+      {searched && result && !loading && (
+        <div className="mt-6 pt-6 border-t border-purple-900/60 animate-fadeIn space-y-4 font-sans text-white">
+          <div className="p-4 rounded-xl bg-slate-950/90 border border-purple-500/50 text-purple-100 text-xs space-y-3">
             <div className="flex items-center justify-between">
               <span className="font-bold text-sm text-purple-300 flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                {t(`Verified Query for ${currentRegion.nameEn}`, `تصدیق شدہ معلومات برائے ${currentRegion.nameUr}`)}
+                {t(`Verified Query: ${result.vehicleRegistration}`, `تصدیق شدہ معلومات: ${result.vehicleRegistration}`)}
               </span>
               <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 font-mono text-[10px]">
-                PSCA-ONLINE
+                {result.status}
               </span>
             </div>
 
-            <p>
-              {t(
-                `Your vehicle search request for ${vehicleNo || cnic} has been formatted. Click the official server button below to check your unpaid e-challans or token tax status directly on ${currentRegion.nameEn}.`,
-                `آپ کی گاڑی کی تلاشی معلومات تیار ہیں۔ آفیشل پورٹل پر جا کر چالان دیکھیں۔`
-              )}
+            {result.challansCount > 0 ? (
+              <div className="space-y-3">
+                <p className="text-amber-400 font-bold">
+                  ⚠️ {t(`Found ${result.challansCount} unpaid traffic challan(s) totaling PKR ${result.totalAmountPending}`, `گاڑی کے نام پر ${result.challansCount} غیر ادا شدہ چالان (کل رقم: ${result.totalAmountPending} روپے) پائے گئے`)}
+                </p>
+                <div className="border border-purple-900/60 rounded-lg overflow-hidden">
+                  <div className="bg-purple-950/40 p-2.5 grid grid-cols-4 font-mono text-[9px] uppercase border-b border-purple-900/60 text-purple-300 font-bold">
+                    <span>{t('Challan ID', 'چالان نمبر')}</span>
+                    <span className="col-span-2 text-center">{t('Violation Details & Location', 'خلاف ورزی اور مقام')}</span>
+                    <span className="text-right">{t('Amount', 'رقم')}</span>
+                  </div>
+                  {result.challanList.map((ch: any, idx: number) => (
+                    <div key={idx} className="p-2.5 grid grid-cols-4 border-b border-purple-950/40 last:border-b-0 text-slate-200">
+                      <span className="font-mono text-[10px]">{ch.id}</span>
+                      <span className="col-span-2 text-[10px] leading-tight">
+                        <span className="font-bold block">{ch.violation}</span>
+                        <span className="text-slate-400 block mt-0.5 text-[9px]">{ch.location} ({ch.date})</span>
+                      </span>
+                      <span className="text-right text-rose-400 font-mono font-bold">PKR {ch.amount}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <p className="text-emerald-400 font-bold">
+                ✅ {t('No unpaid challans found for this vehicle. Your record is clean!', 'اس گاڑی کے خلاف کوئی بقایا چالان نہیں ملا۔ ریکارڈ بالکل صاف ہے!')}
+              </p>
+            )}
+
+            <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
+              ⚠️ {result.message}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <a
-              href={currentRegion.portalUrl}
+              href={result.officialUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg"
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg min-h-[44px]"
             >
-              <span>{t(`Open ${currentRegion.nameEn} Portal`, 'آفیشل پورٹل پر جائیں')}</span>
+              <span>{t(`Verify on Official Portal`, 'آفیشل پورٹل پر تصدیق کریں')}</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>

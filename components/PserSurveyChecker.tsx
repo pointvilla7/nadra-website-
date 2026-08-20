@@ -34,6 +34,8 @@ export const PserSurveyChecker: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [validated, setValidated] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
 
   const cleanCnic = cnicInput.replace(/[^0-9]/g, '');
 
@@ -53,7 +55,29 @@ export const PserSurveyChecker: React.FC = () => {
     }
 
     setErrorMsg(null);
-    setValidated(true);
+    setLoading(true);
+    setResult(null);
+    setValidated(false);
+
+    fetch('/api/checker/pser', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ cnic: cleanCnic }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setValidated(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking PSER status.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg('Connection error. Please try again.');
+      });
   };
 
   const handleCopy = () => {
@@ -158,41 +182,59 @@ export const PserSurveyChecker: React.FC = () => {
             <span>{t(`VERIFY CNIC FOR PSER SURVEY 2026`, `پی ایس ای آر سروے کے لیے شناختی کارڈ تصدیق کریں`)}</span>
           </button>
         </form>
-
-        {/* Error Notice */}
-        {errorMsg && (
-          <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700 text-amber-900 dark:text-amber-200 text-xs flex items-center gap-2 font-sans">
-            <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
-            <span>{errorMsg}</span>
+        {/* Loading State */}
+        {loading && (
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
+            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
+            <div className="h-20 bg-slate-200 dark:bg-slate-800 rounded-xl w-full"></div>
           </div>
         )}
 
         {/* Verified & Guided Access */}
-        {validated && (
-          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn">
+        {validated && result && !loading && (
+          <div className="p-5 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/60 space-y-4 animate-fadeIn font-sans">
             <div className="flex items-center justify-between border-b border-doc-brass/30 pb-3">
               <div className="flex items-center gap-2">
                 <FileCheck className="w-5 h-5 text-emerald-400" />
                 <div>
-                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">CNIC FORMAT VALIDATED</p>
-                  <p className="font-mono font-extrabold text-base tracking-wider">{cleanCnic}</p>
+                  <p className="text-[10px] font-mono text-doc-brass uppercase font-bold">{t('PSER REGISTRY TICKET', 'پی ایس ای آر تصدیق')}</p>
+                  <p className="font-mono font-extrabold text-base tracking-wider">{result.cnic}</p>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] border border-emerald-500/30">
-                READY
+              <span className={`px-2.5 py-0.5 rounded font-mono text-[10px] border ${
+                result.registrationStatus === 'REGISTERED' 
+                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' 
+                  : 'bg-rose-500/20 text-rose-300 border-rose-500/30'
+              }`}>
+                {result.registrationStatus}
               </span>
             </div>
 
-            <div className="text-xs text-slate-300 font-sans space-y-2">
-              <p className="font-bold text-white">
-                {t('How to Check PSER Registration & Survey Status:', 'پی ایس ای آر سروے چیک کرنے کا طریقہ:')}
-              </p>
-              <ol className="list-decimal list-inside space-y-1.5 text-xs text-slate-300 pl-1 leading-relaxed">
-                <li>{t('Click "COPY" to copy your CNIC number to clipboard.', 'پہلے کاپی کا بٹن دبائیں تاکہ شناختی کارڈ نمبر کاپی ہو جائے۔')}</li>
-                <li>{t('Click "OPEN OFFICIAL PSER PORTAL" below to load pser.punjab.gov.pk.', 'نیچے دیے گئے بٹن پر کلک کر کے آفیشل پورٹل کھولیں۔')}</li>
-                <li>{t('Log in or select "Registration Status", paste your CNIC, and view your verified household score (PMT Score) and registered family members.', 'شناختی کارڈ درج کر کے اپنا گھریلو سکور اور تصدیق شدہ فیملی کا ریکارڈ دیکھیں۔')}</li>
-              </ol>
+            {/* PSER Details Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200">
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Survey Compilation Date', 'سروے کے اندراج کی تاریخ')}</span>
+                <span className="font-bold text-white text-sm">{result.surveyDate}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Poverty Score Index', 'غربت کا انڈیکس سکور')}</span>
+                <span className="font-bold text-white text-sm">{result.povertyIndexScore}</span>
+              </div>
+              <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 space-y-1 sm:col-span-2">
+                <span className="text-slate-500 block text-[9px] uppercase font-mono">{t('Eligible Linked Schemes', 'منسلک سرکاری سکیمیں جن کے لیے اہل ہیں')}</span>
+                <div className="flex flex-wrap gap-1.5 mt-1">
+                  {result.linkedSchemes.map((scheme: string, idx: number) => (
+                    <span key={idx} className="px-2 py-0.5 rounded bg-slate-850 border border-slate-700 text-slate-300 text-[10px]">
+                      {scheme}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            <p className="text-[10px] text-slate-400 border-t border-purple-950 pt-2 italic">
+              ⚠️ {result.message}
+            </p>
 
             <a
               href="https://pser.punjab.gov.pk/"
@@ -204,12 +246,20 @@ export const PserSurveyChecker: React.FC = () => {
               <ExternalLink className="w-4 h-4" />
             </a>
 
-            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400 font-sans">
+            <div className="pt-2 border-t border-doc-brass/20 flex items-center justify-between text-xs text-slate-400">
               <span className="flex items-center gap-1">
                 <Phone className="w-3.5 h-3.5 text-doc-brass" />
-                <span>Toll-Free Helpline: 0800-02345</span>
+                <span>Helpline: 0800-03000 (PITB PSER Support Helpline)</span>
               </span>
             </div>
+          </div>
+        )}
+
+        {/* Error Notice */}
+        {errorMsg && (
+          <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700 text-amber-900 dark:text-amber-200 text-xs flex items-center gap-2 font-sans">
+            <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>{errorMsg}</span>
           </div>
         )}
       </div>

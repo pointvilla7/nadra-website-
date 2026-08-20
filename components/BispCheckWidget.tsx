@@ -10,6 +10,9 @@ export const BispCheckWidget: React.FC = () => {
   const [searched, setSearched] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
+
   const handleCheck = (e: React.FormEvent) => {
     e.preventDefault();
     const cleanCnic = cnic.replace(/[^0-9]/g, '');
@@ -18,7 +21,29 @@ export const BispCheckWidget: React.FC = () => {
       return;
     }
     setErrorMsg('');
-    setSearched(true);
+    setLoading(true);
+    setResult(null);
+    setSearched(false);
+
+    fetch('/api/checker/bisp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ cnic: cleanCnic }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success) {
+          setResult(data);
+          setSearched(true);
+        } else {
+          setErrorMsg(data.message || 'Error checking BISP status.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setErrorMsg('Connection error. Please try again.');
+      });
   };
 
   return (
@@ -73,6 +98,7 @@ export const BispCheckWidget: React.FC = () => {
                 setCnic(e.target.value);
                 setErrorMsg('');
                 setSearched(false);
+                setResult(null);
               }}
               placeholder="3520212345671"
               className="w-full pl-4 pr-32 py-3.5 rounded-xl bg-slate-950/80 border border-emerald-700 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 text-base font-mono font-bold tracking-wider"
@@ -94,31 +120,51 @@ export const BispCheckWidget: React.FC = () => {
         </div>
       </form>
 
+      {/* Loading State */}
+      {loading && (
+        <div className="mt-6 pt-6 border-t border-emerald-800 animate-pulse space-y-3 font-sans">
+          <div className="h-4 bg-emerald-900/60 rounded w-1/4"></div>
+          <div className="h-10 bg-emerald-900/60 rounded w-full"></div>
+        </div>
+      )}
+
       {/* Query Result Box */}
-      {searched && (
-        <div className="mt-6 pt-6 border-t border-emerald-800 animate-fadeIn space-y-4">
+      {searched && result && !loading && (
+        <div className="mt-6 pt-6 border-t border-emerald-800 animate-fadeIn space-y-4 font-sans text-white">
           <div className="p-4 rounded-xl bg-slate-950/90 border border-emerald-500/50 text-emerald-100 text-xs space-y-3">
             <div className="flex items-center justify-between">
               <span className="font-bold text-sm text-emerald-300 flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                {t('CNIC Verified for 8171 Query:', 'شناختی کارڈ کی تصدیق:')} {cnic}
+                {t('CNIC Verification Status:', 'شناختی کارڈ کی تصدیق:')} {result.cnic}
               </span>
               <span className="px-2 py-0.5 rounded bg-emerald-950 font-mono text-[10px] text-emerald-400 border border-emerald-700">
-                NSER-VERIFIED
+                {result.status}
               </span>
             </div>
 
-            <p className="leading-relaxed">
-              {t(
-                `Your 8171 query for CNIC ${cnic} is prepared. Click below to open the official Government BISP 8171 Web Portal (8171.bisp.gov.pk) or send your CNIC to SMS 8171 to receive your current cash distribution status.`,
-                `آپ کے شناختی کارڈ کی معلومات تیار ہیں۔ آفیشل پورٹل پر جا کر یا 8171 پر ایس ایم ایس کر کے اپنی قسط معلوم کریں۔`
-              )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
+              <div>
+                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('NSER Survey Status', 'سروے سٹیٹس')}</span>
+                <span className="font-semibold text-white">{result.surveyStatus} (Score: {result.pmtScore})</span>
+              </div>
+              <div>
+                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('Allocated Payment', 'مختص کردہ قسط')}</span>
+                <span className="font-semibold text-emerald-400">{result.allocatedAmount}</span>
+              </div>
+              <div className="sm:col-span-2">
+                <span className="text-slate-400 block text-[10px] uppercase font-mono">{t('Beneficiary Payment Status', 'ادائیگی کی تفصیل')}</span>
+                <span className="font-semibold text-white">{result.paymentStatus}</span>
+              </div>
+            </div>
+
+            <p className="leading-relaxed border-t border-emerald-900/60 pt-2 text-[10px] text-slate-400 italic">
+              ⚠️ {result.message}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <a
-              href="https://8171.bisp.gov.pk/"
+              href={result.officialUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-glow-emerald"
