@@ -58,6 +58,30 @@ export default function Page() {
 
         <CategoryPillNav />
 
+        {/* Popular Services & Interactive Tools */}
+        {category.popularSearches && category.popularSearches.length > 0 && (
+          <section className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/30 space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-doc-brass flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-doc-brass" />
+                <span>Featured Online Tools &amp; Popular Services</span>
+              </h2>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {category.popularSearches.map((item) => (
+                <Link
+                  key={item.slug}
+                  href={item.slug}
+                  className="px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-doc-ink hover:text-white dark:hover:bg-slate-700 text-doc-ink dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-medium transition flex items-center gap-1.5"
+                >
+                  <span className="font-serif font-bold">{item.en}</span>
+                  <span className="text-[10px] text-slate-400 font-sans">({item.ur})</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {articles.map((art) => (
