@@ -42,6 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traffic/challan-paid-but-showing-pending-2026',
     '/education/matric-40-percent-passing-marks-rule-2026',
     '/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026',
+    '/welfare/pmt-score-explained-bisp-eligibility-2026',
+    '/loans/how-to-spot-fake-loan-scheme-scams-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',

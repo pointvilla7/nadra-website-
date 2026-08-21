@@ -260,6 +260,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Spot Fake Loan Scams",
+        "ur": "جعلی قرضہ اسکیموں سے بچاؤ",
+        "slug": "/loans/how-to-spot-fake-loan-scheme-scams-2026"
+      },
+      {
         "en": "Govt Loan EMI Calculator",
         "ur": "قرضہ قسط کیلکولیٹر 2026",
         "slug": "/loans/emi-calculator-2026"
@@ -278,11 +283,6 @@ export const CATEGORIES: Category[] = [
         "en": "PM Youth Loan 2026",
         "ur": "پی ایم یوتھ لون سکیم",
         "slug": "/loans/pm-youth-loan-scheme"
-      },
-      {
-        "en": "Akhuwat Interest-Free Loan",
-        "ur": "اخوت بلاسود قرضہ فارم",
-        "slug": "/loans/akhuwat-interest-free-loan-application"
       }
     ]
   },
@@ -300,6 +300,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
+      {
+        "en": "PMT Score Explained",
+        "ur": "پی ایم ٹی سکور رہنمائی 2026",
+        "slug": "/welfare/pmt-score-explained-bisp-eligibility-2026"
+      },
       {
         "en": "Sehat Card Eligibility Check",
         "ur": "صحت کارڈ اہلیت چیکر 2026",

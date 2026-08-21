@@ -15308,5 +15308,139 @@ export const ARTICLES: Record<string, Article> = {
       "/jobs/nts-result-scorecard-checker-2026",
       "/certificates/police-character-certificate-online-apply-2026"
     ]
+  },
+  "pmt-score-explained-bisp-eligibility-2026": {
+    "slug": "pmt-score-explained-bisp-eligibility-2026",
+    "fullPath": "/welfare/pmt-score-explained-bisp-eligibility-2026",
+    "categoryId": "welfare",
+    "titleEn": "BISP PMT Score Explained 2026 – How Proxy Means Test is Calculated",
+    "titleUr": "نادرا و بے نظیر پی ایم ٹی سکور کیا ہے؟ اہلیت کا فارمولا اور دوبارہ سروے",
+    "metaDescriptionEn": "Complete guide to BISP PMT (Proxy Means Test) score: What it measures, 43 NSER socio-economic indicators, the PMT 32 eligibility cutoff, reasons for rejection, and how to request a dynamic re-survey at Tehsil offices.",
+    "metaDescriptionUr": "بے نظیر پی ایم ٹی سکور کیا ہے؟ 43 غربت کے اشاریے، 32 سکور پر اہلیت، مسترد ہونے کی وجوہات اور تحصیل آفس سے دوبارہ سروے کروانے کا طریقہ۔",
+    "directAnswerEn": "The Proxy Means Test (PMT) score (0–100) is a statistical assessment of your household’s living standard calculated from 43 NSER survey indicators (housing quality, assets, dependents, electricity use). To qualify for Benazir Kafaalat, your PMT score must be 32 or below (37 for disabled individuals).",
+    "directAnswerUr": "پی ایم ٹی سکور (0 تا 100) غربت کا ایک شماریاتی تخمینہ ہے جو این ایس ای آر سروے کے 43 اشاریوں (مکان کی نوعیت، اثاثے، بجلی کا بل، اہل خانہ کی تعداد) سے نکالا جاتا ہے۔ بے نظیر کفالت میں شامل ہونے کے لیے پی ایم ٹی سکور 32 یا اس سے کم (معذور افراد کے لیے 37) ہونا لازمی ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Benazir Income Support Programme (BISP)",
+      "url": "https://bisp.gov.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "General Benazir Kafaalat PMT Cutoff",
+        "serviceUr": "کفالت اہلیت کی بالائی حد",
+        "normal": "PMT Score ≤ 32",
+        "urgent": "Eligible for Cash Stipend"
+      },
+      {
+        "serviceEn": "Special Persons / Transgender Cutoff",
+        "serviceUr": "معذور و خواجہ سرا افراد کی حد",
+        "normal": "PMT Score ≤ 37",
+        "urgent": "Relaxed Threshold"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Update NADRA Family Tree Records",
+        "titleUr": "نادرا میں فیملی ریکارڈ درست کروائیں",
+        "detailEn": "Ensure B-Forms, marital status, and death certificates are properly updated in NADRA systems.",
+        "detailUr": "نادرا میں بچوں کے بی فارم اور ازدواجی حیثیت کی درستگی کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Visit BISP Tehsil Registration Desk",
+        "titleUr": "قریبی بے نظیر تحصیل رجسٹریشن سینٹر جائیں",
+        "detailEn": "Female head of household must physically visit with original CNICs and family B-Forms.",
+        "detailUr": "خاتون سربراہ اصل شناختی کارڈ اور بچوں کے بی فارم لے کر خود سینٹر جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Complete NSER Dynamic Biometric Survey",
+        "titleUr": "این ایس ای آر بائیو میٹرک سروے مکمل کریں",
+        "detailEn": "Answer the 43 proxy questions and provide live fingerprint verification for score calculation.",
+        "detailUr": "گھریلو سوالات کے جوابات دیں اور فنگر پرنٹ کی تصدیق کروا کر رسید حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the PMT score cutoff for BISP?",
+        "questionUr": "بے نظیر کفالت کے لیے پی ایم ٹی سکور کتنا ہونا چاہیے؟",
+        "answerEn": "General households must have a PMT score of 32 or below; special categories qualify up to 37.",
+        "answerUr": "عام خاندانوں کے لیے 32 یا اس سے کم، جبکہ معذور افراد کے لیے 37 تک کا سکور اہل ہے۔"
+      },
+      {
+        "questionEn": "Can I register for an NSER survey online?",
+        "questionUr": "کیا این ایس ای آر سروے آن لائن ہو سکتا ہے؟",
+        "answerEn": "No. Online survey registration does not exist; applicants must visit the BISP Tehsil Office in person.",
+        "answerUr": "نہیں، کوئی آن لائن فارم نہیں ہے۔ رجسٹریشن صرف تحصیل آفس جا کر مفت ہوتی ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide explaining the Proxy Means Test (PMT) calculation mechanics, poverty indicators, and dynamic re-survey procedures for BISP.",
+    "contentUr": "بے نظیر انکم سپورٹ پروگرام کے پراکسی مینز ٹیسٹ (PMT) سکور، اہلیت کے اشاریوں اور دوبارہ سروے کی تفصیلی معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/welfare/bisp-payment-check",
+      "/welfare/sehat-card-eligibility-checker-2026",
+      "/nadra/b-form-frc-status-check"
+    ]
+  },
+  "how-to-spot-fake-loan-scheme-scams-2026": {
+    "slug": "how-to-spot-fake-loan-scheme-scams-2026",
+    "fullPath": "/loans/how-to-spot-fake-loan-scheme-scams-2026",
+    "categoryId": "loans",
+    "titleEn": "How to Spot Fake Govt Loan Scams 2026 – Protect from Fraud",
+    "titleUr": "جعلی سرکاری قرضہ سکیموں کی پہچان: ایڈوانس فیس فراڈ سے بچنے کی گائیڈ",
+    "metaDescriptionEn": "Protect yourself from fake loan scams in Pakistan: Spot fraudulent WhatsApp/Facebook schemes (PM Youth Loan, Akhuwat, Apni Chhat Apna Ghar), avoid upfront processing fee traps, verify legitimate portals, and report to NCCIA/FIA on 1991.",
+    "metaDescriptionUr": "پاکستان میں جعلی قرضہ سکیموں اور اخوت یا پی ایم لون کے نام پر ہونے والے فراڈ کی پہچان، ایڈوانس فیس فراڈ سے بچاؤ اور 1991 ہیلپ لائن پر رپورٹنگ کی گائیڈ۔",
+    "directAnswerEn": "The #1 red flag is a demand for upfront 'processing fees', 'file charges', or 'insurance deposits' sent to a personal JazzCash/EasyPaisa number. Legitimate government schemes (PM Youth Loan, Apni Chhat Apna Ghar, Akhuwat) NEVER ask for advance money transfers before loan disbursement.",
+    "directAnswerUr": "سب سے بڑا فراڈ یہ ہے کہ قرض منظور کرنے کے لیے ایزی پیسہ یا جاز کیش پر ایڈوانس 'فائل چارجز' یا 'پروسیسنگ فیس' مانگی جاتی ہے۔ حکومت پاکستان اور اخوت فاؤنڈیشن کبھی بھی قرض دینے سے پہلے کسی پرائیویٹ نمبر پر پیشگی رقم کا مطالبہ نہیں کرتے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "National Cyber Crime Investigation Agency (NCCIA)",
+      "url": "https://complaint.nccia.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify Official Domain Extension (.gov.pk)",
+        "titleUr": "سرکاری ویب سائٹ ڈومین (.gov.pk) کی تصدیق کریں",
+        "detailEn": "Ensure application portals end strictly in '.gov.pk' rather than generic '.com' or WhatsApp links.",
+        "detailUr": "صرف gov.pk والی سرکاری ویب سائٹ پر ہی درخواست دیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Refuse All Upfront Money Demands",
+        "titleUr": "ایڈوانس پروسیسنگ فیس دینے سے انکار کریں",
+        "detailEn": "Never transfer cash via EasyPaisa/JazzCash to any agent claiming to guarantee loan approval.",
+        "detailUr": "کسی بھی ایجنٹ یا نمبر پر قرض منظوری کی پیشگی فیس ہرگز نہ بھیجیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Report Scammer Numbers to 1991",
+        "titleUr": "فراڈ نمبرز کو 1991 ہیلپ لائن پر رپورٹ کریں",
+        "detailEn": "Dial NCCIA Helpline 1991 or file an online complaint at complaint.nccia.gov.pk.",
+        "detailUr": "سائبر کرائم ہیلپ لائن 1991 پر رابطہ کر کے فراڈیوں کے خلاف شکایت درج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do genuine loan schemes demand advance fees?",
+        "questionUr": "کیا اصلی سرکاری سکیمیں ایڈوانس فیس مانگتی ہیں؟",
+        "answerEn": "No. Legitimate government loan schemes never demand advance money transfers to personal numbers.",
+        "answerUr": "ہرگز نہیں! سرکاری سکیمیں اور اخوت فاؤنڈیشن کبھی ایڈوانس فیس نہیں مانگتے۔"
+      },
+      {
+        "questionEn": "Where should I report a loan scam?",
+        "questionUr": "قرض فراڈ کی شکایت کہاں درج کروائیں؟",
+        "answerEn": "Report to the National Cyber Crime Investigation Agency (NCCIA) at 1991 or complaint.nccia.gov.pk.",
+        "answerUr": "سائبر کرائم ایجنسی کی ہیلپ لائن 1991 پر یا complaint.nccia.gov.pk پر رپورٹ کریں۔"
+      }
+    ],
+    "contentEn": "Public safety guide on identifying fake microloan scams, fraudulent advance fee schemes, and official cybercrime reporting channels in Pakistan.",
+    "contentUr": "پاکستان میں جعلی قرضہ سکیموں، ایڈوانس فیس فراڈ کے حربوں اور سائبر کرائم رپورٹنگ کا مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/loans/emi-calculator-2026",
+      "/loans/apni-chhat-apna-ghar",
+      "/loans/loan-application-status-tracker-2026"
+    ]
   }
 };
