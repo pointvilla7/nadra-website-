@@ -38,6 +38,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/succession-certificate-legal-heir-nadra-2026',
     '/nadra/cnic-new-rules-2026',
     '/passport/passport-new-rules-2026-cashless-epassport',
+    '/bills/net-metering-net-billing-change-2026',
+    '/traffic/challan-paid-but-showing-pending-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',

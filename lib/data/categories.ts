@@ -163,6 +163,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Net Metering to Net Billing 2026",
+        "ur": "نیٹ میٹرنگ تا نیٹ بلنگ 2026",
+        "slug": "/bills/net-metering-net-billing-change-2026"
+      },
+      {
         "en": "Utility Bill Checker 2026",
         "ur": "یوٹیلیٹی بل چیکر 2026",
         "slug": "/bills/utility-bill-checker-2026"
@@ -331,6 +336,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Challan Paid But Pending",
+        "ur": "چالان ادا شدہ مگر پینڈنگ",
+        "slug": "/traffic/challan-paid-but-showing-pending-2026"
+      },
       {
         "en": "Token Tax Calculator 2026",
         "ur": "ٹوکن ٹیکس کیلکولیٹر 2026",

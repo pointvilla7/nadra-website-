@@ -15040,5 +15040,139 @@ export const ARTICLES: Record<string, Article> = {
       "/passport/tracking-status",
       "/overseas/nicop-renewal-from-abroad"
     ]
+  },
+  "net-metering-net-billing-change-2026": {
+    "slug": "net-metering-net-billing-change-2026",
+    "fullPath": "/bills/net-metering-net-billing-change-2026",
+    "categoryId": "bills",
+    "titleEn": "NEPRA Net Metering to Net Billing Rules 2026 – Solar Buyback Rates & Policy",
+    "titleUr": "نیٹ میٹرنگ سے نیٹ بلنگ تبدیلی: سولر بائی بیک ریٹ اور نئے قواعد 2026",
+    "metaDescriptionEn": "Complete guide to NEPRA Prosumer Regulations 2026: Replacement of 1:1 net metering with net billing, revised Rs 10–13 buyback rate, grandfathering for existing solar users, and self-consumption strategies across all DISCOs.",
+    "metaDescriptionUr": "نیپرا نیٹ بلنگ قوانین 2026: 1:1 نیٹ میٹرنگ کا خاتمہ، سولر بائی بیک ریٹ 10 تا 13 روپے، پرانے صارفین کا تحفظ اور کے الیکٹرک و لیسکو کے نئے قواعد۔",
+    "directAnswerEn": "NEPRA has replaced 1:1 net metering with Net Billing for new connections. Instead of unit-for-unit offsets at retail rates (Rs 45–55/unit), exported surplus solar is now credited at a wholesale buyback rate (approx. Rs 10–13/unit). Existing contracts remain protected until expiry, but self-consumption and battery storage are now essential.",
+    "directAnswerUr": "نیپرا نے نئے سولر کنکشنز کے لیے 1:1 نیٹ میٹرنگ ختم کر کے نیٹ بلنگ نافذ کر دی ہے۔ اب گرڈ سے بجلی 45 تا 55 روپے فی یونٹ ملے گی جبکہ گرڈ کو بیچی گئی سولر بجلی کا کریڈٹ تقریباً 10 تا 13 روپے فی یونٹ ملے گا۔ پرانے معاہدے مدت ختم ہونے تک محفوظ رہیں گے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "National Electric Power Regulatory Authority (NEPRA)",
+      "url": "https://nepra.org.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Grid Import Retail Slab",
+        "serviceUr": "گرڈ سے درآمدی ٹیرف",
+        "normal": "Rs 45 – 55 / Unit",
+        "urgent": "Peak: Rs 55+ / Unit"
+      },
+      {
+        "serviceEn": "Solar Surplus Buyback Credit",
+        "serviceUr": "سولر اضافی بجلی بائی بیک ریٹ",
+        "normal": "Rs 10 – 13 / Unit",
+        "urgent": "Monthly Adjustment"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Audit Daytime Energy Consumption",
+        "titleUr": "دن کے وقت بجلی کے استعمال کا جائزہ",
+        "detailEn": "Shift heavy daytime loads (washing machines, water pumps, air conditioners) to peak solar generation hours.",
+        "detailUr": "موٹر، استری اور واشنگ مشین جیسے بھاری لوڈ دن کے وقت سولر پر چلائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Protect Existing Contract Status",
+        "titleUr": "پرانے معاہدے کی حفاظت",
+        "detailEn": "If your net metering agreement was signed before Feb 9, 2026, avoid capacity expansion to maintain 1:1 billing.",
+        "detailUr": "اگر آپ کا معاہدہ 9 فروری 2026 سے پہلے کا ہے تو سسٹم تبدیل نہ کریں تاکہ 1:1 ریٹ برقرار رہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Evaluate Battery Storage Integration",
+        "titleUr": "بیٹری اسٹوریج سسٹم کا انتخاب",
+        "detailEn": "Consider lithium battery storage to save evening peak hour costs rather than selling units at low export rates.",
+        "detailUr": "شام کے اوقات کے لیے بیٹری استعمال کریں تاکہ مہنگی گرڈ بجلی خریدنے سے بچا جا سکے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Are existing net metering users protected?",
+        "questionUr": "کیا پرانے نیٹ میٹرنگ صارفین محفوظ ہیں؟",
+        "answerEn": "Yes. Existing agreements signed before February 9, 2026 remain valid under original 1:1 terms until contract expiry.",
+        "answerUr": "جی ہاں! 9 فروری 2026 سے پہلے منظور شدہ تمام نیٹ میٹرنگ کنکشنز اپنے اصل معاہدے کے مطابق چلتے رہیں گے۔"
+      },
+      {
+        "questionEn": "What is the new solar buyback rate in Pakistan?",
+        "questionUr": "نیا سولر بائی بیک ریٹ کیا ہے؟",
+        "answerEn": "Under Net Billing, DISCOs credit exported units at the National Average Energy Purchase Price (approx. Rs 10–13/unit).",
+        "answerUr": "نیٹ بلنگ کے تحت گرڈ کو دی گئی بجلی کا ریٹ تقریباً 10 سے 13 روپے فی یونٹ مقرر کیا گیا ہے۔"
+      }
+    ],
+    "contentEn": "Detailed regulatory guide explaining the transition from net metering to net billing in Pakistan, buyback rates, and solar system ROI.",
+    "contentUr": "پاکستان میں نیٹ میٹرنگ سے نیٹ بلنگ تبدیلی، نئے بائی بیک ریٹ اور سولر سسٹم کی بچت کے طریقے کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/bills/utility-bill-checker-2026",
+      "/bills/wapda-complaint-status-tracker-2026",
+      "/tax/fbr-active-taxpayer-status-helper-2026"
+    ]
+  },
+  "challan-paid-but-showing-pending-2026": {
+    "slug": "challan-paid-but-showing-pending-2026",
+    "fullPath": "/traffic/challan-paid-but-showing-pending-2026",
+    "categoryId": "traffic",
+    "titleEn": "Traffic Challan Paid But Showing Pending / Unpaid Online 2026 – Solution & Timelines",
+    "titleUr": "چالان فیس ادا کر دی لیکن آن لائن پینڈنگ ہے؟ وجوہات اور درست حل",
+    "metaDescriptionEn": "Paid your traffic e-challan but it still shows as pending or unpaid online? Learn why 24–72 hour bank batch sync delays happen in ePay Punjab / 1Link, what proof to save, how to avoid double payment, and PSCA helpline contacts.",
+    "metaDescriptionUr": "چالان کی ادائیگی کے بعد بھی آن لائن پینڈنگ آنے کی وجوہات، 1Link بینک سنک کا وقت، ثبوت کی حفاظت اور دوبارہ فیس ادائیگی سے بچنے کی مکمل گائیڈ۔",
+    "directAnswerEn": "This is caused by bank reconciliation delays between 1Link/ePay Punjab and the Traffic Police database, typically taking 24 to 72 hours to reflect. DO NOT pay again. Save your bank Transaction ID (TID) / SMS receipt as legal proof; it protects your vehicle from fines and blacklisting.",
+    "directAnswerUr": "بینک (1Link) اور ٹریفک پولیس ڈیٹا بیس کے درمیان ڈیٹا سنک ہونے میں 24 سے 72 گھنٹے لگتے ہیں۔ دوبارہ فیس ہرگز ادا نہ کریں۔ اپنے بینک کا ٹرانزیکشن آئی ڈی (TID) یا ایس ایم ایس ثبوت کے طور پر محفوظ رکھیں۔ یہ رسید آپ کی قانونی حفاظت کے لیے کافی ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Punjab Safe Cities Authority (PSCA)",
+      "url": "https://echallan.psca.gop.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Preserve Transaction Proof (TID)",
+        "titleUr": "ٹرانزیکشن آئی ڈی (TID) محفوظ کریں",
+        "detailEn": "Save bank deduction screenshot and SMS containing the unique Transaction Reference ID and PSID.",
+        "detailUr": "بینک سے رقم کٹنے کا میسج اور ٹرانزیکشن آئی ڈی کا اسکرین شاٹ محفوظ رکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Wait 24 to 72 Hours for Batch Reconciliation",
+        "titleUr": "24 تا 72 گھنٹے کا انتظار کریں",
+        "detailEn": "Allow 1 to 3 business days for commercial bank ledgers to sync with traffic authority servers.",
+        "detailUr": "بینک اور پولیس ڈیٹا بیس کے درمیان ڈیٹا اپڈیٹ ہونے کے لیے 1 سے 3 دن کا وقت درکار ہوتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Verify Status via ePay Punjab App",
+        "titleUr": "ای پے پنجاب ایپ پر چیک کریں",
+        "detailEn": "Check the PSID in the official ePay Punjab app, which reflects financial ledger updates faster than web portals.",
+        "detailUr": "ای پے پنجاب ایپ میں پی ایس آئی ڈی درج کر کے تازہ ترین سٹیٹس دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Should I pay the challan again if it shows pending?",
+        "questionUr": "کیا پینڈنگ آنے پر دوبارہ فیس ادا کرنی چاہیے؟",
+        "answerEn": "No. Never pay twice. Your bank Transaction ID is legal proof of payment compliance.",
+        "answerUr": "ہرگز نہیں! دوبارہ فیس ادا نہ کریں۔ آپ کے بینک کا ٹرانزیکشن آئی ڈی قانونی ادائیگی کا مکمل ثبوت ہے۔"
+      },
+      {
+        "questionEn": "Who should I contact if challan is unpaid after 72 hours?",
+        "questionUr": "72 گھنٹے بعد بھی حل نہ ہو تو کہاں رابطہ کریں؟",
+        "answerEn": "Call PSCA helpline 0800-02222 (Punjab) or 1915 (Sindh/Islamabad) with your TID and vehicle registration number.",
+        "answerUr": "پنجاب کے شہری 0800-02222 یا 15 پر اور دیگر صوبوں کے شہری 1915 پر ٹرانزیکشن آئی ڈی کے ساتھ رابطہ کریں۔"
+      }
+    ],
+    "contentEn": "Practical diagnostic guide for resolving online traffic e-challan sync delays, bank TID verification, and helpline escalation.",
+    "contentUr": "آن لائن ای چالان کی ادائیگی کے بعد پینڈنگ سٹیٹس، بینک ٹرانزیکشن آئی ڈی اور ہیلپ لائن رابطہ کی رہنمائی۔",
+    "relatedSlugs": [
+      "/traffic/vehicle-verification-online-2026",
+      "/traffic/token-tax-calculator-2026",
+      "/traffic/e-challan-check-online"
+    ]
   }
 };
