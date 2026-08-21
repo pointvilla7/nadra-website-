@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/welfare/pser-survey-status-checker-2026',
     '/jobs/roll-number-slip-checker-2026',
     '/jobs/nts-result-scorecard-checker-2026',
+    '/tax/fbr-active-taxpayer-status-helper-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-20'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({

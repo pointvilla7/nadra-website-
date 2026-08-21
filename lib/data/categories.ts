@@ -373,6 +373,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "FBR Active Taxpayer Status 2026",
+        "ur": "ایکٹو ٹیکس پیئر سٹیٹس 2026",
+        "slug": "/tax/fbr-active-taxpayer-status-helper-2026"
+      },
+      {
         "en": "NTN Registration Online",
         "ur": "این ٹی این آن لائن رجسٹریشن",
         "slug": "/tax/ntn-registration-online-pakistan"
