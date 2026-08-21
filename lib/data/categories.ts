@@ -710,6 +710,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Sehat Card Province Status 2026",
+        "ur": "صحت کارڈ صوبائی سٹیٹس 2026",
+        "slug": "/health/sehat-card-active-status-by-province-2026"
+      },
+      {
         "en": "Sehat Card Check by CNIC",
         "ur": "صحت کارڈ اہلیت شناختی کارڈ سے",
         "slug": "/health/sehat-card-eligibility-check-by-cnic"
@@ -728,11 +733,6 @@ export const CATEGORIES: Category[] = [
         "en": "Apply for Sehat Sahulat Card",
         "ur": "صحت کارڈ میں فیملی کا اندراج",
         "slug": "/health/how-to-apply-for-sehat-sahulat-card"
-      },
-      {
-        "en": "Disability Medical Board Cert",
-        "ur": "معذوری سرٹیفکیٹ میڈیکل بورڈ",
-        "slug": "/health/medical-board-disability-certificate-pakistan"
       }
     ]
   },
@@ -797,6 +797,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "NDMA Disaster Alert Setup 2026",
+        "ur": "این ڈی ایم اے الرٹس سیٹ اپ 2026",
+        "slug": "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026"
+      },
+      {
         "en": "Flood Alert NDMA / PDMA",
         "ur": "سیلاب و دریاؤں کا تازہ ترین الرٹ",
         "slug": "/alerts/flood-alert-pakistan-ndma-pdma"
@@ -815,11 +820,6 @@ export const CATEGORIES: Category[] = [
         "en": "24/7 Emergency Helplines",
         "ur": "پاکستان کے تمام ایمرجنسی نمبرز",
         "slug": "/alerts/emergency-helpline-numbers-pakistan"
-      },
-      {
-        "en": "Smog AQI Advisory Punjab",
-        "ur": "سموگ ایئر کوالٹی انڈیکس الرٹ",
-        "slug": "/alerts/smog-air-quality-aqi-advisory-punjab"
       }
     ]
   }

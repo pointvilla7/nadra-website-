@@ -46,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/loans/how-to-spot-fake-loan-scheme-scams-2026',
     '/overseas/nicop-mandatory-entry-rules-2026',
     '/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
+    '/health/sehat-card-active-status-by-province-2026',
+    '/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',
@@ -56,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-20'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/marriage-family/') || route.includes('/welfare/') || route.includes('/loans/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/marriage-family/') || route.includes('/welfare/') || route.includes('/loans/') || route.includes('/health/') || route.includes('/disaster-alerts/') || route.includes('/alerts/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({

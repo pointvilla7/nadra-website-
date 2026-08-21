@@ -15576,5 +15576,139 @@ export const ARTICLES: Record<string, Article> = {
       "/nadra/b-form-frc-status-check",
       "/legal/succession-certificate-legal-heir-nadra-2026"
     ]
+  },
+  "sehat-card-active-status-by-province-2026": {
+    "slug": "sehat-card-active-status-by-province-2026",
+    "fullPath": "/health/sehat-card-active-status-by-province-2026",
+    "categoryId": "health",
+    "titleEn": "Sehat Card Active Status by Province 2026 – Punjab, KP, Islamabad, AJK & GB",
+    "titleUr": "صحت کارڈ صوبائی سٹیٹس 2026: اسلام آباد، کے پی، پنجاب اور آزاد کشمیر میں بحالی",
+    "metaDescriptionEn": "Current 2026 Sehat Card active status across Pakistan: Federal restoration for Islamabad (ICT), AJK & Gilgit-Baltistan, KP Sehat Card Plus universal coverage, Punjab private panel rules, Balochistan Health Card, and 8500/9780 SMS check methods.",
+    "metaDescriptionUr": "پاکستان میں صحت کارڈ کا موجودہ صوبائی سٹیٹس: اسلام آباد اور آزاد کشمیر میں بحالی، خیبر پختونخوا میں یونیورسل کوریج، پنجاب میں پینل پرائیویٹ ہسپتال اور 8500 ایس ایم ایس چیک۔",
+    "directAnswerEn": "Sehat Card coverage is currently ACTIVE across Khyber Pakhtunkhwa (Sehat Card Plus, universal public/private), Islamabad (ICT), Azad Jammu & Kashmir, Gilgit-Baltistan (federally restored at 42+ hospitals), Punjab (empaneled private & tertiary networks), and Balochistan (Health Card / State Life).",
+    "directAnswerUr": "اس وقت صحت کارڈ خیبر پختونخوا (صحت کارڈ پلس، یونیورسل)، اسلام آباد (وفاقی بحالی)، آزاد کشمیر، گلگت بلتستان، پنجاب (پینل پرائیویٹ ہسپتال) اور بلوچستان میں فعال ہے۔ سندھ میں وفاقی پروگرام کی بجائے خود مختار صوبائی ہسپتالوں (NICVD/SIUT) کے ذریعے مفت علاج فراہم کیا جاتا ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Sehat Sahulat Program Official Portal (Federal)",
+      "url": "https://sehatsahulat.com.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Secondary Care (General Inpatient)",
+        "serviceUr": "سیکنڈری ہیلتھ کوریج",
+        "normal": "PKR 60,000 – 100,000 / family",
+        "urgent": "Maternity & General Inpatient"
+      },
+      {
+        "serviceEn": "Priority / Tertiary Care (Major Surgeries)",
+        "serviceUr": "ٹرشری ہیلتھ کوریج (بڑی سرجری)",
+        "normal": "PKR 1,000,000 / family",
+        "urgent": "Heart, Cancer, Dialysis & Trauma"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Send 13-Digit CNIC via SMS",
+        "titleUr": "شناختی کارڈ نمبر بذریعہ ایس ایم ایس بھیجیں",
+        "detailEn": "Send your 13-digit CNIC to 8500 (Punjab/ICT/AJK/GB/Balochistan) or 9780 (Khyber Pakhtunkhwa).",
+        "detailUr": "پنجاب و اسلام آباد کے لیے 8500 اور خیبر پختونخوا کے لیے 9780 پر شناختی کارڈ بھیجیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Confirm Panel Hospital",
+        "titleUr": "پینل ہسپتال کی تصدیق کریں",
+        "detailEn": "Verify that your desired hospital is actively empaneled at sehatsahulat.com.pk or helpline 0800-09009.",
+        "detailUr": "ہسپتال جانے سے قبل پینل لسٹ یا ہیلپ لائن سے ہسپتال کی تصدیق کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Present Original CNIC at Hospital Desk",
+        "titleUr": "ہسپتال میں اصل شناختی کارڈ دکھائیں",
+        "detailEn": "Present original CNIC (or B-Form for children) at the hospital's Sehat Sahulat facilitation counter.",
+        "detailUr": "ہسپتال کاؤنٹر پر اصل شناختی کارڈ یا بچوں کا بی فارم پیش کر کے مفت داخلہ کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is Sehat Card working in Islamabad and AJK?",
+        "questionUr": "کیا اسلام آباد اور آزاد کشمیر میں صحت کارڈ کام کر رہا ہے؟",
+        "answerEn": "Yes. The Federal Government restored Sehat Sahulat coverage for ICT, AJK, and GB across 42+ hospitals.",
+        "answerUr": "جی ہاں، وفاقی حکومت نے اسلام آباد، آزاد کشمیر اور گلگت میں 42 سے زائد ہسپتالوں میں کارڈ بحال کر دیا ہے۔"
+      },
+      {
+        "questionEn": "When does the annual balance renew?",
+        "questionUr": "صحت کارڈ کی سالانہ رقم کب رینیو ہوتی ہے؟",
+        "answerEn": "Coverage limits automatically reset on July 1 every fiscal year.",
+        "answerUr": "ہر مالی سال یکم جولائی کو صحت کارڈ کا بیلنس خودکار طور پر نیا ہو جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Authoritative guide on the current province-by-province active status, coverage limits, and hospital rules of the Sehat Sahulat Program.",
+    "contentUr": "صحت سہولت پروگرام کی صوبہ وار فعال صورتحال، علاج کی حدود اور پینل ہسپتالوں کے قواعد کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/welfare/sehat-card-eligibility-checker-2026",
+      "/welfare/pmt-score-explained-bisp-eligibility-2026",
+      "/health/sehat-card-hospital-list-near-me"
+    ]
+  },
+  "ndma-flood-earthquake-sms-alert-setup-2026": {
+    "slug": "ndma-flood-earthquake-sms-alert-setup-2026",
+    "fullPath": "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026",
+    "categoryId": "alerts",
+    "titleEn": "NDMA Flood & Earthquake SMS Alert Setup 2026 – Early Warning Guide",
+    "titleUr": "سیلاب اور زلزلے کے قبل از وقت الرٹس: این ڈی ایم اے ایپ اور ایس ایم ایس ایکٹیویشن",
+    "metaDescriptionEn": "Complete guide to setting up NDMA disaster alerts in Pakistan: Download the official Pak NDMA-Disaster Alert mobile app (Android & iOS), enable Jazz/PTA geo-fenced SMS flood warnings, subscribe to PMD Flood Forecasting, and assemble an emergency prep kit.",
+    "metaDescriptionUr": "پاکستان میں این ڈی ایم اے ڈیزاسٹر الرٹس حاصل کرنے کا طریقہ: پاک این ڈی ایم اے ایپ، جاز و پی ٹی اے لوکیشن بیسڈ ایس ایم ایس وارننگز اور ہنگامی ایمرجنسی کٹ گائیڈ۔",
+    "directAnswerEn": "You can receive alerts through two official channels: (1) The free 'Pak NDMA-Disaster Alert' app (Google Play & Apple Store) for push warnings and live hazard maps, and (2) Geo-fenced SMS flood alerts automatically broadcasted by NDMA/PTA across mobile networks (Jazz, Zong, Telenor, Ufone) in high-risk zones.",
+    "directAnswerUr": "دو اہم طریقوں سے الرٹس ملتے ہیں: (1) گوگل پلے اور ایپل ایپ اسٹور سے 'Pak NDMA-Disaster Alert' ایپ انسٹال کر کے، اور (2) این ڈی ایم اے اور پی ٹی اے کے خودکار لوکیشن بیسڈ ایس ایم ایس کے ذریعے جو بغیر انٹرنیٹ کے خطرے والے علاقوں کے تمام موبائل نمبرز پر بھیجے جاتے ہیں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "National Disaster Management Authority (NDMA) Pakistan",
+      "url": "https://ndma.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Download Pak NDMA-Disaster Alert App",
+        "titleUr": "پاک این ڈی ایم اے ایپ انسٹال کریں",
+        "detailEn": "Get the official mobile app from Google Play Store or Apple App Store.",
+        "detailUr": "اینڈرائیڈ یا آئی فون پر آفیشل این ڈی ایم اے ایپ ڈاؤن لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enable GPS & High-Priority Push Alerts",
+        "titleUr": "لوکیشن اور پش نوٹیفکیشن آن کریں",
+        "detailEn": "Allow location tracking so the app can deliver localized flood and seismic warnings.",
+        "detailUr": "ایپ کو لوکیشن کی اجازت دیں تاکہ آپ کے علاقے کے خطرات کے الرٹس موصول ہو سکیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Receive Geo-Fenced Emergency Broadcasts",
+        "titleUr": "خودکار ایمرجنسی ایس ایم ایس وصول کریں",
+        "detailEn": "Keep your mobile device charged to receive PTA/NDMA free emergency SMS in hazard zones.",
+        "detailUr": "سیلابی علاقوں میں پی ٹی اے اور این ڈی ایم اے کے مفت الرٹ ایس ایم ایس وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do NDMA SMS alerts require internet data?",
+        "questionUr": "کیا این ڈی ایم اے ایس ایم ایس الرٹس کے لیے انٹرنیٹ ضروری ہے؟",
+        "answerEn": "No. Geo-fenced SMS flood warnings are delivered via standard cellular network towers without requiring internet.",
+        "answerUr": "نہیں، یہ الرٹس عام موبائل ٹاورز کے ذریعے بغیر انٹرنیٹ کے براہ راست ایس ایم ایس پر آتے ہیں۔"
+      },
+      {
+        "questionEn": "Where can I check live river water levels?",
+        "questionUr": "دریاؤں کے بہاؤ کا لائیو ریکارڈ کہاں دیکھیں؟",
+        "answerEn": "You can check river discharge and dam levels on the PMD Flood Forecasting Division portal at ffd.pmd.gov.pk.",
+        "answerUr": "محکمہ موسمیات کی فلڈ فورکاسٹنگ ڈویژن کی ویب سائٹ ffd.pmd.gov.pk پر لائیو پانی کا بہاؤ دیکھا جا سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Practical public preparedness guide on setting up official NDMA smartphone alerts, geo-fenced telecom SMS flood warnings, and emergency 72-hour disaster kits.",
+    "contentUr": "پاکستان میں این ڈی ایم اے آفات الرٹس حاصل کرنے کے طریقوں، موبائل ایپ سیٹ اپ اور ایمرجنسی کٹ کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/alerts/flood-alert-pakistan-ndma-pdma",
+      "/alerts/emergency-helpline-numbers-pakistan",
+      "/alerts/monsoon-warning-pdma-updates"
+    ]
   }
 };
