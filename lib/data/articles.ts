@@ -15442,5 +15442,139 @@ export const ARTICLES: Record<string, Article> = {
       "/loans/apni-chhat-apna-ghar",
       "/loans/loan-application-status-tracker-2026"
     ]
+  },
+  "nicop-mandatory-entry-rules-2026": {
+    "slug": "nicop-mandatory-entry-rules-2026",
+    "fullPath": "/overseas/nicop-mandatory-entry-rules-2026",
+    "categoryId": "overseas",
+    "titleEn": "NICOP Mandatory Entry Rules 2026 – Overseas Pakistanis Foreign Passport Policy",
+    "titleUr": "اوورسیز پاکستانیوں کے لیے نائیکوپ قوانین: غیر ملکی پاسپورٹ پر سفر کی شرائط",
+    "metaDescriptionEn": "Complete guide to Pakistan FIA mandatory NICOP entry rules in 2026: Valid unexpired NICOP required for foreign passport visa-free travel, airline denied boarding directives, renewal receipts discontinued, and quick eVisa alternatives.",
+    "metaDescriptionUr": "غیر ملکی پاسپورٹ پر پاکستان سفر کے لیے نائیکوپ کی لازمی شرط، ائیرلائنز کے بورڈنگ قوانین، رینیول رسید کی غیر قبولیت اور ایمرجنسی ای ویزا کا حل۔",
+    "directAnswerEn": "You MUST have either: (1) A valid, unexpired physical Smart NICOP, OR (2) An approved Pakistani eVisa stamped/printed with your foreign passport. Airlines are instructed to DENY BOARDING if your NICOP is expired; renewal receipts and landing permits are NO LONGER accepted.",
+    "directAnswerUr": "غیر ملکی پاسپورٹ پر سفر کرنے والے پاکستانیوں کے پاس لازمی طور پر: (1) اصل کارآمد اسمارٹ نائیکوپ (NICOP)، یا (2) منظور شدہ پاکستانی ای ویزا ہونا ضروری ہے۔ ایکسپائرڈ نائیکوپ یا رینیول رسید پر ائیرلائنز جہاز پر سوار نہیں ہونے دیں گی۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Federal Investigation Agency (FIA) Immigration Wing",
+      "url": "https://fia.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check NICOP Expiry Date",
+        "titleUr": "نائیکوپ کی میعاد ختم ہونے کی تاریخ چیک کریں",
+        "detailEn": "Verify the physical card expiry date before booking any international flight.",
+        "detailUr": "فلائٹ بک کرنے سے پہلے کارڈ پر لکھی ایکسپائری تاریخ ضرور دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Apply for Executive NICOP or Tourist eVisa",
+        "titleUr": "ایگزیکٹو نائیکوپ یا آن لائن ای ویزا اپلائی کریں",
+        "detailEn": "If expired and travel is >10 days away, apply on Pak-ID; if flight is imminent, obtain an eVisa at visa.nadra.gov.pk.",
+        "detailUr": "اگر وقت کم ہو تو نادرا ویزا پورٹل سے فوری ای ویزا حاصل کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Carry Physical Unexpired Card",
+        "titleUr": "اصل فزیکل کارڈ ہمراہ رکھیں",
+        "detailEn": "Present your physical Smart NICOP to airline check-in staff at the departure airport.",
+        "detailUr": "ائیرپورٹ کاؤنٹر پر چیک ان کے وقت اصل اسمارٹ کارڈ پیش کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I travel with a NICOP renewal receipt?",
+        "questionUr": "کیا نائیکوپ رینیول رسید پر سفر ہو سکتا ہے؟",
+        "answerEn": "No. Airlines strictly deny boarding with only a renewal receipt; a valid physical card or Pakistani visa is required.",
+        "answerUr": "نہیں، ائیرلائنز رسید پر سوار ہونے نہیں دیتیں، اصل کارڈ یا ویزا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Does this apply to Pakistani passport holders?",
+        "questionUr": "کیا یہ قانون پاکستانی پاسپورٹ والوں پر بھی لاگو ہے؟",
+        "answerEn": "No. Valid Pakistani passport holders enter Pakistan unconditionally without requiring a NICOP.",
+        "answerUr": "نہیں، کارآمد پاکستانی پاسپورٹ رکھنے والے بلا روک ٹوک داخل ہو سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Authoritative travel advisory regarding the Federal Investigation Agency (FIA) mandatory NICOP entry rules for foreign passport holders.",
+    "contentUr": "غیر ملکی پاسپورٹ کے حامل اوورسیز پاکستانیوں کے لیے لازمی نائیکوپ قوانین، ائیرلائن ضوابط اور فوری ویزا متبادل کی گائیڈ۔",
+    "relatedSlugs": [
+      "/passport/passport-new-rules-2026-cashless-epassport",
+      "/nadra/nicop-fee-calculator",
+      "/overseas/nicop-renewal-from-abroad"
+    ]
+  },
+  "nikah-nama-vs-marriage-certificate-mrc-2026": {
+    "slug": "nikah-nama-vs-marriage-certificate-mrc-2026",
+    "fullPath": "/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026",
+    "categoryId": "family-registration",
+    "titleEn": "Nikah Nama vs Marriage Certificate (MRC) 2026 – Key Differences & Registration",
+    "titleUr": "نکاح نامہ اور نادرا میرج سرٹیفکیٹ میں کیا فرق ہے؟ مکمل قانونی طریقہ کار",
+    "metaDescriptionEn": "Complete guide to the difference between Nikah Nama and NADRA Computerized Marriage Certificate (MRC) in Pakistan: Union Council CRMS registration, why MRC is required for wife CNIC updates and visas, late registration rules, and privacy facts.",
+    "metaDescriptionUr": "نکاح نامہ بمقابلہ کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC): یونین کونسل رجسٹریشن کا طریقہ، شناختی کارڈ میں شوہر کا نام درج کروانے کی شرائط اور پرانی شادی کی لیٹ رجسٹریشن۔",
+    "directAnswerEn": "A Nikah Nama is the handwritten Islamic marriage contract signed during the ceremony. The Marriage Registration Certificate (MRC) is the official computerized document issued by the Union Council via NADRA's CRMS database. The computerized MRC is required to update CNICs, apply for visas, and claim legal rights.",
+    "directAnswerUr": "نکاح نامہ وہ تحریری شرعی معاہدہ ہے جو نکاح کے وقت گواہوں کی موجودگی میں لکھا جاتا ہے۔ جبکہ میرج رجسٹریشن سرٹیفکیٹ (MRC) یونین کونسل کا نادرا کمپیوٹرائزڈ تصدیقی سرٹیفکیٹ ہے جو شناختی کارڈ میں شوہر کا نام درج کروانے، ویزا اور قانونی امور کے لیے لازمی ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "National Database and Registration Authority (NADRA) CRMS",
+      "url": "https://www.nadra.gov.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Union Council Marriage Registration",
+        "serviceUr": "یونین کونسل میرج رجسٹریشن",
+        "normal": "PKR 100 – 500",
+        "urgent": "3 to 7 Working Days"
+      },
+      {
+        "serviceEn": "Late Marriage Registration",
+        "serviceUr": "لیٹ شادی رجسٹریشن",
+        "normal": "PKR 500 – 1,500",
+        "urgent": "Subject to UC Affidavit / Decree"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Relevant Union Council",
+        "titleUr": "متعلقہ یونین کونسل دفتر جائیں",
+        "detailEn": "Go to the Union Council office having jurisdiction where the Nikah took place or where the bride resides.",
+        "detailUr": "جہاں نکاح ہوا یا جہاں دلہن کی رہائش ہے، وہاں کی یونین کونسل جائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Nikah Nama & CNICs",
+        "titleUr": "نکاح نامہ اور شناختی کارڈز کی کاپیاں جمع کروائیں",
+        "detailEn": "Provide original manual Nikah Nama, CNICs of bride, groom, fathers, and two witnesses.",
+        "detailUr": "اصل نکاح نامہ، دولہا دلہن، والدین اور دو گواہوں کے شناختی کارڈز دیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Collect Computerized QR-Coded MRC",
+        "titleUr": "کیو آر کوڈ والا کمپیوٹرائزڈ سرٹیفکیٹ حاصل کریں",
+        "detailEn": "Pay official municipal fee and receive the NADRA CRMS digital marriage certificate.",
+        "detailUr": "سرکاری فیس ادا کر کے نادرا سسٹم سے جاری کردہ تصدیقی میرج سرٹیفکیٹ حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is Nikah Nama enough for updating wife's CNIC?",
+        "questionUr": "کیا شناختی کارڈ اپڈیٹ کے لیے صرف نکاح نامہ کافی ہے؟",
+        "answerEn": "No. NADRA strictly requires the computerized Marriage Registration Certificate (MRC) from the Union Council.",
+        "answerUr": "نہیں، نادرا شناختی کارڈ میں تبدیلی کے لیے کمپیوٹرائزڈ میرج سرٹیفکیٹ لازمی مانگتا ہے۔"
+      },
+      {
+        "questionEn": "Can someone check my marriage certificate online by CNIC?",
+        "questionUr": "کیا شناختی کارڈ نمبر سے شادی کا آن لائن پتہ لگایا جا سکتا ہے؟",
+        "answerEn": "No. There is no public online lookup portal for marriage records in Pakistan due to strict privacy rules.",
+        "answerUr": "نہیں، پرائیویسی قوانین کی وجہ سے شادی کا کوئی پبلک آن لائن ریکارڈ موجود نہیں ہے۔"
+      }
+    ],
+    "contentEn": "Public guidance on the differences between handwritten Nikah Nama and computerized Marriage Registration Certificate (MRC) in Pakistan.",
+    "contentUr": "نکاح نامہ اور نادرا کمپیوٹرائزڈ میرج سرٹیفکیٹ کے فرق، یونین کونسل اندراج کے طریقہ کار اور قانونی تقاضوں کی معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/family-registration/nikah-nama-registration-process-pakistan",
+      "/nadra/b-form-frc-status-check",
+      "/legal/succession-certificate-legal-heir-nadra-2026"
+    ]
   }
 };

@@ -44,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026',
     '/welfare/pmt-score-explained-bisp-eligibility-2026',
     '/loans/how-to-spot-fake-loan-scheme-scams-2026',
+    '/overseas/nicop-mandatory-entry-rules-2026',
+    '/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',
@@ -54,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-20'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/marriage-family/') || route.includes('/welfare/') || route.includes('/loans/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({

@@ -439,6 +439,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "NICOP Mandatory Rules 2026",
+        "ur": "نائیکوپ لازمی سفری قوانین 2026",
+        "slug": "/overseas/nicop-mandatory-entry-rules-2026"
+      },
+      {
         "en": "NICOP Renewal from Abroad",
         "ur": "بیرون ملک نائیکوپ تجدید",
         "slug": "/overseas/nicop-renewal-from-abroad"
@@ -452,11 +457,6 @@ export const CATEGORIES: Category[] = [
         "en": "Embassy Attestation Docs",
         "ur": "سفارتخانہ تصدیق کے کاغذات",
         "slug": "/overseas/pakistan-embassy-attestation-documents"
-      },
-      {
-        "en": "Roshan Digital Account",
-        "ur": "روشن ڈیجیٹل بینک اکاؤنٹ",
-        "slug": "/overseas/overseas-pakistani-bank-account-nrp"
       },
       {
         "en": "NICOP Fee 2026 (USA/UK/Gulf)",
@@ -526,6 +526,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Nikah Nama vs MRC 2026",
+        "ur": "نکاح نامہ بمقابلہ میرج سرٹیفکیٹ",
+        "slug": "/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026"
+      },
+      {
         "en": "Nikah Nama Registration",
         "ur": "نکاح نامہ رجسٹریشن کا طریقہ",
         "slug": "/family-registration/nikah-nama-registration-process-pakistan"
@@ -544,11 +549,6 @@ export const CATEGORIES: Category[] = [
         "en": "Nikah Nama English MOFA",
         "ur": "نکاح نامہ انگلش ترجمہ و تصدیق",
         "slug": "/family-registration/nikah-nama-english-translation-attestation"
-      },
-      {
-        "en": "Child Legal Adoption Guide",
-        "ur": "بچہ گود لینے کا قانونی طریقہ",
-        "slug": "/family-registration/child-adoption-legal-procedure-pakistan"
       }
     ]
   },

@@ -219,6 +219,12 @@ export default function PassportNewRules2026Page() {
 
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <Link
+                href="/overseas/nicop-mandatory-entry-rules-2026"
+                className="py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono font-bold text-xs flex items-center gap-1.5 transition shadow-md"
+              >
+                <span>Read Full NICOP Mandatory Entry Rules Guide →</span>
+              </Link>
+              <Link
                 href="/nadra/nicop-fee-calculator"
                 className="py-2.5 px-4 rounded-xl bg-red-600 hover:bg-red-500 text-white font-mono font-bold text-xs flex items-center gap-1.5 transition shadow-md"
               >
