@@ -629,6 +629,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Hajj Eligibility & Cost 2026",
+        "ur": "حج اہلیت و اخراجات 2026",
+        "slug": "/hajj-umrah/hajj-application-eligibility-checker-2026"
+      },
+      {
         "en": "Hajj Portal Pakistan 2026",
         "ur": "حج رجسٹریشن پورٹل 2026",
         "slug": "/hajj-umrah/hajj-registration-portal-pakistan-2026"
