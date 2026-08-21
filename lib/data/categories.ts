@@ -117,6 +117,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Matric 40% Passing Marks 2026",
+        "ur": "میٹرک 40 فیصد پاسنگ مارکس",
+        "slug": "/education/matric-40-percent-passing-marks-rule-2026"
+      },
+      {
         "en": "BISE Result Checker 2026",
         "ur": "بورڈ رزلٹ چیکر 2026",
         "slug": "/education/bise-result-checker-2026"
@@ -140,11 +145,6 @@ export const CATEGORIES: Category[] = [
         "en": "PU Admissions 2026",
         "ur": "پنجاب یونیورسٹی ایڈمیشن",
         "slug": "/education/punjab-university-admission-2026"
-      },
-      {
-        "en": "CSS Book List",
-        "ur": "سی ایس ایس کی کتب",
-        "slug": "/education/css-preparation-books"
       }
     ]
   },

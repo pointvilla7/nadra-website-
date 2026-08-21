@@ -48,6 +48,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
     '/health/sehat-card-active-status-by-province-2026',
     '/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
+    '/education/bise-lahore-result-2026',
+    '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',

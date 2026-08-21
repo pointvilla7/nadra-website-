@@ -15710,5 +15710,475 @@ export const ARTICLES: Record<string, Article> = {
       "/alerts/emergency-helpline-numbers-pakistan",
       "/alerts/monsoon-warning-pdma-updates"
     ]
+  },
+  "fbr-active-taxpayer-status-helper-2026": {
+    "slug": "fbr-active-taxpayer-status-helper-2026",
+    "fullPath": "/tax/fbr-active-taxpayer-status-helper-2026",
+    "categoryId": "tax",
+    "titleEn": "FBR Active Taxpayer Status Helper 2026 – Check ATL Status by CNIC & 9966 SMS",
+    "titleUr": "ایف بی آر ایکٹو ٹیکس پیئر لسٹ سٹیٹس چیکر 2026: شناختی کارڈ اور 9966 ایس ایم ایس",
+    "metaDescriptionEn": "Check your FBR Active Taxpayer List (ATL) status online by 13-digit CNIC or 9966 SMS code. Complete guide to tax filer benefits, reduced withholding tax rates on property and banking, and Iris 2.0 portal access.",
+    "metaDescriptionUr": "ایف بی آر ایکٹو ٹیکس پیئر سٹیٹس شناختی کارڈ یا 9966 ایس ایم ایس سے چیک کریں اور فائلر ٹیکس فوائد جانیے۔",
+    "directAnswerEn": "You can check your FBR Active Taxpayer List (ATL) status by sending 'ATL <space> 13-digit CNIC' to 9966 via SMS or by entering your CNIC directly on the official Iris FBR online portal.",
+    "directAnswerUr": "اپنا فائلر سٹیٹس چیک کرنے کے لیے 9966 پر ATL لکھ کر شناختی کارڈ نمبر بھیجیں یا آن لائن پورٹل پر چیک کریں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Federal Board of Revenue (FBR)",
+      "url": "https://fbr.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Send CNIC to 9966",
+        "titleUr": "9966 پر ایس ایم ایس بھیجیں",
+        "detailEn": "Type ATL followed by space and your 13-digit CNIC number and send to 9966.",
+        "detailUr": "موبائل میسج میں ATL لکھ کر اسپیس دیں اور شناختی کارڈ نمبر لکھ کر 9966 پر بھیجیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Verify Status Response",
+        "titleUr": "موصولہ جواب چیک کریں",
+        "detailEn": "Receive instant SMS confirming Active (Filer) or Inactive (Non-Filer) status.",
+        "detailUr": "فوری ایس ایم ایس میں تصدیق حاصل کریں کہ آپ کا نام ایکٹو لسٹ میں ہے یا نہیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I check FBR active taxpayer status via SMS?",
+        "questionUr": "ایس ایم ایس سے فائلر سٹیٹس کیسے معلوم کریں؟",
+        "answerEn": "Send ATL followed by your 13-digit CNIC number to 9966.",
+        "answerUr": "اپنے موبائل سے ATL لکھ کر 13 ہندسوں کا شناختی کارڈ نمبر 9966 پر بھیجیں۔"
+      }
+    ],
+    "contentEn": "Interactive tool and guide to verify FBR Active Taxpayer List (ATL) filer status online by CNIC and SMS.",
+    "contentUr": "ایف بی آر ایکٹو ٹیکس پیئر لسٹ آن لائن تصدیق اور 9966 ایس ایم ایس سے چیک کرنے کا طریقہ۔",
+    "relatedSlugs": [
+      "/tax/how-to-become-tax-filer-pakistan-2026",
+      "/tax/withholding-tax-rates-filers-non-filers",
+      "/tax/fbr-filer-status-check-cnic"
+    ]
+  },
+  "punjab-land-record-fard-verifier-2026": {
+    "slug": "punjab-land-record-fard-verifier-2026",
+    "fullPath": "/property/punjab-land-record-fard-verifier-2026",
+    "categoryId": "property",
+    "titleEn": "Punjab Land Record Fard Online Verifier 2026 – PLRA Fard Malkiat Check by CNIC",
+    "titleUr": "پنجاب لینڈ ریکارڈ فرد آن لائن چیکر 2026: شناختی کارڈ سے فرد ملکیت کی تصدیق",
+    "metaDescriptionEn": "Verify Punjab Land Records Authority (PLRA) computerized Fard Malkiat online by 13-digit CNIC. Check land ownership, Khewat, Khatooni, Khasra numbers, and digital e-Fard status.",
+    "metaDescriptionUr": "پنجاب لینڈ ریکارڈ اتھارٹی (PLRA) کے ذریعے فرد ملکیت، کھیوٹ اور خسرہ نمبر آن لائن تصدیق کریں۔",
+    "directAnswerEn": "To verify land ownership in Punjab, enter your 13-digit CNIC and select District, Tehsil, and Mouza on the official PLRA portal or e-Sultani app to view computerized Fard Malkiat.",
+    "directAnswerUr": "پنجاب میں زمین کی ملکیت اور فرد حاصل کرنے کے لیے پی ایل آر اے پورٹل پر شناختی کارڈ اور موزہ منتخب کر کے ریکارڈ چیک کریں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Punjab Land Records Authority (PLRA)",
+      "url": "https://punjab-zameen.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select District & Tehsil",
+        "titleUr": "ضلع اور تحصیل منتخب کریں",
+        "detailEn": "Choose the district, tehsil, and revenue estate (Mouza) where the property is located.",
+        "detailUr": "زمین کا متعلقہ ضلع، تحصیل اور موضع منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Search by CNIC or Name",
+        "titleUr": "شناختی کارڈ یا نام سے تلاش کریں",
+        "detailEn": "Enter owner's 13-digit CNIC to view Khewat, Khatooni, and ownership share.",
+        "detailUr": "مالک کا شناختی کارڈ نمبر درج کر کے فرد ریکارڈ دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I check Fard online by CNIC in Punjab?",
+        "questionUr": "کیا پنجاب میں شناختی کارڈ سے فرد آن لائن چیک ہو سکتی ہے؟",
+        "answerEn": "Yes. PLRA allows citizens to search and verify computerized Fard records by CNIC across all Punjab districts.",
+        "answerUr": "جی ہاں، پنجاب اراضی ریکارڈ سنٹر کی ویب سائٹ پر شناختی کارڈ سے فرد تلاش کی جا سکتی ہے۔"
+      }
+    ],
+    "contentEn": "Interactive tool and step-by-step guide for Punjab Land Records Authority (PLRA) online Fard Malkiat verification.",
+    "contentUr": "پنجاب لینڈ ریکارڈ فرد ملکیت، انتقال اراضی اور رجسٹری تصدیق کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/property/intiqal-registration-online-punjab",
+      "/property/property-mutation-check-by-cnic",
+      "/property/patwari-record-online-check"
+    ]
+  },
+  "hajj-application-eligibility-checker-2026": {
+    "slug": "hajj-application-eligibility-checker-2026",
+    "fullPath": "/hajj-umrah/hajj-application-eligibility-checker-2026",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Government Hajj Application Eligibility & Cost Checker 2026 – MORA Pakistan",
+    "titleUr": "سرکاری حج درخواست اہلیت و اخراجات چیکر 2026: وزارت مذہبی امور پاکستان",
+    "metaDescriptionEn": "Check Government Hajj scheme eligibility, sponsorship scheme rules, estimated package costs (North/South zones), mandatory vaccination criteria, and MORA balloting schedule for 2026.",
+    "metaDescriptionUr": "سرکاری حج سکیم، اسپانسر شپ حج اور اخراجات کا حساب معلوم کریں اور وزارت مذہبی امور کی شرائط دیکھیں۔",
+    "directAnswerEn": "Government Hajj scheme applicants must possess a valid Machine Readable or e-Passport with at least 8 months validity, NADRA CNIC/NICOP, mandatory medical fitness certificates, and polio/meningitis vaccinations.",
+    "directAnswerUr": "سرکاری حج درخواست کے لیے کارآمد پاسپورٹ، شناختی کارڈ، میڈیکل فٹنس اور لازمی ویکسینیشن سرٹیفکیٹ ضروری ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Ministry of Religious Affairs (MORA)",
+      "url": "https://hajjinfo.org/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify Passport Validity",
+        "titleUr": "پاسپورٹ کی میعاد چیک کریں",
+        "detailEn": "Ensure your passport is valid for at least 8 months from the date of travel.",
+        "detailUr": "پاسپورٹ کم از کم 8 ماہ کے لیے کارآمد ہونا لازمی ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Bank Application",
+        "titleUr": "نامزد بینک میں فارم جمع کروائیں",
+        "detailEn": "Deposit token payment and original documents in designated bank branches.",
+        "detailUr": "نامزد بینکوں میں حج فارم اور فیس جمع کروا کر ٹوکن حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the passport validity required for Hajj 2026?",
+        "questionUr": "حج 2026 کے لیے پاسپورٹ کی کتنی میعاد درکار ہے؟",
+        "answerEn": "Your passport must be valid for at least 8 months beyond the pilgrimage departure date.",
+        "answerUr": "پاسپورٹ سفر کی تاریخ سے کم از کم 8 ماہ بعد تک کارآمد ہونا چاہیے۔"
+      }
+    ],
+    "contentEn": "Interactive eligibility assessment tool and comprehensive cost breakdown for Government of Pakistan Hajj pilgrims.",
+    "contentUr": "وزارت مذہبی امور کی سرکاری حج اسکیم کے اخراجات، اہلیت اور بینک درخواست کا مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026",
+      "/hajj-umrah/hajj-balloting-result-check-online",
+      "/hajj-umrah/umrah-visa-apply-from-pakistan-steps"
+    ]
+  },
+  "company-name-availability-checker-2026": {
+    "slug": "company-name-availability-checker-2026",
+    "fullPath": "/business/company-name-availability-checker-2026",
+    "categoryId": "business",
+    "titleEn": "SECP Company Name Availability Checker 2026 – Search Corporate Names Online",
+    "titleUr": "ایس ای سی پی کمپنی نام دستیابی چیکر 2026: نام کی جانچ اور ممنوعہ الفاظ کے قواعد",
+    "metaDescriptionEn": "Check SECP corporate name availability before filing. Learn prohibited words, naming rules under Companies Act 2017, and fast-track reservation via the eServices portal.",
+    "metaDescriptionUr": "کمپنی رجسٹریشن سے قبل ایس ای سی پی پورٹل پر کمپنی کا نام چیک کریں اور ممنوعہ الفاظ کی لسٹ دیکھیں۔",
+    "directAnswerEn": "SECP company name reservation requires selecting a unique name that does not match existing registered companies and avoids prohibited words (e.g. Royal, Federal, State, Bank) without prior regulatory approvals.",
+    "directAnswerUr": "ایس ای سی پی میں کمپنی کا نام رجسٹر کروانے کے لیے منفرد نام کا انتخاب اور ممنوعہ الفاظ سے پرہیز ضروری ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Securities and Exchange Commission of Pakistan (SECP)",
+      "url": "https://www.secp.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Search Existing Corporate Registry",
+        "titleUr": "رجسٹرڈ کمپنیوں میں نام تلاش کریں",
+        "detailEn": "Ensure no identical or deceptively similar company name is already registered.",
+        "detailUr": "چیک کریں کہ یہ نام پہلے سے کسی کمپنی کے پاس رجسٹرڈ نہ ہو۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Apply for Name Reservation via eServices",
+        "titleUr": "آن لائن نام ریزرویشن اپلائی کریں",
+        "detailEn": "Submit name reservation on SECP eServices and pay PKR 200 fee.",
+        "detailUr": "ایس ای سی پی ای سروسز پر 200 روپے فیس ادا کر کے نام محفوظ کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How much does SECP company name reservation cost?",
+        "questionUr": "ایس ای سی پی کمپنی نام ریزرویشن کی فیس کتنی ہے؟",
+        "answerEn": "Online name reservation costs PKR 200 through SECP eServices.",
+        "answerUr": "آن لائن ای سروسز کے ذریعے نام محفوظ کروانے کی فیس 200 روپے ہے۔"
+      }
+    ],
+    "contentEn": "Interactive validation tool and comprehensive legal naming guidelines under SECP Companies Act 2017.",
+    "contentUr": "ایس ای سی پی کمپنی نام کی دستیابی اور پرائیویٹ لمیٹڈ کمپنی رجسٹریشن کی رہنمائی۔",
+    "relatedSlugs": [
+      "/business/secp-company-registration-online-2026",
+      "/business/sole-proprietorship-ntn-registration",
+      "/business/how-to-register-small-business-pakistan"
+    ]
+  },
+  "police-character-certificate-online-apply-2026": {
+    "slug": "police-character-certificate-online-apply-2026",
+    "fullPath": "/certificates/police-character-certificate-online-apply-2026",
+    "categoryId": "certificates",
+    "titleEn": "Police Character Certificate Online Apply 2026 – PCC Verification & PKM Guide",
+    "titleUr": "پولیس کریکٹر سرٹیفکیٹ آن لائن اپلائی 2026: پولیس خدمت مرکز اور تصدیق کا طریقہ",
+    "metaDescriptionEn": "Apply for Police Character Certificate (PCC) online in Pakistan for international visas, study abroad, and immigration. Complete guide to PKM centers, fee structure, MOFA attestation, and delivery timelines.",
+    "metaDescriptionUr": "ویزہ اور بیرون ملک سفر کے لیے پولیس کریکٹر سرٹیفکیٹ آن لائن اپلائی کرنے کا طریقہ، فیس اور تصدیق۔",
+    "directAnswerEn": "To obtain a Police Character Certificate (PCC), visit your nearest Police Khidmat Markaz (PKM) with your original CNIC, passport, and photographs. The certificate is issued within 3 working days after local police station verification.",
+    "directAnswerUr": "پولیس کریکٹر سرٹیفکیٹ حاصل کرنے کے لیے قریبی پولیس خدمت مرکز اصل شناختی کارڈ اور پاسپورٹ لے کر جائیں۔ تصدیق 3 دن میں مکمل ہو جاتی ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Punjab Police Khidmat Markaz (PKM)",
+      "url": "https://punjabpolice.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Police Khidmat Markaz",
+        "titleUr": "پولیس خدمت مرکز تشریف لے جائیں",
+        "detailEn": "Bring original CNIC, passport copies, and applicant photograph.",
+        "detailUr": "اصل شناختی کارڈ، پاسپورٹ کی کاپی اور تصویر لے کر خدمت مرکز جائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Undergo Biometric Verification",
+        "titleUr": "بائیو میٹرک تصدیق کروائیں",
+        "detailEn": "Provide live fingerprints and pay the statutory fee of PKR 500.",
+        "detailUr": "فنگر پرنٹس دیں اور 500 روپے سرکاری فیس کا چالان ادا کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long is a Police Character Certificate valid?",
+        "questionUr": "پولیس کریکٹر سرٹیفکیٹ کتنے عرصے کے لیے کارآمد ہوتا ہے؟",
+        "answerEn": "A Police Character Certificate is generally valid for 6 months from the date of issuance.",
+        "answerUr": "پولیس کریکٹر سرٹیفکیٹ عام طور پر جاری ہونے کی تاریخ سے 6 ماہ تک کارآمد رہتا ہے۔"
+      }
+    ],
+    "contentEn": "Complete step-by-step guide and fee calculator for Police Character Certificate (PCC) applications in Pakistan.",
+    "contentUr": "پولیس خدمت مرکز سے کریکٹر سرٹیفکیٹ کے حصول، فیس اور وزارت خارجہ سے تصدیق کا طریقہ۔",
+    "relatedSlugs": [
+      "/certificates/police-character-certificate-tracking-status-2026",
+      "/certificates/domicile-certificate-apply-online",
+      "/legal/succession-certificate-legal-heir-nadra-2026"
+    ]
+  },
+  "police-character-certificate-tracking-status-2026": {
+    "slug": "police-character-certificate-tracking-status-2026",
+    "fullPath": "/certificates/police-character-certificate-tracking-status-2026",
+    "categoryId": "certificates",
+    "titleEn": "Police Character Certificate Tracking Status 2026 – PKM Online Tracking by CNIC",
+    "titleUr": "پولیس کریکٹر سرٹیفکیٹ ٹریکنگ سٹیٹس 2026: شناختی کارڈ اور ٹوکن سے آن لائن چیک",
+    "metaDescriptionEn": "Track your Police Character Certificate (PCC) application status online by 13-digit CNIC or PKM tracking token number. Check police station report clearance, printing status, and delivery schedule.",
+    "metaDescriptionUr": "پولیس کریکٹر سرٹیفکیٹ کی آن لائن ٹریکنگ کریں اور خدمت مرکز ٹوکن سے اسٹیٹس معلوم کریں۔",
+    "directAnswerEn": "Track your Police Character Certificate by entering your 13-digit CNIC or PKM tracking token ID on the official Punjab Police / PKM online tracking portal to check verification clearance.",
+    "directAnswerUr": "اپنے پولیس سرٹیفکیٹ کا سٹیٹس جاننے کے لیے پی کے ایم پورٹل پر شناختی کارڈ یا ٹوکن نمبر درج کریں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Punjab Police Khidmat Markaz Tracking",
+      "url": "https://pkm.punjab.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Enter PKM Tracking ID",
+        "titleUr": "پی کے ایم ٹوکن نمبر درج کریں",
+        "detailEn": "Input the tracking number printed on your Police Khidmat Markaz receipt slip.",
+        "detailUr": "خدمت مرکز کی رسید پر لکھا گیا ٹریکنگ نمبر درج کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "View Police Clearance Status",
+        "titleUr": "پولیس کلیرنس رپورٹ چیک کریں",
+        "detailEn": "See real-time progress: In Process, Police Verification Done, or Ready for Collection.",
+        "detailUr": "دیکھیں کہ تصدیق مکمل ہو چکی ہے یا سرٹیفکیٹ وصولی کے لیے تیار ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I track my Police Certificate online?",
+        "questionUr": "پولیس سرٹیفکیٹ آن لائن کیسے ٹریک کریں؟",
+        "answerEn": "Enter your CNIC or PKM receipt token number on the official PKM tracking page.",
+        "answerUr": "پی کے ایم کی ویب سائٹ پر اپنا ٹوکن نمبر یا شناختی کارڈ درج کر کے چیک کریں۔"
+      }
+    ],
+    "contentEn": "Interactive tracking portal and guide for Police Character Certificate applications across Pakistan.",
+    "contentUr": "پولیس کریکٹر سرٹیفکیٹ کی آن لائن ٹریکنگ اور کلیرنس کے مراحل کی رہنمائی۔",
+    "relatedSlugs": [
+      "/certificates/police-character-certificate-online-apply-2026",
+      "/legal/online-fir-registration-punjab-police",
+      "/certificates/domicile-certificate-apply-online"
+    ]
+  },
+  "succession-certificate-legal-heir-nadra-2026": {
+    "slug": "succession-certificate-legal-heir-nadra-2026",
+    "fullPath": "/legal/succession-certificate-legal-heir-nadra-2026",
+    "categoryId": "legal",
+    "titleEn": "NADRA Succession Certificate & Letter of Administration 2026 – Legal Heir Guide",
+    "titleUr": "نادرا جانشینی سرٹیفکیٹ اور وراثت نامہ 2026: قانونی وارثان کے لیے 15 دن میں حصول کی گائیڈ",
+    "metaDescriptionEn": "Obtain NADRA Succession Certificate and Letter of Administration within 15 days without lengthy civil court cases. Complete guide to movable/immovable assets, fee slabs, biometric consent, and legal requirements.",
+    "metaDescriptionUr": "نادرا سے 15 دن میں جانشینی سرٹیفکیٹ اور وراثت نامہ حاصل کرنے کا طریقہ، فیس اور بائیو میٹرک تصدیق۔",
+    "directAnswerEn": "NADRA issues Succession Certificates for movable assets (bank accounts, shares, vehicles) and Letters of Administration for immovable properties within 15 days upon submission of FRC, death certificate, and biometric consent of all legal heirs.",
+    "directAnswerUr": "نادرا کے ذریعے بینک اکاؤنٹس اور جائیداد کے لیے جانشینی سرٹیفکیٹ تمام قانونی وارثان کی بائیو میٹرک رضامندی سے 15 دن میں مل جاتا ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "NADRA Succession Certificate Portal",
+      "url": "https://succession.nadra.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Online or In-Person Application",
+        "titleUr": "آن لائن یا نادرا سینٹر میں درخواست دیں",
+        "detailEn": "Provide deceased CNIC, Death Certificate, and family FRC details.",
+        "detailUr": "متوفی کا شناختی کارڈ، ڈیتھ سرٹیفکیٹ اور فیملی رجسٹریشن سرٹیفکیٹ (FRC) جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Biometric Verification of All Legal Heirs",
+        "titleUr": "تمام وارثان کی بائیو میٹرک تصدیق",
+        "detailEn": "All legal heirs must verify fingerprints at NADRA or via mobile app from abroad.",
+        "detailUr": "تمام قانونی وارثان نادرا سنٹر یا بیرون ملک سے آن لائن بائیو میٹرک تصدیق کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long does NADRA take to issue a Succession Certificate?",
+        "questionUr": "نادرا جانشینی سرٹیفکیٹ جاری کرنے میں کتنا وقت لیتا ہے؟",
+        "answerEn": "NADRA issues the certificate within 15 working days following public newspaper notice.",
+        "answerUr": "اخبار میں اشتہار کے بعد تمام کارروائی 15 دفتری ایام میں مکمل ہو جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete legal guide and fee breakdown for obtaining NADRA Succession Certificates and Letters of Administration in Pakistan.",
+    "contentUr": "نادرا سے جانشینی سرٹیفکیٹ اور قانونی وراثت کے کاغذات حاصل کرنے کا مکمل ضابطہ۔",
+    "relatedSlugs": [
+      "/nadra/b-form-frc-status-check",
+      "/certificates/death-certificate-registration-process",
+      "/property/punjab-land-record-fard-verifier-2026"
+    ]
+  },
+  "bise-result-checker-2026": {
+    "slug": "bise-result-checker-2026",
+    "fullPath": "/education/bise-result-checker-2026",
+    "categoryId": "education",
+    "titleEn": "BISE Board Result Checker 2026 – Check Matric & Intermediate Results Online",
+    "titleUr": "تمام تعلیمی بورڈز رزلٹ چیکر 2026: میٹرک اور انٹرمیڈیٹ رزلٹ بذریعہ رول نمبر",
+    "metaDescriptionEn": "Check annual and supplementary exam results for all 30+ educational boards in Pakistan (Punjab, Sindh, KPK, Balochistan, AJK, FBISE). Search by roll number, name, or SMS.",
+    "metaDescriptionUr": "پاکستان کے تمام تعلیمی بورڈز (لاہور، کراچی، پشاور، فیڈرل بورڈ) کے میٹرک اور انٹرمیڈیٹ رزلٹ آن لائن چیک کریں۔",
+    "directAnswerEn": "Select your educational board (e.g., Lahore, Federal FBISE, Karachi, Peshawar), enter your roll number, and choose your class (9th, 10th, 11th, 12th) to view your official computerized marksheet instantly.",
+    "directAnswerUr": "اپنا متعلقہ تعلیمی بورڈ اور کلاس منتخب کریں اور رول نمبر درج کر کے مکمل رزلٹ کارڈ حاصل کریں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Inter Board Coordination Commission (IBCC)",
+      "url": "https://www.ibcc.edu.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Board and Class",
+        "titleUr": "بورڈ اور کلاس منتخب کریں",
+        "detailEn": "Choose from Punjab, Sindh, KPK, Balochistan, AJK, or Federal Board.",
+        "detailUr": "اپنا تعلیمی بورڈ اور 9ویں، 10ویں، 11ویں یا 12ویں کلاس منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter Roll Number",
+        "titleUr": "رول نمبر درج کریں",
+        "detailEn": "Type your examination roll number to display subject-wise marks and grades.",
+        "detailUr": "امتحانی رول نمبر لکھ کر مضامین کے نمبر اور گریڈز دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I check my BISE result by SMS?",
+        "questionUr": "ایس ایم ایس کے ذریعے بورڈ رزلٹ کیسے معلوم کریں؟",
+        "answerEn": "Send your roll number to your specific board SMS code (e.g., 800291 for Lahore, 5050 for FBISE).",
+        "answerUr": "اپنا رول نمبر متعلقہ بورڈ کے کوڈ (لاہور 800291، فیڈرل 5050) پر بھیجیں۔"
+      }
+    ],
+    "contentEn": "Unified multi-board examination result lookup tool for Matriculation and Intermediate students across Pakistan.",
+    "contentUr": "پاکستان کے تمام بورڈز کے نتائج اور مارکس شیٹ کی آن لائن دستیابی کی سہولت۔",
+    "relatedSlugs": [
+      "/education/bise-lahore-result-2026",
+      "/education/matric-40-percent-passing-marks-rule-2026",
+      "/education/university-merit-list-checker-2026"
+    ]
+  },
+  "university-merit-list-checker-2026": {
+    "slug": "university-merit-list-checker-2026",
+    "fullPath": "/education/university-merit-list-checker-2026",
+    "categoryId": "education",
+    "titleEn": "University Merit List Checker 2026 – Public & Private Universities in Pakistan",
+    "titleUr": "یونیورسٹی میرٹ لسٹ چیکر 2026: پنجاب یونیورسٹی، قائداعظم، نسٹ اور دیگر جامعات",
+    "metaDescriptionEn": "Check university merit lists and admission cutoff scores for Punjab University (PU), NUST, FAST, COMSATS, QAU Islamabad, UET, and medical colleges for Fall & Spring 2026 admissions.",
+    "metaDescriptionUr": "پنجاب یونیورسٹی، نسٹ، کومسیٹس اور دیگر پبلک جامعات کی پہلی، دوسری اور تیسری میرٹ لسٹیں چیک کریں۔",
+    "directAnswerEn": "Search merit calculation formulas, closing merit percentiles, and 1st, 2nd, and 3rd merit lists for top Pakistani universities by selecting your institution and academic program.",
+    "directAnswerUr": "جامعات کے داخلہ میرٹ، فارمولا اور پہلی، دوسری و تیسری میرٹ لسٹوں کا ریکارڈ آن لائن دیکھیں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Higher Education Commission (HEC)",
+      "url": "https://www.hec.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select University and Department",
+        "titleUr": "یونیورسٹی اور شعبہ منتخب کریں",
+        "detailEn": "Choose your target university (PU, QAU, NUST, FAST, COMSATS, UET) and program.",
+        "detailUr": "اپنی متعلقہ یونیورسٹی اور ڈگری پروگرام کا انتخاب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Check Closing Merit Criteria",
+        "titleUr": "آخری میرٹ اسکور دیکھیں",
+        "detailEn": "Compare your aggregate score with the official merit cutoff.",
+        "detailUr": "اپنے حاصل کردہ میرٹ کا یونیورسٹی کے میرٹ سے موازنہ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "When are university merit lists announced in Pakistan?",
+        "questionUr": "پاکستان میں یونیورسٹی میرٹ لسٹیں کب جاری ہوتی ہیں؟",
+        "answerEn": "Fall semester merit lists are typically announced between August and October following board results.",
+        "answerUr": "فال سمسٹر کی میرٹ لسٹیں بورڈ نتائج کے بعد اگست سے اکتوبر کے درمیان جاری ہوتی ہیں۔"
+      }
+    ],
+    "contentEn": "Comprehensive university admission merit list lookup and aggregate calculator for Pakistani students.",
+    "contentUr": "پاکستانی جامعات کی میرٹ لسٹوں، داخلہ کٹ آف اور فیس سٹرکچر کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/education/bise-result-checker-2026",
+      "/education/hec-scholarship-status-2026",
+      "/jobs/nts-result-scorecard-checker-2026"
+    ]
+  },
+  "hec-scholarship-status-2026": {
+    "slug": "hec-scholarship-status-2026",
+    "fullPath": "/education/hec-scholarship-status-2026",
+    "categoryId": "education",
+    "titleEn": "HEC Scholarship Status Checker 2026 – Ehsaas Undergraduate & Overseas Scholarships",
+    "titleUr": "ایچ ای سی اسکالرشپ سٹیٹس چیکر 2026: احساس انڈرگریجویٹ اور اوورسیز اسکالرشپس",
+    "metaDescriptionEn": "Track Higher Education Commission (HEC) scholarship application status by CNIC. Check Ehsaas Undergraduate Scholarship, US-Need Based, Indigenous PhD, and Overseas Scholarship 2026 batches.",
+    "metaDescriptionUr": "ہائر ایجوکیشن کمیشن کی احساس سکالرشپ اور پی ایچ ڈی سکالرشپ کا آن لائن سٹیٹس چیک کریں۔",
+    "directAnswerEn": "Track your HEC scholarship application status by logging into the HEC e-portal (eportal.hec.gov.pk) with your CNIC to verify scrutiny status, interview shortlisting, and award notifications.",
+    "directAnswerUr": "ایچ ای سی پورٹل پر شناختی کارڈ سے لاگ ان کر کے اسکالرشپ درخواست، انٹرویو اور منظوری کا سٹیٹس دیکھیں۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Higher Education Commission (HEC) Scholarships",
+      "url": "https://www.hec.gov.pk/english/scholarships"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Login to HEC ePortal",
+        "titleUr": "ایچ ای سی پورٹل پر لاگ ان کریں",
+        "detailEn": "Visit eportal.hec.gov.pk and log in with your registered CNIC and password.",
+        "detailUr": "ایچ ای سی ای پورٹل پر اپنے شناختی کارڈ سے لاگ ان کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Check Application Stage",
+        "titleUr": "درخواست کی صورتحال دیکھیں",
+        "detailEn": "Review your application progress: Submitted, Under Scrutiny, Shortlisted, or Awarded.",
+        "detailUr": "دیکھیں کہ آپ کی درخواست منظور ہو چکی ہے یا جانچ کے مرحلے میں ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I check my HEC scholarship status?",
+        "questionUr": "ایچ ای سی اسکالرشپ سٹیٹس کیسے معلوم کریں؟",
+        "answerEn": "Log into the official HEC ePortal using your CNIC to check real-time application updates.",
+        "answerUr": "ایچ ای سی کے آفیشل ای پورٹل پر لاگ ان کر کے سٹیٹس چیک کریں۔"
+      }
+    ],
+    "contentEn": "Interactive scholarship tracking helper and comprehensive eligibility guide for all national HEC funding programs.",
+    "contentUr": "ہائر ایجوکیشن کمیشن پاکستان کے تمام وظائف اور تعلیمی گرانٹس کی رہنمائی۔",
+    "relatedSlugs": [
+      "/education/university-merit-list-checker-2026",
+      "/education/bise-result-checker-2026",
+      "/welfare/pmt-score-explained-bisp-eligibility-2026"
+    ]
   }
 };
