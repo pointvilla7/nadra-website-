@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/hajj-umrah/hajj-application-eligibility-checker-2026',
     '/business/company-name-availability-checker-2026',
     '/certificates/police-character-certificate-online-apply-2026',
+    '/certificates/police-character-certificate-tracking-status-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',

@@ -212,6 +212,27 @@ export default function PoliceCharacterCertificateOnlineApplyPage() {
           <PoliceCharacterCertificateHelper />
         </section>
 
+        {/* Tracking Callout Banner */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-doc-ink to-slate-900 border border-doc-brass/40 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg">
+          <div className="space-y-1">
+            <span className="text-[10px] font-mono font-bold uppercase text-doc-brass tracking-wider">
+              ALREADY APPLIED?
+            </span>
+            <h3 className="font-serif font-bold text-base text-white">
+              Track Your Police Character Certificate Application Status
+            </h3>
+            <p className="text-xs text-slate-300">
+              Have your PKM Token Number, PRVS Case ID, or ICT Application Code? Check your live police verification and collection status.
+            </p>
+          </div>
+          <Link
+            href="/certificates/police-character-certificate-tracking-status-2026"
+            className="px-5 py-3 rounded-xl bg-doc-brass hover:bg-amber-400 text-doc-ink font-mono font-bold text-xs flex items-center gap-1.5 transition shrink-0 shadow min-h-[44px]"
+          >
+            <span>TRACK STATUS NOW →</span>
+          </Link>
+        </div>
+
         <AdPlacementZone format="horizontal" />
 
         {/* Section 1: Why the System is Province-Specific */}
@@ -439,6 +460,17 @@ export default function PoliceCharacterCertificateOnlineApplyPage() {
                 Embassy Document Attestation Guide →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Power of Attorney and authority letter verification steps.</p>
+            </Link>
+
+            <Link
+              href="/certificates/police-character-certificate-tracking-status-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Application Status</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Police Certificate Status Tracking →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Track PKM Token, PRVS Case ID, or ICT Application Code online.</p>
             </Link>
 
             <Link

@@ -593,6 +593,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "PCC Tracking Status 2026",
+        "ur": "پولیس سرٹیفکیٹ ٹریکنگ",
+        "slug": "/certificates/police-character-certificate-tracking-status-2026"
+      },
+      {
         "en": "Police Character Certificate 2026",
         "ur": "پولیس کریکٹر سرٹیفکیٹ آن لائن",
         "slug": "/certificates/police-character-certificate-online-apply-2026"
