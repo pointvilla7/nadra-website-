@@ -15174,5 +15174,139 @@ export const ARTICLES: Record<string, Article> = {
       "/traffic/token-tax-calculator-2026",
       "/traffic/e-challan-check-online"
     ]
+  },
+  "matric-40-percent-passing-marks-rule-2026": {
+    "slug": "matric-40-percent-passing-marks-rule-2026",
+    "fullPath": "/education/matric-40-percent-passing-marks-rule-2026",
+    "categoryId": "education",
+    "titleEn": "Matric & Inter 40% Passing Marks Rule 2026 – IBCC Grading Policy & Phasing",
+    "titleUr": "میٹرک و انٹر 40 فیصد پاسنگ مارکس پالیسی 2026: کون سے طلباء متاثر ہوں گے؟",
+    "metaDescriptionEn": "Complete guide to IBCC new grading policy 2026: 40% passing marks rule implementation, 10-point grading scale (A++ to U), phase-wise rollout (9th/11th in 2026 vs 10th/12th in 2027), and provincial BISE board details.",
+    "metaDescriptionUr": "آئی بی سی سی 40 فیصد پاسنگ مارکس پالیسی 2026: نویں اور گیارہویں کے لیے نیا قانون، دسویں اور بارہویں کا پرانا 33 فیصد اصول اور 10 نکاتی گریڈنگ سسٹم۔",
+    "directAnswerEn": "In 2026, the 40% passing rule applies ONLY to 9th Class (SSC Part-I) and 11th Class (HSSC Part-I) examinations. Students appearing in 10th Class (Matric) and 12th Class (2nd Year) in 2026 remain protected under the old 33% passing rule. The 10th and 12th grades will transition to 40% in 2027.",
+    "directAnswerUr": "2026 کے امتحانات میں 40 فیصد پاسنگ کا اصول صرف نویں (9th) اور گیارہویں (11th) جماعت پر لاگو ہے۔ دسویں (10th) اور بارہویں (12th) کے 2026 سالانہ امتحانات پرانا 33 فیصد پاسنگ اصول ہی برقرار رہے گا۔ دسویں اور بارہویں جماعت پر نیا اصول 2027 سے لاگو ہوگا۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Inter Board Coordination Commission (IBCC)",
+      "url": "https://ibcc.edu.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Passing Marks Threshold (2026: 9th & 11th)",
+        "serviceUr": "پاسنگ مارکس (2026: نویں و گیارہویں)",
+        "normal": "40% Minimum",
+        "urgent": "Grade D Floor"
+      },
+      {
+        "serviceEn": "Passing Marks Threshold (2026: 10th & 12th)",
+        "serviceUr": "پاسنگ مارکس (2026: دسویں و بارہویں)",
+        "normal": "33% Minimum",
+        "urgent": "Protected until 2027"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Identify Current Class & Exam Year",
+        "titleUr": "اپنی کلاس اور امتحانی سال کی تصدیق کریں",
+        "detailEn": "Check whether you are appearing in 9th/11th (40% rule active) or 10th/12th (33% rule protected for 2026).",
+        "detailUr": "چیک کریں کہ آپ نویں/گیارہویں میں ہیں یا دسویں/بارہویں میں تاکہ درست پاسنگ رول کا علم ہو۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Review the 10-Point Alphabetical Scale",
+        "titleUr": "10 نکاتی گریڈنگ اسکیل کو سمجھیں",
+        "detailEn": "Familiarize yourself with new grades (A++, A+, A, B++, B+, B, C+, C, D, U). Scores below 40% receive 'U'.",
+        "detailUr": "نئے گریڈز اور 40 فیصد سے کم نمبروں پر ملنے والے 'U' (Ungraded) گریڈ کے بارے میں آگاہی حاصل کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Focus on Conceptual Student Learning Outcomes (SLO)",
+        "titleUr": "تصوراتی و ایس ایل او سوالات پر توجہ دیں",
+        "detailEn": "Prepare for application and analytical questions to securely exceed the 40% threshold across all subjects.",
+        "detailUr": "تمام مضامین میں 40 فیصد سے زائد نمبر حاصل کرنے کے لیے نصاب کے بنیادی کانسیپٹس پر توجہ دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does the 40% rule affect 10th class students in 2026?",
+        "questionUr": "کیا 2026 میں دسویں کے طلباء پر 40 فیصد کا اصول لاگو ہے؟",
+        "answerEn": "No. 10th class candidates appearing in 2026 exams remain under the 33% passing rule until 2027.",
+        "answerUr": "نہیں، 2026 میں دسویں کے امتحانات پرانا 33 فیصد اصول ہی نافذ رہے گا۔ 10ویں جماعت پر نیا اصول 2027 سے لاگو ہوگا۔"
+      },
+      {
+        "questionEn": "Was the GPA system implemented in Matric?",
+        "questionUr": "کیا میٹرک میں جی پی اے سسٹم نافذ کر دیا گیا ہے؟",
+        "answerEn": "No. The GPA formula was dropped; boards now use a 10-point alphabetical grading scale (A++ to U).",
+        "answerUr": "نہیں، جی پی اے سسٹم ختم کر دیا گیا ہے اور اس کی جگہ 10 نکاتی گریڈ سسٹم (A++ تا U) نافذ کیا گیا ہے۔"
+      }
+    ],
+    "contentEn": "Detailed reference on the IBCC 40% passing marks policy, phased rollout schedule, and the new 10-point grading system for Pakistani boards.",
+    "contentUr": "آئی بی سی سی کی 40 فیصد پاسنگ مارکس پالیسی، مرحلہ وار نفاذ کا شیڈول اور پاکستانی بورڈز کے نئے گریڈنگ نظام کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/education/bise-result-checker-2026",
+      "/jobs/roll-number-slip-checker-2026",
+      "/jobs/nts-result-scorecard-checker-2026"
+    ]
+  },
+  "fpsc-ppsc-age-relaxation-quota-rules-2026": {
+    "slug": "fpsc-ppsc-age-relaxation-quota-rules-2026",
+    "fullPath": "/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026",
+    "categoryId": "jobs",
+    "titleEn": "FPSC & PPSC Age Relaxation & Quota Rules 2026 – Eligibility & Domicile Guide",
+    "titleUr": "ایف پی ایس سی اور پی پی ایس سی عمر کی رعایت، ڈومیسائل اور کوٹہ کے قواعد",
+    "metaDescriptionEn": "Complete guide to FPSC and PPSC age relaxation rules in 2026: 5-year general age relaxation, 10-year government servant quota, provincial domicile requirements, age calculation cut-off date, and common rejection pitfalls.",
+    "metaDescriptionUr": "ایف پی ایس سی اور پی پی ایس سی عمر میں 5 سالہ جنرل رعایت، سرکاری ملازمین کا 10 سالہ کوٹہ، ڈومیسائل کی تصدیق اور مسترد ہونے سے بچنے کی تفصیلی گائیڈ۔",
+    "directAnswerEn": "A 5-year general age relaxation is automatically admissible to all candidates over the advertised upper age limit. Regular government employees (with ≥ 2 years service) and disabled candidates receive up to 10 years. Relaxations are non-cumulative, and age is calculated strictly as of the application closing date.",
+    "directAnswerUr": "تمام امیدواروں کے لیے بالائی عمر کی حد میں 5 سال کی عمومی رعایت (General Age Relaxation) بغیر کسی درخواست کے لاگو ہوتی ہے۔ دو سال سروس والے ریگولر سرکاری ملازمین اور معذور افراد کو 10 سال تک رعایت ملتی ہے۔ عمر کا حساب اشتہار کی آخری تاریخ (Closing Date) کے مطابق کیا جاتا ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Federal Public Service Commission (FPSC)",
+      "url": "https://fpsc.gov.pk/"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Calculate Age as of Exact Closing Date",
+        "titleUr": "اشتہار کی آخری تاریخ تک اپنی عمر کا درست حساب لگائیں",
+        "detailEn": "Compute your age in exact years, months, and days on the midnight of the official application closing date.",
+        "detailUr": "اشتہار کی آخری تاریخ کے مطابق اپنی عمر کا سال، ماہ اور دن کے حساب سے درست تعین کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Verify Valid Self-Domicile Certificate",
+        "titleUr": "اپنے نام کا درست ڈومیسائل سرٹیفکیٹ چیک کریں",
+        "detailEn": "Ensure your domicile certificate is issued in your own name on or before the closing date (parent/spouse domicile invalid).",
+        "detailUr": "یقینی بنائیں کہ ڈومیسائل آپ کے اپنے نام پر آخری تاریخ سے پہلے جاری شدہ ہو۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Secure Departmental Permission (NOC) if Employed",
+        "titleUr": "سرکاری ملازم ہونے کی صورت میں این او سی حاصل کریں",
+        "detailEn": "If in regular civil service, obtain a signed Departmental Permission Certificate (NOC) before applying.",
+        "detailUr": "سرکاری سروس کی رعایت کے لیے اپنے محکمے سے مجاز این او سی حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I combine multiple age relaxation categories?",
+        "questionUr": "کیا ایک سے زیادہ کیٹیگریز میں عمر کی رعایت کو جمع کیا جا سکتا ہے؟",
+        "answerEn": "No. Age relaxations in FPSC and PPSC are non-cumulative; you receive only the single largest concession.",
+        "answerUr": "نہیں، مختلف کیٹیگریز کی رعایت آپس میں جمع نہیں ہوتیں، صرف سب سے بڑی ایک رعایت دی جاتی ہے۔"
+      },
+      {
+        "questionEn": "How is age calculated for public service exams?",
+        "questionUr": "عمر کا حساب کس تاریخ سے لگایا جاتا ہے؟",
+        "answerEn": "Age is calculated strictly as of the official closing date advertised for job submission.",
+        "answerUr": "عمر کا حساب اشتہار میں دی گئی درخواست جمع کروانے کی آخری تاریخ کے مطابق کیا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Authoritative guide on FPSC and PPSC statutory age relaxation categories, provincial quota allocations, and domicile compliance rules.",
+    "contentUr": "ایف پی ایس سی اور پی پی ایس سی کے سرکاری بھرتی قوانین، عمر کی رعایت کی کیٹیگریز اور صوبائی کوٹہ سسٹم کی تفصیلی رہنمائی۔",
+    "relatedSlugs": [
+      "/jobs/roll-number-slip-checker-2026",
+      "/jobs/nts-result-scorecard-checker-2026",
+      "/certificates/police-character-certificate-online-apply-2026"
+    ]
   }
 };

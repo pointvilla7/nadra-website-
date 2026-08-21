@@ -214,6 +214,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "FPSC & PPSC Age Rules 2026",
+        "ur": "عمر رعایت و کوٹہ قواعد 2026",
+        "slug": "/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026"
+      },
+      {
         "en": "Roll Number Slip 2026",
         "ur": "رول نمبر سلپ چیکر 2026",
         "slug": "/jobs/roll-number-slip-checker-2026"
