@@ -14874,5 +14874,171 @@ export const ARTICLES: Record<string, Article> = {
       "/property/registry-vs-intiqal-difference",
       "/overseas/nicop-renewal-from-abroad"
     ]
+  },
+  "cnic-new-rules-2026": {
+    "slug": "cnic-new-rules-2026",
+    "fullPath": "/nadra/cnic-new-rules-2026",
+    "categoryId": "nadra",
+    "titleEn": "NADRA CNIC New Rules 2026: Free First Card, Fees & Biometric Directives",
+    "titleUr": "نادرا شناختی کارڈ نئے قواعد 2026: مفت پہلا کارڈ، فیس اور فنگر پرنٹ شرائط",
+    "metaDescriptionEn": "Complete guide to NADRA CNIC rules in 2026: Free first-time CNIC for citizens 18+, updated Normal/Urgent/Executive fee table, mandatory mobile SIM linking, biometric family verification, Smart CNIC transition, and Interior Ministry reforms.",
+    "metaDescriptionUr": "نادرا شناختی کارڈ کے نئے قواعد 2026: 18 سال کے شہریوں کے لیے پہلا کارڈ مفت، تجدید فیس شیڈول، بائیو میٹرک تصدیق اور سم رجسٹریشن کی تفصیلات۔",
+    "directAnswerEn": "First-time CNIC for Pakistani citizens aged 18+ is completely FREE under the Normal category (15 days). Renewals cost PKR 400 (Normal), PKR 1,150 (Urgent), and PKR 2,150 (Executive) for standard cards; and PKR 750, PKR 1,500, and PKR 2,500 for Smart Cards. Applicants must link a biometric mobile number registered in their own name.",
+    "directAnswerUr": "18 سال کی عمر کے شہریوں کے لیے پہلا شناختی کارڈ نارمل کیٹیگری میں بالکل مفت (0 روپے) ہے۔ تجدید فیس عام کارڈ کے لیے 400 (نارمل)، 1150 (ارجنٹ) اور 2150 (ایگزیکٹو) جبکہ اسمارٹ کارڈ کے لیے 750، 1500 اور 2500 روپے ہے۔ درخواست گزار کے اپنے نام پر رجسٹرڈ سم کا ہونا لازمی قرار دیا گیا ہے۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "NADRA Corporate & Pak-ID Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "First-Time CNIC (Age 18+)",
+        "serviceUr": "پہلا شناختی کارڈ (18 سال)",
+        "normal": "FREE (PKR 0)",
+        "urgent": "PKR 1,150",
+        "executive": "PKR 2,150"
+      },
+      {
+        "serviceEn": "Standard CNIC Renewal / Duplicate",
+        "serviceUr": "عام شناختی کارڈ تجدید و گمشدہ",
+        "normal": "PKR 400",
+        "urgent": "PKR 1,150",
+        "executive": "PKR 2,150"
+      },
+      {
+        "serviceEn": "Smart CNIC (Chip SNIC)",
+        "serviceUr": "اسمارٹ شناختی کارڈ",
+        "normal": "PKR 750",
+        "urgent": "PKR 1,500",
+        "executive": "PKR 2,500"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Prepare Identification & Relative",
+        "titleUr": "شناختی دستاویزات اور خونی رشتہ دار",
+        "detailEn": "Bring birth certificate/matric sanad, parent/sibling CNIC, and an active mobile number registered in your name.",
+        "detailUr": "پیدائش سرٹیفکیٹ، والدین کا شناختی کارڈ اور اپنے نام پر رجسٹرڈ موبائل نمبر ہمراہ رکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Biometric & Family Verification",
+        "titleUr": "بائیو میٹرک اور فیملی تصدیق",
+        "detailEn": "Complete digital photograph, 10-fingerprints, and blood relative biometric attestation at NRC or Pak-ID app.",
+        "detailUr": "نادرا سینٹر میں فنگر پرنٹس، تصویر اور ہمراہ موجود والدین کی بائیو میٹرک تصدیق کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Tracking & Card Collection",
+        "titleUr": "ٹریکنگ اور کارڈ وصولی",
+        "detailEn": "Track your 11-digit application ID via 8400 SMS and collect your card or receive home delivery.",
+        "detailUr": "8400 پر میسج بھیج کر سٹیٹس چیک کریں اور اپنا نیا کارڈ وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is the first-time CNIC completely free in 2026?",
+        "questionUr": "کیا پہلا شناختی کارڈ 2026 میں بالکل مفت ہے؟",
+        "answerEn": "Yes. Any citizen applying for their first CNIC upon reaching 18 years pays PKR 0 for Normal processing.",
+        "answerUr": "جی ہاں! 18 سال کی عمر کے بعد پہلی بار نارمل کیٹیگری میں شناختی کارڈ بالکل مفت بنتا ہے۔"
+      },
+      {
+        "questionEn": "Why is a mobile number in the applicant's name required?",
+        "questionUr": "اپنے نام پر رجسٹرڈ موبائل سم کیوں لازمی ہے؟",
+        "answerEn": "NADRA requires an active SIM registered against the applicant's CNIC for secure OTP dispatch and two-factor authentication.",
+        "answerUr": "نادرا سیکیورٹی او ٹی پی اور تصدیق کے لیے درخواست گزار کے نام پر سم لازمی قرار دی گئی ہے۔"
+      }
+    ],
+    "contentEn": "Complete overview of NADRA identity card regulations, free first-time CNIC, fee tables, and Pak-ID online application steps in 2026.",
+    "contentUr": "نادرا شناختی کارڈ کے تمام نئے قواعد، مفت شناختی کارڈ، فیس اور آن لائن طریقہ کار کی تفصیلی رہنمائی۔",
+    "relatedSlugs": [
+      "/nadra/b-form-frc-status-check",
+      "/nadra/nicop-fee-calculator",
+      "/legal/succession-certificate-legal-heir-nadra-2026"
+    ]
+  },
+  "passport-new-rules-2026-cashless-epassport": {
+    "slug": "passport-new-rules-2026-cashless-epassport",
+    "fullPath": "/passport/passport-new-rules-2026-cashless-epassport",
+    "categoryId": "passport",
+    "titleEn": "Passport New Rules 2026: Cashless QR Payment, E-Passport & Mandatory NICOP Entry",
+    "titleUr": "پاسپورٹ نئے قواعد 2026: کیش لیس کیو آر پیمنٹ، ای پاسپورٹ اور نائیکوپ ٹریول شرائط",
+    "metaDescriptionEn": "Complete guide to Pakistan Passport rules in 2026: 100% cashless QR code payments via JazzCash/EasyPaisa (effective July 1, 2026), 14-day normal delivery, e-passport transition, MRP validity, and urgent mandatory NICOP entry rules for overseas Pakistanis.",
+    "metaDescriptionUr": "پاسپورٹ کے نئے قواعد 2026: یکم جولائی سے کیش کاؤنٹرز کا خاتمہ، جاز کیش/ایزی پیسہ سے کیو آر فیس ادائیگی، 14 دن میں ڈلیوری اور تارکین وطن کے لیے نائیکوپ کے لازمی قوانین۔",
+    "directAnswerEn": "Starting July 1, 2026, all passport offices in Pakistan are 100% cashless (fees paid via QR code on mobile apps like JazzCash/EasyPaisa). Normal passport delivery is reduced to 14 days. Overseas Pakistanis traveling on foreign passports MUST hold a valid, unexpired NICOP for visa-free entry; expired cards will result in denied airline boarding.",
+    "directAnswerUr": "یکم جولائی 2026 سے تمام پاسپورٹ دفاتر کیش لیس ہو چکے ہیں اور فیس کیو آر کوڈ کے ذریعے جاز کیش/ایزی پیسہ سے ادا ہوتی ہے۔ نارمل پاسپورٹ کی مدت 14 دن کر دی گئی ہے۔ غیر ملکی پاسپورٹ رکھنے والے پاکستانیوں کے لیے بغیر ویزا داخلے کے لیے کارآمد نائیکوپ (NICOP) لازمی ہے، زائد المیعاد کارڈ پر فلائٹ میں سوار نہیں ہونے دیا جائے گا۔",
+    "lastVerified": "August 21, 2026",
+    "officialSource": {
+      "name": "Directorate General of Immigration & Passports (DGI&P)",
+      "url": "https://dgip.gov.pk/"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Normal 36 Pages (5 Years)",
+        "serviceUr": "نارمل 36 صفحات (5 سال)",
+        "normal": "PKR 4,500",
+        "urgent": "PKR 7,500",
+        "executive": "PKR 12,500"
+      },
+      {
+        "serviceEn": "Normal 36 Pages (10 Years)",
+        "serviceUr": "نارمل 36 صفحات (10 سال)",
+        "normal": "PKR 6,700",
+        "urgent": "PKR 11,200",
+        "executive": "PKR 16,200"
+      },
+      {
+        "serviceEn": "E-Passport 36 Pages (5 Years)",
+        "serviceUr": "ای پاسپورٹ 36 صفحات (5 سال)",
+        "normal": "PKR 9,000",
+        "urgent": "PKR 15,000",
+        "executive": "PKR 20,000"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Generate Token & QR Code",
+        "titleUr": "ٹوکن اور کیو آر کوڈ حاصل کریں",
+        "detailEn": "Collect your application token at the passport office with the dynamic 1-Bill QR code printed on it.",
+        "detailUr": "پاسپورٹ دفتر سے ٹوکن حاصل کریں جس پر 1-بل کیو آر کوڈ موجود ہوتا ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Digital QR Payment via Mobile App",
+        "titleUr": "موبائل ایپ سے ڈیجیٹل ادائیگی",
+        "detailEn": "Scan the token QR code using JazzCash, EasyPaisa, or any 1-Link mobile banking app to settle fees instantly.",
+        "detailUr": "جاز کیش، ایزی پیسہ یا بینک ایپ کے ذریعے کیو آر کوڈ اسکین کر کے فیس فوری ادا کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Data Entry & Biometrics",
+        "titleUr": "ڈیٹا انٹری اور بائیو میٹرک",
+        "detailEn": "Proceed to photograph, fingerprint scanning, and data verification counters.",
+        "detailUr": "تصویر، فنگر پرنٹس اور بائیو میٹرک کاؤنٹر پر عمل مکمل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I pay passport fees in cash in 2026?",
+        "questionUr": "کیا اب نقد کیش کے ذریعے فیس دی جا سکتی ہے؟",
+        "answerEn": "No. All passport offices are 100% cashless as of July 1, 2026. Fees must be paid via QR code or online PSID.",
+        "answerUr": "نہیں، یکم جولائی 2026 سے تمام کاؤنٹرز کیش لیس ہو چکے ہیں۔ فیس صرف کیو آر کوڈ یا آن لائن ایپ سے ادا ہوگی۔"
+      },
+      {
+        "questionEn": "Can overseas Pakistanis with expired NICOP travel visa-free?",
+        "questionUr": "کیا ایکسپائرڈ نائیکوپ پر ویزا فری پاکستان جا سکتے ہیں؟",
+        "answerEn": "No. Airlines strictly deny boarding to foreign passport holders without a valid, unexpired NICOP or valid Pakistani visa.",
+        "answerUr": "نہیں، ائیرلائنز ایکسپائرڈ نائیکوپ پر سوار ہونے کی اجازت نہیں دیتیں۔ کارآمد نائیکوپ یا ویزا ہونا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide on Pakistan passport cashless payments, e-passports, 14-day delivery, and mandatory NICOP travel rules for overseas Pakistanis.",
+    "contentUr": "پاسپورٹ کیش لیس فیس، ای پاسپورٹ، 14 دن ڈلیوری اور اوورسیز پاکستانیوں کے لیے نائیکوپ کے نئے سفری قواعد کی مکمل تفصیل۔",
+    "relatedSlugs": [
+      "/passport/fee-calculator",
+      "/passport/tracking-status",
+      "/overseas/nicop-renewal-from-abroad"
+    ]
   }
 };

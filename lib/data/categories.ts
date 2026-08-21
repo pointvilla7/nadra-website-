@@ -30,6 +30,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "CNIC New Rules 2026",
+        "ur": "شناختی کارڈ نئے قواعد 2026",
+        "slug": "/nadra/cnic-new-rules-2026"
+      },
+      {
         "en": "NICOP Fee Calculator",
         "ur": "نائیکوپ فیس کیلکولیٹر",
         "slug": "/nadra/nicop-fee-calculator"
@@ -53,11 +58,6 @@ export const CATEGORIES: Category[] = [
         "en": "NADRA Application Tracking",
         "ur": "نادرا شناختی کارڈ ٹریکنگ",
         "slug": "/nadra/tracking-id"
-      },
-      {
-        "en": "NICOP Renewal",
-        "ur": "نائیکوپ کی آن لائن تجدید",
-        "slug": "/nadra/nicop-apply-online"
       }
     ]
   },
@@ -75,6 +75,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Passport New Rules 2026",
+        "ur": "پاسپورٹ نئے قواعد 2026",
+        "slug": "/passport/passport-new-rules-2026-cashless-epassport"
+      },
       {
         "en": "Passport Fee Calculator",
         "ur": "پاسپورٹ فیس کیلکولیٹر",
@@ -94,11 +99,6 @@ export const CATEGORIES: Category[] = [
         "en": "e-Passport Online Apply",
         "ur": "ای پاسپورٹ آن لائن درخواست",
         "slug": "/passport/online-apply"
-      },
-      {
-        "en": "Passport Renewal Docs",
-        "ur": "پاسپورٹ تجدید کے کاغذات",
-        "slug": "/passport/renewal-documents"
       }
     ]
   },

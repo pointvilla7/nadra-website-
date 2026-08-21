@@ -36,6 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/certificates/police-character-certificate-online-apply-2026',
     '/certificates/police-character-certificate-tracking-status-2026',
     '/legal/succession-certificate-legal-heir-nadra-2026',
+    '/nadra/cnic-new-rules-2026',
+    '/passport/passport-new-rules-2026-cashless-epassport',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',
