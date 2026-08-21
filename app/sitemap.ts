@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/business/company-name-availability-checker-2026',
     '/certificates/police-character-certificate-online-apply-2026',
     '/certificates/police-character-certificate-tracking-status-2026',
+    '/legal/succession-certificate-legal-heir-nadra-2026',
     '/bills/sngpl-bill-check-online',
     '/bills/kelectric-duplicate-bill',
     '/contact',
@@ -45,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-20'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/property/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({

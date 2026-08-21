@@ -731,6 +731,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Succession Certificate NADRA 2026",
+        "ur": "جانشینی سرٹیفکیٹ نادرا 2026",
+        "slug": "/legal/succession-certificate-legal-heir-nadra-2026"
+      },
+      {
         "en": "Online FIR Punjab Police 1787",
         "ur": "آن لائن ایف آئی آر اندراج",
         "slug": "/legal/online-fir-registration-punjab-police"
