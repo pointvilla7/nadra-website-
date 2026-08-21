@@ -547,6 +547,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "SECP Company Name Checker 2026",
+        "ur": "ایس ای سی پی کمپنی نام چیکر 2026",
+        "slug": "/business/company-name-availability-checker-2026"
+      },
+      {
         "en": "SECP Company Online 2026",
         "ur": "ایس ای سی پی کمپنی رجسٹریشن 2026",
         "slug": "/business/secp-company-registration-online-2026"
