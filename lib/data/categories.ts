@@ -460,6 +460,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Punjab Fard Online Verifier 2026",
+        "ur": "پنجاب فرد آن لائن چیکر 2026",
+        "slug": "/property/punjab-land-record-fard-verifier-2026"
+      },
+      {
         "en": "Intiqal Online Punjab PLRA",
         "ur": "آن لائن انتقال اراضی پنجاب",
         "slug": "/property/intiqal-registration-online-punjab"
