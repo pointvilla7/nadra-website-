@@ -593,6 +593,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Police Character Certificate 2026",
+        "ur": "پولیس کریکٹر سرٹیفکیٹ آن لائن",
+        "slug": "/certificates/police-character-certificate-online-apply-2026"
+      },
+      {
         "en": "Domicile Certificate Online",
         "ur": "ڈومیسائل آن لائن اپلائی",
         "slug": "/certificates/domicile-certificate-apply-online"
