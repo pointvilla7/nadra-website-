@@ -16180,5 +16180,212 @@ export const ARTICLES: Record<string, Article> = {
       "/education/bise-result-checker-2026",
       "/welfare/pmt-score-explained-bisp-eligibility-2026"
     ]
+  },
+  "driving-license-online-apply-renewal-dlims-2026": {
+    "slug": "driving-license-online-apply-renewal-dlims-2026",
+    "fullPath": "/traffic/driving-license-online-apply-renewal-dlims-2026",
+    "categoryId": "traffic",
+    "titleEn": "Driving License Online Apply & Renewal DLIMS Guide 2026",
+    "titleUr": "ڈرائیونگ لائسنس آن لائن اپلائی اور تجدید ڈی ایل آئی ایم ایس 2026",
+    "metaDescriptionEn": "Complete 2026 guide to Pakistani driving licenses: Online apply and renewal via DLIMS 2.0 Punjab (PITB), Sindh DLS, KP Traffic, Islamabad ITP, Balochistan in-person rules, 42-day learner waiting period, fee schedule, Juvenile Driving Permit (ages 16-18), expired renewal penalties, and courier delivery.",
+    "metaDescriptionUr": "پاکستان میں ڈرائیونگ لائسنس آن لائن اپلائی اور رینیول کا طریقہ۔ پنجاب ڈی ایل آئی ایم ایس 2.0، سندھ، کے پی، اسلام آباد، فیس شیڈول اور 42 دن لرنر پرمٹ کا قانون۔",
+    "directAnswerEn": "In Punjab, the entire learner permit and routine renewal process is 100% online via DLIMS 2.0 (dlims.punjab.gov.pk) or the Dastak App. For fresh licenses, apply online for a learner permit, hold it for 42 days, pass the E-Sign and physical driving track test at any Licensing Center, and receive your Smart Card via courier. Sindh, KP, and Islamabad offer online appointments and digital portals, while Balochistan currently requires in-person visits to District Transport Offices.",
+    "directAnswerUr": "پنجاب میں لرنر پرمٹ اور عام تجدید مکمل طور پر ڈی ایل آئی ایم ایس 2.0 (dlims.punjab.gov.pk) یا دستک ایپ سے آن لائن ہو جاتی ہے۔ نئے لائسنس کے لیے 42 دن بعد ای سائن اور فزیکل ٹیسٹ پاس کرنا لازمی ہے۔ سندھ، کے پی اور اسلام آباد میں آن لائن بکنگ اور لرنر سہولت میسر ہے جبکہ بلوچستان میں ڈسٹرکٹ ٹرانسپورٹ آفس جانا پڑتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Punjab Police DLIMS 2.0",
+      "url": "https://dlims.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Traffic & Transport Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Learner Driving Permit (Motorcycle / Car)",
+        "serviceUr": "لرنر ڈرائیونگ پرمٹ (موٹر سائیکل / کار)",
+        "normal": "PKR 1,000",
+        "urgent": "Instant PDF Download",
+        "executive": "Valid 6 Months"
+      },
+      {
+        "serviceEn": "Motorcycle Regular Driving License",
+        "serviceUr": "موٹر سائیکل پکا لائسنس (5 سال)",
+        "normal": "PKR 500 / Year",
+        "urgent": "PKR 2,500 (5 Yrs)",
+        "executive": "Courier: PKR 480"
+      },
+      {
+        "serviceEn": "Motor Car / Jeep Regular License",
+        "serviceUr": "کار / جیپ ڈرائیونگ لائسنس (5 سال)",
+        "normal": "PKR 1,350 / Year",
+        "urgent": "PKR 6,750 (5 Yrs)",
+        "executive": "Test: PKR 150 + Courier"
+      },
+      {
+        "serviceEn": "Juvenile Driving Permit (Ages 16–18)",
+        "serviceUr": "جووینائل ڈرائیونگ پرمٹ (16 تا 18 سال)",
+        "normal": "PKR 500 / Year",
+        "urgent": "Licensing Center Visit",
+        "executive": "Up to 125cc Bikes"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Apply for Computerized Learner Permit",
+        "titleUr": "آن لائن لرنر پرمٹ حاصل کریں",
+        "detailEn": "Register on dlims.punjab.gov.pk or provincial portal with CNIC and photo. Pay PKR 1,000 fee via ePay PSID to download instant PDF permit.",
+        "detailUr": "ڈی ایل آئی ایم ایس پورٹل پر شناختی کارڈ سے لاگ ان کر کے 1000 روپے فیس ادا کریں اور پی ڈی ایف پرمٹ ڈاؤن لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Complete Mandatory 42-Day Waiting Period",
+        "titleUr": "42 دن کی لازمی تربیتی مدت پوری کریں",
+        "detailEn": "Hold the learner permit for at least 42 consecutive days to become eligible for practical driving and computerized sign testing.",
+        "detailUr": "ٹیسٹ کی بکنگ سے پہلے 42 دن کا انتظار لازمی ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pass E-Sign & Practical Track Driving Test",
+        "titleUr": "ای سائن اور فزیکل ڈرائیونگ ٹیسٹ پاس کریں",
+        "detailEn": "Appear at the Licensing Center for touch-screen traffic sign test and vehicle track test (parking & reversing).",
+        "detailUr": "لائسنسنگ سینٹر جا کر ٹریفک اشاروں اور فزیکل ٹریک پر گاڑی چلانے کا ٹیسٹ دیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Smart Card Printing & Courier Delivery",
+        "titleUr": "سمارٹ کارڈ پرنٹنگ اور ہوم ڈیلیوری",
+        "detailEn": "After biometric clearance, the permanent smart card license is delivered to your residential address within 5-10 working days.",
+        "detailUr": "بائیو میٹرک کے بعد سمارٹ کارڈ بذریعہ کورئیر آپ کے گھر پہنچا دیا جاتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What if my driving license expired years ago — do I have to re-take the driving test?",
+        "questionUr": "اگر ڈرائیونگ لائسنس سالوں پہلے ایکسپائر ہو چکا ہو تو کیا دوبارہ ٹیسٹ دینا پڑے گا؟",
+        "answerEn": "In Punjab and Islamabad, routine renewals do not require a fresh driving test regardless of expiry length. However, late surcharges apply: 50% for 1-3 months, 100% for up to 1 year, and up to 2.5 times the standard fee beyond 1 year.",
+        "answerUr": "پنجاب میں دوبارہ ٹیسٹ کی ضرورت نہیں ہوتی، البتہ تاخیر پر 50 فیصد سے 2.5 گنا تک اضافی لیٹ فیس لاگو ہوتی ہے۔"
+      },
+      {
+        "questionEn": "Can I drive alone on public roads using only a Learner Driving Permit?",
+        "questionUr": "کیا لرنر پرمٹ پر اکیلے گاڑی چلائی جا سکتی ہے؟",
+        "answerEn": "No. You must be accompanied by a fully licensed driver in the front passenger seat with 'L' plates displayed on the vehicle.",
+        "answerUr": "نہیں! گاڑی پر 'L' پلیٹ لگانا اور ساتھ میں لائسنس یافتہ ڈرائیور کا بیٹھنا قانونی طور پر لازمی ہے۔"
+      },
+      {
+        "questionEn": "How long does the entire driving license process take from learner to smart card?",
+        "questionUr": "لرنر سے لے کر سمارٹ کارڈ ملنے تک کل کتنا وقت لگتا ہے؟",
+        "answerEn": "Instant learner issuance + 42 days holding period + passing the test + 5 to 10 days courier delivery (approx. 50-55 days total).",
+        "answerUr": "فوری لرنر پرمٹ + 42 دن کا انتظار + ٹیسٹ پاس کرنے کے بعد 5 سے 10 دن میں کارڈ مل جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to DLIMS 2.0 driving license applications, provincial portals, fee structures, and renewal rules.",
+    "contentUr": "پاکستان میں ڈرائیونگ لائسنس آن لائن بنوانے اور تجدید کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/traffic/token-tax-calculator-2026",
+      "/traffic/vehicle-verification-online-2026",
+      "/traffic/challan-paid-but-showing-pending-2026"
+    ]
+  },
+  "pseb-freelancer-registration-tax-benefits-2026": {
+    "slug": "pseb-freelancer-registration-tax-benefits-2026",
+    "fullPath": "/business/pseb-freelancer-registration-tax-benefits-2026",
+    "categoryId": "business",
+    "titleEn": "PSEB Freelancer Registration & Tax Benefits Guide 2026 (0.25% FTR)",
+    "titleUr": "پی ایس ای بی فری لانسر رجسٹریشن اور ٹیکس چھوٹ گائیڈ 2026",
+    "metaDescriptionEn": "Complete 2026 guide to PSEB freelancer registration in Pakistan: Step-by-step techdestinations portal signup, Rs. 1,000 annual fee, 0.25% concessional Final Tax Regime (FTR) under Section 154A, 80% banking channel rule, Section 65F tax credit status, and ePRC remittance verification.",
+    "metaDescriptionUr": "پاکستان سافٹ ویئر ایکسپورٹ بورڈ (PSEB) فری لانسر رجسٹریشن کا طریقہ۔ 1000 روپے فیس، 0.25 فیصد فائنل ٹیکس اور بینکنگ چینل قواعد۔",
+    "directAnswerEn": "PSEB registration officially recognizes independent digital professionals as IT/ITeS exporters. Registered freelancers on the Active Taxpayers List (ATL) pay a concessional 0.25% Final Tax Regime (FTR) rate under Section 154A on export earnings brought through formal banking channels (versus 1% for unregistered individuals). Registration costs PKR 1,000 per year on techdestinations.com and takes 5 to 10 working days.",
+    "directAnswerUr": "پی ایس ای بی رجسٹریشن فری لانسرز کو سرکاری طور پر آئی ٹی ایکسپورٹر تسلیم کرتی ہے۔ فائلر فری لانسرز کو سیکشن 154A کے تحت صرف 0.25 فیصد فائنل ٹیکس دینا ہوتا ہے (غیر رجسٹرڈ افراد پر 1 فیصد لاگو ہے)۔ رجسٹریشن فیس 1000 روپے سالانہ ہے اور یہ عمل 5 سے 10 دنوں میں مکمل ہوتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Pakistan Software Export Board (PSEB)",
+      "url": "https://pseb.org.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Corporate & Tax Compliance Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PSEB Freelancer Registration (1 Year)",
+        "serviceUr": "فری لانسر رجسٹریشن (1 سال)",
+        "normal": "PKR 1,000",
+        "urgent": "5–10 Working Days",
+        "executive": "Online Certificate"
+      },
+      {
+        "serviceEn": "IT/ITeS Export Concessional Tax Rate",
+        "serviceUr": "آئی ٹی ایکسپورٹ رعایتی ٹیکس شرح",
+        "normal": "0.25% FTR (Section 154A)",
+        "urgent": "With ePRC & ATL",
+        "executive": "Deducted at Bank"
+      },
+      {
+        "serviceEn": "Unregistered Freelancer Export Tax Rate",
+        "serviceUr": "غیر رجسٹرڈ فری لانسر ٹیکس شرح",
+        "normal": "1.00% Tax",
+        "urgent": "Without PSEB / ATL",
+        "executive": "Standard Export"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Obtain Personal NTN from FBR Iris",
+        "titleUr": "ایف بی آر سے ذاتی این ٹی این حاصل کریں",
+        "detailEn": "Register for a free individual NTN on iris.fbr.gov.pk under IT & Business Services.",
+        "detailUr": "ایف بی آر پورٹل پر آئی ٹی سروسز کیٹیگری کے تحت ذاتی این ٹی این بنوائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Register on PSEB TechDestinations Portal",
+        "titleUr": "پی ایس ای بی پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Sign up at techdestinations.com and submit CNIC, photo, and freelance profile link (Upwork, Fiverr, or contracts).",
+        "detailUr": "ٹیک ڈیسٹینیشنز پورٹل پر شناختی کارڈ اور فری لانس پروفائل لنک اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay PKR 1,000 Fee & Download Certificate",
+        "titleUr": "1000 روپے فیس ادا کر کے سرٹیفکیٹ ڈاؤن لوڈ کریں",
+        "detailEn": "Pay the annual fee via 1Link or debit card. Scrutiny completes within 5-10 working days to issue a digital certificate.",
+        "detailUr": "آن لائن فیس ادا کریں اور جانچ کے بعد ڈیجیٹل سرٹیفکیٹ حاصل کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Route Inward Remittances & Generate ePRC",
+        "titleUr": "بینکنگ چینل سے رقوم منگوائیں اور ePRC لیں",
+        "detailEn": "Receive export earnings with SBP Purpose Code 9186 and download ePRC to secure 0.25% final tax deduction.",
+        "detailUr": "آئی ٹی کوڈ 9186 کے تحت پیمنٹ منگوا کر بینک سے ePRC سرٹیفکیٹ حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I still need PSEB registration if my annual freelance earnings are below Rs. 600,000?",
+        "questionUr": "اگر سالانہ آمدن 6 لاکھ سے کم ہو تو کیا رجسٹریشن ضروری ہے؟",
+        "answerEn": "Yes. Registering ensures your foreign remittances are officially protected under the 0.25% FTR IT export framework rather than being flagged as unexplained local receipts.",
+        "answerUr": "جی ہاں! یہ آپ کے غیر ملکی فنڈز کو قانونی تحفظ فراہم کرتا ہے اور غیر واضح آمدن کا نوٹس نہیں آتا۔"
+      },
+      {
+        "questionEn": "What counts as an approved banking channel and what is an ePRC?",
+        "questionUr": "منظور شدہ بینکنگ چینل اور ePRC کیا ہے؟",
+        "answerEn": "Direct SWIFT wire transfers or Payoneer/Wise withdrawals into Pakistani bank accounts that generate an Electronic Proceeds Realization Certificate (ePRC).",
+        "answerUr": "بینک وائر ٹرانسفر یا پائیونیر/وائز سے پاکستانی بینک میں رقم کی منتقلی جس پر بینک ePRC سرٹیفکیٹ جاری کرے۔"
+      },
+      {
+        "questionEn": "Do I still need to file an annual income tax return with FBR?",
+        "questionUr": "کیا 0.25 فیصد ٹیکس کٹنے کے بعد بھی ریٹرن فائل کرنا لازمی ہے؟",
+        "answerEn": "Yes. Filing annual returns on FBR Iris is mandatory to maintain Active Taxpayer List (ATL) status.",
+        "answerUr": "جی ہاں! ایکٹو ٹیکس پیئر لسٹ میں رہنے کے لیے سالانہ گوشوارے جمع کروانا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Step-by-step guide to PSEB freelancer registration, 0.25% FTR export tax compliance, and SBP remittance regulations.",
+    "contentUr": "فری لانسرز کے لیے پی ایس ای بی رجسٹریشن، 0.25 فیصد رعایتی انکم ٹیکس اور بینکنگ چینل کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/tax/fbr-active-taxpayer-status-helper-2026",
+      "/tax/ntn-registration-online-pakistan",
+      "/business/company-name-availability-checker-2026"
+    ]
   }
 };
