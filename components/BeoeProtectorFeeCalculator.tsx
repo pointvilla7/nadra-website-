@@ -163,15 +163,22 @@ export function BeoeProtectorFeeCalculator() {
           </h3>
         </div>
 
-        <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          <table className="w-full text-xs font-sans">
-            <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
-              <tr>
-                <th className="px-4 py-3 text-left">{isUrdu ? 'فیس کی مد' : 'Fee Component'}</th>
-                <th className="px-4 py-3 text-left">{isUrdu ? 'تفصیل و فوائد' : 'Description & Benefits'}</th>
-                <th className="px-4 py-3 text-right">{isUrdu ? 'رقم (روپے)' : 'Amount (PKR)'}</th>
-              </tr>
-            </thead>
+        <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+          {/* Mobile Swipe Hint */}
+          <div className="md:hidden flex items-center justify-between px-3 py-1.5 bg-doc-ink/5 dark:bg-slate-800/60 text-[11px] font-mono text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">
+            <span>{isUrdu ? 'فیس تفصیلات کے لیے سکرول کریں' : 'Swipe sideways to view details'}</span>
+            <span className="text-[10px] text-slate-400">3 Columns</span>
+          </div>
+
+          <div className="table-scroll-container">
+            <table className="w-full text-xs font-sans min-w-[480px]">
+              <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
+                <tr>
+                  <th className="px-4 py-3 text-left min-w-[140px]">{isUrdu ? 'فیس کی مد' : 'Fee Component'}</th>
+                  <th className="px-4 py-3 text-left min-w-[200px]">{isUrdu ? 'تفصیل و فوائد' : 'Description & Benefits'}</th>
+                  <th className="px-4 py-3 text-right min-w-[120px]">{isUrdu ? 'رقم (روپے)' : 'Amount (PKR)'}</th>
+                </tr>
+              </thead>
             <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
               {feeItems.map((item) => (
                 <tr
@@ -227,6 +234,7 @@ export function BeoeProtectorFeeCalculator() {
           </table>
         </div>
       </div>
+    </div>
 
       {/* Cashless Payment Notice */}
       <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2 text-xs font-sans">

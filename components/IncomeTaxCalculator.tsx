@@ -376,53 +376,64 @@ export function IncomeTaxCalculator() {
             : 'Pakistan enforces a progressive bracket system. Your entire salary is not taxed at the highest bracket rate; only the portion falling within each slab is taxed at that slab’s specific rate:'}
         </p>
 
-        <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          <table className="w-full text-xs font-sans">
-            <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
-              <tr>
-                <th className="px-4 py-3 text-left">Slab</th>
-                <th className="px-4 py-3 text-left">{isUrdu ? 'سلیب کی حد' : 'Income Range (PKR)'}</th>
-                <th className="px-4 py-3 text-left">{isUrdu ? 'ٹیکس ریٹ' : 'Tax Rate'}</th>
-                <th className="px-4 py-3 text-right">{isUrdu ? 'اس سلیب میں قابل ٹیکس رقم' : 'Amount in Slab'}</th>
-                <th className="px-4 py-3 text-right">{isUrdu ? 'ٹیکس واجب الادا' : 'Tax in Slab (PKR)'}</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-              {calculation.slabs.map((slab) => (
-                <tr
-                  key={slab.slabNumber}
-                  className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition"
-                >
-                  <td className="px-4 py-3 font-mono font-bold text-doc-seal">
-                    Slab {slab.slabNumber}
+        <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+          {/* Mobile Swipe Hint */}
+          <div className="md:hidden flex items-center justify-between px-3 py-1.5 bg-doc-ink/5 dark:bg-slate-800/60 text-[11px] font-mono text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">
+            <span className="flex items-center gap-1.5">
+              <ArrowRight className="w-3.5 h-3.5 text-doc-brass" />
+              <span>{isUrdu ? 'مکمل سلیب تفصیلات کے لیے سکرول کریں' : 'Swipe sideways to view all slabs'}</span>
+            </span>
+            <span className="text-[10px] text-slate-400">5 Columns</span>
+          </div>
+
+          <div className="table-scroll-container">
+            <table className="w-full text-xs font-sans min-w-[560px]">
+              <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
+                <tr>
+                  <th className="px-4 py-3 text-left min-w-[80px]">Slab</th>
+                  <th className="px-4 py-3 text-left min-w-[150px]">{isUrdu ? 'سلیب کی حد' : 'Income Range (PKR)'}</th>
+                  <th className="px-4 py-3 text-left min-w-[90px]">{isUrdu ? 'ٹیکس ریٹ' : 'Tax Rate'}</th>
+                  <th className="px-4 py-3 text-right min-w-[120px]">{isUrdu ? 'اس سلیب میں قابل ٹیکس رقم' : 'Amount in Slab'}</th>
+                  <th className="px-4 py-3 text-right min-w-[120px]">{isUrdu ? 'ٹیکس واجب الادا' : 'Tax in Slab (PKR)'}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                {calculation.slabs.map((slab) => (
+                  <tr
+                    key={slab.slabNumber}
+                    className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition"
+                  >
+                    <td className="px-4 py-3 font-mono font-bold text-doc-seal">
+                      Slab {slab.slabNumber}
+                    </td>
+                    <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white">
+                      {isUrdu ? slab.rangeUr : slab.rangeEn}
+                    </td>
+                    <td className="px-4 py-3 font-mono text-slate-600 dark:text-slate-300">
+                      {slab.rateLabel}
+                    </td>
+                    <td className="px-4 py-3 text-right font-mono font-bold text-doc-ink dark:text-white table-cell-nowrap">
+                      Rs. {formatPKR(slab.taxableInSlab)}
+                    </td>
+                    <td className="px-4 py-3 text-right font-mono font-bold text-amber-600 dark:text-amber-400 table-cell-nowrap">
+                      Rs. {formatPKR(slab.taxForSlab)}
+                    </td>
+                  </tr>
+                ))}
+                <tr className="bg-slate-100 dark:bg-slate-800/80 font-bold">
+                  <td colSpan={3} className="px-4 py-3 text-doc-ink dark:text-white font-mono uppercase text-right">
+                    {isUrdu ? 'کل سالانہ ٹیکس واجب الادا:' : 'Total Annual Tax Liability:'}
                   </td>
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white">
-                    {isUrdu ? slab.rangeUr : slab.rangeEn}
+                  <td className="px-4 py-3 text-right font-mono text-doc-ink dark:text-white table-cell-nowrap">
+                    Rs. {formatPKR(calculation.annualTaxable)}
                   </td>
-                  <td className="px-4 py-3 font-mono text-slate-600 dark:text-slate-300">
-                    {slab.rateLabel}
-                  </td>
-                  <td className="px-4 py-3 text-right font-mono font-bold text-doc-ink dark:text-white">
-                    Rs. {formatPKR(slab.taxableInSlab)}
-                  </td>
-                  <td className="px-4 py-3 text-right font-mono font-bold text-amber-600 dark:text-amber-400">
-                    Rs. {formatPKR(slab.taxForSlab)}
+                  <td className="px-4 py-3 text-right font-mono text-emerald-600 dark:text-emerald-400 text-sm table-cell-nowrap">
+                    Rs. {formatPKR(calculation.totalAnnualTax)}
                   </td>
                 </tr>
-              ))}
-              <tr className="bg-slate-100 dark:bg-slate-800/80 font-bold">
-                <td colSpan={3} className="px-4 py-3 text-doc-ink dark:text-white font-mono uppercase text-right">
-                  {isUrdu ? 'کل سالانہ ٹیکس واجب الادا:' : 'Total Annual Tax Liability:'}
-                </td>
-                <td className="px-4 py-3 text-right font-mono text-doc-ink dark:text-white">
-                  Rs. {formatPKR(calculation.annualTaxable)}
-                </td>
-                <td className="px-4 py-3 text-right font-mono text-emerald-600 dark:text-emerald-400 text-sm">
-                  Rs. {formatPKR(calculation.totalAnnualTax)}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 

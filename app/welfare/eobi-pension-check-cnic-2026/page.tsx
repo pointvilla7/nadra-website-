@@ -234,8 +234,9 @@ export default function EobiPensionPage() {
           </div>
 
           <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-4 text-xs font-sans">
-            <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-              <table className="w-full text-xs font-sans">
+            <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-xs font-sans min-w-[540px]">
                 <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
                   <tr>
                     <th className="px-4 py-3 text-left">Benefit Category</th>
@@ -272,6 +273,7 @@ export default function EobiPensionPage() {
                 </tbody>
               </table>
             </div>
+          </div>
 
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5 text-slate-600 dark:text-slate-300">
               <strong className="text-doc-ink dark:text-white">Statutory Rate Transparency Note:</strong>

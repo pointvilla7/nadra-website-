@@ -155,8 +155,9 @@ export default function WAPDAComplaintTrackerPage() {
           <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white">
             Standard Complaint Resolution Timelines (NEPRA Standards)
           </h2>
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Complaint Category</th>
@@ -180,6 +181,7 @@ export default function WAPDAComplaintTrackerPage() {
                 ))}
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 

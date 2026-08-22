@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { AlertCircle, Info, AlertTriangle, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { AlertCircle, Info, AlertTriangle, CheckCircle2, ShieldAlert, ArrowRightLeft } from 'lucide-react';
 
 interface MarkdownContentProps {
   content: string;
@@ -142,29 +142,40 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({ content, class
         const bodyRows = rows.slice(dataRowStart).map(r => r.split('|').map(c => c.trim()).filter(c => c.length > 0));
 
         return (
-          <div key={index} className="my-6 overflow-x-auto rounded-xl border border-doc-brass/40 shadow-sm bg-white dark:bg-doc-dark-card">
-            <table className="w-full text-left text-xs sm:text-sm font-sans border-collapse">
-              <thead className="bg-doc-paper dark:bg-slate-800/80 border-b border-doc-brass/30">
-                <tr>
-                  {headerCols.map((col, ci) => (
-                    <th key={ci} className="px-4 py-3 font-serif font-extrabold text-doc-ink dark:text-white uppercase tracking-wider text-xs">
-                      {renderInline(col)}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-doc-brass/15 dark:divide-slate-800">
-                {bodyRows.map((row, ri) => (
-                  <tr key={ri} className={ri % 2 === 0 ? 'bg-transparent' : 'bg-doc-ink/2 dark:bg-slate-900/30'}>
-                    {row.map((cell, ci) => (
-                      <td key={ci} className={`px-4 py-3 text-slate-800 dark:text-slate-200 ${cell.includes('PKR') || /^\d+/.test(cell) ? 'font-mono tabular-nums font-semibold' : ''}`}>
-                        {renderInline(cell)}
-                      </td>
+          <div key={index} className="my-6 table-scroll-wrapper rounded-xl border border-doc-brass/40 shadow-sm bg-white dark:bg-doc-dark-card overflow-hidden">
+            {/* Mobile Swipe Hint */}
+            <div className="md:hidden flex items-center justify-between px-3 py-1.5 bg-doc-ink/5 dark:bg-slate-800/60 text-[11px] font-mono text-slate-600 dark:text-slate-400 border-b border-doc-brass/20">
+              <span className="flex items-center gap-1.5">
+                <ArrowRightLeft className="w-3.5 h-3.5 text-doc-brass" />
+                <span>Swipe sideways to view full table</span>
+              </span>
+              <span className="text-[10px] text-slate-400">{headerCols.length} Cols</span>
+            </div>
+
+            <div className="table-scroll-container">
+              <table className="w-full text-left text-xs sm:text-sm font-sans border-collapse min-w-[540px]">
+                <thead className="bg-doc-paper dark:bg-slate-800/80 border-b border-doc-brass/30">
+                  <tr>
+                    {headerCols.map((col, ci) => (
+                      <th key={ci} className="px-4 py-3 font-serif font-extrabold text-doc-ink dark:text-white uppercase tracking-wider text-xs whitespace-nowrap">
+                        {renderInline(col)}
+                      </th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-doc-brass/15 dark:divide-slate-800">
+                  {bodyRows.map((row, ri) => (
+                    <tr key={ri} className={ri % 2 === 0 ? 'bg-transparent' : 'bg-doc-ink/2 dark:bg-slate-900/30'}>
+                      {row.map((cell, ci) => (
+                        <td key={ci} className={`px-4 py-3 text-slate-800 dark:text-slate-200 ${cell.includes('PKR') || /^\d+/.test(cell) ? 'font-mono tabular-nums font-semibold whitespace-nowrap' : ''}`}>
+                          {renderInline(cell)}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       }

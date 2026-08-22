@@ -158,8 +158,9 @@ export default function PtaMobileTaxCheckOnlinePage() {
             Pre-calculated reference table showing estimated PTA duty on popular Apple iPhone models under current FBR Customs valuation rulings:
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-xs font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-xs font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Apple iPhone Model</th>
@@ -207,6 +208,7 @@ export default function PtaMobileTaxCheckOnlinePage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 
@@ -219,8 +221,9 @@ export default function PtaMobileTaxCheckOnlinePage() {
             </h2>
           </div>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-xs font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-xs font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-[11px] font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">C&amp;F USD Value Bracket</th>
@@ -268,6 +271,7 @@ export default function PtaMobileTaxCheckOnlinePage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 

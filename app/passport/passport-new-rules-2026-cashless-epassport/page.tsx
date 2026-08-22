@@ -344,8 +344,9 @@ export default function PassportNewRules2026Page() {
             </h2>
           </div>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Processing Tier</th>
@@ -387,6 +388,7 @@ export default function PassportNewRules2026Page() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 

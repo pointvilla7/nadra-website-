@@ -174,8 +174,9 @@ export default function MatricPassingMarksRule2026Page() {
             the transition in two strict phases:
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Class / Academic Tier</th>
@@ -231,6 +232,7 @@ export default function MatricPassingMarksRule2026Page() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 
@@ -248,8 +250,9 @@ export default function MatricPassingMarksRule2026Page() {
             alongside raw marks:
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Percentage Range</th>
@@ -310,6 +313,7 @@ export default function MatricPassingMarksRule2026Page() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 

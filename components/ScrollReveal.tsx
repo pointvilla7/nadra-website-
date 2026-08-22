@@ -17,18 +17,29 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) {
+    // Check if window / matchMedia is available
+    if (typeof window === 'undefined') {
       setIsVisible(true);
       return;
     }
+
+    const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return;
+    }
+
+    // Safety fallback: reveal content after a short delay so it is never permanently hidden
+    const safetyTimer = setTimeout(() => {
+      setIsVisible(true);
+    }, 400 + delayMs);
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
+            clearTimeout(safetyTimer);
             if (ref.current) {
               observer.unobserve(ref.current);
             }
@@ -36,8 +47,8 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
         });
       },
       {
-        rootMargin: '0px 0px -40px 0px',
-        threshold: 0.08,
+        rootMargin: '200px 0px 200px 0px',
+        threshold: 0,
       }
     );
 
@@ -46,23 +57,25 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
     }
 
     return () => {
+      clearTimeout(safetyTimer);
       observer.disconnect();
     };
-  }, []);
+  }, [delayMs]);
 
   return (
     <div
       ref={ref}
       style={{
-        transitionDuration: '400ms',
+        transitionDuration: '300ms',
         transitionDelay: `${delayMs}ms`,
         transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
       }}
       className={`transition-all ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
       } ${className}`}
     >
       {children}
     </div>
   );
 };
+

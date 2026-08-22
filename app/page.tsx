@@ -203,7 +203,7 @@ export default function HomePage() {
 
       {/* CATEGORIES GRID SECTION */}
       <ScrollReveal delayMs={50}>
-        <section className="space-y-6 cv-auto">
+        <section className="space-y-6">
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center gap-2">
@@ -231,7 +231,7 @@ export default function HomePage() {
 
       {/* TRENDING GUIDES SECTION */}
       <ScrollReveal delayMs={100}>
-        <section className="space-y-6 cv-auto">
+        <section className="space-y-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-[#B8860B]" />
@@ -290,7 +290,7 @@ export default function HomePage() {
 
       {/* WHY PAKISTAN INFO HUB Section — Seamless Cream-50 Card */}
       <ScrollReveal delayMs={150}>
-        <section className="rounded-[12px] doc-card border border-[#F1F5F9] dark:border-slate-800 p-6 sm:p-10 space-y-6 cv-auto bg-[#FAF9F6] dark:bg-[#1E2A3F]">
+        <section className="rounded-[12px] doc-card border border-[#F1F5F9] dark:border-slate-800 p-6 sm:p-10 space-y-6 bg-[#FAF9F6] dark:bg-[#1E2A3F]">
           <div className="max-w-3xl space-y-3">
             <h2 className="text-[24px] sm:text-[32px] font-serif font-semibold text-[#0B1120] dark:text-white leading-[1.2]">
               {t('Why Trust Pakistan Info Hub?', 'پاکستان انفو ہب کا انتخاب کیوں؟')}

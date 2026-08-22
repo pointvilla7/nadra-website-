@@ -36,7 +36,7 @@ export const RecentlyVerifiedTicker: React.FC = () => {
   const { t } = useLanguage();
 
   const tickerConfig = [
-    { key: 'nadra-card-fee', labelEn: 'NADRA Smart CNIC Fee 2026', labelUr: 'نادرا سمارٹ شناختی کارڈ فیس 2026' },
+    { key: 'cnic-kaise-banaye', labelEn: 'NADRA Smart CNIC Fee 2026', labelUr: 'نادرا سمارٹ شناختی کارڈ فیس 2026' },
     { key: 'fee-2026', labelEn: 'Pakistani e-Passport Fee Chart', labelUr: 'پاکستان ای پاسپورٹ فیس شیڈول 2026' },
     { key: 'fbr-filer-status-check-cnic', labelEn: 'FBR Active Taxpayer List (ATL)', labelUr: 'ایف بی آر ایکٹو ٹیکس پیئر لسٹ' },
     { key: 'hajj-balloting-result-check-online', labelEn: 'MORA Hajj 2026 Balloting Results', labelUr: 'حج قرعہ اندازی نتائج 2026' },

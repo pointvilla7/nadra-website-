@@ -187,8 +187,9 @@ export default function DrivingLicenseOnlineApplyPage() {
             distinct digital capabilities, portal links, and in-person requirements.
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Province / Territory</th>
@@ -292,6 +293,7 @@ export default function DrivingLicenseOnlineApplyPage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 
@@ -408,8 +410,9 @@ export default function DrivingLicenseOnlineApplyPage() {
             Official government fee rates under DLIMS 2.0 (rates are uniform across major categories in Punjab; other provinces follow closely aligned schedules).
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Vehicle Category</th>
@@ -529,6 +532,7 @@ export default function DrivingLicenseOnlineApplyPage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 

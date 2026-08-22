@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useLanguage } from '@/lib/context/LanguageContext';
-import { Check, X, ShieldAlert, Sparkles } from 'lucide-react';
+import { Check, X, ShieldAlert, Sparkles, ArrowRightLeft } from 'lucide-react';
 
 interface ComparisonRow {
   featureEn: string;
@@ -36,10 +36,10 @@ export const ComparisonInfographic: React.FC<ComparisonInfographicProps> = ({
   const { t } = useLanguage();
 
   return (
-    <figure className="my-6 p-4 sm:p-6 bg-slate-900/80 dark:bg-doc-dark-card/90 rounded-2xl border border-doc-brass/30 shadow-lg font-sans">
+    <figure className="my-6 p-4 sm:p-6 bg-slate-900/80 dark:bg-doc-dark-card/90 rounded-2xl border border-doc-brass/30 shadow-lg font-sans overflow-hidden">
       <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
         <h3 className="text-sm font-bold font-serif text-slate-100 uppercase tracking-wider flex items-center gap-2">
-          <Sparkles className="w-4 h-4 text-doc-brass" />
+          <Sparkles className="w-4 h-4 text-doc-brass shrink-0" />
           <span>{t(titleEn, titleUr)}</span>
         </h3>
         <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
@@ -47,13 +47,21 @@ export const ComparisonInfographic: React.FC<ComparisonInfographicProps> = ({
         </span>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-left text-xs border-collapse">
+      {/* Mobile Swipe Hint */}
+      <div className="md:hidden flex items-center justify-between px-2 py-1 mb-2 text-[11px] font-mono text-slate-400">
+        <span className="flex items-center gap-1.5">
+          <ArrowRightLeft className="w-3.5 h-3.5 text-doc-brass" />
+          <span>{t('Swipe to compare both sides', 'موازنہ دیکھنے کے لیے سکرول کریں')}</span>
+        </span>
+      </div>
+
+      <div className="table-scroll-container rounded-xl border border-slate-800">
+        <table className="w-full text-left text-xs border-collapse min-w-[500px]">
           <thead>
             <tr className="border-b border-slate-700 bg-slate-800/80 text-white font-serif">
-              <th className="p-3 font-bold">{t('Key Feature', 'بنیادی خصوصیت')}</th>
-              <th className="p-3 font-bold text-emerald-400 border-l border-slate-700">{t(nameAEn, nameAUr)}</th>
-              <th className="p-3 font-bold text-amber-400 border-l border-slate-700">{t(nameBEn, nameBUr)}</th>
+              <th className="p-3 font-bold min-w-[140px]">{t('Key Feature', 'بنیادی خصوصیت')}</th>
+              <th className="p-3 font-bold text-emerald-400 border-l border-slate-700 min-w-[180px]">{t(nameAEn, nameAUr)}</th>
+              <th className="p-3 font-bold text-amber-400 border-l border-slate-700 min-w-[180px]">{t(nameBEn, nameBUr)}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-800">
@@ -80,3 +88,4 @@ export const ComparisonInfographic: React.FC<ComparisonInfographicProps> = ({
     </figure>
   );
 };
+

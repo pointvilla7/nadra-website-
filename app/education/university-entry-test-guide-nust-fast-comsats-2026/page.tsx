@@ -177,8 +177,9 @@ export default function UniversityEntryTestGuidePage() {
             Key operational differences between Pakistan&apos;s three most popular computing and engineering admissions frameworks:
           </p>
 
-          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-sm font-sans">
+          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="table-scroll-container">
+              <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Feature / Metric</th>
@@ -294,6 +295,7 @@ export default function UniversityEntryTestGuidePage() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 
