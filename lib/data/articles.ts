@@ -16387,5 +16387,205 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/ntn-registration-online-pakistan",
       "/business/company-name-availability-checker-2026"
     ]
+  },
+  "e-stamping-challan-32a-online-guide-2026": {
+    "slug": "e-stamping-challan-32a-online-guide-2026",
+    "fullPath": "/property/e-stamping-challan-32a-online-guide-2026",
+    "categoryId": "property",
+    "titleEn": "e-Stamping Challan 32-A Online Guide 2026 – Pakistan Property Stamp Papers",
+    "titleUr": "ای اسٹامپنگ چالان 32-A آن لائن گائیڈ 2026",
+    "metaDescriptionEn": "Complete guide to e-Stamping in Pakistan: Generate Challan Form 32-A online via official Board of Revenue portals (Punjab, Sindh, KP & Islamabad), automatic DC valuation rate calculations, bank payments (NBP, BOP, Sindh Bank), integrated CVT/mutation fees, and authenticity verification.",
+    "metaDescriptionUr": "پاکستان میں ای اسٹامپنگ چالان 32-A بنانے کا طریقہ۔ پنجاب، سندھ، کے پی اور اسلام آباد کے ریونیو پورٹلز، ڈی سی ریٹ اور بینک ادائیگی۔",
+    "directAnswerEn": "e-Stamping is the government's digital stamp paper system (managed by provincial Boards of Revenue and PITB) that replaced physical stamp papers to eliminate fake back-dated papers and fraud. Citizens generate Challan Form 32-A online for free, which auto-calculates stamp duty and taxes based on official DC rates. After paying at designated banks (NBP, BOP, Sindh Bank, BOK) or via 1Link PSID, a tamper-proof e-stamp certificate is issued the same day.",
+    "directAnswerUr": "ای اسٹامپنگ پنجاب، سندھ، کے پی اور اسلام آباد کے بورڈ آف ریونیو کا ڈیجیٹل سسٹم ہے جس نے جعلی اور پرانے اسٹامپ پیپرز کا خاتمہ کر دیا ہے۔ شہری پورٹل پر مفت چالان 32-A بناتے ہیں جہاں ڈی سی ریٹ کے مطابق فیس خود بخود نکل آتی ہے۔ بینک (NBP/BOP) میں ادائیگی کے بعد اسی دن کیو آر کوڈ والا اصل ای اسٹامپ مل جاتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Punjab e-Stamping Portal (PITB / BOR)",
+      "url": "https://es.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Property & Revenue Law Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Non-Judicial e-Stamp (Sale Deed / Gift / Mortgage)",
+        "serviceUr": "نان جوڈیشل ای اسٹامپ (بیع نامہ / ہبہ)",
+        "normal": "Auto DC Rate Calculated",
+        "urgent": "Instant Challan 32-A",
+        "executive": "Same Day Bank Issue"
+      },
+      {
+        "serviceEn": "Affidavit / General Agreement e-Stamp",
+        "serviceUr": "بیان حلفی / اقرار نامہ ای اسٹامپ",
+        "normal": "PKR 100 – 1,200",
+        "urgent": "Instant Print",
+        "executive": "Valid for All Legal Use"
+      },
+      {
+        "serviceEn": "Judicial e-Stamp (Court Fee)",
+        "serviceUr": "عدالتی ای اسٹامپ (کورٹ فیس)",
+        "normal": "Per Court Schedule",
+        "urgent": "Instant Generation",
+        "executive": "Online Verification"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Deed Type & Location",
+        "titleUr": "دستاویز کی قسم اور علاقہ منتخب کریں",
+        "detailEn": "Visit provincial e-stamping portal (es.punjab.gov.pk, estamps.gos.pk, or e-stamping.kp.gov.pk). Choose Non-Judicial deed type, District, Tehsil, and Mouza.",
+        "detailUr": "صوبائی ای اسٹامپنگ پورٹل پر جا کر نان جوڈیشل قسم، ضلع، تحصیل اور موضع منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter Buyer/Seller CNICs & Property Details",
+        "titleUr": "خریدار و فروخت کنندہ کے شناختی کارڈ اور رقبہ درج کریں",
+        "detailEn": "Enter CNIC numbers, names, land area in Marlas/Sq Ft, and Khasra/Khewat numbers.",
+        "detailUr": "فریقین کے شناختی کارڈ اور زمین کا رقبہ درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Auto DC Valuation & Print Challan 32-A",
+        "titleUr": "ڈی سی ریٹ کے مطابق چالان 32-A پرنٹ کریں",
+        "detailEn": "The portal automatically calculates Stamp Duty, CVT, and Registration fee. Download and print the barcoded Challan 32-A.",
+        "detailUr": "سسٹم خود بخود تمام ڈیوٹی اور فیس نکال کر چالان 32-A بنا دیتا ہے، اسے پرنٹ کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Pay at Bank & Collect e-Stamp Certificate",
+        "titleUr": "بینک میں فیس جمع کروا کر ای اسٹامپ حاصل کریں",
+        "detailEn": "Deposit payment at designated bank (BOP, NBP, Sindh Bank, BOK) or via 1Link PSID. The teller prints the official QR-coded e-Stamp certificate.",
+        "detailUr": "مقررہ بینک برانچ میں چالان جمع کروائیں اور کیو آر کوڈ والا اصل ای اسٹامپ پیپر وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need to register a user account to generate a Challan Form 32-A online?",
+        "questionUr": "کیا چالان 32-A بنانے کے لیے اکاؤنٹ بنانا لازمی ہے؟",
+        "answerEn": "No. Provincial e-stamping portals allow public citizen access to generate 32-A Challans without mandatory login.",
+        "answerUr": "نہیں! بغیر کسی اکاؤنٹ یا لاگ ان کے کوئی بھی شہری آن لائن چالان 32-A بنا سکتا ہے۔"
+      },
+      {
+        "questionEn": "How do I verify that an e-Stamp paper is authentic?",
+        "questionUr": "ای اسٹامپ پیپر کی اصلیت کیسے چیک کریں؟",
+        "answerEn": "Enter the 16-character e-Stamp ID on the official verification portal or scan the QR code with your phone camera.",
+        "answerUr": "پورٹل پر 16 ہندسوں کا کوڈ درج کر کے یا کیو آر کوڈ سکین کر کے فوری آن لائن تصدیق کریں۔"
+      },
+      {
+        "questionEn": "Can a single Challan 32-A cover Stamp Duty, CVT, and Registration Fees together?",
+        "questionUr": "کیا ایک ہی چالان میں اسٹامپ ڈیوٹی، سی وی ٹی اور رجسٹری فیس شامل ہوتی ہے؟",
+        "answerEn": "Yes. Challan 32-A combines Stamp Duty, Capital Value Tax (CVT), Registration Fees, and Mutation charges into a single invoice.",
+        "answerUr": "جی ہاں! ایک ہی چالان 32-A میں تمام سرکاری ٹیکس اور رجسٹری فیس اکٹھی جمع ہو جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete manual for generating e-Stamping Challan 32-A, DC valuation calculations, and official bank payment in Pakistan.",
+    "contentUr": "پاکستان میں ای اسٹامپنگ چالان 32-A، ڈی سی ریٹ کے مطابق فیس کا حساب اور تصدیق کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/property/punjab-land-record-fard-verifier-2026",
+      "/property/intiqal-registration-online-punjab",
+      "/property/property-tax-calculator-pakistan-2026"
+    ]
+  },
+  "pakistan-emergency-helpline-numbers-directory-2026": {
+    "slug": "pakistan-emergency-helpline-numbers-directory-2026",
+    "fullPath": "/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026",
+    "categoryId": "alerts",
+    "titleEn": "Pakistan Emergency Helpline Numbers Directory 2026 (1122, 15, 115, 130)",
+    "titleUr": "پاکستان ہنگامی ہیلپ لائن نمبرز ڈائریکٹری 2026",
+    "metaDescriptionEn": "Complete, verified directory of all 24/7 emergency helpline numbers in Pakistan: Rescue 1122 (Punjab, KP, Sindh SERS, AJK, GB), Police 15, Edhi Ambulance 115, Chhipa 1020, Fire Brigade 16, Motorway Police 130, and major hospital emergency contact numbers.",
+    "metaDescriptionUr": "پاکستان کے تمام 24 گھنٹے ہنگامی ہیلپ لائن نمبرز کی مکمل ڈائریکٹری: ریسکیو 1122، پولیس 15، ایدھی ایمبولینس 115، چھیپا 1020، فائر 16، موٹروے پولیس 130 اور ہسپتال۔",
+    "directAnswerEn": "The primary emergency number in Pakistan is 1122 (Rescue 1122 in Punjab, KP, AJK, GB, Islamabad, and SERS 1122 in Sindh), covering medical ambulances, fire emergencies, building collapse, and disaster rescue. For crime and police dial 15; for nationwide free charitable ambulance dial Edhi 115; on motorways dial 130. All are 100% free and work with zero mobile balance.",
+    "directAnswerUr": "پاکستان میں سب سے اہم ہنگامی نمبر 1122 ہے جو پنجاب، کے پی، سندھ (SERS)، آزاد کشمیر، گلگت اور اسلام آباد میں مفت ایمبولینس، فائر بریگیڈ اور ریسکیو فراہم کرتا ہے۔ جرائم پر پولیس 15، ایدھی ایمبولینس 115 اور موٹروے پر 130 ملائیں۔ یہ تمام نمبرز بغیر بیلنس کے کام کرتے ہیں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Punjab Emergency Service (Rescue 1122)",
+      "url": "https://rescue.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Safety & Emergency Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Rescue 1122 Emergency Ambulance & Fire",
+        "serviceUr": "ریسکیو 1122 ایمرجنسی سروس",
+        "normal": "100% FREE",
+        "urgent": "Immediate 24/7 Dispatch",
+        "executive": "Dial 1122"
+      },
+      {
+        "serviceEn": "Police Emergency Helpline",
+        "serviceUr": "پولیس ایمرجنسی ہیلپ لائن",
+        "normal": "100% FREE",
+        "urgent": "Nationwide Dispatch",
+        "executive": "Dial 15"
+      },
+      {
+        "serviceEn": "Edhi Foundation Ambulance",
+        "serviceUr": "ایدھی ایمبولینس سروس",
+        "normal": "100% FREE / Subsidized",
+        "urgent": "Nationwide 24/7",
+        "executive": "Dial 115"
+      },
+      {
+        "serviceEn": "Motorway Police Emergency",
+        "serviceUr": "موٹروے پولیس ہیلپ لائن",
+        "normal": "100% FREE",
+        "urgent": "Immediate Highway Patrol",
+        "executive": "Dial 130"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "State Exact Location First",
+        "titleUr": "سب سے پہلے درست پتہ بتائیں",
+        "detailEn": "Immediately provide city, street/road name, and a prominent nearby landmark before describing the issue.",
+        "detailUr": "سب سے پہلے اپنا شہر، روڈ کا نام اور قریبی مشہور جگہ بتائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Describe Emergency Nature & Victims",
+        "titleUr": "حادثے کی نوعیت اور زخمیوں کی تعداد بتائیں",
+        "detailEn": "State whether it is a road crash, cardiac emergency, fire, or crime, and the number of injured persons.",
+        "detailUr": "بتائیں کہ آگ لگی ہے، روڈ ایکسیڈنٹ ہے یا میڈیکل ایمرجنسی، اور کتنے افراد متاثر ہیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Keep Phone Line Free",
+        "titleUr": "موبائل لائن فری رکھیں",
+        "detailEn": "Keep your phone accessible so the approaching ambulance or police crew can call for exact navigation.",
+        "detailUr": "کال کے بعد فون کھلا رکھیں تاکہ ریسکیو ٹیم راستہ معلوم کرنے کے لیے رابطہ کر سکے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does dialing 1122 work in all provinces of Pakistan?",
+        "questionUr": "کیا 1122 پورے پاکستان میں کام کرتا ہے؟",
+        "answerEn": "Yes. Dialing 1122 connects to government emergency rescue in Punjab, KP, AJK, GB, Islamabad, and in Sindh via SERS 1122.",
+        "answerUr": "جی ہاں! پنجاب، کے پی، اسلام آباد، آزاد کشمیر، گلگت اور سندھ (SERS) میں 1122 مکمل فعال ہے۔"
+      },
+      {
+        "questionEn": "Do emergency helpline numbers work without mobile balance or a SIM card?",
+        "questionUr": "کیا یہ نمبرز بغیر بیلنس کے کام کرتے ہیں؟",
+        "answerEn": "Yes. 1122, 15, 16, 115, and 130 are 100% toll-free across all cellular networks with zero balance.",
+        "answerUr": "جی ہاں! تمام ایمرجنسی نمبرز زیرو بیلنس کے ساتھ تمام موبائل نیٹ ورکس پر مفت ملتے ہیں۔"
+      },
+      {
+        "questionEn": "What is the difference between Rescue 1122 and Edhi 115?",
+        "questionUr": "ریسکیو 1122 اور ایدھی 115 میں کیا فرق ہے؟",
+        "answerEn": "Rescue 1122 is a government paramedic, fire, and disaster rescue service. Edhi 115 is a nationwide non-profit ambulance and relief network.",
+        "answerUr": "ریسکیو 1122 سرکاری ریسکیو و فائر سروس ہے جبکہ ایدھی 115 فلاحی ایمبولینس نیٹ ورک ہے۔"
+      }
+    ],
+    "contentEn": "Verified directory of all 24/7 emergency rescue, police, hospital, and ambulance helpline numbers across Pakistan.",
+    "contentUr": "پاکستان میں 24 گھنٹے ہنگامی ریسکیو، پولیس، فائر بریگیڈ اور ہسپتالوں کے ایمرجنسی نمبرز کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026",
+      "/alerts/flood-alert-pakistan-ndma-pdma",
+      "/certificates/police-character-certificate-online-apply-2026"
+    ]
   }
 };

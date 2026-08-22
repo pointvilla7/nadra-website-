@@ -50,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
     '/traffic/driving-license-online-apply-renewal-dlims-2026',
     '/business/pseb-freelancer-registration-tax-benefits-2026',
+    '/property/e-stamping-challan-32a-online-guide-2026',
+    '/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
