@@ -17173,5 +17173,191 @@ export const ARTICLES: Record<string, Article> = {
       "/education/mdcat-aggregate-calculator-2026",
       "/education/bise-lahore-result-2026"
     ]
+  },
+  "how-to-file-income-tax-return-salaried-iris-2026": {
+    "slug": "how-to-file-income-tax-return-salaried-iris-2026",
+    "fullPath": "/tax/how-to-file-income-tax-return-salaried-iris-2026",
+    "categoryId": "tax",
+    "titleEn": "How to File Income Tax Return for Salaried Persons 2026 – FBR IRIS 2.0",
+    "titleUr": "تنخواہ دار افراد انکم ٹیکس ریٹرن فائلنگ طریقہ 2026",
+    "metaDescriptionEn": "Complete, step-by-step 2026 tax filing guide for salaried persons on FBR IRIS 2.0 (iris.fbr.gov.pk): Form 114(I) simplified declaration, July-June fiscal tax year, salary withholding tax deductions, wealth statement reconciliation (Section 116), and Active Taxpayer List (ATL) maintenance.",
+    "metaDescriptionUr": "ایف بی آر پورٹل پر تنخواہ دار افراد کے انکم ٹیکس گوشوارے جمع کروانے کا آسان طریقہ۔ فارم 114(I)، ویلتھ اسٹیٹمنٹ ریکنسلیشن اور 30 ستمبر ڈیڈ لائن۔",
+    "directAnswerEn": "Any individual whose salary constitutes more than 50% of their total taxable annual income can use the simplified Declaration Form 114(I) on FBR IRIS 2.0 (iris.fbr.gov.pk). Login with your 13-digit CNIC, declare gross salary and employer tax deductions, reconcile your Section 116 wealth statement to zero, and submit before September 30.",
+    "directAnswerUr": "وہ تمام افراد جن کی سالانہ آمدن کا 50 فیصد یا اس سے زائد حصہ تنخواہ پر مشتمل ہو، وہ ایف بی آر پورٹل (iris.fbr.gov.pk) پر آسان فارم 114(I) جمع کروا سکتے ہیں۔ شناختی کارڈ سے لاگ ان کریں، تنخواہ اور کٹوتی کا اندراج کریں، ویلتھ اسٹیٹمنٹ ریکنسائل کریں اور 30 ستمبر سے پہلے فائل کریں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Federal Board of Revenue (FBR) IRIS 2.0 Portal",
+      "url": "https://iris.fbr.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Tax & Financial Compliance Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Salaried Return Online Filing (Form 114(I))",
+        "serviceUr": "تنخواہ دار ٹیکس گوشوارہ آن لائن",
+        "normal": "100% FREE (No FBR Fee)",
+        "urgent": "Instant Submission on IRIS",
+        "executive": "Direct Active ATL Status"
+      },
+      {
+        "serviceEn": "Wealth Statement (Section 116)",
+        "serviceUr": "ویلتھ اسٹیٹمنٹ (سیکشن 116)",
+        "normal": "Mandatory with Return",
+        "urgent": "Unreconciled Must Equal 0.00",
+        "executive": "Personal Assets & Outflows"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Log in to FBR IRIS 2.0",
+        "titleUr": "ایف بی آر آئرس 2.0 پر لاگ ان کریں",
+        "detailEn": "Visit iris.fbr.gov.pk and enter your 13-digit CNIC (without dashes) and password.",
+        "detailUr": "سرکاری پورٹل پر جا کر اپنا شناختی کارڈ نمبر اور پاس ورڈ درج کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select Form 114(I) for Tax Year 2026",
+        "titleUr": "ٹیکس سال 2026 کے لیے فارم 114(I) منتخب کریں",
+        "detailEn": "Navigate to Declaration → 'Salary Return for Individuals - Form 114(I)' and choose Tax Year 2026.",
+        "detailUr": "ڈیکلریشن ٹیب سے تنخواہ دار افراد کا فارم 114(I) کھولیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Enter Annual Gross Salary & Withholding Tax",
+        "titleUr": "سالانہ تنخواہ اور منہا شدہ ٹیکس درج کریں",
+        "detailEn": "Input annual gross income from your employer salary certificate and advance tax under Section 149.",
+        "detailUr": "سیلری سرٹیفکیٹ کے مطابق کل سالانہ آمدن اور کٹنے والا ٹیکس درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Reconcile Wealth Statement (Section 116) & Submit",
+        "titleUr": "ویلتھ اسٹیٹمنٹ ریکنسائل کر کے جمع کروائیں",
+        "detailEn": "Declare assets, liabilities, and household expenses until the unreconciled amount equals 0.00, then submit.",
+        "detailUr": "تمام اثاثے اور اخراجات درج کر کے رقم 0.00 کریں اور گوشوارہ جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need a lawyer for a simple salary return?",
+        "questionUr": "کیا تنخواہ دار ریٹرن کے لیے وکیل کی ضرورت ہے؟",
+        "answerEn": "No. Salaried individuals can easily file Form 114(I) themselves on IRIS 2.0 within 15-20 minutes.",
+        "answerUr": "نہیں! تنخواہ دار افراد خود اپنے گھر بیٹھے 15 سے 20 منٹ میں ریٹرن فائل کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "What does wealth statement reconciliation mean?",
+        "questionUr": "ویلتھ ریکنسلیشن کا کیا مطلب ہے؟",
+        "answerEn": "It means the change in your net assets from last year must exactly equal your income minus expenses.",
+        "answerUr": "اس کا مطلب ہے کہ پچھلے سال کے مقابلے میں اثاثوں کی تبدیلی آپ کی آمدن اور اخراجات کے برابر ہونی چاہیے۔"
+      },
+      {
+        "questionEn": "Can overseas Pakistanis file on IRIS remotely?",
+        "questionUr": "کیا سمندر پار پاکستانی باہر سے ریٹرن فائل کر سکتے ہیں؟",
+        "answerEn": "Yes. Non-resident Pakistanis can log in using CNIC/NICOP and file to maintain active ATL status.",
+        "answerUr": "جی ہاں! اوورسیز پاکستانی پورٹل پر لاگ ان کر کے ایکٹو ٹیکس پیئر رہنے کے لیے ریٹرن فائل کر سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Step-by-step guide to filing salaried income tax returns on FBR IRIS 2.0, Form 114(I), salary certificates, and wealth statement reconciliation.",
+    "contentUr": "ایف بی آر پورٹل پر تنخواہ دار افراد کے انکم ٹیکس گوشوارے جمع کروانے کا آسان طریقہ، ویلتھ اسٹیٹمنٹ اور تصدیق۔",
+    "relatedSlugs": [
+      "/tax/fbr-active-taxpayer-status-helper-2026",
+      "/tax/how-to-become-tax-filer-pakistan-2026",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
+  },
+  "bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026": {
+    "slug": "bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
+    "fullPath": "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
+    "categoryId": "welfare",
+    "titleEn": "BISP Kafaalat vs Nashonuma vs Taleemi Wazaif 2026 – Differences & 8171 Check",
+    "titleUr": "بینظیر کفالت، نشوونما اور تعلیمی وظائف کا تقابلی جائزہ 2026",
+    "metaDescriptionEn": "Complete guide to Benazir Income Support Programme (BISP) sub-schemes: Understand the differences between Benazir Kafaalat (unconditional cash), Taleemi Wazaif (conditional 70% school attendance), and Nashonuma (maternal/child health). Check status via the official 8171 portal.",
+    "metaDescriptionUr": "بینظیر انکم سپورٹ پروگرام کے ذیلی منصوبوں کی تفصیل: کفالت پروگرام، تعلیمی وظائف (70 فیصد حاضری شرط) اور نشوونما پروگرام میں فرق اور 8171 اسٹیٹس چیک۔",
+    "directAnswerEn": "These are three distinct programs under BISP. Benazir Kafaalat provides unconditional quarterly cash transfers to eligible women. Benazir Taleemi Wazaif provides conditional education stipends for school-going children (requiring 70% attendance). Benazir Nashonuma provides specialized maternal/infant nutrition support at DHQ/THQ hospitals. Check all three via 8171.",
+    "directAnswerUr": "یہ بی آئی ایس پی کے 3 الگ پروگرام ہیں۔ کفالت خواتین کے لیے غیر مشروط سہ ماہی وظیفہ ہے۔ تعلیمی وظائف اسکول جانے والے بچوں کے لیے ہے جس میں 70 فیصد اسکول حاضری لازمی ہے۔ نشوونما حاملہ خواتین اور 2 سال سے کم عمر بچوں کی خوراک کے لیے ہسپتالوں میں قائم ہے۔ اسٹیٹس 8171 سے چیک کریں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Benazir Income Support Programme (BISP) Official Portal",
+      "url": "https://bisp.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Social Protection & Welfare Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Benazir Kafaalat",
+        "serviceUr": "بینظیر کفالت پروگرام",
+        "normal": "Unconditional Quarterly Cash",
+        "urgent": "PMT Score ≤ 32 Cutoff",
+        "executive": "Ever-Married Eligible Women"
+      },
+      {
+        "serviceEn": "Benazir Taleemi Wazaif",
+        "serviceUr": "بینظیر تعلیمی وظائف",
+        "normal": "Conditional Quarterly Stipend",
+        "urgent": "70% School Attendance",
+        "executive": "Primary to Higher Secondary"
+      },
+      {
+        "serviceEn": "Benazir Nashonuma",
+        "serviceUr": "بینظیر نشوونما پروگرام",
+        "normal": "Health & Nutrition Support",
+        "urgent": "Hospital Health Visits",
+        "executive": "Pregnant / Lactating Mothers"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Enroll in Base Kafaalat Program",
+        "titleUr": "پہلے بنیادی کفالت پروگرام میں رجسٹر ہوں",
+        "detailEn": "Complete the dynamic NSER survey at your local BISP center to qualify under the PMT poverty score cutoff.",
+        "detailUr": "این ایس ای آر سروے مکمل کر کے پی ایم ٹی اسکور کے مطابق بنیادی کفالت میں شامل ہوں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Register Children with B-Form & School Slip",
+        "titleUr": "بچوں کا ب فارم اور اسکول سلپ جمع کروائیں",
+        "detailEn": "Take child's NADRA B-Form and stamped school admission slip to the BISP Tehsil Office for Taleemi Wazaif enrollment.",
+        "detailUr": "نادرا ب فارم اور اسکول کی تصدیق شدہ پرچی کے ساتھ تعلیمی وظائف کے لیے اندراج کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Maintain 70% School Attendance & Track 8171",
+        "titleUr": "70 فیصد اسکول حاضری برقرار رکھیں اور 8171 سے چیک کریں",
+        "detailEn": "Ensure student maintains at least 70% attendance each quarter. Check combined family balance at 8171.bisp.gov.pk.",
+        "detailUr": "ہر سہ ماہی میں 70 فیصد اسکول حاضری رکھیں اور پورٹل سے وظیفہ چیک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I get Taleemi Wazaif without being a Kafaalat beneficiary?",
+        "questionUr": "کیا کفالت کے بغیر تعلیمی وظائف مل سکتے ہیں؟",
+        "answerEn": "No. The mother must be an active registered Kafaalat beneficiary for children to qualify for education stipends.",
+        "answerUr": "نہیں! تعلیمی وظائف کے لیے والدہ کا بینظیر کفالت میں فعال ہونا لازمی شرط ہے۔"
+      },
+      {
+        "questionEn": "Why did my child's Taleemi Wazaif stipend stop?",
+        "questionUr": "بچے کا تعلیمی وظیفہ کیوں بند ہو جاتا ہے؟",
+        "answerEn": "Payments pause if the child's school attendance falls below the mandatory 70% quarterly threshold.",
+        "answerUr": "اگر بچے کی سہ ماہی اسکول حاضری 70 فیصد سے کم ہو تو وظیفہ عارضی طور پر رک جاتا ہے۔"
+      },
+      {
+        "questionEn": "Is BISP registration completely free of cost?",
+        "questionUr": "کیا بی آئی ایس پی کی رجسٹریشن مفت ہے؟",
+        "answerEn": "Yes. Registration is 100% free at official BISP Tehsil Offices and government hospital Nashonuma centers.",
+        "answerUr": "جی ہاں! تمام سرکاری دفاتر اور ہسپتالوں میں رجسٹریشن بالکل مفت ہے۔"
+      }
+    ],
+    "contentEn": "Clarifying guide to BISP sub-programs: Benazir Kafaalat, conditional 70% attendance Taleemi Wazaif, and Nashonuma health centers.",
+    "contentUr": "بینظیر انکم سپورٹ پروگرام کے منصوبوں کی تفصیل، تعلیمی وظائف کی 70 فیصد حاضری اور 8171 پورٹل رہنمائی۔",
+    "relatedSlugs": [
+      "/welfare/bisp-payment-check",
+      "/welfare/pmt-score-explained-bisp-eligibility-2026",
+      "/welfare/sehat-card-eligibility-checker-2026"
+    ]
   }
 };

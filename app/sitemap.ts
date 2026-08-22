@@ -58,6 +58,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/certificates/death-certificate-registration-process-2026',
     '/passport/lost-passport-abroad-reissuance-process-2026',
     '/education/university-entry-test-guide-nust-fast-comsats-2026',
+    '/tax/how-to-file-income-tax-return-salaried-iris-2026',
+    '/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
