@@ -54,6 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026',
     '/jobs/beoe-protector-registration-overseas-employment-2026',
     '/nadra/lost-stolen-cnic-replacement-2026',
+    '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',
+    '/certificates/death-certificate-registration-process-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',

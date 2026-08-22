@@ -16787,5 +16787,205 @@ export const ARTICLES: Record<string, Article> = {
       "/nadra/b-form-frc-status-check",
       "/nadra/pak-id-biometric-verification-fix"
     ]
+  },
+  "kamyab-jawan-pm-youth-loan-current-status-2026": {
+    "slug": "kamyab-jawan-pm-youth-loan-current-status-2026",
+    "fullPath": "/loans/kamyab-jawan-pm-youth-loan-current-status-2026",
+    "categoryId": "loans",
+    "titleEn": "Kamyab Jawan & PM Youth Loan Scheme 2026 – Current Status, Tiers & Apply",
+    "titleUr": "کامیاب جوان اور پی ایم یوتھ بزنس لون سکیم 2026",
+    "metaDescriptionEn": "Is Kamyab Jawan still active? Complete 2026 status of the Prime Minister’s Youth Business & Agriculture Loan Scheme (PMYB&ALS). Learn current loan tiers (Tier 1 interest-free up to Rs. 0.5M, Tier 2 at 5% up to Rs. 1.5M, Tier 3 at 7% up to Rs. 7.5M), eligibility (21-45 years), participating banks, and online apply at pmyp.gov.pk.",
+    "metaDescriptionUr": "کامیاب جوان اور وزیر اعظم یوتھ بزنس اینڈ ایگریکلچر لون سکیم کی موجودہ صورتحال، بلاسود قرضے، مارک اپ کی شرح اور آن لائن اپلائی کا طریقہ۔",
+    "directAnswerEn": "Yes, the program is fully active under its official revised name: Prime Minister's Youth Business & Agriculture Loan Scheme (PMYB&ALS). 'Kamyab Jawan' branding has been retired. The scheme offers three tiers: Tier 1 up to Rs. 500,000 (0% interest-free), Tier 2 up to Rs. 1.5 million (5% markup), and Tier 3 up to Rs. 7.5 million (7% markup). Apply 100% online at pmyp.gov.pk.",
+    "directAnswerUr": "جی ہاں! یہ پروگرام اب 'پرائم منسٹر یوتھ بزنس اینڈ ایگریکلچر لون سکیم' (PMYB&ALS) کے نام سے مکمل فعال ہے جبکہ 'کامیاب جوان' کا نام ختم ہو چکا ہے۔ اس میں 5 لاکھ تک بلاسود (0%) قرض، 15 لاکھ تک 5% اور 75 لاکھ تک 7% مارک اپ پر قرض دیا جا رہا ہے۔ آن لائن درخواست pmyp.gov.pk پر جمع ہوتی ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Prime Minister’s Youth Programme (PMYP)",
+      "url": "https://pmyp.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Govt Schemes & Financial Literacy Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Tier 1 (T1) Micro-Loan (Up to Rs. 500,000)",
+        "serviceUr": "ٹیئر 1 مائیکرو لون (5 لاکھ تک)",
+        "normal": "0% (Interest-Free)",
+        "urgent": "Clean / Personal Guarantee",
+        "executive": "Up to 3 Years Tenor"
+      },
+      {
+        "serviceEn": "Tier 2 (T2) Small Business (Rs. 500K – 1.5M)",
+        "serviceUr": "ٹیئر 2 سمال بزنس (15 لاکھ تک)",
+        "normal": "5% Fixed per annum",
+        "urgent": "Hypothecation of Stock",
+        "executive": "Up to 8 Years (1 yr grace)"
+      },
+      {
+        "serviceEn": "Tier 3 (T3) Medium Enterprise (Rs. 1.5M – 7.5M)",
+        "serviceUr": "ٹیئر 3 میڈیم انٹرپرائز (75 لاکھ تک)",
+        "normal": "7% Fixed per annum",
+        "urgent": "Tangible Bank Collateral",
+        "executive": "Up to 8 Years (1 yr grace)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Official Portal pmyp.gov.pk",
+        "titleUr": "آفیشل پورٹل pmyp.gov.pk کھولیں",
+        "detailEn": "Navigate to pmyp.gov.pk, click 'Apply for Loan', and enter your CNIC and CNIC issue date.",
+        "detailUr": "سرکاری پورٹل پر جا کر اپنا شناختی کارڈ اور تاریخ اجراء درج کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select Financing Tier & Partner Bank",
+        "titleUr": "قرض کی قسم اور بینک منتخب کریں",
+        "detailEn": "Select required loan tier (T1 0%, T2 5%, or T3 7%) and choose your preferred executing bank (NBP, BOP, BOK, HBL, etc.).",
+        "detailUr": "اپنی ضرورت کے مطابق ٹیئر 1، 2 یا 3 اور قریبی پارٹنر بینک منتخب کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Submit Online Feasibility & Revenue Plan",
+        "titleUr": "کاروباری پلان اور آمدن کی تفصیلات درج کریں",
+        "detailEn": "Provide business revenue estimates, operational expenses, capital requirements, and personal credentials online.",
+        "detailUr": "اپنے نئے یا موجودہ کاروبار کی متوقع آمدن اور اخراجات کا پلان جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Track Application & Bank Verification",
+        "titleUr": "درخواست ٹریک کریں اور بینک تصدیق مکمل کروائیں",
+        "detailEn": "Receive your registration number via SMS and track progress on the portal while the bank performs credit checks.",
+        "detailUr": "ایس ایم ایس پر ٹریکنگ نمبر حاصل کریں اور بینک کی فزیکل و کریڈٹ ویریفکیشن مکمل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is Kamyab Jawan still the active official name of the program?",
+        "questionUr": "کیا کامیاب جوان اب بھی اس پروگرام کا سرکاری نام ہے؟",
+        "answerEn": "No. The program is officially named Prime Minister's Youth Business & Agriculture Loan Scheme (PMYB&ALS).",
+        "answerUr": "نہیں! یہ اب پرائم منسٹر یوتھ بزنس اینڈ ایگریکلچر لون سکیم کے نام سے فعال ہے۔"
+      },
+      {
+        "questionEn": "What are the age limits to apply for PM Youth Loans?",
+        "questionUr": "قرض کے لیے عمر کی حد کیا ہے؟",
+        "answerEn": "Standard age is 21 to 45 years. For IT and E-commerce startups, the minimum age is 18 years.",
+        "answerUr": "عام کاروبار کے لیے 21 سے 45 سال، جبکہ آئی ٹی اور ای کامرس کے لیے کم از کم 18 سال ہے۔"
+      },
+      {
+        "questionEn": "Is Tier 1 up to Rs. 500,000 completely interest-free?",
+        "questionUr": "کیا 5 لاکھ تک کا قرضہ واقعی بلاسود ہے؟",
+        "answerEn": "Yes. Tier 1 micro-loans up to Rs. 500,000 are 100% interest-free (0% mark-up) subsidized by the federal government.",
+        "answerUr": "جی ہاں! ٹیئر 1 کے تحت 5 لاکھ روپے تک کا قرضہ مکمل 0 فیصد بلاسود ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to PM Youth Business & Agriculture Loan Scheme (formerly Kamyab Jawan), loan tiers, markup rates, and online apply at pmyp.gov.pk.",
+    "contentUr": "وزیر اعظم یوتھ بزنس و ایگریکلچر لون سکیم کی مکمل رہنمائی، بلاسود قرضے، شرائط اور آن لائن اپلائی کا طریقہ۔",
+    "relatedSlugs": [
+      "/loans/emi-calculator-2026",
+      "/loans/how-to-spot-fake-loan-scheme-scams-2026",
+      "/business/secp-company-registration-online-2026"
+    ]
+  },
+  "death-certificate-registration-process-2026": {
+    "slug": "death-certificate-registration-process-2026",
+    "fullPath": "/certificates/death-certificate-registration-process-2026",
+    "categoryId": "certificates",
+    "titleEn": "Death Certificate Registration Process 2026 – Union Council & NADRA Cancellation",
+    "titleUr": "ڈیتھ سرٹیفکیٹ اور نادرا شناختی کارڈ تنسیخ کا طریقہ 2026",
+    "metaDescriptionEn": "Step-by-step guide to registering a death in Pakistan: Union Council, Cantonment Board & CDA procedures, required documents (hospital slip vs home death witness attestation), free 1-year registration rules, and mandatory NADRA CNIC cancellation certificate for inheritance.",
+    "metaDescriptionUr": "پاکستان میں یونین کونسل کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ بنوانے کا طریقہ، ہسپتال یا گھر میں وفات کی صورت میں گواہان کے اصول اور نادرا شناختی کارڈ منسوخی۔",
+    "directAnswerEn": "A death must be reported to the local Union Council (or Cantonment Board / CDA Directorate of Municipal Administration) where the death occurred, NOT directly to NADRA. The local authority registers the event in the Civil Registration Management System (CRMS) and prints the official certificate. Afterward, take this certificate to NADRA to cancel the deceased's CNIC.",
+    "directAnswerUr": "وفات کا اندراج نادرا میں نہیں بلکہ متعلقہ یونین کونسل، کنٹونمنٹ بورڈ یا سی ڈی اے میں کروایا جاتا ہے۔ یونین کونسل سی آر ایم ایس (CRMS) سسٹم میں اندراج کر کے کمپیوٹرائزڈ سرٹیفکیٹ جاری کرتی ہے۔ اس کے بعد نادرا جا کر شناختی کارڈ منسوخ کروایا جاتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Local Government Civil Registration Management System (CRMS)",
+      "url": "https://lgcd.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Civil Registration & Legal Affairs Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Standard Registration (Within 60 Days – 1 Year)",
+        "serviceUr": "بروقت وفات رجسٹریشن (1 سال کے اندر)",
+        "normal": "FREE (Rs. 100 – 200 print charge)",
+        "urgent": "3 to 7 Working Days",
+        "executive": "Standard UC Secretary Approval"
+      },
+      {
+        "serviceEn": "Late Registration (1 to 5 Years)",
+        "serviceUr": "لیٹ رجسٹریشن (1 سے 5 سال بعد)",
+        "normal": "PKR 500 – 1,000",
+        "urgent": "7 to 15 Working Days",
+        "executive": "Requires AC / Magistrate Order"
+      },
+      {
+        "serviceEn": "NADRA CNIC Cancellation Certificate",
+        "serviceUr": "نادرا شناختی کارڈ تنسیخ سرٹیفکیٹ",
+        "normal": "Standard NADRA Verification",
+        "urgent": "Same Day / NRC Express",
+        "executive": "Mandatory for Succession / Heirs"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Relevant Local Union Council",
+        "titleUr": "متعلقہ یونین کونسل یا کنٹونمنٹ بورڈ تشریف لے جائیں",
+        "detailEn": "Go to the Union Council, Cantonment Board, or CDA DMA office in the jurisdiction where the death or burial took place.",
+        "detailUr": "جس علاقے میں وفات یا تدفین ہوئی ہو، وہاں کی یونین کونسل میں جائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Proof Documents (Hospital Slip or 2 Witnesses)",
+        "titleUr": "ہسپتال سرٹیفکیٹ یا 2 گواہان کے بیانات جمع کروائیں",
+        "detailEn": "Submit hospital death slip (or 2 witness CNIC attestations for home death), graveyard slip, deceased CNIC, and applicant CNIC.",
+        "detailUr": "ہسپتال کی پرچی (یا گھر پر وفات کی صورت میں 2 گواہوں کے دستخط)، قبرستان کی پرچی اور شناختی کارڈ جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "CRMS Data Entry & Collect Computerized Certificate",
+        "titleUr": "کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ حاصل کریں",
+        "detailEn": "UC Secretary registers the record in CRMS and issues the official barcoded Computerized Death Certificate.",
+        "detailUr": "سیکرٹری سی آر ایم ایس سسٹم میں اندراج کر کے بار کوڈ والا اصل کمپیوٹرائزڈ سرٹیفکیٹ جاری کرتا ہے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Surrender CNIC at NADRA for Cancellation Certificate",
+        "titleUr": "نادرا جا کر شناختی کارڈ منسوخ کروائیں",
+        "detailEn": "Visit NADRA with the UC death certificate to cancel the deceased CNIC and receive the official NADRA Cancellation Certificate.",
+        "detailUr": "یونین کونسل کا سرٹیفکیٹ نادرا لے جا کر کارڈ منسوخ کروائیں تاکہ جائیداد کی وراثت کا عمل مکمل ہو سکے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Where do I report a death in Pakistan?",
+        "questionUr": "وفات کا اندراج کہاں کروایا جاتا ہے؟",
+        "answerEn": "Report to the local Union Council, Cantonment Board, or CDA office where death occurred, not directly to NADRA.",
+        "answerUr": "وفات کا اندراج متعلقہ یونین کونسل یا کنٹونمنٹ بورڈ میں ہوتا ہے، نادرا میں نہیں۔"
+      },
+      {
+        "questionEn": "How do I register a death that occurred at home without a hospital report?",
+        "questionUr": "گھر پر وفات کی صورت میں بغیر ہسپتال سرٹیفکیٹ کیسے اندراج کروائیں؟",
+        "answerEn": "Provide graveyard burial receipt and CNIC attestations from two adult witnesses who personally knew the deceased.",
+        "answerUr": "قبرستان کی پرچی اور محلے کے 2 بالغ افراد کے شناختی کارڈ کی تصدیق کے ساتھ اندراج ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "Why is cancelling the deceased's CNIC at NADRA mandatory?",
+        "questionUr": "نادرا سے شناختی کارڈ منسوخ کروانا کیوں لازمی ہے؟",
+        "answerEn": "It prevents identity/bank fraud and is legally required to obtain a Succession Certificate for inheritance distribution.",
+        "answerUr": "یہ جعل سازی روکتا ہے اور جائیداد کی وراثت کے لیے جانشینی سرٹیفکیٹ حاصل کرنے کے لیے لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to Union Council computerized death certificate registration, home death witness rules, and NADRA CNIC cancellation certificate in Pakistan.",
+    "contentUr": "یونین کونسل کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ کے اندراج، گواہان کے اصول اور نادرا شناختی کارڈ تنسیخ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/certificates/succession-certificate-nadra-legal-heirs",
+      "/certificates/police-character-certificate-online-apply-2026",
+      "/nadra/lost-stolen-cnic-replacement-2026"
+    ]
   }
 };
