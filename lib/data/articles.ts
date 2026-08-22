@@ -16587,5 +16587,205 @@ export const ARTICLES: Record<string, Article> = {
       "/alerts/flood-alert-pakistan-ndma-pdma",
       "/certificates/police-character-certificate-online-apply-2026"
     ]
+  },
+  "beoe-protector-registration-overseas-employment-2026": {
+    "slug": "beoe-protector-registration-overseas-employment-2026",
+    "fullPath": "/jobs/beoe-protector-registration-overseas-employment-2026",
+    "categoryId": "jobs",
+    "titleEn": "BEOE Protector Registration Guide 2026 – Overseas Employment Fees",
+    "titleUr": "بیورو آف ایمیگریشن پروٹیکٹر رجسٹریشن گائیڈ 2026",
+    "metaDescriptionEn": "Complete guide to BEOE Protector of Emigrants registration in Pakistan: Step-by-step e-Protector online apply at beoe.gov.pk, Rs. 9,200 fee breakdown (OPF, State Life insurance, OEC), direct emigrant vs OEP agency process, GAMCA medical report, and fake agent verification.",
+    "metaDescriptionUr": "بیرون ملک ملازمت کے لیے پروٹیکٹر آف ایمیگرنٹس رجسٹریشن کا مکمل طریقہ۔ 9200 روپے فیس، او پی ایف ویلفیئر فنڈ، اسٹیٹ لائف انشورنس اور گیمکا میڈیکل رپورٹ۔",
+    "directAnswerEn": "BEOE Protection is legal government registration under the Emigration Ordinance 1979 that protects overseas Pakistani workers with Rs. 1,000,000 State Life insurance (valid 5 years) and OPF welfare membership. FIA airport immigration strictly bars any employment visa holder from boarding without Protector clearance. The total fee for direct emigrants is Rs. 9,200, payable online via NBP QR/1Link.",
+    "directAnswerUr": "پروٹیکٹر ایمیگریشن آرڈیننس 1979 کے تحت قانونی رجسٹریشن ہے جس سے ورکر کو 10 لاکھ کا اسٹیٹ لائف انشورنس اور اوورسیز فاؤنڈیشن کی ممبرشپ ملتی ہے۔ بغیر پروٹیکٹر کے ایف آئی اے ایئرپورٹ پر بورڈنگ نہیں ہونے دیتی۔ ڈائریکٹ ایمیگرنٹ کی کل فیس 9200 روپے ہے جو آن لائن ادا کی جا سکتی ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Bureau of Emigration & Overseas Employment (BEOE)",
+      "url": "https://beoe.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Overseas Employment & Immigration Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "OPF Welfare Fund Fee",
+        "serviceUr": "او پی ایف ویلفیئر فنڈ",
+        "normal": "PKR 4,000",
+        "urgent": "Includes OPF Membership",
+        "executive": "Valid Full Job Tenure"
+      },
+      {
+        "serviceEn": "State Life Insurance Premium (PKR 10 Lakh Cover)",
+        "serviceUr": "اسٹیٹ لائف انشورنس پریمیم (10 لاکھ کوریج)",
+        "normal": "PKR 2,500",
+        "urgent": "5 Years Comprehensive",
+        "executive": "Designated Nominee Beneficiary"
+      },
+      {
+        "serviceEn": "BEOE Registration & OEC Fee",
+        "serviceUr": "گورنمنٹ رجسٹریشن و او ای سی فیس",
+        "normal": "PKR 2,700 (2500 + 200)",
+        "urgent": "Centralized FIA Clearance",
+        "executive": "e-Protector Certificate"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Account on e-Protector Portal",
+        "titleUr": "ای پروٹیکٹر پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Sign up on beoe.gov.pk/online-emigrant-registration-delta using your CNIC and active mobile number.",
+        "detailUr": "بیورو آف ایمیگریشن کی آفیشل ویب سائٹ پر شناختی کارڈ سے اکاؤنٹ رجسٹر کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Upload Passport, Visa & Employment Contract",
+        "titleUr": "پاسپورٹ، ویزا اور ملازمت کا معاہدہ اپلوڈ کریں",
+        "detailEn": "Upload clear scanned copies of your passport, valid foreign work visa, signed Foreign Service Agreement, and GAMCA medical report.",
+        "detailUr": "پاسپورٹ، ویزا کاپی، کمپنی کا جاب کنٹریکٹ اور گیمکا میڈیکل رپورٹ اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay PKR 9,200 Fee via NBP QR / 1Link",
+        "titleUr": "9200 روپے فیس این بی پی کیو آر یا 1Link سے ادا کریں",
+        "detailEn": "Complete digital payment through NBP QR scan or 1Link 1Bill PSID in your mobile banking app.",
+        "detailUr": "موبائل بینکنگ ایپ سے کیو آر کوڈ سکین کر کے سرکاری فیس ادا کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download Digital OEC Certificate",
+        "titleUr": "ڈیجیٹل او ای سی سرٹیفکیٹ ڈاؤن لوڈ کریں",
+        "detailEn": "Complete the digital pre-departure briefing and download your QR-coded Overseas Employment Certificate.",
+        "detailUr": "مختصر آن لائن بریفنگ کے بعد کیو آر کوڈ والا پروٹیکٹر سرٹیفکیٹ ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What happens if I try to board a flight on a work visa without the Protector stamp?",
+        "questionUr": "اگر بغیر پروٹیکٹر کے ایئرپورٹ جائیں تو کیا ہوگا؟",
+        "answerEn": "FIA immigration counters at airports will offload and bar you from traveling abroad under the Emigration Ordinance 1979.",
+        "answerUr": "ایف آئی اے امیگریشن آپ کو فوری طور پر آف لوڈ کر کے سفر سے روک دے گی۔"
+      },
+      {
+        "questionEn": "Do I need to redo the Protector registration for vacation trips to the same job?",
+        "questionUr": "کیا چھٹی پر آ کر واپس جانے پر دوبارہ پروٹیکٹر کروانا ہوگا؟",
+        "answerEn": "No. Returning to the exact same foreign job and employer under a valid visa does not require a fresh Protector stamp.",
+        "answerUr": "نہیں! اسی نوکری اور اسی ویزا پر واپس جانے کے لیے دوبارہ پروٹیکٹر کی ضرورت نہیں ہوتی۔"
+      },
+      {
+        "questionEn": "How do I check if my recruiting agent is a licensed OEP?",
+        "questionUr": "ریکروٹنگ ایجنٹ کا سرکاری لائسنس کیسے چیک کریں؟",
+        "answerEn": "Visit beoe.gov.pk/oep-search and search by agency name or license number to verify active standing.",
+        "answerUr": "بیورو کی ویب سائٹ beoe.gov.pk/oep-search پر جا کر ایجنسی کا لائسنس نمبر چیک کریں۔"
+      }
+    ],
+    "contentEn": "Complete guide to BEOE e-Protector online registration, Rs. 9,200 fee breakdown, GAMCA medical rules, and OEP agency verification.",
+    "contentUr": "اوورسیز ملازمت کے لیے پروٹیکٹر آن لائن بنوانے کا مکمل طریقہ، 9200 روپے فیس شیڈول اور او ای پی ایجنٹ تصدیق۔",
+    "relatedSlugs": [
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/overseas/pakistan-embassy-attestation-documents",
+      "/jobs/latest-govt-jobs-pakistan"
+    ]
+  },
+  "lost-stolen-cnic-replacement-2026": {
+    "slug": "lost-stolen-cnic-replacement-2026",
+    "fullPath": "/nadra/lost-stolen-cnic-replacement-2026",
+    "categoryId": "nadra",
+    "titleEn": "Lost or Stolen CNIC Replacement Guide 2026 – Reprint vs Renewal",
+    "titleUr": "گم شدہ یا چوری شناختی کارڈ کا دوبارہ اجراء 2026",
+    "metaDescriptionEn": "Lost or had your Pakistani CNIC stolen? Step-by-step 2026 guide on applying for a Duplicate/Reprint Smart CNIC via the Pak-ID app or NADRA centers. Fee table (Rs. 750 Normal, Rs. 1,500 Urgent, Rs. 2,500 Executive), police FIR guidelines, token slip usage, and Reprint vs Renewal distinction.",
+    "metaDescriptionUr": "گم شدہ شناختی کارڈ دوبارہ بنوانے کا طریقہ۔ پاک آئی ڈی ایپ آن لائن اپلائی، ری پرنٹ بمقابلہ تجدید، پولیس رپورٹ اور فیس شیڈول 2026۔",
+    "directAnswerEn": "If your lost CNIC was unexpired (still within its validity date), apply under 'Reprint' (Duplicate) to receive an exact replacement retaining your original expiry date. If your lost card had already expired or has less than 6 months left, apply under 'Renewal' for a fresh 10-year validity. Both can be done online via the Pak-ID app.",
+    "directAnswerUr": "اگر گم شدہ شناختی کارڈ کی مدت ختم نہیں ہوئی تھی تو 'ری پرنٹ' (ڈپلیکیٹ) کی درخواست دیں تاکہ پرانی تاریخ والا کارڈ مل جائے۔ اگر کارڈ پہلے سے ایکسپائر تھا تو 'تجدید' (Renewal) کروائیں جس سے 10 سال کی نئی میعاد ملے گی۔ دونوں پاک آئی ڈی ایپ سے آن لائن ہو جاتے ہیں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "NADRA Pak-Identity Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "NADRA Identity Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Normal Smart CNIC Reprint",
+        "serviceUr": "نارمل سمارٹ کارڈ ری پرنٹ",
+        "normal": "PKR 750",
+        "urgent": "31 Working Days",
+        "executive": "Standard Postal Delivery"
+      },
+      {
+        "serviceEn": "Urgent Smart CNIC Reprint",
+        "serviceUr": "ارجنٹ سمارٹ کارڈ ری پرنٹ",
+        "normal": "PKR 1,500",
+        "urgent": "15 Working Days",
+        "executive": "Fast-Track Printing"
+      },
+      {
+        "serviceEn": "Executive Smart CNIC Reprint",
+        "serviceUr": "ایگزیکٹو سمارٹ کارڈ ری پرنٹ",
+        "normal": "PKR 2,500",
+        "urgent": "7 Working Days",
+        "executive": "Mega Center Priority"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "File Police Report (If Stolen)",
+        "titleUr": "چوری کی صورت میں تھانے یا خدمت مرکز رپورٹ کریں",
+        "detailEn": "Report stolen card at local police station or Police Khidmat Markaz (PKM) to prevent identity theft and fraud.",
+        "detailUr": "شناختی کارڈ چوری ہونے پر فوری طور پر تھانے یا خدمت مرکز میں رپٹ درج کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select 'Reprint' on Pak-ID App",
+        "titleUr": "پاک آئی ڈی ایپ پر ری پرنٹ منتخب کریں",
+        "detailEn": "Log in to Pak-ID mobile app (or visit NRC), select 'CNIC Reprint' for unexpired cards, and enter your 13-digit CNIC.",
+        "detailUr": "پاک آئی ڈی ایپ پر 'CNIC Reprint' سلیکٹ کر کے اپنا شناختی کارڈ نمبر درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Complete Biometrics & Pay Fee",
+        "titleUr": "بائیو میٹرک فنگر پرنٹ اور فیس ادا کریں",
+        "detailEn": "Scan fingerprints via smartphone camera and pay fee (Normal Rs. 750, Urgent Rs. 1500, Executive Rs. 2500) via debit card or 1Link.",
+        "detailUr": "موبائل کیمرے سے انگلیوں کے نشانات سکین کریں اور آن لائن فیس ادا کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Track Dispatch with Token Slip",
+        "titleUr": "ٹوکن سلپ سے کارڈ ٹریک کریں",
+        "detailEn": "Use your Tracking ID on track.nadra.gov.pk to monitor printing and doorstep courier delivery.",
+        "detailUr": "ٹریکنگ آئی ڈی سے نادرا ویب سائٹ پر کارڈ کی ترسیل کا سٹیٹس چیک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the difference between Reprint and Renewal for a lost CNIC?",
+        "questionUr": "گم شدہ کارڈ کے ری پرنٹ اور تجدید میں کیا فرق ہے؟",
+        "answerEn": "Reprint is for valid unexpired cards (retains old expiry). Renewal is for expired cards (grants a fresh 10-year validity).",
+        "answerUr": "اگر کارڈ ایکسپائر نہیں تھا تو ری پرنٹ منتخب کریں، اور اگر ایکسپائر تھا تو تجدید کروائیں۔"
+      },
+      {
+        "questionEn": "Can I change my address while applying for a lost CNIC reprint?",
+        "questionUr": "کیا گم شدہ کارڈ دوبارہ بنواتے ہوئے پتہ تبدیل ہو سکتا ہے؟",
+        "answerEn": "No. The Reprint category prints existing records without changes. Changing address requires a separate Modification application.",
+        "answerUr": "نہیں! پتہ تبدیل کروانے کے لیے موڈیفکیشن (Modification) کی درخواست دینی ہوگی۔"
+      },
+      {
+        "questionEn": "What can I use the NADRA token slip for while waiting for my new card?",
+        "questionUr": "نیا کارڈ آنے تک ٹوکن سلپ کہاں استعمال ہو سکتی ہے؟",
+        "answerEn": "The token slip serves as temporary proof for domestic travel and police checks, but cannot be used for biometric bank/SIM activation.",
+        "answerUr": "ٹوکن سلپ عارضی شناخت اور سفر کے لیے استعمال ہو سکتی ہے مگر بینک اکاؤنٹ یا سم بائیو میٹرک کے لیے نہیں۔"
+      }
+    ],
+    "contentEn": "Step-by-step instructions for replacing a lost, stolen, or damaged Pakistani Smart CNIC via Pak-ID app and NRC centers.",
+    "contentUr": "پاکستان میں گم شدہ، چوری یا ٹوٹے ہوئے سمارٹ شناختی کارڈ کا دوبارہ آن لائن اجراء اور فیس شیڈول۔",
+    "relatedSlugs": [
+      "/nadra/cnic-new-rules-2026",
+      "/nadra/b-form-frc-status-check",
+      "/nadra/pak-id-biometric-verification-fix"
+    ]
   }
 };
