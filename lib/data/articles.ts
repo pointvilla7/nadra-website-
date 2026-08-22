@@ -16987,5 +16987,191 @@ export const ARTICLES: Record<string, Article> = {
       "/certificates/police-character-certificate-online-apply-2026",
       "/nadra/lost-stolen-cnic-replacement-2026"
     ]
+  },
+  "lost-passport-abroad-reissuance-process-2026": {
+    "slug": "lost-passport-abroad-reissuance-process-2026",
+    "fullPath": "/passport/lost-passport-abroad-reissuance-process-2026",
+    "categoryId": "passport",
+    "titleEn": "Lost Pakistani Passport Abroad Guide 2026 – Reissuance & Outpass",
+    "titleUr": "بیرون ملک گم شدہ پاسپورٹ کا دوبارہ اجراء 2026",
+    "metaDescriptionEn": "Lost or had your Pakistani passport stolen abroad? Step-by-step 2026 consular guide on filing a local police report, applying at the nearest Pakistani Embassy or Consulate, verification timelines (3-6 weeks), and obtaining an Emergency Travel Document (Outpass) for urgent flights.",
+    "metaDescriptionUr": "بیرون ملک پاکستانی پاسپورٹ گم ہونے کی صورت میں مقامی پولیس رپورٹ، سفارت خانے میں درخواست، تصدیقی مراحل اور ایمرجنسی آؤٹ پاس کی مکمل گائیڈ۔",
+    "directAnswerEn": "Immediately file a Loss Report / FIR at the local police station in the city where it was lost to obtain an official police certificate mentioning your passport number. Next, contact the nearest Pakistani Embassy or Consulate with your police report and original NADRA CNIC/NICOP. If you must travel urgently, request an Emergency Travel Document (Outpass).",
+    "directAnswerUr": "سب سے پہلے جس ملک میں پاسپورٹ گم ہوا ہے، وہاں کے مقامی پولیس اسٹیشن میں رپورٹ درج کروا کر پولیس سرٹیفکیٹ حاصل کریں۔ اس کے بعد اپنے نادرا شناختی کارڈ/نائیکوپ کے ساتھ قریبی پاکستانی سفارت خانے سے رجوع کریں۔ ہنگامی واپسی کے لیے ایمرجنسی آؤٹ پاس حاصل کیا جا سکتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Directorate General of Immigration & Passports (DGIP)",
+      "url": "https://onlinemrp.dgip.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Consular & Passport Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Lost Passport Reissuance Abroad (MRP / e-Passport)",
+        "serviceUr": "بیرون ملک گم شدہ پاسپورٹ اجراء",
+        "normal": "Per Embassy Fee Schedule",
+        "urgent": "3 to 6 Weeks Processing",
+        "executive": "Requires DGIP Islamabad Verification"
+      },
+      {
+        "serviceEn": "Emergency Travel Document (ETD / Outpass)",
+        "serviceUr": "ایمرجنسی ٹریول ڈاکومنٹ (آؤٹ پاس)",
+        "normal": "1 to 3 Working Days",
+        "urgent": "One-Way Direct to Pakistan",
+        "executive": "For Urgent Repatriation"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "File Local Police Report in Host Country",
+        "titleUr": "مقامی پولیس اسٹیشن میں رپورٹ درج کروائیں",
+        "detailEn": "Report the lost/stolen passport at the local police station and obtain a written police report explicitly listing your passport number.",
+        "detailUr": "مقامی تھانے میں رپٹ درج کروا کر پاسپورٹ نمبر والا پولیس سرٹیفکیٹ لیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Visit Nearest Pakistani Embassy / Consulate",
+        "titleUr": "پاکستانی سفارت خانے یا قونصل خانے سے رجوع کریں",
+        "detailEn": "Submit your police report, copy of lost passport, original NADRA CNIC/NICOP, and proof of legal stay.",
+        "detailUr": "پولیس رپورٹ، پرانے پاسپورٹ کی کاپی اور اصل نادرا شناختی کارڈ کے ساتھ سفارت خانے جائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Biometrics & DGIP Islamabad Verification",
+        "titleUr": "بائیو میٹرک اور اسلام آباد سے ریکارڈ تصدیق",
+        "detailEn": "Complete live fingerprints and photo. The mission routes the cancellation request to DGIP headquarters in Islamabad.",
+        "detailUr": "فنگر پرنٹس دیں اور اسلام آباد سے سابقہ پاسپورٹ ریکارڈ کی تصدیق کا انتظار کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Collect New Passport / Emergency Outpass",
+        "titleUr": "نیا پاسپورٹ یا ایمرجنسی آؤٹ پاس وصول کریں",
+        "detailEn": "Collect your new booklet after diplomatic pouch delivery, or receive an immediate Emergency Travel Document if returning urgently.",
+        "detailUr": "نیا پاسپورٹ وصول کریں یا فوری واپسی کی صورت میں ون وے ایمرجنسی آؤٹ پاس لیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long does a lost passport replacement take abroad?",
+        "questionUr": "بیرون ملک گم شدہ پاسپورٹ بننے میں کتنا وقت لگتا ہے؟",
+        "answerEn": "It typically takes 3 to 6 weeks because DGIP headquarters in Islamabad must verify and cancel the prior record before printing.",
+        "answerUr": "اس میں عام طور پر 3 سے 6 ہفتے لگتے ہیں کیونکہ اسلام آباد سے پرانے ریکارڈ کی کینسلیشن ضروری ہوتی ہے۔"
+      },
+      {
+        "questionEn": "Can I fly home immediately on an Emergency Travel Document (Outpass)?",
+        "questionUr": "کیا ایمرجنسی آؤٹ پاس پر فوری پاکستان واپس جا سکتے ہیں؟",
+        "answerEn": "Yes. An Emergency Travel Document (ETD) is issued within 1-3 days for direct one-way travel back to Pakistan.",
+        "answerUr": "جی ہاں! ایمرجنسی آؤٹ پاس 1 سے 3 دن میں مل جاتا ہے جو صرف پاکستان واپسی کے لیے کارآمد ہوتا ہے۔"
+      },
+      {
+        "questionEn": "What if I do not have a photocopy of my lost passport?",
+        "questionUr": "اگر پرانے پاسپورٹ کی کاپی پاس نہ ہو تو کیا کریں؟",
+        "answerEn": "The embassy can look up your record using your 13-digit NADRA CNIC/NICOP number, though it may take slightly longer.",
+        "answerUr": "سفارت خانہ آپ کے نادرا شناختی کارڈ نمبر سے ریکارڈ تلاش کر سکتا ہے، مگر اس میں کچھ اضافی وقت لگ سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Consular guidance for replacing a lost or stolen Pakistani passport abroad, police reporting rules, DGIP verification, and emergency travel documents.",
+    "contentUr": "بیرون ملک گم شدہ پاکستانی پاسپورٹ کے دوبارہ اجراء، پولیس رپورٹ، اسلام آباد ویریفکیشن اور ایمرجنسی آؤٹ پاس کی رہنمائی۔",
+    "relatedSlugs": [
+      "/passport/passport-new-rules-2026-cashless-epassport",
+      "/passport/tracking-status",
+      "/overseas/nicop-mandatory-entry-rules-2026"
+    ]
+  },
+  "university-entry-test-guide-nust-fast-comsats-2026": {
+    "slug": "university-entry-test-guide-nust-fast-comsats-2026",
+    "fullPath": "/education/university-entry-test-guide-nust-fast-comsats-2026",
+    "categoryId": "education",
+    "titleEn": "Pakistan University Entry Test Guide 2026 – NUST NET, FAST & COMSATS",
+    "titleUr": "یونیورسٹی انٹری ٹیسٹ گائیڈ 2026: نسٹ، فاسٹ اور کامسیٹس",
+    "metaDescriptionEn": "Comprehensive evergreen structural guide to Pakistan’s top university entry tests: NUST NET (multiple series, best score rule), FAST-NUCES admission test (speed & negative marking), and COMSATS NTS-NAT. Compare test formats, weightings, SAT/ACT alternative streams, and multi-university preparation strategies.",
+    "metaDescriptionUr": "پاکستان کی بڑی یونیورسٹیوں کے انٹری ٹیسٹ کا مکمل جائزہ: نسٹ این ای ٹی ملٹیپل سیریز سسٹم، فاسٹ کا نیگیٹو مارکنگ ٹیسٹ اور کامسیٹس این ٹی ایس پیٹرن۔",
+    "directAnswerEn": "No. Unlike medical colleges which share a single national MDCAT, engineering and computing universities (NUST, FAST-NUCES, COMSATS, GIKI, PIEAS) run completely independent entry test systems. NUST requires its own NET (best score across 4 series), FAST conducts the NU Test, and COMSATS accepts NTS-NAT. You must register and prepare for each test separately.",
+    "directAnswerUr": "نہیں! میڈیکل کے MDCAT کے برعکس، انجینئرنگ اور کمپیوٹر سائنس کی تمام بڑی یونیورسٹیاں اپنے الگ انٹری ٹیسٹ لیتی ہیں۔ نسٹ اپنا NET ٹیسٹ لیتی ہے، فاسٹ اپنا کمپیوٹرائزڈ ٹیسٹ لیتی ہے اور کامسیٹس NTS ٹیسٹ قبول کرتی ہے۔ طلباء کو ہر ادارے کے لیے الگ تیاری کرنی پڑتی ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "NUST Undergraduate Admissions Directorate",
+      "url": "https://ugadmissions.nust.edu.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Higher Education & Admissions Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "NUST NET (Series 1 to 4)",
+        "serviceUr": "نسٹ این ای ٹی (سیریز 1 تا 4)",
+        "normal": "Per Series Registration",
+        "urgent": "No Negative Marking",
+        "executive": "Best Score Selected"
+      },
+      {
+        "serviceEn": "FAST-NUCES Entry Test (NU Test)",
+        "serviceUr": "فاسٹ یونیورسٹی انٹری ٹیسٹ",
+        "normal": "Annual Intake Window",
+        "urgent": "-0.25 Negative Marking",
+        "executive": "SAT Alternative Stream"
+      },
+      {
+        "serviceEn": "COMSATS University (NTS-NAT)",
+        "serviceUr": "کامسیٹس (این ٹی ایس این اے ٹی)",
+        "normal": "Monthly NTS Cycles",
+        "urgent": "Valid for 1 Year",
+        "executive": "Accepted in 50+ Unis"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Master Core Advanced Mathematics",
+        "titleUr": "ایڈوانس میتھ پر مکمل عبور حاصل کریں",
+        "detailEn": "Math makes up 40% to 50% of the aggregate across NUST, FAST, and NTS. Strong concepts in calculus, trigonometry, and algebra prepare you for all tests.",
+        "detailUr": "ریاضی نسٹ، فاسٹ اور این ٹی ایس کے 40 سے 50 فیصد نمبروں پر مشتمل ہے، اس لیے بنیادی فارمولے تیار کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Take Early NUST NET Series (Best Score Counts)",
+        "titleUr": "نسٹ این ای ٹی کی ابتدائی سیریز میں شرکت کریں",
+        "detailEn": "Appear in NET-1 or NET-2 to understand the question style. NUST automatically counts your highest score for final merit.",
+        "detailUr": "ابتدائی سیریز میں شرکت کر کے پیٹرن سمجھیں کیونکہ نسٹ سب سے زیادہ نمبروں والا اسکور شمار کرتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Practice Timed Accuracy for FAST Negative Marking",
+        "titleUr": "فاسٹ کے لیے نیگیٹو مارکنگ اور ٹائم مینجمنٹ کی پریکٹس کریں",
+        "detailEn": "FAST penalizes incorrect answers (-0.25). Practice timed mock exams to avoid blind guessing and improve speed.",
+        "detailUr": "فاسٹ کے ٹیسٹ میں غلط جواب پر نمبر کٹتے ہیں، اس لیے اندازے لگانے کے بجائے درست سوالات حل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I use a single entry test score for NUST, FAST, and COMSATS?",
+        "questionUr": "کیا ایک ہی ٹیسٹ کا اسکور تمام یونیورسٹیوں میں چل جاتا ہے؟",
+        "answerEn": "No. Each university conducts an independent test: NUST uses NET, FAST uses NU test, and COMSATS accepts NTS-NAT.",
+        "answerUr": "نہیں! ہر یونیورسٹی اپنا الگ ٹیسٹ لیتی ہے اور ہر ایک کے لیے الگ اپلائی کرنا پڑتا ہے۔"
+      },
+      {
+        "questionEn": "What happens if I miss one of the NUST NET series?",
+        "questionUr": "اگر نسٹ کی کوئی ایک سیریز رہ جائے تو کیا ہوگا؟",
+        "answerEn": "Missing a series is fine; you can appear in any subsequent series (e.g. NET-3 or NET-4). Only your best single score is considered.",
+        "answerUr": "کوئی حرج نہیں! آپ اگلی سیریز (جیسے NET-3 یا NET-4) میں بیٹھ سکتے ہیں اور سب سے اچھا اسکور کاؤنٹ ہوگا۔"
+      },
+      {
+        "questionEn": "Is FAST entry test waived if I have a good SAT score?",
+        "questionUr": "کیا اچھے سیٹ (SAT) اسکور پر فاسٹ ٹیسٹ معاف ہو سکتا ہے؟",
+        "answerEn": "Yes. FAST offers a dedicated SAT-based admission stream for computing and business programs, exempting you from the physical NU test.",
+        "answerUr": "جی ہاں! فاسٹ میں اچھے SAT اسکور کی بنیاد پر الگ میرٹ لسٹ کے تحت بغیر ٹیسٹ داخلہ مل سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Evergreen comparison guide to Pakistan university entry tests: NUST NET series mechanics, FAST NU test negative marking, and COMSATS NTS-NAT.",
+    "contentUr": "پاکستان میں یونیورسٹی انٹری ٹیسٹ کا مکمل تقابلی جائزہ: نسٹ این ای ٹی، فاسٹ نیگیٹو مارکنگ اور کامسیٹس این ٹی ایس گائیڈ۔",
+    "relatedSlugs": [
+      "/education/university-merit-list-checker-2026",
+      "/education/mdcat-aggregate-calculator-2026",
+      "/education/bise-lahore-result-2026"
+    ]
   }
 };

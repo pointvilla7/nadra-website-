@@ -56,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/nadra/lost-stolen-cnic-replacement-2026',
     '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',
     '/certificates/death-certificate-registration-process-2026',
+    '/passport/lost-passport-abroad-reissuance-process-2026',
+    '/education/university-entry-test-guide-nust-fast-comsats-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
