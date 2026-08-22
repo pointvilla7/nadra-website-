@@ -9,10 +9,10 @@ export const siteConfig = {
   social: {
     twitter: '@PakistanInfoHub',
   },
-  taglineEn: 'Official Civic & Public Services Directory of Pakistan',
+  taglineEn: 'Civic Services Directory of Pakistan',
   taglineUr: 'پاکستان کا مصدقہ اور بااعتماد معلومات پورٹل',
   descriptionEn:
-    'Pakistan’s leading 100% original, verified information and utility portal for NADRA, Passports, BISE Education, Utility Bills, Govt Loans, BISP 8171, and Traffic Services.',
+    "Pakistan's independent civic services directory — NADRA, Passport, Tax/FBR, Hajj, Property, Health, Legal, Jobs & 18 categories with verified fees & tools.",
   descriptionUr:
-    'پاکستان کا سب سے بااعتماد اور آسان معلومات پورٹل۔ نادرا، پاسپورٹ، تعلیمی بورڈز کے نتائج، بجلی و گیس کے بلز، قرضہ جات، بے نظیر 8171 اور ٹریفک سروسز۔',
+    'پاکستان کا آزاد و مصدقہ عوامی معلوماتی پورٹل — نادرا، پاسپورٹ، ایف بی آر، حج، پراپرٹی، صحت، قانونی اور 18 کیٹیگریز کی سرکاری فیسیں، ٹولز اور مکمل رہنمائی۔',
 };

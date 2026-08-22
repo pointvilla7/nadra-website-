@@ -37,11 +37,15 @@ export const RecentlyVerifiedTicker: React.FC = () => {
 
   const tickerConfig = [
     { key: 'nadra-card-fee', labelEn: 'NADRA Smart CNIC Fee 2026', labelUr: 'نادرا سمارٹ شناختی کارڈ فیس 2026' },
+    { key: 'fee-2026', labelEn: 'Pakistani e-Passport Fee Chart', labelUr: 'پاکستان ای پاسپورٹ فیس شیڈول 2026' },
+    { key: 'fbr-filer-status-check-cnic', labelEn: 'FBR Active Taxpayer List (ATL)', labelUr: 'ایف بی آر ایکٹو ٹیکس پیئر لسٹ' },
+    { key: 'hajj-balloting-result-check-online', labelEn: 'MORA Hajj 2026 Balloting Results', labelUr: 'حج قرعہ اندازی نتائج 2026' },
+    { key: 'sehat-card-eligibility-check-by-cnic', labelEn: 'Universal Sehat Card (1M PKR Limit)', labelUr: 'صحت کارڈ 10 لاکھ علاج سہولت' },
     { key: 'bisp-eligibility-check-by-cnic', labelEn: 'BISP 8171 Kafaalat 10,500 PKR Schedule', labelUr: 'بے نظیر کفالت 10,500 روپے قسط شیڈول' },
+    { key: 'property-mutation-check-by-cnic', labelEn: 'PLRA Land Record Mutation (Intiqal)', labelUr: 'اراضی ریکارڈ انتقال تصدیق' },
+    { key: 'beoe-protector-registration-overseas-employment-2026', labelEn: 'BEOE Protector Registration (Rs. 9,200)', labelUr: 'اوورسیز پروٹیکٹر فیس شیڈول' },
     { key: 'apni-chhat-apna-ghar', labelEn: 'Apni Chhat Housing Loan (1.5M PKR)', labelUr: 'اپنی چھت اپنا گھر 15 لاکھ بلا سود قرضہ' },
-    { key: 'fee-2026', labelEn: 'Pakistani e-Passport 2026 Fee Chart', labelUr: 'پاکستان ای پاسپورٹ فیس شیڈول 2026' },
     { key: 'e-challan-check-online', labelEn: 'PSCA Punjab E-Challan Rates', labelUr: 'سیف سٹی پنجاب ای چالان ریٹس' },
-    { key: 'lesco-bill-check-online', labelEn: 'LESCO Electricity Bill Check 2026', labelUr: 'لیسکو آن لائن بجلی بل چیک 2026' },
   ];
 
   const updates = tickerConfig.map((item) => {

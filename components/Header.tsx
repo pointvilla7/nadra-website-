@@ -184,7 +184,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           </Link>
 
           {/* Categories Dropdown */}
-          <div className="relative">
+          <div className="relative" onMouseLeave={() => setDropdownOpen(false)}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               onMouseEnter={() => setDropdownOpen(true)}
@@ -196,22 +196,58 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
 
             {dropdownOpen && (
               <div
-                onMouseLeave={() => setDropdownOpen(false)}
-                className="absolute top-full start-0 mt-1 w-64 doc-card rounded-xl shadow-2xl py-2 z-50 animate-fadeIn"
+                className="absolute top-full start-0 mt-1 w-[720px] lg:w-[800px] doc-card rounded-2xl shadow-2xl p-5 z-50 animate-fadeIn border border-doc-brass/30 bg-white dark:bg-slate-900"
               >
-                {CATEGORIES.map((cat) => (
-                  <Link
-                    key={cat.id}
-                    href={`/${cat.slug}`}
-                    onClick={() => setDropdownOpen(false)}
-                    className="flex items-center justify-between px-4 py-2.5 hover:bg-doc-paper dark:hover:bg-slate-800 transition text-sm text-slate-800 dark:text-slate-200"
-                  >
-                    <span className="font-serif font-semibold">{t(cat.nameEn, cat.nameUr)}</span>
-                    <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded ${cat.badgeBg} ${cat.badgeText}`}>
-                      {cat.slug.toUpperCase()}
-                    </span>
-                  </Link>
-                ))}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    {
+                      titleEn: 'Identity & Travel',
+                      titleUr: 'شناخت و سفر',
+                      ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
+                    },
+                    {
+                      titleEn: 'Money & Business',
+                      titleUr: 'ٹیکس و فنانس',
+                      ids: ['tax', 'business', 'loans', 'property', 'bills'],
+                    },
+                    {
+                      titleEn: 'Education & Jobs',
+                      titleUr: 'تعلیم و روزگار',
+                      ids: ['jobs', 'education', 'welfare'],
+                    },
+                    {
+                      titleEn: 'Health & Legal',
+                      titleUr: 'صحت و قانون',
+                      ids: ['health', 'legal', 'traffic', 'marriage-family', 'disaster-alerts'],
+                    },
+                  ].map((group, gIdx) => (
+                    <div key={gIdx} className="space-y-2">
+                      <h4 className="text-[11px] font-mono font-bold uppercase tracking-wider text-doc-brass border-b border-slate-100 dark:border-slate-800 pb-1">
+                        {t(group.titleEn, group.titleUr)}
+                      </h4>
+                      <div className="space-y-1">
+                        {group.ids.map((id) => {
+                          const cat = CATEGORIES.find((c) => c.id === id);
+                          if (!cat) return null;
+                          return (
+                            <Link
+                              key={cat.id}
+                              href={`/${cat.slug}`}
+                              onClick={() => setDropdownOpen(false)}
+                              className="flex items-center gap-1.5 p-1.5 rounded-lg hover:bg-doc-paper dark:hover:bg-slate-800 transition text-xs font-serif font-semibold text-slate-800 dark:text-slate-200 group"
+                            >
+                              <div
+                                className="w-1.5 h-1.5 rounded-full shrink-0 group-hover:scale-125 transition-transform"
+                                style={{ backgroundColor: cat.accentColor }}
+                              />
+                              <span className="truncate">{t(cat.nameEn, cat.nameUr)}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -266,20 +302,54 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden doc-card border-t border-doc-brass/30 px-4 pt-3 pb-6 space-y-4 animate-slideDown">
-          <div className="grid grid-cols-2 gap-2">
-            {CATEGORIES.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/${cat.slug}`}
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center gap-2 p-3 rounded-xl bg-doc-paper dark:bg-slate-800/80 hover:bg-white transition"
-              >
-                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: cat.accentColor }} />
-                <span className="text-xs font-bold font-serif text-slate-800 dark:text-slate-200">
-                  {t(cat.nameEn, cat.nameUr)}
+        <div className="md:hidden doc-card border-t border-doc-brass/30 px-4 pt-3 pb-6 space-y-4 animate-slideDown max-h-[80vh] overflow-y-auto">
+          <div className="space-y-3">
+            {[
+              {
+                titleEn: 'Identity & Travel',
+                titleUr: 'شناخت و سفر',
+                ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
+              },
+              {
+                titleEn: 'Money & Business',
+                titleUr: 'ٹیکس و فنانس',
+                ids: ['tax', 'business', 'loans', 'property', 'bills'],
+              },
+              {
+                titleEn: 'Education & Jobs',
+                titleUr: 'تعلیم و روزگار',
+                ids: ['jobs', 'education', 'welfare'],
+              },
+              {
+                titleEn: 'Health & Legal',
+                titleUr: 'صحت و قانون',
+                ids: ['health', 'legal', 'traffic', 'marriage-family', 'disaster-alerts'],
+              },
+            ].map((group, gIdx) => (
+              <div key={gIdx} className="space-y-1.5">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-doc-brass block px-1">
+                  {t(group.titleEn, group.titleUr)}
                 </span>
-              </Link>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {group.ids.map((id) => {
+                    const cat = CATEGORIES.find((c) => c.id === id);
+                    if (!cat) return null;
+                    return (
+                      <Link
+                        key={cat.id}
+                        href={`/${cat.slug}`}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-2 p-2 rounded-xl bg-doc-paper dark:bg-slate-800/80 hover:bg-white transition"
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.accentColor }} />
+                        <span className="text-xs font-bold font-serif text-slate-800 dark:text-slate-200 truncate">
+                          {t(cat.nameEn, cat.nameUr)}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
             ))}
           </div>
 

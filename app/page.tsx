@@ -19,10 +19,13 @@ export default function HomePage() {
 
   const trendingArticles = [
     ARTICLES['cnic-kaise-banaye'],
+    ARTICLES['fee-2026'],
+    ARTICLES['fbr-filer-status-check-cnic'],
+    ARTICLES['hajj-balloting-result-check-online'],
+    ARTICLES['property-mutation-check-by-cnic'],
+    ARTICLES['sehat-card-eligibility-check-by-cnic'],
     ARTICLES['bisp-eligibility-check-by-cnic'],
     ARTICLES['apni-chhat-apna-ghar'],
-    ARTICLES['fee-2026'],
-    ARTICLES['lesco-bill-check-online'],
     ARTICLES['e-challan-check-online'],
   ].filter(Boolean);
 
@@ -61,8 +64,8 @@ export default function HomePage() {
 
           <p className="text-base text-[#CBD5E1] max-w-2xl mx-auto leading-relaxed font-sans font-normal">
             {t(
-              'Verified step-by-step document procedures, fee schedules, online tracking tools for NADRA CNIC, Passports, BISE Education, Utility bills, Govt Loans, BISP 8171, and Traffic services.',
-              'شناختی کارڈ، پاسپورٹ فیس، تعلیمی رزلٹ، کے الیکٹرک و لیسکو بل، بلا سود قرضے اور بے نظیر 8171 کی مصدقہ رہنمائی۔'
+              'Verified step-by-step document procedures, fee schedules, and interactive tools for NADRA, Passports, Tax/FBR, Hajj, Property, Health, Legal, and 18 civic service categories.',
+              'شناختی کارڈ، پاسپورٹ فیس، ایف بی آر ٹیکس، حج درخواست، اراضی ریکارڈ، صحت کارڈ اور 18 سرکاری شعبہ جات کی مکمل مصدقہ رہنمائی۔'
             )}
           </p>
 
@@ -76,8 +79,8 @@ export default function HomePage() {
                 <Search className="w-5 h-5 text-[#B8860B] group-hover:scale-110 transition-transform" />
                 <span className="text-sm md:text-base font-sans font-medium text-[#475569] dark:text-slate-300">
                   {t(
-                    'Search CNIC, BISP 8171, Passport fee, LESCO bill...',
-                    'شناختی کارڈ، بے نظیر 8171، پاسپورٹ فیس، بل تلاش کریں...'
+                    'Search CNIC, FBR Tax, Hajj, Sehat Card, Passport...',
+                    'شناختی کارڈ، ایف بی آر ٹیکس، حج، صحت کارڈ، پاسپورٹ...'
                   )}
                 </span>
               </div>
@@ -114,24 +117,31 @@ export default function HomePage() {
             </Link>
             <span>•</span>
             <Link
-              href="/welfare/bisp-eligibility-check-by-cnic"
+              href="/tax/fbr-filer-status-check-cnic"
               className="hover:text-white transition underline underline-offset-2"
             >
-              BISP 8171
+              FBR Filer Status
             </Link>
             <span>•</span>
             <Link
-              href="/loans/apni-chhat-apna-ghar"
+              href="/hajj-umrah/hajj-balloting-result-check-online"
               className="hover:text-white transition underline underline-offset-2"
             >
-              Apni Chhat Loan
+              Hajj Balloting
             </Link>
             <span>•</span>
             <Link
-              href="/passport/fee-2026"
+              href="/health/sehat-card-eligibility-check-by-cnic"
               className="hover:text-white transition underline underline-offset-2"
             >
-              Passport Fee 2026
+              Sehat Card
+            </Link>
+            <span>•</span>
+            <Link
+              href="/property/property-mutation-check-by-cnic"
+              className="hover:text-white transition underline underline-offset-2"
+            >
+              Property Mutation
             </Link>
           </div>
         </div>
