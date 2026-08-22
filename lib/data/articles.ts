@@ -17552,5 +17552,298 @@ export const ARTICLES: Record<string, Article> = {
       "/certificates/nadra-marriage-certificate-online-check-2026",
       "/nadra/family-registration-certificate-frc-guide"
     ]
+  },
+  "nusuk-app-guide-pakistani-pilgrims-2026": {
+    "slug": "nusuk-app-guide-pakistani-pilgrims-2026",
+    "fullPath": "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Nusuk App Guide for Pakistani Pilgrims 2026 – Permits & BRN Rules",
+    "titleUr": "پاکستانی زائرین کے لیے نسک (Nusuk) ایپ گائیڈ 2026",
+    "metaDescriptionEn": "Essential 2026 guide to the Saudi Nusuk platform for Pakistani pilgrims: Understand why Umrah visas require a licensed operator and Nusuk BRN hotel booking, how to book Umrah and Rawdah (Riaz-ul-Jannah) permits, QR code check-in, and Urdu app features.",
+    "metaDescriptionUr": "پاکستانی زائرین کے لیے نسک ایپ گائیڈ: منظور شدہ ٹریول ایجنٹ سے عمرہ ویزہ، ہوٹل BRN شرط، ریاض الجنہ پرمٹ اور اردو ایپ فیچرز۔",
+    "directAnswerEn": "No. Pakistani citizens cannot apply directly for an Umrah visa through the individual Nusuk consumer app. You must process your visa through a licensed Pakistani Umrah travel operator using the Nusuk Masar platform. Once your visa is approved with a valid hotel BRN, download the Nusuk app to book your mandatory Umrah and Rawdah permits.",
+    "directAnswerUr": "نہیں! پاکستانی شہری نسک ایپ سے براہ راست عمرہ ویزہ اپلائی نہیں کر سکتے۔ ویزہ منظور شدہ ٹریول ایجنٹ کے ذریعے نسک مسار پورٹل سے ہوٹل BRN کے ساتھ لگے گا۔ ویزہ ملنے کے بعد آپ نسک ایپ ڈاؤن لوڈ کر کے عمرہ اور ریاض الجنہ کے پرمٹ خود بک کریں گے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Saudi Ministry of Hajj and Umrah (Nusuk Platform)",
+      "url": "https://www.nusuk.sa/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Hajj & Umrah Pilgrimage Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Nusuk Consumer App & Permit Booking",
+        "serviceUr": "نسک ایپ و پرمٹ بکنگ",
+        "normal": "100% FREE Download",
+        "urgent": "Live QR Code Passes",
+        "executive": "Umrah & Rawdah Access"
+      },
+      {
+        "serviceEn": "Umrah Visa & Hotel BRN Package",
+        "serviceUr": "عمرہ ویزہ و ہوٹل بی آر این",
+        "normal": "Via Licensed Travel Operator",
+        "urgent": "Nusuk Masar B2B Portal",
+        "executive": "No Booking, No Visa Rule"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Obtain Umrah Visa via Licensed Operator with BRN",
+        "titleUr": "منظور شدہ ایجنٹ سے ہوٹل BRN کے ساتھ ویزہ لیں",
+        "detailEn": "Travel operator submits your application on Nusuk Masar with confirmed hotel booking reference number (BRN).",
+        "detailUr": "ٹریول ایجنٹ نسک مسار پورٹل سے ہوٹل کی بکنگ کے ساتھ ویزہ حاصل کرے گا۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Download Nusuk App & Register as Visitor",
+        "titleUr": "نسک ایپ ڈاؤن لوڈ کر کے وزٹر کے طور پر لاگ ان کریں",
+        "detailEn": "Download the free Nusuk app, switch language to Urdu/English, and enter your 10-digit visa number and passport details.",
+        "detailUr": "ایپ ڈاؤن لوڈ کریں اور پاسپورٹ و ویزہ نمبر کے ساتھ اکاؤنٹ بنائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Book Umrah & Rawdah (Riaz-ul-Jannah) Slot",
+        "titleUr": "عمرہ اور ریاض الجنہ کی زیارت کا وقت منتخب کریں",
+        "detailEn": "Navigate to Prophet's Mosque Services, choose a prayer slot for the Noble Rawdah, and reserve your entry window.",
+        "detailUr": "ایپ سے دستیاب تاریخ اور وقت منتخب کر کے پرمٹ بک کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Present Digital QR Code Permit at Gates",
+        "titleUr": "مسجد کے دروازے پر لائیو کیو آر کوڈ دکھائیں",
+        "detailEn": "Show the active QR code inside the Nusuk app to security personnel at Masjid al-Haram or Masjid an-Nabawi gates.",
+        "detailUr": "سیکورٹی گیٹ پر ایپ میں موجود اصل کیو آر کوڈ اسکین کروا کر داخل ہوں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can Pakistani citizens apply for Umrah visa directly on Nusuk app?",
+        "questionUr": "کیا نسک ایپ سے پاکستانی خود ویزہ اپلائی کر سکتے ہیں؟",
+        "answerEn": "No. Pakistani passport holders must apply through a licensed Umrah travel agent who uses Nusuk Masar with a valid hotel BRN.",
+        "answerUr": "نہیں! پاکستانی شہریوں کو ویزہ منظور شدہ ایجنٹ کے ذریعے ہوٹل BRN کے ساتھ ہی ملتا ہے۔"
+      },
+      {
+        "questionEn": "What happens if I visit Rawdah without a Nusuk permit?",
+        "questionUr": "اگر بغیر نسک پرمٹ ریاض الجنہ جائیں تو کیا ہوگا؟",
+        "answerEn": "Entry is strictly prohibited. Security guards scan live app QR permits at the courtyard checkpoints.",
+        "answerUr": "داخلے کی اجازت نہیں ملے گی کیونکہ دروازے پر صرف ایکٹو کیو آر کوڈ والے زائرین کو چھوڑا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Is the Nusuk app available in Urdu?",
+        "questionUr": "کیا نسک ایپ میں اردو زبان کی سہولت موجود ہے؟",
+        "answerEn": "Yes. The official Nusuk mobile app has full Urdu language interface support.",
+        "answerUr": "جی ہاں! نسک موبائل ایپ میں مکمل اردو زبان کا آپشن موجود ہے۔"
+      }
+    ],
+    "contentEn": "Essential guide to Saudi Nusuk platform for Pakistani pilgrims, operator Umrah visas, BRN hotel rules, and Rawdah permits.",
+    "contentUr": "پاکستانی زائرین کے لیے نسک ایپ، منظور شدہ ایجنٹ سے ویزہ، ہوٹل بی آر این اور ریاض الجنہ پرمٹ بکنگ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/hajj-eligibility-checker-2026",
+      "/hajj-umrah/hajj-balloting-result-2026",
+      "/passport/tracking-status"
+    ]
+  },
+  "disability-certificate-special-cnic-apply-2026": {
+    "slug": "disability-certificate-special-cnic-apply-2026",
+    "fullPath": "/health/disability-certificate-special-cnic-apply-2026",
+    "categoryId": "health",
+    "titleEn": "Disability Certificate & Special CNIC Guide 2026 – NADRA Helpline 1777",
+    "titleUr": "معذور افراد کا سرٹیفکیٹ اور نادرا خصوصی شناختی کارڈ 2026",
+    "metaDescriptionEn": "Complete civic guide for persons with disabilities in Pakistan: How to obtain a Provincial Disability Certificate, apply for a NADRA Special CNIC (with wheelchair logo), request doorstep home registration via helpline 1777, and access 2-5% job quotas, travel discounts, and free healthcare.",
+    "metaDescriptionUr": "معذور افراد کے حقوق: صوبائی سوشل ویلفیئر سے میڈیکل سرٹیفکیٹ، نادرا خصوصی شناختی کارڈ، گھر بیٹھے رجسٹریشن (1777) اور 50 فیصد سفری رعایت۔",
+    "directAnswerEn": "The process requires two steps: (1) Obtain a Disability Certificate from your District Social Welfare Assessment Board at a government DHQ/THQ hospital, and (2) Apply for a Special CNIC (with wheelchair logo) at NADRA with free priority processing or call 1777 for doorstep home registration.",
+    "directAnswerUr": "یہ دو مرحلہ عمل ہے: (1) ضلعی سوشل ویلفیئر اسیسمنٹ بورڈ (DHQ/THQ ہسپتال) سے معذوری کا تصدیقی سرٹیفکیٹ حاصل کریں، اور (2) سرٹیفکیٹ لے کر نادرا جائیں جہاں خصوصی کارڈ ترجیحی بنیادوں پر بنتا ہے، یا گھر بیٹھے بنوانے کے لیے ہیلپ لائن 1777 پر رابطہ کریں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "NADRA Inclusion Directorate & Helpline 1777",
+      "url": "https://www.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Disability & Social Protection Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Provincial Disability Medical Assessment",
+        "serviceUr": "صوبائی میڈیکل اسیسمنٹ بورڈ سرٹیفکیٹ",
+        "normal": "100% FREE at DHQ/THQ",
+        "urgent": "Scheduled Board Days",
+        "executive": "Official Social Welfare Stamp"
+      },
+      {
+        "serviceEn": "NADRA Special CNIC Issuance",
+        "serviceUr": "نادرا خصوصی شناختی کارڈ کا اجراء",
+        "normal": "FREE First Issuance",
+        "urgent": "Priority Executive Desk",
+        "executive": "Universal Wheelchair Logo"
+      },
+      {
+        "serviceEn": "Doorstep Home Mobile Registration Unit",
+        "serviceUr": "گھر بیٹھے رجسٹریشن سروس",
+        "normal": "Free via Helpline 1777",
+        "urgent": "For Bed-Ridden Applicants",
+        "executive": "At-Home Biometrics & Photo"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Apply at District Social Welfare Department",
+        "titleUr": "ضلعی سوشل ویلفیئر آفس میں رجسٹریشن کروائیں",
+        "detailEn": "Submit application with medical records, CNIC/B-Form, and photographs to receive a medical board appointment.",
+        "detailUr": "ضلعی دفتر میں دستاویزات جمع کروا کر ہسپتال بورڈ کے لیے تاریخ لیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Appear Before Medical Assessment Board at DHQ",
+        "titleUr": "ہسپتال میں میڈیکل بورڈ کے سامنے پیش ہوں",
+        "detailEn": "Specialist doctors examine the applicant at DHQ/THQ hospital and issue the official Disability Certificate.",
+        "detailUr": "ڈاکٹرز معائنہ کر کے معذوری کی نوعیت کا تصدیقی سرٹیفکیٹ جاری کرتے ہیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Visit NADRA or Call 1777 for Doorstep Service",
+        "titleUr": "نادرا سینٹر جائیں یا 1777 پر گھر کے لیے کال کریں",
+        "detailEn": "Visit any NADRA center for priority processing, or dial 1777 if the individual is bed-ridden to request home service.",
+        "detailUr": "نادرا کے ترجیحی کاؤنٹر پر جائیں یا معذوری کی شدت پر گھر ٹیم بلوانے کے لیے 1777 ملائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Collect Special Smart CNIC with Lifetime Validity",
+        "titleUr": "لائف ٹائم میعاد والا خصوصی کارڈ وصول کریں",
+        "detailEn": "Receive your Smart CNIC carrying the universal wheelchair logo to access government quotas and concessions.",
+        "detailUr": "وہیل چیئر کے نشان والا خصوصی کارڈ حاصل کریں اور حکومتی مراعات سے فائدہ اٹھائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can a bed-ridden disabled person register at home?",
+        "questionUr": "کیا شدید معذور افراد گھر بیٹھے کارڈ بنوا سکتے ہیں؟",
+        "answerEn": "Yes. NADRA provides doorstep mobile registration for bed-ridden citizens. Request home service by dialing helpline 1777.",
+        "answerUr": "جی ہاں! نادرا کی خصوصی ٹیم گھر آ کر بائیو میٹرک لیتی ہے۔ 1777 پر کال کر کے سروس بک کریں۔"
+      },
+      {
+        "questionEn": "What travel discounts does the Special CNIC provide?",
+        "questionUr": "خصوصی کارڈ پر سفر میں کتنی رعایت ملتی ہے؟",
+        "answerEn": "Cardholders get a 50% discount on PIA domestic flights, 50% on Pakistan Railways train tickets, and free public metro transit.",
+        "answerUr": "پی آئی اے پر 50 فیصد، ریلوے ٹکٹ پر 50 فیصد رعایت اور میٹرو بس کا مفت سفر شامل ہے۔"
+      },
+      {
+        "questionEn": "How long does the disability certificate process take?",
+        "questionUr": "سرٹیفکیٹ بننے میں کتنا وقت لگتا ہے؟",
+        "answerEn": "The entire process typically takes 4 to 12 weeks depending on your district hospital board's meeting schedule.",
+        "answerUr": "ہسپتال بورڈ کے شیڈول کے مطابق اس میں عام طور پر 4 سے 12 ہفتے لگتے ہیں۔"
+      }
+    ],
+    "contentEn": "Complete guide to obtaining a provincial disability certificate, NADRA Special CNIC with wheelchair logo, helpline 1777, and legal quotas.",
+    "contentUr": "معذور افراد کے سرٹیفکیٹ، نادرا خصوصی شناختی کارڈ، ہیلپ لائن 1777 اور حکومتی ملازمت و سفری مراعات کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/welfare/punjab-himmat-card-registration",
+      "/health/sehat-card-active-status-by-province-2026",
+      "/nadra/lost-stolen-cnic-replacement-2026"
+    ]
+  },
+  "power-of-attorney-online-overseas-pakistanis-2026": {
+    "slug": "power-of-attorney-online-overseas-pakistanis-2026",
+    "fullPath": "/legal/power-of-attorney-online-overseas-pakistanis-2026",
+    "categoryId": "legal",
+    "titleEn": "Digital Power of Attorney Online 2026 – poa.nadra.gov.pk Guide",
+    "titleUr": "آن لائن پاور آف اٹارنی تصدیق برائے اوورسیز پاکستانیز 2026",
+    "metaDescriptionEn": "Complete guide to NADRA and MOFA’s Digital Power of Attorney (PoA) portal (poa.nadra.gov.pk): How overseas Pakistanis can attest General (GPA) and Special (SPA) Power of Attorney online without visiting the embassy, biometric verification, $36 fee, video interview, and Sub-Registrar registration in Pakistan.",
+    "metaDescriptionUr": "نادرا اور وزارت خارجہ کے پورٹل (poa.nadra.gov.pk) پر آن لائن مختار نامہ تصدیق: بائیو میٹرک، 36 ڈالر فیس، ویڈیو انٹرویو اور پاکستان میں رجسٹری۔",
+    "directAnswerEn": "Yes. Overseas Pakistanis can attest their Power of Attorney 100% digitally through the official NADRA-MOFA portal at poa.nadra.gov.pk without visiting an embassy. Upload the drafted PoA with witness CNICs, pay the $36 fee, complete an online video interview with a consular officer, and receive a digitally verifiable QR-coded PoA.",
+    "directAnswerUr": "جی ہاں! نادرا اور وزارت خارجہ کے مشترکہ پورٹل (poa.nadra.gov.pk) کے ذریعے اوورسیز پاکستانی گھر بیٹھے مختار نامہ تصدیق کروا سکتے ہیں۔ دستاویزات اور گواہان کے کارڈ اپ لوڈ کریں، 36 ڈالر فیس ادا کریں، قونصلر افسر کے ساتھ ویڈیو انٹرویو کریں اور کیو آر کوڈ والی قانونی پاور آف اٹارنی حاصل کریں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "NADRA Digital Power of Attorney Portal",
+      "url": "https://poa.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Overseas Consular & Legal Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Digital PoA Attestation (poa.nadra.gov.pk)",
+        "serviceUr": "ڈیجیٹل مختار نامہ آن لائن تصدیق",
+        "normal": "$36 USD Standard Fee",
+        "urgent": "Online Video Interview",
+        "executive": "QR-Coded Digital Attestation"
+      },
+      {
+        "serviceEn": "In-Person Embassy Attestation",
+        "serviceUr": "سفارت خانے جا کر دستی تصدیق",
+        "normal": "Mission Consular Schedule",
+        "urgent": "Prior Appointment Required",
+        "executive": "Physical Embassy Seal"
+      },
+      {
+        "serviceEn": "Sub-Registrar Property Registration",
+        "serviceUr": "پاکستان میں سب رجسٹرار اندراج",
+        "normal": "Provincial Stamp Duty",
+        "urgent": "Registration Act 1908",
+        "executive": "Mandatory for Property Deeds"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Account & Lodge Application on poa.nadra.gov.pk",
+        "titleUr": "پورٹل پر اکاؤنٹ بنا کر تفصیلات درج کریں",
+        "detailEn": "Register with email and CNIC/NICOP, enter Attorney & 2 witness details, and upload the drafted PoA document.",
+        "detailUr": "سرکاری ویب سائٹ پر لاگ ان کر کے مختار، گواہان اور مختار نامے کا مسودہ اپ لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Upload Biometrics & Pay $36 Consular Fee",
+        "titleUr": "بائیو میٹرک فارم اور 36 ڈالر فیس ادا کریں",
+        "detailEn": "Upload thumb impressions of applicant and witnesses, then pay the official $36 fee online via card.",
+        "detailUr": "فنگر پرنٹس فارم اپ لوڈ کریں اور کریڈٹ/ڈیبٹ کارڈ سے سرکاری فیس جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Attend Online Video Interview with Embassy Officer",
+        "titleUr": "قونصلر افسر کے ساتھ آن لائن ویڈیو انٹرویو دیں",
+        "detailEn": "Join the scheduled video call with the Pakistani Embassy consular officer to verify identity and grant legal consent.",
+        "detailUr": "طے شدہ وقت پر سفارت خانے کے افسر سے ویڈیو کال پر بات کر کے قانونی رضا مندی دیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Download Attested PoA & Register with Sub-Registrar",
+        "titleUr": "تصدیق شدہ مختار نامہ حاصل کر کے پاکستان میں رجسٹر کروائیں",
+        "detailEn": "Download the QR-coded digitally attested PoA. For property sales, the Attorney registers it with the Sub-Registrar in Pakistan.",
+        "detailUr": "کیو آر کوڈ والی پاور آف اٹارنی وصول کریں اور جائیداد کی صورت میں سب رجسٹرار سے اندراج کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I still need to visit the embassy for Power of Attorney?",
+        "questionUr": "کیا مختار نامے کے لیے سفارت خانے جانا ضروری ہے؟",
+        "answerEn": "No. The entire process is now available 100% digitally online via poa.nadra.gov.pk with video interview.",
+        "answerUr": "نہیں! اب آپ گھر بیٹھے نادرا پورٹل اور ویڈیو کال کے ذریعے مکمل تصدیق کروا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Why is a Special Power of Attorney safer than a General one?",
+        "questionUr": "مختار نامہ خاص مختار نامہ عام سے کیوں محفوظ ہے؟",
+        "answerEn": "A Special PoA limits the agent's authority to only one specific task (e.g. selling one plot), reducing fraud risk.",
+        "answerUr": "مختار نامہ خاص صرف ایک مخصوص کام تک محدود ہوتا ہے، جس سے دھوکہ دہی کا خطرہ نہیں رہتا۔"
+      },
+      {
+        "questionEn": "Is Sub-Registrar registration required for property matters?",
+        "questionUr": "کیا جائیداد کے لیے پاکستان میں سب رجسٹرار اندراج لازمی ہے؟",
+        "answerEn": "Yes. For immovable property transfer/sale, the PoA must be registered with the local Sub-Registrar in Pakistan.",
+        "answerUr": "جی ہاں! جائیداد کی منتقلی کے لیے پاکستان میں متعلقہ سب رجسٹرار سے تصدیق کروانا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to digital Power of Attorney for overseas Pakistanis on poa.nadra.gov.pk, video interview, fees, and Sub-Registrar registration.",
+    "contentUr": "اوورسیز پاکستانیوں کے لیے آن لائن پاور آف اٹارنی، نادرا پورٹل، ویڈیو انٹرویو، فیس اور پاکستان میں رجسٹری کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/certificates/succession-certificate-nadra-legal-heirs",
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/overseas/poc-card-pakistan-apply-online"
+    ]
   }
 };
