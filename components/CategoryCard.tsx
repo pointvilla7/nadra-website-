@@ -62,7 +62,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
   const { t } = useLanguage();
 
   return (
-    <div className="doc-card rounded-[12px] p-5 sm:p-8 transition-all duration-200 border border-[#F1F5F9] dark:border-slate-800 hover:shadow-doc-hover hover:-translate-y-0.5 flex flex-col justify-between group relative overflow-hidden bg-[#FAF9F6] dark:bg-[#1E2A3F]">
+    <div className="doc-card rounded-[12px] p-5 sm:p-8 border border-[#F1F5F9] dark:border-slate-800 flex flex-col justify-between group relative overflow-hidden bg-[#FAF9F6] dark:bg-[#1E2A3F]">
       <div>
         {/* Header 56px Cream-100 Circular Icon + Quiet Emerald Border Badge */}
         <div className="flex items-center justify-between mb-5">
@@ -106,10 +106,10 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
         </div>
       </div>
 
-      {/* Explore Button — Solid Gold-600 CTA Button */}
+      {/* Explore Button — Solid Gold CTA with proper mobile tap feedback */}
       <Link
         href={`/${category.slug}`}
-        className="w-full min-h-[44px] py-2.5 px-4 rounded-[8px] text-xs font-semibold font-sans flex items-center justify-center gap-2 transition-all duration-200 bg-[#B8860B] hover:bg-[#D4A017] text-white shadow-xs hover:shadow-md hover:scale-[1.01] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#B8860B]"
+        className="w-full min-h-[44px] py-2.5 px-4 rounded-[8px] text-xs font-semibold font-sans flex items-center justify-center gap-2 transition-all duration-150 bg-[#B8860B] text-white shadow-xs active:scale-[0.97] active:bg-[#a07809] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#B8860B] touch-action-manipulation"
       >
         <span>{t(`EXPLORE ${category.nameEn.toUpperCase()}`, `${category.nameUr} فائلز`)}</span>
         <ChevronRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180" />

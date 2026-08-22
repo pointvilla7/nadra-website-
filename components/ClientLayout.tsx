@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, Suspense } from 'react';
+import React, { useState, Suspense, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { LanguageProvider } from '@/lib/context/LanguageContext';
 import { Header } from '@/components/Header';
@@ -42,6 +42,18 @@ const UrduFontLoader = dynamic(
 
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  useEffect(() => {
+    // iOS Safari :active fix — iOS Safari does NOT fire :active CSS states on non-anchor
+    // elements (buttons, divs) unless an ancestor has a touchstart listener.
+    // This no-op passive listener on document.body is the standard fix, adding < 0.01ms overhead.
+    // See: https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#safari_mobile
+    const noop = () => {};
+    document.body.addEventListener('touchstart', noop, { passive: true });
+    return () => {
+      document.body.removeEventListener('touchstart', noop);
+    };
+  }, []);
 
   return (
     <LanguageProvider>

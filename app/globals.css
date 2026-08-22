@@ -337,6 +337,16 @@ body.lite-mode-enabled * {
   text-align: left;
 }
 
+/* ── iOS Safari: disable default blue tap flash on all interactive elements ── */
+a, button, [role="button"], input, select, textarea, label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── iOS Safari cursor:pointer fix — required for :active to fire on touch ── */
+a, button, [role="button"] {
+  cursor: pointer;
+}
+
 /* Layered Physical Shadow & Document Card Elevation */
 .doc-card {
   background: #FAF9F6;
@@ -346,7 +356,9 @@ body.lite-mode-enabled * {
   transition: transform 160ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
               box-shadow 160ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
               border-color 160ms ease;
-  will-change: transform;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 @media (hover: hover) {
@@ -359,6 +371,7 @@ body.lite-mode-enabled * {
 
 .doc-card:active {
   transform: scale(0.99);
+  transition-duration: 80ms;
 }
 
 .dark .doc-card {
@@ -378,6 +391,8 @@ body.lite-mode-enabled * {
 .btn-interactive,
 button:not([disabled]):not(.static-btn),
 .doc-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition: transform 140ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
               box-shadow 140ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
               background-color 140ms ease,
@@ -395,6 +410,12 @@ button:not([disabled]):not(.static-btn),
 .btn-interactive:active,
 .doc-btn:active {
   transform: scale(0.975);
+  transition-duration: 80ms;
+}
+
+/* ── Tailwind active: classes need this for iOS Safari ── */
+button:active, a:active, [role="button"]:active {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* ── Sticky Header Navigation & Smooth Elevation ── */
@@ -430,6 +451,8 @@ button:not([disabled]):not(.static-btn),
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(11, 17, 32, 0.04), 0 4px 12px rgba(11, 17, 32, 0.06);
   transition: transform 160ms ease, box-shadow 160ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
@@ -440,6 +463,7 @@ button:not([disabled]):not(.static-btn),
 
 .glass-card:active {
   transform: scale(0.99);
+  transition-duration: 80ms;
 }
 
 .dark .glass-card {
@@ -449,13 +473,14 @@ button:not([disabled]):not(.static-btn),
 }
 
 /* Mandatory Prefers-Reduced-Motion Override */
+/* NOTE: We do NOT set transform:none here — that would break :active press states
+   and already-visible opacity-1 elements. We only disable animation/transition timing. */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-    transform: none !important;
   }
 }
 
@@ -478,6 +503,20 @@ button:not([disabled]):not(.static-btn),
 /* ── Overscroll containment: prevents scroll chaining on mobile ── */
 body {
   overscroll-behavior-y: contain;
+}
+
+/* ── touch-action: manipulation — removes 300ms tap delay on mobile ── */
+/* Applied to interactive elements to get instant tap response */
+.touch-action-manipulation {
+  touch-action: manipulation;
+}
+
+/* ── CategoryCard Explore Button: hover color only on devices with real hover ── */
+@media (hover: hover) {
+  a[href].touch-action-manipulation:hover,
+  .doc-card a[href]:hover {
+    background-color: #D4A017;
+  }
 }
 
 /* ── Focus-visible: keyboard-only focus rings (accessibility + CLS) ── */
