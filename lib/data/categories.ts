@@ -914,5 +914,36 @@ export const CATEGORIES: Category[] = [
         "slug": "/pakistan-post/post-office-locator-2026"
       }
     ]
+  },
+  {
+    "id": "finance",
+    "slug": "finance",
+    "nameEn": "Banking & Financial Services",
+    "nameUr": "بینکنگ و مالیاتی سروسز",
+    "taglineEn": "Online Account Opening, IBAN Verification, Raast & Digital Banking",
+    "taglineUr": "آن لائن بینک اکاؤنٹ، آئی بی اے این تصدیق اور راست ڈیجیٹل سروسز",
+    "descriptionEn": "State Bank of Pakistan (SBP) verified guidelines for online bank account opening, Asaan Digital Accounts, biometric video KYC, ISO 13616 IBAN format validation, and interbank transfers.",
+    "descriptionUr": "اسٹیٹ بینک آف پاکستان کے منظور شدہ قواعد کے مطابق آن لائن بینک اکاؤنٹ کھولنے، آسان ڈیجیٹل اکاؤنٹ، بائیومیٹرک تصدیق اور 24 ہندسوں کے آئی بی اے این کی درستی جانچنے کی مکمل گائیڈ۔",
+    "iconName": "Landmark",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "Pakistan IBAN Validator 2026",
+        "ur": "آئی بی اے این ویلیڈیٹر 2026",
+        "slug": "/finance/pakistan-iban-number-check-validator-2026"
+      },
+      {
+        "en": "Open Bank Account Online 2026",
+        "ur": "آن لائن بینک اکاؤنٹ کھولنے کا طریقہ",
+        "slug": "/finance/how-to-open-bank-account-online-pakistan-2026"
+      },
+      {
+        "en": "Asaan Digital Account Guide",
+        "ur": "آسان ڈیجیٹل اکاؤنٹ گائیڈ",
+        "slug": "/finance/how-to-open-bank-account-online-pakistan-2026"
+      }
+    ]
   }
 ];

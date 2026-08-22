@@ -208,7 +208,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                     {
                       titleEn: 'Money & Business',
                       titleUr: 'ٹیکس و فنانس',
-                      ids: ['tax', 'business', 'loans', 'property', 'bills'],
+                      ids: ['finance', 'tax', 'business', 'loans', 'property', 'bills'],
                     },
                     {
                       titleEn: 'Services & Postal',

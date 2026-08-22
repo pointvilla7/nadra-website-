@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
                   href="/sitemap"
                   className="hover:text-amber-400 transition flex items-center gap-1.5 text-doc-brass font-bold pt-1"
                 >
-                  <span>→ {t('View All 20 Portals', 'تمام 20 پورٹلز دیکھیں')}</span>
+                  <span>→ {t('View All 21 Portals', 'تمام 21 پورٹلز دیکھیں')}</span>
                 </Link>
               </li>
             </ul>
@@ -104,7 +104,13 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
-                <Link href="/pakistan-post/tracking-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                <Link href="/finance/pakistan-iban-number-check-validator-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                  <span>💳</span>
+                  <span>{t('Pakistan IBAN Validator 2026', 'پاکستان آئی بی اے این ویلیڈیٹر')}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/pakistan-post/tracking-2026" className="hover:text-amber-400 transition text-slate-200 font-bold flex items-center gap-1.5">
                   <span>📦</span>
                   <span>{t('Pakistan Post Tracking 2026', 'پاکستان پوسٹ ٹریکنگ 2026')}</span>
                 </Link>

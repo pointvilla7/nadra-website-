@@ -19201,5 +19201,130 @@ export const ARTICLES: Record<string, Article> = {
     "/tax/how-to-become-tax-filer-pakistan-2026",
     "/tax/withholding-tax-rates-filers-non-filers"
   ]
+},
+"finance-how-to-open-bank-account-online-pakistan-2026": {
+  "slug": "how-to-open-bank-account-online-pakistan-2026",
+  "fullPath": "/finance/how-to-open-bank-account-online-pakistan-2026",
+  "categoryId": "finance",
+  "titleEn": "How to Open a Bank Account Online in Pakistan 2026: SBP Asaan & Digital Account Guide",
+  "titleUr": "آن لائن بینک اکاؤنٹ کھولنے کا طریقہ 2026",
+  "metaDescriptionEn": "Complete guide to opening a bank account online in Pakistan without visiting a branch: SBP Asaan Digital Account rules, biometric video KYC with NADRA, required documents, Current vs Savings vs Islamic accounts, and same-day activation.",
+  "metaDescriptionUr": "برانچ جائے بغیر گھر بیٹھے آن لائن بینک اکاؤنٹ کھولنے کا طریقہ: آسان ڈیجیٹل اکاؤنٹ، نادرا بائیومیٹرک تصدیق اور ضروری دستاویزات۔",
+  "directAnswerEn": "Under the State Bank of Pakistan's digital framework, resident Pakistani citizens can open an active bank account online through official bank mobile apps. You only need a valid CNIC, an active SIM registered in your name, and smartphone biometric/video KYC verification matched directly against NADRA.",
+  "directAnswerUr": "اسٹیٹ بینک آف پاکستان کے منظور شدہ فریم ورک کے تحت آپ کسی بھی برانچ جائے بغیر بینک کی آفیشل موبائل ایپ کے ذریعے 100 فیصد آن لائن اکاؤنٹ کھول سکتے ہیں۔ اس کے لیے صرف اصل شناختی کارڈ، اپنے نام رجسٹرڈ سم اور نادرا سے بائیومیٹرک یا ویڈیو تصدیق درکار ہوتی ہے۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "State Bank of Pakistan (SBP) Digital Onboarding",
+    "url": "https://www.sbp.org.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Banking & Financial Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Digital Account Opening",
+      "serviceUr": "آن لائن اکاؤنٹ اوپننگ",
+      "normal": "100% Free",
+      "urgent": "24-48 Hours Activation",
+      "executive": "No Minimum Balance (Asaan)"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Download Official Bank App",
+      "titleUr": "بینک کی آفیشل ایپ ڈاؤن لوڈ کریں",
+      "detailEn": "Install the mobile onboarding app from verified app stores.",
+      "detailUr": "گوگل پلے اسٹور یا ایپ اسٹور سے بینک ایپ ڈاؤن لوڈ کریں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Verify CNIC & Biometric SIM",
+      "titleUr": "شناختی کارڈ اور سم کی تصدیق",
+      "detailEn": "Enter your 13-digit CNIC and verify via SMS OTP.",
+      "detailUr": "13 ہندسوں کا شناختی کارڈ درج کر کے او ٹی پی تصدیق کریں۔"
+    },
+    {
+      "stepNumber": 3,
+      "titleEn": "Complete Biometric Video KYC",
+      "titleUr": "بائیومیٹرک یا ویڈیو تصدیق",
+      "detailEn": "Perform contactless camera fingerprint scan or facial selfie.",
+      "detailUr": "موبائل کیمرے سے فنگر پرنٹ یا چہرے کی تصدیق کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Do I need to visit a branch to open a bank account in Pakistan?",
+      "questionUr": "کیا اکاؤنٹ کھولنے کے لیے برانچ جانا ضروری ہے؟",
+      "answerEn": "No. Major Pakistani banks support full digital onboarding through mobile apps.",
+      "answerUr": "نہیں، اسٹیٹ بینک کے تحت موبائل ایپ سے مکمل آن لائن اکاؤنٹ کھل جاتا ہے۔"
+    }
+  ],
+  "contentEn": "Comprehensive guide to opening online bank accounts in Pakistan under SBP Digital Onboarding Framework.",
+  "contentUr": "پاکستان میں ڈیجیٹل بینک اکاؤنٹ اور آسان اکاؤنٹ کھولنے کا مکمل طریقہ کار۔",
+  "relatedSlugs": [
+    "/finance/pakistan-iban-number-check-validator-2026",
+    "/tax/income-tax-calculator-salaried-2026"
+  ]
+},
+"finance-pakistan-iban-number-check-validator-2026": {
+  "slug": "pakistan-iban-number-check-validator-2026",
+  "fullPath": "/finance/pakistan-iban-number-check-validator-2026",
+  "categoryId": "finance",
+  "titleEn": "Pakistan IBAN Number Check & Validator 2026 – ISO 13616 Format & Checksum",
+  "titleUr": "پاکستان آئی بی اے این ویلیڈیٹر 2026",
+  "metaDescriptionEn": "Validate 24-character Pakistan IBAN numbers online: Check ISO 13616 MOD-97 mathematical checksum, verify 4-letter bank codes (HBL, UBL, Meezan, SCB), extract account digits, and format IBANs for international remittances.",
+  "metaDescriptionUr": "24 ہندسوں کے پاکستانی آئی بی اے این نمبر کی آن لائن تصدیق: آئی ایس او 13616 چیک سم، بینک کوڈز اور درست فارمیٹنگ۔",
+  "directAnswerEn": "An IBAN (International Bank Account Number) is an internationally standardized bank account identifier. In Pakistan, every IBAN consists of exactly 24 characters: the country code 'PK', 2 check digits (calculated via MOD-97 algorithm), a 4-letter bank code (e.g., SCBL, MEZN, HABB), and the 16-digit domestic account number.",
+  "directAnswerUr": "آئی بی اے این بین الاقوامی سطح پر تسلیم شدہ بینک اکاؤنٹ نمبر ہے۔ پاکستان میں ہر آئی بی اے این 24 ہندسوں پر مشتمل ہوتا ہے: ملکی کوڈ (PK)، 2 سیکیورٹی چیک ڈیجٹس، 4 حروف پر مشتمل بینک کوڈ اور 16 ہندسوں کا اکاؤنٹ نمبر۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "State Bank of Pakistan (SBP) IBAN Standards",
+    "url": "https://www.sbp.org.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Banking & Financial Services Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "IBAN Validation Tool",
+      "serviceUr": "آئی بی اے این ویلیڈیٹر",
+      "normal": "100% Free",
+      "urgent": "Instant Real-Time",
+      "executive": "ISO 13616 MOD-97"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter 24-Character IBAN",
+      "titleUr": "24 ہندسوں کا آئی بی اے این درج کریں",
+      "detailEn": "Type or paste your Pakistani IBAN with or without spaces.",
+      "detailUr": "اپنا 24 ہندسوں کا آئی بی اے این درج یا پیسٹ کریں۔"
+    },
+    {
+      "stepNumber": 2,
+      "titleEn": "Verify MOD-97 Checksum",
+      "titleUr": "چیک سم تصدیق دیکھیں",
+      "detailEn": "The tool validates mathematical integrity and detects mistyped digits.",
+      "detailUr": "ٹول فوری طور پر آئی بی اے این کی درستی اور بینک کا نام ظاہر کرتا ہے۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is Pakistan IBAN format?",
+      "questionUr": "پاکستان میں آئی بی اے این کا کیا فارمیٹ ہے؟",
+      "answerEn": "It is exactly 24 characters: PK + 2 check digits + 4-letter bank code + 16-digit account number.",
+      "answerUr": "یہ 24 ہندسوں پر مشتمل ہوتا ہے: PK کے بعد 2 چیک ڈیجٹس، 4 حرفی بینک کوڈ اور 16 ہندسوں کا اکاؤنٹ۔"
+    }
+  ],
+  "contentEn": "Client-side ISO 13616 MOD-97 validator and format inspector for 24-character Pakistan IBAN numbers.",
+  "contentUr": "پاکستانی بینکوں کے 24 ہندسوں کے آئی بی اے این کی آن لائن جانچ اور تصدیق کا ٹول۔",
+  "relatedSlugs": [
+    "/finance/how-to-open-bank-account-online-pakistan-2026",
+    "/tax/income-tax-calculator-salaried-2026"
+  ]
 }
 };

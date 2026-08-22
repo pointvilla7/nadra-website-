@@ -81,6 +81,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/pakistan-post/tracking-2026',
     '/pakistan-post/overview-guide-2026',
     '/pakistan-post/post-office-locator-2026',
+    '/finance',
+    '/finance/how-to-open-bank-account-online-pakistan-2026',
+    '/finance/pakistan-iban-number-check-validator-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
@@ -93,7 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-08-22'),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/mobile-pta/') || route.includes('/pakistan-post/') || route.includes('/traffic/') || route.includes('/property/') || route.includes('/jobs/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/marriage-family/') || route.includes('/welfare/') || route.includes('/loans/') || route.includes('/health/') || route.includes('/disaster-alerts/') || route.includes('/alerts/') ? 0.9 : 0.6),
+    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/mobile-pta/') || route.includes('/pakistan-post/') || route.includes('/finance/') || route.includes('/traffic/') || route.includes('/property/') || route.includes('/jobs/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/marriage-family/') || route.includes('/welfare/') || route.includes('/loans/') || route.includes('/health/') || route.includes('/disaster-alerts/') || route.includes('/alerts/') ? 0.9 : 0.6),
   }));
 
   const categoryPages = CATEGORIES.map((cat) => ({
