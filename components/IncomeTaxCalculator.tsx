@@ -273,7 +273,7 @@ export function IncomeTaxCalculator() {
                   setSalaryMode('monthly');
                   setSalaryInput(preset.monthly.toString());
                 }}
-                className="text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition"
+                className="text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-300 transition-all duration-150"
               >
                 {isUrdu ? preset.labelUr : preset.labelEn}
               </button>
@@ -300,7 +300,7 @@ export function IncomeTaxCalculator() {
               value={deductionsInput}
               onChange={(e) => setDeductionsInput(e.target.value.replace(/[^0-9]/g, ''))}
               placeholder="e.g. 0"
-              className="w-full min-h-[48px] pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-doc-ink dark:text-white font-mono font-bold text-lg focus:outline-none focus:ring-2 focus:ring-doc-brass"
+              className="w-full min-h-[48px] pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-doc-ink dark:text-white font-mono font-bold text-lg focus:outline-none focus:ring-2 focus:ring-doc-brass transition"
             />
           </div>
           <p className="text-[11px] text-slate-500 dark:text-slate-400 font-sans">
@@ -312,7 +312,7 @@ export function IncomeTaxCalculator() {
       </div>
 
       {/* Summary Highlight Box */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+      <div key={salaryInput + deductionsInput} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800 animate-resultPopIn">
         <div className="space-y-1">
           <span className="text-xs font-mono text-slate-400 uppercase tracking-wider">
             {isUrdu ? 'ماہانہ ٹیکس کٹوتی' : 'Monthly Tax Deduction'}

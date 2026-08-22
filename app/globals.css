@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── High-Performance Micro-Animation Keyframes (transform + opacity only) ── */
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(8px); }
+  0% { opacity: 0; transform: translateY(6px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideDown {
-  0% { opacity: 0; transform: translateY(-12px); }
+  0% { opacity: 0; transform: translateY(-8px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
@@ -23,22 +24,53 @@
 }
 
 @keyframes staggerIn {
-  0% { opacity: 0; transform: translateY(12px); }
+  0% { opacity: 0; transform: translateY(8px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes resultPopIn {
+  0% { opacity: 0; transform: scale(0.985) translateY(4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes checkmarkPop {
+  0% { transform: scale(0.75); opacity: 0; }
+  60% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shimmerWave {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes subtleBadgePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+/* ── Animation Utility Classes ── */
 .animate-fadeIn {
-  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-slideDown {
-  animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: slideDown 0.22s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-resultPopIn {
+  animation: resultPopIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-checkmarkPop {
+  animation: checkmarkPop 0.18s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-marquee {
   display: flex;
   width: max-content;
   animation: marquee 32s linear infinite;
+  will-change: transform;
 }
 
 .animate-marquee:hover {
@@ -50,7 +82,18 @@
 }
 
 .animate-staggerIn {
-  animation: staggerIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: staggerIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, rgba(241, 245, 249, 0.6) 25%, rgba(226, 232, 240, 0.85) 50%, rgba(241, 245, 249, 0.6) 75%);
+  background-size: 200% 100%;
+  animation: shimmerWave 1.6s infinite ease-in-out;
+}
+
+.dark .skeleton-shimmer {
+  background: linear-gradient(90deg, rgba(30, 42, 63, 0.6) 25%, rgba(45, 62, 90, 0.85) 50%, rgba(30, 42, 63, 0.6) 75%);
+  background-size: 200% 100%;
 }
 
 .ticker-fade-mask {
@@ -300,32 +343,84 @@ body.lite-mode-enabled * {
   border: 1px solid #F1F5F9;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(11, 17, 32, 0.04), 0 4px 12px rgba(11, 17, 32, 0.06);
-  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  transition: transform 160ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
+              box-shadow 160ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
+              border-color 160ms ease;
+  will-change: transform;
 }
-.doc-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(11, 17, 32, 0.08), 0 8px 24px rgba(11, 17, 32, 0.10);
-  border-color: rgba(184, 134, 11, 0.35);
+
+@media (hover: hover) {
+  .doc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(11, 17, 32, 0.08), 0 8px 24px rgba(11, 17, 32, 0.10);
+    border-color: rgba(184, 134, 11, 0.35);
+  }
 }
+
+.doc-card:active {
+  transform: scale(0.99);
+}
+
 .dark .doc-card {
   background: #1E2A3F;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-.dark .doc-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
+
+@media (hover: hover) {
+  .dark .doc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
 }
 
+/* ── Universal Interactive Buttons & Links ── */
+.btn-interactive,
+button:not([disabled]):not(.static-btn),
+.doc-btn {
+  transition: transform 140ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
+              box-shadow 140ms var(--ease-smooth, cubic-bezier(0.16, 1, 0.3, 1)),
+              background-color 140ms ease,
+              border-color 140ms ease,
+              color 140ms ease;
+}
+
+@media (hover: hover) {
+  .btn-interactive:hover,
+  .doc-btn:hover {
+    transform: translateY(-1.5px) scale(1.015);
+  }
+}
+
+.btn-interactive:active,
+.doc-btn:active {
+  transform: scale(0.975);
+}
+
+/* ── Sticky Header Navigation & Smooth Elevation ── */
 .doc-nav {
   background: rgba(250, 249, 246, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  transition: background-color 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
+
+.doc-nav.scrolled,
+.doc-nav-scrolled {
+  box-shadow: 0 4px 20px rgba(11, 17, 32, 0.08);
+  border-bottom-color: rgba(184, 134, 11, 0.35) !important;
+}
+
 .dark .doc-nav {
   background: rgba(11, 17, 32, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+}
+
+.dark .doc-nav.scrolled,
+.dark .doc-nav-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(184, 134, 11, 0.4) !important;
 }
 
 /* Glass Card — Glassmorphism style */
@@ -334,8 +429,19 @@ body.lite-mode-enabled * {
   border: 1px solid #F1F5F9;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(11, 17, 32, 0.04), 0 4px 12px rgba(11, 17, 32, 0.06);
-  transition: all 200ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
+
+@media (hover: hover) {
+  .glass-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.glass-card:active {
+  transform: scale(0.99);
+}
+
 .dark .glass-card {
   background: #1E2A3F;
   border: 1px solid rgba(255, 255, 255, 0.08);

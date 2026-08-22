@@ -16,6 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const isDark = document.documentElement.classList.contains('dark') || 
@@ -24,6 +25,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
     if (isDark) {
       document.documentElement.classList.add('dark');
     }
+
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 12;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const toggleDarkMode = () => {
@@ -37,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full doc-nav border-b border-doc-brass/30 transition-colors">
+    <header className={`sticky top-0 z-40 w-full doc-nav border-b border-doc-brass/30 ${isScrolled ? 'doc-nav-scrolled' : ''}`}>
       {/* Top Banner Bar */}
       <div className="bg-doc-ink text-doc-paper text-xs py-1.5 px-4 border-b border-doc-brass/30">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">

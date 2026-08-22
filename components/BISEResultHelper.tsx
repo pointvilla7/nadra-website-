@@ -286,8 +286,9 @@ export const BISEResultHelper: React.FC<BISEResultHelperProps> = ({
 
         {/* Result: Board Action Card */}
         <div
+          key={board.id + examType}
           aria-live="polite"
-          className="p-4 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/50 shadow-lg space-y-4 relative overflow-hidden"
+          className="p-4 rounded-2xl bg-doc-ink text-white border-2 border-doc-brass/50 shadow-lg space-y-4 relative overflow-hidden animate-resultPopIn"
         >
           <div
             aria-hidden="true"
@@ -334,7 +335,7 @@ export const BISEResultHelper: React.FC<BISEResultHelperProps> = ({
               href={board.resultUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-3 px-4 rounded-xl bg-doc-seal hover:bg-red-700 text-white font-mono font-bold text-xs flex items-center justify-center gap-2 transition shadow-md min-h-[44px]"
+              className="w-full py-3 px-4 rounded-xl bg-doc-seal hover:bg-red-700 active:scale-[0.98] text-white font-mono font-bold text-xs flex items-center justify-center gap-2 transition-all duration-150 shadow-md min-h-[44px]"
             >
               <span>{t(`OPEN ${board.nameEn.replace('BISE ', '').replace('BSEK ', '').replace('BIEK ', '').replace('FBISE ', '')} RESULT PORTAL`, `${board.nameUr} پورٹل کھولیں`)}</span>
               <ExternalLink className="w-3.5 h-3.5" />

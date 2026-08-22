@@ -161,25 +161,25 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       <div className="flex flex-wrap items-center gap-2 bg-doc-paper dark:bg-doc-dark-card border border-doc-brass/40 rounded-xl p-3 shadow-sm">
         <button
           onClick={handleShareWhatsApp}
-          className="flex items-center gap-1.5 px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition shadow-sm"
+          className="flex items-center gap-1.5 px-3 py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs font-bold rounded-lg transition-all duration-150 shadow-sm"
         >
-          <Share2 className="w-3.5 h-3.5" />
+          <Share2 className="w-3.5 h-3.5 shrink-0" />
           <span>{t('Share on WhatsApp', 'واٹس ایپ پر شیئر کریں', 'WhatsApp Share')}</span>
         </button>
 
         <button
           onClick={handleCopyLink}
-          className="flex items-center gap-1.5 px-3 py-2 bg-white dark:bg-doc-dark-base border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold rounded-lg hover:border-doc-brass transition"
+          className="flex items-center gap-1.5 px-3 py-2 bg-white dark:bg-doc-dark-base border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold rounded-lg hover:border-doc-brass active:scale-95 transition-all duration-150 min-w-[110px] justify-center"
         >
-          {copiedLink ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5 text-doc-brass" />}
-          <span>{copiedLink ? t('Link Copied!', 'لنک کاپی ہو گیا!') : t('Copy Link', 'لنک کاپی کریں', 'Copy Link')}</span>
+          {copiedLink ? <Check className="w-3.5 h-3.5 text-emerald-500 animate-checkmarkPop shrink-0" /> : <Copy className="w-3.5 h-3.5 text-doc-brass shrink-0" />}
+          <span className={copiedLink ? 'text-emerald-500 font-bold' : ''}>{copiedLink ? t('Link Copied!', 'لنک کاپی ہو گیا!') : t('Copy Link', 'لنک کاپی کریں', 'Copy Link')}</span>
         </button>
 
         <button
           onClick={() => setIsAlertModalOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-2 bg-slate-850 hover:bg-slate-800 border border-doc-brass/40 text-slate-100 text-xs font-bold rounded-lg transition shadow-xs"
+          className="flex items-center gap-1.5 px-3 py-2 bg-slate-850 hover:bg-slate-800 active:scale-95 border border-doc-brass/40 text-slate-100 text-xs font-bold rounded-lg transition-all duration-150 shadow-xs"
         >
-          <Bell className="w-3.5 h-3.5 text-doc-brass" />
+          <Bell className="w-3.5 h-3.5 text-doc-brass shrink-0" />
           <span>{t('Get Update Alerts', 'نوٹیفکیشن آن کریں', 'Get Alerts')}</span>
         </button>
 

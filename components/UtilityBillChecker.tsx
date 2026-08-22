@@ -794,11 +794,11 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
                   type="button"
                   onClick={handleCopy}
                   title={t('Copy number to clipboard', 'نمبر کاپی کریں')}
-                  className="px-3.5 py-3 rounded-xl border-2 border-slate-300 dark:border-slate-700 bg-doc-paper dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:border-doc-brass hover:text-doc-ink dark:hover:text-white transition flex items-center gap-1.5 text-xs font-mono font-bold shrink-0"
+                  className="px-3.5 py-3 rounded-xl border-2 border-slate-300 dark:border-slate-700 bg-doc-paper dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:border-doc-brass hover:text-doc-ink dark:hover:text-white active:scale-95 transition-all duration-150 flex items-center gap-1.5 text-xs font-mono font-bold shrink-0 select-none"
                 >
                   {copied ? (
                     <>
-                      <Check className="w-4 h-4 text-emerald-500" />
+                      <Check className="w-4 h-4 text-emerald-500 animate-checkmarkPop" />
                       <span className="hidden sm:inline text-emerald-600 font-bold">COPIED</span>
                     </>
                   ) : (
@@ -863,7 +863,7 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
           {/* Validate Button */}
           <button
             type="submit"
-            className="w-full py-3.5 px-4 rounded-xl bg-doc-ink hover:bg-slate-800 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-mono font-bold text-sm flex items-center justify-center gap-2 transition shadow-md min-h-[48px] border border-doc-brass/40"
+            className="w-full py-3.5 px-4 rounded-xl bg-doc-ink hover:bg-slate-800 dark:bg-slate-700 dark:hover:bg-slate-600 active:scale-[0.98] text-white font-mono font-bold text-sm flex items-center justify-center gap-2 transition-all duration-150 shadow-md min-h-[48px] border border-doc-brass/40"
           >
             <FileSearch className="w-4 h-4 text-doc-brass" />
             <span>{t(`VERIFY ${provider.shortName} NUMBER FORMAT`, `${provider.shortName} نمبر فارمیٹ چیک کریں`)}</span>
@@ -883,21 +883,21 @@ export const UtilityBillChecker: React.FC<UtilityBillCheckerProps> = ({
 
         {/* Loading State */}
         {loading && (
-          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 animate-pulse space-y-3 font-sans">
-            <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded w-1/4"></div>
-            <div className="h-8 bg-slate-300 dark:bg-slate-800 rounded w-2/3"></div>
+          <div className="p-6 rounded-2xl border-2 border-dashed border-doc-brass/30 bg-doc-paper dark:bg-slate-900/60 space-y-3 font-sans skeleton-shimmer">
+            <div className="h-4 bg-slate-300/70 dark:bg-slate-700/70 rounded w-1/4"></div>
+            <div className="h-8 bg-slate-300/70 dark:bg-slate-800/70 rounded w-2/3"></div>
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="h-12 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
-              <div className="h-12 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+              <div className="h-12 bg-slate-200/70 dark:bg-slate-800/70 rounded-xl"></div>
+              <div className="h-12 bg-slate-200/70 dark:bg-slate-800/70 rounded-xl"></div>
             </div>
-            <div className="h-12 bg-slate-300 dark:bg-slate-700 rounded-xl w-full mt-4"></div>
+            <div className="h-12 bg-slate-300/70 dark:bg-slate-700/70 rounded-xl w-full mt-4"></div>
           </div>
         )}
 
         {/* Validated State & Interactive Bill Details Card */}
         {validated && !errorMsg && billResult && (
           true ? (
-            <div className="p-5 rounded-2xl bg-doc-ink border-2 border-doc-brass/60 space-y-4 relative overflow-hidden animate-fadeIn font-sans">
+            <div className="p-5 rounded-2xl bg-doc-ink border-2 border-doc-brass/60 space-y-4 relative overflow-hidden animate-resultPopIn font-sans">
               <div
                 aria-hidden="true"
                 className="absolute top-0 right-0 w-40 h-40 bg-doc-brass/10 rounded-full blur-2xl pointer-events-none"

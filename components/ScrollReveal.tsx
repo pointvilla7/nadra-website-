@@ -6,18 +6,24 @@ interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
   delayMs?: number;
+  staggerIndex?: number;
 }
 
 export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   children,
   className = '',
   delayMs = 0,
+  staggerIndex,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  // Compute effective delay, capping stagger to max 200ms so last items never lag
+  const effectiveDelay = staggerIndex !== undefined 
+    ? Math.min(staggerIndex * 40, 200) + delayMs 
+    : delayMs;
+
   useEffect(() => {
-    // Check if window / matchMedia is available
     if (typeof window === 'undefined') {
       setIsVisible(true);
       return;
@@ -32,7 +38,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
     // Safety fallback: reveal content after a short delay so it is never permanently hidden
     const safetyTimer = setTimeout(() => {
       setIsVisible(true);
-    }, 400 + delayMs);
+    }, 350 + effectiveDelay);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -60,15 +66,16 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
       clearTimeout(safetyTimer);
       observer.disconnect();
     };
-  }, [delayMs]);
+  }, [effectiveDelay]);
 
   return (
     <div
       ref={ref}
       style={{
-        transitionDuration: '300ms',
-        transitionDelay: `${delayMs}ms`,
+        transitionDuration: '280ms',
+        transitionDelay: `${effectiveDelay}ms`,
         transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
+        willChange: isVisible ? 'auto' : 'transform, opacity',
       }}
       className={`transition-all ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
@@ -78,4 +85,5 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
     </div>
   );
 };
+
 

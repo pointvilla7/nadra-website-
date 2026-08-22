@@ -56,17 +56,17 @@ export const DirectAnswerBox: React.FC<DirectAnswerBoxProps> = ({
           {/* Copy Button */}
           <button
             onClick={handleCopy}
-            className="flex items-center gap-1 text-[11px] font-semibold px-2.5 py-1.5 rounded bg-slate-800 hover:bg-slate-700 border border-doc-brass/40 text-doc-paper transition"
+            className="flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1.5 rounded bg-slate-800 hover:bg-slate-700 active:scale-95 border border-doc-brass/40 text-doc-paper transition-all duration-150 select-none min-w-[90px] justify-center"
             title="Copy Answer Summary"
           >
             {copied ? (
               <>
-                <Check className="w-3 h-3 text-emerald-400" />
-                <span>{t('Copied!', 'کاپی ہو گیا!', 'Copied!')}</span>
+                <Check className="w-3.5 h-3.5 text-emerald-400 animate-checkmarkPop shrink-0" />
+                <span className="text-emerald-400 font-bold">{t('Copied!', 'کاپی ہو گیا!', 'Copied!')}</span>
               </>
             ) : (
               <>
-                <Copy className="w-3 h-3 text-doc-brass" />
+                <Copy className="w-3.5 h-3.5 text-doc-brass shrink-0" />
                 <span>{t('Copy Answer', 'کاپی کریں', 'Copy')}</span>
               </>
             )}

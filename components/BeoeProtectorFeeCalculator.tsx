@@ -91,7 +91,7 @@ export function BeoeProtectorFeeCalculator() {
           <button
             type="button"
             onClick={() => setApplicantType('direct')}
-            className={`min-h-[44px] px-4 py-2 text-xs font-bold rounded-lg transition ${
+            className={`min-h-[44px] px-4 py-2 text-xs font-bold rounded-lg active:scale-95 transition-all duration-150 ${
               applicantType === 'direct'
                 ? 'bg-doc-ink text-white shadow'
                 : 'text-slate-600 dark:text-slate-400 hover:text-doc-ink'
@@ -102,7 +102,7 @@ export function BeoeProtectorFeeCalculator() {
           <button
             type="button"
             onClick={() => setApplicantType('oep')}
-            className={`min-h-[44px] px-4 py-2 text-xs font-bold rounded-lg transition ${
+            className={`min-h-[44px] px-4 py-2 text-xs font-bold rounded-lg active:scale-95 transition-all duration-150 ${
               applicantType === 'oep'
                 ? 'bg-doc-ink text-white shadow'
                 : 'text-slate-600 dark:text-slate-400 hover:text-doc-ink'
@@ -114,7 +114,7 @@ export function BeoeProtectorFeeCalculator() {
       </div>
 
       {/* Summary Highlight Box */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+      <div key={applicantType + oepServiceFee} className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800 animate-resultPopIn">
         <div className="space-y-1">
           <span className="text-xs font-mono text-slate-400 uppercase tracking-wider">
             {isUrdu ? 'سرکاری فیس (Fixed Govt Fee)' : 'Official Government Fee'}
