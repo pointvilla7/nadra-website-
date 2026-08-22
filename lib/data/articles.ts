@@ -17359,5 +17359,198 @@ export const ARTICLES: Record<string, Article> = {
       "/welfare/pmt-score-explained-bisp-eligibility-2026",
       "/welfare/sehat-card-eligibility-checker-2026"
     ]
+  },
+  "opf-scholarship-children-spouses-overseas-pakistanis-2026": {
+    "slug": "opf-scholarship-children-spouses-overseas-pakistanis-2026",
+    "fullPath": "/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026",
+    "categoryId": "overseas",
+    "titleEn": "OPF Scholarship for Children & Spouses of Overseas Pakistanis 2026",
+    "titleUr": "او پی ایف تعلیمی وظائف برائے اوورسیز پاکستانیز 2026",
+    "metaDescriptionEn": "Complete guide to the Overseas Pakistanis Foundation (OPF) Education Fund (OPEF) scholarship 2026: Eligibility criteria (60% marks / 2.5 CGPA), compulsory vs voluntary OPF membership, monthly income cap (Rs. 200,000), intermediate to master’s coverage, and application steps on opf.org.pk.",
+    "metaDescriptionUr": "اوورسیز پاکستانیز فاؤنڈیشن تعلیمی وظائف: 60 فیصد نمبروں کی شرط، لازمی و اختیاری ممبرشپ، 2 لاکھ ماہانہ آمدن کی حد اور درخواست کا مکمل طریقہ۔",
+    "directAnswerEn": "The Overseas Pakistanis Foundation (OPF) awards OPEF scholarships to children and spouses of registered OPF members studying in Pakistan (Intermediate, Bachelor's, MBBS, Engineering, and Master's). Eligible applicants must have at least 60% marks or 2.5 CGPA and a parent/spouse monthly income of under Rs. 200,000.",
+    "directAnswerUr": "اوورسیز پاکستانیز فاؤنڈیشن (او پی ایف) رجسٹرڈ ممبران کے بچوں اور شریک حیات کو انٹرمیڈیٹ، گریجویشن (بشمول MBBS اور انجینئرنگ) اور ماسٹرز کے لیے وظائف دیتی ہے۔ طالب علم کے کم از کم 60 فیصد نمبر یا 2.5 سی جی پی اے اور والدین کی ماہانہ آمدن 2 لاکھ روپے سے کم ہونی چاہیے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Overseas Pakistanis Foundation (OPF) Education Division",
+      "url": "https://www.opf.org.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Overseas Student Welfare Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "OPEF Scholarship Grant (Intermediate)",
+        "serviceUr": "او پی ایف وظیفہ (انٹرمیڈیٹ)",
+        "normal": "Per Academic Session",
+        "urgent": "Min 60% Marks Required",
+        "executive": "For Children / Spouses"
+      },
+      {
+        "serviceEn": "OPEF Scholarship Grant (Undergraduate / MBBS / Engg)",
+        "serviceUr": "او پی ایف وظیفہ (گریجویشن و پروفیشنل)",
+        "normal": "Per Semester / Annual",
+        "urgent": "Min 2.5 CGPA Required",
+        "executive": "HEC Recognized Institutes"
+      },
+      {
+        "serviceEn": "OPF Membership Registration",
+        "serviceUr": "او پی ایف ممبرشپ رجسٹریشن",
+        "normal": "Compulsory: Automatic via BEOE",
+        "urgent": "Voluntary: Rs. 2,000 Lifetime",
+        "executive": "Valid for Family Benefits"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify OPF Membership & Academic Score",
+        "titleUr": "او پی ایف ممبرشپ اور تعلیمی ریکارڈ چیک کریں",
+        "detailEn": "Ensure parent/spouse is an OPF member and student has secured at least 60% marks or 2.5 CGPA with family monthly income under Rs. 200,000.",
+        "detailUr": "والدین کی ممبرشپ، طالب علم کے 60 فیصد نمبر اور ماہانہ آمدن 2 لاکھ سے کم ہونے کی تصدیق کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Download & Attest OPEF Application Form",
+        "titleUr": "او پی ایف فارم ڈاؤن لوڈ کر کے تعلیمی ادارے سے تصدیق کروائیں",
+        "detailEn": "Download scholarship form from opf.org.pk and have the educational institution section certified by the head of institution.",
+        "detailUr": "ویب سائٹ سے فارم ڈاؤن لوڈ کر کے اپنے کالج یا یونیورسٹی کے پرنسپل/رجسٹرار سے دستخط کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Submit Application to OPF Office",
+        "titleUr": "او پی ایف ہیڈ آفس یا ریجنل آفس میں جمع کروائیں",
+        "detailEn": "Submit complete dossier with CNIC/NICOP, OPF card, result cards, and salary slips to OPF Head Office Islamabad or regional offices.",
+        "detailUr": "تمام دستاویزات اور تنخواہ کی پرچی کے ساتھ فارم اسلام آباد یا قریبی ریجنل آفس میں جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I become an OPF member if I was not registered during departure?",
+        "questionUr": "اگر جاتے وقت رجسٹریشن نہ ہوئی ہو تو او پی ایف ممبر کیسے بنیں؟",
+        "answerEn": "You can obtain Voluntary OPF Membership online at opf.org.pk with proof of valid foreign residence of at least 1 year.",
+        "answerUr": "آپ 1 سال سے زائد بیرون ملک قیام کے ثبوت کے ساتھ ویب سائٹ پر اختیاری ممبرشپ لے سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Can a spouse of an overseas Pakistani apply for the scholarship?",
+        "questionUr": "کیا اوورسیز پاکستانی کی بیوی/شوہر اسکالرشپ لے سکتے ہیں؟",
+        "answerEn": "Yes. Spouses studying in Pakistan are eligible provided they meet the merit benchmarks and no other child is receiving OPF aid.",
+        "answerUr": "جی ہاں! شریک حیات بھی تعلیمی وظیفے کے اہل ہیں اگر وہ میرٹ کی شرائط پوری کریں۔"
+      },
+      {
+        "questionEn": "Are children of deceased overseas Pakistanis eligible?",
+        "questionUr": "کیا مرحوم اوورسیز پاکستانیوں کے بچے اپلائی کر سکتے ہیں؟",
+        "answerEn": "Yes. Children of registered members who passed away within 3 years of the advertisement are fully eligible.",
+        "answerUr": "جی ہاں! وہ تمام بچے جن کے والدین کا انتقال 3 سال کے اندر ہوا ہو، وہ اپلائی کر سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Complete guide to Overseas Pakistanis Education Fund (OPEF) scholarships, eligibility rules, compulsory vs voluntary membership, and application steps.",
+    "contentUr": "اوورسیز پاکستانیز ایجوکیشن فنڈ وظائف کی مکمل گائیڈ: اہلیت، ممبرشپ کے طریقہ کار اور درخواست جمع کروانے کے مراحل۔",
+    "relatedSlugs": [
+      "/jobs/beoe-protector-registration-overseas-employment-2026",
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/overseas/overseas-pakistanis-foundation-opf-schemes"
+    ]
+  },
+  "talaq-khula-legal-process-pakistan-2026": {
+    "slug": "talaq-khula-legal-process-pakistan-2026",
+    "fullPath": "/marriage-family/talaq-khula-legal-process-pakistan-2026",
+    "categoryId": "marriage-family",
+    "titleEn": "Talaq and Khula Legal Process in Pakistan 2026 – UC Notice & NADRA Rules",
+    "titleUr": "پاکستان میں طلاق اور خلع کا مکمل قانونی طریقہ کار 2026",
+    "metaDescriptionEn": "Authoritative, neutral legal guide to Talaq and Khula dissolution in Pakistan under the Muslim Family Laws Ordinance 1961 (Section 7) and Family Courts Act 1964: Written Union Council notice, 90-day arbitration waiting period, court decrees, and mandatory NADRA marital status updates.",
+    "metaDescriptionUr": "مسلم فیملی لاز آرڈیننس 1961 کے تحت طلاق اور خلع کا قانونی طریقہ: یونین کونسل تحریری نوٹس، 90 دن ثالثی کونسل، ڈگری اور نادرا شناختی کارڈ تنسیخ۔",
+    "directAnswerEn": "Under Section 7 of the Muslim Family Laws Ordinance 1961, neither a verbal talaq nor a court decree alone completes a legal divorce. The husband (or wife with court decree) must submit written notice to the local Union Council, undergo a mandatory 90-day arbitration waiting period, obtain a Computerized Dissolution Certificate, and update their marital status with NADRA.",
+    "directAnswerUr": "مسلم فیملی لاز آرڈیننس 1961 کے سیکشن 7 کے تحت صرف زبانی طلاق یا عدالت کی ڈگری سے طلاق قانونی طور پر مکمل نہیں ہوتی۔ متعلقہ یونین کونسل کو تحریری نوٹس دینا، 90 دن کا ثالثی پیریڈ مکمل کرنا، کمپیوٹرائزڈ طلاق سرٹیفکیٹ حاصل کرنا اور نادرا شناختی کارڈ پر ازدواجی حیثیت تبدیل کروانا لازمی ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Muslim Family Laws Ordinance 1961 & Local Union Council Rules",
+      "url": "https://pakistancode.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Family Law & Civil Registration Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Union Council Notice & Arbitration Filing",
+        "serviceUr": "یونین کونسل نوٹس و ثالثی کارروائی",
+        "normal": "Per Local Govt Schedule",
+        "urgent": "30 Days Notice Period",
+        "executive": "Mandatory Under Sec 7 MFLO"
+      },
+      {
+        "serviceEn": "Certificate of Dissolution of Marriage (Form C)",
+        "serviceUr": "کمپیوٹرائزڈ طلاق سرٹیفکیٹ (فارم سی)",
+        "normal": "Issued after 90 Days",
+        "urgent": "Barcoded CRMS Record",
+        "executive": "Legal Proof of Divorce"
+      },
+      {
+        "serviceEn": "NADRA CNIC Marital Status Revision",
+        "serviceUr": "نادرا شناختی کارڈ ازدواجی حیثیت تنسیخ",
+        "normal": "Standard NRC Fee Schedule",
+        "urgent": "Modifies Status to Divorced",
+        "executive": "Updates Family Tree (FRC)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Submit Written Notice to Local Union Council",
+        "titleUr": "متعلقہ یونین کونسل کو تحریری نوٹس جمع کروائیں",
+        "detailEn": "Deliver formal written notice of Talaq (or court Khula decree) to the Chairman of the Union Council where wife resides, with copy to the other party.",
+        "detailUr": "جہاں بیوی رہائش پذیر ہو، اس یونین کونسل کے چیئرمین کو تحریری نوٹس دیں اور دوسری پارٹی کو کاپی بھیجیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Convene Arbitration Council & 90-Day Iddat",
+        "titleUr": "ثالثی کونسل کی تشکیل اور 90 دن کی عدت کا انتظار",
+        "detailEn": "UC forms an Arbitration Council within 30 days to attempt reconciliation. A mandatory 90-day waiting period commences from notice receipt.",
+        "detailUr": "یونین کونسل مصالحت کے لیے نوٹس جاری کرتی ہے اور نوٹس موصول ہونے سے 90 دن کا وقت شروع ہوتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Collect Computerized Dissolution Certificate (Form C)",
+        "titleUr": "کمپیوٹرائزڈ طلاق سرٹیفکیٹ حاصل کریں",
+        "detailEn": "If reconciliation fails after 90 days, the Secretary UC registers the dissolution in CRMS and issues the official barcoded Divorce Certificate.",
+        "detailUr": "اگر 90 دن بعد مصالحت نہ ہو تو یونین کونسل سے بار کوڈ والا اصل کمپیوٹرائزڈ سرٹیفکیٹ لیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Update Marital Status & FRC at NADRA",
+        "titleUr": "نادرا جا کر شناختی کارڈ اور فیملی ٹری اپ ڈیٹ کروائیں",
+        "detailEn": "Visit NADRA with the UC dissolution certificate to change marital status to Divorced on your Smart CNIC and update your family tree.",
+        "detailUr": "طلاق سرٹیفکیٹ نادرا لے جا کر شناختی کارڈ پر اسٹیٹس تبدیل کروائیں تاکہ ریکارڈ درست ہو سکے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does a verbal talaq count legally in Pakistan?",
+        "questionUr": "کیا زبانی طلاق کی کوئی قانونی حیثیت ہے؟",
+        "answerEn": "No. Under Section 7 of MFLO 1961, written notice to the Union Council is mandatory for any divorce to have legal effect.",
+        "answerUr": "نہیں! سیکشن 7 کے تحت جب تک یونین کونسل کو تحریری نوٹس نہ دیا جائے، طلاق قانونی طور پر مؤثر نہیں ہوتی۔"
+      },
+      {
+        "questionEn": "Can a talaq be revoked during the 90-day period?",
+        "questionUr": "کیا 90 دن کے دوران طلاق واپس لی جا سکتی ہے؟",
+        "answerEn": "Yes. The husband can legally revoke the talaq in writing to the Union Council at any point before the 90 days expire.",
+        "answerUr": "جی ہاں! 90 دن مکمل ہونے سے پہلے شوہر تحریری طور پر طلاق واپس لے سکتا ہے۔"
+      },
+      {
+        "questionEn": "What if the husband refuses divorce?",
+        "questionUr": "اگر شوہر طلاق نہ دے تو کیا طریقہ ہے؟",
+        "answerEn": "The wife can file for Khula in the Family Court under the Family Courts Act 1964, which will be granted upon hearing.",
+        "answerUr": "بیوی فیملی کورٹ میں خلع کا دعویٰ دائر کر سکتی ہے جو عدالتی سماعت کے بعد جاری کر دیا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Legal guide to Talaq and Khula process in Pakistan, Section 7 MFLO 1961, 90-day Union Council arbitration, and NADRA record updates.",
+    "contentUr": "پاکستان میں طلاق اور خلع کے قانونی طریقہ کار، یونین کونسل نوٹس، 90 دن کی عدت اور نادرا ریکارڈ اپ ڈیٹ کی گائیڈ۔",
+    "relatedSlugs": [
+      "/marriage-family/nikah-nama-vs-mrc-difference-nadra-2026",
+      "/certificates/nadra-marriage-certificate-online-check-2026",
+      "/nadra/family-registration-certificate-frc-guide"
+    ]
   }
 };
