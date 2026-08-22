@@ -674,6 +674,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Zakat Calculator 2026",
+        "ur": "زکوٰۃ کیلکولیٹر 2026",
+        "slug": "/hajj-umrah/zakat-calculator-2026"
+      },
+      {
         "en": "Hajj Eligibility & Cost 2026",
         "ur": "حج اہلیت و اخراجات 2026",
         "slug": "/hajj-umrah/hajj-application-eligibility-checker-2026"

@@ -18560,5 +18560,72 @@ export const ARTICLES: Record<string, Article> = {
       "/pakistan-post/overview-guide-2026",
       "/passport/office-contact-directory"
     ]
+  },
+  "hajj-umrah-zakat-calculator-2026": {
+    "slug": "zakat-calculator-2026",
+    "fullPath": "/hajj-umrah/zakat-calculator-2026",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Zakat Calculator 2026 – Calculate 2.5% on Gold, Silver, Cash & Business",
+    "titleUr": "زکوٰۃ کیلکولیٹر 2026",
+    "metaDescriptionEn": "Calculate your 2.5% Zakat online for 2026: Real-time calculation on cash, bank savings, gold & silver (grams or tola), business merchandise, and investments with Silver & Gold Nisab options.",
+    "metaDescriptionUr": "آن لائن زکوٰۃ کیلکولیٹر 2026: سونے، چاندی، نقد رقم اور مالِ تجارت پر زکوٰۃ کا حساب اور نصاب کی معلومات۔",
+    "directAnswerEn": "Zakat is an obligatory pillar of Islam due at 2.5% (1/40th) of net qualifying wealth held for one full lunar year (Hawl). It becomes payable when net wealth meets or exceeds the Nisab threshold: either 612.36 grams of silver (approx. 52.5 tola — widely recommended) or 87.48 grams of gold (approx. 7.5 tola).",
+    "directAnswerUr": "زکوٰۃ اسلام کا بنیادی فرض ہے جو نصاب کے برابر یا زائد مال پر ایک قمری سال گزرنے کے بعد 2.5 فیصد (چالیسواں حصہ) ادا کی جاتی ہے۔ نصاب کی دو شرعی حدیں ہیں: 612.36 گرام چاندی یا 87.48 گرام سونا۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Ministry of Religious Affairs Pakistan",
+      "url": "https://mora.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Islamic Civic Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Zakat Obligation Rate",
+        "serviceUr": "شرعی زکوٰۃ کی شرح",
+        "normal": "2.5% of Net Wealth",
+        "urgent": "Due after 1 Lunar Year (Hawl)",
+        "executive": "Silver (612.36g) / Gold (87.48g)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Nisab Benchmark (Silver or Gold)",
+        "titleUr": "نصاب کا انتخاب کریں (چاندی یا سونا)",
+        "detailEn": "Choose between the recommended Silver Nisab (612.36g) or Gold Nisab (87.48g).",
+        "detailUr": "چاندی کا نصاب (612.36 گرام) یا سونے کا نصاب (87.48 گرام) منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Input Market Rates & Zakatable Assets",
+        "titleUr": "آج کے ریٹس اور اپنے اثاثے درج کریں",
+        "detailEn": "Enter cash, bank balances, gold/silver weights, and business merchandise.",
+        "detailUr": "نقد رقم، بینک بیلنس، سونے چاندی کا وزن اور مالِ تجارت کی مالیت درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Deduct Immediate Debts & View Zakat Due",
+        "titleUr": "واجب الادا قرض منہا کر کے زکوٰۃ معلوم کریں",
+        "detailEn": "Subtract short-term liabilities to calculate 2.5% Zakat on net qualifying wealth.",
+        "detailUr": "خالص قابل زکوٰۃ مالیت پر 2.5 فیصد کے حساب سے ادا کی جانے والی رقم دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Should I use Gold or Silver Nisab?",
+        "questionUr": "سونے کا نصاب استعمال کریں یا چاندی کا؟",
+        "answerEn": "Most contemporary scholars recommend the Silver Nisab because its lower threshold benefits more needy recipients.",
+        "answerUr": "اکثر معاصر علمائے کرام چاندی کے نصاب کو ترجیح دیتے ہیں تاکہ زیادہ مستحقین کی مدد ہو سکے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide and interactive financial utility for calculating 2.5% Zakat on personal and business wealth in Pakistan.",
+    "contentUr": "پاکستان میں زکوٰۃ کے حساب، نصاب کے تعین اور مستحقین کی شرعی شرائط کی مکمل معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026",
+      "/hajj-umrah/hajj-policy-2026-pakistan-application-guide",
+      "/tax/income-tax-calculator-salaried-2026"
+    ]
   }
 };
