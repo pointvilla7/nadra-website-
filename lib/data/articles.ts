@@ -18387,5 +18387,178 @@ export const ARTICLES: Record<string, Article> = {
       "/mobile-pta/pta-mobile-tax-check-online",
       "/mobile-pta/sim-information-system-guide"
     ]
+  },
+  "pakistan-post-tracking-2026": {
+    "slug": "tracking-2026",
+    "fullPath": "/pakistan-post/tracking-2026",
+    "categoryId": "pakistan-post",
+    "titleEn": "Pakistan Post Tracking 2026 – Track Your Parcel Online",
+    "titleUr": "پاکستان پوسٹ پارسل ٹریکنگ 2026",
+    "metaDescriptionEn": "Pakistan Post tracking online 2026: Track your parcel, Urgent Mail Service (UMS), international EMS, and GPO registered post online with real-time status updates.",
+    "metaDescriptionUr": "پاکستان پوسٹ ٹریکنگ آن لائن 2026: یو ایم ایس پارسل، بین الاقوامی ای ایم ایس اور جی پی او رجسٹری ٹریک کرنے کا طریقہ۔",
+    "directAnswerEn": "To track your parcel: Find the 9 to 13-digit tracking number on your booking receipt (e.g. EP123456789PK or 9-digit UMS barcode), enter it into the official Pakistan Post portal at ep.gov.pk, and click Search. You will see the complete delivery journey from origin GPO to final delivery.",
+    "directAnswerUr": "پارسل ٹریک کرنے کے لیے: بکنگ رسید پر موجود 9 سے 13 ہندسوں کا ٹریکنگ نمبر (جیسے EP123456789PK یا UMS کوڈ) سرکاری ویب سائٹ (ep.gov.pk) پر درج کر کے سرچ کریں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Pakistan Post Electronic Postal (EP)",
+      "url": "https://ep.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Pakistan Post & Logistics Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Pakistan Post Online Parcel Tracking",
+        "serviceUr": "آن لائن پارسل ٹریکنگ سروس",
+        "normal": "100% Free of Cost",
+        "urgent": "Real-Time Scans",
+        "executive": "Nationwide & Overseas"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Locate 9-13 Digit Tracking Code on Receipt",
+        "titleUr": "رسید سے ٹریکنگ کوڈ معلوم کریں",
+        "detailEn": "Find the barcode tracking number on your postal booking carbon slip.",
+        "detailUr": "ڈاکخانے کی بکنگ رسید پر موجود بارکوڈ نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter Tracking Code on ep.gov.pk",
+        "titleUr": "سرکاری پورٹل پر کوڈ درج کریں",
+        "detailEn": "Input the tracking ID into Pakistan Post Electronic Postal system.",
+        "detailUr": "سرکاری پورٹل پر ٹریکنگ کوڈ درج کر کے سرچ بٹن دبائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "View Live Route & Delivery Status",
+        "titleUr": "پارسل کی موجودہ لوکیشن دیکھیں",
+        "detailEn": "Check transit status from dispatching GPO to final delivery postman beat.",
+        "detailUr": "پارسل کی بکنگ سے لے کر وصولی تک کے تمام مراحل ملاحظہ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I track my Pakistan Post parcel online?",
+        "questionUr": "پاکستان پوسٹ کا پارسل آن لائن کیسے ٹریک کریں؟",
+        "answerEn": "Enter your 9-13 digit tracking ID on ep.gov.pk or use our interactive Pakistan Post tracker.",
+        "answerUr": "سرکاری پورٹل (ep.gov.pk) پر 9 سے 13 ہندسوں کا ٹریکنگ کوڈ درج کریں۔"
+      }
+    ],
+    "contentEn": "Real-time parcel tracking guide and helper for Pakistan Post, UMS, EMS Express, and GPO registered mail across Pakistan.",
+    "contentUr": "پاکستان پوسٹ ٹریکنگ، یو ایم ایس اور بین الاقوامی پارسلز کی آن لائن جانچ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/pakistan-post/overview-guide-2026",
+      "/pakistan-post/post-office-locator-2026",
+      "/passport/tracking-status"
+    ]
+  },
+  "pakistan-post-overview-guide-2026": {
+    "slug": "overview-guide-2026",
+    "fullPath": "/pakistan-post/overview-guide-2026",
+    "categoryId": "pakistan-post",
+    "titleEn": "Pakistan Post 2026 – Services, UMS Tracking & Post Office Guide",
+    "titleUr": "پاکستان پوسٹ سروسز اور مکمل گائیڈ 2026",
+    "metaDescriptionEn": "Comprehensive guide to Pakistan Post in 2026: Urgent Mail Service (UMS), international EMS parcel delivery, registered mail, money orders, post office locations, and delivery timelines.",
+    "metaDescriptionUr": "پاکستان پوسٹ 2026: یو ایم ایس سروس، بین الاقوامی پارسلز، منی آرڈر اور ڈاک کی تمام سہولیات کی مکمل معلومات۔",
+    "directAnswerEn": "Pakistan Post is Pakistan's national public postal operator under the Ministry of Communications, operating over 13,000 post offices. It provides affordable domestic Urgent Mail Service (UMS), international EMS parcels, registered mail, electronic money orders (EMO), utility bill payments, and pension disbursement nationwide.",
+    "directAnswerUr": "پاکستان پوسٹ وزارت مواصلات کے تحت پاکستان کا سرکاری ڈاک کا ادارہ ہے جس کے ملک بھر میں 13,000 سے زائد ڈاکخانے ہیں۔ یہ ارجنٹ میل سروس (UMS)، بین الاقوامی ای ایم ایس، رجسٹرڈ ڈاک اور پنشن کی ادائیگی فراہم کرتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Pakistan Post Official Portal",
+      "url": "https://pakpost.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Pakistan Post & Logistics Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Urgent Mail Service (UMS) City-to-City",
+        "serviceUr": "ارجنٹ میل سروس (ایک شہر سے دوسرا شہر)",
+        "normal": "Starting from Rs. 100",
+        "urgent": "Overnight 24-48 Hours",
+        "executive": "Doorstep Delivery"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Nearest Post Office or GPO",
+        "titleUr": "قریبی ڈاکخانہ یا جی پی او تشریف لے جائیں",
+        "detailEn": "Package your document or parcel and write clear recipient and sender addresses with 5-digit postal codes.",
+        "detailUr": "اپنے خط یا پارسل پر مکمل پتہ اور 5 ہندسوں کا پوسٹل کوڈ لکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What services are offered by Pakistan Post?",
+        "questionUr": "پاکستان پوسٹ کون سی خدمات فراہم کرتا ہے؟",
+        "answerEn": "UMS, EMS international parcels, registered mail, money orders, and pension disbursements.",
+        "answerUr": "یو ایم ایس، بین الاقوامی ڈاک، رجسٹرڈ خطوط اور منی آرڈر کی خدمات۔"
+      }
+    ],
+    "contentEn": "Complete civic guide to Pakistan Post services, UMS parcel delivery rates, GPO networks, and tracking.",
+    "contentUr": "پاکستان پوسٹ سروسز، یو ایم ایس پارسل ڈلیوری ریٹس اور جی پی او نیٹ ورک کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/pakistan-post/tracking-2026",
+      "/pakistan-post/post-office-locator-2026",
+      "/overseas/nicop-mandatory-entry-rules-2026"
+    ]
+  },
+  "pakistan-post-post-office-locator-2026": {
+    "slug": "post-office-locator-2026",
+    "fullPath": "/pakistan-post/post-office-locator-2026",
+    "categoryId": "pakistan-post",
+    "titleEn": "Pakistan Post Office Near Me – GPO Locations, Postal Codes & Contact 2026",
+    "titleUr": "پاکستان پوسٹ آفس و جی پی او ڈائریکٹری 2026",
+    "metaDescriptionEn": "Find Pakistan Post office near you: Official directory of General Post Offices (GPOs), 5-digit postal codes, operating hours, counter services, and contact numbers.",
+    "metaDescriptionUr": "قریبی ڈاکخانہ و جی پی او برانچ معلوم کریں: پاکستان کے تمام بڑے شہروں کے 5 ہندسوں کے پوسٹل کوڈز اور اوقات کار۔",
+    "directAnswerEn": "To find your nearest post office: Visit your city's central General Post Office (GPO) or search 'Pakistan Post Office' on Google Maps. Pakistan Post operates over 13,000 local branches. Postal codes in Pakistan are 5 digits, where the first two digits represent the postal division.",
+    "directAnswerUr": "قریبی ڈاکخانہ تلاش کرنے کے لیے اپنے شہر کے مرکزی جنرل پوسٹ آفس (GPO) جائیں یا گوگل میپس پر تلاش کریں۔ پاکستان میں تمام پوسٹل کوڈز 5 ہندسوں پر مشتمل ہوتے ہیں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "Pakistan Post Postal Code Directory",
+      "url": "https://pakpost.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Pakistan Post & Logistics Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "GPO Counter Services",
+        "serviceUr": "جی پی او کاؤنٹر خدمات",
+        "normal": "9:00 AM – 4:00 PM",
+        "urgent": "24/7 Urgent Booking",
+        "executive": "All Major Cities"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check City GPO Postal Code",
+        "titleUr": "شہر کا 5 ہندسوں کا پوسٹل کوڈ دیکھیں",
+        "detailEn": "Verify destination postal code for accurate routing.",
+        "detailUr": "بروقت ترسیل کے لیے درست پوسٹل کوڈ درج کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I find the nearest Pakistan Post office near me?",
+        "questionUr": "قریبی ڈاکخانہ کیسے تلاش کریں؟",
+        "answerEn": "Search 'Pakistan Post Office' on Google Maps or visit your central city GPO.",
+        "answerUr": "گوگل میپس پر سرچ کریں یا شہر کے مرکزی جی پی او جائیں۔"
+      }
+    ],
+    "contentEn": "Official directory of Pakistan Post GPOs, postal codes, and branch operating hours across all major cities in Pakistan.",
+    "contentUr": "پاکستان بھر کے جی پی او دفاتر، 5 ہندسوں کے پوسٹل کوڈز اور کاؤنٹر ٹائمنگ کی مکمل ڈائریکٹری۔",
+    "relatedSlugs": [
+      "/pakistan-post/tracking-2026",
+      "/pakistan-post/overview-guide-2026",
+      "/passport/office-contact-directory"
+    ]
   }
 };

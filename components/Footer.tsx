@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
                   href="/sitemap"
                   className="hover:text-amber-400 transition flex items-center gap-1.5 text-doc-brass font-bold pt-1"
                 >
-                  <span>→ {t('View All 19 Portals', 'تمام 19 پورٹلز دیکھیں')}</span>
+                  <span>→ {t('View All 20 Portals', 'تمام 20 پورٹلز دیکھیں')}</span>
                 </Link>
               </li>
             </ul>
@@ -104,9 +104,15 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
-                <Link href="/mobile-pta/tax-calculator-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                <Link href="/pakistan-post/tracking-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                  <span>📦</span>
+                  <span>{t('Pakistan Post Tracking 2026', 'پاکستان پوسٹ ٹریکنگ 2026')}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/mobile-pta/pta-mobile-tax-check-online" className="hover:text-amber-400 transition text-slate-200 font-bold flex items-center gap-1.5">
                   <span>📱</span>
-                  <span>{t('PTA Mobile Tax Calculator 2026', 'پی ٹی اے موبائل ٹیکس کیلکولیٹر')}</span>
+                  <span>{t('PTA Mobile Tax Check Online', 'پی ٹی اے موبائل ٹیکس کیلکولیٹر')}</span>
                 </Link>
               </li>
               <li>

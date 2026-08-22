@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles, Calculator, Globe, Building, Users, Award, Compass, Activity, Scale, CloudLightning, CheckCircle2, Smartphone } from 'lucide-react';
+import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles, Calculator, Globe, Building, Users, Award, Compass, Activity, Scale, CloudLightning, CheckCircle2, Smartphone, Mail } from 'lucide-react';
 import { Category } from '@/lib/data/categories';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
@@ -51,6 +51,8 @@ const getCategoryIcon = (iconName: string) => {
       return <CloudLightning {...props} />;
     case 'Smartphone':
       return <Smartphone {...props} />;
+    case 'Mail':
+      return <Mail {...props} />;
     default:
       return <Sparkles {...props} />;
   }

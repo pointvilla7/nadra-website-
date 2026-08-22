@@ -873,5 +873,36 @@ export const CATEGORIES: Category[] = [
         "slug": "/mobile-pta/overseas-temporary-registration-120-days-2026"
       }
     ]
+  },
+  {
+    "id": "pakistan-post",
+    "slug": "pakistan-post",
+    "nameEn": "Pakistan Post",
+    "nameUr": "پاکستان پوسٹ",
+    "taglineEn": "UMS Parcel Tracking, GPO Directory & Postal Tariffs",
+    "taglineUr": "یو ایم ایس پارسل ٹریکنگ، جی پی او ڈائریکٹری اور ڈاک کی خدمات",
+    "descriptionEn": "Official tracking tools and public guides for Pakistan Post: Track domestic Urgent Mail Service (UMS) and international EMS parcels (ep.gov.pk), find nearest General Post Offices (GPOs), lookup 5-digit postal codes, and calculate postage rates.",
+    "descriptionUr": "پاکستان پوسٹ یو ایم ایس پارسل ٹریکنگ (ep.gov.pk)، جی پی او برانچ لوکیشنز، 5 ہندسوں کے پوسٹل کوڈز اور ڈاک کے سرکاری ریٹس کی مکمل رہنمائی۔",
+    "iconName": "Mail",
+    "accentColor": "#C59B27",
+    "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
+    "badgeText": "text-doc-brass dark:text-amber-300",
+    "popularSearches": [
+      {
+        "en": "Pakistan Post Tracking (90.5k/mo)",
+        "ur": "پاکستان پوسٹ ٹریکنگ",
+        "slug": "/pakistan-post/tracking-2026"
+      },
+      {
+        "en": "Pakistan Post Guide (135k/mo)",
+        "ur": "پاکستان پوسٹ سروسز گائیڈ",
+        "slug": "/pakistan-post/overview-guide-2026"
+      },
+      {
+        "en": "Post Office Near Me (GPO) (27.1k/mo)",
+        "ur": "قریبی ڈاکخانہ و جی پی او",
+        "slug": "/pakistan-post/post-office-locator-2026"
+      }
+    ]
   }
 ];

@@ -211,9 +211,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       ids: ['tax', 'business', 'loans', 'property', 'bills'],
                     },
                     {
-                      titleEn: 'Education & Jobs',
-                      titleUr: 'تعلیم و روزگار',
-                      ids: ['jobs', 'education', 'welfare'],
+                      titleEn: 'Services & Postal',
+                      titleUr: 'ڈاک و خدمات',
+                      ids: ['pakistan-post', 'jobs', 'education', 'welfare'],
                     },
                     {
                       titleEn: 'Health & Legal',
@@ -316,9 +316,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                 ids: ['tax', 'business', 'loans', 'property', 'bills'],
               },
               {
-                titleEn: 'Education & Jobs',
-                titleUr: 'تعلیم و روزگار',
-                ids: ['jobs', 'education', 'welfare'],
+                titleEn: 'Services & Postal',
+                titleUr: 'ڈاک و خدمات',
+                ids: ['pakistan-post', 'jobs', 'education', 'welfare'],
               },
               {
                 titleEn: 'Health & Legal',
