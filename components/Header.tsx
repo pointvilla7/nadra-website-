@@ -203,7 +203,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                     {
                       titleEn: 'Identity & Travel',
                       titleUr: 'شناخت و سفر',
-                      ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
+                      ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates', 'mobile-pta'],
                     },
                     {
                       titleEn: 'Money & Business',
@@ -308,7 +308,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               {
                 titleEn: 'Identity & Travel',
                 titleUr: 'شناخت و سفر',
-                ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
+                ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates', 'mobile-pta'],
               },
               {
                 titleEn: 'Money & Business',

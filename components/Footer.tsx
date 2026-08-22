@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
                   href="/sitemap"
                   className="hover:text-amber-400 transition flex items-center gap-1.5 text-doc-brass font-bold pt-1"
                 >
-                  <span>→ {t('View All 18 Portals', 'تمام 18 پورٹلز دیکھیں')}</span>
+                  <span>→ {t('View All 19 Portals', 'تمام 19 پورٹلز دیکھیں')}</span>
                 </Link>
               </li>
             </ul>
@@ -104,7 +104,13 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
-                <Link href="/bills/utility-bill-checker-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                <Link href="/mobile-pta/tax-calculator-2026" className="hover:text-amber-400 transition text-amber-300 font-bold flex items-center gap-1.5">
+                  <span>📱</span>
+                  <span>{t('PTA Mobile Tax Calculator 2026', 'پی ٹی اے موبائل ٹیکس کیلکولیٹر')}</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/bills/utility-bill-checker-2026" className="hover:text-amber-400 transition text-slate-200 font-bold flex items-center gap-1.5">
                   <span>⚡</span>
                   <span>{t('Online Bill Checker 2026', 'آن لائن بجلی و گیس بل چیکر')}</span>
                 </Link>

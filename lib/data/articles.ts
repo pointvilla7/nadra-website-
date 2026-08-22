@@ -17845,5 +17845,367 @@ export const ARTICLES: Record<string, Article> = {
       "/overseas/nicop-mandatory-entry-rules-2026",
       "/overseas/poc-card-pakistan-apply-online"
     ]
+  },
+  "tax-calculator-2026": {
+    "slug": "tax-calculator-2026",
+    "fullPath": "/mobile-pta/tax-calculator-2026",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA Mobile Tax Calculator 2026 – Passport vs CNIC Duty Rates",
+    "titleUr": "پی ٹی اے موبائل ٹیکس کیلکولیٹر 2026",
+    "metaDescriptionEn": "Calculate exact PTA mobile phone registration tax and customs duty in Pakistan for 2026. Compare Passport vs CNIC registration rates across all FBR C&F USD brackets.",
+    "metaDescriptionUr": "پی ٹی اے موبائل فون رجسٹریشن ٹیکس کیلکولیٹر 2026: پاسپورٹ اور شناختی کارڈ ریٹس، ایف بی آر کسٹم ڈیوٹی اور 18 فیصد سیلز ٹیکس کا مکمل حساب۔",
+    "directAnswerEn": "PTA mobile tax is determined by the phone's C&F valuation in USD across 6 brackets, combining Customs Duty, Regulatory Duty, 18% Sales Tax, and Mobile Levy. Registering on a Passport is significantly cheaper than registering on a local resident CNIC. Phones can be used tax-free for 60 days before blocking.",
+    "directAnswerUr": "پی ٹی اے ٹیکس موبائل فون کی ڈالر قیمت کے مطابق 6 سلیبس میں لاگو ہوتا ہے۔ پاسپورٹ پر رجسٹریشن کی فیس مقامی شناختی کارڈ کی نسبت نمایاں طور پر کم ہوتی ہے۔ غیر رجسٹرڈ فون 60 دن تک بغیر ٹیکس چل سکتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Portal & FBR Customs",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Phones > $500 (iPhone 15/16 Pro, S24 Ultra)",
+        "serviceUr": "500 ڈالر سے زائد مالیت کے فلیگ شپ فونز",
+        "normal": "Passport: ~Rs. 135,000",
+        "urgent": "CNIC: ~Rs. 165,000",
+        "executive": "18% GST + RD Included"
+      },
+      {
+        "serviceEn": "Mid-Range Phones ($200 – $350)",
+        "serviceUr": "مڈ رینج فونز (200 تا 350 ڈالر)",
+        "normal": "Passport: ~Rs. 38,000",
+        "urgent": "CNIC: ~Rs. 48,000",
+        "executive": "FBR Customs Slabs"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find Phone IMEI via *#06#",
+        "titleUr": "*#06# ملا کر فون کا آئی ایم ای آئی معلوم کریں",
+        "detailEn": "Dial *#06# on your device keypad and note down the 15-digit IMEI 1 and IMEI 2.",
+        "detailUr": "اپنے فون کے ڈائل پیڈ پر *#06# ڈائل کریں اور 15 ہندسوں کا نمبر نوٹ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Generate 17-Digit PSID on dirbs.pta.gov.pk",
+        "titleUr": "پی ٹی اے پورٹل سے 17 ہندسوں کا پی ایس آئی ڈی بنائیں",
+        "detailEn": "Select Passport or CNIC registration on DIRBS and submit your device details to generate a PSID.",
+        "detailUr": "سرکاری ویب سائٹ پر جا کر پاسپورٹ یا شناختی کارڈ کا انتخاب کریں اور چالان بنائیں کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Tax via 1Link Banking App or ATM",
+        "titleUr": "بینکنگ ایپ یا اے ٹی ایم سے ٹیکس ادا کریں",
+        "detailEn": "Pay the exact duty through 1Link under FBR/GOP Tax Payments in your mobile banking app.",
+        "detailUr": "موبائل بینکنگ ایپ میں ون لنک کے ذریعے پی ایس آئی ڈی درج کر کے فیس جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Device Network Activation Within 24 Hours",
+        "titleUr": "24 گھنٹے کے اندر فون کی نیٹ ورک بحالی",
+        "detailEn": "PTA DIRBS automatically reconciles payment and restores cellular network connectivity.",
+        "detailUr": "ادائیگی کے بعد پی ٹی اے سسٹم 24 گھنٹے میں فون کا نیٹ ورک فعال کر دیتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Why is Passport registration cheaper than CNIC?",
+        "questionUr": "پاسپورٹ پر ٹیکس شناختی کارڈ سے کم کیوں ہے؟",
+        "answerEn": "International travelers receive passenger baggage concessions, whereas CNIC represents local resident commercial importation.",
+        "answerUr": "بین الاقوامی مسافروں کو سفری سامان کی مد میں رعایت دی جاتی ہے جبکہ شناختی کارڈ پر پورا کمرشل ٹیکس لگتا ہے۔"
+      },
+      {
+        "questionEn": "What is the grace period before an unregistered phone is blocked?",
+        "questionUr": "فون بلاک ہونے سے پہلے کتنے دن کی مہلت ملتی ہے؟",
+        "answerEn": "You have 60 days from the first insertion of a Pakistani SIM card to pay the tax before the phone is disconnected.",
+        "answerUr": "پاکستانی سم پہلی بار ڈالنے کے بعد 60 دن کے اندر ٹیکس ادا کرنا لازمی ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to PTA mobile phone tax calculation in Pakistan, FBR customs duty slabs, and Passport vs CNIC registration.",
+    "contentUr": "پاکستان میں موبائل فون پر پی ٹی اے ٹیکس، ایف بی آر کسٹم ڈیوٹی اور پاسپورٹ بنام شناختی کارڈ ریٹس کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/imei-check-2026",
+      "/mobile-pta/sim-information-system-guide",
+      "/mobile-pta/overseas-temporary-registration-120-days-2026"
+    ]
+  },
+  "imei-check-2026": {
+    "slug": "imei-check-2026",
+    "fullPath": "/mobile-pta/imei-check-2026",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA IMEI Status Check 2026 – DIRBS 8484 SMS Verification",
+    "titleUr": "پی ٹی اے آئی ایم ای آئی تصدیق 8484 ایس ایم ایس",
+    "metaDescriptionEn": "Check your mobile phone PTA DIRBS registration status in Pakistan. Learn how to verify 15-digit IMEI via free SMS to 8484, dial *#06#, and use official portal dirbs.pta.gov.pk.",
+    "metaDescriptionUr": "موبائل فون پی ٹی اے رجسٹریشن تصدیق: *#06# سے آئی ایم ای آئی حاصل کریں، 8484 پر مفت میسج بھیجیں اور چوری شدہ فونز سے محفوظ رہیں۔",
+    "directAnswerEn": "To check PTA status, dial *#06# to get your 15-digit IMEI number, then send the 15 digits via free SMS to 8484 from any local SIM. You will immediately receive a reply confirming if the device is Compliant (Approved), Non-Compliant (Tax Pending with 60-day timer), or Blocked.",
+    "directAnswerUr": "فون کا اسٹیٹس معلوم کرنے کے لیے *#06# ڈائل کر کے 15 ہندسوں کا آئی ایم ای آئی نمبر حاصل کریں، پھر اسے 8484 پر مفت ایس ایم ایس بھیجیں۔ پی ٹی اے فوری تصدیق کرے گا کہ فون منظور شدہ ہے یا بلاک ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Portal",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "SMS to Shortcode 8484",
+        "serviceUr": "8484 پر ایس ایم ایس تصدیق",
+        "normal": "100% FREE of Charge",
+        "urgent": "Instant Automated Reply",
+        "executive": "All Networks (Jazz, Zong, Telenor, Ufone)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Dial *#06# on Dialpad",
+        "titleUr": "فون پر *#06# ڈائل کریں",
+        "detailEn": "Check your 15-digit IMEI number displayed on the screen.",
+        "detailUr": "اسکرین پر ظاہر ہونے والا 15 ہندسوں کا آئی ایم ای آئی نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Send 15 Digits to 8484 via SMS",
+        "titleUr": "8484 پر 15 ہندسے ایس ایم ایس کریں",
+        "detailEn": "Type the 15-digit IMEI without spaces and send to 8484.",
+        "detailUr": "بغیر کسی فاصلے کے 15 ہندسے 8484 پر بھیجیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Review Status Reply",
+        "titleUr": "جوابی پیغام میں اسٹیٹس چیک کریں",
+        "detailEn": "Confirm if device is Compliant, Non-Compliant, or Blocked.",
+        "detailUr": "تصدیق کریں کہ فون پی ٹی اے منظور شدہ ہے یا بلاک ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is 8484 SMS check free?",
+        "questionUr": "کیا 8484 پر میسج مفت ہے؟",
+        "answerEn": "Yes. Checking IMEI via 8484 is completely free on all networks.",
+        "answerUr": "جی ہاں! تمام موبائل نیٹ ورکس پر 8484 سروس بالکل مفت ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to checking mobile phone IMEI registration status on PTA DIRBS portal and SMS shortcode 8484.",
+    "contentUr": "پی ٹی اے ڈیوائس تصدیق، 8484 ایس ایم ایس اور چوری شدہ موبائل فونز کی جانچ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/tax-calculator-2026",
+      "/mobile-pta/sim-information-system-guide",
+      "/mobile-pta/how-to-register-phone-pta-dvs-online"
+    ]
+  },
+  "sim-information-system-guide": {
+    "slug": "sim-information-system-guide",
+    "fullPath": "/mobile-pta/sim-information-system-guide",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA SIM Information System Guide – *8888#, 668 & Biometric Limits",
+    "titleUr": "پی ٹی اے سم معلومات سسٹم گائیڈ 2026",
+    "metaDescriptionEn": "Official civic guide to checking SIM cards registered against your CNIC in Pakistan: How to use PTA SIM Information System (*8888# and 668 SMS) and block unauthorized numbers.",
+    "metaDescriptionUr": "شناختی کارڈ پر جاری شدہ سمز کی تصدیق: 668 ایس ایم ایس، *8888# کوڈ، 5 سمز کی حد اور غیر متعلقہ نمبرز بلاک کروانے کا طریقہ۔",
+    "directAnswerEn": "You can check your registered SIM count by sending your 13-digit CNIC (without dashes) via SMS to 668 or dialing *8888#. Under PTA regulations, a single citizen can register a maximum of 5 voice SIMs across all mobile operators. Any unrecognized SIM should be immediately blocked at the operator's franchise with your original CNIC.",
+    "directAnswerUr": "اپنے شناختی کارڈ کے 13 ہندسے 668 پر ایس ایم ایس بھیجیں یا *8888# ڈائل کریں۔ ایک شناختی کارڈ پر زیادہ سے زیادہ 5 وائس سمز رجسٹر ہو سکتی ہیں۔ کوئی بھی غیر متعلقہ سم نظر آنے پر فوری بلاک کروائیں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA SIM Information System",
+      "url": "https://cnic.sims.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Telecom & Cyber Security Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "668 SMS & *8888# Self-Check",
+        "serviceUr": "668 ایس ایم ایس و خودکار تصدیق",
+        "normal": "Free / Standard SMS Rate",
+        "urgent": "Operator Breakdown",
+        "executive": "5-SIM Biometric Cap"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Send 13-Digit CNIC to 668",
+        "titleUr": "13 ہندسوں کا شناختی کارڈ 668 پر بھیجیں",
+        "detailEn": "Type your CNIC without dashes and send to 668.",
+        "detailUr": "بغیر ڈیش کے شناختی کارڈ نمبر 668 پر ایس ایم ایس کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Verify Active SIM Count by Operator",
+        "titleUr": "نیٹ ورک کے مطابق سمز کی تعداد دیکھیں",
+        "detailEn": "Review how many SIMs are active on Jazz, Zong, Telenor, and Ufone.",
+        "detailUr": "جاز، زونگ، ٹیلی نار اور یوفون پر ایکٹو سمز کی تفصیل چیک کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Block Unknown SIMs at Franchise",
+        "titleUr": "غیر متعلقہ سمز کو فرنچائز جا کر بلاک کروائیں",
+        "detailEn": "Visit operator franchise with original CNIC to disown fraudulent numbers.",
+        "detailUr": "اصل شناختی کارڈ لے کر کمپنی فرنچائز جائیں اور بائیو میٹرک کروا کر بلاک کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the maximum SIM limit per CNIC in Pakistan?",
+        "questionUr": "ایک شناختی کارڈ پر کتنی سمز نکل سکتی ہیں؟",
+        "answerEn": "A maximum of 5 voice SIMs and up to 3 data/broadband SIMs per CNIC.",
+        "answerUr": "ایک شناختی کارڈ پر زیادہ سے زیادہ 5 وائس اور 3 ڈیٹا سمز کی اجازت ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to checking active SIM cards on CNIC, PTA 668 shortcode, and blocking unauthorized mobile numbers.",
+    "contentUr": "شناختی کارڈ پر سمز کی تصدیق، 668 شارٹ کوڈ، 5 سمز کی حد اور فراڈ سے بچاؤ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/imei-check-2026",
+      "/mobile-pta/tax-calculator-2026",
+      "/nadra/lost-stolen-cnic-replacement-2026"
+    ]
+  },
+  "overseas-temporary-registration-120-days-2026": {
+    "slug": "overseas-temporary-registration-120-days-2026",
+    "fullPath": "/mobile-pta/overseas-temporary-registration-120-days-2026",
+    "categoryId": "mobile-pta",
+    "titleEn": "120-Day Temporary PTA Mobile Registration 2026 – Overseas & Tourists",
+    "titleUr": "اوورسیز 120 دن عارضی رجسٹریشن 2026",
+    "metaDescriptionEn": "Complete guide to PTA Temporary Mobile Registration System (TTRS) for overseas Pakistanis and foreign tourists: How to register your personal phone 100% tax-free for up to 120 days per visit via dirbs.pta.gov.pk/ttrs.",
+    "metaDescriptionUr": "اوورسیز پاکستانیوں اور غیر ملکی سیاحوں کے لیے 120 دن کی مفت عارضی موبائل رجسٹریشن: پاسپورٹ، آمد کی تاریخ اور آن لائن طریقہ کار۔",
+    "directAnswerEn": "Yes. PTA offers a 100% tax-free Temporary Mobile Registration System (TTRS) for overseas Pakistanis and tourists visiting Pakistan. By submitting your passport, immigration arrival date, and local SIM number at dirbs.pta.gov.pk/ttrs, your device is activated on local cellular networks for up to 120 days per visit.",
+    "directAnswerUr": "جی ہاں! پی ٹی اے عارضی موبائل رجسٹریشن پورٹل (TTRS) کے تحت اوورسیز پاکستانی اور غیر ملکی سیاح بغیر کسی ٹیکس کے 120 دن تک اپنا ذاتی فون استعمال کر سکتے ہیں۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA TTRS Portal",
+      "url": "https://dirbs.pta.gov.pk/ttrs"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Overseas & Travel Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "120-Day Temporary Registration (TTRS)",
+        "serviceUr": "120 دن عارضی رجسٹریشن (TTRS)",
+        "normal": "100% FREE (Zero Tax)",
+        "urgent": "Per International Visit",
+        "executive": "Tied to Personal SIM"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Sign Up on dirbs.pta.gov.pk/ttrs",
+        "titleUr": "پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Select Temporary Registration for Overseas Pakistani / Foreigner.",
+        "detailUr": "سرکاری پورٹل پر جا کر اوورسیز یا غیر ملکی سیاح کے طور پر رجسٹر ہوں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Enter Passport & Arrival Details",
+        "titleUr": "پاسپورٹ اور آمد کی تاریخ درج کریں",
+        "detailEn": "Submit passport number, flight arrival date, and device IMEI.",
+        "detailUr": "پاسپورٹ نمبر، پاکستان آمد کی تاریخ اور فون کا آئی ایم ای آئی درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "120-Day Network Activation",
+        "titleUr": "120 دن کی ایکٹیویشن حاصل کریں",
+        "detailEn": "Verify OTP and enjoy 120 days of tax-free local network usage.",
+        "detailUr": "موبائل او ٹی پی کی تصدیق کے بعد 120 دن کے لیے فون فعال ہو جاتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I use TTRS on every visit to Pakistan?",
+        "questionUr": "کیا ہر بار پاکستان آنے پر یہ سہولت ملتی ہے؟",
+        "answerEn": "Yes. The 120-day tax-free window is available on every trip with valid arrival verification.",
+        "answerUr": "جی ہاں! امیگریشن ریکارڈ کے مطابق ہر نئے سفر پر 120 دن کی عارضی سہولت ملتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to PTA 120-day temporary tax-free mobile registration for overseas Pakistanis and tourists.",
+    "contentUr": "اوورسیز پاکستانیوں اور غیر ملکی سیاحوں کے لیے 120 دن کی مفت عارضی موبائل رجسٹریشن کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/tax-calculator-2026",
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/mobile-pta/imei-check-2026"
+    ]
+  },
+  "how-to-register-phone-pta-dvs-online": {
+    "slug": "how-to-register-phone-pta-dvs-online",
+    "fullPath": "/mobile-pta/how-to-register-phone-pta-dvs-online",
+    "categoryId": "mobile-pta",
+    "titleEn": "How to Register Phone with PTA Online 2026 – PSID & 1Link Payment",
+    "titleUr": "فون آن لائن رجسٹر اور پی ٹی اے ٹیکس ادا کرنے کا طریقہ",
+    "metaDescriptionEn": "Step-by-step guide on how to register imported mobile phones with PTA DIRBS in Pakistan: How to generate 17-digit PSID code online, pay customs tax via mobile banking apps/1Link/ATM, and unblock devices within 24 hours.",
+    "metaDescriptionUr": "پی ٹی اے ڈیوائس رجسٹریشن، 17 ہندسوں کا پی ایس آئی ڈی چالان بنانے اور موبائل بینکنگ ایپ سے فیس ادا کرنے کا آسان طریقہ۔",
+    "directAnswerEn": "To register your phone: (1) Go to dirbs.pta.gov.pk and create an account using your CNIC/Passport, (2) Enter your 15-digit IMEI number(s) to generate a 17-digit PSID payment code, and (3) Pay the tax via any online banking app under 1Link FBR/GOP Tax Payments. Network service activates within 24 hours.",
+    "directAnswerUr": "فون رجسٹر کرنے کے لیے: (1) پورٹل (dirbs.pta.gov.pk) پر لاگ ان کریں، (2) آئی ایم ای آئی درج کر کے 17 ہندسوں کا PSID چالان بنائیں، اور (3) کسی بھی بینکنگ ایپ سے ون لنک کے ذریعے فیس ادا کریں۔ 24 گھنٹے میں فون ایکٹیو ہو جائے گا۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Registration",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PTA DIRBS Registration (Single/Dual SIM)",
+        "serviceUr": "پی ٹی اے رجسٹریشن چالان",
+        "normal": "Per FBR Customs Slabs",
+        "urgent": "17-Digit PSID Voucher",
+        "executive": "Paid via 1Link Banking"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Individual Account on DIRBS",
+        "titleUr": "پی ٹی اے پورٹل پر لاگ ان بنائیں",
+        "detailEn": "Sign up with your CNIC, email, and mobile phone number.",
+        "detailUr": "شناختی کارڈ اور ای میل کے ذریعے سرکاری ویب سائٹ پر اکاؤنٹ بنائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Device IMEIs & Generate PSID",
+        "titleUr": "آئی ایم ای آئی درج کر کے چالان بنائیں",
+        "detailEn": "Enter your device IMEI 1 and IMEI 2 to generate the 17-digit PSID code.",
+        "detailUr": "فون کے آئی ایم ای آئی نمبرز درج کر کے پی ایس آئی ڈی کوڈ حاصل کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Tax via Online Banking or ATM",
+        "titleUr": "آن لائن بینکنگ یا اے ٹی ایم سے فیس ادا کریں",
+        "detailEn": "Pay under 1Link FBR/GOP Tax Payments in your bank app.",
+        "detailUr": "بینکنگ ایپ میں ون لنک کے ذریعے 17 ہندسوں کا کوڈ ڈال کر فیس ادا کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Network Activation within 24 Hours",
+        "titleUr": "24 گھنٹے میں فون فعال",
+        "detailEn": "Device is cleared and cellular signals are restored automatically.",
+        "detailUr": "ادائیگی کے بعد سسٹم فون کے نیٹ ورک سگنلز فوری بحال کر دیتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How long does PTA take to unblock after payment?",
+        "questionUr": "ادائیگی کے کتنی دیر بعد فون ان بلاک ہوتا ہے؟",
+        "answerEn": "Connectivity is typically restored within 2 to 24 hours after 1Link payment.",
+        "answerUr": "فیس جمع کروانے کے بعد عام طور پر 2 سے 24 گھنٹے میں فون بحال ہو جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Complete procedural guide to registering mobile phones on PTA DIRBS, generating PSID vouchers, and paying customs duties via 1Link.",
+    "contentUr": "پی ٹی اے پورٹل پر موبائل فون رجسٹریشن، پی ایس آئی ڈی واؤچر بنانے اور ون لنک سے ادائیگی کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/mobile-pta/tax-calculator-2026",
+      "/mobile-pta/imei-check-2026",
+      "/mobile-pta/sim-information-system-guide"
+    ]
   }
 };

@@ -832,5 +832,46 @@ export const CATEGORIES: Category[] = [
         "slug": "/alerts/emergency-helpline-numbers-pakistan"
       }
     ]
+  },
+  {
+    "id": "mobile-pta",
+    "slug": "mobile-pta",
+    "nameEn": "Mobile & PTA Services",
+    "nameUr": "موبائل و پی ٹی اے سروسز",
+    "taglineEn": "PTA Mobile Tax, DIRBS IMEI Status & SIM Verification",
+    "taglineUr": "پی ٹی اے موبائل ٹیکس، آئی ایم ای آئی تصدیق اور سم ویریفیکیشن",
+    "descriptionEn": "Official step-by-step guides and online tools for PTA DIRBS mobile device registration, Customs duty tax calculation for iPhones & Android (Passport vs CNIC), IMEI status verification (8484 SMS), and SIM information rules in Pakistan.",
+    "descriptionUr": "پی ٹی اے موبائل ٹیکس کیلکولیٹر، آئی ایم ای آئی رجسٹریشن چیک (8484)، اوورسیز 120 دن عارضی رجسٹریشن اور سم معلومات سسٹم کی مصدقہ رہنمائی۔",
+    "iconName": "Smartphone",
+    "accentColor": "#1B2A4A",
+    "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
+    "badgeText": "text-doc-ink dark:text-slate-200",
+    "popularSearches": [
+      {
+        "en": "PTA Tax Calculator 2026",
+        "ur": "پی ٹی اے ٹیکس کیلکولیٹر",
+        "slug": "/mobile-pta/tax-calculator-2026"
+      },
+      {
+        "en": "PTA IMEI Status Check (8484)",
+        "ur": "آئی ایم ای آئی تصدیق 8484",
+        "slug": "/mobile-pta/imei-check-2026"
+      },
+      {
+        "en": "SIM Information System (*8888#)",
+        "ur": "سم معلومات سسٹم گائیڈ",
+        "slug": "/mobile-pta/sim-information-system-guide"
+      },
+      {
+        "en": "Overseas 120-Day Temporary Registration",
+        "ur": "اوورسیز 120 دن عارضی رجسٹریشن",
+        "slug": "/mobile-pta/overseas-temporary-registration-120-days-2026"
+      },
+      {
+        "en": "Register Phone via DVS Online",
+        "ur": "ڈی وی ایس آن لائن رجسٹریشن",
+        "slug": "/mobile-pta/how-to-register-phone-pta-dvs-online"
+      }
+    ]
   }
 ];
