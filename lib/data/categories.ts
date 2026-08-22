@@ -848,14 +848,19 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
-        "en": "PTA Tax Calculator 2026",
-        "ur": "پی ٹی اے ٹیکس کیلکولیٹر",
-        "slug": "/mobile-pta/tax-calculator-2026"
+        "en": "PTA Mobile Registration (12.1k/mo)",
+        "ur": "پی ٹی اے موبائل رجسٹریشن گائیڈ",
+        "slug": "/mobile-pta/pta-mobile-registration-guide-2026"
       },
       {
-        "en": "PTA IMEI Status Check (8484)",
+        "en": "PTA Mobile Tax Check Online",
+        "ur": "پی ٹی اے ٹیکس چیک آن لائن",
+        "slug": "/mobile-pta/pta-mobile-tax-check-online"
+      },
+      {
+        "en": "PTA Mobile IMEI Check (8484)",
         "ur": "آئی ایم ای آئی تصدیق 8484",
-        "slug": "/mobile-pta/imei-check-2026"
+        "slug": "/mobile-pta/pta-mobile-imei-check"
       },
       {
         "en": "SIM Information System (*8888#)",
@@ -866,11 +871,6 @@ export const CATEGORIES: Category[] = [
         "en": "Overseas 120-Day Temporary Registration",
         "ur": "اوورسیز 120 دن عارضی رجسٹریشن",
         "slug": "/mobile-pta/overseas-temporary-registration-120-days-2026"
-      },
-      {
-        "en": "Register Phone via DVS Online",
-        "ur": "ڈی وی ایس آن لائن رجسٹریشن",
-        "slug": "/mobile-pta/how-to-register-phone-pta-dvs-online"
       }
     ]
   }

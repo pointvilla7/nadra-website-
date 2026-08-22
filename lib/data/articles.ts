@@ -18203,8 +18203,188 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Complete procedural guide to registering mobile phones on PTA DIRBS, generating PSID vouchers, and paying customs duties via 1Link.",
     "contentUr": "پی ٹی اے پورٹل پر موبائل فون رجسٹریشن، پی ایس آئی ڈی واؤچر بنانے اور ون لنک سے ادائیگی کی مکمل رہنمائی۔",
     "relatedSlugs": [
-      "/mobile-pta/tax-calculator-2026",
-      "/mobile-pta/imei-check-2026",
+      "/mobile-pta/pta-mobile-tax-check-online",
+      "/mobile-pta/pta-mobile-imei-check",
+      "/mobile-pta/sim-information-system-guide"
+    ]
+  },
+  "pta-mobile-registration-guide-2026": {
+    "slug": "pta-mobile-registration-guide-2026",
+    "fullPath": "/mobile-pta/pta-mobile-registration-guide-2026",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA Mobile Registration 2026 – Complete Online Guide",
+    "titleUr": "پی ٹی اے موبائل رجسٹریشن گائیڈ 2026",
+    "metaDescriptionEn": "Complete guide to PTA mobile registration in Pakistan: How to register mobile with PTA online (DVS app & DIRBS portal), calculate customs tax, and compare Passport vs CNIC rates.",
+    "metaDescriptionUr": "پی ٹی اے موبائل رجسٹریشن گائیڈ 2026: آن لائن ڈی وی ایس پورٹل، پاسپورٹ بنام شناختی کارڈ ریٹس اور 17 ہندسوں کے پی ایس آئی ڈی واؤچر کا مکمل طریقہ۔",
+    "directAnswerEn": "To register your mobile with PTA: Dial *#06# to get your 15-digit IMEI, log into the official DIRBS portal at dirbs.pta.gov.pk, enter your CNIC or Passport details to generate a 17-digit PSID code, and pay the tax through any mobile banking app or ATM under 1Link FBR/GOP Tax Payments. Your device is approved within 24 hours.",
+    "directAnswerUr": "فون رجسٹر کرنے کے لیے: *#06# ملا کر آئی ایم ای آئی حاصل کریں، سرکاری پورٹل (dirbs.pta.gov.pk) پر لاگ ان کر کے پاسپورٹ یا شناختی کارڈ پر 17 ہندسوں کا PSID چالان بنائیں، اور کسی بھی بینکنگ ایپ سے ون لنک کے ذریعے فیس ادا کریں۔ 24 گھنٹے میں فون فعال ہو جائے گا۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Portal",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PTA DIRBS Online Registration",
+        "serviceUr": "پی ٹی اے آن لائن رجسٹریشن چالان",
+        "normal": "Per FBR Customs Slabs",
+        "urgent": "17-Digit PSID Voucher",
+        "executive": "Paid via 1Link Banking"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find Phone IMEI via *#06#",
+        "titleUr": "*#06# ملا کر فون کا آئی ایم ای آئی معلوم کریں",
+        "detailEn": "Dial *#06# on your device keypad and note down the 15-digit IMEI 1 and IMEI 2.",
+        "detailUr": "اپنے فون کے ڈائل پیڈ پر *#06# ڈائل کریں اور 15 ہندسوں کا نمبر نوٹ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Generate 17-Digit PSID on dirbs.pta.gov.pk",
+        "titleUr": "پی ٹی اے پورٹل سے 17 ہندسوں کا پی ایس آئی ڈی بنائیں",
+        "detailEn": "Select Passport or CNIC registration on DIRBS and submit device details to generate a PSID.",
+        "detailUr": "سرکاری پورٹل پر جا کر پاسپورٹ یا شناختی کارڈ کا انتخاب کریں اور چالان بنائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Tax via 1Link Banking App or ATM",
+        "titleUr": "بینکنگ ایپ یا اے ٹی ایم سے ٹیکس ادا کریں",
+        "detailEn": "Pay the exact duty through 1Link under FBR/GOP Tax Payments in your mobile banking app.",
+        "detailUr": "موبائل بینکنگ ایپ میں ون لنک کے ذریعے پی ایس آئی ڈی درج کر کے فیس جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Device Network Activation Within 24 Hours",
+        "titleUr": "24 گھنٹے کے اندر فون کی نیٹ ورک بحالی",
+        "detailEn": "PTA DIRBS automatically reconciles payment and restores cellular network connectivity.",
+        "detailUr": "ادائیگی کے بعد پی ٹی اے سسٹم 24 گھنٹے میں فون کا نیٹ ورک فعال کر دیتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I register my mobile with PTA in Pakistan?",
+        "questionUr": "پاکستان میں موبائل پی ٹی اے سے کیسے رجسٹر کروائیں؟",
+        "answerEn": "Dial *#06# for IMEI, generate PSID at dirbs.pta.gov.pk, and pay via 1Link online banking.",
+        "answerUr": "*#06# ملا کر آئی ایم ای آئی حاصل کریں، پورٹل سے چالان بنائیں اور بینکنگ ایپ سے فیس ادا کریں۔"
+      }
+    ],
+    "contentEn": "Complete guide to PTA mobile registration in Pakistan: How to register mobile with PTA online (DVS app & DIRBS portal).",
+    "contentUr": "پاکستان میں پی ٹی اے موبائل رجسٹریشن، آن لائن ڈی وی ایس پورٹل اور فیس ادائیگی کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/pta-mobile-tax-check-online",
+      "/mobile-pta/pta-mobile-imei-check",
+      "/mobile-pta/overseas-temporary-registration-120-days-2026"
+    ]
+  },
+  "pta-mobile-tax-check-online": {
+    "slug": "pta-mobile-tax-check-online",
+    "fullPath": "/mobile-pta/pta-mobile-tax-check-online",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA Mobile Tax Check Online 2026 – Calculator & iPhone Duty Rates",
+    "titleUr": "پی ٹی اے موبائل ٹیکس چیک آن لائن 2026",
+    "metaDescriptionEn": "PTA mobile tax check online and instant calculator 2026: Calculate exact customs duty, regulatory duty, and 18% GST on iPhone 16/15/14, Samsung Galaxy S24, and Android.",
+    "metaDescriptionUr": "پی ٹی اے موبائل ٹیکس چیک آن لائن: آئی فون 16/15، سام سنگ اور اینڈرائیڈ فونز پر کسٹم ڈیوٹی، ریگولیٹری ڈیوٹی اور 18 فیصد جی ایس ٹی کا فوری حساب۔",
+    "directAnswerEn": "PTA mobile tax is determined by the phone's C&F valuation in USD across 6 brackets, combining Customs Duty, Regulatory Duty, 18% Sales Tax, and Mobile Levy. Registering on a Passport is significantly cheaper than registering on a CNIC. Flagship iPhones range from Rs. 135,000 to Rs. 175,000 depending on registration type.",
+    "directAnswerUr": "پی ٹی اے ٹیکس موبائل فون کی ڈالر قیمت کے مطابق 6 سلیبس میں لاگو ہوتا ہے۔ پاسپورٹ پر رجسٹریشن مقامی شناختی کارڈ سے 15 سے 30 ہزار سستی ہوتی ہے۔ فلیگ شپ آئی فون پر پاسپورٹ پر 1.35 تا 1.45 لاکھ اور شناختی کارڈ پر 1.60 تا 1.75 لاکھ روپے تک ٹیکس بنتا ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Portal & FBR Customs",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Flagship Phones > $500 (iPhone 15/16 Pro, S24 Ultra)",
+        "serviceUr": "فلیگ شپ فونز (500 ڈالر سے زائد)",
+        "normal": "Passport: ~Rs. 135,000",
+        "urgent": "CNIC: ~Rs. 162,500",
+        "executive": "18% GST + RD Included"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Find Phone IMEI via *#06#",
+        "titleUr": "*#06# ملا کر فون کا آئی ایم ای آئی معلوم کریں",
+        "detailEn": "Check your 15-digit IMEI number on screen.",
+        "detailUr": "اسکرین پر ظاہر ہونے والا 15 ہندسوں کا نمبر نوٹ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How much is PTA tax on an iPhone in Pakistan?",
+        "questionUr": "پاکستان میں آئی فون پر کتنا پی ٹی اے ٹیکس ہے؟",
+        "answerEn": "Flagship iPhones range between Rs. 135,000 to Rs. 145,000 on Passport, and Rs. 160,000 to Rs. 175,000 on CNIC.",
+        "answerUr": "فلیگ شپ آئی فون پر پاسپورٹ پر تقریبا 1.35 سے 1.45 لاکھ اور شناختی کارڈ پر 1.60 سے 1.75 لاکھ روپے ٹیکس بنتا ہے۔"
+      }
+    ],
+    "contentEn": "PTA mobile tax check online and instant calculator 2026: Calculate exact customs duty and GST on iPhones and Android.",
+    "contentUr": "پی ٹی اے موبائل ٹیکس چیک آن لائن، آئی فون ڈیوٹی ریٹس اور کسٹم فیس کیلکولیٹر کی مکمل معلومات۔",
+    "relatedSlugs": [
+      "/mobile-pta/pta-mobile-registration-guide-2026",
+      "/mobile-pta/pta-mobile-imei-check",
+      "/mobile-pta/sim-information-system-guide"
+    ]
+  },
+  "pta-mobile-imei-check": {
+    "slug": "pta-mobile-imei-check",
+    "fullPath": "/mobile-pta/pta-mobile-imei-check",
+    "categoryId": "mobile-pta",
+    "titleEn": "PTA Mobile IMEI Check – How to Check if Mobile is PTA Approved Online (8484)",
+    "titleUr": "پی ٹی اے موبائل آئی ایم ای آئی تصدیق 8484",
+    "metaDescriptionEn": "PTA mobile IMEI check online 2026: Learn how to check if mobile is PTA approved via free SMS to 8484, dial *#06# to find your 15-digit IMEI, and use official portal dirbs.pta.gov.pk.",
+    "metaDescriptionUr": "پی ٹی اے موبائل آئی ایم ای آئی تصدیق: 8484 پر مفت ایس ایم ایس بھیجیں، *#06# سے آئی ایم ای آئی معلوم کریں اور چوری شدہ فونز کی جانچ کریں۔",
+    "directAnswerEn": "To check if your mobile is PTA approved: Dial *#06# to get your 15-digit IMEI, then send the 15 digits via free SMS to 8484 from any Pakistani SIM card. You will immediately receive a reply confirming if the device is Compliant (Approved), Non-Compliant (Tax Pending), or Blocked.",
+    "directAnswerUr": "فون کا اسٹیٹس معلوم کرنے کے لیے *#06# ڈائل کر کے 15 ہندسوں کا آئی ایم ای آئی نمبر حاصل کریں، پھر اسے 8484 پر مفت ایس ایم ایس بھیجیں۔ پی ٹی اے فوری تصدیق کرے گا کہ فون منظور شدہ ہے، غیر رجسٹرڈ ہے یا بلاک ہے۔",
+    "lastVerified": "August 22, 2026",
+    "officialSource": {
+      "name": "PTA DIRBS Portal",
+      "url": "https://dirbs.pta.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "PTA & Telecom Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "8484 SMS IMEI Inquiry",
+        "serviceUr": "8484 ایس ایم ایس سروس",
+        "normal": "100% Free of Charge",
+        "urgent": "Instant Verification",
+        "executive": "All Mobile Networks"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Dial *#06# on Dialpad",
+        "titleUr": "فون پر *#06# ڈائل کریں",
+        "detailEn": "Check your 15-digit IMEI number displayed on the screen.",
+        "detailUr": "اسکرین پر ظاہر ہونے والا 15 ہندسوں کا آئی ایم ای آئی نمبر دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I check if my mobile is PTA approved?",
+        "questionUr": "موبائل پی ٹی اے منظور شدہ ہے یا نہیں کیسے چیک کریں؟",
+        "answerEn": "Dial *#06# for IMEI and send 15 digits via free SMS to 8484.",
+        "answerUr": "*#06# ملا کر آئی ایم ای آئی حاصل کریں اور 8484 پر مفت میسج بھیجیں۔"
+      }
+    ],
+    "contentEn": "Step-by-step guide to checking mobile phone IMEI registration status on PTA DIRBS portal and SMS shortcode 8484.",
+    "contentUr": "پی ٹی اے ڈیوائس تصدیق، 8484 ایس ایم ایس اور چوری شدہ موبائل فونز کی جانچ کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/mobile-pta/pta-mobile-registration-guide-2026",
+      "/mobile-pta/pta-mobile-tax-check-online",
       "/mobile-pta/sim-information-system-guide"
     ]
   }
