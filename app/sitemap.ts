@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/passport/lost-passport-abroad-reissuance-process-2026',
     '/education/university-entry-test-guide-nust-fast-comsats-2026',
     '/tax/how-to-file-income-tax-return-salaried-iris-2026',
+    '/welfare/eobi-pension-check-cnic-2026',
     '/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026',
     '/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026',
     '/marriage-family/talaq-khula-legal-process-pakistan-2026',

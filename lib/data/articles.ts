@@ -18628,4 +18628,578 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/income-tax-calculator-salaried-2026"
     ]
   }
+,
+  "bills-kelectric-duplicate-bill": {
+  "slug": "kelectric-duplicate-bill",
+  "fullPath": "/bills/kelectric-duplicate-bill",
+  "categoryId": "bills",
+  "titleEn": "K-Electric Duplicate Bill Online Check & Download 2026",
+  "titleUr": "کے الیکٹرک ڈپلیکیٹ بل آن لائن چیک و ڈاؤن لوڈ",
+  "metaDescriptionEn": "Check and download your K-Electric (KE) duplicate electricity bill online in Karachi using your 13-digit account number.",
+  "metaDescriptionUr": "کراچی میں کے الیکٹرک کا ڈپلیکیٹ بجلی بل 13 ہندسوں کے اکاؤنٹ نمبر کے ذریعے آن لائن چیک اور پرنٹ کریں۔",
+  "directAnswerEn": "To check your KE bill: Enter your 13-digit account number on the K-Electric online billing portal to view, download, or print your duplicate electricity bill instantly.",
+  "directAnswerUr": "کے الیکٹرک بل چیک کرنے کے لیے 13 ہندسوں کا اکاؤنٹ نمبر کے ای پورٹل پر درج کر کے فوری ڈپلیکیٹ بل حاصل کریں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "K-Electric Official Billing Portal",
+    "url": "https://www.ke.com.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility Billing Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Duplicate Bill Download",
+      "serviceUr": "ڈپلیکیٹ بل ڈاؤن لوڈ",
+      "normal": "100% Free",
+      "urgent": "Instant",
+      "executive": "Online"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter 13-Digit Account Number",
+      "titleUr": "13 ہندسوں کا اکاؤنٹ نمبر درج کریں",
+      "detailEn": "Locate your 13-digit account number from top-right of your previous KE bill.",
+      "detailUr": "سابقہ بل کے اوپر دائیں جانب موجود اکاؤنٹ نمبر دیکھیں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "How do I check my KE bill online?",
+      "questionUr": "کے الیکٹرک بل آن لائن کیسے چیک کریں؟",
+      "answerEn": "Enter your 13-digit account number on ke.com.pk.",
+      "answerUr": "13 ہندسوں کا اکاؤنٹ نمبر کے ای پورٹل پر درج کریں۔"
+    }
+  ],
+  "contentEn": "Step-by-step guide to checking and downloading duplicate K-Electric bills online in Karachi.",
+  "contentUr": "کے الیکٹرک کے ڈپلیکیٹ بجلی بل کی آن لائن جانچ اور پی ڈی ایف ڈاؤن لوڈ کی مکمل گائیڈ۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/sngpl-bill-check-online"
+  ]
+},
+  "bills-sngpl-bill-check-online": {
+  "slug": "sngpl-bill-check-online",
+  "fullPath": "/bills/sngpl-bill-check-online",
+  "categoryId": "bills",
+  "titleEn": "SNGPL Sui Gas Duplicate Bill Online Check 2026",
+  "titleUr": "سوئی ناردرن گیس بل آن لائن چیک 2026",
+  "metaDescriptionEn": "Check and download your SNGPL Sui Northern gas duplicate bill online using your 11-digit consumer number.",
+  "metaDescriptionUr": "سوئی ناردرن گیس (SNGPL) کا ڈپلیکیٹ گیس بل 11 ہندسوں کے کنزیومر نمبر سے آن لائن چیک کریں۔",
+  "directAnswerEn": "To check your SNGPL bill: Enter your 11-digit consumer number on the SNGPL official billing portal to view, print, or pay your Sui gas bill online.",
+  "directAnswerUr": "سوئی گیس بل معلوم کرنے کے لیے 11 ہندسوں کا کنزیومر نمبر درج کر کے آن لائن بل دیکھیں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "SNGPL Billing Portal",
+    "url": "https://www.sngpl.com.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility Billing Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "SNGPL Duplicate Bill",
+      "serviceUr": "ڈپلیکیٹ گیس بل",
+      "normal": "Free",
+      "urgent": "Instant",
+      "executive": "Online"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter 11-Digit Consumer Number",
+      "titleUr": "11 ہندسوں کا کنزیومر نمبر درج کریں",
+      "detailEn": "Type your consumer ID to fetch live gas bill.",
+      "detailUr": "اپنا کنزیومر نمبر درج کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Where is the consumer number on SNGPL bill?",
+      "questionUr": "سوئی گیس بل پر کنزیومر نمبر کہاں ہوتا ہے؟",
+      "answerEn": "It is printed at the top center of the gas bill.",
+      "answerUr": "بل کے اوپری درمیانی حصے میں درج ہوتا ہے۔"
+    }
+  ],
+  "contentEn": "Online duplicate bill checking guide for Sui Northern Gas Pipelines Limited (SNGPL) consumers in Punjab and KPK.",
+  "contentUr": "پنجاب اور خیبر پختونخوا کے صارفین کے لیے سوئی ناردرن گیس بل چیک کرنے کا آسان طریقہ۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/sui-gas-bill-check-online"
+  ]
+},
+  "jobs-beoe-protector-fee-calculator-2026": {
+  "slug": "beoe-protector-fee-calculator-2026",
+  "fullPath": "/jobs/beoe-protector-fee-calculator-2026",
+  "categoryId": "jobs",
+  "titleEn": "BEOE Protector Fee Calculator 2026 – Direct vs OEP Overseas Employment",
+  "titleUr": "پروٹیکٹر فیس کیلکولیٹر 2026",
+  "metaDescriptionEn": "Calculate Bureau of Emigration & Overseas Employment (BEOE) protector fee, State Life insurance, and OPF welfare fund charges for foreign employment.",
+  "metaDescriptionUr": "بیرون ملک ملازمت کے لیے بیورو آف ایمیگریشن پروٹیکٹر فیس، اسٹیٹ لائف انشورنس اور او پی ایف فنڈ کا آن لائن حساب لگائیں۔",
+  "directAnswerEn": "The standard BEOE protector fee in 2026 is approximately Rs. 10,200 (including Rs. 7,200 for Rs. 1 Million State Life insurance coverage, Rs. 2,500 OPF Welfare Fund, and Rs. 500 registration fee).",
+  "directAnswerUr": "2026 میں پروٹیکٹر فیس تقریباً 10,200 روپے ہے جس میں اسٹیٹ لائف انشورنس (7,200 روپے)، او پی ایف فنڈ (2,500 روپے) اور رجسٹریشن فیس شامل ہے۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "Bureau of Emigration & Overseas Employment (BEOE)",
+    "url": "https://beoe.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Jobs & Overseas Employment Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "BEOE Protector Stamp",
+      "serviceUr": "پروٹیکٹر مہر و انشورنس",
+      "normal": "Rs. 10,200 Total",
+      "urgent": "Mandatory for Overseas Work",
+      "executive": "Valid for 5 Years"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Deposit Fee via 1Link PSID",
+      "titleUr": "1Link کے ذریعے فیس ادا کریں",
+      "detailEn": "Generate 17-digit PSID for BEOE challan.",
+      "detailUr": "پی ایس آئی ڈی کے ذریعے بینک یا موبائل ایپ سے فیس جمع کروائیں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "Is protector mandatory for overseas employment?",
+      "questionUr": "کیا بیرون ملک ملازمت کے لیے پروٹیکٹر لازمی ہے؟",
+      "answerEn": "Yes, under Emigration Ordinance 1979 it is legally mandatory for Pakistani passport holders.",
+      "answerUr": "جی ہاں، ایمیگریشن آرڈیننس 1979 کے تحت یہ قانونی طور پر لازمی ہے۔"
+    }
+  ],
+  "contentEn": "Complete fee calculator and step-by-step registration guide for overseas employment protector stamp.",
+  "contentUr": "بیرون ملک ملازمت کے لیے پروٹیکٹر فیس کا حساب اور مکمل قانونی طریقہ کار۔",
+  "relatedSlugs": [
+    "/jobs/beoe-protector-registration-overseas-employment-2026",
+    "/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026"
+  ]
+},
+  "nadra-b-form-frc-status-checker": {
+  "slug": "b-form-frc-status-checker",
+  "fullPath": "/nadra/b-form-frc-status-checker",
+  "categoryId": "nadra",
+  "titleEn": "NADRA B-Form & FRC Status Checker 2026 (CRC / Family Certificate)",
+  "titleUr": "نادرا بی فارم و ایف آر سی سٹیٹس چیکر 2026",
+  "metaDescriptionEn": "Verify your NADRA Child Registration Certificate (CRC / B-Form) and Family Registration Certificate (FRC) application tracking status online.",
+  "metaDescriptionUr": "نادرا بی فارم (چائلڈ رجسٹریشن) اور فیملی رجسٹریشن سرٹیفکیٹ کی درخواست کا آن لائن سٹیٹس معلوم کریں۔",
+  "directAnswerEn": "To track your B-Form or FRC: Enter your 12-digit Tracking ID or applicant CNIC into the NADRA Pak-ID portal to view real-time processing and delivery status.",
+  "directAnswerUr": "بی فارم یا ایف آر سی ٹریک کرنے کے لیے 12 ہندسوں کا ٹریکنگ نمبر پاک آئی ڈی پورٹل پر درج کریں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "NADRA Pak-ID Official Portal",
+    "url": "https://id.nadra.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "NADRA Identity Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "B-Form / FRC Tracking",
+      "serviceUr": "درخواست ٹریکنگ",
+      "normal": "100% Free",
+      "urgent": "Real-Time",
+      "executive": "Online"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Locate 12-Digit Tracking ID",
+      "titleUr": "12 ہندسوں کا ٹریکنگ نمبر دیکھیں",
+      "detailEn": "Found on your NADRA token receipt slip.",
+      "detailUr": "نادرا ٹوکن سلپ پر موجود ٹریکنگ کوڈ دیکھیں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "How do I track NADRA B-form application?",
+      "questionUr": "نادرا بی فارم ٹریک کیسے کریں؟",
+      "answerEn": "Enter tracking ID on id.nadra.gov.pk.",
+      "answerUr": "پاک آئی ڈی ویب سائٹ پر ٹریکنگ نمبر درج کریں۔"
+    }
+  ],
+  "contentEn": "Guide and tracker helper for NADRA child registration certificates (B-Form) and family certificates (FRC).",
+  "contentUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ کی آن لائن تصدیق اور ٹریکنگ کی گائیڈ۔",
+  "relatedSlugs": [
+    "/nadra/tracking-id",
+    "/nadra/family-registration-certificate"
+  ]
+},
+  "welfare-eobi-pension-check-cnic-2026": {
+  "slug": "eobi-pension-check-cnic-2026",
+  "fullPath": "/welfare/eobi-pension-check-cnic-2026",
+  "categoryId": "welfare",
+  "titleEn": "EOBI Pension Check by CNIC 2026: Status, Registration & Monthly Rates",
+  "titleUr": "ای او بی آئی پنشن چیک شناختی کارڈ 2026",
+  "metaDescriptionEn": "Check your EOBI pension status online by CNIC for 2026: Verify insured person employment history, employer contribution records, minimum pension amounts (Rs. 10,000 to Rs. 11,500), age 60 eligibility, and claim registration on eobi.gov.pk.",
+  "metaDescriptionUr": "شناختی کارڈ سے ای او بی آئی پنشن، ملازمت کا ریکارڈ اور ماہانہ رقم (10,000 سے 11,500 روپے) کی آن لائن تصدیق۔",
+  "directAnswerEn": "EOBI is Pakistan's federal social security program for private-sector workers. To check your status: Enter your 13-digit CNIC into the official EOBI portal at eobi.gov.pk (under Individual Information). Workers aged 60 with 15+ years of registered service qualify for a monthly pension (currently enhanced to Rs. 11,500).",
+  "directAnswerUr": "ای او بی آئی پرائیویٹ سیکٹر کے ملازمین کے لیے وفاقی پنشن ادارہ ہے۔ اپنا سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ نمبر سرکاری پورٹل (eobi.gov.pk) پر درج کریں۔ 60 سال کی عمر اور 15 سالہ سروس والے ملازمین ماہانہ پنشن کے حقدار ہیں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "Employees Old-Age Benefits Institution (EOBI)",
+    "url": "https://eobi.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Social Welfare & Pension Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "EOBI Pension Verification",
+      "serviceUr": "ای او بی آئی تصدیق",
+      "normal": "100% Free",
+      "urgent": "Real-Time",
+      "executive": "EOB Act 1976"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter 13-Digit CNIC",
+      "titleUr": "13 ہندسوں کا شناختی کارڈ نمبر درج کریں",
+      "detailEn": "Validate and copy CNIC to clipboard.",
+      "detailUr": "شناختی کارڈ نمبر درج کر کے کاپی کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the minimum monthly EOBI pension?",
+      "questionUr": "ای او بی آئی کی کم از کم ماہانہ پنشن کتنی ہے؟",
+      "answerEn": "Currently enhanced to Rs. 11,500 per month.",
+      "answerUr": "حالیہ نوٹیفکیشن کے تحت کم از کم 11,500 روپے ماہانہ ہے۔"
+    }
+  ],
+  "contentEn": "Online status checker and guide for Employees Old-Age Benefits Institution (EOBI) insured persons and private-sector pensioners in Pakistan.",
+  "contentUr": "پرائیویٹ سیکٹر کے ملازمین کے لیے ای او بی آئی پنشن اور انشورڈ پرسن ریکارڈ چیک کرنے کی مکمل رہنمائی۔",
+  "relatedSlugs": [
+    "/welfare/bisp-eligibility-check-by-cnic",
+    "/welfare/pmt-score-explained-bisp-eligibility-2026"
+  ]
+}
+,
+  "bills-utility-bill-checker-2026": {
+  "slug": "utility-bill-checker-2026",
+  "fullPath": "/bills/utility-bill-checker-2026",
+  "categoryId": "bills",
+  "titleEn": "Electricity & Gas Bill Checker 2026 – WAPDA, LESCO, IESCO, K-Electric, SNGPL",
+  "titleUr": "آن لائن بجلی و گیس بل چیکر 2026",
+  "metaDescriptionEn": "All-in-one utility bill checker for Pakistan: LESCO, IESCO, MEPCO, FESCO, GEPCO, PESCO, HESCO, QESCO, K-Electric, and SNGPL duplicate bills.",
+  "metaDescriptionUr": "پاکستان کے تمام بجلی و گیس ڈسٹری بیوشن کمپنیوں کے ڈپلیکیٹ بل چیک کرنے کا مرکزی پورٹل۔",
+  "directAnswerEn": "Select your electricity distribution company (DISCO) or gas provider, enter your 14-digit reference number or consumer ID, and fetch your duplicate utility bill instantly.",
+  "directAnswerUr": "اپنی متعلقہ بجلی یا گیس کمپنی منتخب کریں، 14 ہندسوں کا ریفرنس نمبر درج کریں اور فوری بل دیکھیں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "Power Information Technology Company (PITC)",
+    "url": "https://pitc.com.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility Billing Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Utility Bill Checker",
+      "serviceUr": "بل چیکر سروس",
+      "normal": "100% Free",
+      "urgent": "Instant",
+      "executive": "All DISCOs"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Select Distribution Company",
+      "titleUr": "کمپنی منتخب کریں",
+      "detailEn": "Choose your electricity or gas provider.",
+      "detailUr": "اپنی متعلقہ بجلی یا گیس کمپنی منتخب کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "How do I check electricity bill online?",
+      "questionUr": "آن لائن بجلی کا بل کیسے چیک کریں؟",
+      "answerEn": "Select your DISCO and enter 14-digit reference number.",
+      "answerUr": "14 ہندسوں کا ریفرنس نمبر درج کریں۔"
+    }
+  ],
+  "contentEn": "Comprehensive all-in-one bill checking tool for electricity and gas consumers across Pakistan.",
+  "contentUr": "پاکستان بھر کے صارفین کے لیے بجلی و گیس کے بل چیک کرنے کا جامع پورٹل.",
+  "relatedSlugs": [
+    "/bills/kelectric-duplicate-bill",
+    "/bills/sngpl-bill-check-online"
+  ]
+},
+  "bills-wapda-complaint-status-tracker-2026": {
+  "slug": "wapda-complaint-status-tracker-2026",
+  "fullPath": "/bills/wapda-complaint-status-tracker-2026",
+  "categoryId": "bills",
+  "titleEn": "WAPDA & DISCO Electricity Complaint Tracker 2026 (CCMS 118)",
+  "titleUr": "واپڈا شکایات ٹریکر 2026 (CCMS 118)",
+  "metaDescriptionEn": "Track electricity breakdown and overbilling complaints across all DISCOs using Customer Complaint Management System (CCMS 118).",
+  "metaDescriptionUr": "بجلی بریک ڈاؤن، خراب میٹر اور اوور بلنگ شکایات کا اسٹیٹس CCMS پورٹل اور 118 ہیلپ لائن پر چیک کریں۔",
+  "directAnswerEn": "Enter your complaint tracking ID or 14-digit reference number on the CCMS portal to check live resolution status for outages, voltage issues, or meter faults.",
+  "directAnswerUr": "شکایت ٹریکنگ نمبر یا 14 ہندسوں کا ریفرنس نمبر درج کر کے شکایت کے حل کی پیش رفت دیکھیں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "Power Information Technology Company (PITC CCMS)",
+    "url": "https://ccms.pitc.com.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Utility Billing Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Complaint Registration & Tracking",
+      "serviceUr": "شکایت رجسٹریشن و ٹریکنگ",
+      "normal": "Free",
+      "urgent": "24/7 Helpline 118",
+      "executive": "CCMS Portal"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter Complaint ID",
+      "titleUr": "شکایت نمبر درج کریں",
+      "detailEn": "Type your 118 SMS tracking code.",
+      "detailUr": "میسج کے ذریعے موصول ہونے والا شکایت کوڈ درج کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "How do I lodge a WAPDA electricity complaint?",
+      "questionUr": "بجلی کی شکایت کیسے درج کروائیں؟",
+      "answerEn": "Call 118 or send SMS to 8118.",
+      "answerUr": "118 پر کال کریں یا 8118 پر ایس ایم ایس بھیجیں۔"
+    }
+  ],
+  "contentEn": "Complete guide to tracking electricity complaints and overbilling disputes with DISCOs in Pakistan.",
+  "contentUr": "واپڈا اور بجلی کی تمام تقسیم کار کمپنیوں میں شکایات درج کروانے اور ٹریک کرنے کا طریقہ۔",
+  "relatedSlugs": [
+    "/bills/utility-bill-checker-2026",
+    "/bills/wapda-bill-complaint-number"
+  ]
+},
+  "nadra-b-form-frc-status-check": {
+  "slug": "b-form-frc-status-check",
+  "fullPath": "/nadra/b-form-frc-status-check",
+  "categoryId": "nadra",
+  "titleEn": "NADRA B-Form & FRC Status Check Online 2026",
+  "titleUr": "نادرا بی فارم و ایف آر سی سٹیٹس چیک",
+  "metaDescriptionEn": "Check your NADRA Child Registration Certificate (B-Form) and Family Registration Certificate (FRC) application status online.",
+  "metaDescriptionUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ کی درخواست کا اسٹیٹس آن لائن معلوم کریں۔",
+  "directAnswerEn": "Enter your 12-digit Tracking ID on the NADRA Pak-ID portal to verify real-time status of your B-Form or FRC application.",
+  "directAnswerUr": "12 ہندسوں کا ٹریکنگ نمبر پاک آئی ڈی پورٹل پر درج کر کے بی فارم یا ایف آر سی کا اسٹیٹس دیکھیں۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "NADRA Pak-ID",
+    "url": "https://id.nadra.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "NADRA Identity Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Online Status Check",
+      "serviceUr": "آن لائن اسٹیٹس چیک",
+      "normal": "Free",
+      "urgent": "Instant",
+      "executive": "Online"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter Tracking ID",
+      "titleUr": "ٹریکنگ نمبر درج کریں",
+      "detailEn": "Type 12-digit tracking code from receipt.",
+      "detailUr": "رسید سے 12 ہندسوں کا ٹریکنگ کوڈ درج کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "How to check B-form status?",
+      "questionUr": "بی فارم اسٹیٹس کیسے چیک کریں؟",
+      "answerEn": "Enter tracking ID on id.nadra.gov.pk.",
+      "answerUr": "پاک آئی ڈی پورٹل پر ٹریکنگ نمبر درج کریں۔"
+    }
+  ],
+  "contentEn": "Online tracking guide for NADRA B-Form and Family Registration Certificates.",
+  "contentUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ آن لائن ٹریک کرنے کی مکمل گائیڈ۔",
+  "relatedSlugs": [
+    "/nadra/tracking-id",
+    "/nadra/b-form-frc-status-checker"
+  ]
+},
+  "nadra-nicop-fee-calculator-tool": {
+  "slug": "nicop-fee-calculator",
+  "fullPath": "/nadra/nicop-fee-calculator",
+  "categoryId": "nadra",
+  "titleEn": "NADRA NICOP Fee Calculator 2026 (Zone A & Zone B)",
+  "titleUr": "نادرا نائیکوپ فیس کیلکولیٹر 2026",
+  "metaDescriptionEn": "Calculate official NADRA NICOP smart card fees for overseas Pakistanis across Zone A and Zone B countries.",
+  "metaDescriptionUr": "اوورسیز پاکستانیوں کے لیے نادرا نائیکوپ فیس کیلکولیٹر۔",
+  "directAnswerEn": "Zone A (USA, UK, Europe, Canada) is $39 Normal / $57 Urgent / $75 Executive. Zone B (GCC/Middle East) is $20 Normal / $30 Urgent / $40 Executive.",
+  "directAnswerUr": "نائیکوپ فیس زون اے کے لیے 39 ڈالر سے 75 ڈالر اور زون بی کے لیے 20 ڈالر سے 40 ڈالر ہے۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "NADRA Official",
+    "url": "https://www.nadra.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "NADRA Identity Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "NICOP Fee Calculation",
+      "serviceUr": "نائیکوپ فیس",
+      "normal": "Zone B: $20",
+      "urgent": "Zone B: $30",
+      "executive": "Zone A: $75"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Select Zone",
+      "titleUr": "زون منتخب کریں",
+      "detailEn": "Choose Zone A or Zone B.",
+      "detailUr": "اپنا زون منتخب کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is Zone A NICOP fee?",
+      "questionUr": "زون اے نائیکوپ فیس کتنی ہے؟",
+      "answerEn": "$39 Normal, $57 Urgent, $75 Executive.",
+      "answerUr": "39 ڈالر نارمل، 57 ڈالر ارجنٹ۔"
+    }
+  ],
+  "contentEn": "NICOP fee calculator for overseas Pakistanis in GCC, Europe, North America and worldwide.",
+  "contentUr": "بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ فیس معلوم کرنے کا ٹول۔",
+  "relatedSlugs": [
+    "/nadra/nadra-card-fee",
+    "/overseas/nicop-mandatory-entry-rules-2026"
+  ]
+},
+  "passport-fee-calculator-tool": {
+  "slug": "fee-calculator",
+  "fullPath": "/passport/fee-calculator",
+  "categoryId": "passport",
+  "titleEn": "Pakistan Passport Fee Calculator 2026 (Normal / Urgent / Fast Track)",
+  "titleUr": "پاسپورٹ فیس کیلکولیٹر 2026",
+  "metaDescriptionEn": "Calculate official passport fees for 36, 72, and 100 pages across 5-year and 10-year validity in Pakistan.",
+  "metaDescriptionUr": "پاکستان میں تمام صفحات اور میعاد کے پاسپورٹ کی سرکاری فیس معلوم کریں۔",
+  "directAnswerEn": "36-page 5-year passport is Rs. 4,500 (Normal) / Rs. 7,500 (Urgent) / Rs. 12,500 (Fast Track). 10-year is Rs. 6,700 (Normal) / Rs. 11,200 (Urgent) / Rs. 16,200 (Fast Track).",
+  "directAnswerUr": "36 صفحات 5 سالہ پاسپورٹ فیس 4,500 روپے (نارمل) اور 7,500 روپے (ارجنٹ) ہے۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "DGIP",
+    "url": "https://dgip.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Passport Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Passport Fee Calculation",
+      "serviceUr": "فیس کیلکولیشن",
+      "normal": "Rs. 4,500",
+      "urgent": "Rs. 7,500",
+      "executive": "Rs. 12,500"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Select Booklet Size",
+      "titleUr": "صفحات منتخب کریں",
+      "detailEn": "Choose 36, 72, or 100 pages.",
+      "detailUr": "صفحات کی تعداد منتخب کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is 5-year urgent passport fee?",
+      "questionUr": "5 سالہ ارجنٹ پاسپورٹ فیس کتنی ہے؟",
+      "answerEn": "PKR 7,500 for 36 pages.",
+      "answerUr": "36 صفحات کی فیس 7,500 روپے ہے۔"
+    }
+  ],
+  "contentEn": "Official DGIP passport fee calculator for all Pakistani passport categories.",
+  "contentUr": "ڈائریکٹوریٹ جنرل آف امیگریشن اینڈ پاسپورٹس کا مصدقہ فیس کیلکولیٹر۔",
+  "relatedSlugs": [
+    "/passport/fee-2026",
+    "/passport/tracking-status"
+  ]
+},
+  "tax-income-tax-calculator-salaried-2026-tool": {
+  "slug": "income-tax-calculator-salaried-2026",
+  "fullPath": "/tax/income-tax-calculator-salaried-2026",
+  "categoryId": "tax",
+  "titleEn": "FBR Income Tax Calculator 2026 (Salaried Slabs)",
+  "titleUr": "تنخواہ دار انکم ٹیکس کیلکولیٹر 2026",
+  "metaDescriptionEn": "Calculate salaried income tax deductions and annual liability under FBR Finance Act 2025-2026.",
+  "metaDescriptionUr": "تنخواہ دار طبقے کے لیے انکم ٹیکس سلیبز اور ماہانہ کٹوتی معلوم کرنے کا ٹول۔",
+  "directAnswerEn": "Salaried individuals earning up to Rs. 600,000 annually pay 0% tax. Slabs progressively increase up to 35% for taxable income above Rs. 4.1 Million.",
+  "directAnswerUr": "سالانہ 6 لاکھ روپے تک تنخواہ پر صفر فیصد ٹیکس ہے۔ 6 سے 12 لاکھ پر 5 فیصد لاگو ہوتا ہے۔",
+  "lastVerified": "August 22, 2026",
+  "officialSource": {
+    "name": "FBR",
+    "url": "https://www.fbr.gov.pk/"
+  },
+  "author": {
+    "name": "Editorial Team",
+    "role": "Tax Desk"
+  },
+  "feeStructure": [
+    {
+      "serviceEn": "Tax Calculation",
+      "serviceUr": "ٹیکس کیلکولیشن",
+      "normal": "100% Free",
+      "urgent": "Instant",
+      "executive": "FBR 2026 Slabs"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "titleEn": "Enter Salary",
+      "titleUr": "تنخواہ درج کریں",
+      "detailEn": "Type monthly or annual income.",
+      "detailUr": "ماہانہ یا سالانہ تنخواہ درج کریں۔"
+    }
+  ],
+  "faqs": [
+    {
+      "questionEn": "What is the tax on 100k salary?",
+      "questionUr": "1 لاکھ تنخواہ پر کتنا ٹیکس ہے؟",
+      "answerEn": "PKR 2,500 per month (5% of amount exceeding 50,000).",
+      "answerUr": "ماہانہ 2,500 روپے۔"
+    }
+  ],
+  "contentEn": "Real-time income tax calculator for salaried individuals in Pakistan according to FBR rules.",
+  "contentUr": "پاکستان میں تنخواہ دار طبقے کے لیے ایف بی آر کے تحت انکم ٹیکس کا فوری حساب۔",
+  "relatedSlugs": [
+    "/tax/how-to-become-tax-filer-pakistan-2026",
+    "/tax/withholding-tax-rates-filers-non-filers"
+  ]
+}
 };

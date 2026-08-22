@@ -306,6 +306,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "EOBI Pension Check by CNIC",
+        "ur": "ای او بی آئی پنشن چیک شناختی کارڈ",
+        "slug": "/welfare/eobi-pension-check-cnic-2026"
+      },
+      {
         "en": "PMT Score Explained",
         "ur": "پی ایم ٹی سکور رہنمائی 2026",
         "slug": "/welfare/pmt-score-explained-bisp-eligibility-2026"
