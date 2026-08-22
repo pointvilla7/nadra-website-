@@ -214,6 +214,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "BEOE Protector Fee Calculator",
+        "ur": "پروٹیکٹر فیس کیلکولیٹر 2026",
+        "slug": "/jobs/beoe-protector-fee-calculator-2026"
+      },
+      {
         "en": "FPSC & PPSC Age Rules 2026",
         "ur": "عمر رعایت و کوٹہ قواعد 2026",
         "slug": "/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026"
@@ -392,6 +397,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Salaried Tax Calculator 2026",
+        "ur": "تنخواہ ٹیکس کیلکولیٹر 2026",
+        "slug": "/tax/income-tax-calculator-salaried-2026"
+      },
       {
         "en": "FBR Active Taxpayer Status 2026",
         "ur": "ایکٹو ٹیکس پیئر سٹیٹس 2026",

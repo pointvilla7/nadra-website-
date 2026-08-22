@@ -65,6 +65,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026',
     '/health/disability-certificate-special-cnic-apply-2026',
     '/legal/power-of-attorney-online-overseas-pakistanis-2026',
+    '/tax/income-tax-calculator-salaried-2026',
+    '/jobs/beoe-protector-fee-calculator-2026',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/bills/sngpl-bill-check-online',
