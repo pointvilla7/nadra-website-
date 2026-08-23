@@ -509,14 +509,6 @@ button:active, a:active, [role="button"]:active {
   touch-action: manipulation;
 }
 
-/* ── CategoryCard Explore Button: hover color only on devices with real hover ── */
-@media (hover: hover) {
-  a[href].touch-action-manipulation:hover,
-  .doc-card a[href]:hover {
-    background-color: #D4A017;
-  }
-}
-
 /* ── Focus-visible: keyboard-only focus rings (accessibility + CLS) ── */
 *:focus:not(:focus-visible) {
   outline: none;

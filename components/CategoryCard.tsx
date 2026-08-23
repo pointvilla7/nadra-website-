@@ -38,128 +38,92 @@ interface CategoryCardProps {
 interface CategoryCtaConfig {
   ctaEn: string;
   ctaUr: string;
-  isPrimary: boolean;
-  actionIcon?: React.ReactNode;
 }
 
 const CATEGORY_CTA_MAP: Record<string, CategoryCtaConfig> = {
   nadra: {
     ctaEn: 'Check CNIC Status',
     ctaUr: 'شناختی کارڈ سٹیٹس دیکھیں',
-    isPrimary: true,
   },
   passport: {
     ctaEn: 'Track My Passport',
     ctaUr: 'پاسپورٹ ٹریک کریں',
-    isPrimary: true,
   },
   tax: {
     ctaEn: 'Check Filer Status (ATL)',
     ctaUr: 'ایکٹو ٹیکس فائلر سٹیٹس',
-    isPrimary: true,
   },
   bills: {
     ctaEn: 'Check Electricity & Gas Bills',
     ctaUr: 'بجلی و گیس بل چیک کریں',
-    isPrimary: true,
   },
   welfare: {
     ctaEn: 'Check 8171 & BISP Funds',
     ctaUr: '8171 بے نظیر رقم چیک کریں',
-    isPrimary: true,
   },
   traffic: {
     ctaEn: 'Check My E-Challan',
     ctaUr: 'ای چالان و لائسنس چیک کریں',
-    isPrimary: true,
   },
   jobs: {
     ctaEn: 'Browse Latest Vacancies',
     ctaUr: 'سرکاری نوکریاں دیکھیں',
-    isPrimary: true,
   },
   health: {
     ctaEn: 'Check Sehat Card Eligibility',
     ctaUr: 'صحت کارڈ اہلیت دیکھیں',
-    isPrimary: true,
   },
   education: {
     ctaEn: 'Check BISE & Merit Lists',
     ctaUr: 'بورڈ رزلٹ و میرٹ لسٹ',
-    isPrimary: false,
-    actionIcon: <GraduationCap className="w-3.5 h-3.5" />,
   },
   loans: {
     ctaEn: 'Check Loan Eligibility',
     ctaUr: 'قرضہ اہلیت چیک کریں',
-    isPrimary: false,
-    actionIcon: <Calculator className="w-3.5 h-3.5" />,
   },
   overseas: {
     ctaEn: 'Verify Protector & OPF',
     ctaUr: 'پروٹیکٹر و اوورسیز سہولیات',
-    isPrimary: false,
-    actionIcon: <Globe className="w-3.5 h-3.5" />,
   },
   property: {
     ctaEn: 'Verify Land Record (Fard)',
     ctaUr: 'فرد و اراضی ریکارڈ تصدیق',
-    isPrimary: false,
-    actionIcon: <Building className="w-3.5 h-3.5" />,
   },
   'family-registration': {
     ctaEn: 'Check B-Form & FRC',
     ctaUr: 'بی فارم و ایف آر سی سرٹیفکیٹ',
-    isPrimary: false,
-    actionIcon: <Users className="w-3.5 h-3.5" />,
   },
   business: {
     ctaEn: 'Check SECP & NTN Registry',
     ctaUr: 'کمپنی رجسٹریشن و این ٹی این',
-    isPrimary: false,
-    actionIcon: <Briefcase className="w-3.5 h-3.5" />,
   },
   certificates: {
     ctaEn: 'Verify Domicile & Police NOC',
     ctaUr: 'ڈومیسائل و تصدیق نامہ',
-    isPrimary: false,
-    actionIcon: <Award className="w-3.5 h-3.5" />,
   },
   'hajj-umrah': {
     ctaEn: 'Check Balloting Results',
     ctaUr: 'حج قرعہ اندازی نتائج',
-    isPrimary: false,
-    actionIcon: <Compass className="w-3.5 h-3.5" />,
   },
   legal: {
     ctaEn: 'Find Legal Aid Helplines',
     ctaUr: 'مفت قانونی ہیلپ لائن',
-    isPrimary: false,
-    actionIcon: <Scale className="w-3.5 h-3.5" />,
   },
   alerts: {
     ctaEn: 'Get 2026 Policy Alerts',
     ctaUr: 'مفت حکومتی الرٹس',
-    isPrimary: false,
-    actionIcon: <CloudLightning className="w-3.5 h-3.5" />,
   },
   'mobile-pta': {
     ctaEn: 'Check Device DIRBS Status',
     ctaUr: 'پی ٹی اے ڈیوائس تصدیق',
-    isPrimary: false,
-    actionIcon: <Smartphone className="w-3.5 h-3.5" />,
   },
   'pakistan-post': {
     ctaEn: 'Track Postal Parcel & UMS',
     ctaUr: 'ڈاک پارسل ٹریک کریں',
-    isPrimary: false,
-    actionIcon: <Mail className="w-3.5 h-3.5" />,
   },
   finance: {
     ctaEn: 'Check Withholding Tax Rates',
     ctaUr: 'بینک ٹیکس و پرافٹ ریٹس',
-    isPrimary: false,
-    actionIcon: <Landmark className="w-3.5 h-3.5" />,
   },
 };
 
@@ -215,8 +179,6 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
   const ctaConfig = CATEGORY_CTA_MAP[category.id] || {
     ctaEn: `Check ${category.nameEn} Guides`,
     ctaUr: `${category.nameUr} معلومات دیکھیں`,
-    isPrimary: false,
-    actionIcon: <ChevronRight className="w-3.5 h-3.5" />,
   };
 
   const buttonText = t(ctaConfig.ctaEn, ctaConfig.ctaUr);
@@ -274,23 +236,13 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
         </div>
       </div>
 
-      {/* ── Contextual Action-Specific CTA Button ── */}
+      {/* ── Contextual Action-Specific CTA Button (Standardized across all 21 categories) ── */}
       <Link
         href={`/${category.slug}`}
         aria-label={ariaLabelText}
-        className={`w-full min-h-[44px] py-2.5 px-3.5 sm:px-4 rounded-xl text-xs font-bold font-sans flex items-center justify-between gap-2 transition-all duration-200 group/btn focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-brass active:scale-[0.98] ${
-          ctaConfig.isPrimary
-            ? 'bg-[#0B1120] text-white hover:bg-[#1B2A4A] dark:bg-[#111C35] dark:hover:bg-[#1E2A3F] border border-[#1E2A3F] dark:border-slate-700 shadow-sm hover:shadow-md'
-            : 'border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900/60 text-[#0B1120] dark:text-slate-200 hover:border-doc-brass hover:text-doc-brass dark:hover:border-doc-brass dark:hover:text-doc-brass shadow-2xs hover:shadow-xs'
-        }`}
+        className="w-full min-h-[44px] py-2.5 px-3.5 sm:px-4 rounded-xl text-xs font-bold font-sans flex items-center justify-between gap-2 transition-all duration-200 group/btn focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-brass active:scale-[0.98] bg-[#0B1120] text-white hover:bg-[#1B2A4A] dark:bg-[#111C35] dark:hover:bg-[#1E2A3F] border border-[#1E2A3F] dark:border-slate-700 shadow-sm hover:shadow-md"
       >
-        <div className="flex items-center gap-2 min-w-0">
-          {!ctaConfig.isPrimary && ctaConfig.actionIcon && (
-            <span className="text-doc-brass shrink-0">{ctaConfig.actionIcon}</span>
-          )}
-          <span className="truncate">{buttonText}</span>
-        </div>
-
+        <span className="truncate">{buttonText}</span>
         <ArrowRight className="w-4 h-4 shrink-0 transition-transform duration-150 ease-out group-hover/btn:translate-x-1 rtl:group-hover/btn:-translate-x-1 rtl:rotate-180 text-doc-brass" />
       </Link>
     </div>
