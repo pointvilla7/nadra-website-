@@ -6274,10 +6274,10 @@ export const ARTICLES: Record<string, Article> = {
     "categoryId": "welfare",
     "titleEn": "BISP 8171 Portal 2026: Check Eligibility by CNIC Online & Payment Date | Pakistan Info Hub",
     "titleUr": "8171 بی آئی ایس پی پورٹل 2026: شناختی کارڈ سے آن لائن اہلیت اور رقم چیک کریں",
-    "metaDescriptionEn": "Check BISP 8171 portal eligibility online 2026 by 13-digit CNIC. View Benazir Kafaalat (PKR 10,500) payment date, Taleemi Wazaif stipend, and NSER survey status.",
-    "metaDescriptionUr": "بی آئی ایس پی 8171 پورٹل پر 13 ہندسوں کے شناختی کارڈ سے آن لائن اہلیت چیک کریں۔ بے نظیر کفالت (10,500 روپے)، تعلیمی وظائف اور ادائیگی کی تاریخ۔",
-    "directAnswerEn": "To check BISP eligibility by CNIC in 2026, visit the official BISP 8171 portal at 8171.bisp.gov.pk or send your 13-digit CNIC number via SMS to 8171 from your mobile phone. The system will display your Benazir Kafaalat (PKR 10,500) payment status, Taleemi Wazaif allowance, and NSER household dynamic registry survey eligibility.",
-    "directAnswerUr": "بی آئی ایس پی 8171 پورٹل پر شناختی کارڈ سے اہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر جائیں یا اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔ سسٹم آپ کی بے نظیر کفالت (10,500 روپے)، تعلیمی وظائف اور این ایس ای آر سروے کا سٹیٹس ظاہر کرے گا۔",
+    "metaDescriptionEn": "Check BISP 8171 portal eligibility online 2026 by 13-digit CNIC. View current Benazir Kafaalat payment amount (check via 8171 portal), Taleemi Wazaif stipend, and NSER survey status.",
+    "metaDescriptionUr": "بی آئی ایس پی 8171 پورٹل پر 13 ہندسوں کے شناختی کارڈ سے آن لائن اہلیت چیک کریں۔ بے نظیر کفالت کی موجودہ قسط (8171 پورٹل سے تصدیق)، تعلیمی وظائف اور ادائیگی کی تاریخ۔",
+    "directAnswerEn": "To check BISP eligibility by CNIC in 2026, visit the official BISP 8171 portal at 8171.bisp.gov.pk or send your 13-digit CNIC number via SMS to 8171 from your mobile phone. The system will display your Benazir Kafaalat payment status (check current installment amount via 8171 portal), Taleemi Wazaif allowance, and NSER household dynamic registry survey eligibility.",
+    "directAnswerUr": "بی آئی ایس پی 8171 پورٹل پر شناختی کارڈ سے اہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر جائیں یا اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔ سسٹم آپ کی بے نظیر کفالت کی رقم (8171 پورٹل سے تصدیق)، تعلیمی وظائف اور این ایس ای آر سروے کا سٹیٹس ظاہر کرے گا۔",
     "lastVerified": "August 19, 2026",
     "officialSource": {
       "name": "BISP 8171 Official Portal",
@@ -6343,15 +6343,15 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 5,
         "titleEn": "Review Status & Collect Payment",
         "titleUr": "سٹیٹس دیکھیں اور رقم وصول کریں",
-        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), payment amount (PKR 10,500), or required to visit the Tehsil BISP office for dynamic survey update.",
-        "detailUr": "سکرین پر آپ کی اہلیت، 10,500 روپے کی ادائیگی یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
+        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), current payment installment status (check via 8171 portal), or required to visit the Tehsil BISP office for dynamic survey update.",
+        "detailUr": "سکرین پر آپ کی اہلیت، قسط کی رقم (8171 پورٹل سے تصدیق) یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
       }
     ],
     "faqs": [
       {
         "questionEn": "How do I check my BISP 8171 portal eligibility online?",
         "questionUr": "بی آئی ایس پی 8171 پورٹل پر آن لائن اہلیت کیسے چیک کریں؟",
-        "answerEn": "To check your BISP 8171 portal eligibility online, visit 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes and type the 4-digit captcha code shown on screen. Click 'Maaloom Karein' to instantly view your Benazir Kafaalat eligibility, quarterly stipend status (PKR 10,500), and NSER registration records.",
+        "answerEn": "To check your BISP 8171 portal eligibility online, visit 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes and type the 4-digit captcha code shown on screen. Click 'Maaloom Karein' to instantly view your Benazir Kafaalat eligibility, current quarterly stipend status (check via 8171 portal), and NSER registration records.",
         "answerUr": "8171.bisp.gov.pk پر جا کر اپنا 13 ہندسوں کا شناختی کارڈ نمبر اور سکرین کوڈ درج کریں اور اہلیت معلوم کریں۔"
       },
       {
@@ -6363,8 +6363,8 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the next BISP quarterly payment date and amount for 2026?",
         "questionUr": "2026 میں بی آئی ایس پی کی اگلی سہ ماہی قسط کی تاریخ اور رقم کیا ہے؟",
-        "answerEn": "As of August 2026, the Benazir Kafaalat quarterly stipend is **PKR 10,500** per eligible household. Disbursements are issued quarterly through designated biometric campsites, Bank Alfalah BISP biometric ATMs (in Punjab/KPK/AJK/GB), and HBL Connect biometric agents (in Sindh/Balochistan).",
-        "answerUr": "بے نظیر کفالت کی سہ ماہی قسط 10,500 روپے ہے جو بینک الفلاح اور ایچ بی ایل کے بائیو میٹرک مراکز سے ادا کی جاتی ہے۔"
+        "answerEn": "The Benazir Kafaalat quarterly cash stipend amount is subject to periodic government revisions (verify current installment amount via 8171 SMS or web portal). Disbursements are issued quarterly through designated biometric campsites, Bank Alfalah BISP biometric ATMs (in Punjab/KPK/AJK/GB), and HBL Connect biometric agents (in Sindh/Balochistan).",
+        "answerUr": "بے نظیر کفالت کی سہ ماہی قسط سرکاری اعلانات کے مطابق جاری کی جاتی ہے (موجودہ رقم 8171 پورٹل سے چیک کریں) جو بینک الفلاح اور ایچ بی ایل کے بائیو میٹرک مراکز سے ادا کی جاتی ہے۔"
       },
       {
         "questionEn": "How do I register for BISP if 8171 shows 'Ineligible' or 'Record Not Found'?",
@@ -6385,7 +6385,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "بی آئی ایس پی کی تمام خدمات 100 فیصد مفت ہیں۔ کسی ایجنٹ یا شخص کو کوئی رقم یا کمیشن ہرگز نہ دیں۔"
       }
     ],
-    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer of **PKR 10,500** issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (PKR 10,500) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule (PKR 10,500)\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | **PKR 10,500** per Eligible Household |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
+    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer (current amount verified via 8171 portal) issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (check via 8171 portal) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | Current BISP Kafaalat Amount (Check via 8171 Portal) |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "## بی آئی ایس پی 8171 پورٹل گائیڈ 2026\nبے نظیر انکم سپورٹ پروگرام، 8171 ایس ایم ایس سروس اور نادرا سروے کے ذریعے مالی امداد حاصل کرنے کی مکمل معلومات۔",
     "relatedSlugs": [
       "/welfare/8171-portal-guide",
@@ -6440,8 +6440,8 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 3,
         "titleEn": "View Payment Details & Instructions",
         "titleUr": "رقم اور اہلیت کی تفصیل دیکھیں",
-        "detailEn": "Check whether your quarterly payment (PKR 10,500) has been credited to Bank Alfalah / HBL campsite.",
-        "detailUr": "اپنی سہ ماہی قسط 10,500 روپے کی وصولی کی تفصیل دیکھیں۔"
+        "detailEn": "Check whether your quarterly payment installment (verify amount via 8171 portal) has been credited to Bank Alfalah / HBL campsite.",
+        "detailUr": "اپنی سہ ماہی قسط کی وصولی کی تفصیل (8171 پورٹل سے تصدیق) دیکھیں۔"
       }
     ],
     "faqs": [
@@ -6464,7 +6464,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (PKR 10,500 - 13,500) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
+    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (check current installment amount via 8171 portal) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "**8171 ویب پورٹل** (8171.bisp.gov.pk) حکومت پاکستان کا آفیشل اور شفاف پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: بی آئی ایس پی کی تمام سروسز **100 فیصد مفت** ہیں۔ کسی ایجنٹ یا جعلی ویب سائٹ پر اعتبار نہ کریں۔ سرکاری سائٹس کے آخر میں **.gov.pk** ہوتا ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
@@ -6557,10 +6557,10 @@ export const ARTICLES: Record<string, Article> = {
     "categoryId": "welfare",
     "titleEn": "BISP Payment Check & Troubleshooting Guide 2026: Campsites & ATMs",
     "titleUr": "بی آئی ایس پی رقم کی وصولی اور فنڈز چیک کرنے کا طریقہ 2026",
-    "metaDescriptionEn": "Learn how to collect BISP quarterly payment (PKR 10,500). Campsite collection steps, biometric ATM withdrawal, handling agent deductions, and helpline complaints.",
-    "metaDescriptionUr": "بے نظیر پروگرام کی 10,500 روپے کی قسط حاصل کرنے کا طریقہ۔ بینک الفلاح / ایچ بی ایل کیمپ سائٹس، بائیو میٹرک مسائل اور ہیلپ لائن پر کٹوتی کی شکایت۔",
-    "directAnswerEn": "BISP quarterly payments (PKR 10,500 to 13,500) are disbursed through partner bank campsites (Bank Alfalah in Punjab/KP/AJK, HBL in Sindh/Balochistan). Eligible beneficiaries receive an official SMS from 8171, visit the designated campsite with their original Smart CNIC, scan thumb biometrics, and collect full cash without any agent deductions.",
-    "directAnswerUr": "بی آئی ایس پی کی سہ ماہی قسط 10,500 روپے حاصل کرنے کے لیے 8171 کا ایس ایم ایس ملنے پر اپنے اصل شناختی کارڈ کے ساتھ مقررہ بینک کیمپ سائٹ یا بائیو میٹرک کاؤنٹر جائیں۔ انگوٹھا لگا کر پوری رقم وصول کریں۔",
+    "metaDescriptionEn": "Learn how to collect BISP quarterly payment (check latest amount via 8171 portal). Campsite collection steps, biometric ATM withdrawal, handling agent deductions, and helpline complaints.",
+    "metaDescriptionUr": "بے نظیر پروگرام کی سہ ماہی قسط حاصل کرنے کا طریقہ۔ بینک الفلاح / ایچ بی ایل کیمپ سائٹس، بائیو میٹرک مسائل اور ہیلپ لائن پر کٹوتی کی شکایت۔",
+    "directAnswerEn": "BISP quarterly payments are disbursed through partner bank campsites (Bank Alfalah in Punjab/KP/AJK, HBL in Sindh/Balochistan). Eligible beneficiaries receive an official SMS from 8171, visit the designated campsite with their original Smart CNIC, scan thumb biometrics, and collect full cash without any agent deductions.",
+    "directAnswerUr": "بی آئی ایس پی کی سہ ماہی قسط حاصل کرنے کے لیے 8171 کا ایس ایم ایس ملنے پر اپنے اصل شناختی کارڈ کے ساتھ مقررہ بینک کیمپ سائٹ یا بائیو میٹرک کاؤنٹر جائیں۔ انگوٹھا لگا کر پوری رقم وصول کریں۔",
     "lastVerified": "August 16, 2026",
     "officialSource": {
       "name": "BISP Finance & Payment Division",
@@ -6574,9 +6574,9 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "Quarterly Kafaalat Cash Disbursement",
         "serviceUr": "سہ ماہی کفالت نقد قسط",
-        "normal": "PKR 10,500 (Full Amount)",
+        "normal": "Full Amount (Zero Deduction)",
         "urgent": "Disbursement Campsite",
-        "executive": "Zero Deduction"
+        "executive": "Check 8171 Portal"
       }
     ],
     "steps": [
@@ -6598,13 +6598,13 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 3,
         "titleEn": "Biometric Verification & Count Cash",
         "titleUr": "انگوٹھا لگائیں اور رقم گن کر لیں",
-        "detailEn": "Scan your thumb biometric at the device counter and collect your full PKR 10,500 cash.",
+        "detailEn": "Scan your thumb biometric at the device counter and collect your full cash payment as stated in your 8171 SMS.",
         "detailUr": "بائیو میٹرک کے بعد پوری رقم کاؤنٹر پر خود گن کر لیں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "What should I do if an agent deducts 500 or 1000 rupees from my BISP cash?",
+        "questionEn": "What should I do if an agent deducts money from my BISP cash?",
         "questionUr": "اگر ایجنٹ پیسے کاٹ لے تو کہاں شکایت کریں؟",
         "answerEn": "Agent deductions are strictly ILLEGAL. Demand a printed receipt. Immediately report the agent name and campsite location to the BISP toll-free helpline 0800-26477 or notify the Assistant Director present at the campsite.",
         "answerUr": "رقم سے کٹوتی غیر قانونی ہے! فوری طور پر بی آئی ایس پی ہیلپ لائن 0800-26477 پر کال کریں۔"
@@ -6622,8 +6622,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct PKR 500, PKR 1,000, or any amount from your PKR 10,500 cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
-    "contentUr": "بے نظیر کفالت کی رقم کا حصول آپ کا قانونی حق ہے۔\n\n> 🚨 **سکیم الرٹ**: **پوری 10,500 روپے کی رقم وصول کریں۔** اگر کوئی ایجنٹ کٹوتی کرے تو بی آئی ایس پی ٹول فری ہیلپ لائن **0800-26477** پر شکایت درج کروائیں۔",
+    "contentEn": "Collecting your Benazir Kafaalat quarterly financial grant should be a dignity-filled, hassle-free experience.\n\n> 🚨 **CRITICAL SCAM WARNING**: \n> **You are entitled to 100% of your money.** \n> If any retailer or campsite agent tries to deduct any amount from your official cash payment, **DO NOT ACCEPT IT**. Report them immediately to the BISP Complaint Cell at **0800-26477**.\n\n## Official Partner Banks for Cash Distribution\n- **Punjab, KP, Gilgit-Baltistan, AJK**: Bank Alfalah\n- **Sindh, Balochistan, Islamabad**: Habib Bank Limited (HBL)\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
+    "contentUr": "بے نظیر کفالت کی رقم کا حصول آپ کا قانونی حق ہے۔\n\n> 🚨 **سکیم الرٹ**: **پوری رقم وصول کریں۔** اگر کوئی ایجنٹ کٹوتی کرے تو بی آئی ایس پی ٹول فری ہیلپ لائن **0800-26477** پر شکایت درج کروائیں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
       "/welfare/kafaalat-amount-schedule",
@@ -6727,12 +6727,12 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "kafaalat-amount-schedule",
     "fullPath": "/welfare/kafaalat-amount-schedule",
     "categoryId": "welfare",
-    "titleEn": "Benazir Kafaalat Amount & Payment Schedule 2026 (PKR 10,500 Quarterly)",
+    "titleEn": "Benazir Kafaalat Amount & Payment Schedule 2026 (Check via 8171 Portal)",
     "titleUr": "بے نظیر کفالت رقم اور سہ ماہی قسط کا شیڈول 2026",
-    "metaDescriptionEn": "Check current Benazir Kafaalat cash stipend amount (PKR 10,500) and official 2026 disbursement schedule phases across districts in Pakistan.",
-    "metaDescriptionUr": "بے نظیر کفالت کی موجودہ سہ ماہی قسط 10,500 روپے کا نیا شیڈول اور اضلاع کی لسٹ۔ قسط ملنے کی تاریخیں اور بینک کاؤنٹر تفصیلات۔",
-    "directAnswerEn": "As of 2026, the official Benazir Kafaalat quarterly payment is PKR 10,500 per eligible household (with periodic inflation updates up to PKR 13,500). Disbursements happen in 4 quarterly cycles per year across phased district clusters via Bank Alfalah and HBL biometric campsites.",
-    "directAnswerUr": "سال 2026 میں بے نظیر کفالت کی فی سہ ماہی قسط 10,500 روپے ہے۔ یہ قسط سال میں 4 بار مائیکرو فنانس بینکوں کے ذریعے اضلاع کے مختلف مرحلہ وار شیڈول کے تحت جاری کی جاتی ہے۔",
+    "metaDescriptionEn": "Check current Benazir Kafaalat cash stipend amount (check via 8171 portal) and official 2026 disbursement schedule phases across districts in Pakistan.",
+    "metaDescriptionUr": "بے نظیر کفالت کی موجودہ سہ ماہی قسط کا نیا شیڈول اور اضلاع کی لسٹ (8171 پورٹل سے تصدیق)۔ قسط ملنے کی تاریخیں اور بینک کاؤنٹر تفصیلات۔",
+    "directAnswerEn": "As of 2026, the official Benazir Kafaalat quarterly payment is periodically revised by the federal government (check current active installment amount directly via 8171 portal or SMS). Disbursements happen in 4 quarterly cycles per year across phased district clusters via Bank Alfalah and HBL biometric campsites.",
+    "directAnswerUr": "بے نظیر کفالت کی سہ ماہی قسط حکومت کی جانب سے مرحلہ وار جاری کی جاتی ہے (موجودہ رقم 8171 پورٹل سے چیک کریں)۔ یہ قسط سال میں 4 بار مائیکرو فنانس بینکوں کے ذریعے اضلاع کے مختلف مرحلہ وار شیڈول کے تحت جاری کی جاتی ہے۔",
     "lastVerified": "August 16, 2026",
     "officialSource": {
       "name": "BISP Kafaalat Division",
@@ -6746,7 +6746,7 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "Benazir Kafaalat Quarterly Cash Grant",
         "serviceUr": "بی آئی ایس پی سہ ماہی قسط",
-        "normal": "PKR 10,500 / Quarter",
+        "normal": "Check 8171 Portal",
         "urgent": "Phase 1 & Phase 2",
         "executive": "Zero Deduction"
       }
@@ -6756,8 +6756,8 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 1,
         "titleEn": "Check 8171 Portal for Active Cycle",
         "titleUr": "8171 پر جاری قسط کا سٹیٹس دیکھیں",
-        "detailEn": "Verify if payment for your district cluster has been released.",
-        "detailUr": "8171 پورٹل سے قسط جاری ہونے کی تصدیق کریں۔"
+        "detailEn": "Verify if payment for your district cluster has been released and view your active installment amount.",
+        "detailUr": "8171 پورٹل سے قسط جاری ہونے اور رقم کی تصدیق کریں۔"
       }
     ],
     "faqs": [
@@ -6768,7 +6768,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "یہ رقم سال میں 4 بار (ہر تین ماہ بعد) دی جاتی ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Benazir Kafaalat Amount & Payment Schedule 2026 (PKR 10,500 Quarterly)?",
+        "questionEn": "Which official portal or helpline should citizens use for Benazir Kafaalat Amount & Payment Schedule 2026?",
         "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
         "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
         "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
@@ -6780,8 +6780,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Current official quarterly payment is PKR 10,500.** \n> Always collect your complete payment. Report any agent claiming partial payments or processing cuts to **0800-26477**.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | **PKR 10,500** per eligible household |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
-    "contentUr": "**بے نظیر کفالت پروگرام** پاکستان کی غریب خواتین کو ہر تین ماہ بعد 10,500 روپے کی مالی امداد فراہم کرتا ہے۔\n\n> 🚨 **سکیم الرٹ**: **سرکاری قسط 10,500 روپے ہے۔** پوری رقم وصول کریں اور کٹوتی کی صورت میں 0800-26477 پر کال کریں۔",
+    "contentEn": "The **Benazir Kafaalat Programme** delivers core unconditional quarterly cash grants directly to deserving female family heads across Pakistan.\n\n> 🚨 **SCAM WARNING**: \n> **Always collect your complete official payment.** \n> Report any agent claiming partial payments or unauthorized processing cuts to **0800-26477**.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
+    "contentUr": "**بے نظیر کفالت پروگرام** پاکستان کی غریب خواتین کو ہر تین ماہ بعد مالی امداد فراہم کرتا ہے۔\n\n> 🚨 **سکیم الرٹ**: **پوری رقم وصول کریں۔** کٹوتی کی صورت میں 0800-26477 پر کال کریں۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
       "/welfare/bisp-payment-check",
@@ -6954,8 +6954,8 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
         "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
+        "answerEn": "Eligible women beneficiaries receive their quarterly financial cash grant (verify current installment amount via 8171 SMS or web portal) disbursed via biometric verification at bank campsites.",
+        "answerUr": "اہل خواتین کو سہ ماہی مالی امداد (موجودہ رقم 8171 پورٹل سے تصدیق کریں) بائیو میٹرک تصدیق پر ملتی ہے۔"
       },
       {
         "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
@@ -7121,8 +7121,8 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the quarterly amount for Benazir Kafaalat in 2026?",
         "questionUr": "2026 میں بے نظیر کفالت سہ ماہی قسط کی رقم کتنی ہے؟",
-        "answerEn": "Eligible women beneficiaries receive PKR 10,500 per quarter (every 3 months) disbursed via biometric verification at bank campsites.",
-        "answerUr": "اہل خواتین کو 10,500 روپے فی سہ ماہی (ہر 3 ماہ بعد) بائیو میٹرک تصدیق پر ملتے ہیں۔"
+        "answerEn": "Eligible women beneficiaries receive their quarterly financial cash grant (verify current installment amount via 8171 SMS or web portal) disbursed via biometric verification at bank campsites.",
+        "answerUr": "اہل خواتین کو سہ ماہی مالی امداد (موجودہ رقم 8171 پورٹل سے تصدیق کریں) بائیو میٹرک تصدیق پر ملتی ہے۔"
       },
       {
         "questionEn": "Is BISP 8171 registration free or is there an agent fee?",
@@ -12671,7 +12671,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Guide on getting a Union Council character certificate.",
     "contentUr": "یونین کونسل کیریکٹر سرٹیفکیٹ کی معلومات۔",
     "relatedSlugs": [
-      "/legal/police-character-certificate-apply-online",
+      "/certificates/police-character-certificate-online-apply-2026",
       "/certificates/domicile-certificate-apply-online"
     ]
   },
@@ -13664,82 +13664,9 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Comprehensive guide to online crime complaints and FIR registration in Punjab.",
     "contentUr": "پنجاب پولیس کے آن لائن شکایات سسٹم کی مکمل معلومات۔",
     "relatedSlugs": [
-      "/legal/police-character-certificate-apply-online",
+      "/certificates/police-character-certificate-online-apply-2026",
       "/legal/how-to-check-fir-status-online",
       "/legal/power-of-attorney-property-registration"
-    ]
-  },
-  "police-character-certificate-apply-online": {
-    "slug": "police-character-certificate-apply-online",
-    "fullPath": "/legal/police-character-certificate-apply-online",
-    "categoryId": "legal",
-    "titleEn": "Police Character Certificate (PCC) Apply Online for Visas",
-    "titleUr": "پولیس کریکٹر سرٹیفکیٹ (PCC) آن لائن اپلائی برائے غیر ملکی ویزا",
-    "metaDescriptionEn": "Apply for an official Police Character Certificate (Clearance Certificate) in Pakistan via Police Khidmat Markaz (PKM). Required for foreign student and work visas.",
-    "metaDescriptionUr": "غیر ملکی ویزا، بیرون ملک ملازمت اور کینیڈا/یو کے امیگریشن کے لیے پولیس کریکٹر (کلیرنس) سرٹیفکیٹ بنوانے کا سرکاری طریقہ، فیس اور نادرا ویریفیکیشن۔",
-    "directAnswerEn": "A Police Character Certificate (PCC / Police Clearance) proves an individual has no criminal conviction history in Pakistan, which is mandatory for foreign work, student, and immigration visas (US, UK, Canada, Australia, Gulf). Citizens can apply at any computerized Police Khidmat Markaz (PKM) with their CNIC, passport, and photographs for PKR 500.",
-    "directAnswerUr": "پولیس کریکٹر سرٹیفکیٹ (PCC) اس بات کا تصدیق شدہ ثبوت ہے کہ شہری کا کوئی مجرمانہ ریکارڈ نہیں ہے۔ غیر ملکی اسٹوڈنٹ اور ورک ویزا کے لیے کسی بھی پولیس خدمت مرکز (PKM) پر شناختی کارڈ، پاسپورٹ اور 2 تصاویر کے ساتھ 500 روپے فیس جمع کروا کر 3 دن میں سرٹیفکیٹ حاصل کریں۔",
-    "lastVerified": "August 19, 2026",
-    "officialSource": {
-      "name": "Police Khidmat Markaz (PKM)",
-      "url": "https://pkm.punjab.gov.pk/"
-    },
-    "author": {
-      "name": "Muhammad Tariq Khan",
-      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "Police Clearance Certificate (PKM)",
-        "serviceUr": "پولیس کلیرنس سرٹیفکیٹ فیس",
-        "normal": "PKR 500 (Standard)",
-        "urgent": "3 Business Days",
-        "executive": "Police Khidmat Markaz",
-        "validity": "6 Months"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Visit Nearest Police Khidmat Markaz",
-        "titleUr": "قریبی پولیس خدمت مرکز جائیں",
-        "detailEn": "Bring original CNIC, valid Passport, and affidavit of clean record.",
-        "detailUr": "شناختی کارڈ اور پاسپورٹ ہمراہ لائیں۔"
-      },
-      {
-        "stepNumber": 2,
-        "titleEn": "Biometric & Local Police Station Verification",
-        "titleUr": "بائیومیٹرک اور تھانے سے تصدیق",
-        "detailEn": "Police Automated System cross-references CRO (Criminal Record Office).",
-        "detailUr": "سسٹم خودکار طریقے سے ریکارڈ کی تصدیق کرتا ہے۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "Does the Police Character Certificate require MOFA attestation for foreign embassies?",
-        "questionUr": "کیا غیر ملکی سفارتخانے کے لیے وزارت خارجہ کی تصدیق ضروری ہے؟",
-        "answerEn": "Yes, for international visa applications, the PCC issued by PKM must subsequently be attested with an official QR stamp by MOFA.",
-        "answerUr": "جی ہاں! ایمبیسی جمع کروانے سے پہلے وزارت خارجہ کی مہر لگوانا ضروری ہے۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for Police Character Certificate (PCC) Apply Online for Visas?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
-      }
-    ],
-    "contentEn": "Guide on obtaining a Police Character Certificate (PCC) in Pakistan.",
-    "contentUr": "پولیس کریکٹر سرٹیفکیٹ حاصل کرنے کی مکمل تفصیلات۔",
-    "relatedSlugs": [
-      "/certificates/character-certificate-union-council",
-      "/overseas/pakistan-embassy-attestation-documents",
-      "/legal/legal-heir-certificate-nadra-court"
     ]
   },
   "how-to-check-fir-status-online": {
@@ -14000,7 +13927,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Comprehensive directory of 14 public services at Police Khidmat Markaz.",
     "contentUr": "پولیس خدمت مرکز کی 14 سروسز کی تفصیلی رہنمائی۔",
     "relatedSlugs": [
-      "/legal/police-character-certificate-apply-online",
+      "/certificates/police-character-certificate-online-apply-2026",
       "/traffic/driving-license-guide",
       "/legal/online-fir-registration-punjab-police"
     ]
@@ -15505,7 +15432,7 @@ export const ARTICLES: Record<string, Article> = {
   },
   "nikah-nama-vs-marriage-certificate-mrc-2026": {
     "slug": "nikah-nama-vs-marriage-certificate-mrc-2026",
-    "fullPath": "/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026",
+    "fullPath": "/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026",
     "categoryId": "family-registration",
     "titleEn": "Nikah Nama vs Marriage Certificate (MRC) 2026 – Key Differences & Registration",
     "titleUr": "نکاح نامہ اور نادرا میرج سرٹیفکیٹ میں کیا فرق ہے؟ مکمل قانونی طریقہ کار",
@@ -15653,7 +15580,7 @@ export const ARTICLES: Record<string, Article> = {
   },
   "ndma-flood-earthquake-sms-alert-setup-2026": {
     "slug": "ndma-flood-earthquake-sms-alert-setup-2026",
-    "fullPath": "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026",
+    "fullPath": "/alerts/ndma-flood-earthquake-sms-alert-setup-2026",
     "categoryId": "alerts",
     "titleEn": "NDMA Flood & Earthquake SMS Alert Setup 2026 – Early Warning Guide",
     "titleUr": "سیلاب اور زلزلے کے قبل از وقت الرٹس: این ڈی ایم اے ایپ اور ایس ایم ایس ایکٹیویشن",
@@ -16490,7 +16417,7 @@ export const ARTICLES: Record<string, Article> = {
   },
   "pakistan-emergency-helpline-numbers-directory-2026": {
     "slug": "pakistan-emergency-helpline-numbers-directory-2026",
-    "fullPath": "/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026",
+    "fullPath": "/alerts/pakistan-emergency-helpline-numbers-directory-2026",
     "categoryId": "alerts",
     "titleEn": "Pakistan Emergency Helpline Numbers Directory 2026 (1122, 15, 115, 130)",
     "titleUr": "پاکستان ہنگامی ہیلپ لائن نمبرز ڈائریکٹری 2026",
@@ -16583,7 +16510,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Verified directory of all 24/7 emergency rescue, police, hospital, and ambulance helpline numbers across Pakistan.",
     "contentUr": "پاکستان میں 24 گھنٹے ہنگامی ریسکیو، پولیس، فائر بریگیڈ اور ہسپتالوں کے ایمرجنسی نمبرز کی مکمل رہنمائی۔",
     "relatedSlugs": [
-      "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026",
+      "/alerts/ndma-flood-earthquake-sms-alert-setup-2026",
       "/alerts/flood-alert-pakistan-ndma-pdma",
       "/certificates/police-character-certificate-online-apply-2026"
     ]
@@ -17455,8 +17382,8 @@ export const ARTICLES: Record<string, Article> = {
   },
   "talaq-khula-legal-process-pakistan-2026": {
     "slug": "talaq-khula-legal-process-pakistan-2026",
-    "fullPath": "/marriage-family/talaq-khula-legal-process-pakistan-2026",
-    "categoryId": "marriage-family",
+    "fullPath": "/family-registration/talaq-khula-legal-process-pakistan-2026",
+    "categoryId": "family-registration",
     "titleEn": "Talaq and Khula Legal Process in Pakistan 2026 – UC Notice & NADRA Rules",
     "titleUr": "پاکستان میں طلاق اور خلع کا مکمل قانونی طریقہ کار 2026",
     "metaDescriptionEn": "Authoritative, neutral legal guide to Talaq and Khula dissolution in Pakistan under the Muslim Family Laws Ordinance 1961 (Section 7) and Family Courts Act 1964: Written Union Council notice, 90-day arbitration waiting period, court decrees, and mandatory NADRA marital status updates.",
@@ -17548,9 +17475,9 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Legal guide to Talaq and Khula process in Pakistan, Section 7 MFLO 1961, 90-day Union Council arbitration, and NADRA record updates.",
     "contentUr": "پاکستان میں طلاق اور خلع کے قانونی طریقہ کار، یونین کونسل نوٹس، 90 دن کی عدت اور نادرا ریکارڈ اپ ڈیٹ کی گائیڈ۔",
     "relatedSlugs": [
-      "/marriage-family/nikah-nama-vs-mrc-difference-nadra-2026",
-      "/certificates/nadra-marriage-certificate-online-check-2026",
-      "/nadra/family-registration-certificate-frc-guide"
+      "/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026",
+      "/certificates/birth-certificate-union-council-online",
+      "/nadra/family-registration-certificate"
     ]
   },
   "nusuk-app-guide-pakistani-pilgrims-2026": {

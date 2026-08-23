@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     title: 'Talaq & Khula Legal Process in Pakistan 2026: UC Notice & NADRA Update',
     description:
       'Neutral, factual civic guide to legal marriage dissolution: Section 7 MFLO 1961 written notice, 90-day arbitration, Khula decrees, and NADRA updates.',
-    url: 'https://www.pakistaninfohub.com/marriage-family/talaq-khula-legal-process-pakistan-2026',
+    url: 'https://www.pakistaninfohub.com/family-registration/talaq-khula-legal-process-pakistan-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/marriage-family/talaq-khula-legal-process-pakistan-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/family-registration/talaq-khula-legal-process-pakistan-2026' },
 };
 
 const jsonLd = {
@@ -54,12 +54,12 @@ const jsonLd = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
-        { '@type': 'ListItem', position: 2, name: 'Marriage & Family Registration', item: 'https://www.pakistaninfohub.com/marriage-family' },
+        { '@type': 'ListItem', position: 2, name: 'Marriage & Family Registration', item: 'https://www.pakistaninfohub.com/family-registration' },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Talaq & Khula Legal Process 2026',
-          item: 'https://www.pakistaninfohub.com/marriage-family/talaq-khula-legal-process-pakistan-2026',
+          item: 'https://www.pakistaninfohub.com/family-registration/talaq-khula-legal-process-pakistan-2026',
         },
       ],
     },
@@ -72,7 +72,7 @@ const jsonLd = {
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-22',
       dateModified: '2026-08-22',
-      mainEntityOfPage: 'https://www.pakistaninfohub.com/marriage-family/talaq-khula-legal-process-pakistan-2026',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/family-registration/talaq-khula-legal-process-pakistan-2026',
     },
     {
       '@type': 'FAQPage',
@@ -311,7 +311,7 @@ export default function TalaqKhulaLegalProcessPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/marriage-family/nikah-nama-vs-mrc-difference-nadra-2026"
+              href="/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Marriage Registration</span>
@@ -322,18 +322,18 @@ export default function TalaqKhulaLegalProcessPage() {
             </Link>
 
             <Link
-              href="/certificates/nadra-marriage-certificate-online-check-2026"
+              href="/certificates/birth-certificate-union-council-online"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Verification Tool</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                NADRA Marriage Certificate Online Check →
+                NADRA Marriage &amp; Union Council Certificates →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Verify computerized marriage registration and CRMS records.</p>
             </Link>
 
             <Link
-              href="/nadra/family-registration-certificate-frc-guide"
+              href="/nadra/family-registration-certificate"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Family Tree</span>

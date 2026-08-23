@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     title: 'NDMA Flood & Earthquake SMS Alert Setup 2026 – Disaster Early Warning Guide',
     description:
       'Step-by-step public safety guide on activating official NDMA smartphone alerts, geo-fenced flood SMS warnings, and river discharge bulletins in Pakistan.',
-    url: 'https://www.pakistaninfohub.com/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
+    url: 'https://www.pakistaninfohub.com/alerts/ndma-flood-earthquake-sms-alert-setup-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/alerts/ndma-flood-earthquake-sms-alert-setup-2026' },
 };
 
 const jsonLd = {
@@ -62,7 +62,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 3,
           name: 'NDMA Alert Setup',
-          item: 'https://www.pakistaninfohub.com/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
+          item: 'https://www.pakistaninfohub.com/alerts/ndma-flood-earthquake-sms-alert-setup-2026',
         },
       ],
     },
@@ -75,7 +75,7 @@ const jsonLd = {
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-20',
       dateModified: '2026-08-21',
-      mainEntityOfPage: 'https://www.pakistaninfohub.com/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/alerts/ndma-flood-earthquake-sms-alert-setup-2026',
     },
     {
       '@type': 'FAQPage',
@@ -322,6 +322,17 @@ export default function NdmaDisasterAlertSetupPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
+              href="/alerts/pakistan-emergency-helpline-numbers-directory-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Helpline Directory</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Emergency Helpline Directory 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Rescue 1122, Edhi 115, PDMA &amp; Police numbers.</p>
+            </Link>
+
+            <Link
               href="/alerts/flood-alert-pakistan-ndma-pdma"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
@@ -330,17 +341,6 @@ export default function NdmaDisasterAlertSetupPage() {
                 Flood Alert Tracking Portal →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Real-time river surge and barrage status.</p>
-            </Link>
-
-            <Link
-              href="/alerts/emergency-helpline-numbers-pakistan"
-              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
-            >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Helplines</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                24/7 Emergency Helplines →
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">Rescue 1122, Edhi 115, PDMA &amp; Police numbers.</p>
             </Link>
 
             <Link

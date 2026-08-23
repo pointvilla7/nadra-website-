@@ -35,6 +35,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/nadra/cnic-new-rules-2026"
       },
       {
+        "en": "Lost/Stolen CNIC Replacement 2026",
+        "ur": "گمشدہ شناختی کارڈ کا متبادل",
+        "slug": "/nadra/lost-stolen-cnic-replacement-2026"
+      },
+      {
         "en": "NICOP Fee Calculator",
         "ur": "نائیکوپ فیس کیلکولیٹر",
         "slug": "/nadra/nicop-fee-calculator"
@@ -81,6 +86,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/passport/passport-new-rules-2026-cashless-epassport"
       },
       {
+        "en": "Lost Passport Abroad Reissuance",
+        "ur": "بیرون ملک گمشدہ پاسپورٹ کا طریقہ",
+        "slug": "/passport/lost-passport-abroad-reissuance-process-2026"
+      },
+      {
         "en": "Passport Fee Calculator",
         "ur": "پاسپورٹ فیس کیلکولیٹر",
         "slug": "/passport/fee-calculator"
@@ -116,6 +126,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "University Entry Tests 2026 (NUST/FAST)",
+        "ur": "یونیورسٹی انٹری ٹیسٹ رہنمائی",
+        "slug": "/education/university-entry-test-guide-nust-fast-comsats-2026"
+      },
       {
         "en": "Matric 40% Passing Marks 2026",
         "ur": "میٹرک 40 فیصد پاسنگ مارکس",
@@ -214,6 +229,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "BEOE Protector Registration 2026",
+        "ur": "پروٹیکٹر رجسٹریشن برائے بیرون ملک",
+        "slug": "/jobs/beoe-protector-registration-overseas-employment-2026"
+      },
+      {
         "en": "BEOE Protector Fee Calculator",
         "ur": "پروٹیکٹر فیس کیلکولیٹر 2026",
         "slug": "/jobs/beoe-protector-fee-calculator-2026"
@@ -265,6 +285,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "PM Youth Loan Status 2026",
+        "ur": "پی ایم یوتھ لون تازہ ترین سٹیٹس",
+        "slug": "/loans/kamyab-jawan-pm-youth-loan-current-status-2026"
+      },
+      {
         "en": "Spot Fake Loan Scams",
         "ur": "جعلی قرضہ اسکیموں سے بچاؤ",
         "slug": "/loans/how-to-spot-fake-loan-scheme-scams-2026"
@@ -298,7 +323,7 @@ export const CATEGORIES: Category[] = [
     "nameUr": "بے نظیر و احساس پروگرام",
     "taglineEn": "BISP 8171 Portal, PSER Survey, Taleemi Wazaif & Sehat Card",
     "taglineUr": "بی ایس پی 8171 پورٹل، پی ایس ای آر سروے اور کفالت کاؤنٹر",
-    "descriptionEn": "Official guidance for BISP 8171 CNIC eligibility check, Benazir Kafaalat 10,500 PKR schedule, PSER Punjab survey, Taleemi Wazaif, Laptop Scheme, and Sehat Card.",
+    "descriptionEn": "Official guidance for BISP 8171 CNIC eligibility check, current Benazir Kafaalat quarterly amount & schedule (check via 8171 portal), PSER Punjab survey, Taleemi Wazaif, Laptop Scheme, and Sehat Card.",
     "descriptionUr": "بے نظیر انکم سپورٹ پروگرام (BISP 8171) آن لائن اہلیت چیک، کفالت قسط، پی ایس ای آر سروے رجسٹریشن، تعلیمی وظائف اور صحت سہولت کارڈ۔",
     "iconName": "HeartHandshake",
     "accentColor": "#A02334",
@@ -357,6 +382,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "DLIMS Driving License Online 2026",
+        "ur": "ڈرائیونگ لائسنس آن لائن رینیول",
+        "slug": "/traffic/driving-license-online-apply-renewal-dlims-2026"
+      },
+      {
         "en": "Challan Paid But Pending",
         "ur": "چالان ادا شدہ مگر پینڈنگ",
         "slug": "/traffic/challan-paid-but-showing-pending-2026"
@@ -406,6 +436,11 @@ export const CATEGORIES: Category[] = [
         "en": "Salaried Tax Calculator 2026",
         "ur": "تنخواہ ٹیکس کیلکولیٹر 2026",
         "slug": "/tax/income-tax-calculator-salaried-2026"
+      },
+      {
+        "en": "File Salaried Tax Return (Iris)",
+        "ur": "آئرس پورٹل انکم ٹیکس فائلنگ",
+        "slug": "/tax/how-to-file-income-tax-return-salaried-iris-2026"
       },
       {
         "en": "FBR Active Taxpayer Status 2026",
@@ -459,6 +494,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/overseas/nicop-mandatory-entry-rules-2026"
       },
       {
+        "en": "OPF Overseas Scholarship 2026",
+        "ur": "او پی ایف تعلیمی وظائف",
+        "slug": "/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026"
+      },
+      {
         "en": "NICOP Renewal from Abroad",
         "ur": "بیرون ملک نائیکوپ تجدید",
         "slug": "/overseas/nicop-renewal-from-abroad"
@@ -494,6 +534,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
+      {
+        "en": "E-Stamping Challan 32-A Guide",
+        "ur": "ای سٹامپ چالان 32A آن لائن",
+        "slug": "/property/e-stamping-challan-32a-online-guide-2026"
+      },
       {
         "en": "Punjab Fard Online Verifier 2026",
         "ur": "پنجاب فرد آن لائن چیکر 2026",
@@ -543,7 +588,12 @@ export const CATEGORIES: Category[] = [
       {
         "en": "Nikah Nama vs MRC 2026",
         "ur": "نکاح نامہ بمقابلہ میرج سرٹیفکیٹ",
-        "slug": "/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026"
+        "slug": "/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026"
+      },
+      {
+        "en": "Talaq & Khula Legal Process 2026",
+        "ur": "طلاق اور خلع کا قانونی طریقہ کار 2026",
+        "slug": "/family-registration/talaq-khula-legal-process-pakistan-2026"
       },
       {
         "en": "Nikah Nama Registration",
@@ -581,6 +631,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "PSEB Freelancer Registration 2026",
+        "ur": "پی ایس ای بی فری لانسر رجسٹریشن",
+        "slug": "/business/pseb-freelancer-registration-tax-benefits-2026"
+      },
       {
         "en": "SECP Company Name Checker 2026",
         "ur": "ایس ای سی پی کمپنی نام چیکر 2026",
@@ -628,14 +683,14 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
-        "en": "PCC Tracking Status 2026",
-        "ur": "پولیس سرٹیفکیٹ ٹریکنگ",
-        "slug": "/certificates/police-character-certificate-tracking-status-2026"
-      },
-      {
         "en": "Police Character Certificate 2026",
         "ur": "پولیس کریکٹر سرٹیفکیٹ آن لائن",
         "slug": "/certificates/police-character-certificate-online-apply-2026"
+      },
+      {
+        "en": "Death Certificate Process 2026",
+        "ur": "وفات سرٹیفکیٹ نادرا طریقہ 2026",
+        "slug": "/certificates/death-certificate-registration-process-2026"
       },
       {
         "en": "Domicile Certificate Online",
@@ -648,14 +703,14 @@ export const CATEGORIES: Category[] = [
         "slug": "/certificates/birth-certificate-union-council-online"
       },
       {
+        "en": "PCC Tracking Status 2026",
+        "ur": "پولیس سرٹیفکیٹ ٹریکنگ",
+        "slug": "/certificates/police-character-certificate-tracking-status-2026"
+      },
+      {
         "en": "PRC Certificate Sindh / Punjab",
         "ur": "پی آر سی سرٹیفکیٹ فارم",
         "slug": "/certificates/prc-permanent-residence-certificate-pakistan"
-      },
-      {
-        "en": "Death Certificate Process",
-        "ur": "وفات سرٹیفکیٹ نادرا طریقہ",
-        "slug": "/certificates/death-certificate-registration-process"
       },
       {
         "en": "Succession Certificate Guide",
@@ -678,6 +733,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "Nusuk App Umrah Guide 2026",
+        "ur": "نسک ایپ عمرہ رہنمائی 2026",
+        "slug": "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026"
+      },
       {
         "en": "Zakat Calculator 2026",
         "ur": "زکوٰۃ کیلکولیٹر 2026",
@@ -730,6 +790,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Disability Certificate & Special CNIC",
+        "ur": "معذوری سرٹیفکیٹ و نادرا کارڈ",
+        "slug": "/health/disability-certificate-special-cnic-apply-2026"
+      },
+      {
         "en": "Sehat Card Province Status 2026",
         "ur": "صحت کارڈ صوبائی سٹیٹس 2026",
         "slug": "/health/sehat-card-active-status-by-province-2026"
@@ -776,14 +841,14 @@ export const CATEGORIES: Category[] = [
         "slug": "/legal/succession-certificate-legal-heir-nadra-2026"
       },
       {
+        "en": "Power of Attorney Online 2026",
+        "ur": "آن لائن پاور آف اٹارنی",
+        "slug": "/legal/power-of-attorney-online-overseas-pakistanis-2026"
+      },
+      {
         "en": "Online FIR Punjab Police 1787",
         "ur": "آن لائن ایف آئی آر اندراج",
         "slug": "/legal/online-fir-registration-punjab-police"
-      },
-      {
-        "en": "Police Character Cert (PCC)",
-        "ur": "پولیس کریکٹر سرٹیفکیٹ فارم",
-        "slug": "/legal/police-character-certificate-apply-online"
       },
       {
         "en": "Check FIR Status Online",
@@ -817,9 +882,14 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Emergency Helpline Directory 2026",
+        "ur": "ہنگامی ہیلپ لائنز ڈائریکٹری 2026",
+        "slug": "/alerts/pakistan-emergency-helpline-numbers-directory-2026"
+      },
+      {
         "en": "NDMA Disaster Alert Setup 2026",
         "ur": "این ڈی ایم اے الرٹس سیٹ اپ 2026",
-        "slug": "/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026"
+        "slug": "/alerts/ndma-flood-earthquake-sms-alert-setup-2026"
       },
       {
         "en": "Flood Alert NDMA / PDMA",

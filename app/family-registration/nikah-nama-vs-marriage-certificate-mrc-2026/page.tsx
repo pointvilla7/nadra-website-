@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     title: 'Nikah Nama vs Marriage Certificate (MRC) 2026 – Key Differences & Registration',
     description:
       'Neutral public guide on distinguishing the manual Nikah Nama contract from the official computerized NADRA/Union Council MRC, registration steps, and legal requirements.',
-    url: 'https://www.pakistaninfohub.com/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
+    url: 'https://www.pakistaninfohub.com/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026' },
 };
 
 const jsonLd = {
@@ -58,7 +58,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 3,
           name: 'Nikah Nama vs MRC',
-          item: 'https://www.pakistaninfohub.com/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
+          item: 'https://www.pakistaninfohub.com/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026',
         },
       ],
     },
@@ -71,7 +71,7 @@ const jsonLd = {
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-20',
       dateModified: '2026-08-21',
-      mainEntityOfPage: 'https://www.pakistaninfohub.com/marriage-family/nikah-nama-vs-marriage-certificate-mrc-2026',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026',
     },
     {
       '@type': 'FAQPage',

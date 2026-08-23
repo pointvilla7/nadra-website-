@@ -37,6 +37,21 @@ const nextConfig = {
         destination: 'https://www.pakistaninfohub.com/:path*',
         permanent: true,
       },
+      {
+        source: '/marriage-family/:slug*',
+        destination: '/family-registration/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/disaster-alerts/:slug*',
+        destination: '/alerts/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/legal/police-character-certificate-apply-online',
+        destination: '/certificates/police-character-certificate-online-apply-2026',
+        permanent: true,
+      },
     ];
   },
 

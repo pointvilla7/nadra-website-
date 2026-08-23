@@ -64,7 +64,7 @@ export const BispCheckWidget: React.FC = () => {
             <span className="text-xs px-2 py-0.5 rounded gold-badge font-bold">2026</span>
           </h3>
           <p className="text-xs text-emerald-200 mt-1">
-            {t('Verify Benazir Kafaalat (10,500 PKR) and Taleemi Wazaif payment status', 'بے نظیر کفالت 10,500 روپے اور تعلیمی وظائف کا جائزہ')}
+            {t('Verify Benazir Kafaalat quarterly payment (check via 8171 portal) and Taleemi Wazaif status', 'بے نظیر کفالت سہ ماہی قسط (8171 پورٹل سے تصدیق) اور تعلیمی وظائف کا جائزہ')}
           </p>
         </div>
 

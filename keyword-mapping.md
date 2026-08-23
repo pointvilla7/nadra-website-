@@ -47,7 +47,7 @@
 | `https://pakistaninfohub.com/health/medical-board-disability-certificate-pakistan` | Medical Board Disability Certificate & Special CNIC in Pakistan | Apply for a government Disability Certificate... | Informational / Transactional |
 | `https://pakistaninfohub.com/health/polio-yellow-fever-vaccine-certificate-travel` | Online Polio & Yellow Fever Travel Vaccination Certificate | Download international Polio Vaccination Cert... | Informational / Transactional |
 | `https://pakistaninfohub.com/legal/online-fir-registration-punjab-police` | Online FIR Registration Punjab Police 1787 & E-Tag System | Register crime reports and lost document comp... | Informational / Transactional |
-| `https://pakistaninfohub.com/legal/police-character-certificate-apply-online` | Police Character Certificate (PCC) Apply Online for Visas | Apply for an official Police Character Certif... | Informational / Transactional |
+| `https://pakistaninfohub.com/certificates/police-character-certificate-online-apply-2026` | Police Character Certificate (PCC) Apply Online for Visas | Apply for an official Police Character Certif... | Informational / Transactional |
 | `https://pakistaninfohub.com/legal/how-to-check-fir-status-online` | How to Check FIR Status Online | Track police FIR status online in Pakistan by... | Informational / Transactional |
 | `https://pakistaninfohub.com/legal/legal-heir-certificate-nadra-court` | Legal Heir Certificate (Wirasat Nama) | Learn how to obtain a Legal Heir Declaration ... | Informational / Transactional |
 | `https://pakistaninfohub.com/legal/power-of-attorney-property-registration` | Power of Attorney (Mukhtar Nama) Property Registration Rules | Complete legal rules for executing General Po... | Informational / Transactional |

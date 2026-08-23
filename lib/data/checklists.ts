@@ -26,8 +26,8 @@ export const ELIGIBILITY_PROGRAMS: Record<string, EligibilityProgram> = {
     titleEn: 'BISP 8171 Benazir Kafaalat Eligibility Check',
     titleUr: 'بے نظیر کفالت 8171 اہلیت پڑتال',
     category: 'Welfare',
-    descriptionEn: 'Check if your household qualifies for the quarterly 10,500 PKR Benazir Kafaalat cash grant and Taleemi Wazaif.',
-    descriptionUr: 'جانئیے کہ کیا آپ کا گھرانہ بے نظیر کفالت کی 10,500 روپے کی قسط اور تعلیمی وظائف کا مستحق ہے۔',
+    descriptionEn: 'Check if your household qualifies for the current Benazir Kafaalat quarterly cash grant (check via 8171 portal) and Taleemi Wazaif.',
+    descriptionUr: 'جانئیے کہ کیا آپ کا گھرانہ بے نظیر کفالت کی سہ ماہی قسط (8171 پورٹل سے تصدیق) اور تعلیمی وظائف کا مستحق ہے۔',
     criteria: [
       {
         id: 'female_head',

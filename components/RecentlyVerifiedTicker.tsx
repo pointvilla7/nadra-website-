@@ -41,7 +41,7 @@ export const RecentlyVerifiedTicker: React.FC = () => {
     { key: 'fbr-filer-status-check-cnic', labelEn: 'FBR Active Taxpayer List (ATL)', labelUr: 'ایف بی آر ایکٹو ٹیکس پیئر لسٹ' },
     { key: 'hajj-balloting-result-check-online', labelEn: 'MORA Hajj 2026 Balloting Results', labelUr: 'حج قرعہ اندازی نتائج 2026' },
     { key: 'sehat-card-eligibility-check-by-cnic', labelEn: 'Universal Sehat Card (1M PKR Limit)', labelUr: 'صحت کارڈ 10 لاکھ علاج سہولت' },
-    { key: 'bisp-eligibility-check-by-cnic', labelEn: 'BISP 8171 Kafaalat 10,500 PKR Schedule', labelUr: 'بے نظیر کفالت 10,500 روپے قسط شیڈول' },
+    { key: 'bisp-eligibility-check-by-cnic', labelEn: 'BISP 8171 Kafaalat Quarterly Amount & Schedule (Check via 8171 Portal)', labelUr: 'بے نظیر کفالت سہ ماہی قسط و شیڈول (8171 پورٹل سے تصدیق)' },
     { key: 'property-mutation-check-by-cnic', labelEn: 'PLRA Land Record Mutation (Intiqal)', labelUr: 'اراضی ریکارڈ انتقال تصدیق' },
     { key: 'beoe-protector-registration-overseas-employment-2026', labelEn: 'BEOE Protector Registration (Rs. 9,200)', labelUr: 'اوورسیز پروٹیکٹر فیس شیڈول' },
     { key: 'apni-chhat-apna-ghar', labelEn: 'Apni Chhat Housing Loan (1.5M PKR)', labelUr: 'اپنی چھت اپنا گھر 15 لاکھ بلا سود قرضہ' },

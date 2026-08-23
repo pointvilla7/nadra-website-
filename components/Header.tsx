@@ -216,22 +216,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                     {
                       titleEn: 'Identity & Travel',
                       titleUr: 'شناخت و سفر',
-                      ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates', 'mobile-pta'],
+                      ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
                     },
                     {
                       titleEn: 'Money & Business',
-                      titleUr: 'ٹیکس و فنانس',
-                      ids: ['finance', 'tax', 'business', 'loans', 'property', 'bills'],
+                      titleUr: 'ٹیکس، بینکنگ و جائیداد',
+                      ids: ['tax', 'finance', 'business', 'property', 'loans'],
                     },
                     {
-                      titleEn: 'Services & Postal',
-                      titleUr: 'ڈاک و خدمات',
-                      ids: ['pakistan-post', 'jobs', 'education', 'welfare'],
+                      titleEn: 'Utilities, Tech & Postal',
+                      titleUr: 'یوٹیلیٹی، ٹیک و ڈاک',
+                      ids: ['bills', 'mobile-pta', 'pakistan-post', 'jobs', 'education'],
                     },
                     {
-                      titleEn: 'Health & Legal',
-                      titleUr: 'صحت و قانون',
-                      ids: ['health', 'legal', 'traffic', 'marriage-family', 'disaster-alerts'],
+                      titleEn: 'Civic, Health & Safety',
+                      titleUr: 'شہری، صحت و تحفظ',
+                      ids: ['family-registration', 'welfare', 'health', 'legal', 'traffic', 'alerts'],
                     },
                   ].map((group, gIdx) => (
                     <div key={gIdx} className="space-y-2">
@@ -321,22 +321,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               {
                 titleEn: 'Identity & Travel',
                 titleUr: 'شناخت و سفر',
-                ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates', 'mobile-pta'],
+                ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
               },
               {
                 titleEn: 'Money & Business',
-                titleUr: 'ٹیکس و فنانس',
-                ids: ['tax', 'business', 'loans', 'property', 'bills'],
+                titleUr: 'ٹیکس، بینکنگ و جائیداد',
+                ids: ['tax', 'finance', 'business', 'property', 'loans'],
               },
               {
-                titleEn: 'Services & Postal',
-                titleUr: 'ڈاک و خدمات',
-                ids: ['pakistan-post', 'jobs', 'education', 'welfare'],
+                titleEn: 'Utilities, Tech & Postal',
+                titleUr: 'یوٹیلیٹی، ٹیک و ڈاک',
+                ids: ['bills', 'mobile-pta', 'pakistan-post', 'jobs', 'education'],
               },
               {
-                titleEn: 'Health & Legal',
-                titleUr: 'صحت و قانون',
-                ids: ['health', 'legal', 'traffic', 'marriage-family', 'disaster-alerts'],
+                titleEn: 'Civic, Health & Safety',
+                titleUr: 'شہری، صحت و تحفظ',
+                ids: ['family-registration', 'welfare', 'health', 'legal', 'traffic', 'alerts'],
               },
             ].map((group, gIdx) => (
               <div key={gIdx} className="space-y-1.5">

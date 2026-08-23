@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     title: 'Pakistan Emergency Helpline Numbers Directory 2026 – 24/7 Rescue & Police',
     description:
       'Verified, mobile-ready national emergency contact reference: Rescue 1122, Edhi 115, Police 15, Fire 16, Motorway Police 130, and emergency protocols.',
-    url: 'https://www.pakistaninfohub.com/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026',
+    url: 'https://www.pakistaninfohub.com/alerts/pakistan-emergency-helpline-numbers-directory-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/alerts/pakistan-emergency-helpline-numbers-directory-2026' },
 };
 
 const jsonLd = {
@@ -63,7 +63,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 3,
           name: 'Emergency Helpline Numbers Directory 2026',
-          item: 'https://www.pakistaninfohub.com/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026',
+          item: 'https://www.pakistaninfohub.com/alerts/pakistan-emergency-helpline-numbers-directory-2026',
         },
       ],
     },
@@ -76,7 +76,7 @@ const jsonLd = {
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-22',
       dateModified: '2026-08-22',
-      mainEntityOfPage: 'https://www.pakistaninfohub.com/disaster-alerts/pakistan-emergency-helpline-numbers-directory-2026',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/alerts/pakistan-emergency-helpline-numbers-directory-2026',
     },
     {
       '@type': 'FAQPage',
@@ -506,7 +506,7 @@ export default function EmergencyHelplineDirectoryPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/disaster-alerts/ndma-flood-earthquake-sms-alert-setup-2026"
+              href="/alerts/ndma-flood-earthquake-sms-alert-setup-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Early Warnings</span>
