@@ -88,7 +88,10 @@ export const RecentlyVerifiedTicker: React.FC = () => {
   });
 
   return (
-    <div className="w-full doc-card rounded-2xl p-3 sm:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 sm:my-8 shadow-doc-card overflow-hidden min-h-[88px] md:min-h-[64px]">
+    <div
+      className="w-full rounded-2xl p-3 sm:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 sm:my-8 shadow-doc-card min-h-[88px] md:min-h-[64px]"
+      style={{ touchAction: 'pan-y pinch-zoom' }}
+    >
       <div className="flex flex-col md:flex-row items-start md:items-center gap-3 sm:gap-4">
 
         {/* ── LABEL: Non-animated, flex-shrink-0, stacks above on mobile ── */}
@@ -107,8 +110,8 @@ export const RecentlyVerifiedTicker: React.FC = () => {
           </span>
         </div>
 
-        {/* ── SCROLLING TRACK: Pure CSS marquee, overflow:hidden, NO scroll/swipe ── */}
-        <div className="ticker-viewport">
+        {/* ── SCROLLING TRACK: Pure CSS marquee, overflow:hidden ONLY on this div ── */}
+        <div className="ticker-viewport" style={{ touchAction: 'pan-y pinch-zoom' }}>
           <div className="ticker-track" aria-hidden="false">
             {/* First copy of items */}
             {updates.map((item, i) => (

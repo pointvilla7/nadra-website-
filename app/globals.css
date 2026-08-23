@@ -83,7 +83,8 @@
 .ticker-viewport {
   position: relative;
   width: 100%;
-  overflow: hidden;       /* NOT auto/scroll — prevents mobile scroll conflict */
+  overflow: hidden;       /* Contains the marquee — does NOT affect parent scroll */
+  touch-action: pan-y pinch-zoom;  /* Explicitly allow vertical page scroll through this element */
   -webkit-mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
   mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
 }
@@ -512,11 +513,9 @@ button:active, a:active, [role="button"]:active {
 
 /* Mandatory Prefers-Reduced-Motion Override */
 /* NOTE: We do NOT set transform:none here — that would break :active press states
-   and already-visible opacity-1 elements. We only disable animation/transition timing.
-   Ticker and live-dot are exempted so they remain functional on mobile. */
+   and already-visible opacity-1 elements. We only disable animation/transition timing. */
 @media (prefers-reduced-motion: reduce) {
-  *:not(.ticker-track):not(.ticker-live-ping):not(.ticker-live-dot),
-  ::before, ::after {
+  *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
