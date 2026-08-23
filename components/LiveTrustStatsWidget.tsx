@@ -39,17 +39,17 @@ export const LiveTrustStatsWidget: React.FC = () => {
       {/* 4 Responsive Metric Columns */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         
-        {/* Metric 1: Monthly Citizens Guided */}
+        {/* Metric 1: 100% Free Directory (Verifiable Fact) */}
         <div className="flex items-start gap-3 p-3 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
           <div className="w-10 h-10 rounded-lg bg-amber-500/10 text-doc-brass flex items-center justify-center shrink-0 border border-amber-500/20">
-            <Users className="w-5 h-5" />
+            <ShieldCheck className="w-5 h-5" />
           </div>
           <div>
             <div className="text-lg sm:text-xl font-mono font-extrabold text-slate-900 dark:text-white leading-none">
-              {TRUST_CONFIG.monthlyUsersCount}
+              100% Free
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 font-sans mt-1">
-              {t('Citizens Guided This Month', 'ماہانہ رہنمائی حاصل کرنے والے شہری')}
+              {t('Zero Paywalls or Login', 'بغیر لاگ ان یا کسی فیس کے')}
             </p>
           </div>
         </div>

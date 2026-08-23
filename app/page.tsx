@@ -24,7 +24,6 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { RecentlyUpdatedGuides } from '@/components/RecentlyUpdatedGuides';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { LiveTrustStatsWidget } from '@/components/LiveTrustStatsWidget';
-import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { AuthorityTrustBadges } from '@/components/AuthorityTrustBadges';
 
 export default function HomePage() {
@@ -230,13 +229,8 @@ export default function HomePage() {
         </section>
       </ScrollReveal>
 
-      {/* ── TESTIMONIALS & CITIZEN PROOF SECTION ── */}
-      <ScrollReveal delayMs={120}>
-        <TestimonialsSection />
-      </ScrollReveal>
-
       {/* ── AUTHORITY & TRUST GUARANTEE BADGES ── */}
-      <ScrollReveal delayMs={140}>
+      <ScrollReveal delayMs={120}>
         <AuthorityTrustBadges />
       </ScrollReveal>
 

@@ -11,7 +11,7 @@ interface ArticleRatingWidgetProps {
 
 export const ArticleRatingWidget: React.FC<ArticleRatingWidgetProps> = ({ slug }) => {
   const { t } = useLanguage();
-  const [ratingData, setRatingData] = useState<StarRatingData>({ average: 4.8, totalVotes: 120 });
+  const [ratingData, setRatingData] = useState<StarRatingData>({ average: 0, totalVotes: 0 });
   const [hoverRating, setHoverRating] = useState<number | null>(null);
   const [hasVoted, setHasVoted] = useState(false);
 
@@ -35,7 +35,7 @@ export const ArticleRatingWidget: React.FC<ArticleRatingWidgetProps> = ({ slug }
       {/* 5 Interactive Stars */}
       <div className="flex items-center gap-0.5" onMouseLeave={() => setHoverRating(null)}>
         {[1, 2, 3, 4, 5].map((star) => {
-          const isFilled = hoverRating ? star <= hoverRating : star <= Math.round(ratingData.average);
+          const isFilled = hoverRating ? star <= hoverRating : (ratingData.totalVotes > 0 ? star <= Math.round(ratingData.average) : false);
           return (
             <button
               key={star}
@@ -58,21 +58,35 @@ export const ArticleRatingWidget: React.FC<ArticleRatingWidgetProps> = ({ slug }
         })}
       </div>
 
-      {/* Average & Total Ratings Text */}
-      <span className="font-mono font-bold text-slate-800 dark:text-slate-200">
-        {ratingData.average} ★
-      </span>
-
-      <span className="text-[11px] text-slate-500 dark:text-slate-400 font-sans border-l border-slate-200 dark:border-slate-800 pl-2">
-        {hasVoted ? (
-          <span className="text-emerald-600 dark:text-emerald-400 font-bold inline-flex items-center gap-1">
-            <CheckCircle2 className="w-3 h-3" />
-            {t('Rated!', 'شکریہ!')}
+      {/* Real Average & Total Ratings or Rate Prompt */}
+      {ratingData.totalVotes > 0 ? (
+        <>
+          <span className="font-mono font-bold text-slate-800 dark:text-slate-200">
+            {ratingData.average} ★
           </span>
-        ) : (
-          <span>({ratingData.totalVotes} {t('ratings', 'آراء')})</span>
-        )}
-      </span>
+          <span className="text-[11px] text-slate-500 dark:text-slate-400 font-sans border-l border-slate-200 dark:border-slate-800 pl-2">
+            {hasVoted ? (
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold inline-flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3" />
+                {t('Rated!', 'شکریہ!')}
+              </span>
+            ) : (
+              <span>({ratingData.totalVotes} {t('ratings', 'آراء')})</span>
+            )}
+          </span>
+        </>
+      ) : (
+        <span className="text-[11px] text-slate-500 dark:text-slate-400 font-sans">
+          {hasVoted ? (
+            <span className="text-emerald-600 dark:text-emerald-400 font-bold inline-flex items-center gap-1">
+              <CheckCircle2 className="w-3 h-3" />
+              {t('Rated!', 'شکریہ!')}
+            </span>
+          ) : (
+            <span>{t('Rate this guide', 'اس گائیڈ کو ریٹ کریں')}</span>
+          )}
+        </span>
+      )}
     </div>
   );
 };

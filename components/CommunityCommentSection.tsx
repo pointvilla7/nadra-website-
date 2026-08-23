@@ -186,8 +186,8 @@ export const CommunityCommentSection: React.FC<CommunityCommentSectionProps> = (
                     {t('Pending Review', 'زیر جائزہ')}
                   </span>
                 ) : (
-                  <span className="text-[10px] font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                    {t('Verified Citizen', 'مصدقہ شہری')}
+                  <span className="text-[10px] font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full border border-slate-200 dark:border-slate-700">
+                    {t('Community Comment', 'شہری کا تبصرہ')}
                   </span>
                 )}
               </div>

@@ -59,14 +59,13 @@ export const RecommendedServices: React.FC<RecommendedServicesProps> = ({
             className="rounded-xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-4 sm:p-5 flex flex-col justify-between space-y-4 hover:shadow-md hover:border-doc-brass/50 transition-all duration-200 group"
           >
             <div className="space-y-2.5">
-              {/* Partner Badge & Rating */}
+              {/* Service Category Badge */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-doc-brass bg-amber-500/10 dark:bg-amber-500/15 px-2 py-0.5 rounded border border-amber-500/20">
-                  {service.partnerBadge}
+                  {service.category.toUpperCase()}
                 </span>
-                <span className="flex items-center gap-1 text-xs font-mono font-bold text-amber-500">
-                  <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                  {service.rating}
+                <span className="text-[10px] font-mono text-slate-400 dark:text-slate-500">
+                  {t('External Tool', 'بیرونی سروس')}
                 </span>
               </div>
 

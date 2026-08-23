@@ -32,60 +32,12 @@ export interface ErrorReport {
   timestamp: string;
 }
 
-// Initial deterministic seed ratings for high-value guides
-const DEFAULT_RATINGS: Record<string, { average: number; totalVotes: number }> = {
-  'cnic-kaise-banaye': { average: 4.9, totalVotes: 238 },
-  'fee-2026': { average: 4.8, totalVotes: 184 },
-  'fbr-filer-status-check-cnic': { average: 4.9, totalVotes: 192 },
-  'bisp-eligibility-check-by-cnic': { average: 4.7, totalVotes: 310 },
-  'e-challan-check-online': { average: 4.8, totalVotes: 165 },
-  'sehat-card-eligibility-check-by-cnic': { average: 4.9, totalVotes: 215 },
-  'pta-mobile-imei-check': { average: 4.8, totalVotes: 147 },
-  'punjab-land-record-fard-verifier-2026': { average: 4.9, totalVotes: 120 },
-};
-
-// Initial verified citizen comments
-const SEED_COMMENTS: Record<string, UserComment[]> = {
-  'cnic-kaise-banaye': [
-    {
-      id: 'c1',
-      slug: 'cnic-kaise-banaye',
-      authorName: 'Kamran Tariq',
-      authorLocation: 'Lahore',
-      text: 'Visited the Executive NADRA center in DHA Lahore today. The biometric procedure and fee was exactly PKR 1,500 for urgent delivery as mentioned here. Very helpful!',
-      timestamp: '2 days ago',
-      status: 'approved',
-      helpfulVotes: 24,
-    },
-    {
-      id: 'c2',
-      slug: 'cnic-kaise-banaye',
-      authorName: 'Saima Bano',
-      authorLocation: 'Karachi',
-      text: 'Take original matric certificate along if applying for the first time after turning 18. The step-by-step document list saved me two visits.',
-      timestamp: '5 days ago',
-      status: 'approved',
-      helpfulVotes: 18,
-    },
-  ],
-  'fee-2026': [
-    {
-      id: 'c3',
-      slug: 'fee-2026',
-      authorName: 'Adeel Raza',
-      authorLocation: 'Islamabad',
-      text: 'The 36-page 10-year fast track passport fee breakdown is 100% accurate. Saved me from paying extra agent fees at the counter.',
-      timestamp: '1 day ago',
-      status: 'approved',
-      helpfulVotes: 31,
-    },
-  ],
-};
+// Ratings and comments start empty and populate purely from real user interactions.
+// Fabricated reviews, fake votes, and fake identities have been permanently removed.
 
 export const getGuideRating = (slug: string): StarRatingData => {
   if (typeof window === 'undefined') {
-    const fallback = DEFAULT_RATINGS[slug] || { average: 4.8, totalVotes: 94 };
-    return { ...fallback };
+    return { average: 0, totalVotes: 0 };
   }
 
   try {
@@ -97,14 +49,15 @@ export const getGuideRating = (slug: string): StarRatingData => {
     // Ignore
   }
 
-  const fallback = DEFAULT_RATINGS[slug] || { average: 4.8, totalVotes: 94 };
-  return { ...fallback };
+  return { average: 0, totalVotes: 0 };
 };
 
 export const submitGuideRating = (slug: string, newRating: number): StarRatingData => {
   const current = getGuideRating(slug);
   const newTotalVotes = current.totalVotes + 1;
-  const newAverage = Number(((current.average * current.totalVotes + newRating) / newTotalVotes).toFixed(1));
+  const newAverage = current.totalVotes === 0
+    ? Number(newRating.toFixed(1))
+    : Number(((current.average * current.totalVotes + newRating) / newTotalVotes).toFixed(1));
 
   const updated: StarRatingData = {
     average: Math.min(5.0, newAverage),
@@ -122,15 +75,13 @@ export const submitGuideRating = (slug: string, newRating: number): StarRatingDa
 };
 
 export const getGuideComments = (slug: string): UserComment[] => {
-  const seed = SEED_COMMENTS[slug] || [];
-
-  if (typeof window === 'undefined') return seed;
+  if (typeof window === 'undefined') return [];
 
   try {
     const userComments: UserComment[] = JSON.parse(localStorage.getItem(`pih_comments_${slug}`) || '[]');
-    return [...userComments, ...seed];
+    return userComments;
   } catch {
-    return seed;
+    return [];
   }
 };
 
