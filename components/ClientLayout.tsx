@@ -40,6 +40,12 @@ const UrduFontLoader = dynamic(
   { ssr: false, loading: () => null }
 );
 
+// Newsletter exit & scroll popup with 7-day frequency capping
+const NewsletterExitPopup = dynamic(
+  () => import('@/components/NewsletterExitPopup').then((m) => m.NewsletterExitPopup),
+  { ssr: false, loading: () => null }
+);
+
 import { MobileBottomNav } from '@/components/MobileBottomNav';
 
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -78,6 +84,7 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
       <Suspense fallback={null}>
         <CookieConsent />
         <AiAssistantWidget />
+        <NewsletterExitPopup />
       </Suspense>
     </LanguageProvider>
   );

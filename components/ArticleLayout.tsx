@@ -38,6 +38,8 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { AuthorBio } from '@/components/AuthorBio';
 import { CrossCategoryRelated } from '@/components/CrossCategoryRelated';
 import { getAuthorForCategory } from '@/lib/data/authors';
+import { RecommendedServices } from '@/components/RecommendedServices';
+import { PremiumTrackerWaitlist } from '@/components/PremiumTrackerWaitlist';
 
 const NadraTrackingWidget = dynamic(
   () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
@@ -624,8 +626,14 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {/* FAQ Accordion Section */}
       <FAQAccordion faqs={article.faqs || []} />
 
+      {/* Recommended Verified Affiliate & Partner Services */}
+      <RecommendedServices categoryId={article.categoryId} />
+
       {/* Interactive Was This Helpful Feedback Widget */}
       <ArticleFeedbackWidget articleSlug={article.slug} />
+
+      {/* Premium Tracker Waitlist Teaser */}
+      <PremiumTrackerWaitlist />
 
       {/* Mid-Article Ad Placement */}
       <AdPlacementZone slotId="bottom-article" format="horizontal" />
