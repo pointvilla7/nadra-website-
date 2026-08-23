@@ -4,17 +4,22 @@ import React from 'react';
 
 export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <div className={`relative w-full flex items-center justify-center select-none ${className}`}>
-      {/* Ambient background glow behind vector assets */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#B8860B]/10 via-[#0F9D6D]/15 to-[#1B2A4A]/20 rounded-full filter blur-2xl transform scale-90 pointer-events-none" />
+    <div
+      role="img"
+      aria-label="Pakistani civic services illustration featuring Smart CNIC identity card, green e-Passport booklet, and Gazette verification certificate"
+      className={`relative w-full flex items-center justify-center select-none ${className}`}
+    >
+      {/* Ambient background lighting behind vector assets */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#B8860B]/12 via-[#10B981]/15 to-[#2E4270]/25 rounded-full filter blur-2xl transform scale-90 pointer-events-none" />
 
       {/* Main SVG Vector Graphic */}
       <svg
         viewBox="0 0 540 420"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-auto max-h-[380px] drop-shadow-2xl overflow-visible"
+        className="w-full h-auto max-h-[250px] sm:max-h-[320px] lg:max-h-[400px] drop-shadow-2xl overflow-visible"
       >
+        <title>Pakistani Civic Services Vector Illustration</title>
         <defs>
           {/* Gradients */}
           <linearGradient id="passportCover" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -43,11 +48,6 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
           <linearGradient id="docBg" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#FFFFFF" />
             <stop offset="100%" stopColor="#F1F5F9" />
-          </linearGradient>
-
-          <linearGradient id="badgeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#10B981" />
-            <stop offset="100%" stopColor="#047857" />
           </linearGradient>
 
           <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
