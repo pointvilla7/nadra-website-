@@ -40,6 +40,8 @@ const UrduFontLoader = dynamic(
   { ssr: false, loading: () => null }
 );
 
+import { MobileBottomNav } from '@/components/MobileBottomNav';
+
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -67,10 +69,12 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
       {isSearchOpen && (
         <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       )}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24 sm:pb-12">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 pb-28 sm:pb-12">
         {children}
       </main>
       <Footer />
+      {/* Mobile Sticky Bottom Nav Bar */}
+      <MobileBottomNav onOpenSearch={() => setIsSearchOpen(true)} />
       <Suspense fallback={null}>
         <CookieConsent />
         <AiAssistantWidget />
