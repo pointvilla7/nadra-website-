@@ -8,6 +8,7 @@ import { ARTICLES } from '@/lib/data/articles';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CategoryCard } from '@/components/CategoryCard';
 import { SearchBar } from '@/components/SearchBar';
+import { HeroSection } from '@/components/HeroSection';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { RecentlyVerifiedTicker } from '@/components/RecentlyVerifiedTicker';
@@ -34,118 +35,8 @@ export default function HomePage() {
       {/* Search Modal Trigger */}
       <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
-      {/* HERO SECTION - EXACT NAVY-950 BACKGROUND */}
-      <section className="relative overflow-hidden rounded-[12px] bg-[#0B1120] border border-[#1E2A3F] p-6 sm:p-12 text-white shadow-2xl">
-        {/* Subtle Ambient Radial Light */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(184,134,11,0.15),rgba(255,255,255,0))] pointer-events-none" />
-
-        <div className="relative max-w-3xl mx-auto text-center space-y-6">
-          {/* Top Stamp Seal + Trust Badge */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-staggerIn">
-            <VerifiedBadge variant="stamp" />
-            <div className="text-center sm:text-start border-t sm:border-t-0 sm:border-s border-[#1E2A3F] pt-2 sm:pt-0 sm:ps-4">
-              <span className="inline-flex items-center gap-1.5 text-xs font-sans font-semibold text-[#D4A017] uppercase tracking-wider">
-                <CheckCircle2 className="w-4 h-4 text-[#0F9D6D]" />
-                <span>{t('INDEPENDENTLY VERIFIED CIVIC DIRECTORY', 'آزادانہ مصدقہ عوامی ڈائریکٹری')}</span>
-              </span>
-              <span className="text-xs text-[#CBD5E1] font-normal block mt-1 font-sans">
-                {t('100% Original Gazette Citations • Updated August 2026', 'مصدقہ 2026 • 100٪ اصلی معلومات')}
-              </span>
-            </div>
-          </div>
-
-          {/* Main Fraunces Serif Headline (H1: 48px desktop / 32px mobile) */}
-          <h1 className="text-[32px] sm:text-[48px] font-serif font-semibold tracking-tight text-white leading-[1.1]">
-            {t(
-              'Official Civic & Public Services Directory of Pakistan',
-              'پاکستان کا مصدقہ اور بااعتماد معلومات پورٹل'
-            )}
-          </h1>
-
-          <p className="text-base text-[#CBD5E1] max-w-2xl mx-auto leading-relaxed font-sans font-normal">
-            {t(
-              'Verified step-by-step document procedures, fee schedules, and interactive tools for NADRA, Passports, Tax/FBR, Hajj, Property, Health, Legal, and 18 civic service categories.',
-              'شناختی کارڈ، پاسپورٹ فیس، ایف بی آر ٹیکس، حج درخواست، اراضی ریکارڈ، صحت کارڈ اور 18 سرکاری شعبہ جات کی مکمل مصدقہ رہنمائی۔'
-            )}
-          </p>
-
-          {/* Prominent Search Bar Component */}
-          <div className="pt-2">
-            <button
-              onClick={() => setIsSearchOpen(true)}
-              className="w-full max-w-xl mx-auto flex items-center justify-between p-3 sm:p-4 rounded-[12px] bg-[#FAF9F6] dark:bg-[#1E2A3F] border border-[#CBD5E1] dark:border-slate-700 hover:border-[#B8860B] text-[#0B1120] dark:text-white shadow-doc-card hover:shadow-doc-hover transition-all duration-200 group cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <Search className="w-5 h-5 text-[#B8860B] group-hover:scale-110 transition-transform" />
-                <span className="text-sm md:text-base font-sans font-medium text-[#475569] dark:text-slate-300">
-                  {t(
-                    'Search CNIC, FBR Tax, Hajj, Sehat Card, Passport...',
-                    'شناختی کارڈ، ایف بی آر ٹیکس، حج، صحت کارڈ، پاسپورٹ...'
-                  )}
-                </span>
-              </div>
-              <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-[8px] bg-[#B8860B] hover:bg-[#D4A017] text-white font-sans font-semibold text-xs transition-transform group-hover:scale-105 min-h-[40px]">
-                <span>{t('SEARCH DIRECTORY', 'تلاش کریں')}</span>
-              </span>
-            </button>
-          </div>
-
-          {/* Primary CTA Buttons (Solid Gold-600 & Outline Slate-300) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <Link
-              href="/bills/utility-bill-checker-2026"
-              className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-[#B8860B] hover:bg-[#D4A017] text-white font-sans font-semibold text-xs shadow-xs transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.01] active:scale-[0.98]"
-            >
-              <span>⚡ {t('ONLINE BILL CHECKER 2026', 'آن لائن بجلی و گیس بل چیکر')}</span>
-            </Link>
-            <Link
-              href="/tracker"
-              className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-transparent hover:bg-[#1E2A3F]/60 text-[#CBD5E1] font-sans font-semibold text-xs border border-[#CBD5E1]/40 hover:border-[#CBD5E1] transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.01] active:scale-[0.98]"
-            >
-              <span>🔍 {t('UNIFIED APPLICATION TRACKER', 'درخواست ٹریکنگ پورٹل')}</span>
-            </Link>
-          </div>
-
-          {/* Quick Trending Pills */}
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-2 text-[13px] font-sans text-[#CBD5E1]">
-            <span className="text-[#D4A017] font-semibold">{t('TRENDING GUIDES:', 'مشہور سروسز:')}</span>
-            <Link
-              href="/nadra/cnic-kaise-banaye"
-              className="hover:text-white transition underline underline-offset-2"
-            >
-              CNIC Apply
-            </Link>
-            <span>•</span>
-            <Link
-              href="/tax/fbr-filer-status-check-cnic"
-              className="hover:text-white transition underline underline-offset-2"
-            >
-              FBR Filer Status
-            </Link>
-            <span>•</span>
-            <Link
-              href="/hajj-umrah/hajj-balloting-result-check-online"
-              className="hover:text-white transition underline underline-offset-2"
-            >
-              Hajj Balloting
-            </Link>
-            <span>•</span>
-            <Link
-              href="/health/sehat-card-eligibility-check-by-cnic"
-              className="hover:text-white transition underline underline-offset-2"
-            >
-              Sehat Card
-            </Link>
-            <span>•</span>
-            <Link
-              href="/property/property-mutation-check-by-cnic"
-              className="hover:text-white transition underline underline-offset-2"
-            >
-              Property Mutation
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* REDESIGNED SPLIT HERO SECTION WITH CUSTOM SVG ILLUSTRATION */}
+      <HeroSection onOpenSearch={() => setIsSearchOpen(true)} />
 
       {/* LIVE RECENTLY VERIFIED TICKER */}
       <RecentlyVerifiedTicker />
