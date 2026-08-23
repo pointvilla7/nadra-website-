@@ -2,18 +2,170 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { CreditCard, Plane, GraduationCap, FileText, Briefcase, ChevronRight, Landmark, HeartHandshake, Car, Sparkles, Calculator, Globe, Building, Users, Award, Compass, Activity, Scale, CloudLightning, CheckCircle2, Smartphone, Mail } from 'lucide-react';
+import {
+  CreditCard,
+  Plane,
+  GraduationCap,
+  FileText,
+  Briefcase,
+  ChevronRight,
+  Landmark,
+  HeartHandshake,
+  Car,
+  Sparkles,
+  Calculator,
+  Globe,
+  Building,
+  Users,
+  Award,
+  Compass,
+  Activity,
+  Scale,
+  CloudLightning,
+  CheckCircle2,
+  Smartphone,
+  Mail,
+  ArrowRight,
+  Zap,
+} from 'lucide-react';
 import { Category } from '@/lib/data/categories';
 import { useLanguage } from '@/lib/context/LanguageContext';
-import { VerifiedBadge } from '@/components/VerifiedBadge';
 
 interface CategoryCardProps {
   category: Category;
   articleCount?: number;
 }
 
+interface CategoryCtaConfig {
+  ctaEn: string;
+  ctaUr: string;
+  isPrimary: boolean;
+  actionIcon?: React.ReactNode;
+}
+
+const CATEGORY_CTA_MAP: Record<string, CategoryCtaConfig> = {
+  nadra: {
+    ctaEn: 'Check CNIC Status',
+    ctaUr: 'شناختی کارڈ سٹیٹس دیکھیں',
+    isPrimary: true,
+  },
+  passport: {
+    ctaEn: 'Track My Passport',
+    ctaUr: 'پاسپورٹ ٹریک کریں',
+    isPrimary: true,
+  },
+  tax: {
+    ctaEn: 'Check Filer Status (ATL)',
+    ctaUr: 'ایکٹو ٹیکس فائلر سٹیٹس',
+    isPrimary: true,
+  },
+  bills: {
+    ctaEn: 'Check Electricity & Gas Bills',
+    ctaUr: 'بجلی و گیس بل چیک کریں',
+    isPrimary: true,
+  },
+  welfare: {
+    ctaEn: 'Check 8171 & BISP Funds',
+    ctaUr: '8171 بے نظیر رقم چیک کریں',
+    isPrimary: true,
+  },
+  traffic: {
+    ctaEn: 'Check My E-Challan',
+    ctaUr: 'ای چالان و لائسنس چیک کریں',
+    isPrimary: true,
+  },
+  jobs: {
+    ctaEn: 'Browse Latest Vacancies',
+    ctaUr: 'سرکاری نوکریاں دیکھیں',
+    isPrimary: true,
+  },
+  health: {
+    ctaEn: 'Check Sehat Card Eligibility',
+    ctaUr: 'صحت کارڈ اہلیت دیکھیں',
+    isPrimary: true,
+  },
+  education: {
+    ctaEn: 'Check BISE & Merit Lists',
+    ctaUr: 'بورڈ رزلٹ و میرٹ لسٹ',
+    isPrimary: false,
+    actionIcon: <GraduationCap className="w-3.5 h-3.5" />,
+  },
+  loans: {
+    ctaEn: 'Check Loan Eligibility',
+    ctaUr: 'قرضہ اہلیت چیک کریں',
+    isPrimary: false,
+    actionIcon: <Calculator className="w-3.5 h-3.5" />,
+  },
+  overseas: {
+    ctaEn: 'Verify Protector & OPF',
+    ctaUr: 'پروٹیکٹر و اوورسیز سہولیات',
+    isPrimary: false,
+    actionIcon: <Globe className="w-3.5 h-3.5" />,
+  },
+  property: {
+    ctaEn: 'Verify Land Record (Fard)',
+    ctaUr: 'فرد و اراضی ریکارڈ تصدیق',
+    isPrimary: false,
+    actionIcon: <Building className="w-3.5 h-3.5" />,
+  },
+  'family-registration': {
+    ctaEn: 'Check B-Form & FRC',
+    ctaUr: 'بی فارم و ایف آر سی سرٹیفکیٹ',
+    isPrimary: false,
+    actionIcon: <Users className="w-3.5 h-3.5" />,
+  },
+  business: {
+    ctaEn: 'Check SECP & NTN Registry',
+    ctaUr: 'کمپنی رجسٹریشن و این ٹی این',
+    isPrimary: false,
+    actionIcon: <Briefcase className="w-3.5 h-3.5" />,
+  },
+  certificates: {
+    ctaEn: 'Verify Domicile & Police NOC',
+    ctaUr: 'ڈومیسائل و تصدیق نامہ',
+    isPrimary: false,
+    actionIcon: <Award className="w-3.5 h-3.5" />,
+  },
+  'hajj-umrah': {
+    ctaEn: 'Check Balloting Results',
+    ctaUr: 'حج قرعہ اندازی نتائج',
+    isPrimary: false,
+    actionIcon: <Compass className="w-3.5 h-3.5" />,
+  },
+  legal: {
+    ctaEn: 'Find Legal Aid Helplines',
+    ctaUr: 'مفت قانونی ہیلپ لائن',
+    isPrimary: false,
+    actionIcon: <Scale className="w-3.5 h-3.5" />,
+  },
+  alerts: {
+    ctaEn: 'Get 2026 Policy Alerts',
+    ctaUr: 'مفت حکومتی الرٹس',
+    isPrimary: false,
+    actionIcon: <CloudLightning className="w-3.5 h-3.5" />,
+  },
+  'mobile-pta': {
+    ctaEn: 'Check Device DIRBS Status',
+    ctaUr: 'پی ٹی اے ڈیوائس تصدیق',
+    isPrimary: false,
+    actionIcon: <Smartphone className="w-3.5 h-3.5" />,
+  },
+  'pakistan-post': {
+    ctaEn: 'Track Postal Parcel & UMS',
+    ctaUr: 'ڈاک پارسل ٹریک کریں',
+    isPrimary: false,
+    actionIcon: <Mail className="w-3.5 h-3.5" />,
+  },
+  finance: {
+    ctaEn: 'Check Withholding Tax Rates',
+    ctaUr: 'بینک ٹیکس و پرافٹ ریٹس',
+    isPrimary: false,
+    actionIcon: <Landmark className="w-3.5 h-3.5" />,
+  },
+};
+
 const getCategoryIcon = (iconName: string) => {
-  const props = { className: "w-7 h-7 text-[#1E2A3F] dark:text-slate-200" };
+  const props = { className: 'w-7 h-7 text-[#1E2A3F] dark:text-slate-200' };
   switch (iconName) {
     case 'CreditCard':
       return <CreditCard {...props} />;
@@ -61,8 +213,21 @@ const getCategoryIcon = (iconName: string) => {
 export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCount = 8 }) => {
   const { t } = useLanguage();
 
+  const ctaConfig = CATEGORY_CTA_MAP[category.id] || {
+    ctaEn: `Check ${category.nameEn} Guides`,
+    ctaUr: `${category.nameUr} معلومات دیکھیں`,
+    isPrimary: false,
+    actionIcon: <ChevronRight className="w-3.5 h-3.5" />,
+  };
+
+  const buttonText = t(ctaConfig.ctaEn, ctaConfig.ctaUr);
+  const ariaLabelText = t(
+    `${ctaConfig.ctaEn} for ${category.nameEn}`,
+    `${category.nameUr} کے لیے ${ctaConfig.ctaUr}`
+  );
+
   return (
-    <div className="doc-card rounded-[12px] p-5 sm:p-8 border border-[#F1F5F9] dark:border-slate-800 flex flex-col justify-between group relative overflow-hidden bg-[#FAF9F6] dark:bg-[#1E2A3F]">
+    <div className="doc-card rounded-[12px] p-5 sm:p-7 border border-[#F1F5F9] dark:border-slate-800 flex flex-col justify-between group relative overflow-hidden bg-[#FAF9F6] dark:bg-[#1E2A3F]">
       <div>
         {/* Header 56px Cream-100 Circular Icon + Quiet Emerald Border Badge */}
         <div className="flex items-center justify-between mb-5">
@@ -71,13 +236,15 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
           </div>
           <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-[#0F9D6D] text-[#0F9D6D] text-xs font-mono font-bold tracking-tight bg-transparent">
             <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-            <span>{articleCount}+ {t('GUIDES', 'گائیڈز')}</span>
+            <span>
+              {articleCount}+ {t('GUIDES', 'گائیڈز')}
+            </span>
           </div>
         </div>
 
         {/* Title */}
-        <Link href={`/${category.slug}`}>
-          <h3 className="text-[22px] font-serif font-medium text-[#0B1120] dark:text-white group-hover:text-[#B8860B] dark:group-hover:text-[#D4A017] transition mb-1.5 leading-snug">
+        <Link href={`/${category.slug}`} className="focus:outline-none">
+          <h3 className="text-[22px] font-serif font-bold text-[#0B1120] dark:text-white group-hover:text-doc-brass transition mb-1.5 leading-snug">
             {t(category.nameEn, category.nameUr)}
           </h3>
         </Link>
@@ -97,22 +264,35 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, articleCou
             <Link
               key={i}
               href={item.slug}
-              className="flex items-center justify-between text-xs font-medium text-[#475569] dark:text-slate-200 hover:text-[#B8860B] dark:hover:text-[#D4A017] transition py-0.5 group/link"
+              className="flex items-center justify-between text-xs font-medium text-[#475569] dark:text-slate-200 hover:text-doc-brass dark:hover:text-doc-brass transition py-0.5 group/link"
             >
-              <span className="truncate group-hover/link:translate-x-0.5 transition-transform">• {t(item.en, item.ur)}</span>
-              <ChevronRight className="w-3.5 h-3.5 text-[#B8860B] shrink-0 rtl:rotate-180 transition-transform group-hover/link:scale-110" />
+              <span className="truncate group-hover/link:translate-x-0.5 transition-transform">
+                • {t(item.en, item.ur)}
+              </span>
+              <ChevronRight className="w-3.5 h-3.5 text-doc-brass shrink-0 rtl:rotate-180 transition-transform group-hover/link:scale-110" />
             </Link>
           ))}
         </div>
       </div>
 
-      {/* Explore Button — Solid Gold CTA with proper mobile tap feedback */}
+      {/* ── Contextual Action-Specific CTA Button ── */}
       <Link
         href={`/${category.slug}`}
-        className="w-full min-h-[44px] py-2.5 px-4 rounded-[8px] text-xs font-semibold font-sans flex items-center justify-center gap-2 transition-all duration-150 bg-[#B8860B] text-white shadow-xs active:scale-[0.97] active:bg-[#a07809] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#B8860B] touch-action-manipulation"
+        aria-label={ariaLabelText}
+        className={`w-full min-h-[44px] py-2.5 px-4 rounded-xl text-xs font-bold font-sans flex items-center justify-between gap-2 transition-all duration-200 group/btn focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-doc-brass active:scale-[0.98] ${
+          ctaConfig.isPrimary
+            ? 'bg-[#0B1120] text-white hover:bg-[#1B2A4A] dark:bg-[#111C35] dark:hover:bg-[#1E2A3F] border border-[#1E2A3F] dark:border-slate-700 shadow-sm hover:shadow-md'
+            : 'border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900/60 text-[#0B1120] dark:text-slate-200 hover:border-doc-brass hover:text-doc-brass dark:hover:border-doc-brass dark:hover:text-doc-brass shadow-2xs hover:shadow-xs'
+        }`}
       >
-        <span>{t(`EXPLORE ${category.nameEn.toUpperCase()}`, `${category.nameUr} فائلز`)}</span>
-        <ChevronRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180" />
+        <div className="flex items-center gap-2 min-w-0">
+          {!ctaConfig.isPrimary && ctaConfig.actionIcon && (
+            <span className="text-doc-brass shrink-0">{ctaConfig.actionIcon}</span>
+          )}
+          <span className="truncate">{buttonText}</span>
+        </div>
+
+        <ArrowRight className="w-4 h-4 shrink-0 transition-transform duration-150 ease-out group-hover/btn:translate-x-1 rtl:group-hover/btn:-translate-x-1 rtl:rotate-180 text-doc-brass" />
       </Link>
     </div>
   );
