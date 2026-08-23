@@ -13,10 +13,7 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
+/* Old @keyframes marquee removed — replaced by @keyframes ticker-scroll below */
 
 @keyframes spinSlow {
   0% { transform: rotate(0deg); }
@@ -82,21 +79,37 @@
   animation: checkmarkPop 0.18s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.animate-marquee {
+/* ── Ticker: Pure CSS Marquee (device-agnostic, no JS) ── */
+.ticker-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;       /* NOT auto/scroll — prevents mobile scroll conflict */
+  -webkit-mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
+}
+
+.ticker-track {
   display: flex;
   width: max-content;
-  animation: marquee 32s linear infinite;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  animation: ticker-scroll 30s linear infinite;
   will-change: transform;
 }
 
-/* Hover-pause ONLY for devices that support true hover (desktop pointer/mouse).
-   This prevents touch devices from getting stuck in a permanent phantom-hover pause state! */
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Hover-pause ONLY on devices with a real mouse pointer */
 @media (hover: hover) and (pointer: fine) {
-  .animate-marquee:hover {
+  .ticker-track:hover {
     animation-play-state: paused;
   }
 }
 
+/* LIVE indicator dot animations */
 .ticker-live-ping {
   animation: livePing 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
@@ -124,10 +137,7 @@
   background-size: 200% 100%;
 }
 
-.ticker-fade-mask {
-  mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
-}
+/* .ticker-fade-mask removed — mask is now built into .ticker-viewport */
 
 @layer base {
   :root {
@@ -502,9 +512,11 @@ button:active, a:active, [role="button"]:active {
 
 /* Mandatory Prefers-Reduced-Motion Override */
 /* NOTE: We do NOT set transform:none here — that would break :active press states
-   and already-visible opacity-1 elements. We only disable animation/transition timing. */
+   and already-visible opacity-1 elements. We only disable animation/transition timing.
+   Ticker and live-dot are exempted so they remain functional on mobile. */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+  *:not(.ticker-track):not(.ticker-live-ping):not(.ticker-live-dot),
+  ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -557,11 +569,7 @@ body {
   border-radius: 4px;
 }
 
-/* ── GPU-accelerated marquee (prevents layout thrash) ── */
-.animate-marquee {
-  will-change: transform;
-  transform: translateZ(0);
-}
+/* GPU acceleration for ticker is now handled by will-change on .ticker-track */
 
 /* ── RTL & Urdu Layout Enhancements ── */
 [dir="rtl"] {

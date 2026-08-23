@@ -32,6 +32,32 @@ export function formatRelativeVerification(dateStr: string, t: (en: string, ur?:
   }
 }
 
+/** Single ticker item rendered as a Link pill */
+const TickerItem: React.FC<{
+  slug: string;
+  labelEn: string;
+  labelUr: string;
+  time: string;
+  t: (en: string, ur?: string) => string;
+}> = ({ slug, labelEn, labelUr, time, t }) => (
+  <Link
+    href={slug}
+    className="ticker-item min-h-[44px] flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-doc-brass/30 text-slate-200 hover:text-white transition shrink-0 group"
+  >
+    <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+    <span className="font-serif font-bold text-doc-paper group-hover:text-doc-brass transition whitespace-nowrap shrink-0 text-xs sm:text-sm">
+      {t(labelEn, labelUr)}
+    </span>
+    <span className="font-mono text-[10px] text-doc-brass flex items-center gap-1.5 bg-doc-ink/90 px-2 py-1 rounded-md border border-doc-brass/20 shrink-0 whitespace-nowrap">
+      <Clock className="w-3 h-3 text-slate-400 shrink-0" />
+      {time}
+    </span>
+    <div className="w-5 h-5 rounded-full bg-slate-700/60 group-hover:bg-doc-brass/20 flex items-center justify-center shrink-0 transition">
+      <ArrowRight className="w-3 h-3 text-slate-300 group-hover:text-doc-brass transition" />
+    </div>
+  </Link>
+);
+
 export const RecentlyVerifiedTicker: React.FC = () => {
   const { t } = useLanguage();
 
@@ -61,13 +87,11 @@ export const RecentlyVerifiedTicker: React.FC = () => {
     };
   });
 
-  // Duplicate items for continuous seamless loop
-  const tickerItems = [...updates, ...updates];
-
   return (
     <div className="w-full doc-card rounded-2xl p-3 sm:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 sm:my-8 shadow-doc-card overflow-hidden min-h-[88px] md:min-h-[64px]">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4">
-        {/* Ticker Title Label: Stacks as clean row on mobile (<640px) with bottom border, sits inline with vertical divider on desktop */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-3 sm:gap-4">
+
+        {/* ── LABEL: Non-animated, flex-shrink-0, stacks above on mobile ── */}
         <div className="w-full md:w-auto flex items-center justify-between md:justify-start gap-2.5 shrink-0 border-b md:border-b-0 md:border-r border-doc-brass/30 pb-2.5 md:pb-0 md:pr-4">
           <div className="flex items-center gap-2 shrink-0">
             <div className="relative flex h-3 w-3 shrink-0">
@@ -83,30 +107,20 @@ export const RecentlyVerifiedTicker: React.FC = () => {
           </span>
         </div>
 
-        {/* Continuous Marquee Row with 16px Edge Masks and starting padding */}
-        <div className="relative w-full overflow-hidden ticker-fade-mask py-0.5">
-          <div className="animate-marquee items-center gap-3 sm:gap-4 pl-4 sm:pl-2">
-            {tickerItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.slug}
-                className="min-h-[44px] flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-doc-brass/30 text-slate-200 hover:text-white transition shrink-0 group shadow-xs focus:outline-none focus:ring-2 focus:ring-doc-brass/50"
-              >
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span className="font-serif font-bold text-doc-paper group-hover:text-doc-brass transition whitespace-nowrap shrink-0 text-xs sm:text-sm">
-                  {t(item.labelEn, item.labelUr)}
-                </span>
-                <span className="font-mono text-[10px] text-doc-brass flex items-center gap-1.5 bg-doc-ink/90 px-2 py-1 rounded-md border border-doc-brass/20 shrink-0 whitespace-nowrap">
-                  <Clock className="w-3 h-3 text-slate-400 shrink-0" />
-                  {item.time}
-                </span>
-                <div className="w-5 h-5 rounded-full bg-slate-700/60 group-hover:bg-doc-brass/20 flex items-center justify-center shrink-0 transition">
-                  <ArrowRight className="w-3 h-3 text-slate-300 group-hover:text-doc-brass transition" />
-                </div>
-              </Link>
+        {/* ── SCROLLING TRACK: Pure CSS marquee, overflow:hidden, NO scroll/swipe ── */}
+        <div className="ticker-viewport">
+          <div className="ticker-track" aria-hidden="false">
+            {/* First copy of items */}
+            {updates.map((item, i) => (
+              <TickerItem key={`a-${i}`} {...item} t={t} />
+            ))}
+            {/* Second copy for seamless loop (translateX(-50%) lands exactly here) */}
+            {updates.map((item, i) => (
+              <TickerItem key={`b-${i}`} {...item} t={t} />
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
