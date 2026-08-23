@@ -65,37 +65,44 @@ export const RecentlyVerifiedTicker: React.FC = () => {
   const tickerItems = [...updates, ...updates];
 
   return (
-    <div className="w-full doc-card rounded-2xl p-3 md:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 shadow-doc-card overflow-hidden min-h-[72px] md:min-h-[60px]">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-        {/* Ticker Title Label */}
-        <div className="flex items-center gap-2 shrink-0 border-b md:border-b-0 md:border-r border-doc-brass/30 pb-2 md:pb-0 md:pr-4">
-          <div className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+    <div className="w-full doc-card rounded-2xl p-3 sm:p-4 border border-doc-brass/30 bg-doc-ink text-white my-6 sm:my-8 shadow-doc-card overflow-hidden min-h-[88px] md:min-h-[64px]">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4">
+        {/* Ticker Title Label: Stacks as clean row on mobile (<640px) with bottom border, sits inline with vertical divider on desktop */}
+        <div className="w-full md:w-auto flex items-center justify-between md:justify-start gap-2.5 shrink-0 border-b md:border-b-0 md:border-r border-doc-brass/30 pb-2.5 md:pb-0 md:pr-4">
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="relative flex h-3 w-3 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+            </div>
+            <span className="font-mono text-xs font-bold uppercase tracking-widest text-doc-brass shrink-0">
+              {t('LIVE VERIFIED TICKER', 'لائیو مصدقہ معلومات')}
+            </span>
           </div>
-          <span className="font-mono text-xs font-bold uppercase tracking-widest text-doc-brass">
-            {t('LIVE VERIFIED TICKER', 'لائیو مصدقہ معلومات')}
+          <span className="md:hidden font-mono text-[10px] uppercase tracking-wider text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-doc-brass/20 shrink-0">
+            {t('2026 Live', '2026 لائیو')}
           </span>
         </div>
 
-        {/* Continuous Marquee Row with Gradient Edge Masks */}
-        <div className="relative w-full overflow-hidden ticker-fade-mask py-1">
-          <div className="animate-marquee items-center gap-4">
+        {/* Continuous Marquee Row with 16px Edge Masks and starting padding */}
+        <div className="relative w-full overflow-hidden ticker-fade-mask py-0.5">
+          <div className="animate-marquee items-center gap-3 sm:gap-4 pl-4 sm:pl-2">
             {tickerItems.map((item, index) => (
               <Link
                 key={index}
                 href={item.slug}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-doc-brass/30 text-slate-200 hover:text-white transition shrink-0 group shadow-sm"
+                className="min-h-[44px] flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-doc-brass/30 text-slate-200 hover:text-white transition shrink-0 group shadow-xs focus:outline-none focus:ring-2 focus:ring-doc-brass/50"
               >
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span className="font-serif font-bold text-doc-paper group-hover:text-doc-brass transition truncate">
+                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span className="font-serif font-bold text-doc-paper group-hover:text-doc-brass transition whitespace-nowrap shrink-0 text-xs sm:text-sm">
                   {t(item.labelEn, item.labelUr)}
                 </span>
-                <span className="font-mono text-[10px] text-doc-brass flex items-center gap-1 bg-doc-ink px-1.5 py-0.5 rounded border border-doc-brass/20 shrink-0">
-                  <Clock className="w-3 h-3 text-slate-400" />
+                <span className="font-mono text-[10px] text-doc-brass flex items-center gap-1.5 bg-doc-ink/90 px-2 py-1 rounded-md border border-doc-brass/20 shrink-0 whitespace-nowrap">
+                  <Clock className="w-3 h-3 text-slate-400 shrink-0" />
                   {item.time}
                 </span>
-                <ArrowRight className="w-3 h-3 text-slate-400 group-hover:text-white transition shrink-0" />
+                <div className="w-5 h-5 rounded-full bg-slate-700/60 group-hover:bg-doc-brass/20 flex items-center justify-center shrink-0 transition">
+                  <ArrowRight className="w-3 h-3 text-slate-300 group-hover:text-doc-brass transition" />
+                </div>
               </Link>
             ))}
           </div>
