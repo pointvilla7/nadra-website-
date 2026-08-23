@@ -79,45 +79,7 @@
   animation: checkmarkPop 0.18s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* ── Ticker: Pure CSS Marquee (device-agnostic, no JS) ── */
-.ticker-viewport {
-  position: relative;
-  width: 100%;
-  overflow: hidden;       /* Contains the marquee — does NOT affect parent scroll */
-  touch-action: pan-y pinch-zoom;  /* Explicitly allow vertical page scroll through this element */
-  -webkit-mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0px, black 16px, black calc(100% - 16px), transparent 100%);
-}
 
-.ticker-track {
-  display: flex;
-  width: max-content;
-  gap: 0.75rem;
-  padding-left: 1rem;
-  animation: ticker-scroll 30s linear infinite;
-  will-change: transform;
-}
-
-@keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* Hover-pause ONLY on devices with a real mouse pointer */
-@media (hover: hover) and (pointer: fine) {
-  .ticker-track:hover {
-    animation-play-state: paused;
-  }
-}
-
-/* LIVE indicator dot animations */
-.ticker-live-ping {
-  animation: livePing 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-.ticker-live-dot {
-  animation: livePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
 
 .animate-spin-slow {
   animation: spinSlow 24s linear infinite;
@@ -539,10 +501,7 @@ button:active, a:active, [role="button"]:active {
   content-visibility: visible;
 }
 
-/* ── Overscroll containment: prevents scroll chaining on mobile ── */
-body {
-  overscroll-behavior-y: contain;
-}
+
 
 /* ── touch-action: manipulation — removes 300ms tap delay on mobile ── */
 /* Applied to interactive elements to get instant tap response */
