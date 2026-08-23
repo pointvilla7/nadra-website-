@@ -40,6 +40,9 @@ import { CrossCategoryRelated } from '@/components/CrossCategoryRelated';
 import { getAuthorForCategory } from '@/lib/data/authors';
 import { RecommendedServices } from '@/components/RecommendedServices';
 import { PremiumTrackerWaitlist } from '@/components/PremiumTrackerWaitlist';
+import { ArticleRatingWidget } from '@/components/ArticleRatingWidget';
+import { ReportErrorModal } from '@/components/ReportErrorModal';
+import { CommunityCommentSection } from '@/components/CommunityCommentSection';
 
 const NadraTrackingWidget = dynamic(
   () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
@@ -151,12 +154,15 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           {t(article.metaDescriptionEn, article.metaDescriptionUr)}
         </p>
 
-        {/* GEO Trust & EEAT Verification Bar */}
-        <GeoTrustBadge
-          lastVerified={article.lastVerified || 'August 19, 2026'}
-          officialSource={article.officialSource}
-          author={article.author}
-        />
+        {/* GEO Trust & EEAT Verification Bar with Rating Widget */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <GeoTrustBadge
+            lastVerified={article.lastVerified || 'August 19, 2026'}
+            officialSource={article.officialSource}
+            author={article.author}
+          />
+          <ArticleRatingWidget slug={article.slug} />
+        </div>
       </header>
 
       {/* One-Tap High-Intent Action Bar */}
@@ -176,6 +182,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           {copiedLink ? <Check className="w-3.5 h-3.5 text-emerald-500 animate-checkmarkPop shrink-0" /> : <Copy className="w-3.5 h-3.5 text-doc-brass shrink-0" />}
           <span className={copiedLink ? 'text-emerald-500 font-bold' : ''}>{copiedLink ? t('Link Copied!', 'لنک کاپی ہو گیا!') : t('Copy Link', 'لنک کاپی کریں', 'Copy Link')}</span>
         </button>
+
+        <ReportErrorModal
+          slug={article.slug}
+          articleTitle={t(article.titleEn, article.titleUr)}
+          category={category.nameEn}
+        />
 
         <button
           onClick={() => setIsAlertModalOpen(true)}
@@ -631,6 +643,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
       {/* Interactive Was This Helpful Feedback Widget */}
       <ArticleFeedbackWidget articleSlug={article.slug} />
+
+      {/* Citizen Community Discussions & Moderated Comments */}
+      <CommunityCommentSection
+        slug={article.slug}
+        articleTitle={t(article.titleEn, article.titleUr)}
+      />
 
       {/* Premium Tracker Waitlist Teaser */}
       <PremiumTrackerWaitlist />
