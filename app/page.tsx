@@ -11,7 +11,7 @@ import { SearchBar } from '@/components/SearchBar';
 import { HeroSection } from '@/components/HeroSection';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
-import { RecentlyVerifiedTicker } from '@/components/RecentlyVerifiedTicker';
+import { RecentlyUpdatedGuides } from '@/components/RecentlyUpdatedGuides';
 import { ScrollReveal } from '@/components/ScrollReveal';
 
 export default function HomePage() {
@@ -38,8 +38,8 @@ export default function HomePage() {
       {/* REDESIGNED SPLIT HERO SECTION WITH CUSTOM SVG ILLUSTRATION */}
       <HeroSection onOpenSearch={() => setIsSearchOpen(true)} />
 
-      {/* LIVE RECENTLY VERIFIED TICKER */}
-      <RecentlyVerifiedTicker />
+      {/* RECENTLY UPDATED GUIDES CARD GRID */}
+      <RecentlyUpdatedGuides />
 
       {/* TRUST INDICATORS BAR — CONSISTENT CREAM-50 CARDS WITH 56PX CIRCULAR ICONS */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-6">
