@@ -19,11 +19,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const isDark = document.documentElement.classList.contains('dark') || 
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDarkMode(isDark);
-    if (isDark) {
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const shouldBeDark = storedTheme === 'dark' || (!storedTheme && prefersDark);
+    setIsDarkMode(shouldBeDark);
+    if (shouldBeDark) {
       document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
 
     const handleScroll = () => {
@@ -42,15 +45,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
   const toggleDarkMode = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
       setIsDarkMode(false);
     } else {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
       setIsDarkMode(true);
     }
   };
 
   return (
     <header className={`sticky top-0 z-40 w-full doc-nav border-b border-doc-brass/30 ${isScrolled ? 'doc-nav-scrolled' : ''}`}>
+      {/* Skip to Main Content Accessibility Link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-doc-brass focus:text-slate-900 focus:font-bold focus:rounded-lg focus:shadow-xl focus:outline-none"
+      >
+        Skip to main content
+      </a>
+
       {/* Top Banner Bar */}
       <div className="bg-doc-ink text-doc-paper text-xs py-1.5 px-4 border-b border-doc-brass/30">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
@@ -101,9 +114,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                   : 'bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30'
               }`}
               title="Toggle low-data lite mode"
+              aria-label="Toggle low-data lite mode"
             >
               <Zap className="w-3 h-3 fill-current" />
               <span>{liteMode ? 'LITE ON' : 'Lite Mode'}</span>
+            </button>
+
+            {/* Dark Mode Toggle Button */}
+            <button
+              onClick={toggleDarkMode}
+              className="flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-bold transition bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30 focus-visible:ring-2 focus-visible:ring-doc-brass"
+              aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+              title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            >
+              {isDarkMode ? (
+                <Sun className="w-3 h-3 text-amber-400 fill-current" />
+              ) : (
+                <Moon className="w-3 h-3 text-doc-brass" />
+              )}
+              <span className="hidden sm:inline">{isDarkMode ? 'Light' : 'Dark'}</span>
             </button>
 
             {/* 3-Mode Language Selector */}
