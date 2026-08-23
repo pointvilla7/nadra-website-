@@ -23,6 +23,9 @@ import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { RecentlyUpdatedGuides } from '@/components/RecentlyUpdatedGuides';
 import { ScrollReveal } from '@/components/ScrollReveal';
+import { LiveTrustStatsWidget } from '@/components/LiveTrustStatsWidget';
+import { TestimonialsSection } from '@/components/TestimonialsSection';
+import { AuthorityTrustBadges } from '@/components/AuthorityTrustBadges';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -48,6 +51,9 @@ export default function HomePage() {
 
       {/* REDESIGNED SPLIT HERO SECTION WITH CUSTOM SVG ILLUSTRATION */}
       <HeroSection onOpenSearch={() => setIsSearchOpen(true)} />
+
+      {/* LIVE DYNAMIC CITIZEN VERIFICATION METRICS WIDGET */}
+      <LiveTrustStatsWidget />
 
       {/* RECENTLY UPDATED GUIDES CARD GRID */}
       <RecentlyUpdatedGuides />
@@ -224,8 +230,18 @@ export default function HomePage() {
         </section>
       </ScrollReveal>
 
+      {/* ── TESTIMONIALS & CITIZEN PROOF SECTION ── */}
+      <ScrollReveal delayMs={120}>
+        <TestimonialsSection />
+      </ScrollReveal>
+
+      {/* ── AUTHORITY & TRUST GUARANTEE BADGES ── */}
+      <ScrollReveal delayMs={140}>
+        <AuthorityTrustBadges />
+      </ScrollReveal>
+
       {/* WHY PAKISTAN INFO HUB Section */}
-      <ScrollReveal delayMs={150}>
+      <ScrollReveal delayMs={160}>
         <section className="rounded-2xl doc-card border border-[#F1F5F9] dark:border-slate-800 p-5 sm:p-10 space-y-4 sm:space-y-6 bg-[#FAF9F6] dark:bg-[#1E2A3F]">
           <div className="max-w-3xl space-y-2 sm:space-y-3">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-[#0B1120] dark:text-white leading-tight">
