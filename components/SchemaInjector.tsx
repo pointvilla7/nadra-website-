@@ -21,8 +21,6 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
   article,
   breadcrumbs,
   faqs,
-  siteSearch = false,
-  isHomepage = false,
   categoryName,
   categoryArticles,
   customSchema,
@@ -33,43 +31,62 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     schemas.push(customSchema);
   }
 
-  // Organization Schema (Sitewide Publisher Entity)
+  // 1. Organization Schema (Sitewide Publisher Entity)
   schemas.push({
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': 'https://www.pakistaninfohub.com/#organization',
     name: 'Pakistan Info Hub',
     url: 'https://www.pakistaninfohub.com',
     logo: {
       '@type': 'ImageObject',
       url: 'https://www.pakistaninfohub.com/icon.png',
+      width: 512,
+      height: 512,
     },
-    description: 'Verified civic and public services information directory for Pakistan.',
+    description: 'Verified civic and public services information directory for Pakistani citizens and overseas diaspora.',
     sameAs: [
       'https://twitter.com/PakistanInfoHub',
       'https://www.facebook.com/PakistanInfoHub',
     ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Editorial & Civic Guidance Helpline',
+      availableLanguage: ['English', 'Urdu'],
+      areaServed: 'PK',
+    },
   });
 
-  // WebSite Schema with SearchAction (Sitewide AI & search crawler discovery)
+  // 2. WebSite Schema with SearchAction (Sitewide Search Crawler Discovery)
   schemas.push({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': 'https://www.pakistaninfohub.com/#website',
     name: 'Pakistan Info Hub',
     url: 'https://www.pakistaninfohub.com',
+    publisher: {
+      '@id': 'https://www.pakistaninfohub.com/#organization',
+    },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.pakistaninfohub.com/tracker?q={search_term_string}',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.pakistaninfohub.com/tracker?q={search_term_string}',
+      },
       'query-input': 'required name=search_term_string',
     },
   });
 
-  // CollectionPage / ItemList Schema for Category pages
+  // 3. CollectionPage / ItemList Schema for Category pages
   if (categoryName && categoryArticles && categoryArticles.length > 0) {
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: `${categoryName} Verified Guides & Services 2026`,
       url: `https://www.pakistaninfohub.com/${categoryArticles[0]?.categoryId || ''}`,
+      isPartOf: {
+        '@id': 'https://www.pakistaninfohub.com/#website',
+      },
       mainEntity: {
         '@type': 'ItemList',
         itemListElement: categoryArticles.map((art, idx) => ({
@@ -82,7 +99,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     });
   }
 
-  // Article Schema & Author Person Schema for Guide pages
+  // 4. Article Schema & Author Person Schema for Guide pages
   if (article) {
     const authorData = getAuthorForCategory(article.categoryId);
     const parsedDate = article.lastVerified ? new Date(article.lastVerified) : new Date('2026-08-17');
@@ -98,9 +115,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
       description: authorData.bioEn,
       url: `https://www.pakistaninfohub.com/authors/${authorData.slug}`,
       worksFor: {
-        '@type': 'Organization',
-        name: 'Pakistan Info Hub',
-        url: 'https://www.pakistaninfohub.com',
+        '@id': 'https://www.pakistaninfohub.com/#organization',
       },
     });
 
@@ -110,26 +125,21 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
       '@type': 'Article',
       headline: article.titleEn,
       description: article.metaDescriptionEn,
+      image: [
+        'https://www.pakistaninfohub.com/og-default.jpg',
+      ],
       datePublished: '2026-01-01T08:00:00+05:00',
       dateModified: isoDateModified,
+      inLanguage: ['en-PK', 'ur-PK'],
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': `https://www.pakistaninfohub.com${article.fullPath}`,
       },
       author: {
-        '@type': 'Person',
         '@id': `https://www.pakistaninfohub.com/authors/${authorData.slug}#person`,
-        name: authorData.name,
-        url: `https://www.pakistaninfohub.com/authors/${authorData.slug}`,
       },
       publisher: {
-        '@type': 'Organization',
-        name: 'Pakistan Info Hub',
-        url: 'https://www.pakistaninfohub.com',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://www.pakistaninfohub.com/icon.png',
-        },
+        '@id': 'https://www.pakistaninfohub.com/#organization',
       },
     });
 
@@ -161,7 +171,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     }
   }
 
-  // FAQPage Schema
+  // 5. FAQPage Schema (from page FAQ item list)
   if (faqs && faqs.length > 0) {
     schemas.push({
       '@context': 'https://schema.org',
@@ -177,7 +187,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     });
   }
 
-  // HowTo Schema Stacking for Step-by-Step Guides
+  // 6. HowTo Schema Stacking for Step-by-Step Guides
   if (article && article.steps && article.steps.length > 0) {
     schemas.push({
       '@context': 'https://schema.org',
@@ -201,7 +211,7 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     });
   }
 
-  // BreadcrumbList Schema
+  // 7. BreadcrumbList Schema
   if (breadcrumbs && breadcrumbs.length > 0) {
     schemas.push({
       '@context': 'https://schema.org',
