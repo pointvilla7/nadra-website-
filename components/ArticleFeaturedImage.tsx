@@ -18,7 +18,9 @@ import {
   Compass,
   Activity,
   Scale,
-  CloudLightning
+  CloudLightning,
+  Smartphone,
+  Mail
 } from 'lucide-react';
 
 interface ArticleFeaturedImageProps {
@@ -34,7 +36,7 @@ export const ArticleFeaturedImage: React.FC<ArticleFeaturedImageProps> = ({
 }) => {
   const altText = `${titleEn} Official Guide 2026 Pakistan Info Hub`;
 
-  // Custom vector illustration patterns for all 18 categories
+  // Custom vector illustration patterns for all 21 categories
   const getCategoryTheme = () => {
     switch (categoryId) {
       case 'nadra':
@@ -180,6 +182,30 @@ export const ArticleFeaturedImage: React.FC<ArticleFeaturedImageProps> = ({
           accent: 'text-red-400',
           badge: 'NDMA & PMD DISASTER ALERTS',
           icon: <CloudLightning className="w-14 h-14 text-red-300 stroke-[1.5]" />,
+        };
+      case 'mobile-pta':
+        return {
+          bg: 'from-teal-950 via-slate-900 to-slate-950',
+          border: 'border-teal-500/40',
+          accent: 'text-teal-400',
+          badge: 'PTA DIRBS & TELECOM',
+          icon: <Smartphone className="w-14 h-14 text-teal-300 stroke-[1.5]" />,
+        };
+      case 'pakistan-post':
+        return {
+          bg: 'from-yellow-950 via-amber-950 to-slate-950',
+          border: 'border-yellow-500/40',
+          accent: 'text-yellow-400',
+          badge: 'PAKISTAN POST EMS & UMS',
+          icon: <Mail className="w-14 h-14 text-yellow-300 stroke-[1.5]" />,
+        };
+      case 'finance':
+        return {
+          bg: 'from-emerald-950 via-indigo-950 to-slate-950',
+          border: 'border-emerald-500/40',
+          accent: 'text-emerald-400',
+          badge: 'STATE BANK & COMMERCIAL BANKING',
+          icon: <Landmark className="w-14 h-14 text-emerald-300 stroke-[1.5]" />,
         };
       default:
         return {

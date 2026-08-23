@@ -51,8 +51,8 @@ export const Footer: React.FC = () => {
             </div>
             <p className="text-xs text-slate-300 leading-relaxed font-sans">
               {t(
-                'Pakistan’s leading 100% original, verified information and utility portal. Dedicated to providing step-by-step guidance on NADRA identity cards, Passports, BISE Education results, Utility bills, Govt Loans, BISP 8171, and Traffic Services.',
-                'پاکستان کا سب سے بااعتماد اور آسان معلومات پورٹل۔ نادرا، پاسپورٹ، تعلیمی بورڈز کے نتائج، بجلی و گیس کے بلز، قرضہ جات، بے نظیر 8171 اور ٹریفک سروسز۔'
+                `Pakistan's independent civic services directory — providing verified procedural guidance, fee schedules, and interactive tools across NADRA, Passports, Pakistan Post, Tax/FBR, PTA, Banking, Hajj, Property, and all ${CATEGORIES.length} public service categories.`,
+                `پاکستان کا خود مختار پبلک سروسز ڈائریکٹری پورٹل — نادرا، پاسپورٹ، ڈاکخانہ، ایف بی آر ٹیکس، پی ٹی اے، بینکنگ، حج، اراضی ریکارڈ اور تمام ${CATEGORIES.length} سرکاری شعبہ جات کی مستند معلومات۔`
               )}
             </p>
             <div className="flex flex-col gap-1.5 text-xs text-slate-400 font-mono">

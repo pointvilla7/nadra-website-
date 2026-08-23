@@ -35,8 +35,8 @@ export const SitemapClient: React.FC = () => {
           </h1>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
             {t(
-              'Browse through all 18 civic service categories and access over 100+ verified guides, interactive status trackers, and duplicate bill utility checkers.',
-              'تمام 18 کیٹیگریز اور 100 سے زائد تصدیق شدہ گائیڈز، چالان و شناختی کارڈ ٹریکرز اور بل چیکنگ ٹولز تک آسان رسائی حاصل کریں۔'
+              `Browse through all ${CATEGORIES.length} civic service categories and access over 200+ verified guides, interactive status trackers, and duplicate bill utility checkers.`,
+              `تمام ${CATEGORIES.length} کیٹیگریز اور 200 سے زائد تصدیق شدہ گائیڈز، چالان و شناختی کارڈ ٹریکرز اور بل چیکنگ ٹولز تک آسان رسائی حاصل کریں۔`
             )}
           </p>
 

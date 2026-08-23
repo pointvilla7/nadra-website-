@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Search, ShieldCheck, ArrowRight, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/context/LanguageContext';
+import { CATEGORIES } from '@/lib/data/categories';
 import { CivicServicesIllustration } from '@/components/CivicServicesIllustration';
 
 interface HeroSectionProps {
@@ -53,8 +54,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
           {/* Subtitle */}
           <p className="text-xs sm:text-sm md:text-base text-slate-200 leading-relaxed font-sans max-w-xl mx-auto lg:mx-0">
             {t(
-              'Verified step-by-step document procedures, fee schedules, and interactive tools for NADRA, Passports, Tax/FBR, Hajj, Property, Health, and 18 civic service categories.',
-              'شناختی کارڈ، پاسپورٹ فیس، ایف بی آر ٹیکس، حج، اراضی ریکارڈ، صحت کارڈ اور تمام سرکاری شعبہ جات کی مستند اور تازہ ترین رہنمائی۔'
+              `Verified step-by-step document procedures, fee schedules, and interactive tools for NADRA, Passports, Tax/FBR, Hajj, Property, Health, and all ${CATEGORIES.length} civic service categories.`,
+              `شناختی کارڈ، پاسپورٹ فیس، ایف بی آر ٹیکس، حج، اراضی ریکارڈ، صحت کارڈ اور تمام ${CATEGORIES.length} سرکاری شعبہ جات کی مستند اور تازہ ترین رہنمائی۔`
             )}
           </p>
 
