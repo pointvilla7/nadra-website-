@@ -71,8 +71,8 @@ export const RecentlyVerifiedTicker: React.FC = () => {
         <div className="w-full md:w-auto flex items-center justify-between md:justify-start gap-2.5 shrink-0 border-b md:border-b-0 md:border-r border-doc-brass/30 pb-2.5 md:pb-0 md:pr-4">
           <div className="flex items-center gap-2 shrink-0">
             <div className="relative flex h-3 w-3 shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+              <span className="ticker-live-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="ticker-live-dot relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
             </div>
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-doc-brass shrink-0">
               {t('LIVE VERIFIED TICKER', 'لائیو مصدقہ معلومات')}

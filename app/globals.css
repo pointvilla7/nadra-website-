@@ -49,6 +49,22 @@
   50% { opacity: 0.85; transform: scale(1.03); }
 }
 
+@keyframes livePing {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes livePulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 /* ── Animation Utility Classes ── */
 .animate-fadeIn {
   animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -73,8 +89,20 @@
   will-change: transform;
 }
 
-.animate-marquee:hover {
-  animation-play-state: paused;
+/* Hover-pause ONLY for devices that support true hover (desktop pointer/mouse).
+   This prevents touch devices from getting stuck in a permanent phantom-hover pause state! */
+@media (hover: hover) and (pointer: fine) {
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+.ticker-live-ping {
+  animation: livePing 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.ticker-live-dot {
+  animation: livePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-spin-slow {
