@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       'Step-by-step verification guide and 15-digit IMEI helper to check PTA device registration, compliant status, and 8484 SMS service.',
     url: 'https://www.pakistaninfohub.com/mobile-pta/imei-check-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/mobile-pta/imei-check-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/mobile-pta/pta-mobile-imei-check' },
 };
 
 const PtaImeiStatusChecker = dynamic(

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       'Real-time calculation of PTA DIRBS mobile phone registration duty, customs taxes, and 18% GST for smartphones imported into Pakistan.',
     url: 'https://www.pakistaninfohub.com/mobile-pta/tax-calculator-2026',
   },
-  alternates: { canonical: 'https://www.pakistaninfohub.com/mobile-pta/tax-calculator-2026' },
+  alternates: { canonical: 'https://www.pakistaninfohub.com/mobile-pta/pta-mobile-tax-check-online' },
 };
 
 const PtaMobileTaxCalculator = dynamic(
