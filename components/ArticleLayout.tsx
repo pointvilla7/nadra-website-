@@ -198,8 +198,10 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         </button>
 
         <PdfChecklistGenerator
+          slug={article.slug}
           title={t(article.titleEn, article.titleUr)}
           category={category.nameEn}
+          feeStructure={article.feeStructure}
           items={
             article.steps
               ? article.steps.map((st) => t(st.titleEn, st.titleUr))
