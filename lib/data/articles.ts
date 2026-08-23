@@ -22,6 +22,19 @@ export interface StepItem {
   detailUr: string;
 }
 
+export interface VideoGuideData {
+  titleEn: string;
+  titleUr: string;
+  descriptionEn: string;
+  descriptionUr: string;
+  youtubeIdUr: string;
+  youtubeIdEn?: string;
+  uploadDate: string;
+  duration: string;
+  transcriptEn: string;
+  transcriptUr: string;
+}
+
 export interface Article {
   slug: string;
   fullPath: string;
@@ -38,6 +51,7 @@ export interface Article {
   feeStructure?: FeeItem[];
   steps?: StepItem[];
   faqs?: FAQItem[];
+  videoGuide?: VideoGuideData;
   contentEn: string;
   contentUr: string;
   relatedSlugs?: string[];
@@ -115,6 +129,18 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
+    "videoGuide": {
+      "titleEn": "How to Cancel CNIC After Death & Get NADRA Certificate (2026 Walkthrough)",
+      "titleUr": "وفات کے بعد نادرا شناختی کارڈ کینسل کروانے اور سرٹیفکیٹ کا طریقہ (ویڈیو گائیڈ)",
+      "descriptionEn": "Official step-by-step video guide explaining Union Council death certificate submission, biometric attestation, and fee payment at NADRA Mega Centers.",
+      "descriptionUr": "نادرا سینٹر سے شناختی کارڈ منسوخی سرٹیفکیٹ حاصل کرنے کا مکمل ویڈیو طریقہ کار۔",
+      "youtubeIdUr": "ScMzIvxBSi4",
+      "youtubeIdEn": "ScMzIvxBSi4",
+      "uploadDate": "2026-08-01",
+      "duration": "PT4M15S",
+      "transcriptEn": "Welcome to the Pakistan Info Hub video guide. In this walkthrough, we explain the 3 mandatory steps to cancel a deceased family member's CNIC: 1. Visit your local Union Council within 60 days with hospital death summary to obtain a computerized death certificate. 2. Visit any NADRA Registration Center (NRC) with the original CNIC of the deceased and your own CNIC as legal heir. 3. Complete biometric verification at the counter and pay the PKR 500 gazette fee to receive the official cancellation certificate.",
+      "transcriptUr": "پاکستان انفو ہب کی ویڈیو گائیڈ میں خوش آمدید۔ اس ویڈیو میں ہم متوفی کا شناختی کارڈ کینسل کروانے کے 3 اہم مراحل بیان کر رہے ہیں: 1. ہسپتال کی ڈیتھ سلپ کے ساتھ یونین کونسل سے کمپیوٹرائزڈ سرٹیفکیٹ لیں، 2. نادرا سینٹر جا کر متوفی کا اصل شناختی کارڈ سرنڈر کریں، 3. بائیومیٹرک تصدیق کروائیں اور 500 روپے فیس ادا کر کے سرٹیفکیٹ حاصل کریں۔"
+    },
     "contentEn": "Comprehensive guide to NADRA death cancellation certificate rules and inheritance requirements.",
     "contentUr": "نادرا شناختی کارڈ منسوخی اور ڈیتھ سرٹیفکیٹ کا مکمل قانون۔",
     "relatedSlugs": [

@@ -43,6 +43,7 @@ import { PremiumTrackerWaitlist } from '@/components/PremiumTrackerWaitlist';
 import { ArticleRatingWidget } from '@/components/ArticleRatingWidget';
 import { ReportErrorModal } from '@/components/ReportErrorModal';
 import { CommunityCommentSection } from '@/components/CommunityCommentSection';
+import { VideoGuideSection } from '@/components/VideoGuideSection';
 
 const NadraTrackingWidget = dynamic(
   () => import('@/components/NadraTrackingWidget').then((mod) => mod.NadraTrackingWidget),
@@ -397,6 +398,9 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       )}
 
       {/* Standard Step-by-Step Instructions View */}
+      {/* Official Video Guide Embed if available */}
+      {article.videoGuide && <VideoGuideSection videoGuide={article.videoGuide} />}
+
       {viewMode === 'standard' && article.steps && article.steps.length > 0 && (
         <section className="my-10 space-y-6">
           <div className="flex items-center gap-2 border-b border-doc-brass/30 pb-3">

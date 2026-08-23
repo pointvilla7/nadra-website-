@@ -235,6 +235,35 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     });
   }
 
+  // 8. VideoObject Schema for Embedded Video Guides
+  if (article && article.videoGuide) {
+    const vg = article.videoGuide;
+    const activeVideoId = vg.youtubeIdUr || vg.youtubeIdEn || 'ScMzIvxBSi4';
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: vg.titleEn,
+      description: vg.descriptionEn,
+      thumbnailUrl: [
+        `https://img.youtube.com/vi/${activeVideoId}/maxresdefault.jpg`,
+        `https://img.youtube.com/vi/${activeVideoId}/hqdefault.jpg`,
+      ],
+      uploadDate: vg.uploadDate || '2026-08-01',
+      duration: vg.duration || 'PT4M15S',
+      embedUrl: `https://www.youtube.com/embed/${activeVideoId}`,
+      contentUrl: `https://www.youtube.com/watch?v=${activeVideoId}`,
+      transcript: vg.transcriptEn,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Pakistan Info Hub',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://www.pakistaninfohub.com/icon.png',
+        },
+      },
+    });
+  }
+
   if (schemas.length === 0) return null;
 
   return (
