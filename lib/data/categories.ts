@@ -463,6 +463,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Foreign Remittance Tax 2026",
+        "ur": "بیرون ملک ترسیلات زر ٹیکس 2026",
+        "slug": "/tax/foreign-remittance-tax-pakistan-overseas-2026"
+      },
+      {
         "en": "Salaried Tax Calculator 2026",
         "ur": "تنخواہ ٹیکس کیلکولیٹر 2026",
         "slug": "/tax/income-tax-calculator-salaried-2026"
@@ -824,6 +829,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-seal/10 dark:bg-doc-seal/20",
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
+      {
+        "en": "Sehat Card Hospitals Lahore 2026",
+        "ur": "صحت کارڈ ہسپتال لسٹ لاہور 2026",
+        "slug": "/health/sehat-card-hospital-list-lahore-2026"
+      },
       {
         "en": "Disability Certificate & Special CNIC",
         "ur": "معذوری سرٹیفکیٹ و نادرا کارڈ",
