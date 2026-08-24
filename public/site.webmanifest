@@ -1,21 +1,24 @@
 {
-  "name": "Pakistan Info Hub - Verified Civic Directory",
+  "name": "Pakistan Info Hub - Verified Civic Services Directory",
   "short_name": "PakistanInfoHub",
-  "description": "Pakistan's 100% original, verified information and utility portal for NADRA, Passport, BISP, Utility Bills, Govt Loans, and Traffic Services.",
+  "description": "Pakistan's independent civic services directory — NADRA, Passport, Pakistan Post, Tax/FBR, PTA, Banking, Hajj, Property & 21 categories with verified fees & tools.",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#F7F4EC",
   "theme_color": "#1B2A4A",
   "icons": [
     {
       "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

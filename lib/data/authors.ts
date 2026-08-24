@@ -60,6 +60,8 @@ export const getAuthorForCategory = (categoryId: string): Author => {
     case 'tax':
     case 'business':
     case 'property':
+    case 'finance':
+    case 'mobile-pta':
       return AUTHORS['usman-ali-raza'];
     case 'nadra':
     case 'passport':
@@ -68,6 +70,7 @@ export const getAuthorForCategory = (categoryId: string): Author => {
     case 'certificates':
     case 'hajj-umrah':
     case 'legal':
+    case 'pakistan-post':
     default:
       return AUTHORS['muhammad-tariq-khan'];
   }
