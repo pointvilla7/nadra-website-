@@ -30,6 +30,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "ECP Voter Check 8300",
+        "ur": "الیکشن کمیشن ووٹر تصدیق 8300",
+        "slug": "/nadra/voter-registration-check-cnic-ecp-2026"
+      },
+      {
         "en": "PTA SIM Check on CNIC 2026",
         "ur": "شناختی کارڈ پر سموں کی تعداد 2026",
         "slug": "/nadra/pta-sim-check-how-many-sims-on-cnic-2026"
@@ -136,6 +141,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "PM Laptop Scheme 2026",
+        "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
+        "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
+      },
       {
         "en": "University Entry Tests 2026 (NUST/FAST)",
         "ur": "یونیورسٹی انٹری ٹیسٹ رہنمائی",
