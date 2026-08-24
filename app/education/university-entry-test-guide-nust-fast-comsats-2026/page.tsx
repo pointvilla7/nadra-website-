@@ -442,14 +442,14 @@ export default function UniversityEntryTestGuidePage() {
             </Link>
 
             <Link
-              href="/education/mdcat-aggregate-calculator-2026"
+              href="/education/hec-scholarship-status-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Medical Stream</span>
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Scholarships</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                MDCAT Aggregate Calculator →
+                HEC Scholarship Status 2026 →
               </h3>
-              <p className="text-xs text-slate-500 mt-1">PMDC 50-40-10 medical merit calculator.</p>
+              <p className="text-xs text-slate-500 mt-1">Check national HEC scholarships, eligibility, and merit quotas.</p>
             </Link>
 
             <Link

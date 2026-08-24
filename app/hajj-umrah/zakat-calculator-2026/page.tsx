@@ -328,7 +328,7 @@ export default function ZakatCalculatorPage() {
             </Link>
 
             <Link
-              href="/hajj-umrah/hajj-policy-2026-pakistan-application-guide"
+              href="/hajj-umrah/hajj-registration-portal-pakistan-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Hajj 2026</span>

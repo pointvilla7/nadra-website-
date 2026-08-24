@@ -298,7 +298,7 @@ export default function NusukAppGuidePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/hajj-umrah/hajj-eligibility-checker-2026"
+              href="/hajj-umrah/hajj-application-eligibility-checker-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Hajj Tool</span>
@@ -309,7 +309,7 @@ export default function NusukAppGuidePage() {
             </Link>
 
             <Link
-              href="/hajj-umrah/hajj-balloting-result-2026"
+              href="/hajj-umrah/hajj-balloting-result-check-online"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Ballot Results</span>

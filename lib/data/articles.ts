@@ -17123,7 +17123,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "پاکستان میں یونیورسٹی انٹری ٹیسٹ کا مکمل تقابلی جائزہ: نسٹ این ای ٹی، فاسٹ نیگیٹو مارکنگ اور کامسیٹس این ٹی ایس گائیڈ۔",
     "relatedSlugs": [
       "/education/university-merit-list-checker-2026",
-      "/education/mdcat-aggregate-calculator-2026",
+      "/education/university-entry-test-guide-nust-fast-comsats-2026",
       "/education/bise-lahore-result-2026"
     ]
   },
@@ -17594,8 +17594,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Essential guide to Saudi Nusuk platform for Pakistani pilgrims, operator Umrah visas, BRN hotel rules, and Rawdah permits.",
     "contentUr": "پاکستانی زائرین کے لیے نسک ایپ، منظور شدہ ایجنٹ سے ویزہ، ہوٹل بی آر این اور ریاض الجنہ پرمٹ بکنگ کی مکمل گائیڈ۔",
     "relatedSlugs": [
-      "/hajj-umrah/hajj-eligibility-checker-2026",
-      "/hajj-umrah/hajj-balloting-result-2026",
+      "/hajj-umrah/hajj-application-eligibility-checker-2026",
+      "/hajj-umrah/hajj-balloting-result-check-online",
       "/passport/tracking-status"
     ]
   },
@@ -18577,7 +18577,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "پاکستان میں زکوٰۃ کے حساب، نصاب کے تعین اور مستحقین کی شرعی شرائط کی مکمل معلوماتی گائیڈ۔",
     "relatedSlugs": [
       "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026",
-      "/hajj-umrah/hajj-policy-2026-pakistan-application-guide",
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026",
       "/tax/income-tax-calculator-salaried-2026"
     ]
   }

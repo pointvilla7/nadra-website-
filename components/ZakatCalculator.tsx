@@ -661,7 +661,7 @@ Calculated at: https://www.pakistaninfohub.com/hajj-umrah/zakat-calculator-2026`
           <span>Nusuk App &amp; Umrah Visa Guide 2026 →</span>
         </Link>
         <Link
-          href="/hajj-umrah/hajj-policy-2026-pakistan-application-guide"
+          href="/hajj-umrah/hajj-registration-portal-pakistan-2026"
           className="inline-flex items-center gap-1.5 font-bold text-doc-brass hover:underline transition"
         >
           <span>Government Hajj Policy &amp; Application Guide →</span>
