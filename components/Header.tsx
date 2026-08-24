@@ -108,7 +108,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             {/* Lite Mode Toggle Button */}
             <button
               onClick={() => setLiteMode(!liteMode)}
-              className={`flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-bold transition ${
+              className={`flex items-center gap-1.5 min-h-[32px] px-2.5 py-1 rounded text-[11px] font-mono font-bold transition ${
                 liteMode
                   ? 'bg-amber-500 text-slate-950 shadow-sm'
                   : 'bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30'
@@ -123,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             {/* Dark Mode Toggle Button */}
             <button
               onClick={toggleDarkMode}
-              className="flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-bold transition bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30 focus-visible:ring-2 focus-visible:ring-doc-brass"
+              className="flex items-center gap-1.5 min-h-[32px] px-2.5 py-1 rounded text-[11px] font-mono font-bold transition bg-doc-paper/10 text-slate-300 hover:text-white border border-doc-brass/30 focus-visible:ring-2 focus-visible:ring-doc-brass"
               aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
               title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             >
@@ -139,7 +139,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             <div className="relative">
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center gap-1 px-2.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 border border-doc-brass/40 text-slate-100 font-semibold transition shadow-sm text-xs"
+                className="flex items-center gap-1.5 min-h-[32px] px-3 py-1 rounded bg-slate-800 hover:bg-slate-700 border border-doc-brass/40 text-slate-100 font-semibold transition shadow-sm text-xs"
               >
                 <Globe className="w-3 h-3 text-doc-brass" />
                 <span>
@@ -149,13 +149,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               </button>
 
               {langMenuOpen && (
-                <div className="absolute end-0 top-full mt-1 w-36 bg-white dark:bg-doc-dark-card border border-doc-brass/40 rounded-lg shadow-xl py-1 z-50 text-xs text-doc-ink dark:text-slate-200">
+                <div className="absolute end-0 top-full mt-1 w-44 bg-white dark:bg-doc-dark-card border border-doc-brass/40 rounded-xl shadow-xl py-1 z-50 text-xs text-doc-ink dark:text-slate-200">
                   <button
                     onClick={() => {
                       setLanguage('en');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-start px-3 py-1.5 font-medium hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full min-h-[44px] flex items-center text-start px-3.5 py-2.5 font-medium hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'en' ? 'bg-doc-brass/15 font-bold text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -166,7 +166,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLanguage('ur');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-start px-3 py-1.5 font-serif font-bold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full min-h-[44px] flex items-center text-start px-3.5 py-2.5 font-serif font-bold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'ur' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -177,7 +177,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       setLanguage('roman');
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-start px-3 py-1.5 font-sans font-semibold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
+                    className={`w-full min-h-[44px] flex items-center text-start px-3.5 py-2.5 font-sans font-semibold hover:bg-doc-paper dark:hover:bg-slate-800 transition ${
                       language === 'roman' ? 'bg-doc-brass/15 text-amber-900 dark:text-amber-300' : ''
                     }`}
                   >
@@ -310,7 +310,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           {/* Live Search Trigger Button */}
           <button
             onClick={onOpenSearch}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-doc-paper border border-doc-brass/40 text-xs font-medium transition shadow-xs"
+            className="flex items-center gap-2 min-h-[44px] px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-doc-paper border border-doc-brass/40 text-xs font-medium transition shadow-xs active:scale-95"
             aria-label="Open search dialog"
           >
             <Search className="w-4 h-4 text-doc-brass" />
@@ -325,7 +325,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition"
+            className="w-11 h-11 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition active:scale-95"
             aria-label="Toggle dark theme"
           >
             {isDarkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-doc-ink" />}
@@ -334,7 +334,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           {/* Mobile Hamburger Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-xl text-doc-ink dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition"
+            className="md:hidden w-11 h-11 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl text-doc-ink dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition active:scale-95"
             aria-label="Toggle mobile menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

@@ -1,5 +1,4 @@
-import React from 'react';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Public_Sans, Fraunces, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
@@ -42,6 +41,12 @@ import { siteConfig } from '@/lib/config/site';
 
 const BASE_URL = siteConfig.url;
 const OG_IMAGE = `${BASE_URL}/og-default.jpg`;
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1B2A4A',
+};
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} | ${siteConfig.taglineEn} ${siteConfig.currentYear}`,
