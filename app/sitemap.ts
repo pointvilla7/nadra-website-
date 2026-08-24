@@ -70,6 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tax/income-tax-calculator-salaried-2026',
     '/jobs/beoe-protector-fee-calculator-2026',
     '/nadra/senior-citizen-card-pakistan-explained-2026',
+    '/nadra/pta-sim-check-how-many-sims-on-cnic-2026',
     '/traffic/arms-license-renewal-punjab-online-2026',
     '/legal/right-to-information-act-pakistan-how-to-file-2026',
     '/legal/consumer-court-complaint-how-to-file-pakistan-2026',

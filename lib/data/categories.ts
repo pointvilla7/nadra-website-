@@ -30,6 +30,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "PTA SIM Check on CNIC 2026",
+        "ur": "شناختی کارڈ پر سموں کی تعداد 2026",
+        "slug": "/nadra/pta-sim-check-how-many-sims-on-cnic-2026"
+      },
+      {
         "en": "Senior Citizen Card Explained 2026",
         "ur": "سینئر سٹیزن کارڈ کی حقیقت 2026",
         "slug": "/nadra/senior-citizen-card-pakistan-explained-2026"
