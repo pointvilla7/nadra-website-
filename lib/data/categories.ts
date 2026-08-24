@@ -565,6 +565,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Property Tax Online Check & Pay 2026",
+        "ur": "پراپرٹی ٹیکس آن لائن ادائیگی 2026",
+        "slug": "/property/property-tax-online-check-pay-2026"
+      },
+      {
         "en": "E-Stamping Challan 32-A Guide",
         "ur": "ای سٹامپ چالان 32A آن لائن",
         "slug": "/property/e-stamping-challan-32a-online-guide-2026"
@@ -865,6 +870,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Tenant Police Verification 2026",
+        "ur": "کرایہ دار پولیس تصدیق 2026",
+        "slug": "/legal/tenant-police-verification-online-2026"
+      },
       {
         "en": "Anti-Encroachment Complaint 2026",
         "ur": "تجاوزات کے خلاف شکایت 2026",
