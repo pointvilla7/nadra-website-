@@ -341,6 +341,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Ehsaas Rashan Riayat 8123",
+        "ur": "احساس راشن رعایت 8123 پورٹل",
+        "slug": "/welfare/ehsaas-rashan-riayat-program-8123-2026"
+      },
+      {
         "en": "EOBI Pension Check by CNIC",
         "ur": "ای او بی آئی پنشن چیک شناختی کارڈ",
         "slug": "/welfare/eobi-pension-check-cnic-2026"
@@ -850,6 +855,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Anti-Encroachment Complaint 2026",
+        "ur": "تجاوزات کے خلاف شکایت 2026",
+        "slug": "/legal/anti-encroachment-complaint-tribunal-pakistan-2026"
+      },
       {
         "en": "RTI Act Pakistan How to File 2026",
         "ur": "حق معلومات ایکٹ درخواست طریقہ 2026",

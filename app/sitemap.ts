@@ -74,6 +74,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traffic/arms-license-renewal-punjab-online-2026',
     '/legal/right-to-information-act-pakistan-how-to-file-2026',
     '/legal/consumer-court-complaint-how-to-file-pakistan-2026',
+    '/legal/anti-encroachment-complaint-tribunal-pakistan-2026',
+    '/welfare/ehsaas-rashan-riayat-program-8123-2026',
     '/mobile-pta/pta-mobile-registration-guide-2026',
     '/mobile-pta/pta-mobile-tax-check-online',
     '/mobile-pta/pta-mobile-imei-check',
