@@ -30,6 +30,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Senior Citizen Card Explained 2026",
+        "ur": "سینئر سٹیزن کارڈ کی حقیقت 2026",
+        "slug": "/nadra/senior-citizen-card-pakistan-explained-2026"
+      },
+      {
         "en": "CNIC New Rules 2026",
         "ur": "شناختی کارڈ نئے قواعد 2026",
         "slug": "/nadra/cnic-new-rules-2026"
@@ -381,6 +386,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "Arms License Renewal Punjab 2026",
+        "ur": "اسلحہ لائسنس رینیول پنجاب 2026",
+        "slug": "/traffic/arms-license-renewal-punjab-online-2026"
+      },
       {
         "en": "DLIMS Driving License Online 2026",
         "ur": "ڈرائیونگ لائسنس آن لائن رینیول",
@@ -835,6 +845,16 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-ink/10 dark:bg-slate-800",
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
+      {
+        "en": "RTI Act Pakistan How to File 2026",
+        "ur": "حق معلومات ایکٹ درخواست طریقہ 2026",
+        "slug": "/legal/right-to-information-act-pakistan-how-to-file-2026"
+      },
+      {
+        "en": "Consumer Court Complaint 2026",
+        "ur": "کنزیومر کورٹ شکایت کا طریقہ 2026",
+        "slug": "/legal/consumer-court-complaint-how-to-file-pakistan-2026"
+      },
       {
         "en": "Succession Certificate NADRA 2026",
         "ur": "جانشینی سرٹیفکیٹ نادرا 2026",
