@@ -8,11 +8,14 @@ import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { HelpCircle, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Vehicle Token Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad, KPK | Pakistan Info Hub',
+  title: 'Vehicle Token Tax & Motor Vehicle Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad, KPK | Pakistan Info Hub',
   description:
-    'Calculate vehicle token tax online for Punjab, Sindh, Islamabad ICT, and KPK. Real-time rates for cars, bikes, SUVs, commercial vehicles, and Filer vs Non-Filer income tax slabs.',
+    'Calculate vehicle token tax and motor vehicle tax online for Punjab, Sindh, Islamabad ICT, and KPK. Real-time 2026 rates for cars, bikes, SUVs, and Filer vs Non-Filer income tax slabs.',
   keywords: [
     'vehicle token tax calculator Pakistan 2026',
+    'motor vehicle tax Sindh',
+    'motor vehicle tax Punjab',
+    'motor vehicle tax calculator 2026',
     'Punjab token tax calculator',
     'Sindh vehicle token tax',
     'Islamabad car token tax rates',
@@ -20,9 +23,9 @@ export const metadata: Metadata = {
     'lifetime token tax 1000cc',
   ],
   openGraph: {
-    title: 'Vehicle Token Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad',
+    title: 'Vehicle Token Tax & Motor Vehicle Tax Calculator 2026 Pakistan – Punjab, Sindh, Islamabad',
     description:
-      'Instant provincial excise token tax estimation for all engine capacities, vehicle types, and FBR filer tax status.',
+      'Instant provincial excise token tax and motor vehicle tax estimation for all engine capacities, vehicle types, and FBR filer tax status.',
     url: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026',
   },
   alternates: { canonical: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026' },
@@ -41,12 +44,12 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
         { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://www.pakistaninfohub.com/traffic' },
-        { '@type': 'ListItem', position: 3, name: 'Token Tax Calculator 2026', item: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026' },
+        { '@type': 'ListItem', position: 3, name: 'Token Tax & Motor Vehicle Tax Calculator 2026', item: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
-      name: 'Pakistan Vehicle Token Tax Calculator 2026',
+      name: 'Pakistan Vehicle Token Tax & Motor Vehicle Tax Calculator 2026',
       description: 'Online provincial excise motor vehicle tax and withholding tax calculator for Punjab, Sindh, Islamabad, KPK, and Balochistan.',
       url: 'https://www.pakistaninfohub.com/traffic/token-tax-calculator-2026',
       applicationCategory: 'UtilityApplication',
@@ -59,10 +62,10 @@ const jsonLd = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How is vehicle token tax calculated in Pakistan?',
+          name: 'How is vehicle token tax and motor vehicle tax calculated in Pakistan?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Token tax in Pakistan is calculated based on vehicle engine displacement (cc), province of registration, vehicle category, and the owner’s active filer status with the FBR. Vehicles under 1000cc pay a one-time lifetime tax, while vehicles above 1000cc pay annual token tax plus advance withholding tax.',
+            text: 'Token tax (motor vehicle tax) in Pakistan is calculated based on vehicle engine displacement (cc), province of registration, vehicle category, and the owner’s active filer status with the FBR. Vehicles under 1000cc pay a one-time lifetime tax, while vehicles above 1000cc pay annual motor vehicle tax plus advance withholding tax.',
           },
         },
         {
@@ -75,10 +78,10 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Can I pay vehicle token tax online?',
+          name: 'Can I pay vehicle token tax and motor vehicle tax online?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Punjab token tax can be paid via ePay Punjab and mobile banking; Sindh token tax via Sindh e-Payment gateway; and Islamabad token tax through the ICT City App or 1Link 1Bill PSID.',
+            text: 'Yes. Punjab token tax can be paid via ePay Punjab and mobile banking; Sindh motor vehicle tax via Sindh e-Payment gateway; and Islamabad token tax through the ICT City App or 1Link 1Bill PSID.',
           },
         },
       ],
@@ -89,7 +92,7 @@ const jsonLd = {
 export default function TokenTaxCalculatorPage() {
   const breadcrumbs = [
     { nameEn: 'Traffic & Vehicle Services', nameUr: 'ٹریفک و گاڑیوں کی سروسز' },
-    { nameEn: 'Token Tax Calculator 2026', nameUr: 'ٹوکن ٹیکس کیلکولیٹر 2026' },
+    { nameEn: 'Token Tax & Motor Vehicle Tax Calculator', nameUr: 'ٹوکن ٹیکس و موٹر وہیکل ٹیکس کیلکولیٹر' },
   ];
 
   return (
@@ -105,22 +108,21 @@ export default function TokenTaxCalculatorPage() {
             <VerifiedBadge />
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            Vehicle Token Tax Calculator 2026
+            Vehicle Token Tax & Motor Vehicle Tax Calculator 2026
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              صوبائی وہیکل ٹوکن ٹیکس کیلکولیٹر (پنجاب، سندھ، اسلام آباد و کے پی کے)
+              صوبائی وہیکل ٹوکن ٹیکس و موٹر وہیکل ٹیکس کیلکولیٹر (پنجاب، سندھ، اسلام آباد و کے پی کے)
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed font-sans">
-            Calculate your exact motor vehicle tax, withholding tax for filers vs non-filers, and clean air cess across
-            all provinces of Pakistan.
+            Calculate your exact vehicle token tax — officially termed Motor Vehicle Tax (MVT) in Sindh, Punjab, Islamabad, and KPK — along with withholding tax for filers vs non-filers and clean air cess across all provinces of Pakistan.
           </p>
         </header>
 
         <DirectAnswerBox
-          topicTitleEn="How Vehicle Token Tax is Calculated in Pakistan (2026 Rules)"
-          topicTitleUr="پاکستان میں گاڑیوں کا ٹوکن ٹیکس کیسے شمار ہوتا ہے؟"
-          answerEn="Vehicle token tax depends on engine capacity (cc), registration province, and FBR filer status. Vehicles ≤1000cc pay a one-time lifetime tax (approx PKR 10,000 for cars, PKR 1,500 for bikes). Vehicles >1000cc pay annual Motor Vehicle Tax plus advance income tax (non-filers pay 3x higher income tax). Payment is accepted online via ePay Punjab, ICT App, or 1Link."
-          answerUr="گاڑیوں کا ٹوکن ٹیکس انجن کی صلاحیت (سی سی)، صوبے اور فائلر سٹیٹس پر منحصر ہے۔ 1000 سی سی تک کی گاڑیوں پر ون ٹائم لائف ٹائم ٹیکس (تقریباً 10 ہزار روپے) لاگو ہوتا ہے۔ 1000 سی سی سے بڑی گاڑیوں پر سالانہ موٹر ٹیکس اور انکم ٹیکس لاگو ہوتا ہے (نان فائلرز پر 3 گنا زائد ٹیکس عائد ہوتا ہے)۔ آن لائن ادائیگی ای پے سے ممکن ہے۔"
+          topicTitleEn="How Vehicle Token Tax & Motor Vehicle Tax is Calculated in Pakistan (2026 Rules)"
+          topicTitleUr="پاکستان میں گاڑیوں کا ٹوکن ٹیکس اور موٹر وہیکل ٹیکس کیسے شمار ہوتا ہے؟"
+          answerEn="Vehicle token tax (Motor Vehicle Tax) depends on engine capacity (cc), registration province (Punjab, Sindh, Islamabad, KPK), and FBR filer status. Vehicles ≤1000cc pay a one-time lifetime tax (approx PKR 10,000 for cars, PKR 1,500 for bikes). Vehicles >1000cc pay annual Motor Vehicle Tax plus advance income tax (non-filers pay 3x higher income tax). Payment is accepted online via ePay Punjab, Sindh e-Payment gateway, ICT App, or 1Link."
+          answerUr="گاڑیوں کا ٹوکن ٹیکس (موٹر وہیکل ٹیکس) انجن کی صلاحیت (سی سی)، صوبے اور فائلر سٹیٹس پر منحصر ہے۔ 1000 سی سی تک کی گاڑیوں پر ون ٹائم لائف ٹائم ٹیکس (تقریباً 10 ہزار روپے) لاگو ہوتا ہے۔ 1000 سی سی سے بڑی گاڑیوں پر سالانہ موٹر ٹیکس اور انکم ٹیکس لاگو ہوتا ہے (نان فائلرز پر 3 گنا زائد ٹیکس عائد ہوتا ہے)۔ آن لائن ادائیگی ای پے سے ممکن ہے۔"
         />
 
         <section aria-label="Token Tax Calculator Tool">

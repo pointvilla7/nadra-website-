@@ -8,10 +8,15 @@ import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { HelpCircle, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK | Pakistan Info Hub',
+  title: 'Car Registration Check & MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK | Pakistan Info Hub',
   description:
-    'Check official vehicle registration, owner name, chassis number, engine number, and token tax clearance online via MTMIS Punjab, Sindh Excise, Islamabad ICT, and KPK.',
+    'Perform an online car registration check and vehicle verification across Punjab, Sindh, Islamabad, and KPK. Search official vehicle registration, owner name, chassis number, and token tax via MTMIS.',
   keywords: [
+    'car registration check',
+    'vehicle registration check online',
+    'vehicle registration check punjab',
+    'car registration check sindh',
+    'car registration check islamabad',
     'MTMIS vehicle verification online 2026',
     'Punjab vehicle verification by registration number',
     'Sindh excise vehicle search',
@@ -20,9 +25,9 @@ export const metadata: Metadata = {
     'MTMIS token tax status',
   ],
   openGraph: {
-    title: 'MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK',
+    title: 'Car Registration Check & MTMIS Vehicle Verification Online 2026 – Punjab, Sindh, Islamabad, KPK',
     description:
-      'Format validator and guided one-click access to official provincial MTMIS vehicle registration and ownership databases.',
+      'Format validator and guided one-click access to official provincial MTMIS vehicle and car registration check databases.',
     url: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026',
   },
   alternates: { canonical: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
@@ -41,13 +46,13 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.pakistaninfohub.com' },
         { '@type': 'ListItem', position: 2, name: 'Traffic & Vehicle Services', item: 'https://www.pakistaninfohub.com/traffic' },
-        { '@type': 'ListItem', position: 3, name: 'Vehicle Verification Online 2026', item: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
+        { '@type': 'ListItem', position: 3, name: 'Car Registration Check & Vehicle Verification Online 2026', item: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026' },
       ],
     },
     {
       '@type': 'WebApplication',
-      name: 'MTMIS Vehicle Verification Online 2026',
-      description: 'Online directory and format validator for checking vehicle ownership, chassis numbers, and token tax across Pakistani provinces.',
+      name: 'Car Registration Check & MTMIS Vehicle Verification Online 2026',
+      description: 'Online directory and format validator for checking car registration, vehicle ownership, chassis numbers, and token tax across Pakistani provinces (Punjab, Sindh, Islamabad, KPK).',
       url: 'https://www.pakistaninfohub.com/traffic/vehicle-verification-online-2026',
       applicationCategory: 'UtilityApplication',
       operatingSystem: 'Any',
@@ -59,10 +64,10 @@ const jsonLd = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How can I check car ownership online in Pakistan?',
+          name: 'How can I check car registration and ownership online in Pakistan?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'You can verify vehicle ownership online using the provincial MTMIS system (Motor Transport Management Information System) by entering the registration number. For Punjab vehicles, visit mtmis.punjab.gov.pk; for Sindh, visit excise.gos.pk; and for Islamabad, visit islamabadexcise.gov.pk.',
+            text: 'You can perform a car registration check and verify vehicle ownership online using the provincial MTMIS system (Motor Transport Management Information System) by entering the registration number. For Punjab vehicles, visit mtmis.punjab.gov.pk; for Sindh, visit excise.gos.pk; for Islamabad, visit islamabadexcise.gov.pk; and for KPK, visit kpkexcise.gov.pk.',
           },
         },
         {
@@ -75,7 +80,7 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Is online vehicle verification free in Pakistan?',
+          name: 'Is online vehicle registration check free in Pakistan?',
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'Yes, searching vehicle registration records on official provincial excise MTMIS web portals is 100% free of cost.',
@@ -89,7 +94,7 @@ const jsonLd = {
 export default function VehicleVerificationPage() {
   const breadcrumbs = [
     { nameEn: 'Traffic & Vehicle Services', nameUr: 'ٹریفک و گاڑیوں کی سروسز' },
-    { nameEn: 'Vehicle Verification Online 2026', nameUr: 'گاڑی کی آن لائن تصدیق 2026' },
+    { nameEn: 'Car Registration Check & Vehicle Verification', nameUr: 'کار رجسٹریشن چیک و گاڑی کی تصدیق' },
   ];
 
   return (
@@ -105,22 +110,21 @@ export default function VehicleVerificationPage() {
             <VerifiedBadge />
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            MTMIS Vehicle Verification Online 2026
+            Car Registration Check & MTMIS Vehicle Verification Online 2026
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              آن لائن گاڑی کی تصدیق و ملکیت چیکر (پنجاب، سندھ، اسلام آباد و کے پی کے)
+              آن لائن کار رجسٹریشن چیک و گاڑی کی تصدیق (پنجاب، سندھ، اسلام آباد و کے پی کے)
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed font-sans">
-            Validate vehicle registration format, copy your clean registration number, and open official provincial MTMIS
-            portals to check owner name, chassis number, and token tax clearance.
+            Check your car registration details — also called vehicle verification or vehicle registration check — instantly online using MTMIS. Validate vehicle registration formats, copy your clean registration number, and open official provincial MTMIS portals across Punjab, Sindh, Islamabad, and KPK to verify owner name, chassis number, and token tax clearance.
           </p>
         </header>
 
         <DirectAnswerBox
-          topicTitleEn="How to Verify Vehicle Registration & Ownership Online in Pakistan"
-          topicTitleUr="پاکستان میں گاڑی کی آن لائن تصدیق کا طریقہ"
-          answerEn="To verify a vehicle online: (1) Select your registration province (Punjab, Sindh, Islamabad, or KPK), (2) Enter your vehicle registration number, (3) Click 'Copy' to copy the formatted number, and (4) Click 'Open Official MTMIS Portal' to view original owner details, chassis number, engine number, and token tax paid status directly on the government database."
-          answerUr="آن لائن گاڑی کی تصدیق کے لیے: (1) صوبہ منتخب کریں (پنجاب، سندھ، اسلام آباد یا کے پی کے)، (2) گاڑی کا رجسٹریشن نمبر درج کریں، (3) کاپی کا بٹن دبائیں، اور (4) آفیشل ایم ٹی ایم آئی ایس پورٹل پر جا کر مالک کا نام، چیسس نمبر اور ٹوکن ٹیکس کی ادائیگی دیکھیں۔"
+          topicTitleEn="How to Check Car Registration & Verify Vehicle Ownership Online in Pakistan (MTMIS)"
+          topicTitleUr="پاکستان میں کار رجسٹریشن چیک اور گاڑی کی آن لائن تصدیق کا طریقہ"
+          answerEn="To check car registration or verify vehicle ownership online: (1) Select your registration province (Punjab, Sindh, Islamabad, or KPK), (2) Enter your vehicle registration number, (3) Click 'Copy' to copy the formatted number, and (4) Click 'Open Official MTMIS Portal' to view original owner details, chassis number, engine number, and token tax paid status directly on the government database."
+          answerUr="آن لائن کار رجسٹریشن اور گاڑی کی تصدیق کے لیے: (1) صوبہ منتخب کریں (پنجاب، سندھ، اسلام آباد یا کے پی کے)، (2) گاڑی کا رجسٹریشن نمبر درج کریں، (3) کاپی کا بٹن دبائیں، اور (4) آفیشل ایم ٹی ایم آئی ایس پورٹل پر جا کر مالک کا نام، چیسس نمبر اور ٹوکن ٹیکس کی ادائیگی دیکھیں۔"
         />
 
         <section aria-label="Vehicle Verification Tool">
