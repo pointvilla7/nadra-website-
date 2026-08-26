@@ -11,10 +11,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Overseas Pakistanis Hub | Pakistan Info Hub',
-  description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and Roshan Digital Accounts.',
+  description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and OPF welfare schemes.',
   openGraph: {
     title: 'Overseas Pakistanis Hub | Pakistan Info Hub',
-    description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and Roshan Digital Accounts.',
+    description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and OPF welfare schemes.',
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/overseas',
   },
@@ -32,7 +32,7 @@ export default function Page() {
           '@type': 'CollectionPage',
           name: 'Overseas Pakistanis Hub | Pakistan Info Hub',
           url: 'https://www.pakistaninfohub.com/overseas',
-          description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and Roshan Digital Accounts.',
+          description: 'Verified procedures for NICOP online renewal, Pakistan Origin Cards, embassy document attestation, and OPF welfare schemes.',
         }}
       />
       <div className="space-y-8 animate-fadeIn max-w-5xl mx-auto">

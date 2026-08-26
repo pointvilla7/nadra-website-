@@ -514,10 +514,10 @@ export const CATEGORIES: Category[] = [
     "slug": "overseas",
     "nameEn": "Overseas Pakistanis Hub",
     "nameUr": "اوورسیز پاکستانیز ڈیسک",
-    "taglineEn": "NICOP Renewal, POC Cards, Embassy Attestation & Roshan Digital Accounts",
-    "taglineUr": "نائیکوپ تجدید، پی او سی، سفارتخانہ تصدیق اور روشن ڈیجیٹل اکاؤنٹ",
-    "descriptionEn": "Official procedures for overseas Pakistanis: Pak-ID online NICOP renewal, Pakistan Origin Cards (POC), Embassy & MOFA document attestation, and NRP bank accounts.",
-    "descriptionUr": "بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ آن لائن تجدید، پی او سی کارڈ، سفارتخانے سے دستاویزات کی تصدیق اور روشن ڈیجیٹل بینک اکاؤنٹ کی رہنمائی۔",
+    "taglineEn": "NICOP Renewal, POC Cards, Embassy Attestation & OPF Services",
+    "taglineUr": "نائیکوپ تجدید، پی او سی، سفارتخانہ تصدیق اور او پی ایف سروسز",
+    "descriptionEn": "Official procedures for overseas Pakistanis: Pak-ID online NICOP renewal, Pakistan Origin Cards (POC), Embassy & MOFA document attestation, and OPF welfare schemes.",
+    "descriptionUr": "بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ آن لائن تجدید، پی او سی کارڈ، سفارتخانے سے دستاویزات کی تصدیق اور او پی ایف فلاحی اسکیمز کی رہنمائی۔",
     "iconName": "Globe",
     "accentColor": "#B08D57",
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
@@ -1072,11 +1072,6 @@ export const CATEGORIES: Category[] = [
       {
         "en": "Open Bank Account Online 2026",
         "ur": "آن لائن بینک اکاؤنٹ کھولنے کا طریقہ",
-        "slug": "/finance/how-to-open-bank-account-online-pakistan-2026"
-      },
-      {
-        "en": "Asaan Digital Account Guide",
-        "ur": "آسان ڈیجیٹل اکاؤنٹ گائیڈ",
         "slug": "/finance/how-to-open-bank-account-online-pakistan-2026"
       }
     ]

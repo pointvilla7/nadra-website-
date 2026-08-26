@@ -178,8 +178,8 @@ export const RecentlyUpdatedGuides: React.FC = () => {
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 font-sans mt-1">
             {t(
-              'Official procedural guides and fee charts verified against government gazettes within the last 72 hours.',
-              'گزشتہ 72 گھنٹوں میں سرکاری گزٹ سے تصدیق شدہ فیس شیڈول اور طریقہ کار۔'
+              'Official procedural guides and fee charts verified against official government gazettes and regulatory directives for 2026.',
+              'سرکاری گزٹ اور حکومتی نوٹیفیکیشنز کے مطابق 2026 کے تصدیق شدہ فیس شیڈول اور طریقہ کار۔'
             )}
           </p>
         </div>
