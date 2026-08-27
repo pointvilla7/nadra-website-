@@ -881,6 +881,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Get Certified FIR Copy 2026",
+        "ur": "مصدقہ ایف آئی آر کاپی حاصل کریں 2026",
+        "slug": "/legal/how-to-get-fir-copy-online-pakistan-2026"
+      },
+      {
         "en": "Tenant Police Verification 2026",
         "ur": "کرایہ دار پولیس تصدیق 2026",
         "slug": "/legal/tenant-police-verification-online-2026"

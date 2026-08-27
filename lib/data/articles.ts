@@ -13756,6 +13756,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Guide on checking police FIR and investigation status online in Pakistan.",
     "contentUr": "ایف آئی آر کی آن لائن ٹریکنگ کی معلومات۔",
     "relatedSlugs": [
+      "/legal/how-to-get-fir-copy-online-pakistan-2026",
       "/legal/online-fir-registration-punjab-police",
       "/legal/punjab-khidmat-markaz-police-services"
     ]

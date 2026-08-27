@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/consumer-court-complaint-how-to-file-pakistan-2026',
     '/legal/anti-encroachment-complaint-tribunal-pakistan-2026',
     '/legal/tenant-police-verification-online-2026',
+    '/legal/how-to-get-fir-copy-online-pakistan-2026',
     '/welfare/ehsaas-rashan-riayat-program-8123-2026',
     '/mobile-pta/pta-mobile-registration-guide-2026',
     '/mobile-pta/pta-mobile-tax-check-online',
