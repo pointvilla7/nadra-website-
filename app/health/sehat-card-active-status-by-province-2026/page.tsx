@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -411,6 +412,58 @@ export default function SehatCardActiveStatusPage() {
           </div>
         </section>
 
+        {/* Province-by-Province Coverage & Status Table */}
+        <FeeTableVisual
+          titleEn="Province-by-Province Sehat Card Active Status &amp; Coverage Limits (2026)"
+          titleUr="تمام صوبوں میں صحت کارڈ کی موجودہ حیثیت اور کوریج کی حد (2026)"
+          subtitleEn="Official operational parameters, annual family limits, verification SMS codes, and participating hospital networks"
+          subtitleUr="سالانہ فیملی لمٹ، تصدیقی ایس ایم ایس کوڈز اور سرکاری و نجی پینل ہسپتالوں کی تفصیل"
+          noteEn="* Note: Coverage amounts renew automatically every fiscal year on July 1 through State Life Insurance Corporation (SLIC)."
+          noteUr="* نوٹ: صحت کارڈ کا سالانہ بیلنس یکم جولائی کو اسٹیٹ لائف انشورنس کارپوریشن کے تحت از خود بحال ہو جاتا ہے۔"
+          rows={[
+            {
+              serviceEn: "Khyber Pakhtunkhwa (Sehat Card Plus)",
+              serviceUr: "خیبر پختونخوا (صحت کارڈ پلس)",
+              normal: "100% Universal",
+              urgent: "PKR 1,000,000 / Yr",
+              executive: "SMS: 9780",
+              validity: "Active (Universal)"
+            },
+            {
+              serviceEn: "Punjab (Sehat Sahulat Program)",
+              serviceUr: "پنجاب (صحت سہولت پروگرام)",
+              normal: "Targeted (BISP / 8171)",
+              urgent: "PKR 1,000,000 / Yr",
+              executive: "SMS: 8500",
+              validity: "Active (Targeted)"
+            },
+            {
+              serviceEn: "Islamabad (ICT), AJK & Gilgit-Baltistan",
+              serviceUr: "اسلام آباد، آزاد کشمیر اور گلگت بلتستان",
+              normal: "100% Universal (Restored)",
+              urgent: "PKR 1,000,000 / Yr",
+              executive: "SMS: 8500",
+              validity: "Active (42+ Panel)"
+            },
+            {
+              serviceEn: "Balochistan (Federal Sehat Sahulat)",
+              serviceUr: "بلوچستان (وفاقی صحت سہولت)",
+              normal: "BISP Enrolled Families",
+              urgent: "PKR 1,000,000 / Yr",
+              executive: "SMS: 8500",
+              validity: "Active (Selected)"
+            },
+            {
+              serviceEn: "Sindh (Specialized Public Networks)",
+              serviceUr: "سندھ (خود مختار ہسپتال نیٹ ورک)",
+              normal: "NICVD / SIUT / JPMC",
+              urgent: "100% Free / Subsidized",
+              executive: "Hospital Desk",
+              validity: "Active (State-Run)"
+            }
+          ]}
+        />
+
         {/* Section 4: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -453,43 +506,44 @@ export default function SehatCardActiveStatusPage() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Sehat Card Provincial Status)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Is the Sehat Card currently working in Islamabad (ICT), AJK, and Gilgit-Baltistan?',
-                a: 'Yes. Following a temporary suspension in 2024 caused by settlement dues, the Federal Government restored and relaunched the Sehat Sahulat Program for Islamabad Capital Territory, Azad Jammu & Kashmir, and Gilgit-Baltistan. Eligible permanent residents can access free inpatient treatment at 42+ designated public and private panel hospitals.',
-              },
-              {
-                q: 'What is the difference between Secondary Care and Tertiary Care on the Sehat Card?',
-                a: 'Secondary Care covers general inpatient hospitalizations, standard maternity/delivery, minor surgeries, fractures, and emergency admissions (typically up to PKR 60,000 to 100,000 per family per year). Tertiary (Priority) Care covers complex, life-threatening interventions including cardiac surgeries/stents, chemotherapy, neurosurgery, kidney dialysis, and trauma management (up to PKR 1,000,000 per family per year).',
-              },
-              {
-                q: 'When does the Sehat Card annual treatment balance reset?',
-                a: 'Under government insurance agreements with State Life Insurance Corporation (SLIC), household coverage balances automatically renew every fiscal year on July 1.',
-              },
-              {
-                q: 'How do I check if my CNIC has active Sehat Card coverage?',
-                a: 'For Punjab, Islamabad (ICT), AJK, Gilgit-Baltistan, and Balochistan: SMS your 13-digit CNIC number (without dashes) to 8500. For Khyber Pakhtunkhwa residents under Sehat Card Plus: SMS your CNIC to 9780. You can also verify live coverage directly at the Sehat Sahulat reception desk in any empaneled hospital.',
-              },
-              {
-                q: 'Does Sindh have a universal Sehat Card program?',
-                a: 'Sindh does not participate in the federal universal Sehat Sahulat Program. Instead, Sindh provides fully subsidized specialized care directly through its autonomous public hospital networks such as the National Institute of Cardiovascular Diseases (NICVD), Sindh Institute of Urology and Transplantation (SIUT), and Cyberknife JPMC.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Sehat Card Provincial Status)"
+          titleUr="صحت کارڈ کی صوبائی حیثیت سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on restored Islamabad/AJK status, secondary vs tertiary care, annual balance resets, and Sindh public networks"
+          subtitleUr="اسلام آباد کی بحالی، علاج کی حدیں، سالانہ یکم جولائی بیلنس اور سندھ کے خودمختار ہسپتالوں کی تفصیل"
+          items={[
+            {
+              questionEn: "Is the Sehat Card currently working in Islamabad (ICT), AJK, and Gilgit-Baltistan?",
+              questionUr: "کیا صحت کارڈ اسلام آباد، آزاد کشمیر اور گلگت بلتستان میں فعال ہے؟",
+              answerEn: "Yes. Following a temporary suspension in 2024 caused by settlement dues, the Federal Government restored and relaunched the Sehat Sahulat Program for Islamabad Capital Territory, Azad Jammu & Kashmir, and Gilgit-Baltistan. Eligible permanent residents can access free inpatient treatment at 42+ designated public and private panel hospitals.",
+              answerUr: "جی ہاں! وفاقی حکومت نے اسلام آباد، آزاد کشمیر اور گلگت بلتستان کے لیے صحت کارڈ پروگرام مکمل طور پر بحال کر دیا ہے اور 42 سے زائد پینل ہسپتالوں میں مفت علاج جاری ہے۔",
+            },
+            {
+              questionEn: "What is the difference between Secondary Care and Tertiary Care on the Sehat Card?",
+              questionUr: "سیکنڈری کیئر اور ٹرشری (ترجیحی) کیئر علاج میں کیا فرق ہے؟",
+              answerEn: "Secondary Care covers general inpatient hospitalizations, standard maternity/delivery, minor surgeries, fractures, and emergency admissions (typically up to PKR 60,000 to 100,000 per family per year). Tertiary (Priority) Care covers complex, life-threatening interventions including cardiac surgeries/stents, chemotherapy, neurosurgery, kidney dialysis, and trauma management (up to PKR 1,000,000 per family per year).",
+              answerUr: "سیکنڈری کیئر میں عام بیماریاں، نارمل ڈلیوری اور چھوٹے آپریشن (60 ہزار سے 1 لاکھ تک) شامل ہیں جبکہ ٹرشری کیئر میں دل کی سرجری، کینسر کیموتھراپی، ڈائیلاسز اور بڑے آپریشن (10 لاکھ تک) شامل ہیں۔",
+            },
+            {
+              questionEn: "When does the Sehat Card annual treatment balance reset?",
+              questionUr: "صحت کارڈ کا سالانہ 10 لاکھ کا بیلنس کب دوبارہ بحال ہوتا ہے؟",
+              answerEn: "Under government insurance agreements with State Life Insurance Corporation (SLIC), household coverage balances automatically renew every fiscal year on July 1.",
+              answerUr: "اسٹیٹ لائف انشورنس کے معاہدے کے تحت ہر مالی سال کے آغاز یعنی یکم جولائی کو تمام خاندانوں کا علاج کا کوٹہ از خود 10 لاکھ روپے پر ری سیٹ ہو جاتا ہے۔",
+            },
+            {
+              questionEn: "How do I check if my CNIC has active Sehat Card coverage?",
+              questionUr: "اپنے شناختی کارڈ پر صحت کارڈ کا اسٹیٹس کیسے چیک کریں؟",
+              answerEn: "For Punjab, Islamabad (ICT), AJK, Gilgit-Baltistan, and Balochistan: SMS your 13-digit CNIC number (without dashes) to 8500. For Khyber Pakhtunkhwa residents under Sehat Card Plus: SMS your CNIC to 9780. You can also verify live coverage directly at the Sehat Sahulat reception desk in any empaneled hospital.",
+              answerUr: "پنجاب، اسلام آباد، آزاد کشمیر اور بلوچستان کے شہری اپنا 13 ہندسوں کا شناختی کارڈ 8500 پر اور خیبر پختونخوا کے رہائشی 9780 پر ایس ایم ایس بھیج کر مفت معلوم کر سکتے ہیں۔",
+            },
+            {
+              questionEn: "Does Sindh have a universal Sehat Card program?",
+              questionUr: "کیا صوبہ سندھ میں بھی صحت کارڈ کام کرتا ہے؟",
+              answerEn: "Sindh does not participate in the federal universal Sehat Sahulat Program. Instead, Sindh provides fully subsidized specialized care directly through its autonomous public hospital networks such as the National Institute of Cardiovascular Diseases (NICVD), Sindh Institute of Urology and Transplantation (SIUT), and Cyberknife JPMC.",
+              answerUr: "سندھ میں وفاقی کارڈ کے بجائے این آئی سی وی ڈی (NICVD)، ایس آئی یو ٹی (SIUT) اور جناح ہسپتال کے ذریعے دل، گردے اور کینسر کا 100 فیصد مفت علاج فراہم کیا جاتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

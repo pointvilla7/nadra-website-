@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -291,6 +292,52 @@ export default function NusukAppGuidePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Nusuk App Registration &amp; Permit Booking Workflow (2026)"
+          titleUr="نسک (Nusuk) ایپ پر رجسٹریشن اور ریاض الجنہ پرمٹ بکنگ کا طریقہ"
+          subtitleEn="4-stage procedure from travel operator BRN visa to live QR gate access in Makkah and Madinah"
+          subtitleUr="ٹریول ایجنٹ کے ذریعے ویزا کے اندراج سے لے کر حرم شریف کے دروازوں پر کیو آر کوڈ اسکین کرنے تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Obtain Umrah Visa with Verified BRN",
+              titleUr: "منظور شدہ ٹریول ایجنٹ سے ویزا اور ہوٹل BRN حاصل کریں",
+              descEn: "Apply through a licensed Pakistani operator; ensure your visa is electronically linked to a verified hotel Booking Reference Number (BRN).",
+              descUr: "اپنا عمرہ ویزا منظور شدہ ٹریول ایجنٹ کے ذریعے اپلائی کریں اور یقینی بنائیں کہ اس کے ساتھ تصدیق شدہ ہوٹل BRN منسلک ہے۔",
+              tagEn: "Visa & BRN",
+              tagUr: "ویزا و ہوٹل",
+            },
+            {
+              number: 2,
+              titleEn: "Download & Create Nusuk Account",
+              titleUr: "موبائل میں نسک ایپ ڈاؤن لوڈ کر کے اکاؤنٹ بنائیں",
+              descEn: "Install the official Nusuk app (Play Store/App Store); select 'International Visitor' and register using your passport and visa number.",
+              descUr: "گوگل پلے اسٹور سے نسک ایپ ڈاؤن لوڈ کریں، 'انٹرنیشنل وزیٹر' منتخب کریں اور پاسپورٹ و ویزا نمبر درج کر کے سائن اپ کریں۔",
+              tagEn: "Nusuk App",
+              tagUr: "نسک ایپ",
+            },
+            {
+              number: 3,
+              titleEn: "Book Umrah & Rawdah Time Slots",
+              titleUr: "عمرہ طواف اور ریاض الجنہ (روضہ رسولؐ) کا پرمٹ بک کریں",
+              descEn: "Select available date and color-coded time slot for noble Rawdah (Riaz-ul-Jannah) and Umrah tawaf; add family members to your group.",
+              descUr: "ایپ میں ریاض الجنہ کی زیارت کے لیے تاریخ اور وقت کا انتخاب کریں اور اپنے ہمراہ اہلخانہ کو بھی پرمٹ میں شامل کریں۔",
+              tagEn: "Slot Booking",
+              tagUr: "پرمٹ سلاٹ",
+            },
+            {
+              number: 4,
+              titleEn: "Scan Live QR Code at Mosque Gates",
+              titleUr: "حرم کے دروازے پر لائیو کیو آر کوڈ اسکین کروائیں",
+              descEn: "Arrive at the designated gate 15 minutes before your slot; present the active dynamic QR permit inside the Nusuk app for entry.",
+              descUr: "مقررہ وقت سے 15 منٹ پہلے متعلقہ گیٹ پر پہنچیں اور نسک ایپ کھول کر سیکیورٹی عملے کو ایکٹو کیو آر کوڈ دکھا کر داخل ہوں۔",
+              tagEn: "QR Gate Access",
+              tagUr: "کیو آر انٹری",
+            },
+          ]}
+        />
+
         {/* Section 5: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -333,43 +380,44 @@ export default function NusukAppGuidePage() {
         </section>
 
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Nusuk App &amp; Umrah Visas)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Can Pakistani citizens apply for an Umrah visa directly on the Nusuk app without a travel agent?',
-                a: 'No. Pakistani passport holders cannot apply for an individual Umrah e-visa directly through the consumer Nusuk app. You must process your visa through a licensed Pakistani Umrah travel operator who lodges the application through the official B2B Nusuk Masar platform alongside a verified Booking Reference Number (BRN).',
-              },
-              {
-                q: 'What happens if I have a valid Umrah visa but do not book a Rawdah permit in the Nusuk app?',
-                a: 'You will be denied entry to the Noble Rawdah (Riaz-ul-Jannah) in Masjid an-Nabawi. Saudi security strictly scans live QR code permits from the Nusuk app at the courtyard gates. Screenshots or printed visas alone are not accepted.',
-              },
-              {
-                q: 'What is a Nusuk BRN (Booking Reference Number) and why is it mandatory?',
-                a: 'Under Saudi Arabia’s "No Booking, No Visa" policy, your Umrah visa must be electronically tied to a confirmed hotel accommodation registered on the official Nusuk system. Third-party unintegrated hotel bookings cannot generate a valid BRN, leading to visa rejection.',
-              },
-              {
-                q: 'Is the Nusuk mobile application available in the Urdu language?',
-                a: 'Yes. The Nusuk app (available for free on Android and iOS) includes full Urdu language interface support, allowing Pakistani pilgrims to easily navigate profile settings, prayers timings, and permit schedules.',
-              },
-              {
-                q: 'Is the regular Nusuk app used for Hajj 2026 as well?',
-                a: 'No. The regular Nusuk app handles year-round Umrah and Rawdah visits. Hajj applications and package allocations are managed through a completely separate, dedicated platform known as Nusuk Hajj and the Pakistani Ministry of Religious Affairs quota balloting.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Nusuk App &amp; Umrah Visas)"
+          titleUr="نسک ایپ اور عمرہ ویزا سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on direct individual visas, mandatory Rawdah permits, BRN verification, and Urdu language settings"
+          subtitleUr="براہ راست ویزا کے قواعد، ریاض الجنہ کی بکنگ، ہوٹل بی آر این کی شرط اور اردو زبان کی سہولت"
+          items={[
+            {
+              questionEn: "Can Pakistani citizens apply for an Umrah visa directly on the Nusuk app without a travel agent?",
+              questionUr: "کیا پاکستانی شہری ٹریول ایجنٹ کے بغیر براہ راست نسک ایپ سے عمرہ ویزا حاصل کر سکتے ہیں؟",
+              answerEn: "No. Pakistani passport holders cannot apply for an individual Umrah e-visa directly through the consumer Nusuk app. You must process your visa through a licensed Pakistani Umrah travel operator who lodges the application through the official B2B Nusuk Masar platform alongside a verified Booking Reference Number (BRN).",
+              answerUr: "نہیں! پاکستانی پاسپورٹ کے حامل افراد کو اپنا عمرہ ویزا منظور شدہ ٹریول ایجنٹ کے ذریعے ہی لگوانا پڑتا ہے جو سعودی بی ٹو بی مسار سسٹم پر تصدیق شدہ ہوٹل بی آر این کے ساتھ فائل جمع کرواتا ہے۔",
+            },
+            {
+              questionEn: "What happens if I have a valid Umrah visa but do not book a Rawdah permit in the Nusuk app?",
+              questionUr: "اگر ویزا ہو لیکن نسک ایپ پر ریاض الجنہ کا پرمٹ بک نہ کیا جائے تو کیا ہوگا؟",
+              answerEn: "You will be denied entry to the Noble Rawdah (Riaz-ul-Jannah) in Masjid an-Nabawi. Saudi security strictly scans live QR code permits from the Nusuk app at the courtyard gates. Screenshots or printed visas alone are not accepted.",
+              answerUr: "مسجد نبویؐ کے صحن میں سیکیورٹی اہلکار نسک ایپ سے لائیو کیو آر کوڈ اسکین کرتے ہیں۔ پرمٹ کے بغیر ریاض الجنہ میں داخلے کی قطعی اجازت نہیں دی جاتی۔",
+            },
+            {
+              questionEn: "What is a Nusuk BRN (Booking Reference Number) and why is it mandatory?",
+              questionUr: "نسک بی آر این (BRN) کیا ہے اور یہ کیوں لازمی ہے؟",
+              answerEn: "Under Saudi Arabia’s \"No Booking, No Visa\" policy, your Umrah visa must be electronically tied to a confirmed hotel accommodation registered on the official Nusuk system. Third-party unintegrated hotel bookings cannot generate a valid BRN, leading to visa rejection.",
+              answerUr: "سعودی وزارت حج کی پالیسی کے تحت عمرہ ویزا تب ہی منظور ہوتا ہے جب آپ کی رہائش نسک سسٹم پر رجسٹرڈ ہوٹل میں کنفرم ہو، جس سے حاصل ہونے والا نمبر بی آر این کہلاتا ہے۔",
+            },
+            {
+              questionEn: "Is the Nusuk mobile application available in the Urdu language?",
+              questionUr: "کیا نسک موبائل ایپ میں اردو زبان کی سہولت موجود ہے؟",
+              answerEn: "Yes. The Nusuk app (available for free on Android and iOS) includes full Urdu language interface support, allowing Pakistani pilgrims to easily navigate profile settings, prayers timings, and permit schedules.",
+              answerUr: "جی ہاں! نسک ایپ مکمل طور پر اردو زبان میں دستیاب ہے، پاکستانی عازمین سیٹنگز میں جا کر اردو زبان منتخب کر کے باآسانی تمام پرمٹ بک کر سکتے ہیں۔",
+            },
+            {
+              questionEn: "Is the regular Nusuk app used for Hajj 2026 as well?",
+              questionUr: "کیا عام نسک ایپ حج کے لیے بھی استعمال ہوتی ہے؟",
+              answerEn: "No. The regular Nusuk app handles year-round Umrah and Rawdah visits. Hajj applications and package allocations are managed through a completely separate, dedicated platform known as Nusuk Hajj and the Pakistani Ministry of Religious Affairs quota balloting.",
+              answerUr: "نہیں! یہ ایپ صرف سال بھر کے عمرہ اور روضہ رسولؐ کی زیارت کے لیے ہے۔ حج کے لیے ایک الگ پورٹل (Nusuk Hajj) اور وزارت مذہبی امور کی قرعہ اندازی کا نظام کام کرتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

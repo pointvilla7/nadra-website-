@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -368,6 +369,88 @@ export default function PsebFreelancerRegistrationPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step PSEB Freelancer Registration &amp; Tax Exemption (2026)"
+          titleUr="پی ایس ای بی فری لانسر رجسٹریشن اور 0.25% ٹیکس چھوٹ کا طریقہ"
+          subtitleEn="From portal signup to ePRC export proof, digital fee payment, and bank tax reduction certificate"
+          subtitleUr="آن لائن رجسٹریشن سے لے کر بینک تصدیق، فیس ادائیگی اور رعایتی ٹیکس سرٹیفکیٹ وصولی تک"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Sign Up on Tech Destinations Portal",
+              titleUr: "پی ایس ای بی کے پورٹل پر سائن اپ کریں",
+              descEn: "Visit pseb.org.pk / techdestinations.com and register a new individual freelancer account using your email and CNIC.",
+              descUr: "پورٹل پر جائیں اور اپنے ای میل اور 13 ہندسوں کے شناختی کارڈ کی مدد سے فری لانسر پروفائل تیار کریں۔",
+              tagEn: "Portal Signup",
+              tagUr: "سائن اپ",
+            },
+            {
+              number: 2,
+              titleEn: "Submit Bank IBAN & Export Invoices",
+              titleUr: "بینک اکاؤنٹ اور فری لانسنگ کا ثبوت جمع کروائیں",
+              descEn: "Enter your Pakistani bank IBAN, Upwork/Fiverr profile URL, or direct client contract invoices proving foreign IT export services.",
+              descUr: "اپنا پاکستانی بینک اکاؤنٹ (IBAN) اور اپ ورک، فائور یا کلائنٹ انوائسز کا ثبوت منسلک کریں۔",
+              tagEn: "Export Proof",
+              tagUr: "آمدنی ثبوت",
+            },
+            {
+              number: 3,
+              titleEn: "Pay Annual Registration Fee",
+              titleUr: "سالانہ رجسٹریشن فیس ادا کریں",
+              descEn: "Pay the official subsidized annual registration fee (PKR 1,000 to PKR 2,500) via 1Link or debit/credit card.",
+              descUr: "ایک ہزار سے پچیس سو روپے سالانہ رعایتی فیس 1Link، آن لائن بینکنگ یا ڈیبٹ کارڈ سے ادا کریں۔",
+              tagEn: "Fee Payment",
+              tagUr: "فیس ادائیگی",
+            },
+            {
+              number: 4,
+              titleEn: "Download Certificate & Claim 0.25% FTR",
+              titleUr: "سرٹیفکیٹ ڈاؤن لوڈ کر کے بینک میں 0.25% ٹیکس لاگو کروائیں",
+              descEn: "Download your official PSEB registration certificate; provide it to your receiving bank to lock in 0.25% Final Tax under Section 154A.",
+              descUr: "ڈیجیٹل سرٹیفکیٹ ڈاؤن لوڈ کر کے اپنے بینک میں جمع کروائیں تاکہ باہر سے آنے والی رقم پر صرف 0.25 فیصد فائنل ٹیکس کٹوتی ہو۔",
+              tagEn: "0.25% Tax Rate",
+              tagUr: "رعایتی ٹیکس",
+            },
+          ]}
+        />
+
+        {/* Tax Comparison Table Visual */}
+        <FeeTableVisual
+          titleEn="IT Export Remittance Tax Slabs Comparison (Section 154A – 2026)"
+          titleUr="آئی ٹی برآمدات و فری لانسنگ ٹیکس کٹوتی کا تقابلی جائزہ (2026)"
+          subtitleEn="PSEB registered active filers vs unregistered filers vs non-filers tax rates on foreign remittances"
+          subtitleUr="پی ایس ای بی رجسٹرڈ فری لانسرز، عام فائلرز اور نان فائلرز پر لاگو ٹیکس کی شرح"
+          noteEn="* Note: The 0.25% Final Tax completely finalizes income tax liability on declared foreign IT/ITeS remittances."
+          noteUr="* نوٹ: 0.25 فیصد کٹوتی کے بعد فری لانسر پر انکم ٹیکس کا کوئی مزید واجب الادا ٹیکس نہیں رہتا۔"
+          rows={[
+            {
+              serviceEn: "PSEB Registered + FBR Active Filer (ATL)",
+              serviceUr: "پی ایس ای بی رجسٹرڈ + ایکٹو ٹیکس فائلر",
+              normal: "0.25% Final Tax",
+              urgent: "Full SBP Retain (50%)",
+              executive: "No Audit",
+              validity: "Section 154A (Concessional)"
+            },
+            {
+              serviceEn: "FBR Active Filer (Without PSEB Registration)",
+              serviceUr: "صرف ٹیکس فائلر (پی ایس ای بی رجسٹریشن کے بغیر)",
+              normal: "1.00% Final Tax",
+              urgent: "Standard Settlement",
+              executive: "Standard SBP",
+              validity: "Standard Export Slab"
+            },
+            {
+              serviceEn: "Non-Filer / Late Filer (No ATL Status)",
+              serviceUr: "نان فائلر / غیر رجسٹرڈ افراد",
+              normal: "Up to 35% Normal Slab",
+              urgent: "No Exemption",
+              executive: "Audit Risk",
+              validity: "Subject to Punitive Tax"
+            }
+          ]}
+        />
+
         {/* Section 5: Related Tax & Business Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -410,43 +493,44 @@ export default function PsebFreelancerRegistrationPage() {
         </section>
 
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (PSEB Freelancer Tax &amp; Registration)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Do I still need PSEB registration if my annual freelance earnings are below the Rs. 600,000 taxable threshold?',
-                a: 'While domestic taxable income below PKR 600,000 per year carries zero income tax, international export remittances are governed under the foreign exchange and export taxation regime. Registering with PSEB protects you by classifying your inward remittances under the official 0.25% Final Tax Regime (FTR), preventing banks or the FBR from treating unclassified foreign transfers as unexplained domestic income or taxing them at higher non-filer withholding rates.',
-              },
-              {
-                q: 'What counts as an approved banking channel and what is an ePRC?',
-                a: 'Approved banking channels include direct international bank wire transfers (SWIFT) or authorized payment platforms (Payoneer, Wise, Elevate) linked directly to a commercial bank account in Pakistan. An ePRC (Electronic Proceeds Realization Certificate) is a digitally verified document issued by your Pakistani receiving bank that certifies foreign currency was received under an official IT export purpose code (such as 9186).',
-              },
-              {
-                q: 'Do I still need to file an annual income tax return with FBR if my tax is deducted under the 0.25% Final Tax Regime?',
-                a: 'Yes. Being subject to the Final Tax Regime (FTR) exempts your IT export proceeds from progressive slab taxes, but it does NOT exempt you from filing an annual income tax return on FBR Iris. You must declare your gross foreign export receipts under the Final/Fixed Tax section and submit a wealth statement to maintain Active Taxpayer List (ATL) status.',
-              },
-              {
-                q: 'What happens if I receive freelance income through Payoneer, Wise, or foreign cryptocurrency wallets?',
-                a: 'When funds from Payoneer or Wise are withdrawn and settled into your Pakistani commercial bank account through authorized banking routes, your bank issues an ePRC, qualifying you for the 0.25% rate. However, keeping funds entirely in offshore digital accounts or using P2P cryptocurrency transfers leaves no traceable SBP foreign exchange audit trail and disqualifies you from IT export tax benefits.',
-              },
-              {
-                q: 'What is the exact current status of the Section 65F 100% tax exemption versus the 0.25% Section 154A tax rate?',
-                a: 'Historically, Section 65F offered a 100% tax credit (effective full exemption) for IT exports, but it carried rigorous corporate compliance conditions and sunset clauses. Under the modernized tax framework, Section 154A serves as the primary, practical settlement mechanism: a nominal 0.25% Final Tax deducted at source for PSEB-registered active filers, which completely finalizes your income tax liability on IT export revenue.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PSEB Freelancer Tax &amp; Registration)"
+          titleUr="پی ایس ای بی فری لانسر ٹیکس اور رجسٹریشن سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on taxable income thresholds, approved banking ePRC certificates, FBR return filing, and Wise/Payoneer rules"
+          subtitleUr="ٹیکس سے استثنیٰ کی حد، ای پی آر سی (ePRC) سرٹیفکیٹ، گوشوارہ جمع کروانے اور پے اونیر/وائز کے قواعد"
+          items={[
+            {
+              questionEn: "Do I still need PSEB registration if my annual freelance earnings are below the Rs. 600,000 taxable threshold?",
+              questionUr: "اگر میری سالانہ فری لانسنگ آمدنی 6 لاکھ سے کم ہو تو کیا تب بھی پی ایس ای بی رجسٹریشن ضروری ہے؟",
+              answerEn: "While domestic taxable income below PKR 600,000 per year carries zero income tax, international export remittances are governed under the foreign exchange and export taxation regime. Registering with PSEB protects you by classifying your inward remittances under the official 0.25% Final Tax Regime (FTR), preventing banks or the FBR from treating unclassified foreign transfers as unexplained domestic income or taxing them at higher non-filer withholding rates.",
+              answerUr: "جی ہاں! بیرون ملک سے آنے والی رقم کو آئی ٹی ایکسپورٹ قرار دلوانے کے لیے پی ایس ای بی رجسٹریشن ضروری ہے تاکہ بینک اور ایف بی آر اس پر غیر ضروری ودہولڈنگ یا عام سلیب ٹیکس لاگو نہ کریں۔",
+            },
+            {
+              questionEn: "What counts as an approved banking channel and what is an ePRC?",
+              questionUr: "منظور شدہ بینکنگ چینل اور ای پی آر سی (ePRC) سے کیا مراد ہے؟",
+              answerEn: "Approved banking channels include direct international bank wire transfers (SWIFT) or authorized payment platforms (Payoneer, Wise, Elevate) linked directly to a commercial bank account in Pakistan. An ePRC (Electronic Proceeds Realization Certificate) is a digitally verified document issued by your Pakistani receiving bank that certifies foreign currency was received under an official IT export purpose code (such as 9186).",
+              answerUr: "پے اونیر، وائز یا ڈائریکٹ بینک ٹرانسفر سے پاکستانی بینک اکاؤنٹ میں رقم منتقل ہونے پر بینک کی جانب سے جاری کردہ تصدیقی دستاویز کو ePRC کہتے ہیں جو آئی ٹی برآمدات کا قانونی ثبوت ہے۔",
+            },
+            {
+              questionEn: "Do I still need to file an annual income tax return with FBR if my tax is deducted under the 0.25% Final Tax Regime?",
+              questionUr: "اگر 0.25 فیصد ٹیکس کٹ چکا ہو تو کیا سالانہ انکم ٹیکس ریٹرن فائل کرنا لازمی ہے؟",
+              answerEn: "Yes. Being subject to the Final Tax Regime (FTR) exempts your IT export proceeds from progressive slab taxes, but it does NOT exempt you from filing an annual income tax return on FBR Iris. You must declare your gross foreign export receipts under the Final/Fixed Tax section and submit a wealth statement to maintain Active Taxpayer List (ATL) status.",
+              answerUr: "جی ہاں! فائنل ٹیکس کٹنے کے باوجود سالانہ انکم ٹیکس گوشوارہ اور ویلتھ اسٹیٹمنٹ FBR Iris پورٹل پر جمع کروانا لازمی ہے تاکہ آپ ایکٹو فائلر کی لسٹ میں برقرار رہیں۔",
+            },
+            {
+              questionEn: "What happens if I receive freelance income through Payoneer, Wise, or foreign cryptocurrency wallets?",
+              questionUr: "اگر پے اونیر، وائز یا کرپٹو والٹ سے رقم آئے تو ٹیکس چھوٹ کیسے ملے گی؟",
+              answerEn: "When funds from Payoneer or Wise are withdrawn and settled into your Pakistani commercial bank account through authorized banking routes, your bank issues an ePRC, qualifying you for the 0.25% rate. However, keeping funds entirely in offshore digital accounts or using P2P cryptocurrency transfers leaves no traceable SBP foreign exchange audit trail and disqualifies you from IT export tax benefits.",
+              answerUr: "پے اونیر اور وائز کی رقم جب پاکستانی بینک اکاؤنٹ میں منتقل کی جاتی ہے تو بینک ePRC بنا دیتا ہے۔ لیکن پی ٹو پی کرپٹو ٹرانسفر پر اسٹیٹ بینک کا ریکارڈ نہ ہونے کی وجہ سے کوئی ٹیکس چھوٹ نہیں ملتی۔",
+            },
+            {
+              questionEn: "What is the exact current status of the Section 65F 100% tax exemption versus the 0.25% Section 154A tax rate?",
+              questionUr: "سیکشن 65F اور 0.25 فیصد فائنل ٹیکس ریٹ میں کیا فرق ہے؟",
+              answerEn: "Historically, Section 65F offered a 100% tax credit (effective full exemption) for IT exports, but it carried rigorous corporate compliance conditions and sunset clauses. Under the modernized tax framework, Section 154A serves as the primary, practical settlement mechanism: a nominal 0.25% Final Tax deducted at source for PSEB-registered active filers, which completely finalizes your income tax liability on IT export revenue.",
+              answerUr: "سیکشن 154A کے تحت پی ایس ای بی رجسٹرڈ فائلرز کے لیے 0.25 فیصد فائنل ٹیکس کا آسان اور شفاف طریقہ کار نافذ ہے جس سے تمام انکم ٹیکس ذمہ داریاں مکمل ہو جاتی ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

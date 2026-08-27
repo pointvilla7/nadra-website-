@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -399,6 +400,66 @@ export default function FpscPpscAgeRelaxationRulesPage() {
           </div>
         </section>
 
+        {/* Official Age Relaxation Schedules Table */}
+        <FeeTableVisual
+          titleEn="Official FPSC &amp; PPSC Age Relaxation Categories &amp; Limits (2026)"
+          titleUr="ایف پی ایس سی اور پی پی ایس سی کی عمر میں رعایت کے سرکاری قواعد (2026)"
+          subtitleEn="Statutory age relaxation concessions granted under Establishment Division Civil Servants Rules"
+          subtitleUr="اسٹیبلشمنٹ ڈویژن کے قواعد کے تحت مختلف کیٹیگریز کے لیے عمر میں دی جانے والی رعایت"
+          noteEn="* Note: Age concessions are non-cumulative; candidates eligible under multiple heads will only receive the single most advantageous category."
+          noteUr="* نوٹ: عمر میں ایک سے زائد کیٹیگریز کی رعایت کو جمع نہیں کیا جا سکتا، امیدوار کو صرف سب سے زیادہ فائدے والی ایک رعایت ملے گی۔"
+          rows={[
+            {
+              serviceEn: "General Age Relaxation (All Citizens)",
+              serviceUr: "عام رعایت (تمام امیدواران)",
+              normal: "5 Years",
+              urgent: "Over Base Upper Limit",
+              executive: "Automatic",
+              validity: "Admissible Nationwide"
+            },
+            {
+              serviceEn: "Govt Servants (2+ Years Regular Service)",
+              serviceUr: "سرکاری ملازمین (2 سال مسلسل سروس)",
+              normal: "Up to 10 Years (Max 35/40)",
+              urgent: "DPC Form Required",
+              executive: "Departmental",
+              validity: "Civil Depts Only"
+            },
+            {
+              serviceEn: "Scheduled Castes & Buddhist Community",
+              serviceUr: "شیڈول کاسٹ و بدھ مت برادری",
+              normal: "3 Years",
+              urgent: "Attested Certificate",
+              executive: "Minority Quota",
+              validity: "Verified Castes"
+            },
+            {
+              serviceEn: "Persons with Recognized Disabilities",
+              serviceUr: "خصوصی افراد (معذور امیدواران)",
+              normal: "10 Years",
+              urgent: "Medical Board Cert",
+              executive: "Special Quota",
+              validity: "Standing Board"
+            },
+            {
+              serviceEn: "Widows / Children of Deceased Govt Servants",
+              serviceUr: "دوران سروس وفات پانے والے ملازمین کے بچے",
+              normal: "5 Years",
+              urgent: "Death/Service Proof",
+              executive: "Rule 17-A",
+              validity: "In-Service Death"
+            },
+            {
+              serviceEn: "Armed Forces Retired Personnel",
+              serviceUr: "مسلح افواج کے ریٹائرڈ افسران و جوان",
+              normal: "Up to 10 Years",
+              urgent: "Discharge Book",
+              executive: "Military Service",
+              validity: "Max 10 Yrs Service"
+            }
+          ]}
+        />
+
         {/* Section 4: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -441,43 +502,44 @@ export default function FpscPpscAgeRelaxationRulesPage() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Age Relaxation &amp; Quota)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How is candidate age calculated for FPSC and PPSC jobs?',
-                a: 'Your age is calculated strictly as of the official closing date for application submission specified in the job advertisement (in exact years, months, and days). Being even one day above the upper limit (including admissible relaxation) leads to automatic rejection.',
-              },
-              {
-                q: 'Is the 5-year general age relaxation granted automatically?',
-                a: 'Yes. Under federal and provincial government notification rules, a 5-year general age relaxation in the upper age limit is admissible to all candidates across the board, over and above the base age limit prescribed in the recruitment rules.',
-              },
-              {
-                q: 'Can I combine multiple age relaxation categories (e.g. Govt Servant + 5 Years General)?',
-                a: 'No. In FPSC and PPSC recruitment, age relaxations are non-cumulative. A candidate who qualifies under multiple concession categories (e.g., government service and special quota) is granted the benefit of only the single most advantageous category.',
-              },
-              {
-                q: 'Can female candidates apply using their husband or father’s domicile certificate?',
-                a: 'No. All applicants (both male and female) must possess a self-domicile certificate issued in their own name on or before the closing date. Married women may update their domicile to their husband’s district, but the certificate itself must be in the applicant’s own name.',
-              },
-              {
-                q: 'Do employees of private companies, banks, or autonomous bodies qualify for Government Servant relaxation?',
-                a: 'No. Government servant age relaxation (up to 10 years) applies exclusively to regular/permanent employees of federal or provincial civil ministries and departments with at least 2 years of continuous service. Employees of autonomous authorities, state-owned corporations, semi-government bodies, public sector banks, and project/contract staff are ineligible.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Age Relaxation &amp; Quota)"
+          titleUr="عمر میں رعایت اور کوٹہ کے قواعد سے متعلق عام سوالات"
+          subtitleEn="Exact closing date calculations, general 5-year automatic relaxation, non-cumulative rules, and autonomous body employee exclusions"
+          subtitleUr="آخری تاریخ تک عمر کا حساب، خودکار 5 سالہ رعایت، غیر متوازی اصول اور نیم سرکاری ملازمین کی شرائط"
+          items={[
+            {
+              questionEn: "How is candidate age calculated for FPSC and PPSC jobs?",
+              questionUr: "ایف پی ایس سی اور پی پی ایس سی میں امیدوار کی عمر کا حساب کیسے لگایا جاتا ہے؟",
+              answerEn: "Your age is calculated strictly as of the official closing date for application submission specified in the job advertisement (in exact years, months, and days). Being even one day above the upper limit (including admissible relaxation) leads to automatic rejection.",
+              answerUr: "عمر کا حساب اشتہار میں دی گئی درخواست جمع کروانے کی آخری تاریخ تک سال، مہینے اور دنوں کے عین مطابق لگایا جاتا ہے۔ آخری تاریخ پر ایک دن بھی زیادہ ہونے پر درخواست خودکار مسترد ہو جاتی ہے۔",
+            },
+            {
+              questionEn: "Is the 5-year general age relaxation granted automatically?",
+              questionUr: "کیا 5 سالہ عمومی رعایت خودکار طور پر مل جاتی ہے؟",
+              answerEn: "Yes. Under federal and provincial government notification rules, a 5-year general age relaxation in the upper age limit is admissible to all candidates across the board, over and above the base age limit prescribed in the recruitment rules.",
+              answerUr: "جی ہاں! وفاقی اور صوبائی نوٹیفکیشن کے تحت بالائی عمر کی حد میں 5 سال کی عمومی رعایت تمام امیدواروں کو بغیر کسی اضافی درخواست کے از خود ملتی ہے۔",
+            },
+            {
+              questionEn: "Can I combine multiple age relaxation categories (e.g. Govt Servant + 5 Years General)?",
+              questionUr: "کیا دو مختلف رعایتوں کو اکٹھا جوڑا جا سکتا ہے؟",
+              answerEn: "No. In FPSC and PPSC recruitment, age relaxations are non-cumulative. A candidate who qualifies under multiple concession categories (e.g., government service and special quota) is granted the benefit of only the single most advantageous category.",
+              answerUr: "نہیں! پبلک سروس کمیشن کے قواعد کے تحت عمر میں رعایتیں نان-کیومولیٹو (non-cumulative) ہیں، یعنی امیدوار کو صرف اس ایک کیٹیگری کا فائدہ دیا جائے گا جس میں سب سے زیادہ سال ملتے ہوں۔",
+            },
+            {
+              questionEn: "Can female candidates apply using their husband or father’s domicile certificate?",
+              questionUr: "کیا خواتین امیدوار اپنے والد یا شوہر کے ڈومیسائل پر اپلائی کر سکتی ہیں؟",
+              answerEn: "No. All applicants (both male and female) must possess a self-domicile certificate issued in their own name on or before the closing date. Married women may update their domicile to their husband’s district, but the certificate itself must be in the applicant’s own name.",
+              answerUr: "نہیں! مرد اور خواتین تمام امیدواروں کا ڈومیسائل سرٹیفکیٹ ان کے اپنے ذاتی نام سے بنا ہونا لازمی ہے۔ شوہر یا والد کا سرٹیفکیٹ براہ راست قابل قبول نہیں ہوتا۔",
+            },
+            {
+              questionEn: "Do employees of private companies, banks, or autonomous bodies qualify for Government Servant relaxation?",
+              questionUr: "کیا پرائیویٹ کمپنیوں، بینکوں یا نیم سرکاری اداروں کے ملازمین کو سرکاری ملازم کی رعایت ملتی ہے؟",
+              answerEn: "No. Government servant age relaxation (up to 10 years) applies exclusively to regular/permanent employees of federal or provincial civil ministries and departments with at least 2 years of continuous service. Employees of autonomous authorities, state-owned corporations, semi-government bodies, public sector banks, and project/contract staff are ineligible.",
+              answerUr: "نہیں! 10 سالہ سرکاری ملازم کی رعایت صرف وفاقی اور صوبائی وزارتوں کے ریگولر سول سرونٹس کے لیے ہے جن کی 2 سال سروس ہو۔ کارپوریشنز، بینکوں اور پروجیکٹ کنٹریکٹ ملازمین اس کے اہل نہیں ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

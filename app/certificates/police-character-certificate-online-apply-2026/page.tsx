@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -499,42 +500,107 @@ export default function PoliceCharacterCertificateOnlineApplyPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Province-by-Province Systems */}
+        <ComparisonVisual
+          titleEn="Province-by-Province Police Clearance Systems & Processing Comparison (2026)"
+          titleUr="تمام صوبوں کے پولیس کریکٹر سرٹیفکیٹ سسٹمز کا تفصیلی موازنہ"
+          subtitleEn="Comparison of online portals, fee structures, processing days, and overseas authority letter procedures"
+          subtitleUr="آن لائن پورٹل، سرکاری فیس، پروسیسنگ کے دن اور اوورسیز پاکستانیوں کے طریقہ کار کا جائزہ"
+          items={[
+            {
+              titleEn: "Punjab (PKM Portal)",
+              titleUr: "پنجاب (پولیس خدمت مرکز)",
+              subtitleEn: "Fully Online & Any-District PKM",
+              subtitleUr: "مکمل آن لائن اور کسی بھی ضلع سے دستیاب",
+              badgeEn: "Fastest / Online",
+              badgeUr: "تیز ترین",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Official Portal: pkm.punjab.gov.pk / PKM Global App",
+                "Official Fee: PKR 350 to PKR 500",
+                "Processing Time: 3 to 5 working days (urgent same-day at executive PKMs)",
+                "Overseas Friendly: Direct digital application with embassy-attested authority letter"
+              ],
+              recommendedForEn: "Residents of Punjab and overseas Pakistanis needing swift computerized clearance",
+              recommendedForUr: "پنجاب کے تمام شہریوں اور بیرون ملک مقیم پاکستانیوں کے لیے"
+            },
+            {
+              titleEn: "Sindh (PRVS) & Islamabad (ICT)",
+              titleUr: "سندھ (PRVS) اور اسلام آباد (ICT)",
+              subtitleEn: "Online Verification & CFC Centers",
+              subtitleUr: "آن لائن رجسٹریشن اور سہولت مراکز",
+              badgeEn: "Hybrid Digital",
+              badgeUr: "ڈیجیٹل پورٹل",
+              badgeVariant: "navy",
+              pointsEn: [
+                "Official Portals: prvs.sindhpolice.gov.pk / islamabadpolice.gov.pk",
+                "Official Fee: PKR 500 to PKR 1,000",
+                "Processing Time: 5 to 7 working days",
+                "Requires proof of residence (tenancy deed or utility bill) if address differs"
+              ],
+              recommendedForEn: "Karachi, Hyderabad, and Islamabad Capital Territory residents",
+              recommendedForUr: "کراچی، حیدرآباد اور اسلام آباد کے رہائشی شہریوں کے لیے"
+            },
+            {
+              titleEn: "KPK, Balochistan & AJK",
+              titleUr: "خیبر پختونخوا، بلوچستان اور آزاد کشمیر",
+              subtitleEn: "PFC Counters & SSP Manual Verification",
+              subtitleUr: "سہولت مراکز اور مینوئل تصدیق",
+              badgeEn: "District SSP",
+              badgeUr: "ضلعی ایس ایس پی",
+              badgeVariant: "brass",
+              pointsEn: [
+                "Portal: clearance.kppolice.gov.pk (KPK) / District SSP Office (Balochistan/AJK)",
+                "Official Fee: PKR 300 to PKR 500 challan",
+                "Processing Time: 7 to 10 working days",
+                "Special Branch and local police station physical verification conducted"
+              ],
+              recommendedForEn: "Applicants based in Peshawar, Quetta, Muzaffarabad and adjoining districts",
+              recommendedForUr: "کے پی کے، بلوچستان اور آزاد کشمیر کے ڈسٹرکٹ سے اپلائی کرنے والے شہری"
+            }
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (Police Character Certificates)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Can I apply for a Police Character Certificate from a different district than the address on my CNIC?',
-                a: 'In Punjab, yes! Thanks to the centralized Police Khidmat Markaz (PKM) network, you can apply from any PKM center in any district of Punjab regardless of your permanent address. In other provinces (Sindh, KPK, Balochistan, Islamabad), you can apply in your current residential district by providing valid proof of residence, such as a utility bill in your name or a registered tenancy agreement.',
-              },
-              {
-                q: 'How can Overseas Pakistanis get a Police Character Certificate without traveling to Pakistan?',
-                a: 'Overseas Pakistanis can obtain a PCC through two main routes: (1) In Punjab, apply directly through the Punjab Police Global Portal (pkm.punjab.gov.pk), or (2) Issue a formal Authority Letter (Power of Attorney) in the name of a close blood relative in Pakistan, get it attested at the nearest Pakistani Embassy or Consulate abroad, and have your representative submit it to the local District Police Officer (DPO) or Khidmat Markaz.',
-              },
-              {
-                q: 'What should I do if my province does not have a fully online application portal?',
-                a: 'In regions like Balochistan or Azad Jammu & Kashmir where online portal integration is in-progress, visit the Central Police Office (CPO), District SSP Office, or local Police Facilitation Center in person with your original CNIC, passport copy, 2 photographs, and affidavit. The local Special Branch and police station will conduct the background check manually.',
-              },
-              {
-                q: 'How long does the entire process take including MOFA and embassy attestation?',
-                a: 'The initial police clearance certificate takes approximately 3 to 10 working days. MOFA Apostille/attestation takes 1 to 3 working days via apostille.mofa.gov.pk. If destination embassy legalization is also required (e.g. UAE, Saudi Arabia, Qatar), add another 3 to 7 working days. The full end-to-end process typically takes around 2 to 3 weeks.',
-              },
-              {
-                q: 'What is the validity period of a Police Character Certificate in Pakistan?',
-                a: 'A Police Character Certificate is officially valid for 6 months from its date of issuance. Foreign embassies and immigration departments (such as Canada, UK, USA, Australia, and Gulf nations) strictly require the certificate to be within its 6-month validity window at the time of visa submission.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Police Character Certificates)"
+          titleUr="پولیس کریکٹر سرٹیفکیٹ سے متعلق اہم سوالات"
+          subtitleEn="Essential guidelines on other-district applications, overseas issuance, MOFA Apostille, and 6-month validity"
+          subtitleUr="دوسرے اضلاع سے حصول، اوورسیز پاکستانیوں کا طریقہ، وزارت خارجہ تصدیق اور 6 ماہ کی میعاد"
+          items={[
+            {
+              questionEn: "Can I apply for a Police Character Certificate from a different district than the address on my CNIC?",
+              questionUr: "کیا شناختی کارڈ پر درج پتے کے علاوہ کسی دوسرے ضلع سے کریکٹر سرٹیفکیٹ بن سکتا ہے؟",
+              answerEn: "In Punjab, yes! Thanks to the centralized Police Khidmat Markaz (PKM) network, you can apply from any PKM center in any district of Punjab regardless of your permanent address. In other provinces (Sindh, KPK, Balochistan, Islamabad), you can apply in your current residential district by providing valid proof of residence, such as a utility bill in your name or a registered tenancy agreement.",
+              answerUr: "پنجاب میں سینٹرلائزڈ خدمت مرکز کی بدولت کسی بھی ضلع سے اپلائی کیا جا سکتا ہے۔ سندھ، اسلام آباد اور دیگر صوبوں میں موجودہ رہائشی پتے کا یوٹیلیٹی بل یا کرایہ نامہ دکھا کر سرٹیفکیٹ حاصل کیا جا سکتا ہے۔",
+            },
+            {
+              questionEn: "How can Overseas Pakistanis get a Police Character Certificate without traveling to Pakistan?",
+              questionUr: "بیرون ملک مقیم پاکستانی پاکستان آئے بغیر پولیس سرٹیفکیٹ کیسے حاصل کریں؟",
+              answerEn: "Overseas Pakistanis can obtain a PCC through two main routes: (1) In Punjab, apply directly through the Punjab Police Global Portal (pkm.punjab.gov.pk), or (2) Issue a formal Authority Letter (Power of Attorney) in the name of a close blood relative in Pakistan, get it attested at the nearest Pakistani Embassy or Consulate abroad, and have your representative submit it to the local District Police Officer (DPO) or Khidmat Markaz.",
+              answerUr: "پنجاب کے لیے براہ راست آن لائن پورٹل پر اپلائی کریں، یا قریبی سفارت خانے سے اپنے رشتہ دار کے نام اتھارٹی لیٹر تصدیق کروا کے پاکستان بھیجیں جو خدمت مرکز میں جمع کروا دے گا۔",
+            },
+            {
+              questionEn: "What should I do if my province does not have a fully online application portal?",
+              questionUr: "اگر میرے صوبے میں آن لائن پورٹل دستیاب نہ ہو تو کیا طریقہ کار ہوگا؟",
+              answerEn: "In regions like Balochistan or Azad Jammu & Kashmir where online portal integration is in-progress, visit the Central Police Office (CPO), District SSP Office, or local Police Facilitation Center in person with your original CNIC, passport copy, 2 photographs, and affidavit. The local Special Branch and police station will conduct the background check manually.",
+              answerUr: "ضلعی ایس ایس پی آفس یا پولیس سہولت مرکز خود تشریف لے جائیں اور اصل شناختی کارڈ، پاسپورٹ اور تصاویر جمع کروائیں۔ اسپیشل برانچ مینوئل تصدیق کے بعد سرٹیفکیٹ جاری کرے گی۔",
+            },
+            {
+              questionEn: "How long does the entire process take including MOFA and embassy attestation?",
+              questionUr: "وزارت خارجہ (MOFA) اور ایمبیسی تصدیق سمیت کل کتنا وقت لگتا ہے؟",
+              answerEn: "The initial police clearance certificate takes approximately 3 to 10 working days. MOFA Apostille/attestation takes 1 to 3 working days via apostille.mofa.gov.pk. If destination embassy legalization is also required (e.g. UAE, Saudi Arabia, Qatar), add another 3 to 7 working days. The full end-to-end process typically takes around 2 to 3 weeks.",
+              answerUr: "پولیس سرٹیفکیٹ 3 سے 10 دن، وزارت خارجہ کی اپوسٹائل تصدیق 1 سے 3 دن اور سفارت خانے کی تصدیق 3 سے 7 دن لیتی ہے۔ مکمل پروسیس تقریباً 2 سے 3 ہفتوں میں مکمل ہو جاتا ہے۔",
+            },
+            {
+              questionEn: "What is the validity period of a Police Character Certificate in Pakistan?",
+              questionUr: "پولیس کریکٹر سرٹیفکیٹ کی میعاد (ویلیڈیٹی) کتنے عرصے کی ہوتی ہے؟",
+              answerEn: "A Police Character Certificate is officially valid for 6 months from its date of issuance. Foreign embassies and immigration departments (such as Canada, UK, USA, Australia, and Gulf nations) strictly require the certificate to be within its 6-month validity window at the time of visa submission.",
+              answerUr: "پولیس کریکٹر سرٹیفکیٹ جاری ہونے کی تاریخ سے 6 ماہ تک کارآمد ہوتا ہے۔ تمام غیر ملکی سفارت خانے اور ویزا امیگریشن ادارے 6 ماہ کے اندر اندر جاری شدہ سرٹیفکیٹ ہی قبول کرتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

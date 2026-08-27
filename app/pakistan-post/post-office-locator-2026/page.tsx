@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -238,6 +239,52 @@ export default function PakPostOfficeLocatorPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Post Office &amp; Postal Code Search Workflow (2026)"
+          titleUr="پاکستان پوسٹ آفس اور پوسٹل کوڈ تلاش کرنے کا 4 مرحلہ وار طریقہ"
+          subtitleEn="How to identify your local delivery branch, verify official postal codes, and access parcel counters"
+          subtitleUr="اپنے قریبی ڈاکخانے کی لوکیشن، درست پوسٹل کوڈ اور پارسل سروس کے اوقات معلوم کرنے کا طریقہ"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Identify Administrative Postal Circle",
+              titleUr: "صوبائی پوسٹل سرکل کا تعین کریں",
+              descEn: "Pakistan Post is structured across major circles: Punjab, Sindh, KPK, Balochistan, and Federal Capital/AJK.",
+              descUr: "پاکستان پوسٹ کے متعلقہ صوبائی یا علاقائی سرکل کا انتخاب کریں۔",
+              tagEn: "Postal Circle",
+              tagUr: "پوسٹل سرکل",
+            },
+            {
+              number: 2,
+              titleEn: "Select District & Local Delivery Zone",
+              titleUr: "ضلع، تحصیل اور متعلقہ علاقہ منتخب کریں",
+              descEn: "Filter by your municipal district and neighborhood delivery zone to locate assigned delivery staff.",
+              descUr: "اپنے ضلع اور قریبی محلے یا ٹاؤن کی ڈلیوری حدود کو چیک کریں۔",
+              tagEn: "Local Zone",
+              tagUr: "ڈلیوری زون",
+            },
+            {
+              number: 3,
+              titleEn: "Locate GPO or Sub-Post Office",
+              titleUr: "مرکزی جی پی او یا قریبی سب پوسٹ آفس تلاش کریں",
+              descEn: "Identify the main General Post Office (GPO) for specialized services or local sub-post offices for regular mail.",
+              descUr: "بڑی سروسز کے لیے مرکزی جی پی او اور عام ڈاک کے لیے قریبی سب پوسٹ آفس کا پتہ دیکھیں۔",
+              tagEn: "GPO Branch",
+              tagUr: "ڈاکخانہ برانچ",
+            },
+            {
+              number: 4,
+              titleEn: "Verify 5-Digit Code & Counter Hours",
+              titleUr: "5 ہندسوں کا پوسٹل کوڈ اور کاؤنٹر اوقات تصدیق کریں",
+              descEn: "Ensure your destination parcel carries the verified 5-digit postal code to avoid transit delays.",
+              descUr: "پارسل اور خطوط پر درست 5 ہندسوں کا پوسٹل کوڈ درج کریں تاکہ ڈاک کی ترسیل میں تاخیر نہ ہو۔",
+              tagEn: "Postal Code",
+              tagUr: "پوسٹل کوڈ",
+            },
+          ]}
+        />
+
         {/* Section 3: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -280,35 +327,32 @@ export default function PakPostOfficeLocatorPage() {
         </section>
 
         {/* Section 4: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Pakistan Post Office Locations)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How do I find the nearest Pakistan Post office near me?',
-                a: 'You can locate your nearest Pakistan Post office by searching "Pakistan Post Office" on Google Maps or by visiting your city’s central General Post Office (GPO). Pakistan Post operates over 13,000 branches and sub-post offices nationwide.',
-              },
-              {
-                q: 'What are the operating hours of General Post Offices (GPOs) in Pakistan?',
-                a: 'Standard Pakistan Post sub-offices operate Monday to Saturday from 9:00 AM to 4:00 PM (with a Friday prayer break from 12:30 PM to 2:00 PM). Major central GPOs in Karachi, Lahore, Islamabad, and Rawalpindi maintain 24/7 round-the-clock urgent mail counters for booking.',
-              },
-              {
-                q: 'What is the postal code for Islamabad, Lahore, and Karachi GPO?',
-                a: 'The central GPO postal codes are: Islamabad GPO (44000), Lahore GPO (54000), Karachi GPO (74000), Rawalpindi GPO (46000), and Peshawar GPO (25000).',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Pakistan Post Office Locations)"
+          titleUr="پاکستان پوسٹ آفس اور جی پی او سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on finding local branches, 24/7 GPO emergency counters, major city postal codes, and weekend timings"
+          subtitleUr="قریبی ڈاکخانہ تلاش کرنے، 24 گھنٹے اوپن جی پی او کاؤنٹرز اور بڑے شہروں کے پوسٹل کوڈز کی تفصیل"
+          items={[
+            {
+              questionEn: "How do I find the nearest Pakistan Post office near me?",
+              questionUr: "اپنے قریب ترین پاکستان پوسٹ کا ڈاکخانہ کیسے تلاش کریں؟",
+              answerEn: "You can locate your nearest Pakistan Post office by searching \"Pakistan Post Office\" on Google Maps or by visiting your city’s central General Post Office (GPO). Pakistan Post operates over 13,000 branches and sub-post offices nationwide.",
+              answerUr: "گوگل میپس پر 'Pakistan Post' سرچ کریں یا اپنے شہر کے مرکزی جی پی او (GPO) تشریف لے جائیں۔ پاکستان پوسٹ ملک بھر میں 13،000 سے زائد برانچوں اور سب پوسٹ آفسز کا نیٹ ورک چلاتا ہے۔",
+            },
+            {
+              questionEn: "What are the operating hours of General Post Offices (GPOs) in Pakistan?",
+              questionUr: "پاکستان میں جی پی او اور ڈاکخانوں کے دفتری اوقات کیا ہیں؟",
+              answerEn: "Standard Pakistan Post sub-offices operate Monday to Saturday from 9:00 AM to 4:00 PM (with a Friday prayer break from 12:30 PM to 2:00 PM). Major central GPOs in Karachi, Lahore, Islamabad, and Rawalpindi maintain 24/7 round-the-clock urgent mail counters for booking.",
+              answerUr: "عام برانچیں پیر تا ہفتہ صبح 9:00 سے شام 4:00 بجے تک کھلی رہتی ہیں۔ جبکہ کراچی، لاہور، اسلام آباد اور راولپنڈی کے مرکزی جی پی او میں ارجنٹ بکنگ کے لیے 24 گھنٹے کاؤنٹرز فعال رہتے ہیں۔",
+            },
+            {
+              questionEn: "What is the postal code for Islamabad, Lahore, and Karachi GPO?",
+              questionUr: "اسلام آباد، لاہور اور کراچی جی پی او کا پوسٹل کوڈ کیا ہے؟",
+              answerEn: "The central GPO postal codes are: Islamabad GPO (44000), Lahore GPO (54000), Karachi GPO (74000), Rawalpindi GPO (46000), and Peshawar GPO (25000).",
+              answerUr: "مرکزی شہروں کے پوسٹل کوڈز درج ذیل ہیں: اسلام آباد جی پی او (44000)، لاہور جی پی او (54000)، کراچی جی پی او (74000)، راولپنڈی جی پی او (46000) اور پشاور جی پی او (25000)۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

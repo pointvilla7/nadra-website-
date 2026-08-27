@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -119,32 +120,87 @@ export default function RollNumberSlipCheckerPage() {
           <RollNumberSlipChecker />
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Slip Verification &amp; Exam Center Checklist (2026)"
+          titleUr="رول نمبر سلپ ڈاؤن لوڈ اور امتحانی مرکز کی تیاری کا طریقہ"
+          subtitleEn="4 essential stages from CNIC validation to admission slip printing and center arrival rules"
+          subtitleUr="شناختی کارڈ کی تصدیق سے لے کر رول نمبر سلپ کے پرنٹ اور امتحانی سینٹر کے قواعد تک"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Select Commission & Enter CNIC",
+              titleUr: "متعلقہ ٹیسٹنگ ایجنسی یا کمیشن منتخب کریں",
+              descEn: "Select FPSC, PPSC, SPSC, KPPSC, BPSC, NTS, or ETEA; input your 13-digit CNIC number without hyphens.",
+              descUr: "متعلقہ پبلک سروس کمیشن یا ٹیسٹنگ ایجنسی کا انتخاب کریں اور 13 ہندسوں کا شناختی کارڈ درج کریں۔",
+              tagEn: "Portal & CNIC",
+              tagUr: "کمیشن اور شناختی کارڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Locate Post & Case Number",
+              titleUr: "درخواست دی گئی اسامی اور کیس نمبر منتخب کریں",
+              descEn: "Choose your specific job title and advertisement/case number from the official commission dropdown.",
+              descUr: "پورٹل پر اپنی مطلوبہ پوسٹ اور اشتہار یا کیس نمبر کا انتخاب کریں۔",
+              tagEn: "Job Case",
+              tagUr: "کیس نمبر",
+            },
+            {
+              number: 3,
+              titleEn: "Verify Center, Time & Seat Number",
+              titleUr: "امتحانی سینٹر، تاریخ اور سیٹ نمبر کی تصدیق کریں",
+              descEn: "Check test venue address, reporting time, roll number, and specific test syllabus or instructions.",
+              descUr: "امتحانی ہال کا پتہ، رپورٹنگ ٹائم، رول نمبر اور امتحانی ہدایات کو اچھی طرح چیک کریں۔",
+              tagEn: "Test Venue",
+              tagUr: "سینٹر و وقت",
+            },
+            {
+              number: 4,
+              titleEn: "Print Clean Admission Slip & Bring CNIC",
+              titleUr: "سلپ پرنٹ کریں اور اصل شناختی کارڈ ساتھ لے جائیں",
+              descEn: "Print a clear copy on A4 paper; ensure you carry your original Smart CNIC and admission slip to the exam hall.",
+              descUr: "سلپ کا صاف پرنٹ نکالیں اور امتحان کے دن اصل سمارٹ شناختی کارڈ ساتھ لانا ہرگز نہ بھولیں۔",
+              tagEn: "Exam Day",
+              tagUr: "امتحانی دن",
+            },
+          ]}
+        />
+
         <AdPlacementZone format="horizontal" />
 
         {/* FAQs */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            {[
-              {
-                q: 'What items are mandatory to bring to the exam center?',
-                a: 'Candidates must bring: (1) Original printed Admission Certificate / Roll Number Slip, (2) Original Computerized National Identity Card (Smart CNIC), (3) Transparent clipboard, and (4) Blue/black ballpoint pens. Mobile phones and digital watches are strictly banned.',
-              },
-              {
-                q: 'What should I do if my roll number slip has a picture or name error?',
-                a: 'Immediately contact the respective commission’s facilitation center via telephone or email at least 3 working days before the test to request an urgent correction or bring an attested passport photograph with your original CNIC to the test center.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Roll Number Slips &amp; Test Day Rules)"
+          titleUr="رول نمبر سلپ اور امتحانی قواعد سے متعلق عام سوالات"
+          subtitleEn="Mandatory documents for exam hall entry, photo corrections, SMS alert timelines, and electronic item bans"
+          subtitleUr="امتحانی ہال میں داخلے کے لیے ضروری اشیاء، تصویر کی تصحیح اور الیکٹرانک آلات کی ممانعت"
+          items={[
+            {
+              questionEn: "What items are mandatory to bring to the exam center?",
+              questionUr: "امتحانی مرکز میں کون سی چیزیں ساتھ لانا لازمی ہیں؟",
+              answerEn: "Candidates must bring: (1) Original printed Admission Certificate / Roll Number Slip, (2) Original Computerized National Identity Card (Smart CNIC), (3) Transparent clipboard, and (4) Blue/black ballpoint pens. Mobile phones and digital watches are strictly banned.",
+              answerUr: "امیدوار کے پاس: (1) رول نمبر سلپ کا اصل پرنٹ، (2) نادرا کا اصل سمارٹ شناختی کارڈ، (3) شفاف کلپ بورڈ، اور (4) نیلا یا کالا بال پوائنٹ ہونا لازمی ہے۔ موبائل فون اور ڈیجیٹل گھڑیاں سخت منع ہیں۔",
+            },
+            {
+              questionEn: "What should I do if my roll number slip has a picture or name error?",
+              questionUr: "اگر رول نمبر سلپ پر تصویر یا نام میں غلطی ہو تو کیا کریں؟",
+              answerEn: "Immediately contact the respective commission’s facilitation center via telephone or email at least 3 working days before the test to request an urgent correction or bring an attested passport photograph with your original CNIC to the test center.",
+              answerUr: "ٹیسٹ سے کم از کم 3 دن قبل متعلقہ کمیشن کے ہیلپ ڈیسک پر رابطہ کریں یا تصدیق شدہ پاسپورٹ سائز تصویر اور اصل شناختی کارڈ کے ہمراہ امتحانی سینٹر کے سپریٹنڈنٹ سے رجوع کریں۔",
+            },
+            {
+              questionEn: "When are FPSC, PPSC, and NTS roll number slips uploaded before exams?",
+              questionUr: "امتحان سے کتنے دن پہلے رول نمبر سلپس پورٹل پر اپلوڈ ہوتی ہیں؟",
+              answerEn: "Testing agencies and public service commissions typically upload admission certificates 7 to 10 days before the scheduled test date. Candidates receive an official SMS alert on their registered mobile number.",
+              answerUr: "پبلک سروس کمیشن اور این ٹی ایس عام طور پر ٹیسٹ کی تاریخ سے 7 سے 10 دن قبل سلپس اپلوڈ کرتے ہیں اور امیدوار کو موبائل پر ایس ایم ایس الرٹ بھی بھیجا جاتا ہے۔",
+            },
+            {
+              questionEn: "Can I show my roll number slip on a mobile phone instead of printing it?",
+              questionUr: "کیا کاغذ پر پرنٹ نکالنے کے بجائے موبائل میں رول نمبر سلپ دکھائی جا سکتی ہے؟",
+              answerEn: "No. Mobile phones are completely prohibited inside the examination premises. You must carry a physically printed paper copy of the admission certificate.",
+              answerUr: "ہرگز نہیں! امتحانی ہال کے اندر موبائل فون لے جانے کی قطعی اجازت نہیں ہوتی، اس لیے کاغذ پر پرنٹ شدہ سلپ لانا لازمی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

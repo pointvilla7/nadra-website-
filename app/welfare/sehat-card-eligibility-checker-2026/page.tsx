@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -126,32 +127,137 @@ export default function SehatCardCheckerPage() {
           <SehatCardChecker />
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Sehat Card Verification &amp; Hospital Admission Workflow (2026)"
+          titleUr="صحت کارڈ کی تصدیق اور ہسپتال داخلے کا 4 مرحلہ وار طریقہ"
+          subtitleEn="How to check family qualification and obtain 100% cashless medical treatment at panel hospitals"
+          subtitleUr="اہلیت کی تصدیق سے لے کر پینل ہسپتال میں بائیومیٹرک اندراج اور مفت علاج کے حصول تک"
+          steps={[
+            {
+              number: 1,
+              titleEn: "SMS 13-Digit CNIC to 8500 / 9780",
+              titleUr: "اپنا 13 ہندسوں کا شناختی کارڈ 8500 پر ایس ایم ایس کریں",
+              descEn: "Send CNIC without hyphens to 8500 (Punjab/Federal/AJK/GB) or 9780 (KPK Sehat Card Plus).",
+              descUr: "شناختی کارڈ نمبر 8500 پر (پنجاب، اسلام آباد، آزاد کشمیر) یا 9780 پر (کے پی کے) ایس ایم ایس کریں۔",
+              tagEn: "SMS Check",
+              tagUr: "ایس ایم ایس",
+            },
+            {
+              number: 2,
+              titleEn: "Review Eligible Family Members",
+              titleUr: "خاندان کے اہل افراد کی تفصیل دیکھیں",
+              descEn: "Confirm that your spouse and unmarried children are registered under your NADRA Family Registration Certificate (FRC).",
+              descUr: "یقینی بنائیں کہ آپ کے شریک حیات اور غیر شادی شدہ بچے نادرا فیملی ٹری (FRC) میں درج ہیں۔",
+              tagEn: "NADRA FRC",
+              tagUr: "نادرا فیملی",
+            },
+            {
+              number: 3,
+              titleEn: "Visit Sehat Sahulat Counter at Panel Hospital",
+              titleUr: "پینل ہسپتال میں صحت سہولت کاؤنٹر پر تشریف لے جائیں",
+              descEn: "Bring the patient's original Smart CNIC (or B-Form for minors) to the hospital's dedicated facilitation desk.",
+              descUr: "مریض کا اصل شناختی کارڈ یا بچوں کا بے فارم لے کر پینل ہسپتال کے کاؤنٹر پر جائیں۔",
+              tagEn: "Hospital Desk",
+              tagUr: "ہسپتال کاؤنٹر",
+            },
+            {
+              number: 4,
+              titleEn: "Biometric Entry & Cashless Inpatient Treatment",
+              titleUr: "بائیومیٹرک اندراج اور 100 فیصد مفت ان ڈور علاج",
+              descEn: "Hospital verifies fingerprint and admits patient; bills are settled directly with State Life up to PKR 1,000,000.",
+              descUr: "ہسپتال بائیومیٹرک فنگر پرنٹ لگا کر مریض کو داخل کرے گا اور سالانہ 10 لاکھ تک تمام اخراجات حکومت ادا کرے گی۔",
+              tagEn: "Free Treatment",
+              tagUr: "مفت علاج",
+            },
+          ]}
+        />
+
+        {/* Treatment Limits Breakdown Table */}
+        <FeeTableVisual
+          titleEn="Sehat Sahulat Program Medical Treatment &amp; Coverage Limits (2026)"
+          titleUr="صحت سہولت کارڈ کے تحت مفت علاج اور سالانہ لمٹ کی تفصیل (2026)"
+          subtitleEn="Package coverage limits per family per annum under State Life Insurance Corporation"
+          subtitleUr="فی خاندان سالانہ بنیادوں پر فراہم کیے جانے والے طبی پیکجز اور انشورنس کوریج"
+          noteEn="* Note: Covers inpatient admissions only. Consultations and medicines inside the hospital during admission are 100% free."
+          noteUr="* نوٹ: صرف ہسپتال میں داخل مریضوں (ان ڈور) کے لیے ہے۔ داخلے کے دوران ادویات اور ٹیسٹ 100 فیصد مفت ہیں۔"
+          rows={[
+            {
+              serviceEn: "Tertiary / Priority Care (Cardiac, Cancer, Dialysis)",
+              serviceUr: "ٹرشری کیئر (ہارٹ سرجری، کینسر، ڈائیلاسز، نیورو)",
+              normal: "PKR 1,000,000 / Family",
+              urgent: "Cashless Admission",
+              executive: "100% Free",
+              validity: "Renews Every July 1"
+            },
+            {
+              serviceEn: "Secondary Care (General Inpatient, Surgeries, Fractures)",
+              serviceUr: "سیکنڈری کیئر (عام امراض، اپینڈکس، ہڈیوں کے فریکچر)",
+              normal: "PKR 60,000 – 100,000",
+              urgent: "General Ward",
+              executive: "Cashless",
+              validity: "Per Family / Year"
+            },
+            {
+              serviceEn: "Maternity & Normal Delivery / C-Section",
+              serviceUr: "زچگی، نارمل ڈلیوری اور آپریشن (سی سیکشن)",
+              normal: "PKR 17,000 – 35,000",
+              urgent: "Includes Mother Care",
+              executive: "Free Transport Allowance",
+              validity: "Per Delivery"
+            },
+            {
+              serviceEn: "Emergency Inpatient & Accident Trauma Care",
+              serviceUr: "ایمرجنسی حادثات اور ٹراما کیئر داخلہ",
+              normal: "Full Emergency Coverage",
+              urgent: "Immediate Admission",
+              executive: "24/7 Panel",
+              validity: "Within Annual Limit"
+            }
+          ]}
+        />
+
         <AdPlacementZone format="horizontal" />
 
         {/* FAQs */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            {[
-              {
-                q: 'Which family members are covered under one Sehat Card?',
-                a: 'The head of the family, spouse, and all unmarried children listed on the NADRA Family Registration Certificate (FRC) are automatically covered under the primary cardholder.',
-              },
-              {
-                q: 'What is the procedure when arriving at an empaneled hospital?',
-                a: 'Visit the dedicated "Sehat Sahulat Program Counter" inside the hospital with the patient’s original CNIC (or B-Form for children). The hospital representative will perform biometric fingerprint verification and register the admission.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Sehat Card Eligibility &amp; Coverage)"
+          titleUr="صحت کارڈ کی اہلیت اور علاج سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on family coverage, hospital desk admission, plastic card requirements, and renewal cycles"
+          subtitleUr="اہل فیملی ممبران، ہسپتال داخلے کا طریقہ، کارڈ کے بغیر علاج اور سالانہ ری نیول کے قواعد"
+          items={[
+            {
+              questionEn: "How do I check my Sehat Card status by SMS?",
+              questionUr: "ایس ایم ایس کے ذریعے صحت کارڈ کا اسٹیٹس کیسے معلوم کریں؟",
+              answerEn: "Send your 13-digit CNIC number without dashes or spaces to 8500 from any Pakistani mobile network. You will receive an immediate SMS reply confirming your family eligibility and card number.",
+              answerUr: "اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ بغیر ڈیشز کے 8500 پر میسج کریں۔ آپ کو جوابی ایس ایم ایس میں اہلیت اور فیملی رجسٹریشن کی تفصیل مل جائے گی۔",
+            },
+            {
+              questionEn: "What medical treatments are covered under Sehat Sahulat Program?",
+              questionUr: "صحت سہولت پروگرام میں کون سے علاج شامل ہیں؟",
+              answerEn: "Sehat Card covers inpatient hospitalizations, cardiovascular surgeries, cancer treatments (chemotherapy and radiation), renal dialysis, neurosurgery, emergency medical admissions, and maternity care up to PKR 1,000,000 per family annually.",
+              answerUr: "صحت کارڈ میں ہسپتال داخلہ، دل کے آپریشن اور اسٹنٹ، کینسر کا مکمل علاج، گردوں کا ڈائیلاسز، نیورو سرجری، ایمرجنسی داخلہ اور زچگی کے تمام اخراجات سالانہ 10 لاکھ روپے تک کور ہوتے ہیں۔",
+            },
+            {
+              questionEn: "Do I need a physical plastic card to receive treatment?",
+              questionUr: "کیا علاج کے لیے پلاسٹک کا کارڈ پاس ہونا ضروری ہے؟",
+              answerEn: "No. In all empaneled public and private hospitals, your original NADRA CNIC or B-Form (for minors) serves as your electronic Sehat Card at the hospital reception counter.",
+              answerUr: "نہیں! کسی الگ پلاسٹک کارڈ کی ضرورت نہیں ہے۔ مریض کا اصل نادرا شناختی کارڈ یا بچوں کا بے فارم ہی ہسپتال کاؤنٹر پر الیکٹرانک صحت کارڈ کے طور پر کام کرتا ہے۔",
+            },
+            {
+              questionEn: "Which family members are covered under one Sehat Card?",
+              questionUr: "ایک صحت کارڈ پر خاندان کے کون کون سے افراد علاج کروا سکتے ہیں؟",
+              answerEn: "The head of the family, spouse, and all unmarried children listed on the NADRA Family Registration Certificate (FRC) are automatically covered under the primary cardholder.",
+              answerUr: "خاندان کا سربراہ، شریک حیات اور نادرا فیملی رجسٹریشن سرٹیفکیٹ (FRC) میں درج تمام غیر شادی شدہ بچے خودکار طور پر علاج کے حقدار ہیں۔",
+            },
+            {
+              questionEn: "What is the procedure when arriving at an empaneled hospital?",
+              questionUr: "پینل ہسپتال پہنچنے پر داخلے کا کیا طریقہ کار ہوتا ہے؟",
+              answerEn: "Visit the dedicated \"Sehat Sahulat Program Counter\" inside the hospital with the patient’s original CNIC (or B-Form for children). The hospital representative will perform biometric fingerprint verification and register the admission.",
+              answerUr: "ہسپتال کے اندر موجود مخصوص 'صحت سہولت کاؤنٹر' پر جائیں اور مریض کا اصل شناختی کارڈ دکھائیں۔ کاؤنٹر عملہ بائیومیٹرک تصدیق کر کے داخلہ پرچی جاری کرے گا۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

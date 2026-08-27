@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink, Smartphone, ShieldCheck, CheckCircle2, AlertTriangle, MessageSquare, PhoneCall, Search } from 'lucide-react';
 import Link from 'next/link';
 
@@ -180,6 +181,52 @@ export default function PtaMobileImeiCheckOnlinePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step PTA IMEI Verification Procedure (2026)"
+          titleUr="موبائل فون کا پی ٹی اے اسٹیٹس چیک کرنے کا 4 مرحلہ وار طریقہ"
+          subtitleEn="Verify PTA approval status before purchasing any new or used smartphone in Pakistan"
+          subtitleUr="نیا یا استعمال شدہ موبائل خریدنے سے قبل پی ٹی اے تصدیق کا آسان اور محفوظ طریقہ"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Dial *#06# on Phone Keypad",
+              titleUr: "موبائل سے *#06# ڈائل کریں",
+              descEn: "Dial *#06# to display the 15-digit International Mobile Equipment Identity (IMEI) on the screen.",
+              descUr: "فون کے ڈائل پیڈ پر *#06# ملائیں اور اسکرین پر ظاہر ہونے والے 15 ہندسوں کے IMEI نمبر نوٹ کریں۔",
+              tagEn: "IMEI Check",
+              tagUr: "آئی ایم ای آئی",
+            },
+            {
+              number: 2,
+              titleEn: "Send 15 Digits to 8484 via SMS",
+              titleUr: "15 ہندسے 8484 پر ایس ایم ایس بھیجیں",
+              descEn: "Compose a text message with your 15-digit IMEI and send to 8484 (100% free on all Pakistani networks).",
+              descUr: "نیا میسج کھولیں، 15 ہندسوں کا IMEI لکھیں اور 8484 پر فری میسج بھیجیں۔",
+              tagEn: "Free SMS 8484",
+              tagUr: "مفت ایس ایم ایس",
+            },
+            {
+              number: 3,
+              titleEn: "Check DIRBS Verification Reply",
+              titleUr: "پی ٹی اے کا جوابی تصدیقی میسج پڑھیں",
+              descEn: "Receive instant verification: Compliant (Approved), Non-Compliant (Valid but Duty Unpaid), or Blocked/Stolen.",
+              descUr: "فوری جوابی میسج میں دیکھیں کہ فون Compliant (منظور شدہ)، Non-Compliant (ڈیوٹی باقی) یا Blocked (چوری شدہ/بلاک) ہے۔",
+              tagEn: "Status Result",
+              tagUr: "تصدیقی نتیجہ",
+            },
+            {
+              number: 4,
+              titleEn: "Verify Matching Model & Pay Duty",
+              titleUr: "موبائل ماڈل کی تصدیق اور ڈیوٹی ادائیگی",
+              descEn: "Confirm that the brand/model in the SMS matches the physical device; if Non-Compliant, pay customs duty within 60 days.",
+              descUr: "یقینی بنائیں کہ میسج میں ظاہر ہونے والا ماڈل اصلی فون سے میچ کرتا ہو، اور نان کمپلائنٹ ہونے کی صورت میں 60 دن میں ٹیکس ادا کریں۔",
+              tagEn: "Model Match",
+              tagUr: "ماڈل میچ",
+            },
+          ]}
+        />
+
         <AdPlacementZone format="horizontal" />
 
         {/* Section 2: Related Tools */}
@@ -224,39 +271,38 @@ export default function PtaMobileImeiCheckOnlinePage() {
         </section>
 
         {/* Section 3: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (IMEI &amp; PTA Approval Check)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How do I check if my mobile is PTA approved?',
-                a: 'To check if your mobile is PTA approved: Dial *#06# on your device keypad to view your 15-digit IMEI number, then send the 15 digits via free SMS to 8484 from any Pakistani SIM card. You will receive an immediate reply confirming whether the phone is Compliant (Approved), Non-Compliant, or Blocked.',
-              },
-              {
-                q: 'How to check PTA approved mobile online through DIRBS website?',
-                a: 'Visit the official PTA DIRBS web portal at dirbs.pta.gov.pk, enter your 15-digit IMEI number into the search field, solve the security CAPTCHA, and click Verify. The system will display the exact brand, model, and registration status of the device.',
-              },
-              {
-                q: 'Is the 8484 SMS IMEI check service free of cost?',
-                a: 'Yes. Checking your mobile IMEI by sending an SMS to 8484 is 100% free of charge across all mobile networks in Pakistan (Jazz, Zong, Telenor, Ufone).',
-              },
-              {
-                q: 'What does "Device IMEI is Valid (Non-Compliant)" mean?',
-                a: 'Non-Compliant means your mobile phone hardware is genuine GSMA standard, but PTA customs duty has not been paid. PTA grants a 60-day grace period from the date of first SIM insertion to pay the tax before the phone is disconnected.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (IMEI &amp; PTA Approval Check)"
+          titleUr="آئی ایم ای آئی اور پی ٹی اے منظوری سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on free 8484 SMS checks, DIRBS web verification, 60-day grace periods, and cloned phone warnings"
+          subtitleUr="8484 مفت ایس ایم ایس، ڈی آئی آر بی ایس پورٹل، 60 دن کی گریس پیریڈ اور کلون شدہ آئی ایم ای آئی کے خطرات"
+          items={[
+            {
+              questionEn: "How do I check if my mobile is PTA approved?",
+              questionUr: "موبائل پی ٹی اے اپرووڈ ہے یا نہیں، کیسے معلوم کریں؟",
+              answerEn: "To check if your mobile is PTA approved: Dial *#06# on your device keypad to view your 15-digit IMEI number, then send the 15 digits via free SMS to 8484 from any Pakistani SIM card. You will receive an immediate reply confirming whether the phone is Compliant (Approved), Non-Compliant, or Blocked.",
+              answerUr: "موبائل سے *#06# ڈائل کر کے 15 ہندسوں کا IMEI نمبر حاصل کریں اور اسے 8484 پر مفت ایس ایم ایس بھیجیں۔ پی ٹی اے کی طرف سے فوری جوابی میسج میں فون کی تصدیق موصول ہو جائے گی۔",
+            },
+            {
+              questionEn: "How to check PTA approved mobile online through DIRBS website?",
+              questionUr: "آن لائن ڈی آئی آر بی ایس پورٹل سے آئی ایم ای آئی کیسے چیک کریں؟",
+              answerEn: "Visit the official PTA DIRBS web portal at dirbs.pta.gov.pk, enter your 15-digit IMEI number into the search field, solve the security CAPTCHA, and click Verify. The system will display the exact brand, model, and registration status of the device.",
+              answerUr: "پی ٹی اے کی آفیشل ویب سائٹ dirbs.pta.gov.pk پر جائیں، 15 ہندسوں کا آئی ایم ای آئی درج کریں اور تصدیق کا بٹن دبائیں۔ سسٹم فون کا ماڈل اور رجسٹریشن اسٹیٹس دکھا دے گا۔",
+            },
+            {
+              questionEn: "Is the 8484 SMS IMEI check service free of cost?",
+              questionUr: "کیا 8484 پر ایس ایم ایس بھیجنے کے کوئی چارجز ہیں؟",
+              answerEn: "Yes. Checking your mobile IMEI by sending an SMS to 8484 is 100% free of charge across all mobile networks in Pakistan (Jazz, Zong, Telenor, Ufone).",
+              answerUr: "جی ہاں! 8484 پر ایس ایم ایس سروس پاکستان کے تمام نیٹ ورکس (جاز، زونگ، ٹیلی نار، یوفون) پر 100 فیصد مفت ہے۔",
+            },
+            {
+              questionEn: "What does \"Device IMEI is Valid (Non-Compliant)\" mean?",
+              questionUr: "نان کمپلائنٹ (Non-Compliant) اسٹیٹس کا کیا مطلب ہے؟",
+              answerEn: "Non-Compliant means your mobile phone hardware is genuine GSMA standard, but PTA customs duty has not been paid. PTA grants a 60-day grace period from the date of first SIM insertion to pay the tax before the phone is disconnected.",
+              answerUr: "اس کا مطلب ہے کہ موبائل فون اصلی ہے مگر اس کا کسٹم ٹیکس ادا نہیں کیا گیا۔ پہلی سم ڈالنے کے بعد 60 دن کے اندر ٹیکس ادا نہ کرنے پر سم بند کر دی جاتی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

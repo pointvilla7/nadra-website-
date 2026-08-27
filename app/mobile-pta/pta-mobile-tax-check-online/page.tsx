@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink, Smartphone, ShieldCheck, CheckCircle2, AlertTriangle, Layers, CreditCard, QrCode, Calculator, Apple } from 'lucide-react';
 import Link from 'next/link';
 
@@ -277,6 +278,112 @@ export default function PtaMobileTaxCheckOnlinePage() {
 
         <AdPlacementZone format="horizontal" />
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step PTA Mobile Tax Check, PSID &amp; Registration Workflow (2026)"
+          titleUr="پی ٹی اے موبائل ٹیکس چیک، پی ایس آئی ڈی اور رجسٹریشن کا طریقہ"
+          subtitleEn="4-stage process from IMEI retrieval to online DIRBS filing, 1Link tax payment, and automatic signal unblocking"
+          subtitleUr="آئی ایم ای آئی کے حصول سے لے کر آن لائن چالان جنریشن، 1Link ادائیگی اور سم سگنلز بحالی تک"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Dial *#06# to Find 15-Digit IMEI",
+              titleUr: "موبائل سے *#06# ڈائل کر کے 15 ہندسوں کا IMEI معلوم کریں",
+              descEn: "Locate IMEI 1 (and IMEI 2 for dual SIM phones) on your phone dialer or device settings menu.",
+              descUr: "فون ڈائلر پر کوڈ ملائیں اور اسکرین پر آنے والے 15 ہندسوں کے IMEI نمبر نوٹ کریں۔",
+              tagEn: "IMEI Number",
+              tagUr: "آئی ایم ای آئی",
+            },
+            {
+              number: 2,
+              titleEn: "Calculate Duty (Passport vs CNIC)",
+              titleUr: "پاسپورٹ یا شناختی کارڈ پر کسٹم ڈیوٹی چیک کریں",
+              descEn: "Use our live calculator or visit dirbs.pta.gov.pk to determine payable customs duty and 18% GST.",
+              descUr: "کیلکولیٹر سے معلوم کریں کہ پاسپورٹ (رعایتی) یا شناختی کارڈ پر آپ کے ماڈل کا کتنا ٹیکس بنتا ہے۔",
+              tagEn: "Duty Slabs",
+              tagUr: "ٹیکس شرح",
+            },
+            {
+              number: 3,
+              titleEn: "Generate 17-Digit PSID on DIRBS",
+              titleUr: "پی ٹی اے پورٹل سے 17 ہندسوں کا PSID کوڈ جنریٹ کریں",
+              descEn: "Register on dirbs.pta.gov.pk or dial *8484#; enter your CNIC/Passport and IMEI to obtain an official PSID payment voucher.",
+              descUr: "پورٹل پر اپنا شناختی کارڈ اور آئی ایم ای آئی درج کر کے فیس ادائیگی کے لیے سرکاری PSID چالان حاصل کریں۔",
+              tagEn: "PSID Voucher",
+              tagUr: "پی ایس آئی ڈی",
+            },
+            {
+              number: 4,
+              titleEn: "Pay via 1Link / Banking App (Active in 24h)",
+              titleUr: "موبائل بینکنگ یا اے ٹی ایم سے ٹیکس ادا کریں (24 گھنٹے میں سگنل بحال)",
+              descEn: "Pay via any Pakistani banking app (FBR/1Link Bill payment); all local cellular SIMs are activated within 4 to 24 hours.",
+              descUr: "موبائل بینکنگ ایپ میں 1Link بل ادائیگی کے ذریعے ٹیکس جمع کروائیں، 24 گھنٹے میں موبائل پر سگنلز بحال ہو جائیں گے۔",
+              tagEn: "SIM Unblocking",
+              tagUr: "سگنل بحالی",
+            },
+          ]}
+        />
+
+        {/* FBR Mobile Customs Duty Slabs Visual */}
+        <FeeTableVisual
+          titleEn="Official FBR Mobile Device Customs Duty Slabs (2026 Schedule)"
+          titleUr="ایف بی آر موبائل کسٹم ڈیوٹی و ٹیکس سلیب شیڈول (2026)"
+          subtitleEn="Statutory import duty, regulatory duty, and sales tax breakdown based on C&amp;F USD device value"
+          subtitleUr="موبائل فون کی ڈالر ویلیو کے مطابق سرکاری کسٹم ڈیوٹی، ریگولیٹری ڈیوٹی اور سیلز ٹیکس کی تفصیل"
+          noteEn="* Note: Devices registered on Passport (within 60 days of international travel) receive discounted customs duties under passenger baggage rules."
+          noteUr="* نوٹ: بیرون ملک سے سفر کر کے آنے والے مسافر 60 دن کے اندر پاسپورٹ پر رعایت کے ساتھ کم ٹیکس ادا کر سکتے ہیں۔"
+          rows={[
+            {
+              serviceEn: "Tier 1: Up to $30 USD (Basic Keypad)",
+              serviceUr: "سلیب 1: 30 ڈالر تک (بنیادی بٹن والے فون)",
+              normal: "PKR 550 (Passport)",
+              urgent: "PKR 750 (CNIC)",
+              executive: "Direct 8484",
+              validity: "Lifelong Active"
+            },
+            {
+              serviceEn: "Tier 2: $30 to $100 USD (Budget Android)",
+              serviceUr: "سلیب 2: 30 سے 100 ڈالر (بجٹ اسمارٹ فون)",
+              normal: "PKR 4,320",
+              urgent: "PKR 6,000",
+              executive: "1Link PSID",
+              validity: "Lifelong Active"
+            },
+            {
+              serviceEn: "Tier 3: $100 to $200 USD (Mid-Range 4G/5G)",
+              serviceUr: "سلیب 3: 100 سے 200 ڈالر (درمیانے درجے کے فون)",
+              normal: "PKR 11,500",
+              urgent: "PKR 15,800",
+              executive: "1Link PSID",
+              validity: "Lifelong Active"
+            },
+            {
+              serviceEn: "Tier 4: $200 to $350 USD (Upper Mid-Range)",
+              serviceUr: "سلیب 4: 200 سے 350 ڈالر (اپر مڈ رینج فون)",
+              normal: "PKR 23,500",
+              urgent: "PKR 31,500",
+              executive: "1Link PSID",
+              validity: "Lifelong Active"
+            },
+            {
+              serviceEn: "Tier 5: $350 to $500 USD (Premium Category)",
+              serviceUr: "سلیب 5: 350 سے 500 ڈالر (پریمیم کیٹیگری)",
+              normal: "PKR 65,000 – 75,000",
+              urgent: "PKR 85,000 – 95,000",
+              executive: "1Link PSID",
+              validity: "Lifelong Active"
+            },
+            {
+              serviceEn: "Tier 6: Above $500 USD (Flagships / iPhone 16/15 Pro)",
+              serviceUr: "سلیب 6: 500 ڈالر سے زائد (آئی فون 16/15 اور فلیگ شپ)",
+              normal: "PKR 135k – 145k",
+              urgent: "PKR 160k – 175k",
+              executive: "1Link PSID",
+              validity: "Lifelong Active"
+            }
+          ]}
+        />
+
         {/* Section 3: Related Guides */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -319,39 +426,38 @@ export default function PtaMobileTaxCheckOnlinePage() {
         </section>
 
         {/* Section 4: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (PTA Mobile Tax &amp; iPhone Duty)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How do I check PTA tax on mobile online in Pakistan?',
-                a: 'You can check PTA tax online by using our client-side PTA Mobile Tax Calculator or by sending your 15-digit IMEI to 8484 via SMS. Alternatively, log in to dirbs.pta.gov.pk with your CNIC/Passport to generate an official 17-digit PSID voucher showing the exact payable duty.',
-              },
-              {
-                q: 'How much is PTA tax on an iPhone in Pakistan?',
-                a: 'PTA tax on flagship iPhones (iPhone 16 Pro Max, 15 Pro Max, 14 Pro Max) ranges between Rs. 135,000 to Rs. 145,000 on a Passport, and Rs. 160,000 to Rs. 175,000 on a CNIC. Older base models (iPhone 13, 12, 11) range between Rs. 40,000 to Rs. 95,000 depending on C&F valuation brackets.',
-              },
-              {
-                q: 'Why is PTA mobile tax cheaper on a Passport compared to a CNIC?',
-                a: 'The Federal Board of Revenue (FBR) provides a subsidized customs duty structure for international travelers and overseas Pakistanis bringing a personal mobile phone under passenger baggage rules. Registration on a CNIC represents local commercial/resident importation and is subject to full regulatory duty and higher withholding taxes.',
-              },
-              {
-                q: 'How do I pay the PTA tax after generating the PSID code?',
-                a: 'Once you generate your 17-digit PSID on the PTA DIRBS portal (or via *8484#), you can pay the tax within 30 days via any mobile banking app (under 1Link / FBR / GOP Tax Payments), ATM, JazzCash, Easypaisa, or in person at any commercial bank branch.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PTA Mobile Tax &amp; iPhone Duty)"
+          titleUr="پی ٹی اے موبائل ٹیکس اور آئی فون ڈیوٹی سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on checking duties online, iPhone flagships breakdown, Passport vs CNIC tariff differences, and 1Link payments"
+          subtitleUr="آن لائن ٹیکس کی تصدیق، آئی فون کے ماڈلز، پاسپورٹ بمقابلہ شناختی کارڈ ریٹ اور 1Link ادائیگی کا طریقہ"
+          items={[
+            {
+              questionEn: "How do I check PTA tax on mobile online in Pakistan?",
+              questionUr: "پاکستان میں موبائل فون کا پی ٹی اے ٹیکس آن لائن کیسے چیک کریں؟",
+              answerEn: "You can check PTA tax online by using our client-side PTA Mobile Tax Calculator or by sending your 15-digit IMEI to 8484 via SMS. Alternatively, log in to dirbs.pta.gov.pk with your CNIC/Passport to generate an official 17-digit PSID voucher showing the exact payable duty.",
+              answerUr: "آپ ہمارے آن لائن کیلکولیٹر سے یا اپنے 15 ہندسوں کے IMEI کو 8484 پر میسج بھیج کر معلوم کر سکتے ہیں۔ اس کے علاوہ dirbs.pta.gov.pk پر لاگ ان کر کے آفیشل 17 ہندسوں کا PSID چالان بھی حاصل کیا جا سکتا ہے۔",
+            },
+            {
+              questionEn: "How much is PTA tax on an iPhone in Pakistan?",
+              questionUr: "پاکستان میں آئی فون پر کتنا پی ٹی اے ٹیکس لاگو ہوتا ہے؟",
+              answerEn: "PTA tax on flagship iPhones (iPhone 16 Pro Max, 15 Pro Max, 14 Pro Max) ranges between Rs. 135,000 to Rs. 145,000 on a Passport, and Rs. 160,000 to Rs. 175,000 on a CNIC. Older base models (iPhone 13, 12, 11) range between Rs. 40,000 to Rs. 95,000 depending on C&F valuation brackets.",
+              answerUr: "آئی فون 16، 15 اور 14 پرو میکس کا ٹیکس پاسپورٹ پر تقریباً 135،000 سے 145،000 روپے اور شناختی کارڈ پر 160،000 سے 175،000 روپے کے درمیان ہوتا ہے۔ پرانے ماڈلز پر ٹیکس 40 سے 95 ہزار تک بنتا ہے۔",
+            },
+            {
+              questionEn: "Why is PTA mobile tax cheaper on a Passport compared to a CNIC?",
+              questionUr: "پاسپورٹ پر پی ٹی اے ٹیکس شناختی کارڈ کے مقابلے میں کم کیوں ہوتا ہے؟",
+              answerEn: "The Federal Board of Revenue (FBR) provides a subsidized customs duty structure for international travelers and overseas Pakistanis bringing a personal mobile phone under passenger baggage rules. Registration on a CNIC represents local commercial/resident importation and is subject to full regulatory duty and higher withholding taxes.",
+              answerUr: "ایف بی آر کے بیگیج رولز کے تحت بیرون ملک سے ذاتی استعمال کے لیے فون لانے والے مسافروں کو رعایتی ڈیوٹی دی جاتی ہے، جبکہ شناختی کارڈ پر عام درآمدی کمرشل ٹیکس سلیب لاگو ہوتا ہے۔",
+            },
+            {
+              questionEn: "How do I pay the PTA tax after generating the PSID code?",
+              questionUr: "پی ایس آئی ڈی چالان کوڈ حاصل کرنے کے بعد ٹیکس کیسے ادا کریں؟",
+              answerEn: "Once you generate your 17-digit PSID on the PTA DIRBS portal (or via *8484#), you can pay the tax within 30 days via any mobile banking app (under 1Link / FBR / GOP Tax Payments), ATM, JazzCash, Easypaisa, or in person at any commercial bank branch.",
+              answerUr: "17 ہندسوں کا PSID کوڈ حاصل کرنے کے بعد کسی بھی بینک کی موبائل ایپ، اے ٹی ایم یا جاز کیش/ایزی پیسہ میں 1Link / GOP ٹیکس کے آپشن میں جا کر فیس ادا کریں۔ 24 گھنٹے میں موبائل فعال ہو جاتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
