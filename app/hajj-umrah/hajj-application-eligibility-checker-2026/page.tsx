@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -423,42 +424,107 @@ export default function HajjApplicationEligibilityCheckerPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Hajj Schemes Comparison */}
+        <ComparisonVisual
+          titleEn="Government Scheme vs Sponsorship vs Private Hajj Comparison 2026"
+          titleUr="سرکاری اسکیم بمقابلہ اسپانسرشپ بمقابلہ پرائیویٹ حج موازنہ"
+          subtitleEn="Quota allocation, cost structure, balloting exemption rules, and accommodation standards"
+          subtitleUr="کوٹہ، اخراجات، قرعہ اندازی سے استثنیٰ اور رہائشی سہولیات کا تقابلی جائزہ"
+          items={[
+            {
+              titleEn: "Government Regular Scheme",
+              titleUr: "سرکاری ریگولر حج اسکیم",
+              subtitleEn: "MORA Subsidized (PKR 1.15M–1.25M)",
+              subtitleUr: "وزارت مذہبی امور کی سرکاری اسکیم",
+              badgeEn: "Subsidized / Standard",
+              badgeUr: "سرکاری رعایتی",
+              badgeVariant: "emerald",
+              pointsEn: [
+                "Total estimated cost: PKR 1,150,000 to 1,250,000 (North vs South region)",
+                "Allocated through mandatory computerized balloting (Qurandazi)",
+                "Standard accommodation in Azizia/Markazia with shuttle bus transit",
+                "Full medical mission, Saudi moallim support, and organized group logistics"
+              ],
+              recommendedForEn: "Resident Pakistani citizens seeking affordable government-regulated pilgrimage",
+              recommendedForUr: "پاکستان میں مقیم شہری جو کم خرچ اور مستند سرکاری حج چاہتے ہوں"
+            },
+            {
+              titleEn: "Government Sponsorship Scheme (USD)",
+              titleUr: "سرکاری اسپانسرشپ اسکیم (ڈالر کوٹہ)",
+              subtitleEn: "Foreign Remittance (USD $4,200–$4,500)",
+              subtitleUr: "بیرون ملک سے زرمبادلہ ترسیل",
+              badgeEn: "No Balloting / Guaranteed",
+              badgeUr: "قرعہ اندازی سے مستثنیٰ",
+              badgeVariant: "brass",
+              isPopular: true,
+              pointsEn: [
+                "Total cost: Approx USD $4,200 to $4,500 deposited directly in foreign currency",
+                "100% EXEMPT from computerized balloting (Guaranteed seat reservation)",
+                "Requires foreign exchange remittance via interbank wire from abroad",
+                "Enjoy all standard government logistics without the risk of balloting rejection"
+              ],
+              recommendedForEn: "Overseas Pakistanis or local pilgrims whose families can remit funds in foreign exchange",
+              recommendedForUr: "اوورسیز پاکستانی اور وہ شہری جن کے پاس ڈالر میں فیس ادا کرنے کی سہولت ہو"
+            },
+            {
+              titleEn: "Private Tour Operator (HGO)",
+              titleUr: "پرائیویٹ ٹور آپریٹر (HGO)",
+              subtitleEn: "Luxury Custom (PKR 1.8M–3.5M+)",
+              subtitleUr: "نجی حج ٹور پیکجز",
+              badgeEn: "VIP / Custom",
+              badgeUr: "وی آئی پی سہولیات",
+              badgeVariant: "navy",
+              pointsEn: [
+                "Cost ranges from PKR 1.8 Million to 3.5+ Million depending on hotel rating",
+                "Walking distance 5-star hotels (Clock Tower, Abraj Al Bait, Haram front)",
+                "Flexible travel duration: Short 14–20 day executive packages available",
+                "Upgraded air-conditioned VIP tents in Mina Category A & specialized private catering"
+              ],
+              recommendedForEn: "Pilgrims desiring luxury hospitality, short business duration, or elderly special care",
+              recommendedForUr: "وہ عازمین جو کم دورانیہ، فائیو اسٹار ہوٹلز اور خصوصی نگہداشت چاہتے ہوں"
+            }
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (Hajj Policy &amp; Registration)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How does the Government Hajj balloting (Qurandazi) process work in Pakistan?',
-                a: 'When total applications exceed the allocated Government Regular quota, the Ministry of Religious Affairs conducts a computerized draw (Qurandazi). First-time applicants receive highest priority. Successful applicants receive an official SMS notification and tracking confirmation on the MORA portal, after which the second installment of dues is payable.',
-              },
-              {
-                q: 'How do refunds work if an applicant is not selected in the balloting?',
-                a: 'If your application is unsuccessful in the computerized balloting, your deposited first installment is automatically refunded to your designated bank account (IBAN) without deductions within 7 to 10 working days, or you can opt to remain on the waiting list.',
-              },
-              {
-                q: 'What is the Government Sponsorship Hajj Scheme and who is eligible?',
-                a: 'The Sponsorship Scheme is reserved for overseas Pakistanis or local citizens whose Hajj dues are remitted in foreign exchange (USD) directly from abroad through banking channels. Applicants under this scheme are 100% exempt from the computerized balloting draw and guaranteed quota allocation.',
-              },
-              {
-                q: 'Can women perform Hajj without a male Mahram under current policy?',
-                a: 'Yes. Under the Ministry of Religious Affairs guidelines aligned with Saudi regulations, women are permitted to perform Hajj without a male Mahram provided they travel in an authorized group of trustworthy female pilgrims and submit a notarized family consent affidavit.',
-              },
-              {
-                q: 'When do Hajj applications typically open each year in Pakistan?',
-                a: 'Hajj applications usually open 5 to 6 months prior to the pilgrimage season (typically between October and December). Exact dates and submission windows are officially announced by the Federal Cabinet and published on mora.gov.pk.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Hajj Policy & Registration)"
+          titleUr="حج پالیسی اور رجسٹریشن کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on balloting draw, fee refunds, Mahram rules, and schedule"
+          subtitleUr="قرعہ اندازی، فیس واپسی، بغیر محرم سفر اور تاریخوں سے متعلق تفصیلی ہدایات"
+          items={[
+            {
+              questionEn: "How does the Government Hajj balloting (Qurandazi) process work in Pakistan?",
+              questionUr: "سرکاری حج قرعہ اندازی کا کیا طریقہ کار ہے؟",
+              answerEn: "When total applications exceed the allocated Government Regular quota, the Ministry of Religious Affairs conducts a computerized draw (Qurandazi). First-time applicants receive highest priority. Successful applicants receive an official SMS notification and tracking confirmation on the MORA portal, after which the second installment of dues is payable.",
+              answerUr: "کوٹہ سے زائد درخواستوں کی صورت میں وزارت مذہبی امور کمپیوٹرائزڈ قرعہ اندازی کرتی ہے۔ پہلی بار حج کرنے والوں کو ترجیح دی جاتی ہے اور منتخب عازمین کو ایس ایم ایس کے ذریعے مطلع کیا جاتا ہے۔",
+            },
+            {
+              questionEn: "How do refunds work if an applicant is not selected in the balloting?",
+              questionUr: "اگر نام قرعہ اندازی میں نہ نکلے تو جمع شدہ رقم کیسے واپس ملتی ہے؟",
+              answerEn: "If your application is unsuccessful in the computerized balloting, your deposited first installment is automatically refunded to your designated bank account (IBAN) without deductions within 7 to 10 working days, or you can opt to remain on the waiting list.",
+              answerUr: "نام نہ نکلنے کی صورت میں جمع شدہ فیس بغیر کسی کٹوتی کے 7 سے 10 ورکنگ دنوں میں درخواست گزار کے بینک اکاؤنٹ (IBAN) میں واپس ٹرانسفر کر دی جاتی ہے۔",
+            },
+            {
+              questionEn: "What is the Government Sponsorship Hajj Scheme and who is eligible?",
+              questionUr: "اسپانسرشپ حج اسکیم کیا ہے اور اس کا کیا فائدہ ہے؟",
+              answerEn: "The Sponsorship Scheme is reserved for overseas Pakistanis or local citizens whose Hajj dues are remitted in foreign exchange (USD) directly from abroad through banking channels. Applicants under this scheme are 100% exempt from the computerized balloting draw and guaranteed quota allocation.",
+              answerUr: "اسپانسرشپ اسکیم میں فیس ڈالرز میں بیرون ملک سے بینک کے ذریعے بھیجی جاتی ہے۔ اس اسکیم کے درخواست گزار قرعہ اندازی کے بغیر 100 فیصد گارنٹی کے ساتھ حج پر جا سکتے ہیں۔",
+            },
+            {
+              questionEn: "Can women perform Hajj without a male Mahram under current policy?",
+              questionUr: "کیا خواتین بغیر محرم کے حج پر جا سکتی ہیں؟",
+              answerEn: "Yes. Under the Ministry of Religious Affairs guidelines aligned with Saudi regulations, women are permitted to perform Hajj without a male Mahram provided they travel in an authorized group of trustworthy female pilgrims and submit a notarized family consent affidavit.",
+              answerUr: "جی ہاں! سعودی اور پاکستانی پالیسی کے تحت 45 سال یا اس سے زائد عمر کی خواتین قابل اعتماد خواتین کے گروپ میں بغیر مرد محرم کے حج ادا کر سکتی ہیں۔",
+            },
+            {
+              questionEn: "When do Hajj applications typically open each year in Pakistan?",
+              questionUr: "پاکستان میں حج درخواستیں کس مہینے میں وصول کی جاتی ہیں؟",
+              answerEn: "Hajj applications usually open 5 to 6 months prior to the pilgrimage season (typically between October and December). Exact dates and submission windows are officially announced by the Federal Cabinet and published on mora.gov.pk.",
+              answerUr: "حج درخواستیں عام طور پر حج سیزن سے 5 سے 6 ماہ قبل (اکتوبر تا دسمبر) کھولی جاتی ہیں اور ان کی حتمی تاریخوں کا اعلان سرکاری سطح پر کیا جاتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -422,42 +423,91 @@ export default function PunjabLandRecordFardVerifierPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Punjab Computerized Fard Online Issuance Workflow"
+          titleUr="پنجاب کمپیوٹرائزڈ فرد کے حصول کا مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified procedure from CNIC lookup to official QR title download"
+          subtitleUr="شناختی کارڈ کی تصدیق سے لے کر کیو آر کوڈ فرد کے حصول تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "CNIC & Khewat Validation",
+              titleUr: "شناختی کارڈ و کھیوٹ تصدیق",
+              descEn: "Confirm your 13-digit CNIC formatting and locate your district, tehsil, and Mauza/village name.",
+              descUr: "اپنا 13 ہندسی شناختی کارڈ نمبر اور ضلع، تحصیل اور موضع منتخب کریں۔",
+              tagEn: "Search",
+              tagUr: "تلاش",
+            },
+            {
+              number: 2,
+              titleEn: "Access PLRA Zameen Portal",
+              titleUr: "پی ایل آر اے پورٹل پر لاگ ان",
+              descEn: "Open punjab-zameen.gov.pk or the Punjab Zameen app to load digitized Jamabandi property records.",
+              descUr: "سرکاری پورٹل پر لاگ ان ہو کر اپنے نام درج کمپیوٹرائزڈ جمع بندی ریکارڈ کا جائزہ لیں۔",
+              tagEn: "Portal",
+              tagUr: "پورٹل",
+            },
+            {
+              number: 3,
+              titleEn: "Official Challan Payment",
+              titleUr: "سرکاری فیس کی ادائیگی",
+              descEn: "Pay PKR 150–250 per copy via ePay Punjab PSID, 1Link mobile banking, or JazzCash/Easypaisa.",
+              descUr: "ای پے پنجاب یا موبائل بینکنگ کے ذریعے 150 سے 250 روپے سرکاری فیس ادا کریں۔",
+              tagEn: "ePay PSID",
+              tagUr: "فیس",
+            },
+            {
+              number: 4,
+              titleEn: "Download QR-Verified Fard",
+              titleUr: "کیو آر تصدیق شدہ فرد ڈاؤن لوڈ",
+              descEn: "Instantly download your official computerized Fard Malkiat in high-res PDF with authentic cryptographic QR seal.",
+              descUr: "مستند کیو آر کوڈ اور سیکیورٹی واٹر مارک سے لیس سرکاری فرد ملکیت پی ڈی ایف حاصل کریں۔",
+              tagEn: "Official PDF",
+              tagUr: "فرد پی ڈی ایف",
+            },
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (Punjab Fard Online)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Kya Punjab mein Fard online mil sakti hai?',
-                a: 'Yes! Punjab Land Records Authority (PLRA) provides official online Fard issuance through their portal (punjab-zameen.gov.pk) and the Punjab Zameen mobile app. You can search by your 13-digit CNIC, pay the fee online via ePay Punjab / 1Link, and download a computerized Fard with an authentic QR code.',
-              },
-              {
-                q: 'Punjab online Fard ki sarkari fees kitni hai?',
-                a: 'The official government fee for issuing a computerized Fard for personal record or verification (Fard Baraye Malkiat) is PKR 150 to PKR 250 per copy. Payment is made directly through government 1Link / ePay Punjab channels without any middleman or agent fees.',
-              },
-              {
-                q: 'Online Fard nikalne mein kitna time lagta hai?',
-                a: 'If your CNIC is already linked to your land record at an Arazi Record Center (ARC), obtaining a Fard online takes less than 5 minutes. You search your record, pay via mobile banking, and get an instant downloadable PDF. If visiting a physical Arazi Record Center, the process takes approximately 15 to 30 minutes with biometric verification.',
-              },
-              {
-                q: 'Computerized Fard ki legal validity kitni hoti hai?',
-                a: 'A Fard issued for personal record (Fard Baraye Malkiat) remains a valid proof of ownership unless a new mutation (Intiqal) takes place. However, a Fard issued specifically for property sale (Fard Baraye Baye) or court surety (Fard Baraye Zamanat) typically has an active validity window of 30 to 90 days as per PLRA and Registration rules.',
-              },
-              {
-                q: 'Agar online CNIC se record na mile toh kya karna chahiye?',
-                a: 'If your record does not show up online by CNIC, your old manual revenue record (Jamabandi) may not yet have your computerized CNIC linked to your name. You should visit your local Tehsil Arazi Record Center (ARC) or Dehi Markaz Maal (DMM) with your original CNIC and old manual Fard/registry to have your CNIC registered in the computerized database.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Punjab Fard Online)"
+          titleUr="پنجاب آن لائن فرد کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines regarding official fees, ARC centers, and ownership verification"
+          subtitleUr="سرکاری فیس، اراضی ریکارڈ سنٹرز اور ملکیتی تصدیق سے متعلق اہم معلومات"
+          items={[
+            {
+              questionEn: "Can I get a Punjab Fard online without visiting the Arazi Record Center?",
+              questionUr: "کیا اراضی ریکارڈ سنٹر جائے بغیر آن لائن فرد مل سکتی ہے؟",
+              answerEn: "Yes! Punjab Land Records Authority (PLRA) provides official online Fard issuance through their portal (punjab-zameen.gov.pk) and the Punjab Zameen mobile app. You can search by your 13-digit CNIC, pay the fee online via ePay Punjab / 1Link, and download a computerized Fard with an authentic QR code.",
+              answerUr: "جی ہاں! پنجاب لینڈ ریکارڈز اتھارٹی کے پورٹل اور موبائل ایپ کے ذریعے 13 ہندسوں کے شناختی کارڈ کی مدد سے ای پے پر فیس جمع کروا کر فوری کیو آر تصدیق شدہ فرد ڈاؤن لوڈ کی جا سکتی ہے۔",
+            },
+            {
+              questionEn: "What is the official government fee for issuing a computerized Fard?",
+              questionUr: "کمپیوٹرائزڈ فرد کی سرکاری فیس کتنی ہے؟",
+              answerEn: "The official government fee for issuing a computerized Fard for personal record or verification (Fard Baraye Malkiat) is PKR 150 to PKR 250 per copy. Payment is made directly through government 1Link / ePay Punjab channels without any middleman or agent fees.",
+              answerUr: "ذاتی ریکارڈ یا تصدیق برائے ملکیت کے لیے کمپیوٹرائزڈ فرد کی سرکاری فیس 150 تا 250 روپے فی کاپی ہے۔ یہ فیس براہ راست ای پے پنجاب سے ادا کی جاتی ہے۔",
+            },
+            {
+              questionEn: "How long does it take to obtain a computerized Fard online vs in-person?",
+              questionUr: "آن لائن فرد کے حصول میں کتنا وقت لگتا ہے؟",
+              answerEn: "If your CNIC is already linked to your land record at an Arazi Record Center (ARC), obtaining a Fard online takes less than 5 minutes. You search your record, pay via mobile banking, and get an instant downloadable PDF. If visiting a physical Arazi Record Center, the process takes approximately 15 to 30 minutes with biometric verification.",
+              answerUr: "اگر شناختی کارڈ ریکارڈ سے منسلک ہے تو 5 منٹ کے اندر ڈاؤن لوڈ ہو جاتی ہے۔ خدمت مرکز جانے کی صورت میں بائیومیٹرک تصدیق کے ساتھ 15 سے 30 منٹ لگتے ہیں۔",
+            },
+            {
+              questionEn: "What is the legal validity duration of a computerized Fard?",
+              questionUr: "کمپیوٹرائزڈ فرد کی قانونی میعاد کتنی ہوتی ہے؟",
+              answerEn: "A Fard issued for personal record (Fard Baraye Malkiat) remains a valid proof of ownership unless a new mutation (Intiqal) takes place. However, a Fard issued specifically for property sale (Fard Baraye Baye) or court surety (Fard Baraye Zamanat) typically has an active validity window of 30 to 90 days as per PLRA and Registration rules.",
+              answerUr: "ذاتی ریکارڈ کی فرد تاحیات درست رہتی ہے جب تک اگلا انتقال نہ ہو۔ تاہم رجسٹری بیع یا عدالتی ضمانت کے لیے جاری کردہ فرد کی میعاد 30 سے 90 دن ہوتی ہے۔",
+            },
+            {
+              questionEn: "What should I do if my land record is not found by CNIC?",
+              questionUr: "اگر شناختی کارڈ سے ریکارڈ نہ ملے تو کیا طریقہ ہے؟",
+              answerEn: "If your record does not show up online by CNIC, your old manual revenue record (Jamabandi) may not yet have your computerized CNIC linked to your name. You should visit your local Tehsil Arazi Record Center (ARC) or Dehi Markaz Maal (DMM) with your original CNIC and old manual Fard/registry to have your CNIC registered in the computerized database.",
+              answerUr: "اگر ریکارڈ آن لائن نہ ملے تو اصل شناختی کارڈ اور پرانی رجسٹری/فرد کے ہمراہ قریبی اراضی ریکارڈ سنٹر یا دیہی مرکز مال جا کر اپنا شناختی کارڈ لنک کروائیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

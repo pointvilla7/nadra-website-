@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -424,44 +425,91 @@ export default function DeathCertificateRegistrationPage() {
           </div>
         </section>
 
-        {/* Section 7: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Death Registration Pakistan)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Who is legally eligible to apply for a computerized Death Certificate?',
-                a: 'Only first-degree direct blood relatives and legal dependents of the deceased are authorized to apply. This includes the surviving spouse (widow/widower), adult sons or daughters, parents, or real biological siblings. Distant relatives or unrelated acquaintances cannot apply on their own.',
-              },
-              {
-                q: 'How do I register a death if it occurred at home with no hospital death slip?',
-                a: 'When a death occurs at home, you do not need a hospital record. Instead, provide a signed Graveyard / Cemetery (Qabristan) burial receipt and an attestation from two adult male/female witnesses who personally knew the deceased and reside in the same locality, presenting their original CNICs and signatures/thumbprints before the Union Council Secretary.',
-              },
-              {
-                q: 'Is it necessary to cancel the deceased person’s CNIC at NADRA after getting the Union Council Death Certificate?',
-                a: 'Yes, this is an essential legal step. Surrendering the deceased\'s physical CNIC at a NADRA center (or via Pak-Identity online for overseas heirs) generates the official "NADRA Cancellation Certificate". This permanently freezes the identity to prevent fraudulent bank or SIM misuse and is mandatory for legal inheritance, bank account unfreezing, and Succession Certificates.',
-              },
-              {
-                q: 'What is the key difference between a Death Certificate and a Succession Certificate?',
-                a: 'A Death Certificate (issued by the Union Council/CRMS) merely certifies the factual occurrence and date of death. A Succession Certificate (issued by NADRA or a Civil Court) legally identifies all rightful legal heirs and specifies their exact inheritance shares to distribute moveable financial assets, bank funds, and property.',
-              },
-              {
-                q: 'Is death registration free if done within one year in Pakistan?',
-                a: 'Under provincial Local Government regulations (such as Punjab Local Government rules), standard death registration submitted within the prescribed statutory period (typically up to one year) is 100% free of government tax, with only a nominal computer printing/stationery charge (Rs. 100-200). Late registrations beyond one year require magistrate/AC verification and a late fee.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Death Registration & CNIC Cancellation Workflow"
+          titleUr="ڈیتھ سرٹیفکیٹ اور شناختی کارڈ کینسلیشن کا مرحلہ وار طریقہ کار"
+          subtitleEn="4 mandatory checkpoints from burial proof to NADRA inheritance clearance"
+          subtitleUr="تدفین کے ثبوت سے لے کر نادرا شناختی منسوخی سرٹیفکیٹ کے حصول تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Hospital / Burial Receipt",
+              titleUr: "ہسپتال یا قبرستان کی رسید",
+              descEn: "Obtain formal hospital cause-of-death slip or graveyard burial receipt with CNIC copies of 2 local witnesses.",
+              descUr: "ہسپتال کی پرچی یا قبرستان کی رسید اور دو مقامی گواہوں کے شناختی کارڈ کی کاپیاں حاصل کریں۔",
+              tagEn: "Proof of Death",
+              tagUr: "ثبوت وفات",
+            },
+            {
+              number: 2,
+              titleEn: "Union Council CRMS Filing",
+              titleUr: "یونین کونسل میں اندراج",
+              descEn: "Direct blood relative submits application form and deceased CNIC to the local Union Council / Cantonment Secretary.",
+              descUr: "خونی رشتہ دار یونین کونسل جا کر فارم پر کرے اور متوفی کا اصل شناختی کارڈ پیش کرے۔",
+              tagEn: "UC Office",
+              tagUr: "یونین کونسل",
+            },
+            {
+              number: 3,
+              titleEn: "Receive Computerized Certificate",
+              titleUr: "کمپیوٹرائزڈ سرٹیفکیٹ وصولی",
+              descEn: "Collect the official bilingual CRMS death certificate with authentic QR code verification (Nominal fee PKR 100–200).",
+              descUr: "کیو آر کوڈ سے لیس سرکاری کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ حاصل کریں۔",
+              tagEn: "CRMS Certificate",
+              tagUr: "سرٹیفکیٹ",
+            },
+            {
+              number: 4,
+              titleEn: "NADRA CNIC Cancellation",
+              titleUr: "نادرا شناختی کارڈ منسوخی",
+              descEn: "Surrender deceased CNIC at NADRA NRC to obtain the mandatory Cancellation Certificate for legal inheritance & succession.",
+              descUr: "نادرا سنٹر جا کر شناختی کارڈ منسوخ کروائیں اور وراثت و بینک اکاؤنٹس کے لیے کینسلیشن لیٹر لیں۔",
+              tagEn: "NADRA Cancel",
+              tagUr: "نادرا کینسلیشن",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Death Registration Pakistan)"
+          titleUr="ڈیتھ رجسٹریشن اور نادرا منسوخی کے متعلق عام سوالات"
+          subtitleEn="Essential rules on eligible applicants, home death witnesses, fees, and succession differences"
+          subtitleUr="اہل درخواست گزار، گھریلو وفات کے گواہان، فیس اور وراثتی سرٹیفکیٹ کے متعلق ہدایات"
+          items={[
+            {
+              questionEn: "Who is legally eligible to apply for a computerized Death Certificate?",
+              questionUr: "کمپیوٹرائزڈ ڈیتھ سرٹیفکیٹ اپلائی کرنے کا مجاز کون ہے؟",
+              answerEn: "Only first-degree direct blood relatives and legal dependents of the deceased are authorized to apply. This includes the surviving spouse (widow/widower), adult sons or daughters, parents, or real biological siblings. Distant relatives or unrelated acquaintances cannot apply on their own.",
+              answerUr: "صرف قریبی خونی رشتہ دار (بیوہ/شوہر، بالغ بچے، والدین یا حقیقی بہن بھائی) ہی ڈیتھ سرٹیفکیٹ کے لیے قانونی طور پر درخواست دینے کے مجاز ہیں۔",
+            },
+            {
+              questionEn: "How do I register a death if it occurred at home with no hospital death slip?",
+              questionUr: "اگر وفات ہسپتال کے بجائے گھر پر ہوئی ہو تو اندراج کیسے ہوگا؟",
+              answerEn: "When a death occurs at home, you do not need a hospital record. Instead, provide a signed Graveyard / Cemetery (Qabristan) burial receipt and an attestation from two adult male/female witnesses who personally knew the deceased and reside in the same locality, presenting their original CNICs and signatures/thumbprints before the Union Council Secretary.",
+              answerUr: "گھر پر وفات کی صورت میں قبرستان کی پرچی اور محلے کے دو شناختی کارڈ ہولڈر گواہوں کے دستخط/انگوٹھے یونین کونسل میں تصدیق کروائے جاتے ہیں۔",
+            },
+            {
+              questionEn: "Is it necessary to cancel the deceased person's CNIC at NADRA after getting the Union Council Death Certificate?",
+              questionUr: "یونین کونسل سے ڈیتھ سرٹیفکیٹ کے بعد نادرا سے شناختی کارڈ منسوخ کروانا کیوں ضروری ہے؟",
+              answerEn: "Yes, this is an essential legal step. Surrendering the deceased's physical CNIC at a NADRA center (or via Pak-Identity online for overseas heirs) generates the official 'NADRA Cancellation Certificate'. This permanently freezes the identity to prevent fraudulent bank or SIM misuse and is mandatory for legal inheritance, bank account unfreezing, and Succession Certificates.",
+              answerUr: "جی ہاں! نادرا سے شناختی کارڈ منسوخ کروائے بغیر بینک اکاؤنٹ سے رقم کی منتقلی، جائیداد کی وراثت اور سکسیشن سرٹیفکیٹ حاصل نہیں کیا جا سکتا۔",
+            },
+            {
+              questionEn: "What is the key difference between a Death Certificate and a Succession Certificate?",
+              questionUr: "ڈیتھ سرٹیفکیٹ اور سکسیشن سرٹیفکیٹ میں کیا بنیادی فرق ہے؟",
+              answerEn: "A Death Certificate (issued by the Union Council/CRMS) merely certifies the factual occurrence and date of death. A Succession Certificate (issued by NADRA or a Civil Court) legally identifies all rightful legal heirs and specifies their exact inheritance shares to distribute moveable financial assets, bank funds, and property.",
+              answerUr: "ڈیتھ سرٹیفکیٹ صرف موت کی تصدیق کرتا ہے، جبکہ سکسیشن سرٹیفکیٹ قانونی وارثوں اور ان کے شرعی حصوں کا تعین کر کے وراثتی رقوم دلوانے کا اختیار دیتا ہے۔",
+            },
+            {
+              questionEn: "Is death registration free if done within one year in Pakistan?",
+              questionUr: "کیا پاکستان میں ایک سال کے اندر وفات کا اندراج مفت ہے؟",
+              answerEn: "Under provincial Local Government regulations (such as Punjab Local Government rules), standard death registration submitted within the prescribed statutory period (typically up to one year) is 100% free of government tax, with only a nominal computer printing/stationery charge (Rs. 100-200). Late registrations beyond one year require magistrate/AC verification and a late fee.",
+              answerUr: "وفات کے ایک سال کے اندر رجسٹریشن پر کوئی بھاری فیس نہیں ہے، صرف 100 سے 200 روپے پرنٹنگ چارجز ہوتے ہیں۔ ایک سال بعد لیٹ انٹری پر مجسٹریٹ تصدیق درکار ہوتی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

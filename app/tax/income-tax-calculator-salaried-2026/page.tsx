@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink, Scale, FileText, CheckCircle2, AlertTriangle, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
@@ -283,40 +284,98 @@ export default function SalariedIncomeTaxCalculatorPage() {
           </div>
         </section>
 
-        {/* Section 4: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Salaried Income Tax)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Is this calculator accurate for business or freelance income as well?',
-                a: 'No. This calculator is specifically configured for salaried individuals where salary constitutes more than 75% of total taxable income. Non-salaried individuals, sole proprietors, AOPs, and businesses are subject to different, higher tax slabs with a lower initial threshold and different rate progressions under the Income Tax Ordinance 2001.',
-              },
-              {
-                q: 'What if my employer already deducts income tax from my monthly salary?',
-                a: 'Your employer deducts tax at source under Section 149 based on this exact annual tax formula divided by 12. You can compare this tool’s estimated monthly deduction with your monthly pay slip. At year-end, you will declare these withholding deductions on FBR IRIS Form 114(I).',
-              },
-              {
-                q: 'Does this calculation include the high-income surcharge on salaries above Rs. 10 million?',
-                a: 'Under the Finance Act 2026-27, the previous 9% surcharge on high-income salaried individuals earning over Rs. 10 million has been abolished, and the restructured top bracket applies 35% on income exceeding Rs. 7 million.',
-              },
-              {
-                q: 'Is any portion of my salary data stored or sent to any server?',
-                a: 'No. This calculator operates 100% on your device (client-side JavaScript). None of your salary, deductions, or calculations are ever saved, tracked, or transmitted across the internet.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Official Statutory Tax Slabs Table */}
+        <FeeTableVisual
+          titleEn="Official Salaried Income Tax Slabs 2026-27 (Finance Act)"
+          titleUr="تنخواہ دار طبقے کے لیے انکم ٹیکس سلیبز 2026-27"
+          subtitleEn="Progressive income tax brackets applicable under Section 149 withholding rules"
+          subtitleUr="انکم ٹیکس آرڈیننس کی شق 149 کے تحت لاگو کٹوتی کی شرح"
+          noteEn="Salary income is defined where taxable salary comprises 75% or more of total annual gross income."
+          rows={[
+            {
+              serviceEn: "Slab 1: Annual Income up to PKR 600,000 (PKR 50,000/mo)",
+              serviceUr: "سلیب 1: سالانہ آمدن 6 لاکھ روپے تک",
+              normal: "0% (Exempt)",
+              urgent: "0% (Exempt)",
+              executive: "PKR 0 Tax",
+              validity: "Tax-Free Threshold",
+            },
+            {
+              serviceEn: "Slab 2: PKR 600,001 to PKR 1,200,000",
+              serviceUr: "سلیب 2: 6 لاکھ سے 12 لاکھ روپے تک",
+              normal: "5% of amount > 600k",
+              urgent: "Max PKR 30k/yr",
+              executive: "Max PKR 2,500/mo",
+              validity: "Tax Year 2027",
+            },
+            {
+              serviceEn: "Slab 3: PKR 1,200,001 to PKR 2,200,000",
+              serviceUr: "سلیب 3: 12 لاکھ سے 22 لاکھ روپے تک",
+              normal: "PKR 30k + 15% > 1.2M",
+              urgent: "15% Marginal",
+              executive: "Progressive Tier",
+              validity: "Tax Year 2027",
+            },
+            {
+              serviceEn: "Slab 4: PKR 2,200,001 to PKR 3,200,000",
+              serviceUr: "سلیب 4: 22 لاکھ سے 32 لاکھ روپے تک",
+              normal: "PKR 180k + 25% > 2.2M",
+              urgent: "25% Marginal",
+              executive: "Progressive Tier",
+              validity: "Tax Year 2027",
+            },
+            {
+              serviceEn: "Slab 5: PKR 3,200,001 to PKR 4,100,000",
+              serviceUr: "سلیب 5: 32 لاکھ سے 41 لاکھ روپے تک",
+              normal: "PKR 430k + 30% > 3.2M",
+              urgent: "30% Marginal",
+              executive: "Progressive Tier",
+              validity: "Tax Year 2027",
+            },
+            {
+              serviceEn: "Slab 6: Exceeding PKR 4,100,000",
+              serviceUr: "سلیب 6: 41 لاکھ روپے سے زائد سالانہ آمدن",
+              normal: "PKR 700k + 35% > 4.1M",
+              urgent: "35% Marginal",
+              executive: "Top Bracket",
+              validity: "Tax Year 2027",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Salaried Income Tax)"
+          titleUr="تنخواہ دار افراد کے انکم ٹیکس کے متعلق عام سوالات"
+          subtitleEn="Important rules on employer monthly deductions, business income, and FBR Iris filing"
+          subtitleUr="ماہانہ کٹوتی، ٹیکس گوشواروں اور ایف بی آر فائلنگ سے متعلق تفصیلی وضاحت"
+          items={[
+            {
+              questionEn: "Is this calculator accurate for business or freelance income as well?",
+              questionUr: "کیا یہ کیلکولیٹر کاروباری یا فری لانس آمدن کے لیے بھی درست ہے؟",
+              answerEn: "No. This calculator is specifically configured for salaried individuals where salary constitutes more than 75% of total taxable income. Non-salaried individuals, sole proprietors, AOPs, and businesses are subject to different, higher tax slabs with a lower initial threshold and different rate progressions under the Income Tax Ordinance 2001.",
+              answerUr: "نہیں، یہ کیلکولیٹر خاص طور پر تنخواہ دار ملازمین کے لیے ہے جہاں تنخواہ کل آمدن کا 75 فیصد یا اس سے زائد ہو۔ بزنس اور فری لانسرز کے لیے الگ سلیبز لاگو ہوتے ہیں۔",
+            },
+            {
+              questionEn: "What if my employer already deducts income tax from my monthly salary?",
+              questionUr: "اگر کمپنی تنخواہ سے ماہانہ ٹیکس کاٹتی ہے تو کیا کرنا ہوگا؟",
+              answerEn: "Your employer deducts tax at source under Section 149 based on this exact annual tax formula divided by 12. You can compare this tool's estimated monthly deduction with your monthly pay slip. At year-end, you will declare these withholding deductions on FBR IRIS Form 114(I).",
+              answerUr: "آپ کا ادارہ شق 149 کے تحت سالانہ فارمولے کو 12 پر تقسیم کر کے ماہانہ ٹیکس کاٹتا ہے۔ سال کے اختتام پر اپنے ادارے کا ٹیکس سرٹیفکیٹ ایف بی آر آئرس فارم 114 پر درج کریں۔",
+            },
+            {
+              questionEn: "Does this calculation include the high-income surcharge on salaries above Rs. 10 million?",
+              questionUr: "کیا 1 کروڑ سے زائد آمدن پر اضافی سرچارج شامل ہے؟",
+              answerEn: "Under the Finance Act 2026-27, the previous 9% surcharge on high-income salaried individuals earning over Rs. 10 million has been abolished, and the restructured top bracket applies 35% on income exceeding Rs. 7 million.",
+              answerUr: "فنانس ایکٹ 2026-27 کے تحت سابقہ 9 فیصد سرچارج ختم کر کے 41 لاکھ سے زائد آمدن پر 35 فیصد کا ٹاپ سلیب لاگو کیا گیا ہے۔",
+            },
+            {
+              questionEn: "Is any portion of my salary data stored or sent to any server?",
+              questionUr: "کیا میری تنخواہ کا ڈیٹا کسی سرور پر محفوظ ہوتا ہے؟",
+              answerEn: "No. This calculator operates 100% on your device (client-side JavaScript). None of your salary, deductions, or calculations are ever saved, tracked, or transmitted across the internet.",
+              answerUr: "بالکل نہیں! یہ کیلکولیٹر 100 فیصد آپ کے براؤزر کے اندر کام کرتا ہے اور کوئی بھی ڈیٹا کسی سرور پر منتقل یا محفوظ نہیں ہوتا۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

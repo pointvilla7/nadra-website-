@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -413,42 +414,91 @@ export default function CompanyNameAvailabilityCheckerPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="SECP Company Name Reservation & Incorporation Flow"
+          titleUr="ایس ای سی پی کمپنی نام ریزرویشن اور رجسٹریشن کا مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from name clearance to official certificate of incorporation"
+          subtitleUr="نام کی منظوری سے لے کر کمپنی ان کارپوریشن سرٹیفکیٹ تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Validate Name Compliance",
+              titleUr: "مجوزہ نام کی جانچ پڑتال",
+              descEn: "Screen your brand name against SECP prohibited words list and attach the mandatory statutory legal suffix.",
+              descUr: "ایس ای سی پی ممنوعہ الفاظ کی فہرست سے نام چیک کریں اور قانونی لاحقہ ((Private) Limited) شامل کریں۔",
+              tagEn: "Validation",
+              tagUr: "نام جانچ",
+            },
+            {
+              number: 2,
+              titleEn: "Create Account on eZfile",
+              titleUr: "ای زیڈ فائل پر اکاؤنٹ بنائیں",
+              descEn: "Register with 13-digit CNIC and OTP verification on ezfile.secp.gov.pk to obtain your secure user PIN.",
+              descUr: "سرکاری پورٹل پر شناختی کارڈ اور موبائل او ٹی پی سے اپنا لاگ ان پن حاصل کریں۔",
+              tagEn: "eZfile PIN",
+              tagUr: "لاگ ان",
+            },
+            {
+              number: 3,
+              titleEn: "Submit Name Reservation",
+              titleUr: "نام ریزرویشن درخواست",
+              descEn: "Enter your primary and 2 backup name choices along with main principal business activity objects.",
+              descUr: "بنیادی اور متبادل نام درج کر کے کاروباری سرگرمی کا انتخاب کریں۔",
+              tagEn: "Application",
+              tagUr: "درخواست",
+            },
+            {
+              number: 4,
+              titleEn: "Pay Fee & Receive Letter",
+              titleUr: "فیس ادائیگی و منظوری لیٹر",
+              descEn: "Pay PKR 1,000 fee via 1Link/ePay to receive official 60-day Name Reservation Confirmation Letter.",
+              descUr: "1Link سے سرکاری فیس ادا کر کے 60 دن کے لیے نام کی باقاعدہ منظوری کا سرٹیفکیٹ حاصل کریں۔",
+              tagEn: "60-Day Lock",
+              tagUr: "منظوری",
+            },
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (SECP Company Names)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How long does an SECP company name reservation remain valid in Pakistan?',
-                a: 'Once the Registrar approves your name reservation application on the eZfile portal, the name is reserved exclusively for your company for a period of 60 calendar days. You must submit your incorporation documents (Memorandum & Articles of Association) within this 60-day window.',
-              },
-              {
-                q: 'What happens if my proposed company name is rejected by SECP?',
-                a: 'SECP allows you to provide 3 prioritized name choices on a single application. If the first choice is identical or deceptively similar to an existing entity, the registrar evaluates your secondary or tertiary options without requiring an extra fee. If all 3 are rejected, you will receive a formal rejection letter with specific reasons and can file a fresh application with modified distinct branding.',
-              },
-              {
-                q: 'What is the difference between a Single Member Company (SMC) and a Private Limited company?',
-                a: 'A Single Member Company (SMC-Private Limited) is owned and directed by a single individual (100% solo shareholding), requiring the suffix "(SMC-Private) Limited". A standard Private Limited company requires a minimum of 2 directors/shareholders and carries the suffix "(Private) Limited". Both offer identical limited liability protection.',
-              },
-              {
-                q: 'Do I need a lawyer or consultant to register a company on SECP eZfile?',
-                a: 'No. The SECP eZfile digital platform is designed for direct self-registration by startup founders and business owners. Standardized digital Memorandum and Articles of Association templates are automatically generated by the system.',
-              },
-              {
-                q: 'What is the total official fee for incorporating a small private limited company in Pakistan?',
-                a: 'For a company with authorized capital of up to PKR 100,000, the official SECP costs are: PKR 1,000 (Name Reservation) + PKR 1,500 to 2,500 (Online Incorporation Base Fee) + PKR 200 (User Registration PIN), bringing total government statutory fees to approximately PKR 2,700 to 3,700.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (SECP Company Names)"
+          titleUr="ایس ای سی پی کمپنی ناموں کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on name validity, rejections, SMC vs Pvt Ltd, and incorporation fees"
+          subtitleUr="نام کی 60 روزہ میعاد، مسترد ہونے کی وجوہات اور فیس شیڈول کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "How long does an SECP company name reservation remain valid in Pakistan?",
+              questionUr: "ایس ای سی پی کمپنی نام کی منظوری کتنے دن تک کارآمد رہتی ہے؟",
+              answerEn: "Once the Registrar approves your name reservation application on the eZfile portal, the name is reserved exclusively for your company for a period of 60 calendar days. You must submit your incorporation documents (Memorandum & Articles of Association) within this 60-day window.",
+              answerUr: "ای زیڈ فائل پورٹل پر نام منظور ہونے کے بعد وہ نام 60 دن کے لیے ریزرو ہو جاتا ہے۔ اس دوران کمپنی کے قانونی دستاویزات جمع کروانا لازمی ہوتا ہے۔",
+            },
+            {
+              questionEn: "What happens if my proposed company name is rejected by SECP?",
+              questionUr: "اگر مجوزہ کمپنی نام مسترد ہو جائے تو کیا طریقہ ہے؟",
+              answerEn: "SECP allows you to provide 3 prioritized name choices on a single application. If the first choice is identical or deceptively similar to an existing entity, the registrar evaluates your secondary or tertiary options without requiring an extra fee. If all 3 are rejected, you will receive a formal rejection letter with specific reasons and can file a fresh application with modified distinct branding.",
+              answerUr: "درخواست میں 3 ترجیحی نام دیے جا سکتے ہیں۔ اگر پہلا نام کسی اور کمپنی سے ملتا ہو تو رجسٹرار دوسرا یا تیسرا نام مفت میں جانچتا ہے۔ مکمل مسترد ہونے پر نیا منفرد نام اپلائی کریں۔",
+            },
+            {
+              questionEn: "What is the difference between a Single Member Company (SMC) and a Private Limited company?",
+              questionUr: "سنگل ممبر کمپنی اور پرائیویٹ لمیٹڈ کمپنی میں کیا فرق ہے؟",
+              answerEn: "A Single Member Company (SMC-Private Limited) is owned and directed by a single individual (100% solo shareholding), requiring the suffix '(SMC-Private) Limited'. A standard Private Limited company requires a minimum of 2 directors/shareholders and carries the suffix '(Private) Limited'. Both offer identical limited liability protection.",
+              answerUr: "سنگل ممبر کمپنی ایک ہی فرد کی ملکیت ہوتی ہے اور اس کے نام کے ساتھ (SMC-Pvt) Limited لکھا جاتا ہے، جبکہ عام پرائیویٹ لمیٹڈ میں کم از کم 2 ڈائریکٹرز درکار ہوتے ہیں۔",
+            },
+            {
+              questionEn: "Do I need a lawyer or consultant to register a company on SECP eZfile?",
+              questionUr: "کیا ای زیڈ فائل پر کمپنی بنانے کے لیے وکیل کی مدد ضروری ہے؟",
+              answerEn: "No. The SECP eZfile digital platform is designed for direct self-registration by startup founders and business owners. Standardized digital Memorandum and Articles of Association templates are automatically generated by the system.",
+              answerUr: "نہیں! ای زیڈ فائل کو عام کاروباری افراد کے لیے انتہائی آسان بنایا گیا ہے اور سسٹم خودکار طریقے سے تمام بنیادی قانونی کاغذات تیار کر دیتا ہے۔",
+            },
+            {
+              questionEn: "What is the total official fee for incorporating a small private limited company in Pakistan?",
+              questionUr: "چھوٹی پرائیویٹ لمیٹڈ کمپنی بنانے کی کل سرکاری فیس کتنی ہے؟",
+              answerEn: "For a company with authorized capital of up to PKR 100,000, the official SECP costs are: PKR 1,000 (Name Reservation) + PKR 1,500 to 2,500 (Online Incorporation Base Fee) + PKR 200 (User Registration PIN), bringing total government statutory fees to approximately PKR 2,700 to 3,700.",
+              answerUr: "1 لاکھ روپے کے سرمائے والی کمپنی کے لیے نام ریزرویشن 1,000 روپے اور رجسٹریشن فیس ملا کر کل سرکاری خرچ تقریباً 2,700 سے 3,700 روپے بنتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

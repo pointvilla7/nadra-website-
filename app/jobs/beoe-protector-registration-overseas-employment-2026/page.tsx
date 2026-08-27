@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -457,44 +458,134 @@ export default function BeoeProtectorRegistrationPage() {
           </div>
         </section>
 
-        {/* Section 7: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (BEOE Protector 2026)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What happens if I try to board an international flight on a work visa without the Protector stamp?',
-                a: 'Federal Investigation Agency (FIA) immigration counters at all Pakistani international airports electronically check the BEOE centralized database. If you hold a foreign employment or work visa but lack valid Protector registration, you will be offloaded and barred from boarding under Section 8 of the Emigration Ordinance 1979.',
-              },
-              {
-                q: 'Do I need to redo the Protector registration every time I travel back to the same foreign job?',
-                a: 'No. If you are returning to Pakistan on annual leave or vacation and resuming work with the exact same employer in the same country under a valid visa/iqama, your initial Protector endorsement remains legally valid. You only need a fresh Protector registration if you change employers, obtain a new foreign work visa, or switch to a new country.',
-              },
-              {
-                q: 'How can I verify if an Overseas Employment Promoter (OEP) or recruitment agent is genuine?',
-                a: 'Visit the official BEOE portal at beoe.gov.pk/oep-search and search by the agency name or license number. The portal shows whether the OEP license is active, expired, suspended, or blacklisted, along with the authorized permissions granted for specific foreign recruitment demands. Never deal with unlicensed sub-agents.',
-              },
-              {
-                q: 'What insurance and welfare benefits do I receive after paying the Rs. 9,200 protector fee?',
-                a: 'Your registration includes PKR 2,500 for State Life Insurance Corporation premium (which covers comprehensive life and permanent disability insurance of PKR 1,000,000 for 5 years) and PKR 4,000 for the Overseas Pakistanis Foundation (OPF) Welfare Fund, granting automatic OPF membership for emergency repatriation, family welfare grants, and school quotas.',
-              },
-              {
-                q: 'Is a physical visit to a Protectorate of Emigrants (PE) office still mandatory?',
-                a: 'No. Direct emigrants can complete the entire document submission, fee payment via NBP QR/1Link, pre-departure digital orientation, and e-Protector certificate issuance 100% online through beoe.gov.pk without visiting a regional PE office in person.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step BEOE e-Protector Registration Workflow"
+          titleUr="بیورو آف ایمیگریشن پروٹیکٹر کا مکمل مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from job contract verification to digital e-Protector QR issuance"
+          subtitleUr="ملازمت کے معاہدے سے لے کر ڈیجیٹل ای پروٹیکٹر کیو آر سرٹیفکیٹ تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Visa & Job Contract Attestation",
+              titleUr: "ویزا اور معاہدہ ملازمت",
+              descEn: "Obtain valid foreign work visa / electronic entry permit and official employment contract stating salary and perks.",
+              descUr: "مستند غیر ملکی ورک ویزا اور تنخواہ و مراعات کا تصدیق شدہ معاہدہ ملازمت حاصل کریں۔",
+              tagEn: "Contract",
+              tagUr: "معاہدہ",
+            },
+            {
+              number: 2,
+              titleEn: "GAMCA / Wafid Medical Fitness",
+              titleUr: "طبی معائنہ میڈیکل فٹنس",
+              descEn: "Complete medical fitness screening from an authorized GAMCA/Wafid center (mandatory for GCC work visas).",
+              descUr: "نامزد گامکا میڈیکل سنٹر سے لازمی میڈیکل فٹنس رپورٹ حاصل کریں۔",
+              tagEn: "Medical Slip",
+              tagUr: "میڈیکل",
+            },
+            {
+              number: 3,
+              titleEn: "Online Portal & Fee Payment",
+              titleUr: "آن لائن پورٹل و فیس ادائیگی",
+              descEn: "Submit application on beoe.gov.pk and pay the consolidated PKR 9,200 fee via NBP / 1Link mobile banking.",
+              descUr: "سرکاری پورٹل پر کوائف درج کر کے 9,200 روپے کی سرکاری فیس آن لائن ادا کریں۔",
+              tagEn: "PKR 9,200",
+              tagUr: "فیس ادائیگی",
+            },
+            {
+              number: 4,
+              titleEn: "Briefing & Digital e-Protector",
+              titleUr: "بریفنگ و ای پروٹیکٹر کیو آر",
+              descEn: "Complete digital pre-departure orientation video to download your QR-coded e-Protector certificate synced with FIA immigration.",
+              descUr: "آن لائن بریفنگ دیکھ کر کیو آر کوڈ والا ڈیجیٹل سرٹیفکیٹ ڈاؤن لوڈ کریں جو ایف آئی اے سسٹم سے منسلک ہوتا ہے۔",
+              tagEn: "FIA Sync",
+              tagUr: "ای پروٹیکٹر",
+            },
+          ]}
+        />
+
+        {/* Fee Breakdown Table */}
+        <FeeTableVisual
+          titleEn="Statutory BEOE Emigrant Protection Fee Breakdown 2026"
+          titleUr="پروٹیکٹر رجسٹریشن کے 9,200 روپے کا سرکاری فیس بریک ڈاؤن"
+          subtitleEn="Itemized statutory allocation covering State Life insurance, OPF welfare, and registration"
+          subtitleUr="اسٹیٹ لائف انشورنس، او پی ایف فنڈ اور رجسٹریشن کی سرکاری مدات"
+          noteEn="All fees are consolidated into a single computerized PSID payment slip generated on the BEOE portal."
+          rows={[
+            {
+              serviceEn: "Overseas Pakistanis Foundation (OPF) Welfare Fund",
+              serviceUr: "اوورسیز پاکستانیز فاؤنڈیشن ویلفیئر فنڈ",
+              normal: "PKR 4,000",
+              urgent: "PKR 4,000",
+              executive: "Lifetime OPF Membership",
+              validity: "Emergency Welfare / Grants",
+            },
+            {
+              serviceEn: "State Life Emigrant Insurance Premium",
+              serviceUr: "اسٹیٹ لائف انشورنس پریمیم",
+              normal: "PKR 2,500",
+              urgent: "PKR 2,500",
+              executive: "PKR 1,000,000 Life Coverage",
+              validity: "5 Years Valid Coverage",
+            },
+            {
+              serviceEn: "BEOE Government Registration Fee",
+              serviceUr: "بیورو آف ایمیگریشن رجسٹریشن فیس",
+              normal: "PKR 2,500",
+              urgent: "PKR 2,500",
+              executive: "FIA Border Clearance",
+              validity: "Per Foreign Job Visa",
+            },
+            {
+              serviceEn: "OEC IT & Processing Charges",
+              serviceUr: "او ای سی سروس و پورٹل چارجز",
+              normal: "PKR 200",
+              urgent: "PKR 200",
+              executive: "Digital Database Sync",
+              validity: "Instant e-Receipt",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (BEOE Protector 2026)"
+          titleUr="پروٹیکٹر رجسٹریشن کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on FIA immigration offloading, vacations, agency checks, and e-Protector"
+          subtitleUr="ایئرپورٹ پر آف لوڈ سے بچاؤ، چھٹی پر واپسی، ایجنسی کی جانچ اور آن لائن پروٹیکٹر"
+          items={[
+            {
+              questionEn: "What happens if I try to board an international flight on a work visa without the Protector stamp?",
+              questionUr: "اگر ورک ویزا پر پروٹیکٹر کے بغیر ایئرپورٹ جائیں تو کیا ہوگا؟",
+              answerEn: "Federal Investigation Agency (FIA) immigration counters at all Pakistani international airports electronically check the BEOE centralized database. If you hold a foreign employment or work visa but lack valid Protector registration, you will be offloaded and barred from boarding under Section 8 of the Emigration Ordinance 1979.",
+              answerUr: "ایف آئی اے امیگریشن سسٹم میں پروٹیکٹر کا ڈیٹا براہ راست منسلک ہوتا ہے۔ بغیر پروٹیکٹر ورک ویزا ہولڈرز کو جہاز پر سوار ہونے سے روک دیا جاتا ہے (آف لوڈ)۔",
+            },
+            {
+              questionEn: "Do I need to redo the Protector registration every time I travel back to the same foreign job?",
+              questionUr: "کیا ہر بار پاکستان چھٹی آ کر واپس جاتے وقت نیا پروٹیکٹر کروانا ہوگا؟",
+              answerEn: "No. If you are returning to Pakistan on annual leave or vacation and resuming work with the exact same employer in the same country under a valid visa/iqama, your initial Protector endorsement remains legally valid. You only need a fresh Protector registration if you change employers, obtain a new foreign work visa, or switch to a new country.",
+              answerUr: "نہیں، اگر آپ اسی کمپنی اور اسی ویزے یا اقامے پر چھٹی آ کر واپس جا رہے ہیں تو پرانا پروٹیکٹر ہی کارآمد رہے گا۔ نیا پروٹیکٹر صرف کمپنی یا ویزا تبدیل کرنے پر درکار ہوتا ہے۔",
+            },
+            {
+              questionEn: "How can I verify if an Overseas Employment Promoter (OEP) or recruitment agent is genuine?",
+              questionUr: "بھرتی کرنے والے ایجنٹ یا او ای پی ایجنسی کے اصلی ہونے کی تصدیق کیسے کریں؟",
+              answerEn: "Visit the official BEOE portal at beoe.gov.pk/oep-search and search by the agency name or license number. The portal shows whether the OEP license is active, expired, suspended, or blacklisted, along with the authorized permissions granted for specific foreign recruitment demands. Never deal with unlicensed sub-agents.",
+              answerUr: "سرکاری پورٹل beoe.gov.pk/oep-search پر جا کر ایجنسی کا لائسنس نمبر چیک کریں۔ غیر مجاز سب ایجنٹس کو ہرگز کوئی رقم یا پاسپورٹ نہ دیں۔",
+            },
+            {
+              questionEn: "What insurance and welfare benefits do I receive after paying the Rs. 9,200 protector fee?",
+              questionUr: "پروٹیکٹر فیس ادا کرنے پر کیا مالی و قانونی فوائد ملتے ہیں؟",
+              answerEn: "Your registration includes PKR 2,500 for State Life Insurance Corporation premium (which covers comprehensive life and permanent disability insurance of PKR 1,000,000 for 5 years) and PKR 4,000 for the Overseas Pakistanis Foundation (OPF) Welfare Fund, granting automatic OPF membership for emergency repatriation, family welfare grants, and school quotas.",
+              answerUr: "اس فیس میں 5 سال کے لیے 10 لاکھ روپے کی اسٹیٹ لائف انشورنس شامل ہوتی ہے اور حادثے یا وفات کی صورت میں میت کی مفت وطن واپسی، بچوں کے تعلیمی وظائف اور او پی ایف ممبرشپ ملتی ہے۔",
+            },
+            {
+              questionEn: "Is a physical visit to a Protectorate of Emigrants (PE) office still mandatory?",
+              questionUr: "کیا پروٹیکٹر آفس جانا لازمی ہے یا آن لائن ہو جاتا ہے؟",
+              answerEn: "No. Direct emigrants can complete the entire document submission, fee payment via NBP QR/1Link, pre-departure digital orientation, and e-Protector certificate issuance 100% online through beoe.gov.pk without visiting a regional PE office in person.",
+              answerUr: "نہیں، ڈائریکٹ ویزا ہولڈرز گھر بیٹھے پورٹل کے ذریعے تمام کاغذات جمع کروا کر، آن لائن فیس ادا کر کے 100 فیصد ڈیجیٹل ای پروٹیکٹر کیو آر سرٹیفکیٹ حاصل کر سکتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -432,42 +433,145 @@ export default function SuccessionCertificateLegalHeirPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: NADRA vs Civil Court */}
+        <ComparisonVisual
+          titleEn="NADRA SFU Route vs Civil Court Route Comparison 2026"
+          titleUr="نادرا سہولت سنٹر بمقابلہ سول کورٹ قانونی موازنہ"
+          subtitleEn="Procedural timeline, legal heir consent rules, fees, and jurisdiction under the 2025 Amendment"
+          subtitleUr="مدت، قانونی فیس اور شرعی وارثوں کے اتفاق رائے کا تفصیلی موازنہ"
+          items={[
+            {
+              titleEn: "NADRA Succession SFU Route",
+              titleUr: "نادرا سکسیشن فیسیلیٹیشن سنٹر",
+              subtitleEn: "Administrative Fast-Track (15–25 Days)",
+              subtitleUr: "فوری انتظامی طریقہ کار (15 تا 25 دن)",
+              badgeEn: "Recommended (Undisputed)",
+              badgeUr: "تیز ترین (بلا تنازعہ)",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Completed in 15 to 25 calendar days with zero court hearings",
+                "Fixed statutory fee: PKR 10,000 (<100k asset) or PKR 20,000 (>=100k asset)",
+                "Requires 100% unanimous biometric consent from all legal heirs",
+                "Overseas legal heirs can provide digital fingerprints at Pakistani Embassies/Consulates"
+              ],
+              recommendedForEn: "Families where all legal heirs agree peacefully with no dispute or missing members",
+              recommendedForUr: "تمام متفقہ وارثان جن کے درمیان جائیداد پر کوئی تنازعہ نہ ہو"
+            },
+            {
+              titleEn: "Civil Court Legal Petition Route",
+              titleUr: "سول کورٹ وراثتی دعویٰ",
+              subtitleEn: "Judicial Adjudication (6–24 Months)",
+              subtitleUr: "عدالتی کارروائی (6 ماہ تا 2 سال)",
+              badgeEn: "Disputed / Missing Heirs",
+              badgeUr: "متنازعہ یا لاپتہ وارث",
+              badgeVariant: "seal",
+              pointsEn: [
+                "Takes 6 months to 2+ years through formal civil court trials",
+                "Substantial legal expenses (Advocate fees + court stamp duty + publication charges)",
+                "Can adjudicate when an heir disputes their share, refuses biometrics, or is untraceable",
+                "Judge evaluates oral/documentary evidence and issues binding judicial decree"
+              ],
+              recommendedForEn: "Disputed inheritance, contested wills, untraceable relatives, or hostile heirs",
+              recommendedForUr: "جہاں وارثوں میں تنازعہ ہو، کوئی وارث دستخط نہ کرے یا لاپتہ ہو"
+            }
+          ]}
+        />
+
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="5-Stage NADRA Succession Certificate Issuance Workflow"
+          titleUr="نادرا سکسیشن سرٹیفکیٹ کے حصول کا 5 مرحلہ وار طریقہ کار"
+          subtitleEn="Official administrative milestones under the Letters of Administration Act"
+          subtitleUr="درخواست جمع کروانے سے لے کر حتمی سرٹیفکیٹ وصولی تک کے 5 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "File Application & FRC",
+              titleUr: "درخواست و ایف آر سی جمع",
+              descEn: "Representative submits deceased CNIC cancellation certificate, FRC, and schedule of movable/immovable assets.",
+              descUr: "متوفی کا ڈیتھ سرٹیفکیٹ، نادرا کینسلیشن لیٹر، ایف آر سی اور اثاثہ جات کی تفصیل جمع کروائیں۔",
+              tagEn: "Filing",
+              tagUr: "اندراج",
+            },
+            {
+              number: 2,
+              titleEn: "Newspaper Notice Publication",
+              titleUr: "قومی اخبارات میں اشتہار",
+              descEn: "NADRA publishes public notices in widely circulated Urdu and English daily newspapers across Pakistan.",
+              descUr: "نادرا قومی روزناموں میں عوامی اطلاع کا باقاعدہ اشتہار شائع کرواتا ہے۔",
+              tagEn: "Gazette Notice",
+              tagUr: "اخبار اشتہار",
+            },
+            {
+              number: 3,
+              titleEn: "14-Day Public Objection Period",
+              titleUr: "14 روزہ عذرداری کی مدت",
+              descEn: "Statutory 14 calendar days waiting window to ensure no undisclosed heirs or third-party creditors object.",
+              descUr: "14 دن کا قانونی وقفہ تاکہ کوئی غیر ظاہر شدہ وارث یا قرض خواہ اعتراض درج کروا سکے۔",
+              tagEn: "14-Day Window",
+              tagUr: "اعتراض کی مدت",
+            },
+            {
+              number: 4,
+              titleEn: "Biometric Verification of All Heirs",
+              titleUr: "تمام وارثوں کی بائیومیٹرک",
+              descEn: "All surviving legal heirs provide live fingerprint authentication at any NADRA NRC or overseas embassy.",
+              descUr: "تمام قانونی وارث ملکی سنٹرز یا بیرون ملک پاکستانی سفارت خانے میں انگوٹھا تصدیق کروائیں۔",
+              tagEn: "Biometrics",
+              tagUr: "فنگر پرنٹ",
+            },
+            {
+              number: 5,
+              titleEn: "Issue Succession Certificate",
+              titleUr: "سکسیشن سرٹیفکیٹ کا اجراء",
+              descEn: "Collect high-security tamper-proof certificate with QR code for bank account unfreezing and asset distribution.",
+              descUr: "کیو آر کوڈ شدہ مستند سرٹیفکیٹ حاصل کر کے بینک سے رقم یا جائیداد قانونی طور پر حاصل کریں۔",
+              tagEn: "Asset Claim",
+              tagUr: "سرٹیفکیٹ وصولی",
+            },
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (Succession &amp; Legal Heirs)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What happens if one of the legal heirs refuses to give biometric verification at NADRA?',
-                a: 'NADRA requires 100% unanimous biometric consent from all legal heirs listed on the Family Registration Certificate (FRC). If an heir refuses, is untraceable, or disputes their share, NADRA cannot issue the certificate. In such cases, legal heirs must utilize the Civil Court route under the Succession Act 1925, where a judge evaluates legal shares and issues a binding court decree.',
-              },
-              {
-                q: 'What occurs during the 14-day newspaper objection period if an objection is filed?',
-                a: 'If any third party, undisclosed heir, creditor, or financial institution lodges a formal written objection during the 14-day statutory publication window, NADRA will temporarily halt processing. If the dispute is substantive and cannot be resolved amicably among heirs, the application is referred to the competent Civil Court for judicial adjudication.',
-              },
-              {
-                q: 'What is the difference between a Succession Certificate and Letters of Administration?',
-                a: 'A Succession Certificate applies specifically to movable financial assets (bank accounts, national savings certificates, company shares, vehicle transfers, and insurance payouts). Letters of Administration apply to immovable real estate property (plots, houses, agricultural land, and commercial buildings). NADRA issues both under the same unified facilitation framework.',
-              },
-              {
-                q: 'Can Overseas Pakistani legal heirs provide fingerprints without traveling to Pakistan?',
-                a: 'Yes! Overseas Pakistani legal heirs do not need to travel to Pakistan. Once the case is registered by a representative in Pakistan, overseas heirs can visit designated Pakistan Embassies and Consulates abroad (e.g. London, Manchester, Birmingham, Bradford, Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Chicago, Houston, Toronto) to complete live biometric authentication.',
-              },
-              {
-                q: 'What is the official government fee for a NADRA Succession Certificate in 2026?',
-                a: 'For total asset valuations below PKR 100,000, the statutory NADRA fee is PKR 10,000. For asset valuations equal to or exceeding PKR 100,000, the statutory fee is PKR 20,000 (PKR 22,000 in Sindh). Duplicate or amended certificates cost PKR 5,000.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Succession & Legal Heirs)"
+          titleUr="سکسیشن سرٹیفکیٹ اور قانونی وارثوں کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on biometric refusal, objection periods, fees, and overseas heirs"
+          subtitleUr="بائیومیٹرک سے انکار، اخباری اعتراضات، فیس اور اوورسیز وارثوں سے متعلق ہدایات"
+          items={[
+            {
+              questionEn: "What happens if one of the legal heirs refuses to give biometric verification at NADRA?",
+              questionUr: "اگر کوئی ایک وارث نادرا میں فنگر پرنٹ دینے سے انکار کرے تو کیا ہوگا؟",
+              answerEn: "NADRA requires 100% unanimous biometric consent from all legal heirs listed on the Family Registration Certificate (FRC). If an heir refuses, is untraceable, or disputes their share, NADRA cannot issue the certificate. In such cases, legal heirs must utilize the Civil Court route under the Succession Act 1925, where a judge evaluates legal shares and issues a binding court decree.",
+              answerUr: "نادرا تمام وارثوں کے 100 فیصد اتفاق پر ہی سرٹیفکیٹ جاری کرتا ہے۔ اگر کوئی ایک وارث انکار کرے تو معاملہ سول کورٹ جائے گا جہاں جج قانونی فیصلہ کرے گا۔",
+            },
+            {
+              questionEn: "What occurs during the 14-day newspaper objection period if an objection is filed?",
+              questionUr: "14 روزہ اخباری اشتہار کے دوران اگر کوئی اعتراض درج کروائے تو کیا ہوگا؟",
+              answerEn: "If any third party, undisclosed heir, creditor, or financial institution lodges a formal written objection during the 14-day statutory publication window, NADRA will temporarily halt processing. If the dispute is substantive and cannot be resolved amicably among heirs, the application is referred to the competent Civil Court for judicial adjudication.",
+              answerUr: "اگر کوئی جائز اعتراض آ جائے تو نادرا کارروائی روک دیتا ہے۔ فریقین میں مصالحت نہ ہونے پر فائل سول عدالت کو منتقل کر دی جاتی ہے۔",
+            },
+            {
+              questionEn: "What is the difference between a Succession Certificate and Letters of Administration?",
+              questionUr: "سکسیشن سرٹیفکیٹ اور لیٹر آف ایڈمنسٹریشن میں کیا فرق ہے؟",
+              answerEn: "A Succession Certificate applies specifically to movable financial assets (bank accounts, national savings certificates, company shares, vehicle transfers, and insurance payouts). Letters of Administration apply to immovable real estate property (plots, houses, agricultural land, and commercial buildings). NADRA issues both under the same unified facilitation framework.",
+              answerUr: "سکسیشن سرٹیفکیٹ بینک اکاؤنٹ، شیئرز اور کیش رقوم کے لیے ہوتا ہے، جبکہ لیٹر آف ایڈمنسٹریشن مکان، پلاٹ اور زرعی جائیداد کی وراثت کے لیے جاری کیا جاتا ہے۔",
+            },
+            {
+              questionEn: "Can Overseas Pakistani legal heirs provide fingerprints without traveling to Pakistan?",
+              questionUr: "کیا بیرون ملک مقیم پاکستانی وارث پاکستان آئے بغیر تصدیق کروا سکتے ہیں؟",
+              answerEn: "Yes! Overseas Pakistani legal heirs do not need to travel to Pakistan. Once the case is registered by a representative in Pakistan, overseas heirs can visit designated Pakistan Embassies and Consulates abroad (e.g. London, Manchester, Birmingham, Bradford, Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Chicago, Houston, Toronto) to complete live biometric authentication.",
+              answerUr: "جی ہاں! اوورسیز پاکستانیوں کو پاکستان آنے کی ضرورت نہیں ہے۔ وہ اپنے ملک میں موجود پاکستانی سفارت خانے یا قونصل خانے جا کر بائیومیٹرک تصدیق کر سکتے ہیں۔",
+            },
+            {
+              questionEn: "What is the official government fee for a NADRA Succession Certificate in 2026?",
+              questionUr: "نادرا سکسیشن سرٹیفکیٹ کی سرکاری فیس کتنی ہے؟",
+              answerEn: "For total asset valuations below PKR 100,000, the statutory NADRA fee is PKR 10,000. For asset valuations equal to or exceeding PKR 100,000, the statutory fee is PKR 20,000 (PKR 22,000 in Sindh). Duplicate or amended certificates cost PKR 5,000.",
+              answerUr: "1 لاکھ روپے سے کم کے اثاثوں پر 10 ہزار روپے، جبکہ 1 لاکھ روپے یا اس سے زائد کے اثاثوں پر 20 ہزار روپے فیس مقرر ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

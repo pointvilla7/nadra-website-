@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -378,44 +379,91 @@ export default function NicopMandatoryEntryRulesPage() {
           </div>
         </section>
 
-        {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Mandatory NICOP Rule)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Can I travel to Pakistan visa-free if my NICOP is expired but I have a NADRA renewal receipt?',
-                a: 'No. Under the strictly enforced FIA border regulations, an online renewal receipt or application token is NO LONGER accepted as a valid substitute for an unexpired physical card. International airlines have been instructed to deny boarding at departure airports to passengers holding foreign passports without a valid, physically active NICOP or an approved Pakistani visa.',
-              },
-              {
-                q: 'Does this mandatory NICOP rule apply to people traveling on a Pakistani passport?',
-                a: 'No. If you hold a valid, unexpired Pakistani passport (Machine Readable Passport or e-Passport), you have an unconditional constitutional right to enter Pakistan regardless of the status of your NICOP or CNIC.',
-              },
-              {
-                q: 'What should I do if my flight is in a few days and my NICOP is expired?',
-                a: 'Do not attempt to fly with an expired NICOP or renewal token. Instead, apply immediately for an electronic Pakistani Tourist/Family Visit Visa online via the official Pakistan Online Visa System (visa.nadra.gov.pk). E-Visas are typically processed and issued within 24 to 48 hours and allow hassle-free airline boarding on your foreign passport.',
-              },
-              {
-                q: 'Does this rule target only British Pakistanis or all foreign passport holders?',
-                a: 'The rule applies uniformly across all countries worldwide (UK, US, Canada, EU, Gulf States, Australia, etc.). Rumors circulating on social media claiming a specific ban on British Pakistanis are completely false; the regulation is a universal border compliance standard for anyone entering Pakistan on any foreign passport.',
-              },
-              {
-                q: 'Can I get a 72-hour landing permit or visa-on-arrival at Pakistani airports without a valid NICOP?',
-                a: 'No. The previous discretionary practice of issuing emergency landing permits or waivers for expired cards has been discontinued. Because international airlines conduct strict document verification prior to boarding, you will not be allowed to board your outbound flight without a valid NICOP or pre-approved eVisa.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Pre-Travel Compliance Checklist for Overseas Pakistanis"
+          titleUr="بیرون ملک مقیم پاکستانیوں کے لیے سفر سے قبل تصدیقی مراحل"
+          subtitleEn="4 mandatory checkpoints before booking flights to avoid airport boarding denial"
+          subtitleUr="ایئرپورٹ پر آف لوڈ ہونے سے بچنے کے لیے 4 لازمی احتیاطی تدابیر"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Inspect Physical NICOP Expiry",
+              titleUr: "اصل شناختی کارڈ کی تاریخ دیکھیں",
+              descEn: "Confirm you hold an unexpired physical Smart NICOP. Digital photos or paper renewal receipts are NO LONGER accepted for travel.",
+              descUr: "یقینی بنائیں کہ اصل اسمارٹ نائیکوپ موجود ہے اور زائد المیعاد نہیں ہے۔ رسید یا تصویر قابل قبول نہیں۔",
+              tagEn: "Physical Card",
+              tagUr: "اصل کارڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Check Foreign Passport Validity",
+              titleUr: "غیر ملکی پاسپورٹ کی میعاد",
+              descEn: "Ensure your foreign passport (US, UK, Canadian, EU, etc.) has at least 6 months validity from departure date.",
+              descUr: "غیر ملکی پاسپورٹ کی کم از کم 6 ماہ میعاد باقی ہونا ضروری ہے۔",
+              tagEn: "Passport",
+              tagUr: "پاسپورٹ",
+            },
+            {
+              number: 3,
+              titleEn: "Pak-ID Renewal (>30 Days)",
+              titleUr: "پاک آئی ڈی ایپ سے تجدید",
+              descEn: "If expired and flight is more than 4 weeks away, submit urgent renewal via the Pak-ID app with biometric fingerprint capture.",
+              descUr: "اگر وقت باقی ہے تو پاک آئی ڈی ایپ سے فنگر پرنٹس اسکین کر کے ارجنٹ کارڈ منگوائیں۔",
+              tagEn: "Pak-ID App",
+              tagUr: "ایپ تجدید",
+            },
+            {
+              number: 4,
+              titleEn: "Fast-Track 24h eVisa (<7 Days)",
+              titleUr: "ہنگامی 24 گھنٹے ای ویزا",
+              descEn: "If travel is imminent, do NOT risk airport rejection. Apply online at visa.nadra.gov.pk for guaranteed airline boarding clearance.",
+              descUr: "اگر پرواز میں چند دن باقی ہیں تو ویزا پورٹل سے فوری الیکٹرانک ویزا حاصل کریں۔",
+              tagEn: "24h eVisa",
+              tagUr: "ای ویزا",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Mandatory NICOP Rule)"
+          titleUr="نائیکوپ لازمی ہونے کے قانون کے متعلق عام سوالات"
+          subtitleEn="Critical guidelines on renewal tokens, landing permits, and airline boarding policies"
+          subtitleUr="تجدید کی رسید، لینڈنگ پرمٹ اور ایئرپورٹ بورڈنگ سے متعلق اہم قانونی وضاحت"
+          items={[
+            {
+              questionEn: "Can I travel to Pakistan visa-free if my NICOP is expired but I have a NADRA renewal receipt?",
+              questionUr: "اگر نائیکوپ ایکسپائر ہو لیکن تجدید کی رسید ہو تو کیا سفر ہو سکتا ہے؟",
+              answerEn: "No. Under the strictly enforced FIA border regulations, an online renewal receipt or application token is NO LONGER accepted as a valid substitute for an unexpired physical card. International airlines have been instructed to deny boarding at departure airports to passengers holding foreign passports without a valid, physically active NICOP or an approved Pakistani visa.",
+              answerUr: "نہیں، ایف آئی اے کے سخت احکامات کے تحت نادرا کی رسید پر سفر کی اجازت ختم کر دی گئی ہے۔ ایئرلائنز اصل کارڈ کے بغیر مسافر کو بورڈنگ پاس جاری نہیں کرتیں۔",
+            },
+            {
+              questionEn: "Does this mandatory NICOP rule apply to people traveling on a Pakistani passport?",
+              questionUr: "کیا یہ قانون پاکستانی پاسپورٹ پر سفر کرنے والوں پر بھی لاگو ہوتا ہے؟",
+              answerEn: "No. If you hold a valid, unexpired Pakistani passport (Machine Readable Passport or e-Passport), you have an unconditional constitutional right to enter Pakistan regardless of the status of your NICOP or CNIC.",
+              answerUr: "نہیں! اگر آپ کے پاس درست پاکستانی پاسپورٹ ہے تو آپ بغیر نائیکوپ کے بھی قانونی طور پر وطن داخل ہو سکتے ہیں۔",
+            },
+            {
+              questionEn: "What should I do if my flight is in a few days and my NICOP is expired?",
+              questionUr: "اگر پرواز میں چند دن باقی ہوں اور نائیکوپ زائد المیعاد ہو تو کیا کریں؟",
+              answerEn: "Do not attempt to fly with an expired NICOP or renewal token. Instead, apply immediately for an electronic Pakistani Tourist/Family Visit Visa online via the official Pakistan Online Visa System (visa.nadra.gov.pk). E-Visas are typically processed and issued within 24 to 48 hours and allow hassle-free airline boarding on your foreign passport.",
+              answerUr: "ایکسپائر کارڈ پر ایئرپورٹ ہرگز نہ جائیں۔ فوری طور پر سرکاری پورٹل visa.nadra.gov.pk پر جا کر 24 سے 48 گھنٹوں میں آن لائن ویزا حاصل کریں۔",
+            },
+            {
+              questionEn: "Does this rule target only British Pakistanis or all foreign passport holders?",
+              questionUr: "کیا یہ قانون صرف برطانوی پاکستانیوں کے لیے ہے یا تمام ممالک کے لیے؟",
+              answerEn: "The rule applies uniformly across all countries worldwide (UK, US, Canada, EU, Gulf States, Australia, etc.). Rumors circulating on social media claiming a specific ban on British Pakistanis are completely false; the regulation is a universal border compliance standard for anyone entering Pakistan on any foreign passport.",
+              answerUr: "یہ قانون برطانیہ، امریکہ، کینیڈا اور خلیجی ممالک سمیت تمام غیر ملکی پاسپورٹ ہولڈرز پر یکساں لاگو ہے۔ کسی ایک ملک سے کوئی تفریق نہیں۔",
+            },
+            {
+              questionEn: "Can I get a 72-hour landing permit or visa-on-arrival at Pakistani airports without a valid NICOP?",
+              questionUr: "کیا پاکستانی ایئرپورٹ پہنچ کر 72 گھنٹے کا ایمرجنسی لینڈنگ پرمٹ مل سکتا ہے؟",
+              answerEn: "No. The previous discretionary practice of issuing emergency landing permits or waivers for expired cards has been discontinued. Because international airlines conduct strict document verification prior to boarding, you will not be allowed to board your outbound flight without a valid NICOP or pre-approved eVisa.",
+              answerUr: "نہیں، پرواز سے قبل ہی بورڈنگ روک دی جاتی ہے اور ایئرپورٹ پر ہنگامی لینڈنگ پرمٹ کی سابقہ سہولت اب مکمل طور پر ختم کر دی گئی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

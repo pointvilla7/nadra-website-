@@ -8,6 +8,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { ShieldCheck, FileText, ChevronRight, CheckCircle2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { CategoryHeroIllustration } from '@/components/visuals';
 
 export const metadata: Metadata = {
   title: 'Business & SECP Registration | Pakistan Info Hub',
@@ -39,20 +40,26 @@ export default function Page() {
         <Breadcrumbs items={[{ nameEn: category.nameEn, nameUr: category.nameUr }]} />
 
         {/* Hero Header */}
-        <header className="bg-doc-paper dark:bg-doc-dark-card border-2 border-doc-brass/40 rounded-3xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
-          <div className="max-w-3xl space-y-4">
-            <div className="flex items-center gap-3">
-              <VerifiedBadge variant="header" textEn="VERIFIED PUBLIC REPOSITORY" />
-              <span className="font-mono text-xs text-doc-seal uppercase tracking-widest font-bold">
-                {articles.length} OFFICIAL GUIDES
-              </span>
+        <header className="bg-doc-paper dark:bg-doc-dark-card border-2 border-doc-brass/40 rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm relative overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div className="md:col-span-8 space-y-4">
+              <div className="flex items-center gap-3">
+                <VerifiedBadge variant="header" textEn="VERIFIED PUBLIC REPOSITORY" />
+                <span className="font-mono text-xs text-doc-seal uppercase tracking-widest font-bold">
+                  {articles.length} OFFICIAL GUIDES
+                </span>
+              </div>
+              <h1 className="font-serif font-extrabold text-3xl sm:text-4xl text-doc-ink dark:text-slate-100 tracking-tight leading-tight">
+                {category.nameEn}
+              </h1>
+              <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
+                {category.descriptionEn}
+              </p>
             </div>
-            <h1 className="font-serif font-extrabold text-3xl sm:text-4xl text-doc-ink dark:text-slate-100 tracking-tight leading-tight">
-              {category.nameEn}
-            </h1>
-            <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
-              {category.descriptionEn}
-            </p>
+
+            <div className="md:col-span-4 flex justify-center">
+              <CategoryHeroIllustration category="business" />
+            </div>
           </div>
         </header>
 

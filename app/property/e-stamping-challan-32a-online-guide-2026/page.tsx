@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -477,44 +478,134 @@ export default function EStampingChallan32AGuidePage() {
           </div>
         </section>
 
-        {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (e-Stamping &amp; Challan 32-A)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Do I need to register a user account to generate a Challan Form 32-A online?',
-                a: 'No. The provincial e-Stamping portals in Punjab (es.punjab.gov.pk), Sindh (estamps.gos.pk), and KPK provide public access without mandatory account registration. Any citizen, property buyer, seller, or deed writer can directly access the form, enter the transaction details, and generate a printable 32-A Challan.',
-              },
-              {
-                q: 'How do I verify that an e-Stamp paper or certificate is authentic and not counterfeit?',
-                a: 'Every official e-Stamp certificate contains a unique 16-character e-Stamp ID, a quick-response QR code, and a watermark. You can verify its authenticity by visiting your provincial portal\'s "Verification" section (e.g. es.punjab.gov.pk/verify) and entering the 16-character number, or by scanning the QR code with any smartphone camera.',
-              },
-              {
-                q: 'What happens if my Challan 32-A or issued e-Stamp certificate expires before I use it?',
-                a: 'An unpaid Challan Form 32-A has a validity window (typically 7 to 30 days depending on provincial revenue rules) during which payment must be deposited at the bank; if it expires before payment, you simply generate a fresh Challan online for free. Once paid and the physical security e-Stamp certificate is issued by the bank, it remains legally valid for registry execution and mutation.',
-              },
-              {
-                q: 'Can a single Challan 32-A cover Stamp Duty, CVT, Registration Fee, and Mutation Fees together?',
-                a: 'Yes. Modernized e-Stamping portals integrate all property transaction dues—Stamp Duty under the Stamp Act, Capital Value Tax (CVT), Registration Fees under the Registration Act, and Land Mutation / Intiqal charges—into a single consolidated Challan 32-A payment slip.',
-              },
-              {
-                q: 'Why did Pakistan replace physical traditional stamp papers with e-Stamping?',
-                a: 'Traditional physical stamp papers were prone to widespread fraud, including back-dated paper forgery, black-market overcharging by stamp vendors, and tax leakage. The e-Stamping system uses central databases, real-time DC valuation rates, and digital watermarks to ensure 100% transparency.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step e-Stamping & Challan 32-A Workflow"
+          titleUr="ای اسٹامپنگ اور چالان فارم 32-A کا مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from DC valuation to security stamp certificate issuance"
+          subtitleUr="ڈی سی ریٹ کیلکولیشن سے لے کر مستند ای اسٹامپ کے حصول تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Fill Data & DC Valuation",
+              titleUr: "ڈیٹا کا اندراج و ڈی سی ریٹ",
+              descEn: "Enter buyer & seller CNICs, tehsil, mauza, and plot dimensions to automatically fetch official DC valuation rates.",
+              descUr: "صوبائی پورٹل پر خریدار، فروخت کنندہ اور جائیداد کی پیمائش درج کر کے ڈی سی ریٹ معلوم کریں۔",
+              tagEn: "Portal Entry",
+              tagUr: "ڈیٹا اندراج",
+            },
+            {
+              number: 2,
+              titleEn: "Generate Challan 32-A",
+              titleUr: "چالان فارم 32-A جنریٹ کریں",
+              descEn: "System computes Stamp Duty, CVT, and mutation fees, generating a printable 16-digit Challan 32-A PSID.",
+              descUr: "سسٹم خودکار طریقے سے اسٹامپ ڈیوٹی، سی وی ٹی اور میوٹیشن فیس کا چالان اور پی ایس آئی ڈی جاری کرتا ہے۔",
+              tagEn: "PSID / 32-A",
+              tagUr: "چالان",
+            },
+            {
+              number: 3,
+              titleEn: "Bank / ePay Fee Payment",
+              titleUr: "بینک یا آن لائن ادائیگی",
+              descEn: "Deposit payment over-the-counter at NBP/BOP designated branches or instantly via ePay Punjab / 1Link.",
+              descUr: "نامزد بینک برانچ، 1Link موبائل بینکنگ یا ای پے ایپ کے ذریعے فیس ادا کریں۔",
+              tagEn: "Payment",
+              tagUr: "ادائیگی",
+            },
+            {
+              number: 4,
+              titleEn: "Print Security e-Stamp",
+              titleUr: "سیکیورٹی ای اسٹامپ وصولی",
+              descEn: "Collect watermarked judicial/non-judicial e-Stamp paper with 16-character alphanumeric ID and QR code for Sub-Registrar execution.",
+              descUr: "16 ہندسوں کے شناختی نمبر اور کیو آر کوڈ سے لیس سرکاری ای اسٹامپ وصول کر کے رجسٹری درج کروائیں۔",
+              tagEn: "e-Stamp Deed",
+              tagUr: "ای اسٹامپ",
+            },
+          ]}
+        />
+
+        {/* Fee Structure Table */}
+        <FeeTableVisual
+          titleEn="Standard Property Transaction Tax & Fee Schedule 2026"
+          titleUr="پراپرٹی خرید و فروخت سرکاری ٹیکس و فیس شیڈول 2026"
+          subtitleEn="Statutory rates under the Stamp Act, Capital Value Tax (CVT) and Registration Act"
+          subtitleUr="اسٹامپ ایکٹ، سی وی ٹی اور رجسٹریشن ایکٹ کے تحت لاگو سرکاری ریٹس"
+          noteEn="Rates vary slightly across Punjab, Sindh, KPK, and Islamabad based on urban vs rural classification."
+          rows={[
+            {
+              serviceEn: "Stamp Duty (Transfer of Immovable Property)",
+              serviceUr: "اسٹامپ ڈیوٹی (جائیداد منتقلی)",
+              normal: "3% of DC Rate",
+              urgent: "3% Fixed",
+              executive: "Direct e-Stamp",
+              validity: "Until Deed Executed",
+            },
+            {
+              serviceEn: "Capital Value Tax (CVT)",
+              serviceUr: "کیپیٹل ویلیو ٹیکس (CVT)",
+              normal: "1% to 2%",
+              urgent: "1% to 2%",
+              executive: "Provincial BOR",
+              validity: "Per Transaction",
+            },
+            {
+              serviceEn: "Sub-Registrar Registration Fee",
+              serviceUr: "سب رجسٹرار رجسٹریشن فیس",
+              normal: "1% of Value",
+              urgent: "1% of Value",
+              executive: "Challan 32-A",
+              validity: "Deed Registration",
+            },
+            {
+              serviceEn: "PLRA / Revenue Mutation (Intiqal) Fee",
+              serviceUr: "اراضی ریکارڈ انتقال فیس",
+              normal: "PKR 500 – 1,000",
+              urgent: "PKR 1,000",
+              executive: "Integrated ARC",
+              validity: "Official Record",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (e-Stamping & Challan 32-A)"
+          titleUr="ای اسٹامپنگ اور چالان 32-A کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on generation, expiry, verification, and multi-tax payment"
+          subtitleUr="چالان کی میعاد، فیس جمع کروانے اور کیو آر تصدیق سے متعلق ضروری معلومات"
+          items={[
+            {
+              questionEn: "Do I need to register a user account to generate a Challan Form 32-A online?",
+              questionUr: "کیا چالان 32-A بنانے کے لیے اکاؤنٹ بنانا لازمی ہے؟",
+              answerEn: "No. The provincial e-Stamping portals in Punjab (es.punjab.gov.pk), Sindh (estamps.gos.pk), and KPK provide public access without mandatory account registration. Any citizen, property buyer, seller, or deed writer can directly access the form, enter the transaction details, and generate a printable 32-A Challan.",
+              answerUr: "نہیں، پنجاب، سندھ اور کے پی کے ای اسٹامپ پورٹلز پر بغیر اکاؤنٹ بنائے کوئی بھی شہری یا وکیل براہ راست ڈیٹا درج کر کے مفت چالان 32-A جنریٹ کر سکتا ہے۔",
+            },
+            {
+              questionEn: "How do I verify that an e-Stamp paper or certificate is authentic and not counterfeit?",
+              questionUr: "ای اسٹامپ پیپر کے اصلی ہونے کی تصدیق کیسے کی جائے؟",
+              answerEn: "Every official e-Stamp certificate contains a unique 16-character e-Stamp ID, a quick-response QR code, and a watermark. You can verify its authenticity by visiting your provincial portal's 'Verification' section (e.g. es.punjab.gov.pk/verify) and entering the 16-character number, or by scanning the QR code with any smartphone camera.",
+              answerUr: "ہر ای اسٹامپ پر 16 ہندسوں کا منفرد کوڈ اور کیو آر کوڈ ہوتا ہے۔ پورٹل پر جا کر یہ نمبر لکھیں یا موبائل سے کیو آر اسکین کر کے فوری تصدیق کریں۔",
+            },
+            {
+              questionEn: "What happens if my Challan 32-A or issued e-Stamp certificate expires before I use it?",
+              questionUr: "اگر چالان 32-A کی تاریخ نکل جائے تو کیا طریقہ ہے؟",
+              answerEn: "An unpaid Challan Form 32-A has a validity window (typically 7 to 30 days depending on provincial revenue rules) during which payment must be deposited at the bank; if it expires before payment, you simply generate a fresh Challan online for free. Once paid and the physical security e-Stamp certificate is issued by the bank, it remains legally valid for registry execution and mutation.",
+              answerUr: "اگر غیر ادا شدہ چالان کی تاریخ گزر جائے تو دوبارہ مفت نیا چالان جنریٹ کریں۔ جبکہ بینک سے فیس ادا کر کے حاصل کردہ ای اسٹامپ رجسٹری ہونے تک کارآمد رہتا ہے۔",
+            },
+            {
+              questionEn: "Can a single Challan 32-A cover Stamp Duty, CVT, Registration Fee, and Mutation Fees together?",
+              questionUr: "کیا ایک ہی چالان میں اسٹامپ ڈیوٹی، سی وی ٹی اور میوٹیشن فیس جمع ہو سکتی ہے؟",
+              answerEn: "Yes. Modernized e-Stamping portals integrate all property transaction dues—Stamp Duty under the Stamp Act, Capital Value Tax (CVT), Registration Fees under the Registration Act, and Land Mutation / Intiqal charges—into a single consolidated Challan 32-A payment slip.",
+              answerUr: "جی ہاں! جدید ای اسٹامپنگ نظام کے تحت اسٹامپ ڈیوٹی، سی وی ٹی، سب رجسٹرار فیس اور انتقال فیس کا ایک ہی مشترکہ چالان بنتا ہے۔",
+            },
+            {
+              questionEn: "Why did Pakistan replace physical traditional stamp papers with e-Stamping?",
+              questionUr: "پاکستان نے پرانے کاغذی اسٹامپ پیپرز کو ای اسٹامپنگ سے کیوں تبدیل کیا؟",
+              answerEn: "Traditional physical stamp papers were prone to widespread fraud, including back-dated paper forgery, black-market overcharging by stamp vendors, and tax leakage. The e-Stamping system uses central databases, real-time DC valuation rates, and digital watermarks to ensure 100% transparency.",
+              answerUr: "پرانے اسٹامپ پیپرز میں بیک ڈیٹ کا فراڈ، بلیک مارکیٹنگ اور ٹیکس چوری عام تھی۔ ای اسٹامپ نے شفافیت قائم کر کے دھوکہ دہی کا مکمل خاتمہ کر دیا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -371,44 +372,91 @@ export default function PmtScoreExplainedPage() {
           </div>
         </section>
 
-        {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (PMT Score &amp; Eligibility)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What does a PMT score actually measure in BISP?',
-                a: 'The Proxy Means Test (PMT) score is a statistical number between 0 and 100 that estimates a household’s socio-economic status. Rather than relying on self-reported monthly income (which is difficult to verify in informal economies), it uses approximately 43 visible proxies such as household assets, construction quality, family size, utility usage, and education levels.',
-              },
-              {
-                q: 'What is the PMT score cutoff for Benazir Kafaalat eligibility?',
-                a: 'For the general Benazir Kafaalat quarterly stipend, a household’s PMT score must be 32 or below. For special categories, such as certified Persons with Disabilities (PWDs) or transgender citizens, the eligibility threshold is relaxed up to a PMT score of 37.',
-              },
-              {
-                q: 'Why was my BISP application rejected even though our income is very low?',
-                a: 'BISP cross-matches applicant CNICs with automated government databases. Common automated disqualification triggers include: a registered motor vehicle (car/commercial vehicle) in the applicant’s name, international travel records (passports with foreign visas), a family member in regular government service, or high-tier residential electricity meter connections.',
-              },
-              {
-                q: 'Can I apply for an NSER survey online?',
-                a: 'No. There is NO online application or survey form for NSER. Applicants must physically visit their nearest BISP Tehsil Registration Office with their original CNIC and children’s B-Forms to complete the biometric survey. The registration process at the official center is 100% free of cost.',
-              },
-              {
-                q: 'How do I request a re-survey if my financial situation has worsened?',
-                a: 'Under the NSER Dynamic Registry framework, any family whose economic situation has changed (e.g. loss of breadwinner, medical hardship, or outdated census records) can visit the local BISP Tehsil Office to request a re-survey after the standard moratorium period (typically 2 years from their last survey date).',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step BISP PMT Score Verification & Re-Survey Flow"
+          titleUr="بے نظیر انکم سپورٹ پی ایم ٹی سکور معلوم کرنے اور دوبارہ سروے کا طریقہ"
+          subtitleEn="4-stage verified sequence from 8171 checking to NSER dynamic registration"
+          subtitleUr="8171 پورٹل سے لے کر تحصیل رجسٹریشن سنٹر پر دوبارہ سروے تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Check Status on 8171 Portal",
+              titleUr: "8171 پورٹل پر سٹیٹس چیک کریں",
+              descEn: "Send 13-digit CNIC to 8171 SMS or enter on 8171.pass.gov.pk to verify if household PMT is under the 32 cutoff.",
+              descUr: "شناختی کارڈ نمبر 8171 پر ایس ایم ایس بھیج کر یا پورٹل پر درج کر کے اہلیت کا سکور دیکھیں۔",
+              tagEn: "8171 Lookup",
+              tagUr: "8171 چیک",
+            },
+            {
+              number: 2,
+              titleEn: "Prepare Mandatory Documents",
+              titleUr: "ضروری کاغذات تیار کریں",
+              descEn: "Gather original CNIC of female household head, Nadra B-Forms for all children, and latest paid electricity bill.",
+              descUr: "خاتون سربراہ کا اصل شناختی کارڈ، بچوں کے ب فارم اور بجلی کا حالیہ بل ہمراہ رکھیں۔",
+              tagEn: "Checklist",
+              tagUr: "کاغذات",
+            },
+            {
+              number: 3,
+              titleEn: "Visit BISP Tehsil Office",
+              titleUr: "تحصیل بی آئی ایس پی سنٹر وزٹ",
+              descEn: "Appear in-person at your local Tehsil Dynamic Registration counter for biometric verification and survey interview.",
+              descUr: "مقامی تحصیل رجسٹریشن ڈیسک پر حاضر ہو کر بائیومیٹرک انگوٹھا اور سروے فارم پر کریں۔",
+              tagEn: "NSER Desk",
+              tagUr: "تحصیل دفتر",
+            },
+            {
+              number: 4,
+              titleEn: "Automated Scoring & 8171 SMS",
+              titleUr: "خودکار سکورنگ اور تصدیقی پیغام",
+              descEn: "BISP systems cross-match asset databases to compute your updated PMT score and send official decision SMS from 8171.",
+              descUr: "مرکزی سسٹم خودکار طریقے سے نیا سکور جاری کرے گا اور 8171 سے حتمی تصدیقی میسج آئے گا۔",
+              tagEn: "Confirmation",
+              tagUr: "تصدیقی ایس ایم ایس",
+            },
+          ]}
+        />
+
+        {/* FAQ Section */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PMT Score & Eligibility)"
+          titleUr="پی ایم ٹی سکور اور بی آئی ایس پی اہلیت کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on 43 poverty proxies, 32 cutoff score, and survey rules"
+          subtitleUr="43 غربت انڈیکیٹرز، 32 کٹ آف سکور اور دوبارہ سروے سے متعلق اہم ہدایات"
+          items={[
+            {
+              questionEn: "What does a PMT score actually measure in BISP?",
+              questionUr: "پی ایم ٹی سکور کس بنیاد پر تیار کیا جاتا ہے؟",
+              answerEn: "The Proxy Means Test (PMT) score is a statistical number between 0 and 100 that estimates a household's socio-economic status. Rather than relying on self-reported monthly income (which is difficult to verify in informal economies), it uses approximately 43 visible proxies such as household assets, construction quality, family size, utility usage, and education levels.",
+              answerUr: "پراکسی مینز ٹیسٹ (PMT) صفر سے 100 کے درمیان غربت کا سائنسی تخمینہ ہے۔ اس میں تنخواہ کے بجائے گھر کے اثاثوں، بچوں کی تعداد، تعلیمی اخراجات اور بجلی کے بلوں جیسے 43 عوامل دیکھے جاتے ہیں۔",
+            },
+            {
+              questionEn: "What is the PMT score cutoff for Benazir Kafaalat eligibility?",
+              questionUr: "بے نظیر کفالت وظیفے کے لیے کتنا پی ایم ٹی سکور ہونا ضروری ہے؟",
+              answerEn: "For the general Benazir Kafaalat quarterly stipend, a household's PMT score must be 32 or below. For special categories, such as certified Persons with Disabilities (PWDs) or transgender citizens, the eligibility threshold is relaxed up to a PMT score of 37.",
+              answerUr: "عام گھرانوں کے لیے پی ایم ٹی سکور 32 یا اس سے کم ہونا لازمی ہے۔ معذور افراد اور خواجہ سراؤں کے لیے یہ رعایت 37 سکور تک دی گئی ہے۔",
+            },
+            {
+              questionEn: "Why was my BISP application rejected even though our income is very low?",
+              questionUr: "کم آمدن کے باوجود بی آئی ایس پی کی درخواست کیوں مسترد ہوتی ہے؟",
+              answerEn: "BISP cross-matches applicant CNICs with automated government databases. Common automated disqualification triggers include: a registered motor vehicle (car/commercial vehicle) in the applicant's name, international travel records (passports with foreign visas), a family member in regular government service, or high-tier residential electricity meter connections.",
+              answerUr: "درخواست گزار یا شریک حیات کے نام پر گاڑی، پاسپورٹ پر غیر ملکی سفر، سرکاری ملازمت یا بجلی کے بھاری بل خودکار سسٹم کے تحت نااہلی کی بڑی وجوہات ہیں۔",
+            },
+            {
+              questionEn: "Can I apply for an NSER survey online?",
+              questionUr: "کیا این ایس ای آر سروے گھر بیٹھے آن لائن ہو سکتا ہے؟",
+              answerEn: "No. There is NO online application or survey form for NSER. Applicants must physically visit their nearest BISP Tehsil Registration Office with their original CNIC and children's B-Forms to complete the biometric survey. The registration process at the official center is 100% free of cost.",
+              answerUr: "نہیں، سروے کے لیے کوئی آن لائن فارم نہیں ہے۔ اصل شناختی کارڈ اور بچوں کے ب فارم کے ساتھ قریبی تحصیل دفتر جانا لازمی ہے۔ رجسٹریشن مکمل طور پر مفت ہے۔",
+            },
+            {
+              questionEn: "How do I request a re-survey if my financial situation has worsened?",
+              questionUr: "اگر مالی حالات خراب ہو جائیں تو دوبارہ سروے کیسے کروائیں؟",
+              answerEn: "Under the NSER Dynamic Registry framework, any family whose economic situation has changed (e.g. loss of breadwinner, medical hardship, or outdated census records) can visit the local BISP Tehsil Office to request a re-survey after the standard moratorium period (typically 2 years from their last survey date).",
+              answerUr: "ڈائنامک رجسٹری کے تحت پچھلے سروے کے 2 سال بعد یا کڑی مالی آزمائش کی صورت میں قریبی بی آئی ایس پی تحصیل سنٹر جا کر نیا سروے کروایا جا سکتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
