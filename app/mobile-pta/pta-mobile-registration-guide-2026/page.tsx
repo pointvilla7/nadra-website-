@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -406,44 +407,91 @@ export default function PtaMobileRegistrationGuidePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step PTA Mobile Registration & Tax Payment Workflow (DIRBS 2026)"
+          titleUr="پی ٹی اے موبائل رجسٹریشن اور کسٹم ڈیوٹی ادائیگی کا مرحلہ وار طریقہ"
+          subtitleEn="4-stage verified sequence from IMEI extraction to automatic PTA network approval"
+          subtitleUr="آئی ایم ای آئی چیک سے لے کر ون لنک چالان ادائیگی اور فون بحالی تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Dial *#06# for Device IMEI",
+              titleUr: "*#06# ڈائل کر کے آئی ایم ای آئی لیں",
+              descEn: "Dial *#06# on phone dialpad to retrieve 15-digit IMEI 1 and IMEI 2 (for dual SIM devices).",
+              descUr: "موبائل پر *#06# ڈائل کریں اور دونوں سم سلاٹ کے 15 ہندسوں پر مشتمل آئی ایم ای آئی نمبرز نوٹ کریں۔",
+              tagEn: "Dial *#06#",
+              tagUr: "آئی ایم ای آئی",
+            },
+            {
+              number: 2,
+              titleEn: "Log in to DIRBS Portal",
+              titleUr: "پی ٹی اے ڈربس پورٹل پر لاگ ان",
+              descEn: "Visit dirbs.pta.gov.pk to create an account using your CNIC or international travel Passport details.",
+              descUr: "dirbs.pta.gov.pk پر شناختی کارڈ یا پاسپورٹ کی معلومات کے ساتھ اپنا اکاؤنٹ بنائیں۔",
+              tagEn: "DIRBS Portal",
+              tagUr: "ڈربس اکاؤنٹ",
+            },
+            {
+              number: 3,
+              titleEn: "Generate 17-Digit FBR PSID",
+              titleUr: "17 ہندسوں کا ایف بی آر چالان کوڈ",
+              descEn: "Submit IMEIs under Individual COC to calculate exact customs duty and generate a 17-digit 1Link PSID voucher.",
+              descUr: "پورٹل پر فون کا ماڈل اور آئی ایم ای آئی درج کر کے کسٹم ٹیکس کا سرکاری 1Link PSID حاصل کریں۔",
+              tagEn: "PSID Voucher",
+              tagUr: "پی ایس آئی ڈی",
+            },
+            {
+              number: 4,
+              titleEn: "Pay via 1Link & PTA Approval",
+              titleUr: "بینک ایپ سے ادائیگی اور سم فعال",
+              descEn: "Pay PSID via any mobile banking app, JazzCash, Easypaisa, or ATM under 'GOP/FBR Tax'. Phone unblocks in 24 hours.",
+              descUr: "کسی بھی بینکنگ ایپ یا ایزی پیسہ سے ٹیکس ادا کریں، 24 گھنٹے میں فون خودکار پی ٹی اے منظور ہو جائے گا۔",
+              tagEn: "24h Activation",
+              tagUr: "فون بحال",
+            },
+          ]}
+        />
+
         {/* Section 7: FAQs (Exact Question Keywords) */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (PTA Mobile Registration)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How do I register my mobile with PTA in Pakistan?',
-                a: 'To register your mobile with PTA: (1) Find your 15-digit IMEI by dialing *#06#, (2) Log in to the official DIRBS portal at dirbs.pta.gov.pk or use the PTA DVS app, (3) Submit your CNIC or Passport details with device IMEIs to generate a 17-digit PSID code, and (4) Pay the tax via any mobile banking app or ATM under 1Link FBR/GOP Tax Payments. Your device will be approved within 24 hours.',
-              },
-              {
-                q: 'Can I do PTA mobile registration online free of cost?',
-                a: 'PTA mobile registration is only free for Overseas Pakistanis and foreign tourists staying up to 120 days per visit via the Temporary Mobile Registration System (TTRS at dirbs.pta.gov.pk/ttrs). For local residents and permanent use, statutory FBR customs duties and taxes apply based on the phone’s USD valuation.',
-              },
-              {
-                q: 'What is the grace period before an unregistered mobile phone gets blocked by PTA?',
-                a: 'When a local Pakistani SIM card is inserted into an unregistered device for the first time, PTA DIRBS grants a statutory 60-day grace period. If customs tax is not paid within 60 days, all local SIM signals are automatically blocked until payment is completed.',
-              },
-              {
-                q: 'What is the difference between registering on a Passport vs CNIC?',
-                a: 'Registering a phone on a valid Passport with recent international arrival immigration stamps qualifies for passenger baggage concessions with lower customs duty and reduced regulatory duty. Registering on a CNIC is classified as local commercial importation and carries higher regulatory duty and taxes.',
-              },
-              {
-                q: 'How do I check if my mobile is already PTA approved?',
-                a: 'Dial *#06# to get your 15-digit IMEI number, then send it via free SMS to 8484 from any Pakistani SIM, or enter it online at dirbs.pta.gov.pk. You will instantly receive a response indicating Compliant (Approved), Non-Compliant, or Blocked.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PTA Mobile Registration)"
+          titleUr="پی ٹی اے موبائل فون رجسٹریشن سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on registration steps, free overseas TTRS, 60-day grace period, and passport vs CNIC"
+          subtitleUr="آن لائن رجسٹریشن کا طریقہ، اوورسیز پاکستانیوں کے لیے مفت سہولت، 60 دن کی رعایت اور پاسپورٹ ٹیکس چھوٹ"
+          items={[
+            {
+              questionEn: "How do I register my mobile with PTA in Pakistan?",
+              questionUr: "پاکستان میں پی ٹی اے سے موبائل فون رجسٹر کروانے کا کیا طریقہ ہے؟",
+              answerEn: "To register your mobile with PTA: (1) Find your 15-digit IMEI by dialing *#06#, (2) Log in to the official DIRBS portal at dirbs.pta.gov.pk or use the PTA DVS app, (3) Submit your CNIC or Passport details with device IMEIs to generate a 17-digit PSID code, and (4) Pay the tax via any mobile banking app or ATM under 1Link FBR/GOP Tax Payments. Your device will be approved within 24 hours.",
+              answerUr: "موبائل پر *#06# ملا کر آئی ایم ای آئی حاصل کریں، ڈربس ویب سائٹ dirbs.pta.gov.pk پر لاگ ان ہو کر چالان (PSID) بنائیں اور کسی بھی بینک ایپ یا اے ٹی ایم سے ٹیکس ادا کریں۔ 24 گھنٹے میں فون منظور ہو جائے گا۔",
+            },
+            {
+              questionEn: "Can I do PTA mobile registration online free of cost?",
+              questionUr: "کیا پی ٹی اے موبائل رجسٹریشن بالکل مفت ہو سکتی ہے؟",
+              answerEn: "PTA mobile registration is only free for Overseas Pakistanis and foreign tourists staying up to 120 days per visit via the Temporary Mobile Registration System (TTRS at dirbs.pta.gov.pk/ttrs). For local residents and permanent use, statutory FBR customs duties and taxes apply based on the phone's USD valuation.",
+              answerUr: "صرف اوورسیز پاکستانی اور غیر ملکی سیاح 120 دن کے لیے عارضی رجسٹریشن (TTRS) مفت کروا سکتے ہیں۔ مستقل استعمال کے لیے ایف بی آر کا مقرر کردہ کسٹم ٹیکس ادا کرنا لازمی ہے۔",
+            },
+            {
+              questionEn: "What is the grace period before an unregistered mobile phone gets blocked by PTA?",
+              questionUr: "نان پی ٹی اے فون پر سم ڈالنے کے بعد بلاک ہونے تک کتنے دن کی مہلت ملتی ہے؟",
+              answerEn: "When a local Pakistani SIM card is inserted into an unregistered device for the first time, PTA DIRBS grants a statutory 60-day grace period. If customs tax is not paid within 60 days, all local SIM signals are automatically blocked until payment is completed.",
+              answerUr: "پاکستانی سم ڈالنے کے بعد پی ٹی اے 60 دن کا قانونی رعایتی وقت دیتا ہے۔ 60 دن میں ٹیکس ادا نہ کرنے پر فون پر تمام نیٹ ورکس کی سم سروس خودکار طور پر بند ہو جاتی ہے۔",
+            },
+            {
+              questionEn: "What is the difference between registering on a Passport vs CNIC?",
+              questionUr: "پاسپورٹ اور شناختی کارڈ پر موبائل رجسٹر کروانے میں کیا فرق ہے؟",
+              answerEn: "Registering a phone on a valid Passport with recent international arrival immigration stamps qualifies for passenger baggage concessions with lower customs duty and reduced regulatory duty. Registering on a CNIC is classified as local commercial importation and carries higher regulatory duty and taxes.",
+              answerUr: "حالیہ بین الاقوامی سفر کے پاسپورٹ پر رجسٹریشن کروانے سے مسافروں کو کسٹم اور ریگولیٹری ڈیوٹی میں خاصی رعایت ملتی ہے، جبکہ شناختی کارڈ پر لوکل کمرشل امپورٹ کا پورا ٹیکس لاگو ہوتا ہے۔",
+            },
+            {
+              questionEn: "How do I check if my mobile is already PTA approved?",
+              questionUr: "موبائل خریدنے سے پہلے پی ٹی اے تصدیق کیسے چیک کریں؟",
+              answerEn: "Dial *#06# to get your 15-digit IMEI number, then send it via free SMS to 8484 from any Pakistani SIM, or enter it online at dirbs.pta.gov.pk. You will instantly receive a response indicating Compliant (Approved), Non-Compliant, or Blocked.",
+              answerUr: "فون سے *#06# ڈائل کر کے آئی ایم ای آئی نمبر 8484 پر مفت میسج کریں یا dirbs.pta.gov.pk پر چیک کریں۔ آپ کو فوری معلوم ہو جائے گا کہ فون تصدیق شدہ (Compliant) ہے یا بلاک۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

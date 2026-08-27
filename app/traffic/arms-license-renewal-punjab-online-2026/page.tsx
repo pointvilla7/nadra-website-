@@ -5,6 +5,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { StepFlowDiagram } from '@/components/StepFlowDiagram';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -413,53 +414,128 @@ export default function ArmsLicenseRenewalPunjabPage() {
           </div>
         </section>
 
-        {/* Section 6: Genuinely Useful FAQ */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Arms License Renewal)
-            </h2>
-          </div>
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Arms License Renewal Workflow (e-Khidmat & NADRA)"
+          titleUr="اسلحہ لائسنس کی تجدید کا 4 مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from biometric verification to renewed chip card delivery"
+          subtitleUr="ای خدمت مرکز میں بائیومیٹرک سے لے کر نئے اسمارٹ کارڈ کی وصولی تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Personal Visit (No Weapon)",
+              titleUr: "ذاتی حاضری (اسلحہ ساتھ نہ لائیں)",
+              descEn: "Visit nearest e-Khidmat Markaz or NADRA Arms Counter with original CNIC and existing license card. Never bring weapon.",
+              descUr: "اصل شناختی کارڈ اور لائسنس کے ساتھ تشریف لائیں۔ اسلحہ ساتھ لانا سخت ممنوع ہے۔",
+              tagEn: "In-Person Desk",
+              tagUr: "سنٹر حاضری",
+            },
+            {
+              number: 2,
+              titleEn: "Live Biometric Verification",
+              titleUr: "بائیومیٹرک فنگر پرنٹ تصدیق",
+              descEn: "Undergo automated thumbprint/fingerprint verification matched live against NADRA's centralized national database.",
+              descUr: "نادرا ڈیٹا بیس کے ذریعے انگلیوں کے نشانات کی لائیو بائیومیٹرک تصدیق کروائیں۔",
+              tagEn: "Biometric Scan",
+              tagUr: "بائیومیٹرک",
+            },
+            {
+              number: 3,
+              titleEn: "Digital Fee & NADRA PSID Payment",
+              titleUr: "سرکاری فیس اور نادرا چالان ادائیگی",
+              descEn: "Pay statutory annual renewal fee + NADRA card processing charges via ePay Punjab, 1Link PSID, or bank counter.",
+              descUr: "ای پے پنجاب یا ون لنک کے ذریعے سالانہ تجدید فیس اور کارڈ پروسیسنگ چالان ادا کریں۔",
+              tagEn: "PSID Challan",
+              tagUr: "چالان ادائیگی",
+            },
+            {
+              number: 4,
+              titleEn: "Renewed Smart Card Collection",
+              titleUr: "تجدید شدہ اسمارٹ کارڈ کی وصولی",
+              descEn: "Receive computerized acknowledgment slip; collect renewed high-security smart weapon card within 10–15 business days.",
+              descUr: "رسید حاصل کریں اور 10 سے 15 کام کے دنوں کے اندر تجدید شدہ اسمارٹ کارڈ وصول کریں۔",
+              tagEn: "Smart Card Delivery",
+              tagUr: "کارڈ وصولی",
+            },
+          ]}
+        />
 
-          <div className="space-y-3 font-sans text-xs">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What is the difference between an All-Pakistan license and a Punjab license?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                An All-Pakistan license is issued under the authority of the Federal Ministry of Interior (Islamabad) and permits carrying the registered firearm anywhere in Pakistan. A Punjab license is issued under the authority of the Punjab Home Department and is legally valid only within the territorial boundaries of Punjab province.
-              </p>
-            </div>
+        {/* Fee Structure Table */}
+        <FeeTableVisual
+          titleEn="Official Arms License Statutory Renewal Fee Schedule (Punjab & Federal)"
+          titleUr="اسلحہ لائسنس کی سالانہ تجدید کا سرکاری فیس شیڈول"
+          subtitleEn="Category-wise statutory renewal fees for Non-Prohibited Bore (NPB), Prohibited Bore (PB), and NADRA card"
+          subtitleUr="نان پروبیٹڈ بور، پروبیٹڈ بور، فیڈرل لائسنس اور نادرا کارڈ پروسیسنگ فیس کی تفصیل"
+          noteEn="Holders of expired licenses are subject to annual late renewal surcharges. Firearms must not be carried into government offices."
+          rows={[
+            {
+              serviceEn: "Punjab Non-Prohibited Bore (NPB) Annual Renewal",
+              serviceUr: "پنجاب نان پروبیٹڈ بور (سالانہ تجدید)",
+              normal: "PKR 2,500 / year",
+              urgent: "ePay PSID",
+              executive: "e-Khidmat / DC Office",
+              validity: "1–5 Years Valid",
+            },
+            {
+              serviceEn: "Federal / All-Pakistan NPB License Renewal",
+              serviceUr: "وفاقی / آل پاکستان اسلحہ لائسنس تجدید",
+              normal: "PKR 5,000 / year",
+              urgent: "1Link PSID",
+              executive: "NADRA NRC Arms Desk",
+              validity: "All-Pakistan Valid",
+            },
+            {
+              serviceEn: "Federal Prohibited Bore (PB) Annual Renewal",
+              serviceUr: "وفاقی پروبیٹڈ بور لائسنس تجدید",
+              normal: "PKR 10,000 / year",
+              urgent: "MOI Approval",
+              executive: "Ministry of Interior",
+              validity: "Federal Jurisdiction",
+            },
+            {
+              serviceEn: "NADRA Smart Arms License Card Fee (New/Chip)",
+              serviceUr: "نادرا اسمارٹ کارڈ پروسیسنگ فیس",
+              normal: "PKR 1,500 Fixed",
+              urgent: "PKR 2,500 (Exec)",
+              executive: "Smart Chip Card",
+              validity: "Matches License Term",
+            },
+          ]}
+        />
 
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What if my arms license expired two years ago? Can I still renew it?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Yes, but you will have to pay late renewal surcharges for the lapsed years along with the standard renewal fee. However, if a license has been expired for an extended period (typically exceeding 5 to 7 years), the system may flag it for re-approval from the Deputy Commissioner&apos;s office or deem it cancelled.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Can someone else (like a driver, lawyer, or relative) renew it on my behalf?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No. Because biometric verification (live fingerprint scanning against the NADRA database) is mandatory, the license holder must appear in person. Anyone claiming they can renew your card without your presence is running an illegal scam.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Do I need to carry the weapon itself to the e-Khidmat Markaz or NADRA center?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No! <strong>Never carry firearms into civilian facilitation centers or NADRA offices</strong>. You only need the original license card and your CNIC. Carrying weapons into government centers without authorized security duties is a criminal offense under section 144 / arms regulations.
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* Section 6: Frequently Asked Questions */}
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Punjab Arms License Renewal)"
+          titleUr="اسلحہ لائسنس کی تجدید سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on All-Pakistan vs Punjab licenses, lapsed renewals, representative visits, and carrying weapons"
+          subtitleUr="آل پاکستان لائسنس کا فرق، پرانے لائسنس، بائیومیٹرک حاضری اور سنٹر میں اسلحہ لانے کی ممانعت"
+          items={[
+            {
+              questionEn: "What is the difference between a Punjab-only license and an All-Pakistan arms license?",
+              questionUr: "پنجاب لائسنس اور آل پاکستان اسلحہ لائسنس میں کیا قانونی فرق ہے؟",
+              answerEn: "An All-Pakistan license is issued under the authority of the Federal Ministry of Interior (Islamabad) and permits carrying the registered firearm anywhere in Pakistan. A Punjab license is issued under the authority of the Punjab Home Department and is legally valid only within the territorial boundaries of Punjab province.",
+              answerUr: "آل پاکستان لائسنس وزارت داخلہ اسلام آباد جاری کرتی ہے جو پورے ملک میں کارآمد ہوتا ہے، جبکہ پنجاب لائسنس صرف صوبہ پنجاب کی حدود میں قانونی حیثیت رکھتا ہے۔",
+            },
+            {
+              questionEn: "What if my arms license expired two years ago? Can I still renew it?",
+              questionUr: "اگر اسلحہ لائسنس دو سال قبل ایکسپائر ہو چکا ہو تو کیا اب تجدید ہو سکتی ہے؟",
+              answerEn: "Yes, but you will have to pay late renewal surcharges for the lapsed years along with the standard renewal fee. However, if a license has been expired for an extended period (typically exceeding 5 to 7 years), the system may flag it for re-approval from the Deputy Commissioner's office or deem it cancelled.",
+              answerUr: "جی ہاں! آپ پچھلے سالوں کی فیس اور جرمانہ ادا کر کے تجدید کروا سکتے ہیں۔ تاہم 5 سے 7 سال سے زائد تاخیر پر ڈی سی آفس سے دوبارہ منظوری درکار ہو سکتی ہے۔",
+            },
+            {
+              questionEn: "Can someone else (like a driver, lawyer, or relative) renew it on my behalf?",
+              questionUr: "کیا کوئی وکیل، رشتہ دار یا ڈرائیور میری جگہ جا کر لائسنس کی تجدید کروا سکتا ہے؟",
+              answerEn: "No. Because biometric verification (live fingerprint scanning against the NADRA database) is mandatory, the license holder must appear in person. Anyone claiming they can renew your card without your presence is running an illegal scam.",
+              answerUr: "نہیں! نادرا ڈیٹا بیس سے لائیو فنگر پرنٹ بائیومیٹرک تصدیق لازمی ہے، اس لیے لائسنس ہولڈر کا خود ذاتی طور پر حاضر ہونا قانونی شرط ہے۔",
+            },
+            {
+              questionEn: "Do I need to carry the weapon itself to the e-Khidmat Markaz or NADRA center?",
+              questionUr: "کیا لائسنس کی تجدید کے لیے بندوق یا پستول ساتھ لے جانا ضروری ہے؟",
+              answerEn: "No! Never carry firearms into civilian facilitation centers or NADRA offices. You only need the original license card and your CNIC. Carrying weapons into government centers without authorized security duties is a criminal offense under section 144 / arms regulations.",
+              answerUr: "ہرگز نہیں! سرکاری مراکز یا نادرا دفاتر میں اسلحہ لانا سختی سے منع ہے اور جرم ہے۔ آپ کو صرف اپنا اصل شناختی کارڈ اور پرانا لائسنس ساتھ لانا ہوتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Section 7: Related Links */}
         <section className="space-y-3">

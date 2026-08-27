@@ -5,6 +5,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { StepFlowDiagram } from '@/components/StepFlowDiagram';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -411,53 +412,85 @@ export default function SehatCardHospitalListLahorePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Hospital Admission & Sehat Card Treatment Flow"
+          titleUr="صحت کارڈ کے ذریعے ہسپتال میں داخلے اور مفت علاج کا طریقہ کار"
+          subtitleEn="4-stage verified sequence from eligibility verification to 100% cashless discharge"
+          subtitleUr="8500 میسج سے لے کر 10 لاکھ روپے تک کے مفت انڈور علاج تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Verify Eligibility (8500 SMS)",
+              titleUr: "8500 میسج سے اہلیت چیک کریں",
+              descEn: "Send 13-digit CNIC to 8500 SMS to verify family head entitlement and active health insurance quota.",
+              descUr: "شناختی کارڈ نمبر 8500 پر بھیج کر اپنے خاندان کی اہلیت اور فعال کوٹہ معلوم کریں۔",
+              tagEn: "SMS 8500",
+              tagUr: "اہلیت چیک",
+            },
+            {
+              number: 2,
+              titleEn: "Choose Empaneled Hospital",
+              titleUr: "پینل ہسپتال کا انتخاب",
+              descEn: "Select from Lahore's major public teaching hospitals (Mayo, Jinnah, Services) or verified private panel facilities.",
+              descUr: "لاہور کے سرکاری تدریسی یا منظور شدہ نجی پینل ہسپتالوں میں سے قریبی ہسپتال کا انتخاب کریں۔",
+              tagEn: "Panel List",
+              tagUr: "ہسپتال لسٹ",
+            },
+            {
+              number: 3,
+              titleEn: "Visit Sehat Sahulat Counter",
+              titleUr: "صحت سہولت کاؤنٹر پر اندراج",
+              descEn: "Present patient original CNIC (or B-Form for minors) at the dedicated hospital reception desk for biometric admission.",
+              descUr: "ہسپتال کے مخصوص صحت کاؤنٹر پر اصل شناختی کارڈ یا بچوں کا ب فارم پیش کر کے انٹری کروائیں۔",
+              tagEn: "CNIC Desk",
+              tagUr: "کاؤنٹر",
+            },
+            {
+              number: 4,
+              titleEn: "100% Cashless Treatment",
+              titleUr: "مکمل مفت انڈور علاج",
+              descEn: "Receive free indoor surgeries, diagnostic tests, hospital stay, and discharge medications up to PKR 1,000,000/year.",
+              descUr: "آپریشن، ادویات، ٹیسٹ اور داخلے کے تمام اخراجات حکومت کے فنڈ سے خودکار ادا ہوں گے۔",
+              tagEn: "Free Inpatient",
+              tagUr: "مفت علاج",
+            },
+          ]}
+        />
+
         {/* Section 5: Frequently Asked Questions */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Sehat Card Lahore Usage)
-            </h2>
-          </div>
-
-          <div className="space-y-3 font-sans text-xs">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Is the hospital list on this page complete and guaranteed current?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No list on any third-party website can guarantee 100% real-time accuracy because hospital contracts are audited and updated periodically by the Punjab government. We list the most well-known, established institutions, but you should always check the live database at <code>phimc.punjab.gov.pk</code> before admission.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What if my chosen hospital says it is no longer on the Sehat panel?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                If a private hospital has temporarily suspended its panel operations, you can visit any of Lahore’s major public teaching hospitals (such as Mayo, Jinnah, Services, or Lahore General Hospital), where Sehat Sahulat facilitation desks operate around the clock without interruption.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Does OPD get covered under the Sehat Card at all?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No. OPD consultations and routine walk-in doctor checkups are not covered under the Sehat Sahulat Program. Coverage begins when a patient is formally admitted as an indoor patient (inpatient) or requires designated day-care procedures like chemotherapy or hemodialysis.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Do I need a separate plastic Sehat Card to get admitted?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No separate plastic card is required. In Punjab, your <strong>original NADRA Computerized National Identity Card (CNIC)</strong> serves as your digital Sehat Card. For children under 18, their NADRA B-Form along with the parent&apos;s CNIC is used.
-              </p>
-            </div>
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Sehat Card Lahore Usage)"
+          titleUr="صحت کارڈ لاہور کے استعمال سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on hospital lists, panel suspensions, OPD coverage, and CNIC as card"
+          subtitleUr="پینل ہسپتالوں، او پی ڈی کوریج اور اصل شناختی کارڈ کے استعمال کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "Is the hospital list on this page complete and guaranteed current?",
+              questionUr: "کیا اس صفحے پر دی گئی ہسپتالوں کی فہرست حتمی اور تازہ ترین ہے؟",
+              answerEn: "No list on any third-party website can guarantee 100% real-time accuracy because hospital contracts are audited and updated periodically by the Punjab government. We list the most well-known, established institutions, but you should always check the live database at phimc.punjab.gov.pk before admission.",
+              answerUr: "پنجاب ہیلتھ انیشی ایٹو مینجمنٹ کمپنی وقتاً فوقتاً پینل ہسپتالوں کا جائزہ لیتی ہے۔ داخلے سے قبل ہمیشہ آفیشل پورٹل phimc.punjab.gov.pk پر لائیو فہرست ضرور دیکھیں۔",
+            },
+            {
+              questionEn: "What if my chosen hospital says it is no longer on the Sehat panel?",
+              questionUr: "اگر نجی ہسپتال میں صحت کارڈ کی سہولت عارضی بند ہو تو کیا کریں؟",
+              answerEn: "If a private hospital has temporarily suspended its panel operations, you can visit any of Lahore's major public teaching hospitals (such as Mayo, Jinnah, Services, or Lahore General Hospital), where Sehat Sahulat facilitation desks operate around the clock without interruption.",
+              answerUr: "نجی ہسپتال میں رکاوٹ کی صورت میں لاہور کے بڑے سرکاری ہسپتالوں (میو، جناح، سروسز یا جنرل ہسپتال) تشریف لے جائیں جہاں صحت کاؤنٹرز 24 گھنٹے فعال رہتے ہیں۔",
+            },
+            {
+              questionEn: "Does OPD get covered under the Sehat Card at all?",
+              questionUr: "کیا او پی ڈی اور عام چیک اپ صحت کارڈ میں شامل ہے؟",
+              answerEn: "No. OPD consultations and routine walk-in doctor checkups are not covered under the Sehat Sahulat Program. Coverage begins when a patient is formally admitted as an indoor patient (inpatient) or requires designated day-care procedures like chemotherapy or hemodialysis.",
+              answerUr: "نہیں، صحت کارڈ صرف ہسپتال میں باقاعدہ داخلے (انڈور مریض) یا مخصوص اہم طریقہ علاج جیسے ڈائلیسز اور کیموتھراپی کے لیے لاگو ہوتا ہے۔",
+            },
+            {
+              questionEn: "Do I need a separate plastic Sehat Card to get admitted?",
+              questionUr: "کیا علاج کے لیے کوئی الگ پلاسٹک کارڈ درکار ہوتا ہے؟",
+              answerEn: "No separate plastic card is required. In Punjab, your original NADRA Computerized National Identity Card (CNIC) serves as your digital Sehat Card. For children under 18, their NADRA B-Form along with the parent's CNIC is used.",
+              answerUr: "کسی الگ کارڈ کی ضرورت نہیں ہے۔ آپ کا اصل نادرا شناختی کارڈ ہی ڈیجیٹل صحت کارڈ کے طور پر کام کرتا ہے، اور بچوں کے لیے ب فارم استعمال ہوتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Section 6: Related Links */}
         <section className="space-y-3">

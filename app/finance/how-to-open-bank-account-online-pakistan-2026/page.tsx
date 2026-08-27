@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -413,44 +414,136 @@ export default function OpenBankAccountOnlinePage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Asaan Account vs Full Digital Account */}
+        <ComparisonVisual
+          titleEn="Asaan Digital Account vs Standard Current / Savings Account"
+          titleUr="آسان ڈیجیٹل اکاؤنٹ بمقابلہ ریگولر کرنٹ و سیونگز اکاؤنٹ"
+          subtitleEn="Documentation requirements, monthly turnover limits, and onboarding requirements comparison"
+          subtitleUr="کاغذات کی شرائط، ماہانہ ٹرانزیکشن کی حد اور اسٹیٹ بینک قوانین کا تقابلی جائزہ"
+          items={[
+            {
+              titleEn: "SBP Asaan Digital Account",
+              titleUr: "اسٹیٹ بینک آسان ڈیجیٹل اکاؤنٹ",
+              subtitleEn: "Zero Income Proof Required",
+              subtitleUr: "آمدنی کے ثبوت کے بغیر فوری اکاؤنٹ",
+              badgeEn: "CNIC Only",
+              badgeUr: "صرف شناختی کارڈ",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Open with only valid original CNIC and biometric mobile SIM",
+                "Zero salary slip or proof of business income required",
+                "Monthly credit/debit turnover limit up to PKR 1,000,000",
+                "Includes free mobile banking, Raast P2P transfers, and debit card"
+              ],
+              recommendedForEn: "Students, housewives, freelancers starting out, and individuals without formal salary slips",
+              recommendedForUr: "طلباء، گھریلو خواتین اور ان تمام افراد کے لیے جن کے پاس سیلری سلپ یا آمدنی کا ثبوت نہیں"
+            },
+            {
+              titleEn: "Standard Current / Savings / Freelancer",
+              titleUr: "ریگولر کرنٹ / سیونگز / فری لانسر اکاؤنٹ",
+              subtitleEn: "Uncapped High-Volume Banking",
+              subtitleUr: "بغیر حد کے مکمل کمرشل بینکنگ",
+              badgeEn: "Full Commercial",
+              badgeUr: "مکمل بینکنگ",
+              badgeVariant: "brass",
+              pointsEn: [
+                "Requires formal proof of income (salary slip, NTN return, or freelance invoices)",
+                "No transaction ceiling (unlimited monthly debit/credit volume)",
+                "Eligible for physical chequebooks, foreign currency, and credit cards",
+                "Freelancer accounts permit up to 50% USD retention in foreign currency pockets"
+              ],
+              recommendedForEn: "Salaried professionals, business owners, and high-earning digital exporters",
+              recommendedForUr: "تنخواہ دار ملازمین، کاروباری افراد اور بڑے پیمانے پر فری لانسنگ کرنے والوں کے لیے"
+            }
+          ]}
+        />
+
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Online Bank Account Opening Workflow (SBP 2026)"
+          titleUr="آن لائن بینک اکاؤنٹ کھولنے کا 4 مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage digital onboarding from app installation to instant IBAN activation"
+          subtitleUr="ایپ ڈاؤن لوڈ سے لے کر ویڈیو کے وائی سی اور کارڈ کی ترسیل تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Download Bank Mobile App",
+              titleUr: "بینک کی آفیشل ایپ ڈاؤن لوڈ کریں",
+              descEn: "Install official app (e.g. HBL, Meezan, Alfalah, Nayapay, Sadapay) and select 'Open New Account'.",
+              descUr: "متعلقہ بینک کی تصدیق شدہ ایپ انسٹال کر کے 'نیا اکاؤنٹ کھولیں' کا انتخاب کریں۔",
+              tagEn: "Mobile App",
+              tagUr: "ایپ ڈاؤن لوڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Scan CNIC & Contact Info",
+              titleUr: "شناختی کارڈ اور معلومات کا اندراج",
+              descEn: "Photograph original CNIC front/back and enter your mobile number registered on your own CNIC.",
+              descUr: "اپنے اصل شناختی کارڈ کی دونوں طرف سے تصویر لیں اور اپنے نام پر رجسٹرڈ سم کا نمبر درج کریں۔",
+              tagEn: "CNIC Scan",
+              tagUr: "شناختی کارڈ",
+            },
+            {
+              number: 3,
+              titleEn: "Biometric & Video KYC",
+              titleUr: "بائیومیٹرک اور لائیو ویڈیو کے وائی سی",
+              descEn: "Perform contactless camera fingerprint scanning or complete a 60-second live video call with a bank agent.",
+              descUr: "کیمرے سے انگلیوں کے نشانات اسکین کریں یا بینک نمائندے کے ساتھ مختصر ویڈیو کال مکمل کریں۔",
+              tagEn: "NADRA Match",
+              tagUr: "ویڈیو تصدیق",
+            },
+            {
+              number: 4,
+              titleEn: "Instant IBAN & Debit Card",
+              titleUr: "فوری اکاؤنٹ نمبر اور ڈیبٹ کارڈ",
+              descEn: "Your 24-character IBAN is generated immediately; order free Mastercard/PayPak/Visa debit card to your address.",
+              descUr: "آپ کا 24 ہندسوں کا آئی بی اے این فوری بن جائے گا اور ڈیبٹ کارڈ ڈاک کے ذریعے گھر بھیج دیا جائے گا۔",
+              tagEn: "Account Ready",
+              tagUr: "اکاؤنٹ فعال",
+            },
+          ]}
+        />
+
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Online Bank Account Opening)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Do I need to visit a physical bank branch to open a bank account in Pakistan?',
-                a: 'No. Under the State Bank of Pakistan’s Digital Onboarding Framework, most major banks allow resident Pakistani citizens to open full digital accounts entirely online via their official mobile apps using real-time biometric and facial verification matched against NADRA records.',
-              },
-              {
-                q: 'Can I open a bank account with just my CNIC and without proof of income?',
-                a: 'Yes. You can open an SBP "Asaan Account" or "Asaan Digital Account" using only your valid CNIC/SNIC and an active biometric SIM card registered in your name. Asaan accounts require no salary slips or proof of business income, subject to standard transaction limits (typically up to PKR 1,000,000 monthly total debits/credits).',
-              },
-              {
-                q: 'What should I do if the bank mobile app cannot verify my biometric fingerprints?',
-                a: 'If smartphone camera contactless fingerprint scanning fails, ensure you are scanning in a well-lit area against a plain white background. Alternatively, complete the application using Video KYC (live agent video call) or visit any branch or 1Link biometric ATM of that bank to complete a 30-second biometric scan.',
-              },
-              {
-                q: 'What is the difference between an Asaan Account and a Regular Current/Savings Account?',
-                a: 'An Asaan Account is a simplified inclusion account requiring zero proof of income and no minimum balance maintenance, but it has monthly debit/credit turnover limits. Regular Current and Savings accounts offer unlimited transaction ceilings and commercial facilities (such as chequebooks, foreign currency, and credit cards) but require formal proof of income (salary slip, employment letter, or tax returns).',
-              },
-              {
-                q: 'What is the difference between Islamic and Conventional bank accounts in Pakistan?',
-                a: 'Conventional bank savings accounts operate on fixed interest (Riba), whereas Islamic bank savings accounts (such as Meezan Bank, BankIslami, or Islamic windows of commercial banks) operate on Shariah-compliant profit-and-loss sharing principles (Mudarabah or Musharakah) where returns fluctuate based on actual pool investments.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Online Bank Account Opening)"
+          titleUr="آن لائن بینک اکاؤنٹ کھولنے سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on branchless opening, CNIC-only accounts, biometric failures, and Islamic vs Conventional"
+          subtitleUr="گھر بیٹھے اکاؤنٹ، آمدنی کے ثبوت کے بغیر اکاؤنٹ، فنگر پرنٹ مسائل اور اسلامی بینکنگ کی تفصیلی معلومات"
+          items={[
+            {
+              questionEn: "Do I need to visit a physical bank branch to open a bank account in Pakistan?",
+              questionUr: "کیا پاکستان میں بینک اکاؤنٹ کھولنے کے لیے برانچ جانا ضروری ہے؟",
+              answerEn: "No. Under the State Bank of Pakistan's Digital Onboarding Framework, most major banks allow resident Pakistani citizens to open full digital accounts entirely online via their official mobile apps using real-time biometric and facial verification matched against NADRA records.",
+              answerUr: "نہیں! اسٹیٹ بینک کے ڈیجیٹل فریم ورک کے تحت آپ گھر بیٹھے موبائل ایپ کے ذریعے نادرا سے بائیومیٹرک تصدیق کروا کے چند منٹوں میں مکمل اکاؤنٹ کھول سکتے ہیں۔",
+            },
+            {
+              questionEn: "Can I open a bank account with just my CNIC and without proof of income?",
+              questionUr: "کیا بغیر سیلری سلپ اور آمدنی کے ثبوت کے صرف شناختی کارڈ پر اکاؤنٹ کھل سکتا ہے؟",
+              answerEn: "Yes. You can open an SBP 'Asaan Account' or 'Asaan Digital Account' using only your valid CNIC/SNIC and an active biometric SIM card registered in your name. Asaan accounts require no salary slips or proof of business income, subject to standard transaction limits (typically up to PKR 1,000,000 monthly total debits/credits).",
+              answerUr: "جی ہاں! اسٹیٹ بینک کا 'آسان ڈیجیٹل اکاؤنٹ' صرف شناختی کارڈ پر کھلتا ہے جس کے لیے کسی سیلری سلپ یا کاروبار کے ثبوت کی ضرورت نہیں ہوتی (ماہانہ حد 10 لاکھ روپے تک ہوتی ہے)۔",
+            },
+            {
+              questionEn: "What should I do if the bank mobile app cannot verify my biometric fingerprints?",
+              questionUr: "اگر موبائل ایپ سے انگلیوں کے نشانات اسکین نہ ہو رہے ہوں تو کیا حل ہے؟",
+              answerEn: "If smartphone camera contactless fingerprint scanning fails, ensure you are scanning in a well-lit area against a plain white background. Alternatively, complete the application using Video KYC (live agent video call) or visit any branch or 1Link biometric ATM of that bank to complete a 30-second biometric scan.",
+              answerUr: "اچھی روشنی اور سفید پس منظر میں اسکین کریں، یا ایپ میں 'ویڈیو کے وائی سی' کا آپشن منتخب کریں جہاں بینک نمائندہ لائیو ویڈیو کال پر چہرے کی تصدیق کر لیتا ہے۔",
+            },
+            {
+              questionEn: "What is the difference between an Asaan Account and a Regular Current/Savings Account?",
+              questionUr: "آسان اکاؤنٹ اور ریگولر کرنٹ یا سیونگز اکاؤنٹ میں کیا فرق ہے؟",
+              answerEn: "An Asaan Account is a simplified inclusion account requiring zero proof of income and no minimum balance maintenance, but it has monthly debit/credit turnover limits. Regular Current and Savings accounts offer unlimited transaction ceilings and commercial facilities (such as chequebooks, foreign currency, and credit cards) but require formal proof of income (salary slip, employment letter, or tax returns).",
+              answerUr: "آسان اکاؤنٹ میں آمدنی کے ثبوت کی ضرورت نہیں ہوتی مگر ماہانہ ٹرانزیکشن کی حد ہوتی ہے۔ ریگولر اکاؤنٹ میں لامحدود لین دین کی سہولت ملتی ہے مگر آمدنی کا ثبوت دینا لازمی ہوتا ہے۔",
+            },
+            {
+              questionEn: "What is the difference between Islamic and Conventional bank accounts in Pakistan?",
+              questionUr: "پاکستان میں اسلامی اور روایتی (کنوینشنل) بینکنگ میں کیا فرق ہے؟",
+              answerEn: "Conventional bank savings accounts operate on fixed interest (Riba), whereas Islamic bank savings accounts (such as Meezan Bank, BankIslami, or Islamic windows of commercial banks) operate on Shariah-compliant profit-and-loss sharing principles (Mudarabah or Musharakah) where returns fluctuate based on actual pool investments.",
+              answerUr: "روایتی بینکوں میں طے شدہ سود کا نظام ہوتا ہے، جبکہ اسلامی بینک (جیسے میزان بینک) شریعت کے مطابق نفع و نقصان کی شراکت (مضاربہ) کی بنیاد پر حلال منافع فراہم کرتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

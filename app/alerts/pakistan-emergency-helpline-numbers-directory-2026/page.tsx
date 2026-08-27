@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -540,40 +541,98 @@ export default function EmergencyHelplineDirectoryPage() {
           </div>
         </section>
 
+        {/* Visual Emergency Directory Table */}
+        <FeeTableVisual
+          titleEn="Master Pakistan Emergency Helplines Quick-Dial Directory"
+          titleUr="پاکستان کے تمام ہنگامی اور ریسکیو ہیلپ لائن نمبرز کی ڈائریکٹری"
+          subtitleEn="24/7 Toll-free verified dispatch codes for medical, police, fire, motorway, and child protection"
+          subtitleUr="ایمبولینس، پولیس، فائر بریگیڈ اور موٹروے پولیس کے مفت تصدیق شدہ ہنگامی نمبرز"
+          noteEn="All emergency shortcodes (1122, 15, 115, 130, 16) are 100% toll-free across all cellular networks (Jazz, Telenor, Zong, Ufone) even with zero balance."
+          rows={[
+            {
+              serviceEn: "Rescue 1122 (Ambulance, Fire & Disaster)",
+              serviceUr: "ریسکیو 1122 (ایمبولینس، فائر بریگیڈ و ڈیزاسٹر)",
+              normal: "Dial 1122",
+              urgent: "Free Toll-Free",
+              executive: "Punjab, KP, Sindh, AJK, ICT, GB",
+              validity: "24/7 Immediate Dispatch",
+            },
+            {
+              serviceEn: "Police Emergency Madadgar (Crime & Security)",
+              serviceUr: "پولیس 15 (جرائم کی اطلاع و فوری مدد)",
+              normal: "Dial 15",
+              urgent: "Free Toll-Free",
+              executive: "All Districts Nationwide",
+              validity: "Instant Police Van Dispatch",
+            },
+            {
+              serviceEn: "Edhi Ambulance Service (Medical Transport)",
+              serviceUr: "ایدھی ایمبولینس سروس (مریضوں کی منتقلی)",
+              normal: "Dial 115",
+              urgent: "Free Toll-Free",
+              executive: "Nationwide Fleet & Air Ambulance",
+              validity: "24/7 Patient & Mortuary Service",
+            },
+            {
+              serviceEn: "National Highways & Motorway Police (NHMP)",
+              serviceUr: "موٹروے پولیس 130 (شاہراہوں پر مدد)",
+              normal: "Dial 130",
+              urgent: "Free Toll-Free",
+              executive: "All Motorways (M-1 to M-16) & N-5",
+              validity: "Breakdown & Accident Relief",
+            },
+            {
+              serviceEn: "Municipal Fire Brigade (Fire Emergencies)",
+              serviceUr: "فائر بریگیڈ 16 (آگ لگنے کے واقعات)",
+              normal: "Dial 16",
+              urgent: "Free Toll-Free",
+              executive: "City Municipal Corporations",
+              validity: "Urban Fire & Chemical Rescue",
+            },
+            {
+              serviceEn: "Child Protection & Abuse Helpline (CPWB)",
+              serviceUr: "چائلڈ پروٹیکشن ہیلپ لائن (گمشدہ بچے و تحفظ)",
+              normal: "Dial 1121",
+              urgent: "Free Toll-Free",
+              executive: "Child Welfare Bureaus",
+              validity: "24/7 Child Safety Rapid Response",
+            },
+          ]}
+        />
+
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Emergency Helplines Pakistan)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Does dialing 1122 work in all provinces of Pakistan?',
-                a: 'Yes. Dialing 1122 connects you to government emergency ambulance, firefighting, and technical rescue services across Punjab, Khyber Pakhtunkhwa, Azad Jammu & Kashmir, Gilgit-Baltistan, Islamabad Capital Territory, and in Sindh through the Sindh Emergency Rescue Service (SERS 1122).',
-              },
-              {
-                q: 'What is the difference between calling Rescue 1122 versus Edhi 115 or Chhipa 1020?',
-                a: 'Rescue 1122 is a fully government-funded emergency service with trained emergency medical technicians (EMTs), paramedic-equipped ambulances, fire trucks, and hydraulic rescue gear. Edhi Foundation (115) and Chhipa (1020) are premier non-profit humanitarian ambulance networks specialized in fast emergency medical transport, mass casualty evacuation, and inter-city patient transfers nationwide.',
-              },
-              {
-                q: 'Do emergency helpline numbers (1122, 15, 115, 130) work without mobile balance or a SIM card?',
-                a: 'Yes. Under Pakistan Telecommunication Authority (PTA) mandatory public safety regulations, national emergency short codes (1122, 15, 16, 115, 130, 911) are 100% toll-free and connect through any available cellular tower even if your prepaid balance is Rs. 0.00 or your SIM is locked/unregistered.',
-              },
-              {
-                q: 'What is the current status of the single unified emergency number 911 (PEHEL) in Pakistan?',
-                a: 'The Pakistan Emergency Helpline (PEHEL 911) is a national initiative launched to consolidate police, medical, fire, and highway dispatch into a single universal emergency number. While 911 is operational and routes calls to relevant provincial command centers, keeping primary dedicated direct numbers (1122, 15, 115, 130) is strongly advised for immediate, direct response.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Emergency Helplines Pakistan)"
+          titleUr="ایمرجنسی اور ریسکیو ہیلپ لائنز کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on provincial coverage, Rescue 1122 vs Edhi, zero balance dialing, and PEHEL 911"
+          subtitleUr="صوبائی کوریج، 1122 بمقابلہ 115، بغیر بیلنس کالز اور 911 ہیلپ لائن کی تفصیل"
+          items={[
+            {
+              questionEn: "Does dialing 1122 work in all provinces of Pakistan?",
+              questionUr: "کیا 1122 پاکستان کے تمام صوبوں میں کام کرتی ہے؟",
+              answerEn: "Yes. Dialing 1122 connects you to government emergency ambulance, firefighting, and technical rescue services across Punjab, Khyber Pakhtunkhwa, Azad Jammu & Kashmir, Gilgit-Baltistan, Islamabad Capital Territory, and in Sindh through the Sindh Emergency Rescue Service (SERS 1122).",
+              answerUr: "جی ہاں! 1122 پنجاب، خیبر پختونخوا، سندھ، آزاد کشمیر، گلگت بلتستان اور اسلام آباد میں مفت سرکاری ایمبولینس، فائر فائٹنگ اور ریسکیو سروس فراہم کرتی ہے۔",
+            },
+            {
+              questionEn: "What is the difference between calling Rescue 1122 versus Edhi 115 or Chhipa 1020?",
+              questionUr: "ریسکیو 1122 اور ایدھی 115 یا چھیپا 1020 میں کیا فرق ہے؟",
+              answerEn: "Rescue 1122 is a fully government-funded emergency service with trained emergency medical technicians (EMTs), paramedic-equipped ambulances, fire trucks, and hydraulic rescue gear. Edhi Foundation (115) and Chhipa (1020) are premier non-profit humanitarian ambulance networks specialized in fast emergency medical transport, mass casualty evacuation, and inter-city patient transfers nationwide.",
+              answerUr: "ریسکیو 1122 سرکاری پیرا میڈیکس، فائر بریگیڈ اور جدید ریسکیو سامان سے لیس ہے، جبکہ ایدھی اور چھیپا فلاحی ایمبولینس نیٹ ورکس ہیں جو فوری میڈیکل ٹرانسپورٹ اور میت گاڑیوں کے لیے ملک بھر میں فعال ہیں۔",
+            },
+            {
+              questionEn: "Do emergency helpline numbers (1122, 15, 115, 130) work without mobile balance or a SIM card?",
+              questionUr: "کیا ایمرجنسی نمبرز بغیر بیلنس یا سم کارڈ کے کام کرتے ہیں؟",
+              answerEn: "Yes. Under Pakistan Telecommunication Authority (PTA) mandatory public safety regulations, national emergency short codes (1122, 15, 16, 115, 130, 911) are 100% toll-free and connect through any available cellular tower even if your prepaid balance is Rs. 0.00 or your SIM is locked/unregistered.",
+              answerUr: "جی ہاں! پی ٹی اے قوانین کے تحت 1122، 15، 115 اور 130 پر کال بالکل مفت ہے اور صفر بیلنس یا بغیر سم کے بھی قریبی ٹاور سے فوری مل جاتی ہے۔",
+            },
+            {
+              questionEn: "What is the current status of the single unified emergency number 911 (PEHEL) in Pakistan?",
+              questionUr: "پاکستان میں 911 ہیلپ لائن کا کیا طریقہ کار ہے؟",
+              answerEn: "The Pakistan Emergency Helpline (PEHEL 911) is a national initiative launched to consolidate police, medical, fire, and highway dispatch into a single universal emergency number. While 911 is operational and routes calls to relevant provincial command centers, keeping primary dedicated direct numbers (1122, 15, 115, 130) is strongly advised for immediate, direct response.",
+              answerUr: "پہل 911 ایک مشترکہ قومی نمبر ہے جو کال کو متعلقہ محکمے کو فارورڈ کرتا ہے، تاہم فوری اور تیز ترین رسپانس کے لیے براہ راست متعلقہ نمبرز (1122، 15، 130) ملانا زیادہ موثر ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

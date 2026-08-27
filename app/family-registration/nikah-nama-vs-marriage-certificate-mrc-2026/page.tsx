@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -398,44 +399,136 @@ export default function NikahNamaVsMrcPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Nikah Nama vs Computerized MRC */}
+        <ComparisonVisual
+          titleEn="Nikah Nama (Form II) vs Computerized Marriage Certificate (MRC)"
+          titleUr="روایتی نکاح نامہ بمقابلہ کمپیوٹرائزڈ میرج رجسٹریشن سرٹیفکیٹ"
+          subtitleEn="Issuing authority, statutory purpose, format, and legal validity comparison"
+          subtitleUr="جاری کرنے والے ادارے، قانونی مقاصد اور سفارت خانے کی تصدیق کا تقابلی جائزہ"
+          items={[
+            {
+              titleEn: "Manual Nikah Nama (Form II)",
+              titleUr: "روایتی دستی نکاح نامہ (فارم II)",
+              subtitleEn: "Islamic Marriage Contract (Solemnization Day)",
+              subtitleUr: "شرعی و قانونی معاہدہ نکاح",
+              badgeEn: "Primary Deed",
+              badgeUr: "بنیادی معاہدہ",
+              badgeVariant: "brass",
+              pointsEn: [
+                "Filled on the wedding day by authorized Nikah Khawan/Registrar",
+                "Signed by bride, groom, wali/vakil, and 2 sane adult witnesses",
+                "Contains 25 specific legal clauses including Haq Mehr and Talaq delegation",
+                "Serves as the foundational legal evidence to register marriage at the local government"
+              ],
+              recommendedForEn: "Immediate Islamic validity, wedding ceremony execution, and sharia marital proof",
+              recommendedForUr: "نکاح کی تقریب، شرعی ایجاب و قبول اور حق مہر کے قانونی ثبوت کے لیے"
+            },
+            {
+              titleEn: "Computerized Marriage Certificate (MRC)",
+              titleUr: "کمپیوٹرائزڈ میرج سرٹیفکیٹ (CRMS)",
+              subtitleEn: "Union Council / NADRA Database Certificate",
+              subtitleUr: "یونین کونسل نادرا ڈیجیٹل سرٹیفکیٹ",
+              badgeEn: "Official Government MRC",
+              badgeUr: "سرکاری ڈیجیٹل سرٹیفکیٹ",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Issued by the Union Council/Cantonment Board via NADRA CRMS central system",
+                "Bilingual format (Urdu & English) with secure encrypted dynamic QR code",
+                "Mandatory for wife's CNIC marital status change (husband name entry)",
+                "Required for child Nadra B-Form, spouse visa, MOFA attestation, and foreign immigration"
+              ],
+              recommendedForEn: "NADRA CNIC update, passport modification, embassy spouse visa, and foreign immigration",
+              recommendedForUr: "نادرا کارڈ میں خاوند کا نام درج کروانے، فیملی ویزا اور پاسپورٹ بنوانے کے لیے لازمی"
+            }
+          ]}
+        />
+
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Marriage Registration Workflow in Pakistan"
+          titleUr="نکاح کے بعد کمپیوٹرائزڈ میرج سرٹیفکیٹ کے حصول کا مرحلہ وار طریقہ"
+          subtitleEn="4-stage verified sequence from Nikah ceremony to official CRMS certificate collection"
+          subtitleUr="نکاح خواں کے اندراج سے لے کر یونین کونسل کے کیو آر کوڈ سرٹیفکیٹ تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Solemnize Nikah & Form II",
+              titleUr: "نکاح کی تقریب اور فارم II",
+              descEn: "Nikah Khawan completes the 4-copy official Nikah Nama with signatures of spouses, vakil, and 2 witnesses.",
+              descUr: "نکاح خواں سرکاری نکاح نامے کی چاروں کاپیاں پر کروا کر فریقین اور گواہوں کے دستخط لے۔",
+              tagEn: "Nikah Day",
+              tagUr: "تقریب نکاح",
+            },
+            {
+              number: 2,
+              titleEn: "Deposit Copy at Union Council",
+              titleUr: "یونین کونسل میں کاپی جمع",
+              descEn: "Nikah Registrar or family submits duplicate copy and CNICs to the local Union Council / Cantonment Office.",
+              descUr: "نکاح رجسٹرار یا دولہا متعلقہ یونین کونسل میں نکاح نامے کی سرکاری کاپی جمع کروائے۔",
+              tagEn: "UC Deposit",
+              tagUr: "یونین کونسل",
+            },
+            {
+              number: 3,
+              titleEn: "CRMS Database Entry",
+              titleUr: "نادرا سی آر ایم ایس اندراج",
+              descEn: "Union Council Secretary enters marriage records into NADRA's centralized Civil Registration Management System.",
+              descUr: "یونین کونسل سیکرٹری نادرا کے مرکزی ڈیجیٹل سسٹم میں نکاح کے مکمل کوائف فیڈ کرے۔",
+              tagEn: "Data Entry",
+              tagUr: "ڈیٹا انٹری",
+            },
+            {
+              number: 4,
+              titleEn: "Collect Computerized MRC",
+              titleUr: "کمپیوٹرائزڈ سرٹیفکیٹ وصولی",
+              descEn: "Pay nominal municipal fee (PKR 100–300) to collect the official bilingual QR-coded Marriage Certificate.",
+              descUr: "سرکاری فیس ادا کر کے کیو آر کوڈ سے لیس اصل کمپیوٹرائزڈ سرٹیفکیٹ وصول کریں۔",
+              tagEn: "QR Certificate",
+              tagUr: "سرٹیفکیٹ وصولی",
+            },
+          ]}
+        />
+
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Nikah Nama vs MRC)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Is the Nikah Nama alone sufficient to update a wife’s CNIC or apply for foreign visas?',
-                a: 'No. While a Nikah Nama is a binding Islamic and civil contract, modern government departments (including NADRA, the Directorate General of Immigration & Passports, foreign embassies, and courts) require the official computerized Marriage Registration Certificate (MRC) issued by the Union Council through NADRA’s Civil Registration Management System (CRMS).',
-              },
-              {
-                q: 'Can I check or verify a Marriage Certificate online by CNIC in Pakistan?',
-                a: 'No. There is NO public online portal where citizens can search marriage records by CNIC. In Pakistan, marriage and marital records are treated as strictly private and confidential. Verification is conducted via the encrypted dynamic QR code printed directly on the computerized MRC or in person at the issuing Union Council.',
-              },
-              {
-                q: 'How long does it take to obtain the computerized Marriage Certificate from the Union Council?',
-                a: 'Once the Nikah Registrar or applicant submits the completed Nikah Nama along with copies of bride, groom, and witness CNICs, the Union Council secretary inputs the record into the CRMS database. The computerized certificate is typically printed and handed over within 3 to 7 working days upon payment of the municipal registration fee.',
-              },
-              {
-                q: 'What should we do if our marriage was solemnized years ago but never registered with the Union Council?',
-                a: 'You can complete a "Late Marriage Registration" by visiting the Union Council having jurisdiction over the area where the Nikah took place. Submit the original manual Nikah Nama, CNICs of both spouses and witnesses, and a late registration affidavit along with the statutory late fee. If the original Nikah Nama is lost or decades have passed, a declaratory court decree from a Family Court may be required.',
-              },
-              {
-                q: 'What is the role of the Nikah Registrar in this process?',
-                a: 'Under the Muslim Family Laws Ordinance 1961, the licensed Nikah Registrar (Nikah Khawan) who solemnized the marriage is legally bound to deposit the official duplicate copy of the manual Nikah Nama with the relevant local Union Council within the prescribed legal timeframe.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Nikah Nama vs MRC)"
+          titleUr="نکاح نامہ اور میرج رجسٹریشن سرٹیفکیٹ کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on visa requirements, online verification, timelines, and late entry"
+          subtitleUr="ویزا شرائط، آن لائن تصدیق، کتنا وقت لگتا ہے اور تاخیری اندراج کی تفصیلی معلومات"
+          items={[
+            {
+              questionEn: "Is the Nikah Nama alone sufficient to update a wife's CNIC or apply for foreign visas?",
+              questionUr: "کیا صرف دستی نکاح نامے کی بنیاد پر نادرا شناختی کارڈ یا فیملی ویزا بن سکتا ہے؟",
+              answerEn: "No. While a Nikah Nama is a binding Islamic and civil contract, modern government departments (including NADRA, the Directorate General of Immigration & Passports, foreign embassies, and courts) require the official computerized Marriage Registration Certificate (MRC) issued by the Union Council through NADRA's Civil Registration Management System (CRMS).",
+              answerUr: "نہیں، نادرا، پاسپورٹ آفس اور غیر ملکی سفارت خانے صرف یونین کونسل کے کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) کو تسلیم کرتے ہیں۔ دستی نکاح نامہ اکیلا کافی نہیں ہوتا۔",
+            },
+            {
+              questionEn: "Can I check or verify a Marriage Certificate online by CNIC in Pakistan?",
+              questionUr: "کیا شناختی کارڈ نمبر لکھ کر آن لائن نکاح کی تصدیق کی جا سکتی ہے؟",
+              answerEn: "No. There is NO public online portal where citizens can search marriage records by CNIC. In Pakistan, marriage and marital records are treated as strictly private and confidential. Verification is conducted via the encrypted dynamic QR code printed directly on the computerized MRC or in person at the issuing Union Council.",
+              answerUr: "نہیں! رازداری کی وجہ سے شادی کا ریکارڈ آن لائن سرچ نہیں کیا جا سکتا۔ اصلیت کی جانچ صرف سرٹیفکیٹ پر موجود کیو آر کوڈ کو اسکین کر کے کی جاتی ہے۔",
+            },
+            {
+              questionEn: "How long does it take to obtain the computerized Marriage Certificate from the Union Council?",
+              questionUr: "یونین کونسل سے کمپیوٹرائزڈ میرج سرٹیفکیٹ کتنے دنوں میں ملتا ہے؟",
+              answerEn: "Once the Nikah Registrar or applicant submits the completed Nikah Nama along with copies of bride, groom, and witness CNICs, the Union Council secretary inputs the record into the CRMS database. The computerized certificate is typically printed and handed over within 3 to 7 working days upon payment of the municipal registration fee.",
+              answerUr: "نکاح نامہ اور شناختی کارڈ کی کاپیاں جمع کروانے کے بعد 3 سے 7 کام کے دنوں کے اندر کمپیوٹرائزڈ سرٹیفکیٹ جاری کر دیا جاتا ہے۔",
+            },
+            {
+              questionEn: "What should we do if our marriage was solemnized years ago but never registered with the Union Council?",
+              questionUr: "اگر نکاح پرانا ہو اور یونین کونسل میں اندراج نہ کروایا گیا ہو تو کیا طریقہ ہے؟",
+              answerEn: "You can complete a 'Late Marriage Registration' by visiting the Union Council having jurisdiction over the area where the Nikah took place. Submit the original manual Nikah Nama, CNICs of both spouses and witnesses, and a late registration affidavit along with the statutory late fee. If the original Nikah Nama is lost or decades have passed, a declaratory court decree from a Family Court may be required.",
+              answerUr: "آپ قریبی یونین کونسل میں لیٹ انٹری کا حلف نامہ، اصل نکاح نامہ اور فیس جمع کروا کر تاخیری اندراج کروا سکتے ہیں۔ بہت زیادہ تاخیر پر فیملی کورٹ کی ڈگری درکار ہو سکتی ہے۔",
+            },
+            {
+              questionEn: "What is the role of the Nikah Registrar in this process?",
+              questionUr: "اس عمل میں نکاح خواں اور رجسٹرار کی قانونی ذمہ داری کیا ہے؟",
+              answerEn: "Under the Muslim Family Laws Ordinance 1961, the licensed Nikah Registrar (Nikah Khawan) who solemnized the marriage is legally bound to deposit the official duplicate copy of the manual Nikah Nama with the relevant local Union Council within the prescribed legal timeframe.",
+              answerUr: "مسلم فیملی لاز آرڈیننس 1961 کے تحت نکاح خواں قانونی طور پر پابند ہے کہ وہ نکاح کی کاپی مقررہ وقت کے اندر متعلقہ یونین کونسل میں جمع کروائے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

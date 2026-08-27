@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -356,40 +357,85 @@ export default function NdmaDisasterAlertSetupPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step NDMA & PTA Disaster Early Warning Setup"
+          titleUr="این ڈی ایم اے اور پی ٹی اے ڈیزاسٹر الرٹس فعال کرنے کا طریقہ"
+          subtitleEn="4-stage verified sequence to enable automated cellular SMS and push notifications"
+          subtitleUr="ایپ ڈاؤن لوڈ سے لے کر سیلولر ایمرجنسی پیغامات موصول کرنے تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Download Pak NDMA App",
+              titleUr: "این ڈی ایم اے ایپ انسٹال کریں",
+              descEn: "Install the official Pak NDMA-Disaster Alert app for free from Google Play Store or Apple App Store.",
+              descUr: "گوگل پلے یا ایپل ایپ اسٹور سے سرکاری 'Pak NDMA' ایپ مفت انسٹال کریں۔",
+              tagEn: "Free Download",
+              tagUr: "ایپ ڈاؤن لوڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Enable Location & Emergency Alerts",
+              titleUr: "لوکیشن اور الرٹ براڈکاسٹ فعال کریں",
+              descEn: "Grant GPS location permissions and ensure 'Wireless Emergency Alerts' is turned ON in phone settings.",
+              descUr: "موبائل سیٹنگز میں وائرلیس ایمرجنسی الرٹس آن کریں اور جی پی ایس لوکیشن آن رکھیں۔",
+              tagEn: "Phone Settings",
+              tagUr: "موبائل سیٹنگز",
+            },
+            {
+              number: 3,
+              titleEn: "Select District & Hazard Types",
+              titleUr: "ضلع اور خطرات کا انتخاب",
+              descEn: "Configure alerts for river floods, monsoon rainstorms, earthquakes, glacial lake bursts, and heatwaves.",
+              descUr: "اپنے ضلع کا انتخاب کریں اور سیلاب، زلزلہ اور بارشوں کے الرٹس سیٹ کریں۔",
+              tagEn: "Preferences",
+              tagUr: "ترجیحات",
+            },
+            {
+              number: 4,
+              titleEn: "Receive Offline SMS & Push Alerts",
+              titleUr: "ایس ایم ایس اور پش نوٹیفکیشن",
+              descEn: "Receive instant geo-fenced early warning SMS via mobile towers (even without active mobile data) before hazards strike.",
+              descUr: "موبائل ڈیٹا بند ہونے کے باوجود ٹاورز کے ذریعے لائیو وارننگ ایس ایم ایس حاصل کریں۔",
+              tagEn: "Early Warning",
+              tagUr: "بروقت اطلاع",
+            },
+          ]}
+        />
+
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Disaster Alerts &amp; Setup)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Do I need an active internet connection to receive NDMA SMS flood alerts?',
-                a: 'No. The Disaster Early Warning (DEW) SMS service operated by NDMA, PTA, and mobile network operators (Jazz, Telenor, Zong, Ufone) uses cellular broadcast towers. Geo-fenced SMS alerts are delivered directly to your standard mobile phone messaging inbox even if you have zero mobile data or no Wi-Fi connection.',
-              },
-              {
-                q: 'Is the Pak NDMA-Disaster Alert app free to download?',
-                a: 'Yes. The Pak NDMA-Disaster Alert mobile application is 100% free of charge on both the Google Play Store (Android) and the Apple App Store (iOS). It requires no subscription fee or paid account.',
-              },
-              {
-                q: 'Does the geo-fenced SMS system work for all mobile networks in Pakistan?',
-                a: 'While Jazz has been a primary early partner under the DEW-3 initiative, the Pakistan Telecommunication Authority (PTA) mandates all cellular mobile operators (CMOs) including Telenor, Zong, and Ufone to broadcast emergency public safety messages to mobile subscribers located in active disaster-threat zones.',
-              },
-              {
-                q: 'Where can I see live river flow and flood levels in Pakistan?',
-                a: 'You can monitor live hydro-meteorological river discharge rates, dam water levels (Tarbela, Mangla), and upstream flood surges through the Pakistan Meteorological Department Flood Forecasting Division at ffd.pmd.gov.pk.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Disaster Alerts & Setup)"
+          titleUr="قدرتی آفات اور ہنگامی الرٹس کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on offline SMS, app charges, telecom networks, and live river tracking"
+          subtitleUr="بغیر انٹرنیٹ ایس ایم ایس، مفت ایپ، موبائل نیٹ ورکس اور دریاؤں کے بہاؤ کی معلومات"
+          items={[
+            {
+              questionEn: "Do I need an active internet connection to receive NDMA SMS flood alerts?",
+              questionUr: "کیا سیلاب اور زلزلے کے ایمرجنسی ایس ایم ایس کے لیے انٹرنیٹ لازمی ہے؟",
+              answerEn: "No. The Disaster Early Warning (DEW) SMS service operated by NDMA, PTA, and mobile network operators (Jazz, Telenor, Zong, Ufone) uses cellular broadcast towers. Geo-fenced SMS alerts are delivered directly to your standard mobile phone messaging inbox even if you have zero mobile data or no Wi-Fi connection.",
+              answerUr: "نہیں! پی ٹی اے اور این ڈی ایم اے کے تحت ایمرجنسی ایس ایم ایس موبائل ٹاور براڈکاسٹ کے ذریعے براہ راست ہر سم پر آتے ہیں، چاہے آپ کے پاس انٹرنیٹ یا بیلنس نہ بھی ہو۔",
+            },
+            {
+              questionEn: "Is the Pak NDMA-Disaster Alert app free to download?",
+              questionUr: "کیا پاک این ڈی ایم اے ڈیزاسٹر الرٹ ایپ بالکل مفت ہے؟",
+              answerEn: "Yes. The Pak NDMA-Disaster Alert mobile application is 100% free of charge on both the Google Play Store (Android) and the Apple App Store (iOS). It requires no subscription fee or paid account.",
+              answerUr: "جی ہاں! یہ سرکاری موبائل ایپ اینڈرائیڈ اور آئی فون دونوں پر 100 فیصد مفت دستیاب ہے اور اس کا کوئی ماہانہ چارج نہیں ہے۔",
+            },
+            {
+              questionEn: "Does the geo-fenced SMS system work for all mobile networks in Pakistan?",
+              questionUr: "کیا یہ ایمرجنسی سسٹم پاکستان کے تمام موبائل نیٹ ورکس پر کام کرتا ہے؟",
+              answerEn: "While Jazz has been a primary early partner under the DEW-3 initiative, the Pakistan Telecommunication Authority (PTA) mandates all cellular mobile operators (CMOs) including Telenor, Zong, and Ufone to broadcast emergency public safety messages to mobile subscribers located in active disaster-threat zones.",
+              answerUr: "جی ہاں! پی ٹی اے کی ہدایات کے تحت جاز، زونگ، ٹیلی نار اور یوفون سمیت تمام نیٹ ورکس خطرے سے دوچار علاقوں میں مفت ہنگامی پیغامات پہنچانے کے پابند ہیں۔",
+            },
+            {
+              questionEn: "Where can I see live river flow and flood levels in Pakistan?",
+              questionUr: "پاکستان کے دریاؤں اور ڈیموں میں پانی کے لائیو بہاؤ کی معلومات کہاں سے ملیں گی؟",
+              answerEn: "You can monitor live hydro-meteorological river discharge rates, dam water levels (Tarbela, Mangla), and upstream flood surges through the Pakistan Meteorological Department Flood Forecasting Division at ffd.pmd.gov.pk.",
+              answerUr: "محکمہ موسمیات کے فلڈ فورکاسٹنگ ڈویژن کی آفیشل ویب سائٹ ffd.pmd.gov.pk پر منگلا، تربیلا ڈیم اور تمام ہیڈ ورکس کے لائیو پانی کے بہاؤ کے اعداد و شمار دیکھے جا سکتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

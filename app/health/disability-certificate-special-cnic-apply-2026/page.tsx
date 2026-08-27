@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -333,44 +334,91 @@ export default function DisabilityCertificateSpecialCnicPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Disability Certificate & Special CNIC Workflow"
+          titleUr="معذوری سرٹیفکیٹ اور خصوصی شناختی کارڈ کا مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from medical board assessment to NADRA wheelchair card issuance"
+          subtitleUr="میڈیکل بورڈ کے معائنے سے لے کر نادرا کے خصوصی شناختی کارڈ کے حصول تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Medical Board Evaluation",
+              titleUr: "میڈیکل بورڈ کا معائنہ",
+              descEn: "Appear before the District Disability Assessment Board at DHQ Hospital via the provincial Social Welfare Department.",
+              descUr: "ضلعی سوشل ویلفیئر دفتر کے ذریعے ڈی ایچ کیو ہسپتال میں میڈیکل اسسمنٹ بورڈ کے سامنے پیش ہوں۔",
+              tagEn: "DHQ Board",
+              tagUr: "میڈیکل بورڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Disability Certificate Issued",
+              titleUr: "معذوری سرٹیفکیٹ کا حصول",
+              descEn: "Receive official government Disability Assessment Certificate stating disability nature (permanent/temporary) and percentage.",
+              descUr: "بورڈ کی سفارش پر سرکاری معذوری سرٹیفکیٹ حاصل کریں جس پر معذوری کی نوعیت درج ہوتی ہے۔",
+              tagEn: "Certificate",
+              tagUr: "سرٹیفکیٹ",
+            },
+            {
+              number: 3,
+              titleEn: "NADRA NRC or Home Visit (1777)",
+              titleUr: "نادرا سنٹر یا ہوم سروس (1777)",
+              descEn: "Visit NADRA Executive Counter (free priority) or call helpline 1777 to request Doorstep Mobile Registration for bed-ridden patients.",
+              descUr: "نادرا کے خصوصی کاؤنٹر پر جائیں یا بستر پر موجود مریض کے لیے ہیلپ لائن 1777 سے گھر پر ٹیم بلوائیں۔",
+              tagEn: "1777 Doorstep",
+              tagUr: "نادرا ڈیسک",
+            },
+            {
+              number: 4,
+              titleEn: "Special CNIC (Wheelchair Logo)",
+              titleUr: "خصوصی شناختی کارڈ کی وصولی",
+              descEn: "Receive free Smart CNIC embossed with the universal wheelchair logo, unlocking 50% transport discounts and 2-5% job quotas.",
+              descUr: "وہیل چیئر کے بین الاقوامی نشان سے لیس مفت اسمارٹ کارڈ حاصل کریں اور سفری و تعلیمی مراعات پائیں۔",
+              tagEn: "Wheelchair Logo",
+              tagUr: "خصوصی کارڈ",
+            },
+          ]}
+        />
+
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Special CNIC &amp; Disability Rights)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What is the exact two-stage process to get a Special CNIC in Pakistan?',
-                a: 'Stage 1: Appear before your District Disability Assessment Board (organized by the provincial Social Welfare Department / DEPD at DHQ/THQ hospitals) to receive an official Disability Certificate. Stage 2: Take the certificate to any NADRA Registration Center (or request home registration via helpline 1777) to issue a Special CNIC with the universal wheelchair insignia.',
-              },
-              {
-                q: 'Can a bed-ridden or severely immobile person get a Special CNIC without traveling to NADRA?',
-                a: 'Yes. NADRA provides a dedicated Doorstep Mobile Registration Service for bed-ridden and severely disabled individuals. Families can call the dedicated disability helpline at 1777 (or 051-111-786-100) to request an official Mobile Registration Unit (MRU) / Manpack team to visit their residence.',
-              },
-              {
-                q: 'What key practical benefits does a NADRA Special CNIC provide?',
-                a: 'The Special CNIC unlocks: 2% to 5% reserved employment quotas in public and private sectors, significant tuition fee concessions at colleges/universities, 50% discount on PIA domestic airfares and Pakistan Railways train tickets, free treatment at government hospitals, and priority access to social assistance programs (such as the Punjab Himmat Card).',
-              },
-              {
-                q: 'How long does the entire process take from medical board to card delivery?',
-                a: 'The total duration typically ranges from 4 to 12 weeks. Provincial medical assessment boards generally convene on fixed monthly or bi-weekly schedules, while NADRA processes the Special CNIC under priority Executive timelines once the certificate is lodged.',
-              },
-              {
-                q: 'Is there a government fee for issuing a Special CNIC at NADRA?',
-                a: 'First-time registration for a Special CNIC is provided free of charge by NADRA for persons with disabilities, and applicants receive priority executive desk processing without paying premium surcharges.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Special CNIC & Disability Rights)"
+          titleUr="خصوصی شناختی کارڈ اور معذور افراد کے حقوق کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on two-stage process, doorstep registration 1777, fees, and benefits"
+          subtitleUr="دو مرحلہ وار طریقہ، 1777 ہوم سروس، مفت کارڈ اور سرکاری مراعات کی تفصیل"
+          items={[
+            {
+              questionEn: "What is the exact two-stage process to get a Special CNIC in Pakistan?",
+              questionUr: "پاکستان میں خصوصی شناختی کارڈ حاصل کرنے کا کیا طریقہ ہے؟",
+              answerEn: "Stage 1: Appear before your District Disability Assessment Board (organized by the provincial Social Welfare Department / DEPD at DHQ/THQ hospitals) to receive an official Disability Certificate. Stage 2: Take the certificate to any NADRA Registration Center (or request home registration via helpline 1777) to issue a Special CNIC with the universal wheelchair insignia.",
+              answerUr: "مرحلہ 1: ضلعی ہسپتال میں سوشل ویلفیئر کے میڈیکل بورڈ سے معذوری سرٹیفکیٹ لیں۔ مرحلہ 2: یہ سرٹیفکیٹ لے کر نادرا جائیں اور وہیل چیئر کے نشان والا خصوصی اسمارٹ شناختی کارڈ بنوائیں۔",
+            },
+            {
+              questionEn: "Can a bed-ridden or severely immobile person get a Special CNIC without traveling to NADRA?",
+              questionUr: "کیا شدید معذور یا بستر پر موجود افراد نادرا جائے بغیر کارڈ بنوا سکتے ہیں؟",
+              answerEn: "Yes. NADRA provides a dedicated Doorstep Mobile Registration Service for bed-ridden and severely disabled individuals. Families can call the dedicated disability helpline at 1777 (or 051-111-786-100) to request an official Mobile Registration Unit (MRU) / Manpack team to visit their residence.",
+              answerUr: "جی ہاں! نادرا معذور افراد کو گھر کی دہلیز پر سروس فراہم کرتا ہے۔ ہیلپ لائن 1777 پر کال کر کے موبائل وین یا مین پیک ٹیم کو اپنے گھر بلا سکتے ہیں۔",
+            },
+            {
+              questionEn: "What key practical benefits does a NADRA Special CNIC provide?",
+              questionUr: "خصوصی شناختی کارڈ کے کیا عملی و قانونی فوائد ہیں؟",
+              answerEn: "The Special CNIC unlocks: 2% to 5% reserved employment quotas in public and private sectors, significant tuition fee concessions at colleges/universities, 50% discount on PIA domestic airfares and Pakistan Railways train tickets, free treatment at government hospitals, and priority access to social assistance programs (such as the Punjab Himmat Card).",
+              answerUr: "پی آئی اے اور پاکستان ریلوے میں کرایوں پر 50 فیصد رعایت، تعلیمی اداروں میں فیس کی چھوٹ، 2 سے 5 فیصد سرکاری نوکریوں کا کوٹہ اور ہمت کارڈ جیسی فلاحی اسکیموں میں ترجیح ملتی ہے۔",
+            },
+            {
+              questionEn: "How long does the entire process take from medical board to card delivery?",
+              questionUr: "میڈیکل بورڈ سے لے کر کارڈ ملنے تک کتنا وقت لگتا ہے؟",
+              answerEn: "The total duration typically ranges from 4 to 12 weeks. Provincial medical assessment boards generally convene on fixed monthly or bi-weekly schedules, while NADRA processes the Special CNIC under priority Executive timelines once the certificate is lodged.",
+              answerUr: "کل عمل میں عام طور پر 4 سے 12 ہفتے لگتے ہیں۔ میڈیکل بورڈ کے شیڈول کے بعد نادرا خصوصی افراد کو ترجیحی بنیادوں پر تیزی سے کارڈ جاری کرتا ہے۔",
+            },
+            {
+              questionEn: "Is there a government fee for issuing a Special CNIC at NADRA?",
+              questionUr: "کیا نادرا میں خصوصی شناختی کارڈ کی کوئی سرکاری فیس ہے؟",
+              answerEn: "First-time registration for a Special CNIC is provided free of charge by NADRA for persons with disabilities, and applicants receive priority executive desk processing without paying premium surcharges.",
+              answerUr: "پہلی بار خصوصی شناختی کارڈ بنوانا نادرا کی طرف سے بالکل مفت ہے اور نادرا دفاتر میں ایگزیکٹو کاؤنٹر پر بغیر اضافی فیس کے ترجیحی سروس دی جاتی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

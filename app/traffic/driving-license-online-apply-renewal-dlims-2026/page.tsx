@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -615,48 +616,148 @@ export default function DrivingLicenseOnlineApplyPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Driving License Issuance & Test Workflow (DLIMS 2026)"
+          titleUr="ڈرائیونگ لائسنس کے حصول کا 4 مرحلہ وار طریقہ کار"
+          subtitleEn="4-stage verified sequence from online learner permit to doorstep Smart Card delivery"
+          subtitleUr="لرنر پرمٹ سے لے کر اسمارٹ لائسنس کی گھر پر وصولی تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Instant Online Learner Permit",
+              titleUr: "آن لائن لرنر پرمٹ کا حصول",
+              descEn: "Register on dlims.punjab.gov.pk or visit Khidmat Markaz with original CNIC (Fee PKR 500/year).",
+              descUr: "شناختی کارڈ کے ساتھ پورٹل پر اندراج کر کے فوری ڈیجیٹل لرنر لائسنس ڈاؤن لوڈ کریں۔",
+              tagEn: "Day 1 (Instant)",
+              tagUr: "فوری لرنر",
+            },
+            {
+              number: 2,
+              titleEn: "Mandatory 42-Day Practice",
+              titleUr: "42 دن کی لازمی ڈرائیونگ پریکٹس",
+              descEn: "Practice driving with red 'L' plates displayed on vehicle, accompanied by a licensed driver.",
+              descUr: "گاڑی پر 'L' پلیٹ لگا کر کسی لائسنس ہولڈر ڈرائیور کے ساتھ 42 دن پریکٹس مکمل کریں۔",
+              tagEn: "42-Day Window",
+              tagUr: "42 دن وقفہ",
+            },
+            {
+              number: 3,
+              titleEn: "E-Sign & Practical Track Test",
+              titleUr: "کمپیوٹرائزڈ سائن اور پریکٹیکل ٹیسٹ",
+              descEn: "Appear at Traffic Police Testing Center to pass the automated computer sign test (E-Sign) and vehicle track test.",
+              descUr: "ٹریفک پولیس سنٹر جا کر ٹریفک اشاروں کا کمپیوٹر ٹیسٹ اور گاڑی چلانے کا پریکٹیکل ٹیسٹ پاس کریں۔",
+              tagEn: "Test Day",
+              tagUr: "ٹیسٹ ڈے",
+            },
+            {
+              number: 4,
+              titleEn: "Smart Card Printed & Delivered",
+              titleUr: "اسمارٹ کارڈ پرنٹنگ اور ہوم ڈلیوری",
+              descEn: "Upon passing, permanent chip-embedded Smart Driving License is dispatched to your home address via Pakistan Post (5–10 days).",
+              descUr: "کامیابی کے بعد چپ والا اسمارٹ لائسنس پاکستان پوسٹ کے ذریعے 5 سے 10 دنوں میں گھر پہنچا دیا جاتا ہے۔",
+              tagEn: "Doorstep Delivery",
+              tagUr: "ہوم ڈلیوری",
+            },
+          ]}
+        />
+
+        {/* Fee Structure Table */}
+        <FeeTableVisual
+          titleEn="Official Driving License Statutory Fee Schedule 2026 (Punjab & Federal)"
+          titleUr="ڈرائیونگ لائسنس کا سرکاری فیس شیڈول 2026"
+          subtitleEn="Category-wise annual statutory fees for Learner, Regular Smart Card, Commercial HTV, and International"
+          subtitleUr="موٹر سائیکل، کار، ایل ٹی وی، ایچ ٹی وی اور انٹرنیشنل لائسنس کی فیس کی تفصیل"
+          noteEn="All fees can be paid seamlessly via ePay Punjab, 1Link mobile banking, ATM, or over-the-counter at bank branches."
+          rows={[
+            {
+              serviceEn: "Motorcycle / Scooter License (5 Years)",
+              serviceUr: "موٹر سائیکل لائسنس (5 سالہ)",
+              normal: "PKR 500 / year",
+              urgent: "PKR 2,500 (5 Yrs)",
+              executive: "ePay PSID",
+              validity: "5 Years Validity",
+            },
+            {
+              serviceEn: "Motor Car / Jeep / LTV License (5 Years)",
+              serviceUr: "کار / جیپ / ایل ٹی وی لائسنس (5 سالہ)",
+              normal: "PKR 900 / year",
+              urgent: "PKR 4,500 (5 Yrs)",
+              executive: "ePay PSID",
+              validity: "5 Years Validity",
+            },
+            {
+              serviceEn: "Heavy Transport Vehicle (HTV) Commercial",
+              serviceUr: "کمرشل ایچ ٹی وی لائسنس",
+              normal: "PKR 2,000 / year",
+              urgent: "PKR 2,000 / year",
+              executive: "Track Test Req.",
+              validity: "3 Years Renewable",
+            },
+            {
+              serviceEn: "International Driving Permit (1949 Geneva Conv.)",
+              serviceUr: "بین الاقوامی ڈرائیونگ پرمٹ",
+              normal: "PKR 1,000 Fixed",
+              urgent: "PKR 1,000",
+              executive: "Passport + Valid DL",
+              validity: "1 Year Global",
+            },
+            {
+              serviceEn: "Juvenile Permit (Teenagers 16–18 Yrs - 125cc)",
+              serviceUr: "نوعمر ڈرائیونگ پرمٹ (16 تا 18 سال)",
+              normal: "PKR 500 / year",
+              urgent: "PKR 500",
+              executive: "Parent Consent Req.",
+              validity: "Until 18th Birthday",
+            },
+          ]}
+        />
+
         {/* Section 7: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Driving License DLIMS 2026)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What if my driving license expired years ago — do I have to re-take the driving test?',
-                a: 'In Punjab (DLIMS) and Islamabad, routine expired license renewals generally do not require a fresh driving test regardless of expiry length. However, late surcharges apply: a 50% surcharge if expired by 1 to 3 months, 100% surcharge if expired up to 1 year, and up to 2.5 times the standard renewal fee if expired beyond 1 year. In some provinces like Sindh and Balochistan, licenses expired for over 3 to 5 years may require physical verification or administrative re-assessment at a District Licensing Branch.',
-              },
-              {
-                q: 'Can I drive alone on public roads using only a Learner Driving Permit?',
-                a: 'No. Legally, a learner permit holder cannot drive alone. You must be accompanied by a licensed driver sitting in the front passenger seat, and your vehicle must display red "L" plates on both the front and rear. Driving unaccompanied on a learner permit is an offense liable to traffic challans under the Motor Vehicles Ordinance.',
-              },
-              {
-                q: 'How long does the entire driving license process take from learner to smart card?',
-                a: 'The learner permit is issued instantly online (as a downloadable PDF). You must hold the learner permit for a mandatory 42-day waiting period before taking the practical driving test. After passing the computerized sign test (E-Sign) and practical track test, your permanent plastic Smart Card driving license is printed and delivered by courier to your doorstep within 5 to 10 working days.',
-              },
-              {
-                q: 'Can I apply for or renew a driving license online if I live in Sindh, KP, or Islamabad?',
-                a: 'Sindh offers online appointment pre-booking and online renewal services via dls.sindhpolice.gov.pk for selected categories, though biometric capture and fresh tests require visiting a designated Driving License Branch in Karachi or Hyderabad. KP operates the PTAP portal and Rabta mobile app for digital fee collection and learner issuance. Islamabad Traffic Police (ITP) provides digital appointment booking and cashless e-payments with Pakistan Post delivery.',
-              },
-              {
-                q: 'What is the Punjab Juvenile Driving Permit for teenagers aged 16 to 18?',
-                a: 'The Punjab Government introduced a Juvenile Driving Permit specifically for teenagers aged 16 to 18 to legally ride motorcycles and scooters (up to 125cc). It requires physical presence of a parent/guardian, original B-Form, signed parental consent affidavit, passing the computerized sign test and riding track test, and payment of a PKR 500 annual fee. It is valid until the rider turns 18.',
-              },
-              {
-                q: 'How do I verify if a driving license is authentic online?',
-                a: 'For Punjab, visit dlims.punjab.gov.pk/verify and enter the applicant\'s 13-digit CNIC number without hyphens. For Sindh, use dls.sindhpolice.gov.pk/online-verification. For KP, verify via the KP Police DLIMS portal or Rabta app. For Islamabad, check through islamabadpolice.gov.pk.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Driving License DLIMS 2026)"
+          titleUr="ڈرائیونگ لائسنس کے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on expired licenses, learner restrictions, timelines, and online verification"
+          subtitleUr="زائد المیعاد لائسنس پر جرمانے، لرنر کے ساتھ ڈرائیونگ، کتنا وقت لگتا ہے اور آن لائن تصدیق"
+          items={[
+            {
+              questionEn: "What if my driving license expired years ago — do I have to re-take the driving test?",
+              questionUr: "اگر لائسنس کئی سال پرانا ایکسپائر ہو چکا ہو تو کیا دوبارہ ٹیسٹ دینا پڑے گا؟",
+              answerEn: "In Punjab (DLIMS) and Islamabad, routine expired license renewals generally do not require a fresh driving test regardless of expiry length. However, late surcharges apply: a 50% surcharge if expired by 1 to 3 months, 100% surcharge if expired up to 1 year, and up to 2.5 times the standard renewal fee if expired beyond 1 year. In some provinces like Sindh and Balochistan, licenses expired for over 3 to 5 years may require physical verification or administrative re-assessment at a District Licensing Branch.",
+              answerUr: "پنجاب اور اسلام آباد میں پرانے ایکسپائر لائسنس کی تجدید کے لیے دوبارہ ٹیسٹ نہیں لیا جاتا لیکن لیٹ فیس کا جرمانہ عائد ہوتا ہے۔ سندھ اور بلوچستان میں 3 سے 5 سال پرانے لائسنس پر فزیکل تصدیق درکار ہوتی ہے۔",
+            },
+            {
+              questionEn: "Can I drive alone on public roads using only a Learner Driving Permit?",
+              questionUr: "کیا صرف لرنر پرمٹ پر اکیلے گاڑی چلائی جا سکتی ہے؟",
+              answerEn: "No. Legally, a learner permit holder cannot drive alone. You must be accompanied by a licensed driver sitting in the front passenger seat, and your vehicle must display red 'L' plates on both the front and rear. Driving unaccompanied on a learner permit is an offense liable to traffic challans under the Motor Vehicles Ordinance.",
+              answerUr: "نہیں، قانون کے مطابق لرنر ہولڈر اکیلے گاڑی نہیں چلا سکتا۔ فرنٹ سیٹ پر لائسنس یافتہ ڈرائیور کا ہونا اور گاڑی کے آگے پیچھے سرخ رنگ کا 'L' اسٹیکر لگانا لازمی ہے۔",
+            },
+            {
+              questionEn: "How long does the entire driving license process take from learner to smart card?",
+              questionUr: "لرنر پرمٹ سے لے کر اسمارٹ کارڈ گھر پہنچنے تک کتنا وقت لگتا ہے؟",
+              answerEn: "The learner permit is issued instantly online (as a downloadable PDF). You must hold the learner permit for a mandatory 42-day waiting period before taking the practical driving test. After passing the computerized sign test (E-Sign) and practical track test, your permanent plastic Smart Card driving license is printed and delivered by courier to your doorstep within 5 to 10 working days.",
+              answerUr: "لرنر فوری آن لائن مل جاتا ہے جس کے بعد 42 دن کا لازمی انتظار ہوتا ہے۔ ٹیسٹ پاس کرنے کے بعد 5 سے 10 دنوں میں اسمارٹ کارڈ بذریعہ ڈاک گھر پہنچ جاتا ہے۔",
+            },
+            {
+              questionEn: "Can I apply for or renew a driving license online if I live in Sindh, KP, or Islamabad?",
+              questionUr: "کیا سندھ، کے پی کے اور اسلام آباد کے رہائشی آن لائن لائسنس بنوا سکتے ہیں؟",
+              answerEn: "Sindh offers online appointment pre-booking and online renewal services via dls.sindhpolice.gov.pk for selected categories, though biometric capture and fresh tests require visiting a designated Driving License Branch in Karachi or Hyderabad. KP operates the PTAP portal and Rabta mobile app for digital fee collection and learner issuance. Islamabad Traffic Police (ITP) provides digital appointment booking and cashless e-payments with Pakistan Post delivery.",
+              answerUr: "سندھ میں dls.sindhpolice.gov.pk سے اپائنٹمنٹ اور آن لائن تجدید، کے پی میں رابطہ ایپ، اور اسلام آباد میں آئی ٹی پی پورٹل کے ذریعے ڈیجیٹل سروسز دستیاب ہیں۔",
+            },
+            {
+              questionEn: "What is the Punjab Juvenile Driving Permit for teenagers aged 16 to 18?",
+              questionUr: "16 سے 18 سال کے نوجوانوں کے لیے جووینائل ڈرائیونگ پرمٹ کیا ہے؟",
+              answerEn: "The Punjab Government introduced a Juvenile Driving Permit specifically for teenagers aged 16 to 18 to legally ride motorcycles and scooters (up to 125cc). It requires physical presence of a parent/guardian, original B-Form, signed parental consent affidavit, passing the computerized sign test and riding track test, and payment of a PKR 500 annual fee. It is valid until the rider turns 18.",
+              answerUr: "16 سے 18 سال کے نوجوانوں کو موٹر سائیکل (125cc تک) چلانے کے لیے والدین کی اجازت اور ٹیسٹ پاس کرنے پر 500 روپے سالانہ فیس کے ساتھ جووینائل پرمٹ جاری کیا جاتا ہے۔",
+            },
+            {
+              questionEn: "How do I verify if a driving license is authentic online?",
+              questionUr: "ڈرائیونگ لائسنس کے اصلی ہونے کی آن لائن تصدیق کیسے کریں؟",
+              answerEn: "For Punjab, visit dlims.punjab.gov.pk/verify and enter the applicant's 13-digit CNIC number without hyphens. For Sindh, use dls.sindhpolice.gov.pk/online-verification. For KP, verify via the KP Police DLIMS portal or Rabta app. For Islamabad, check through islamabadpolice.gov.pk.",
+              answerUr: "پنجاب کے لیے dlims.punjab.gov.pk/verify پر شناختی کارڈ نمبر لکھیں۔ سندھ، کے پی کے اور اسلام آباد کے ٹریفک پورٹلز پر بھی شناختی کارڈ سے فوری تصدیق دستیاب ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

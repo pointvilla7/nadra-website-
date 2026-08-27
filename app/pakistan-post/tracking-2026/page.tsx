@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import { HelpCircle, ExternalLink, Mail, ShieldCheck, CheckCircle2, AlertTriangle, Truck, Package, PhoneCall, Building } from 'lucide-react';
 import Link from 'next/link';
 
@@ -224,40 +225,85 @@ export default function PakPostTrackingPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Pakistan Post Parcel & UMS Tracking Workflow"
+          titleUr="پاکستان پوسٹ پارسل اور یو ایم ایس ٹریکنگ کا طریقہ کار"
+          subtitleEn="4-stage verified sequence from booking receipt to destination signature delivery"
+          subtitleUr="بکنگ رسید سے لے کر جی پی او ترسیل اور وصولی تک کے 4 مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Locate Tracking ID on Receipt",
+              titleUr: "بکنگ رسید سے ٹریکنگ نمبر لیں",
+              descEn: "Find your 9-digit UMS barcode or 13-character international EMS tracking code (e.g., EP123456789PK).",
+              descUr: "ڈاک خانے کی رسید پر موجود 9 ہندسوں کا یو ایم ایس یا 13 ہندسوں کا بین الاقوامی کوڈ دیکھیں۔",
+              tagEn: "Receipt Barcode",
+              tagUr: "رسید بارکوڈ",
+            },
+            {
+              number: 2,
+              titleEn: "Enter Number on Portal / Tool",
+              titleUr: "آن لائن پورٹل میں کوڈ درج کریں",
+              descEn: "Enter tracking number into the search tool above or visit the official tracking server at ep.gov.pk.",
+              descUr: "اوپر دیے گئے سرچ باکس یا آفیشل پورٹل ep.gov.pk پر ٹریکنگ کوڈ لکھ کر تلاش کریں۔",
+              tagEn: "ep.gov.pk Server",
+              tagUr: "سرچ ٹول",
+            },
+            {
+              number: 3,
+              titleEn: "Real-Time Sorting Hub Scans",
+              titleUr: "جی پی او ترسیل اور چھانٹی کی تفصیل",
+              descEn: "View live scan events: booking GPO acceptance, transit mail office sorting, and destination city dispatch.",
+              descUr: "روانگی، ائیرپورٹ منتقلی اور ضلعی جنرل پوسٹ آفس (GPO) میں پارسل کی لائیو لوکیشن دیکھیں۔",
+              tagEn: "Transit Scans",
+              tagUr: "لائیو اسٹیٹس",
+            },
+            {
+              number: 4,
+              titleEn: "Out for Delivery & Signature",
+              titleUr: "ڈاکیے کے سپرد اور دستخطی وصولی",
+              descEn: "Beat postman delivers article to recipient doorstep with digital delivery confirmation marked online.",
+              descUr: "مقامی ڈاکیا پتہ پر پارسل پہنچا کر دستخط لیتا ہے اور آن لائن اسٹیٹس 'Delivered' ہو جاتا ہے۔",
+              tagEn: "Delivered",
+              tagUr: "کامیاب ترسیل",
+            },
+          ]}
+        />
+
         {/* Section 3: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Pakistan Post Tracking)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How do I track my Pakistan Post parcel online?',
-                a: 'To track your Pakistan Post parcel: (1) Locate the 9 to 13-digit tracking ID on your postal receipt, (2) Enter the tracking number into our Pakistan Post tracking tool or visit the official portal at ep.gov.pk, and (3) Click search to view the real-time status from dispatch to delivery.',
-              },
-              {
-                q: 'What is UMS tracking in Pakistan Post?',
-                a: 'UMS (Urgent Mail Service) is Pakistan Post’s premier domestic express delivery service for documents and parcels. UMS tracking numbers usually begin with "UM" or consist of a 9-digit barcode number that can be tracked nationwide via ep.gov.pk.',
-              },
-              {
-                q: 'How do I track international parcels sent via Pakistan Post?',
-                a: 'International parcels and EMS items sent via Pakistan Post have a 13-character tracking code ending in "PK" (e.g. EP123456789PK or RU123456789PK). These can be tracked on ep.gov.pk/international_tracking.asp and through the destination country’s national postal portal.',
-              },
-              {
-                q: 'What should I do if my Pakistan Post tracking status is not updating?',
-                a: 'If your tracking status has not updated for more than 48 hours, contact the official Pakistan Post helpline at 051-111-111-117 or visit your local destination General Post Office (GPO) with your booking receipt.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Pakistan Post Tracking)"
+          titleUr="پاکستان پوسٹ ٹریکنگ سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on UMS numbers, international tracking, 48h delays, and GPO helplines"
+          subtitleUr="یو ایم ایس کوڈز، بین الاقوامی پارسل، اسٹیٹس اپ ڈیٹ نہ ہونا اور ہیلپ لائن رہنمائی"
+          items={[
+            {
+              questionEn: "How do I track my Pakistan Post parcel online?",
+              questionUr: "پاکستان پوسٹ کا پارسل آن لائن کیسے ٹریک کریں؟",
+              answerEn: "To track your Pakistan Post parcel: (1) Locate the 9 to 13-digit tracking ID on your postal receipt, (2) Enter the tracking number into our Pakistan Post tracking tool or visit the official portal at ep.gov.pk, and (3) Click search to view the real-time status from dispatch to delivery.",
+              answerUr: "ڈاک خانے کی رسید پر موجود 9 سے 13 ہندسوں کا ٹریکنگ نمبر درج کریں اور سرچ پر کلک کریں۔ آپ کو بکنگ سے لے کر وصولی تک کی تمام تاریخ اور اوقات لائیو نظر آ جائیں گے۔",
+            },
+            {
+              questionEn: "What is UMS tracking in Pakistan Post?",
+              questionUr: "پاکستان پوسٹ میں یو ایم ایس (UMS) ٹریکنگ کیا ہے؟",
+              answerEn: "UMS (Urgent Mail Service) is Pakistan Post's premier domestic express delivery service for documents and parcels. UMS tracking numbers usually begin with 'UM' or consist of a 9-digit barcode number that can be tracked nationwide via ep.gov.pk.",
+              answerUr: "یو ایم ایس (ارجنٹ میل سروس) پاکستان پوسٹ کی تیز رفتار کوریئر سروس ہے جس کا 9 ہندسوں پر مشتمل بارکوڈ نمبر پورے ملک میں آن لائن ٹریک کیا جا سکتا ہے۔",
+            },
+            {
+              questionEn: "How do I track international parcels sent via Pakistan Post?",
+              questionUr: "پاکستان پوسٹ کے ذریعے بیرون ملک بھیجے گئے پارسل کی ٹریکنگ کیسے ہوتی ہے؟",
+              answerEn: "International parcels and EMS items sent via Pakistan Post have a 13-character tracking code ending in 'PK' (e.g. EP123456789PK or RU123456789PK). These can be tracked on ep.gov.pk/international_tracking.asp and through the destination country's national postal portal.",
+              answerUr: "بین الاقوامی ای ایم ایس پارسلز کے 13 ہندسوں کے ٹریکنگ کوڈ کے آخر میں 'PK' آتا ہے، جسے پاکستان پوسٹ اور متعلقہ ملک کی پوسٹل ویب سائٹ دونوں پر ٹریک کیا جا سکتا ہے۔",
+            },
+            {
+              questionEn: "What should I do if my Pakistan Post tracking status is not updating?",
+              questionUr: "اگر 48 گھنٹے تک ٹریکنگ اسٹیٹس اپ ڈیٹ نہ ہو تو کیا کریں؟",
+              answerEn: "If your tracking status has not updated for more than 48 hours, contact the official Pakistan Post helpline at 051-111-111-117 or visit your local destination General Post Office (GPO) with your booking receipt.",
+              answerUr: "اگر دو دن تک اسٹیٹس میں تبدیلی نہ آئے تو آفیشل ہیلپ لائن 117-111-111-051 پر کال کریں یا رسید لے کر قریبی جی پی او تشریف لے جائیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
