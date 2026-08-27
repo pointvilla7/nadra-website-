@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/nadra/cnic-new-rules-2026',
     '/passport/passport-new-rules-2026-cashless-epassport',
     '/bills/net-metering-net-billing-change-2026',
+    '/bills/smart-meter-pakistan-price-how-it-works-2026',
     '/traffic/challan-paid-but-showing-pending-2026',
     '/education/matric-40-percent-passing-marks-rule-2026',
     '/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026',

@@ -198,6 +198,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Smart Meters (AMI) Pakistan 2026",
+        "ur": "اسمارٹ میٹرز (AMI) پاکستان 2026",
+        "slug": "/bills/smart-meter-pakistan-price-how-it-works-2026"
+      },
+      {
         "en": "Net Metering to Net Billing 2026",
         "ur": "نیٹ میٹرنگ تا نیٹ بلنگ 2026",
         "slug": "/bills/net-metering-net-billing-change-2026"

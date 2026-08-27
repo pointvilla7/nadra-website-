@@ -346,6 +346,17 @@ export default function NetMeteringToNetBillingPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
+              href="/bills/smart-meter-pakistan-price-how-it-works-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-seal font-bold uppercase block">AMI Smart Meters</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Smart Meters (AMI) Pakistan Guide 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Prices, bidirectional meter installation, and prepaid pilot.</p>
+            </Link>
+
+            <Link
               href="/bills/utility-bill-checker-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
@@ -360,22 +371,11 @@ export default function NetMeteringToNetBillingPage() {
               href="/bills/wapda-complaint-status-tracker-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">WAPDA Complaints</span>
+              <span className="text-xs font-mono text-emerald-600 font-bold uppercase block">WAPDA Complaints</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
                 WAPDA Complaint Tracker 2026 →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Track overbilling, meter replacement, and grid faults.</p>
-            </Link>
-
-            <Link
-              href="/tax/fbr-active-taxpayer-status-helper-2026"
-              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
-            >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Taxpayer Status</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                FBR Active Taxpayer Status Helper →
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">Avoid extra 100% advance withholding taxes on electricity bills.</p>
             </Link>
           </div>
         </section>
