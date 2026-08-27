@@ -10,6 +10,13 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { GeoTrustBadge } from '@/components/GeoTrustBadge';
 import { FeeTable } from '@/components/FeeTable';
 import { FAQAccordion } from '@/components/FAQAccordion';
+import {
+  ProcessStepsDiagram,
+  ComparisonVisual,
+  FeeTableVisual,
+  FAQAccordionVisual,
+  CategoryHeroIllustration
+} from '@/components/visuals';
 import { SchemaInjector } from '@/components/SchemaInjector';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { UtilityBillChecker } from '@/components/UtilityBillChecker';
@@ -389,7 +396,7 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
       {/* Fee Table Section if available */}
       {article.feeStructure && article.feeStructure.length > 0 && (
-        <FeeTable feeItems={article.feeStructure} />
+        <FeeTableVisual rows={article.feeStructure} />
       )}
 
       {/* Interactive Step-by-Step Wizard View */}
@@ -397,218 +404,217 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
         <StepByStepWizard steps={article.steps} articleTitle={t(article.titleEn, article.titleUr)} />
       )}
 
-      {/* Standard Step-by-Step Instructions View */}
       {/* Official Video Guide Embed if available */}
       {article.videoGuide && <VideoGuideSection videoGuide={article.videoGuide} />}
 
+      {/* Standard Step-by-Step Instructions View */}
       {viewMode === 'standard' && article.steps && article.steps.length > 0 && (
-        <section className="my-10 space-y-6">
-          <div className="flex items-center gap-2 border-b border-doc-brass/30 pb-3">
-            <div className="p-2 rounded-xl bg-doc-paper dark:bg-slate-800 text-doc-seal dark:text-red-400 border border-doc-brass/30">
-              <BookOpen className="w-5 h-5" />
-            </div>
-            <h2 className="text-xl font-serif font-extrabold text-doc-ink dark:text-white">
-              {t('Step-by-Step Application Process', 'مرحلہ وار طریقہ کار')}
-            </h2>
-          </div>
-
-          {/* Process Flow Diagram */}
-          <ProcessFlowDiagram categorySlug={article.categoryId} />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {article.steps.map((st) => (
-              <div
-                key={st.stepNumber}
-                className="doc-card rounded-2xl p-5 border border-doc-brass/30 space-y-2 relative overflow-hidden"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="w-8 h-8 rounded-xl bg-doc-ink text-doc-brass font-mono font-extrabold text-sm flex items-center justify-center shadow">
-                    {st.stepNumber}
-                  </span>
-                  <span className="text-[10px] font-mono uppercase font-bold text-slate-400">
-                    Step {st.stepNumber} of {article.steps?.length}
-                  </span>
-                </div>
-                <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white">
-                  {t(st.titleEn, st.titleUr)}
-                </h3>
-                <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                  {t(st.detailEn, st.detailUr)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <ProcessStepsDiagram
+          steps={article.steps}
+          titleEn="Step-by-Step Application Process"
+          titleUr="مرحلہ وار طریقہ کار"
+          subtitleEn="Official step sequence under 2026 civic regulations"
+          subtitleUr="سال 2026 کے سرکاری ضوابط کے تحت تصدیق شدہ مراحل"
+        />
       )}
 
-      {/* Comparison Infographic for Comparative Guides */}
+      {/* Comparison Visual for Comparative Guides */}
       {article.slug === 'lesco-vs-fesco-bill-comparison' && (
-        <ComparisonInfographic
+        <ComparisonVisual
           titleEn="LESCO vs FESCO: Electricity Distribution Comparison 2026"
           titleUr="لیسکو بمقابلہ فیسکو بجلی ڈسٹری بیوشن موازنہ 2026"
-          nameAEn="LESCO (Lahore Electric)"
-          nameAUr="لیسکو (لاہور ریجن)"
-          nameBEn="FESCO (Faisalabad Electric)"
-          nameBUr="فیسکو (فیصل آباد ریجن)"
-          rows={[
+          subtitleEn="Service area coverage, consumer tariff slabs, reference numbers & helpline contacts"
+          subtitleUr="علاقائی دائرہ کار، ٹیرف سلیب اور ہیلپ لائن کا تقابلی جائزہ"
+          items={[
             {
-              featureEn: 'Coverage Districts',
-              featureUr: 'زیر انتظام اضلاع',
-              itemAEn: 'Lahore, Kasur, Okara, Sheikhupura, Nankana',
-              itemAUr: 'لاہور، قصور، اوکاڑہ، شیخوپورہ، ننکانہ',
-              itemBEn: 'Faisalabad, Jhang, Toba Tek Singh, Chiniot, Sargodha',
-              itemBUr: 'فیصل آباد، جھنگ، ٹوبہ ٹیک سنگھ، چنیوٹ، سرگودھا'
+              titleEn: 'LESCO (Lahore Electric)',
+              titleUr: 'لیسکو (لاہور ریجن)',
+              subtitleEn: 'Lahore Division & Surroundings',
+              subtitleUr: 'لاہور ڈویژن اور ملحقہ اضلاع',
+              badgeEn: 'Central Punjab',
+              badgeUr: 'وسطی پنجاب',
+              badgeVariant: 'navy',
+              pointsEn: [
+                'Covers Lahore, Kasur, Okara, Sheikhupura & Nankana Sahib',
+                '14-Digit consumer reference number + batch code (U/R)',
+                'NEPRA Uniform Multi-Year Tariff with fuel price adjustments (FPA)',
+                'Helpline: 118 or 042-99204814 (24/7 centralized dispatch)'
+              ],
+              recommendedForEn: 'Residents & commercial businesses in Lahore & Kasur circle',
+              recommendedForUr: 'لاہور اور قصور سرکل کے رہائشی و کمرشل صارفین'
             },
             {
-              featureEn: 'Reference Number',
-              featureUr: 'ریفرنس نمبر فارمیٹ',
-              itemAEn: '14 Digits + Batch Code (U/R)',
-              itemAUr: '14 ہندسے مع بیچ کوڈ',
-              itemBEn: '14 Digits + Batch Code (U/R)',
-              itemBUr: '14 ہندسے مع بیچ کوڈ'
-            },
-            {
-              featureEn: 'Tariff Rate Slabs',
-              featureUr: 'یونٹ ریٹ سلیب',
-              itemAEn: 'Standard NEPRA Uniform Tariff',
-              itemAUr: 'نیپرا یکساں ریٹ',
-              itemBEn: 'Standard NEPRA Uniform Tariff',
-              itemBUr: 'نیپرا یکساں ریٹ'
-            },
-            {
-              featureEn: 'Helpline & Complaints',
-              featureUr: 'ہیلپ لائن و شکایات',
-              itemAEn: '118 / 042-99204814',
-              itemAUr: '118 / 042-99204814',
-              itemBEn: '118 / 041-9220184',
-              itemBUr: '118 / 041-9220184'
+              titleEn: 'FESCO (Faisalabad Electric)',
+              titleUr: 'فیسکو (فیصل آباد ریجن)',
+              subtitleEn: 'Faisalabad, Sargodha & Jhang',
+              subtitleUr: 'فیصل آباد، سرگودھا اور جھنگ سرکل',
+              badgeEn: 'Industrial Hub',
+              badgeUr: 'صنعتی ریجن',
+              badgeVariant: 'brass',
+              isPopular: true,
+              pointsEn: [
+                'Covers Faisalabad, Jhang, Toba Tek Singh, Chiniot, Sargodha & Mianwali',
+                '14-Digit reference number format for instant duplicate bill downloads',
+                'Dedicated textile industrial tariff and agricultural tube-well subsidies',
+                'Helpline: 118 or 041-9220184'
+              ],
+              recommendedForEn: 'Domestic, textile & agricultural consumers in Faisalabad region',
+              recommendedForUr: 'فیصل آباد، سرگودھا اور جھنگ کے تمام صارفین'
             }
           ]}
         />
       )}
 
       {article.slug === 'cnic-vs-nicop-vs-poc-comparison' && (
-        <ComparisonInfographic
-          titleEn="CNIC vs NICOP vs POC: Identity Card Comparison 2026"
-          titleUr="شناختی کارڈ بمقابلہ نائیکوپ بمقابلہ پی او سی موازنہ"
-          nameAEn="CNIC / Smart Card"
-          nameAUr="قومی شناختی کارڈ (CNIC)"
-          nameBEn="NICOP (Overseas Card)"
-          nameBUr="نائیکوپ (اوورسیز کارڈ)"
-          rows={[
+        <ComparisonVisual
+          titleEn="CNIC vs NICOP vs POC: Complete Identity Card Comparison 2026"
+          titleUr="شناختی کارڈ بمقابلہ نائیکوپ بمقابلہ پی او سی موازنہ 2026"
+          subtitleEn="Official NADRA eligibility parameters, fee tiers, visa-free travel & domestic civil rights"
+          subtitleUr="اہلیت، فیس شیڈول، بغیر ویزا پاکستان آمد اور ملکی حقوق کا تقابلی جائزہ"
+          items={[
             {
-              featureEn: 'Target Citizens',
-              featureUr: 'اہل شہری',
-              itemAEn: 'Resident Pakistani Citizens (18+)',
-              itemAUr: 'پاکستان میں مقیم شہری',
-              itemBEn: 'Overseas Pakistanis & Dual Citizens',
-              itemBUr: 'اوورسیز اور دوہری شہریت والے'
+              titleEn: 'CNIC (National Identity Card)',
+              titleUr: 'قومی شناختی کارڈ (CNIC)',
+              subtitleEn: 'Resident Pakistani Citizens (18+)',
+              subtitleUr: 'پاکستان میں مقیم شہری',
+              badgeEn: 'Resident Citizens',
+              badgeUr: 'پاکستانی شہری',
+              badgeVariant: 'emerald',
+              pointsEn: [
+                'Issued to Pakistani citizens aged 18+ living in Pakistan',
+                'Mandatory for domestic banking, property registry, SIMs & voting',
+                'Linked to NADRA Family Tree (FRC) & Union Council records',
+                'Fee: Smart Normal PKR 750 | Urgent PKR 1,500 | Executive PKR 2,500'
+              ],
+              recommendedForEn: 'All resident citizens living permanently in Pakistan',
+              recommendedForUr: 'پاکستان میں مستقل مقیم تمام شہری'
             },
             {
-              featureEn: 'Visa-Free Pakistan Entry',
-              featureUr: 'بغیر ویزا پاکستان آمد',
-              itemAEn: 'Domestic ID (Requires Passport)',
-              itemAUr: 'ملکی کارڈ (سفر پر پاسپورٹ درکار)',
-              itemBEn: '100% Visa-Free Entry with Foreign Passport',
-              itemBUr: 'غیر ملکی پاسپورٹ پر بغیر ویزا انٹری'
+              titleEn: 'NICOP (Overseas Identity Card)',
+              titleUr: 'نائیکوپ (اوورسیز شناختی کارڈ)',
+              subtitleEn: 'Overseas Pakistanis & Dual Citizens',
+              subtitleUr: 'بیرون ملک مقیم و دوہری شہریت والے',
+              badgeEn: 'Overseas Card',
+              badgeUr: 'اوورسیز کارڈ',
+              badgeVariant: 'brass',
+              isPopular: true,
+              pointsEn: [
+                'For Pakistani passport holders living or working abroad',
+                'Grants 100% Visa-Free Entry into Pakistan with foreign passport',
+                'Dual citizenship recognized for 22 bilateral treaty countries',
+                'Fee: Zone A (USA/UK/EU) $39 USD | Zone B (Gulf/Saudia) $20 USD'
+              ],
+              recommendedForEn: 'Pakistani expatriates, overseas students, Gulf workers & dual nationals',
+              recommendedForUr: 'اوورسیز پاکستانی، گلف ورکرز، طلبہ اور دوہری شہریت والے'
             },
             {
-              featureEn: 'Official Fee',
-              featureUr: 'سرکاری فیس',
-              itemAEn: 'PKR 750 (Smart Normal)',
-              itemAUr: '750 روپے',
-              itemBEn: '$39 USD (Zone A) / $20 USD (Zone B)',
-              itemBUr: '39 ڈالر (زون اے) / 20 ڈالر (زون بی)'
-            },
-            {
-              featureEn: 'Validity Period',
-              featureUr: 'میعاد',
-              itemAEn: '10 Years / Lifetime (60+)',
-              itemAUr: '10 سال یا تاحیات',
-              itemBEn: '10 Years Renewable',
-              itemBUr: '10 سال'
+              titleEn: 'POC (Pakistan Origin Card)',
+              titleUr: 'پی او سی (پاکستان اوریجن کارڈ)',
+              subtitleEn: 'Foreign Spouses & Former Citizens',
+              subtitleUr: 'غیر ملکی شریک حیات و سابق شہری',
+              badgeEn: 'Foreign Origin',
+              badgeUr: 'غیر ملکی اوریجن',
+              badgeVariant: 'seal',
+              pointsEn: [
+                'For foreign spouses of Pakistani nationals or former citizens',
+                'Provides Visa-Free entry & indefinite legal stay in Pakistan',
+                'Cannot hold Pakistani passport, vote, or hold government jobs',
+                'Fee: Standard 5-Year Application $100–$150 USD via Pak-ID'
+              ],
+              recommendedForEn: 'Foreign spouses married to Pakistani citizens & ex-nationals',
+              recommendedForUr: 'پاکستانی شہریوں کے غیر ملکی شریک حیات اور سابق پاکستانی'
             }
           ]}
         />
       )}
 
       {article.slug === 'registry-vs-intiqal-difference' && (
-        <ComparisonInfographic
+        <ComparisonVisual
           titleEn="Registry vs Intiqal: Property Legal Rights Comparison 2026"
           titleUr="رجسٹری بمقابلہ انتقال: ملکیتی حقوق کا قانونی موازنہ"
-          nameAEn="Registry (Sale Deed / بیع نامہ)"
-          nameAUr="رجسٹری (بیع نامہ)"
-          nameBEn="Intiqal (Mutation / انتقال)"
-          nameBUr="انتقال (میوٹیشن)"
-          rows={[
+          subtitleEn="Contractual title deeds vs land revenue fiscal records under Pakistani law"
+          subtitleUr="بیع نامہ رجسٹری اور اراضی ریکارڈ انتقال کا تفصیلی قانونی فرق"
+          items={[
             {
-              featureEn: 'Governing Authority',
-              featureUr: 'متعلقہ ادارہ',
-              itemAEn: 'Sub-Registrar (Registration Act 1908)',
-              itemAUr: 'سب رجسٹرار (رجسٹریشن ایکٹ)',
-              itemBEn: 'Revenue Dept / PLRA (Land Revenue Act)',
-              itemBUr: 'اراضی ریکارڈ سنٹر / پٹوار'
+              titleEn: 'Registry (Sale Deed / بیع نامہ)',
+              titleUr: 'رجسٹری (بیع نامہ)',
+              subtitleEn: 'Registered Contractual Title Deed',
+              subtitleUr: 'فریقین کے درمیان تصدیق شدہ معاہدہ بیع',
+              badgeEn: 'Primary Legal Title',
+              badgeUr: 'بنیادی قانونی ثبوت',
+              badgeVariant: 'seal',
+              isPopular: true,
+              pointsEn: [
+                'Executed under the Registration Act 1908 before the Sub-Registrar',
+                'Strongest primary legal evidence of ownership in civil courts',
+                'Requires non-judicial e-Stamp paper (Challan 32-A) and official registration fee',
+                'Protects buyer against fraud, third-party claims, and illegal resale'
+              ],
+              recommendedForEn: 'Urban plots, commercial plazas, residential houses & high-value real estate',
+              recommendedForUr: 'شہری پلاٹس، کمرشل جائیداد اور رہائشی مکانات کی خریداری'
             },
             {
-              featureEn: 'Legal Significance',
-              featureUr: 'قانونی حیثیت',
-              itemAEn: 'Registered Contractual Deed between Parties',
-              itemAUr: 'فریقین کا تصدیق شدہ معاہدہ بیع',
-              itemBEn: 'Government Fiscal Ownership Record Entry',
-              itemBUr: 'سرکاری جمع بندی میں نام کی تبدیلی'
-            },
-            {
-              featureEn: 'Court Evidentiary Value',
-              featureUr: 'عدالتی ثبوت کی حیثیت',
-              itemAEn: 'Strong Primary Legal Evidence of Title',
-              itemAUr: 'ملکیت کا بنیادی اور مضبوط ثبوت',
-              itemBEn: 'Rebuttable Fiscal Entry (Requires Valid Deed)',
-              itemBUr: 'انتظامی اندراج (اصل بیع نامہ ضروری)'
+              titleEn: 'Intiqal (Mutation / انتقال)',
+              titleUr: 'انتقال (اراضی ریکارڈ میوٹیشن)',
+              subtitleEn: 'Revenue Fiscal Record Entry',
+              subtitleUr: 'سرکاری جمع بندی میں نام کا اندراج',
+              badgeEn: 'Fiscal Revenue Record',
+              badgeUr: 'محصولاتی ریکارڈ',
+              badgeVariant: 'navy',
+              pointsEn: [
+                'Entered in Punjab Land Record Authority (PLRA) / Patwari records under Land Revenue Act',
+                'Updates government fiscal tax records to indicate who pays land revenue',
+                'Does NOT independently create conclusive legal title without underlying deed',
+                'Can be sanctioned on the spot at Arazi Record Centers (ARC) upon biometric verification'
+              ],
+              recommendedForEn: 'Agricultural land, rural acreage & fiscal tax record updating after Registry',
+              recommendedForUr: 'زرعی اراضی اور رجسٹری کے بعد سرکاری ریکارڈ میں نام کی منتقلی'
             }
           ]}
         />
       )}
 
       {article.slug === 'withholding-tax-rates-filers-non-filers' && (
-        <ComparisonInfographic
+        <ComparisonVisual
           titleEn="Withholding Tax Rates: Active Filer vs Non-Filer Slabs 2026"
           titleUr="ود ہولڈنگ ٹیکس سلیب: فائلر بمقابلہ نان فائلر تقابل 2026"
-          nameAEn="Active Tax Filer (ATL)"
-          nameAUr="ایکٹو ٹیکس فائلر"
-          nameBEn="Non-Filer / Late Filer"
-          nameBUr="نان فائلر"
-          rows={[
+          subtitleEn="FBR Active Taxpayer List (ATL) tax exemptions vs punitive non-filer surcharges"
+          subtitleUr="ایف بی آر ایکٹو ٹیکس فائلر کی چھوٹ اور نان فائلر پر لاگو اضافی کٹوتیاں"
+          items={[
             {
-              featureEn: 'Bank Cash Withdrawal (>50K/Day)',
-              featureUr: 'بینک کیش ودڈرال (50 ہزار سے زائد)',
-              itemAEn: '0% Exemption (Zero Deduction)',
-              itemAUr: '0% (کوئی کٹوتی نہیں)',
-              itemBEn: '0.9% Advance Tax (Sec 231AB)',
-              itemBUr: '0.9% ایڈوانس ٹیکس'
+              titleEn: 'Active Tax Filer (ATL)',
+              titleUr: 'ایکٹو ٹیکس فائلر (ATL)',
+              subtitleEn: 'Compliant Taxpayer on FBR List',
+              subtitleUr: 'ایف بی آر لسٹ میں شامل شہری',
+              badgeEn: 'Lowest Standard Rates',
+              badgeUr: 'کم ترین ٹیکس شرح',
+              badgeVariant: 'emerald',
+              isPopular: true,
+              pointsEn: [
+                '0% Tax on bank cash withdrawals exceeding PKR 50,000 per day',
+                '3% Standard Advance Tax on immovable property purchase (Section 236K)',
+                '15% Final Withholding Tax on bank profit, dividends & savings schemes',
+                'Standard engine CC vehicle registration & token tax without punitive multipliers'
+              ],
+              recommendedForEn: 'Salaried individuals, business owners, freelancers & property investors',
+              recommendedForUr: 'تنخواہ دار، تاجر، فری لانسرز اور جائیداد خریدار'
             },
             {
-              featureEn: 'Property Purchase (Sec 236K)',
-              featureUr: 'جائیداد خریداری پر ایڈوانس ٹیکس',
-              itemAEn: '3% Standard Rate',
-              itemAUr: '3% بنیادی ریٹ',
-              itemBEn: '12% to 15% Surcharge Rate',
-              itemBUr: '12% سے 15% بھاری ٹیکس'
-            },
-            {
-              featureEn: 'Motor Vehicle Registration',
-              featureUr: 'گاڑی کی رجسٹریشن ٹیکس',
-              itemAEn: 'Standard Engine CC Base Rate',
-              itemAUr: 'معیاری سی سی ریٹ',
-              itemBEn: '100% to 200% Punitive Surcharge',
-              itemBUr: 'ڈبل یا ٹرپل ٹیکس'
-            },
-            {
-              featureEn: 'Bank Profit & Dividends',
-              featureUr: 'بینک منافع و ڈیویڈنڈ',
-              itemAEn: '15% Final Withholding',
-              itemAUr: '15% فائنل ٹیکس',
-              itemBEn: '30% Punitive Withholding Rate',
-              itemBUr: '30% کٹوتی'
+              titleEn: 'Non-Filer / Late Filer',
+              titleUr: 'نان فائلر / غیر ایکٹو افراد',
+              subtitleEn: 'Subject to 100% to 200% Punitive Tax',
+              subtitleUr: 'دگنا اور تین گنا اضافی ٹیکس',
+              badgeEn: 'Punitive Surcharges',
+              badgeUr: 'بھاری کٹوتی',
+              badgeVariant: 'seal',
+              pointsEn: [
+                '0.9% Advance Withholding Tax on bank cash withdrawals (Section 231AB)',
+                '12% to 15% Heavy Surcharge on immovable property purchase transactions',
+                '30% Doubled Withholding Tax on bank profit and savings returns',
+                'Double/Triple registration tax on motor vehicles and mobile imports'
+              ],
+              recommendedForEn: 'Urged to file annual income tax return on Iris 2.0 to restore ATL status',
+              recommendedForUr: 'فوری طور پر انکم ٹیکس گوشوارہ جمع کروا کے فائلر بنیں'
             }
           ]}
         />
@@ -641,8 +647,8 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
       {/* Privacy & Safety Guarantee */}
       <PrivacyTrustBanner />
 
-      {/* FAQ Accordion Section */}
-      <FAQAccordion faqs={article.faqs || []} />
+      {/* FAQ Accordion Visual Section */}
+      <FAQAccordionVisual items={article.faqs || []} />
 
       {/* Recommended Verified Affiliate & Partner Services */}
       <RecommendedServices categoryId={article.categoryId} />

@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -402,38 +403,85 @@ export default function PoliceCharacterCertificateTrackingStatusPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Police Character Certificate Tracking Workflow"
+          titleUr="پولیس کریکٹر سرٹیفکیٹ ٹریکنگ کا مرحلہ وار طریقہ کار"
+          subtitleEn="4 straightforward verification checkpoints from receipt token to collection"
+          subtitleUr="رسید سے لے کر سرٹیفکیٹ وصولی تک کے 4 تصدیقی مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Locate Token / Application ID",
+              titleUr: "ٹوکن یا درخواست نمبر تلاش کریں",
+              descEn: "Find the tracking reference number printed at the top of your PKM receipt or in confirmation SMS.",
+              descUr: "خدمت مرکز کی رسید یا موصولہ ایس ایم ایس سے ٹریکنگ نمبر معلوم کریں۔",
+              tagEn: "Receipt",
+              tagUr: "رسید",
+            },
+            {
+              number: 2,
+              titleEn: "Select Issuing Province",
+              titleUr: "متعلقہ صوبہ منتخب کریں",
+              descEn: "Choose Punjab (PKM), Sindh (PRVS), Islamabad (ICT), or KPK (PAL) tracking system.",
+              descUr: "پنجاب، سندھ، اسلام آباد یا کے پی کے میں سے اپنا صوبہ منتخب کریں۔",
+              tagEn: "Province",
+              tagUr: "صوبہ",
+            },
+            {
+              number: 3,
+              titleEn: "Check Live Status Online",
+              titleUr: "آن لائن سٹیٹس چیک کریں",
+              descEn: "Enter 13-digit CNIC and Token ID into the official verification engine to track police record checks.",
+              descUr: "شناختی کارڈ اور ٹوکن نمبر درج کر کے تھانہ اور کرمنل ریکارڈ ویریفکیشن دیکھیں۔",
+              tagEn: "In-Process",
+              tagUr: "پراسیس",
+            },
+            {
+              number: 4,
+              titleEn: "Collect Stamped Certificate",
+              titleUr: "مہر شدہ سرٹیفکیٹ وصول کریں",
+              descEn: "Visit the facilitation center with original CNIC and delivery slip once status is 'Ready for Collection'.",
+              descUr: "سٹیٹس مکمل ہونے پر اصل شناختی کارڈ دکھا کر کاؤنٹر سے سرٹیفکیٹ وصول کریں۔",
+              tagEn: "Collection",
+              tagUr: "وصولی",
+            },
+          ]}
+        />
+
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (PCC Status Tracking)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How long after applying can I track my Police Character Certificate online?',
-                a: 'Your tracking record typically becomes active in the provincial online database within 24 to 48 hours after biometric submission at a Police Khidmat Markaz (PKM) or online portal. If you submitted over the weekend or on a public holiday, tracking updates will appear on the next working day.',
-              },
-              {
-                q: 'What should I do if the tracking portal shows "No Record Found"?',
-                a: 'If your search returns "No Record Found", double-check that you entered your CNIC without dashes and typed the exact Application ID printed on your receipt slip. If fewer than 48 hours have passed since submission, wait another day for system synchronization. If the issue persists, visit your local PKM counter or call the provincial helpline (1787 for Punjab, 1915 for Islamabad).',
-              },
-              {
-                q: 'Who should I contact if my verification is delayed beyond the normal timeline?',
-                a: 'If your certificate has been pending for more than 7 to 10 working days, contact your provincial police helpline: Punjab Police IG Complaint Cell (1787), Islamabad Police Khidmat Helpline (1915), Sindh CPLC (021-99212626), or KPK Police Facilitation (1415), citing your application reference number.',
-              },
-              {
-                q: 'What documents are required to collect the physical certificate from the counter?',
-                a: 'To collect your printed Police Character Certificate from the Police Khidmat Markaz, you must present your original valid CNIC/NICOP and the original paper delivery token/receipt slip issued at the time of application submission.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PCC Status Tracking)"
+          titleUr="پولیس کریکٹر سرٹیفکیٹ ٹریکنگ کے عام سوالات"
+          subtitleEn="Essential guidelines regarding verification timelines, delays & document collection"
+          subtitleUr="تصدیق کے دورانیے، تاخیر اور سرٹیفکیٹ وصولی سے متعلق ضروری معلومات"
+          items={[
+            {
+              questionEn: "How long after applying can I track my Police Character Certificate online?",
+              questionUr: "درخواست جمع کروانے کے کتنے دن بعد آن لائن ٹریکنگ شروع ہوتی ہے؟",
+              answerEn: "Your tracking record typically becomes active in the provincial online database within 24 to 48 hours after biometric submission at a Police Khidmat Markaz (PKM) or online portal. If you submitted over the weekend or on a public holiday, tracking updates will appear on the next working day.",
+              answerUr: "پولیس خدمت مرکز یا آن لائن پورٹل پر بائیومیٹرک جمع کروانے کے 24 سے 48 گھنٹوں میں ریکارڈ آن لائن ہو جاتا ہے۔ سرکاری تعطیلات کی صورت میں اگلے ورکنگ ڈے پر سٹیٹس اپ ڈیٹ ہوتا ہے۔",
+            },
+            {
+              questionEn: "What should I do if the tracking portal shows 'No Record Found'?",
+              questionUr: "اگر پورٹل پر 'نو ریکارڈ فاؤنڈ' آئے تو کیا کریں؟",
+              answerEn: "If your search returns 'No Record Found', double-check that you entered your CNIC without dashes and typed the exact Application ID printed on your receipt slip. If fewer than 48 hours have passed since submission, wait another day for system synchronization. If the issue persists, visit your local PKM counter or call the provincial helpline (1787 for Punjab, 1915 for Islamabad).",
+              answerUr: "شناختی کارڈ نمبر بغیر ڈیشز کے درج کریں اور رسید پر لکھا درست ٹوکن نمبر لکھیں۔ اگر 48 گھنٹے سے کم وقت ہوا ہے تو انتظار کریں۔ مسئلہ حل نہ ہونے پر ہیلپ لائن 1787 پر رابطہ کریں۔",
+            },
+            {
+              questionEn: "Who should I contact if my verification is delayed beyond the normal timeline?",
+              questionUr: "اگر تصدیق میں معمول سے زیادہ تاخیر ہو جائے تو کس سے رابطہ کریں؟",
+              answerEn: "If your certificate has been pending for more than 7 to 10 working days, contact your provincial police helpline: Punjab Police IG Complaint Cell (1787), Islamabad Police Khidmat Helpline (1915), Sindh CPLC (021-99212626), or KPK Police Facilitation (1415), citing your application reference number.",
+              answerUr: "اگر 7 سے 10 ورکنگ دنوں میں سرٹیفکیٹ تیار نہ ہو تو پنجاب پولیس 1787، اسلام آباد 1915، یا سندھ سی پی ایل سی 021-99212626 پر درخواست نمبر کے ساتھ رابطہ کریں۔",
+            },
+            {
+              questionEn: "What documents are required to collect the physical certificate from the counter?",
+              questionUr: "کاؤنٹر سے سرٹیفکیٹ وصول کرتے وقت کون سے کاغذات ساتھ لانا لازمی ہیں؟",
+              answerEn: "To collect your printed Police Character Certificate from the Police Khidmat Markaz, you must present your original valid CNIC/NICOP and the original paper delivery token/receipt slip issued at the time of application submission.",
+              answerUr: "پولیس خدمت مرکز سے تصدیق شدہ پرنٹڈ سرٹیفکیٹ وصول کرنے کے لیے اصل شناختی کارڈ اور درخواست جمع کرواتے وقت دی گئی اصل رسید پیش کرنا لازمی ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
