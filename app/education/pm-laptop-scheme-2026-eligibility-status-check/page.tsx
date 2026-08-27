@@ -5,6 +5,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { StepFlowDiagram } from '@/components/StepFlowDiagram';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -469,53 +470,85 @@ export default function PmLaptopSchemePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step PM Laptop Scheme Application to Distribution Workflow"
+          titleUr="پرائم منسٹر لیپ ٹاپ سکیم: آن لائن درخواست سے ڈسٹری بیوشن تک کے 4 مراحل"
+          subtitleEn="From portal submission to university focal person verification, merit list, and asset handover"
+          subtitleUr="آن لائن رجسٹریشن سے لے کر یونیورسٹی فوکل پرسن تصدیق، میرٹ لسٹ اور لیپ ٹاپ وصولی تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Online Portal Application",
+              titleUr: "آن لائن پورٹل پر درخواست",
+              descEn: "Register on laptop.pmyp.gov.pk with your CNIC, university enrollment number, and latest semester CGPA.",
+              descUr: "پورٹل پر اپنا شناختی کارڈ، یونیورسٹی رول نمبر اور آخری سمسٹر کا سی جی پی اے درج کر کے اپلائی کریں۔",
+              tagEn: "PMYP Portal",
+              tagUr: "آن لائن پورٹل",
+            },
+            {
+              number: 2,
+              titleEn: "University Focal Person Verification",
+              titleUr: "یونیورسٹی فوکل پرسن کی تصدیق",
+              descEn: "University focal person cross-checks student academic transcripts and regular enrollment records against the portal.",
+              descUr: "یونیورسٹی کا نامزد فوکل پرسن آپ کے تعلیمی ریکارڈ اور ریگولر ایڈمیشن کی سسٹم میں تصدیق کرتا ہے۔",
+              tagEn: "HEC / Uni Check",
+              tagUr: "فوکل پرسن تصدیق",
+            },
+            {
+              number: 3,
+              titleEn: "Merit List & Quota Generation",
+              titleUr: "ڈیپارٹمنٹل میرٹ لسٹ کا اجراء",
+              descEn: "HEC automated algorithms generate cascading departmental and batch-wise merit lists according to allocated quotas.",
+              descUr: "ایچ ای سی کا خودکار نظام ہر ڈیپارٹمنٹ اور سال کے مخصوص کوٹے کے مطابق میرٹ لسٹ جاری کرتا ہے۔",
+              tagEn: "Merit List",
+              tagUr: "میرٹ لسٹ",
+            },
+            {
+              number: 4,
+              titleEn: "Asset Handover & Bio-Verification",
+              titleUr: "بائیومیٹرک تصدیق اور لیپ ٹاپ وصولی",
+              descEn: "Selected students present original CNIC, student card, and transcript at the ceremony to receive brand-new laptop.",
+              descUr: "منتخب طلباء اصل شناختی کارڈ اور اسٹوڈنٹ کارڈ پیش کر کے نادرا بائیومیٹرک کے بعد نیا لیپ ٹاپ وصول کرتے ہیں۔",
+              tagEn: "Laptop Handover",
+              tagUr: "لیپ ٹاپ وصولی",
+            },
+          ]}
+        />
+
         {/* Section 6: Frequently Asked Questions */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Real Answers for Students)
-            </h2>
-          </div>
-
-          <div className="space-y-3 font-sans text-xs">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Why was I not selected despite having good grades?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Laptops are allocated through cascading departmental quotas. If your department or admission batch was given 4 laptops and 4 peers had higher GPAs than you, your batch cutoff ends above your score. You were competing strictly against classmates in your own department, not students in other faculties.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Can affiliated college students or private university students apply?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                No. Standard HEC PMYP guidelines restrict eligibility to regular, full-time students at public sector universities and their main/sub-campuses. Affiliated colleges and private institutes are excluded from the central scheme.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What if I already received a laptop during my BS and am now in MS or PhD?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Under the core rules, each student is entitled to receive only ONE laptop across their entire academic journey. If you received a laptop under any earlier federal or provincial scheme during your Bachelor&apos;s, you cannot receive another one during Master&apos;s or PhD.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                How do I know when the next application phase opens or closes?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Phase dates and submission deadlines are officially declared on the main government portal at <code>laptop.pmyp.gov.pk</code> and advertised on official HEC channels. Never trust third-party blogs charging fees or claiming &quot;direct backdoor laptop delivery.&quot;
-              </p>
-            </div>
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PM Laptop Scheme 2026)"
+          titleUr="پرائم منسٹر لیپ ٹاپ سکیم سے متعلق اہم سوالات"
+          subtitleEn="Clear answers on batch GPAs, private/affiliated college rules, one-laptop rule, and deadline announcements"
+          subtitleUr="میرٹ کٹ آف، پرائیویٹ کالجز کے قواعد، ایک بار لیپ ٹاپ کی شرط اور شیڈول کی تفصیل"
+          items={[
+            {
+              questionEn: "Why was I not selected despite having good grades?",
+              questionUr: "اچھے نمبر اور سی جی پی اے ہونے کے باوجود میرا نام سلیکٹ کیوں نہیں ہوا؟",
+              answerEn: "Laptops are allocated through cascading departmental quotas. If your department or admission batch was given 4 laptops and 4 peers had higher GPAs than you, your batch cutoff ends above your score. You were competing strictly against classmates in your own department, not students in other faculties.",
+              answerUr: "لیپ ٹاپ پورے کالج کے بجائے ہر ڈیپارٹمنٹ اور سمسٹر کے مخصوص کوٹے پر تقسیم ہوتے ہیں۔ اگر آپ کی کلاس میں کوٹہ 4 تھا اور 4 طلباء کا جی پی اے آپ سے زیادہ تھا تو کٹ آف اوپر بند ہو جاتا ہے۔",
+            },
+            {
+              questionEn: "Can affiliated college students or private university students apply?",
+              questionUr: "کیا الحاق شدہ (ایفیلی ایٹڈ) کالجز یا پرائیویٹ یونیورسٹیوں کے طلباء اپلائی کر سکتے ہیں؟",
+              answerEn: "No. Standard HEC PMYP guidelines restrict eligibility to regular, full-time students at public sector universities and their main/sub-campuses. Affiliated colleges and private institutes are excluded from the central scheme.",
+              answerUr: "نہیں! ایچ ای سی کے قواعد کے تحت صرف سرکاری (پبلک سیکٹر) یونیورسٹیوں کے ریگولر طلباء ہی اہل ہیں۔ نجی تعلیمی ادارے اور ایفیلی ایٹڈ کالجز اس اسکیم میں شامل نہیں ہیں۔",
+            },
+            {
+              questionEn: "What if I already received a laptop during my BS and am now in MS or PhD?",
+              questionUr: "اگر بی ایس میں لیپ ٹاپ مل چکا ہو تو کیا ایم ایس یا پی ایچ ڈی میں دوبارہ مل سکتا ہے؟",
+              answerEn: "Under the core rules, each student is entitled to receive only ONE laptop across their entire academic journey. If you received a laptop under any earlier federal or provincial scheme during your Bachelor's, you cannot receive another one during Master's or PhD.",
+              answerUr: "نہیں! پورے تعلیمی کیریئر میں ایک طالب علم کو صرف ایک ہی بار سرکاری لیپ ٹاپ مل سکتا ہے۔ اگر بی ایس میں لیپ ٹاپ مل چکا ہو تو ایم ایس یا پی ایچ ڈی میں دوبارہ نہیں دیا جاتا۔",
+            },
+            {
+              questionEn: "How do I know when the next application phase opens or closes?",
+              questionUr: "اگلے فیز کی رجسٹریشن کب شروع ہوگی اور اس کی تصدیق کہاں سے کریں؟",
+              answerEn: "Phase dates and submission deadlines are officially declared on the main government portal at laptop.pmyp.gov.pk and advertised on official HEC channels. Never trust third-party blogs charging fees or claiming 'direct backdoor laptop delivery.'",
+              answerUr: "تمام فیزز کے شیڈول اور ڈیڈ لائنز کا اعلان صرف سرکاری پورٹل (laptop.pmyp.gov.pk) اور ایچ ای سی کے آفیشل سوشل میڈیا پر ہوتا ہے۔ کسی جعلی ویب سائٹ یا ایجنٹ کے جھانسے میں نہ آئیں۔",
+            },
+          ]}
+        />
 
         {/* Section 7: Related Links */}
         <section className="space-y-3">

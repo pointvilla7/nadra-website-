@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -421,6 +422,52 @@ export default function LostStolenCnicReplacementPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Lost or Stolen CNIC Replacement Workflow"
+          titleUr="گمشدہ یا چوری شدہ شناختی کارڈ کے متبادل کا 4 مرحلہ وار طریقہ"
+          subtitleEn="From police report to Pak-ID reprint application and secure card receipt"
+          subtitleUr="پولیس روزنامچہ رپورٹ سے لے کر نادرا درخواست اور نئے کارڈ کے حصول تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Police Report (If Stolen)",
+              titleUr: "پولیس روزنامچہ رپورٹ (اگر کارڈ چھینا گیا ہو)",
+              descEn: "Lodge a Daily Diary (Roznamcha) report at your local Police Station or Khidmat Markaz (PKM) to prevent identity fraud.",
+              descUr: "شناختی کارڈ چوری ہونے پر فوری قریبی تھانے یا خدمت مرکز میں روزنامچہ رپورٹ درج کروائیں تاکہ کوئی غلط استعمال نہ کر سکے۔",
+              tagEn: "FIR / PKM",
+              tagUr: "پولیس رپورٹ",
+            },
+            {
+              number: 2,
+              titleEn: "Select Reprint (Duplicate)",
+              titleUr: "ڈپلیکیٹ (ری پرنٹ) کا انتخاب",
+              descEn: "Log into Pak-ID mobile app / portal or visit NRC; choose 'Reprint' if unexpired, or 'Renewal' if already expired.",
+              descUr: "پاک آئی ڈی پورٹل یا نادرا سینٹر پر 'ری پرنٹ' منتخب کریں (اگر تاریخ ختم ہو چکی ہو تو 'تجدید' منتخب کریں)۔",
+              tagEn: "Pak-ID / NRC",
+              tagUr: "نادرا درخواست",
+            },
+            {
+              number: 3,
+              titleEn: "Biometric Verification & Fee",
+              titleUr: "بائیومیٹرک تصدیق اور فیس ادائیگی",
+              descEn: "Complete camera/live scanner fingerprint capture and pay statutory fee (Normal PKR 750 Smart, Urgent PKR 1,500).",
+              descUr: "موبائل کیمرے یا نادرا کاؤنٹر پر فنگر پرنٹس اسکین کروائیں اور مقررہ فیس جمع کروائیں۔",
+              tagEn: "Biometrics",
+              tagUr: "فنگر پرنٹس",
+            },
+            {
+              number: 4,
+              titleEn: "Tracking & Card Collection",
+              titleUr: "8400 ٹریکنگ اور نیا کارڈ وصولی",
+              descEn: "Track production status using your 11-digit Tracking ID; collect card from NRC counter or receive via home courier.",
+              descUr: "8400 ایس ایم ایس سے پراسیس ٹریک کریں اور پرنٹ شدہ نیا اسمارٹ کارڈ نادرا سینٹر یا بذریعہ ڈاک وصول کریں۔",
+              tagEn: "Card Delivered",
+              tagUr: "کارڈ وصولی",
+            },
+          ]}
+        />
+
         {/* Section 6: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -463,43 +510,44 @@ export default function LostStolenCnicReplacementPage() {
         </section>
 
         {/* Section 7: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Lost CNIC Replacement)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'What is the exact difference between applying for a "Reprint" versus "Renewal" for a lost CNIC?',
-                a: 'You apply for a "Reprint" (Duplicate) when your lost or damaged card is STILL VALID (has not crossed its expiry date); it retains your original expiry date and 13-digit CNIC number. You apply for a "Renewal" ONLY if the lost card was already expired or within 6 months of expiring, which grants a fresh 10-year validity.',
-              },
-              {
-                q: 'Can I change my address or marital status while applying for a lost CNIC replacement?',
-                a: 'No. The "Reprint" category strictly prints a duplicate of your existing database record without modifications. If you need to change your address, name spelling, or marital status, you must select the "Modification" category and provide supporting legal proofs (Nikkahnama, utility bill, or registry).',
-              },
-              {
-                q: 'Is a Police FIR / Roznamcha report mandatory before applying for a lost card?',
-                a: 'If your card was stolen or snatched in a crime, lodging a Police FIR / Daily Diary (Roznamcha) report at the nearest Police Station or Police Khidmat Markaz (PKM) is strongly recommended to protect you against identity theft, fraudulent SIM issuance, or unauthorized financial transactions. For simple misplacement at home, NADRA allows direct online application via Pak-ID without demanding an FIR.',
-              },
-              {
-                q: 'What can I use the NADRA Acknowledgment / Token Slip for while waiting for delivery?',
-                a: 'The token slip containing your Tracking ID and QR code serves as interim proof of identity for routine domestic travel boarding checks, police verification, and civic interactions. However, it CANNOT be used for high-security biometric transactions such as opening new bank accounts, issuing cellular SIMs, or executing property registries, which strictly require the physical Smart Card microchip.',
-              },
-              {
-                q: 'What should I do if my lost CNIC was already expired years ago?',
-                a: 'Select the "Renewal" category on the Pak-ID app or at the NRC counter. You do not need to pay for both Reprint and Renewal; the single renewal process replaces your lost card and extends validity for a fresh 10-year cycle.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Lost CNIC Replacement)"
+          titleUr="گمشدہ شناختی کارڈ کے متبادل سے متعلق اہم سوالات"
+          subtitleEn="Essential guidelines on reprint vs renewal, police reports, interim token usage, and address modifications"
+          subtitleUr="ری پرنٹ بمقابلہ تجدید، پولیس رپورٹ کی قانونی حیثیت، نادرا ٹوکن پرچی کا استعمال اور تفصیلات"
+          items={[
+            {
+              questionEn: "What is the exact difference between applying for a \"Reprint\" versus \"Renewal\" for a lost CNIC?",
+              questionUr: "گمشدہ شناختی کارڈ کے لیے 'ری پرنٹ' اور 'تجدید' کی درخواست میں کیا فرق ہے؟",
+              answerEn: "You apply for a \"Reprint\" (Duplicate) when your lost or damaged card is STILL VALID (has not crossed its expiry date); it retains your original expiry date and 13-digit CNIC number. You apply for a \"Renewal\" ONLY if the lost card was already expired or within 6 months of expiring, which grants a fresh 10-year validity.",
+              answerUr: "اگر کارڈ کی معیاد ابھی باقی تھی تو 'ری پرنٹ' کی درخواست دی جاتی ہے جس پر پرانی ایکسپائری برقرار رہتی ہے۔ اگر کارڈ کی تاریخ ختم ہو چکی تھی تو 'تجدید' کروائی جاتی ہے جس سے نیا 10 سالہ کارڈ جاری ہوتا ہے۔",
+            },
+            {
+              questionEn: "Can I change my address or marital status while applying for a lost CNIC replacement?",
+              questionUr: "کیا گمشدہ کارڈ بنواتے وقت پتہ یا ازدواجی حیثیت تبدیل کروائی جا سکتی ہے؟",
+              answerEn: "No. The \"Reprint\" category strictly prints a duplicate of your existing database record without modifications. If you need to change your address, name spelling, or marital status, you must select the \"Modification\" category and provide supporting legal proofs (Nikkahnama, utility bill, or registry).",
+              answerUr: "نہیں! ری پرنٹ میں پرانا ڈیٹا من و عن پرنٹ ہوتا ہے۔ اگر پتہ یا ازدواجی حیثیت تبدیل کروانی ہو تو 'ترمیم (Modification)' کا انتخاب کریں اور نکاح نامہ یا یوٹیلیٹی بل فراہم کریں۔",
+            },
+            {
+              questionEn: "Is a Police FIR / Roznamcha report mandatory before applying for a lost card?",
+              questionUr: "کیا گمشدہ کارڈ کے لیے تھانے میں روزنامچہ رپورٹ درج کروانا لازمی ہے؟",
+              answerEn: "If your card was stolen or snatched in a crime, lodging a Police FIR / Daily Diary (Roznamcha) report at the nearest Police Station or Police Khidmat Markaz (PKM) is strongly recommended to protect you against identity theft, fraudulent SIM issuance, or unauthorized financial transactions. For simple misplacement at home, NADRA allows direct online application via Pak-ID without demanding an FIR.",
+              answerUr: "اگر کارڈ چھینا گیا ہو تو فوری پولیس روزنامچہ درج کروائیں تاکہ غیر قانونی استعمال سے محفوظ رہ سکیں۔ اگر کارڈ گھر میں کہیں گم ہو گیا ہو تو نادرا پاک آئی ڈی ایپ سے براہ راست بغیر رپورٹ کے بھی نیا کارڈ بن سکتا ہے۔",
+            },
+            {
+              questionEn: "What can I use the NADRA Acknowledgment / Token Slip for while waiting for delivery?",
+              questionUr: "نیا کارڈ بننے کے دوران نادرا کی ٹوکن پرچی کن کاموں کے لیے استعمال ہو سکتی ہے؟",
+              answerEn: "The token slip containing your Tracking ID and QR code serves as interim proof of identity for routine domestic travel boarding checks, police verification, and civic interactions. However, it CANNOT be used for high-security biometric transactions such as opening new bank accounts, issuing cellular SIMs, or executing property registries, which strictly require the physical Smart Card microchip.",
+              answerUr: "ٹوکن پرچی ملکی سفر اور پولیس چیکنگ میں عارضی شناخت کے طور پر قابل قبول ہے۔ البتہ نیا بینک اکاؤنٹ کھولنے، نئی سم نکلوانے یا جائیداد کی رجسٹری کے لیے اصل کارڈ کا ہونا لازمی ہے۔",
+            },
+            {
+              questionEn: "What should I do if my lost CNIC was already expired years ago?",
+              questionUr: "اگر گم ہونے والے شناختی کارڈ کی معیاد کئی سال پہلے ختم ہو چکی تھی تو کیا کریں؟",
+              answerEn: "Select the \"Renewal\" category on the Pak-ID app or at the NRC counter. You do not need to pay for both Reprint and Renewal; the single renewal process replaces your lost card and extends validity for a fresh 10-year cycle.",
+              answerUr: "آپ پاک آئی ڈی ایپ یا نادرا سینٹر پر 'تجدید (Renewal)' کی کیٹیگری منتخب کریں، اس سے ایک ہی فیس میں گمشدہ کارڈ منسوخ ہو کر نیا 10 سالہ کارڈ جاری ہو جائے گا۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -381,6 +382,52 @@ export default function KamyabJawanPmYouthLoanPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram / Program Evolution Timeline */}
+        <ProcessStepsDiagram
+          titleEn="Evolution & Timeline of Pakistan Federal Youth Loan Scheme (2019–2026)"
+          titleUr="کامیاب جوان سے پی ایم یوتھ لون تک کا مکمل تاریخی و عملی سفر (2019 تا 2026)"
+          subtitleEn="Timeline tracking name changes, the 2022 macroeconomic restructuring, and current active 3-tier financing"
+          subtitleUr="نام کی تبدیلی، 2022 کی عارضی معطلی، بحالی اور موجودہ 3 کیٹیگریز کے قرضوں کا جائزہ"
+          steps={[
+            {
+              number: 1,
+              titleEn: "2019: Kamyab Jawan Launch",
+              titleUr: "2019: کامیاب جوان پروگرام کا آغاز",
+              descEn: "Federal youth entrepreneurship program launched with subsidized subsidized markup loans across selected banks.",
+              descUr: "نوجوانوں کے لیے رعایتی مارک اپ پر کمرشل بینکوں کے ذریعے قرضوں کی اسکیم شروع کی گئی۔",
+              tagEn: "2019 Genesis",
+              tagUr: "کامیاب جوان",
+            },
+            {
+              number: 2,
+              titleEn: "July 2022: Nationwide Review & Pause",
+              titleUr: "جولائی 2022: حکومتی جائزہ اور عارضی وقفہ",
+              descEn: "State Bank of Pakistan (SBP) temporarily paused disbursements to redesign subsidy mechanisms and microfinance portfolios.",
+              descUr: "اسٹیٹ بینک نے معاشی جائزے اور سبسیڈی فریم ورک کی بہتری کے لیے قرضوں کی فراہمی عارضی طور پر روکی۔",
+              tagEn: "SBP Review",
+              tagUr: "عارضی وقفہ",
+            },
+            {
+              number: 3,
+              titleEn: "Dec 2022: Relaunch as PMYB&ALS",
+              titleUr: "دسمبر 2022: پی ایم یوتھ لون کے نام سے بحالی",
+              descEn: "Relaunched under Prime Minister's Youth Business & Agriculture Loan Scheme with Tier 1 made 100% interest-free.",
+              descUr: "پروگرام کو نئی ساخت اور زراعت و مائیکرو فنانس کی شمولیت کے ساتھ بلا سود کیٹیگری بنا کر بحال کیا گیا۔",
+              tagEn: "PMYB&ALS",
+              tagUr: "نئی بحالی",
+            },
+            {
+              number: 4,
+              titleEn: "2026 Active: 3-Tier Financing",
+              titleUr: "2026: 3 کیٹیگریز پر فعال اسکیم",
+              descEn: "Active 100% online portal (pmyp.gov.pk): Tier 1 (0% markup to 500k), Tier 2 (5% to 1.5M), Tier 3 (7% to 7.5M).",
+              descUr: "آن لائن پورٹل پر ٹائر 1 (بلا سود 5 لاکھ تک)، ٹائر 2 (5 فیصد 15 لاکھ تک) اور ٹائر 3 (7 فیصد 75 لاکھ تک) فعال ہیں۔",
+              tagEn: "Active 2026",
+              tagUr: "فعال پورٹل",
+            },
+          ]}
+        />
+
         {/* Section 6: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -423,43 +470,44 @@ export default function KamyabJawanPmYouthLoanPage() {
         </section>
 
         {/* Section 7: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (PM Youth Loan 2026)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Is "Kamyab Jawan" still the active official name of the federal youth loan program?',
-                a: 'No. The "Kamyab Jawan" branding has been officially retired. The program has been revived and restructured under its parent title: the Prime Minister\'s Youth Business & Agriculture Loan Scheme (PMYB&ALS), administered through the official portal at pmyp.gov.pk.',
-              },
-              {
-                q: 'Why was the loan scheme temporarily paused in 2022?',
-                a: 'In July 2022, the State Bank of Pakistan (SBP) temporarily paused disbursements during a federal macroeconomic review to restructure subsidy mechanisms and integrate microfinance/agriculture portfolios. The scheme was fully revived in December 2022 under PMYB&ALS with Tier 1 micro-loans made 100% interest-free (0% markup).',
-              },
-              {
-                q: 'Which commercial banks and institutions are currently participating in the scheme?',
-                a: 'Lead public and private banks include National Bank of Pakistan (NBP), Bank of Punjab (BOP), Bank of Khyber (BOK), Habib Bank Limited (HBL), United Bank Limited (UBL), Allied Bank (ABL), Askari Bank, Meezan Bank, Bank Alfalah, and approved microfinance institutions like Akhuwat and NRSP.',
-              },
-              {
-                q: 'What are the current age limits and can IT/freelancers apply at age 18?',
-                a: 'The standard eligible age bracket is 21 to 45 years for general business and agriculture loans. However, for IT/E-Commerce and digital startup ventures, the government lowered the minimum age requirement to 18 years (requiring at least matriculation or equivalent qualification).',
-              },
-              {
-                q: 'Do I need to submit physical paperwork at a bank branch to apply?',
-                a: 'No. Physical application forms are not accepted at bank counters. All applications must be submitted 100% online through the official government portal at pmyp.gov.pk. You will be assigned a trackable registration number and contacted by your chosen partner bank once preliminary credit scoring is approved.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (PM Youth Loan 2026)"
+          titleUr="پرائم منسٹر یوتھ بزنس لون اسکیم سے متعلق عام سوالات"
+          subtitleEn="Clarifications on retired Kamyab Jawan name, 2022 pause reason, participating banks, age limits, and online-only submission"
+          subtitleUr="کامیاب جوان نام کی منسوخی، شریک بینک، عمر کی حدیں اور آن لائن پورٹل کے طریقہ کار کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "Is \"Kamyab Jawan\" still the active official name of the federal youth loan program?",
+              questionUr: "کیا 'کامیاب جوان' اب بھی اس اسکیم کا سرکاری نام ہے؟",
+              answerEn: "No. The \"Kamyab Jawan\" branding has been officially retired. The program has been revived and restructured under its parent title: the Prime Minister's Youth Business & Agriculture Loan Scheme (PMYB&ALS), administered through the official portal at pmyp.gov.pk.",
+              answerUr: "نہیں! کامیاب جوان کا نام ختم کر کے اسے 'پرائم منسٹر یوتھ بزنس اینڈ ایگریکلچر لون اسکیم (PMYB&ALS)' کا نام دیا گیا ہے اور یہ pmyp.gov.pk پر دستیاب ہے۔",
+            },
+            {
+              questionEn: "Why was the loan scheme temporarily paused in 2022?",
+              questionUr: "2022 میں یہ لون اسکیم عارضی طور پر کیوں روکی گئی تھی؟",
+              answerEn: "In July 2022, the State Bank of Pakistan (SBP) temporarily paused disbursements during a federal macroeconomic review to restructure subsidy mechanisms and integrate microfinance/agriculture portfolios. The scheme was fully revived in December 2022 under PMYB&ALS with Tier 1 micro-loans made 100% interest-free (0% markup).",
+              answerUr: "اسٹیٹ بینک نے معاشی حالات اور سبسیڈی کے طریقہ کار کو مزید شفاف اور مؤثر بنانے کے لیے مختصر جائزہ لیا تھا جس کے بعد دسمبر 2022 میں ٹائر 1 کو مکمل بلا سود کر کے بحال کیا گیا۔",
+            },
+            {
+              questionEn: "Which commercial banks and institutions are currently participating in the scheme?",
+              questionUr: "کون سے بینک اور مائیکرو فنانس ادارے اس اسکیم کے تحت قرضے فراہم کر رہے ہیں؟",
+              answerEn: "Lead public and private banks include National Bank of Pakistan (NBP), Bank of Punjab (BOP), Bank of Khyber (BOK), Habib Bank Limited (HBL), United Bank Limited (UBL), Allied Bank (ABL), Askari Bank, Meezan Bank, Bank Alfalah, and approved microfinance institutions like Akhuwat and NRSP.",
+              answerUr: "نیشنل بینک، بینک آف پنجاب، بینک آف خیبر، ایچ بی ایل، یو بی ایل، میزان بینک، الائیڈ بینک اور اخوت فاؤنڈیشن اس اسکیم میں شامل ہیں۔",
+            },
+            {
+              questionEn: "What are the current age limits and can IT/freelancers apply at age 18?",
+              questionUr: "عمر کی حد کیا ہے اور کیا آئی ٹی فری لانسرز 18 سال کی عمر میں اپلائی کر سکتے ہیں؟",
+              answerEn: "The standard eligible age bracket is 21 to 45 years for general business and agriculture loans. However, for IT/E-Commerce and digital startup ventures, the government lowered the minimum age requirement to 18 years (requiring at least matriculation or equivalent qualification).",
+              answerUr: "عام کاروبار کے لیے عمر 21 سے 45 سال ہے، لیکن آئی ٹی، ای کامرس اور ڈیجیٹل اسٹارٹ اپس کے لیے حکومت نے رعایت دیتے ہوئے کم از کم عمر 18 سال مقرر کی ہے۔",
+            },
+            {
+              questionEn: "Do I need to submit physical paperwork at a bank branch to apply?",
+              questionUr: "کیا درخواست دینے کے لیے بینک برانچ جانا پڑتا ہے؟",
+              answerEn: "No. Physical application forms are not accepted at bank counters. All applications must be submitted 100% online through the official government portal at pmyp.gov.pk. You will be assigned a trackable registration number and contacted by your chosen partner bank once preliminary credit scoring is approved.",
+              answerUr: "نہیں! برانچ میں دستی فارم جمع نہیں ہوتے۔ تمام درخواستیں 100 فیصد آن لائن پورٹل (pmyp.gov.pk) کے ذریعے جمع ہوتی ہیں، ابتدائی منظوری کے بعد بینک خود رابطہ کرتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

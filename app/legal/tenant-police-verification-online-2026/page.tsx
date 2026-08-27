@@ -5,6 +5,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { StepFlowDiagram } from '@/components/StepFlowDiagram';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -449,53 +450,85 @@ export default function TenantVerificationGuidePage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Tenant Police Verification Workflow (Punjab & Sindh 2026)"
+          titleUr="کرایہ دار پولیس تصدیق: درخواست سے تصدیقی سرٹیفکیٹ تک کا مرحلہ وار طریقہ"
+          subtitleEn="4-stage registration process to ensure statutory compliance under the Temporary Residents Act"
+          subtitleUr="عارضی رہائشی ایکٹ کے تحت قانونی تحفظ اور پولیس خدمت مرکز سے رجسٹریشن کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Execute Tenancy Agreement",
+              titleUr: "کرایہ نامہ (رینٹ ایگریمنٹ) کی تیاری",
+              descEn: "Sign a formal rent agreement on standard stamp paper specifying landlord and tenant CNIC details and rental terms.",
+              descUr: "اسٹامپ پیپر پر قانونی کرایہ نامہ تیار کریں جس میں مالک مکان اور کرایہ دار کے شناختی کارڈ کی تفصیلات درج ہوں۔",
+              tagEn: "Rent Deed",
+              tagUr: "کرایہ نامہ",
+            },
+            {
+              number: 2,
+              titleEn: "Online Portal / PKM Centre Submission",
+              titleUr: "آن لائن پورٹل یا خدمت مرکز پر اندراج",
+              descEn: "Submit tenant profile and family details via PKM Global app, Sindh Police portal, or visit any Police Khidmat Markaz.",
+              descUr: "پنجاب پولیس خدمت مرکز یا سندھ پولیس آن لائن ایپ کے ذریعے کرایہ دار اور اس کے اہلخانہ کا ڈیٹا درج کریں۔",
+              tagEn: "Portal / PKM",
+              tagUr: "آن لائن اندراج",
+            },
+            {
+              number: 3,
+              titleEn: "Biometric & Criminal Background Check",
+              titleUr: "بائیومیٹرک اور کرمنل ریکارڈ کی تصدیق",
+              descEn: "Police database automatically cross-checks tenant CNIC against PSR (Police Station Record) and national criminal archives.",
+              descUr: "پولیس کا خودکار مرکزی نظام کرایہ دار کا کرمنل ریکارڈ اور بائیومیٹرک فنگر پرنٹ چیک کرتا ہے۔",
+              tagEn: "Record Check",
+              tagUr: "کرمنل ریکارڈ چیک",
+            },
+            {
+              number: 4,
+              titleEn: "Instant Computerized Certificate Issuance",
+              titleUr: "کمپیوٹرائزڈ تصدیقی سرٹیفکیٹ کا اجراء",
+              descEn: "Receive the official QR-coded Police Tenant Verification Certificate; keep a copy on property premises for inspections.",
+              descUr: "کیو آر کوڈ والا باضابطہ پولیس سرٹیفکیٹ حاصل کریں اور پولیس چیکنگ کے لیے اپنے پاس محفوظ رکھیں۔",
+              tagEn: "Police Certificate",
+              tagUr: "پولیس سرٹیفکیٹ",
+            },
+          ]}
+        />
+
         {/* Section 5: Frequently Asked Questions */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Landlord Legal Clarifications)
-            </h2>
-          </div>
-
-          <div className="space-y-3 font-sans text-xs">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Is tenant police verification really free of cost?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Yes. Police Khidmat Markaz (PKM) and police stations do NOT charge any fee for tenant registration. It is a completely free public service. Never pay bribes or unofficial &quot;file charges&quot; to anyone.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What if I am renting out my house to a close relative or family friend?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                If there is a tenancy arrangement where rent is exchanged, police registration is legally recommended to prevent future civil disputes or search operations. If immediate family members (parents, children) reside with you, registration under the temporary residents act is not required.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                How long does the verification take at Police Khidmat Markaz?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                If you arrive with all required documents (CNIC copies, rent agreement, and photograph), the PKM desk officer enters the data into the central police network and issues the computerized certificate within 15 to 20 minutes.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What should I do when a tenant vacates my property?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                When a tenancy contract ends and the tenant leaves, notify your local police station or PKM to mark the tenancy record as &quot;Vacated / Closed&quot; so that you are no longer tied to that occupant&apos;s future activities.
-              </p>
-            </div>
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Landlord Legal Clarifications)"
+          titleUr="کرایہ دار پولیس تصدیق سے متعلق اہم قانونی سوالات"
+          subtitleEn="Essential guidelines on 100% free registration, renting to relatives, PKM 15-minute wait time, and vacating property procedures"
+          subtitleUr="مفت سروس کی حقیقت، رشتہ داروں کو مکان دینے کے اصول، 15 منٹ میں سرٹیفکیٹ اور مکان خالی کرنے کا طریقہ"
+          items={[
+            {
+              questionEn: "Is tenant police verification really free of cost?",
+              questionUr: "کیا کرایہ دار کی پولیس تصدیق واقعی بالکل مفت ہے؟",
+              answerEn: "Yes. Police Khidmat Markaz (PKM) and police stations do NOT charge any fee for tenant registration. It is a completely free public service. Never pay bribes or unofficial \"file charges\" to anyone.",
+              answerUr: "جی ہاں! پولیس خدمت مرکز (PKM) اور تھانوں میں کرایہ دار کے اندراج کی کوئی سرکاری فیس نہیں ہے۔ یہ سروس مکمل طور پر مفت فراہم کی جاتی ہے۔",
+            },
+            {
+              questionEn: "What if I am renting out my house to a close relative or family friend?",
+              questionUr: "اگر مکان کسی قریبی رشتہ دار یا دوست کو کرائے پر دیا ہو تو کیا رجسٹریشن لازمی ہے؟",
+              answerEn: "If there is a tenancy arrangement where rent is exchanged, police registration is legally recommended to prevent future civil disputes or search operations. If immediate family members (parents, children) reside with you, registration under the temporary residents act is not required.",
+              answerUr: "اگر باقاعدہ کرائے کا لین دین ہو رہا ہے تو قانونی تحفظ اور سرچ آپریشن سے بچنے کے لیے رجسٹریشن کروانا لازمی ہے، لیکن اگر والدین یا بچے ساتھ رہتے ہوں تو اندراج ضروری نہیں ہے۔",
+            },
+            {
+              questionEn: "How long does the verification take at Police Khidmat Markaz?",
+              questionUr: "پولیس خدمت مرکز میں تصدیق کے عمل میں کتنا وقت لگتا ہے؟",
+              answerEn: "If you arrive with all required documents (CNIC copies, rent agreement, and photograph), the PKM desk officer enters the data into the central police network and issues the computerized certificate within 15 to 20 minutes.",
+              answerUr: "اگر تمام کاغذات (شناختی کارڈ کی کاپیاں، کرایہ نامہ اور تصویر) مکمل ہوں تو خدمت مرکز کا نمائندہ صرف 15 سے 20 منٹ میں کمپیوٹرائزڈ سرٹیفکیٹ پرنٹ کر کے دے دیتا ہے۔",
+            },
+            {
+              questionEn: "What should I do when a tenant vacates my property?",
+              questionUr: "جب کرایہ دار مکان خالی کر کے چلا جائے تو کیا کرنا چاہیے؟",
+              answerEn: "When a tenancy contract ends and the tenant leaves, notify your local police station or PKM to mark the tenancy record as \"Vacated / Closed\" so that you are no longer tied to that occupant's future activities.",
+              answerUr: "کرایہ دار کے جانے پر متعلقہ پولیس اسٹیشن یا خدمت مرکز جا کر اندراج کو 'خالی (Vacated)' کروا دیں تاکہ مستقبل میں اس شخص کی سرگرمیوں سے آپ بری الذمہ رہیں۔",
+            },
+          ]}
+        />
 
         {/* Section 6: Related Links */}
         <section className="space-y-3">

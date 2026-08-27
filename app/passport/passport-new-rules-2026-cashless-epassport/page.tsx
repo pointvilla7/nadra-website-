@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -240,56 +241,53 @@ export default function PassportNewRules2026Page() {
           </div>
         </section>
 
-        {/* Section 1: Cashless Payment System Breakdown */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <QrCode className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              100% Cashless Passport Offices: How QR Code Payment Works
-            </h2>
-          </div>
-          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
-            Effective <strong>July 1, 2026</strong>, physical cash counters across all Regional Passport Offices (RPOs)
-            and Executive Passport Offices (EPOs) in Pakistan have been permanently eliminated to prevent queue congestion,
-            reduce agent extortion, and guarantee instant revenue reconciliation.
-          </p>
+        {/* Process Flow Diagram: Cashless Payment */}
+        <ProcessStepsDiagram
+          titleEn="How 100% Cashless QR Payment Works at Passport Offices (2026)"
+          titleUr="پاسپورٹ دفاتر میں کیش لیس کیو آر کوڈ ادائیگی کا 4 مرحلہ وار طریقہ"
+          subtitleEn="Elimination of cash counters: scan, verify, and complete biometrics in under 30 seconds"
+          subtitleUr="کیش کاؤنٹرز کا خاتمہ: ٹوکن پر موجود کیو آر کوڈ اسکین کر کے فوری آن لائن فیس جمع کروائیں"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Collect Token with Dynamic QR",
+              titleUr: "کیو آر کوڈ والا ٹوکن حاصل کریں",
+              descEn: "Visit the passport office counter; your entry token is printed with an encrypted 1-Bill dynamic QR code.",
+              descUr: "پاسپورٹ آفس میں داخل ہو کر ٹوکن لیں جس پر 1-Bill کا تصدیق شدہ کیو آر کوڈ پرنٹ ہوتا ہے۔",
+              tagEn: "1-Bill QR",
+              tagUr: "ٹوکن پرچی",
+            },
+            {
+              number: 2,
+              titleEn: "Open Any Banking / Wallet App",
+              titleUr: "موبائل بینکنگ یا والٹ ایپ کھولیں",
+              descEn: "Open JazzCash, EasyPaisa, SadaPay, NayaPay, or any 1Link bank app and tap 'Scan QR' / 'Govt Payments'.",
+              descUr: "جاز کیش، ایزی پیسہ، نیا پے، سادہ پے یا اپنے بینک کی موبائل ایپ میں 'اسکین کیو آر' کھولیں۔",
+              tagEn: "Mobile App",
+              tagUr: "موبائل ایپ",
+            },
+            {
+              number: 3,
+              titleEn: "Scan & Confirm Amount",
+              titleUr: "کوڈ اسکین اور تفصیلات کی تصدیق",
+              descEn: "Scan the token slip QR; the app instantly fetches your exact passport fee, category, and applicant name.",
+              descUr: "ٹوکن پر دیا گیا کیو آر کوڈ اسکین کریں، ایپ خودکار طور پر فیس اور آپ کا نام ظاہر کرے گی۔",
+              tagEn: "Auto Fetch",
+              tagUr: "فیس تصدیق",
+            },
+            {
+              number: 4,
+              titleEn: "Instant Green Signal & Biometrics",
+              titleUr: "فوری منظوری اور بائیومیٹرک عمل",
+              descEn: "Approve payment via biometric/PIN. The passport officer's screen turns green instantly for photography and data entry.",
+              descUr: "پن کوڈ لگا کر ادائیگی مکمل کریں، کاؤنٹر پر بیٹھے افسر کی اسکرین پر فوری گرین تصدیق ظاہر ہو جائے گی۔",
+              tagEn: "Instant Verify",
+              tagUr: "عمل مکمل",
+            },
+          ]}
+        />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs font-sans">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <span className="w-6 h-6 rounded-full bg-doc-ink text-white font-mono font-bold flex items-center justify-center text-xs">1</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">Collect Token</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Visit the passport counter. Your entry token is printed with a dynamic, encrypted 1-Bill QR code.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <span className="w-6 h-6 rounded-full bg-doc-ink text-white font-mono font-bold flex items-center justify-center text-xs">2</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">Open Mobile App</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Open JazzCash, EasyPaisa, SadaPay, NayaPay, or your bank&apos;s mobile app and select &quot;QR Scanner&quot; or &quot;Govt Fees&quot;.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <span className="w-6 h-6 rounded-full bg-doc-ink text-white font-mono font-bold flex items-center justify-center text-xs">3</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">Scan &amp; Confirm</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Scan the token QR code. The app automatically fetches your exact fee amount, category, and applicant name.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <span className="w-6 h-6 rounded-full bg-emerald-600 text-white font-mono font-bold flex items-center justify-center text-xs">4</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">Instant Verification</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Approve payment via biometric/PIN. The passport officer&apos;s screen turns green instantly for data entry.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <AdPlacementZone format="horizontal" />
+        <AdPlacementZone slotId="passport-mid" format="horizontal" />
 
         {/* Section 2: E-Passport Transition & Machine Readable Passport (MRP) Validity */}
         <section className="space-y-4">
@@ -392,10 +390,10 @@ export default function PassportNewRules2026Page() {
           </div>
         </section>
 
-        {/* Section 4: Related Tools & Navigators */}
+        {/* Section 4: Related Navigators */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
-            Related Passport Tools &amp; Calculators
+            Related Passport &amp; Overseas Travel Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
@@ -406,16 +404,16 @@ export default function PassportNewRules2026Page() {
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
                 Passport Fee Calculator 2026 →
               </h3>
-              <p className="text-xs text-slate-500 mt-1">Calculate exact 36/72/100 page 5 &amp; 10 year passport costs.</p>
+              <p className="text-xs text-slate-500 mt-1">Calculate exact 36/72/100-page normal &amp; urgent fees.</p>
             </Link>
 
             <Link
               href="/passport/tracking-status"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Application Tracker</span>
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Application Status</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                Passport Tracking Status Online →
+                Passport Delivery Tracker →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Track token dispatch and printing via 9988 SMS.</p>
             </Link>
@@ -434,47 +432,50 @@ export default function PassportNewRules2026Page() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Passport Rules &amp; Travel 2026)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Can I pay the passport fee with cash at a passport office in 2026?',
-                a: 'No. Effective July 1, 2026, all passport offices across Pakistan have completely discontinued cash counters. Fees must be paid digitally by scanning the token QR code via mobile banking apps (JazzCash, EasyPaisa, SadaPay, NayaPay, or bank apps) or generating a PSID voucher through the Passport Fee Asaan app/web.',
-              },
-              {
-                q: 'Can overseas Pakistanis with an expired NICOP travel visa-free on a foreign passport?',
-                a: 'No. As of mid-2026, Pakistani immigration authorities and international airlines strictly enforce that foreign passport holders of Pakistani origin MUST hold a valid, unexpired Smart NICOP to enter Pakistan without a visa. If your NICOP is expired, cancelled, or missing, airlines are instructed to deny boarding unless you have a valid Pakistani visa or valid Pakistani passport.',
-              },
-              {
-                q: 'Do I need to replace my existing Machine Readable Passport (MRP) immediately with an e-passport?',
-                a: 'No forced replacement is required. While Pakistan is progressively transitioning all new issuances to electronic biometric e-passports (with embedded NFC microchips), all existing Machine Readable Passports (MRPs) remain 100% valid until their respective expiration date.',
-              },
-              {
-                q: 'What is the standard delivery timeline for passports in 2026?',
-                a: 'Under recent DGI&P operational directives, standard (Normal) passport delivery has been accelerated to approximately 10 to 14 working days, Urgent delivery takes 4 to 5 working days, and Fast-Track Executive passports are printed within 2 working days.',
-              },
-              {
-                q: 'What is the Business Passport initiative?',
-                a: 'The Business Passport is a dedicated travel document category championed by Interior Minister Mohsin Naqvi and DGI&P in consultation with the FBR. Designed for verified, high-contributing tax filers and corporate leaders, it provides expedited document processing and facilitates simplified visa facilitation with international partner embassies.',
-              },
-              {
-                q: 'How do I pay via QR code at the passport office counter?',
-                a: 'When your token is generated at the entrance counter, a dynamic QR code is printed on your receipt. Open any Pakistani mobile wallet (JazzCash, EasyPaisa, SadaPay) or banking app, tap "Scan QR" or "1-Bill / QR", scan the receipt code, confirm the applicant name and amount, and approve the instant transfer.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Passport Rules & Travel 2026)"
+          titleUr="پاسپورٹ کے نئے قواعد اور سفر سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on cashless fee payments, mandatory NICOP for overseas travel, and e-passport transition"
+          subtitleUr="کیش لیس فیس، اوورسیز پاکستانیوں کے لیے نائیکوپ کی شرط اور ای پاسپورٹ کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "Can I pay the passport fee with cash at a passport office in 2026?",
+              questionUr: "کیا 2026 میں پاسپورٹ آفس کے کاؤنٹر پر نقد کیش فیس جمع کروائی جا سکتی ہے؟",
+              answerEn: "No. Effective July 1, 2026, all passport offices across Pakistan have completely discontinued cash counters. Fees must be paid digitally by scanning the token QR code via mobile banking apps (JazzCash, EasyPaisa, SadaPay, NayaPay, or bank apps) or generating a PSID voucher through the Passport Fee Asaan app/web.",
+              answerUr: "نہیں! یکم جولائی 2026 سے پاسپورٹ دفاتر کے کیش کاؤنٹرز مکمل ختم کر دیے گئے ہیں۔ فیس صرف موبائل ایپ (ایزی پیسہ، جاز کیش یا بینک ایپ) سے کیو آر کوڈ اسکین کر کے ادا ہوتی ہے۔",
+            },
+            {
+              questionEn: "Can overseas Pakistanis with an expired NICOP travel visa-free on a foreign passport?",
+              questionUr: "کیا زائد المیعاد نائیکوپ کارڈ پر غیر ملکی پاسپورٹ کے ساتھ پاکستان کا ویزا فری سفر ہو سکتا ہے؟",
+              answerEn: "No. As of mid-2026, Pakistani immigration authorities and international airlines strictly enforce that foreign passport holders of Pakistani origin MUST hold a valid, unexpired Smart NICOP to enter Pakistan without a visa. If your NICOP is expired, cancelled, or missing, airlines are instructed to deny boarding unless you have a valid Pakistani visa or valid Pakistani passport.",
+              answerUr: "نہیں! ائیر لائنز اور پاکستانی امیگریشن نے سختی سے لازمی قرار دیا ہے کہ ویزا فری داخلے کے لیے اصل نائیکوپ کارڈ ویلڈ ہونا ضروری ہے۔ ایکسپائر نائیکوپ پر ائیرلائنز بورڈنگ روک دیتی ہیں۔",
+            },
+            {
+              questionEn: "Do I need to replace my existing Machine Readable Passport (MRP) immediately with an e-passport?",
+              questionUr: "کیا پرانے پاسپورٹ (MRP) کو فوری طور پر ای پاسپورٹ میں تبدیل کروانا لازمی ہے؟",
+              answerEn: "No forced replacement is required. While Pakistan is progressively transitioning all new issuances to electronic biometric e-passports (with embedded NFC microchips), all existing Machine Readable Passports (MRPs) remain 100% valid until their respective expiration date.",
+              answerUr: "نہیں! آپ کا پرانا پاسپورٹ اپنی آخری تاریخ تک 100 فیصد کارآمد ہے۔ جب وہ ختم ہوگا تو تجدید کے وقت نیا ای پاسپورٹ جاری کر دیا جائے گا۔",
+            },
+            {
+              questionEn: "What is the standard delivery timeline for passports in 2026?",
+              questionUr: "2026 میں پاسپورٹ کتنے دنوں میں بن کر ڈلیور ہو جاتا ہے؟",
+              answerEn: "Under recent DGI&P operational directives, standard (Normal) passport delivery has been accelerated to approximately 10 to 14 working days, Urgent delivery takes 4 to 5 working days, and Fast-Track Executive passports are printed within 2 working days.",
+              answerUr: "نارمل پاسپورٹ 10 سے 14 دن، ارجنٹ پاسپورٹ 4 سے 5 دن اور فاسٹ ٹریک ایگزیکٹو پاسپورٹ صرف 2 ورکنگ دنوں میں تیار ہو کر فراہم کر دیا جاتا ہے۔",
+            },
+            {
+              questionEn: "What is the Business Passport initiative?",
+              questionUr: "بزنس پاسپورٹ اسکیم کیا ہے اور کن افراد کے لیے ہے؟",
+              answerEn: "The Business Passport is a dedicated travel document category championed by Interior Minister Mohsin Naqvi and DGI&P in consultation with the FBR. Designed for verified, high-contributing tax filers and corporate leaders, it provides expedited document processing and facilitates simplified visa facilitation with international partner embassies.",
+              answerUr: "یہ ایک خصوصی پاسپورٹ کیٹیگری ہے جو بڑے ٹیکس دہندگان اور کاروباری شخصیات کے لیے ترجیحی بنیادوں پر تیز ترین سروس اور بین الاقوامی ویزا آسانیاں فراہم کرتی ہے۔",
+            },
+            {
+              questionEn: "How do I pay via QR code at the passport office counter?",
+              questionUr: "پاسپورٹ آفس کاؤنٹر پر کیو آر کوڈ کے ذریعے فیس کیسے ادا کی جائے؟",
+              answerEn: "When your token is generated at the entrance counter, a dynamic QR code is printed on your receipt. Open any Pakistani mobile wallet (JazzCash, EasyPaisa, SadaPay) or banking app, tap \"Scan QR\" or \"1-Bill / QR\", scan the receipt code, confirm the applicant name and amount, and approve the instant transfer.",
+              answerUr: "ٹوکن پرنٹ ہونے کے بعد کسی بھی موبائل ایپ میں 'اسکین کیو آر' کھول کر ٹوکن پرچی کا کوڈ اسکین کریں اور پن کوڈ لگا کر سیکنڈوں میں فیس ادا کریں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

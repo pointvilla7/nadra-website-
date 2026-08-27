@@ -5,6 +5,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -421,6 +422,52 @@ export default function FbrActiveTaxpayerStatusHelperPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Verification & Active Taxpayer List (ATL) Activation Workflow"
+          titleUr="ایف بی آر ایکٹیو ٹیکس پیئر لسٹ (ATL) میں شامل ہونے کا مرحلہ وار طریقہ"
+          subtitleEn="4-stage process from status check via 9966 SMS to Iris return filing and surcharge activation"
+          subtitleUr="9966 ایس ایم ایس کے ذریعے تصدیق سے لے کر گوشوارے جمع کروانے اور ایکٹیو ہونے تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Check Status via 9966 SMS or Iris",
+              titleUr: "9966 ایس ایم ایس یا آئرس پر اسٹیٹس چیک",
+              descEn: "Send 'ATL <13-digit CNIC>' to 9966 from your mobile phone or verify online on the FBR Iris portal.",
+              descUr: "اپنے موبائل سے 'ATL <13 ہندسوں کا شناختی کارڈ>' لکھ کر 9966 پر بھیجیں یا آن لائن پورٹل پر چیک کریں۔",
+              tagEn: "9966 SMS / Iris",
+              tagUr: "اسٹیٹس چیک",
+            },
+            {
+              number: 2,
+              titleEn: "File Income Tax Return on Iris 2.0",
+              titleUr: "آئرس پورٹل پر سالانہ انکم ٹیکس ریٹرن فائل کریں",
+              descEn: "Log into iris.fbr.gov.pk, declare your annual salary/business income and wealth statement, and submit the return.",
+              descUr: "ایف بی آر کے آن لائن پورٹل پر اپنی سالانہ آمدنی، بینک بیلنس اور اثاثوں کا گوشوارہ جمع کروائیں۔",
+              tagEn: "Iris Return",
+              tagUr: "گوشوارہ فائل",
+            },
+            {
+              number: 3,
+              titleEn: "Generate & Pay Surcharge (If Late)",
+              titleUr: "لیٹ فائلنگ سرچارج چالان ادا کریں",
+              descEn: "If filing after the statutory deadline, generate an ATL Surcharge PSID (PKR 1,000 for salaried, PKR 10,000 for AOPs) and pay via 1Link.",
+              descUr: "آخری تاریخ گزرنے کے بعد 1000 روپے (سیلری) کا چالان بنا کر کسی بھی بینک یا موبائل ایپ سے جمع کروائیں۔",
+              tagEn: "1Link PSID",
+              tagUr: "سرچارج چالان",
+            },
+            {
+              number: 4,
+              titleEn: "Active Status & Reduced Withholding",
+              titleUr: "فوری ایکٹیو اسٹیٹس اور ٹیکس میں 50 فیصد بچت",
+              descEn: "FBR updates your status to Active; enjoy standard withholding tax rates on banking, property, and vehicle transactions.",
+              descUr: "ایف بی آر سسٹم آپ کا نام ایکٹیو لسٹ میں شامل کر دیتا ہے جس سے بینکوں اور جائیداد پر اضافی ودہولڈنگ ٹیکس ختم ہو جاتا ہے۔",
+              tagEn: "ATL Active",
+              tagUr: "ایکٹیو ٹیکس پیئر",
+            },
+          ]}
+        />
+
         {/* Section 4: Related Tax Guides */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -463,37 +510,38 @@ export default function FbrActiveTaxpayerStatusHelperPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            Frequently Asked Questions (FBR Active Taxpayer Status)
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How frequently is the FBR Active Taxpayer List (ATL) updated?',
-                a: 'The FBR updates the Active Taxpayers List on its central Iris server every Monday at midnight (weekly cycle). Any tax return filed or ATL surcharge paid during the week will typically reflect in the active database on the following Monday.',
-              },
-              {
-                q: 'Can an overseas Pakistani or NRP check ATL status via 9966 SMS?',
-                a: 'The 9966 SMS shortcode works on all local Pakistani cellular networks (Jazz, Zong, Telenor, Ufone, Onic). For overseas Pakistanis using international numbers, checking via the official Iris online portal (iris.fbr.gov.pk) with their 13-digit CNIC or NICOP is recommended.',
-              },
-              {
-                q: 'What is the difference between an NTN and an Active Taxpayer status?',
-                a: 'An NTN (National Tax Number) is your permanent tax registration identification with FBR (for individuals, it equals their 13-digit CNIC). However, having an NTN does not make you an Active Taxpayer. You only attain Active status when you submit your annual income tax return for the relevant tax year before the due date.',
-              },
-              {
-                q: 'Is it legal for banks or car dealers to check my ATL status?',
-                a: 'Yes. Under federal tax legislation, all scheduled commercial banks, property registrar sub-registrars, motor vehicle registration authorities, and withholding agents are legally required to verify your real-time ATL status on Iris before applying withholding tax rates.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (FBR Active Taxpayer Status)"
+          titleUr="ایف بی آر ایکٹیو ٹیکس پیئر اسٹیٹس سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on weekly Iris database sync cycles, 9966 SMS for overseas Pakistanis, NTN vs Active status, and banking verifications"
+          subtitleUr="ہفتہ وار لسٹ اپ ڈیٹ، اوورسیز پاکستانیوں کے لیے آن لائن تصدیق، این ٹی این کا فرق اور بینکوں کے قانونی اختیارات"
+          items={[
+            {
+              questionEn: "How frequently is the FBR Active Taxpayer List (ATL) updated?",
+              questionUr: "ایف بی آر کی ایکٹیو ٹیکس پیئر لسٹ (ATL) کتنی دیر بعد اپ ڈیٹ ہوتی ہے؟",
+              answerEn: "The FBR updates the Active Taxpayers List on its central Iris server every Monday at midnight (weekly cycle). Any tax return filed or ATL surcharge paid during the week will typically reflect in the active database on the following Monday.",
+              answerUr: "ایف بی آر ہر پیر کی رات 12 بجے مرکزی سرور پر لسٹ اپ ڈیٹ کرتا ہے۔ ہفتے کے دوران جمع کروایا گیا ریٹرن یا سرچارج چالان اگلے پیر کو لائیو لسٹ میں ظاہر ہو جاتا ہے۔",
+            },
+            {
+              questionEn: "Can an overseas Pakistani or NRP check ATL status via 9966 SMS?",
+              questionUr: "کیا بیرون ملک مقیم پاکستانی 9966 ایس ایم ایس پر اسٹیٹس چیک کر سکتے ہیں؟",
+              answerEn: "The 9966 SMS shortcode works on all local Pakistani cellular networks (Jazz, Zong, Telenor, Ufone, Onic). For overseas Pakistanis using international numbers, checking via the official Iris online portal (iris.fbr.gov.pk) with their 13-digit CNIC or NICOP is recommended.",
+              answerUr: "9966 ایس ایم ایس صرف پاکستانی سموں پر کام کرتا ہے۔ بیرون ملک مقیم پاکستانی اپنے شناختی کارڈ یا نائیکوپ نمبر کے ذریعے ایف بی آر کی ویب سائٹ پر براہ راست مفت چیک کر سکتے ہیں۔",
+            },
+            {
+              questionEn: "What is the difference between an NTN and an Active Taxpayer status?",
+              questionUr: "این ٹی این (NTN) اور ایکٹیو ٹیکس پیئر (فائلر) میں کیا فرق ہے؟",
+              answerEn: "An NTN (National Tax Number) is your permanent tax registration identification with FBR (for individuals, it equals their 13-digit CNIC). However, having an NTN does not make you an Active Taxpayer. You only attain Active status when you submit your annual income tax return for the relevant tax year before the due date.",
+              answerUr: "این ٹی این صرف ٹیکس رجسٹریشن نمبر ہوتا ہے۔ صرف این ٹی این بنوانے سے بندہ فائلر نہیں بنتا، جب تک آپ ہر سال اپنی سالانہ انکم ٹیکس ریٹرن جمع نہ کروائیں آپ ایکٹیو ٹیکس پیئر نہیں کہلاتے۔",
+            },
+            {
+              questionEn: "Is it legal for banks or car dealers to check my ATL status?",
+              questionUr: "کیا بینک، گاڑیوں کے شوروم اور پراپرٹی رجسٹرار کا میرا ٹیکس اسٹیٹس چیک کرنا قانونی ہے؟",
+              answerEn: "Yes. Under federal tax legislation, all scheduled commercial banks, property registrar sub-registrars, motor vehicle registration authorities, and withholding agents are legally required to verify your real-time ATL status on Iris before applying withholding tax rates.",
+              answerUr: "جی ہاں! انکم ٹیکس آرڈیننس کے تحت تمام بینکوں، موٹر رجسٹریشن اتھارٹیز اور پراپرٹی دفاتر کے لیے لازمی ہے کہ وہ نان فائلر ودہولڈنگ ٹیکس کاٹنے سے پہلے آپ کا نام لسٹ میں چیک کریں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

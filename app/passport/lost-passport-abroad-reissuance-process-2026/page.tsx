@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -324,6 +325,61 @@ export default function LostPassportAbroadPage() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step Lost Passport Reissuance Workflow Abroad (DGIP & MOFA 2026)"
+          titleUr="بیرون ملک گمشدہ پاکستانی پاسپورٹ کے دوبارہ حصول کا 5 مرحلہ وار طریقہ"
+          subtitleEn="5-stage sequence from host police report to Islamabad HQ verification and new passport dispatch"
+          subtitleUr="مقامی پولیس رپورٹ سے لے کر سفارت خانے میں درخواست اور نئے پاسپورٹ کے حصول تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Host Country Police Report",
+              titleUr: "مقامی پولیس اسٹیشن میں رپورٹ",
+              descEn: "Visit the local police station in your host city; obtain an official police lost report / crime reference number.",
+              descUr: "جس ملک میں پاسپورٹ گم ہوا ہے وہاں کے قریبی تھانے میں رپورٹ درج کروا کے سرکاری تصدیقی پرچی حاصل کریں۔",
+              tagEn: "Police Report",
+              tagUr: "پولیس رپورٹ",
+            },
+            {
+              number: 2,
+              titleEn: "Embassy / Consulate Booking",
+              titleUr: "پاکستانی سفارت خانے میں اپائنٹمنٹ",
+              descEn: "Book an appointment at the nearest Pakistan Embassy / Consulate General via the official online booking portal.",
+              descUr: "قریبی پاکستانی سفارت خانے یا قونصل خانے میں آن لائن اپائنٹمنٹ بک کریں اور مقررہ وقت پر تشریف لے جائیں۔",
+              tagEn: "Embassy Visit",
+              tagUr: "سفارت خانہ",
+            },
+            {
+              number: 3,
+              titleEn: "Document Submission & Biometrics",
+              titleUr: "کاغذات اور بائیومیٹرک اندراج",
+              descEn: "Submit original CNIC/NICOP, police report, and lost passport copy; complete live digital fingerprint and photo capture.",
+              descUr: "اصل شناختی کارڈ/نائیکوپ، پولیس رپورٹ اور پرانے پاسپورٹ کی کاپی جمع کروا کر بائیومیٹرک فنگر پرنٹس دیں۔",
+              tagEn: "NICOP & Bio",
+              tagUr: "بائیومیٹرک",
+            },
+            {
+              number: 4,
+              titleEn: "DGIP Islamabad Security Clearance",
+              titleUr: "ڈی جی آئی پی اسلام آباد سے تصدیق",
+              descEn: "Embassy transmits data to DGIP HQ Islamabad to cancel old passport in the central system and authorize printing.",
+              descUr: "سفارت خانہ ڈیٹا اسلام آباد ہیڈ کوارٹر بھیجتا ہے جہاں پرانا پاسپورٹ بلاک کر کے نیا پرنٹ کرنے کی منظوری دی جاتی ہے۔",
+              tagEn: "DGIP Clearance",
+              tagUr: "مرکزی تصدیق",
+            },
+            {
+              number: 5,
+              titleEn: "Booklet Delivery / Emergency Outpass",
+              titleUr: "نیا پاسپورٹ یا ایمرجنسی آؤٹ پاس",
+              descEn: "Collect new printed passport (3–6 weeks) or receive a 1-way Emergency Travel Document (ETD) if traveling immediately.",
+              descUr: "ڈپلومیٹک ڈاک سے نیا پاسپورٹ وصول کریں یا فوری واپسی کی صورت میں 1 سے 3 دن میں ایمرجنسی ٹریول پرمٹ حاصل کریں۔",
+              tagEn: "Passport / ETD",
+              tagUr: "پاسپورٹ وصولی",
+            },
+          ]}
+        />
+
         {/* Section 5: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -366,43 +422,44 @@ export default function LostPassportAbroadPage() {
         </section>
 
         {/* Section 6: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Lost Passport Overseas)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'How long does it really take to get a replacement passport issued abroad?',
-                a: 'Because a lost passport requires formal security verification, cancellation of the old record, and clearance from the Directorate General of Immigration & Passports (DGIP) headquarters in Islamabad before a new booklet can be printed and dispatched via diplomatic courier, the process typically takes 3 to 6 weeks. If you do not have your old passport number or copy, it can take longer.',
-              },
-              {
-                q: 'What should I do if I need to return to Pakistan immediately for an emergency?',
-                a: 'If you have an urgent family emergency, medical situation, or expired foreign visa, visit the nearest Pakistan Embassy or Consulate General in person to apply for an Emergency Travel Document (ETD / Outpass). An ETD is typically issued within 1 to 3 working days and allows direct, one-way travel back to Pakistan.',
-              },
-              {
-                q: 'Can I fly to other foreign countries or transit long layovers using an Emergency Outpass (ETD)?',
-                a: 'No. An Emergency Travel Document (Outpass) is strictly a single-entry, one-way travel document valid exclusively for returning directly to Pakistan. International airlines and foreign border authorities will not allow you to board flights with third-country layovers requiring transit visas.',
-              },
-              {
-                q: 'What if I do not have a photocopy or record of my lost passport number?',
-                a: 'The embassy can trace your record using your 13-digit NADRA CNIC / NICOP number. However, this manual record search in DGIP centralized archives requires additional processing time. Having a digital photo or scan of your lost passport\'s data page significantly speeds up the clearance.',
-              },
-              {
-                q: 'Where can I escalate complaints if my passport reissuance is excessively delayed overseas?',
-                a: 'You can register an official complaint directly with the Ministry of Interior\'s Overseas Passport Cell at complaints.passport@interior.gov.pk or log a formal ticket on the Prime Minister\'s Performance Delivery Unit (PMDU) Pakistan Citizen\'s Portal.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Lost Passport Overseas)"
+          titleUr="بیرون ملک گمشدہ پاسپورٹ سے متعلق عام سوالات"
+          subtitleEn="Essential guidelines on processing wait times, emergency travel documents (ETD/Outpass), transit layovers, and complaints"
+          subtitleUr="پروسیسنگ کا وقت، ہنگامی آؤٹ پاس، ٹرانزٹ پروازیں اور اسلام آباد شکایت کے حل کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "How long does it really take to get a replacement passport issued abroad?",
+              questionUr: "بیرون ملک گمشدہ پاسپورٹ بننے میں حقیقت میں کتنا وقت لگتا ہے؟",
+              answerEn: "Because a lost passport requires formal security verification, cancellation of the old record, and clearance from the Directorate General of Immigration & Passports (DGIP) headquarters in Islamabad before a new booklet can be printed and dispatched via diplomatic courier, the process typically takes 3 to 6 weeks. If you do not have your old passport number or copy, it can take longer.",
+              answerUr: "چونکہ اسلام آباد ہیڈ کوارٹر سے تصدیق اور پرانے پاسپورٹ کی منسوخی لازمی ہوتی ہے، اس لیے سفارت خانے سے نیا پاسپورٹ بننے میں عام طور پر 3 سے 6 ہفتے لگتے ہیں۔",
+            },
+            {
+              questionEn: "What should I do if I need to return to Pakistan immediately for an emergency?",
+              questionUr: "اگر کسی ایمرجنسی کی وجہ سے فوری پاکستان واپس جانا ہو تو کیا کریں؟",
+              answerEn: "If you have an urgent family emergency, medical situation, or expired foreign visa, visit the nearest Pakistan Embassy or Consulate General in person to apply for an Emergency Travel Document (ETD / Outpass). An ETD is typically issued within 1 to 3 working days and allows direct, one-way travel back to Pakistan.",
+              answerUr: "ہنگامی صورتحال میں پاکستانی سفارت خانے جائیں اور 'ایمرجنسی ٹریول ڈاکومنٹ (آؤٹ پاس)' بنوائیں جو 1 سے 3 دن میں جاری ہو جاتا ہے اور صرف پاکستان واپسی کے لیے قابل قبول ہوتا ہے۔",
+            },
+            {
+              questionEn: "Can I fly to other foreign countries or transit long layovers using an Emergency Outpass (ETD)?",
+              questionUr: "کیا ایمرجنسی آؤٹ پاس پر کسی تیسرے ملک کی کنیکٹنگ فلائٹ پر سفر کیا جا سکتا ہے؟",
+              answerEn: "No. An Emergency Travel Document (Outpass) is strictly a single-entry, one-way travel document valid exclusively for returning directly to Pakistan. International airlines and foreign border authorities will not allow you to board flights with third-country layovers requiring transit visas.",
+              answerUr: "نہیں! آؤٹ پاس صرف اور صرف براہ راست پاکستان واپسی کے لیے ہوتا ہے۔ کسی تیسرے ملک میں ٹرانزٹ یا ویزا والے اسٹاپ اوور کے لیے ائیر لائنز بورڈنگ نہیں دیتیں۔",
+            },
+            {
+              questionEn: "What if I do not have a photocopy or record of my lost passport number?",
+              questionUr: "اگر میرے پاس گمشدہ پاسپورٹ کا نمبر یا کاپی موجود نہ ہو تو کیا ہوگا؟",
+              answerEn: "The embassy can trace your record using your 13-digit NADRA CNIC / NICOP number. However, this manual record search in DGIP centralized archives requires additional processing time. Having a digital photo or scan of your lost passport's data page significantly speeds up the clearance.",
+              answerUr: "سفارت خانہ آپ کے 13 ہندسوں کے نادرا شناختی کارڈ/نائیکوپ نمبر سے پرانا ریکارڈ تلاش کر لیتا ہے، تاہم اس میں چند دن کا اضافی وقت لگ سکتا ہے۔",
+            },
+            {
+              questionEn: "Where can I escalate complaints if my passport reissuance is excessively delayed overseas?",
+              questionUr: "اگر بیرون ملک پاسپورٹ آنے میں غیر معمولی تاخیر ہو جائے تو شکایت کہاں درج کروائیں؟",
+              answerEn: "You can register an official complaint directly with the Ministry of Interior's Overseas Passport Cell at complaints.passport@interior.gov.pk or log a formal ticket on the Prime Minister's Performance Delivery Unit (PMDU) Pakistan Citizen's Portal.",
+              answerUr: "آپ وزارت داخلہ کے اوورسیز پاسپورٹ سیل (complaints.passport@interior.gov.pk) پر ای میل بھیج سکتے ہیں یا وزیر اعظم سٹیزن پورٹل ایپ پر شکایت درج کروا سکتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

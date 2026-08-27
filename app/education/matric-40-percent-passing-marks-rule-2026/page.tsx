@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -370,6 +371,52 @@ export default function MatricPassingMarksRule2026Page() {
           </div>
         </section>
 
+        {/* Comparison Visual: Old 33% vs New 40% IBCC Scheme */}
+        <ComparisonVisual
+          titleEn="Old 33% Passing Rule vs New 40% IBCC Grading Scheme (2026 Breakdown)"
+          titleUr="پرانا 33 فیصد پاسنگ رول بمقابلہ نیا 40 فیصد گریڈنگ فارمولا"
+          subtitleEn="Detailed comparison of minimum subject thresholds, applicable classes in 2026, and grading scales"
+          subtitleUr="کم از کم پاسنگ مارکس، 2026 میں لاگو کلاسز اور 10 نکاتی گریڈنگ اسکیل کا تقابلی جائزہ"
+          items={[
+            {
+              titleEn: "Old 33% Scheme (Legacy)",
+              titleUr: "پرانا 33 فیصد نظام",
+              subtitleEn: "10th & 12th Class in 2026",
+              subtitleUr: "دسویں اور بارہویں کلاس برائے 2026",
+              badgeEn: "Legacy 33%",
+              badgeUr: "33 فیصد پاسنگ",
+              badgeVariant: "brass",
+              pointsEn: [
+                "Applies to 10th Class (Matric) and 12th Class (2nd Year) students in 2026",
+                "Minimum passing threshold: 33 marks out of 100 (or 25/75 in theory papers)",
+                "Standard 6-grade scale (A+, A, B, C, D, E)",
+                "Transitioning out completely after 2026 supplementary exams"
+              ],
+              recommendedForEn: "Graduating Matric (10th) and Intermediate (12th) batches appearing in 2026 annual exams",
+              recommendedForUr: "2026 میں دسویں اور بارہویں جماعت کا سالانہ امتحان دینے والے تمام طلباء"
+            },
+            {
+              titleEn: "New 40% IBCC Scheme",
+              titleUr: "نیا 40 فیصد IBCC نظام",
+              subtitleEn: "9th & 11th Class in 2026",
+              subtitleUr: "نویں اور گیارہویں کلاس برائے 2026",
+              badgeEn: "New 40% Standard",
+              badgeUr: "40 فیصد نیا معیار",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Active in 2026 for 9th Class (SSC-I) and 11th Class (HSSC-I) across all BISE boards",
+                "Minimum passing threshold raised to 40 marks out of 100",
+                "New 10-point alphabetical grading scale (A++ to U for Ungraded/Fail)",
+                "GPA/CGPA dropped in favor of transparent percentage mark sheets",
+                "Applies to 10th and 12th classes starting in 2027"
+              ],
+              recommendedForEn: "9th and 11th class students preparing for conceptual SLO-based examination papers",
+              recommendedForUr: "نویں اور فرسٹ ایئر کے تمام طلباء جن پر 40 فیصد پاسنگ کا نیا قانون نافذ ہو چکا ہے"
+            }
+          ]}
+        />
+
         {/* Section 4: Related Education Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -412,43 +459,44 @@ export default function MatricPassingMarksRule2026Page() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (40% Passing Rule)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Does the 40% passing marks rule apply to 10th class (Matric) students in 2026?',
-                a: 'No. Students appearing for the SSC Part-II (10th Class) First Annual Examination in 2026 are NOT affected by the 40% rule. They remain under the old 33% passing requirement. The 40% passing rule applies to 10th class starting in 2027.',
-              },
-              {
-                q: 'Which students are affected by the 40% passing marks requirement in 2026?',
-                a: 'The 40% passing marks rule is active in 2026 exclusively for: (1) 9th Class (SSC Part-I) students, and (2) 11th Class / 1st Year (HSSC Part-I) students appearing in their respective annual board exams.',
-              },
-              {
-                q: 'Was the GPA/CGPA grading system implemented alongside the 40% passing rule?',
-                a: 'No. The originally proposed US-style GPA/CGPA formula was dropped by the IBCC following extensive stakeholder reviews. Instead, educational boards adopted a streamlined 10-point alphabetical grading scale (A++, A+, A, B++, B+, B, C+, C, D, and U for Ungraded/Fail) while retaining traditional percentage mark sheets.',
-              },
-              {
-                q: 'What happens if a student scores below 40% in a subject under the new policy?',
-                a: 'Under the new 10-point scale, any subject score below 40% is classified as "U" (Ungraded). The student will be required to reappear in the supplementary examination for that specific subject to achieve passing status.',
-              },
-              {
-                q: 'Does this rule apply uniformly across all Pakistani education boards?',
-                a: 'Yes. The policy was established by the Inter Board Coordination Commission (IBCC) and applies across the Federal Board (FBISE) as well as all provincial boards of intermediate and secondary education (BISEs) in Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan, and Azad Jammu & Kashmir.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (40% Passing Rule)"
+          titleUr="میٹرک 40 فیصد پاسنگ رول سے متعلق عام سوالات"
+          subtitleEn="Clarifications on 10th class exemptions in 2026, 9th/11th applicability, GPA drop, and supplementary reappear policies"
+          subtitleUr="دسویں جماعت کے لیے چھوٹ، نویں اور فرسٹ ایئر پر اطلاق، جی پی اے کی منسوخی اور سپلیمنٹری امتحانات کے قواعد"
+          items={[
+            {
+              questionEn: "Does the 40% passing marks rule apply to 10th class (Matric) students in 2026?",
+              questionUr: "کیا 2026 میں دسویں جماعت (میٹرک) کے طلباء پر 40 فیصد پاسنگ رول لاگو ہوتا ہے؟",
+              answerEn: "No. Students appearing for the SSC Part-II (10th Class) First Annual Examination in 2026 are NOT affected by the 40% rule. They remain under the old 33% passing requirement. The 40% passing rule applies to 10th class starting in 2027.",
+              answerUr: "نہیں! 2026 میں دسویں جماعت کا امتحان دینے والے طلباء پرانا 33 فیصد کا قانون ہی لاگو رہے گا۔ دسویں جماعت پر 40 فیصد کا نیا رول 2027 کے سالانہ امتحانات سے نافذ العمل ہوگا۔",
+            },
+            {
+              questionEn: "Which students are affected by the 40% passing marks requirement in 2026?",
+              questionUr: "2026 میں کن کلاسز کے طلباء کے لیے 40 فیصد نمبر لینا لازمی ہے؟",
+              answerEn: "The 40% passing marks rule is active in 2026 exclusively for: (1) 9th Class (SSC Part-I) students, and (2) 11th Class / 1st Year (HSSC Part-I) students appearing in their respective annual board exams.",
+              answerUr: "2026 میں 40 فیصد پاسنگ رول صرف دو کلاسز پر لاگو ہے: (1) نویں جماعت (SSC-I) کے طلباء، اور (2) گیارہویں جماعت / فرسٹ ایئر (HSSC-I) کے طلباء۔",
+            },
+            {
+              questionEn: "Was the GPA/CGPA grading system implemented alongside the 40% passing rule?",
+              questionUr: "کیا 40 فیصد رول کے ساتھ جی پی اے (GPA) سسٹم بھی نافذ کر دیا گیا ہے؟",
+              answerEn: "No. The originally proposed US-style GPA/CGPA formula was dropped by the IBCC following extensive stakeholder reviews. Instead, educational boards adopted a streamlined 10-point alphabetical grading scale (A++, A+, A, B++, B+, B, C+, C, D, and U for Ungraded/Fail) while retaining traditional percentage mark sheets.",
+              answerUr: "نہیں! جی پی اے اور سی جی پی اے کا فارمولا واپس لے لیا گیا ہے، اس کی جگہ 10 نکاتی گریڈنگ اسکیل (A++ سے لے کر U تک) نافذ کیا گیا ہے جبکہ مارکس اور فیصد برقرار رکھے گئے ہیں۔",
+            },
+            {
+              questionEn: "What happens if a student scores below 40% in a subject under the new policy?",
+              questionUr: "اگر کسی مضمون میں 40 فیصد سے کم نمبر آئیں تو نتیجہ کیا ہوگا؟",
+              answerEn: "Under the new 10-point scale, any subject score below 40% is classified as \"U\" (Ungraded). The student will be required to reappear in the supplementary examination for that specific subject to achieve passing status.",
+              answerUr: "40 فیصد سے کم نمبر آنے پر اس مضمون کے آگے 'U' (ان گریڈڈ یعنی فیل) لکھا آئے گا اور طالب علم کو اگلی بار سپلیمنٹری امتحان میں دوبارہ بیٹھنا ہوگا۔",
+            },
+            {
+              questionEn: "Does this rule apply uniformly across all Pakistani education boards?",
+              questionUr: "کیا یہ نیا پاسنگ رول پاکستان کے تمام تعلیمی بورڈز پر یکساں لاگو ہے؟",
+              answerEn: "Yes. The policy was established by the Inter Board Coordination Commission (IBCC) and applies across the Federal Board (FBISE) as well as all provincial boards of intermediate and secondary education (BISEs) in Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan, and Azad Jammu & Kashmir.",
+              answerUr: "جی ہاں! یہ فیصلہ انٹر بورڈ کوآرڈینیشن کمیشن (IBCC) کا ہے جو فیڈرل بورڈ سمیت پنجاب، سندھ، کے پی کے، بلوچستان اور آزاد کشمیر کے تمام 29 تعلیمی بورڈز پر لاگو ہے۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

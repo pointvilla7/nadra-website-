@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ProcessStepsDiagram, FeeTableVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -271,78 +272,56 @@ export default function CnicNewRules2026Page() {
         <AdPlacementZone format="horizontal" />
 
         {/* Section 2: Complete Fee Table 2026 */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <Coins className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Official NADRA CNIC &amp; Smart Card Fee Schedule (2026)
-            </h2>
-          </div>
-          <p className="text-sm text-slate-600 dark:text-slate-300 font-sans">
-            Verified statutory fee rates across Normal (15 working days), Urgent (12 working days), and Executive (6 working days) categories:
-          </p>
-
-          <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
-            <div className="table-scroll-container">
-              <table className="w-full text-sm font-sans min-w-[540px]">
-              <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
-                <tr>
-                  <th className="px-4 py-3 text-left">Service Type</th>
-                  <th className="px-4 py-3 text-left text-emerald-300">Normal (15 Days)</th>
-                  <th className="px-4 py-3 text-left text-amber-300">Urgent (12 Days)</th>
-                  <th className="px-4 py-3 text-left text-rose-300">Executive (6 Days)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">
-                    First-Time CNIC (Age 18+)
-                  </td>
-                  <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400 text-xs">
-                    FREE (PKR 0)
-                  </td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 1,150</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 2,150</td>
-                </tr>
-                <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">
-                    Standard CNIC Renewal / Duplicate / Modification
-                  </td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 400</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 1,150</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 2,150</td>
-                </tr>
-                <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">
-                    Smart CNIC (Chip-based SNIC) – New / Modification
-                  </td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 750</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 1,500</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">PKR 2,500</td>
-                </tr>
-                <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">
-                    Smart NICOP (Overseas Pakistanis – Zone A / B)
-                  </td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">$39 / $20</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">$57 / $30</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">$75 / $40</td>
-                </tr>
-                <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                  <td className="px-4 py-3 font-serif font-bold text-doc-ink dark:text-white text-xs">
-                    CNIC Cancellation on Death
-                  </td>
-                  <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400 text-xs">
-                    FREE (Waived)
-                  </td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">—</td>
-                  <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300 text-xs">—</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-          </div>
-        </section>
+        <FeeTableVisual
+          titleEn="Official NADRA CNIC & Smart Card Fee Schedule (2026)"
+          titleUr="نادرا شناختی کارڈ اور اسمارٹ کارڈ کا سرکاری فیس شیڈول 2026"
+          subtitleEn="Verified statutory fee rates across Normal (15 days), Urgent (12 days), and Executive (6 days) categories"
+          subtitleUr="نارمل، ارجنٹ اور ایگزیکٹو کیٹیگریز کے تحت نادرا کی تصدیق شدہ فیسیں"
+          noteEn="First-time applicants aged 18+ receive Normal delivery 100% free of charge. Cancellation of deceased family member CNIC is completely free."
+          noteUr="18 سال کی عمر میں پہلی بار شناختی کارڈ بنوانے پر نارمل فیس بالکل مفت ہے۔ فوت شدہ افراد کا شناختی کارڈ کینسل کروانا بھی مفت ہے۔"
+          rows={[
+            {
+              serviceEn: "First-Time CNIC (Age 18+)",
+              serviceUr: "پہلی بار شناختی کارڈ (18 سال یا زائد)",
+              normal: "FREE (PKR 0)",
+              urgent: "PKR 1,150",
+              executive: "PKR 2,150",
+              validity: "10 Years / Lifetime (60+)",
+            },
+            {
+              serviceEn: "Standard CNIC Renewal / Duplicate / Modification",
+              serviceUr: "شناختی کارڈ تجدید / گمشدہ ڈپلیکیٹ / ترمیم",
+              normal: "PKR 400",
+              urgent: "PKR 1,150",
+              executive: "PKR 2,150",
+              validity: "10 Years Validity",
+            },
+            {
+              serviceEn: "Smart CNIC (Chip-based SNIC) – New / Modification",
+              serviceUr: "اسمارٹ شناختی کارڈ (چپ والا کارڈ) نیا یا ترمیم",
+              normal: "PKR 750",
+              urgent: "PKR 1,500",
+              executive: "PKR 2,500",
+              validity: "10 Years (Encrypted Chip)",
+            },
+            {
+              serviceEn: "Smart NICOP (Overseas Pakistanis – Zone A / B)",
+              serviceUr: "نائیکوپ اوورسیز شناختی کارڈ (زون A / B)",
+              normal: "$39 / $20",
+              urgent: "$57 / $30",
+              executive: "$75 / $40",
+              validity: "5–10 Years Validity",
+            },
+            {
+              serviceEn: "CNIC Cancellation on Death (Surrender Card)",
+              serviceUr: "فوتیدگی پر شناختی کارڈ کی منسوخی",
+              normal: "FREE (Waived)",
+              urgent: "Standard Process",
+              executive: "Waived Fee",
+              validity: "Death Certificate Issued",
+            },
+          ]}
+        />
 
         {/* Section 3: Step-by-Step Application Workflow */}
         <section className="space-y-4">
@@ -386,6 +365,52 @@ export default function CnicNewRules2026Page() {
           </div>
         </section>
 
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step CNIC Application & Renewal Process (NADRA 2026)"
+          titleUr="نادرا شناختی کارڈ بنوانے اور تجدید کا 4 مرحلہ وار طریقہ"
+          subtitleEn="From token issuance to live blood relative attestation and home delivery tracking"
+          subtitleUr="ٹوکن حاصل کرنے سے لے کر فنگر پرنٹس، تصدیق اور ہوم ڈلیوری تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Token & Bio-Data Entry",
+              titleUr: "ٹوکن اور معلومات کا اندراج",
+              descEn: "Visit NRC / Mega Center or log into Pak-ID mobile app; submit original birth certificate or previous CNIC.",
+              descUr: "نادرا سینٹر جائیں یا پاک آئی ڈی ایپ پر لاگ ان کر کے پیدائش کا سرٹیفکیٹ یا پرانا شناختی کارڈ درج کریں۔",
+              tagEn: "Token / Portal",
+              tagUr: "ٹوکن کا اجراء",
+            },
+            {
+              number: 2,
+              titleEn: "Biometrics, Photo & Signature",
+              titleUr: "تصویر، بائیومیٹرک اور دستخط",
+              descEn: "Capture digital photograph, 10-fingerprint scans, and signature via electronic signature pad or phone camera.",
+              descUr: "ڈیجیٹل کیمرے سے تصویر، 10 انگلیوں کے فنگر پرنٹس اور ڈیجیٹل پیڈ پر اپنے دستخط ثبت کریں۔",
+              tagEn: "Biometrics",
+              tagUr: "فنگر پرنٹس",
+            },
+            {
+              number: 3,
+              titleEn: "Live Family Link Attestation",
+              titleUr: "خونی رشتے دار کی بائیومیٹرک تصدیق",
+              descEn: "Parent, spouse, or sibling provides live biometric verification to confirm legitimate family tree linkage.",
+              descUr: "والد، والدہ، بہن یا بھائی نادرا سسٹم پر بائیومیٹرک انگوٹھا لگا کر خاندانی شجرے کی تصدیق کرتے ہیں۔",
+              tagEn: "Attestation",
+              tagUr: "خاندانی تصدیق",
+            },
+            {
+              number: 4,
+              titleEn: "8400 SMS Tracking & Delivery",
+              titleUr: "8400 ایس ایم ایس ٹریکنگ اور وصولی",
+              descEn: "Track 11-digit Tracking ID via 8400 SMS or online; collect printed card from NRC or receive via courier.",
+              descUr: "اپنے ٹریکنگ آئی ڈی کو 8400 پر ایس ایم ایس کر کے اسٹیٹس چیک کریں یا بذریعہ ڈاک کارڈ وصول کریں۔",
+              tagEn: "Card Issued",
+              tagUr: "کارڈ کی ترسیل",
+            },
+          ]}
+        />
+
         {/* Section 4: Related Tools & Navigators */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -428,43 +453,44 @@ export default function CnicNewRules2026Page() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (CNIC Rules 2026)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Is the first-time CNIC completely free in 2026?',
-                a: 'Yes. Under official NADRA policy and Ministry of Interior directives, any Pakistani citizen applying for their first CNIC upon reaching the age of 18 is exempt from standard processing fees under the Normal delivery category (Rs. 0). If the applicant opts for Urgent or Executive processing, standard expedited charges apply.',
-              },
-              {
-                q: 'What happens if my mobile number is not registered against my own CNIC?',
-                a: 'NADRA now strictly requires a biometric mobile number registered under the applicant’s own CNIC for all identity verifications and online Pak-ID transactions. If the number belongs to someone else, one-time passwords (OTP) and identity security alerts will fail. For minors applying for juvenile cards/B-Form, a parent’s registered number is mandatory.',
-              },
-              {
-                q: 'What is the temporary birth certificate facilitation valid until December 31, 2026?',
-                a: 'To assist citizens in rural and underserved areas who face bureaucratic hurdles obtaining computerized Union Council birth certificates, NADRA allows first-time applicants aged 18+ to apply with physical birth documentation or school certificates, provided they are accompanied by a blood relative (parent or sibling) for live biometric family linkage verification.',
-              },
-              {
-                q: 'What is the difference between a standard CNIC and a Smart CNIC (SNIC)?',
-                a: 'A standard CNIC is a printed magnetic stripe card, while a Smart CNIC (SNIC) features an embedded microchip containing encrypted biometric data, photograph, and digital identity keys. NADRA strongly encourages Smart CNIC adoption (Normal fee: PKR 750) because it resists physical tampering, enables contactless authentication, and integrates seamlessly with international travel and banking security standards.',
-              },
-              {
-                q: 'Can I renew an expired CNIC online without visiting a NADRA center?',
-                a: 'Yes. Citizens can renew their expired CNIC, request a duplicate, or modify marital status/address entirely online through the official Pak-ID portal (id.nadra.gov.pk) or the Pak-ID mobile app with fingerprint capture via smartphone camera and home courier delivery.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (CNIC Rules 2026)"
+          titleUr="نادرا شناختی کارڈ قوانین 2026 سے متعلق اہم سوالات"
+          subtitleEn="Essential guidelines on free first-time CNIC, mobile biometric linkage, birth facilitation, and online renewals"
+          subtitleUr="پہلی بار مفت شناختی کارڈ، سم بائیومیٹرک تصدیق، برتھ سرٹیفکیٹ رعایت اور پاک آئی ڈی تجدید کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "Is the first-time CNIC completely free in 2026?",
+              questionUr: "کیا 2026 میں پہلی بار شناختی کارڈ بنوانا بالکل مفت ہے؟",
+              answerEn: "Yes. Under official NADRA policy and Ministry of Interior directives, any Pakistani citizen applying for their first CNIC upon reaching the age of 18 is exempt from standard processing fees under the Normal delivery category (Rs. 0). If the applicant opts for Urgent or Executive processing, standard expedited charges apply.",
+              answerUr: "جی ہاں! 18 سال کی عمر میں پہلی بار شناختی کارڈ بنوانے والے تمام پاکستانی شہریوں کے لیے نارمل کیٹیگری کی فیس بالکل صفر (مفت) ہے۔ اگر آپ ارجنٹ یا ایگزیکٹو کارڈ بنوانا چاہتے ہیں تو متعلقہ فیس ادا کرنا ہوگی۔",
+            },
+            {
+              questionEn: "What happens if my mobile number is not registered against my own CNIC?",
+              questionUr: "اگر موبائل سم میرے اپنے شناختی کارڈ پر رجسٹرڈ نہ ہو تو کیا مسئلہ ہوگا؟",
+              answerEn: "NADRA now strictly requires a biometric mobile number registered under the applicant’s own CNIC for all identity verifications and online Pak-ID transactions. If the number belongs to someone else, one-time passwords (OTP) and identity security alerts will fail. For minors applying for juvenile cards/B-Form, a parent’s registered number is mandatory.",
+              answerUr: "نادرا نے سیکیورٹی کے لیے لازمی قرار دیا ہے کہ سم درخواست گزار کے اپنے شناختی کارڈ پر رجسٹرڈ ہو۔ کسی دوسرے کی سم پر او ٹی پی کوڈ اور نادرا ویریفکیشن مکمل نہیں ہو سکے گی۔",
+            },
+            {
+              questionEn: "What is the temporary birth certificate facilitation valid until December 31, 2026?",
+              questionUr: "برتھ سرٹیفکیٹ کے بغیر شناختی کارڈ بنوانے کی کیا رعایت دی گئی ہے؟",
+              answerEn: "To assist citizens in rural and underserved areas who face bureaucratic hurdles obtaining computerized Union Council birth certificates, NADRA allows first-time applicants aged 18+ to apply with physical birth documentation or school certificates, provided they are accompanied by a blood relative (parent or sibling) for live biometric family linkage verification.",
+              answerUr: "یونین کونسل کے کمپیوٹرائزڈ برتھ سرٹیفکیٹ میں تاخیر کی صورت میں شہری اسکول سرٹیفکیٹ یا مینوئل پرچی کے ساتھ خونی رشتے دار کو ہمراہ لا کر بائیومیٹرک تصدیق سے شناختی کارڈ بنوا سکتے ہیں۔",
+            },
+            {
+              questionEn: "What is the difference between a standard CNIC and a Smart CNIC (SNIC)?",
+              questionUr: "عام شناختی کارڈ اور چپ والے اسمارٹ کارڈ میں کیا فرق ہے؟",
+              answerEn: "A standard CNIC is a printed magnetic stripe card, while a Smart CNIC (SNIC) features an embedded microchip containing encrypted biometric data, photograph, and digital identity keys. NADRA strongly encourages Smart CNIC adoption (Normal fee: PKR 750) because it resists physical tampering, enables contactless authentication, and integrates seamlessly with international travel and banking security standards.",
+              answerUr: "عام کارڈ سادہ پرنٹڈ کارڈ ہوتا ہے جبکہ اسمارٹ کارڈ میں جدید مائیکرو چپ لگی ہوتی ہے جس میں انکرپٹڈ ڈیٹا اور فنگر پرنٹس محفوظ ہوتے ہیں، جو کہ بین الاقوامی سیکیورٹی اور بینکنگ کے لیے زیادہ محفوظ ہے۔",
+            },
+            {
+              questionEn: "Can I renew an expired CNIC online without visiting a NADRA center?",
+              questionUr: "کیا نادرا سینٹر جائے بغیر گھر بیٹھے میعاد ختم ہونے والا شناختی کارڈ رینیو ہو سکتا ہے؟",
+              answerEn: "Yes. Citizens can renew their expired CNIC, request a duplicate, or modify marital status/address entirely online through the official Pak-ID portal (id.nadra.gov.pk) or the Pak-ID mobile app with fingerprint capture via smartphone camera and home courier delivery.",
+              answerUr: "جی ہاں! پاک آئی ڈی پورٹل یا پاک آئی ڈی موبائل ایپ کے ذریعے آپ اپنے اسمارٹ فون کے کیمرے سے فنگر پرنٹس اسکین کر کے شناختی کارڈ کی تجدید کروا سکتے ہیں اور کارڈ بذریعہ ڈاک گھر منگوا سکتے ہیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">

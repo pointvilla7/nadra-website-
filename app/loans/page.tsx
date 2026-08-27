@@ -11,6 +11,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { ShieldCheck, ArrowRight, Landmark, Sparkles } from 'lucide-react';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { SchemaInjector } from '@/components/SchemaInjector';
+import { CategoryHeroIllustration } from '@/components/visuals';
 
 export default function LoansCategoryPage() {
   const { t } = useLanguage();
@@ -28,34 +29,42 @@ export default function LoansCategoryPage() {
       <Breadcrumbs items={breadcrumbs} />
 
       {/* Category Header — Brand Seal + Ink Design */}
-      <header className="rounded-3xl doc-card border-2 border-doc-brass/40 p-8 md:p-10 space-y-4 relative overflow-hidden bg-doc-ink text-white shadow-2xl">
-        <div className="flex items-center gap-2">
-          <span className="p-2 rounded-xl bg-doc-seal/20 text-doc-seal dark:text-red-300 border border-doc-brass/30">
-            <Landmark className="w-6 h-6 text-doc-brass" />
-          </span>
-          <span className="text-xs font-mono font-bold uppercase tracking-wider text-doc-brass">
-            {t('Official Category Portal', 'آفیشل کیٹیگری پورٹل')}
-          </span>
-        </div>
+      <header className="rounded-3xl doc-card border-2 border-doc-brass/40 p-6 sm:p-8 md:p-10 relative overflow-hidden bg-doc-ink text-white shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div className="md:col-span-8 space-y-4">
+            <div className="flex items-center gap-2">
+              <span className="p-2 rounded-xl bg-doc-seal/20 text-doc-seal dark:text-red-300 border border-doc-brass/30">
+                <Landmark className="w-6 h-6 text-doc-brass" />
+              </span>
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-doc-brass">
+                {t('Official Category Portal', 'آفیشل کیٹیگری پورٹل')}
+              </span>
+            </div>
 
-        <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight">
-          {t(category.nameEn, category.nameUr)}
-        </h1>
+            <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight">
+              {t(category.nameEn, category.nameUr)}
+            </h1>
 
-        <p className="text-sm md:text-base text-slate-300 max-w-3xl leading-relaxed font-sans">
-          {t(category.descriptionEn, category.descriptionUr)}
-        </p>
+            <p className="text-sm md:text-base text-slate-300 max-w-3xl leading-relaxed font-sans">
+              {t(category.descriptionEn, category.descriptionUr)}
+            </p>
 
-        <div className="pt-2 flex flex-wrap gap-2">
-          {category.popularSearches.map((item, idx) => (
-            <Link
-              key={idx}
-              href={item.slug}
-              className="text-xs font-mono px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-doc-brass/30 transition shadow-sm"
-            >
-              • {t(item.en, item.ur)}
-            </Link>
-          ))}
+            <div className="pt-2 flex flex-wrap gap-2">
+              {category.popularSearches.map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={item.slug}
+                  className="text-xs font-mono px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-doc-brass/30 transition shadow-sm"
+                >
+                  • {t(item.en, item.ur)}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="md:col-span-4 flex justify-center">
+            <CategoryHeroIllustration category="loans" />
+          </div>
         </div>
       </header>
 

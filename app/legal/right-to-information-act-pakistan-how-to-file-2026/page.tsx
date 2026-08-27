@@ -5,6 +5,7 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { StepFlowDiagram } from '@/components/StepFlowDiagram';
+import { ComparisonVisual, ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -391,53 +392,130 @@ export default function RightToInformationPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Federal vs Provincial RTI Laws */}
+        <ComparisonVisual
+          titleEn="Federal RTI Act 2017 vs Provincial RTI Laws (Jurisdiction & Timelines)"
+          titleUr="وفاقی رائٹ ٹو انفارمیشن ایکٹ 2017 بمقابلہ صوبائی معلوماتی قوانین"
+          subtitleEn="Comparison of administrative jurisdiction, designated statutory response deadlines, and appellate bodies"
+          subtitleUr="دائرہ اختیار، سرکاری جواب کی آخری مدت اور انفارمیشن کمیشن میں اپیل کا تفصیلی جائزہ"
+          items={[
+            {
+              titleEn: "Federal RTI Act 2017",
+              titleUr: "وفاقی رائٹ ٹو انفارمیشن ایکٹ 2017",
+              subtitleEn: "Federal Ministries, FBR, NADRA, CDA",
+              subtitleUr: "وفاقی وزارتیں، ایف بی آر، نادرا، سی ڈی اے",
+              badgeEn: "Federal (PIC)",
+              badgeUr: "وفاقی کمیشن",
+              badgeVariant: "navy",
+              pointsEn: [
+                "Applies to all Federal Ministries, Divisions, Attached Depts, FBR, NADRA, and CDA",
+                "Strict statutory response deadline: 10 working days (extendable by 10 days for complex requests)",
+                "Appeals filed directly with Pakistan Information Commission (PIC) in Islamabad",
+                "Zero court fee or stamp duty required to file request or appeal"
+              ],
+              recommendedForEn: "Inquiries regarding federal tenders, central recruitment results, and national public spending",
+              recommendedForUr: "وفاقی اداروں کی بھرتیوں، سرکاری بجٹ اور فنڈز کی معلومات حاصل کرنے کے لیے"
+            },
+            {
+              titleEn: "Provincial RTI Laws (Punjab, KP, Sindh, Balochistan)",
+              titleUr: "صوبائی رائٹ ٹو انفارمیشن قوانین",
+              subtitleEn: "Provincial Depts, Police, BISE, WASA, LDA",
+              subtitleUr: "صوبائی محکمے، پولیس، تعلیمی بورڈز، ایل ڈی اے، واسا",
+              badgeEn: "Provincial Commissions",
+              badgeUr: "صوبائی کمیشن",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Applies to Provincial Secretariats, District Police, BISE Examination Boards, WASA, LDA/KDA",
+                "Statutory response deadline: 14 working days under Punjab & KP Transparency Acts",
+                "Appeals handled by Punjab Information Commission (PIS), KP RTI Commission, Sindh & Balochistan Commissions",
+                "Daily fines deducted from non-compliant public officers' personal monthly pay"
+              ],
+              recommendedForEn: "Citizens investigating local development schemes, municipal contracts, and provincial jobs",
+              recommendedForUr: "مقامی ترقیاتی منصوبوں، بلدیاتی کاموں، پولیس کارروائی اور تعلیمی بورڈز کے ڈیٹا کے لیے"
+            }
+          ]}
+        />
+
+        {/* Process Flow Diagram */}
+        <ProcessStepsDiagram
+          titleEn="Step-by-Step RTI Request Filing to Information Handover Workflow"
+          titleUr="رائٹ ٹو انفارمیشن (RTI) درخواست جمع کروانے اور معلومات کے حصول کے 4 مراحل"
+          subtitleEn="From public body identification to certified document delivery and commission escalation"
+          subtitleUr="محکمے کے تعین سے لے کر درخواست کی ترسیل، تصدیق اور انفارمیشن کمیشن میں اپیل تک کے مراحل"
+          steps={[
+            {
+              number: 1,
+              titleEn: "Identify Public Body & Public Info Officer",
+              titleUr: "متعلقہ محکمے اور پبلک انفارمیشن آفیسر کا تعین",
+              descEn: "Locate the designated Public Information Officer (PIO); if unnotified, address the department Secretary/DG.",
+              descUr: "متعلقہ سرکاری محکمے کے پی آئی او (PIO) کا نام معلوم کریں، نہ ملنے کی صورت میں ڈائریکٹر جنرل کے نام خط لکھیں۔",
+              tagEn: "PIO Search",
+              tagUr: "آفیسر تعین",
+            },
+            {
+              number: 2,
+              titleEn: "Draft Simple RTI Request Letter",
+              titleUr: "سادہ کاغذ پر درخواست کا اندراج",
+              descEn: "Write your specific questions clearly referencing Section 6 of Federal RTI Act (or Provincial Act) with your CNIC.",
+              descUr: "سادہ کاغذ یا ای میل پر اپنے سوالات اور مطلوبہ دستاویزات کا ذکر کریں اور شناختی کارڈ کی کاپی منسلک کریں۔",
+              tagEn: "Draft Letter",
+              tagUr: "درخواست تحریر",
+            },
+            {
+              number: 3,
+              titleEn: "Dispatch via Registered Post / Email",
+              titleUr: "رجسٹرڈ ڈاک یا سرکاری ای میل سے ترسیل",
+              descEn: "Send the signed letter via Pakistan Post Registered Post (keep track slip) or official department email address.",
+              descUr: "پاکستان پوسٹ کے ذریعے رجسٹری خط بھیجیں اور رسید محفوظ رکھیں جو کہ قانونی ثبوت کے طور پر کام آتی ہے۔",
+              tagEn: "Reg Post",
+              tagUr: "رجسٹرڈ ڈاک",
+            },
+            {
+              number: 4,
+              titleEn: "10–14 Day Response / Commission Appeal",
+              titleUr: "10 سے 14 دن میں جواب یا کمیشن میں اپیل",
+              descEn: "Receive certified records; if refused or unanswered within statutory time, file a free appeal with Information Commission.",
+              descUr: "مقررہ دنوں میں مصدقہ دستاویزات حاصل کریں؛ جواب نہ ملنے پر انفارمیشن کمیشن میں مفت اپیل دائر کریں۔",
+              tagEn: "Receipt / Appeal",
+              tagUr: "جواب / اپیل",
+            },
+          ]}
+        />
+
         {/* Section 6: Genuinely Useful FAQ */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-seal" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (RTI in Pakistan)
-            </h2>
-          </div>
-
-          <div className="space-y-3 font-sans text-xs">
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Is RTI filing free of cost?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Yes. There is no court fee, stamp paper, or application processing fee required to submit an RTI request. The public body can only charge you actual photocopying costs if they provide you with hundreds of physical paper pages.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                What if the department tells me &quot;We don&apos;t have a PIO appointed&quot;?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Under Section 9 of the Federal Act (and equivalent provincial provisions), if a public body has not notified a designated PIO, the <strong>Principal Officer / Secretary / Director General of the department is automatically deemed to be the PIO</strong> and is personally held responsible by the Information Commission.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                Can I submit an RTI request via email instead of postal mail?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Yes. Many federal bodies and the Pakistan Information Commission accept email submissions. However, sending a registered post letter via Pakistan Post is highly recommended because the physical post tracking receipt serves as undeniable legal proof of receipt during Commission hearings.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
-                How long does the Information Commission take to resolve an appeal?
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Under the Federal Act, the Pakistan Information Commission is mandated to decide appeals within <strong>60 calendar days</strong>. In urgent cases involving life or liberty, proceedings are fast-tracked.
-              </p>
-            </div>
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (RTI in Pakistan)"
+          titleUr="رائٹ ٹو انفارمیشن (RTI) سے متعلق عام سوالات"
+          subtitleEn="Answers on zero filing fees, unnotified PIO responsibility, email vs registered postal proof, and 60-day commission appeal decisions"
+          subtitleUr="مفت درخواست کے قواعد، پی آئی او کی ذمہ داری، پاکستان پوسٹ کی قانونی حیثیت اور اپیل کے فیصلے کی مدت"
+          items={[
+            {
+              questionEn: "Is RTI filing free of cost?",
+              questionUr: "کیا آر ٹی آئی درخواست دینے کی کوئی فیس یا اسٹامپ پیپر درکار ہوتا ہے؟",
+              answerEn: "Yes. There is no court fee, stamp paper, or application processing fee required to submit an RTI request. The public body can only charge you actual photocopying costs if they provide you with hundreds of physical paper pages.",
+              answerUr: "جی ہاں! آر ٹی آئی درخواست بالکل مفت ہے۔ کسی قسم کی کورٹ فیس یا اسٹامپ پیپر کی ضرورت نہیں ہوتی، صرف دستاویزات کی فوٹو کاپی کی اصل قیمت لی جا سکتی ہے۔",
+            },
+            {
+              questionEn: "What if the department tells me \"We don't have a PIO appointed\"?",
+              questionUr: "اگر محکمہ کہے کہ ہمارا کوئی پبلک انفارمیشن آفیسر (PIO) مقرر نہیں ہے؟",
+              answerEn: "Under Section 9 of the Federal Act (and equivalent provincial provisions), if a public body has not notified a designated PIO, the Principal Officer / Secretary / Director General of the department is automatically deemed to be the PIO and is personally held responsible by the Information Commission.",
+              answerUr: "قانون کے مطابق اگر پی آئی او تعینات نہ ہو تو محکمے کا سیکرٹری، چیئرمین یا ڈائریکٹر جنرل از خود پی آئی او تصور ہوگا اور کمیشن براہ راست اسے طلب کرے گا۔",
+            },
+            {
+              questionEn: "Can I submit an RTI request via email instead of postal mail?",
+              questionUr: "کیا آر ٹی آئی درخواست ڈاک کے بجائے ای میل پر بھیجی جا سکتی ہے؟",
+              answerEn: "Yes. Many federal bodies and the Pakistan Information Commission accept email submissions. However, sending a registered post letter via Pakistan Post is highly recommended because the physical post tracking receipt serves as undeniable legal proof of receipt during Commission hearings.",
+              answerUr: "جی ہاں، ای میل پر بھیجی جا سکتی ہے۔ لیکن پاکستان پوسٹ کی رجسٹری ڈاک بہترین ہے کیونکہ اس کی ٹریکنگ رسید کمیشن کی سماعت میں ناقابل تردید ثبوت بنتی ہے۔",
+            },
+            {
+              questionEn: "How long does the Information Commission take to resolve an appeal?",
+              questionUr: "انفارمیشن کمیشن اپیل کا فیصلہ کتنے دنوں میں کرتا ہے؟",
+              answerEn: "Under the Federal Act, the Pakistan Information Commission is mandated to decide appeals within 60 calendar days. In urgent cases involving life or liberty, proceedings are fast-tracked.",
+              answerUr: "قانون کے مطابق انفارمیشن کمیشن 60 دنوں کے اندر اندر اپیل کا حتمی فیصلہ سنانے کا پابند ہوتا ہے اور افسران کو ریکارڈ فراہم کرنے کا حکم دیتا ہے۔",
+            },
+          ]}
+        />
 
         {/* Section 7: Related Links */}
         <section className="space-y-3">

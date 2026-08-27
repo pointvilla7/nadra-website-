@@ -4,6 +4,7 @@ import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
+import { ComparisonVisual, FAQAccordionVisual } from '@/components/visuals';
 import {
   HelpCircle,
   ExternalLink,
@@ -351,6 +352,51 @@ export default function FakeLoanScamProtectionPage() {
           </div>
         </section>
 
+        {/* Comparison Visual: Real vs Fake Loan Schemes */}
+        <ComparisonVisual
+          titleEn="Legitimate Government Loan Schemes vs Fraudulent Scam Red Flags"
+          titleUr="سرکاری قرضہ اسکیمیں بمقابلہ جعلی لون مافیا اور فراڈ کے خطرے کی علامات"
+          subtitleEn="Side-by-side comparison of official disbursement channels, verification standards, and scammer tactics"
+          subtitleUr="بینکنگ ضوابط، فیسوں کی حقیقت اور دھوکہ دہی سے بچاؤ کا تقابلی جائزہ"
+          items={[
+            {
+              titleEn: "Legitimate Government Schemes",
+              titleUr: "اصلی سرکاری قرضہ اسکیمیں",
+              subtitleEn: "SECP & SBP Regulated Banking",
+              subtitleUr: "اسٹیٹ بینک اور حکومت سے منظور شدہ",
+              badgeEn: "Verified Legal",
+              badgeUr: "تصدیق شدہ",
+              badgeVariant: "emerald",
+              isPopular: true,
+              pointsEn: [
+                "Official '.gov.pk' web portals (e.g. pmyp.gov.pk or acag.punjab.gov.pk)",
+                "Zero advance registration or processing fee sent to private mobile numbers",
+                "Disbursed directly through designated commercial banks (NBP, BOP, Meezan, HBL)",
+                "Formal NADRA biometric verification and transparent repayment schedules"
+              ],
+              recommendedForEn: "Entrepreneurs, farmers, and homeowners seeking authentic state-backed financing",
+              recommendedForUr: "کاروبار، زراعت یا گھر کی تعمیر کے لیے باقاعدہ سرکاری بینکوں سے رجوع کرنے والے شہری"
+            },
+            {
+              titleEn: "Fraudulent Loan Scams & Apps",
+              titleUr: "جعلی لون ایپس اور فراڈیے",
+              subtitleEn: "Unregulated Exploitation & Blackmail",
+              subtitleUr: "غیر قانونی ایپس اور بلیک میلنگ",
+              badgeEn: "Danger / Scam",
+              badgeUr: "فراڈ الرٹ",
+              badgeVariant: "seal",
+              pointsEn: [
+                "Demands advance 'file processing fee' or 'security deposit' via EasyPaisa/JazzCash",
+                "Operates exclusively via WhatsApp messages, Facebook ads, or untrusted APKs",
+                "Forces access to your smartphone contacts, SMS, and private photo galleries",
+                "Extortion, aggressive threats, and public shaming if hidden inflated interest is not paid"
+              ],
+              recommendedForEn: "Immediate reporting to NCCIA Helpline 1991 and SBP Helpline 1025",
+              recommendedForUr: "ایسی ایپس سے فوری طور پر بچیں اور ان کی فوری شکایت NCCIA ہیلپ لائن 1991 پر درج کروائیں"
+            }
+          ]}
+        />
+
         {/* Section 4: Related Tools */}
         <section className="space-y-3">
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
@@ -393,39 +439,38 @@ export default function FakeLoanScamProtectionPage() {
         </section>
 
         {/* Section 5: FAQs */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-doc-brass" />
-            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
-              Frequently Asked Questions (Loan Scam Protection)
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {[
-              {
-                q: 'Do legitimate government loan schemes charge an upfront processing fee via EasyPaisa or JazzCash?',
-                a: 'NO. Official government loan schemes (such as the PM Youth Business Loan, Apni Chhat Apna Ghar, and Punjab Rozgar Scheme) NEVER require applicants to send upfront cash or "registration fees" to private mobile numbers. If an agent or WhatsApp contact demands money before approving a loan, it is guaranteed to be a fraudulent scam.',
-              },
-              {
-                q: 'Does Akhuwat Foundation offer online or WhatsApp loans?',
-                a: 'No. Akhuwat Foundation does NOT offer online loan applications through WhatsApp, Facebook, or third-party websites. All legitimate Akhuwat interest-free loans require personal visits to their physical branch offices for verification and community guarantees.',
-              },
-              {
-                q: 'How can I verify if a loan application website is official?',
-                a: 'Official government loan initiatives in Pakistan operate exclusively on ".gov.pk" domains (such as pmyp.gov.pk or acag.punjab.gov.pk). Websites ending in .com, .blogspot, .site, or links shared directly inside WhatsApp groups are unverified and should never receive your personal CNIC details.',
-              },
-              {
-                q: 'Where should I report a fake loan scam or financial fraud in Pakistan?',
-                a: 'Report the scam immediately to the National Cyber Crime Investigation Agency (NCCIA / formerly FIA Cyber Crime) by dialing helpline 1991, filing a digital ticket at complaint.nccia.gov.pk, or lodging a banking complaint with the State Bank of Pakistan (SBP) helpline at 1025.',
-              },
-            ].map((faq, idx) => (
-              <div key={idx} className="doc-card p-5 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
-                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white">{faq.q}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FAQAccordionVisual
+          titleEn="Frequently Asked Questions (Loan Scam Protection)"
+          titleUr="جعلی قرضہ اسکیموں اور فراڈ سے متعلق اہم سوالات"
+          subtitleEn="Essential guidelines on advance wallet payments, Akhuwat WhatsApp myths, verifying gov.pk portals, and reporting fraud"
+          subtitleUr="ایڈوانس فیس کا فراڈ، اخوت فاؤنڈیشن کی حقیقت، سرکاری ویب سائٹس کی تصدیق اور رپورٹنگ کی مکمل تفصیل"
+          items={[
+            {
+              questionEn: "Do legitimate government loan schemes charge an upfront processing fee via EasyPaisa or JazzCash?",
+              questionUr: "کیا اصلی سرکاری قرضہ اسکیمیں ایزی پیسہ یا جاز کیش پر ایڈوانس فیس مانگتی ہیں؟",
+              answerEn: "NO. Official government loan schemes (such as the PM Youth Business Loan, Apni Chhat Apna Ghar, and Punjab Rozgar Scheme) NEVER require applicants to send upfront cash or \"registration fees\" to private mobile numbers. If an agent or WhatsApp contact demands money before approving a loan, it is guaranteed to be a fraudulent scam.",
+              answerUr: "ہرگز نہیں! کوئی بھی سرکاری اسکیم واٹس ایپ پر یا کسی پرائیویٹ موبائل نمبر پر ایڈوانس فیس نہیں مانگتی۔ لون کی منظوری سے پہلے پیسے مانگنے والا 100 فیصد دھوکہ باز ہے۔",
+            },
+            {
+              questionEn: "Does Akhuwat Foundation offer online or WhatsApp loans?",
+              questionUr: "کیا اخوت فاؤنڈیشن واٹس ایپ یا آن لائن لون فراہم کرتی ہے؟",
+              answerEn: "No. Akhuwat Foundation does NOT offer online loan applications through WhatsApp, Facebook, or third-party websites. All legitimate Akhuwat interest-free loans require personal visits to their physical branch offices for verification and community guarantees.",
+              answerUr: "نہیں! اخوت فاؤنڈیشن کا کوئی آن لائن یا واٹس ایپ لون سسٹم نہیں ہے۔ اخوت کا بلا سود قرضہ حاصل کرنے کے لیے ان کی قریبی برانچ میں خود جانا پڑتا ہے۔",
+            },
+            {
+              questionEn: "How can I verify if a loan application website is official?",
+              questionUr: "کیسے پتہ چلے کہ قرضے کی ویب سائٹ اصلی سرکاری ہے یا جعلی؟",
+              answerEn: "Official government loan initiatives in Pakistan operate exclusively on \".gov.pk\" domains (such as pmyp.gov.pk or acag.punjab.gov.pk). Websites ending in .com, .blogspot, .site, or links shared directly inside WhatsApp groups are unverified and should never receive your personal CNIC details.",
+              answerUr: "تمام سرکاری اسکیموں کے لنک کے آخر میں لازمی '.gov.pk' آتا ہے۔ ڈاٹ کام، بلاگ اسپاٹ یا واٹس ایپ پر آنے والے لنکس پر کبھی بھی اپنا شناختی کارڈ یا ذاتی معلومات درج نہ کریں۔",
+            },
+            {
+              questionEn: "Where should I report a fake loan scam or financial fraud in Pakistan?",
+              questionUr: "لون فراڈ یا بلیک میلنگ کی صورت میں فوری شکایت کہاں درج کروائیں؟",
+              answerEn: "Report the scam immediately to the National Cyber Crime Investigation Agency (NCCIA / formerly FIA Cyber Crime) by dialing helpline 1991, filing a digital ticket at complaint.nccia.gov.pk, or lodging a banking complaint with the State Bank of Pakistan (SBP) helpline at 1025.",
+              answerUr: "فوری طور پر سائبر کرائم ایجنسی (NCCIA) کی ہیلپ لائن 1991 پر کال کریں، یا اسٹیٹ بینک کی ہیلپ لائن 1025 پر شکایت درج کروائیں۔",
+            },
+          ]}
+        />
 
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
