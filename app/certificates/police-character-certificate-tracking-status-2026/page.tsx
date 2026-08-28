@@ -6,6 +6,8 @@ import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
+import { RelatedArticles } from '@/components/RelatedArticles';
+import { InlineContextualLink } from '@/components/InlineContextualLink';
 import {
   HelpCircle,
   ExternalLink,
@@ -193,6 +195,15 @@ export default function PoliceCharacterCertificateTrackingStatusPage() {
           topicTitleUr="پاکستان میں پولیس کریکٹر سرٹیفکیٹ ٹریک کرنے کا طریقہ"
           answerEn="To track your Police Character Certificate: (1) Locate the Application ID or Token Number on your PKM receipt or confirmation SMS, (2) Open your province's official tracking portal (e.g. pkm.punjab.gov.pk or prvs.sindhpolice.gov.pk), (3) Enter your CNIC and tracking number to verify if your status is Under Verification, Approved, or Ready for Collection."
           answerUr="پولیس کریکٹر سرٹیفکیٹ ٹریک کرنے کے لیے: (1) اپنی رسید یا موصول ہونے والے ایس ایم ایس سے ایپلیکیشن ٹوکن نمبر تلاش کریں، (2) اپنے متعلقہ صوبے کا آفیشل پورٹل (جیسے pkm.punjab.gov.pk یا prvs.sindhpolice.gov.pk) کھولیں، اور (3) شناختی کارڈ و ٹوکن نمبر درج کر کے اپنا تازہ ترین سٹیٹس معلوم کریں۔"
+        />
+
+        {/* In-Article Contextual Discovery Callout */}
+        <InlineContextualLink
+          targetSlug="police-character-certificate-online-apply-2026"
+          customLabelEn="Complete PCC Application Guide 2026"
+          customLabelUr="کریکٹر سرٹیفکیٹ آن لائن اپلائی گائیڈ"
+          customNoteEn="Haven't submitted your application yet? Read the complete step-by-step guide on documents, PKM counter appointment, and fee vouchers."
+          customNoteUr="ابھی تک درخواست جمع نہیں کروائی؟ ضروری کاغذات، فیس واؤچر اور خدمت مرکز جانے کی مکمل گائیڈ دیکھیں۔"
         />
 
         {/* Interactive Tracking Widget */}
@@ -481,6 +492,19 @@ export default function PoliceCharacterCertificateTrackingStatusPage() {
               answerUr: "پولیس خدمت مرکز سے تصدیق شدہ پرنٹڈ سرٹیفکیٹ وصول کرنے کے لیے اصل شناختی کارڈ اور درخواست جمع کرواتے وقت دی گئی اصل رسید پیش کرنا لازمی ہے۔",
             },
           ]}
+        />
+
+        {/* HIGH-DISCOVERY NEXT STEP GUIDES (3 Tappable Cards) */}
+        <RelatedArticles
+          explicitSlugs={[
+            '/certificates/police-character-certificate-online-apply-2026',
+            '/legal/how-to-check-fir-status-online',
+            '/legal/how-to-get-fir-copy-online-pakistan-2026',
+          ]}
+          titleEn="Next Steps: Related Police & Legal Clearances"
+          titleUr="اگلے ضروری مراحل: متعلقہ پولیس و قانونی تصدیقات"
+          subtitleEn="Essential verification services for employment, visas, and legal documentation"
+          subtitleUr="ملازمت، ویزہ اور قانونی کارروائیوں کے لیے دیگر اہم تصدیقی گائیڈز"
         />
 
         {/* Source Citations */}

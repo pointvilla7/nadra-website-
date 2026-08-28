@@ -44,6 +44,8 @@ import { MarkdownContent } from '@/components/MarkdownContent';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { AuthorBio } from '@/components/AuthorBio';
 import { CrossCategoryRelated } from '@/components/CrossCategoryRelated';
+import { RelatedArticles } from '@/components/RelatedArticles';
+import { InlineContextualLink } from '@/components/InlineContextualLink';
 import { getAuthorForCategory } from '@/lib/data/authors';
 import { RecommendedServices } from '@/components/RecommendedServices';
 import { PremiumTrackerWaitlist } from '@/components/PremiumTrackerWaitlist';
@@ -632,11 +634,11 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
           <div className="max-w-none text-slate-800 dark:text-slate-200">
             <MarkdownContent content={t(article.contentEn, article.contentUr)} />
           </div>
+
+          {/* Contextual In-Article Companion Discovery Callout */}
+          <InlineContextualLink currentArticle={article} />
         </div>
       </section>
-
-      {/* Cross-Category Topical Authority Linker */}
-      <CrossCategoryRelated currentArticle={article} />
 
       {/* Structured Author Profile & E-E-A-T Verification */}
       <AuthorBio
@@ -649,6 +651,12 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
       {/* FAQ Accordion Visual Section */}
       <FAQAccordionVisual items={article.faqs || []} />
+
+      {/* HIGH-DISCOVERY RELATED ARTICLES (Tappable 3-Card Next Steps immediately after FAQ) */}
+      <RelatedArticles currentArticle={article} />
+
+      {/* Cross-Category Topical Authority Linker */}
+      <CrossCategoryRelated currentArticle={article} />
 
       {/* Recommended Verified Affiliate & Partner Services */}
       <RecommendedServices categoryId={article.categoryId} />
@@ -667,45 +675,6 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
 
       {/* Mid-Article Ad Placement */}
       <AdPlacementZone slotId="bottom-article" format="horizontal" />
-
-      {/* Related Articles Navigation */}
-      {article.relatedSlugs && article.relatedSlugs.length > 0 && (
-        <section className="my-10 pt-8 border-t border-doc-brass/30 space-y-4">
-          <h3 className="text-lg font-serif font-bold text-doc-ink dark:text-white flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-doc-seal" />
-            <span>{t('Related Verified Records', 'متعلقہ اہم معلومات')}</span>
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {article.relatedSlugs.map((relPath) => {
-              const cleanSlug = relPath.split('/').pop() || '';
-              const relArt = ARTICLES[cleanSlug];
-              if (!relArt) return null;
-
-              return (
-                <Link
-                  key={relArt.slug}
-                  href={relArt.fullPath}
-                  className="p-4 rounded-xl doc-card border border-doc-brass/30 hover:border-doc-seal transition group space-y-2 flex flex-col justify-between"
-                >
-                  <div>
-                    <span className="text-[10px] font-mono font-bold text-doc-seal dark:text-red-400 uppercase">
-                      {relArt.categoryId}
-                    </span>
-                    <h4 className="text-xs font-serif font-bold text-doc-ink dark:text-white group-hover:text-doc-seal transition line-clamp-2 mt-1">
-                      {t(relArt.titleEn, relArt.titleUr)}
-                    </h4>
-                  </div>
-                  <div className="flex items-center text-[11px] font-mono font-bold text-slate-500 group-hover:text-doc-seal transition pt-2">
-                    <span>{t('Read Full Guide', 'مکمل گائیڈ', 'Mukammal Guide Parhein')}</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      )}
 
       {/* Real-time Alert Subscription Modal Mount */}
       <AlertSubscriptionModal

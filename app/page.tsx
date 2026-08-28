@@ -12,6 +12,10 @@ import {
   Zap,
   ChevronDown,
   ChevronUp,
+  Compass,
+  ShieldAlert,
+  Landmark,
+  FileCheck,
 } from 'lucide-react';
 import { CATEGORIES } from '@/lib/data/categories';
 import { ARTICLES } from '@/lib/data/articles';
@@ -115,6 +119,182 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── FAST-TRACK CIVIC ACTION & VERIFICATION HUB (PROMINENT ON MOBILE & DESKTOP) ── */}
+      <ScrollReveal delayMs={30}>
+        <section aria-label="Fast-Track Civic Verification Services" className="space-y-4 sm:space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-doc-brass/30 pb-3">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="p-1.5 rounded-lg bg-doc-seal/15 text-doc-seal dark:text-red-300 border border-doc-brass/30">
+                  <Compass className="w-5 h-5 text-doc-seal" />
+                </span>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-[#0B1120] dark:text-white leading-tight">
+                  {t('Fast-Track Civic Actions & Instant Helpers', 'فوری عوامی خدمات اور تصدیقی ٹولز')}
+                </h2>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-sans">
+                {t('Direct, high-speed access to the most frequently used public service procedures in Pakistan.', 'سب سے زیادہ استعمال ہونے والی سرکاری سروسز اور تصدیقی گائیڈز تک فوری رسائی۔')}
+              </p>
+            </div>
+            <span className="text-[11px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-doc-brass/15 text-amber-900 dark:text-amber-300 border border-doc-brass/40 self-start sm:self-auto">
+              {t('TOP 6 VERIFIED WORKFLOWS', 'مقبول ترین 6 سروسز')}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {/* Action Card 1: Police Clearance Tracking */}
+            <Link
+              href="/certificates/police-character-certificate-tracking-status-2026"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-300/40">
+                    POLICE CLEARANCE
+                  </span>
+                  <VerifiedBadge variant="card" textEn="PKM & PRVS" textUr="خدمت مرکز" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('Police Character Certificate Tracking 2026', 'پولیس کریکٹر سرٹیفکیٹ ٹریکنگ سٹیٹس')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Track PKM token ID, PRVS case number, criminal record verification, and counter delivery status.', 'ٹوکن نمبر درج کر کے پولیس تصدیق، منظوری اور سرٹیفکیٹ وصولی کا سٹیٹس چیک کریں۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('Track Certificate Status', 'سٹیٹس ٹریک کریں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            {/* Action Card 2: CNIC Online Application */}
+            <Link
+              href="/nadra/cnic-kaise-banaye"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300/40">
+                    NADRA PAK-ID
+                  </span>
+                  <VerifiedBadge variant="card" textEn="NEW 2026 RULES" textUr="نئے قواعد" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('NADRA Smart CNIC Online Apply & Fees', 'شناختی کارڈ آن لائن اپلائی و فیس')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Pak-ID biometric procedures, normal/urgent fee tables, B-Form rules, and family tree updates.', 'سمارٹ شناختی کارڈ، نائیکوپ اور بی فارم کے لیے فیس، کاغذات اور آن لائن اپلائی کا طریقہ۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('Open CNIC Guide', 'شناختی کارڈ گائیڈ دیکھیں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            {/* Action Card 3: Passport Fee Calculator & Rules */}
+            <Link
+              href="/passport/fee-2026"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border border-blue-300/40">
+                    PASSPORT &amp; TRAVEL
+                  </span>
+                  <VerifiedBadge variant="card" textEn="1BILL CASHLESS" textUr="کیش لیس فیس" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('Pakistan Passport Fee Structure 2026', 'پاسپورٹ فیس شیڈول اور نئے قواعد 2026')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Official 36/72/100-page normal, urgent, and fast-track fees with mandatory cashless 1Bill payment steps.', 'نارمل، ارجنٹ اور فاسٹ ٹریک پاسپورٹ فیس اور آن لائن چالان کا تصدیق شدہ شیڈول۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('Calculate Passport Fee', 'پاسپورٹ فیس چیک کریں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            {/* Action Card 4: FBR Filer Status & Income Tax */}
+            <Link
+              href="/tax/fbr-filer-status-check-cnic"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300/40">
+                    FBR TAXATION
+                  </span>
+                  <VerifiedBadge variant="card" textEn="ATL 9966 SMS" textUr="اے ٹی ایل 9966" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('FBR Filer Status Online Check by CNIC', 'ایف بی آر فائلر سٹیٹس اور انکم ٹیکس')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Instant Active Taxpayer List (ATL) verification, non-filer penalty avoidance, and Iris 2.0 filing.', 'شناختی کارڈ سے فائلر / نان فائلر سٹیٹس معلوم کریں اور اضافی ٹیکس کٹوتی سے بچیں۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('Check Filer Status', 'فائلر سٹیٹس چیک کریں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            {/* Action Card 5: Universal Utility Bill Checker */}
+            <Link
+              href="/bills/utility-bill-checker-2026"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300 border border-purple-300/40">
+                    UTILITY BILLS
+                  </span>
+                  <VerifiedBadge variant="card" textEn="WAPDA & SUI GAS" textUr="بجلی و گیس" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('Universal Electricity & Gas Bill Checker', 'تمام کمپنیوں کے بجلی و گیس بل چیکر')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Download duplicate bills for LESCO, K-Electric, IESCO, FESCO, GEPCO, MEPCO, PESCO, and Sui Gas.', 'لیسکو، کے الیکٹرک، فیسکو، میپکو اور سوئی گیس کا ڈپلیکیٹ بل دیکھیں اور ڈاؤن لوڈ کریں۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('Check Utility Bill', 'ڈپلیکیٹ بل چیک کریں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            {/* Action Card 6: Verified Govt Jobs & Scam Safety */}
+            <Link
+              href="/jobs/verified-govt-jobs-sources-avoid-scams-2026"
+              className="p-5 rounded-2xl doc-card border-2 border-doc-brass/30 hover:border-doc-seal dark:hover:border-amber-400 bg-white dark:bg-[#1E2A3F] hover:bg-[#FAF9F6] dark:hover:bg-slate-900 transition-all duration-200 flex flex-col justify-between group space-y-3 shadow-xs hover:shadow-md active:scale-[0.99] min-h-[160px]"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-mono font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-800 dark:text-red-300 border border-red-300/40">
+                    JOBS &amp; SCAM ALERT
+                  </span>
+                  <VerifiedBadge variant="card" textEn="NCCIA VERIFIED" textUr="فراڈ سے بچاؤ" />
+                </div>
+                <h3 className="font-serif font-bold text-base text-[#0B1120] dark:text-white group-hover:text-doc-seal dark:group-hover:text-amber-300 transition line-clamp-2 leading-snug">
+                  {t('Verified Govt Jobs Sources & Scam Alert', 'اصلی سرکاری نوکریاں اور فراڈ سے بچاؤ')}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed font-sans">
+                  {t('Official federal & provincial portals (FPSC, PPSC, SPSC, KPPSC, BPSC, NTS) and fake fee protection.', 'سرکاری پبلک سروس کمیشنز کی آفیشل ویب سائٹس اور جعلی ٹیسٹنگ ایجنسیوں سے بچاؤ کی گائیڈ۔')}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono font-bold text-doc-seal dark:text-amber-300 group-hover:underline">
+                <span>{t('View Official Job Sources', 'سرکاری ذرائع دیکھیں')}</span>
+                <ArrowRight className="w-4 h-4 rtl:rotate-180 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* ── CATEGORIES SECTION: HORIZONTAL SNAP-SCROLL CAROUSEL ON MOBILE, GRID ON DESKTOP ── */}
       <ScrollReveal delayMs={50}>
