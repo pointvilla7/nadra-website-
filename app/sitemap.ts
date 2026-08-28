@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/property/e-stamping-challan-32a-online-guide-2026',
     '/property/property-tax-online-check-pay-2026',
     '/alerts/pakistan-emergency-helpline-numbers-directory-2026',
+    '/jobs/verified-govt-jobs-sources-avoid-scams-2026',
     '/jobs/beoe-protector-registration-overseas-employment-2026',
     '/nadra/lost-stolen-cnic-replacement-2026',
     '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',

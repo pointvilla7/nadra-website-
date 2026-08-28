@@ -254,6 +254,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Verified Govt Jobs & Scam Alert 2026",
+        "ur": "سرکاری نوکریاں اور فراڈ سے بچاؤ 2026",
+        "slug": "/jobs/verified-govt-jobs-sources-avoid-scams-2026"
+      },
+      {
         "en": "BEOE Protector Registration 2026",
         "ur": "پروٹیکٹر رجسٹریشن برائے بیرون ملک",
         "slug": "/jobs/beoe-protector-registration-overseas-employment-2026"
