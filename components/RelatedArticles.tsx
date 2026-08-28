@@ -60,6 +60,9 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
 
   // Traffic & Vehicles
   traffic_vehicles: [
+    'punjab-excise-vehicle-verification-2026',
+    'sindh-excise-vehicle-verification-2026',
+    'islamabad-vehicle-verification-2026',
     'kpk-excise-vehicle-verification',
     'token-tax-calculator-2026',
     'vehicle-verification-online-2026',
@@ -72,6 +75,9 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
 
   // Utilities & Bills
   utilities_bills: [
+    'lahore-water-sewerage-bill-guide-2026',
+    'karachi-water-board-bill-guide-2026',
+    'faisalabad-water-bill-guide-2026',
     'wssp-peshawar-water-bill-guide',
     'utility-bill-checker-2026',
     'wapda-complaint-status-tracker-2026',

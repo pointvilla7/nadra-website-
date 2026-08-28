@@ -233,6 +233,21 @@ export const CATEGORIES: Category[] = [
         "slug": "/bills/sui-gas-bill-check-online"
       },
       {
+        "en": "WASA Lahore Water Bill",
+        "ur": "واسا لاہور واٹر بل 2026",
+        "slug": "/bills/lahore-water-sewerage-bill-guide-2026"
+      },
+      {
+        "en": "Karachi Water Board (KWSC)",
+        "ur": "کراچی واٹر بورڈ بل 2026",
+        "slug": "/bills/karachi-water-board-bill-guide-2026"
+      },
+      {
+        "en": "WASA Faisalabad Water Bill",
+        "ur": "واسا فیصل آباد واٹر بل 2026",
+        "slug": "/bills/faisalabad-water-bill-guide-2026"
+      },
+      {
         "en": "WAPDA Complaint Tracker",
         "ur": "واپڈا شکایات ٹریکر",
         "slug": "/bills/wapda-complaint-status-tracker-2026"
@@ -450,6 +465,21 @@ export const CATEGORIES: Category[] = [
         "en": "Driving License DLIMS",
         "ur": "ڈرائیونگ لائسنس آن لائن اپلائی",
         "slug": "/traffic/driving-license-guide"
+      },
+      {
+        "en": "Punjab Vehicle Verification 2026",
+        "ur": "پنجاب گاڑی تصدیق 2026",
+        "slug": "/traffic/punjab-excise-vehicle-verification-2026"
+      },
+      {
+        "en": "Sindh Vehicle Verification 2026",
+        "ur": "سندھ گاڑی تصدیق 2026",
+        "slug": "/traffic/sindh-excise-vehicle-verification-2026"
+      },
+      {
+        "en": "Islamabad Vehicle Verification 2026",
+        "ur": "اسلام آباد گاڑی تصدیق 2026",
+        "slug": "/traffic/islamabad-vehicle-verification-2026"
       },
       {
         "en": "M-Tag Registration",
