@@ -132,7 +132,7 @@ export default function PassportTrackingPage() {
 
         {/* GEO Trust Badge */}
         <GeoTrustBadge
-          lastVerified="August 17, 2026"
+          lastVerified="August 28, 2026"
           officialSource={officialSource}
           author={author}
         />

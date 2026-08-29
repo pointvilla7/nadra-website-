@@ -143,7 +143,7 @@ export default function PakistanPostHubPage() {
                 fullPath: '/pakistan-post/tracking-2026',
                 titleEn: 'Pakistan Post Tracking 2026: Track Your Parcel & UMS Mail Online',
                 descEn: 'Track your Pakistan Post shipments, UMS, international EMS, and GPO registered mail in real-time.',
-                date: 'August 22, 2026',
+                date: 'August 28, 2026',
                 icon: Truck,
               },
               {
@@ -151,7 +151,7 @@ export default function PakistanPostHubPage() {
                 fullPath: '/pakistan-post/overview-guide-2026',
                 titleEn: 'Pakistan Post 2026: Services, UMS Tracking & Post Office Guide',
                 descEn: 'Comprehensive guide to Pakistan Post operations, domestic UMS services, international EMS shipping, and delivery rates.',
-                date: 'August 22, 2026',
+                date: 'August 28, 2026',
                 icon: Mail,
               },
               {
@@ -159,7 +159,7 @@ export default function PakistanPostHubPage() {
                 fullPath: '/pakistan-post/post-office-locator-2026',
                 titleEn: 'Pakistan Post Office Near Me: GPO Locations, Postal Codes & Contact 2026',
                 descEn: 'Find nearest General Post Offices (GPOs), 5-digit postal codes, operating hours, and counter services across Pakistan.',
-                date: 'August 22, 2026',
+                date: 'August 28, 2026',
                 icon: Building,
               },
             ].map((art) => {
