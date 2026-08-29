@@ -181,8 +181,8 @@ export default function EobiPensionPage() {
         <DirectAnswerBox
           topicTitleEn="What is EOBI and How Do You Check Pension Status with Your CNIC?"
           topicTitleUr="ای او بی آئی کیا ہے اور شناختی کارڈ سے پنشن کیسے معلوم کریں؟"
-          answerEn="EOBI is Pakistan's federal social security program for private-sector workers. To check your status: Enter your 13-digit CNIC into the official EOBI portal at eobi.gov.pk (under Individual Information). Workers aged 60 with 15+ years of registered service qualify for a monthly pension (currently enhanced to Rs. 11,500)."
-          answerUr="ای او بی آئی پرائیویٹ سیکٹر کے ملازمین کے لیے وفاقی پنشن ادارہ ہے۔ اپنا سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ نمبر سرکاری پورٹل (eobi.gov.pk) پر درج کریں۔ 60 سال کی عمر اور 15 سالہ سروس والے ملازمین ماہانہ پنشن (موجودہ 11,500 روپے) کے حقدار ہیں۔"
+          answerEn="EOBI is Pakistan's federal social security program for private-sector workers. To check your status: Enter your 13-digit CNIC into the official EOBI portal at eobi.gov.pk (under Individual Information). Workers aged 60 with 15+ years of registered service qualify for a monthly pension (minimum rate periodically notified between Rs. 10,000 and Rs. 11,500 per month; confirm active individual disbursement via eobi.gov.pk)."
+          answerUr="ای او بی آئی پرائیویٹ سیکٹر کے ملازمین کے لیے وفاقی پنشن ادارہ ہے۔ اپنا سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ نمبر سرکاری پورٹل (eobi.gov.pk) پر درج کریں۔ 60 سال کی عمر اور 15 سالہ سروس والے ملازمین ماہانہ پنشن (سرکاری نوٹیفکیشن کے تحت 10,000 تا 11,500 روپے کے درمیان؛ اصل رقم پورٹل سے چیک کریں) کے حقدار ہیں۔"
         />
 
         {/* Interactive Guided Fallback Tool Mount */}

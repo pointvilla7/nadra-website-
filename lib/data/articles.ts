@@ -18807,8 +18807,8 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "ای او بی آئی پنشن چیک شناختی کارڈ 2026",
     "metaDescriptionEn": "Check your EOBI pension status online by CNIC for 2026: Verify insured person employment history, employer contribution records, minimum pension amounts (Rs. 10,000 to Rs. 11,500), age 60 eligibility, and claim registration on eobi.gov.pk.",
     "metaDescriptionUr": "شناختی کارڈ سے ای او بی آئی پنشن، ملازمت کا ریکارڈ اور ماہانہ رقم (10,000 سے 11,500 روپے) کی آن لائن تصدیق۔",
-    "directAnswerEn": "EOBI is Pakistan's federal social security program for private-sector workers. To check your status: Enter your 13-digit CNIC into the official EOBI portal at eobi.gov.pk (under Individual Information). Workers aged 60 with 15+ years of registered service qualify for a monthly pension (currently enhanced to Rs. 11,500).",
-    "directAnswerUr": "ای او بی آئی پرائیویٹ سیکٹر کے ملازمین کے لیے وفاقی پنشن ادارہ ہے۔ اپنا سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ نمبر سرکاری پورٹل (eobi.gov.pk) پر درج کریں۔ 60 سال کی عمر اور 15 سالہ سروس والے ملازمین ماہانہ پنشن کے حقدار ہیں۔",
+    "directAnswerEn": "EOBI is Pakistan's federal social security program for private-sector workers. To check your status: Enter your 13-digit CNIC into the official EOBI portal at eobi.gov.pk (under Individual Information). Workers aged 60 with 15+ years of registered service qualify for a monthly pension (minimum rate periodically notified between Rs. 10,000 and Rs. 11,500 per month; confirm active individual disbursement via eobi.gov.pk).",
+    "directAnswerUr": "ای او بی آئی پرائیویٹ سیکٹر کے ملازمین کے لیے وفاقی پنشن ادارہ ہے۔ اپنا سٹیٹس چیک کرنے کے لیے 13 ہندسوں کا شناختی کارڈ نمبر سرکاری پورٹل (eobi.gov.pk) پر درج کریں۔ 60 سال کی عمر اور 15 سالہ سروس والے ملازمین ماہانہ پنشن (سرکاری نوٹیفکیشن کے تحت 10,000 تا 11,500 روپے کے درمیان؛ اصل رقم پورٹل سے چیک کریں) کے حقدار ہیں۔",
     "lastVerified": "August 28, 2026",
     "officialSource": {
       "name": "Employees Old-Age Benefits Institution (EOBI)",
@@ -18840,8 +18840,8 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the minimum monthly EOBI pension?",
         "questionUr": "ای او بی آئی کی کم از کم ماہانہ پنشن کتنی ہے؟",
-        "answerEn": "Currently enhanced to Rs. 11,500 per month.",
-        "answerUr": "حالیہ نوٹیفکیشن کے تحت کم از کم 11,500 روپے ماہانہ ہے۔"
+        "answerEn": "The minimum monthly pension is periodically notified between Rs. 10,000 and Rs. 11,500 per month depending on federal notifications and actuarial assessments. Verify your exact active disbursement via the official eobi.gov.pk portal.",
+        "answerUr": "کم از کم ماہانہ پنشن وفاقی نوٹیفکیشنز کے مطابق 10,000 سے 11,500 روپے کے درمیان ہے۔ اپنی درست فعال رقم کے لیے آفیشل پورٹل (eobi.gov.pk) سے تصدیق کریں۔"
       }
     ],
     "contentEn": "Online status checker and guide for Employees Old-Age Benefits Institution (EOBI) insured persons and private-sector pensioners in Pakistan.",
