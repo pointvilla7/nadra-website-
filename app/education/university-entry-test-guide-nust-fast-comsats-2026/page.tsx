@@ -504,6 +504,38 @@ export default function UniversityEntryTestGuidePage() {
           </div>
         </section>
 
+        {/* Related Academic Guides Section */}
+        <section className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-4">
+          <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white">
+            Related Academic &amp; Document Attestation Resources
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <Link
+              href="/education/hec-degree-attestation-new-blockchain-system-2026"
+              className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
+                  HEC Blockchain Degree Attestation 2026 →
+                </span>
+                <span className="text-slate-500 dark:text-slate-400">New paperless BS, Master, and PhD attestation rules</span>
+              </div>
+            </Link>
+
+            <Link
+              href="/education/ibcc-matric-intermediate-attestation-guide-2026"
+              className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
+                  IBCC Matric &amp; Intermediate Attestation →
+                </span>
+                <span className="text-slate-500 dark:text-slate-400">SSC, HSSC, and O/A-Level Equivalence rules</span>
+              </div>
+            </Link>
+          </div>
+        </section>
+
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
           <p className="font-bold text-slate-700 dark:text-slate-400">Official Sources Cited:</p>

@@ -142,6 +142,16 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "HEC Blockchain Degree Attestation 2026",
+        "ur": "ایچ ای سی بلاک چین ڈگری تصدیق 2026",
+        "slug": "/education/hec-degree-attestation-new-blockchain-system-2026"
+      },
+      {
+        "en": "IBCC Matric & Inter Attestation Guide",
+        "ur": "آئی بی سی سی میٹرک و انٹر تصدیق",
+        "slug": "/education/ibcc-matric-intermediate-attestation-guide-2026"
+      },
+      {
         "en": "PM Laptop Scheme 2026",
         "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
         "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
