@@ -18,7 +18,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CATEGORIES } from '@/lib/data/categories';
-import { ARTICLES } from '@/lib/data/articles';
+import { TRENDING_HOMEPAGE_ARTICLES } from '@/lib/data/homepageGuides';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CategoryCard } from '@/components/CategoryCard';
 import { SearchBar } from '@/components/SearchBar';
@@ -35,17 +35,7 @@ export default function HomePage() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isRecordsExpanded, setIsRecordsExpanded] = useState(false);
 
-  const trendingArticles = [
-    ARTICLES['cnic-kaise-banaye'],
-    ARTICLES['fee-2026'],
-    ARTICLES['fbr-filer-status-check-cnic'],
-    ARTICLES['hajj-balloting-result-check-online'],
-    ARTICLES['property-mutation-check-by-cnic'],
-    ARTICLES['sehat-card-eligibility-check-by-cnic'],
-    ARTICLES['bisp-eligibility-check-by-cnic'],
-    ARTICLES['apni-chhat-apna-ghar'],
-    ARTICLES['e-challan-check-online'],
-  ].filter(Boolean);
+  const trendingArticles = TRENDING_HOMEPAGE_ARTICLES;
 
   return (
     <div className="space-y-8 sm:space-y-16 lg:space-y-20 animate-fadeIn pb-16">

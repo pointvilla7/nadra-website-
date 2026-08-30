@@ -16,8 +16,8 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   staggerIndex,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  // Start visible on SSR — React will rehydrate to the correct value
-  const [isVisible, setIsVisible] = useState(false);
+  // Default to visible so initial SSR paint and mobile LCP are instant
+  const [isVisible, setIsVisible] = useState(true);
 
   // Compute effective delay, capping stagger to max 150ms so last items never lag
   const effectiveDelay = staggerIndex !== undefined 

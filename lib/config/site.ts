@@ -9,10 +9,10 @@ export const siteConfig = {
   social: {
     twitter: '@PakistanInfoHub',
   },
-  taglineEn: 'Civic Services Directory of Pakistan',
+  taglineEn: 'Civic & Public Services Guide',
   taglineUr: 'پاکستان کا مصدقہ اور بااعتماد معلومات پورٹل',
   descriptionEn:
-    "Pakistan's independent civic services directory — NADRA, Passport, Pakistan Post, Tax/FBR, PTA, Banking, Hajj, Property & 21 categories with verified fees & tools.",
+    "Pakistan's verified civic services directory. Official step-by-step guides, fee calculators, and online tracking for NADRA, Passport, FBR, DLIMS & Property.",
   descriptionUr:
     'پاکستان کا آزاد و مصدقہ عوامی معلوماتی پورٹل — نادرا، پاسپورٹ، پاکستان پوسٹ، پی ٹی اے، ایف بی آر، بینکنگ، حج، پراپرٹی اور 21 کیٹیگریز کی سرکاری فیسیں، ٹولز اور مکمل رہنمائی۔',
 };

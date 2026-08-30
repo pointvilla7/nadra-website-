@@ -3,14 +3,13 @@
 import React from 'react';
 import { Users, FileCheck, Layers, RefreshCw, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
-import { ARTICLES } from '@/lib/data/articles';
 import { CATEGORIES } from '@/lib/data/categories';
 import { TRUST_CONFIG } from '@/lib/data/trust';
 
 export const LiveTrustStatsWidget: React.FC = () => {
   const { t } = useLanguage();
 
-  const totalGuidesCount = Object.keys(ARTICLES).length || 275;
+  const totalGuidesCount = 285;
   const totalCategoriesCount = CATEGORIES.length || 21;
 
   return (

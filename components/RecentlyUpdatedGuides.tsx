@@ -17,73 +17,7 @@ import {
   Activity,
 } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
-import { ARTICLES, Article } from '@/lib/data/articles';
-
-interface GuideCardData {
-  slug: string;
-  fullPath: string;
-  categoryNameEn: string;
-  categoryNameUr: string;
-  titleEn: string;
-  titleUr: string;
-  descriptionEn: string;
-  descriptionUr: string;
-  lastVerified: string;
-  iconType: string;
-  accentBg: string;
-  accentText: string;
-}
-
-const RECENT_GUIDES_CONFIG: { key: string; iconType: string; categoryEn: string; categoryUr: string; accentBg: string; accentText: string }[] = [
-  {
-    key: 'cnic-kaise-banaye',
-    iconType: 'CreditCard',
-    categoryEn: 'NADRA Services',
-    categoryUr: 'نادرا سروسز',
-    accentBg: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20',
-    accentText: 'text-emerald-600 dark:text-emerald-400',
-  },
-  {
-    key: 'fee-2026',
-    iconType: 'Plane',
-    categoryEn: 'Passports & Visas',
-    categoryUr: 'پاسپورٹ و امیگریشن',
-    accentBg: 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20',
-    accentText: 'text-amber-600 dark:text-amber-400',
-  },
-  {
-    key: 'fbr-filer-status-check-cnic',
-    iconType: 'Landmark',
-    categoryEn: 'Tax & FBR Services',
-    categoryUr: 'ٹیکس اور ایف بی آر',
-    accentBg: 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20',
-    accentText: 'text-blue-600 dark:text-blue-400',
-  },
-  {
-    key: 'hajj-balloting-result-check-online',
-    iconType: 'Compass',
-    categoryEn: 'Hajj & Religious Affairs',
-    categoryUr: 'حج و مذہبی امور',
-    accentBg: 'bg-teal-500/10 text-teal-600 dark:text-teal-400 border-teal-500/20',
-    accentText: 'text-teal-600 dark:text-teal-400',
-  },
-  {
-    key: 'sehat-card-eligibility-check-by-cnic',
-    iconType: 'Activity',
-    categoryEn: 'Health & Medical Aid',
-    categoryUr: 'صحت اور ہسپتال',
-    accentBg: 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20',
-    accentText: 'text-rose-600 dark:text-rose-400',
-  },
-  {
-    key: 'bisp-eligibility-check-by-cnic',
-    iconType: 'HeartHandshake',
-    categoryEn: 'Welfare & Social Safety',
-    categoryUr: 'احساس و بے نظیر پروگرام',
-    accentBg: 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20',
-    accentText: 'text-purple-600 dark:text-purple-400',
-  },
-];
+import { TRENDING_HOMEPAGE_ARTICLES, HomepageGuideSummary } from '@/lib/data/homepageGuides';
 
 function getCategoryIcon(type: string, className = 'w-5 h-5') {
   switch (type) {
@@ -132,37 +66,7 @@ export function formatRelativeVerification(dateStr: string, t: (en: string, ur?:
 
 export const RecentlyUpdatedGuides: React.FC = () => {
   const { t } = useLanguage();
-  const [isLoading, setIsLoading] = useState(true);
-  const [guides, setGuides] = useState<GuideCardData[]>([]);
-
-  useEffect(() => {
-    // Populate data from verified articles
-    const loadedGuides: GuideCardData[] = RECENT_GUIDES_CONFIG.map((cfg) => {
-      const art: Article | undefined = ARTICLES[cfg.key];
-      return {
-        slug: cfg.key,
-        fullPath: art ? art.fullPath : `/${cfg.key}`,
-        categoryNameEn: cfg.categoryEn,
-        categoryNameUr: cfg.categoryUr,
-        titleEn: art ? art.titleEn : 'Official Civic Service Guide 2026',
-        titleUr: art ? art.titleUr : 'سرکاری سروس گائیڈ 2026',
-        descriptionEn: art ? art.metaDescriptionEn : 'Verified official document procedure, requirements, and fee schedule.',
-        descriptionUr: art ? art.metaDescriptionUr : 'مصدقہ حکومتی طریقہ کار، ضروری دستاویزات اور فیس کی تفصیلات۔',
-        lastVerified: art ? art.lastVerified : 'August 16, 2026',
-        iconType: cfg.iconType,
-        accentBg: cfg.accentBg,
-        accentText: cfg.accentText,
-      };
-    });
-
-    // Simulate seamless async hydration / load
-    const timer = setTimeout(() => {
-      setGuides(loadedGuides);
-      setIsLoading(false);
-    }, 120);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const guides: HomepageGuideSummary[] = TRENDING_HOMEPAGE_ARTICLES.slice(0, 6);
 
   return (
     <section className="my-8 sm:my-12">
@@ -195,33 +99,8 @@ export const RecentlyUpdatedGuides: React.FC = () => {
 
       {/* Grid: 3 cols desktop, 2 cols tablet, 1 col mobile */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {isLoading
-          ? Array.from({ length: 6 }).map((_, idx) => (
-              <div
-                key={idx}
-                className="rounded-2xl p-5 bg-[#FAF9F6] dark:bg-[#1E2A3F] border border-slate-200/80 dark:border-slate-800/80 shadow-sm animate-pulse space-y-4"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700" />
-                  <div className="w-28 h-6 rounded-full bg-slate-200 dark:bg-slate-700" />
-                </div>
-                <div className="space-y-2">
-                  <div className="w-16 h-3 rounded bg-slate-200 dark:bg-slate-700" />
-                  <div className="w-full h-5 rounded bg-slate-200 dark:bg-slate-700" />
-                  <div className="w-3/4 h-5 rounded bg-slate-200 dark:bg-slate-700" />
-                </div>
-                <div className="space-y-1.5 pt-2">
-                  <div className="w-full h-3.5 rounded bg-slate-200 dark:bg-slate-700" />
-                  <div className="w-5/6 h-3.5 rounded bg-slate-200 dark:bg-slate-700" />
-                </div>
-                <div className="pt-2 flex justify-between items-center border-t border-slate-200/60 dark:border-slate-700/60">
-                  <div className="w-24 h-4 rounded bg-slate-200 dark:bg-slate-700" />
-                  <div className="w-5 h-5 rounded-full bg-slate-200 dark:bg-slate-700" />
-                </div>
-              </div>
-            ))
-          : guides.map((guide) => {
-              const relativeTime = formatRelativeVerification(guide.lastVerified, t);
+        {guides.map((guide) => {
+          const relativeTime = formatRelativeVerification(guide.lastVerified, t);
 
               return (
                 <Link
@@ -255,7 +134,7 @@ export const RecentlyUpdatedGuides: React.FC = () => {
 
                     {/* 1-2 Line Description */}
                     <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-sans mt-2 line-clamp-2 leading-relaxed">
-                      {t(guide.descriptionEn, guide.descriptionUr)}
+                      {t(guide.directAnswerEn, guide.directAnswerUr)}
                     </p>
                   </div>
 

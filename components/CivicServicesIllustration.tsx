@@ -7,17 +7,19 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
     <div
       role="img"
       aria-label="Pakistani civic services illustration featuring Smart CNIC identity card, green e-Passport booklet, and Gazette verification certificate"
-      className={`relative w-full flex items-center justify-center select-none ${className}`}
+      className={`relative w-full aspect-[540/420] flex items-center justify-center select-none ${className}`}
     >
       {/* Ambient background lighting behind vector assets */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#B8860B]/12 via-[#10B981]/15 to-[#2E4270]/25 rounded-full filter blur-2xl transform scale-90 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#B8860B]/12 via-[#10B981]/15 to-[#2E4270]/25 rounded-full filter blur-xl sm:blur-2xl transform scale-90 pointer-events-none" />
 
       {/* Main SVG Vector Graphic */}
       <svg
         viewBox="0 0 540 420"
+        width={540}
+        height={420}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-auto max-h-[250px] sm:max-h-[320px] lg:max-h-[400px] drop-shadow-2xl overflow-visible"
+        className="w-full h-full max-h-[250px] sm:max-h-[320px] lg:max-h-[400px] drop-shadow-xl overflow-visible"
       >
         <title>Pakistani Civic Services Vector Illustration</title>
         <defs>

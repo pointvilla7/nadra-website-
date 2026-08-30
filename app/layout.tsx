@@ -12,7 +12,6 @@ const sansFont = Public_Sans({
   variable: '--font-sans',
   display: 'swap',
   preload: true,
-  adjustFontFallback: false,
 });
 
 const serifFont = Fraunces({
@@ -21,7 +20,6 @@ const serifFont = Fraunces({
   variable: '--font-serif',
   display: 'swap',
   preload: true,
-  adjustFontFallback: false,
 });
 
 const monoFont = IBM_Plex_Mono({
@@ -30,7 +28,6 @@ const monoFont = IBM_Plex_Mono({
   variable: '--font-mono',
   display: 'swap',
   preload: false, // mono only used in badges/labels, not above-fold body text
-  adjustFontFallback: false,
 });
 
 // ─── NOTE: Noto Nastaliq Urdu is NOT preloaded here. ────────────────────────
@@ -49,7 +46,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | ${siteConfig.taglineEn} ${siteConfig.currentYear}`,
+  title: `${siteConfig.name} – ${siteConfig.taglineEn} ${siteConfig.currentYear}`,
   description: siteConfig.descriptionEn,
   metadataBase: new URL(BASE_URL),
   alternates: {
