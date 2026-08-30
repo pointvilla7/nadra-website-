@@ -3153,84 +3153,121 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "kpk-excise-vehicle-verification",
     "fullPath": "/traffic/kpk-excise-vehicle-verification",
     "categoryId": "traffic",
-    "titleEn": "KPK Excise Online Vehicle Verification & Token Tax Guide 2026",
-    "titleUr": "کے پی کے (KPK) ایکسائز گاڑیوں کی آن لائن تصدیق و ٹوکن ٹیکس 2026",
-    "metaDescriptionEn": "Online vehicle verification for Peshawar & Khyber Pakhtunkhwa vehicles at excise.kp.gov.pk. Zameen Zoya app, token tax payment, and smart card status.",
-    "metaDescriptionUr": "پشاور اور کے پی کے کی گاڑیوں کی آن لائن تصدیق، مالک کا نام اور ایکسائز ٹوکن ٹیکس ادا کرنے کا طریقہ۔",
-    "directAnswerEn": "To verify vehicle registration and check token tax in Khyber Pakhtunkhwa in 2026, visit kpexcise.gov.pk or download the Zama KP App. Enter your KPK registration number (e.g. Peshawar, Mardan, Abbottabad) to confirm registered owner name, chassis, engine number, and tax clearance status.",
-    "directAnswerUr": "خیبر پختونخوا میں گاڑی کی رجسٹریشن اور ٹوکن ٹیکس تصدیق کے لیے kpexcise.gov.pk یا زما کے پی (Zama KP) ایپ استعمال کریں۔ گاڑی کا نمبر درج کر کے مالک کا نام، چیسس نمبر اور ٹوکن ٹیکس ریکارڈ چیک کریں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "KPK Excise Online Vehicle Verification, Token Tax & Buyer Safeguards 2026",
+    "titleUr": "کے پی کے (KPK) ایکسائز گاڑیوں کی آن لائن تصدیق، ٹوکن ٹیکس اور خریدار گائیڈ 2026",
+    "metaDescriptionEn": "Step-by-step online vehicle verification in Khyber Pakhtunkhwa via excise.kp.gov.pk and Zama KP app. Check registered owner, chassis/engine match, token tax arrears, bank hypothecation, and biometric transfer.",
+    "metaDescriptionUr": "خیبر پختونخوا ایکسائز کے ذریعے گاڑی کی آن لائن تصدیق، مالک کا نام، چیسس و انجن نمبر، ٹوکن ٹیکس بقایا جات، بینک لیز اور بائیومیٹرک ٹرانسفر کا مکمل طریقہ۔",
+    "directAnswerEn": "To verify any KPK-registered vehicle (e.g., Peshawar, Abbottabad, Mardan, Swat) in 2026, visit the official KP Excise portal at excise.kp.gov.pk or download the Zama KP mobile app. Enter the registration number to instantly inspect the registered owner's name, engine and chassis numbers, vehicle make/model, token tax payment status, and any active bank liens. Verification is 100% free.",
+    "directAnswerUr": "خیبر پختونخوا میں رجسٹرڈ کسی بھی گاڑی کی تصدیق کے لیے آفیشل ویب سائٹ excise.kp.gov.pk یا زما کے پی (Zama KP) موبائل ایپ استعمال کریں۔ گاڑی کا نمبر درج کر کے مالک کا نام، چیسس و انجن نمبر، ماڈل، ٹوکن ٹیکس اور بینک لیز ریکارڈ مفت چیک کریں۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
-      "name": "KPK Excise & Taxation Portal",
+      "name": "KP Excise, Taxation & Narcotics Control Department",
       "url": "https://excise.kp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "KPK Excise Desk"
+      "role": "KP Motor Vehicle & Excise Desk"
     },
     "feeStructure": [
       {
-        "serviceEn": "KPK Online Vehicle Verification",
-        "serviceUr": "کے پی کے گاڑی آن لائن تصدیق",
+        "serviceEn": "Online Vehicle Verification (Portal & Zama KP)",
+        "serviceUr": "آن لائن گاڑی تصدیق (ویب سائٹ و ایپ)",
         "normal": "100% FREE",
-        "urgent": "Instant Web & App",
-        "executive": "Official Excise Data",
-        "validity": "Live System"
+        "urgent": "Instant Real-Time",
+        "executive": "Official KP Database",
+        "validity": "Live Access"
       },
       {
-        "serviceEn": "KPK Token Tax Payment via Zama KP",
-        "serviceUr": "زما کے پی ایپ سے ٹوکن ٹیکس ادائیگی",
-        "normal": "Standard Tax Schedule",
-        "urgent": "1Bill Integration",
+        "serviceEn": "Annual Token Tax (Up to 1000cc)",
+        "serviceUr": "سالانہ ٹوکن ٹیکس (1000 سی سی تک)",
+        "normal": "PKR 1,500 – 2,500/yr",
+        "urgent": "Instant 1Bill",
+        "executive": "Lifetime Option Avail.",
+        "validity": "1 Fiscal Year"
+      },
+      {
+        "serviceEn": "Annual Token Tax (1001cc to 1300cc)",
+        "serviceUr": "سالانہ ٹوکن ٹیکس (1001 تا 1300 سی سی)",
+        "normal": "PKR 3,000 – 4,500/yr",
+        "urgent": "Instant 1Bill",
         "executive": "Digital Receipt",
         "validity": "1 Fiscal Year"
+      },
+      {
+        "serviceEn": "Annual Token Tax (1301cc to 1800cc)",
+        "serviceUr": "سالانہ ٹوکن ٹیکس (1301 تا 1800 سی سی)",
+        "normal": "PKR 6,000 – 9,000/yr",
+        "urgent": "Instant 1Bill",
+        "executive": "Digital Receipt",
+        "validity": "1 Fiscal Year"
+      },
+      {
+        "serviceEn": "Biometric Ownership Transfer Processing",
+        "serviceUr": "بائیومیٹرک گاڑی ملکیت منتقلی",
+        "normal": "Schedule by CC",
+        "urgent": "Biometric Counter",
+        "executive": "Smart Card Issued",
+        "validity": "Permanent Title"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open Zama KP App or KP Excise Portal",
-        "titleUr": "زما کے پی ایپ یا پورٹل کھولیں",
-        "detailEn": "Access kpexcise.gov.pk or open the official Zama KP Citizen Portal.",
-        "detailUr": "ویب سائٹ kpexcise.gov.pk یا زما کے پی ایپ کھولیں۔"
+        "titleEn": "Open KP Excise Portal or Zama KP App",
+        "titleUr": "کے پی ایکسائز پورٹل یا زما کے پی ایپ کھولیں",
+        "detailEn": "Navigate to excise.kp.gov.pk or download the official Zama KP app on your smartphone and select 'Vehicle Verification'.",
+        "detailUr": "ویب سائٹ excise.kp.gov.pk کھولیں یا زما کے پی ایپ ڈاؤن لوڈ کر کے 'وہیکل ویریفیکیشن' منتخب کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Input District & Registration Number",
-        "titleUr": "ضلع اور رجسٹریشن نمبر درج کریں",
-        "detailEn": "Select district (Peshawar, Abbottabad, Swat, Mardan) and type your plate digits.",
-        "detailUr": "ضلع منتخب کر کے گاڑی کا نمبر درج کریں۔"
+        "titleEn": "Select District & Enter Registration Number",
+        "titleUr": "ضلع منتخب کریں اور گاڑی کا نمبر لکھیں",
+        "detailEn": "Choose the registering district (e.g., Peshawar, Abbottabad, Swat, Mardan, Nowshera) and enter the exact series and numeric plate code.",
+        "detailUr": "رجسٹرنگ ضلع منتخب کریں اور گاڑی کی نمبر پلیٹ کے حروف اور ہندسے درج کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Inspect Ownership & Tax Clearance Status",
-        "titleUr": "مالکیت اور ٹیکس کی تفصیلات دیکھیں",
-        "detailEn": "Confirm that engine, chassis, and model year match physical vehicle documents before buying.",
-        "detailUr": "گاڑی کی تمام دستاویزات اور ٹیکس ریکارڈ کا موازنہ کریں۔"
+        "titleEn": "Cross-Verify 5 Core Data Points on Screen",
+        "titleUr": "اسکرین پر 5 بنیادی معلومات کی تصدیق کریں",
+        "detailEn": "Check: 1) Owner Name, 2) Chassis Number, 3) Engine Number, 4) Token Tax Paid-Through Date, and 5) Hypothecation/Lien status.",
+        "detailUr": "مالک کا نام، چیسس نمبر، انجن نمبر، ٹوکن ٹیکس ادائیگی کی تاریخ اور بینک لیز کا اسٹیٹس چیک کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Perform Physical Inspection Before Handing Over Payment",
+        "titleUr": "پیمنٹ سے پہلے گاڑی کا فزیکل معائنہ کریں",
+        "detailEn": "Physically match the stamped chassis number on the car firewall with both the online excise record and the original registration booklet/card.",
+        "detailUr": "گاڑی کی باڈی پر کندہ چیسس نمبر اور کاغذات کا آن لائن ریکارڈ سے سو فیصد موازنہ کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "Can I pay KPK token tax through mobile banking apps?",
-        "questionUr": "کیا کے پی کے کا ٹوکن ٹیکس موبائل بینکنگ سے ادا ہو سکتا ہے؟",
-        "answerEn": "Yes. Through the 1Link / 1Bill interface integrated into the Zama KP portal, KPK vehicle taxes can be settled via any Pakistani bank app.",
-        "answerUr": "جی ہاں! کسی بھی بینکنگ ایپ یا ایزی پیسہ سے 1Bill کے ذریعے فیس ادا کی جا سکتی ہے۔"
+        "questionEn": "What are the major red flags when buying a used car in Khyber Pakhtunkhwa?",
+        "questionUr": "کے پی کے میں استعمال شدہ گاڑی خریدتے وقت کن خطرات اور فراڈ سے بچنا ضروری ہے؟",
+        "answerEn": "Key red flags include: 1) Token Tax Arrears — unpaid token tax accumulates heavy default surcharges; 2) Seller is not the registered owner (driving on 'open transfer letter'); 3) Active Bank Hypothecation (HPA) without an official Bank Clearance NOC; 4) Chassis/Engine number tampering or weld marks on the firewall; and 5) NCP (Non-Customs Paid) vehicle falsely claimed as regular duty-paid.",
+        "answerUr": "بڑے خطرات یہ ہیں: 1۔ کئی سالوں کا نادہندہ ٹوکن ٹیکس، 2۔ فروخت کنندہ کا اصل رجسٹرڈ مالک نہ ہونا (اوپن لیٹر کا دھوکہ)، 3۔ بینک کی لیز یا قرض کا کلیئر نہ ہونا، 4۔ چیسس یا انجن نمبر پر ویلڈنگ یا چھیڑ چھاڑ، اور 5۔ نان کسٹم پیڈ (NCP) گاڑی کو اصلی ظاہر کرنا۔"
       },
       {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+        "questionEn": "Can I pay KP vehicle token tax online via mobile banking?",
+        "questionUr": "کیا کے پی کے گاڑی کا ٹوکن ٹیکس آن لائن موبائل ایپ سے جمع ہو سکتا ہے؟",
+        "answerEn": "Yes. Through the 1Bill system integrated into the Zama KP app and all Pakistani banking apps (EasyPaisa, JazzCash, HBL, Meezan, UBL, etc.), you can generate a PSID consumer number and pay KP token tax instantly from home.",
+        "answerUr": "جی ہاں! زما کے پی ایپ یا تمام بینکنگ ایپس (ایزی پیسہ، جاز کیش، ایچ بی ایل، میزان وغیرہ) میں 1Bill کے ذریعے پی ایس آئی ڈی (PSID) بنا کر گھر بیٹھے ٹوکن ٹیکس جمع کرایا جا سکتا ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Why is buying a car on an 'Open Transfer Letter' illegal and dangerous in KP?",
+        "questionUr": "اوپن ٹرانسفر لیٹر پر گاڑی خریدنا یا چلانا کیوں غیر قانونی اور خطرناک ہے؟",
+        "answerEn": "Under KP Motor Vehicle Rules, an open transfer letter holds zero legal standing. The registered owner remains legally liable for any accidents or crimes involving the vehicle, and the buyer faces immediate vehicle impoundment at traffic checkpoints. Both buyer and seller must complete biometric transfer at the KP Excise counter.",
+        "answerUr": "اوپن ٹرانسفر لیٹر کی کوئی قانونی حیثیت نہیں ہے۔ حادثے یا جرم کی صورت میں رجسٹرڈ مالک ذمہ دار ہوتا ہے اور خریدار کی گاڑی ناکوں پر بند ہو سکتی ہے۔ دونوں کا بائیومیٹرک ٹرانسفر کروانا قانونی طور پر لازمی ہے۔"
+      },
+      {
+        "questionEn": "What is the difference between Malakand/PATA registration and regular KP vehicle registration?",
+        "questionUr": "ملاکنڈ/پاٹا (PATA) گاڑی اور ریگولر کے پی رجسٹریشن میں کیا فرق ہے؟",
+        "answerEn": "Vehicles registered under the Provincially Administered Tribal Areas (PATA/Malakand Division) benefit from regional tax exemptions but are legally restricted from operating on national highways and outside Malakand Division without paying federal customs duties. Always verify customs clearance before purchasing a vehicle intended for Punjab, Islamabad, or Sindh.",
+        "answerUr": "ملاکنڈ ڈویژن میں رجسٹرڈ گاڑیاں مخصوص ٹیکس چھوٹ کے تحت ہوتی ہیں لیکن وہ کسٹم ڈیوٹی ادا کیے بغیر ملک کے دیگر صوبوں یا موٹرویز پر نہیں چلائی جا سکتیں۔ خریدنے سے پہلے فیڈرل کسٹم کلیئرنس لازمی چیک کریں۔"
       }
     ],
-    "contentEn": "## Khyber Pakhtunkhwa (KP) Vehicle Verification & Excise Guide 2026\nThe **Excise, Taxation & Narcotics Control Department Government of Khyber Pakhtunkhwa** provides digitized vehicle tracking to protect citizens against tampered and non-customs paid (NCP) vehicles.\n\n## Verifying Vehicle Title Legality & Customs Clearance in KPK\nDue to geographical proximity to border regions, verifying non-customs paid (NCP) status vs regular duty-paid status is vital. The **Zama KP App** cross-checks provincial excise registrations against the Federal Board of Revenue (FBR) WeBOC customs database.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Khyber Pakhtunkhwa (KP) Excise Vehicle Title & Token Tax Enforcement 2026\nThe **Excise, Taxation & Narcotics Control Department Government of Khyber Pakhtunkhwa** oversees vehicle registrations, ownership transfers, and token tax collections across all 35 districts of KP.\n\n### 1. Universal Vehicle Registration & High-Security Number Plates\nKPK issues standardized retro-reflective aluminum number plates with laser-etched provincial seals and tamper-proof security bolts to prevent plate swapping and vehicle theft.\n\n### 2. Verifying Non-Customs Paid (NCP) Status in Malakand Division\nVehicles operating in the PATA (Provincially Administered Tribal Areas) region of Malakand Division have distinct legal tax status. The Zama KP app allows prospective buyers to confirm whether a vehicle is registered for national highway circulation or local restricted use.\n\n---\n\n## Complete Guide to Safe Driving, Demerit Points & Road Safety Laws\nOperating motor vehicles across Pakistan's national highways, urban motorways, and city arteries requires strict compliance with the **National Highway Safety Ordinance (NHSO 2000)** and provincial traffic acts.\n\n### 1. Understanding the Provincial Demerit Points System\nUnder integrated traffic police databases, moving violations carry cumulative demerit points:\n- **Reckless Driving & Overtaking on Blind Curves**: 6 Demerit Points + Impoundment Notice.\n- **Driving Without Valid Insurance / Fitness Certificate**: 4 Demerit Points + Vehicle Fitness Inspection.\n- **Dangerous Loading & Over-Height Cargo (Commercial Pickups)**: 6 Demerit Points + Heavy Commercial Fine.\n- **Failure to Yield to Emergency Ambulances / Fire Brigades**: 8 Demerit Points + Direct License Suspension Hearing.\n\n### 2. Essential Road Trip Vehicle Maintenance Checklist\nBefore embarking on long-distance travel on M-2, M-3, M-5, or N-5:\n- **Tire Tread Depth & Pressure**: Ensure tire tread exceeds 1.6mm depth and tire age does not exceed 5 years. Check cold tire pressure according to manufacturer vehicle door jamb ratings.\n- **Radiator Coolant & Brake Fluid**: Never top up modern aluminum radiators with plain tap water; use certified 50/50 ethylene glycol coolant. Inspect brake fluid reservoir levels and brake pad thickness.\n- **Emergency Kit**: Carry an operational fire extinguisher, reflective breakdown warning triangle, hydraulic jack, spare wheel with proper air pressure, and high-intensity flashlight.\n\n---\n\n## What to Do in Case of a Highway Accident or Breakdown\n1. **Move to Shoulder Lane**: Immediately steer vehicle to the extreme left emergency lane and switch on 4-way hazard hazard flashers.\n2. **Deploy Warning Triangle**: Place the reflective warning triangle 50 meters behind your vehicle to alert oncoming high-speed traffic.\n3. **Dial Motorway Police Helpline 1307**: Call toll-free **1307** from any mobile phone. The National Highways & Motorway Police (NHMP) patrol van will arrive within 10 to 15 minutes to provide free roadside mechanical assistance or safe towing.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## خیبر پختونخوا وہیکل ویریفیکیشن اور ایکسائز گائیڈ 2026\nکے پی کے میں گاڑی کی خرید و فروخت سے قبل اس کی قانونی حیثیت اور ٹیکس کلیئرنس چیک کرنے کا مکمل طریقہ۔",
+    "contentEn": "## Khyber Pakhtunkhwa (KP) Vehicle Verification & Buyer Safeguards 2026\nThe **Excise, Taxation & Narcotics Control Department Government of Khyber Pakhtunkhwa** manages digital motor vehicle registration across all 35 districts of KP (including Peshawar, Abbottabad, Swat, Mardan, Kohat, and D.I. Khan). Checking a vehicle online before purchase protects citizens against stolen vehicles, tax arrears, and tampered chassis.\n\n---\n\n## 5 Critical Red Flags for Used Vehicle Buyers in KPK\nBefore exchanging cash or signing a sale deed in KP, cross-examine the vehicle against these 5 common hazards:\n\n### 1. Token Tax Arrears & Compounding Penalties\nIf a previous owner skipped paying annual token tax, the unpaid arrears do not disappear — they compound with heavy statutory default surcharges under the KP Motor Vehicles Taxation Act. Use the KP Excise online portal to check the **Paid Up To** field. If taxes are overdue, insist that the seller clears the outstanding amount via 1Bill before finalizing the sale.\n\n### 2. The 'Open Transfer Letter' Trap\nDriving or buying a car on an open transfer letter or un-notarized agreement is illegal in Pakistan. If the vehicle is impounded or involved in a collision, the law recognizes only the individual whose name appears in the official KP Excise database. Always complete biometric verification with the seller at the local KP Excise & Taxation office.\n\n### 3. Active Bank Hypothecation (HPA) / Vehicle Financing Lien\nIf the online vehicle verification displays **Hypothecated To: [Bank Name]**, the vehicle was purchased on a bank loan or lease. The title cannot be legally transferred until the bank issues an official **NOC (No Objection Certificate)** and Form 35 is submitted to remove the bank lien from the Excise registry.\n\n### 4. Chassis Number Tampering & Cut-and-Sew Firewalls\nAlways physically inspect the 17-digit chassis number stamped into the metal firewall of the engine bay. Compare it letter-by-letter with: 1) the online KP Excise database, 2) the original smart card/registration book, and 3) the invoice plate. Check for signs of grinding, re-welding, fresh paint, or misaligned character fonts.\n\n### 5. Non-Customs Paid (NCP) vs Duty-Paid Vehicles\nIn KP border regions and Malakand Division, many vehicles enter without paying federal customs duties. While locally documented in designated areas, NCP vehicles cannot be legally driven on national highways or in other provinces. The Zama KP app allows prospective buyers to confirm whether a vehicle is registered for national circulation or regional restricted use.\n\n---\n\n## Step-by-Step Online Verification Process via Web & Zama KP\n1. **Visit the Portal**: Go to `excise.kp.gov.pk` or open the **Zama KP** app.\n2. **Select District Code**: Choose the issuing district (e.g., `Peshawar`, `Abbottabad`, `Mardan`, `Swat`).\n3. **Input Plate Characters**: Enter the alphabetic series (e.g., `LE`, `A`, `B`) and numeric registration number.\n4. **Review Data Output**: The system returns the registered owner name, father name, vehicle make, model, engine capacity (CC), chassis number, engine number, seating capacity, and tax clearance date.\n\n---\n\n## KP Token Tax Payment via 1Bill & Mobile Apps\nCitizens can settle their vehicle token tax digitally without standing in bank queues:\n- Open any Pakistani mobile banking app (EasyPaisa, JazzCash, Meezan Bank, HBL, Bank of Khyber, etc.).\n- Select **Bill Payment** > **1Bill / Government Taxes**.\n- Enter the 17-digit PSID generated from the Zama KP portal.\n- Confirm details and pay instantly. Your excise digital ledger updates in real time, and an electronic tax receipt is generated.",
+    "contentUr": "## خیبر پختونخوا ایکسائز گاڑیوں کی آن لائن تصدیق و ٹوکن ٹیکس گائیڈ 2026\nخیبر پختونخوا میں گاڑی خریدنے سے قبل اس کی آن لائن تصدیق، مالک کا نام، چیسس نمبر اور ٹوکن ٹیکس بقایا جات چیک کرنے کا مکمل طریقہ۔\n\n### گاڑی خریدتے وقت 5 اہم ترین احتیاطی تدابیر\n1۔ **ٹوکن ٹیکس کے بقایا جات**: آن لائن پورٹل پر چیک کریں کہ ٹوکن ٹیکس کس سال تک ادا شدہ ہے۔\n2۔ **اوپن ٹرانسفر لیٹر سے پرہیز**: گاڑی خریدتے وقت بائیومیٹرک ٹرانسفر لازمی کروائیں۔\n3۔ **بینک لیز اور قرض کی جانچ**: چیک کریں کہ گاڑی پر کسی بینک کا قرضہ (HPA) تو باقی نہیں ہے۔\n4۔ **چیسس و انجن نمبر کی فزیکل تصدیق**: گاڑی کے چیسس پر کندہ نمبر کا آن لائن ریکارڈ سے سو فیصد موازنہ کریں۔\n5۔ **نان کسٹم پیڈ (NCP) گاڑیوں سے ہوشیار رہیں**: ملاکنڈ ڈویژن اور پاٹا کی مخصوص ٹیکس چھوٹ والی گاڑیوں کو دیگر صوبوں میں لے جانے کے لیے کسٹم ڈیوٹی کلیئرنس چیک کریں۔",
     "relatedSlugs": [
       "/traffic/token-tax-calculator-2026",
       "/traffic/vehicle-verification-online-2026",
@@ -4035,56 +4072,56 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "fee-2026",
     "fullPath": "/passport/fee-2026",
     "categoryId": "passport",
-    "titleEn": "Pakistan Passport Fee Structure 2026 (Normal, Urgent & e-Passport Rates)",
-    "titleUr": "پاکستان پاسپورٹ فیس شیڈول 2026 (نارمل، ارجنٹ اور ای پاسپورٹ)",
-    "metaDescriptionEn": "Official Pakistani Passport Fee 2026 table for 36-page, 72-page, 100-page booklets (5 and 10 years validity). Includes e-Passport and fast-track processing rates.",
-    "metaDescriptionUr": "پاکستان ڈائریکٹوریٹ آف پاسپورٹ کی آفیشل فیس 2026۔ 36 صفحات، 72 صفحات، 100 صفحات، ای پاسپورٹ اور فاسٹ ٹریک فیس کی تفصیلات۔",
-    "directAnswerEn": "As of 2026, standard 36-page Pakistani Passport fee (5-year validity) is PKR 4,500 for Normal delivery and PKR 7,500 for Urgent delivery. 10-year validity 36-page passport costs PKR 6,700 (Normal) and PKR 11,200 (Urgent). e-Passport fee starts at PKR 9,000 for 5-year 36 pages.",
-    "directAnswerUr": "سال 2026 میں 36 صفحات والے 5 سالہ عام پاسپورٹ کی نارمل فیس 4,500 روپے اور ارجنٹ فیس 7,500 روپے ہے۔ 10 سالہ میعاد کی نارمل فیس 6,700 روپے جبکہ ارجنٹ فیس 11,200 روپے ہے۔ ای پاسپورٹ فیس 9,000 روپے سے شروع ہوتی ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Pakistan Passport Fee Structure 2026: Normal, Urgent & e-Passport Rates",
+    "titleUr": "پاکستان پاسپورٹ فیس شیڈول 2026: نارمل، ارجنٹ اور ای پاسپورٹ فیس",
+    "metaDescriptionEn": "Official 2026 Pakistani Passport fee table for 36, 72, and 100 pages (5 & 10 years validity). Includes e-Passport rates, 1Bill online payment charges, and Fast Track delivery.",
+    "metaDescriptionUr": "ڈائریکٹوریٹ آف پاسپورٹ کی سرکاری فیس لسٹ 2026۔ 36، 72، 100 صفحات، ای پاسپورٹ، 1Bill آن لائن چارجز اور فاسٹ ٹریک ہوم ڈلیوری کی مکمل تفصیل۔",
+    "directAnswerEn": "As of 2026, standard 36-page Machine Readable Passport (5-year validity) fee is PKR 4,500 for Normal delivery and PKR 7,500 for Urgent delivery. A 10-year 36-page passport costs PKR 6,700 (Normal) and PKR 11,200 (Urgent). Chip-embedded e-Passport fees start at PKR 9,000. Fees are paid via a 17-digit PSID on the Passport Fee Asaan app (with a nominal PKR 10-30 1Bill bank digital processing charge) or at National Bank of Pakistan (NBP) counters.",
+    "directAnswerUr": "سال 2026 میں 36 صفحات والے 5 سالہ پاسپورٹ کی نارمل فیس 4,500 روپے اور ارجنٹ 7,500 روپے ہے۔ 10 سالہ پاسپورٹ کی نارمل فیس 6,700 اور ارجنٹ 11,200 روپے ہے۔ ای پاسپورٹ فیس 9,000 روپے سے شروع ہوتی ہے۔ فیس پاسپورٹ فیس آسان ایپ سے 17 ہندسوں کے PSID پر ادا کی جا سکتی ہے جس پر بینک کے 10 تا 30 روپے ڈیجیٹل چارجز لاگو ہوتے ہیں۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
-      "name": "Directorate General of Immigration & Passports",
+      "name": "Directorate General of Immigration & Passports (DGIP)",
       "url": "https://dgip.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Passport & Immigration Desk"
+      "role": "Passport & Immigration Regulatory Desk"
     },
     "feeStructure": [
       {
         "serviceEn": "36 Pages (5 Years Validity)",
         "serviceUr": "36 صفحات (5 سال میعاد)",
-        "normal": "PKR 4,500",
-        "urgent": "PKR 7,500",
-        "executive": "PKR 12,500 (Fast Track)"
+        "normal": "PKR 4,500 (21 Days)",
+        "urgent": "PKR 7,500 (7 Days)",
+        "executive": "PKR 12,500 (Fast Track 2 Days)"
       },
       {
         "serviceEn": "36 Pages (10 Years Validity)",
         "serviceUr": "36 صفحات (10 سال میعاد)",
-        "normal": "PKR 6,700",
-        "urgent": "PKR 11,200",
-        "executive": "PKR 16,200 (Fast Track)"
+        "normal": "PKR 6,700 (21 Days)",
+        "urgent": "PKR 11,200 (7 Days)",
+        "executive": "PKR 16,200 (Fast Track 2 Days)"
       },
       {
         "serviceEn": "72 Pages (5 Years Validity)",
         "serviceUr": "72 صفحات (5 سال میعاد)",
-        "normal": "PKR 8,200",
-        "urgent": "PKR 13,500",
-        "executive": "PKR 18,500 (Fast Track)"
+        "normal": "PKR 8,200 (21 Days)",
+        "urgent": "PKR 13,500 (7 Days)",
+        "executive": "PKR 18,500 (Fast Track 2 Days)"
       },
       {
         "serviceEn": "72 Pages (10 Years Validity)",
         "serviceUr": "72 صفحات (10 سال میعاد)",
-        "normal": "PKR 12,400",
-        "urgent": "PKR 20,200",
-        "executive": "PKR 25,200 (Fast Track)"
+        "normal": "PKR 12,400 (21 Days)",
+        "urgent": "PKR 20,200 (7 Days)",
+        "executive": "PKR 25,200 (Fast Track 2 Days)"
       },
       {
         "serviceEn": "100 Pages (5 Years Validity)",
         "serviceUr": "100 صفحات (5 سال میعاد)",
-        "normal": "PKR 9,000",
-        "urgent": "PKR 18,000",
-        "executive": "PKR 23,000 (Fast Track)"
+        "normal": "PKR 9,000 (21 Days)",
+        "urgent": "PKR 18,000 (7 Days)",
+        "executive": "PKR 23,000 (Fast Track 2 Days)"
       },
       {
         "serviceEn": "e-Passport 36 Pages (5 Years)",
@@ -4101,58 +4138,64 @@ export const ARTICLES: Record<string, Article> = {
         "executive": "PKR 27,000 (Fast Track)"
       }
     ],
-    "faqs": [
-      {
-        "questionEn": "What is the difference between Normal, Urgent, and Fast Track passport?",
-        "questionUr": "نارمل، ارجنٹ اور فاسٹ ٹریک پاسپورٹ میں کیا فرق ہے؟",
-        "answerEn": "Normal passport takes 21-30 working days; Urgent takes 7-10 working days; Fast Track (Executive) takes 2-4 working days and is collected directly from the passport office.",
-        "answerUr": "نارمل پاسپورٹ 21 تا 30 دنوں میں، ارجنٹ 7 تا 10 دنوں میں، اور فاسٹ ٹریک 2 تا 4 دنوں میں ملتا ہے۔"
-      },
-      {
-        "questionEn": "How can I generate a PSID to pay passport fee online?",
-        "questionUr": "پاسپورٹ فیس آن لائن پے کرنے کے لیے PSID کیسے بنائیں؟",
-        "answerEn": "Download the official \"Passport Fee Asaan\" mobile app or visit onlinemrp.dgip.gov.pk to generate your 17-digit PSID number, then pay via JazzCash, Easypaisa, or 1Link banking.",
-        "answerUr": "پاسپورٹ فیس آسان ایپ سے 17 ہندسوں کا PSID بنائیں اور جاز کیش یا بینکنگ ایپ سے فیس جمع کروائیں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
-      }
-    ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Generate Passport PSID on Passport Fee Asaan App",
-        "titleUr": "آن لائن PSID حاصل کریں",
-        "detailEn": "Visit onlinemrp.dgip.gov.pk or download Passport Fee Asaan App to generate your 17-digit PSID payment number.",
-        "detailUr": "آن لائن ایم آر پی پورٹل پر جا کر 17 ہندسوں کا PSID فیس واؤچر بنائیں۔"
+        "titleEn": "Generate 17-Digit PSID on Passport Fee Asaan App",
+        "titleUr": "پاسپورٹ فیس آسان ایپ سے PSID حاصل کریں",
+        "detailEn": "Download the official 'Passport Fee Asaan' app or visit fee.dgip.gov.pk. Select passport category (MRP / e-Passport), booklet size, validity, and generate your 17-digit PSID code.",
+        "detailUr": "پاسپورٹ فیس آسان ایپ کھول کر پاسپورٹ کی قسم، صفحات اور میعاد منتخب کر کے 17 ہندسوں کا PSID چالان بنائیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Pay Fee via JazzCash, Easypaisa or 1Link Banking",
-        "titleUr": "فیس آن لائن جمع کروائیں",
-        "detailEn": "Use JazzCash, Easypaisa, HBL, MCB, or any 1Link bank mobile app to clear your passport fee using the PSID.",
-        "detailUr": "جاز کیش، ایزی پیسہ یا بینک ایپ میں PSID درج کر کے فیس ادا کریں۔"
+        "titleEn": "Pay Digitally via 1Bill / Online Banking / NBP",
+        "titleUr": "آن لائن بینکنگ، ایزی پیسہ یا این بی پی کاؤنٹر سے ادا کریں",
+        "detailEn": "Pay using any banking app (EasyPaisa, JazzCash, HBL, Meezan, etc.) under 1Bill (a nominal PKR 10-30 digital fee applies) or pay cash at National Bank of Pakistan (NBP).",
+        "detailUr": "کسی بھی بینک ایپ سے 1Bill کے ذریعے یا نیشنل بینک کے کاؤنٹر پر فیس جمع کروائیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Visit Regional Passport Office (RPO)",
-        "titleUr": "پاسپورٹ آفس تشریف لے جائیں",
-        "detailEn": "Take your original CNIC, paid fee receipt, and previous passport to your nearest Regional Passport Office for biometric capture.",
-        "detailUr": "اصل شناختی کارڈ اور فیس رسید کے ساتھ قریبی پاسپورٹ آفس جائیں۔"
+        "titleEn": "Visit Regional Passport Office (RPO) / Executive Center",
+        "titleUr": "پاسپورٹ آفس جا کر بائیو میٹرک اور تصویر مکمل کریں",
+        "detailEn": "Bring original CNIC/NICOP and paid fee receipt. Complete token issuance, biometric finger scanning, photo capture, and interview.",
+        "detailUr": "اصل شناختی کارڈ اور فیس رسید کے ساتھ پاسپورٹ آفس جائیں اور تصویر و فنگر پرنٹ کا عمل مکمل کریں۔"
       },
       {
         "stepNumber": 4,
-        "titleEn": "Track Passport Printing & Delivery",
-        "titleUr": "پاسپورٹ ٹریک کریں",
-        "detailEn": "Track passport processing status via tracking.dgip.gov.pk or SMS to 9988 until courier delivery.",
-        "detailUr": "ٹریکنگ پورٹل یا 9988 ایس ایم ایس کے ذریعے پاسپورٹ کا سٹیٹس چیک کریں۔"
+        "titleEn": "Track Printing & Home Delivery",
+        "titleUr": "آن لائن یا ایس ایم ایس 9988 سے ٹریک کریں",
+        "detailEn": "Track your passport processing stage at tracking.dgip.gov.pk or text your 11-digit Tracking Token to 9988.",
+        "detailUr": "ویب سائٹ tracking.dgip.gov.pk یا 9988 پر ٹوکن نمبر ایس ایم ایس کر کے پاسپورٹ ٹریک کریں۔"
       }
     ],
-    "contentEn": "The Directorate General of Immigration and Passports (DGIP) sets official tariffs for Machine Readable Passports (MRP) and chip-embedded e-Passports across Pakistan.\n\n## Official Passport Rate Chart 2026\n\n- **36 Pages (5 Years)**: Normal PKR 4,500 | Urgent PKR 7,500 | Fast Track PKR 12,500\n- **36 Pages (10 Years)**: Normal PKR 6,700 | Urgent PKR 11,200 | Fast Track PKR 16,200\n- **72 Pages (5 Years)**: Normal PKR 8,200 | Urgent PKR 13,500 | Fast Track PKR 18,500\n- **72 Pages (10 Years)**: Normal PKR 12,400 | Urgent PKR 20,200 | Fast Track PKR 25,200\n\n## Chip-Embedded e-Passport Fees\n- **e-Passport 36 Pages (5 Years)**: Normal PKR 9,000 | Urgent PKR 15,000 | Fast Track PKR 20,000\n- **e-Passport 36 Pages (10 Years)**: Normal PKR 13,500 | Urgent PKR 22,500 | Fast Track PKR 27,000\n\nPay via **Passport Fee Asaan App** using 17-digit PSID on JazzCash, Easypaisa, or 1Link mobile banking.",
-    "contentUr": "پاکستان پاسپورٹ فیس شیڈول ڈائریکٹوریٹ جنرل آف امیگریشن اینڈ پاسپورٹس (DGIP) کا سرکاری فیس چارٹ ہے۔\n\n## فیس کی تفصیلات 2026\n- **36 صفحات (5 سال)**: نارمل 4,500 | ارجنٹ 7,500 | فاسٹ ٹریک 12,500 روپے\n- **36 صفحات (10 سال)**: نارمل 6,700 | ارجنٹ 11,200 | فاسٹ ٹریک 16,200 روپے\n- **ای پاسپورٹ 36 صفحات (5 سال)**: نارمل 9,000 | ارجنٹ 15,000 | فاسٹ ٹریک 20,000 روپے\n\nپاسپورٹ فیس آسان ایپ سے 17 ہندسوں کا PSID بنا کر جاز کیش یا ایزی پیسہ سے جمع کروائیں۔",
+    "faqs": [
+      {
+        "questionEn": "Are there extra digital charges when paying passport fee online via 1Bill?",
+        "questionUr": "کیا 1Bill کے ذریعے آن لائن پاسپورٹ فیس ادا کرنے پر اضافی چارجز ہوتے ہیں؟",
+        "answerEn": "Yes, standard banking 1Bill / 1Link digital transaction convenience fees range between PKR 10 to PKR 30 depending on your bank or microfinance wallet (EasyPaisa/JazzCash). This is a third-party banking surcharge and not a DGIP government fee.",
+        "answerUr": "جی ہاں، بینکنگ ایپس اور ایزی پیسہ/جاز کیش پر 1Bill ٹرانزیکشن فیس کی مد میں 10 تا 30 روپے اضافی بینک چارجز لگتے ہیں جو بینک کے اپنے سسٹم چارجز ہوتے ہیں۔"
+      },
+      {
+        "questionEn": "What is the difference between MRP and e-Passport in Pakistan?",
+        "questionUr": "مشین ریڈ ایبل پاسپورٹ (MRP) اور ای پاسپورٹ میں کیا بنیادی فرق ہے؟",
+        "answerEn": "The Machine Readable Passport (MRP) contains an optical MRZ strip at the bottom of the data page. The chip-embedded e-Passport contains a secure biometric RFID microchip in the cover embedded with the holder's digital facial image and fingerprints, enabling fast-track electronic e-Gates at international airports worldwide.",
+        "answerUr": "ایم آر پی پاسپورٹ میں صرف آپٹیکل کوڈ ہوتا ہے جبکہ جدید ای پاسپورٹ میں الیکٹرانک بائیومیٹرک چپ لگی ہوتی ہے جس میں چہرے اور فنگر پرنٹ کا محفوظ ریکارڈ ہوتا ہے جس سے دنیا بھر کے ایئرپورٹس پر ای گیٹس سے فوری امیگریشن ممکن ہوتی ہے۔"
+      },
+      {
+        "questionEn": "How long is a Pakistani passport fee PSID valid after generation?",
+        "questionUr": "پاسپورٹ فیس کا PSID چالان بننے کے بعد کتنے دنوں تک کارآمد رہتا ہے؟",
+        "answerEn": "A generated PSID remains valid for 90 days. If you do not pay within this period, simply generate a fresh PSID on the Passport Fee Asaan app. Once paid, the bank transaction receipt remains valid for 1 year for submission at the Passport Office.",
+        "answerUr": "جنریٹ شدہ PSID نمبر 90 دنوں تک کارآمد رہتا ہے۔ اگر فیس جمع ہو جائے تو وہ چالان رسید پورے 1 سال تک پاسپورٹ آفس میں جمع کروائی جا سکتی ہے۔"
+      },
+      {
+        "questionEn": "Can I upgrade from Normal to Urgent after submitting my passport application?",
+        "questionUr": "کیا پاسپورٹ آفس میں فائل جمع کروانے کے بعد نارمل کو ارجنٹ میں تبدیل کروایا جا سکتا ہے؟",
+        "answerEn": "Yes. If your application is pending in printing queues and you require urgent travel, visit your Regional Passport Office. The officer will calculate the fee differential (PKR 3,000 difference for 36 pages) and issue a supplementary payment voucher to expedite your file.",
+        "answerUr": "جی ہاں! پاسپورٹ آفس جا کر نارمل اور ارجنٹ کا درمیانی فرق (3,000 روپے اضافی چالان) جمع کروا کر فائل کو ارجنٹ کیٹیگری میں تبدیل کروایا جا سکتا ہے۔"
+      }
+    ],
+    "contentEn": "## Directorate General of Immigration & Passports: 2026 Official Fee Schedule\nThe **Directorate General of Immigration and Passports (DGIP)**, under the Ministry of Interior, issues Machine Readable Passports (MRP) and chip-embedded biometric e-Passports to citizens across Pakistan and through foreign missions abroad.\n\n---\n\n## Complete 2026 Passport Fee Schedule (All Categories)\n\n| Passport Category & Booklet Size | Validity Period | Normal Delivery (21 Days) | Urgent Delivery (7 Days) | Fast Track (2 Days) |\n| :--- | :--- | :--- | :--- | :--- |\n| **36 Pages (Standard)** | **5 Years** | **PKR 4,500** | **PKR 7,500** | **PKR 12,500** |\n| **36 Pages (Standard)** | **10 Years** | **PKR 6,700** | **PKR 11,200** | **PKR 16,200** |\n| **72 Pages (Frequent Traveler)** | **5 Years** | **PKR 8,200** | **PKR 13,500** | **PKR 18,500** |\n| **72 Pages (Frequent Traveler)** | **10 Years** | **PKR 12,400** | **PKR 20,200** | **PKR 25,200** |\n| **100 Pages (Business Traveler)** | **5 Years** | **PKR 9,000** | **PKR 18,000** | **PKR 23,000** |\n| **100 Pages (Business Traveler)** | **10 Years** | **PKR 13,500** | **PKR 27,000** | **PKR 32,000** |\n| **e-Passport 36 Pages** | **5 Years** | **PKR 9,000** | **PKR 15,000** | **PKR 20,000** |\n| **e-Passport 36 Pages** | **10 Years** | **PKR 13,500** | **PKR 22,500** | **PKR 27,000** |\n\n*Note: An additional third-party 1Bill digital processing fee of PKR 10 to PKR 30 is levied by commercial banks and fintech apps (EasyPaisa/JazzCash) during electronic settlement.*\n\n---\n\n## Digital Fee Payment Process via Passport Fee Asaan App\n1. Download **Passport Fee Asaan** from Google Play Store or Apple App Store, or visit `fee.dgip.gov.pk`.\n2. Choose **Passport Application Type**: Regular MRP or Biometric e-Passport.\n3. Select **Delivery Priority**: Normal, Urgent, or Fast Track.\n4. Select **Page Count** (36, 72, or 100) and **Validity** (5 or 10 Years).\n5. Enter your 13-digit CNIC, mobile number, and email to generate a **17-Digit PSID**.\n6. Pay via your mobile banking app under **1Bill Invoice/Payment**, or deposit cash at any **National Bank of Pakistan (NBP)** branch.\n7. Print or screenshot the computerized transaction receipt to show at the Regional Passport Office token counter.",
+    "contentUr": "## پاکستان پاسپورٹ فیس شیڈول 2026 (آفیشل ریٹس)\nڈائریکٹوریٹ آف امیگریشن اینڈ پاسپورٹس کا تازہ ترین فیس شیڈول برائے مشین ریڈ ایبل اور ای پاسپورٹ۔\n\n### 2026 سرکاری فیس چارٹ\n- **36 صفحات (5 سال)**: نارمل 4,500 روپے | ارجنٹ 7,500 روپے | فاسٹ ٹریک 12,500 روپے\n- **36 صفحات (10 سال)**: نارمل 6,700 روپے | ارجنٹ 11,200 روپے | فاسٹ ٹریک 16,200 روپے\n- **72 صفحات (5 سال)**: نارمل 8,200 روپے | ارجنٹ 13,500 روپے | فاسٹ ٹریک 18,500 روپے\n- **72 صفحات (10 سال)**: نارمل 12,400 روپے | ارجنٹ 20,200 روپے | فاسٹ ٹریک 25,200 روپے\n- **ای پاسپورٹ (5 سال 36 صفحات)**: نارمل 9,000 روپے | ارجنٹ 15,000 روپے\n- **ای پاسپورٹ (10 سال 36 صفحات)**: نارمل 13,500 روپے | ارجنٹ 22,500 روپے\n\n*نوٹ: 1Bill اور آن لائن بینکنگ سے فیس ادائیگی پر 10 تا 30 روپے بینک چارجز لاگو ہوتے ہیں۔*",
     "relatedSlugs": [
       "/passport/online-apply",
       "/passport/tracking-status",
@@ -6306,15 +6349,15 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "bisp-eligibility-check-by-cnic",
     "fullPath": "/welfare/bisp-eligibility-check-by-cnic",
     "categoryId": "welfare",
-    "titleEn": "BISP 8171 Portal 2026: Check Eligibility by CNIC Online & Payment Date | Pakistan Info Hub",
-    "titleUr": "8171 بی آئی ایس پی پورٹل 2026: شناختی کارڈ سے آن لائن اہلیت اور رقم چیک کریں",
-    "metaDescriptionEn": "Check BISP 8171 portal eligibility online 2026 by 13-digit CNIC. View current Benazir Kafaalat payment amount (check via 8171 portal), Taleemi Wazaif stipend, and NSER survey status.",
-    "metaDescriptionUr": "بی آئی ایس پی 8171 پورٹل پر 13 ہندسوں کے شناختی کارڈ سے آن لائن اہلیت چیک کریں۔ بے نظیر کفالت کی موجودہ قسط (8171 پورٹل سے تصدیق)، تعلیمی وظائف اور ادائیگی کی تاریخ۔",
-    "directAnswerEn": "To check BISP eligibility by CNIC in 2026, visit the official BISP 8171 portal at 8171.bisp.gov.pk or send your 13-digit CNIC number via SMS to 8171 from your mobile phone. The system will display your Benazir Kafaalat payment status (check current installment amount via 8171 portal), Taleemi Wazaif allowance, and NSER household dynamic registry survey eligibility.",
-    "directAnswerUr": "بی آئی ایس پی 8171 پورٹل پر شناختی کارڈ سے اہلیت چیک کرنے کے لیے 8171.bisp.gov.pk پر جائیں یا اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8171 پر ایس ایم ایس کریں۔ سسٹم آپ کی بے نظیر کفالت کی رقم (8171 پورٹل سے تصدیق)، تعلیمی وظائف اور این ایس ای آر سروے کا سٹیٹس ظاہر کرے گا۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "BISP 8171 Check Online by CNIC 2026: Benazir Kafaalat, PMT Score & Payment Status",
+    "titleUr": "8171 بی آئی ایس پی پورٹل 2026: شناختی کارڈ سے اہلیت، قسط اور پی ایم ٹی اسکور",
+    "metaDescriptionEn": "Check BISP 8171 eligibility online by 13-digit CNIC. Complete guide to Benazir Kafaalat quarterly PKR 10,500 stipend, PMT score cutoffs, Taleemi Wazaif, and biometric payments.",
+    "metaDescriptionUr": "8171 پورٹل سے بے نظیر کفالت 10,500 روپے قسط، پی ایم ٹی اسکور کی اہلیت اور تعلیمی وظائف چیک کرنے کا آفیشل اور آسان طریقہ۔",
+    "directAnswerEn": "To check BISP eligibility and quarterly payment status in 2026, visit the official 8171 web portal at 8171.bisp.gov.pk or text your 13-digit CNIC (without dashes) to 8171. Families with a verified Proxy Means Test (PMT) score below 32 receive the quarterly Benazir Kafaalat unconditional cash transfer of PKR 10,500. Cash can be collected with biometric thumb verification at designated Bank Alfalah or HBL BISP facilitation campsites.",
+    "directAnswerUr": "بی آئی ایس پی اہلیت اور 10,500 روپے کی سہ ماہی قسط چیک کرنے کے لیے 8171.bisp.gov.pk پورٹل کھولیں یا 8171 پر شناختی کارڈ نمبر ایس ایم ایس کریں۔ 32 سے کم پی ایم ٹی (PMT) اسکور والے اہل خاندان بینک الفلاح اور ایچ بی ایل کے نامزد بائیومیٹرک کیمپ سائٹس سے رقم وصول کر سکتے ہیں۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
-      "name": "BISP 8171 Official Portal",
+      "name": "Benazir Income Support Programme (BISP 8171)",
       "url": "https://8171.bisp.gov.pk/"
     },
     "author": {
@@ -6324,107 +6367,99 @@ export const ARTICLES: Record<string, Article> = {
     "feeStructure": [
       {
         "serviceEn": "8171 Online Web Portal Query",
-        "serviceUr": "8171 آن لائن ویب پورٹل",
-        "normal": "PKR 0 (100% FREE)",
-        "urgent": "Instant Web Status",
-        "executive": "24/7 Available"
+        "serviceUr": "8171 آن لائن ویب پورٹل تصدیق",
+        "normal": "100% FREE",
+        "urgent": "Instant Real-Time",
+        "executive": "Official Federal Database",
+        "validity": "24/7 Available"
       },
       {
-        "serviceEn": "8171 SMS Inquiry",
-        "serviceUr": "8171 ایس ایم ایس انکوائری",
-        "normal": "Standard SMS rate (~PKR 2)",
-        "urgent": "Instant Reply",
-        "executive": "All Mobile Networks"
+        "serviceEn": "SMS 8171 Inquiry",
+        "serviceUr": "ایس ایم ایس 8171 تصدیق",
+        "normal": "Standard SMS (~PKR 1-2)",
+        "urgent": "Instant Reply (15 Secs)",
+        "executive": "All Mobile Networks",
+        "validity": "Live System"
       },
       {
-        "serviceEn": "Dynamic NSER Survey Registration",
-        "serviceUr": "ڈائنامک این ایس ای آر سروے رجسٹریشن",
-        "normal": "PKR 0 (100% FREE)",
-        "urgent": "Tehsil Office Visit",
-        "executive": "No Fee Ever"
+        "serviceEn": "Benazir Kafaalat Quarterly Stipend",
+        "serviceUr": "بے نظیر کفالت سہ ماہی وظیفہ",
+        "normal": "PKR 10,500 / Quarter",
+        "urgent": "Biometric Cash Out",
+        "executive": "Unconditional Support",
+        "validity": "PMT <= 32"
+      },
+      {
+        "serviceEn": "NSER Tehsil Registration Survey",
+        "serviceUr": "این ایس ای آر تحصیل رجسٹریشن سروے",
+        "normal": "100% FREE",
+        "urgent": "Tehsil Center Token",
+        "executive": "Dynamic Socio-Economic Update",
+        "validity": "3 Years"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Open Official BISP 8171 Portal",
-        "titleUr": "آفیشل 8171 پورٹل کھولیں",
-        "detailEn": "Open your web browser on mobile or PC and go strictly to 8171.bisp.gov.pk. Beware of fake third-party websites ending in .com or .blogspot.",
-        "detailUr": "موبائل یا کمپیوٹر پر صرف 8171.bisp.gov.pk ویب سائٹ کھولیں۔ جعلی سائٹس سے ہوشیار رہیں۔"
+        "titleEn": "Open 8171.bisp.gov.pk or Send SMS to 8171",
+        "titleUr": "8171 پورٹل کھولیں یا 8171 پر ایس ایم ایس کریں",
+        "detailEn": "Navigate to the official 8171 web portal or send your 13-digit CNIC without spaces or dashes to 8171.",
+        "detailUr": "ویب سائٹ 8171.bisp.gov.pk پر جائیں یا 13 ہندسوں کا شناختی کارڈ 8171 پر بھیجیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Enter 13-Digit CNIC Number",
-        "titleUr": "13 ہندسوں کا شناختی کارڈ نمبر درج کریں",
-        "detailEn": "Type the head of family (usually the female applicant) 13-digit Computerized National Identity Card number accurately without dashes or spaces.",
-        "detailUr": "خاندان کی سربراہ خاتون کا 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے درج کریں۔"
+        "titleEn": "Review Eligibility & PMT Poverty Score Result",
+        "titleUr": "اپنی اہلیت اور پی ایم ٹی اسکور کا نتیجہ دیکھیں",
+        "detailEn": "The response reveals: 1) Eligible for Kafaalat (PKR 10,500 ready for withdrawal); 2) Eligible for Taleemi Wazaif / Nashonuma; or 3) Ineligible / NSER Survey Required.",
+        "detailUr": "نتیجہ میں کفالت کی قسط، تعلیمی وظائف یا سروے کروانے کی ہدایت دکھائی دے گی۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Input Captcha Verification Code",
-        "titleUr": "سکرین پر دکھایا گیا کوڈ درج کریں",
-        "detailEn": "Look at the 4-digit numerical security code shown in the image box and type it into the security verification box.",
-        "detailUr": "تصویر میں دکھائے گئے 4 ہندسوں والے سیکیورٹی کوڈ کو خانوں میں لکھیں۔"
+        "titleEn": "Collect Cash at Bank Campsite with Biometrics",
+        "titleUr": "بینک کیمپ سائٹ سے بائیو میٹرک انگوٹھا لگا کر رقم لیں",
+        "detailEn": "Eligible women should visit their designated partner bank center (Bank Alfalah in Sindh/KP/Balochistan, HBL in Punjab/Islamabad/AJK/GB) with their original CNIC to withdraw the full cash amount.",
+        "detailUr": "خواتین اپنا اصل شناختی کارڈ لے کر متعلقہ بینک کیمپ سائٹ پر جائیں اور پوری رقم وصول کریں۔"
       },
       {
         "stepNumber": 4,
-        "titleEn": "Click Search / Check Eligibility",
-        "titleUr": "معلوم کریں کے بٹن پر کلک کریں",
-        "detailEn": "Press the green 'Find Out / Check' button. The portal will cross-check your record against the NSER central database.",
-        "detailUr": "سبز رنگ کے بٹن پر کلک کر کے نادرا اور بی آئی ایس پی کا آن لائن سٹیٹس دیکھیں۔"
-      },
-      {
-        "stepNumber": 5,
-        "titleEn": "Review Status & Collect Payment",
-        "titleUr": "سٹیٹس دیکھیں اور رقم وصول کریں",
-        "detailEn": "The screen will display whether you are Eligible (Qabil-e-Ahliat), current payment installment status (check via 8171 portal), or required to visit the Tehsil BISP office for dynamic survey update.",
-        "detailUr": "سکرین پر آپ کی اہلیت، قسط کی رقم (8171 پورٹل سے تصدیق) یا این ایس ای آر سروے اپڈیٹ کی ہدایت ظاہر ہوگی۔"
+        "titleEn": "If Ineligible: Register at Nearest BISP Tehsil Center",
+        "titleUr": "نااہل ہونے پر: قریبی بی آئی ایس پی تحصیل سنٹر پر سروے کروائیں",
+        "detailEn": "Visit the BISP Tehsil Facilitation Center with family CNICs, children's B-Forms, and electricity bills for a new NSER Dynamic Registry survey.",
+        "detailUr": "تمام فیملی کے شناختی کارڈ اور بجلی کا بل لے کر تحصیل دفتر میں این ایس ای آر سروے کروائیں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How do I check my BISP 8171 portal eligibility online?",
-        "questionUr": "بی آئی ایس پی 8171 پورٹل پر آن لائن اہلیت کیسے چیک کریں؟",
-        "answerEn": "To check your BISP 8171 portal eligibility online, visit 8171.bisp.gov.pk. Enter your 13-digit CNIC number without dashes and type the 4-digit captcha code shown on screen. Click 'Maaloom Karein' to instantly view your Benazir Kafaalat eligibility, current quarterly stipend status (check via 8171 portal), and NSER registration records.",
-        "answerUr": "8171.bisp.gov.pk پر جا کر اپنا 13 ہندسوں کا شناختی کارڈ نمبر اور سکرین کوڈ درج کریں اور اہلیت معلوم کریں۔"
+        "questionEn": "What is the PMT score cutoff for BISP Kafaalat, Taleemi Wazaif, and Nashonuma in 2026?",
+        "questionUr": "2026 میں بی آئی ایس پی کفالت، تعلیمی وظائف اور نشوونما کے لیے پی ایم ٹی (PMT) اسکور کی حد کیا ہے؟",
+        "answerEn": "The Proxy Means Test (PMT) poverty cutoff for the Benazir Kafaalat cash transfer is set at PMT <= 32. For Benazir Taleemi Wazaif (children's education stipends), the household must also have a PMT <= 32 and children enrolled in school with 70%+ attendance. Benazir Nashonuma (maternal and infant nutrition) covers pregnant/lactating mothers and infants under 2 years with PMT <= 35. For detailed scoring mechanisms, read our comprehensive [PMT Score Explained Guide](/welfare/pmt-score-explained-bisp-eligibility-2026).",
+        "answerUr": "بے نظیر کفالت کے لیے پی ایم ٹی اسکور کی حد 32 یا اس سے کم ہے۔ تعلیمی وظائف کے لیے بھی 32 کا اسکور اور اسکول میں 70 فیصد حاضری لازمی ہے۔ نشوونما پروگرام 35 تک کے اسکور والی حاملہ خواتین اور 2 سال تک کے بچوں کو کور کرتا ہے۔ تفصیلی معلومات کے لیے ہمارا پی ایم ٹی اسکور گائیڈ پڑھیں۔"
       },
       {
-        "questionEn": "What is the 8171 SMS check karne ka tarika in Roman Urdu?",
-        "questionUr": "8171 پر ایس ایم ایس کے ذریعے چیک کرنے کا طریقہ کیا ہے؟",
-        "answerEn": "8171 SMS check karne ka tarika bohot aasan hai: apne mobile ke Write Message option mein jayein, apna 13-digit CNIC number bina kisi dash ya space ke type karein aur ise **8171** par send kar dein. BISP system se aapko foran verification message receive ho jayega jisme aapki quarterly kafaalat amount aur payment center ki details hongi.",
-        "answerUr": "اپنے موبائل سے 13 ہندسوں کا شناختی کارڈ نمبر بغیر ڈیش کے لکھ کر 8171 پر بھیجیں، فوری جوابی میسج موصول ہوگا۔"
+        "questionEn": "What is the difference between BISP Kafaalat, Nashonuma, and Taleemi Wazaif?",
+        "questionUr": "بے نظیر کفالت، نشوونما اور تعلیمی وظائف پروگراموں میں کیا بنیادی فرق ہے؟",
+        "answerEn": "1) Benazir Kafaalat provides an unconditional quarterly cash grant of PKR 10,500 directly to the female family head; 2) Benazir Taleemi Wazaif provides quarterly educational stipends (PKR 1,500 to PKR 4,500 depending on grade and gender) contingent on school attendance; 3) Benazir Nashonuma provides conditional cash grants and specialized nutritious food sachets to combat child stunting. Compare all 3 programs in our in-depth [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif Breakdown](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).",
+        "answerUr": "1۔ کفالت پروگرام خواتین کو 10,500 روپے کی غیر مشروط سہ ماہی مالی امداد دیتا ہے۔ 2۔ تعلیمی وظائف اسکول جانے والے بچوں کو 1500 تا 4500 روپے سہ ماہی دیتا ہے۔ 3۔ نشوونما پروگرام بچوں میں غذائی قلت کے خاتمے کے لیے غذائی خوراک اور نقد وظیفہ فراہم کرتا ہے۔"
       },
       {
-        "questionEn": "What is the next BISP quarterly payment date and amount for 2026?",
-        "questionUr": "2026 میں بی آئی ایس پی کی اگلی سہ ماہی قسط کی تاریخ اور رقم کیا ہے؟",
-        "answerEn": "The Benazir Kafaalat quarterly cash stipend amount is subject to periodic government revisions (verify current installment amount via 8171 SMS or web portal). Disbursements are issued quarterly through designated biometric campsites, Bank Alfalah BISP biometric ATMs (in Punjab/KPK/AJK/GB), and HBL Connect biometric agents (in Sindh/Balochistan).",
-        "answerUr": "بے نظیر کفالت کی سہ ماہی قسط سرکاری اعلانات کے مطابق جاری کی جاتی ہے (موجودہ رقم 8171 پورٹل سے چیک کریں) جو بینک الفلاح اور ایچ بی ایل کے بائیو میٹرک مراکز سے ادا کی جاتی ہے۔"
+        "questionEn": "What should I do if the biometric device fails to read my fingerprints at the BISP campsite?",
+        "questionUr": "اگر بی آئی ایس پی کیمپ پر بائیومیٹرک فنگر پرنٹ میچ نہ ہو تو رقم کیسے ملے گی؟",
+        "answerEn": "If biometric verification fails twice at the payment counter, the beneficiary can request an '8-Fingerprint Secondary Exemption Authentication' or obtain a Biometric Verification Clearance Token from the on-site BISP Assistant Director desk to process payment through an assigned designated bank branch.",
+        "answerUr": "اگر بائیومیٹرک فنگر پرنٹ بار بار فیل ہو تو کیمپ پر موجود بی آئی ایس پی اسسٹنٹ ڈائریکٹر کے کاؤنٹر سے بائیو میٹرک استثنیٰ ٹوکن لے کر مخصوص بینک برانچ سے رقم حاصل کی جا سکتی ہے۔"
       },
       {
-        "questionEn": "How do I register for BISP if 8171 shows 'Ineligible' or 'Record Not Found'?",
-        "questionUr": "اگر 8171 پر نااہل یا ریکارڈ نہیں ملا آئے تو رجسٹریشن کیسے کروائیں؟",
-        "answerEn": "If 8171 shows 'Record Not Found' or 'Ineligible', visit your nearest BISP Tehsil Office with your original NADRA CNIC and computerized children's B-Forms. Request a new **Dynamic NSER Survey**. The registration is 100% free of cost and updates your household PMT poverty score in the national registry.",
-        "answerUr": "قریبی بی آئی ایس پی تحصیل آفس جا کر اصل شناختی کارڈ اور ب فارم کے ساتھ ڈائنامک این ایس ای آر سروے کروائیں، یہ بالکل مفت ہے۔"
-      },
-      {
-        "questionEn": "What PMT score is required to qualify for Benazir Kafaalat?",
-        "questionUr": "بے نظیر کفالت پروگرام کے لیے کتنا پی ایم ٹی سکور درکار ہوتا ہے؟",
-        "answerEn": "To qualify for Benazir Kafaalat cash transfers, a household must have a Proxy Means Test (PMT) score of **32 or below**. Households with PMT scores between 32 and 37 may qualify for Taleemi Wazaif and subsidized grocery relief under the Utility Stores package.",
-        "answerUr": "بے نظیر کفالت کے لیے پی ایم ٹی (PMT) سکور 32 یا اس سے کم ہونا لازمی ہے۔"
-      },
-      {
-        "questionEn": "Is BISP 8171 registration or survey verification free?",
-        "questionUr": "کیا بی آئی ایس پی 8171 رجسٹریشن یا سروے کی کوئی فیس ہے؟",
-        "answerEn": "Yes, BISP 8171 registration and dynamic surveys are **100% FREE**. The Government of Pakistan charges ZERO rupees for registration, SMS verification, or payment collection. Never pay any fee or commission to agents, shopkeepers, or unauthorized callers claiming to release funds.",
-        "answerUr": "بی آئی ایس پی کی تمام خدمات 100 فیصد مفت ہیں۔ کسی ایجنٹ یا شخص کو کوئی رقم یا کمیشن ہرگز نہ دیں۔"
+        "questionEn": "How often can a family re-apply or update their NSER dynamic survey?",
+        "questionUr": "ایک خاندان کتنے عرصے بعد این ایس ای آر سروے دوبارہ کروا سکتا ہے؟",
+        "answerEn": "Under BISP policy, families who have not updated their socio-economic data within the last 3 years, or whose household financial conditions have drastically worsened (due to illness, job loss, disability, or inflation), can visit the Tehsil office for a free re-survey.",
+        "answerUr": "جن خاندانوں کے سروے کو 3 سال گزر چکے ہوں یا جن کے معاشی حالات خراب ہوئے ہوں، وہ کسی بھی وقت بی آئی ایس پی تحصیل سنٹر جا کر اپنا ڈیٹا دوبارہ رجسٹر کروا سکتے ہیں۔"
       }
     ],
-    "contentEn": "## BISP 8171 Portal Overview: Benazir Kafaalat & Taleemi Wazaif (2026)\nThe **Benazir Income Support Programme (BISP) 8171 Portal** (`8171.bisp.gov.pk`) is Pakistan's central social welfare digital verification interface. It serves over 9.3 million registered underprivileged households across all four provinces, Azad Jammu & Kashmir, and Gilgit-Baltistan.\n\nUnder the 2026 social protection mandate, eligible beneficiaries receive:\n- **Benazir Kafaalat**: Quarterly unconditional cash transfer (current amount verified via 8171 portal) issued directly to the female head of the family.\n- **Benazir Taleemi Wazaif**: Primary, secondary, and higher secondary school stipends ranging from **PKR 1,500 to PKR 4,500** per quarter (with higher financial incentives for girl students) subject to 70% school attendance.\n- **Benazir Nashonuma**: Specialized nutrition support for pregnant/lactating mothers and infants under 2 years of age.\n\n---\n\n## How to Check BISP Eligibility by CNIC Online (Step-by-Step Guide)\n1. **Visit Official 8171 Web Portal**: Open `8171.bisp.gov.pk` on any browser. Ensure you only access the official `.gov.pk` domain to prevent phishing fraud.\n2. **Enter 13-Digit CNIC Number**: Input the female family head's 13-digit Computerized National Identity Card number without dashes (e.g. `3520212345671`).\n3. **Enter 4-Digit Security Captcha**: Type the 4-digit security code displayed in the captcha image.\n4. **Click 'Check Eligibility'**: Tap the green button to initiate a real-time database query against the National Socio-Economic Registry (NSER).\n5. **Review Result Status**:\n   - **Eligible (Ahl Hain)**: Displays current payment installment status (check via 8171 portal) and designated bank campsite.\n   - **Survey Required (Survey Mein Indiraj Karwayen)**: Requires biometric survey at the nearest BISP Tehsil Office.\n   - **Ineligible (Ahl Nahi Hain)**: Indicates household PMT poverty score exceeds the 32 threshold.\n\n---\n\n## BISP 8171 SMS Check Karne Ka Tarika (Roman Urdu Guide)\nAgar aapke paas internet ki sahulat nahi hai to aap SMS ke zariye bhi apni eligibility check kar sakte hain:\n- Apne mobile phone ka Message app open karein.\n- Apna **13-digit CNIC number** bina kisi space ya dash ke type karein (maslan `3520212345671`).\n- Is message ko **8171** par send kar dein.\n- Kuch hi seconds mein BISP system se official confirmation message aa jayega jisme aapki ahliat aur payment ki mukammal maloomat darj hogi.\n\n---\n\n## BISP Payment Date & Quarterly Installment Schedule\nAs of August 2026, the BISP quarterly installment schedule operates across four regional payment phases:\n- **Phase 1**: Rawalpindi, Islamabad, Faisalabad, Gujranwala, Lahore, and Peshawar divisions.\n- **Phase 2**: Multan, Bahawalpur, D.G. Khan, Sahiwal, and Sargodha divisions.\n- **Phase 3**: Karachi, Hyderabad, Larkana, Sukkur, Mirpurkhas, and Shaheed Benazirabad divisions.\n- **Phase 4**: Quetta, Kalat, Makran, Sibi, Nasirabad, AJK, and Gilgit-Baltistan.\n\n### Official Payment Collection Desks:\n- **Punjab, KPK, AJK & Gilgit-Baltistan**: Biometric withdrawal via **Bank Alfalah BISP digital campsites & ATMs**.\n- **Sindh & Balochistan**: Biometric withdrawal via **Habib Bank Limited (HBL) Connect retail agents & campsites**.\n\n---\n\n## BISP 8171 Portal Quick Facts & Tehsil Survey Centers (2026)\n\n| Parameter | Official Specification |\n| :--- | :--- |\n| **Official Web Portal** | `8171.bisp.gov.pk` (Benazir Income Support Programme) |\n| **Official SMS Gateway** | Send 13-Digit CNIC to **8171** |\n| **Current Quarterly Stipend** | Current BISP Kafaalat Amount (Check via 8171 Portal) |\n| **Taleemi Wazaif Allowance** | PKR 1,500 – 4,500 / Quarter (Class 1 to 12) |\n| **Poverty Score Benchmark** | PMT (Proxy Means Test) Score ≤ 32 |\n| **Central Toll-Free Helpline** | **0800-26477** (Monday to Friday 9:00 AM – 5:00 PM) |\n| **Registration / Survey Fee** | **PKR 0 (100% Free Government Initiative)** |\n| **Online Verification Status** | As of August 2026, verified and fully active |\n\n---\n\n## How to Register for BISP via Dynamic NSER Survey at Tehsil Office\nRegistration cannot be completed on third-party websites. To register for the first time or appeal an ineligible score:\n1. Visit your local **BISP Tehsil Center** (located in every district/tehsil across Pakistan).\n2. Present original NADRA CNIC of the female family head and computerized B-Forms of all children.\n3. Complete the **Biometric NSER Dynamic Survey**, providing accurate family income, electricity bill, and household asset data.\n4. An automated tracking token is issued, and updated eligibility status is reflected on `8171.bisp.gov.pk` within 3 to 4 weeks.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
-    "contentUr": "## بی آئی ایس پی 8171 پورٹل گائیڈ 2026\nبے نظیر انکم سپورٹ پروگرام، 8171 ایس ایم ایس سروس اور نادرا سروے کے ذریعے مالی امداد حاصل کرنے کی مکمل معلومات۔",
+    "contentEn": "## Benazir Income Support Programme (BISP 8171): Complete 2026 Eligibility & Cashout Guide\nThe **Benazir Income Support Programme (BISP)** is Pakistan's largest targeted social safety net, providing unconditional and conditional cash transfers to over 9.3 million deserving families across all four provinces, Gilgit-Baltistan, and Azad Jammu & Kashmir.\n\n---\n\n## Understanding the 3 Core BISP Pillars\n\n1. **Benazir Kafaalat (بے نظیر کفالت)**: The cornerstone program providing quarterly unconditional cash assistance of **PKR 10,500** directly to eligible female family heads.\n2. **Benazir Taleemi Wazaif (تعلیمی وظائف)**: Quarterly conditional educational stipends for school-going children (Primary: Boys PKR 1,500, Girls PKR 2,000; Secondary: Boys PKR 2,500, Girls PKR 3,000; Higher Secondary: Boys PKR 3,500, Girls PKR 4,000, plus a PKR 3,000 graduation bonus for girls).\n3. **Benazir Nashonuma (نشوونما پروگرام)**: Specialized conditional cash transfers and fortified nutritional food packets for pregnant/lactating mothers and children under 2 years to eradicate stunting.\n\n> For a complete feature-by-feature comparison of benefits and eligibility criteria, see our detailed guide on [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).\n\n---\n\n## The PMT Poverty Score Cutoff Explained\nBISP utilizes the **Proxy Means Test (PMT)** score generated from the National Socio-Economic Registry (NSER) dynamic survey to assess household poverty on a scale of 0 to 100:\n- **PMT Score 0 to 32**: Qualified for Benazir Kafaalat, Taleemi Wazaif, and targeted utility subsidies.\n- **PMT Score 32.1 to 35**: Qualified for Benazir Nashonuma health assistance.\n- **PMT Score > 35**: Ineligible for cash stipends.\n\n> To learn how PMT scores are calculated and how to lower your score through official survey updates, read our guide on [PMT Score Explained for BISP Eligibility 2026](/welfare/pmt-score-explained-bisp-eligibility-2026).\n\n---\n\n## Step-by-Step Guide to the NSER Dynamic Registry at Tehsil Centers\nIf your CNIC inquiry on 8171 returns *'Not Registered'* or *'Survey Expired'*, follow these steps:\n1. **Locate Your Tehsil Center**: Visit your district's official BISP Tehsil Facilitation Center.\n2. **Bring Mandatory Family Documents**: Original CNICs of all adult household members, computerized NADRA B-Forms for all children, and paid electricity/gas utility bills.\n3. **Token & Biometric Interview**: An NSER survey enumerator will record your housing conditions, livestock, monthly expenditure, family health, and assets.\n4. **Computerized Confirmation Slip**: You will receive an official NSER Dynamic Registry receipt with a tracking barcode. Results update on 8171 within 30 to 45 days.\n\n---\n\n## Partner Banks & Cash Withdrawal Channels\n- **Punjab, Islamabad, Azad Kashmir & Gilgit-Baltistan**: Managed through **Habib Bank Limited (HBL)** biometric ATMs, Konnect agents, and BISP school campsites.\n- **Sindh, Khyber Pakhtunkhwa & Balochistan**: Managed through **Bank Alfalah** digital retail points, designated biometric camps, and agent networks.\n- **Helpline & Fraud Reporting**: BISP official toll-free complaint hotline is **0800-26477** (Never trust fake lottery or SMS messages from personal 11-digit numbers).",
+    "contentUr": "## بے نظیر انکم سپورٹ پروگرام (8171) اہلیت و قسط گائیڈ 2026\nبی آئی ایس پی پاکستان کا سب سے بڑا فلاحی نیٹ ورک ہے جو غریب خاندانوں کو مالی تحفظ فراہم کرتا ہے۔\n\n### 3 بنیادی پروگرام اور فوائد\n1۔ **بے نظیر کفالت**: مستحق خواتین کے لیے 10,500 روپے سہ ماہی نقد وظیفہ۔\n2۔ **تعلیمی وظائف**: اسکول جانے والے بچوں کے لیے 1500 تا 4000 روپے سہ ماہی وظیفہ۔\n3۔ **نشوونما پروگرام**: حاملہ خواتین اور 2 سال سے کم عمر بچوں کے لیے غذائی خوراک اور مالی مدد۔\n\nمزید تفصیل کے لیے ہمارے آرٹیکلز [پی ایم ٹی اسکور کی مکمل گائیڈ](/welfare/pmt-score-explained-bisp-eligibility-2026) اور [کفالت بنام نشوونما بنام تعلیمی وظائف](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026) ملاحظہ کریں۔",
     "relatedSlugs": [
-      "/welfare/8171-portal-guide",
-      "/welfare/kafaalat-amount-schedule",
-      "/welfare/taleemi-wazaif"
+      "/welfare/pmt-score-explained-bisp-eligibility-2026",
+      "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
+      "/welfare/bisp-online-registration-form"
     ]
   },
   "8171-portal-guide": {
@@ -9348,75 +9383,121 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "wssp-peshawar-water-bill-guide",
     "fullPath": "/bills/wssp-peshawar-water-bill-guide",
     "categoryId": "bills",
-    "titleEn": "WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline",
-    "titleUr": "ڈبلیو ایس ایس پی پشاور واٹر بل گائیڈ 2026: ٹیرف، ادائیگی اور ہیلپ لائن",
-    "metaDescriptionEn": "Official guide for WSSP (Water and Sanitation Services Peshawar). Consumer billing procedures, meter tariffs, payment points at Bank of Khyber, and 1337 helpline.",
-    "metaDescriptionUr": "ڈبلیو ایس ایس پی پشاور پانی و سیوریج بل گائیڈ، ٹیرف، بینک آف خیبر میں ادائیگی اور 1337 ہیلپ لائن معلومات۔",
-    "directAnswerEn": "Water and sanitation billing in Peshawar is administered by WSSP (Water and Sanitation Services Peshawar). Bills are distributed physically to households by zonal revenue inspectors and payable at designated Bank of Khyber branches or post office counters. There is currently no automated online duplicate bill download portal. For complaints or water bowser requests, call 1337 or 091-9211960.",
-    "directAnswerUr": "پشاور میں پانی و سیوریج کے بل ڈبلیو ایس ایس پی جاری کرتی ہے۔ بل کاغذی صورت میں ملتے ہیں اور بینک آف خیبر یا ڈاکخانے میں جمع ہوتے ہیں۔ شکایات کے لیے 1337 یا 091-9211960 پر رابطہ کریں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Dispute Resolution & Safa Pekhawar App",
+    "titleUr": "ڈبلیو ایس ایس پی پشاور واٹر بل گائیڈ 2026: ٹیرف، شکایات کا ازالہ اور صفا پیخاور ایپ",
+    "metaDescriptionEn": "Complete guide to WSSP (Water & Sanitation Services Peshawar) bills. Domestic & commercial tariff slabs, Safa Pekhawar app, 1334 helpline complaint tracking, and faulty meter replacement.",
+    "metaDescriptionUr": "ڈبلیو ایس ایس پی پشاور پانی اور صفائی کے بلوں کی مکمل تفصیل۔ ٹیرف سلیب، صفا پیخاور ایپ، 1334 ہیلپ لائن اور خراب میٹر کی درستگی کا طریقہ۔",
+    "directAnswerEn": "Water and sanitation billing across Peshawar's 5 municipal zones is administered by WSSP (Water and Sanitation Services Peshawar). Fixed domestic tariffs range from PKR 300 to PKR 1,200 per month depending on house plot size (under 5 Marla up to 1 Kanal+), payable via Bank of Khyber branches, Post Offices, and 1Bill online banking. For overbilling disputes or faulty connections, lodge a complaint via toll-free helpline 1334 or the Safa Pekhawar mobile app.",
+    "directAnswerUr": "پشاور کے 5 میونسپل زونز میں پانی اور صفائی کے بل ڈبلیو ایس ایس پی جاری کرتی ہے۔ 5 مرلہ سے 1 کنال تک کے مکانات کا ماہانہ فکسڈ ٹیرف 300 تا 1200 روپے ہے۔ بل بینک آف خیبر، ڈاکخانے یا 1Bill سے ادا ہوتے ہیں۔ غلط بلنگ کی شکایت کے لیے ٹول فری ہیلپ لائن 1334 یا صفا پیخاور (Safa Pekhawar) ایپ استعمال کریں۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
       "name": "WSSP Peshawar Official Portal",
       "url": "https://wssp.gkp.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Water & Municipal Services Desk"
+      "role": "KPK Municipal & Water Utilities Desk"
     },
     "feeStructure": [
       {
-        "serviceEn": "Domestic Water Connection",
-        "serviceUr": "گھریلو پانی کنکشن",
-        "normal": "Fixed Zonal Slab",
-        "urgent": "Peshawar Municipal",
-        "executive": "Domestic"
+        "serviceEn": "Domestic Tariff (Up to 5 Marla Plot)",
+        "serviceUr": "گھریلو ٹیرف (5 مرلہ تک کا مکان)",
+        "normal": "PKR 300 – 400/mo",
+        "urgent": "Fixed Water+Sanitation",
+        "executive": "Quarterly Billing",
+        "validity": "Domestic Zone"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "Commercial Tariff",
-        "urgent": "Water + Sanitation",
-        "executive": "Commercial"
+        "serviceEn": "Domestic Tariff (5 Marla to 10 Marla)",
+        "serviceUr": "گھریلو ٹیرف (5 تا 10 مرلہ)",
+        "normal": "PKR 500 – 700/mo",
+        "urgent": "Fixed Water+Sanitation",
+        "executive": "Quarterly Billing",
+        "validity": "Domestic Zone"
+      },
+      {
+        "serviceEn": "Domestic Tariff (1 Kanal & Above)",
+        "serviceUr": "گھریلو ٹیرف (1 کنال یا زائد)",
+        "normal": "PKR 1,000 – 1,500/mo",
+        "urgent": "Fixed Water+Sanitation",
+        "executive": "Quarterly Billing",
+        "validity": "Domestic Zone"
+      },
+      {
+        "serviceEn": "Commercial Connection (Shops / Clinics)",
+        "serviceUr": "کمرشل کنکشن (دکانیں و کلینک)",
+        "normal": "PKR 1,500 – 3,500/mo",
+        "urgent": "Category Specific",
+        "executive": "Commercial Slab",
+        "validity": "Commercial"
+      },
+      {
+        "serviceEn": "Industrial / Large Commercial (Plazas / Hotels)",
+        "serviceUr": "صنعتی و بڑے پلازے / ہوٹلز",
+        "normal": "Metered / Volumetric",
+        "urgent": "Site Assessed",
+        "executive": "Zonal Revenue Rate",
+        "validity": "Commercial"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Receive Physical Bill from WSSP Zonal Office",
-        "titleUr": "ڈبلیو ایس ایس پی زونل دفتر سے بل وصول کریں",
-        "detailEn": "WSSP revenue staff distribute quarterly/monthly bills across Peshawar municipal zones.",
-        "detailUr": "ڈبلیو ایس ایس پی کا عملہ زون کے مطابق کاغذی بل تقسیم کرتا ہے۔"
+        "titleEn": "Inspect Bill Details & Consumer Number",
+        "titleUr": "بل اور کنزیومر نمبر کی جانچ کریں",
+        "detailEn": "Check your 8-digit WSSP Consumer Number, municipal zone (Zone A, B, C, D, or E), plot dimension category, and billing quarter.",
+        "detailUr": "اپنا 8 ہندسوں کا کنزیومر نمبر، زون (A تا E) اور مکان کے رقبے کا سلیب چیک کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Pay at Bank of Khyber or Post Office",
-        "titleUr": "بینک آف خیبر یا ڈاکخانے میں جمع کروائیں",
-        "detailEn": "Submit bill payment at any designated Bank of Khyber branch or post office counter.",
-        "detailUr": "مقررہ تاریخ تک بینک آف خیبر یا ڈاکخانے میں بل ادا کریں۔"
+        "titleEn": "Pay Digitally via 1Bill or Bank Counter",
+        "titleUr": "1Bill یا بینک کاؤنٹر سے ادا کریں",
+        "detailEn": "Pay through Bank of Khyber (BOK) mobile app, 1Link/1Bill online banking, EasyPaisa/JazzCash, or at any physical BOK / Pakistan Post counter.",
+        "detailUr": "بینک آف خیبر ایپ، ایزی پیسہ یا بینک کاؤنٹر پر بل جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Lodge Billing Dispute via Helpline 1334 or App",
+        "titleUr": "ہیلپ لائن 1334 یا ایپ پر بلنگ شکایت درج کریں",
+        "detailEn": "If billed for incorrect plot size or an inactive connection, dial 1334 or open the 'Safa Pekhawar' app to request a Zonal Revenue Inspector site survey.",
+        "detailUr": "اگر بل غلط رقبے یا بند کنکشن کا آیا ہو تو 1334 ملائیں یا صفا پیخاور ایپ میں معائنے کی درخواست دیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Obtain Revised Challan from Zonal Office",
+        "titleUr": "زونل دفتر سے درست شدہ چالان حاصل کریں",
+        "detailEn": "Following the site survey report, the Zonal Revenue Officer issues a corrected bill voucher with waived late payment penalties.",
+        "detailUr": "زونل انسپکٹر کی رپورٹ کے بعد نیا درست شدہ بل جاری کیا جاتا ہے۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "What is the WSSP Peshawar customer helpline?",
-        "questionUr": "ڈبلیو ایس ایس پی پشاور کا ہیلپ لائن نمبر کیا ہے؟",
-        "answerEn": "Call toll-free 1337 or WSSP head office at 091-9211960.",
-        "answerUr": "شکایات یا واٹر ٹینکر کے لیے 1337 یا 091-9211960 پر کال کریں۔"
+        "questionEn": "What should I do if my WSSP water bill shows an incorrect plot size or inflated arrears?",
+        "questionUr": "اگر ڈبلیو ایس ایس پی کے بل میں مکان کا رقبہ غلط ہو یا پرانے بقایا جات زیادہ لکھے ہوں تو کیا کریں؟",
+        "answerEn": "Do not pay the inflated bill. Immediately lodge a formal dispute by calling toll-free helpline 1334 or registering a complaint on the 'Safa Pekhawar' mobile app. Request a 'Field Verification Survey'. A WSSP Zonal Revenue Inspector will visit your property, measure the plot, verify active water supply days, and issue a revised manual correction voucher at your Zonal Office.",
+        "answerUr": "غلط بل ادا نہ کریں۔ فوری طور پر ہیلپ لائن 1334 پر کال کریں یا صفا پیخاور ایپ پر شکایت درج کروا کر 'فیلڈ سروے' کی درخواست دیں۔ زونل انسپکٹر موقع پر آ کر رقبہ چیک کرے گا اور زونل دفتر سے درست شدہ نیا چالان جاری کرے گا۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WSSP Peshawar Water Bill Guide 2026: Tariff Slabs, Payment Points & 1337 Helpline?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "Which WSSP Zonal Office handles my area in Peshawar?",
+        "questionUr": "پشاور میں میرا علاقہ ڈبلیو ایس ایس پی کے کس زونل دفتر کے ماتحت آتا ہے؟",
+        "answerEn": "Peshawar is divided into 5 administrative zones: Zone A (Peshawar City & Interior Walled City), Zone B (University Town, Gulbahar, Cantonment surrounds), Zone C (Charsadda Road, Larama, Pajaggi), Zone D (Kohat Road, Scheme Chowk, Badaber), and Zone E (Hayatabad Phase 1–7 and Industrial Estate). The head office is located in Phase 7, Hayatabad.",
+        "answerUr": "ڈبلیو ایس ایس پی کے 5 زونز ہیں: زون اے (اندرون پشاور شہر)، زون بی (یونیورسٹی ٹاؤن و گلبہار)، زون سی (چارسدہ روڈ و لرامہ)، زون ڈی (کوہاٹ روڈ و سکیم چوک) اور زون ای (حیات آباد فیز 1 تا 7)۔ ہیڈ آفس فیز 7 حیات آباد میں واقع ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Can I download a duplicate WSSP Peshawar water bill online?",
+        "questionUr": "کیا ڈبلیو ایس ایس پی پشاور کا ڈپلیکیٹ واٹر بل آن لائن ڈاؤن لوڈ ہو سکتا ہے؟",
+        "answerEn": "Currently, WSSP does not host a public web PDF duplicate download portal like electricity companies (PESCO). However, you can retrieve your outstanding balance and digital payment bill code via the 'Safa Pekhawar' mobile app or by providing your Consumer Number via 1Bill on your banking app.",
+        "answerUr": "ڈبلیو ایس ایس پی کی ویب سائٹ پر بجلی کی طرح پی ڈی ایف ڈاؤن لوڈ پورٹل نہیں ہے، تاہم آپ 'صفا پیخاور' موبائل ایپ یا بینکنگ ایپس میں 1Bill کے ذریعے اپنا بل اور واجب الادا رقم چیک اور ادا کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "How do I report low water pressure, broken pipelines, or request a water bowser in Peshawar?",
+        "questionUr": "پشاور میں پانی کے کم پریشر، پائپ لائن ٹوٹنے یا واٹر باؤزر (ٹینکر) منگوانے کے لیے کیا طریقہ ہے؟",
+        "answerEn": "Call WSSP 24/7 central dispatch at 1334 or 091-9211960. In emergencies where tube-well power outages disrupt supply for more than 24 hours, WSSP provides subsidized water bowsers to registered domestic consumers in affected union councils.",
+        "answerUr": "ڈبلیو ایس ایس پی کے کنٹرول روم 1334 یا 091-9211960 پر کال کریں۔ ٹیوب ویل خرابی یا بجلی کے تعطل کی صورت میں متعلقہ یوسی کے رہائشیوں کے لیے سرکاری واٹر باؤزر (ٹینکر) بھیجا جاتا ہے۔"
       }
     ],
-    "contentEn": "## WSSP Peshawar (Water & Sanitation Services Peshawar) Guide 2026\nWSSP manages municipal water supply, tube-wells, and solid waste collection across Peshawar.",
-    "contentUr": "## ڈبلیو ایس ایس پی پشاور رہنمائی 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی اور صفائی کی ذمہ دار ہے۔",
+    "contentEn": "## WSSP Peshawar (Water & Sanitation Services Peshawar) Comprehensive Guide 2026\nThe **Water & Sanitation Services Peshawar (WSSP)** is a public sector utility company owned by the Government of Khyber Pakhtunkhwa. It is responsible for potable water delivery, tube-well operations, sewerage maintenance, and solid waste collection across the provincial capital of Peshawar.\n\n---\n\n## Residential & Commercial Tariff Structure in Peshawar\nUnlike volumetric metered systems in some industrial zones, Peshawar's domestic water utility operates primarily on a **Fixed Plot-Size Slab Tariff** billed either monthly or quarterly:\n\n1. **Small Domestic (Under 5 Marla)**: Nominal flat charge of PKR 300 to PKR 400 per month covering basic pipeline supply and daily sanitation services.\n2. **Medium Domestic (5 Marla to 10 Marla)**: PKR 500 to PKR 700 per month.\n3. **Large Domestic (1 Kanal to 2 Kanal+)**: PKR 1,000 to PKR 1,500 per month.\n4. **Commercial Units (Shops, Bakeries, Private Clinics)**: Tiered commercial category rate starting from PKR 1,500 up to PKR 5,000 monthly.\n5. **Large Commercial & Plazas**: Assessed individually by the Zonal Revenue Directorate.\n\n---\n\n## 4-Step Billing Dispute & Overbilling Resolution Process\nIf you receive a bill with unjustified arrears, an incorrect plot size category, or charges for a disconnected pipeline, follow this formal resolution hierarchy:\n\n### Step 1: Lodge Complaint on Helpline 1334 or Safa Pekhawar App\nDial **1334** (toll-free from any mobile or landline) or submit a ticket with property photos on the **Safa Pekhawar** app. Note down your unique **Complaint Ticket Reference Number**.\n\n### Step 2: Site Inspection by Zonal Revenue Inspector\nA field supervisor from your designated municipal zone (Zone A, B, C, D, or E) will visit your premises within 3 to 5 business days to verify the actual plot area and operational pipeline status.\n\n### Step 3: Revised Assessment & Arrears Adjustment\nThe inspector submits an official verification report to the Zonal Revenue Officer (ZRO). If the dispute is upheld, old erroneous arrears are credited back, and late payment surcharges are legally cancelled.\n\n### Step 4: Collect Corrected Payment Voucher\nVisit your local WSSP Zonal Office to collect the amended bank deposit challan or refresh your 1Bill consumer number on mobile banking.\n\n---\n\n## WSSP Peshawar 5 Municipal Zones & Office Locations\n- **Zone A (Peshawar City)**: Covers interior walled city, Lahori Gate, Kohati, Hashtnagri, and Ganj.\n- **Zone B (Town & Cantonment Area)**: University Town, Gulbahar, Nauthia, and surrounding cantt perimeters.\n- **Zone C (Northern Suburbs)**: Charsadda Road, Larama, Pajaggi, and Shahi Bagh zone.\n- **Zone D (Southern Suburbs)**: Kohat Road, Scheme Chowk, Landi Arbab, and Badaber boundaries.\n- **Zone E (Hayatabad)**: Hayatabad Phase 1 through Phase 7, PDA complexes, and Industrial Estate.\n- **Central Head Office**: Plot 33, Street 13, Sector E-8, Phase 7, Hayatabad, Peshawar (Phone: 091-9211960 / Helpline: 1334).",
+    "contentUr": "## ڈبلیو ایس ایس پی پشاور واٹر بل اور سروسز گائیڈ 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی، سیوریج اور سالڈ ویسٹ مینجمنٹ کی ذمہ دار ہے۔\n\n### بلنگ تنازعات اور غلط بل کی درستگی کا طریقہ\n1۔ **ہیلپ لائن 1334 یا صفا پیخاور ایپ پر شکایت درج کریں**: ٹول فری نمبر 1334 پر کال کر کے کمپلینٹ نمبر حاصل کریں۔\n2۔ **فیلڈ سروے**: زونل انسپکٹر آپ کے مکان کے رقبے اور کنکشن کا موقع پر معائنہ کرے گا۔\n3۔ **بقایا جات کی معافی اور نیا بل**: رپورٹ کے بعد پرانے غلط بقایا جات ختم کر کے نیا درست شدہ بل جاری کیا جاتا ہے۔\n4۔ **ادائیگی کے ذرائع**: درست شدہ بل بینک آف خیبر یا 1Bill کے ذریعے آن لائن ادا کریں۔",
     "relatedSlugs": [
       "/bills/pesco-bill-check-online",
       "/bills/wasa-lahore-bill-check-online",
@@ -10341,8 +10422,8 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Smart CNIC (Resident Citizen)",
-        "serviceUr": "اسمارٹ شناختی کارڈ (مقامی شہری)",
+        "serviceEn": "Smart CNIC (Resident Citizen 18+)",
+        "serviceUr": "اسمارٹ شناختی کارڈ (مقامی شہری 18+)",
         "normal": "PKR 750 (Normal)",
         "urgent": "PKR 1,500 (Urgent)",
         "executive": "PKR 2,500 (Executive)",
@@ -10357,59 +10438,87 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "10 Years"
       },
       {
-        "serviceEn": "POC (Pakistan Origin Card - Foreign Spouse)",
-        "serviceUr": "پی او سی (غیر ملکی شریک حیات)",
-        "normal": "$150 USD",
+        "serviceEn": "POC (Pakistan Origin Card - Foreign Spouse / Ex-Citizen)",
+        "serviceUr": "پی او سی (غیر ملکی شریک حیات / سابق شہری)",
+        "normal": "$150 USD (5 Years)",
         "urgent": "$250 USD",
         "executive": "$350 USD",
         "validity": "5 Years"
+      },
+      {
+        "serviceEn": "CRC / B-Form & Smart Juvenile Card (Minors under 18)",
+        "serviceUr": "بے فارم اور اسمارٹ جووینائل کارڈ (18 سال سے کم عمر)",
+        "normal": "B-Form PKR 50 / Juvenile PKR 750",
+        "urgent": "Exec B-Form PKR 500",
+        "executive": "Juvenile Exec PKR 2,500",
+        "validity": "Until Age 18"
+      },
+      {
+        "serviceEn": "Family Registration Certificate (FRC - By Birth / Marriage)",
+        "serviceUr": "فیملی رجسٹریشن سرٹیفکیٹ (ایف آر سی)",
+        "normal": "PKR 1,000 (Pak-ID Digital)",
+        "urgent": "PKR 1,000 (NRC Counter)",
+        "executive": "Instant PDF / Printed Copy",
+        "validity": "Official Record Verification"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Identify Your Citizenship & Residency Status",
-        "titleUr": "اپنی شہریت اور رہائش کی نوعیت دیکھیں",
-        "detailEn": "Resident Pakistani = CNIC; Overseas/Dual Citizen = NICOP; Foreign Spouse = POC.",
-        "detailUr": "مقامی شہری شناختی کارڈ، اوورسیز نائیکوپ اور غیر ملکی شریک حیات پی او سی منتخب کریں۔"
+        "titleEn": "Determine Your Residency, Age & Citizenship Status",
+        "titleUr": "اپنی شہریت، رہائش اور عمر کے مطابق دستاویز کا تعین کریں",
+        "detailEn": "Resident adult (18+) = CNIC; Overseas/Dual citizen = NICOP; Foreign spouse/ex-national = POC; Minor (0-18) = B-Form/Juvenile Card; Family lineage proof = FRC.",
+        "detailUr": "مقامی بالغ شہری شناختی کارڈ، اوورسیز نائیکوپ، غیر ملکی شریک حیات پی او سی، بچے بے فارم اور خاندانی تصدیق کے لیے ایف آر سی منتخب کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Apply Online via Pak-ID Portal or NRC Center",
-        "titleUr": "پاک آئی ڈی پورٹل یا قریبی نادرا سنٹر جائیں",
-        "detailEn": "Submit your digital application at id.nadra.gov.pk or visit an Executive NADRA Registration Center.",
-        "detailUr": "ویب سائٹ id.nadra.gov.pk پر اپلائی کریں۔"
+        "titleEn": "Submit Digital Application via Pak-ID Mobile App or Portal",
+        "titleUr": "پاک آئی ڈی ایپ یا پورٹل پر آن لائن درخواست جمع کروائیں",
+        "detailEn": "Access id.nadra.gov.pk or use the Pak-ID app for automated live facial biometrics, fingerprint capture, and digital document uploads.",
+        "detailUr": "ویب سائٹ id.nadra.gov.pk یا پاک آئی ڈی موبائل ایپ سے تصویر اور فنگر پرنٹ آن لائن تصدیق کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Track Application Status & Receive Card",
-        "titleUr": "ٹریکنگ آئی ڈی سے سٹیٹس معلوم کریں",
-        "detailEn": "Track delivery through SMS short-code 8400 or Pak-ID tracking portal.",
-        "detailUr": "8400 پر ایس ایم ایس کر کے ڈلیوری چیک کریں۔"
+        "titleEn": "Pay Digital PSID Challan & Track Courier Delivery",
+        "titleUr" : "ڈیجیٹل فیس ادا کریں اور ہوم ڈلیوری ٹریک کریں",
+        "detailEn": "Pay fee via Credit Card, 1Bill, or ePay. Cards are securely delivered to your registered doorstep address worldwide via DHL or Pakistan Post.",
+        "detailUr": "کریڈٹ کارڈ یا ون بل سے فیس ادا کریں۔ نادرا آپ کے پتے پر کارڈ بذریعہ کوریئر ارسال کرتا ہے۔"
       }
     ],
     "faqs": [
       {
         "questionEn": "Can a NICOP holder travel to Pakistan without a visa?",
         "questionUr": "کیا نائیکوپ کا حامل بغیر ویزا پاکستان سفر کر سکتا ہے؟",
-        "answerEn": "Yes. Under Section 10 of the NADRA Ordinance 2000, a valid NICOP serves as a permanent visa-free entry document for Pakistan on any foreign passport.",
+        "answerEn": "Yes. Under Section 10 of the NADRA Ordinance 2000, a valid NICOP serves as a permanent visa-free entry document for Pakistan on any foreign passport without requiring a separate visa.",
         "answerUr": "جی ہاں! نائیکوپ ہولڈرز کسی بھی غیر ملکی پاسپورٹ پر بغیر ویزا لامحدود مدت کے لیے پاکستان آ سکتے ہیں۔"
       },
       {
         "questionEn": "Can a POC card holder buy property and open bank accounts in Pakistan?",
         "questionUr": "کیا پی او سی ہولڈر پاکستان میں جائیداد خرید سکتا ہے اور بینک اکاؤنٹ کھول سکتا ہے؟",
-        "answerEn": "Yes. POC holders enjoy visa-free entry, the right to purchase and sell residential real estate, open Roshan Digital Accounts (RDA), and obtain local employment without requiring a work permit.",
-        "answerUr": "جی ہاں! پی او سی کارڈ ہولڈرز پاکستان میں رہائشی پراپرٹی خرید سکتے ہیں اور بینک اکاؤنٹس کھول سکتے ہیں۔"
+        "answerEn": "Yes. POC holders enjoy multiple visa-free entries, indefinite stay, the right to purchase, own, and dispose of residential and commercial property, open local/RDA bank accounts, and work in Pakistan without a separate visa or work permit (agricultural land purchases remain subject to provincial NOC restrictions).",
+        "answerUr": "جی ہاں! پی او سی کارڈ ہولڈرز پاکستان میں رہائشی و تجارتی پراپرٹی خرید سکتے ہیں، بینک اکاؤنٹ چلا سکتے ہیں اور بغیر ورک پرمٹ نوکری کر سکتے ہیں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Can a Pakistani dual national hold both a domestic CNIC and an overseas NICOP?",
+        "questionUr": "کیا دوہری شہریت والا پاکستانی بیک وقت شناختی کارڈ اور نائیکوپ رکھ سکتا ہے؟",
+        "answerEn": "No. Under NADRA regulations, an individual cannot hold two active identity cards simultaneously. When applying for a NICOP with dual nationality proof, your domestic CNIC number remains identical but the card record in the national database is converted to an overseas NICOP profile.",
+        "answerUr": "نہیں! نادرا قواعد کے مطابق ایک شخص کے پاس دو مختلف کارڈ نہیں ہو سکتے۔ نائیکوپ بننے پر شناختی کارڈ نمبر وہی رہتا ہے مگر وہ اوورسیز نائیکوپ میں تبدیل ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "What should parents obtain for a child under 18 living in Pakistan vs abroad?",
+        "questionUr": "18 سال سے کم عمر بچوں کے لیے پاکستان اور بیرون ملک کون سی دستاویز درکار ہے؟",
+        "answerEn": "For children under 18 residing in Pakistan, parents should obtain a Child Registration Certificate (CRC / B-Form) or a Smart Juvenile Card (for ages 9–18 with chip and photo). For children born abroad or residing overseas to Pakistani parents, parents should apply for a Minor NICOP, which enables visa-free travel to Pakistan.",
+        "answerUr": "پاکستان میں مقیم بچوں کے لیے بے فارم (CRC) یا اسمارٹ جووینائل کارڈ بنوائیں۔ بیرون ملک مقیم بچوں کے لیے مائنر نائیکوپ بنوائیں تاکہ وہ بغیر ویزا پاکستان سفر کر سکیں۔"
+      },
+      {
+        "questionEn": "How does a Family Registration Certificate (FRC) differ from CNIC, NICOP, and POC?",
+        "questionUr": "فیملی رجسٹریشن سرٹیفکیٹ (FRC) شناختی کارڈز سے کیسے مختلف ہے؟",
+        "answerEn": "An FRC is not a personal identity card, but an official NADRA certificate verifying the complete legal structure of a family tree in the national database. It is issued in two formats: FRC with Parents & Siblings (By Birth) or FRC with Spouse & Children (By Marriage), and is mandatory for foreign embassy visa processing, inheritance distribution, and estate settlement.",
+        "answerUr": "ایف آر سی کوئی انفرادی شناختی کارڈ نہیں بلکہ خاندان کے تمام افراد کے شجرہ نسب کا مصدقہ نادرا سرٹیفکیٹ ہے جو ویزا فائلنگ، وراثت اور قانونی معاملات میں کام آتا ہے۔"
       }
     ],
-    "contentEn": "## NADRA Identity Documents: Comprehensive Comparison Matrix (2026)\n\n| Feature | CNIC (Smart ID) | NICOP (Overseas Card) | POC (Pakistan Origin Card) |\n| :--- | :--- | :--- | :--- |\n| **Eligibility** | Resident Pakistani citizens (age 18+) | Pakistani citizens living abroad or dual nationals | Foreign spouses of Pakistanis / former citizens |\n| **Visa-Free Entry to Pakistan** | No (requires Pakistani passport) | **Yes (100% Visa-Free on foreign passport)** | **Yes (100% Visa-Free entry)** |\n| **Right to Vote in Pakistan Elections** | Yes | Yes (Overseas polling mechanisms) | No (Foreign national) |\n| **Right to Buy Commercial Real Estate** | Yes (Full rights) | Yes (Full rights) | Residential only (Agricultural/commercial restricted) |\n| **Card Validity Period** | 10 Years | 10 Years (5 Years for minors) | 5 Years |\n| **Online Application Portal** | `id.nadra.gov.pk` | `id.nadra.gov.pk` | `id.nadra.gov.pk` |",
-    "contentUr": "## شناختی کارڈ، نائیکوپ اور پی او سی موازنہ 2026\nنادرا کے تمام شناختی کارڈز کی تفصیلی رہنمائی اور قانونی حقوق کا جائزہ۔",
+    "contentEn": "## NADRA Identity Documents: Comprehensive Comparison Matrix (2026)\n\nChoosing the correct identity document ensures seamless civil rights, domestic banking, property transactions, and international travel to Pakistan without unnecessary visa complications.\n\n| Identity Document | Primary Eligibility | Visa-Free Entry to Pakistan | Real Estate & Property Rights | Domestic Banking & SIM Registration | Election Voting Rights |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Smart CNIC** | Resident Pakistani citizens (Age 18+) | Requires Pakistani Passport | 100% Full Rights (All provinces) | Standard CNIC Biometrics | Yes (Domestic polling) |\n| **Smart NICOP** | Pakistani citizens residing abroad / Dual nationals | **100% Visa-Free on foreign passport** | 100% Full Rights (All provinces) | Standard & Roshan Digital Accounts | Yes (Overseas mechanism) |\n| **POC (Pakistan Origin Card)** | Foreign spouses of Pakistanis / Former nationals | **100% Visa-Free (Indefinite stay)** | Residential & Commercial (Agri NOC) | Local Accounts & RDA Eligible | No (Foreign national) |\n| **CRC / B-Form** | Pakistani minors (Age 0–18) | Requires Passport / Endorsement | Via Legal Guardian | Minor Savings Accounts | No (Underage) |\n| **Smart Juvenile Card** | Minors aged 9 to 18 | Requires Passport | Via Legal Guardian | Student & Minor Accounts | No (Underage) |\n| **FRC (Family Certificate)** | Entire registered family tree | Verification Document | Proof of Lineage / Succession | Required for Account Succession | N/A (Certificate) |\n\n---\n\n## Which Document Do You Actually Need? (Practical Decision Matrix)\n\n### Scenario 1: \"I live in Pakistan, hold Pakistani citizenship, and am 18 or older.\"\n* **Your Required Document:** **Smart CNIC (National Identity Card)**.\n* **Key Benefits:** Required for opening commercial bank accounts, purchasing SIM cards, taking university entry exams, buying vehicles, and voting.\n* **Official Fee:** Normal PKR 750 | Urgent PKR 1,500 | Executive PKR 2,500.\n\n### Scenario 2: \"I live abroad (or hold dual nationality in the UK, USA, Canada, Europe, or Australia) and travel to Pakistan regularly.\"\n* **Your Required Document:** **Smart NICOP (National Identity Card for Overseas Pakistanis)**.\n* **Key Benefits:** Allows you to board flights and enter Pakistan on your foreign passport without applying for a Pakistani visa. Grants 100% full domestic property buying and inheritance rights.\n* **Official Fee:** Zone A (USA/UK/EU) $39 USD (PKR ~11,000) | Zone B (Gulf/Middle East) $20 USD.\n\n### Scenario 3: \"I am a foreign citizen married to a Pakistani national, or I surrendered Pakistani nationality for a country that disallows dual citizenship (e.g., Germany, Japan, Austria, Singapore).\"\n* **Your Required Document:** **POC (Pakistan Origin Card)**.\n* **Key Benefits:** Multiple visa-free entries to Pakistan, exemption from police reporting/foreigners registration, employment rights without work visas, and permission to open bank accounts and own residential real estate.\n* **Official Fee:** $150 USD for a 5-Year validity period via `id.nadra.gov.pk`.\n\n### Scenario 4: \"My child is under 18 years old and needs identity documentation for school admission, passport issuance, or foreign visa processing.\"\n* **Your Required Document:** **Child Registration Certificate (CRC / B-Form) or Smart Juvenile Card**.\n* **Key Benefits:** CRC (B-Form) is issued from birth based on the Union Council birth certificate. For children aged 9–18, NADRA also offers the chip-based **Juvenile Card** (PKR 750) containing photograph and biometric fingerprints.\n\n### Scenario 5: \"I am applying for a Schengen/UK/US family visa, executing a property inheritance transfer, or opening a joint family estate account.\"\n* **Your Required Document:** **Family Registration Certificate (FRC)**.\n* **Key Benefits:** Verifies your verified legal lineage in the NADRA database either by birth (parents and siblings) or by marriage (spouse and children). Can be downloaded instantly in digital PDF format via the Pak-ID app for PKR 1,000.",
+    "contentUr": "## نادرا شناختی دستاویزات کا جامع موازنہ اور فیصلہ ساز گائیڈ 2026\n\nپاکستان میں مقیم یا بیرون ملک مقیم شہریوں کے لیے صحیح شناختی کارڈ کا انتخاب بنیادی شہری حقوق، بغیر ویزا پاکستان آمد، بینکنگ اور جائیداد کی خرید و فروخت کے لیے انتہائی ضروری ہے۔\n\n### آپ کو کون سی دستاویز درکار ہے؟ (عملی فیصلے کی گائیڈ)\n1. **پاکستان میں مقیم 18 سال یا زائد عمر کے شہری:** اسمارٹ قومی شناختی کارڈ (Smart CNIC) بنوائیں۔ فیس نارمل 750 روپے، ارجنٹ 1500 روپے۔\n2. **بیرون ملک مقیم پاکستانی یا دوہری شہریت کے حامل:** اوورسیز نائیکوپ (NICOP) بنوائیں تاکہ غیر ملکی پاسپورٹ پر بغیر ویزا پاکستان آ سکیں اور پاکستان میں مکمل جائیداد کے حقوق حاصل رہیں۔\n3. **غیر ملکی شریک حیات یا ترک شہریت کرنے والے:** پاکستان اوریجن کارڈ (POC) بنوائیں جس کی بدولت بغیر ویزا پاکستان آمد، رہائش، بینکنگ اور نوکری کی اجازت ملتی ہے۔\n4. **18 سال سے کم عمر بچے:** بے فارم (CRC) یا 9 سے 18 سال کے بچوں کے لیے اسمارٹ جووینائل کارڈ بنوائیں۔\n5. **فیملی ویزا یا وراثت کے لیے خاندانی شجرہ نسب کا ثبوت:** فیملی رجسٹریشن سرٹیفکیٹ (FRC) نادرا پورٹل سے 1000 روپے میں حاصل کریں۔",
     "relatedSlugs": [
       "/nadra/nicop-apply-online",
       "/nadra/cnic-kaise-banaye",
@@ -10515,37 +10624,61 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "fbr-filer-status-check-cnic",
     "fullPath": "/tax/fbr-filer-status-check-cnic",
     "categoryId": "tax",
-    "titleEn": "FBR Filer Status Check by CNIC 2026 – Active Taxpayer List (ATL)",
-    "titleUr": "ایف بی آر فائلر سٹیٹس چیک شناختی کارڈ سے 2026 – ایکٹو ٹیکس پیئر لسٹ",
-    "metaDescriptionEn": "Check FBR filer or non-filer status online 2026 by 13-digit CNIC or SMS 9966. Verify Active Taxpayer List (ATL) status to avoid 100% withholding tax penalty.",
-    "metaDescriptionUr": "شناختی کارڈ نمبر یا 9966 ایس ایم ایس کے ذریعے ایف بی آر فائلر سٹیٹس آن لائن چیک کریں اور اضافی ودہولڈنگ ٹیکس سے بچیں۔",
-    "directAnswerEn": "To check your FBR filer status online in 2026, visit fbr.gov.pk and open the Active Taxpayer List (ATL) inquiry tool, or SMS 'ATL <space> 13-digit CNIC' to 9966. If your status displays as 'Active', you qualify for reduced withholding tax rates on banking transactions, property, and vehicle registrations.",
-    "directAnswerUr": "ایف بی آر فائلر سٹیٹس چیک کرنے کے لیے fbr.gov.pk پر جا کر ایکٹو ٹیکس پیئر لسٹ (ATL) چیک کریں یا اپنے موبائل سے 'ATL <space> شناختی کارڈ نمبر' لکھ کر 9966 پر ایس ایم ایس بھیجیں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "FBR Filer Status Check by CNIC 2026: ATL Inquiry & Filer vs Non-Filer Tax Rates",
+    "titleUr": "ایف بی آر فائلر سٹیٹس چیک 2026: اے ٹی ایل لسٹ اور فائلر بنام نان فائلر ٹیکس ریٹس",
+    "metaDescriptionEn": "Check FBR filer vs non-filer status online 2026 via CNIC or SMS 9966. Complete 2026 Withholding Tax (WHT) comparison on property, banking, cash withdrawal, and cars.",
+    "metaDescriptionUr": "شناختی کارڈ یا 9966 ایس ایم ایس سے ایف بی آر فائلر سٹیٹس چیک کریں۔ پراپرٹی، گاڑی، بینک منافع اور کیش نکلوانے پر فائلر اور نان فائلر ودہولڈنگ ٹیکس کا مکمل موازنہ۔",
+    "directAnswerEn": "To check your FBR active filer status in 2026, visit fbr.gov.pk under 'Active Taxpayer List (Income Tax)' or SMS 'ATL [13-digit CNIC]' to 9966. Being an Active Filer grants massive tax savings: 0% tax on cash withdrawals (vs 0.6%-0.9% for non-filers), 15% tax on bank profits (vs 30%-35%), 1.5%-3% advance tax on buying property under Sec 236K (vs 10.5%-18.5% for non-filers), and significantly lower vehicle registration taxes.",
+    "directAnswerUr": "ایف بی آر فائلر سٹیٹس چیک کرنے کے لیے fbr.gov.pk پر ایکٹو ٹیکس پیئر لسٹ (ATL) دیکھیں یا 9966 پر 'ATL <شناختی کارڈ>' ایس ایم ایس کریں۔ فائلر ہونے سے بینک کیش پر 0 فیصد ٹیکس (نان فائلر پر 0.6 تا 0.9 فیصد)، منافع پر 15 فیصد (نان فائلر 35 فیصد)، اور پراپرٹی خریداری پر 1.5 تا 3 فیصد ٹیکس لگتا ہے جبکہ نان فائلر پر 18.5 فیصد تک ٹیکس عائد ہوتا ہے۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
-      "name": "FBR Active Taxpayer List Portal",
+      "name": "Federal Board of Revenue (FBR) ATL Portal",
       "url": "https://fbr.gov.pk/"
     },
     "author": {
       "name": "Usman Ali Raza",
-      "role": "Financial & Loan Scheme Desk Lead"
+      "role": "Taxation & Financial Regulatory Lead"
     },
     "feeStructure": [
       {
-        "serviceEn": "Online FBR ATL Inquiry",
-        "serviceUr": "آن لائن فائلر سٹیٹس چیک",
+        "serviceEn": "Online FBR ATL Web Check",
+        "serviceUr": "آن لائن فائلر سٹیٹس چیک (ویب)",
         "normal": "100% FREE",
-        "urgent": "Instant Portal",
-        "executive": "FBR Web Gateway",
-        "validity": "Live Status"
+        "urgent": "Instant Real-Time",
+        "executive": "Official FBR Gateway",
+        "validity": "Live System"
       },
       {
-        "serviceEn": "SMS Verification via 9966",
-        "serviceUr": "ایس ایم ایس 9966 تصدیق",
-        "normal": "Standard SMS Rate (~PKR 2)",
-        "urgent": "Instant (10 Secs)",
+        "serviceEn": "SMS ATL Verification via 9966",
+        "serviceUr": "ایس ایم ایس 9966 سے تصدیق",
+        "normal": "Standard SMS (~PKR 2)",
+        "urgent": "Instant (5-10 Secs)",
         "executive": "All Mobile Networks",
         "validity": "Real-Time"
+      },
+      {
+        "serviceEn": "Late ATL Surcharge (Individual Taxpayer)",
+        "serviceUr": "تاخیر سے ریٹرن جمع کروانے پر سرچارج (انفرادی)",
+        "normal": "PKR 1,000",
+        "urgent": "Instant 1Bill CPR",
+        "executive": "Immediate ATL Activation",
+        "validity": "Tax Year 2026"
+      },
+      {
+        "serviceEn": "Late ATL Surcharge (AOP / Partnership)",
+        "serviceUr": "تاخیر سے ریٹرن سرچارج (پارٹنرشپ / فرم)",
+        "normal": "PKR 10,000",
+        "urgent": "Instant 1Bill CPR",
+        "executive": "Immediate ATL Activation",
+        "validity": "Tax Year 2026"
+      },
+      {
+        "serviceEn": "Late ATL Surcharge (Private / Public Co.)",
+        "serviceUr": "تاخیر سے ریٹرن سرچارج (کمپنی)",
+        "normal": "PKR 20,000",
+        "urgent": "Instant 1Bill CPR",
+        "executive": "Immediate ATL Activation",
+        "validity": "Tax Year 2026"
       }
     ],
     "steps": [
@@ -10553,46 +10686,59 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 1,
         "titleEn": "Open FBR Active Taxpayer Inquiry Tool",
         "titleUr": "ایف بی آر اے ٹی ایل پورٹل کھولیں",
-        "detailEn": "Go to fbr.gov.pk and navigate to 'Online Services' -> 'Active Taxpayer List (Income Tax)'.",
+        "detailEn": "Navigate to fbr.gov.pk -> 'Online Services' -> 'Active Taxpayer List (Income Tax)'.",
         "detailUr": "ویب سائٹ fbr.gov.pk پر جا کر ایکٹو ٹیکس پیئر انکوائری کھولیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Select CNIC Parameter & Enter 13 Digits",
+        "titleEn": "Select CNIC & Type 13 Digits",
         "titleUr": "شناختی کارڈ نمبر درج کریں",
-        "detailEn": "Choose 'CNIC' from the dropdown and type your 13-digit CNIC without dashes (e.g., 3520112345671).",
+        "detailEn": "Select 'CNIC' as the search parameter and enter your 13-digit CNIC without dashes (e.g. 3520112345671).",
         "detailUr": "بغیر ڈیش کے 13 ہندسوں کا شناختی کارڈ نمبر لکھیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Input Security Captcha & Submit",
-        "titleUr": "کیپچا کوڈ لکھ کر جمع کروائیں",
-        "detailEn": "Enter the verification captcha code displayed on screen and click 'Verify'.",
-        "detailUr": "سیکیورٹی کوڈ درج کر کے تصدیق کے بٹن پر کلک کریں۔"
+        "titleEn": "Check Verification Date & Active Status",
+        "titleUr": "تصدیق کی تاریخ اور سٹیٹس دیکھیں",
+        "detailEn": "Enter captcha security code and click 'Verify'. Confirm that your status shows in green text as 'Active'.",
+        "detailUr": "سیکیورٹی کوڈ لکھ کر تصدیق کریں اور دیکھیں کہ اسٹیٹس 'Active' ظاہر ہو رہا ہے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "If Inactive: Pay ATL Surcharge Challan in Iris",
+        "titleUr": "اگر اسٹیٹس ان ایکٹو ہو تو سرچارج چالان جمع کریں",
+        "detailEn": "Generate an ATL Surcharge PSID in Iris (Form 181 / Challan 1000) and pay via online banking to activate instantly.",
+        "detailUr": "آئرس پورٹل سے 1000 روپے کا اے ٹی ایل سرچارج چالان بنا کر آن لائن بینکنگ سے ادا کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How do I check my FBR filer status through SMS?",
-        "questionUr": "ایس ایم ایس کے ذریعے فائلر سٹیٹس کیسے چیک کریں؟",
-        "answerEn": "Type 'ATL' followed by a space and your 13-digit CNIC without dashes (e.g., ATL 3520212345678) and send it to 9966. You will receive an instant reply showing your Active/Inactive status.",
-        "answerUr": "موبائل میسج میں 'ATL' لکھ کر اسپیس دیں، پھر 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر 9966 پر بھیج دیں۔"
+        "questionEn": "What are the biggest financial penalties of being a Non-Filer in Pakistan in 2026?",
+        "questionUr": "پاکستان میں نان فائلر رہنے کے سب سے بڑے مالی نقصانات اور ٹیکس کٹوتیاں کیا ہیں؟",
+        "answerEn": "Non-filers face punitive withholding tax penalties: 1) Up to 18.5% advance tax when purchasing immovable property (vs 1.5%-3% for filers); 2) 35% tax deducted on bank savings profits (vs 15% for filers); 3) 0.6%-0.9% tax on daily cash withdrawals exceeding PKR 50,000; 4) Triple vehicle registration and token tax rates; and 5) Legal restrictions barring non-filers from purchasing high-value residential or commercial plots.",
+        "answerUr": "نان فائلر پر بھاری ٹیکس کٹوتیاں عائد ہوتی ہیں: 1۔ پراپرٹی خریدنے پر 18.5 فیصد تک ٹیکس (فائلر پر صرف 1.5 تا 3 فیصد)، 2۔ بینک بچت منافع پر 35 فیصد ٹیکس (فائلر پر 15 فیصد)، 3۔ 50 ہزار سے زائد کیش نکلوانے پر کٹوتی، 4۔ گاڑی خریدنے اور ٹوکن پر ٹرپل ٹیکس، اور 5۔ مخصوص مالیت سے زائد پراپرٹی خریدنے پر قانونی پابندی۔"
       },
       {
-        "questionEn": "Why is my status showing 'Inactive' even after filing tax return?",
-        "questionUr": "ریٹرن جمع کروانے کے بعد بھی سٹیٹس Inactive کیوں ہے؟",
-        "answerEn": "If you filed your annual tax return after the official deadline, you must pay the ATL Surcharge (PKR 1,000 for individuals via CPR challan in Iris) to immediately activate your filer status on the ATL.",
-        "answerUr": "اگر آپ نے آخری تاریخ کے بعد ریٹرن فائل کیا ہے تو آپ کو 1000 روپے اے ٹی ایل سرچارج چالان جمع کروانا ہوگا تاکہ سٹیٹس فوری ایکٹو ہو۔"
+        "questionEn": "Why is my status showing 'Inactive' on ATL even after I submitted my income tax return?",
+        "questionUr": "انکم ٹیکس ریٹرن جمع کروانے کے بعد بھی پورٹل پر اسٹیٹس 'Inactive' کیوں آ رہا ہے؟",
+        "answerEn": "If you filed your annual income tax return after the statutory deadline (usually September 30 or official FBR extension date), the system requires payment of a Late Filing ATL Surcharge under Section 182A of the Income Tax Ordinance. For individual salaried persons and freelancers, the surcharge is PKR 1,000. Once paid via 1Bill in Iris, your status updates to 'Active' within 24 hours.",
+        "answerUr": "اگر آپ نے آخری تاریخ گزرنے کے بعد ریٹرن فائل کیا ہے تو سیکشن 182A کے تحت 1000 روپے اے ٹی ایل سرچارج (CPR Challan) ادا کرنا ہوگا۔ آن لائن ادائیگی کے 24 گھنٹے کے اندر آپ کا نام خودکار طور پر ایکٹو لسٹ میں شامل ہو جائے گا۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How do I check my FBR filer status via mobile SMS without internet?",
+        "questionUr": "بغیر انٹرنیٹ موبائل سے ایس ایم ایس کے ذریعے فائلر اسٹیٹس کیسے چیک کریں؟",
+        "answerEn": "Open your mobile SMS app, type 'ATL' followed by a space and your 13-digit CNIC (e.g., ATL 3520112345671), and send the message to 9966. You will receive a direct reply within 10 seconds detailing your Name, NTN, and Active/Inactive status.",
+        "answerUr": "موبائل میسج میں 'ATL' لکھیں، اسپیس دے کر 13 ہندسوں کا شناختی کارڈ نمبر لکھیں اور 9966 پر بھیج دیں۔ 10 سیکنڈ میں نام، این ٹی این اور ایکٹو/ان ایکٹو اسٹیٹس کا جوابی میسج آ جائے گا۔"
+      },
+      {
+        "questionEn": "Can an overseas Pakistani check and maintain active filer status?",
+        "questionUr": "کیا اوورسیز پاکستانی بھی فائلر اسٹیٹس چیک اور ایکٹو رکھ سکتے ہیں؟",
+        "answerEn": "Yes. Non-resident Pakistanis (NICOP/POC holders) can file their nil return or declare foreign remittances under Section 114 to maintain Active Filer status, allowing them to buy property and invest in Roshan Digital Accounts (RDA) without facing non-filer punitive advance taxes.",
+        "answerUr": "جی ہاں! سمندر پار پاکستانی اپنا نل (Nil) ریٹرن یا ترسیلات زر ڈکلیئر کر کے اپنا فائلر اسٹیٹس ایکٹو رکھ سکتے ہیں تاکہ پاکستان میں پراپرٹی خریدنے پر اضافی ٹیکس سے بچ سکیں۔"
       }
     ],
-    "contentEn": "## FBR Active Taxpayer List (ATL) Verification Guide\nChecking your status on the **Federal Board of Revenue (FBR)** Active Taxpayer List determines whether you are classified as an **Active Filer** or **Non-Filer** under the Finance Act 2026.\n\n| Verification Channel | Input Format | Response Time | Official Provider |\n| :--- | :--- | :--- | :--- |\n| **FBR Web Portal** | 13-Digit CNIC / 7-Digit NTN | Instant (< 2 seconds) | `fbr.gov.pk` |\n| **SMS Short Code** | `ATL [13-Digit CNIC]` to 9966 | ~10 Seconds | Telecommunication Gateway |\n| **FBR Asaan Tax App** | Biometric / Login PIN | Instant | FBR Mobile App |",
-    "contentUr": "## ایف بی آر فائلر سٹیٹس اور اے ٹی ایل چیک گائیڈ\nآن لائن اور ایس ایم ایس کے ذریعے ایکٹو ٹیکس پیئر لسٹ میں اپنا نام تصدیق کرنے کا آسان طریقہ۔",
+    "contentEn": "## FBR Active Taxpayer List (ATL) & Withholding Tax Guide 2026\nThe **Federal Board of Revenue (FBR)** maintains the computerized **Active Taxpayer List (ATL)**. Under the Finance Act 2026, Pakistan operates a dual-tier tax regime where non-filers (individuals who have not filed their annual income tax returns) face punitive advance withholding tax (WHT) rates on almost every formal financial transaction.\n\n---\n\n## 2026 Concrete Tax Rate Comparison: Filer vs Non-Filer\n\n| Financial Transaction | Relevant Tax Section | Active Filer Rate | Non-Filer Rate (Punitive) | Difference / Penalty |\n| :--- | :--- | :--- | :--- | :--- |\n| **Cash Withdrawal (> PKR 50,000/day)** | Section 231AB | **0% (100% Exempt)** | **0.6% – 0.9%** | Non-filers lose cash on every major bank withdrawal |\n| **Bank Profit / Savings Yield / Behbood** | Section 151 | **15%** | **30% – 35%** | More than double tax deducted from savings profits |\n| **Property Purchase (Buyer Advance Tax)** | Section 236K | **1.5% to 3.0%** | **10.5% to 18.5%** | Non-filers pay massive surcharges & face registry bars |\n| **Property Sale (Seller Capital Value Tax)** | Section 236C | **2.75% to 4.5%** | **8.5% to 11.5%** | Substantial deduction on gross land sale value |\n| **New Vehicle Registration / CC Tax** | Section 231B | **Standard Base Rate** | **200% to 300% (Triple)** | Heavy upfront cash penalty at Excise counter |\n| **Prize Bond & Lottery Winnings** | Section 156 | **15%** | **30%** | Double tax deduction on prize money |\n| **Dividend Income (Stock Market)** | Section 150 | **15%** | **30%** | Double tax on company profit payouts |\n\n---\n\n## 3 Fast Methods to Check Your FBR Filer Status\n\n### Method 1: Instant SMS Check (No Internet Needed)\n1. Open your SMS app.\n2. Type: `ATL [13-digit CNIC without dashes]` (e.g., `ATL 4210112345671`).\n3. Send to **9966**.\n4. You will receive an instant official reply: *\"CNIC: 42101-1234567-1, Name: [Your Name], Status: ACTIVE\"*.\n\n### Method 2: FBR Web Portal ATL Inquiry\n1. Visit `fbr.gov.pk` and click on **Active Taxpayer List (Income Tax)**.\n2. Select Parameter: **CNIC**.\n3. Enter your 13-digit National Identity Number and the on-screen CAPTCHA.\n4. Click **Verify** to view your filing record, return year, and ATL certificate.\n\n### Method 3: FBR Iris Mobile App\nLog into the **Asaan Tax / Iris** mobile app to download your updated **Active Taxpayer Certificate** directly in PDF format.\n\n---\n\n## How to Re-Activate 'Inactive' Status (Late Surcharge Guide)\nIf your status displays as 'Inactive' after submitting a late tax return:\n1. Log into your account at `iris.fbr.gov.pk`.\n2. Click on **e-Payments** > **Create Payment** > **Income Tax (ATL Surcharge)**.\n3. Select Tax Year **2026** and enter CPR amount: **PKR 1,000** for individuals.\n4. Generate the 17-digit PSID and pay via your mobile banking app (1Bill > 1Link).\n5. Your ATL status will automatically convert to **ACTIVE** within 24 hours.",
+    "contentUr": "## ایف بی آر فائلر بمقابلہ نان فائلر ٹیکس ریٹس گائیڈ 2026\nایف بی آر ایکٹو ٹیکس پیئر لسٹ (ATL) میں شامل ہونے کے مالی فوائد اور نان فائلر کے نقصانات کا موازنہ۔\n\n### 2026 میں فائلر اور نان فائلر ودہولڈنگ ٹیکس ریٹس\n- **کیش نکلوانا (50 ہزار سے زائد)**: فائلر پر 0 فیصد (مفت) جبکہ نان فائلر پر 0.6 تا 0.9 فیصد ٹیکس۔\n- **بینک منافع و بچت**: فائلر 15 فیصد جبکہ نان فائلر 35 فیصد ٹیکس ادا کرتا ہے۔\n- **پراپرٹی خریداری**: فائلر 1.5 تا 3 فیصد جبکہ نان فائلر 10.5 تا 18.5 فیصد ٹیکس دیتا ہے۔\n- **گاڑی رجسٹریشن**: نان فائلر پر فائلر کی نسبت تین گنا زیادہ ٹیکس عائد ہوتا ہے۔\n\n### ان ایکٹو (Inactive) اسٹیٹس ایکٹو کرنے کا طریقہ\nاگر تاخیر سے ریٹرن جمع کروایا ہو تو آئرس پورٹل سے 1000 روپے کا اے ٹی ایل سرچارج چالان جمع کروا کر اپنا اسٹیٹس فوری ایکٹو کریں۔",
     "relatedSlugs": [
       "/tax/how-to-become-tax-filer-pakistan-2026",
       "/tax/income-tax-calculator-salaried-2026",
@@ -13226,62 +13372,113 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "sehat-card-eligibility-check-by-cnic",
     "fullPath": "/health/sehat-card-eligibility-check-by-cnic",
     "categoryId": "health",
-    "titleEn": "Sehat Card Eligibility Check by CNIC 2026 – 8500 SMS & Portal",
-    "titleUr": "صحت کارڈ اہلیت چیک 2026 – 8500 ایس ایم ایس اور آن لائن پورٹل",
-    "metaDescriptionEn": "Check Sehat Sahulat Card eligibility online in 2026 by 13-digit CNIC or SMS to 8500. Free indoor medical treatment up to PKR 1 Million across empaneled hospitals.",
-    "metaDescriptionUr": "قومی شناختی کارڈ نمبر 8500 پر ایس ایم ایس کر کے یا آن لائن پورٹل سے صحت سہولت کارڈ کی اہلیت اور 10 لاکھ روپے تک مفت علاج کی تفصیل دیکھیں۔",
-    "directAnswerEn": "To check Sehat Sahulat Card eligibility, send your 13-digit CNIC without dashes to 8500 via SMS, or search your family status on the official portal at pmhealthprogram.gov.pk. Eligible families receive 100% cashless indoor hospital treatment up to PKR 1,000,000 per year at over 1,000 empaneled private and public hospitals.",
-    "directAnswerUr": "صحت سہولت پروگرام میں اپنی فیملی کی اہلیت جاننے کے لیے اپنا 13 ہندسوں کا شناختی کارڈ نمبر لکھ کر 8500 پر ایس ایم ایس بھیجیں یا pmhealthprogram.gov.pk پر چیک کریں۔ اہل خاندانوں کو سالانہ 10 لاکھ روپے تک مفت علاج کی سہولت میسر ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Sehat Card Eligibility Check by CNIC 2026: 8500 SMS, Online Portal & Next Steps",
+    "titleUr": "صحت کارڈ اہلیت چیک بذریعہ شناختی کارڈ 2026: 8500 ایس ایم ایس، پورٹل اور رہنمائی",
+    "metaDescriptionEn": "Step-by-step Sehat Sahulat Card eligibility check via 8500 SMS or online portal. What to do if eligible, not found, or inactive, NSER survey updates, and panel hospital cashless admission.",
+    "metaDescriptionUr": "8500 ایس ایم ایس اور آن لائن پورٹل سے صحت کارڈ کی اہلیت چیک کریں۔ اہل ہونے پر ہسپتال داخلے کا طریقہ، نام نہ آنے پر این ایس ای آر سروے اور صوبائی قوانین۔",
+    "directAnswerEn": "To check your family's Sehat Card eligibility in 2026, send your 13-digit CNIC number (without dashes) via SMS to 8500 or verify on pmhealthprogram.gov.pk. If eligible, your original CNIC functions directly as your health card for up to PKR 1,000,000 in free annual inpatient treatment at over 1,000 empaneled hospitals. If marked ineligible or not found, register for an NSER Dynamic Registry survey at your nearest BISP Tehsil office.",
+    "directAnswerUr": "صحت سہولت پروگرام میں اپنی فیملی کی اہلیت چیک کرنے کے لیے اپنا 13 ہندسوں کا شناختی کارڈ نمبر 8500 پر ایس ایم ایس کریں یا pmhealthprogram.gov.pk پر دیکھیں۔ اہل افراد کو سالانہ 10 لاکھ روپے تک مفت انڈور علاج میسر ہے۔ اگر نام شامل نہ ہو تو قریبی بی آئی ایس پی تحصیل آفس جا کر این ایس ای آر (NSER) ڈائنامک سروے کروائیں۔",
+    "lastVerified": "August 30, 2026",
     "officialSource": {
-      "name": "Sehat Sahulat National Programme",
+      "name": "Sehat Sahulat National Health Program & State Life",
       "url": "https://pmhealthprogram.gov.pk/"
     },
     "author": {
       "name": "Syeda Fatima Zahra",
-      "role": "Social Welfare & BISP Verification Lead"
+      "role": "Public Health & Social Protection Lead"
     },
     "feeStructure": [
       {
         "serviceEn": "SMS Eligibility Check (8500)",
-        "serviceUr": "ایس ایم ایس 8500 چیک",
-        "normal": "Standard SMS Rate (~PKR 2)",
-        "urgent": "Instant Reply",
-        "executive": "State Life / Govt",
-        "validity": "Annual"
+        "serviceUr": "ایس ایم ایس 8500 پر اہلیت چیک",
+        "normal": "Standard SMS (~PKR 2)",
+        "urgent": "Instant SMS Reply",
+        "executive": "Official State Life Record",
+        "validity": "Live Database"
+      },
+      {
+        "serviceEn": "Online Portal CNIC Check",
+        "serviceUr": "آن لائن پورٹل تصدیق",
+        "normal": "100% FREE",
+        "urgent": "Instant Screen Result",
+        "executive": "Family Tree Details",
+        "validity": "Live Database"
+      },
+      {
+        "serviceEn": "Inpatient Hospital Treatment Cover",
+        "serviceUr": "انڈور ہسپتال علاج کوریج",
+        "normal": "Up to PKR 1,000,000/yr",
+        "urgent": "100% Cashless",
+        "executive": "Empaneled Private & Public",
+        "validity": "Per Family / Year"
+      },
+      {
+        "serviceEn": "NSER Survey Reassessment (BISP Office)",
+        "serviceUr": "این ایس ای آر سروے دوبارہ اندراج",
+        "normal": "100% FREE",
+        "urgent": "Tehsil Facilitation Desk",
+        "executive": "Official PMT Score Update",
+        "validity": "Permanent Record"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "SMS CNIC to 8500",
-        "titleUr": "8500 پر شناختی کارڈ بھیجیں",
-        "detailEn": "Type your 13-digit CNIC and send to 8500.",
-        "detailUr": "بغیر ڈیش کے شناختی کارڈ 8500 پر بھیجیں۔"
+        "titleEn": "Send 13-Digit CNIC to 8500 via SMS",
+        "titleUr": "اپنا 13 ہندسوں کا شناختی کارڈ 8500 پر بھیجیں",
+        "detailEn": "Type your CNIC without spaces or dashes (e.g. 3520112345671) and text it to 8500 from any active mobile network.",
+        "detailUr": "بغیر ڈیش کے اپنا شناختی کارڈ نمبر لکھ کر 8500 پر ایس ایم ایس کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Review Automated Reply & Eligibility Status",
+        "titleUr": "جوابی میسج اور اپنی اہلیت کا اسٹیٹس پڑھیں",
+        "detailEn": "The reply confirms whether your family is eligible, displays your designated card/family number, and provides your nearest panel hospital details.",
+        "detailUr": "میسج میں آپ کی اہلیت، فیملی نمبر اور قریبی پینل ہسپتالوں کی معلومات ظاہر ہوں گی۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "If Eligible: Visit Panel Hospital Sehat Sahulat Desk",
+        "titleUr": "اہل ہونے کی صورت میں: پینل ہسپتال کاؤنٹر پر جائیں",
+        "detailEn": "Take the patient's original CNIC (or B-Form for minors) and the doctor's hospital admission recommendation to the dedicated hospital Sehat Sahulat counter.",
+        "detailUr": "مریض کا اصل شناختی کارڈ (یا بچوں کا بی فارم) اور ڈاکٹر کا داخلہ نسخہ لے کر ہسپتال کے صحت سہولت کاؤنٹر پر جائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "If Ineligible: Register for NSER Dynamic Survey",
+        "titleUr": "اہل نہ ہونے کی صورت میں: این ایس ای آر سروے کروائیں",
+        "detailEn": "Visit your local BISP Tehsil Facilitation Center with all family CNICs, children's B-Forms, and utility bills to have your socio-economic PMT score officially re-evaluated.",
+        "detailUr": "تمام فیملی کے شناختی کارڈ اور بجلی کا بل لے کر قریبی بی آئی ایس پی تحصیل آفس جائیں اور این ایس ای آر سروے میں اندراج کروائیں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "Do I need a separate physical plastic card to get hospital admission?",
-        "questionUr": "کیا علاج کے لیے الگ سے پلاسٹک کارڈ بنوانا ضروری ہے؟",
-        "answerEn": "No. Your original NADRA CNIC or Smart Card serves directly as your Sehat Card at all hospital counters.",
-        "answerUr": "نہیں! آپ کا اصل شناختی کارڈ ہی صحت کارڈ کا کام دیتا ہے۔"
+        "questionEn": "What should I do immediately after finding out my family is eligible for Sehat Card?",
+        "questionUr": "صحت کارڈ کے لیے اہل قرار پانے کے بعد ہسپتال میں مفت علاج کیسے حاصل کریں؟",
+        "answerEn": "You do not need a plastic card. When an inpatient hospital admission or surgery is needed, take the patient directly to an empaneled private or government hospital. Head to the 'Sehat Sahulat Program / State Life Facilitation Counter' in the lobby. Present the patient's original CNIC (or B-Form if under 18) along with the physician's admission note. The desk officer will capture biometric thumb verification and issue cashless admission papers covering surgery, medications, and room charges up to PKR 1 Million.",
+        "answerUr": "کسی پلاسٹک کارڈ کی ضرورت نہیں ہے۔ ہسپتال داخلے کے وقت مریض کا اصل شناختی کارڈ (یا بچوں کا بی فارم) اور ڈاکٹر کا داخلہ نسخہ لے کر پینل ہسپتال کے 'صحت سہولت کاؤنٹر' پر جائیں۔ وہاں بائیومیٹرک انگوٹھا لگا کر داخلہ ہو جائے گا اور آپریشن، ادویات و کمرے کا خرچہ بالکل مفت ہوگا۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Sehat Card Eligibility Check by CNIC 2026?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "Why does 8500 SMS say 'Record Not Found' or 'Ineligible', and how can I fix it?",
+        "questionUr": "ایس ایم ایس 8500 پر 'ریکارڈ موجود نہیں' یا 'آپ اہل نہیں ہیں' آنے کی کیا وجہ ہے اور اسے کیسے ٹھیک کریں؟",
+        "answerEn": "This occurs when: 1) Your family tree is not updated at NADRA (e.g., unmarried status still recorded after marriage), or 2) Your household poverty score (PMT Score) is above the national eligibility cutoff. To fix this, visit your nearest BISP Tehsil Facilitation Center with your family's original CNICs, children's B-Forms, and electricity bills to undergo the free NSER Dynamic Survey.",
+        "answerUr": "اس کی دو وجوہات ہوتی ہیں: 1۔ نادرا میں فیملی ریکارڈ اپڈیٹ نہ ہونا (مثلاً شادی کے بعد اندراج نہ ہونا)، 2۔ قومی معاشی سروے (PMT Score) میں غربت کا اسکور حد سے زیادہ ہونا۔ اس کی درستگی کے لیے قریبی بی آئی ایس پی دفتر جا کر مفت این ایس ای آر ڈائنامک سروے کروائیں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What medical treatments are covered under Sehat Card, and what is excluded?",
+        "questionUr": "صحت کارڈ پر کون سے علاج مفت ہیں اور کون سے شامل نہیں ہیں؟",
+        "answerEn": "Covered treatments include: Heart surgeries (angioplasty, bypass, stents), cancer chemotherapy/radiotherapy, kidney dialysis & transplants, emergency trauma surgeries, general/orthopedic surgeries, ICU care, and maternal delivery/C-section. Excluded: Routine OPD outdoor consultations, cosmetic procedures, and standard outpatient dental fillings.",
+        "answerUr": "شامل علاج: دل کے امراض و بائی پاس، کینسر، گردوں کا ڈائیلاسز و ٹرانسپلانٹ، ایمرجنسی آپریشنز، ہڈیوں کے فریکچر، زچگی/سی سیکشن اور آئی سی یو کیئر۔ غیر شامل: او پی ڈی (OPD) چیک اپ اور کاسمیٹک سرجری۔"
+      },
+      {
+        "questionEn": "How do Sehat Card rules differ between KPK, Punjab, Sindh, and Islamabad/AJK?",
+        "questionUr": "کے پی کے، پنجاب، سندھ اور اسلام آباد میں صحت کارڈ کے قوانین میں کیا فرق ہے؟",
+        "answerEn": "In Khyber Pakhtunkhwa (Sehat Card Plus), coverage is universal for all permanent KP CNIC holders. In Punjab, federal ICT, AJK, and GB, coverage is prioritized for low-income families verified through BISP / PMT scoring (cutoff typically PMT <= 32 or 40 depending on provincial cabinet notifications). Sindh operates its own specialized free health institutes (NICVD, SIUT, Gambat Hospital) alongside targeted social protection cards.",
+        "answerUr": "خیبر پختونخوا میں کے پی کے کے تمام مستقل شناختی کارڈ ہولڈرز کے لیے صحت کارڈ پلس یونیورسل ہے۔ پنجاب، اسلام آباد اور آزاد کشمیر میں بی آئی ایس پی سروے کے ذریعے کم آمدن والے خاندانوں کو ترجیح دی جاتی ہے۔ سندھ میں این آئی سی وی ڈی اور ایس آئی یو ٹی جیسے اداروں کے ذریعے مفت علاج کی سہولت موجود ہے۔"
       }
     ],
-    "contentEn": "Guide on checking Sehat Card eligibility via SMS and online.",
-    "contentUr": "صحت کارڈ کی اہلیت معلوم کرنے کا طریقہ۔",
+    "contentEn": "## Sehat Sahulat Program: Complete Eligibility & Treatment Guide 2026\nThe **Sehat Sahulat Program** is Pakistan's premier public health insurance initiative, underwritten by the State Life Insurance Corporation of Pakistan in collaboration with federal and provincial governments. It protects low- and middle-income households from catastrophic medical expenditures by providing up to **PKR 1,000,000 (10 Lakhs)** per family per year in cashless indoor healthcare.\n\n---\n\n## 3 Actionable Scenarios: What to Do Based on Your SMS Check Result\n\n### Scenario 1: Result = 'Eligible' (اہل ہیں)\n1. **No Plastic Card Needed**: Your physical NADRA Smart CNIC or Computerized CNIC serves directly as your digital health card.\n2. **Choose an Empaneled Hospital**: Access the online panel hospital directory at `pmhealthprogram.gov.pk` or call `0800-09009` to select a nearby private or public teaching hospital.\n3. **Approach the Sehat Sahulat Desk**: Upon arrival at the hospital, proceed directly to the dedicated State Life / Sehat Sahulat counter in the reception lobby.\n4. **Documents to Present**: Original CNIC of the patient, original CNIC of the family head, B-Form for children under 18, and the physician's inpatient admission referral.\n5. **100% Cashless Treatment**: Surgery, ICU, ward accommodation, prescribed medicines, and post-discharge medicines (for 1 day) are completely free.\n\n### Scenario 2: Result = 'Record Not Found' or 'Ineligible' (ریکارڈ موجود نہیں / نااہل)\nIf your CNIC returns 'Ineligible', your household poverty score (Proxy Means Test - PMT) exceeds the current provincial cutoff, or your family data has not been captured in the National Socio-Economic Registry (NSER).\n- **Step 1**: Visit your nearest **BISP Tehsil Facilitation Center** (مفت بی آئی ایس پی تحصیل رجسٹریشن ڈیسک).\n- **Step 2**: Carry the original CNICs of all adult household members, computerized birth certificates/B-Forms of all children, and latest electricity/gas utility bills.\n- **Step 3**: Request a fresh **NSER Dynamic Survey**. Your household socio-economic score will be officially re-assessed within 30 to 45 business days.\n\n### Scenario 3: Result = 'Card Inactive' or Family Tree Mismatch\nIf you recently got married or changed your permanent address, your family tree (Khaandan) in NADRA may still link you to your parents' household.\n- **Step 1**: Visit your nearest NADRA Registration Center (NRC).\n- **Step 2**: Apply for a **Family Registration Certificate (FRC)** or update your marital status on your CNIC.\n- **Step 3**: Once NADRA updates your nuclear family tree, the Sehat Sahulat database automatically syncs on the following monthly cycle.\n\n---\n\n## Covered Medical Treatments vs Exclusions\n| Covered Inpatient Medical Services (100% Free) | Excluded Outpatient Services |\n| :--- | :--- |\n| Open Heart Surgery, Angioplasty, Stenting, Pacemakers | Routine General Practitioner OPD Consultation |\n| Oncology Chemotherapy, Radiotherapy, Cancer Surgeries | Cosmetic, Aesthetic & Weight Loss Surgeries |\n| Renal Dialysis, Kidney Stone Laser, Renal Transplant | Standard Dental Fillings & Orthodontic Braces |\n| Emergency Trauma, Accidental Bone Fracture Surgeries | Over-the-counter vitamins and personal toiletries |\n| Normal Deliveries, High-Risk C-Sections, Neonatal ICU | Non-emergency routine lab tests without admission |\n\n---\n\n## Official Sehat Sahulat Helplines & Contact Information\n- **National Sehat Sahulat Toll-Free Helpline**: `0800-09009`\n- **KP Sehat Card Plus Helpline**: `0800-89898`\n- **SMS Eligibility Code**: Text 13-digit CNIC to `8500`\n- **Official Verification Portal**: `https://pmhealthprogram.gov.pk/`",
+    "contentUr": "## صحت کارڈ اہلیت اور ہسپتال علاج گائیڈ 2026\nصحت سہولت پروگرام کے تحت پاکستان کے اہل خاندانوں کو سالانہ 10 لاکھ روپے تک مفت انڈور ہسپتال علاج کی سہولت میسر ہے۔\n\n### اہلیت کے 3 مختلف نتائج اور اگلا لائحہ عمل\n1۔ **اہل ہونے کی صورت میں (Eligible)**: اصل شناختی کارڈ اور ڈاکٹر کا داخلہ نسخہ لے کر پینل ہسپتال کے کاؤنٹر پر جائیں، علاج بالکل مفت ہوگا۔\n2۔ **نااہل یا ریکارڈ نہ ملنے پر (Ineligible)**: قریبی بی آئی ایس پی تحصیل دفتر جا کر مفت این ایس ای آر (NSER) ڈائنامک سروے میں اندراج کروائیں۔\n3۔ **کارڈ غیر فعال ہونے پر**: نادرا سنٹر سے اپنا فیملی ریکارڈ (FRC) یا ازدواجی حیثیت اپڈیٹ کروائیں تاکہ ڈیٹا خودکار طور پر درست ہو سکے۔",
     "relatedSlugs": [
       "/health/sehat-card-hospital-list-near-me",
       "/health/sehat-card-treatment-limit-2026",
@@ -13744,26 +13941,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
+        "questionEn": "How long can police legally keep an FIR under investigation before filing a Challan?",
+        "questionUr": "پولیس تفتیش مکمل کر کے چالان عدالت میں جمع کروانے کے لیے کتنا وقت لے سکتی ہے؟",
+        "answerEn": "Under Section 173 of the Code of Criminal Procedure (CrPC), police are legally required to complete the investigation without unnecessary delay. If the investigation cannot be concluded within 14 days of registering the FIR, the Station House Officer (SHO) must submit an interim Challan through the Public Prosecutor explaining the status and delay reasons to the Area Magistrate.",
+        "answerUr": "ضابطہ فوجداری (CrPC) کی دفعہ 173 کے تحت پولیس 14 دن کے اندر چالان جمع کروانے کی پابند ہے۔ اگر تفتیش مکمل نہ ہو تو نامکمل چالان مجسٹریٹ کی عدالت میں پیش کرنا لازمی ہے۔"
+      },
+      {
+        "questionEn": "What is the exact legal difference between a Police Complaint and an FIR?",
+        "questionUr": "تھانے میں دی گئی سادہ درخواست اور ایف آئی آر میں کیا قانونی فرق ہے؟",
+        "answerEn": "A written complaint (Application / E-Tag) is a grievance submitted by a citizen for police inquiry. It does not initiate a formal criminal trial. An FIR (First Information Report under Section 154 CrPC) is the official state document registered in the police station ledger for cognizable offenses (theft, robbery, fraud, physical assault) that empowers police to arrest suspects and submit a judicial Challan to court.",
+        "answerUr": "سادہ درخواست پولیس میں انکوائری کے لیے دی جاتی ہے جس پر مقدمہ درج نہیں ہوتا۔ جبکہ ایف آئی آر (دفعہ 154) قابل دست اندازی جرائم پر درج ہونے والا باقاعدہ ریاستی مقدمہ ہے جس کے بعد تفتیش اور گرفتاری عمل میں آتی ہے۔"
+      },
+      {
+        "questionEn": "What realistic steps should you take if your FIR is stuck 'Under Investigation' for months?",
+        "questionUr": "اگر ایف آئی آر مہینوں سے زیر تفتیش رہے تو سائل کو کیا قانونی قدم اٹھانا چاہیے؟",
+        "answerEn": "1) Meet the Investigating Officer (IO) and SHO for the case diary status. 2) Call the IGP 1787 Complaint Center or submit a written application to the District Police Officer (DPO/SSP). 3) File an application before the Area Judicial Magistrate under Section 156(3) CrPC requesting an inquiry direction, or petition the Ex-Officio Justice of Peace (Sessions Court) under Section 22-A/22-B CrPC for a direction on police inaction.",
+        "answerUr": "1) متعلقہ ایس ایچ او سے ملیں۔ 2) آئی جی پنجاب 1787 ہیلپ لائن پر شکایت درج کروائیں۔ 3) علاقہ مجسٹریٹ کی عدالت میں دفعہ 156(3) یا سیشن جج کی عدالت میں 22-A/22-B کے تحت عملدرآمد کی درخواست دائر کریں۔"
+      },
+      {
         "questionEn": "Can a certified copy of an FIR be downloaded online?",
         "questionUr": "کیا ایف آئی آر کی تصدیق شدہ کاپی آن لائن مل سکتی ہے؟",
-        "answerEn": "Complainants can download an official copy from the Police Khidmat Markaz portal or obtain a certified copy directly from the Area Magistrate's office (Copying Agency).",
-        "answerUr": "پولیس خدمت مرکز پورٹل یا علاقہ مجسٹریٹ سے مصدقہ نقل مل جاتی ہے۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for How to Check FIR Status Online?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "answerEn": "Complainants and nominated parties can view FIR summaries online via the Police Record Management System (PRMS / PKM). However, for official court submissions or bail applications, a certified stamped copy must be obtained from the Police Khidmat Markaz or the District Courts Copying Agency (Nakal Agency).",
+        "answerUr": "خلاصہ آن لائن خدمت مرکز سے دیکھا جا سکتا ہے مگر عدالت میں پیش کرنے کے لیے خدمت مرکز یا کچہری نقل برانچ سے مہر شدہ مصدقہ کاپی لینا ضروری ہے۔"
       }
     ],
-    "contentEn": "Guide on checking police FIR and investigation status online in Pakistan.",
-    "contentUr": "ایف آئی آر کی آن لائن ٹریکنگ کی معلومات۔",
+    "contentEn": "## Tracking Police FIR & Criminal Investigation Progress in Pakistan (2026)\n\nIn Pakistan, tracking the status of a registered First Information Report (FIR) has transitioned to digital Police Record Management Systems (PRMS) and Police Khidmat Markaz (PKM) portals across Punjab, Sindh, Khyber Pakhtunkhwa, and Islamabad.\n\n---\n\n## 1. FIR vs Police Complaint: Understanding the Difference\n\nA frequent point of confusion for citizens is whether their case has been formally registered as an FIR:\n* **Written Application / E-Tag Complaint:** When you submit a complaint at a front desk or online portal, an E-Tag/Diary number is assigned for preliminary inquiry. **No arrests or criminal trial can proceed on an application alone.**\n* **Registered FIR (First Information Report):** Under **Section 154 of the Code of Criminal Procedure (CrPC) 1898**, an FIR is formally registered into the Police Station General Diary (Roznamcha) for cognizable offences. An FIR assigns a formal Crime Number (e.g., FIR No. 124/2026), triggers statutory investigation powers, and leads to a judicial Challan.\n\n---\n\n## 2. What to Do if an FIR Shows 'Under Investigation' (زیر تفتیش) with Long Delays\n\nUnder **Section 173 CrPC**, police investigators are legally mandated to conclude investigations without unnecessary delay and forward an interim or final report (Challan) to the Magistrate within **14 days**.\n\nIf your case has been stalled for months without progress, follow these concrete escalation avenues:\n\n### Step 1: Engage the Station House Officer (SHO) & Investigating Officer (IO)\nRequest an official update on whether the case diary (Zimni / ضمنی) has been maintained and if forensic evidence, witness statements (Section 161 CrPC), or recovery memos have been prepared.\n\n### Step 2: Escalate to Senior Police Hierarchy & IGP 1787 Center\n* **IGP Complaint Helpline 1787:** Call **1787** (toll-free in Punjab and KP) or SMS your E-Tag to log a formal grievance against delayed investigation.\n* **DPO / SSP Monitoring:** Submit a written application to the District Police Officer (DPO) or Senior Superintendent of Police (Investigative Branch) requesting transfer of investigation or a supervisory inquiry.\n\n### Step 3: Judicial Remedy Before the Area Magistrate (Section 156(3) CrPC)\nUnder **Section 156(3) CrPC**, an Area Judicial Magistrate possesses supervisory authority over cognizable cases. An aggrieved complainant can file an application praying the court to summon the IO along with police records and order a time-bound completion of the Challan.\n\n### Step 4: Petition the Justice of Peace (Section 22-A / 22-B CrPC)\nIf the local police station refuses to act or colludes with the opposing party, you can file a petition under **Section 22-A / 22-B CrPC** before the Sessions Judge (Ex-Officio Justice of Peace) seeking an explicit judicial directive ordering police compliance and disciplinary action.",
+    "contentUr": "## پولیس ایف آئی آر اور تفتیش کا آن لائن سٹیٹس معلوم کرنے کا طریقہ 2026\n\nپاکستان میں درج شدہ ایف آئی آر کی موجودہ صورتحال، تفتیشی افسر (IO) کا نام اور عدالت میں چالان جمع ہونے کی تاریخ معلوم کرنے کی مکمل قانونی رہنمائی۔\n\n### ایف آئی آر طویل عرصے سے زیر تفتیش ہو تو کیا کریں؟\n1. **ایس ایچ او اور تفتیشی افسر سے رابطہ:** ضمنی اور پیش رفت کی تفصیل طلب کریں۔\n2. **1787 آئی جی پی کمپلینٹ سیل:** ہیلپ لائن 1787 پر تفتیش میں تاخیر کی شکایت درج کروائیں۔\n3. **علاقہ مجسٹریٹ کی عدالت (دفعہ 156/3):** مجسٹریٹ کے روبرو پولیس ریکارڈ طلب کرنے اور تفتیش جلد مکمل کروانے کی درخواست دائر کریں۔\n4. **جسٹس آف پیس (دفعہ 22-A):** سیشن کورٹ میں پولیس کی بے عملی کے خلاف درخواست دائر کریں۔",
     "relatedSlugs": [
       "/legal/how-to-get-fir-copy-online-pakistan-2026",
       "/legal/online-fir-registration-punjab-police",

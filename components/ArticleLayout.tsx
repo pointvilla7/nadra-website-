@@ -521,10 +521,27 @@ export const ArticleLayout: React.FC<ArticleLayoutProps> = ({ article }) => {
                 'For foreign spouses of Pakistani nationals or former citizens',
                 'Provides Visa-Free entry & indefinite legal stay in Pakistan',
                 'Cannot hold Pakistani passport, vote, or hold government jobs',
-                'Fee: Standard 5-Year Application $100–$150 USD via Pak-ID'
+                'Fee: Standard 5-Year Application $150 USD via Pak-ID portal'
               ],
               recommendedForEn: 'Foreign spouses married to Pakistani citizens & ex-nationals',
               recommendedForUr: 'پاکستانی شہریوں کے غیر ملکی شریک حیات اور سابق پاکستانی'
+            },
+            {
+              titleEn: 'CRC / Juvenile Card & FRC (Minors & Family)',
+              titleUr: 'بے فارم / جووینائل کارڈ و ایف آر سی',
+              subtitleEn: 'Minors (0–18 Years) & Family Tree Records',
+              subtitleUr: '18 سال سے کم عمر بچے اور فیملی رجسٹریشن',
+              badgeEn: 'Minors & Family',
+              badgeUr: 'بچے و فیملی ریکارڈ',
+              badgeVariant: 'emerald',
+              pointsEn: [
+                'CRC (B-Form) issued from birth to age 18 via Union Council birth record',
+                'Smart Juvenile Card (with chip & photo) available for minors aged 9–18',
+                'FRC (Family Registration Certificate) verifies legal family lineage via NADRA database',
+                'Fee: B-Form PKR 50 (Exec PKR 500) | Juvenile PKR 750 | FRC PKR 1,000 via Pak-ID'
+              ],
+              recommendedForEn: 'Children under 18 prior to Smart CNIC, school admissions & family visa applications',
+              recommendedForUr: '18 سال سے کم عمر بچے، سکول داخلے اور فیملی ویزا درخواستیں'
             }
           ]}
         />

@@ -69,6 +69,45 @@ export default function NadraCategoryPage() {
         </div>
       </header>
 
+      {/* First-Time Visitor Orientation Guide */}
+      <ScrollReveal delayMs={20}>
+        <section className="doc-card rounded-2xl p-6 sm:p-8 border-2 border-doc-brass/30 bg-gradient-to-r from-doc-paper/80 via-white to-doc-paper/50 dark:from-doc-dark-card dark:to-slate-900/90 shadow-sm space-y-4">
+          <div className="flex items-center gap-3">
+            <span className="p-2 rounded-xl bg-doc-seal/10 text-doc-seal dark:text-red-300 border border-doc-brass/30">
+              <ShieldCheck className="w-5 h-5 text-doc-seal" />
+            </span>
+            <div>
+              <h2 className="text-xl font-serif font-bold text-doc-ink dark:text-white">
+                {t('First Time Applying for a NADRA Document?', 'پہلی بار نادرا شناختی یا فیملی دستاویز بنوا رہے ہیں؟')}
+              </h2>
+              <p className="text-xs font-mono text-slate-500">
+                {t('Official 2026 Orientation & Channel Guide', 'آفیشل رہنمائی اور چینل گائیڈ برائے شہری')}
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
+            {t(
+              'The National Database & Registration Authority (NADRA) manages Pakistan\'s citizen identity framework. Depending on whether you live in Pakistan or abroad, you can apply either in person at a NADRA Registration Center (NRC / Mega Center) or 100% online through the official Pak-ID mobile app and web portal. Choose a category below to access step-by-step document checklists, official 2026 government fee tables, delivery timelines, and direct status check tools.',
+              'نیشنل ڈیٹا بیس اینڈ رجسٹریشن اتھارٹی (نادرا) پاکستان کے تمام شہریوں کے شناختی و خاندانی ریکارڈ کا مرکزی ادارہ ہے۔ اگر آپ پاکستان میں مقیم ہیں یا بیرون ملک، آپ نادرا میگا سنٹرز میں جا کر یا گھر بیٹھے پاک آئی ڈی (Pak-ID) موبائل ایپ اور پورٹل کے ذریعے آن لائن درخواست دے سکتے ہیں۔ نیچے دی گئی کیٹیگریز میں سے مطلوبہ سروس منتخب کر کے فیس، مطلوبہ کاغذات اور ٹریکنگ کا مکمل طریقہ جانیے۔'
+            )}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div className="p-3.5 rounded-xl bg-white/90 dark:bg-slate-800/80 border border-doc-brass/20 space-y-1">
+              <div className="text-xs font-bold text-doc-seal font-mono">{t('1. Pak-ID Online Portal', '1۔ پاک آئی ڈی آن لائن')}</div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">{t('Renewals, NICOP, POC, and digital FRC with biometric phone scan.', 'تجدید، نائیکوپ، پی او سی اور ڈیجیٹل ایف آر سی۔')}</p>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white/90 dark:bg-slate-800/80 border border-doc-brass/20 space-y-1">
+              <div className="text-xs font-bold text-emerald-700 dark:text-emerald-400 font-mono">{t('2. NRC Mega Centers (24/7)', '2۔ نادرا میگا سنٹرز (24/7)')}</div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">{t('First-time CNIC at age 18, fingerprint updates, and marital status changes.', '18 سال کی عمر میں پہلا شناختی کارڈ اور فنگر پرنٹ کی تجدید۔')}</p>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white/90 dark:bg-slate-800/80 border border-doc-brass/20 space-y-1">
+              <div className="text-xs font-bold text-amber-700 dark:text-amber-400 font-mono">{t('3. SMS Tracking (8400 / 7000)', '3۔ ایس ایم ایس ٹریکنگ (8400)')}</div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">{t('Track application status by texting your Tracking ID to 8400.', 'ٹریکنگ آئی ڈی 8400 پر ایس ایم ایس کر کے اسٹیٹس جانیے۔')}</p>
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
+
       {/* INTERACTIVE TOOLS SHOWCASE SECTION */}
       <ScrollReveal delayMs={40}>
         <section className="space-y-4">
