@@ -442,6 +442,16 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Vehicle Ownership Transfer Punjab",
+        "ur": "گاڑی ملکیت منتقلی پنجاب 2026",
+        "slug": "/traffic/vehicle-ownership-transfer-online-punjab-2026"
+      },
+      {
+        "en": "International Driving Permit (IDP)",
+        "ur": "بین الاقوامی ڈرائیونگ پرمٹ 2026",
+        "slug": "/traffic/international-driving-permit-pakistan-2026"
+      },
+      {
         "en": "Driving License Status Check 2026",
         "ur": "ڈرائیونگ لائسنس سٹیٹس آن لائن چیک",
         "slug": "/traffic/driving-license-status-check-online-2026"

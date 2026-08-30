@@ -764,16 +764,40 @@ export default function DrivingLicenseOnlineApplyPage() {
           <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white">
             Related Driving License &amp; Traffic Tools
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
             <Link
               href="/traffic/driving-license-status-check-online-2026"
               className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
             >
               <div className="space-y-0.5">
                 <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
-                  Driving License Status Check Online 2026 →
+                  License Status Check →
                 </span>
-                <span className="text-slate-500 dark:text-slate-400">Track DLIMS Punjab, Sindh, KP &amp; postal delivery status</span>
+                <span className="text-slate-500 dark:text-slate-400">Track DLIMS smart card dispatch</span>
+              </div>
+            </Link>
+
+            <Link
+              href="/traffic/international-driving-permit-pakistan-2026"
+              className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
+                  International Permit (IDP) →
+                </span>
+                <span className="text-slate-500 dark:text-slate-400">Drive in 150+ countries abroad</span>
+              </div>
+            </Link>
+
+            <Link
+              href="/traffic/vehicle-ownership-transfer-online-punjab-2026"
+              className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
+                  Vehicle Transfer Punjab →
+                </span>
+                <span className="text-slate-500 dark:text-slate-400">Pak ID biometrics &amp; ePay</span>
               </div>
             </Link>
 
@@ -783,9 +807,9 @@ export default function DrivingLicenseOnlineApplyPage() {
             >
               <div className="space-y-0.5">
                 <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
-                  E-Challan Online Check &amp; Pay →
+                  E-Challan Check &amp; Pay →
                 </span>
-                <span className="text-slate-500 dark:text-slate-400">Check vehicle fines and traffic violations online</span>
+                <span className="text-slate-500 dark:text-slate-400">Verify Safe City traffic fines</span>
               </div>
             </Link>
           </div>
