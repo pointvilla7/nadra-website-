@@ -442,6 +442,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Driving License Status Check 2026",
+        "ur": "ڈرائیونگ لائسنس سٹیٹس آن لائن چیک",
+        "slug": "/traffic/driving-license-status-check-online-2026"
+      },
+      {
         "en": "Arms License Renewal Punjab 2026",
         "ur": "اسلحہ لائسنس رینیول پنجاب 2026",
         "slug": "/traffic/arms-license-renewal-punjab-online-2026"
@@ -628,6 +633,11 @@ export const CATEGORIES: Category[] = [
         "en": "eStamping Citizen Portal (Challan 32-A)",
         "ur": "ای اسٹامپنگ سٹیزن پورٹل (چالان 32-A)",
         "slug": "/property/e-stamping-challan-32a-online-guide-2026"
+      },
+      {
+        "en": "Govt Employee Housing Schemes 2026",
+        "ur": "سرکاری ملازمین ہاؤسنگ سکیمز 2026",
+        "slug": "/property/government-employee-housing-schemes-pakistan-2026"
       },
       {
         "en": "Punjab Fard Online Verifier 2026",
