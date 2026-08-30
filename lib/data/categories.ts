@@ -625,8 +625,8 @@ export const CATEGORIES: Category[] = [
         "slug": "/property/property-tax-online-check-pay-2026"
       },
       {
-        "en": "E-Stamping Challan 32-A Guide",
-        "ur": "ای سٹامپ چالان 32A آن لائن",
+        "en": "eStamping Citizen Portal (Challan 32-A)",
+        "ur": "ای اسٹامپنگ سٹیزن پورٹل (چالان 32-A)",
         "slug": "/property/e-stamping-challan-32a-online-guide-2026"
       },
       {
