@@ -51,20 +51,12 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
             <stop offset="0%" stopColor="#FFFFFF" />
             <stop offset="100%" stopColor="#F1F5F9" />
           </linearGradient>
-
-          <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
-            <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="#000" floodOpacity="0.35" />
-          </filter>
-
-          <filter id="floatShadow" x="-15%" y="-15%" width="135%" height="135%">
-            <feDropShadow dx="0" dy="6" stdDeviation="8" floodColor="#0B1120" floodOpacity="0.4" />
-          </filter>
         </defs>
 
         {/* ══════════════════════════════════════════════════════════════════
             LAYER 1: OFFICIAL GAZETTE DOCUMENT (Background Left Tilt)
         ══════════════════════════════════════════════════════════════════ */}
-        <g transform="translate(60, 45) rotate(-8)" filter="url(#cardShadow)">
+        <g transform="translate(60, 45) rotate(-8)">
           {/* Document Sheet */}
           <rect width="210" height="280" rx="10" fill="url(#docBg)" stroke="#CBD5E1" strokeWidth="1.5" />
           
@@ -100,7 +92,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
         {/* ══════════════════════════════════════════════════════════════════
             LAYER 2: PAKISTANI GREEN PASSPORT (Back Right Tilt)
         ══════════════════════════════════════════════════════════════════ */}
-        <g transform="translate(270, 30) rotate(9)" filter="url(#cardShadow)">
+        <g transform="translate(270, 30) rotate(9)">
           {/* Passport Book Cover */}
           <rect width="190" height="265" rx="12" fill="url(#passportCover)" stroke="#1B4D3E" strokeWidth="1.5" />
           
@@ -147,7 +139,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
         {/* ══════════════════════════════════════════════════════════════════
             LAYER 3: NADRA SMART CNIC CARD (Front Center Elevation)
         ══════════════════════════════════════════════════════════════════ */}
-        <g transform="translate(110, 160)" filter="url(#cardShadow)">
+        <g transform="translate(110, 160)">
           {/* Card Base */}
           <rect width="280" height="175" rx="14" fill="url(#cnicBg)" stroke="#CBD5E1" strokeWidth="1.5" />
           
@@ -224,7 +216,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
             LAYER 4: FLOATING SAAS TRUST PILLS (Depth Overlay)
         ══════════════════════════════════════════════════════════════════ */}
         {/* Floating Top Badge: 100% Verified Gazette */}
-        <g transform="translate(290, 12)" filter="url(#floatShadow)">
+        <g transform="translate(290, 12)">
           <rect width="180" height="42" rx="21" fill="#0B1120" stroke="#B8860B" strokeWidth="1.5" />
           <circle cx="22" cy="21" r="12" fill="#0F9D6D" />
           <path d="M 16 21 L 20 25 L 28 16" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -237,7 +229,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
         </g>
 
         {/* Floating Bottom Left Badge: 1Link / Fee Verified */}
-        <g transform="translate(25, 335)" filter="url(#floatShadow)">
+        <g transform="translate(25, 335)">
           <rect width="175" height="40" rx="12" fill="#0B1120" stroke="#334155" strokeWidth="1.2" />
           <circle cx="22" cy="20" r="11" fill="#B8860B" fillOpacity="0.2" stroke="#B8860B" strokeWidth="1.2" />
           <path d="M 22 13 L 22 27 M 17 18 L 27 18" stroke="#D4A017" strokeWidth="2" strokeLinecap="round" />
@@ -250,7 +242,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
         </g>
 
         {/* Floating Bottom Right Badge: FBR & BISP Active */}
-        <g transform="translate(360, 310)" filter="url(#floatShadow)">
+        <g transform="translate(360, 310)">
           <rect width="160" height="38" rx="10" fill="#0B1120" stroke="#0F9D6D" strokeWidth="1.2" strokeOpacity="0.8" />
           <circle cx="18" cy="19" r="6" fill="#10B981" />
           <circle cx="18" cy="19" r="10" fill="#10B981" fillOpacity="0.25" />

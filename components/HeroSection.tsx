@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
 import { Search, ShieldCheck, ArrowRight, Zap } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CATEGORIES } from '@/lib/data/categories';
 import { CivicServicesIllustration } from '@/components/CivicServicesIllustration';
@@ -25,12 +22,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
       <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center">
         
         {/* ── LEFT COLUMN: Headline, Prominent Search, CTA & Quick Links ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-start"
-        >
+        <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-start">
           
           {/* Top Trust Badge Pill */}
           <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/85 border border-doc-brass/35 text-xs shadow-sm">
@@ -136,17 +128,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
             </Link>
           </div>
 
-        </motion.div>
+        </div>
 
-        {/* ── RIGHT COLUMN: Custom Vector Illustration (Staggered Entrance Animation by 150ms) ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-5 flex items-center justify-center pt-2 lg:pt-0"
-        >
+        {/* ── RIGHT COLUMN: Custom Vector Illustration ── */}
+        <div className="lg:col-span-5 flex items-center justify-center pt-2 lg:pt-0">
           <CivicServicesIllustration className="max-w-[380px] sm:max-w-[440px] lg:max-w-none" />
-        </motion.div>
+        </div>
 
       </div>
     </section>
