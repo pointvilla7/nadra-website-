@@ -31,21 +31,22 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'ECP Voter Registration Check 2026: Free 8300 SMS, Polling Area & Vote Transfer | Pakistan Info Hub',
+  title: 'Voter List Check Online 2026: Free 8300 SMS & ECP Status',
   description:
-    'Authoritative guide to checking your voter registration status in Pakistan: How to use the free 8300 SMS service, decipher your block code and serial number, transfer votes using ECP Form 21, and understand polling day rules.',
+    'Send a free SMS to 8300 to check your voter registration in Pakistan. Instantly find your polling area, block code, serial number, and ECP voter list status.',
   keywords: [
+    'nadra voter list check online 2026',
+    '8300 vote check online free 2026',
     'voter registration check cnic 8300 2026',
     'ecp vote check sms free',
     'how to transfer vote to new address ecp form 21',
     'block code silsila number voter list pakistan',
     'voter registration district election commissioner',
-    'can i vote with expired cnic ecp rules',
   ],
   openGraph: {
-    title: 'ECP Voter Registration Check 2026: Free 8300 SMS & Vote Transfer Guide',
+    title: 'Voter List Check Online 2026: Free 8300 SMS & ECP Status',
     description:
-      'Official voter verification guide: SMS 8300 check, understanding block codes and polling stations, and ECP Forms 21, 22, and 23 for vote transfer.',
+      'Send a free SMS to 8300 to check your voter registration in Pakistan. Instantly find your polling area, block code, serial number, and ECP voter list status.',
     url: 'https://www.pakistaninfohub.com/nadra/voter-registration-check-cnic-ecp-2026',
   },
   alternates: { canonical: 'https://www.pakistaninfohub.com/nadra/voter-registration-check-cnic-ecp-2026' },
@@ -67,7 +68,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'ECP Voter Registration Check 2026',
+          name: 'Voter List Check Online 2026',
           item: 'https://www.pakistaninfohub.com/nadra/voter-registration-check-cnic-ecp-2026',
         },
       ],
@@ -76,7 +77,7 @@ const jsonLd = {
       '@type': 'HowTo',
       name: 'How to Check and Transfer Your Voter Registration in Pakistan',
       description:
-        'Official step-by-step procedure to check voter registration details via ECP SMS 8300 and transfer or correct electoral records.',
+        'Official step-by-step procedure to check voter registration details via free ECP SMS 8300 and transfer or correct electoral records.',
       step: [
         {
           '@type': 'HowToStep',
@@ -215,13 +216,13 @@ export default function VoterRegistrationGuidePage() {
             <VerifiedBadge textEn="FREE 8300 SMS SERVICE 2026" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            ECP Voter Registration Check 2026: Free 8300 SMS, Polling Area &amp; Vote Transfer
+            Voter List Check Online 2026: Free 8300 SMS &amp; ECP Status
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              الیکشن کمیشن ووٹر لسٹ تصدیق: 8300 ایس ایم ایس، بلاک کوڈ، سلسلہ نمبر اور ووٹ منتقلی فارم 21
+              الیکشن کمیشن ووٹر لسٹ تصدیق: مفت 8300 ایس ایم ایس، بلاک کوڈ اور سلسلہ نمبر
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed font-sans">
-            Want to confirm exactly where your vote is registered in Pakistan? Here is the complete official guide from the Election Commission of Pakistan (ECP): how to check your registration via free SMS 8300, decipher your Block Code, transfer your vote using Form 21, and polling day CNIC rules.
+            Want to check your voter list status online or via free SMS in Pakistan? Send your 13-digit CNIC to official shortcode 8300 at zero cost to instantly discover your registered electoral area, block code, serial number, and polling station location.
           </p>
         </header>
 

@@ -33,21 +33,21 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Sehat Card Hospital List Lahore 2026: Verified Panel, Inpatient Limits & PHIMC Portal | Pakistan Info Hub',
+  title: 'Sehat Card Hospital List Lahore 2026: Panel Hospitals',
   description:
-    'Complete practical guide to finding empanelled hospitals accepting the Sehat Sahulat Card in Lahore for 2026: Major government and private hospitals, checking the live PHIMC directory, Rs. 1,000,000 family coverage limits, and cashless admission rules.',
+    'View the 2026 list of Lahore hospitals accepting the Sehat Card. Find participating public and private hospitals, cashless admission rules, and panel updates.',
   keywords: [
     'sehat card hospital list lahore 2026',
+    'lahore hospitals accepting sehat card',
     'phimc empanelled hospitals lahore',
     'sehat sahulat program private hospitals lahore',
     'mayo hospital jinnah hospital sehat card counter',
-    'sehat card inpatient vs opd coverage',
     'how to use sehat card at hospital lahore',
   ],
   openGraph: {
-    title: 'Sehat Card Hospital List Lahore 2026: Panel Directory & Admission Guide',
+    title: 'Sehat Card Hospital List Lahore 2026: Panel Hospitals',
     description:
-      'Verified guide to Sehat Sahulat empanelled hospitals in Lahore: Public and private panels, live PHIMC verification, and cashless admission steps.',
+      'View the 2026 list of Lahore hospitals accepting the Sehat Card. Find participating public and private hospitals, cashless admission rules, and panel updates.',
     url: 'https://www.pakistaninfohub.com/health/sehat-card-hospital-list-lahore-2026',
   },
   alternates: { canonical: 'https://www.pakistaninfohub.com/health/sehat-card-hospital-list-lahore-2026' },
@@ -78,7 +78,7 @@ const jsonLd = {
       '@type': 'HowTo',
       name: 'How to Find and Use Empanelled Sehat Card Hospitals in Lahore',
       description:
-        'Official step-by-step procedure to verify participating Lahore hospitals on the PHIMC directory and receive cashless inpatient medical treatment.',
+        'Official step-by-step procedure to find participating Lahore hospitals on the PHIMC directory and receive cashless inpatient medical treatment.',
       step: [
         {
           '@type': 'HowToStep',
@@ -158,39 +158,39 @@ export default function SehatCardHospitalListLahorePage() {
       icon: <Hospital className="w-5 h-5" />,
       titleEn: 'Check Live List on PHIMC',
       titleUr: 'پورٹل پر ہسپتال کا سٹیٹس چیک کریں',
-      descEn: 'Visit phimc.punjab.gov.pk or call 0800-09009 to confirm the hospital is currently on the active panel.',
-      descUr: 'آن لائن پورٹل پر چیک کریں کہ مطلوبہ ہسپتال پینل پر فعال ہے۔',
-      tagEn: 'Live Directory',
-      tagUr: 'فعال پینل',
+      descEn: 'Verify if your target hospital is actively accepting patients via phimc.punjab.gov.pk or helpline 0800-09009.',
+      descUr: 'پورٹل یا ہیلپ لائن سے تصدیق کریں کہ ہسپتال پینل پر فعال ہے۔',
+      tagEn: 'Live Verification',
+      tagUr: 'آن لائن تصدیق',
     },
     {
       number: 2,
       icon: <CreditCard className="w-5 h-5" />,
       titleEn: 'Bring Original CNIC / B-Form',
-      titleUr: 'اصل شناختی کارڈ ہمراہ لائیں',
-      descEn: 'Your original NADRA CNIC or child B-Form serves as your medical insurance card.',
-      descUr: 'مریض اور سربراہ خاندان کا اصل شناختی کارڈ یا بچوں کا ب فارم ہمراہ رکھیں۔',
-      tagEn: 'CNIC Required',
-      tagUr: 'شناختی کارڈ',
+      titleUr: 'اصل شناختی کارڈ یا ب فارم لائیں',
+      descEn: 'Your Smart CNIC serves as your physical card; bring original B-Forms for children under 18.',
+      descUr: 'اصل سمارٹ شناختی کارڈ ہی آپ کا صحت کارڈ ہے، بچوں کا ب فارم لائیں۔',
+      tagEn: 'Identity Proof',
+      tagUr: 'شناختی دستاویز',
     },
     {
       number: 3,
       icon: <Building2 className="w-5 h-5" />,
-      titleEn: 'Visit Sehat Sahulat Desk',
-      titleUr: 'ہسپتال کے سہولت کاؤنٹر پر جائیں',
-      descEn: 'Go directly to the dedicated Sehat Sahulat Program facilitation counter inside the hospital.',
-      descUr: 'ہسپتال داخلے سے قبل وہاں موجود اسٹیٹ لائف کے کاؤنٹر پر اندراج کروائیں۔',
-      tagEn: 'Desk Verification',
-      tagUr: 'کاؤنٹر اندراج',
+      titleEn: 'Report to Sehat Sahulat Desk',
+      titleUr: 'ہسپتال میں صحت سہولت کاؤنٹر جائیں',
+      descEn: 'Visit the dedicated hospital SSP counter for instant biometric verification and admission token.',
+      descUr: 'ہسپتال کے اندر مخصوص کاؤنٹر سے بائیومیٹرک تصدیق کروائیں۔',
+      tagEn: 'Counter Token',
+      tagUr: 'ٹوکن کاؤنٹر',
     },
     {
       number: 4,
-      icon: <BadgeCheck className="w-5 h-5" />,
-      titleEn: 'Cashless Inpatient Care',
-      titleUr: 'مفت علاج اور ڈسچارج ادویات',
-      descEn: 'Approved admissions, surgeries, room charges, and post-discharge medicines are 100% cashless.',
-      descUr: 'منظوری کے بعد تمام سرجری، ٹیسٹ اور داخلہ فیس حکومتی فنڈ سے ادا ہوتی ہے۔',
-      tagEn: 'Cashless Treatment',
+      icon: <HeartPulse className="w-5 h-5" />,
+      titleEn: '100% Cashless Treatment',
+      titleUr: 'مفت علاج اور ادویات کی وصولی',
+      descEn: 'Undergo approved inpatient surgery or treatment with zero out-of-pocket charges up to Rs. 1M/family.',
+      descUr: '10 لاکھ روپے سالانہ حد تک بالکل مفت داخلہ اور آپریشن۔',
+      tagEn: 'Cashless Care',
       tagUr: 'کیش لیس علاج',
     },
   ];
@@ -209,13 +209,13 @@ export default function SehatCardHospitalListLahorePage() {
             <VerifiedBadge textEn="EMPANELLED HOSPITALS 2026" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            Sehat Card Hospital List Lahore 2026: Verified Panel, Inpatient Limits &amp; PHIMC Portal
+            Sehat Card Hospital List Lahore 2026: Panel Hospitals
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              صحت کارڈ ہسپتال لسٹ لاہور: سرکاری و نجی ہسپتال، پی ایچ آئی ایم سی پورٹل اور کیش لیس علاج
+              صحت کارڈ ہسپتال لسٹ لاہور: سرکاری و نجی ہسپتال، پینل لسٹ اور کیش لیس علاج
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed font-sans">
-            Need to know which hospitals in Lahore accept the Sehat Sahulat Card for hospitalization and surgeries? Here is the practical guide: major public and private participating institutions, how to verify active panel status on <code>phimc.punjab.gov.pk</code>, and what is covered under the Rs. 1,000,000 family limit.
+            Looking for hospitals in Lahore that accept the Sehat Sahulat Card? Here is the verified list of participating government teaching hospitals and private healthcare centers, along with cashless admission rules and Rs. 1,000,000 family coverage limits.
           </p>
         </header>
 
