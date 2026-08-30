@@ -155,6 +155,27 @@ const nextConfig = {
         destination: '/nadra/family-registration-certificate',
         permanent: true,
       },
+      // 4. Consolidated Utility Bills duplicate page redirects (Fix cannibalization)
+      {
+        source: '/bills/wasa-lahore-bill-check-online',
+        destination: '/bills/lahore-water-sewerage-bill-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/bills/kwsc-karachi-water-bill-check',
+        destination: '/bills/karachi-water-board-bill-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/bills/wasa-faisalabad-bill-check-online',
+        destination: '/bills/faisalabad-water-bill-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/bills/kelectric-duplicate-bill',
+        destination: '/bills/k-electric-duplicate-bill',
+        permanent: true,
+      },
     ];
   },
 

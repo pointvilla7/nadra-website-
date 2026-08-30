@@ -785,10 +785,10 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "iesco-bill-check-online",
     "fullPath": "/bills/iesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "IESCO Bill Check Online 2026 – Download Duplicate Electricity Bill PDF | Pakistan Info Hub",
-    "titleUr": "آئیسکو آن لائن بجلی بل چیک 2026 – ڈپلیکیٹ بل ڈاؤن لوڈ (اسلام آباد و راولپنڈی)",
-    "metaDescriptionEn": "Perform IESCO bill check online 2026. Download duplicate electricity bill for Islamabad, Rawalpindi, Attock, Jhelum, Chakwal using 14-digit reference number.",
-    "metaDescriptionUr": "آئیسکو آن لائن بجلی بل چیک 2026۔ اسلام آباد، راولپنڈی، اٹک، جہلم اور چکوال کا ڈپلیکیٹ بل 14 ہندسوں والے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "titleEn": "IESCO Bill Online Check 2026 – Tariff Slabs, FPA, Taxes & Duplicate Bill PDF | Pakistan Info Hub",
+    "titleUr": "آئیسکو آن لائن بجلی بل چیک 2026 – ٹیرف سلیب، ایف پی اے اور ڈپلیکیٹ بل ڈاؤن لوڈ",
+    "metaDescriptionEn": "IESCO electricity bill guide 2026: Calculate domestic tariff slabs, understand FPA & QTA charges, check protected vs non-protected status, and download duplicate bill PDF for Islamabad & Rawalpindi.",
+    "metaDescriptionUr": "آئیسکو آن لائن بجلی بل چیک 2026۔ اسلام آباد، راولپنڈی، اٹک اور جہلم کا ڈپلیکیٹ بل، فیول ایڈجسٹمنٹ (FPA) اور نیپرا ٹیرف سلیب کی مکمل تفصیل۔",
     "directAnswerEn": "To perform an IESCO online bill check in 2026, visit http://bill.pitc.com.pk/iescobill/ or iesco.com.pk. Enter your 14-digit Reference Number or 10-digit Customer ID from the top header of any previous bill to view, print, or download your official duplicate electricity bill PDF for Islamabad, Rawalpindi, Attock, Jhelum, or Chakwal.",
     "directAnswerUr": "آئیسکو بجلی کا آن لائن بل چیک کرنے کے لیے آفیشل پورٹل bill.pitc.com.pk/iescobill پر جائیں اور اپنے بل پر درج 14 ہندسوں کا ریفرنس نمبر یا 10 ہندسوں کا کسٹمر شناختی نمبر درج کریں۔ اسلام آباد اور راولپنڈی ریجن کا ڈپلیکیٹ بل پی ڈی ایف فوری دستیاب ہوگا۔",
     "lastVerified": "August 28, 2026",
@@ -798,7 +798,7 @@ export const ARTICLES: Record<string, Article> = {
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Utility Services Desk"
+      "role": "Utility & Energy Desk"
     },
     "feeStructure": [
       {
@@ -808,6 +808,30 @@ export const ARTICLES: Record<string, Article> = {
         "urgent": "Instant Download",
         "executive": "Official IESCO System",
         "validity": "Monthly"
+      },
+      {
+        "serviceEn": "Domestic Protected Tariff (1-100 Units)",
+        "serviceUr": "پروٹیکٹڈ گھریلو ٹیرف (1 تا 100 یونٹ)",
+        "normal": "PKR 7.74 / unit",
+        "urgent": "Govt Subsidized",
+        "executive": "Exempt from FPA Surcharge",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Domestic Protected Tariff (101-200 Units)",
+        "serviceUr": "پروٹیکٹڈ گھریلو ٹیرف (101 تا 200 یونٹ)",
+        "normal": "PKR 10.06 / unit",
+        "urgent": "Govt Subsidized",
+        "executive": "Standard Slabs",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Domestic Non-Protected (201-300 Units)",
+        "serviceUr": "نان پروٹیکٹڈ (201 تا 300 یونٹ)",
+        "normal": "PKR 27.14 / unit",
+        "urgent": "Full Cost Tariff",
+        "executive": "FPA + QTA Surcharges",
+        "validity": "Active 2026"
       },
       {
         "serviceEn": "IESCO 24/7 Helpline Support",
@@ -855,20 +879,20 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اسلام آباد، راولپنڈی، اٹک، جہلم اور چکوال کے اضلاع آئیسکو کے دائرہ اختیار میں آتے ہیں۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for IESCO Bill Check Online 2026: Islamabad Electricity Duplicate Bill?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "What is Fuel Price Adjustment (FPA) and Quarterly Tariff Adjustment (QTA) on my IESCO bill?",
+        "questionUr": "آئیسکو کے بل پر فیول پرائس ایڈجسٹمنٹ (FPA) اور سہ ماہی ایڈجسٹمنٹ (QTA) کیا ہے؟",
+        "answerEn": "FPA (Fuel Price Adjustment) reflects the monthly difference between the actual fuel cost incurred by generation power plants and the baseline fuel tariff approved by NEPRA. QTA (Quarterly Tariff Adjustment) accounts for quarterly capacity charges, transmission losses, and exchange rate fluctuations. Both charges are variable and determined periodically by NEPRA.",
+        "answerUr": "ایف پی اے (FPA) ایندھن کی اصل قیمت اور منظور شدہ بنیادی ٹیرف کے فرق کو پورا کرنے کے لیے ہر ماہ بل میں شامل کیا جاتا ہے۔ کیو ٹی اے (QTA) سہ ماہی بنیادوں پر کپیسٹی چارجز اور نقصانات کے مطابق لاگو ہوتا ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How do I know if my IESCO domestic connection is Protected or Non-Protected?",
+        "questionUr": "مجھے کیسے معلوم ہوگا کہ میرا آئیسکو کنکشن پروٹیکٹڈ ہے یا نان پروٹیکٹڈ؟",
+        "answerEn": "Under NEPRA rules, a Protected Consumer is a domestic connection that consumed 200 units or less for 6 consecutive billing months, qualifying for heavily subsidized base tariffs (Rs. 7.74 to 10.06/unit). If consumption exceeds 200 units even once, the status flips to Non-Protected with base rates exceeding Rs. 27/unit plus surcharges.",
+        "answerUr": "مسلسل 6 ماہ تک 200 یا اس سے کم یونٹ استعمال کرنے والے پروٹیکٹڈ صارف کہلاتے ہیں اور سستا ٹیرف پاتے ہیں۔ کسی ایک ماہ بھی 200 سے زائد یونٹس ہونے پر کنکشن نان پروٹیکٹڈ ہو جاتا ہے۔"
       }
     ],
-    "contentEn": "## Islamabad Electric Supply Company (IESCO) Guide 2026\n**IESCO** is renowned for having the highest recovery rates and lowest line losses among all distribution companies (DISCOs) in Pakistan. It manages electricity distribution for diplomatic enclaves, federal ministries, and residential cantonments.\n\n## Overview of IESCO Smart Metering (AMI) Project\n**IESCO** has deployed Advanced Metering Infrastructure (AMI) smart meters across Islamabad and Rawalpindi circles. These digital meters transmit real-time hourly consumption data via cellular SIMs, eliminating manual meter-reader visits and human reading errors.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Comprehensive Overview of IESCO Tariff Rates, Sub-Divisions & AMI Smart Metering (2026)\nThe **Islamabad Electric Supply Company (IESCO)** distributes electrical power across the Federal Capital Territory and northern Punjab. Renowned for maintaining one of the lowest line-loss ratios in the national grid, IESCO utilizes an Advanced Metering Infrastructure (AMI) network with smart digital meters that transmit hourly consumption readings wirelessly via dedicated cellular APNs.\n\n### 1. IESCO Administrative Circles & Regional Sub-Divisions\nIESCO's operations are divided into five major operational circles:\n- **Islamabad Circle**: Covering federal ministries, diplomatic enclaves, Sector E, F, G, H, I series, Bhara Kahu, and Tarnol.\n- **Rawalpindi City Circle**: Covering Raja Bazaar, Satellite Town, Westridge, Saddar Cantonment, and Murree Hills.\n- **Rawalpindi Cantt Circle**: Covering DHA Islamabad, Bahria Town, Chaklala, Airport Road, and Morgah.\n- **Attock Circle**: Covering Attock city, Fateh Jang, Hassan Abdal, Pindi Gheb, and Jand.\n- **Jhelum & Chakwal Circles**: Covering Dina, Sohawa, Choa Saidan Shah, Talagang, and Kalar Kahar.\n\n### 2. Time of Use (TOU) Smart Meter Peak Hours Matrix\nFor residential and commercial connections with 5 kW or higher sanctioned load, IESCO bills power under dual-rate Time-of-Use meters:\n- **Peak Hours (Higher Unit Rate)**: 7:00 PM to 11:00 PM (Summer: June to August) and 5:00 PM to 9:00 PM (Winter: December to February).\n- **Off-Peak Hours (Standard Base Rate)**: Remaining 20 hours daily with discounted fuel adjustment tariffs.\n\n---\n\n## Detailed Step-by-Step Guide to Resolving IESCO Overbilling & Faulty Meters\n1. **Physical Reading Audit**: Take a clear smartphone picture of your digital meter LCD display showing cumulative kWh and maximum demand indicator (MDI).\n2. **Contact Customer Service Center (CSC)**: Visit the IESCO Customer Services Center located at Sector G-7/4 in Islamabad or regional divisional offices.\n3. **Obtain Revised Bill (Billing Correction)**: The billing officer cross-checks meter reading logs and issues a revised bill with an extended payment deadline.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
-    "contentUr": "## اسلام آباد الیکٹرک سپلائی کمپنی (IESCO) گائیڈ\nآئیسکو وفاقی دارالحکومت اور راولپنڈی ڈویژن کو بجلی فراہم کرتی ہے۔ صارفین اپنا ڈپلیکیٹ بل آن لائن چیک کر کے موبائل ایپ سے فوری ادا کر سکتے ہیں۔",
+    "contentEn": "## Islamabad Electric Supply Company (IESCO) Complete Billing Guide 2026\n**IESCO (Islamabad Electric Supply Company)** is recognized for maintaining the highest recovery rates and lowest line losses among all distribution companies (DISCOs) in Pakistan. It manages electricity distribution for the Federal Capital Territory (Islamabad), Rawalpindi, Attock, Jhelum, and Chakwal districts.\n\n---\n\n## Understanding IESCO Electricity Bill Charges (FPA, QTA & Taxes)\nMany consumers are confused by additional surcharges that significantly increase monthly invoices:\n\n1. **Base Cost of Electricity**: Determined by monthly kWh units multiplied by your NEPRA tariff slab (Protected vs Non-Protected).\n2. **Fuel Price Adjustment (FPA)**: Monthly adjustment notified by NEPRA to account for variation in fuel generation costs (RLNG, coal, diesel).\n3. **Quarterly Tariff Adjustment (QTA)**: Quarterly capacity payment adjustments distributed across DISCO consumers.\n4. **Electricity Duty (ED) & General Sales Tax (GST)**: Provincial duty (1.5%) and standard 18% federal GST on bill amount.\n5. **Financing Cost Surcharge (FCS)**: Debt servicing charge per unit consumed.\n6. **PTV License Fee**: Fixed PKR 35 statutory monthly charge.\n\n---\n\n## Protected vs. Non-Protected Consumer Rules in 2026\n- **Protected Consumers**: Residential meters consuming ≤200 units for 6 consecutive months receive subsidized base tariffs (PKR 7.74/unit for 1–100 kWh, PKR 10.06/unit for 101–200 kWh).\n- **Non-Protected Consumers**: Households consuming >200 units in any single month lose protected status and pay PKR 27.14 to PKR 48.84 per unit across progressive slabs.\n\n---\n\n## Overview of IESCO Smart Metering (AMI) Project & TOU Peak Hours\n**IESCO** has deployed Advanced Metering Infrastructure (AMI) smart meters across Islamabad and Rawalpindi circles. These digital meters transmit real-time hourly consumption data via cellular SIMs, eliminating manual meter-reading errors.\n\n### Time of Use (TOU) Peak Hours Matrix\nFor connections with 5 kW or higher sanctioned load under dual-rate Time-of-Use meters:\n- **Peak Hours (Higher Unit Rate)**: 5:00 PM to 11:00 PM (Summer: April to October) and 5:00 PM to 9:00 PM (Winter: November to March).\n- **Off-Peak Hours (Standard Base Rate)**: Remaining hours with standard base tariffs.\n\n---\n\n## IESCO Administrative Circles & Regional Sub-Divisions\n- **Islamabad Circle**: Sector E, F, G, H, I series, Diplomatic Enclave, Bhara Kahu, Tarnol.\n- **Rawalpindi City Circle**: Raja Bazaar, Satellite Town, Westridge, Saddar Cantonment, Murree.\n- **Rawalpindi Cantt Circle**: DHA Islamabad, Bahria Town, Chaklala, Airport Road, Morgah.\n- **Attock Circle**: Attock city, Fateh Jang, Hassan Abdal, Pindi Gheb, Jand.\n- **Jhelum & Chakwal Circles**: Dina, Sohawa, Choa Saidan Shah, Talagang, Kalar Kahar.\n\n---\n\n## Step-by-Step Guide to Resolving IESCO Overbilling & Faulty Meters\n1. **Photograph Digital Meter**: Capture a clear photo of the LCD display showing cumulative kWh and MDI (Maximum Demand Indicator).\n2. **Contact Customer Service Center (CSC)**: Visit the IESCO Customer Services Center located at Sector G-7/4 Islamabad or regional sub-divisional offices.\n3. **Request Correction Voucher**: The billing officer audits meter reading logs and issues a revised bill with an extended payment deadline.\n4. **Escalate to Wafaqi Mohtasib**: If unresolved within 30 days, file a free dispute with the Federal Ombudsman at `complaint.mohtasib.gov.pk` or call **1055**.",
+    "contentUr": "## اسلام آباد الیکٹرک سپلائی کمپنی (IESCO) گائیڈ 2026\nآئیسکو وفاقی دارالحکومت اور راولپنڈی ڈویژن کو بجلی فراہم کرتی ہے۔ صارفین اپنا ڈپلیکیٹ بل آن لائن چیک کر کے موبائل ایپ سے فوری ادا کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
       "/bills/wapda-bill-complaint-number",
@@ -992,10 +1016,10 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "mepco-bill-check-online",
     "fullPath": "/bills/mepco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "MEPCO Bill Online Check 2026 – South Punjab Duplicate Electricity Bill | Pakistan Info Hub",
-    "titleUr": "میپکو آن لائن بجلی بل چیک 2026 – ملتان و جنوبی پنجاب ڈپلیکیٹ بل",
-    "metaDescriptionEn": "MEPCO bill online check 2026. Check and print duplicate electricity bill for Multan, Bahawalpur, D.G. Khan, Rahim Yar Khan, Sahiwal using 14-digit reference number.",
-    "metaDescriptionUr": "میپکو آن لائن بجلی بل چیک 2026۔ ملتان، بہاولپور، ڈی جی خان، رحیم یار خان اور ساہیوال کا ڈپلیکیٹ بل آن لائن چیک اور ڈاؤن لوڈ کریں۔",
+    "titleEn": "MEPCO Bill Online Check 2026 – South Punjab Tariff Slabs, FPA & Duplicate Bill PDF | Pakistan Info Hub",
+    "titleUr": "میپکو آن لائن بجلی بل چیک 2026 – ملتان و جنوبی پنجاب ٹیرف سلیب، FPA اور ڈپلیکیٹ بل",
+    "metaDescriptionEn": "MEPCO electricity bill guide 2026 for Multan & South Punjab: Understand protected vs non-protected tariff slabs, FPA/QTA taxes, tube-well agricultural billing, and download duplicate bill PDF.",
+    "metaDescriptionUr": "میپکو آن لائن بجلی بل چیک 2026۔ ملتان، بہاولپور، ڈی جی خان اور رحیم یار خان کا ڈپلیکیٹ بل، فیول ایڈجسٹمنٹ (FPA) اور نیپرا سلیب ریٹس۔",
     "directAnswerEn": "To perform a MEPCO bill online check in 2026, navigate to the official PITC portal at http://bill.pitc.com.pk/mepcobill/. Enter your 14-digit Reference Number without spaces to check your current bill amount, units consumed, and download a duplicate copy for all South Punjab districts including Multan, Bahawalpur, D.G. Khan, and Sahiwal.",
     "directAnswerUr": "میپکو آن لائن بل 2026 چیک کرنے کے لیے PITC پورٹل bill.pitc.com.pk/mepcobill پر جائیں اور 14 ہندسوں کا ریفرنس نمبر درج کریں۔ ملتان، بہاولپور، رحیم یار خان اور ڈی جی خان کے صارفین اپنا بل فوری دیکھ اور پرنٹ کر سکتے ہیں۔",
     "lastVerified": "August 28, 2026",
@@ -1005,7 +1029,7 @@ export const ARTICLES: Record<string, Article> = {
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Utility Services Desk"
+      "role": "Utility & Energy Desk"
     },
     "feeStructure": [
       {
@@ -1017,11 +1041,27 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Monthly"
       },
       {
-        "serviceEn": "MEPCO Helpline",
+        "serviceEn": "Domestic Protected (1-100 Units)",
+        "serviceUr": "پروٹیکٹڈ گھریلو (1 تا 100 یونٹ)",
+        "normal": "PKR 7.74 / unit",
+        "urgent": "Govt Subsidized",
+        "executive": "Lifeline Domestic",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Agricultural Tube-well Tariff (D-Tariff)",
+        "serviceUr": "زرعی ٹیوب ویل ٹیرف (ڈی ٹیرف)",
+        "normal": "Subsidized Flat Rate",
+        "urgent": "Solar Hybrid Transition",
+        "executive": "South Punjab Farming",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "MEPCO Helpline Support",
         "serviceUr": "میپکو ہیلپ لائن نمبر",
         "normal": "Dial 118 / 061-9220313",
         "urgent": "SMS 8118",
-        "executive": "South Punjab",
+        "executive": "South Punjab Control",
         "validity": "24/7"
       }
     ],
@@ -1037,14 +1077,14 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 2,
         "titleEn": "Enter 14-Digit Reference Number",
         "titleUr": "14 ہندسوں کا ریفرنس نمبر درج کریں",
-        "detailEn": "Type your consumer reference number.",
+        "detailEn": "Type your 14-digit consumer reference number found on previous bills.",
         "detailUr": "ریفرنس نمبر درج کر کے بل جنریٹ کریں۔"
       },
       {
         "stepNumber": 3,
         "titleEn": "Print or Pay Online",
         "titleUr": "پرنٹ کریں یا آن لائن فیس ادا کریں",
-        "detailEn": "Pay via 1Link or Easypaisa using your reference number.",
+        "detailEn": "Pay via 1Link, JazzCash, or Easypaisa using your reference number.",
         "detailUr": "بینکنگ ایپ سے 1Link کے ذریعے بل ادا کریں۔"
       }
     ],
@@ -1058,24 +1098,24 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the MEPCO jurisdiction area?",
         "questionUr": "میپکو کا دائرہ اختیار کون سے اضلاع پر ہے؟",
-        "answerEn": "MEPCO is the largest DISCO in Pakistan by geographic area, covering 13 districts in South Punjab.",
-        "answerUr": "میپکو جنوبی پنجاب کے 13 اضلاع پر محیط سب سے بڑی ڈسٹری بیوشن کمپنی ہے۔"
+        "answerEn": "MEPCO is the largest DISCO in Pakistan by geographic area, covering 13 districts in South Punjab: Multan, Khanewal, Sahiwal, Pakpattan, Vehari, Lodhran, Bahawalpur, Bahawalnagar, Rahim Yar Khan, D.G. Khan, Muzaffargarh, Layyah, and Rajanpur.",
+        "answerUr": "میپکو جنوبی پنجاب کے 13 اضلاع بشمول ملتان، ساہیوال، بہاولپور، رحیم یار خان اور ڈی جی خان پر محیط سب سے بڑی تقسیم کار کمپنی ہے۔"
       },
       {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
+        "questionEn": "What is Fuel Price Adjustment (FPA) on MEPCO electricity bills?",
+        "questionUr": "میپکو بجلی کے بل پر فیول پرائس ایڈجسٹمنٹ (FPA) کیوں لگایا جاتا ہے؟",
+        "answerEn": "FPA is a variable monthly surcharge determined by NEPRA that reflects the difference in actual fuel costs incurred to generate electricity versus the estimated reference tariff. During heavy summer peak demand, high RLNG and thermal generation in South Punjab can increase FPA charges on non-protected consumers.",
+        "answerUr": "ایف پی اے نیپرا کا منظور شدہ ماہانہ چارج ہے جو بجلی پیدا کرنے والے ایندھن کی قیمتوں میں اتار چڑھاؤ کے فرق کو پورا کرنے کے لیے لگایا جاتا ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How do agricultural consumers get tube-well electricity subsidies in MEPCO?",
+        "questionUr": "میپکو میں زرعی صارفین ٹیوب ویل بجلی سبسڈی کیسے حاصل کرتے ہیں؟",
+        "answerEn": "Farmers registered under the Punjab Agricultural Department can avail subsidized flat-rate tariffs on D-1 and D-2 tube-well connections. Applications for tube-well solar hybrid connections can also be submitted at MEPCO divisional revenue offices.",
+        "answerUr": "محکمہ زراعت سے رجسٹرڈ کاشتکار میپکو ریونیو آفس سے ٹیوب ویل ڈی ٹیرف سبسڈی اور سولر ہائبرڈ اسکیم کے لیے رجوع کر سکتے ہیں۔"
       }
     ],
-    "contentEn": "## Multan Electric Power Company (MEPCO) Guide 2026\n**MEPCO** serves the vast agricultural and commercial expanse of South Punjab, managing complex distribution networks across cotton belts and mango orchards.\n\n## Tube-Well & Rural Electrification under MEPCO South Punjab\nManaging electricity distribution across cotton and wheat farming belts, **MEPCO** administers subsidized agricultural flat-rate schemes and tube-well solarization transition policies.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Multan Electric Power Company (MEPCO) Complete South Punjab Billing Guide 2026\n**MEPCO** is the largest electricity distribution utility in Pakistan by geographic area, covering over 105,000 square kilometers across **13 districts in South Punjab**: Multan, Khanewal, Sahiwal, Pakpattan, Vehari, Lodhran, Bahawalpur, Bahawalnagar, Rahim Yar Khan, D.G. Khan, Muzaffargarh, Layyah, and Rajanpur.\n\n### 1. Managing Heavy Summer Bills & Voltage Fluctuation in Rural Feeders\nSouth Punjab experiences extreme summer temperatures exceeding 48°C, leading to heavy power demand and low voltage issues in tail-end rural feeders. MEPCO has installed automated capacitor banks and dedicated 132 kV grid stations in Lodhran, Taunsa, and Chishtian to stabilize transmission voltages.\n\n### 2. Step-by-Step Procedure to Change Meter Name on MEPCO Connections\n- Submit Form 2-A at your local MEPCO sub-division office.\n- Attach applicant's CNIC, original computerized Fard Malkiat or registered Sale Deed, and no-objection certificate (NOC) from previous owner.\n- Pay the nominal change of name fee (PKR 350) and receive updated bill under your name in the next billing cycle.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## ملتان الیکٹرک پاور کمپنی (MEPCO) گائیڈ\nمیپکو جنوبی پنجاب کا سب سے بڑا بجلی تقسیم کار ادارہ ہے۔",
+    "contentEn": "## Multan Electric Power Company (MEPCO) Complete Billing Guide 2026\n**MEPCO (Multan Electric Power Company)** is the largest electricity distribution utility in Pakistan by geographic jurisdiction, spanning over 105,000 square kilometers across **13 districts in South Punjab**: Multan, Khanewal, Sahiwal, Pakpattan, Vehari, Lodhran, Bahawalpur, Bahawalnagar, Rahim Yar Khan, D.G. Khan, Muzaffargarh, Layyah, and Rajanpur.\n\n---\n\n## Understanding MEPCO Electricity Bill Charges & Taxes\nDomestic and agricultural bills in South Punjab consist of multiple components:\n\n1. **Base Electricity Tariff**: NEPRA approved per-unit cost according to Protected (≤200 units for 6 months) and Non-Protected consumption slabs.\n2. **Fuel Price Adjustment (FPA)**: Variable monthly surcharge reflecting thermal generation costs.\n3. **Quarterly Tariff Adjustment (QTA)**: Quarterly national capacity charges.\n4. **Agricultural Subsidies (D-Tariff)**: Specialized flat tariffs for tube-wells in farming belts.\n5. **Statutory Taxes**: 18% General Sales Tax (GST), Electricity Duty, and Financing Cost Surcharges.\n\n---\n\n## Managing Summer Peak Load & Voltage Stability in Rural Feeders\nSouth Punjab experiences summer temperatures exceeding 48°C, creating substantial cooling and irrigation loads. MEPCO maintains dedicated 132 kV grid stations in Lodhran, Taunsa, Chishtian, and Khanpur to stabilize tail-end voltages.\n\n---\n\n## Step-by-Step Procedure to Change Meter Name on MEPCO Connections\n- Submit Form 2-A at your local MEPCO sub-division office.\n- Attach applicant's CNIC, original computerized Fard Malkiat or registered Sale Deed, and no-objection certificate (NOC) from previous owner.\n- Pay the nominal change of name fee (PKR 350) and receive updated bill under your name in the next billing cycle.",
+    "contentUr": "## ملتان الیکٹرک پاور کمپنی (MEPCO) گائیڈ 2026\nمیپکو جنوبی پنجاب کا سب سے بڑا بجلی تقسیم کار ادارہ ہے۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
       "/bills/wapda-bill-complaint-number",
@@ -1109,6 +1149,14 @@ export const ARTICLES: Record<string, Article> = {
         "urgent": "Instant PDF",
         "executive": "SSGC Customer Portal",
         "validity": "Monthly"
+      },
+      {
+        "serviceEn": "Protected Domestic Gas Slab (≤0.9 hm3)",
+        "serviceUr": "پروٹیکٹڈ گھریلو گیس سلیب",
+        "normal": "Subsidized Baseline Tariff",
+        "urgent": "Lowest Rate",
+        "executive": "Domestic Kitchens",
+        "validity": "Active 2026"
       },
       {
         "serviceEn": "SSGC Emergency Helpline",
@@ -1156,20 +1204,14 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "فوری طور پر 1199 پر کال کریں یا کسٹمر کنیکٹ ایپ پر شکایت درج کروائیں۔"
       },
       {
-        "questionEn": "How can citizens verify the authenticity of official documents and avoid imposters?",
-        "questionUr": "سرکاری دستاویزات کی تصدیق اور جعل سازی سے کیسے بچا جائے؟",
-        "answerEn": "Always verify tracking numbers on the official government website ending in .gov.pk or .org.pk. Never share one-time password (OTP) codes or sensitive biometric details with unverified phone callers claiming to represent government helplines.",
-        "answerUr": "ہمیشہ .gov.pk ویب سائٹ سے تصدیق کریں اور کسی بھی غیر متعلقہ فون کال پر اپنا او ٹی پی (OTP) یا بائیو میٹرک تفصیلات شیئر نہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What is the difference between Protected and Non-Protected SSGC gas consumers?",
+        "questionUr": "سوئی سدرن کے پروٹیکٹڈ اور نان پروٹیکٹڈ گیس صارفین میں کیا فرق ہے؟",
+        "answerEn": "Consumers using up to 0.9 hm3 (hectometers cubed) per month qualify as Protected Consumers with subsidized base tariffs and reduced meter rent. Consuming above 0.9 hm3 triggers progressive non-protected rate brackets with higher per-MMBTU unit rates.",
+        "answerUr": "ماہانہ 0.9 ہیکٹومیٹر تک گیس استعمال کرنے والے صارفین پروٹیکٹڈ رہتے ہیں اور ان کا ٹیرف کم ہوتا ہے، جبکہ اس سے زائد استعمال پر نان پروٹیکٹڈ ریٹس لاگو ہوتے ہیں۔"
       }
     ],
-    "contentEn": "## Sui Southern Gas Company (SSGC) Guide 2026\n**SSGC** provides natural gas and LPG distribution across Sindh and Balochistan, serving domestic kitchens and industrial powerhouses in Karachi and Hub.\n\n## SSGC Industrial & Domestic Distribution across Sindh & Balochistan\n**Sui Southern Gas Company** manages extensive pipeline distribution from Karachi port LNG terminals to interior Sindh and the high-altitude winter belts of Quetta and Kalat.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Sui Southern Gas Company (SSGC) Complete Billing & Customer Care Guide 2026\n**Sui Southern Gas Company (SSGC)** provides natural gas transmission and distribution to over 3.2 million domestic, commercial, and industrial consumers across **Sindh and Balochistan**, including the major metropolises of Karachi, Hyderabad, Sukkur, Quetta, and Gwadar.\n\n### 1. Understanding the MMBTU & Volume Calculation Formula\nGas meters measure volume consumed in hundreds of cubic meters (Hm3). This volume is converted into heat energy (MMBTU) based on the Gross Calorific Value (GCV) of natural gas supplied from Sui, Badin, and imported RLNG terminals at Port Qasim.\n\n### 2. Winter Load Management & Quetta Emergency Relief\nDuring extreme sub-zero winter temperatures in Quetta, Ziarat, and Kalat, SSGC provides emergency LPG cylinder air-mix distribution and implements specialized winter heating tariff slabs to prevent predatory billing for mountain populations.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.\n\n---\n\n## Summary of Key Verification Protocols & Citizen Safeguards (2026 Checklist)\nBefore completing any official transaction or submitting financial documents, verify the following baseline procedural benchmarks:\n\n1. **Official Verification Stamps**: Ensure all computer-generated vouchers, receipts, and bank deposit challans bear the official branch cashier stamp and computer transaction sequence number.\n2. **Digital Copy Archival**: Maintain a scanned PDF or photograph of your submitted forms and payment receipts in cloud storage (Google Drive or Dropbox) for at least 5 years.\n3. **Tracking & Timeline Monitoring**: Utilize the official departmental SMS short-code or online portal tracking number to monitor progress weekly. If no update occurs within the stipulated charter timeframe, immediately escalate the case to the departmental grievance officer or relevant provincial ombudsman desk.",
-    "contentUr": "## سوئی سدرن گیس کمپنی (SSGC) گائیڈ\nسندھ اور بلوچستان کے صارفین کے لیے سوئی سدرن گیس کا بل آن لائن حاصل کرنے کا طریقہ۔",
+    "contentEn": "## Sui Southern Gas Company (SSGC) Complete Billing Guide 2026\n**Sui Southern Gas Company (SSGC)** provides natural gas transmission and distribution to over 3.2 million domestic, commercial, and industrial consumers across **Sindh and Balochistan**, including Karachi, Hyderabad, Sukkur, Quetta, and Gwadar.\n\n---\n\n## Understanding the MMBTU & Volume Calculation Formula\nGas meters measure volume consumed in hundreds of cubic meters (Hm3). This volume is converted into heat energy (MMBTU) based on the Gross Calorific Value (GCV) of natural gas supplied from Sui, Badin, and imported RLNG terminals at Port Qasim.\n\n---\n\n## Winter Load Management & Quetta Emergency Relief\nDuring extreme sub-zero winter temperatures in Quetta, Ziarat, and Kalat, SSGC provides emergency LPG cylinder air-mix distribution and implements specialized winter heating tariff slabs to prevent excessive billing for mountain populations.\n\n---\n\n## Consumer Rights under OGRA Regulations\n- **Billing Notice**: Physical or digital gas bills must be delivered at least 7 days before the due date.\n- **Disconnection Notice**: 7-day formal notice is mandatory before disconnection; disconnections are prohibited on weekends and public holidays.\n- **Meter Accuracy Challenge**: Consumers can challenge meter acceleration with an OGRA laboratory testing fee; confirmed error grants retroactive 6-month bill adjustments.",
+    "contentUr": "## سوئی سدرن گیس کمپنی (SSGC) گائیڈ 2026\nسندھ اور بلوچستان کے صارفین کے لیے سوئی سدرن گیس کا بل آن لائن حاصل کرنے کا طریقہ۔",
     "relatedSlugs": [
       "/bills/sui-gas-bill-check-online",
       "/bills/wapda-bill-complaint-number",
@@ -1180,10 +1222,10 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "electricity-bill-installment-guide",
     "fullPath": "/bills/electricity-bill-installment-guide",
     "categoryId": "bills",
-    "titleEn": "Electricity Bill Extension & Installment Application Guide 2026",
-    "titleUr": "بجلی کا بل اقساط میں کروانے اور تاریخ میں توسیع کا طریقہ 2026",
-    "metaDescriptionEn": "How to get electricity bill installments approved at LESCO, IESCO, K-Electric, MEPCO customer centers. NEPRA consumer rules, due date extension, and surge relief.",
-    "metaDescriptionUr": "بھاری بجلی کا بل آسان اقساط میں کروانے اور آخری تاریخ بڑھوانے کی مکمل سرکاری گائیڈ۔",
+    "titleEn": "Electricity Bill Installment & Due Date Extension Guide 2026 (NEPRA Rules)",
+    "titleUr": "بجلی کا بل اقساط میں کروانے اور تاریخ میں توسیع کا سرکاری طریقہ 2026",
+    "metaDescriptionEn": "How to get electricity bill installments approved at LESCO, IESCO, K-Electric, MEPCO customer centers. NEPRA consumer rules, SDO/XEN approval limits, and due date extension.",
+    "metaDescriptionUr": "بھاری بجلی کا بل آسان اقساط میں کروانے اور آخری تاریخ بڑھوانے کی مکمل سرکاری گائیڈ۔ ایس ڈی او اور ایکسین کے اختیارات۔",
     "directAnswerEn": "To convert a heavy electricity bill into monthly installments in Pakistan in 2026, visit your local DISCO Sub-Divisional Officer (SDO) or Revenue Officer (RO) before the due date. SDOs can approve 2-3 installments up to PKR 50,000; Executive Engineers (XEN) can approve up to PKR 200,000.",
     "directAnswerUr": "بھاری بجلی کے بل کو آسان اقساط میں تبدیل کروانے کے لیے آخری تاریخ سے پہلے اپنے قریبی ایس ڈی او (SDO) یا ریونیو آفیسر (RO) سے رجوع کریں۔ ایس ڈی او 50 ہزار تک کے بل پر 2 سے 3 اقساط اور ایکسین (XEN) 2 لاکھ تک کے بل پر اقساط کی منظوری دینے کے مجاز ہیں۔",
     "lastVerified": "August 28, 2026",
@@ -1259,19 +1301,13 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "جی ہاں، لیکن قسطیں منظور ہونے کے بعد تمام اقساط اور نیا ماہانہ بل وقت پر ادا کرنا لازمی ہوتا ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Electricity Bill Extension & Installment Application Guide 2026?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Does applying for installments protect against power disconnection?",
+        "questionUr": "کیا قسطیں کروانے سے بجلی کٹنے سے بچاؤ ہوتا ہے؟",
+        "answerEn": "Yes. Under Section 9 of NEPRA Consumer Service Manual (CSM), once the first installment is deposited and entered into the billing database, the automated disconnection order (KPK list) is immediately frozen.",
+        "answerUr": "جی ہاں! نیپرا قوانین کے تحت پہلی قسط ادا ہوتے ہی سسٹم میں بجلی کاٹنے کا آرڈر منسوخ ہو جاتا ہے۔"
       }
     ],
-    "contentEn": "## Complete Guide to Electricity Bill Installments in Pakistan 2026\nSoaring fuel price adjustments and capacity taxes can make summer electricity bills overwhelming for salaried families. Under **NEPRA Consumer Service Manual (CSM) regulations**, every electricity consumer has the legal right to request structured monthly installments for heavy utility bills.\n\n## Complete Legal Framework: NEPRA Consumer Service Manual Guidelines\nUnder Section 9 of the NEPRA Consumer Service Manual (CSM):\n- Any domestic consumer facing financial hardship is entitled to up to **3 monthly installments** upon application.\n- Disconnection notices are legally suspended the moment an official installment plan is signed and the first voucher is deposited.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## Complete Legal & Practical Manual for Electricity Bill Installments across Pakistan\nUnder the **NEPRA Consumer Service Manual (CSM)**, electricity distribution companies (LESCO, IESCO, FESCO, MEPCO, GEPCO, PESCO, HESCO, SEPCO, QESCO, K-Electric) are legally required to provide installment relief to consumers facing financial distress.\n\n### 1. Delegation of Financial Powers for Installment Approval\n\n| Official Designation | Maximum Bill Amount Eligible for Installments | Number of Permissible Monthly Installments | Office Location |\n| :--- | :--- | :--- | :--- |\n| **Sub-Divisional Officer (SDO)** | Up to PKR 50,000 | 2 to 3 Installments | Local Sub-Division Office |\n| **Executive Engineer (XEN)** | Up to PKR 200,000 | 3 to 4 Installments | Division Office |\n| **Superintending Engineer (SE)** | Up to PKR 500,000 | 4 to 6 Installments | Circle Office |\n| **Chief Executive Officer (CEO)** | Unlimited Amount / Industrial | Up to 12 Installments | DISCO Headquarters |\n\n### 2. Critical Caveats When Availing Installments\n- **Immediate Power Disconnection Protection**: Once the SDO signs the installment voucher and the first installment is deposited at the bank, the computerized disconnection order (*KPK List*) is automatically frozen in the billing database.\n- **Avoiding Default Termination**: If a consumer defaults on any installment in the second or third month, the full remaining balance becomes immediately payable with a mandatory 10% late payment surcharge.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
+    "contentEn": "## Complete Legal & Practical Manual for Electricity Bill Installments across Pakistan 2026\nUnder the **NEPRA Consumer Service Manual (CSM)**, electricity distribution companies (LESCO, IESCO, FESCO, MEPCO, GEPCO, PESCO, HESCO, SEPCO, QESCO, K-Electric) are legally required to provide installment relief to domestic consumers facing financial distress.\n\n---\n\n## Delegation of Financial Powers for Installment Approval\n\n| Official Designation | Maximum Bill Amount Eligible for Installments | Number of Permissible Monthly Installments | Office Location |\n| :--- | :--- | :--- | :--- |\n| **Sub-Divisional Officer (SDO)** | Up to PKR 50,000 | 2 to 3 Installments | Local Sub-Division Office |\n| **Executive Engineer (XEN)** | Up to PKR 200,000 | 3 to 4 Installments | Division Office |\n| **Superintending Engineer (SE)** | Up to PKR 500,000 | 4 to 6 Installments | Circle Office |\n| **Chief Executive Officer (CEO)** | Unlimited Amount / Industrial | Up to 12 Installments | DISCO Headquarters |\n\n---\n\n## Critical Caveats When Availing Installments\n- **Immediate Power Disconnection Protection**: Once the SDO signs the installment voucher and the first installment is deposited at the bank, the computerized disconnection order is automatically frozen in the billing database.\n- **Avoiding Default Termination**: If a consumer defaults on any installment in the second or third month, the full remaining balance becomes immediately payable with a mandatory late payment surcharge.",
     "contentUr": "## بجلی کے بل کی اقساط کروانے کا مکمل قانونی طریقہ 2026\nنیپرا کے قوانین کے تحت ہر شہری کو بھاری بل آسان اقساط میں تبدیل کروانے کا باقاعدہ قانونی حق حاصل ہے۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
@@ -5447,19 +5483,19 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "جی ہاں! 118 تمام موبائل نیٹ ورکس اور پی ٹی سی ایل لینڈ لائن سے فری نمبر ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WAPDA Complaint Numbers & Helplines 2026 (LESCO, MEPCO, IESCO)?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "How do I lodge an electricity complaint via SMS?",
+        "questionUr": "ایس ایم ایس کے ذریعے بجلی کی شکایت کیسے درج کروائیں؟",
+        "answerEn": "Send your 14-digit reference number and a short description of the fault (e.g., 'Transformer spark' or 'No power') via SMS to 8118. You will receive an automated tracking ticket number within minutes.",
+        "answerUr": "اپنا 14 ہندسوں کا ریفرنس نمبر اور مسئلے کی تفصیل لکھ کر 8118 پر ایس ایم ایس بھیجیں، فوری ٹریکنگ نمبر موصول ہو جائے گا۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How do I escalate an unresolved overbilling dispute to the Federal Ombudsman (Wafaqi Mohtasib)?",
+        "questionUr": "اوور بلنگ کے غیر حل شدہ تنازعے کو وفاقی محتسب کے پاس کیسے لے جائیں؟",
+        "answerEn": "If your DISCO does not resolve your overbilling or meter complaint within 30 days, file an online appeal at complaint.mohtasib.gov.pk or call toll-free 1055. The Federal Ombudsman provides legally binding decisions within 60 days without any court fees or lawyer requirements.",
+        "answerUr": "اگر 30 دن میں بجلی کمپنی مسئلہ حل نہ کرے تو complaint.mohtasib.gov.pk یا 1055 پر مفت آن لائن شکایت درج کروائیں، 60 دن میں فیصلہ ہو جاتا ہے۔"
       }
     ],
-    "contentEn": "## Pakistan Electricity Complaints & Helplines Directory 2026\nNavigating power outages, voltage drops, burnt transformers, and billing discrepancies requires fast access to designated emergency dispatch desks.\n\n## Wafaqi Mohtasib (Federal Ombudsman) Escalation Procedures for Electricity Disputes\nIf your local DISCO fails to resolve an unjust over-billing issue within 30 days, filing an appeal with the **Federal Ombudsman Energy Investigation Wing** provides a legally binding resolution within 60 days with zero lawyer fees.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n## National Directory of Electricity Helplines & Wafaqi Mohtasib Dispute Resolution\nWhen power outages, burnt distribution transformers, live sparking wires, or billing errors occur, contacting the exact emergency dispatch desk saves crucial hours.\n\n### 1. Complete DISCO 24/7 Emergency Helplines Directory\n- **LESCO (Lahore)**: 118 / 042-99205461 / SMS 8118\n- **IESCO (Islamabad/Rawalpindi)**: 118 / 051-9252937 / SMS 8118\n- **FESCO (Faisalabad)**: 118 / 0800-66554 / SMS 8118\n- **MEPCO (Multan)**: 118 / 061-9220313 / SMS 8118\n- **GEPCO (Gujranwala)**: 118 / 055-9200164 / SMS 8118\n- **PESCO (Peshawar)**: 118 / 091-9212013 / SMS 8118\n- **HESCO (Hyderabad)**: 118 / 022-9260161 / SMS 8118\n- **QESCO (Quetta)**: 118 / 081-9201444 / SMS 8118\n- **K-Electric (Karachi)**: 118 / 021-99000 / SMS 8119\n\n### 2. Filing Free Legal Appeals with the Federal Ombudsman (Energy Wing)\nThe Federal Ombudsman (*Wafaqi Mohtasib*) operates under Presidential Order No. 1 of 1983. Any citizen can file an overbilling or wrongful disconnection complaint online at `complaint.mohtasib.gov.pk` with zero court fees, zero lawyer requirements, and a statutory 60-day binding resolution mandate.\n\n---\n\n## Comprehensive Power & Gas Conservation Guidelines for Salaried Households\nWith electricity and gas tariffs at historic highs, implementing strategic load management substantially reduces the risk of crossing from protected to non-protected billing brackets:\n\n### 1. High-Impact Electricity Saving Tactics\n- **Air Conditioner Inverter Calibration**: Setting your DC inverter air conditioner temperature at 26°C instead of 18°C reduces continuous compressor amperage draw by up to 35%. Ensure condenser coils are washed every 30 days to prevent thermal overload.\n- **Refrigerator & Deep Freezer Insulation**: Keep cooling units at least 6 inches away from walls to ensure unhindered airflow. Defrost manual freezers regularly, as frost layers exceeding 5mm act as thermal insulators, forcing compressors to run non-stop.\n- **Eliminating Phantom Vampire Loads**: Appliances left on standby mode (microwaves, televisions, set-top boxes, Wi-Fi routers, mobile chargers) consume 5% to 10% of total household baseline energy. Disconnect main wall socket switches when not in use.\n\n### 2. Peak Hours Load Shedding Strategy\nDuring peak hours (daily 7:00 PM to 11:00 PM in summer), unit rates double or triple under Time-of-Use metering. Avoid running heavy inductive loads (washing machine spinners, electric water geysers, pressing irons, water suction motors) during these four hours to protect your monthly billing tier.\n\n---\n\n## Consumer Rights under NEPRA & OGRA Charters\nUnder statutory regulations established by the **National Electric Power Regulatory Authority (NEPRA)** and **Oil and Gas Regulatory Authority (OGRA)**:\n- **Billing Notice Requirement**: Consumers must receive physical or digital bills at least 7 clear calendar days before the stated payment due date.\n- **Wrongful Disconnection Protection**: No utility company may disconnect an active connection without serving a mandatory 7-day physical notice, and disconnections are legally prohibited on Fridays, weekends, and public gazetted holidays.\n- **Defective Meter Testing Rights**: Consumers have the legal right to challenge suspicious meter acceleration by paying a nominal inspection fee. If the laboratory check proves meter error exceeding ±2%, the utility must issue retroactive credit adjustments for the previous 6 months.",
+    "contentEn": "## Pakistan Electricity Complaints & Helplines Directory 2026\nNavigating power outages, voltage drops, burnt transformers, and billing discrepancies requires fast access to designated emergency dispatch desks across all 11 DISCOs and K-Electric.\n\n---\n\n## National Directory of Electricity Helplines & Emergency Control Rooms\nWhen power outages, burnt distribution transformers, live sparking wires, or billing errors occur, contacting the exact emergency dispatch desk saves crucial hours:\n\n- **LESCO (Lahore)**: 118 / 042-99205461 / SMS 8118\n- **IESCO (Islamabad/Rawalpindi)**: 118 / 051-9252937 / SMS 8118\n- **FESCO (Faisalabad)**: 118 / 0800-66554 / SMS 8118\n- **MEPCO (Multan)**: 118 / 061-9220313 / SMS 8118\n- **GEPCO (Gujranwala)**: 118 / 055-9200164 / SMS 8118\n- **PESCO (Peshawar)**: 118 / 091-9212013 / SMS 8118\n- **HESCO (Hyderabad)**: 118 / 022-9260161 / SMS 8118\n- **SEPCO (Sukkur)**: 118 / 071-9310795 / SMS 8118\n- **QESCO (Quetta)**: 118 / 081-9201444 / SMS 8118\n- **TESCO (Tribal Districts)**: 118 / 091-9212964 / SMS 8118\n- **HAZECO (Hazara)**: 118 / 0992-9310080 / SMS 8118\n- **K-Electric (Karachi)**: 118 / 021-99000 / SMS 8119 / WhatsApp 0348-0000118\n\n---\n\n## Filing Free Legal Appeals with the Federal Ombudsman (Energy Wing)\nThe Federal Ombudsman (*Wafaqi Mohtasib*) operates under Presidential Order No. 1 of 1983. Any citizen can file an overbilling or wrongful disconnection complaint online at `complaint.mohtasib.gov.pk` with zero court fees, zero lawyer requirements, and a statutory 60-day binding resolution mandate.\n\n---\n\n## Consumer Rights under NEPRA Consumer Service Manual (CSM)\n- **7-Day Prior Notice**: No utility company can disconnect an active meter without serving a 7-day physical notice.\n- **Disconnection Ban**: Power disconnections are strictly prohibited on Fridays, weekends, and official public holidays.\n- **Defective Meter Testing**: Consumers can challenge meter acceleration with an inspection fee; confirmed error grants retroactive 6-month bill adjustments.",
     "contentUr": "## پاکستان بجلی و واپڈا شکایات ہیلپ لائن ڈائریکٹری 2026\nملک بھر کے صارفین کے لیے بجلی کے تمام مسائل، ٹرانسفارمرز اور اوور بلنگ کے فوری حل کے لیے مستند رابطہ نمبرز۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
@@ -8081,10 +8117,10 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "sepco-bill-check-online",
     "fullPath": "/bills/sepco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "SEPCO Bill Check Online 2026 – Sukkur & Upper Sindh Duplicate Electricity Bill | Pakistan Info Hub",
-    "titleUr": "سیپکو آن لائن بجلی بل چیک 2026 – سکھر و بالائی سندھ ڈپلیکیٹ بل",
-    "metaDescriptionEn": "SEPCO bill check online 2026. Download duplicate electricity bill for Sukkur, Larkana, Khairpur, Ghotki, Shikarpur, Jacobabad using 14-digit reference number.",
-    "metaDescriptionUr": "سیپکو آن لائن بجلی بل چیک 2026۔ سکھر، لاڑکانہ، خیرپور، گھوٹکی اور جیکب آباد کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "titleEn": "SEPCO Bill Check Online 2026 – Upper Sindh Tariff Rates, FPA & Duplicate Bill | Pakistan Info Hub",
+    "titleUr": "سیپکو آن لائن بجلی بل چیک 2026 – سکھر و بالائی سندھ ڈپلیکیٹ بل و ٹیرف",
+    "metaDescriptionEn": "SEPCO electricity bill guide 2026: Check duplicate bills for Sukkur, Larkana, Khairpur, Ghotki, Shikarpur with 14-digit reference number, understand FPA & protected slabs.",
+    "metaDescriptionUr": "سیپکو آن لائن بجلی بل چیک 2026۔ سکھر، لاڑکانہ، خیرپور، گھوٹکی اور جیکب آباد کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں اور ٹیرف ریٹس چیک کریں۔",
     "directAnswerEn": "To check your SEPCO electricity bill online in 2026, open http://bill.pitc.com.pk/sepcobill/. Enter your 14-digit Reference Number to view and print duplicate electricity bills for Sukkur, Larkana, Khairpur, Ghotki, Shikarpur, and Jacobabad.",
     "directAnswerUr": "سیپکو بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/sepcobill پر اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ سکھر، لاڑکانہ، خیرپور اور گھوٹکی کا آفیشل ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 28, 2026",
@@ -8169,27 +8205,28 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "شکایات اور خرابی کی اطلاع کے لیے 118 یا سیپکو ہیلپ لائن 071-9310795 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What is Fuel Price Adjustment (FPA) on SEPCO bills?",
+        "questionUr": "سیپکو بل پر فیول پرائس ایڈجسٹمنٹ (FPA) کیوں لاگو ہوتا ہے؟",
+        "answerEn": "FPA is a variable tariff component determined monthly by NEPRA to adjust for thermal fuel cost variations. Protected domestic consumers consuming under 200 units consistently receive relief from certain fuel surcharges.",
+        "answerUr": "ایف پی اے نیپرا کا منظور شدہ ماہانہ ایندھن ایڈجسٹمنٹ چارج ہے جو بجلی پیدا کرنے کے لاگت فرق کے مطابق لاگو ہوتا ہے۔"
       }
     ],
-    "contentEn": "## SEPCO (Sukkur Electric Power Company) Duplicate Bill Guide 2026\nSEPCO serves upper Sindh. Get full duplicate bill access directly via official government gateways.",
+    "contentEn": "## SEPCO (Sukkur Electric Power Company) Duplicate Bill Guide 2026\nSEPCO serves upper Sindh across Sukkur, Larkana, Ghotki, Khairpur, and Jacobabad divisions.\n\nUse our one-click format validator and direct deep-link to the official PITC gateway to view and print your duplicate bill without delays.",
     "contentUr": "## سیپکو (سکھر الیکٹرک پاور کمپنی) آن لائن بلنگ معلومات 2026\nسیپکو شمالی سندھ کے صارفین کو ڈپلیکیٹ بلنگ اور کسٹمر کیئر فراہم کرتی ہے۔",
     "relatedSlugs": [
       "/bills/hesco-bill-check-online",
-      "/bills/mepco-bill-check-online"
+      "/bills/mepco-bill-check-online",
+      "/bills/karachi-water-board-bill-guide-2026"
     ]
   },
   "pesco-bill-check-online": {
     "slug": "pesco-bill-check-online",
     "fullPath": "/bills/pesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "PESCO Bill Check Online 2026 – KPK Duplicate Electricity Bill | Pakistan Info Hub",
-    "titleUr": "پیسکو آن لائن بجلی بل چیک 2026 – خیبر پختونخوا ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Perform PESCO bill check online 2026 for Khyber Pakhtunkhwa. Check duplicate bill for Peshawar, Mardan, Swat, Abbottabad, Bannu, Swabi using 14-digit reference number.",
-    "metaDescriptionUr": "پیسکو آن لائن بجلی بل چیک 2026 خیبر پختونخوا۔ پشاور، مردان، سوات، ایبٹ آباد اور بنوں کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "titleEn": "PESCO Bill Online Check 2026 – KPK Tariff Slabs, FPA & Duplicate Bill PDF | Pakistan Info Hub",
+    "titleUr": "پیسکو آن لائن بجلی بل چیک 2026 – خیبر پختونخوا ٹیرف سلیب، FPA اور ڈپلیکیٹ بل",
+    "metaDescriptionEn": "Perform PESCO bill check online 2026 for Khyber Pakhtunkhwa: Check duplicate bills for Peshawar, Mardan, Swat, Abbottabad, understand FPA taxes & protected units.",
+    "metaDescriptionUr": "پیسکو آن لائن بجلی بل چیک 2026 خیبر پختونخوا۔ پشاور، مردان، سوات، ایبٹ آباد اور بنوں کا ڈپلیکیٹ بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں اور ٹیرف سلیب چیک کریں۔",
     "directAnswerEn": "To check your PESCO electricity bill online in 2026 across Khyber Pakhtunkhwa, visit http://bill.pitc.com.pk/pescobill/. Enter your 14-digit Reference Number to download duplicate bills for Peshawar, Mardan, Swat, Abbottabad, Swabi, Nowshera, and Bannu.",
     "directAnswerUr": "خیبر پختونخوا میں پیسکو کا آن لائن بجلی بل چیک کرنے کے لیے bill.pitc.com.pk/pescobill پر جائیں اور 14 ہندسوں کا ریفرنس نمبر درج کریں۔ پشاور، مردان، سوات اور ایبٹ آباد کے صارفین اپنا بل فوری حاصل کر سکتے ہیں۔",
     "lastVerified": "August 28, 2026",
@@ -8281,10 +8318,10 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "کسی بھی شکایت کے لیے 118 پر کال کریں یا پیسکو شکایات سیل 091-9212010 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What is the difference between PESCO protected and non-protected consumers?",
+        "questionUr": "پیسکو پروٹیکٹڈ اور نان پروٹیکٹڈ صارفین میں کیا فرق ہے؟",
+        "answerEn": "A Protected consumer is a domestic connection consuming 200 units or less for 6 consecutive months, qualifying for heavily subsidized base tariffs (Rs. 7.74 to 10.06/unit). Consuming over 200 units shifts the connection to Non-Protected rates with higher base slabs and full FPA charges.",
+        "answerUr": "مسلسل 6 ماہ 200 یا کم یونٹ استعمال کرنے والے پروٹیکٹڈ رہتے ہیں، جبکہ اس سے زائد استعمال پر نان پروٹیکٹڈ مہنگا ٹیرف لاگو ہوتا ہے۔"
       }
     ],
     "contentEn": "## PESCO (Peshawar Electric Supply Company) Duplicate Bill Guide 2026\nPESCO is the primary power utility for Khyber Pakhtunkhwa serving millions of consumers across valleys and urban centers.\n\nUse our one-click format validator and direct deep-link to the official PITC gateway to view and print your duplicate bill without delays.",
@@ -8292,17 +8329,17 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/tesco-bill-check-online",
       "/bills/hazeco-bill-check-online",
-      "/bills/wapda-bill-complaint-number"
+      "/bills/wssp-peshawar-water-bill-guide"
     ]
   },
   "qesco-bill-check-online": {
     "slug": "qesco-bill-check-online",
     "fullPath": "/bills/qesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "QESCO Bill Online Check 2026 – Quetta & Balochistan Electricity Bill | Pakistan Info Hub",
-    "titleUr": "کیسکو آن لائن بجلی بل چیک 2026 – کوئٹہ و بلوچستان ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Perform QESCO bill online check 2026 for Balochistan. Check duplicate bill for Quetta, Gwadar, Khuzdar, Turbat, Loralai, Sibi, Zhob, Chaman with 14-digit reference number.",
-    "metaDescriptionUr": "کیسکو آن لائن بجلی بل چیک 2026 بلوچستان۔ کوئٹہ، گوادر، خضدار اور تربت کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
+    "titleEn": "QESCO Bill Online Check 2026 – Quetta & Balochistan Electricity Bill Guide | Pakistan Info Hub",
+    "titleUr": "کیسکو آن لائن بجلی بل چیک 2026 – کوئٹہ و بلوچستان ڈپلیکیٹ بل و زرعی ٹیرف",
+    "metaDescriptionEn": "Perform QESCO bill online check 2026 for Balochistan: Check duplicate bill for Quetta, Gwadar, Khuzdar, Turbat, tube-well agricultural rates & FPA breakdown.",
+    "metaDescriptionUr": "کیسکو آن لائن بجلی بل چیک 2026 بلوچستان۔ کوئٹہ، گوادر، خضدار اور تربت کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں اور زرعی ٹیرف دیکھیں۔",
     "directAnswerEn": "To check your QESCO electricity bill online in 2026 across Balochistan, visit http://bill.pitc.com.pk/qescobill/. Enter your 14-digit Reference Number to retrieve duplicate bills for Quetta, Gwadar, Khuzdar, Turbat, Sibi, Loralai, and Zhob.",
     "directAnswerUr": "بلوچستان میں کیسکو کا بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/qescobill پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ کوئٹہ، گوادر اور خضدار کے صارفین کا ڈپلیکیٹ بل فوری دستیاب ہوگا۔",
     "lastVerified": "August 28, 2026",
@@ -8387,10 +8424,10 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "شکایات کے لیے 118 یا کیسکو کنٹرول روم 081-9202211 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How are agricultural tube-well connections billed in QESCO Balochistan?",
+        "questionUr": "کیسکو بلوچستان میں زرعی ٹیوب ویل کنکشنز پر بل کیسے بنتا ہے؟",
+        "answerEn": "Under the Federal and Balochistan Government agricultural relief package, registered tube-well connections receive subsidized flat-rate tariffs, with ongoing solarization projects converting agricultural feeders to off-grid solar.",
+        "answerUr": "وفاقی و صوبائی حکومت کے ریلیف پیکج کے تحت زرعی ٹیوب ویلز کو سبسڈی ٹیرف ملتا ہے اور زرعی فیڈرز کو سولر پر منتقل کرنے کی اسکیمیں جاری ہیں۔"
       }
     ],
     "contentEn": "## QESCO (Quetta Electric Supply Company) Duplicate Bill Guide 2026\nQESCO manages power distribution across the largest geographic territory in Pakistan, serving all regions of Balochistan.\n\nVerify your reference number and use official government portals to print duplicate bills quickly.",
@@ -8398,16 +8435,16 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/mepco-bill-check-online",
       "/bills/hesco-bill-check-online",
-      "/bills/wasa-rawalpindi-bill-check-online"
+      "/bills/k-electric-duplicate-bill"
     ]
   },
   "tesco-bill-check-online": {
     "slug": "tesco-bill-check-online",
     "fullPath": "/bills/tesco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "TESCO Bill Check Online 2026 – Tribal Districts Duplicate Bill | Pakistan Info Hub",
-    "titleUr": "ٹیسکو آن لائن بجلی بل چیک 2026 – قبائلی اضلاع ڈپلیکیٹ بل",
-    "metaDescriptionEn": "TESCO bill check online 2026. Download duplicate electricity bill for Khyber, Bajaur, Mohmand, Kurram, Orakzai, North & South Waziristan using 14-digit reference number.",
+    "titleEn": "TESCO Bill Check Online 2026 – Tribal Districts Duplicate Bill & Tariff Guide | Pakistan Info Hub",
+    "titleUr": "ٹیسکو آن لائن بجلی بل چیک 2026 – قبائلی اضلاع ڈپلیکیٹ بل و ٹیرف گائیڈ",
+    "metaDescriptionEn": "TESCO bill check online 2026: Download duplicate electricity bill for Khyber, Bajaur, Mohmand, Kurram, Waziristan using 14-digit reference number and check tribal subsidies.",
     "metaDescriptionUr": "ٹیسکو آن لائن بجلی بل چیک 2026۔ خیبر، باجوڑ، مہمند، کرم، اورکزئی اور وزیرستان کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے ڈاؤن لوڈ کریں۔",
     "directAnswerEn": "To check your TESCO electricity bill online in 2026 for merged tribal districts, visit http://bill.pitc.com.pk/tescobill/. Enter your 14-digit Reference Number to check duplicate bills for Khyber, Bajaur, Mohmand, Kurram, Orakzai, and Waziristan.",
     "directAnswerUr": "قبائلی اضلاع کے لیے ٹیسکو بجلی بل آن لائن چیک کرنے کے لیے bill.pitc.com.pk/tescobill پر جائیں اور اپنا 14 ہندسوں کا ریفرنس نمبر درج کریں۔ خیبر، باجوڑ اور وزیرستان کا ڈپلیکیٹ بل فوری حاصل کریں۔",
@@ -8486,10 +8523,10 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "شکایات کے لیے 118 یا ٹیسکو ہیڈ آفس 091-9212964 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Are electricity bills in merged tribal districts subsidized under TESCO?",
+        "questionUr": "کیا ٹیسکو کے قبائلی اضلاع میں بجلی کے بل پر خصوصی سبسڈی ہے؟",
+        "answerEn": "Yes, the Federal Government provides targeted power subsidies for tribal districts under transition agreements, maintaining subsidized lifelines for residential consumers.",
+        "answerUr": "جی ہاں، قبائلی اضلاع کے لیے وفاقی حکومت کی خصوصی سبسڈی پالیسی کے تحت گھریلو صارفین کو ریلیف فراہم کیا جاتا ہے۔"
       }
     ],
     "contentEn": "## TESCO (Tribal Electric Supply Company) Duplicate Bill Guide 2026\nTESCO delivers electricity to the merged tribal districts of KPK with online billing supported directly on the PITC gateway.",
@@ -8497,16 +8534,16 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/bills/pesco-bill-check-online",
       "/bills/wapda-bill-complaint-number",
-      "/bills/wasa-lahore-bill-check-online"
+      "/bills/wssp-peshawar-water-bill-guide"
     ]
   },
   "hazeco-bill-check-online": {
     "slug": "hazeco-bill-check-online",
     "fullPath": "/bills/hazeco-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "HAZECO Bill Check Online 2026 – Hazara Division Electricity Bill | Pakistan Info Hub",
-    "titleUr": "ہیزیکو آن لائن بجلی بل چیک 2026 – ہزارہ ڈویژن ڈپلیکیٹ بل",
-    "metaDescriptionEn": "Perform HAZECO bill check online 2026. Download duplicate electricity bill for Abbottabad, Haripur, Mansehra, Battagram, Kohistan with 14-digit reference number.",
+    "titleEn": "HAZECO Bill Check Online 2026 – Hazara Division Electricity Bill Guide | Pakistan Info Hub",
+    "titleUr": "ہیزیکو آن لائن بجلی بل چیک 2026 – ہزارہ ڈویژن ڈپلیکیٹ بل و ٹیرف",
+    "metaDescriptionEn": "Perform HAZECO bill check online 2026: Download duplicate electricity bill for Abbottabad, Haripur, Mansehra, Battagram, Kohistan with 14-digit reference number.",
     "metaDescriptionUr": "ہیزیکو آن لائن بجلی بل چیک 2026۔ ایبٹ آباد، ہری پور، مانسہرہ اور کوہستان کا ڈپلیکیٹ بجلی بل 14 ہندسوں کے ریفرنس نمبر سے حاصل کریں۔",
     "directAnswerEn": "To check your HAZECO (Hazara Electric Supply Company) bill online in 2026, visit http://bill.pitc.com.pk/pescobill/ (served under PESCO/HAZECO unified grid). Enter your 14-digit Reference Number to view duplicate bills for Abbottabad, Haripur, Mansehra, Battagram, and Kohistan.",
     "directAnswerUr": "ہیزیکو (ہزارہ الیکٹرک) کا بجلی بل آن لائن چیک کرنے کے لیے PITC پورٹل پر 14 ہندسوں کا ریفرنس نمبر درج کریں۔ ایبٹ آباد، ہری پور اور مانسہرہ کا ڈپلیکیٹ بل فوری دستیاب ہوگا۔",
@@ -8578,17 +8615,17 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "24 گھنٹے فعال ہیلپ لائن 118 پر کال کریں یا علاقائی کنٹرول روم 0992-9310120 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Why are HAZECO bills currently processed through PESCO systems?",
+        "questionUr": "ہیزیکو کے بل فی الحال پیسکو سسٹم کے ذریعے کیوں پروسیس ہوتے ہیں؟",
+        "answerEn": "HAZECO is a newly incorporated DISCO carved out of PESCO. During the billing and infrastructure transition, PITC maintains unified server lookup for Hazara consumers on the PESCO portal.",
+        "answerUr": "ہیزیکو نئی کمپنی ہے جو پیسکو سے الگ کی گئی ہے۔ مکمل سسٹم الگ ہونے تک پی آئی ٹی سی پیسکو سرور سے بل فراہم کیے جا رہے ہیں۔"
       }
     ],
     "contentEn": "## HAZECO (Hazara Electric Supply Company) Operations & Billing Guide 2026\nHAZECO was established to decentralize power distribution in Khyber Pakhtunkhwa's Hazara Division.\n\nUntil billing database bifurcation is fully completed, duplicate bills are managed through the centralized PITC PESCO infrastructure.",
     "contentUr": "## ہیزیکو (ہزارہ الیکٹرک سپلائی کمپنی) آپریشنز اور بلنگ گائیڈ 2026\nہیزیکو ہزارہ ڈویژن کے اضلاع کے لیے قائم کی گئی ہے۔ تمام بلنگ ریکارڈز پی آئی ٹی سی پر دستیاب ہیں۔",
     "relatedSlugs": [
       "/bills/pesco-bill-check-online",
-      "/bills/ssgc-duplicate-bill-check",
+      "/bills/iesco-bill-check-online",
       "/bills/gb-electric-bill-guide"
     ]
   },
@@ -8596,10 +8633,10 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "ajk-electric-bill-check-online",
     "fullPath": "/bills/ajk-electric-bill-check-online",
     "categoryId": "bills",
-    "titleEn": "AJK Electricity Bill Check Online 2026 – Azad Kashmir Duplicate Bill | Pakistan Info Hub",
-    "titleUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026 – اے جے کے ڈپلیکیٹ بل",
-    "metaDescriptionEn": "AJK electricity bill check online 2026. Download duplicate electricity bill for Muzaffarabad, Mirpur, Rawalakot, Kotli using consumer account number.",
-    "metaDescriptionUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026۔ مظفرآباد، میرپور، راولاکوٹ اور کوٹلی کا ڈپلیکیٹ بجلی بل آن لائن حاصل کریں۔",
+    "titleEn": "AJK Electricity Bill Check Online 2026 – Azad Kashmir Duplicate Bill & Tariff | Pakistan Info Hub",
+    "titleUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026 – اے جے کے ڈپلیکیٹ بل و ٹیرف",
+    "metaDescriptionEn": "AJK electricity bill check online 2026: Download duplicate electricity bill for Muzaffarabad, Mirpur, Rawalakot, Kotli using consumer account number and view hydel tariffs.",
+    "metaDescriptionUr": "آزاد کشمیر آن لائن بجلی بل چیک 2026۔ مظفرآباد، میرپور، راولاکوٹ اور کوٹلی کا ڈپلیکیٹ بجلی بل آن لائن حاصل کریں اور ہائیڈل ٹیرف چیک کریں۔",
     "directAnswerEn": "To check your Azad Jammu & Kashmir (AJK) electricity bill online in 2026, visit the official AJK Electricity Department portal at https://ajked.gok.pk/. Enter your Consumer Account Number to download duplicate bills for Muzaffarabad, Mirpur, Rawalakot, and Kotli.",
     "directAnswerUr": "آزاد کشمیر (AJK) کا بجلی بل آن لائن چیک کرنے کے لیے محکمہ برقیات آزاد کشمیر پورٹل ajked.gok.pk پر جائیں اور اپنا اکاؤنٹ نمبر درج کریں۔ مظفرآباد، میرپور اور راولاکوٹ کا ڈپلیکیٹ بل فوری حاصل کریں۔",
     "lastVerified": "August 28, 2026",
@@ -8684,10 +8721,10 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "محکمہ برقیات کے مرکزی دفتر 05822-921004 یا 118 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What special hydel tariff concessions apply to AJK electricity consumers?",
+        "questionUr": "آزاد کشمیر کے صارفین کے لیے ہائیڈل بجلی کے کیا خصوصی ریلیف ریٹس ہیں؟",
+        "answerEn": "Under the AJK Government hydel generation agreements with the Federal Ministry of Energy, residential consumers in Azad Kashmir receive subsidized base tariffs for domestic use up to 300 units.",
+        "answerUr": "ہائیڈل بجلی معاہدوں کے تحت آزاد کشمیر کے صارفین کو 300 یونٹ تک گھریلو استعمال کے لیے رعایتی ٹیرف فراہم کیا جاتا ہے۔"
       }
     ],
     "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nAJKED oversees power transmission, distribution, and tariff concessions for Azad Kashmir residents.",
@@ -8784,16 +8821,16 @@ export const ARTICLES: Record<string, Article> = {
       "/bills/wasa-gujranwala-bill-check-online"
     ]
   },
-  "wasa-lahore-bill-check-online": {
-    "slug": "wasa-lahore-bill-check-online",
-    "fullPath": "/bills/wasa-lahore-bill-check-online",
+  "lahore-water-sewerage-bill-guide-2026": {
+    "slug": "lahore-water-sewerage-bill-guide-2026",
+    "fullPath": "/bills/lahore-water-sewerage-bill-guide-2026",
     "categoryId": "bills",
-    "titleEn": "WASA Lahore Bill Online Check 2026 – Water & Sewerage Duplicate Bill | Pakistan Info Hub",
+    "titleEn": "WASA Lahore Water Bill Online Check 2026 – Duplicate Bill & Payment Guide | Pakistan Info Hub",
     "titleUr": "واسا لاہور آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر اینڈ سیوریج بل",
-    "metaDescriptionEn": "WASA Lahore bill online check 2026. Download duplicate water and sanitation bill for Lahore city using 8-digit consumer number via WASA portal and ePay Punjab.",
-    "metaDescriptionUr": "واسا لاہور آن لائن پانی بل چیک 2026۔ 8 ہندسوں کے کنزیومر نمبر سے لاہور شہر کا ڈپلیکیٹ واٹر اور سیوریج بل آن لائن چیک اور ادا کریں۔",
-    "directAnswerEn": "To perform a WASA Lahore bill online check in 2026, visit https://wasa.punjab.gov.pk/. Enter your 8-digit Consumer Number (printed on your WASA water voucher) to check duplicate bills and generate 1Link PSID for online payment through ePay Punjab.",
-    "directAnswerUr": "واسا لاہور کا پانی بل آن لائن چیک کرنے کے لیے wasa.punjab.gov.pk پر جائیں اور اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ لاہور کے صارفین ڈپلیکیٹ بل دیکھنے کے ساتھ ای پے پنجاب سے آن لائن ادائیگی بھی کر سکتے ہیں۔",
+    "metaDescriptionEn": "Check and download WASA Lahore duplicate water & sewerage bill online 2026 at duplicatebill.wasa.punjab.gov.pk. Enter 8-digit account number, view tariff slabs, pay via ePay Punjab / JazzCash, and register complaints via 1334 helpline.",
+    "metaDescriptionUr": "واسا لاہور آن لائن پانی بل چیک 2026۔ 8 ہندسوں کے کنزیومر نمبر سے لاہور کا ڈپلیکیٹ واٹر اور سیوریج بل چیک اور ای پے پنجاب سے ادا کریں۔",
+    "directAnswerEn": "To check your WASA Lahore water & sewerage bill online in 2026, visit https://duplicatebill.wasa.punjab.gov.pk/. Enter your 8-digit Account Number (printed on your previous bill) to view, download, or print your duplicate bill PDF and generate a 1Link PSID for online payment via ePay Punjab, JazzCash, or mobile banking.",
+    "directAnswerUr": "واسا لاہور کا پانی اور سیوریج کا بل آن لائن چیک کرنے کے لیے duplicatebill.wasa.punjab.gov.pk پر جائیں اور اپنا 8 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ آپ ڈپلیکیٹ بل پی ڈی ایف ڈاؤن لوڈ کر سکتے ہیں اور ای پے پنجاب یا جاز کیش سے آن لائن ادا کر سکتے ہیں۔",
     "lastVerified": "August 28, 2026",
     "officialSource": {
       "name": "WASA Lahore Duplicate Bill Portal",
@@ -8836,31 +8873,24 @@ export const ARTICLES: Record<string, Article> = {
       },
       {
         "stepNumber": 2,
-        "titleEn": "Validate and Copy Number",
-        "titleUr": "نمبر چیک اور کاپی کریں",
-        "detailEn": "Enter your 8 digits in our tool and click 'Copy Number'.",
-        "detailUr": "ہمارے ٹول میں نمبر چیک کر کے کاپی کا بٹن دبائیں۔"
+        "titleEn": "Open Official WASA Lahore Portal",
+        "titleUr": "آفیشل واسا لاہور پورٹل کھولیں",
+        "detailEn": "Visit duplicatebill.wasa.punjab.gov.pk in any web browser.",
+        "detailUr": "سرکاری پورٹل duplicatebill.wasa.punjab.gov.pk کھولیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Open Official WASA Lahore Portal",
-        "titleUr": "آفیشل واسا لاہور پورٹل کھولیں",
-        "detailEn": "Click 'OPEN WASA Lahore OFFICIAL BILL PORTAL' to reach https://duplicatebill.wasa.punjab.gov.pk/.",
-        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Download and Print Bill",
-        "titleUr": "بل ڈاؤن لوڈ اور پرنٹ کریں",
-        "detailEn": "Paste your 8-digit account number and click Submit to display your full duplicate bill.",
-        "detailUr": "اکاؤنٹ نمبر درج کریں اور سبمٹ کر کے بل حاصل کریں۔"
+        "titleEn": "Submit Account Number & Download PDF",
+        "titleUr": "اکاؤنٹ نمبر درج کر کے بل ڈاؤن لوڈ کریں",
+        "detailEn": "Enter the 8 digits and click Submit to display the official duplicate bill and 1Link PSID.",
+        "detailUr": "اکاؤنٹ نمبر لکھیں اور سبمٹ کر کے ڈپلیکیٹ بل پی ڈی ایف محفوظ کریں۔"
       }
     ],
     "faqs": [
       {
         "questionEn": "How to check WASA Lahore water bill online?",
         "questionUr": "واسا لاہور کا پانی اور سیوریج کا بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "Enter your 8-digit WASA consumer number on the Punjab WASA portal to retrieve your duplicate water bill. You can also generate an ePay Punjab Challan / PSID to pay directly via mobile banking apps or ATM without visiting a bank branch.",
+        "answerEn": "Enter your 8-digit WASA consumer number on duplicatebill.wasa.punjab.gov.pk to retrieve your duplicate water bill. You can also generate an ePay Punjab Challan / PSID to pay directly via mobile banking apps without visiting a bank branch.",
         "answerUr": "پنجاب واسا پورٹل پر اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ ڈپلیکیٹ بل حاصل کرنے کے بعد آپ ای پے پنجاب کے ذریعے کسی بھی بینکنگ ایپ سے باآسانی بل جمع کروا سکتے ہیں۔"
       },
       {
@@ -8872,34 +8902,28 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "Can I pay WASA Lahore bills through mobile banking apps?",
         "questionUr": "کیا واسا لاہور کا بل موبائل ایپ سے جمع ہو سکتا ہے؟",
-        "answerEn": "Yes. WASA Lahore bills can be paid via 1Bill / 1Link on JazzCash, Easypaisa, Nayapay, SadaPay, and all Pakistani bank apps using your 8-digit consumer number.",
+        "answerEn": "Yes. WASA Lahore bills can be paid via 1Bill / 1Link on JazzCash, Easypaisa, Nayapay, SadaPay, and all Pakistani bank apps using your 8-digit consumer number or ePay PSID.",
         "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا بینکنگ ایپ پر 1Bill کے ذریعے اپنا 8 ہندسوں کا اکاؤنٹ نمبر لکھ کر بل ادا کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "## WASA Lahore (Water & Sanitation Agency) Online Duplicate Bill Guide 2026\nWASA Lahore supplies clean drinking water and sewerage services to the Lahore metropolitan district.",
+    "contentEn": "## WASA Lahore (Water & Sanitation Agency) Online Duplicate Bill Guide 2026\nWASA Lahore supplies clean drinking water and sewerage services to the Lahore metropolitan district across Ravi Town, GPO, Gulberg, Allama Iqbal Town, Nishtar Town, and Shalimar Town.\n\n---\n\n## How to Pay WASA Lahore Bill via ePay Punjab & Mobile Banking\n1. Open **ePay Punjab** mobile app or sign into your bank's mobile application.\n2. Navigate to **Bill Payments** > **Water & Sanitation (WASA)** > **WASA Lahore**.\n3. Enter your **8-Digit Consumer / Account Number**.\n4. Verify your billing name and outstanding amount, then confirm payment.",
     "contentUr": "## واسا لاہور (واٹر اینڈ سینی ٹیشن ایجنسی) آن لائن بلنگ گائیڈ 2026\nلاہور کے شہری باآسانی اپنا پانی کا بل آن لائن دیکھ سکتے ہیں اور ڈپلیکیٹ کاپی حاصل کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/lesco-bill-check-online",
-      "/bills/wasa-faisalabad-bill-check-online",
-      "/bills/gb-electric-bill-guide"
+      "/bills/faisalabad-water-bill-guide-2026",
+      "/bills/wasa-rawalpindi-bill-check-online"
     ]
   },
-  "wasa-faisalabad-bill-check-online": {
-    "slug": "wasa-faisalabad-bill-check-online",
-    "fullPath": "/bills/wasa-faisalabad-bill-check-online",
+  "faisalabad-water-bill-guide-2026": {
+    "slug": "faisalabad-water-bill-guide-2026",
+    "fullPath": "/bills/faisalabad-water-bill-guide-2026",
     "categoryId": "bills",
-    "titleEn": "WASA Faisalabad Bill Check Online 2026 – FDA Water Duplicate Bill | Pakistan Info Hub",
-    "titleUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر بل",
-    "metaDescriptionEn": "Perform WASA Faisalabad bill check online 2026. Check water & sewerage duplicate bill for Faisalabad using consumer number on official WASA portal.",
-    "metaDescriptionUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026۔ فیصل آباد شہر کا ڈپلیکیٹ واٹر اینڈ سیوریج بل آن لائن چیک اور ڈاؤن لوڈ کریں۔",
-    "directAnswerEn": "To perform a WASA Faisalabad bill check online in 2026, visit the official WASA FDA customer portal at https://wasa.punjab.gov.pk/. Input your 8-digit Consumer ID from your water voucher to download duplicate bills across Madina Town, Jinnah Colony, Peoples Colony, and Iqbal Town.",
-    "directAnswerUr": "واسا فیصل آباد پانی کا بل آن لائن چیک کرنے کے لیے واسا پورٹل پر اپنا 8 ہندسوں کا کنزیومر شناختی نمبر درج کریں۔ مدینہ ٹاؤن، پیپلز کالونی اور جناح کالونی کے صارفین اپنا ڈپلیکیٹ بل فوری حاصل کر سکتے ہیں۔",
+    "titleEn": "WASA Faisalabad Water Bill Online Check 2026 – Duplicate Bill & Payment Guide | Pakistan Info Hub",
+    "titleUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026 – ڈپلیکیٹ واٹر اینڈ سیوریج بل",
+    "metaDescriptionEn": "Check and download WASA Faisalabad duplicate water & sewerage bill online 2026 at wasafaisalabad.gop.pk. Enter 10-digit account number, view tariff slabs, pay via ePay Punjab, and call 1334 helpline.",
+    "metaDescriptionUr": "واسا فیصل آباد آن لائن پانی بل چیک 2026۔ فیصل آباد کا ڈپلیکیٹ واٹر اینڈ سیوریج بل آن لائن چیک کریں اور ای پے پنجاب سے ادا کریں۔",
+    "directAnswerEn": "To check your WASA Faisalabad water bill online in 2026, visit http://faisalabadwasa.gop.pk/duplicatebill.aspx or the official Punjab WASA portal. Enter your 8-digit or 10-digit Consumer Account Number to download duplicate bills across Madina Town, Jinnah Colony, Peoples Colony, and Iqbal Town.",
+    "directAnswerUr": "واسا فیصل آباد پانی کا بل آن لائن چیک کرنے کے لیے faisalabadwasa.gop.pk پر اپنا اکاؤنٹ نمبر درج کریں۔ مدینہ ٹاؤن، پیپلز کالونی اور جناح کالونی کے صارفین اپنا ڈپلیکیٹ بل فوری حاصل کر سکتے ہیں۔",
     "lastVerified": "August 28, 2026",
     "officialSource": {
       "name": "WASA Faisalabad Official Portal",
@@ -8911,7 +8935,7 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Domestic Domestic Water",
+        "serviceEn": "Domestic Water Connection",
         "serviceUr": "گھریلو پانی کنکشن",
         "normal": "Fixed Monthly Slab",
         "urgent": "Plot Size Dependent",
@@ -8928,39 +8952,32 @@ export const ARTICLES: Record<string, Article> = {
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Locate 12-Digit Consumer ID",
-        "titleUr": "12 ہندسوں کا کنزیومر آئی ڈی دیکھیں",
-        "detailEn": "Find the 12-digit Consumer ID printed at the top-center of your Faisalabad water bill.",
-        "detailUr": "اپنے فیصل آباد واسا بل کے اوپر درمیان میں درج 12 ہندسوں کا کنزیومر آئی ڈی دیکھیں۔"
+        "titleEn": "Locate Consumer Account Number",
+        "titleUr": "کنزیومر اکاؤنٹ نمبر تلاش کریں",
+        "detailEn": "Find the Consumer ID printed on the top section of your Faisalabad water bill.",
+        "detailUr": "اپنے کاغذی بل سے کنزیومر اکاؤنٹ نمبر دیکھیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Validate and Copy Number",
-        "titleUr": "نمبر چیک اور کاپی کریں",
-        "detailEn": "Validate 12 digits in our tool and click 'Copy Number'.",
-        "detailUr": "ہمارے ٹول میں چیک کر کے کاپی کریں۔"
+        "titleEn": "Open WASA Faisalabad Portal",
+        "titleUr": "واسا فیصل آباد پورٹل کھولیں",
+        "detailEn": "Visit http://faisalabadwasa.gop.pk/duplicatebill.aspx on your browser.",
+        "detailUr": "آفیشل پورٹل پر جا کر اکاؤنٹ نمبر درج کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Open WASA Faisalabad Portal",
-        "titleUr": "واسا فیصل آباد پورٹل کھولیں",
-        "detailEn": "Click 'OPEN WASA Faisalabad OFFICIAL BILL PORTAL' to reach http://faisalabadwasa.gop.pk/duplicatebill.aspx.",
-        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری پورٹل پر جائیں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Retrieve Duplicate Bill",
-        "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ کریں",
-        "detailEn": "Paste your Consumer ID and click Search to display your bill.",
-        "detailUr": "کنزیومر آئی ڈی درج کر کے بل ڈاؤن لوڈ کریں۔"
+        "titleEn": "Retrieve and Print Duplicate Bill",
+        "titleUr": "ڈپلیکیٹ بل حاصل کریں اور پرنٹ کریں",
+        "detailEn": "Click Search to display your duplicate bill and pay via ePay Punjab or JazzCash.",
+        "detailUr": "سرچ پر کلک کر کے بل دیکھیں اور آن لائن ادا کریں۔"
       }
     ],
     "faqs": [
       {
         "questionEn": "How to check WASA Faisalabad water bill online?",
         "questionUr": "فیصل آباد میں واسا کا پانی کا بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "Locate your 8-digit consumer number on any previous WASA Faisalabad bill. Submit this on the WASA customer service portal to instantly verify total dues, meter status, and print a duplicate bill for payment.",
-        "answerUr": "پرانے بل سے 8 ہندسوں کا کنزیومر نمبر دیکھ کر واسا پورٹل پر درج کریں۔ واجب الادا رقم، آخری تاریخ اور ڈپلیکیٹ واؤچر فوری دستیاب ہوگا۔"
+        "answerEn": "Locate your consumer account number on any previous WASA Faisalabad bill. Submit this on the WASA customer service portal to instantly verify total dues, meter status, and print a duplicate bill for payment.",
+        "answerUr": "پرانے بل سے کنزیومر نمبر دیکھ کر واسا پورٹل پر درج کریں۔ واجب الادا رقم، آخری تاریخ اور ڈپلیکیٹ واؤچر فوری دستیاب ہوگا۔"
       },
       {
         "questionEn": "What is the WASA Faisalabad emergency complaint helpline?",
@@ -8969,23 +8986,17 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "شکایات کے لیے 1334 یا واسا فیصل آباد 041-9210049 پر رابطہ کریں۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WASA Faisalabad Bill Check Online 2026: Download Duplicate Water Bill?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Can I pay WASA Faisalabad water bills through ePay Punjab?",
+        "questionUr": "کیا واسا فیصل آباد کا بل ای پے پنجاب سے ادا ہو سکتا ہے؟",
+        "answerEn": "Yes. Launch ePay Punjab, select WASA Faisalabad under municipal services, enter your account number, and pay via mobile banking or 1Link ATM.",
+        "answerUr": "جی ہاں، ای پے پنجاب ایپ میں واسا فیصل آباد منتخب کریں اور آن لائن بل جمع کروائیں۔"
       }
     ],
-    "contentEn": "## WASA Faisalabad Duplicate Water Bill Guide 2026\nWASA Faisalabad provides municipal water supply and drainage across Faisalabad city.",
+    "contentEn": "## WASA Faisalabad Duplicate Water Bill Guide 2026\nWASA Faisalabad (Faisalabad Development Authority) provides municipal water supply and drainage across Faisalabad city.\n\n---\n\n## Paying via ePay Punjab\nConsumers can use the Punjab Government's unified **ePay Punjab** application or 1Bill on mobile banking (Meezan, HBL, Bank Alfalah, JazzCash, Easypaisa) with zero transaction charges.",
     "contentUr": "## واسا فیصل آباد آن لائن واٹر بل رہنمائی 2026\nفیصل آباد کے شہری آسانی سے اپنا پانی کا ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/fesco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
+      "/bills/lahore-water-sewerage-bill-guide-2026",
       "/bills/wasa-multan-bill-check-online"
     ]
   },
@@ -9084,7 +9095,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## واسا راولپنڈی آن لائن بلنگ و معلومات 2026\nراولپنڈی کے شہری واسا پورٹل سے اپنے بل کی معلومات حاصل کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/iesco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
+      "/bills/lahore-water-sewerage-bill-guide-2026",
       "/bills/ssgc-duplicate-bill-check"
     ]
   },
@@ -9183,7 +9194,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## واسا ملتان آن لائن واٹر بل گائیڈ 2026\nملتان کے شہری واسا کے آفیشل پورٹل سے اپنا ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/mepco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
+      "/bills/lahore-water-sewerage-bill-guide-2026",
       "/bills/fesco-bill-check-online"
     ]
   },
@@ -9282,7 +9293,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## واسا گوجرانوالہ آن لائن واٹر بل گائیڈ 2026\nگوجرانوالہ کے شہری آسانی سے اپنا پانی کا بل آن لائن حاصل کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/gepco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
+      "/bills/lahore-water-sewerage-bill-guide-2026",
       "/bills/k-electric-duplicate-bill"
     ]
   },
@@ -9375,8 +9386,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## واسا ساہیوال آن لائن واٹر بل گائیڈ 2026\nساہیوال کے شہری واسا پورٹل سے ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
     "relatedSlugs": [
       "/bills/mepco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
-      "/bills/kwsc-karachi-water-bill-check"
+      "/bills/lahore-water-sewerage-bill-guide-2026",
+      "/bills/karachi-water-board-bill-guide-2026"
     ]
   },
   "wssp-peshawar-water-bill-guide": {
@@ -9500,20 +9511,20 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "## ڈبلیو ایس ایس پی پشاور واٹر بل اور سروسز گائیڈ 2026\nڈبلیو ایس ایس پی پشاور میں پینے کے صاف پانی، سیوریج اور سالڈ ویسٹ مینجمنٹ کی ذمہ دار ہے۔\n\n### بلنگ تنازعات اور غلط بل کی درستگی کا طریقہ\n1۔ **ہیلپ لائن 1334 یا صفا پیخاور ایپ پر شکایت درج کریں**: ٹول فری نمبر 1334 پر کال کر کے کمپلینٹ نمبر حاصل کریں۔\n2۔ **فیلڈ سروے**: زونل انسپکٹر آپ کے مکان کے رقبے اور کنکشن کا موقع پر معائنہ کرے گا۔\n3۔ **بقایا جات کی معافی اور نیا بل**: رپورٹ کے بعد پرانے غلط بقایا جات ختم کر کے نیا درست شدہ بل جاری کیا جاتا ہے۔\n4۔ **ادائیگی کے ذرائع**: درست شدہ بل بینک آف خیبر یا 1Bill کے ذریعے آن لائن ادا کریں۔",
     "relatedSlugs": [
       "/bills/pesco-bill-check-online",
-      "/bills/wasa-lahore-bill-check-online",
+      "/bills/lahore-water-sewerage-bill-guide-2026",
       "/bills/tesco-bill-check-online"
     ]
   },
-  "kwsc-karachi-water-bill-check": {
-    "slug": "kwsc-karachi-water-bill-check",
-    "fullPath": "/bills/kwsc-karachi-water-bill-check",
+  "karachi-water-board-bill-guide-2026": {
+    "slug": "karachi-water-board-bill-guide-2026",
+    "fullPath": "/bills/karachi-water-board-bill-guide-2026",
     "categoryId": "bills",
-    "titleEn": "KWSC Karachi Water Bill Check Online 2026 – KWSB Duplicate Bill | Pakistan Info Hub",
-    "titleUr": "کے ڈبلیو ایس سی کراچی پانی بل چیک 2026 – واٹر بورڈ ڈپلیکیٹ بل",
-    "metaDescriptionEn": "KWSC Karachi water bill check online 2026. Check and download Karachi Water & Sewerage Corporation duplicate bill by 10-digit consumer account number.",
+    "titleEn": "Karachi Water Board (KWSC) Bill Online Check 2026 – Duplicate Bill & Payment Guide | Pakistan Info Hub",
+    "titleUr": "کے ڈبلیو ایس سی کراچی پانی بل چیک 2026 – واٹر بورڈ ڈپلیکیٹ بل و ادائیگی گائیڈ",
+    "metaDescriptionEn": "Check and download Karachi Water & Sewerage Corporation (KWSC / KWSB) water bill online 2026 at kwsc.gos.pk. Enter 10-digit consumer ID, pay via 1Bill / Kuickpay, book tankers, and call 1339 helpline.",
     "metaDescriptionUr": "کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC / KWSB) آن لائن بل چیک 2026۔ 10 ہندسوں کے اکاؤنٹ نمبر سے کراچی کا پانی کا ڈپلیکیٹ بل حاصل کریں۔",
-    "directAnswerEn": "To check your KWSC (formerly KWSB) Karachi water bill online in 2026, navigate to https://www.kwsc.gos.pk/. Enter your 10-digit Consumer Account Number to download your official duplicate water and sewerage bill.",
-    "directAnswerUr": "کراچی واٹر کارپوریشن (KWSC) کا بل آن لائن چیک کرنے کے لیے kwsc.gos.pk پر جائیں اور 10 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ کراچی کے تمام ٹاؤنز کا ڈپلیکیٹ بل فوری اسکرین پر ظاہر ہو جائے گا۔",
+    "directAnswerEn": "To check your KWSC (formerly KWSB) Karachi water bill online in 2026, navigate to https://www.kwsc.gos.pk/duplicate-bill/. Enter your 10-digit Consumer Account Number to download your official duplicate water and sewerage bill PDF and pay online via 1Bill or Kuickpay.",
+    "directAnswerUr": "کراچی واٹر کارپوریشن (KWSC) کا بل آن لائن چیک کرنے کے لیے kwsc.gos.pk پر جائیں اور 10 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ کراچی کے تمام ٹاؤنز کا ڈپلیکیٹ بل فوری ڈاؤن لوڈ کریں اور 1Bill سے ادا کریں۔",
     "lastVerified": "August 28, 2026",
     "officialSource": {
       "name": "KWSC Official Duplicate Bill Portal",
@@ -9549,64 +9560,52 @@ export const ARTICLES: Record<string, Article> = {
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Find 10-Digit KWSC Consumer Number",
-        "titleUr": "10 ہندسوں کا کنزیومر نمبر تلاش کریں",
-        "detailEn": "Check the top-right corner of your Karachi water bill for your 10-digit Consumer Number.",
-        "detailUr": "اپنے کراچی واٹر بل کے اوپر دائیں کونے میں درج 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
+        "titleEn": "Find 10-Digit KWSC Consumer ID",
+        "titleUr": "10 ہندسوں کا کنزیومر آئی ڈی تلاش کریں",
+        "detailEn": "Check the top-right box on any previous KWSB/KWSC bill for your 10-digit Consumer Number.",
+        "detailUr": "اپنے پرانے کاغذی بل پر 10 ہندسوں کا کنزیومر نمبر دیکھیں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Validate and Copy Number",
-        "titleUr": "نمبر چیک اور کاپی کریں",
-        "detailEn": "Confirm 10 digits in our tool and click 'Copy Number'.",
-        "detailUr": "ہمارے ٹول میں تصدیق کر کے کاپی کریں۔"
+        "titleEn": "Open KWSC Official Web Portal",
+        "titleUr": "آفیشل کے ڈبلیو ایس سی پورٹل کھولیں",
+        "detailEn": "Visit www.kwsc.gos.pk/duplicate-bill/ on your mobile or computer.",
+        "detailUr": "ویب پورٹل kwsc.gos.pk/duplicate-bill پر جائیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Open Official KWSC Portal",
-        "titleUr": "آفیشل کے ڈبلیو ایس سی پورٹل کھولیں",
-        "detailEn": "Click 'OPEN KWSC Karachi OFFICIAL BILL PORTAL' to reach https://www.kwsc.gos.pk/duplicate-bill/.",
-        "detailUr": "آفیشل پورٹل بٹن پر کلک کر کے سرکاری ویب سائٹ پر جائیں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Print Duplicate Bill",
-        "titleUr": "ڈپلیکیٹ بل پرنٹ کریں",
-        "detailEn": "Enter your 10-digit Consumer Number to view and print your PDF duplicate bill.",
-        "detailUr": "کنزیومر نمبر درج کر کے پی ڈی ایف بل ڈاؤن لوڈ کریں۔"
+        "titleEn": "Download Duplicate Bill PDF & Pay",
+        "titleUr": "ڈپلیکیٹ بل ڈاؤن لوڈ کریں اور ادا کریں",
+        "detailEn": "Enter your 10 digits, view billing ledger, and pay via Kuickpay, 1Bill, or mobile banking.",
+        "detailUr": "نمبر درج کر کے بل دیکھیں اور کوئیک پے یا ون بل سے ادا کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How to check KWSC (KWSB) water bill online in Karachi?",
-        "questionUr": "کراچی واٹر بورڈ (KWSC) کا پانی کا بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "To check your Karachi water and sewerage bill, open the KWSC official customer portal and type your 10-digit consumer number found on your physical water bill. The portal displays current dues, payment status, and a printable duplicate bill.",
-        "answerUr": "کراچی واٹر کارپوریشن پورٹل پر پرانے بل سے 10 ہندسوں کا کنزیومر نمبر درج کریں۔ آپ اپنے واجبات، آخری تاریخ اور ڈپلیکیٹ واؤچر فوری حاصل کر سکتے ہیں۔"
+        "questionEn": "How to check KWSC Karachi water bill online?",
+        "questionUr": "کراچی میں واٹر بورڈ (KWSC) کا بل آن لائن کیسے چیک کریں؟",
+        "answerEn": "Visit the official KWSC web portal at kwsc.gos.pk, enter your 10-digit Consumer ID, and click Search. The portal displays your current month bill, arrears, and a downloadable duplicate copy for payment.",
+        "answerUr": "آفیشل ویب سائٹ kwsc.gos.pk پر جا کر 10 ہندسوں کا کنزیومر نمبر لکھیں اور سبمٹ کر کے ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
       },
       {
-        "questionEn": "What is the KWSC Karachi complaint helpline?",
-        "questionUr": "کراچی واٹر بورڈ کا ہیلپ لائن نمبر کیا ہے؟",
-        "answerEn": "Dial toll-free 1339 or KWSC complaint center at (021) 99245138.",
-        "answerUr": "پانی کی بندش یا لیکیج کے لیے 1339 یا 021-99245138 پر رابطہ کریں۔"
+        "questionEn": "What is the KWSC 24/7 complaint and official water tanker helpline in Karachi?",
+        "questionUr": "کراچی واٹر بورڈ کی شکایات اور سرکاری واٹر ٹینکر کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "Dial 1339 for the 24/7 KWSC central helpline, or use the Online Tanker Service (OTS) portal at ots.kwsc.gos.pk to book official government subsidized water bowsers.",
+        "answerUr": "24 گھنٹے فعال ہیلپ لائن 1339 پر کال کریں یا سرکاری ٹینکر بکنگ کے لیے ots.kwsc.gos.pk پورٹل استعمال کریں۔"
       },
       {
-        "questionEn": "Can I pay KWSC Karachi bills online?",
-        "questionUr": "کیا کراچی واٹر بل آن لائن جمع ہو سکتا ہے؟",
-        "answerEn": "Yes. Pay via 1Bill / Kuickpay on JazzCash, Easypaisa, 1Link banking apps using your 10-digit consumer number.",
-        "answerUr": "جی ہاں، جاز کیش، ایزی پیسہ یا موبائل بینکنگ ایپ پر 10 ہندسوں کا کنزیومر نمبر لکھ کر بل جمع کرائیں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How to pay KWSC water bills via online banking or JazzCash?",
+        "questionUr": "بینکنگ ایپ یا جاز کیش سے کراچی واٹر بورڈ کا بل کیسے ادا کریں؟",
+        "answerEn": "Open your mobile banking app or JazzCash, select Bill Payments > Water Utilities > KWSC / Kuickpay, enter the 1Bill prefix or 10-digit consumer ID, and pay instantly.",
+        "answerUr": "بینک ایپ یا جاز کیش میں بل پیمنٹ > واٹر > KWSC منتخب کر کے 10 ہندسوں کا کنزیومر نمبر درج کریں اور بل ادا کریں۔"
       }
     ],
-    "contentEn": "## Karachi Water & Sewerage Corporation (KWSC) Duplicate Bill Guide 2026\nKWSC supplies drinking water and manages wastewater infrastructure across Karachi Division.",
-    "contentUr": "## کراچی واٹر اینڈ سیوریج کارپوریشن (KWSC) بلنگ گائیڈ 2026\nکراچی واٹر بورڈ شہر کے تمام اضلاع کو پانی فراہم کرتا ہے۔ شہری آن لائن ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "contentEn": "## Karachi Water & Sewerage Corporation (KWSC) Complete Billing Guide 2026\nThe **Karachi Water & Sewerage Corporation (KWSC)**, formerly known as KWSB, supplies water and sewerage services across the Karachi metropolitan region.\n\n---\n\n## Online Tanker Service (OTS) & Emergency Subsidized Water Delivery\nWhen pipeline supply is interrupted, Karachi residents can book official government water bowsers through the **KWSC Online Tanker Service (OTS)**:\n- **Helpline**: Call **1339** or visit `ots.kwsc.gos.pk`.\n- **Pricing**: Subsidized government-controlled tanker rates based on gallon capacity (1,000 to 3,000 Gallons) to prevent private tanker mafia overcharging.",
+    "contentUr": "## کے ڈبلیو ایس سی کراچی واٹر بورڈ گائیڈ 2026\nکراچی واٹر اینڈ سیوریج کارپوریشن کا آن لائن ڈپلیکیٹ بلنگ، ٹینکر بکنگ اور کسٹمر کیئر سسٹم۔",
     "relatedSlugs": [
       "/bills/k-electric-duplicate-bill",
-      "/bills/ssgc-duplicate-bill-check"
+      "/bills/ssgc-duplicate-bill-check",
+      "/bills/lahore-water-sewerage-bill-guide-2026"
     ]
   },
   "token-tax-calculator-2026": {
@@ -18794,56 +18793,92 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/income-tax-calculator-salaried-2026"
     ]
   },
-  "bills-kelectric-duplicate-bill": {
-    "slug": "kelectric-duplicate-bill",
-    "fullPath": "/bills/kelectric-duplicate-bill",
+  "smart-meter-pakistan-price-how-it-works-2026": {
+    "slug": "smart-meter-pakistan-price-how-it-works-2026",
+    "fullPath": "/bills/smart-meter-pakistan-price-how-it-works-2026",
     "categoryId": "bills",
-    "titleEn": "K-Electric Duplicate Bill Online Check & Download 2026",
-    "titleUr": "کے الیکٹرک ڈپلیکیٹ بل آن لائن چیک و ڈاؤن لوڈ",
-    "metaDescriptionEn": "Check and download your K-Electric (KE) duplicate electricity bill online in Karachi using your 13-digit account number.",
-    "metaDescriptionUr": "کراچی میں کے الیکٹرک کا ڈپلیکیٹ بجلی بل 13 ہندسوں کے اکاؤنٹ نمبر کے ذریعے آن لائن چیک اور پرنٹ کریں۔",
-    "directAnswerEn": "To check your KE bill: Enter your 13-digit account number on the K-Electric online billing portal to view, download, or print your duplicate electricity bill instantly.",
-    "directAnswerUr": "کے الیکٹرک بل چیک کرنے کے لیے 13 ہندسوں کا اکاؤنٹ نمبر کے ای پورٹل پر درج کر کے فوری ڈپلیکیٹ بل حاصل کریں۔",
+    "titleEn": "Smart Electricity Meters in Pakistan (AMI) 2026: Price, Working, Benefits & Rollout Guide | Pakistan Info Hub",
+    "titleUr": "پاکستان میں اسمارٹ بجلی میٹرز (AMI) 2026: قیمت، طریقہ کار، فوائد اور مکمل رہنمائی",
+    "metaDescriptionEn": "Complete guide to Advanced Metering Infrastructure (AMI) smart electricity meters in Pakistan 2026: DISCO rollout (IESCO, LESCO, KE, MEPCO), price, remote meter reading, and bill calculation.",
+    "metaDescriptionUr": "پاکستان میں اسمارٹ میٹرز (AMI) کی قیمت، فوائد، آئی ایسکو، لیسکو اور کے الیکٹرک میں تنصیب اور بجلی بل کی درستگی کی مکمل گائیڈ 2026۔",
+    "directAnswerEn": "Smart meters (Advanced Metering Infrastructure / AMI) in Pakistan transmit real-time electricity consumption data wirelessly to DISCO servers via SIM cards. Residential consumer installation is funded primarily through ADB and government grid modernization projects (free during targeted zone rollouts, or ~PKR 25,000–35,000 for voluntary individual replacement). They eliminate human meter-reading errors, support automated Time-of-Use (TOU) tracking, and allow instant prepaid/postpaid monitoring.",
+    "directAnswerUr": "پاکستان میں اسمارٹ بجلی میٹرز (AMI) سیم کارڈ کے ذریعے ہر گھنٹے کا ڈیٹا خودکار طریقے سے بجلی کمپنی کے سرور کو بھیجتے ہیں۔ لیسکو، آئیسکو اور کے الیکٹرک کے فیزڈ رول آؤٹ میں یہ میٹرز مفت تبدیل ہو رہے ہیں جبکہ انفرادی درخواست پر تقریباً 25 سے 35 ہزار روپے لاگت آتی ہے۔ یہ اوور بلنگ اور غلط ریڈنگ کو مکمل ختم کرتے ہیں۔",
     "lastVerified": "August 28, 2026",
     "officialSource": {
-      "name": "K-Electric Official Billing Portal",
-      "url": "https://www.ke.com.pk/"
+      "name": "Ministry of Energy (Power Division) AMI Project",
+      "url": "https://mowp.gov.pk/"
     },
     "author": {
       "name": "Editorial Team",
-      "role": "Utility Billing Desk"
+      "role": "Energy & Smart Grid Desk"
     },
     "feeStructure": [
       {
-        "serviceEn": "Duplicate Bill Download",
-        "serviceUr": "ڈپلیکیٹ بل ڈاؤن لوڈ",
-        "normal": "100% Free",
-        "urgent": "Instant",
-        "executive": "Online"
+        "serviceEn": "Government Phased Zone Rollout",
+        "serviceUr": "سرکاری مرحلہ وار رول آؤٹ",
+        "normal": "100% Free (Govt / ADB Funded)",
+        "urgent": "Area Replacement",
+        "executive": "Single/Three Phase",
+        "validity": "Designated Feeders"
+      },
+      {
+        "serviceEn": "Voluntary Individual AMI Replacement",
+        "serviceUr": "انفرادی درخواست پر اسمارٹ میٹر",
+        "normal": "PKR 25,000 - 35,000",
+        "urgent": "15-30 Days",
+        "executive": "Three Phase / Net Metering",
+        "validity": "Lifetime Hardware"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Enter 13-Digit Account Number",
-        "titleUr": "13 ہندسوں کا اکاؤنٹ نمبر درج کریں",
-        "detailEn": "Locate your 13-digit account number from top-right of your previous KE bill.",
-        "detailUr": "سابقہ بل کے اوپر دائیں جانب موجود اکاؤنٹ نمبر دیکھیں۔"
+        "titleEn": "Feeder Notification & Survey",
+        "titleUr": "فیڈر سروے اور نوٹیفکیشن",
+        "detailEn": "DISCO operations team surveys the local distribution transformer and issues replacement notices to consumers on the feeder.",
+        "detailUr": "بجلی کمپنی کا عملہ متعلقہ ٹرانسفارمر اور میٹرز کا سروے کرتا ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Physical Old Meter Removal & Smart Meter Installation",
+        "titleUr": "پرانے میٹر کا اتار اور اسمارٹ میٹر تنصیب",
+        "detailEn": "Official DISCO technician replaces the electro-mechanical or simple digital meter with an AMI cellular smart meter with tamper seals.",
+        "detailUr": "سرکاری عملہ پرانا میٹر اتار کر سم کارڈ والا نیا اسمارٹ میٹر نصب کرتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Wireless Head-End System (HES) Activation",
+        "titleUr": "وائرلیس سسٹم کنکشن اور ایکٹیویشن",
+        "detailEn": "The smart meter pairs with the central data management system (MDMS), transmitting hourly kWh consumption without manual reader visits.",
+        "detailUr": "میٹر خودکار طریقے سے سرور کے ساتھ لنک ہو کر ریڈنگ بھیجنا شروع کرتا ہے۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How do I check my KE bill online?",
-        "questionUr": "کے الیکٹرک بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "Enter your 13-digit account number on ke.com.pk.",
-        "answerUr": "13 ہندسوں کا اکاؤنٹ نمبر کے ای پورٹل پر درج کریں۔"
+        "questionEn": "Do consumers have to pay for smart meter installation during DISCO rollouts?",
+        "questionUr": "کیا سرکاری رول آؤٹ کے دوران صارفین کو اسمارٹ میٹر کی قیمت دینی ہوتی ہے؟",
+        "answerEn": "No. Under the Asian Development Bank (ADB) and Federal Government funded AMI projects in IESCO, LESCO, and other DISCOs, meter replacement on designated feeders is completely free of charge for existing registered consumers.",
+        "answerUr": "نہیں، ایشین ڈویلپمنٹ بینک اور وفاقی حکومت کے منصوبے کے تحت منتخب فیڈرز پر اسمارٹ میٹرز کی تبدیلی بالکل مفت کی جاتی ہے۔"
+      },
+      {
+        "questionEn": "How does an AMI smart meter stop overbilling and wrong meter readings?",
+        "questionUr": "اسمارٹ میٹر اوور بلنگ اور غلط ریڈنگ کو کیسے روکتا ہے؟",
+        "answerEn": "AMI smart meters eliminate human meter readers entirely. They record hourly consumption snapshots and transmit tamper-proof data over encrypted cellular networks directly to the central billing computer, preventing estimated or arbitrary billing.",
+        "answerUr": "اسمارٹ میٹر میں انسانی عمل دخل ختم ہو جاتا ہے اور ریڈنگ براہ راست سم کے ذریعے مرکزی کمپیوٹر میں درج ہوتی ہے جس سے غلط ریڈنگ کا امکان صفر ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "Can smart meters be used for solar net metering and bidirectional flow?",
+        "questionUr": "کیا اسمارٹ میٹر سولر نیٹ میٹرنگ اور دو طرفہ بجلی ناپنے کے لیے استعمال ہو سکتے ہیں؟",
+        "answerEn": "Yes. Three-phase bidirectional AMI smart meters record both imported power from the national grid and exported solar power generated by rooftop solar panels.",
+        "answerUr": "جی ہاں، تھری فیز بائی ڈائریکشنل اسمارٹ میٹر گرڈ سے لی گئی اور سولر سے گرڈ کو دی گئی بجلی دونوں کا الگ الگ حساب رکھتے ہیں۔"
       }
     ],
-    "contentEn": "Step-by-step guide to checking and downloading duplicate K-Electric bills online in Karachi.",
-    "contentUr": "کے الیکٹرک کے ڈپلیکیٹ بجلی بل کی آن لائن جانچ اور پی ڈی ایف ڈاؤن لوڈ کی مکمل گائیڈ۔",
+    "contentEn": "## Smart Electricity Meters (AMI) in Pakistan: Complete 2026 Guide\nPakistan's power sector is undergoing a nationwide transition to **Advanced Metering Infrastructure (AMI)** smart digital electricity meters to curb transmission line losses, eradicate electricity theft (*kunda* system), and eliminate manual meter-reading inaccuracies.\n\n---\n\n## What is an AMI Smart Meter and How Does it Work?\nAn AMI smart meter is a microprocessor-controlled digital energy meter equipped with a built-in cellular SIM (GSM/GPRS) and optical communication port:\n1. **Automated Reading**: Records hourly and daily kWh consumption snapshots.\n2. **Wireless Data Transmission**: Encrypted wireless APN sends data directly to the central Meter Data Management System (MDMS).\n3. **Real-Time Tamper Detection**: Instantly alerts DISCO control rooms if the meter box is opened, bypassed, or subjected to magnetic interference.\n4. **Remote Disconnection & Reconnection**: Eliminates the need for linemen to physically cut wires for default or reconnect after payment.\n\n---\n\n## DISCO Phased Rollout Status across Pakistan\n- **IESCO (Islamabad & Rawalpindi)**: Over 1 million AMI meters deployed across Rawalpindi Cantonment, Islamabad, and high-loss feeders.\n- **LESCO (Lahore)**: Progressive installation active across Gulberg, DHA, and high-consumption industrial feeders.\n- **K-Electric (Karachi)**: Smart grid deployment progressing in commercial and upscale residential zones.\n- **MEPCO & FESCO**: Target deployment at high-capacity distribution transformers (DT meters) and agricultural tube-wells.",
+    "contentUr": "## پاکستان میں اسمارٹ بجلی میٹرز (AMI) گائیڈ 2026\nلیسکو، آئیسکو اور کے الیکٹرک میں اسمارٹ ڈیجیٹل میٹرز کی تنصیب اور فوائد کی مکمل تفصیل۔",
     "relatedSlugs": [
+      "/bills/net-metering-net-billing-change-2026",
       "/bills/utility-bill-checker-2026",
-      "/bills/sngpl-bill-check-online"
+      "/bills/iesco-bill-check-online"
     ]
   },
   "bills-sngpl-bill-check-online": {
@@ -19102,7 +19137,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Comprehensive all-in-one bill checking tool for electricity and gas consumers across Pakistan.",
     "contentUr": "پاکستان بھر کے صارفین کے لیے بجلی و گیس کے بل چیک کرنے کا جامع پورٹل.",
     "relatedSlugs": [
-      "/bills/kelectric-duplicate-bill",
+      "/bills/k-electric-duplicate-bill",
       "/bills/sngpl-bill-check-online"
     ]
   },
