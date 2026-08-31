@@ -68,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/nadra/lost-stolen-cnic-replacement-2026',
     '/nadra/nadra-registration-center-locator-guide-2026',
     '/legal/police-khidmat-markaz-services-guide-2026',
+    '/legal/crime-control-department-ccd-punjab-explained-2026',
     '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',
     '/certificates/death-certificate-registration-process-2026',
     '/passport/lost-passport-abroad-reissuance-process-2026',

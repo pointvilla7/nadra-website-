@@ -14084,9 +14084,92 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Hub guide to Punjab Police Khidmat Markaz 14 public services and tracking.",
     "contentUr": "پنجاب پولیس خدمت مرکز کی 14 عوامی سہولیات کی تفصیلی معلوماتی گائیڈ۔",
     "relatedSlugs": [
+      "/legal/crime-control-department-ccd-punjab-explained-2026",
       "/certificates/police-character-certificate-online-apply-2026",
       "/legal/tenant-police-verification-online-2026",
       "/legal/how-to-get-fir-copy-online-pakistan-2026"
+    ]
+  },
+  "crime-control-department-ccd-punjab-explained-2026": {
+    "slug": "crime-control-department-ccd-punjab-explained-2026",
+    "fullPath": "/legal/crime-control-department-ccd-punjab-explained-2026",
+    "categoryId": "legal",
+    "titleEn": "Crime Control Department (CCD) Punjab Explained 2026",
+    "titleUr": "کرائم کنٹرول ڈیپارٹمنٹ (CCD) پنجاب پولیس – تفصیلی گائیڈ 2026",
+    "metaDescriptionEn": "Guide to Crime Control Department (CCD) Punjab: established under Police (Amendment) Ordinance 2025, organized crime mandate, CTD comparison, and reporting channels.",
+    "metaDescriptionUr": "پنجاب پولیس کے کرائم کنٹرول ڈیپارٹمنٹ کی تفصیلات، سنگین اور منظم جرائم کے خلاف اختیارات، الگ تھانوں کا قیام اور عوامی رپورٹنگ کا طریقہ۔",
+    "directAnswerEn": "The Crime Control Department (CCD) is an elite investigation agency created within Punjab Police on 26 February 2025 via the Police (Amendment) Ordinance 2025. Headquartered in Lahore and led by an Additional IG, CCD operates specialized police stations targeting organized crime (gangs, cartels, kidnapping for ransom, qabza mafias). Citizens report organized crime tips via the IGP 1787 Helpline or local police stations.",
+    "directAnswerUr": "کرائم کنٹرول ڈیپارٹمنٹ (CCD) پنجاب پولیس کا خصوصی تفتیشی ادارہ ہے جسے 26 فروری 2025 کو قائم کیا گیا۔ یہ الگ تھانوں اور ایف آئی آر کے اختیارات کے ساتھ منظم جرائم، منشیات مافیا، تاوان کے لیے اغوا اور بین الاضلاعی گینگز کے خلاف کام کرتا ہے۔ شہری 1787 یا قریبی تھانے کے ذریعے اطلاع دے سکتے ہیں۔",
+    "lastVerified": "August 30, 2026",
+    "officialSource": {
+      "name": "Punjab Police Central Police Office (CPO)",
+      "url": "https://punjabpolice.gov.pk"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Organized Crime Intelligence Tip",
+        "serviceUr": "منظم جرائم کی خفیہ اطلاع",
+        "normal": "100% Confidential",
+        "urgent": "Toll-Free 1787",
+        "executive": "IGP Cell",
+        "validity": "Immediate Action"
+      },
+      {
+        "serviceEn": "Case Transfer from District Police",
+        "serviceUr": "مقدمہ کی CCD منتقلی",
+        "normal": "Official Procedure",
+        "urgent": "RPO Approval",
+        "executive": "Addl IG CCD",
+        "validity": "Specialized Trial"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Report Incident via 1787 or Thana",
+        "titleUr": "1787 ہیلپ لائن یا تھانے پر اطلاع دیں",
+        "detailEn": "Lodge formal complaint or crime intelligence report.",
+        "detailUr": "ایف آئی آر یا خفیہ شکایت درج کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Intelligence Evaluation & Transfer",
+        "titleUr": "تفتیش کا جائزہ اور CCD کو منتقلی",
+        "detailEn": "Complex syndicates and high-profile organized crimes are transferred to CCD.",
+        "detailUr": "سنگین منظم جرائم کا مقدمہ اسپیشل یونٹ کو بھیجا جاتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Advanced Forensics & Action",
+        "titleUr": "جدید فارنزک اور ٹارگٹڈ آپریشن",
+        "detailEn": "CCD uses locator technology, CRO databases, and specialized tactical teams.",
+        "detailUr": "جدید ٹیکنالوجی سے مجرموں کو قانون کی گرفت میں لایا جاتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is CCD different from regular police stations?",
+        "questionUr": "کیا CCD عام تھانوں سے مختلف ہے؟",
+        "answerEn": "Yes. CCD is a specialized elite unit dealing with organized gang syndicates, while regular police stations handle routine civic policing.",
+        "answerUr": "جی ہاں! یہ منظم مافیاز کے لیے اسپیشل ادارہ ہے جبکہ عام تھانے روزمرہ کے مسائل دیکھتے ہیں۔"
+      },
+      {
+        "questionEn": "How is CCD different from CTD?",
+        "questionUr": "CCD اور CTD میں کیا فرق ہے؟",
+        "answerEn": "CTD focuses exclusively on terrorism and militancy under ATA 1997, while CCD targets organized non-terrorist crimes (cartels, extortion, kidnapping).",
+        "answerUr": "سی ٹی ڈی دہشت گردی جبکہ سی سی ڈی منظم جرائم کے خلاف کام کرتی ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive explainer on Punjab Police Crime Control Department (CCD) mandate and structure.",
+    "contentUr": "پنجاب پولیس کے کرائم کنٹرول ڈیپارٹمنٹ کے مقاصد اور طریقہ کار کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/legal/police-khidmat-markaz-services-guide-2026",
+      "/legal/how-to-get-fir-copy-online-pakistan-2026",
+      "/legal/online-fir-registration-punjab-police"
     ]
   },
   "how-to-check-fir-status-online": {

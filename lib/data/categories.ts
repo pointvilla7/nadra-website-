@@ -1014,6 +1014,11 @@ export const CATEGORIES: Category[] = [
         "en": "Police Khidmat Markaz 2026",
         "ur": "پولیس خدمت مرکز 14 سہولیات 2026",
         "slug": "/legal/police-khidmat-markaz-services-guide-2026"
+      },
+      {
+        "en": "CCD Punjab Police 2026",
+        "ur": "کرائم کنٹرول ڈیپارٹمنٹ پنجاب",
+        "slug": "/legal/crime-control-department-ccd-punjab-explained-2026"
       }
     ]
   },
