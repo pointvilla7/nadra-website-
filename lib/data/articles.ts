@@ -13993,9 +13993,100 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Comprehensive guide to online crime complaints and FIR registration in Punjab.",
     "contentUr": "پنجاب پولیس کے آن لائن شکایات سسٹم کی مکمل معلومات۔",
     "relatedSlugs": [
+      "/legal/police-khidmat-markaz-services-guide-2026",
       "/certificates/police-character-certificate-online-apply-2026",
       "/legal/how-to-check-fir-status-online",
       "/legal/power-of-attorney-property-registration"
+    ]
+  },
+  "police-khidmat-markaz-services-guide-2026": {
+    "slug": "police-khidmat-markaz-services-guide-2026",
+    "fullPath": "/legal/police-khidmat-markaz-services-guide-2026",
+    "categoryId": "legal",
+    "titleEn": "Police Khidmat Markaz (PKM) Services Hub Guide 2026",
+    "titleUr": "پولیس خدمت مرکز پنجاب – 14 عوامی خدمات و آن لائن ٹریکنگ 2026",
+    "metaDescriptionEn": "Authoritative guide to Punjab Police Khidmat Markaz: 14 public services, any-district access, hospital Medico-Legal Counters, and online tracking on pkm.punjab.gov.pk.",
+    "metaDescriptionUr": "پولیس خدمت مرکز کی 14 سرکاری سہولیات، کسی بھی ضلع سے سروس کے حصول کا طریقہ، ہسپتال کاؤنٹرز اور آن لائن ٹریکنگ پورٹل کی معلومات۔",
+    "directAnswerEn": "Police Khidmat Markaz (PKM) provides 14 core civil services (Police Character Certificates, Tenant Verification, FIR copies, Driving Learner/Renewal, and Loss Reports) across all 36 districts of Punjab. Under the Integrated Khidmat Markaz System, citizens can visit ANY center regardless of their domicile district. Track applications online via pkm.punjab.gov.pk.",
+    "directAnswerUr": "پولیس خدمت مرکز (PKM) پنجاب کے تمام 36 اضلاع میں 14 اہم سہولیات فراہم کرتا ہے۔ انٹیگریٹڈ سسٹم کے تحت آپ کسی بھی ضلع کے خدمت مرکز سے خدمات حاصل کر سکتے ہیں۔ ٹریکنگ pkm.punjab.gov.pk پر ای-رسید سے ممکن ہے۔",
+    "lastVerified": "August 30, 2026",
+    "officialSource": {
+      "name": "Punjab Police Khidmat Markaz Portal",
+      "url": "https://pkm.punjab.gov.pk"
+    },
+    "author": {
+      "name": "Muhammad Tariq Khan",
+      "role": "Editor-in-Chief & Senior Civic Policy Researcher"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Police Character Certificate",
+        "serviceUr": "پولیس کریکٹر سرٹیفکیٹ",
+        "normal": "PKR 500",
+        "urgent": "3 Working Days",
+        "executive": "Integrated PKM",
+        "validity": "6 Months"
+      },
+      {
+        "serviceEn": "Tenant & Domestic Worker Verification",
+        "serviceUr": "کرایہ دار و ملازم تصدیق",
+        "normal": "100% FREE",
+        "urgent": "Instant Biometric",
+        "executive": "PKM Counter",
+        "validity": "Tenancy Term"
+      },
+      {
+        "serviceEn": "Certified Copy of FIR",
+        "serviceUr": "مصدقہ ایف آئی آر کاپی",
+        "normal": "PKR 100 - 200",
+        "urgent": "Same Day",
+        "executive": "Computerized",
+        "validity": "Legal Copy"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit Any PKM Center in Punjab",
+        "titleUr": "کسی بھی خدمت مرکز تشریف لے جائیں",
+        "detailEn": "No appointment needed; obtain an automated token at reception.",
+        "detailUr": "ریسیپشن سے کمپیوٹرائزڈ ٹوکن حاصل کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Biometrics & Documents",
+        "titleUr": "بائیومیٹرک اور ضروری کاغذات جمع کروائیں",
+        "detailEn": "Present original CNIC, photographs, and pay the nominal chalan fee.",
+        "detailUr": "شناختی کارڈ اور ضروری کوائف کاؤنٹر پر پیش کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Track Online & Collect Certificate",
+        "titleUr": "آن لائن ٹریک کر کے سرٹیفکیٹ وصول کریں",
+        "detailEn": "Use your 10-digit e-Receipt number on pkm.punjab.gov.pk to track clearance status.",
+        "detailUr": "پورٹل پر ٹریکنگ نمبر درج کر کے تصدیقی سرٹیفکیٹ حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I have to visit a PKM in my home district?",
+        "questionUr": "کیا مجھے اپنے آبائی ضلع کے خدمت مرکز جانا لازمی ہے؟",
+        "answerEn": "No. All 36 district centers in Punjab are digitally integrated; you can visit any PKM center regardless of your CNIC permanent address.",
+        "answerUr": "نہیں، آپ پنجاب کے کسی بھی خدمت مرکز سے خدمات حاصل کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "What are the standard timings of Police Khidmat Markaz?",
+        "questionUr": "خدمت مرکز کے دفتری اوقات کیا ہیں؟",
+        "answerEn": "Standard centers operate Monday to Saturday from 9:00 AM to 5:00 PM. Major metropolitan centers in Lahore and Rawalpindi operate 24/7.",
+        "answerUr": "عام مراکز پیر تا ہفتہ صبح 9 سے شام 5 بجے تک اور بڑے شہروں کے میگا سنٹرز 24 گھنٹے کھلے رہتے ہیں۔"
+      }
+    ],
+    "contentEn": "Hub guide to Punjab Police Khidmat Markaz 14 public services and tracking.",
+    "contentUr": "پنجاب پولیس خدمت مرکز کی 14 عوامی سہولیات کی تفصیلی معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/certificates/police-character-certificate-online-apply-2026",
+      "/legal/tenant-police-verification-online-2026",
+      "/legal/how-to-get-fir-copy-online-pakistan-2026"
     ]
   },
   "how-to-check-fir-status-online": {
@@ -19398,8 +19489,99 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "NICOP fee calculator for overseas Pakistanis in GCC, Europe, North America and worldwide.",
     "contentUr": "بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ فیس معلوم کرنے کا ٹول۔",
     "relatedSlugs": [
+      "/nadra/nadra-registration-center-locator-guide-2026",
       "/nadra/nadra-card-fee",
       "/overseas/nicop-mandatory-entry-rules-2026"
+    ]
+  },
+  "nadra-registration-center-locator-guide-2026": {
+    "slug": "nadra-registration-center-locator-guide-2026",
+    "fullPath": "/nadra/nadra-registration-center-locator-guide-2026",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Registration Center Locator Guide 2026 – Nearest NRC & Mega Centers",
+    "titleUr": "نادرا رجسٹریشن سنٹر لوکیٹر گائیڈ 2026 – قریبی برانچز و اوقات",
+    "metaDescriptionEn": "Find nearest NADRA Registration Center: 24/7 Mega centers, Executive lounges, Mobile Vans, and e-Sahulat franchise counters with verified timings.",
+    "metaDescriptionUr": "قریبی نادرا سنٹر، 24 گھنٹے کھلے میگا سنٹرز، ایگزیکٹو برانچز اور ای-سہولت کاؤنٹرز کا پتہ اور دفتری اوقات۔",
+    "directAnswerEn": "To locate your nearest NADRA center, check nadra.gov.pk/ngrids or the Pak ID app, or call 1777. Choose Regular NRCs (8:30 AM-4:30 PM) for standard fees, Executive Centers for express queues, Mega Centers for 24/7 service in major cities, or 17,000+ e-Sahulat shops for instant biometric verifications.",
+    "directAnswerUr": "قریبی نادرا دفتر تلاش کرنے کے لیے nadra.gov.pk/ngrids وزٹ کریں یا 1777 پر کال کریں۔ میگا سنٹرز 24 گھنٹے کھلے رہتے ہیں، ایگزیکٹو سنٹرز تیز ترین سروس فراہم کرتے ہیں اور ای-سہولت پر بائیومیٹرک تصدیق فوری ہو جاتی ہے۔",
+    "lastVerified": "August 30, 2026",
+    "officialSource": {
+      "name": "NADRA Official Center Locator",
+      "url": "https://www.nadra.gov.pk/ngrids"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Corporate Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Regular NRC Processing",
+        "serviceUr": "عام سنٹر پراسیسنگ",
+        "normal": "Standard Fee",
+        "urgent": "Token System",
+        "executive": "Tehsil Level",
+        "validity": "Mon-Sat (8:30-4:30)"
+      },
+      {
+        "serviceEn": "Executive Center Priority",
+        "serviceUr": "ایگزیکٹو فاسٹ ٹریک لاؤنج",
+        "normal": "Standard + Executive",
+        "urgent": "Express Token",
+        "executive": "VIP Lounges",
+        "validity": "8:30 AM - 10:30 PM"
+      },
+      {
+        "serviceEn": "Mega Center 24/7 Access",
+        "serviceUr": "میگا سنٹر 24 گھنٹے سروس",
+        "normal": "Standard Fee",
+        "urgent": "Round-the-Clock",
+        "executive": "Major Metros",
+        "validity": "24/7 Active"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Search on nadra.gov.pk/ngrids",
+        "titleUr": "آن لائن پورٹل پر برانچ تلاش کریں",
+        "detailEn": "Select your city and facility type (Mega, Executive, Regular).",
+        "detailUr": "شہر اور سنٹر کی قسم منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Prepare Original Identity Documents",
+        "titleUr": "ضروری کاغذات اور گواہ تیار کریں",
+        "detailEn": "Bring original B-Form/CNIC and blood relative for attestation.",
+        "detailUr": "اصل بی فارم یا شناختی کارڈ ہمراہ لائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Obtain Walk-in Queue Token",
+        "titleUr": "ریسیپشن سے ٹوکن حاصل کریں",
+        "detailEn": "Collect computerized token and wait for your counter call.",
+        "detailUr": "ٹوکن لے کر کاؤنٹر پر بائیومیٹرک مکمل کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need an appointment before visiting NADRA?",
+        "questionUr": "کیا نادرا جانے کے لیے اپوائنٹمنٹ درکار ہے؟",
+        "answerEn": "Appointments are not required for regular centers; select Executive Centers offer optional online booking via Pak ID.",
+        "answerUr": "عام مراکز پر اپوائنٹمنٹ لازمی نہیں، واک ان ٹوکن مل جاتا ہے۔"
+      },
+      {
+        "questionEn": "Can any NADRA center handle my application?",
+        "questionUr": "کیا کسی بھی شہر کے نادرا سنٹر سے کام ہو سکتا ہے؟",
+        "answerEn": "Yes! NADRA operates a unified nationwide database, allowing you to visit any center across Pakistan.",
+        "answerUr": "جی ہاں! نادرا ڈیٹا بیس پورے ملک میں منسلک ہے، آپ کسی بھی سنٹر جا سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Guide to locating nearest NADRA Registration Centers, Mega branches, and e-Sahulat counters.",
+    "contentUr": "قریبی نادرا دفاتر، 24 گھنٹے میگا سنٹرز اور ای-سہولت کی تفصیلی معلوماتی گائیڈ۔",
+    "relatedSlugs": [
+      "/nadra/cnic-new-rules-2026",
+      "/nadra/executive-center-timings-fees",
+      "/nadra/family-registration-certificate"
     ]
   },
   "passport-fee-calculator-tool": {

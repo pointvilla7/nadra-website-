@@ -55,6 +55,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/nadra/lost-stolen-cnic-replacement-2026"
       },
       {
+        "en": "NADRA Center Locator 2026",
+        "ur": "قریبی نادرا سنٹر لوکیٹر 2026",
+        "slug": "/nadra/nadra-registration-center-locator-guide-2026"
+      },
+      {
         "en": "NICOP Fee Calculator",
         "ur": "نائیکوپ فیس کیلکولیٹر",
         "slug": "/nadra/nicop-fee-calculator"
@@ -1006,9 +1011,9 @@ export const CATEGORIES: Category[] = [
         "slug": "/legal/legal-heir-certificate-nadra-court"
       },
       {
-        "en": "Police Khidmat Markaz PKM",
-        "ur": "پولیس خدمت مرکز 14 سہولیات",
-        "slug": "/legal/punjab-khidmat-markaz-police-services"
+        "en": "Police Khidmat Markaz 2026",
+        "ur": "پولیس خدمت مرکز 14 سہولیات 2026",
+        "slug": "/legal/police-khidmat-markaz-services-guide-2026"
       }
     ]
   },
