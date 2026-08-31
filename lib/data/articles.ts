@@ -12195,8 +12195,106 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "ایس ای سی پی میں کمپنی رجسٹریشن کا مکمل اور آسان طریقہ۔",
     "relatedSlugs": [
       "/business/sole-proprietorship-ntn-registration",
+      "/business/trademark-registration-pakistan-ipo-guide-2026",
       "/tax/ntn-registration-online-pakistan",
       "/business/import-export-license-weboc-registration"
+    ]
+  },
+  "trademark-registration-pakistan-ipo-guide-2026": {
+    "slug": "trademark-registration-pakistan-ipo-guide-2026",
+    "fullPath": "/business/trademark-registration-pakistan-ipo-guide-2026",
+    "categoryId": "business",
+    "titleEn": "Trademark Registration Pakistan 2026 – IPO e-Filing, Fees & Process Guide",
+    "titleUr": "پاکستان میں ٹریڈ مارک رجسٹریشن 2026 – آئی پی او آن لائن فیس و طریقہ کار",
+    "metaDescriptionEn": "Independent guide to trademark registration in Pakistan via IPO-Pakistan: Form TM-55 search, TM-1/TM-2 filing, official Rs. 3,000 & Rs. 9,000 fees, single-class rule, and 10-year certificate.",
+    "metaDescriptionUr": "آئی پی او پاکستان کے ذریعے برانڈ نام اور لوگو رجسٹر کروانے کا مکمل طریقہ۔ سرکاری فیس، فارمز، سنگل کلاس قانون اور 10 سالہ رجسٹریشن سرٹیفکیٹ۔",
+    "directAnswerEn": "To register a trademark in Pakistan with IPO-Pakistan: (1) Conduct a search using Form TM-55 (PKR 1,000). (2) File application Form TM-1 (goods) or TM-2 (services) per Nice Classification class (PKR 3,000 per class). (3) Pass examination and 2-month Trademarks Journal opposition. (4) Pay PKR 9,000 on Form TM-11 for 10-year Registration Certificate. Pakistani residents can file directly via the official IPO e-Services portal.",
+    "directAnswerUr": "آئی پی او پاکستان میں ٹریڈ مارک رجسٹریشن کا طریقہ: (1) فارم TM-55 کے ذریعے ریکارڈ سرچ کروائیں (فیس 1,000 روپے)۔ (2) فارم TM-1 یا TM-2 کے ذریعے فی کلاس درخواست جمع کروائیں (فیس 3,000 روپے فی کلاس)۔ (3) سرکاری جانچ اور جرنل میں 2 ماہ کی اشاعت مکمل کریں۔ (4) فارم TM-11 پر 9,000 روپے فیس ادا کر کے 10 سالہ سرٹیفکیٹ حاصل کریں۔",
+    "lastVerified": "August 30, 2026",
+    "officialSource": {
+      "name": "Intellectual Property Organization of Pakistan (IPO-Pakistan)",
+      "url": "https://ipo.gov.pk"
+    },
+    "author": {
+      "name": "Usman Ali Raza",
+      "role": "Financial & Corporate Desk Lead"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Preliminary Search Request (Form TM-55)",
+        "serviceUr": "ٹریڈ مارک ریکارڈ سرچ (فارم TM-55)",
+        "normal": "PKR 1,000",
+        "urgent": "PKR 2,000",
+        "executive": "IPO Database",
+        "validity": "1-3 Days"
+      },
+      {
+        "serviceEn": "Application Filing Fee (Form TM-1 / TM-2)",
+        "serviceUr": "درخواست فائلنگ فیس فی کلاس",
+        "normal": "PKR 3,000 / Class",
+        "urgent": "Standard",
+        "executive": "Single-Class",
+        "validity": "Active Pending"
+      },
+      {
+        "serviceEn": "Registration Certificate Issuance (Form TM-11)",
+        "serviceUr": "فائنل رجسٹریشن سرٹیفکیٹ فیس",
+        "normal": "PKR 9,000 / Class",
+        "urgent": "Official Seal",
+        "executive": "Statutory Certificate",
+        "validity": "10 Years"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Availability Search via Form TM-55",
+        "titleUr": "ریکارڈ سرچ اور دستیابی چیک کریں",
+        "detailEn": "Search existing trademark database and pending journals to ensure no identical or confusingly similar mark exists.",
+        "detailUr": "آئی پی او ڈیٹا بیس میں نام کی انفرادیت کی تصدیق کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Application Form TM-1 / TM-2",
+        "titleUr": "درخواست اور لوگو جمع کروائیں",
+        "detailEn": "File application specifying applicant, mark representation, and single Nice Classification class.",
+        "detailUr": "لوگو، نام اور متعلقہ نائس کلاس کی تفصیلات جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Examination & 2-Month Journal Publication",
+        "titleUr": "قانونی معائنہ اور جرنل میں اشاعت",
+        "detailEn": "IPO conducts formal examination; accepted marks are published in the official Trademarks Journal for 2-month public opposition.",
+        "detailUr": "رجسٹرار کی جانچ کے بعد جرنل میں 2 ماہ کے لیے اشتہار شائع ہوتا ہے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Issue 10-Year Registration Certificate (Form TM-11)",
+        "titleUr": "سرٹیفکیٹ کا اجراء اور تحفظ",
+        "detailEn": "Pay statutory fee and receive sealed registration certificate valid for 10 years (renewable).",
+        "detailUr": "فیس ادا کر کے 10 سالہ قابل تجدید سرٹیفکیٹ وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Can I file for multiple product categories in one single trademark application in Pakistan?",
+        "questionUr": "کیا میں ایک ہی درخواست میں متعدد پروڈکٹ کلاسز کے لیے اپلائی کر سکتا ہوں؟",
+        "answerEn": "No. Pakistan operates a single-class filing system under Nice Classification. Each class requires a separate application and separate filing fee (Rs. 3,000 per class).",
+        "answerUr": "نہیں، پاکستان میں ہر کلاس کے لیے الگ درخواست اور 3,000 روپے الگ فیس جمع کروانا لازمی ہے۔"
+      },
+      {
+        "questionEn": "Do I need a lawyer to file a trademark in Pakistan?",
+        "questionUr": "کیا ٹریڈ مارک کے لیے وکیل کی ضرورت ہوتی ہے؟",
+        "answerEn": "Pakistani residents and local companies can file directly through the official IPO e-Services portal. Foreign applicants domiciled abroad are legally required to file via a registered Pakistani trademark agent or advocate.",
+        "answerUr": "مقامی شہری خود پورٹل سے اپلائی کر سکتے ہیں، جبکہ غیر ملکی افراد کے لیے وکیل کے ذریعے اپلائی کرنا قانونی شرط ہے۔"
+      }
+    ],
+    "contentEn": "Step-by-step guide to IPO Pakistan trademark registration process and fee schedules.",
+    "contentUr": "آئی پی او پاکستان کے تحت ٹریڈ مارک رجسٹریشن کی مکمل قانونی رہنمائی۔",
+    "relatedSlugs": [
+      "/business/secp-company-registration-online-2026",
+      "/business/pseb-freelancer-registration-tax-benefits-2026",
+      "/business/sole-proprietorship-ntn-registration"
     ]
   },
   "sole-proprietorship-ntn-registration": {

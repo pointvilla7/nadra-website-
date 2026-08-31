@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traffic/international-driving-permit-pakistan-2026',
     '/traffic/vehicle-ownership-transfer-online-punjab-2026',
     '/business/pseb-freelancer-registration-tax-benefits-2026',
+    '/business/trademark-registration-pakistan-ipo-guide-2026',
     '/property/e-stamping-challan-32a-online-guide-2026',
     '/property/government-employee-housing-schemes-pakistan-2026',
     '/property/property-tax-online-check-pay-2026',

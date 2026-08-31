@@ -772,6 +772,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/business/trade-license-application-guide"
       },
       {
+        "en": "IPO Trademark Registration 2026",
+        "ur": "ٹریڈ مارک رجسٹریشن پاکستان",
+        "slug": "/business/trademark-registration-pakistan-ipo-guide-2026"
+      },
+      {
         "en": "PSEB Freelancer Tax Exemption",
         "ur": "فری لانسر ٹیکس چھوٹ رجسٹریشن",
         "slug": "/business/pseb-freelancer-it-company-registration"

@@ -239,12 +239,12 @@ export default function SECPCompanyRegistrationPage() {
             </Link>
 
             <Link
-              href="/business/trademark-registration-pakistan-ipo-2026"
+              href="/business/trademark-registration-pakistan-ipo-guide-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">IP Rights</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                IPO Trademark Registration →
+                IPO Trademark Registration 2026 →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Protect your company brand name and logo in Pakistan.</p>
             </Link>
