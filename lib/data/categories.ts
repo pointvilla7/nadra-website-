@@ -289,6 +289,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/jobs/verified-govt-jobs-sources-avoid-scams-2026"
       },
       {
+        "en": "FBR Jobs & Careers 2026",
+        "ur": "ایف بی آر نوکریاں و کیریئر گائیڈ 2026",
+        "slug": "/jobs/fbr-jobs-careers-how-to-apply-2026"
+      },
+      {
         "en": "BEOE Protector Registration 2026",
         "ur": "پروٹیکٹر رجسٹریشن برائے بیرون ملک",
         "slug": "/jobs/beoe-protector-registration-overseas-employment-2026"
@@ -536,6 +541,11 @@ export const CATEGORIES: Category[] = [
         "en": "Foreign Remittance Tax 2026",
         "ur": "بیرون ملک ترسیلات زر ٹیکس 2026",
         "slug": "/tax/foreign-remittance-tax-pakistan-overseas-2026"
+      },
+      {
+        "en": "FBR Property Valuation Tables 2026",
+        "ur": "ایف بی آر پراپرٹی ویلیوایشن ریٹس 2026",
+        "slug": "/tax/fbr-property-valuation-tables-explained-2026"
       },
       {
         "en": "Salaried Tax Calculator 2026",

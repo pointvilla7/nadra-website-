@@ -19895,5 +19895,154 @@ export const ARTICLES: Record<string, Article> = {
       "/finance/how-to-open-bank-account-online-pakistan-2026",
       "/tax/income-tax-calculator-salaried-2026"
     ]
+  },
+  "fbr-jobs-careers-how-to-apply-2026": {
+    "slug": "fbr-jobs-careers-how-to-apply-2026",
+    "fullPath": "/jobs/fbr-jobs-careers-how-to-apply-2026",
+    "categoryId": "jobs",
+    "titleEn": "FBR Jobs & Careers 2026: Official Application Channels, Career Tracks & Scam Protection",
+    "titleUr": "ایف بی آر نوکریاں و کیریئر گائیڈ 2026: اصلی بھرتی پورٹلز اور فراڈ سے تحفظ",
+    "metaDescriptionEn": "Complete evergreen guide to FBR recruitment: FPSC competitive recruitment for IRS & Customs (BPS-17+ & BPS-16), National Job Portal (NJP) departmental posts, testing agencies, and official scam verification.",
+    "metaDescriptionUr": "ایف بی آر بھرتی کا سرکاری طریقہ کار، سی ایس ایس ان لینڈ ریونیو و کسٹمز، انسپکٹر اسامیاں، نیشنل جاب پورٹل آن لائن اپلائی اور جعلی نوکریوں سے بچاؤ۔",
+    "directAnswerEn": "FBR recruits through FPSC for competitive BPS-17+ officers (CSS for IRS & Customs) and BPS-16 inspectors, and via the National Job Portal (njp.gov.pk) for BPS-01 to BPS-15 support roles. FBR's internal HRMS is strictly for existing employees. Legitimate fees are deposited only via NBP Treasury Challans or 1Link PSIDs.",
+    "directAnswerUr": "ایف بی آر میں گزیٹڈ افسران اور انسپکٹرز کی بھرتی فیڈرل پبلک سروس کمیشن (FPSC) جبکہ دیگر اسامیوں کی بھرتی نیشنل جاب پورٹل (njp.gov.pk) سے ہوتی ہے۔ اندرونی HRMS نوکری کے امیدواروں کے لیے نہیں ہے۔ فیس صرف سرکاری چالان یا 1Link سے جمع ہوتی ہے۔",
+    "lastVerified": "September 1, 2026",
+    "officialSource": {
+      "name": "Federal Board of Revenue & FPSC",
+      "url": "https://www.fbr.gov.pk"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Sector Recruitment Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "FPSC General Recruitment (BPS-16/17)",
+        "serviceUr": "ایف پی ایس سی امتحانی فیس (گریڈ 16/17)",
+        "normal": "PKR 300",
+        "urgent": "NBP / SBP Challan",
+        "executive": "1Link PSID"
+      },
+      {
+        "serviceEn": "National Job Portal (NJP) Departmental",
+        "serviceUr": "نیشنل جاب پورٹل درخواست",
+        "normal": "100% Free",
+        "urgent": "Online Profile",
+        "executive": "Direct Submission"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Determine Post Level & Official Channel",
+        "titleUr": "عہدے کا گریڈ اور متعلقہ پورٹل منتخب کریں",
+        "detailEn": "Identify whether the role is BPS-16/17+ (FPSC) or BPS-01 to 15 (National Job Portal).",
+        "detailUr": "چیک کریں کہ اسامی ایف پی ایس سی (گریڈ 16/17) کی ہے یا نیشنل جاب پورٹل (گریڈ 1 تا 15) کی۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Verify Circular on Official FBR Domain",
+        "titleUr": "ایف بی آر ویب سائٹ پر اشتہار کی تصدیق کریں",
+        "detailEn": "Cross-check the vacancy advertisement under fbr.gov.pk/Jobs-Vacancy-Announcements.",
+        "detailUr": "اشتہار کی تصدیق براہ راست fbr.gov.pk پر جا کر کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Deposit Fee via Treasury Challan or 1Link",
+        "titleUr": "سرکاری چالان یا 1Link پر فیس ادا کریں",
+        "detailEn": "Pay official exam fee under Head C02101; never transfer funds to personal mobile wallets.",
+        "detailUr": "سرکاری فیس این بی پی یا 1Link سے جمع کروائیں، کبھی کسی پرسنل ایزی پیسہ پر رقم نہ بھیجیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do I need CSS to work at FBR?",
+        "questionUr": "کیا ایف بی آر میں ملازمت کے لیے سی ایس ایس ضروری ہے؟",
+        "answerEn": "No. CSS is only required for BPS-17 Assistant Commissioner (IRS) and Assistant Collector (Customs). Inspectors (BPS-16), DEOs (BPS-14), and clerks do not require CSS.",
+        "answerUr": "نہیں، سی ایس ایس صرف گریڈ 17 کے افسران کے لیے ہے۔ انسپکٹر، ڈیٹا انٹری اور کلرک کے لیے سی ایس ایس کی ضرورت نہیں۔"
+      }
+    ],
+    "contentEn": "Authoritative evergreen guide on official FBR recruitment pipelines, career tracks, and scam verification.",
+    "contentUr": "ایف بی آر میں سرکاری ملازمت کے آفیشل پورٹلز، کیریئر شعبے اور جعلی بھرتی سے تحفظ کی گائیڈ۔",
+    "relatedSlugs": [
+      "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
+      "/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026",
+      "/tax/fbr-active-taxpayer-status-helper-2026"
+    ]
+  },
+  "fbr-property-valuation-tables-explained-2026": {
+    "slug": "fbr-property-valuation-tables-explained-2026",
+    "fullPath": "/tax/fbr-property-valuation-tables-explained-2026",
+    "categoryId": "tax",
+    "titleEn": "FBR Property Valuation Tables Explained 2026: FBR vs DC Rates, SROs & Withholding Tax",
+    "titleUr": "ایف بی آر پراپرٹی ویلیوایشن ٹیبلز کی وضاحت 2026: ڈی سی ریٹ بمقابلہ ایف بی آر اور ودہولڈنگ ٹیکس",
+    "metaDescriptionEn": "Comprehensive guide to FBR property valuation tables in Pakistan: Dual valuation system (FBR vs Provincial DC rates), city-wise SRO notifications, calculating Advance Tax (236C/236K), and filer rules.",
+    "metaDescriptionUr": "ایف بی آر پراپرٹی ویلیوایشن ٹیبلز، صوبائی ڈی سی ریٹ اور ایف بی آر ریٹ کا تقابل، ایڈوانس انکم ٹیکس 236C و 236K کا حساب اور ایس آر او نوٹیفکیشنز۔",
+    "directAnswerEn": "FBR Valuation Tables (Section 68 Income Tax Ordinance 2001) determine federal Advance Income Taxes (236C for sellers, 236K for buyers) and Capital Gains Tax. Provincial DC Rates determine Stamp Duty on e-Stamping (Challan 32-A) and registration fees. Both valuations apply to their respective taxes during a single property transaction.",
+    "directAnswerUr": "ایف بی آر ویلیوایشن ٹیبلز کے تحت وفاقی ایڈوانس ٹیکس (236C اور 236K) کا حساب ہوتا ہے، جبکہ صوبائی ڈی سی ریٹس کے تحت اسٹامپ ڈیوٹی (چالان 32-A) اور رجسٹری فیس کا حساب ہوتا ہے۔ ایک ہی جائیداد کے سودے پر یہ دونوں ریٹس الگ الگ لاگو ہوتے ہیں۔",
+    "lastVerified": "September 1, 2026",
+    "officialSource": {
+      "name": "Federal Board of Revenue (FBR)",
+      "url": "https://www.fbr.gov.pk"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Property & Taxation Law Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Section 236C (Seller Advance Tax)",
+        "serviceUr": "سیکشن 236C (بیچنے والے کا ایڈوانس ٹیکس)",
+        "normal": "3% (Active Filer)",
+        "urgent": "6% (Late Filer)",
+        "executive": "10% (Non-Filer)"
+      },
+      {
+        "serviceEn": "Section 236K (Buyer Advance Tax)",
+        "serviceUr": "سیکشن 236K (خریدار کا ایڈوانس ٹیکس)",
+        "normal": "3% (Active Filer)",
+        "urgent": "6% (Late Filer)",
+        "executive": "12% (Non-Filer)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Open FBR Property Valuation Directory",
+        "titleUr": "ایف بی آر پراپرٹی ویلیوایشن ڈائریکٹری کھولیں",
+        "detailEn": "Navigate to fbr.gov.pk/property-valuation-tables.",
+        "detailUr": "ایف بی آر کی آفیشل ویب سائٹ پر پراپرٹی ویلیوایشن سیکشن دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select City & Download SRO Notification",
+        "titleUr": "اپنے شہر کا ایس آر او نوٹیفکیشن ڈاؤن لوڈ کریں",
+        "detailEn": "Download the latest gazette notification for your city or district.",
+        "detailUr": "اپنے ضلع یا شہر کا تازہ ترین گزٹ نوٹیفکیشن پی ڈی ایف ڈاؤن لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Apply Higher of FBR Value or Contract Price",
+        "titleUr": "زیادہ قیمت پر ٹیکس کا حساب لگائیں",
+        "detailEn": "Compute 236C/236K advance tax on the higher of the FBR valuation or declared contract price.",
+        "detailUr": "ایف بی آر ریٹ یا اصل قیمت میں سے جو زیادہ ہو، اس پر ودہولڈنگ ٹیکس کا حساب کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Why are there two different property valuations in Pakistan?",
+        "questionUr": "پاکستان میں ایک ہی پراپرٹی کی دو الگ ویلیوایشنز کیوں ہیں؟",
+        "answerEn": "Provincial governments levy Stamp Duty via DC Rates, while the Federal Government (FBR) levies Advance Income Tax via FBR Valuation Tables under Section 68 of the Income Tax Ordinance 2001.",
+        "answerUr": "صوبائی حکومت اسٹامپ ڈیوٹی کے لیے ڈی سی ریٹ استعمال کرتی ہے، جبکہ وفاقی حکومت انکم ٹیکس کے لیے ایف بی آر ویلیوایشن ٹیبلز استعمال کرتی ہے۔"
+      }
+    ],
+    "contentEn": "Authoritative guide explaining FBR property valuation tables, the dual valuation system, and withholding tax rules in Pakistan.",
+    "contentUr": "ایف بی آر پراپرٹی ویلیوایشن ٹیبلز، ڈی سی ریٹ کے فرق اور پراپرٹی ودہولڈنگ ٹیکس کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/property/e-stamping-challan-32a-online-guide-2026",
+      "/property/property-tax-online-check-pay-2026",
+      "/tax/withholding-tax-rates-filers-non-filers"
+    ]
   }
 };
+
