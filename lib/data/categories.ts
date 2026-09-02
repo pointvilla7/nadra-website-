@@ -1056,6 +1056,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/legal/anti-encroachment-complaint-tribunal-pakistan-2026"
       },
       {
+        "en": "Suthra Punjab Anti-Littering Fines 2026",
+        "ur": "ستھرا پنجاب اینٹی لٹرنگ سکواڈ و جرمانے",
+        "slug": "/legal/suthra-punjab-anti-littering-squad-fines-explained-2026"
+      },
+      {
         "en": "RTI Act Pakistan How to File 2026",
         "ur": "حق معلومات ایکٹ درخواست طریقہ 2026",
         "slug": "/legal/right-to-information-act-pakistan-how-to-file-2026"
