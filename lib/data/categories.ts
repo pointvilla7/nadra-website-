@@ -197,6 +197,56 @@ export const CATEGORIES: Category[] = [
         "slug": "/education/9th-class-result-2026-ajk-mirpur-board"
       },
       {
+        "en": "9th Class Result 2026 Peshawar Board",
+        "ur": "پشاور بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-peshawar-board"
+      },
+      {
+        "en": "9th Class Result 2026 Abbottabad Board",
+        "ur": "ایبٹ آباد بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-abbottabad-board"
+      },
+      {
+        "en": "9th Class Result 2026 Kohat & Bannu Board",
+        "ur": "کوہاٹ و بنوں بورڈ نہم رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-kohat-bannu-board"
+      },
+      {
+        "en": "9th Class Result 2026 Malakand Board",
+        "ur": "مالاکنڈ بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-malakand-board"
+      },
+      {
+        "en": "9th Class Result 2026 D.I. Khan Board",
+        "ur": "ڈی آئی خان بورڈ نہم رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-dikhan-board"
+      },
+      {
+        "en": "9th Class Result 2026 Sindh All Boards",
+        "ur": "سندھ بورڈز نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-sindh-board-general"
+      },
+      {
+        "en": "9th Class Result 2026 Hyderabad Board",
+        "ur": "حیدرآباد بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-hyderabad-board"
+      },
+      {
+        "en": "9th Class Result 2026 Sukkur Board",
+        "ur": "سکھر بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-sukkur-board"
+      },
+      {
+        "en": "9th Class Result 2026 Larkana Board",
+        "ur": "لاڑکانہ بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-larkana-board"
+      },
+      {
+        "en": "9th Class Result 2026 Quetta Board (Hamara Quetta)",
+        "ur": "کوئٹہ بورڈ نہم رزلٹ 2026 (ہمارا کوئٹہ)",
+        "slug": "/education/9th-class-result-2026-quetta-board"
+      },
+      {
         "en": "BISE Result Checker 2026 (All Boards)",
         "ur": "تمام بورڈز رزلٹ چیکر 2026",
         "slug": "/education/bise-result-checker-2026"

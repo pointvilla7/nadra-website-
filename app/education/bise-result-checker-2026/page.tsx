@@ -276,9 +276,18 @@ export default function BISEResultCheckerPage() {
                   { board: 'BISE DG Khan', prov: 'Punjab', url: 'bisedgkhan.edu.pk', href: 'https://www.bisedgkhan.edu.pk', sms: '800295', link: null },
                   { board: 'FBISE Federal Board', prov: 'Federal / ICT', url: 'fbise.edu.pk', href: 'https://fbise.edu.pk/result-main.php', sms: '5050 (FB [Roll])', link: '/education/9th-class-result-2026-federal-board' },
                   { board: 'AJK Board Mirpur', prov: 'AJK', url: 'ajkbise.net', href: 'https://ajkbise.net', sms: '5050', link: '/education/9th-class-result-2026-ajk-mirpur-board' },
-                  { board: 'BSEK Karachi (SSC)', prov: 'Sindh', url: 'bsek.edu.pk', href: 'https://bsek.edu.pk', sms: '8583', link: null },
+                  { board: 'BISE Peshawar', prov: 'KPK', url: 'bisep.edu.pk', href: 'https://www.bisep.edu.pk', sms: '8333', link: '/education/9th-class-result-2026-peshawar-board' },
+                  { board: 'BISE Abbottabad', prov: 'KPK', url: 'biseatd.edu.pk', href: 'https://www.biseatd.edu.pk', sms: '8333', link: '/education/9th-class-result-2026-abbottabad-board' },
+                  { board: 'BISE Kohat & Bannu', prov: 'KPK', url: 'bisekt.edu.pk / biseb.edu.pk', href: 'https://www.bisekt.edu.pk', sms: '9818', link: '/education/9th-class-result-2026-kohat-bannu-board' },
+                  { board: 'BISE Malakand', prov: 'KPK', url: 'bisemalakand.edu.pk', href: 'https://www.bisemalakand.edu.pk', sms: '8333', link: '/education/9th-class-result-2026-malakand-board' },
+                  { board: 'BISE D.I. Khan', prov: 'KPK', url: 'bisedik.edu.pk', href: 'https://www.bisedik.edu.pk', sms: '9818', link: '/education/9th-class-result-2026-dikhan-board' },
+                  { board: 'Sindh All Boards (General)', prov: 'Sindh', url: 'bsek.edu.pk', href: 'https://bsek.edu.pk', sms: '8583', link: '/education/9th-class-result-2026-sindh-board-general' },
+                  { board: 'BISE Hyderabad', prov: 'Sindh', url: 'bisehyd.edu.pk', href: 'https://bisehyd.edu.pk', sms: '8583', link: '/education/9th-class-result-2026-hyderabad-board' },
+                  { board: 'BISE Sukkur', prov: 'Sindh', url: 'bisesuksindh.edu.pk', href: 'https://www.bisesuksindh.edu.pk', sms: '8583', link: '/education/9th-class-result-2026-sukkur-board' },
+                  { board: 'BISE Larkana', prov: 'Sindh', url: 'biselrk.edu.pk', href: 'https://biselrk.edu.pk', sms: '8583', link: '/education/9th-class-result-2026-larkana-board' },
+                  { board: 'BBISE Quetta (Hamara Quetta)', prov: 'Balochistan', url: 'bbise.edu.pk', href: 'https://bbise.edu.pk', sms: 'Online Search', link: '/education/9th-class-result-2026-quetta-board' },
+                  { board: 'BSEK Karachi (SSC)', prov: 'Sindh', url: 'bsek.edu.pk', href: 'https://bsek.edu.pk', sms: '8583', link: '/education/9th-class-result-2026-sindh-board-general' },
                   { board: 'BIEK Karachi (HSSC)', prov: 'Sindh', url: 'biek.edu.pk', href: 'https://www.biek.edu.pk', sms: '8583', link: null },
-                  { board: 'BISE Peshawar', prov: 'KPK', url: 'bisep.edu.pk', href: 'https://bisep.edu.pk', sms: '8055', link: null },
                 ].map((row) => (
                   <tr key={row.board} className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                     <td className="px-4 py-3 font-serif font-semibold text-doc-ink dark:text-white">{row.board}</td>
