@@ -18,23 +18,26 @@ import {
 // Metadata
 // ──────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'BISE Result Checker 2026 – All Pakistan Board Results Online | Pakistan Info Hub',
+  title: '9th Class Result 2026 & BISE Board Result Checker Online | Pakistan Info Hub',
   description:
-    'Check your BISE 2026 Matric & Intermediate result from BISE Lahore, Rawalpindi, Multan, Gujranwala, Faisalabad, Sahiwal, BSEK/BIEK Karachi, BISE Peshawar, and Federal Board. Includes official links and SMS codes.',
+    'Check 9th class result 2026 (SSC Part-I) and Matric/Inter results for BISE Lahore, Faisalabad, Rawalpindi, Gujranwala, Multan, Sargodha, Sahiwal, Bahawalpur, DG Khan, Federal Board, BSEK Karachi, BISE Peshawar, and AJK Mirpur with roll number & SMS codes.',
   keywords: [
+    '9th class result 2026',
+    '9th class result check online',
+    'class 9 result 2026 punjab board',
+    'bise lahore 9th result 2026',
+    'bise faisalabad 9th class result',
+    'bise rawalpindi 9th result 2026',
     'BISE result 2026',
     'Pakistan board result 2026',
-    'BISE Lahore result',
     'Matric result 2026',
     'Inter result 2026',
-    'BSEK result 2026',
-    'BIEK result 2026',
     'board result check online',
   ],
   openGraph: {
-    title: 'BISE Result Checker 2026 – All Pakistan Boards',
+    title: '9th Class Result 2026 & BISE Board Result Checker – All Pakistan Boards',
     description:
-      'Official links and SMS codes to check your 2026 Matric/Intermediate result from any BISE board in Pakistan.',
+      'Check 9th class result 2026 and Matric/Inter exam marks sheets online with official portal links and verified SMS shortcodes for all BISE boards.',
     url: 'https://www.pakistaninfohub.com/education/bise-result-checker-2026',
   },
   alternates: {
@@ -150,27 +153,72 @@ export default function BISEResultCheckerPage() {
           <div className="flex flex-wrap items-center gap-2">
             <InteractiveToolBadge labelEn="INTERACTIVE TOOL" labelUr="انٹرایکٹو ٹول" variant="gold" />
             <VerifiedBadge />
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
+              🔴 9th Class Result 2026 Live
+            </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold tracking-tight text-doc-ink dark:text-white">
-            BISE Result Checker 2026
+            9th Class Result 2026 & BISE Board Checker
             <span className="block text-doc-brass text-xl sm:text-2xl mt-1 font-bold">
-              پاکستان بورڈ رزلٹ چیکر
+              نہم کلاس رزلٹ 2026 اور تمام پاکستانی تعلیمی بورڈز
             </span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed font-sans">
-            Check your Matric (SSC) or Intermediate (HSSC) 2026 result from any major BISE board in Pakistan.
-            Select your board below to get the official portal link and SMS shortcode — results are retrieved
-            directly from the official board server.
+            Check your <strong>9th class result 2026 (SSC Part-I)</strong>, 10th (Matric), and Intermediate annual exam results across all Punjab educational boards (BISE Lahore, Faisalabad, Rawalpindi, Sargodha, Gujranwala, Multan, Sahiwal, Bahawalpur, DG Khan), Federal Board (FBISE), and AJK Mirpur. Select your board below to open the official server portal or send an SMS directly to the verified board shortcode.
           </p>
         </header>
 
         {/* Direct Answer Box */}
         <DirectAnswerBox
-          topicTitleEn="How to Check BISE Board Result 2026"
-          topicTitleUr="بورڈ رزلٹ چیک کرنے کا طریقہ"
-          answerEn="To check your BISE 2026 result: (1) Select your board below, (2) click the official portal link, and (3) enter your Roll Number. All major Punjab boards (BISE Lahore, Rawalpindi, Multan, etc.) require a CAPTCHA on the website. For the fastest result without CAPTCHA, send your Roll Number via SMS to your board's shortcode — e.g., 80029 for BISE Lahore."
-          answerUr="بورڈ رزلٹ چیک کرنے کا طریقہ: (1) نیچے اپنا بورڈ منتخب کریں، (2) سرکاری پورٹل لنک کھولیں، (3) رول نمبر درج کریں۔ پنجاب کے تمام بورڈز پر کیپچا لازمی ہے۔ سب سے تیز طریقہ SMS ہے — مثال کے طور پر BISE لاہور کے لیے رول نمبر 80029 پر بھیجیں۔"
+          topicTitleEn="How to Check 9th Class Result 2026 Online & via SMS"
+          topicTitleUr="نہم کلاس رزلٹ 2026 آن لائن اور ایس ایم ایس سے چیک کرنے کا طریقہ"
+          answerEn="9th Class (SSC Part-I) Annual Results 2026 across Punjab boards were officially announced today, Wednesday, September 2, 2026 at 10:00 AM. To check: (1) Select your board below or use the dedicated board link, (2) click the official portal link and enter your Roll Number, or (3) for instant lookup when servers are busy, send your Roll Number via SMS to your board's verified code (e.g. 800291 for Lahore, 800240 for Faisalabad, 800296 for Rawalpindi, 800290 for Sargodha, 800299 for Gujranwala, 5050 for FBISE / AJK)."
+          answerUr="پنجاب کے تمام تعلیمی بورڈز نے نہم کلاس (9th) سالانہ رزلٹ 2026 کا باقاعدہ اعلان آج بروز بدھ 2 ستمبر 2026 کو صبح 10:00 بجے کر دیا ہے۔ رزلٹ چیک کرنے کے 2 طریقے ہیں: (1) نیچے اپنا بورڈ منتخب کر کے سرکاری ویب سائٹ پر رول نمبر درج کریں، یا (2) سرور ڈاؤن ہونے کی صورت میں اپنے بورڈ کے مخصوص کوڈ پر رول نمبر بذریعہ SMS بھیجیں (مثلاً لاہور 800291، فیصل آباد 800240، راولپنڈی 800296، سرگودھا 800290، گوجرانوالہ 800299)۔"
         />
+
+        {/* Dedicated Board Links Grid */}
+        <section className="space-y-3">
+          <div className="flex items-center justify-between">
+            <h2 className="text-sm font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-doc-brass">
+              Dedicated 9th Class Result 2026 Board Portals
+            </h2>
+            <Link
+              href="/education/matric-40-percent-passing-marks-rule-2026"
+              className="text-xs font-semibold text-doc-seal dark:text-amber-400 hover:underline flex items-center gap-1"
+            >
+              <span>40% Passing Marks Rule Explained</span>
+              <ExternalLink className="w-3 h-3" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+            {[
+              { name: 'Lahore Board', slug: '/education/9th-class-result-2026-lahore-board', code: '800291' },
+              { name: 'Faisalabad Board', slug: '/education/9th-class-result-2026-faisalabad-board', code: '800240' },
+              { name: 'Rawalpindi Board', slug: '/education/9th-class-result-2026-rawalpindi-board', code: '800296' },
+              { name: 'Sargodha Board', slug: '/education/9th-class-result-2026-sargodha-board', code: '800290' },
+              { name: 'Gujranwala Board', slug: '/education/9th-class-result-2026-gujranwala-board', code: '800299' },
+              { name: 'Multan Board', slug: '/education/9th-class-result-2026-multan-board', code: '800293' },
+              { name: 'Sahiwal Board', slug: '/education/9th-class-result-2026-sahiwal-board', code: '800292' },
+              { name: 'Bahawalpur Board', slug: '/education/9th-class-result-2026-bahawalpur-board', code: '800298' },
+              { name: 'Federal Board', slug: '/education/9th-class-result-2026-federal-board', code: '5050' },
+              { name: 'AJK Mirpur Board', slug: '/education/9th-class-result-2026-ajk-mirpur-board', code: '5050' },
+            ].map((board) => (
+              <Link
+                key={board.slug}
+                href={board.slug}
+                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass dark:hover:border-doc-brass transition-all flex flex-col justify-between shadow-xs hover:shadow-md"
+              >
+                <div className="font-serif font-bold text-xs text-doc-ink dark:text-white">
+                  {board.name}
+                </div>
+                <div className="flex items-center justify-between text-[11px] font-mono mt-2 text-slate-500 dark:text-slate-400">
+                  <span>SMS: {board.code}</span>
+                  <span className="text-doc-seal font-bold">Check &rarr;</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* Interactive Tool */}
         <section aria-label="BISE Result Checker Tool">
@@ -183,49 +231,54 @@ export default function BISEResultCheckerPage() {
         <section className="doc-card p-6 rounded-2xl border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 space-y-3">
           <h2 className="font-serif font-bold text-lg text-doc-ink dark:text-white flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-amber-600 shrink-0" />
-            Why We Don&apos;t Directly Fetch Your Result
+            Why We Direct You to Official Portals
           </h2>
           <p className="text-sm text-slate-700 dark:text-slate-300 font-sans leading-relaxed">
-            After researching all major BISE boards, we found that <strong>every verified board uses either
-            an image CAPTCHA, ASP.NET VIEWSTATE tokens, or requires additional PII</strong> (student name,
-            mobile number) beyond just a Roll Number. This makes automated server-side fetching technically
-            impossible without CAPTCHA-solving, which we will not do.
-          </p>
-          <p className="text-sm text-slate-700 dark:text-slate-300 font-sans leading-relaxed">
-            Instead, this tool provides the most direct path to your result: the official portal link (fastest
-            online method) and the official SMS shortcode (fastest of all — works when websites are overloaded
-            on result day).
+            All Punjab BISE boards utilize CAPTCHAs and session tokens to safeguard candidate records. Direct server querying prevents overloaded proxy issues. For maximum speed on announcement day, use the verified SMS codes listed below or click the direct portal link with your roll number.
           </p>
         </section>
 
         {/* All Board URLs Table */}
         <section className="space-y-4">
-          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white">
-            All BISE Board Result Portals 2026
-          </h2>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white">
+              All 14 BISE Board Result Portals & SMS Codes 2026
+            </h2>
+            <Link
+              href="/education/matric-40-percent-passing-marks-rule-2026"
+              className="text-xs font-semibold text-doc-seal dark:text-amber-400 hover:underline"
+            >
+              Read: Matric Passing Marks 33% vs 40% Rule &rarr;
+            </Link>
+          </div>
           <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
             <div className="table-scroll-container">
               <table className="w-full text-sm font-sans min-w-[540px]">
               <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                 <tr>
                   <th className="px-4 py-3 text-left">Board</th>
-                  <th className="px-4 py-3 text-left">Province</th>
+                  <th className="px-4 py-3 text-left">Province / Region</th>
                   <th className="px-4 py-3 text-left">Official Result URL</th>
                   <th className="px-4 py-3 text-left">SMS Code</th>
+                  <th className="px-4 py-3 text-left">Dedicated Guide</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {[
-                  { board: 'BISE Lahore', prov: 'Punjab', url: 'result.biselahore.com', href: 'http://result.biselahore.com/', sms: '80029' },
-                  { board: 'BISE Rawalpindi', prov: 'Punjab', url: 'biserawalpindi.edu.pk', href: 'https://biserawalpindi.edu.pk', sms: '80026' },
-                  { board: 'BISE Multan', prov: 'Punjab', url: 'bisemultan.edu.pk', href: 'https://www.bisemultan.edu.pk', sms: '80023' },
-                  { board: 'BISE Gujranwala', prov: 'Punjab', url: 'bisegrw.edu.pk', href: 'https://www.bisegrw.edu.pk', sms: '80029' },
-                  { board: 'BISE Faisalabad', prov: 'Punjab', url: 'bisefsd.edu.pk', href: 'https://www.bisefsd.edu.pk', sms: '80024' },
-                  { board: 'BISE Sahiwal', prov: 'Punjab', url: 'bisesahiwal.edu.pk', href: 'https://www.bisesahiwal.edu.pk', sms: '80025' },
-                  { board: 'BSEK Karachi (SSC)', prov: 'Sindh', url: 'bsek.edu.pk', href: 'https://bsek.edu.pk', sms: '8583' },
-                  { board: 'BIEK Karachi (HSSC)', prov: 'Sindh', url: 'biek.edu.pk', href: 'https://www.biek.edu.pk', sms: '8583' },
-                  { board: 'BISE Peshawar', prov: 'KPK', url: 'bisep.edu.pk', href: 'https://bisep.edu.pk', sms: '8055' },
-                  { board: 'FBISE Federal', prov: 'Federal', url: 'fbise.edu.pk', href: 'https://fbise.edu.pk/result.html', sms: '800055' },
+                  { board: 'BISE Lahore', prov: 'Punjab', url: 'result.biselahore.com', href: 'https://result.biselahore.com/', sms: '800291', link: '/education/9th-class-result-2026-lahore-board' },
+                  { board: 'BISE Faisalabad', prov: 'Punjab', url: 'bisefsd.edu.pk', href: 'https://www.bisefsd.edu.pk', sms: '800240', link: '/education/9th-class-result-2026-faisalabad-board' },
+                  { board: 'BISE Rawalpindi', prov: 'Punjab', url: 'biserawalpindi.edu.pk', href: 'https://biserawalpindi.edu.pk', sms: '800296', link: '/education/9th-class-result-2026-rawalpindi-board' },
+                  { board: 'BISE Sargodha', prov: 'Punjab', url: 'bisesargodha.edu.pk', href: 'https://www.bisesargodha.edu.pk', sms: '800290', link: '/education/9th-class-result-2026-sargodha-board' },
+                  { board: 'BISE Gujranwala', prov: 'Punjab', url: 'bisegrw.edu.pk', href: 'https://www.bisegrw.edu.pk', sms: '800299', link: '/education/9th-class-result-2026-gujranwala-board' },
+                  { board: 'BISE Multan', prov: 'Punjab', url: 'bisemultan.edu.pk', href: 'https://www.bisemultan.edu.pk', sms: '800293', link: '/education/9th-class-result-2026-multan-board' },
+                  { board: 'BISE Sahiwal', prov: 'Punjab', url: 'bisesahiwal.edu.pk', href: 'https://www.bisesahiwal.edu.pk', sms: '800292', link: '/education/9th-class-result-2026-sahiwal-board' },
+                  { board: 'BISE Bahawalpur', prov: 'Punjab', url: 'bisebwp.edu.pk', href: 'https://www.bisebwp.edu.pk', sms: '800298', link: '/education/9th-class-result-2026-bahawalpur-board' },
+                  { board: 'BISE DG Khan', prov: 'Punjab', url: 'bisedgkhan.edu.pk', href: 'https://www.bisedgkhan.edu.pk', sms: '800295', link: null },
+                  { board: 'FBISE Federal Board', prov: 'Federal / ICT', url: 'fbise.edu.pk', href: 'https://fbise.edu.pk/result-main.php', sms: '5050 (FB [Roll])', link: '/education/9th-class-result-2026-federal-board' },
+                  { board: 'AJK Board Mirpur', prov: 'AJK', url: 'ajkbise.net', href: 'https://ajkbise.net', sms: '5050', link: '/education/9th-class-result-2026-ajk-mirpur-board' },
+                  { board: 'BSEK Karachi (SSC)', prov: 'Sindh', url: 'bsek.edu.pk', href: 'https://bsek.edu.pk', sms: '8583', link: null },
+                  { board: 'BIEK Karachi (HSSC)', prov: 'Sindh', url: 'biek.edu.pk', href: 'https://www.biek.edu.pk', sms: '8583', link: null },
+                  { board: 'BISE Peshawar', prov: 'KPK', url: 'bisep.edu.pk', href: 'https://bisep.edu.pk', sms: '8055', link: null },
                 ].map((row) => (
                   <tr key={row.board} className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                     <td className="px-4 py-3 font-serif font-semibold text-doc-ink dark:text-white">{row.board}</td>
@@ -242,6 +295,15 @@ export default function BISEResultCheckerPage() {
                       </a>
                     </td>
                     <td className="px-4 py-3 font-mono font-bold text-doc-seal dark:text-red-400">{row.sms}</td>
+                    <td className="px-4 py-3">
+                      {row.link ? (
+                        <Link href={row.link} className="text-xs font-semibold text-doc-brass hover:underline">
+                          9th Result Page &rarr;
+                        </Link>
+                      ) : (
+                        <span className="text-xs text-slate-400">—</span>
+                      )}
+                    </td>
                   </tr>
                 ))}
               </tbody>

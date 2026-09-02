@@ -20,7 +20,7 @@ import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 // BOARD DATA — All URLs verified from official board websites
 // ============================================================
 
-export type ExamType = 'matric_annual' | 'matric_supply' | 'inter_annual' | 'inter_supply';
+export type ExamType = 'class9_annual' | 'matric_annual' | 'matric_supply' | 'inter_annual' | 'inter_supply';
 
 export interface BoardInfo {
   id: string;
@@ -43,8 +43,8 @@ export const BISE_BOARDS: BoardInfo[] = [
     province: 'Punjab',
     resultUrl: 'http://result.biselahore.com/',
     homeUrl: 'https://www.biselahore.com',
-    smsCode: '80029',
-    smsFormat: 'Send Roll Number to 80029',
+    smsCode: '800291',
+    smsFormat: 'Send Roll Number to 800291',
     captchaNote: true,
   },
   {
@@ -54,30 +54,8 @@ export const BISE_BOARDS: BoardInfo[] = [
     province: 'Punjab',
     resultUrl: 'https://biserawalpindi.edu.pk',
     homeUrl: 'https://biserawalpindi.edu.pk',
-    smsCode: '80026',
-    smsFormat: 'Send Roll Number to 80026',
-    captchaNote: true,
-  },
-  {
-    id: 'multan',
-    nameEn: 'BISE Multan',
-    nameUr: 'بورڈ ملتان',
-    province: 'Punjab',
-    resultUrl: 'https://www.bisemultan.edu.pk',
-    homeUrl: 'https://www.bisemultan.edu.pk',
-    smsCode: '80023',
-    smsFormat: 'Send Roll Number to 80023',
-    captchaNote: true,
-  },
-  {
-    id: 'gujranwala',
-    nameEn: 'BISE Gujranwala',
-    nameUr: 'بورڈ گوجرانوالہ',
-    province: 'Punjab',
-    resultUrl: 'https://www.bisegrw.edu.pk',
-    homeUrl: 'https://www.bisegrw.edu.pk',
-    smsCode: '80029',
-    smsFormat: 'Send Roll Number to 80029',
+    smsCode: '800296',
+    smsFormat: 'Send Roll Number to 800296',
     captchaNote: true,
   },
   {
@@ -87,8 +65,41 @@ export const BISE_BOARDS: BoardInfo[] = [
     province: 'Punjab',
     resultUrl: 'https://www.bisefsd.edu.pk',
     homeUrl: 'https://www.bisefsd.edu.pk',
-    smsCode: '80024',
-    smsFormat: 'Send Roll Number to 80024',
+    smsCode: '800240',
+    smsFormat: 'Send Roll Number to 800240',
+    captchaNote: true,
+  },
+  {
+    id: 'gujranwala',
+    nameEn: 'BISE Gujranwala',
+    nameUr: 'بورڈ گوجرانوالہ',
+    province: 'Punjab',
+    resultUrl: 'https://www.bisegrw.edu.pk',
+    homeUrl: 'https://www.bisegrw.edu.pk',
+    smsCode: '800299',
+    smsFormat: 'Send Roll Number to 800299',
+    captchaNote: true,
+  },
+  {
+    id: 'sargodha',
+    nameEn: 'BISE Sargodha',
+    nameUr: 'بورڈ سرگودھا',
+    province: 'Punjab',
+    resultUrl: 'https://www.bisesargodha.edu.pk',
+    homeUrl: 'https://www.bisesargodha.edu.pk',
+    smsCode: '800290',
+    smsFormat: 'Send Roll Number to 800290',
+    captchaNote: true,
+  },
+  {
+    id: 'multan',
+    nameEn: 'BISE Multan',
+    nameUr: 'بورڈ ملتان',
+    province: 'Punjab',
+    resultUrl: 'https://www.bisemultan.edu.pk',
+    homeUrl: 'https://www.bisemultan.edu.pk',
+    smsCode: '800293',
+    smsFormat: 'Send Roll Number to 800293',
     captchaNote: true,
   },
   {
@@ -98,9 +109,54 @@ export const BISE_BOARDS: BoardInfo[] = [
     province: 'Punjab',
     resultUrl: 'https://www.bisesahiwal.edu.pk',
     homeUrl: 'https://www.bisesahiwal.edu.pk',
-    smsCode: '80025',
-    smsFormat: 'Send Roll Number to 80025',
+    smsCode: '800292',
+    smsFormat: 'Send Roll Number to 800292',
     captchaNote: true,
+  },
+  {
+    id: 'bahawalpur',
+    nameEn: 'BISE Bahawalpur',
+    nameUr: 'بورڈ بہاولپور',
+    province: 'Punjab',
+    resultUrl: 'https://www.bisebwp.edu.pk',
+    homeUrl: 'https://www.bisebwp.edu.pk',
+    smsCode: '800298',
+    smsFormat: 'Send Roll Number to 800298',
+    captchaNote: true,
+  },
+  {
+    id: 'dgkhan',
+    nameEn: 'BISE DG Khan',
+    nameUr: 'بورڈ ڈی جی خان',
+    province: 'Punjab',
+    resultUrl: 'https://www.bisedgkhan.edu.pk',
+    homeUrl: 'https://www.bisedgkhan.edu.pk',
+    smsCode: '800295',
+    smsFormat: 'Send Roll Number to 800295',
+    captchaNote: true,
+  },
+  {
+    id: 'federal',
+    nameEn: 'FBISE Federal Board',
+    nameUr: 'وفاقی تعلیمی بورڈ',
+    province: 'Federal / ICT',
+    resultUrl: 'https://fbise.edu.pk/result-main.php',
+    homeUrl: 'https://fbise.edu.pk',
+    smsCode: '5050',
+    smsFormat: 'Send FB [Roll Number] to 5050',
+    captchaNote: false,
+    statusNote: 'Federal Board covers Islamabad ICT, Cantonments, Gilgit-Baltistan & Overseas Pakistani schools.',
+  },
+  {
+    id: 'ajk-mirpur',
+    nameEn: 'AJK Board Mirpur',
+    nameUr: 'آزاد کشمیر بورڈ میرپور',
+    province: 'AJK',
+    resultUrl: 'https://ajkbise.net',
+    homeUrl: 'https://ajkbise.net',
+    smsCode: '5050',
+    smsFormat: 'Send Roll Number to 5050',
+    captchaNote: false,
   },
   {
     id: 'karachi-ssc',
@@ -137,22 +193,11 @@ export const BISE_BOARDS: BoardInfo[] = [
     smsFormat: 'Send Roll Number to 8055',
     captchaNote: true,
   },
-  {
-    id: 'federal',
-    nameEn: 'FBISE Federal Board',
-    nameUr: 'وفاقی تعلیمی بورڈ',
-    province: 'Federal / ICT',
-    resultUrl: 'https://fbise.edu.pk/result.html',
-    homeUrl: 'https://fbise.edu.pk',
-    smsCode: '800055',
-    smsFormat: 'Send Roll Number to 800055',
-    captchaNote: false,
-    statusNote: 'Federal Board covers AJK, Gilgit-Baltistan, and ICT federal institutions.',
-  },
 ];
 
 const EXAM_LABELS: Record<ExamType, { en: string; ur: string }> = {
-  matric_annual: { en: 'Matric / SSC Part-II (Annual)', ur: 'میٹرک سالانہ' },
+  class9_annual: { en: '9th Class / SSC Part-I (Annual)', ur: 'نہم کلاس (9th) سالانہ' },
+  matric_annual: { en: '10th Class / SSC Part-II (Annual)', ur: 'دہم میٹرک (10th) سالانہ' },
   matric_supply: { en: 'Matric / SSC (Supplementary)', ur: 'میٹرک ضمنی' },
   inter_annual: { en: 'Intermediate / HSSC (Annual)', ur: 'انٹر / ایف ایس سی سالانہ' },
   inter_supply: { en: 'Intermediate / HSSC (Supplementary)', ur: 'انٹر ضمنی' },
@@ -171,7 +216,7 @@ export const BISEResultHelper: React.FC<BISEResultHelperProps> = ({
 }) => {
   const { t } = useLanguage();
   const [selectedBoard, setSelectedBoard] = useState<string>('lahore');
-  const [examType, setExamType] = useState<ExamType>('matric_annual');
+  const [examType, setExamType] = useState<ExamType>('class9_annual');
 
   const board = BISE_BOARDS.find((b) => b.id === selectedBoard) || BISE_BOARDS[0];
 

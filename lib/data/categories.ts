@@ -147,24 +147,59 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
-        "en": "HEC Blockchain Degree Attestation 2026",
-        "ur": "ایچ ای سی بلاک چین ڈگری تصدیق 2026",
-        "slug": "/education/hec-degree-attestation-new-blockchain-system-2026"
+        "en": "9th Class Result 2026 Lahore Board",
+        "ur": "لاہور بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-lahore-board"
       },
       {
-        "en": "IBCC Matric & Inter Attestation Guide",
-        "ur": "آئی بی سی سی میٹرک و انٹر تصدیق",
-        "slug": "/education/ibcc-matric-intermediate-attestation-guide-2026"
+        "en": "9th Class Result 2026 Faisalabad Board",
+        "ur": "فیصل آباد بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-faisalabad-board"
       },
       {
-        "en": "PM Laptop Scheme 2026",
-        "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
-        "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
+        "en": "9th Class Result 2026 Rawalpindi Board",
+        "ur": "راولپنڈی بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-rawalpindi-board"
       },
       {
-        "en": "University Entry Tests 2026 (NUST/FAST)",
-        "ur": "یونیورسٹی انٹری ٹیسٹ رہنمائی",
-        "slug": "/education/university-entry-test-guide-nust-fast-comsats-2026"
+        "en": "9th Class Result 2026 Sargodha Board",
+        "ur": "سرگودھا بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-sargodha-board"
+      },
+      {
+        "en": "9th Class Result 2026 Gujranwala Board",
+        "ur": "گوجرانوالہ بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-gujranwala-board"
+      },
+      {
+        "en": "9th Class Result 2026 Multan Board",
+        "ur": "ملتان بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-multan-board"
+      },
+      {
+        "en": "9th Class Result 2026 Sahiwal Board",
+        "ur": "ساہیوال بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-sahiwal-board"
+      },
+      {
+        "en": "9th Class Result 2026 Bahawalpur Board",
+        "ur": "بہاولپور بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-bahawalpur-board"
+      },
+      {
+        "en": "9th Class Result 2026 Federal Board",
+        "ur": "فیڈرل بورڈ نہم کلاس رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-federal-board"
+      },
+      {
+        "en": "9th Class Result 2026 AJK Mirpur Board",
+        "ur": "آزاد کشمیر میرپور بورڈ نہم رزلٹ 2026",
+        "slug": "/education/9th-class-result-2026-ajk-mirpur-board"
+      },
+      {
+        "en": "BISE Result Checker 2026 (All Boards)",
+        "ur": "تمام بورڈز رزلٹ چیکر 2026",
+        "slug": "/education/bise-result-checker-2026"
       },
       {
         "en": "Matric 40% Passing Marks 2026",
@@ -172,29 +207,14 @@ export const CATEGORIES: Category[] = [
         "slug": "/education/matric-40-percent-passing-marks-rule-2026"
       },
       {
-        "en": "BISE Result Checker 2026",
-        "ur": "بورڈ رزلٹ چیکر 2026",
-        "slug": "/education/bise-result-checker-2026"
+        "en": "HEC Blockchain Degree Attestation 2026",
+        "ur": "ایچ ای سی بلاک چین ڈگری تصدیق 2026",
+        "slug": "/education/hec-degree-attestation-new-blockchain-system-2026"
       },
       {
-        "en": "University Merit List 2026",
-        "ur": "یونیورسٹی میرٹ لسٹ 2026",
-        "slug": "/education/university-merit-list-checker-2026"
-      },
-      {
-        "en": "HEC Scholarship Status",
-        "ur": "HEC سکالرشپ سٹیٹس",
-        "slug": "/education/hec-scholarship-status-2026"
-      },
-      {
-        "en": "BISE Lahore Result 2026",
-        "ur": "لاہور بورڈ رزلٹ 2026",
-        "slug": "/education/bise-lahore-result-2026"
-      },
-      {
-        "en": "PU Admissions 2026",
-        "ur": "پنجاب یونیورسٹی ایڈمیشن",
-        "slug": "/education/punjab-university-admission-2026"
+        "en": "PM Laptop Scheme 2026",
+        "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
+        "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
       }
     ]
   },

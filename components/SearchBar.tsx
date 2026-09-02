@@ -37,6 +37,7 @@ import {
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { ARTICLES } from '@/lib/data/articles';
 import { CATEGORIES } from '@/lib/data/categories';
+import { NINTH_CLASS_BOARDS } from '@/lib/data/ninthClassBoards';
 
 interface SearchBarProps {
   isOpen: boolean;
@@ -156,7 +157,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ isOpen, onClose }) => {
     const categoryMap = new Map<string, { nameEn: string; nameUr: string }>();
     CATEGORIES.forEach((c) => categoryMap.set(c.id, { nameEn: c.nameEn, nameUr: c.nameUr }));
 
-    return Object.values(ARTICLES).map((art) => {
+    const articleItems: SearchableItem[] = Object.values(ARTICLES).map((art) => {
       const cat = categoryMap.get(art.categoryId) || { nameEn: 'Civic Services', nameUr: 'عوامی خدمات' };
       return {
         id: art.slug,
@@ -178,6 +179,50 @@ export const SearchBar: React.FC<SearchBarProps> = ({ isOpen, onClose }) => {
         ],
       };
     });
+
+    const ninthBoardItems: SearchableItem[] = Object.values(NINTH_CLASS_BOARDS).map((board) => ({
+      id: board.slug,
+      slug: board.slug,
+      fullPath: `/education/${board.slug}`,
+      titleEn: `${board.nameEn} 9th Class Result 2026 Online Check`,
+      titleUr: `${board.nameUr} نہم کلاس رزلٹ 2026 آن لائن`,
+      categoryNameEn: 'Education',
+      categoryNameUr: 'تعلیم اور رزلٹ',
+      categoryId: 'education',
+      descriptionEn: board.metaDescription,
+      descriptionUr: `${board.nameUr} نہم کلاس رزلٹ 2026 بذریعہ رول نمبر اور ایس ایم ایس کوڈ ${board.smsCode}`,
+      directAnswerEn: `Check ${board.nameEn} 9th class result 2026 online or via SMS code ${board.smsCode}.`,
+      tags: [
+        'education',
+        '9th class result 2026',
+        'class 9 result 2026',
+        'bise result 2026',
+        'matric part 1 result',
+        board.nameEn.toLowerCase(),
+        board.nameUr,
+        board.cityEn.toLowerCase(),
+        board.smsCode,
+        board.slug.replace(/-/g, ' '),
+        ...board.districtsEn.map((d) => d.toLowerCase()),
+      ],
+    }));
+
+    const checkerItem: SearchableItem = {
+      id: 'bise-result-checker-2026',
+      slug: 'bise-result-checker-2026',
+      fullPath: '/education/bise-result-checker-2026',
+      titleEn: '9th Class Result 2026 & BISE Board Result Checker Online',
+      titleUr: 'نہم کلاس رزلٹ 2026 اور تمام بورڈز رزلٹ چیکر',
+      categoryNameEn: 'Education',
+      categoryNameUr: 'تعلیم اور رزلٹ',
+      categoryId: 'education',
+      descriptionEn: 'Check 9th class result 2026 and Matric/Inter results for all 14 Punjab and Pakistan BISE boards.',
+      descriptionUr: 'تمام پاکستانی اور پنجاب کے تعلیمی بورڈز کے نہم کلاس رزلٹ 2026 کی تصدیق۔',
+      directAnswerEn: 'Unified BISE result helper with portal links and verified SMS codes for all boards.',
+      tags: ['education', 'bise result', '9th class result 2026', 'class 9 result', 'all boards', 'matric result', 'inter result'],
+    };
+
+    return [...ninthBoardItems, checkerItem, ...articleItems];
   }, []);
 
   // 2. Configure Fuse.js with Typo-Tolerant Fuzziness

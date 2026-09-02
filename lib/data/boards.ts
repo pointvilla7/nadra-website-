@@ -37,7 +37,7 @@ export const EDUCATION_BOARDS: EducationBoard[] = [
     province: 'Punjab',
     officialWebsite: 'https://bisefsd.edu.pk',
     resultUrl: 'http://bisefsd.edu.pk/',
-    smsCode: '800299',
+    smsCode: '800240',
   },
   {
     id: 'bise-gujranwala',
