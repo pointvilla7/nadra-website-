@@ -50,16 +50,30 @@ import { MobileBottomNav } from '@/components/MobileBottomNav';
 
 export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [showDeferredWidgets, setShowDeferredWidgets] = useState(false);
 
   useEffect(() => {
-    // iOS Safari :active fix — iOS Safari does NOT fire :active CSS states on non-anchor
-    // elements (buttons, divs) unless an ancestor has a touchstart listener.
-    // This no-op passive listener on document.body is the standard fix, adding < 0.01ms overhead.
-    // See: https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#safari_mobile
+    // iOS Safari :active fix
     const noop = () => {};
     document.body.addEventListener('touchstart', noop, { passive: true });
+
+    // Defer heavy non-critical background widgets (chat, exit popup) until user interaction
+    const enableWidgets = () => {
+      setShowDeferredWidgets(true);
+      window.removeEventListener('scroll', enableWidgets);
+      window.removeEventListener('touchstart', enableWidgets);
+      window.removeEventListener('click', enableWidgets);
+    };
+
+    window.addEventListener('scroll', enableWidgets, { passive: true, once: true });
+    window.addEventListener('touchstart', enableWidgets, { passive: true, once: true });
+    window.addEventListener('click', enableWidgets, { passive: true, once: true });
+
     return () => {
       document.body.removeEventListener('touchstart', noop);
+      window.removeEventListener('scroll', enableWidgets);
+      window.removeEventListener('touchstart', enableWidgets);
+      window.removeEventListener('click', enableWidgets);
     };
   }, []);
 
@@ -83,8 +97,12 @@ export const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children
       <MobileBottomNav onOpenSearch={() => setIsSearchOpen(true)} />
       <Suspense fallback={null}>
         <CookieConsent />
-        <AiAssistantWidget />
-        <NewsletterExitPopup />
+        {showDeferredWidgets && (
+          <>
+            <AiAssistantWidget />
+            <NewsletterExitPopup />
+          </>
+        )}
       </Suspense>
     </LanguageProvider>
   );

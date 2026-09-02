@@ -33,6 +33,7 @@ export const CategoryPillNav: React.FC = () => {
               <Link
                 key={cat.id}
                 href={`/${cat.slug}`}
+                prefetch={false}
                 className={`min-h-[44px] sm:min-h-[38px] px-4 sm:px-3.5 py-2 sm:py-1.5 rounded-[999px] text-xs font-sans font-medium uppercase tracking-wider transition flex items-center gap-1.5 shrink-0 ${
                   isActive
                     ? 'bg-[#0B1120] text-white shadow-xs border border-[#0B1120]'

@@ -9,15 +9,34 @@ export const CookieConsent: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('pih_cookie_consent');
-    if (!consent) {
-      const timer = setTimeout(() => setVisible(true), 1500);
-      return () => clearTimeout(timer);
+    try {
+      const consent = localStorage.getItem('pih_cookie_consent');
+      if (consent) return;
+    } catch {
+      return;
     }
+
+    const showConsent = () => setVisible(true);
+
+    window.addEventListener('scroll', showConsent, { passive: true, once: true });
+    window.addEventListener('touchstart', showConsent, { passive: true, once: true });
+    window.addEventListener('click', showConsent, { passive: true, once: true });
+    window.addEventListener('keydown', showConsent, { passive: true, once: true });
+
+    return () => {
+      window.removeEventListener('scroll', showConsent);
+      window.removeEventListener('touchstart', showConsent);
+      window.removeEventListener('click', showConsent);
+      window.removeEventListener('keydown', showConsent);
+    };
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('pih_cookie_consent', 'accepted');
+    try {
+      localStorage.setItem('pih_cookie_consent', 'accepted');
+    } catch {
+      // Ignore
+    }
     setVisible(false);
   };
 

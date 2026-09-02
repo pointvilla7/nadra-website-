@@ -124,9 +124,6 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#1B2A4A" />
 
-        {/* ── Preconnect to Google Fonts CDN (avoids extra DNS+TCP round-trips) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* ── DNS prefetch for official Pakistan govt portals users redirect to ── */}
         <link rel="dns-prefetch" href="//id.nadra.gov.pk" />

@@ -17,11 +17,11 @@ import {
   Landmark,
   FileCheck,
 } from 'lucide-react';
+import dynamic from 'next/dynamic';
 import { CATEGORIES } from '@/lib/data/categories';
 import { TRENDING_HOMEPAGE_ARTICLES } from '@/lib/data/homepageGuides';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CategoryCard } from '@/components/CategoryCard';
-import { SearchBar } from '@/components/SearchBar';
 import { HeroSection } from '@/components/HeroSection';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
@@ -29,6 +29,11 @@ import { RecentlyUpdatedGuides } from '@/components/RecentlyUpdatedGuides';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { LiveTrustStatsWidget } from '@/components/LiveTrustStatsWidget';
 import { AuthorityTrustBadges } from '@/components/AuthorityTrustBadges';
+
+const SearchBar = dynamic(
+  () => import('@/components/SearchBar').then((m) => m.SearchBar),
+  { ssr: false }
+);
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -39,8 +44,10 @@ export default function HomePage() {
 
   return (
     <div className="space-y-8 sm:space-y-16 lg:space-y-20 animate-fadeIn pb-16">
-      {/* Search Modal Trigger */}
-      <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      {/* Search Modal Trigger — client only on demand */}
+      {isSearchOpen && (
+        <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      )}
 
       {/* REDESIGNED SPLIT HERO SECTION WITH CUSTOM SVG ILLUSTRATION */}
       <HeroSection onOpenSearch={() => setIsSearchOpen(true)} />

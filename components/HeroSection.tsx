@@ -90,6 +90,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-3 pt-1">
             <Link
               href="/bills/utility-bill-checker-2026"
+              prefetch={false}
               className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-[#B8860B] hover:bg-[#D4A017] text-white font-sans font-semibold text-xs shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.01] active:scale-[0.99]"
             >
               <Zap className="w-4 h-4 text-amber-200" />
@@ -97,6 +98,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
             </Link>
             <Link
               href="/tracker"
+              prefetch={false}
               className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 hover:text-white font-sans font-semibold text-xs border border-slate-700 hover:border-slate-600 transition flex items-center justify-center gap-2 min-h-[44px] hover:scale-[1.01] active:scale-[0.99]"
             >
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -107,31 +109,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSearch }) => {
           {/* Trending Guides Row */}
           <div className="pt-1.5 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-sans text-slate-300">
             <span className="text-doc-brass font-semibold">{t('TRENDING:', 'مشہور سروسز:')}</span>
-            <Link href="/nadra/cnic-kaise-banaye" className="hover:text-white transition underline underline-offset-2">
+            <Link href="/nadra/cnic-kaise-banaye" prefetch={false} className="hover:text-white transition underline underline-offset-2">
               CNIC Smart Card
             </Link>
             <span>•</span>
-            <Link href="/tax/fbr-filer-status-check-cnic" className="hover:text-white transition underline underline-offset-2">
+            <Link href="/tax/fbr-filer-status-check-cnic" prefetch={false} className="hover:text-white transition underline underline-offset-2">
               FBR Filer Status
             </Link>
             <span>•</span>
-            <Link href="/hajj-umrah/hajj-balloting-result-check-online" className="hover:text-white transition underline underline-offset-2">
+            <Link href="/hajj-umrah/hajj-balloting-result-check-online" prefetch={false} className="hover:text-white transition underline underline-offset-2">
               Hajj Balloting
             </Link>
             <span>•</span>
-            <Link href="/health/sehat-card-eligibility-check-by-cnic" className="hover:text-white transition underline underline-offset-2">
+            <Link href="/health/sehat-card-eligibility-check-by-cnic" prefetch={false} className="hover:text-white transition underline underline-offset-2">
               Sehat Card
             </Link>
             <span>•</span>
-            <Link href="/property/property-mutation-check-by-cnic" className="hover:text-white transition underline underline-offset-2">
+            <Link href="/property/property-mutation-check-by-cnic" prefetch={false} className="hover:text-white transition underline underline-offset-2">
               Property Mutation
             </Link>
           </div>
 
         </div>
 
-        {/* ── RIGHT COLUMN: Custom Vector Illustration ── */}
-        <div className="lg:col-span-5 flex items-center justify-center pt-2 lg:pt-0">
+        {/* ── RIGHT COLUMN: Custom Vector Illustration (Desktop / Large Viewport only) ── */}
+        <div className="hidden lg:flex lg:col-span-5 items-center justify-center pt-2 lg:pt-0">
           <CivicServicesIllustration className="max-w-[380px] sm:max-w-[440px] lg:max-w-none" />
         </div>
 

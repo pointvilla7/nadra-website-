@@ -193,7 +193,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
       {/* Main Header Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0">
+        <Link href="/" prefetch={false} className="flex items-center gap-3 group shrink-0">
           <div className="w-10 h-10 rounded-xl bg-doc-ink text-doc-brass border border-doc-brass/40 flex items-center justify-center font-bold text-xl shadow-doc-card transition-transform group-hover:scale-105 shrink-0">
             🇵🇰
           </div>
@@ -220,6 +220,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
         <nav className="hidden md:flex items-center gap-1 lg:gap-2">
           <Link
             href="/"
+            prefetch={false}
             className="px-3 py-2 rounded-lg text-sm font-semibold text-doc-ink dark:text-slate-200 hover:text-amber-800 dark:hover:text-amber-300 transition"
           >
             {t('Home', 'صفحہ اول', 'Home')}
