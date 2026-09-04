@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/succession-certificate-legal-heir-nadra-2026',
     '/nadra/cnic-new-rules-2026',
     '/passport/passport-new-rules-2026-cashless-epassport',
+    '/passport/urgent-passport-fee-and-time-in-pakistan-2026',
     '/bills/net-metering-net-billing-change-2026',
     '/bills/smart-meter-pakistan-price-how-it-works-2026',
     '/traffic/challan-paid-but-showing-pending-2026',

@@ -116,6 +116,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Urgent Passport Fee & Time 2026",
+        "ur": "ارجنٹ پاسپورٹ فیس اور ڈیلیوری کا وقت 2026",
+        "slug": "/passport/urgent-passport-fee-and-time-in-pakistan-2026"
+      },
+      {
         "en": "Passport New Rules 2026",
         "ur": "پاسپورٹ نئے قواعد 2026",
         "slug": "/passport/passport-new-rules-2026-cashless-epassport"

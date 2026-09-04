@@ -169,7 +169,26 @@ export default function PassportFeeCalculatorPage() {
       <FAQAccordion faqs={faqs} />
 
       {/* Related Guide Links */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="p-6 rounded-2xl doc-card border border-doc-brass/30 flex flex-col justify-between space-y-3">
+          <div>
+            <span className="font-mono text-[10px] uppercase font-bold text-doc-seal">URGENT TIMELINES &amp; RATES</span>
+            <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white mt-1">
+              Urgent Passport Fee &amp; Time
+            </h3>
+            <p className="text-xs text-slate-600 dark:text-slate-300 mt-1">
+              Compare official 5-day timelines against real-world 10–15 day delivery and urgent fee schedules.
+            </p>
+          </div>
+          <Link
+            href="/passport/urgent-passport-fee-and-time-in-pakistan-2026"
+            className="text-xs font-mono font-bold text-doc-seal dark:text-red-400 hover:underline flex items-center gap-1 pt-2"
+          >
+            <span>VIEW URGENT GUIDE</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+
         <div className="p-6 rounded-2xl doc-card border border-doc-brass/30 flex flex-col justify-between space-y-3">
           <div>
             <span className="font-mono text-[10px] uppercase font-bold text-doc-seal">OFFICIAL RATE TABLES</span>

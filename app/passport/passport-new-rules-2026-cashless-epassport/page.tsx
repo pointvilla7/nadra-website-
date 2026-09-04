@@ -395,7 +395,18 @@ export default function PassportNewRules2026Page() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Passport &amp; Overseas Travel Services
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/passport/urgent-passport-fee-and-time-in-pakistan-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Urgent Rates &amp; Time</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Urgent Passport Fee &amp; Time →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Full urgent fee table &amp; real-world vs official 5-day delivery.</p>
+            </Link>
+
             <Link
               href="/passport/fee-calculator"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
