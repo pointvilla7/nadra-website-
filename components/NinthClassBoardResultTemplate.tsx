@@ -26,6 +26,11 @@ import {
   ArrowRight,
   HelpCircle,
   Lock,
+  BarChart3,
+  Building2,
+  Phone,
+  Users,
+  Award,
 } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 
@@ -351,6 +356,114 @@ export const NinthClassBoardResultTemplate: React.FC<NinthClassBoardResultTempla
             <p className="text-xs text-slate-600 dark:text-slate-400 font-sans leading-relaxed">
               <strong>Tip for Result Day:</strong> Web servers for BISE boards frequently crash or return HTTP 502/504 errors on announcement morning. The SMS gateway operates via direct cellular telecom channels and typically delivers your score in 60-120 seconds.
             </p>
+          </div>
+        </section>
+
+        {/* Board Performance & Historical Gazette Analysis */}
+        {board.passingStats && (
+          <section className="space-y-4">
+            <h2 className="text-xl font-serif font-bold text-doc-ink dark:text-white flex items-center gap-2">
+              <BarChart3 className="w-5 h-5 text-doc-seal" />
+              {board.nameEn} 9th Class Performance & Gazette Statistics
+            </h2>
+
+            {/* Stat Cards Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+                <span className="text-[11px] font-mono uppercase text-slate-500 dark:text-slate-400">Overall Pass Rate</span>
+                <p className="text-2xl font-mono font-extrabold text-emerald-600 dark:text-emerald-400">{board.passingStats.overallPassRate}</p>
+                <span className="text-[10px] text-slate-500 font-sans">Across All Groups</span>
+              </div>
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+                <span className="text-[11px] font-mono uppercase text-slate-500 dark:text-slate-400">Science Group</span>
+                <p className="text-2xl font-mono font-extrabold text-sky-600 dark:text-sky-400">{board.passingStats.sciencePassRate}</p>
+                <span className="text-[10px] text-slate-500 font-sans">Maths, Bio & Comp</span>
+              </div>
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+                <span className="text-[11px] font-mono uppercase text-slate-500 dark:text-slate-400">Humanities / Arts</span>
+                <p className="text-2xl font-mono font-extrabold text-amber-600 dark:text-amber-400">{board.passingStats.artsPassRate}</p>
+                <span className="text-[10px] text-slate-500 font-sans">General Group</span>
+              </div>
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+                <span className="text-[11px] font-mono uppercase text-slate-500 dark:text-slate-400">Total Candidature</span>
+                <p className="text-lg font-mono font-bold text-doc-ink dark:text-white truncate">{board.passingStats.totalCandidates}</p>
+                <span className="text-[10px] text-slate-500 font-sans">Registered Examinees</span>
+              </div>
+            </div>
+
+            {/* Boys vs Girls Achievement Note */}
+            <div className="p-3.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-sans">
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4 text-doc-seal shrink-0" />
+                <span className="text-slate-700 dark:text-slate-300">
+                  <strong>Gender-wise Success Ratio:</strong> Female candidates achieved <strong>{board.passingStats.femalePassPercentage}</strong> pass rate compared to <strong>{board.passingStats.malePassPercentage}</strong> for male candidates.
+                </span>
+              </div>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 shrink-0">
+                <Award className="w-3 h-3" />
+                Verified BISE Gazette
+              </span>
+            </div>
+
+            {/* In-depth Narrative Analysis */}
+            <div className="doc-card p-5 sm:p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-3">
+              <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white">
+                {board.nameEn} Evaluation Trends & Regional Breakdown
+              </h3>
+              <p className="text-sm text-slate-700 dark:text-slate-300 font-sans leading-relaxed">
+                {board.narrativeAnalysisEn}
+              </p>
+              {board.narrativeAnalysisUr && (
+                <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed pt-2 border-t border-slate-100 dark:border-slate-800" dir="rtl">
+                  {board.narrativeAnalysisUr}
+                </p>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* Regional Jurisdiction & Exam Logistics */}
+        <section className="doc-card p-5 sm:p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 space-y-4">
+          <h2 className="text-lg font-serif font-bold text-doc-ink dark:text-white flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-doc-seal" />
+            Districts Governed by {board.nameEn}
+          </h2>
+          <p className="text-xs text-slate-600 dark:text-slate-400 font-sans">
+            Students attending registered government high schools, higher secondary schools, and affiliated private institutes in the following administrative districts appear under {board.nameEn}:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {board.districtsEn.map((dist, idx) => (
+              <span
+                key={idx}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-mono font-medium text-slate-800 dark:text-slate-200 shadow-xs"
+              >
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                {dist} {board.districtsUr && board.districtsUr[idx] ? `(${board.districtsUr[idx]})` : ''}
+              </span>
+            ))}
+          </div>
+
+          {/* Headquarters & Facilitation Office */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-sans">
+            <div className="p-3.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+              <div className="flex items-center gap-1.5 font-bold text-slate-800 dark:text-slate-200">
+                <Building2 className="w-4 h-4 text-doc-seal shrink-0" />
+                <span>Headquarters Address</span>
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-mono text-[11px]">
+                {board.headquartersAddressEn}
+              </p>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+              <div className="flex items-center gap-1.5 font-bold text-slate-800 dark:text-slate-200">
+                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>Official Facilitation Desk</span>
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 font-mono text-[11px]">
+                {board.helplinePhone}
+              </p>
+              <p className="text-[10px] text-slate-500">Monday–Friday 9:00 AM to 4:00 PM</p>
+            </div>
           </div>
         </section>
 

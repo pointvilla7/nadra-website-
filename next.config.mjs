@@ -176,6 +176,27 @@ const nextConfig = {
         destination: '/bills/k-electric-duplicate-bill',
         permanent: true,
       },
+      // 5. GSC 404 & Duplicate URL Resolution Redirects
+      {
+        source: '/property/property-tax-challan-online',
+        destination: '/property/property-tax-online-check-pay-2026',
+        permanent: true,
+      },
+      {
+        source: '/welfare/bisp-online-registration-form',
+        destination: '/welfare/bisp-how-to-register',
+        permanent: true,
+      },
+      {
+        source: '/nadra/b-form-frc-status-checker',
+        destination: '/nadra/b-form-frc-status-check',
+        permanent: true,
+      },
+      {
+        source: '/nadra/tracking-id',
+        destination: '/nadra/nadra-tracking-id-check-online-2026',
+        permanent: true,
+      },
     ];
   },
 

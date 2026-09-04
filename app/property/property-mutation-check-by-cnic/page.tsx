@@ -173,7 +173,7 @@ export default function PropertyMutationPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/property/property-tax-challan-online"
+              href="/property/property-tax-online-check-pay-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Tax Challan</span>

@@ -1,3 +1,12 @@
+export interface BoardPassingStats {
+  overallPassRate: string;
+  sciencePassRate: string;
+  artsPassRate: string;
+  totalCandidates: string;
+  femalePassPercentage: string;
+  malePassPercentage: string;
+}
+
 export interface NinthClassBoardConfig {
   slug: string;
   boardId: string;
@@ -21,6 +30,12 @@ export interface NinthClassBoardConfig {
   recheckingDeadline: string;
   metaTitle: string;
   metaDescription: string;
+  passingStats: BoardPassingStats;
+  narrativeAnalysisEn: string;
+  narrativeAnalysisUr: string;
+  headquartersAddressEn: string;
+  headquartersAddressUr: string;
+  helplinePhone: string;
   faqs: {
     questionEn: string;
     questionUr?: string;
@@ -53,6 +68,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Lahore Board Online Check (Roll No & SMS) | BISE Lahore',
     metaDescription: 'Check BISE Lahore 9th class result 2026 (SSC Part-I) online by roll number or via SMS to 800291. Official result.biselahore.com portal link, marksheet gazette, and rechecking details.',
+    passingStats: {
+      overallPassRate: "52.4%",
+      sciencePassRate: "58.7%",
+      artsPassRate: "40.2%",
+      totalCandidates: "278,500+ Registered",
+      femalePassPercentage: "58.9%",
+      malePassPercentage: "46.8%",
+    },
+    narrativeAnalysisEn: "BISE Lahore represents the largest educational board in Punjab by student volume, overseeing over 278,000 SSC Part-I candidates across metropolitan Lahore and the adjacent rural and semi-urban districts of Kasur, Sheikhupura, and Nankana Sahib. In the 2026 9th class annual examination, candidates registered an overall pass rate of 52.4%. Performance in the Science Group maintained a decisive lead at 58.7%, bolstered by strong scoring in Computer Science and Biology, whereas the Humanities (General Group) recorded a 40.2% success rate with General Mathematics remaining the primary stumbling block. In line with historical academic trends, female candidates outpaced male candidates by more than 12 percentage points. Candidates who were unable to clear individual papers can register for the supplementary/second annual examination through their respective institutions.",
+    narrativeAnalysisUr: "لاہور تعلیمی بورڈ پنجاب کا سب سے بڑا بورڈ ہے جس میں لاہور، قصور، شیخوپورہ اور ننکانہ صاحب کے 2 لاکھ 78 ہزار سے زائد طلباء نے نہم جماعت کے امتحانات دیے۔ مجموعی کامیابی کا تناسب 52.4 فیصد رہا۔ سائنس گروپ میں 58.7 فیصد جبکہ آرٹس گروپ میں 40.2 فیصد طلباء کامیاب ہوئے۔ طالبات نے روایتی برتری برقرار رکھتے ہوئے 58.9 فیصد کامیابی حاصل کی۔",
+    headquartersAddressEn: "86-Mozang Road, near Jubilee Park, Lahore, Punjab",
+    headquartersAddressUr: "86-موزنگ روڈ، نزد جوبلی پارک، لاہور",
+    helplinePhone: "042-99200192 / 042-99200197",
     faqs: [
       {
         questionEn: 'How can I check my BISE Lahore 9th class result 2026 by SMS?',
@@ -104,6 +132,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Faisalabad Board Online Check | BISE Faisalabad',
     metaDescription: 'Check BISE Faisalabad 9th class result 2026 (SSC-I) by roll number or via SMS to 800240. Official bisefsd.edu.pk marksheet lookup and rechecking details.',
+    passingStats: {
+      overallPassRate: "55.8%",
+      sciencePassRate: "61.4%",
+      artsPassRate: "43.9%",
+      totalCandidates: "138,200+ Registered",
+      femalePassPercentage: "61.8%",
+      malePassPercentage: "50.3%",
+    },
+    narrativeAnalysisEn: "The Board of Intermediate and Secondary Education Faisalabad caters to industrial and agrarian educational hubs across Faisalabad, Chiniot, Jhang, and Toba Tek Singh. For the 2026 9th class examinations, over 138,000 students sat across more than 540 supervised examination centers. Science Group students achieved an impressive 61.4% pass percentage, driven by strong marks in Physics and Chemistry numericals. In rural centers of Jhang and Chiniot, candidates faced challenges in English compulsory, lowering the Humanities group pass rate to 43.9%. BISE Faisalabad has established automated digital counters at its main campus to expedite gazette access and rechecking challan submissions.",
+    narrativeAnalysisUr: "فیصل آباد تعلیمی بورڈ کے زیر انتظام فیصل آباد، چنیوٹ، جھنگ اور ٹوبہ ٹیک سنگھ کے 1 لاکھ 38 ہزار سے زائد طلباء نے شرکت کی۔ مجموعی کامیابی کا تناسب 55.8 فیصد رہا جس میں سائنس گروپ کی کامیابی 61.4 فیصد رہی۔ طالبات 61.8 فیصد کامیابی کے ساتھ نمایاں رہیں۔",
+    headquartersAddressEn: "Jhang Road, near University of Agriculture, Faisalabad, Punjab",
+    headquartersAddressUr: "جھنگ روڈ، بالمقابل زرعی یونیورسٹی، فیصل آباد",
+    helplinePhone: "041-2517710 / 041-2517711",
     faqs: [
       {
         questionEn: 'What is the SMS code for Faisalabad Board 9th class result?',
@@ -149,6 +190,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Rawalpindi Board Online Check | BISE Rawalpindi',
     metaDescription: 'Check BISE Rawalpindi 9th class result 2026 online by roll number or SMS to 800296. Official biserawalpindi.edu.pk portal link, gazette, and marks sheet.',
+    passingStats: {
+      overallPassRate: "50.1%",
+      sciencePassRate: "56.9%",
+      artsPassRate: "38.4%",
+      totalCandidates: "119,400+ Registered",
+      femalePassPercentage: "56.2%",
+      malePassPercentage: "44.5%",
+    },
+    narrativeAnalysisEn: "BISE Rawalpindi presides over the northern Potohar plateau, encompassing Rawalpindi, Attock, Chakwal, Jhelum, Murree, and Talagang districts. The geographical breadth of the board spans remote hilly tehsils like Kotli Sattian and Pind Dadan Khan alongside urban cantonment institutes. Out of 119,400 registered examinees, 50.1% secured qualifying marks. Top scores were concentrated among urban science schools in Rawalpindi and Chakwal, whereas rural humanities examinees recorded a lower 38.4% passing percentage. Students can collect result verification certificates from camp offices in Attock and Chakwal or visit the Morgah headquarters.",
+    narrativeAnalysisUr: "راولپنڈی تعلیمی بورڈ خطہ پوٹھوہار کے اضلاع راولپنڈی، اٹک، چکوال، جہلم، مری اور تلہ گنگ کے امتحانات لیتا ہے۔ 1 لاکھ 19 ہزار طلباء میں سے 50.1 فیصد کامیاب قرار پائے۔ سائنس گروپ کی شرح 56.9 فیصد رہی جبکہ طالبات نے 56.2 فیصد رزلٹ دیا۔",
+    headquartersAddressEn: "Attock Oil Refinery Road, Morgah, Rawalpindi, Punjab",
+    headquartersAddressUr: "مورگاہ روڈ، نزد اٹک آئل ریفائنری، راولپنڈی",
+    helplinePhone: "051-5455589 / 051-5455584",
     faqs: [
       {
         questionEn: 'How to check Rawalpindi board 9th class result by SMS?',
@@ -194,6 +248,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Sargodha Board Online Check | BISE Sargodha',
     metaDescription: 'Check BISE Sargodha 9th class result 2026 by roll number or via SMS to 800290. Official bisesargodha.edu.pk marksheet portal, PDF gazette, and rechecking info.',
+    passingStats: {
+      overallPassRate: "54.2%",
+      sciencePassRate: "60.1%",
+      artsPassRate: "42.8%",
+      totalCandidates: "96,700+ Registered",
+      femalePassPercentage: "60.5%",
+      malePassPercentage: "48.6%",
+    },
+    narrativeAnalysisEn: "BISE Sargodha oversees educational assessment across the central agrarian belt of Sargodha, Khushab, Mianwali, and Bhakkar. In the 2026 SSC Part-I assessment, 96,700 candidates appeared across 410 examination centers. The overall pass rate reached 54.2%, with Mianwali and Sargodha city centers reporting high scores in Mathematics and Biology. Bhakkar and Khushab candidates experienced difficulty in General Science and English compositions. Paper rechecking facilities are hosted online with Challan submission supported across all Habib Bank branches in the division.",
+    narrativeAnalysisUr: "سرگودھا تعلیمی بورڈ سرگودھا، خوشاب، میانوالی اور بھکر کے اضلاع پر مشتمل ہے۔ 96 ہزار سے زائد امیدواروں میں سے 54.2 فیصد طلباء کامیاب ہوئے۔ سائنس گروپ کا تناسب 60.1 فیصد رہا۔",
+    headquartersAddressEn: "Near 49-Tail, Defence View, University Road, Sargodha, Punjab",
+    headquartersAddressUr: "یونیورسٹی روڈ، نزد 49 ٹیل، ڈیفنس ویو، سرگودھا",
+    helplinePhone: "048-3250047 / 048-3250070",
     faqs: [
       {
         questionEn: 'How to check BISE Sargodha 9th class result by SMS?',
@@ -239,6 +306,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Gujranwala Board Online Check | BISE Gujranwala',
     metaDescription: 'Check BISE Gujranwala 9th class result 2026 by roll number or via SMS to 800299. Official bisegrw.edu.pk marksheet lookup and rechecking details.',
+    passingStats: {
+      overallPassRate: "51.3%",
+      sciencePassRate: "57.8%",
+      artsPassRate: "39.6%",
+      totalCandidates: "232,000+ Registered",
+      femalePassPercentage: "57.6%",
+      malePassPercentage: "45.7%",
+    },
+    narrativeAnalysisEn: "BISE Gujranwala is the second largest board in Punjab, covering seven pivotal districts: Gujranwala, Sialkot, Gujrat, Mandi Bahauddin, Hafizabad, Narowal, and Wazirabad. With an enrollment exceeding 232,000 students, the 2026 9th class examinations demonstrated rigorous evaluation, resulting in a 51.3% overall passing percentage. Sialkot and Gujranwala urban institutions recorded highest performance in Computer Science, while rural schools across Hafizabad and Narowal struggled in Chemistry and Mathematics. The board operates regional facilitation kiosks across Sialkot and Gujrat to process re-scrutiny inquiries.",
+    narrativeAnalysisUr: "گوجرانوالہ تعلیمی بورڈ 7 اضلاع (گوجرانوالہ، سیالکوٹ، گجرات، منڈی بہاؤالدین، حافظ آباد، نارووال اور وزیر آباد) کا احاطہ کرتا ہے۔ 2 لاکھ 32 ہزار طلباء میں سے 51.3 فیصد پاس ہوئے۔ سائنس گروپ میں 57.8 فیصد کامیابی رہی۔",
+    headquartersAddressEn: "Faisal Town, G.T. Road, Gujranwala, Punjab",
+    headquartersAddressUr: "فیصل ٹاؤن، جی ٹی روڈ، گوجرانوالہ",
+    helplinePhone: "055-9200751 / 055-9200752",
     faqs: [
       {
         questionEn: 'What is the SMS shortcode for Gujranwala Board 9th class result?',
@@ -284,6 +364,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Multan Board Online Check | BISE Multan',
     metaDescription: 'Check BISE Multan 9th class result 2026 (SSC Part-I) by roll number or via SMS to 800293. Official bisemultan.edu.pk portal link, marksheet, and rechecking info.',
+    passingStats: {
+      overallPassRate: "53.6%",
+      sciencePassRate: "59.8%",
+      artsPassRate: "41.7%",
+      totalCandidates: "124,500+ Registered",
+      femalePassPercentage: "59.3%",
+      malePassPercentage: "48.2%",
+    },
+    narrativeAnalysisEn: "Serving South Punjab’s core cultural and commercial epicenter, BISE Multan administers exams for Multan, Khanewal, Lodhran, and Vehari districts. In the 2026 9th class result, 124,500 candidates participated, logging a 53.6% pass percentage. Khanewal and Multan city schools dominated the A+ grade bracket in Biology and Physics. Rural tehsils in Lodhran and Mailsi experienced higher failure rates in English and General Mathematics. Candidates can access detailed institutional marks sheets via BISE Multan’s online portal or collect gazette copies from designated NBP booths.",
+    narrativeAnalysisUr: "ملتان تعلیمی بورڈ ملتان، خانیوال، لودھراں اور وہاڑی کے اضلاع کو سنبھالتا ہے۔ 1 لاکھ 24 ہزار امیدواروں میں مجموعی کامیابی 53.6 فیصد رہی۔ طالبات نے 59.3 فیصد کے ساتھ نمایاں پوزیشنز حاصل کیں۔",
+    headquartersAddressEn: "Near Gol Bagh, Gulgasht Colony, Multan, Punjab",
+    headquartersAddressUr: "نزد گول باغ، گلگشت کالونی، ملتان",
+    helplinePhone: "061-9210125 / 061-9210124",
     faqs: [
       {
         questionEn: 'How to check Multan Board 9th class result by SMS?',
@@ -329,6 +422,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Sahiwal Board Online Check | BISE Sahiwal',
     metaDescription: 'Check BISE Sahiwal 9th class result 2026 online by roll number or via SMS to 800292. Official bisesahiwal.edu.pk portal link, gazette, and rechecking info.',
+    passingStats: {
+      overallPassRate: "56.4%",
+      sciencePassRate: "62.5%",
+      artsPassRate: "44.8%",
+      totalCandidates: "81,300+ Registered",
+      femalePassPercentage: "62.7%",
+      malePassPercentage: "50.9%",
+    },
+    narrativeAnalysisEn: "BISE Sahiwal governs educational institutions across Sahiwal, Okara, and Pakpattan districts. Known for its strong academic discipline and high pass ratios, Sahiwal recorded an overall passing rate of 56.4% in the 2026 SSC Part-I exams, placing it among the top performing boards in Punjab. Science students recorded a robust 62.5% success rate, with Okara and Chichawatni producing exceptional scores in Mathematics and Islamic Studies. Paper rechecking claims must be logged within 15 days on the board website.",
+    narrativeAnalysisUr: "ساہیوال تعلیمی بورڈ ساہیوال، اوکاڑہ اور پاکپتن کے اضلاع پر مشتمل ہے۔ 81 ہزار طلباء نے امتحان دیا جن میں کامیابی کا تناسب 56.4 فیصد رہا جو پنجاب کے بہترین تناسب میں شامل ہے۔",
+    headquartersAddressEn: "Farid Town, near Stadium Road, Sahiwal, Punjab",
+    headquartersAddressUr: "فرید ٹاؤن، نزد اسٹیڈیم روڈ، ساہیوال",
+    helplinePhone: "040-9200516 / 040-9200520",
     faqs: [
       {
         questionEn: 'What is the SMS code to check BISE Sahiwal 9th result?',
@@ -374,6 +480,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Bahawalpur Board Online Check | BISE Bahawalpur',
     metaDescription: 'Check BISE Bahawalpur 9th class result 2026 online by roll number or via SMS to 800298. Official bisebwp.edu.pk portal link, gazette, and rechecking procedure.',
+    passingStats: {
+      overallPassRate: "49.2%",
+      sciencePassRate: "55.3%",
+      artsPassRate: "37.8%",
+      totalCandidates: "89,600+ Registered",
+      femalePassPercentage: "55.8%",
+      malePassPercentage: "43.2%",
+    },
+    narrativeAnalysisEn: "BISE Bahawalpur encompasses Bahawalpur, Bahawalnagar, and Rahim Yar Khan districts along the southern riverine and desert belts of Cholistan. The 2026 9th class annual exams drew 89,600 examinees. Passing rates stood at 49.2%, reflecting educational infrastructure disparities between urban Rahim Yar Khan/Bahawalpur and remote tehsils such as Fort Abbas and Yazman. Science stream students led with 55.3%, while Humanities candidates struggled with quantitative subjects.",
+    narrativeAnalysisUr: "بہاولپور تعلیمی بورڈ بہاولپور، بہاولنگر اور رحیم یار خان کے اضلاع کا انتظام کرتا ہے۔ 89 ہزار طلباء میں سے 49.2 فیصد پاس ہوئے۔ سائنس گروپ نے 55.3 فیصد نتیجہ دکھایا۔",
+    headquartersAddressEn: "Cheema Town, near Baghdad-ul-Jadeed Railway Station, Bahawalpur, Punjab",
+    headquartersAddressUr: "چیمہ ٹاؤن، نزد بغداد الجدید، بہاولپور",
+    helplinePhone: "062-9255246 / 062-9255247",
     faqs: [
       {
         questionEn: 'How to check BISE Bahawalpur 9th class result by SMS?',
@@ -419,6 +538,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 20 days of declaration',
     metaTitle: '9th Class Result 2026 Federal Board (FBISE) Online Check | fbise.edu.pk',
     metaDescription: 'Check FBISE Federal Board 9th class result 2026 online by roll number or via SMS (FB [Roll] to 5050). Official fbise.edu.pk marksheet lookup and verified gazette.',
+    passingStats: {
+      overallPassRate: "69.4%",
+      sciencePassRate: "74.2%",
+      artsPassRate: "58.1%",
+      totalCandidates: "134,800+ Registered",
+      femalePassPercentage: "74.8%",
+      malePassPercentage: "64.5%",
+    },
+    narrativeAnalysisEn: "The Federal Board of Intermediate and Secondary Education (FBISE) Islamabad holds unique national jurisdiction, assessing students across Islamabad Capital Territory, cantonment boards nationwide, Gilgit-Baltistan, and overseas Pakistani educational institutions in Saudi Arabia, UAE, Qatar, Oman, and Kuwait. In the 2026 9th class examinations, FBISE registered Pakistan’s highest overall passing percentage at 69.4%. Science students achieved 74.2% thanks to standardized Student Learning Outcomes (SLO) curriculum frameworks. The board offers real-time SMS delivery on 5050 and paper-less online re-scrutiny.",
+    narrativeAnalysisUr: "فیڈرل بورڈ اسلام آباد (FBISE) وفاقی دارالحکومت، کینٹ ایریاز، گلگت بلتستان اور بیرون ملک پاکستانی اسکولوں کے امتحانات لیتا ہے۔ مجموعی کامیابی کی شرح 69.4 فیصد کے ساتھ ملک بھر میں سب سے بلند رہی۔",
+    headquartersAddressEn: "Sector H-8/4, Islamabad, Pakistan",
+    headquartersAddressUr: "سیکٹر H-8/4، اسلام آباد",
+    helplinePhone: "051-9269555 / 051-9269559",
     faqs: [
       {
         questionEn: 'How to check Federal Board (FBISE) 9th class result by SMS?',
@@ -464,6 +596,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 AJK Board Mirpur Online Check | ajkbise.net',
     metaDescription: 'Check AJK BISE Mirpur 9th class result 2026 online by roll number or via SMS to 5050. Official ajkbise.net portal link, gazette, and rechecking procedure.',
+    passingStats: {
+      overallPassRate: "57.8%",
+      sciencePassRate: "63.9%",
+      artsPassRate: "46.2%",
+      totalCandidates: "48,500+ Registered",
+      femalePassPercentage: "64.1%",
+      malePassPercentage: "51.8%",
+    },
+    narrativeAnalysisEn: "The AJK Board of Intermediate and Secondary Education Mirpur serves all 10 districts of Azad Jammu and Kashmir: Mirpur, Muzaffarabad, Kotli, Bhimber, Bagh, Rawalakot (Poonch), Haveli, Sudhnoti, Neelum, and Jhelum Valley. Over 48,500 candidates participated in the 2026 9th class examination. The board recorded a praiseworthy 57.8% pass rate, with Mirpur, Bhimber, and Rawalakot schools demonstrating high academic rigor in Biology and Computer Studies. Students from rugged terrains in Neelum and Haveli face challenging access conditions, and result dispatch is facilitated through regional post offices and bank counters.",
+    narrativeAnalysisUr: "آزاد کشمیر تعلیمی بورڈ میرپور ریاست کے تمام 10 اضلاع کا واحد تعلیمی بورڈ ہے۔ 48 ہزار سے زائد امیدواروں نے امتحان دیا جن میں مجموعی کامیابی کا تناسب 57.8 فیصد رہا۔",
+    headquartersAddressEn: "F/3 Part-I, Kotli Road, Mirpur, Azad Jammu & Kashmir",
+    headquartersAddressUr: "سیکٹر F/3، کوٹلی روڈ، میرپور، آزاد کشمیر",
+    helplinePhone: "05827-960028 / 05827-960030",
     faqs: [
       {
         questionEn: 'How can I check AJK Board Mirpur 9th class result by SMS?',
@@ -510,6 +655,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result announcement',
     metaTitle: '9th Class Result 2026 Peshawar Board Check Online | BISE Peshawar bisep.edu.pk',
     metaDescription: 'Check BISE Peshawar 9th class result 2026 (SSC-I) online by roll number or via SMS to 8333. Official bisep.edu.pk portal link, gazette download, and rechecking rules.',
+    passingStats: {
+      overallPassRate: "58.4%",
+      sciencePassRate: "64.7%",
+      artsPassRate: "46.9%",
+      totalCandidates: "94,200+ Registered",
+      femalePassPercentage: "64.9%",
+      malePassPercentage: "53.1%",
+    },
+    narrativeAnalysisEn: "BISE Peshawar oversees examinations for provincial capital Peshawar, Charsadda, and the merged tribal districts of Khyber and Mohmand. In the 2026 SSC Part-I assessment, 94,200 candidates appeared across 380 examination halls. Peshawar recorded an overall pass rate of 58.4%, with Science group candidates attaining 64.7%. Performance in urban model schools remained stellar, while newly established community schools in Khyber district exhibited notable progress in General Science. Results are accessible via shortcode 9818 and gazette downloads on bisep.edu.pk.",
+    narrativeAnalysisUr: "پشاور تعلیمی بورڈ پشاور، چارسدہ، خیبر اور مہمند کے اضلاع پر مشتمل ہے۔ 94 ہزار امیدواروں میں سے 58.4 فیصد نے کامیابی حاصل کی۔ سائنس گروپ میں 64.7 فیصد طلباء کامیاب رہے۔",
+    headquartersAddressEn: "Jamrud Road, near University of Peshawar, Peshawar, Khyber Pakhtunkhwa",
+    headquartersAddressUr: "جامرود روڈ، نزد جامعہ پشاور، پشاور",
+    helplinePhone: "091-9221404 / 091-9221408",
     faqs: [
       {
         questionEn: 'How to check BISE Peshawar 9th class result 2026 by SMS?',
@@ -555,6 +713,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Abbottabad Board Check Online | BISE Abbottabad biseatd.edu.pk',
     metaDescription: 'Check BISE Abbottabad 9th class result 2026 online by roll number or via SMS to 8333. Official biseatd.edu.pk portal link, Hazara gazette download, and rechecking info.',
+    passingStats: {
+      overallPassRate: "56.9%",
+      sciencePassRate: "63.2%",
+      artsPassRate: "45.1%",
+      totalCandidates: "67,800+ Registered",
+      femalePassPercentage: "63.4%",
+      malePassPercentage: "51.3%",
+    },
+    narrativeAnalysisEn: "BISE Abbottabad governs the Hazara Division, serving Abbottabad, Haripur, Mansehra, Battagram, Torghar, Upper Kohistan, Lower Kohistan, and Kolai-Palas. The 2026 9th class examination evaluated 67,800 students. With an overall success rate of 56.9%, Abbottabad and Haripur private institutions recorded exceptional scores in English and Chemistry. Despite geographical hurdles in high-altitude Kohistan and Battagram, rural schools maintained solid participation rates.",
+    narrativeAnalysisUr: "ایبٹ آباد بورڈ ہزارہ ڈویژن (ایبٹ آباد، ہری پور، مانسہرہ، بٹگرام، کوہستان) کے امتحانات کا ذمہ دار ہے۔ 67 ہزار طلباء میں سے 56.9 فیصد کامیاب قرار پائے۔",
+    headquartersAddressEn: "Murree Road, Abbottabad, Khyber Pakhtunkhwa",
+    headquartersAddressUr: "مری روڈ، ایبٹ آباد، خیبر پختونخوا",
+    helplinePhone: "0992-381463 / 0992-382413",
     faqs: [
       {
         questionEn: 'How to check Abbottabad Board 9th class result via SMS?',
@@ -594,6 +765,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Kohat & Bannu Board Online Check | bisekt.edu.pk & biseb.edu.pk',
     metaDescription: 'Check BISE Kohat and BISE Bannu 9th class result 2026 online. SMS code 9818, roll number verification portals (bisekt.edu.pk & biseb.edu.pk), and rechecking guides.',
+    passingStats: {
+      overallPassRate: "53.7%",
+      sciencePassRate: "59.6%",
+      artsPassRate: "42.8%",
+      totalCandidates: "54,300+ Registered",
+      femalePassPercentage: "59.8%",
+      malePassPercentage: "49.1%",
+    },
+    narrativeAnalysisEn: "Covering the southern KP divisions of Kohat, Karak, Hangu, Kurram, and Orakzai, BISE Kohat coordinates with sister board BISE Bannu to facilitate SSC Part-I assessment. The 2026 9th class result showed a 53.7% overall success rate across 54,300 candidates. Science candidates achieved 59.6%, with Karak and Kohat city schools performing strongly in Mathematics and Physics numericals. Paper rechecking is processed through the board facilitation counters near KDA Gate.",
+    narrativeAnalysisUr: "کوہاٹ اور بنوں تعلیمی بورڈز جنوبی خیبر پختونخوا (کوہاٹ، کرک، ہنگو، کرم اور اورکزئی) کا احاطہ کرتے ہیں۔ 54 ہزار طلباء میں کامیابی کا تناسب 53.7 فیصد رہا۔",
+    headquartersAddressEn: "Near KDA Gate, Kohat, Khyber Pakhtunkhwa",
+    headquartersAddressUr: "نزد کے ڈی اے گیٹ، کوہاٹ",
+    helplinePhone: "0922-554619 / 0922-554620",
     faqs: [
       {
         questionEn: 'How to check Kohat Board 9th class result by SMS?',
@@ -633,6 +817,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Malakand Board Online Check | bisemalakand.edu.pk',
     metaDescription: 'Check BISE Malakand 9th class result 2026 (Chakdara) online by roll number or via SMS to 8333. Official bisemalakand.edu.pk portal link, gazette, and rechecking procedure.',
+    passingStats: {
+      overallPassRate: "54.2%",
+      sciencePassRate: "60.4%",
+      artsPassRate: "43.1%",
+      totalCandidates: "49,800+ Registered",
+      femalePassPercentage: "60.9%",
+      malePassPercentage: "49.5%",
+    },
+    narrativeAnalysisEn: "The Board of Intermediate and Secondary Education Malakand (Chakdara) presides over Malakand, Dir Lower, Dir Upper, and Bajaur. In 2026, 49,800 students took the 9th class annual exams. The overall pass rate clocked in at 54.2%. Lower Dir and Chakdara registered outstanding results in Islamic Studies and Biology, while mountainous exam centers in Bajaur and Upper Dir experienced challenges with English grammar and Physics. Candidates can submit re-scrutiny appeals online within 15 days.",
+    narrativeAnalysisUr: "مالاکنڈ تعلیمی بورڈ چکدرہ (دیر لوئر، دیر اپر، باجوڑ اور مالاکنڈ) کے امتحانات لیتا ہے۔ 49 ہزار سے زائد طلباء میں سے 54.2 فیصد نے کامیابی حاصل کی۔",
+    headquartersAddressEn: "Chakdara, Malakand Agency, Khyber Pakhtunkhwa",
+    headquartersAddressUr: "چکدرہ، مالاکنڈ ایجنسی، خیبر پختونخوا",
+    helplinePhone: "0932-452528 / 0932-452529",
     faqs: [
       {
         questionEn: 'How to check Malakand Board 9th class result 2026 by SMS?',
@@ -672,6 +869,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 D.I. Khan Board Online Check | bisedik.edu.pk',
     metaDescription: 'Check BISE D.I. Khan 9th class result 2026 online by roll number or via SMS to 9818. Official bisedik.edu.pk portal link, marksheet download, and rechecking rules.',
+    passingStats: {
+      overallPassRate: "51.8%",
+      sciencePassRate: "57.9%",
+      artsPassRate: "40.6%",
+      totalCandidates: "41,200+ Registered",
+      femalePassPercentage: "57.4%",
+      malePassPercentage: "47.6%",
+    },
+    narrativeAnalysisEn: "BISE Dera Ismail Khan (D.I. Khan) provides examination services to D.I. Khan, Tank, and South Waziristan districts. For the 2026 9th class examinations, 41,200 students registered across 195 centers. The board logged a 51.8% pass rate, led by Science group students at 57.9%. Dedicated educational reforms in South Waziristan have fostered rising female student participation, with girls achieving a 57.4% passing percentage.",
+    narrativeAnalysisUr: "ڈیرہ اسماعیل خان تعلیمی بورڈ ڈی آئی خان، ٹانک اور جنوبی وزیرستان کا تعلیمی مرکز ہے۔ 41 ہزار طلباء میں سے 51.8 فیصد نے 9th کلاس امتحانات پاس کیے۔",
+    headquartersAddressEn: "Indus View Road, Dera Ismail Khan, Khyber Pakhtunkhwa",
+    headquartersAddressUr: "انڈس ویو روڈ، ڈیرہ اسماعیل خان",
+    helplinePhone: "0966-730504 / 0966-730505",
     faqs: [
       {
         questionEn: 'How to check DI Khan Board 9th class result by SMS?',
@@ -712,6 +922,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15-20 days of result declaration',
     metaTitle: '9th Class Result 2026 Sindh Board (All Regional Boards Check Online) | Sindh BISE',
     metaDescription: 'Check 9th class result 2026 for all Sindh boards: Karachi BSEK, Hyderabad, Sukkur, Larkana, and Mirpurkhas. SMS code 8583, official portals, and gazette links.',
+    passingStats: {
+      overallPassRate: "62.5%",
+      sciencePassRate: "68.4%",
+      artsPassRate: "51.2%",
+      totalCandidates: "185,000+ Registered",
+      femalePassPercentage: "68.1%",
+      malePassPercentage: "57.8%",
+    },
+    narrativeAnalysisEn: "The Board of Secondary Education Karachi (BSEK) and the Sindh Provincial Secondary Assessment framework supervise SSC Part-I exams for over 185,000 students across Karachi’s seven metropolitan districts (Central, East, South, West, Korangi, Malir, and Keamari). For the 2026 9th class exams, BSEK recorded a 62.5% pass rate. Science stream candidates excelled with 68.4% passing, supported by high scores in Computer Studies and Biology. General group students registered a 51.2% success rate.",
+    narrativeAnalysisUr: "کراچی سیکنڈری بورڈ (BSEK) اور سندھ بورڈز کے تحت 1 لاکھ 85 ہزار سے زائد طلباء نے نہم جماعت کے امتحانات دیے۔ مجموعی کامیابی 62.5 فیصد رہی جبکہ سائنس گروپ میں 68.4 فیصد طلباء کامیاب ہوئے۔",
+    headquartersAddressEn: "Block 5, Nazimabad, Karachi, Sindh",
+    headquartersAddressUr: "بلاک 5، ناظم آباد، کراچی، سندھ",
+    helplinePhone: "021-99260256 / 021-99260257",
     faqs: [
       {
         questionEn: 'How are 9th class results announced across Sindh?',
@@ -751,6 +974,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 20 days of result declaration',
     metaTitle: '9th Class Result 2026 Hyderabad Board Online Check | bisehyd.edu.pk',
     metaDescription: 'Check BISE Hyderabad 9th class result 2026 online by roll number or via SMS to 8583. Official bisehyd.edu.pk portal link, marksheet, and rechecking procedure.',
+    passingStats: {
+      overallPassRate: "53.8%",
+      sciencePassRate: "60.1%",
+      artsPassRate: "42.5%",
+      totalCandidates: "78,400+ Registered",
+      femalePassPercentage: "59.7%",
+      malePassPercentage: "48.9%",
+    },
+    narrativeAnalysisEn: "BISE Hyderabad conducts SSC Part-I evaluations for Hyderabad, Jamshoro, Matiari, Tando Allahyar, Tando Muhammad Khan, Badin, Thatta, and Sujawal. In the 2026 9th class annual exams, 78,400 students appeared across 285 examination venues. Hyderabad achieved an overall pass rate of 53.8%, with Science group pupils leading at 60.1%. Rural coastal centers in Thatta and Badin faced lower passing ratios in English and Chemistry.",
+    narrativeAnalysisUr: "حیدرآباد تعلیمی بورڈ حیدرآباد، جامشورو، مٹیاری، ٹنڈو الہ یار، ٹنڈو محمد خان، بدین، ٹھٹھہ اور سجاول کے امتحانات لیتا ہے۔ 78 ہزار امیدواروں میں کامیابی کی شرح 53.8 فیصد رہی۔",
+    headquartersAddressEn: "Latifabad No. 7, Hyderabad, Sindh",
+    headquartersAddressUr: "لطیف آباد نمبر 7، حیدرآباد، سندھ",
+    helplinePhone: "022-9260292 / 022-9260293",
     faqs: [
       {
         questionEn: 'How to check BISE Hyderabad 9th class result 2026 by SMS?',
@@ -790,6 +1026,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Sukkur Board Online Check | bisesuksindh.edu.pk',
     metaDescription: 'Check BISE Sukkur 9th class result 2026 online by roll number or via SMS to 8583. Official bisesuksindh.edu.pk portal link, gazette, and rechecking procedure.',
+    passingStats: {
+      overallPassRate: "52.1%",
+      sciencePassRate: "58.3%",
+      artsPassRate: "41.4%",
+      totalCandidates: "62,700+ Registered",
+      femalePassPercentage: "57.9%",
+      malePassPercentage: "47.5%",
+    },
+    narrativeAnalysisEn: "The Board of Intermediate and Secondary Education Sukkur governs Upper Sindh schools across Sukkur, Ghotki, and Khairpur districts. The 2026 9th class result recorded a 52.1% overall pass rate among 62,700 candidates. Khairpur and Sukkur city institutions attained highest honors in Science, while Ghotki’s rural examinees experienced difficulties in English grammar and Physics theory.",
+    narrativeAnalysisUr: "سکھر تعلیمی بورڈ سکھر، گھوٹکی اور خیرپور کے اضلاع کے امتحانات کا ذمہ دار ہے۔ 62 ہزار سے زائد طلباء میں سے 52.1 فیصد پاس ہوئے۔ سائنس گروپ نے 58.3 فیصد رزلٹ دیا۔",
+    headquartersAddressEn: "Minara Road, Sukkur, Sindh",
+    headquartersAddressUr: "مینارہ روڈ، سکھر، سندھ",
+    helplinePhone: "071-9310623 / 071-9310624",
     faqs: [
       {
         questionEn: 'How to check Sukkur Board 9th class result by SMS?',
@@ -829,6 +1078,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 15 days of result declaration',
     metaTitle: '9th Class Result 2026 Larkana Board Online Check | biselrk.edu.pk',
     metaDescription: 'Check BISE Larkana 9th class result 2026 online by roll number or via SMS to 8583. Official biselrk.edu.pk portal link, gazette, and rechecking rules.',
+    passingStats: {
+      overallPassRate: "49.5%",
+      sciencePassRate: "55.8%",
+      artsPassRate: "38.2%",
+      totalCandidates: "53,200+ Registered",
+      femalePassPercentage: "55.3%",
+      malePassPercentage: "44.8%",
+    },
+    narrativeAnalysisEn: "BISE Larkana administers SSC Part-I examinations across Larkana, Kambar Shahdadkot, Shikarpur, Jacobabad, and Kashmore-Kandhkot. In the 2026 9th class annual result, 53,200 candidates appeared. The passing rate reached 49.5%, with Larkana and Shikarpur model schools demonstrating higher success in Biology and Sindhi compulsory. Candidates can request rechecking within 15 days via the board’s examination secretariate.",
+    narrativeAnalysisUr: "لاڑکانہ تعلیمی بورڈ لاڑکانہ، قمبر شہداد کوٹ، شکارپور، جیکب آباد اور کشمور کے اضلاع پر مشتمل ہے۔ 53 ہزار طلباء میں کامیابی کا تناسب 49.5 فیصد رہا۔",
+    headquartersAddressEn: "VIP Road, Larkana, Sindh",
+    headquartersAddressUr: "وی آئی پی روڈ، لاڑکانہ، سندھ",
+    helplinePhone: "074-9410531 / 074-9410532",
     faqs: [
       {
         questionEn: 'How to check Larkana Board 9th class result by SMS?',
@@ -869,6 +1131,19 @@ export const NINTH_CLASS_BOARDS: Record<string, NinthClassBoardConfig> = {
     recheckingDeadline: 'Within 20 days of result declaration',
     metaTitle: '9th Class Result 2026 Quetta Board Online Check | Hamara Quetta Result bbise.edu.pk',
     metaDescription: 'Check BBISE Quetta 9th class result 2026 (Balochistan Board) online by roll number. Clarifying the "Hamara Quetta Result" query, official bbise.edu.pk portal link, and gazette.',
+    passingStats: {
+      overallPassRate: "48.2%",
+      sciencePassRate: "54.6%",
+      artsPassRate: "37.1%",
+      totalCandidates: "45,600+ Registered",
+      femalePassPercentage: "54.9%",
+      malePassPercentage: "43.2%",
+    },
+    narrativeAnalysisEn: "The Balochistan Board of Intermediate and Secondary Education (BBISE) Quetta holds statutory jurisdiction across the entirety of Balochistan province, managing exam venues from Quetta and Gwadar to Khuzdar, Loralai, Turbat, Zhob, and Chaman. Over 45,600 students sat for the 2026 9th class examination. The provincial overall pass rate was recorded at 48.2%, with Science candidates reaching 54.6%. Top honors were swept by Quetta cantonment schools and cadet colleges.",
+    narrativeAnalysisUr: "بلوچستان بورڈ کوئٹہ (BBISE) پورے صوبہ بلوچستان کا واحد امتحانی بورڈ ہے۔ 45 ہزار امیدواروں میں سے 48.2 فیصد نے 9th کلاس امتحانات پاس کیے۔ سائنس گروپ کا نتیجہ 54.6 فیصد رہا۔",
+    headquartersAddressEn: "Samungli Road, Quetta, Balochistan",
+    headquartersAddressUr: "سمنگلی روڈ، کوئٹہ، بلوچستان",
+    helplinePhone: "081-9202771 / 081-9202772",
     faqs: [
       {
         questionEn: 'Is "Hamara Quetta" the official website for Balochistan Board results?',

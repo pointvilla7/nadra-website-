@@ -6495,7 +6495,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/welfare/pmt-score-explained-bisp-eligibility-2026",
       "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
-      "/welfare/bisp-online-registration-form"
+      "/welfare/bisp-how-to-register"
     ]
   },
   "8171-portal-guide": {
@@ -8727,8 +8727,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "ہائیڈل بجلی معاہدوں کے تحت آزاد کشمیر کے صارفین کو 300 یونٹ تک گھریلو استعمال کے لیے رعایتی ٹیرف فراہم کیا جاتا ہے۔"
       }
     ],
-    "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nAJKED oversees power transmission, distribution, and tariff concessions for Azad Kashmir residents.",
-    "contentUr": "## محکمہ برقیات آزاد جموں و کشمیر بلنگ معلومات 2026\nمحکمہ برقیات آزاد کشمیر کے تمام اضلاع میں بجلی کی ترسیل اور بلنگ کا ذمہ دار ہے۔",
+    "contentEn": "## Azad Jammu & Kashmir Electricity Department (AJKED) Billing Guide 2026\nThe **Azad Jammu & Kashmir Electricity Department (AJKED)** administers electrical power distribution, grid station operations, and consumer billing across all 10 administrative districts of Azad Kashmir.\n\n---\n\n### Mangla Dam & Neelum-Jhelum Hydel Tariff Accord\nDue to significant hydroelectric power generated within the state territory (including the **Mangla Dam Hydroelectric Power Station** with 1,000 MW+ capacity and the **Neelum-Jhelum Hydropower Plant** in Muzaffarabad), the Government of Azad Jammu & Kashmir maintains a special concessional tariff framework with the Federal Ministry of Energy (Power Division):\n- **Domestic Subsidized Slabs**: Residential consumers benefit from subsidized base rates on consumption up to 300 units.\n- **Exemption from Heavy Surcharges**: Certain mainland transmission surcharges are adjusted to reflect indigenous hydro generation parity.\n\n---\n\n### District Coverage Directory\nAJKED manages electric distribution operations across 3 major administrative circles:\n1. **Muzaffarabad Circle**: Covering Muzaffarabad Capital City, Neelum Valley, and Jhelum Valley (Hattian Bala).\n2. **Mirpur Circle**: Covering Mirpur City, Islamgarh, Dadyal, and Bhimber district (Barnala, Samahni).\n3. **Poonch Circle**: Covering Rawalakot, Bagh, Haveli (Kahuta), and Sudhnoti (Pallandri).\n\n---\n\n### How to Check Your Duplicate AJK Electricity Bill Online\n1. Visit the verified AJKED consumer portal or official divisional revenue desk.\n2. Locate your 10-digit or 12-digit **Consumer Account Number** from the top header of any past printed bill.\n3. Enter your account number into the query box and click **Search / Generate Bill**.\n4. Verify current meter readings, previous reading, net units consumed, and payment due date.\n5. Download the printable duplicate voucher PDF for your records.\n\n---\n\n### Payment Channels & Bank of AJK Online Integration\n- **Bank of Azad Jammu & Kashmir (BAJK)**: All online banking portals and branch counters process AJKED bills directly without fee.\n- **Commercial Banks & 1Link**: Settle via Meezan, HBL, UBL, or National Bank of Pakistan (NBP) using 1Link bill payment.\n- **Mobile Wallets**: Easypaisa and JazzCash support selected municipal utility bill payments in urban hubs like Mirpur and Muzaffarabad.\n- **Dispute Redressal**: Contact the Executive Engineer (XEN) Office Muzaffarabad at 05822-921004 or Mirpur Circle at 05827-920045 for billing discrepancies.",
+    "contentUr": "## محکمہ برقیات آزاد جموں و کشمیر (AJKED) بلنگ معلومات و ٹیرف گائیڈ 2026\nمحکمہ برقیات آزاد کشمیر کے تمام 10 اضلاع میں بجلی کی ترسیل، گرڈ اسٹیشنز اور بلنگ کا نظام سنبھالتا ہے۔\n\nمنگلا ڈیم اور نیلم جہلم ہائیڈرو پاور پراجیکٹس کی بدولت آزاد کشمیر کے صارفین کو 300 یونٹ تک خصوصی رعایتی ٹیرف فراہم کیا جاتا ہے۔ شہری اپنے اکاؤنٹ نمبر سے ڈپلیکیٹ بل دیکھ سکتے ہیں اور بینک آف آزاد کشمیر (BAJK) یا 1Link سے باآسانی ادا کر سکتے ہیں۔ شکایات کے لیے 05822-921004 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/iesco-bill-check-online",
       "/bills/lesco-vs-fesco-bill-comparison",
@@ -8756,18 +8756,36 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Domestic Flat / Metered",
-        "serviceUr": "گھریلو فلیٹ / میٹرڈ",
-        "normal": "Subsidized GB Hydel Rate",
-        "urgent": "Local Grid Tariff",
-        "executive": "Domestic"
+        "serviceEn": "Domestic Hydel Tariff (Up to 100 Units)",
+        "serviceUr": "گھریلو ہائیڈل ٹیرف (100 یونٹ تک)",
+        "normal": "PKR 3.50 – 5.00 / unit",
+        "urgent": "Heavily Subsidized",
+        "executive": "GB Government Rate",
+        "validity": "Active 2026"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "GB Commercial Tariff",
-        "urgent": "Monthly Fixed",
-        "executive": "Commercial"
+        "serviceEn": "Domestic Consumption (101 to 300 Units)",
+        "serviceUr": "گھریلو استعمال (101 تا 300 یونٹ)",
+        "normal": "PKR 7.00 – 10.00 / unit",
+        "urgent": "Standard Hydel Slab",
+        "executive": "Regional Surcharges",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Commercial Connection (Hotels & Retail)",
+        "serviceUr": "کمرشل کنکشن (ہوٹل و دکانیں)",
+        "normal": "PKR 14.00 – 22.00 / unit",
+        "urgent": "Commercial Tariff",
+        "executive": "Metered / Fixed",
+        "validity": "Active 2026"
+      },
+      {
+        "serviceEn": "Industrial / Flour Mills Slabs",
+        "serviceUr": "صنعتی و فلور ملز ٹیرف",
+        "normal": "PKR 20.00 – 28.00 / unit",
+        "urgent": "Off-Peak Concession",
+        "executive": "Dedicated Feeder",
+        "validity": "Active 2026"
       }
     ],
     "steps": [
@@ -8795,26 +8813,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "Is there an online portal to check Gilgit-Baltistan electricity bills?",
-        "questionUr": "کیا گلگت بلتستان کا بجلی کا بل آن لائن چیک ہو سکتا ہے؟",
-        "answerEn": "No. Gilgit-Baltistan operates on standalone regional hydel power stations not connected to the national CPPA-G / PITC grid, so online duplicate bill lookup is currently not operational.",
-        "answerUr": "نہیں، گلگت بلتستان کا سسٹم نیشنل گرڈ سے الگ لوکل ہائیڈل سٹیشنز پر کام کرتا ہے اس لیے مرکزی آن لائن بل پورٹل موجود نہیں ہے۔"
+        "questionEn": "Why is there no central online portal to check Gilgit-Baltistan electricity bills?",
+        "questionUr": "گلگت بلتستان کا بجلی کا بل آن لائن چیک کرنے کا مرکزی پورٹل کیوں نہیں ہے؟",
+        "answerEn": "Unlike DISCOs in Punjab, Sindh, or KP which connect to the national CPPA-G / PITC grid, Gilgit-Baltistan's power system comprises decentralized regional hydel power stations (run-of-the-river turbines). The GB Water and Power Department administers independent district-level revenue circles, so bills are issued on printed physical paper vouchers and paid at local bank branches.",
+        "answerUr": "گلگت بلتستان نیشنل گرڈ سے منسلک نہیں ہے بلکہ مقامی ہائیڈل پاور سٹیشنز پر منحصر ہے۔ اس لیے محکمہ برقیات گلگت بلتستان کی جانب سے بل کاغذی صورت میں تقسیم کیے جاتے ہیں اور مقامی بینکوں میں جمع ہوتے ہیں۔"
       },
       {
-        "questionEn": "What are the district contact numbers for GB electricity complaints?",
-        "questionUr": "جی بی بجلی کی شکایات کے لیے رابطہ نمبر کیا ہیں؟",
-        "answerEn": "Gilgit: 05811-920140, Skardu: 05815-920150, Hunza: 05813-920110, Diamer: 05812-920030.",
-        "answerUr": "گلگت: 05811-920140، سکردو: 05815-920150، ہنزہ: 05813-920110، دیامر: 05812-920030۔"
+        "questionEn": "Where can consumers pay their monthly electricity bills in Gilgit and Skardu?",
+        "questionUr": "گلگت اور سکردو میں بجلی کے بل کہاں جمع کروائے جا سکتے ہیں؟",
+        "answerEn": "Consumers can pay at any designated National Bank of Pakistan (NBP) branch, Karakoram Cooperative Bank branch, or Pakistan Post general post offices across Gilgit, Skardu, Hunza, Ghizer, and Diamer before the indicated due date.",
+        "answerUr": "صارفین نیشنل بینک آف پاکستان (NBP)، قراقرم کوآپریٹو بینک یا پاکستان پوسٹ کے دفاتر میں آخری تاریخ سے قبل بل ادا کر سکتے ہیں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How do seasonal water flow changes affect electricity supply in GB during winter?",
+        "questionUr": "موسم سرما میں پانی کے بہاؤ میں کمی سے گلگت بلتستان میں بجلی کی سپلائی پر کیا اثر پڑتا ہے؟",
+        "answerEn": "In winter, glacial melt and river discharge drop sharply by up to 70%, reducing hydel turbine output while heating demand peaks. The GB government enforces scheduled winter rotational load management, and supplements capacity using thermal generators and newly commissioned regional hydel projects (like Harpo and Attabad).",
+        "answerUr": "سردیوں میں گلیشیئرز کا پگھلاؤ کم ہونے سے ہائیڈل پیداوار 70 فیصد تک گر جاتی ہے جس سے روٹیشنل لوڈ مینجمنٹ کی جاتی ہے، جسے پورا کرنے کے لیے تھرمل جنریٹرز اور نئے منصوبے استعمال کیے جاتے ہیں۔"
+      },
+      {
+        "questionEn": "What are the official district complaint contact numbers for power breakdowns in GB?",
+        "questionUr": "گلگت بلتستان میں بجلی کی خرابی کے لیے ضلعی رابطہ نمبر کیا ہیں؟",
+        "answerEn": "Executive Engineer (XEN) Offices: Gilgit: 05811-920140 / 05811-920252; Skardu: 05815-920150; Hunza (Aliabad): 05813-920110; Diamer (Chilas): 05812-920030; Ghizer (Gahkuch): 05814-920120; Astore: 05817-920105.",
+        "answerUr": "ایگزیکٹو انجینئر (XEN) دفاتر: گلگت: 05811-920140، سکردو: 05815-920150، ہنزہ: 05813-920110، دیامر: 05812-920030، غذر: 05814-920120، استور: 05817-920105۔"
       }
     ],
-    "contentEn": "## Gilgit-Baltistan Water & Power Department Civic Guide 2026\nInformation regarding electricity supply, billing, hydel generation, and district helplines in GB.",
-    "contentUr": "## گلگت بلتستان محکمہ برقیات و آبپاشی معلوماتی گائیڈ 2026\nگلگت بلتستان میں بجلی کے بل کی ادائیگی، طریقہ کار اور ضلعی دفاتر کی معلومات۔",
+    "contentEn": "## Gilgit-Baltistan Water & Power Department Civic Guide 2026\nThe **Gilgit-Baltistan Water & Power Department (W&PD)** is the apex provincial authority responsible for hydro-electric power generation, regional micro-grid transmission, and electricity revenue distribution across all 10 districts of Gilgit-Baltistan.\n\n---\n\n### Unique Hydel Architecture & Decentralized Grid\nUnlike mainland Pakistan's unified national electricity grid operated by NTDC and CPPA-G, Gilgit-Baltistan relies primarily on localized run-of-the-river hydroelectric generating stations situated along glacial tributaries:\n1. **Gilgit & Hunza Basin**: Powered by Naltar Hydroelectric Projects (Phases I–IV), Jaglot Hydel, and Hassanabad Hunza micro-turbines.\n2. **Baltistan Basin (Skardu, Shigar, Kharmang, Ghanche)**: Powered by Sadpara Hydel Dam (17.4 MW), Harpo Project, and local cascading stream stations.\n3. **Diamer & Astore Basin**: Powered by Thak Hydro station and localized mountain canal turbine systems.\n\n---\n\n### Why Online Duplicate Bills Are Not Available on PITC\nMainland electricity distribution companies (LESCO, GEPCO, FESCO, IESCO, MEPCO, PESCO, HESCO, SEPCO, QESCO) use the centralized Power Information Technology Company (PITC) database. Because GB operates off-grid local public-sector hydel generators with statutory territorial subsidies, billing is processed via regional computerized revenue divisions and printed as physical bills distributed door-to-door by meter readers.\n\n---\n\n### Bill Payment Channels & Instructions\n- **National Bank of Pakistan (NBP)**: Accepted across all urban and sub-divisional branches.\n- **Karakoram Cooperative Bank Limited (KCBL)**: Specialized rural network branches in high-altitude valleys.\n- **Pakistan Post Offices**: Remote tehsil counters process payments and stamp receipt vouchers.\n- **Payment Confirmation**: Always retain the stamped consumer counterfoil; this serves as legal proof of clearance during periodic revenue audits.\n\n---\n\n### Dealing with Overbilling & Faulty Meters\nIf your bill exhibits abnormal units or an unmetered average charge:\n1. Note your current physical meter reading.\n2. Take a clear photograph of the meter display dial with serial number visible.\n3. Submit a written dispute application to the Assistant Executive Engineer (AEE) or Revenue Officer at your district Water & Power Office within 7 days of bill receipt.",
+    "contentUr": "## گلگت بلتستان محکمہ برقیات و آبپاشی (W&PD) مکمل گائیڈ 2026\nگلگت بلتستان میں بجلی کا نظام لوکل ہائیڈل پاور اسٹیشنز (نلتر، ستپارہ، ہارپو اور جگلوٹ) کے تحت چلتا ہے۔\n\nنیشنل گرڈ سے منسلک نہ ہونے کے باعث بل کاغذی صورت میں گھروں تک پہنچائے جاتے ہیں اور نیشنل بینک (NBP)، قراقرم کوآپریٹو بینک اور ڈاکخانے میں جمع ہوتے ہیں۔ بجلی کے تعطل اور شکایات کے لیے گلگت آفس 05811-920140 اور سکردو آفس 05815-920150 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/pesco-bill-check-online",
       "/bills/qesco-bill-check-online",
@@ -9021,18 +9045,36 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Domestic Domestic Water",
-        "serviceUr": "گھریلو پانی",
-        "normal": "Fixed Monthly Tariff",
-        "urgent": "Standard Domestic",
-        "executive": "Domestic"
+        "serviceEn": "Residential Water (Up to 5 Marla)",
+        "serviceUr": "گھریلو پانی (5 مرلہ تک)",
+        "normal": "PKR 350 – 550 / mo",
+        "urgent": "Unmetered Flat Slab",
+        "executive": "Water + Drainage",
+        "validity": "Monthly Bill"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "Commercial Slab",
-        "urgent": "Water + Sewerage",
-        "executive": "Commercial"
+        "serviceEn": "Residential Water (10 Marla – 1 Kanal)",
+        "serviceUr": "گھریلو پانی (10 مرلہ تا 1 کنال)",
+        "normal": "PKR 850 – 1,400 / mo",
+        "urgent": "Plot Size Slab",
+        "executive": "Water + Sewerage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Commercial Connection (Shops / Offices)",
+        "serviceUr": "کمرشل کنکشن (دکانیں و دفاتر)",
+        "normal": "PKR 2,000 – 4,500 / mo",
+        "urgent": "Commercial Tariff",
+        "executive": "Metered / Assessed",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Service Stations & Industrial Units",
+        "serviceUr": "سروس اسٹیشن و صنعتی یونٹس",
+        "normal": "PKR 8,000 – 18,000 / mo",
+        "urgent": "High Volume Consumer",
+        "executive": "Dedicated Inspection",
+        "validity": "Monthly Bill"
       }
     ],
     "steps": [
@@ -9067,32 +9109,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "How to check and pay WASA Rawalpindi water bill online?",
+        "questionEn": "How can I check and pay my WASA Rawalpindi water bill online?",
         "questionUr": "واسا راولپنڈی کا پانی کا بل آن لائن کیسے چیک اور ادا کریں؟",
-        "answerEn": "Enter your 8-digit WASA consumer number on the official Punjab WASA portal. You can view the full duplicate voucher with meter reading and pay via ePay Punjab on any mobile banking app using the generated 1Link PSID.",
-        "answerUr": "پنجاب واسا ویب سائٹ پر اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ آپ مکمل ڈپلیکیٹ بل دیکھ سکتے ہیں اور ای پے پنجاب کے ذریعے کسی بھی بینکنگ ایپ سے باآسانی ادائیگی کر سکتے ہیں۔"
+        "answerEn": "Enter your 8-digit or 10-digit WASA consumer number on the official Punjab WASA duplicate bill portal (wasa.punjab.gov.pk or wasa.rawalpindi.gop.pk). You can inspect your billing cycle, unpaid arrears, and due dates. To pay online, generate an ePay Punjab 1Link PSID and complete payment through Easypaisa, JazzCash, or any mobile banking app.",
+        "answerUr": "پنجاب واسا کی ویب سائٹ پر اپنا کنزیومر نمبر درج کریں۔ واجب الادا رقم اور آخری تاریخ چیک کرنے کے بعد ای پے پنجاب یا 1Link پی ایس آئی ڈی سے کسی بھی بینکنگ ایپ یا ایزی پیسہ سے فوری ادائیگی کریں۔"
       },
       {
-        "questionEn": "What is the WASA Rawalpindi helpline number?",
-        "questionUr": "واسا راولپنڈی کا ہیلپ لائن نمبر کیا ہے؟",
-        "answerEn": "Call 1334 (toll-free) or WASA Rawalpindi headquarters at 051-5555498.",
-        "answerUr": "شکایات کے لیے 1334 یا واسا راولپنڈی ہیڈکوارٹر 051-5555498 پر رابطہ کریں۔"
+        "questionEn": "What should I do if water supply is suspended or tubewell is faulty in my area?",
+        "questionUr": "اگر علاقے میں پانی کی سپلائی معطل ہو یا ٹیوب ویل خراب ہو تو کیا کریں؟",
+        "answerEn": "Lodge an immediate complaint by calling the 24/7 universal civic helpline 1334 or the WASA Rawalpindi central complaint control room at 051-5555498. For emergency water needs, consumers can book an official subsidized WASA water tanker directly through the Liaquat Bagh complaint office.",
+        "answerUr": "فوری شکایت کے لیے 24 گھنٹے فعال ٹول فری ہیلپ لائن 1334 یا واسا راولپنڈی شکایات سیل 051-5555498 پر کال کریں۔ ہنگامی ضرورت کی صورت میں لیاقت باغ دفتر سے سرکاری واٹر باؤزر (ٹینکر) بھی طلب کیا جا سکتا ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WASA Rawalpindi Bill Online 2026: Rawalpindi Water Duplicate Bill & Rates?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "How are unmetered domestic water tariffs calculated in Rawalpindi?",
+        "questionUr": "راولپنڈی میں بغیر میٹر والے گھریلو پانی کے نرخ کس بنیاد پر طے ہوتے ہیں؟",
+        "answerEn": "Domestic water tariffs in Rawalpindi are categorized primarily by residential plot surface area (covered area slabs under 5 Marla, 5 to 10 Marla, and 1 Kanal+). Sewerage and sanitation charges are added at a standard percentage of the base water supply rate.",
+        "answerUr": "گھریلو پانی کے نرخ مکان کے رقبے (5 مرلہ، 10 مرلہ اور 1 کنال) کی بنیاد پر طے ہوتے ہیں، جبکہ سیوریج چارجز بنیادی واٹر ریٹ کے تناسب سے بل میں شامل کیے جاتے ہیں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Where is the WASA Rawalpindi head office for billing corrections?",
+        "questionUr": "بل درستگی کے لیے واسا راولپنڈی کا مرکزی دفتر کہاں واقع ہے؟",
+        "answerEn": "The main administrative headquarters of WASA Rawalpindi is situated at Liaquat Bagh, Murree Road, Rawalpindi. Operating revenue windows are open Monday through Thursday 9:00 AM to 5:00 PM and Friday 9:00 AM to 1:00 PM.",
+        "answerUr": "واسا راولپنڈی کا مرکزی دفتر لیاقت باغ، مری روڈ راولپنڈی پر واقع ہے جہاں دفتری اوقات میں بلنگ تصحیح کی ونڈوز فعال ہوتی ہیں۔"
       }
     ],
-    "contentEn": "## WASA Rawalpindi (Water and Sanitation Agency) Guide 2026\nWASA Rawalpindi manages clean water supply from Rawal Dam, Khanpur Dam, and municipal tube-wells.",
-    "contentUr": "## واسا راولپنڈی آن لائن بلنگ و معلومات 2026\nراولپنڈی کے شہری واسا پورٹل سے اپنے بل کی معلومات حاصل کر سکتے ہیں۔",
+    "contentEn": "## WASA Rawalpindi (Water and Sanitation Agency) Guide 2026\nWater and Sanitation Agency (WASA) Rawalpindi operates under the Rawalpindi Development Authority (RDA), providing municipal drinking water supply, storm water drainage, and sewage disposal services across urban Rawalpindi city and neighboring peri-urban zones.\n\n---\n\n### Primary Water Sources & Distribution Network\nRawalpindi relies on an integrated dual-source municipal water network:\n1. **Surface Water Reservoirs**: Treated surface water is supplied through the **Rawal Lake Filtration Plant** and the **Khanpur Dam Water Supply Scheme**, serving central Rawalpindi, Satellite Town, Shamsabad, and eastern zones.\n2. **Groundwater Tubewell Grid**: WASA maintains an active network of over 480 heavy-duty municipal tubewells across urban union councils to supplement dry-season requirements.\n\n---\n\n### Understanding Your 8-Digit Consumer Account Number\nEvery registered water connection in Rawalpindi is assigned a unique Consumer Account Number printed at the top-left corner of your monthly billing voucher:\n- **Zone Code**: Identifies the regional sub-division (e.g., Liaquat Bagh, Satellite Town, Khayaban-e-Sir Syed, Potohar Zone).\n- **Consumer Sequence**: Identifies your specific property meter or flat-rate connection.\n\n---\n\n### Step-by-Step Guide to Online Duplicate Bill Download\n1. Visit the verified Punjab WASA billing portal (`wasa.punjab.gov.pk`) or `wasa.rawalpindi.gop.pk`.\n2. Select **WASA Rawalpindi** from the agency dropdown list.\n3. Enter your 8-digit or 10-digit Consumer Account Number without dashes or spaces.\n4. Click **Search / View Duplicate Bill** to display your itemized bill voucher.\n5. Save the generated voucher as a high-resolution PDF for official records or print for counter payment.\n\n---\n\n### How to Pay Your WASA Rawalpindi Bill Online via ePay Punjab\n1. Open your preferred mobile banking app (Meezan, HBL, Bank Alfalah, Allied Bank) or Easypaisa/JazzCash.\n2. Navigate to **Bill Payment** > **Government Fees / Municipal Services** > **ePay Punjab**.\n3. Enter the 17-digit 1Link PSID generated on your duplicate bill.\n4. Verify the billing consumer name, due date, and payable sum.\n5. Authorize payment with zero transactional surcharges. Your payment status synchronizes into the WASA database within 30 minutes.\n\n---\n\n### Booking a WASA Water Tanker & Helplines\nDuring peak summer load or tubewell maintenance intervals, citizens can request a municipal water tanker:\n- **Universal Civic Helpline**: Dial **1334** (Toll-Free from any mobile network).\n- **Central Control Room (Liaquat Bagh)**: **051-5555498** / **051-5770732**.\n- **Complaints WhatsApp Desk**: Check official WASA notices for active seasonal emergency broadcast numbers.",
+    "contentUr": "## واسا راولپنڈی آن لائن بلنگ، واٹر ٹیرف و معلومات 2026\nراولپنڈی ڈویلپمنٹ اتھارٹی (RDA) کے تحت واسا راولپنڈی شہر بھر میں راول ڈیم، خانپور ڈیم اور 480 سے زائد ٹیوب ویلز کے ذریعے پانی فراہم کرتا ہے۔\n\nشہری اپنے 8 ہندسوں کے کنزیومر نمبر سے آن لائن ڈپلیکیٹ بل حاصل کر سکتے ہیں اور ای پے پنجاب یا 1Bill کے ذریعے گھر بیٹھے باآسانی بل ادا کر سکتے ہیں۔ ایمرجنسی میں پانی کے ٹینکر اور شکایات کے لیے 1334 یا 051-5555498 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/iesco-bill-check-online",
       "/bills/lahore-water-sewerage-bill-guide-2026",
@@ -9120,18 +9162,36 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Residential Water",
-        "serviceUr": "رہائشی پانی کنکشن",
-        "normal": "Fixed Monthly Slab",
-        "urgent": "Standard Domestic",
-        "executive": "Domestic"
+        "serviceEn": "Residential Water (Up to 5 Marla)",
+        "serviceUr": "گھریلو پانی (5 مرلہ تک)",
+        "normal": "PKR 300 – 480 / mo",
+        "urgent": "Unmetered Domestic",
+        "executive": "Water + Sanitation",
+        "validity": "Monthly Bill"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "Commercial Category Rate",
-        "urgent": "Water + Sewerage",
-        "executive": "Commercial"
+        "serviceEn": "Residential Water (7 to 10 Marla)",
+        "serviceUr": "گھریلو پانی (7 تا 10 مرلہ)",
+        "normal": "PKR 650 – 950 / mo",
+        "urgent": "Plot Size Slab",
+        "executive": "Water + Sewerage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Residential Water (1 Kanal & Above)",
+        "serviceUr": "گھریلو پانی (1 کنال یا زائد)",
+        "normal": "PKR 1,200 – 1,800 / mo",
+        "urgent": "Covered Area Slab",
+        "executive": "Water + Drainage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Commercial Connection (Markets / Offices)",
+        "serviceUr": "کمرشل کنکشن (مارکیٹس و دفاتر)",
+        "normal": "PKR 2,500 – 6,000 / mo",
+        "urgent": "Commercial Tariff",
+        "executive": "Metered / Assessed",
+        "validity": "Monthly Bill"
       }
     ],
     "steps": [
@@ -9166,32 +9226,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "How to check WASA Multan water bill online?",
-        "questionUr": "ملتان میں واسا کا پانی بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "Enter your 8-digit consumer account number on the official Punjab WASA portal to retrieve your Multan water voucher and view meter readings and due dates.",
-        "answerUr": "واسا پورٹل پر اپنا 8 ہندسوں کا اکاؤنٹ نمبر درج کریں۔ ملتان واٹر اینڈ سینی ٹیشن ایجنسی کا تصدیق شدہ بل فوری اسکرین پر آ جائے گا۔"
+        "questionEn": "How can I check and download my WASA Multan duplicate bill online?",
+        "questionUr": "واسا ملتان کا ڈپلیکیٹ بل آن لائن کیسے چیک اور ڈاؤن لوڈ کریں؟",
+        "answerEn": "Visit the official WASA Multan portal at wasamultan.gop.pk/duplicatebill or the Punjab WASA system (wasa.punjab.gov.pk). Enter your 8-digit Consumer Account Number to view your current dues, billing month, and printable duplicate copy.",
+        "answerUr": "واسا ملتان کے پورٹل (wasamultan.gop.pk/duplicatebill) پر جا کر اپنا 8 ہندسوں کا اکاؤنٹ نمبر درج کریں اور ڈپلیکیٹ بل کا مکمل واؤچر فوری حاصل کریں۔"
       },
       {
-        "questionEn": "What is the WASA Multan customer helpline?",
-        "questionUr": "واسا ملتان کا ہیلپ لائن نمبر کیا ہے؟",
-        "answerEn": "Call toll-free 1334 or WASA Multan complaint center at 061-9200881.",
-        "answerUr": "شکایات کے لیے 1334 یا واسا ملتان 061-9200881 پر رابطہ کریں۔"
+        "questionEn": "What online payment methods are supported for WASA Multan bills?",
+        "questionUr": "واسا ملتان کے بل کی آن لائن ادائیگی کے کیا طریقے ہیں؟",
+        "answerEn": "Bills can be paid using the 17-digit 1Link PSID via ePay Punjab on any mobile banking application (such as Meezan, HBL, Bank of Punjab, UBL), Easypaisa, JazzCash, or over the counter at any 1Link commercial bank branch.",
+        "answerUr": "ای پے پنجاب ایپ، موبائل بینکنگ، ایزی پیسہ یا جاز کیش سے 17 ہندسوں کے پی ایس آئی ڈی کے ذریعے بغیر کسی اضافی چارجز کے بل ادا کیا جا سکتا ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WASA Multan Bill Check Online 2026: Download Duplicate Water Bill PDF?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "How do I report low water pressure or sewerage overflow in Multan?",
+        "questionUr": "ملتان میں پانی کی کم سپلائی یا سیوریج ابلنے کی شکایت کیسے درج کروائیں؟",
+        "answerEn": "Dial the 24/7 universal civic helpline 1334 or call the WASA Multan Central Complaint Center at 061-9200881. Emergency desilting suction machines and repair teams are dispatched from regional subdivisions (Mumtazabad, Shah Rukn-e-Alam, Gulgasht).",
+        "answerUr": "ٹول فری ہیلپ لائن 1334 یا ملتان شکایات سنٹر 061-9200881 پر کال کریں۔ ممتاز آباد، شاہ رکن عالم اور گلگشت کے سب ڈویژنل دفاتر سے فوری ریسپانس ٹیم بھیجی جاتی ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Where is the WASA Multan head office located for new water connections?",
+        "questionUr": "نئے واٹر کنکشن اور بل درستگی کے لیے واسا ملتان کا ہیڈ آفس کہاں ہے؟",
+        "answerEn": "WASA Multan operates from the MDA Complex, Shamsabad, LMQ Road, Multan. Application forms for domestic and commercial connections can be submitted at the one-window facilitation counter.",
+        "answerUr": "واسا ملتان کا مرکزی دفتر ایم ڈی اے کمپلیکس، شمس آباد، ایل ایم کیو روڈ ملتان پر واقع ہے۔ نئے کنکشن کی درخواستیں ون ونڈو کاؤنٹر پر جمع ہوتی ہیں۔"
       }
     ],
-    "contentEn": "## WASA Multan Duplicate Bill Guide 2026\nWASA Multan delivers potable water and drainage services across Multan metropolitan area.",
-    "contentUr": "## واسا ملتان آن لائن واٹر بل گائیڈ 2026\nملتان کے شہری واسا کے آفیشل پورٹل سے اپنا ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "contentEn": "## WASA Multan (MDA) Water & Sanitation Guide 2026\nWater and Sanitation Agency (WASA) Multan operates under the administrative authority of the Multan Development Authority (MDA), overseeing potable groundwater extraction, urban drainage, and municipal sewerage networks across South Punjab's largest metropolis.\n\n---\n\n### Coverage Areas & Subdivisions in Multan City\nWASA Multan provides coverage across key urban zones, including:\n1. **Shah Rukn-e-Alam Subdivision**: New Multan, New Shah Rukn-e-Alam Colony, and industrial estates.\n2. **Mumtazabad Subdivision**: Dera Adda, Old Shujabad Road, Bohar Gate, and Mumtazabad residential pockets.\n3. **Bosan Road / Gulgasht Subdivision**: Gulgasht Colony, Bahauddin Zakariya University surrounding sectors, and Northern bypass extensions.\n4. **Cantt / Inner City**: Outer periphery connections coordinated with Cantonment municipal boards.\n\n---\n\n### Groundwater Extraction & Water Quality Standards\nUnlike northern districts supplied by dam reservoirs, Multan is entirely reliant on heavy-duty deep tubewells pumping from unconfined aquifers at depths of 400 to 600 feet. WASA operates water filtration plants to neutralize total dissolved solids (TDS) and conducts routine chlorination to eliminate bacteriological contamination before domestic delivery.\n\n---\n\n### Step-by-Step Guide to Retrieve Multan Duplicate Bills\n1. Visit `https://wasamultan.gop.pk/duplicatebill` or the unified `wasa.punjab.gov.pk` portal.\n2. Locate the 8-digit **Account Number** printed on any prior paper bill voucher.\n3. Enter the digits in the inquiry form and click **Submit / Search**.\n4. Review the generated voucher displaying consumer name, meter/connection type, current consumption charges, and payment due dates.\n5. Download the PDF voucher for record keeping or print for bank teller submission.\n\n---\n\n### Paying via ePay Punjab & 1Bill Digital Rails\nConsumers can settle WASA Multan bills without visiting bank branches:\n- **Bank Mobile Apps**: Select **Bill Payments** > **1Bill / ePay Punjab** > Enter the 17-digit PSID.\n- **Retail Wallets**: Easypaisa and JazzCash support direct ePay voucher settlement with instant digital receipt SMS.\n- **Payment Clearance**: Payments update within the WASA billing server within 1 banking hour.",
+    "contentUr": "## واسا ملتان (MDA) واٹر و سینی ٹیشن آن لائن گائیڈ 2026\nملتان ڈویلپمنٹ اتھارٹی کے زیر انتظام واسا ملتان پورے شہر میں پینے کے صاف پانی کی فراہمی، ٹیوب ویلز، فلٹریشن پلانٹس اور زیر زمین سیوریج کا نظام چلاتا ہے۔\n\nشہری اپنے 8 ہندسوں کے اکاؤنٹ نمبر کے ذریعے آفیشل ویب سائٹ سے ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں اور ای پے پنجاب سے آن لائن ادائیگی کر سکتے ہیں۔ کسی بھی قسم کی شکایت کے لیے ہیلپ لائن 1334 یا 061-9200881 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/mepco-bill-check-online",
       "/bills/lahore-water-sewerage-bill-guide-2026",
@@ -9219,18 +9279,36 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Residential Water",
-        "serviceUr": "رہائشی پانی",
-        "normal": "Fixed Monthly Slab",
-        "urgent": "Standard Domestic",
-        "executive": "Domestic"
+        "serviceEn": "Residential Water (Up to 5 Marla)",
+        "serviceUr": "گھریلو پانی (5 مرلہ تک)",
+        "normal": "PKR 320 – 500 / mo",
+        "urgent": "Unmetered Domestic",
+        "executive": "Water + Sanitation",
+        "validity": "Monthly Bill"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "Commercial Tariff",
-        "urgent": "Water + Sewerage",
-        "executive": "Commercial"
+        "serviceEn": "Residential Water (7 to 10 Marla)",
+        "serviceUr": "گھریلو پانی (7 تا 10 مرلہ)",
+        "normal": "PKR 700 – 1,100 / mo",
+        "urgent": "Plot Size Slab",
+        "executive": "Water + Sewerage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Residential Water (1 Kanal & Above)",
+        "serviceUr": "گھریلو پانی (1 کنال یا زائد)",
+        "normal": "PKR 1,300 – 2,000 / mo",
+        "urgent": "Covered Area Slab",
+        "executive": "Water + Drainage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Commercial Units (Markets & Small Industry)",
+        "serviceUr": "کمرشل یونٹس (مارکیٹس و فیکٹریاں)",
+        "normal": "PKR 3,000 – 7,500 / mo",
+        "urgent": "Commercial Tariff",
+        "executive": "Assessed Connection",
+        "validity": "Monthly Bill"
       }
     ],
     "steps": [
@@ -9265,32 +9343,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "How to check WASA Gujranwala water bill online?",
-        "questionUr": "گوجرانوالہ میں واسا کا پانی کا بل آن لائن کیسے چیک کریں؟",
-        "answerEn": "Input your 8-digit consumer reference number on the Punjab WASA portal to download your official duplicate water and sewerage bill.",
-        "answerUr": "پنجاب واسا پورٹل پر 8 ہندسوں کا ریفرنس نمبر درج کر کے اپنا اصل ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
+        "questionEn": "How can I check and print my WASA Gujranwala duplicate bill online?",
+        "questionUr": "واسا گوجرانوالہ کا ڈپلیکیٹ بل آن لائن کیسے چیک اور پرنٹ کریں؟",
+        "answerEn": "Open the official WASA Gujranwala duplicate bill portal at wasag.gop.pk/duplicate-bill/ or the central Punjab WASA portal (wasa.punjab.gov.pk). Enter your 8-digit Consumer ID to instantly view your monthly billing amount, meter category, and due date.",
+        "answerUr": "واسا گوجرانوالہ کے آفیشل پورٹل (wasag.gop.pk) پر جائیں اور اپنا 8 ہندسوں کا کنزیومر نمبر درج کریں۔ آپ کا ڈپلیکیٹ بل مکمل واؤچر کی صورت میں فوری اسکرین پر ظاہر ہو جائے گا۔"
       },
       {
-        "questionEn": "What is the WASA Gujranwala complaint contact?",
-        "questionUr": "واسا گوجرانوالہ کا شکایت نمبر کیا ہے؟",
-        "answerEn": "Dial toll-free 1334 or contact WASA Gujranwala at 055-9200115.",
-        "answerUr": "شکایات کے لیے 1334 یا واسا گوجرانوالہ 055-9200115 پر رابطہ کریں۔"
+        "questionEn": "Can I pay my Gujranwala water and sanitation bill through mobile banking?",
+        "questionUr": "کیا گوجرانوالہ واٹر بل کی ادائیگی موبائل بینکنگ سے ممکن ہے؟",
+        "answerEn": "Yes. Using the 17-digit 1Link PSID printed on your duplicate bill, you can pay instantly via ePay Punjab on any Pakistani mobile banking app (HBL, Meezan, Bank Alfalah, BOP), Easypaisa, or JazzCash with zero service charges.",
+        "answerUr": "جی ہاں، ڈپلیکیٹ بل پر درج 17 ہندسوں کے پی ایس آئی ڈی کو استعمال کرتے ہوئے ای پے پنجاب، ایزی پیسہ، جاز کیش یا کسی بھی بینکنگ ایپ سے باآسانی بل جمع کرایا جا سکتا ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WASA Gujranwala Bill Check Online 2026: Download Duplicate Water Bill?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "What is the emergency helpline for WASA Gujranwala sewerage and water issues?",
+        "questionUr": "واسا گوجرانوالہ میں سیوریج اور پانی کی شکایات کا ہیلپ لائن نمبر کیا ہے؟",
+        "answerEn": "For water line leakages, contamination, or choked sewer lines, call the toll-free universal helpline 1334 or the WASA Gujranwala complaint center at 055-9200115 / 055-9200116. Regional emergency units operate in Peoples Colony and Satellite Town.",
+        "answerUr": "کسی بھی خرابی یا سیوریج بلاکیج کی صورت میں ٹول فری 1334 یا واسا گوجرانوالہ کمپلینٹ سنٹر 055-9200115 پر کال کریں۔ پیپلز کالونی اور سیٹلائٹ ٹاؤن کے سب دفاتر فوری امداد فراہم کرتے ہیں۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Where is the WASA Gujranwala head office situated?",
+        "questionUr": "واسا گوجرانوالہ کا مرکزی ہیڈ آفس کہاں واقع ہے؟",
+        "answerEn": "The main head office of WASA Gujranwala (under Gujranwala Development Authority - GDA) is located at Trust Plaza, G.T. Road, Gujranwala. Citizens can visit the revenue desk for billing adjustments, ownership transfers, and new connection permits.",
+        "answerUr": "واسا گوجرانوالہ کا مرکزی دفتر ٹرسٹ پلازہ، جی ٹی روڈ گوجرانوالہ پر واقع ہے جہاں نئے کنکشن اور بلنگ تصحیح کے لیے رابطہ کیا جا سکتا ہے۔"
       }
     ],
-    "contentEn": "## WASA Gujranwala Duplicate Bill Guide 2026\nWASA Gujranwala provides clean drinking water and sewage disposal to Gujranwala city.",
-    "contentUr": "## واسا گوجرانوالہ آن لائن واٹر بل گائیڈ 2026\nگوجرانوالہ کے شہری آسانی سے اپنا پانی کا بل آن لائن حاصل کر سکتے ہیں۔",
+    "contentEn": "## WASA Gujranwala (GDA) Water & Sanitation Guide 2026\nWater and Sanitation Agency (WASA) Gujranwala operates under the aegis of the Gujranwala Development Authority (GDA), administering municipal water filtration, underground drainage conduits, and sewerage disposal across Gujranwala district's dense industrial and residential hubs.\n\n---\n\n### Municipal Jurisdiction & Coverage Zones\nWASA Gujranwala delivers utility coverage across multiple residential and commercial zones, including:\n1. **Peoples Colony & Satellite Town**: High-density urban areas served by dedicated overhead water reservoirs and deep tubewells.\n2. **Civil Lines & Model Town**: Administrative and institutional zones with scheduled daily water supply cycles.\n3. **Rahwali & G.T. Road Belt**: Mixed residential-industrial sectors with ongoing pipeline modernization.\n4. **Walled City & Old Gujranwala**: Upgraded municipal sewer lines to prevent monsoon urban flooding.\n\n---\n\n### Safe Drinking Water & Filtration Plant Network\nDue to heavy industrialization and metallurgical workshops in Gujranwala, groundwater in upper strata can contain elevated heavy metal and salinity levels. WASA Gujranwala operates deep tubewells tapping pristine aquifers at depths greater than 450 feet, backed by ultra-filtration water filtration plants positioned at public parks and community centers.\n\n---\n\n### How to Download a Gujranwala Duplicate Water Bill\n1. Navigate to the official bill portal at `https://wasag.gop.pk/duplicate-bill/` or `wasa.punjab.gov.pk`.\n2. Locate the 8-digit **Consumer ID** printed on the upper left-hand quadrant of your paper bill.\n3. Input your Consumer ID into the query field and click **Search**.\n4. View your itemized duplicate bill showing consumer billing name, arrears, current tariff, and due date.\n5. Download the PDF file or print the challan for payment at authorized commercial banks.\n\n---\n\n### Online Payment Integration via ePay Punjab\n1. Launch your mobile banking application (such as HBL, Meezan, Bank Alfalah, Askari, BOP).\n2. Select **Bill Payment** > **ePay Punjab / 1Bill**.\n3. Enter the 17-digit PSID displayed on your WASA Gujranwala duplicate voucher.\n4. Confirm transaction details and execute payment without extra merchant fees.",
+    "contentUr": "## واسا گوجرانوالہ (GDA) آن لائن بلنگ، واٹر ٹیرف و معلومات 2026\nگوجرانوالہ ڈویلپمنٹ اتھارٹی کے زیر انتظام واسا گوجرانوالہ شہر کے تمام رہائشی اور صنعتی علاقوں میں پینے کے صاف پانی کی فراہمی اور سیوریج کا نظام منظم کرتا ہے۔\n\nصارفین اپنے 8 ہندسوں کے کنزیومر آئی ڈی کے ذریعے آن لائن ڈپلیکیٹ بل نکال سکتے ہیں اور ای پے پنجاب سے بل جمع کروا سکتے ہیں۔ شکایات اور ٹینکر سروس کے لیے 1334 یا 055-9200115 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/gepco-bill-check-online",
       "/bills/lahore-water-sewerage-bill-guide-2026",
@@ -9318,18 +9396,36 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Residential Water",
-        "serviceUr": "رہائشی پانی",
-        "normal": "Fixed Monthly Slab",
-        "urgent": "Standard Domestic",
-        "executive": "Domestic"
+        "serviceEn": "Residential Water (Up to 5 Marla)",
+        "serviceUr": "گھریلو پانی (5 مرلہ تک)",
+        "normal": "PKR 280 – 450 / mo",
+        "urgent": "Unmetered Domestic",
+        "executive": "Water + Sanitation",
+        "validity": "Monthly Bill"
       },
       {
-        "serviceEn": "Commercial Connection",
-        "serviceUr": "کمرشل کنکشن",
-        "normal": "Commercial Tariff",
-        "urgent": "Water + Sewerage",
-        "executive": "Commercial"
+        "serviceEn": "Residential Water (7 to 10 Marla)",
+        "serviceUr": "گھریلو پانی (7 تا 10 مرلہ)",
+        "normal": "PKR 600 – 900 / mo",
+        "urgent": "Plot Size Slab",
+        "executive": "Water + Sewerage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Residential Water (1 Kanal & Above)",
+        "serviceUr": "گھریلو پانی (1 کنال یا زائد)",
+        "normal": "PKR 1,100 – 1,700 / mo",
+        "urgent": "Covered Area Slab",
+        "executive": "Water + Drainage",
+        "validity": "Monthly Bill"
+      },
+      {
+        "serviceEn": "Commercial Connection (Markets & Clinics)",
+        "serviceUr": "کمرشل کنکشن (دکانیں و کلینک)",
+        "normal": "PKR 2,200 – 5,500 / mo",
+        "urgent": "Commercial Tariff",
+        "executive": "Assessed Connection",
+        "validity": "Monthly Bill"
       }
     ],
     "steps": [
@@ -9364,26 +9460,32 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "What is the WASA Sahiwal complaint helpline?",
-        "questionUr": "واسا ساہیوال کا ہیلپ لائن نمبر کیا ہے؟",
-        "answerEn": "Dial toll-free 1334 or contact WASA Sahiwal complaint center at 040-9200142.",
-        "answerUr": "شکایات کے لیے 1334 یا واسا ساہیوال 040-9200142 پر رابطہ کریں۔"
+        "questionEn": "How can I check and print my WASA Sahiwal water bill online?",
+        "questionUr": "واسا ساہیوال کا پانی کا بل آن لائن کیسے چیک اور پرنٹ کریں؟",
+        "answerEn": "Visit the official WASA Sahiwal portal at wasasahiwal.gop.pk or the Punjab WASA duplicate bill portal (wasa.punjab.gov.pk). Input your 8-digit Consumer Account Number to view your current charges, previous payments, and download a duplicate billing voucher.",
+        "answerUr": "واسا ساہیوال کی ویب سائٹ (wasasahiwal.gop.pk) پر جا کر اپنا 8 ہندسوں کا اکاؤنٹ نمبر درج کریں اور ڈپلیکیٹ بل ڈاؤن لوڈ کریں۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for WASA Sahiwal Bill Check Online 2026: Download Duplicate Water Bill?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "Can I pay WASA Sahiwal bills using ePay Punjab or Easypaisa?",
+        "questionUr": "کیا واسا ساہیوال کا بل ای پے پنجاب یا ایزی پیسہ سے ادا ہو سکتا ہے؟",
+        "answerEn": "Yes. Each duplicate bill contains a 17-digit 1Link PSID. Open ePay Punjab or your bank application (Meezan, HBL, Bank Alfalah, Easypaisa, JazzCash), enter the PSID under 1Bill Government payments, and complete instant cashless payment.",
+        "answerUr": "جی ہاں، ڈپلیکیٹ بل پر موجود 17 ہندسوں کے پی ایس آئی ڈی کو ای پے پنجاب، ایزی پیسہ یا موبائل بینکنگ ایپ میں درج کر کے فوری آن لائن بل ادا کیا جا سکتا ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What is the WASA Sahiwal complaint helpline for sewage blockages?",
+        "questionUr": "سیوریج یا پائپ لائن لیکج کی صورت میں واسا ساہیوال کا رابطہ نمبر کیا ہے؟",
+        "answerEn": "Call the universal provincial helpline 1334 (toll-free) or contact the WASA Sahiwal Complaint Center directly at 040-9200142. Emergency sewer unblocking and suction bowsers are dispatched to Farid Town, Fateh Sher Colony, and city markets.",
+        "answerUr": "کسی بھی ہنگامی شکایت کے لیے 1334 یا واسا ساہیوال کمپلینٹ سیل 040-9200142 پر کال کریں۔ فرید ٹاؤن، فتح شیر کالونی اور مرکزی علاقوں کے لیے فوری ٹیم روانہ کی جاتی ہے۔"
+      },
+      {
+        "questionEn": "Where is the WASA Sahiwal customer facilitation office?",
+        "questionUr": "واسا ساہیوال کا دفتر کہاں واقع ہے؟",
+        "answerEn": "The WASA Sahiwal head office is situated opposite the District Courts / Session Courts complex on Jail Road, Sahiwal. Counter timings are Monday through Thursday from 9:00 AM to 5:00 PM and Friday until 1:00 PM.",
+        "answerUr": "واسا ساہیوال کا مرکزی دفتر ڈسٹرکٹ کورٹس کے سامنے، جیل روڈ ساہیوال پر واقع ہے۔"
       }
     ],
-    "contentEn": "## WASA Sahiwal Duplicate Bill Guide 2026\nWASA Sahiwal provides municipal water and drainage services across Sahiwal city limits.",
-    "contentUr": "## واسا ساہیوال آن لائن واٹر بل گائیڈ 2026\nساہیوال کے شہری واسا پورٹل سے ڈپلیکیٹ بل حاصل کر سکتے ہیں۔",
+    "contentEn": "## WASA Sahiwal Municipal Water & Sewerage Guide 2026\nWater and Sanitation Agency (WASA) Sahiwal is responsible for supplying treated drinking water, maintaining underground sewerage trunks, and managing urban stormwater disposal across Sahiwal city and adjacent planned housing colonies.\n\n---\n\n### Urban Service Sectors in Sahiwal\nWASA Sahiwal maintains infrastructure across key residential and commercial areas:\n1. **Farid Town & Scheme No. 2**: Planned residential sectors receiving regulated morning and evening water supply schedules.\n2. **Fateh Sher Colony & Bilal Colony**: Subdivided municipal zones served by deep tubewells and chlorination units.\n3. **High Street, Grain Market & Commercial Saddar**: High-demand commercial connections with dedicated drainage maintenance.\n4. **Arifwala Road & Old City Peripheries**: Ongoing pipeline replacement initiatives to eradicate low water pressure.\n\n---\n\n### Water Extraction & Safe Quality Measures\nSahiwal relies on municipal tubewells tapping clean groundwater aquifers at depths between 350 and 500 feet. The water is tested regularly by WASA quality assurance teams for bacteriological and mineral standards before entering overhead distribution reservoirs.\n\n---\n\n### How to Retrieve Your WASA Sahiwal Duplicate Bill Online\n1. Visit `https://wasasahiwal.gop.pk/` or the Punjab WASA centralized portal (`wasa.punjab.gov.pk`).\n2. Locate the 8-digit **Account Number** printed at the top-center of your paper bill.\n3. Enter the account number into the bill inquiry tool and click **View Duplicate Bill**.\n4. Verify your consumer name, address, current meter status, and payment due date.\n5. Download the PDF copy for digital records or print out the deposit voucher.\n\n---\n\n### Cashless Online Bill Settlement via ePay Punjab\n1. Launch your mobile banking application (such as Meezan Bank, HBL, Bank of Punjab, UBL, or Easypaisa).\n2. Navigate to **Bill Payments** > **1Bill / ePay Punjab**.\n3. Input the 17-digit PSID displayed on your duplicate bill.\n4. Confirm the exact billing amount and submit payment. You will receive an instant payment confirmation SMS.",
+    "contentUr": "## واسا ساہیوال آن لائن بلنگ، واٹر ٹیرف و معلومات 2026\nواسا ساہیوال شہر بھر میں پینے کے صاف پانی کی فراہمی، ٹیوب ویلز کے انتظام اور زیر زمین سیوریج لائنوں کی دیکھ بھال کا ذمہ دار ہے۔\n\nشہری اپنے 8 ہندسوں کے اکاؤنٹ نمبر سے آن لائن ڈپلیکیٹ بل ڈاؤن لوڈ کر سکتے ہیں اور ای پے پنجاب سے بل جمع کروا سکتے ہیں۔ شکایات کے لیے ہیلپ لائن 1334 یا 040-9200142 پر رابطہ کریں۔",
     "relatedSlugs": [
       "/bills/mepco-bill-check-online",
       "/bills/lahore-water-sewerage-bill-guide-2026",
