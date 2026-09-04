@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traffic/driving-license-status-check-online-2026',
     '/traffic/international-driving-permit-pakistan-2026',
     '/traffic/vehicle-ownership-transfer-online-punjab-2026',
+    '/traffic/mtmis-token-tax-check-online-punjab-karachi-islamabad-2026',
     '/business/pseb-freelancer-registration-tax-benefits-2026',
     '/business/trademark-registration-pakistan-ipo-guide-2026',
     '/property/e-stamping-challan-32a-online-guide-2026',

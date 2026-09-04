@@ -562,6 +562,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "MTMIS Token Tax Check Online 2026",
+        "ur": "ایم ٹی ایم آئی ایس ٹوکن ٹیکس آن لائن چیک 2026",
+        "slug": "/traffic/mtmis-token-tax-check-online-punjab-karachi-islamabad-2026"
+      },
+      {
         "en": "Vehicle Ownership Transfer Punjab",
         "ur": "گاڑی ملکیت منتقلی پنجاب 2026",
         "slug": "/traffic/vehicle-ownership-transfer-online-punjab-2026"

@@ -449,7 +449,19 @@ export default function VehicleOwnershipTransferPage() {
           <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white">
             Related Traffic &amp; Vehicle Verification Guides
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <Link
+              href="/traffic/mtmis-token-tax-check-online-punjab-karachi-islamabad-2026"
+              className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="font-bold text-doc-ink dark:text-white block group-hover:text-doc-seal transition">
+                  MTMIS Token Tax Check Online →
+                </span>
+                <span className="text-slate-500 dark:text-slate-400">Punjab, Sindh &amp; Islamabad portals</span>
+              </div>
+            </Link>
+
             <Link
               href="/traffic/token-tax-calculator-2026"
               className="p-3.5 rounded-xl border border-doc-brass/30 hover:border-doc-seal bg-slate-50 dark:bg-slate-800 transition flex items-center justify-between group"
