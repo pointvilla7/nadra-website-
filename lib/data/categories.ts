@@ -501,6 +501,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/welfare/eobi-pension-check-cnic-2026"
       },
       {
+        "en": "PESSI / SESSI vs EOBI Difference 2026",
+        "ur": "ای او بی آئی بمقابلہ سوشل سیکیورٹی فرق",
+        "slug": "/welfare/pessi-sessi-vs-eobi-difference-registration-2026"
+      },
+      {
         "en": "PMT Score Explained",
         "ur": "پی ایم ٹی سکور رہنمائی 2026",
         "slug": "/welfare/pmt-score-explained-bisp-eligibility-2026"

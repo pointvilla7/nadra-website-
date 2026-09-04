@@ -291,7 +291,18 @@ export default function EobiPensionPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Social Welfare &amp; Financial Utilities on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/welfare/pessi-sessi-vs-eobi-difference-registration-2026"
+              className="p-4 rounded-xl border border-doc-seal/30 dark:border-doc-seal/50 bg-doc-seal/5 dark:bg-doc-seal/10 hover:border-doc-seal transition group"
+            >
+              <span className="text-xs font-mono text-doc-seal font-bold uppercase block">Healthcare vs Pension</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                PESSI / SESSI vs EOBI Guide →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Learn why EOBI gives zero medical cover and why both registrations are mandatory.</p>
+            </Link>
+
             <Link
               href="/welfare/bisp-eligibility-check-by-cnic"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
