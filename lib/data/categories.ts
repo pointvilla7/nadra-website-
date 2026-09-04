@@ -653,6 +653,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "Income Tax on Salary Slabs 2026-27",
+        "ur": "تنخواہ پر انکم ٹیکس سلیبز اور کیلکولیٹر 2026",
+        "slug": "/tax/income-tax-on-salary-slabs-calculator-pakistan-2026"
+      },
+      {
         "en": "Foreign Remittance Tax 2026",
         "ur": "بیرون ملک ترسیلات زر ٹیکس 2026",
         "slug": "/tax/foreign-remittance-tax-pakistan-overseas-2026"

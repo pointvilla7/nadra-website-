@@ -319,16 +319,16 @@ export default function SalariedTaxFilingGuidePage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Tax &amp; FBR Verification Tools on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             <Link
-              href="/tax/fbr-active-taxpayer-status-helper-2026"
+              href="/tax/income-tax-on-salary-slabs-calculator-pakistan-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Status Helper</span>
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Salary Slabs FY26-27</span>
               <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                FBR Active Taxpayer Status Checker →
+                Income Tax on Salary Slabs →
               </h3>
-              <p className="text-xs text-slate-500 mt-1">Verify live ATL active standing via CNIC &amp; SMS.</p>
+              <p className="text-xs text-slate-500 mt-1">Official FY2026-27 slabs, progressive math &amp; calculator.</p>
             </Link>
 
             <Link
@@ -340,6 +340,17 @@ export default function SalariedTaxFilingGuidePage() {
                 How to Become a Filer in Pakistan →
               </h3>
               <p className="text-xs text-slate-500 mt-1">NTN registration and profile creation on IRIS 2.0.</p>
+            </Link>
+
+            <Link
+              href="/tax/fbr-active-taxpayer-status-helper-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Filer Status</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                FBR Active Taxpayer Status (ATL) →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Verify live ATL active standing via CNIC &amp; SMS.</p>
             </Link>
 
             <Link

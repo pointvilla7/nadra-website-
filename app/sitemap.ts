@@ -119,6 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/health/sehat-card-hospital-list-lahore-2026',
     '/legal/power-of-attorney-online-overseas-pakistanis-2026',
     '/tax/income-tax-calculator-salaried-2026',
+    '/tax/income-tax-on-salary-slabs-calculator-pakistan-2026',
     '/tax/foreign-remittance-tax-pakistan-overseas-2026',
     '/jobs/beoe-protector-fee-calculator-2026',
     '/education/pm-laptop-scheme-2026-eligibility-status-check',
