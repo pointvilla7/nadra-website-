@@ -280,6 +280,11 @@ export const CATEGORIES: Category[] = [
         "en": "PM Laptop Scheme 2026",
         "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
         "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
+      },
+      {
+        "en": "CM Punjab E-Bike Scheme 2026",
+        "ur": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026",
+        "slug": "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply"
       }
     ]
   },

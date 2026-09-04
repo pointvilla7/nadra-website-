@@ -101,6 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education/university-entry-test-guide-nust-fast-comsats-2026',
     '/education/hec-degree-attestation-new-blockchain-system-2026',
     '/education/ibcc-matric-intermediate-attestation-guide-2026',
+    '/education/cm-punjab-e-bike-scheme-2026-eligibility-apply',
     '/tax/how-to-file-income-tax-return-salaried-iris-2026',
     '/welfare/eobi-pension-check-cnic-2026',
     '/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026',
