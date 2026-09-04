@@ -142,6 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/finance',
     '/finance/how-to-open-bank-account-online-pakistan-2026',
     '/finance/pakistan-iban-number-check-validator-2026',
+    '/finance/roshan-digital-account-2026-eligibility-apply',
     '/education/bise-lahore-result-2026',
     '/business/secp-company-registration-online-2026',
     '/offices/locator',

@@ -378,7 +378,18 @@ export default function OpenBankAccountOnlinePage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Banking &amp; Financial Tools on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/finance/roshan-digital-account-2026-eligibility-apply"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Overseas Banking</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Roshan Digital Account 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">SBP digital account for overseas Pakistanis & foreign investors.</p>
+            </Link>
+
             <Link
               href="/finance/pakistan-iban-number-check-validator-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"

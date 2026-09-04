@@ -1273,6 +1273,11 @@ export const CATEGORIES: Category[] = [
         "en": "Open Bank Account Online 2026",
         "ur": "آن لائن بینک اکاؤنٹ کھولنے کا طریقہ",
         "slug": "/finance/how-to-open-bank-account-online-pakistan-2026"
+      },
+      {
+        "en": "Roshan Digital Account (RDA) 2026",
+        "ur": "روشن ڈیجیٹل اکاؤنٹ اہلیت و اپلائی 2026",
+        "slug": "/finance/roshan-digital-account-2026-eligibility-apply"
       }
     ]
   }
