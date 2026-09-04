@@ -491,6 +491,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Benazir Taleemi Wazaif 2026",
+        "ur": "بے نظیر تعلیمی وظائف چیک و رجسٹریشن 2026",
+        "slug": "/welfare/benazir-taleemi-wazaif-check-online-registration-2026"
+      },
+      {
         "en": "Ehsaas Rashan Riayat 8123",
         "ur": "احساس راشن رعایت 8123 پورٹل",
         "slug": "/welfare/ehsaas-rashan-riayat-program-8123-2026"

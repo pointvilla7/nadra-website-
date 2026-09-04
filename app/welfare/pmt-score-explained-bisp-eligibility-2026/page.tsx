@@ -418,6 +418,58 @@ export default function PmtScoreExplainedPage() {
           ]}
         />
 
+        {/* Related BISP Guides */}
+        <section className="space-y-3">
+          <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
+            Related BISP &amp; Welfare Guides on Pakistan Info Hub
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/welfare/benazir-taleemi-wazaif-check-online-registration-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Education Stipends</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Benazir Taleemi Wazaif Guide →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Stipend rates, 70% attendance rule &amp; Tehsil office registration.</p>
+            </Link>
+
+            <Link
+              href="/welfare/bisp-eligibility-check-by-cnic"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Eligibility Check</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                BISP Eligibility Check by CNIC →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Verify mother’s Kafaalat status on 8171 portal.</p>
+            </Link>
+
+            <Link
+              href="/welfare/bisp-how-to-register"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Registration Guide</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                BISP How to Register (NSER) →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Tehsil dynamic survey procedure for new applicants.</p>
+            </Link>
+
+            <Link
+              href="/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Comparison</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Kafaalat vs Nashonuma vs Taleemi →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Differences in conditionality, venues &amp; documents.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <FAQAccordionVisual
           titleEn="Frequently Asked Questions (PMT Score & Eligibility)"

@@ -341,7 +341,18 @@ export default function BispSubProgramsExplainedPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Social Welfare &amp; Relief Tools on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/welfare/benazir-taleemi-wazaif-check-online-registration-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Education Stipends</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Benazir Taleemi Wazaif Guide →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Online 8171 check, Tehsil office registration &amp; attendance rules.</p>
+            </Link>
+
             <Link
               href="/welfare/bisp-payment-check"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
