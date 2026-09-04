@@ -74,7 +74,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-22',
-      dateModified: '2026-08-22',
+      dateModified: '2026-09-03',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/nadra/lost-stolen-cnic-replacement-2026',
     },
     {
@@ -473,7 +473,7 @@ export default function LostStolenCnicReplacementPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related NADRA Identity Verification Tools on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             <Link
               href="/nadra/cnic-new-rules-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
@@ -483,6 +483,17 @@ export default function LostStolenCnicReplacementPage() {
                 CNIC New Rules 2026 →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Latest biometric &amp; family registration regulations.</p>
+            </Link>
+
+            <Link
+              href="/nadra/nadra-tracking-id-check-online-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Card Logistics</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Track Duplicate Card →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Check reprint status via 8400 SMS &amp; Pak-ID portal.</p>
             </Link>
 
             <Link

@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     'Complete guide to arms license renewal in Punjab, Pakistan: Understand the difference between Federal (All-Pakistan) and Punjab provincial licenses, e-Khidmat Markaz NADRA counters, 2026 fee structure, and the 22-day delivery timeline under Pakistan Arms Rules 2023.',
   keywords: [
     'arms license renewal punjab online 2026',
+    'nadra arms license verification online',
     'pals punjab arms license system nadra',
     'e khidmat markaz arms license renewal fee',
     'federal vs punjab provincial arms license difference',
@@ -72,6 +73,17 @@ const jsonLd = {
           item: 'https://www.pakistaninfohub.com/traffic/arms-license-renewal-punjab-online-2026',
         },
       ],
+    },
+    {
+      '@type': 'Article',
+      headline: 'Arms License Renewal Punjab Online (2026): PALS NADRA & e-Khidmat Markaz',
+      description:
+        'Complete guide to arms license renewal in Punjab, Pakistan: Federal vs Provincial differences, NADRA counters, 2026 fee structure, and online verification.',
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
+      publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
+      datePublished: '2026-08-25',
+      dateModified: '2026-09-03',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/traffic/arms-license-renewal-punjab-online-2026',
     },
     {
       '@type': 'HowTo',
@@ -536,6 +548,31 @@ export default function ArmsLicenseRenewalPunjabPage() {
             },
           ]}
         />
+
+        {/* Section 6.5: NADRA Arms License Verification Online */}
+        <section className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+          <div className="flex items-center gap-2 text-doc-ink dark:text-white font-serif font-extrabold text-xl">
+            <ShieldCheck className="w-6 h-6 text-doc-brass shrink-0" />
+            <h2>NADRA Arms License Verification Online (PALS Database System)</h2>
+          </div>
+          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
+            A common citizen question is: <em>&quot;How does NADRA arms license verification online work?&quot;</em> In Pakistan, individual weapon verification is integrated into the <strong>Punjab Arms License System (PALS)</strong> and the central <strong>NADRA Federal Verification Database</strong>.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5">
+              <strong className="text-doc-ink dark:text-white block font-bold">Smart Card Chip Verification</strong>
+              <p className="text-slate-600 dark:text-slate-300">
+                Every computerized arms license contains a cryptographic chip. Law enforcement, airport security, and excise officers verify weapon validity using handheld smart card readers connected to the NADRA server, confirming bore size, weapon serial number, and licensee photo in real time.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5">
+              <strong className="text-doc-ink dark:text-white block font-bold">Checking Online at e-Khidmat / NADRA Counters</strong>
+              <p className="text-slate-600 dark:text-slate-300">
+                Before purchasing ammunition or renewing, license holders can verify their license status by presenting their original CNIC at any e-Khidmat Markaz or NADRA facilitation desk. There is no open public web search tool to look up weapon owners by name, protecting firearm holder privacy and national security.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Section 7: Related Links */}
         <section className="space-y-3">

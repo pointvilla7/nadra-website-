@@ -80,9 +80,24 @@ export const CATEGORIES: Category[] = [
         "slug": "/nadra/nadra-card-fee"
       },
       {
-        "en": "NADRA Application Tracking",
-        "ur": "نادرا شناختی کارڈ ٹریکنگ",
-        "slug": "/nadra/tracking-id"
+        "en": "NADRA Tracking ID Check 2026",
+        "ur": "نادرا ٹریکنگ آئی ڈی چیک 2026",
+        "slug": "/nadra/nadra-tracking-id-check-online-2026"
+      },
+      {
+        "en": "NADRA Helpline & Complaints 2026",
+        "ur": "نادرا ہیلپ لائن اور شکایات 2026",
+        "slug": "/nadra/nadra-helpline-complaint-directory-2026"
+      },
+      {
+        "en": "NADRA Jobs & Careers 2026",
+        "ur": "نادرا نوکریاں اور کیریئر 2026",
+        "slug": "/nadra/nadra-jobs-careers-how-to-apply-2026"
+      },
+      {
+        "en": "NIMS Vaccination Certificate 2026",
+        "ur": "نمز ویکسینیشن سرٹیفکیٹ 2026",
+        "slug": "/nadra/nims-vaccination-certificate-nadra-2026"
       }
     ]
   },
@@ -392,6 +407,11 @@ export const CATEGORIES: Category[] = [
         "en": "Govt Jobs Pakistan 2026",
         "ur": "سرکاری نوکریاں 2026",
         "slug": "/jobs/latest-govt-jobs-pakistan"
+      },
+      {
+        "en": "NADRA Jobs & Careers 2026",
+        "ur": "نادرا نوکریاں اور کیریئر 2026",
+        "slug": "/nadra/nadra-jobs-careers-how-to-apply-2026"
       },
       {
         "en": "PPSC Jobs Today",

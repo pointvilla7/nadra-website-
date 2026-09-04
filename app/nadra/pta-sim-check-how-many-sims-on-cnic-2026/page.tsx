@@ -77,6 +77,17 @@ const jsonLd = {
       ],
     },
     {
+      '@type': 'Article',
+      headline: 'PTA SIM Check 2026: How Many SIMs on My CNIC (668 & cnic.sims.pk)',
+      description:
+        'Verified guide to checking active mobile connections on your CNIC using official PTA SVMS channels, with essential scam-protection warnings against third-party tracker sites.',
+      author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
+      publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
+      datePublished: '2026-08-23',
+      dateModified: '2026-09-03',
+      mainEntityOfPage: 'https://www.pakistaninfohub.com/nadra/pta-sim-check-how-many-sims-on-cnic-2026',
+    },
+    {
       '@type': 'HowTo',
       name: 'How to Check How Many SIMs are Registered on Your CNIC in Pakistan',
       description:

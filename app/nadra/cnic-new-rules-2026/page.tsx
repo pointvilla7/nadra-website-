@@ -20,7 +20,8 @@ import {
   ArrowRight,
   FileText,
   BadgeCheck,
-  Building
+  Building,
+  Check
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -30,6 +31,8 @@ export const metadata: Metadata = {
     'Complete guide to NADRA CNIC rules in 2026: Free first-time CNIC for citizens 18+, updated Normal/Urgent/Executive fee table, mandatory mobile SIM linking, biometric family verification, Smart CNIC transition, and Interior Ministry reforms.',
   keywords: [
     'NADRA CNIC new rules 2026',
+    'nadra cnic name correction',
+    'nadra family tree online check by cnic',
     'first time CNIC free NADRA',
     'NADRA Smart CNIC fee 2026',
     'NADRA biometric verification rules',
@@ -70,7 +73,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-20',
-      dateModified: '2026-08-21',
+      dateModified: '2026-09-03',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/nadra/cnic-new-rules-2026',
     },
     {
@@ -448,6 +451,97 @@ export default function CnicNewRules2026Page() {
                 Succession Certificate Guide 2026 →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Claim bank accounts and assets under 2025 Amendment Act.</p>
+            </Link>
+          </div>
+        </section>
+
+        {/* High-Value Topic: Family Tree Check & Name Correction */}
+        <section className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+          <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-doc-brass">High-Volume Civic Queries</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-extrabold text-doc-ink dark:text-white mt-1">
+              NADRA Family Tree Check &amp; CNIC Name Correction Rules (2026)
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Two of the most critical civic procedures citizens frequently need are verifying family members listed under their Shajra (to prevent illegal inclusions) and correcting misspelled names.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Family Tree Check */}
+            <div className="p-5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+              <div className="flex items-center gap-2 font-serif font-bold text-base text-doc-ink dark:text-white">
+                <Users className="w-5 h-5 text-amber-500" />
+                <span>NADRA Family Tree Online Check by CNIC (SMS 8009)</span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                To check all registered family members linked under your identity tree (Shajra) without standing in center queues:
+              </p>
+              <div className="p-3 rounded-lg bg-slate-900 text-emerald-400 font-mono text-xs space-y-1">
+                <p className="text-slate-400"># SMS 8009 Family Tree Syntax:</p>
+                <p className="text-white font-bold">[13-digit CNIC] [Date of Card Issue DD-MM-YYYY]</p>
+                <p className="text-amber-300">Example: 3520112345671 24-05-2021</p>
+                <p className="text-slate-400">Send to: <strong>8009</strong> (from your registered mobile SIM)</p>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                NADRA will text back your complete family list. Reply with <strong>2</strong> if all names are correct, or reply with <strong>1</strong> if an alien or unknown person is listed under your family. A representative will contact you from 051-2778009. You can also view this digitally by creating a preview on the official Pak-ID FRC portal.
+              </p>
+            </div>
+
+            {/* CNIC Name Correction */}
+            <div className="p-5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+              <div className="flex items-center gap-2 font-serif font-bold text-base text-doc-ink dark:text-white">
+                <FileText className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                <span>NADRA CNIC Name Correction: Spelling vs Legal Name Change</span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                When modifying your name on a Smart CNIC, rules differ depending on whether it is a typographical error or an entirely new identity name:
+              </p>
+              <ul className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2">
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <span><strong>Minor Typo / Spelling Correction:</strong> If your English or Urdu spelling differs by a letter, present your Matriculation certificate or computerized birth record. Can be processed online via Pak-ID.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <span><strong>Complete Legal Name Change:</strong> Requires publishing an advertisement in one Urdu and one English daily newspaper, an official Gazette notification, and appearance at an NRC counter.</span>
+                </li>
+              </ul>
+              <div className="pt-2">
+                <Link
+                  href="/nadra/cnic-name-address-modification"
+                  className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Read full CNIC Name &amp; Address Modification Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick links to new Tracking & Helpline guides */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <Link
+              href="/nadra/nadra-tracking-id-check-online-2026"
+              className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 hover:border-doc-brass transition flex items-center justify-between group"
+            >
+              <div>
+                <strong className="text-xs font-mono text-doc-brass uppercase block">Application In Process?</strong>
+                <span className="font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal">
+                  NADRA Tracking ID Check Online (8400 &amp; Portal) →
+                </span>
+              </div>
+            </Link>
+            <Link
+              href="/nadra/nadra-helpline-complaint-directory-2026"
+              className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 hover:border-doc-brass transition flex items-center justify-between group"
+            >
+              <div>
+                <strong className="text-xs font-mono text-doc-brass uppercase block">Have a Complaint?</strong>
+                <span className="font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal">
+                  NADRA Helpline 1777 &amp; CMS Complaint Directory →
+                </span>
+              </div>
             </Link>
           </div>
         </section>

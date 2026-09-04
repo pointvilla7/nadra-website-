@@ -238,13 +238,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "cnic-name-address-modification",
     "fullPath": "/nadra/cnic-name-address-modification",
     "categoryId": "nadra",
-    "titleEn": "NADRA CNIC Modification Guide 2026: Name, Address & Marital Status",
-    "titleUr": "نادرا شناختی کارڈ قوائف میں ترمیم: نام، پتہ اور ازدواجی حیثیت 2026",
-    "metaDescriptionEn": "Update your name, address, or marital status on NADRA Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette notification rules.",
-    "metaDescriptionUr": "نادرا شناختی کارڈ پر نام، پتہ اور شادی کے بعد تبدیلی کا آن لائن طریقہ۔ پاک آئی ڈی ایپ فیس اور نادرا سینٹر کے قواعد۔",
-    "directAnswerEn": "To modify data on your NADRA CNIC (such as marital status after marriage, present/permanent address, or spelling corrections), apply online via the Pak-ID app or visit any NADRA Registration Center (NRC). For Smart CNIC (Chip), fees are Normal PKR 750 (31 days), Urgent PKR 1,500 (15 days), and Executive PKR 2,500 (7 days). For traditional plain CNIC, modification fees are Normal PKR 400, Urgent PKR 1,150, and Executive PKR 2,150.",
-    "directAnswerUr": "شناختی کارڈ پر ازدواجی حیثیت، پتہ یا نام میں ترمیم کے لیے پاک آئی ڈی ایپ یا نادرا سینٹر سے رجوع کریں۔ اسمارٹ کارڈ پر ترمیم فیس: نارمل 750 روپے، ارجنٹ 1500 روپے اور ایگزیکٹو 2500 روپے ہے۔ سادہ کارڈ پر ترمیم فیس: نارمل 400 روپے، ارجنٹ 1150 اور ایگزیکٹو 2150 روپے ہے۔ اصل دستاویزات (نکاح نامہ، گزٹ نوٹیفکیشن وغیرہ) ہمراہ لائیں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "NADRA CNIC Name Correction & Modification Guide 2026: Address & Marital Status",
+    "titleUr": "نادرا شناختی کارڈ قوائف و نام میں درستگی: پتہ اور ازدواجی حیثیت 2026",
+    "metaDescriptionEn": "Official guide to NADRA CNIC name correction, spelling changes, address update, or marital status on Smart CNIC online via Pak-ID. Fee table, mandatory proof documents, and Gazette rules.",
+    "metaDescriptionUr": "نادرا شناختی کارڈ پر نام کی درستی، سپیلنگ کی تبدیلی، پتہ اور شادی کے بعد ترمیم کا آن لائن طریقہ۔ پاک آئی ڈی ایپ فیس اور قواعد۔",
+    "directAnswerEn": "To modify data or perform name correction on your NADRA CNIC (such as typographical spelling errors, marital status after marriage, present/permanent address), apply online via the Pak-ID app or visit any NADRA Registration Center (NRC). For Smart CNIC (Chip), modification fees are Normal PKR 750 (31 days), Urgent PKR 1,500 (15 days), and Executive PKR 2,500 (7 days). For traditional plain CNIC, fees are Normal PKR 400, Urgent PKR 1,150, and Executive PKR 2,150. Minor typos require school certificates, while full legal name changes require newspaper advertisements and gazette notifications.",
+    "directAnswerUr": "شناختی کارڈ پر نام کی درستی، ازدواجی حیثیت یا پتہ کی تبدیلی کے لیے پاک آئی ڈی ایپ یا نادرا سینٹر سے رجوع کریں۔ اسمارٹ کارڈ فیس: نارمل 750 روپے، ارجنٹ 1500 روپے اور ایگزیکٹو 2500 روپے ہے۔ معمولی غلطی کے لیے تعلیمی سند اور مکمل نام بدلنے کے لیے گزٹ نوٹیفکیشن درکار ہوتا ہے۔",
+    "lastVerified": "September 3, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID App",
       "url": "https://id.nadra.gov.pk/"
@@ -20043,6 +20043,242 @@ export const ARTICLES: Record<string, Article> = {
       "/property/property-tax-online-check-pay-2026",
       "/tax/withholding-tax-rates-filers-non-filers"
     ]
+  },
+  "nadra-tracking-id-check-online-2026": {
+    "slug": "nadra-tracking-id-check-online-2026",
+    "fullPath": "/nadra/nadra-tracking-id-check-online-2026",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Tracking ID Check Online 2026 – CNIC Status via 8400 SMS & Portal",
+    "titleUr": "نادرا ٹریکنگ آئی ڈی چیک آن لائن: 8400 ایس ایم ایس اور پاک آئی ڈی پورٹل سے سٹیٹس معلوم کریں",
+    "metaDescriptionEn": "Complete guide to NADRA Tracking ID check online: Track CNIC, NICOP, and FRC status via SMS 8400 or id.nadra.gov.pk. Understand status meanings, receipt token format, and courier tracking.",
+    "metaDescriptionUr": "12 ہندسوں کی نادرا ٹریکنگ آئی ڈی یا 8400 پر ایس ایم ایس کے ذریعے اپنے شناختی کارڈ کی تیاری کی صورتحال مفت آن لائن چیک کریں۔",
+    "directAnswerEn": "To track your NADRA application: Send your 10 to 12-digit Tracking ID via SMS to shortcode 8400 (costs approx Rs. 2 + tax across Jazz, Zong, Telenor, and Ufone) or visit id.nadra.gov.pk to track for free online. The automated system returns your exact processing milestone: In Process, Approved & Sent for Printing, Dispatched, Ready for Collection at NRC, or Objection Raised.",
+    "directAnswerUr": "اپنے فارم کا سٹیٹس جاننے کے لیے 10 سے 12 ہندسوں کا ٹریکنگ نمبر 8400 پر ایس ایم ایس کریں یا id.nadra.gov.pk پر مفت دیکھیں۔",
+    "lastVerified": "September 3, 2026",
+    "officialSource": {
+      "name": "NADRA Pak-ID Tracking Portal",
+      "url": "https://id.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Digital Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "SMS 8400 Tracking Inquiry",
+        "serviceUr": "ایس ایم ایس 8400 انکوائری",
+        "normal": "PKR 2 + tax per SMS",
+        "urgent": "Instant Reply",
+        "executive": "All Mobile Networks"
+      },
+      {
+        "serviceEn": "Online Web Tracking (Pak-ID Portal)",
+        "serviceUr": "آن لائن ویب ٹریکنگ (پاک آئی ڈی)",
+        "normal": "PKR 0 (Free)",
+        "urgent": "Instant Web Dashboard",
+        "executive": "Real-time Updates"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Locate 10-12 Digit Tracking ID",
+        "titleUr": "10 سے 12 ہندسوں کا ٹریکنگ نمبر تلاش کریں",
+        "detailEn": "Find the Tracking ID printed at the top of your NADRA processing token receipt slip.",
+        "detailUr": "فیس رسید پر لکھا 10 سے 12 ہندسوں کا ٹریکنگ نمبر دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Query via 8400 or id.nadra.gov.pk",
+        "titleUr": "8400 پر ایس ایم ایس یا پورٹل پر چیک کریں",
+        "detailEn": "Send SMS without spaces to 8400, or log into Pak-ID tracking dashboard.",
+        "detailUr": "8400 پر میسج بھیجیں یا پورٹل پر لاگ ان ہو کر چیک کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Where do I find my Tracking ID?",
+        "questionUr": "ٹریکنگ نمبر کہاں لکھا ہوتا ہے؟",
+        "answerEn": "It is printed at the top of the paper receipt slip given at the NADRA counter or in your Pak-ID portal inbox.",
+        "answerUr": "یہ نادرا کاؤنٹر سے ملنے والی پرچی کے اوپر لکھا ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Complete official guide to checking NADRA tracking status via SMS 8400 and Pak-ID online.",
+    "contentUr": "نادرا ٹریکنگ آئی ڈی آن لائن اور 8400 ایس ایم ایس سے چیک کرنے کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/nadra/cnic-new-rules-2026",
+      "/nadra/b-form-frc-status-check",
+      "/nadra/lost-stolen-cnic-replacement-2026",
+      "/nadra/nadra-helpline-complaint-directory-2026"
+    ]
+  },
+  "nadra-jobs-careers-how-to-apply-2026": {
+    "slug": "nadra-jobs-careers-how-to-apply-2026",
+    "fullPath": "/nadra/nadra-jobs-careers-how-to-apply-2026",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Jobs & Careers 2026 – How to Apply, Official Portal & Scam Warnings",
+    "titleUr": "نادرا میں ملازمت کا طریقہ کار: آفیشل پورٹل، واک ان ٹیسٹ اور جعلسازی سے بچاؤ",
+    "metaDescriptionEn": "Complete evergreen guide to NADRA careers: Official application process via careers.nadra.gov.pk, IT & software roles, NRC customer service & data entry walk-in tests, and scam warnings.",
+    "metaDescriptionUr": "نادرا میں ملازمت کے لیے سرکاری پورٹل، واک ان ٹیسٹ اور جعلی بھرتیوں سے بچاؤ کی مکمل معلوماتی گائیڈ۔",
+    "directAnswerEn": "NADRA recruits through its dedicated career portal at careers.nadra.gov.pk for software, database, and managerial roles, and via published walk-in tests at Regional Head Offices for customer service and data entry operators. NADRA never asks for fees to personal mobile accounts.",
+    "directAnswerUr": "نادرا careers.nadra.gov.pk کے ذریعے آئی ٹی آسامیوں اور ریجنل آفسز میں واک ان ٹیسٹ کے ذریعے کاؤنٹر سٹاف بھرتی کرتا ہے۔",
+    "lastVerified": "September 3, 2026",
+    "officialSource": {
+      "name": "NADRA Careers Portal",
+      "url": "https://careers.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Recruitment Specialist"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Departmental Application / Testing Fee",
+        "serviceUr": "محکمہ جاتی درخواست و امتحانی فیس",
+        "normal": "PKR 0 (100% Free)",
+        "urgent": "No Charges",
+        "executive": "Zero Private Wallet Fees"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Visit careers.nadra.gov.pk",
+        "titleUr": "سرکاری پورٹل careers.nadra.gov.pk دیکھیں",
+        "detailEn": "Check active job circulars on the official domain and national print newspapers.",
+        "detailUr": "آفیشل پورٹل اور اخبارات میں شائع شدہ اشتہارات دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does NADRA charge job test fees?",
+        "questionUr": "کیا نادرا ٹیسٹ فیس لیتا ہے؟",
+        "answerEn": "No. Departmental walk-in tests and recruitment at NADRA are completely free of charge.",
+        "answerUr": "ہرگز نہیں! نادرا بھرتی کے لیے کوئی فیس نہیں لی جاتی۔"
+      }
+    ],
+    "contentEn": "Evergreen guide to official recruitment channels, testing, and scam protection at NADRA.",
+    "contentUr": "نادرا میں ملازمت کے باضابطہ طریقوں اور دھوکے بازوں سے بچاؤ کی تفصیلی گائیڈ۔",
+    "relatedSlugs": [
+      "/jobs/fbr-jobs-careers-how-to-apply-2026",
+      "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
+      "/nadra/nadra-registration-center-locator-guide-2026"
+    ]
+  },
+  "nadra-helpline-complaint-directory-2026": {
+    "slug": "nadra-helpline-complaint-directory-2026",
+    "fullPath": "/nadra/nadra-helpline-complaint-directory-2026",
+    "categoryId": "nadra",
+    "titleEn": "NADRA Helpline & Complaint Directory 2026 – Numbers, 1777 vs 7000 & Portal",
+    "titleUr": "نادرا ہیلپ لائن اور شکایات ڈائریکٹری: 1777، آن لائن پورٹل اور مسئلہ حل کرانے کا طریقہ",
+    "metaDescriptionEn": "Verified directory of NADRA helpline numbers & formal complaint channels: Dial 1777 (mobile) or 051-111-786-100 (landline/overseas). Official CMS complaint portal, email csd@nadra.gov.pk, and tracking tickets.",
+    "metaDescriptionUr": "موبائل سے 1777 یا لینڈ لائن سے 051-111-786-100 ملا کر نادرا سے رابطہ کریں۔ شکایات پورٹل اور ازالے کی تفصیلات۔",
+    "directAnswerEn": "To contact NADRA: Dial shortcode 1777 from any Pakistani mobile network or call +92 51 111 786 100 from landlines and overseas. Note that '7000' is an obsolete shortcode. To file a formal complaint, use the official CMS portal at id.nadra.gov.pk/complaint/ or email csd@nadra.gov.pk.",
+    "directAnswerUr": "موبائل سے 1777 اور لینڈ لائن سے 051-111-786-100 پر رابطہ کریں۔ آن لائن شکایت کے لیے id.nadra.gov.pk/complaint استعمال کریں۔",
+    "lastVerified": "September 3, 2026",
+    "officialSource": {
+      "name": "NADRA Customer Services Division",
+      "url": "https://id.nadra.gov.pk/complaint/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Civic Grievance Specialist"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "CMS Complaint Registration",
+        "serviceUr": "شکایات کا اندراج",
+        "normal": "PKR 0 (Free)",
+        "urgent": "Free Priority Audit",
+        "executive": "Official Resolution in 3-7 Days"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Dial 1777 or Open CMS Portal",
+        "titleUr": "1777 ملائیں یا سی ایم ایس پورٹل کھولیں",
+        "detailEn": "Provide your 13-digit CNIC and 12-digit Tracking ID to register a formal ticket.",
+        "detailUr": "شناختی کارڈ اور رسید کا ٹریکنگ نمبر فراہم کر کے باضابطہ شکایت درج کرائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does 7000 still connect to NADRA?",
+        "questionUr": "کیا 7000 والا نمبر اب بھی کام کرتا ہے؟",
+        "answerEn": "No. 7000 is an obsolete shortcode. Always dial 1777 from mobile handsets.",
+        "answerUr": "نہیں، 7000 اب بند ہو چکا ہے۔ اب صرف 1777 پر کال کی جاتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete directory of verified NADRA helplines, dispute channels, and tracking tickets.",
+    "contentUr": "نادرا کے تصدیق شدہ ہیلپ لائن نمبرز اور شکایات کے باقاعدہ اندراج کی تفصیلات۔",
+    "relatedSlugs": [
+      "/nadra/nadra-tracking-id-check-online-2026",
+      "/nadra/nadra-registration-center-locator-guide-2026",
+      "/alerts/pakistan-emergency-helpline-numbers-directory-2026"
+    ]
+  },
+  "nims-vaccination-certificate-nadra-2026": {
+    "slug": "nims-vaccination-certificate-nadra-2026",
+    "fullPath": "/nadra/nims-vaccination-certificate-nadra-2026",
+    "categoryId": "nadra",
+    "titleEn": "NIMS Vaccination Certificate NADRA 2026 – Polio, Travel & Child B-Form Download",
+    "titleUr": "نادرا نمز ویکسینیشن سرٹیفکیٹ: پولیو، بیرون ملک سفر اور بچوں کے بی فارم سے ڈاؤنلوڈ",
+    "metaDescriptionEn": "Complete official guide to NIMS NADRA vaccination certificates: How to download international travel Polio (OPV), Yellow Fever, and COVID-19 certificates at nims.nadra.gov.pk. Rs. 100 fee and Child B-Form linkage.",
+    "metaDescriptionUr": "نمز پورٹل nims.nadra.gov.pk سے پولیو، کورونا اور بیرون ملک سفر کے لیے کیو آر تصدیق شدہ سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "directAnswerEn": "To download an official vaccination certificate: Visit nims.nadra.gov.pk, select your certificate category (Polio Travel Certificate, COVID-19, or Yellow Fever), enter your 13-digit CNIC (or child's B-Form CRC number for minors), and pay the PKR 100 fee online via card, JazzCash, EasyPaisa, or e-Sahulat.",
+    "directAnswerUr": "nims.nadra.gov.pk پر جا کر مطلوبہ سرٹیفکیٹ منتخب کریں، شناختی کارڈ یا بی فارم نمبر لکھیں اور 100 روپے فیس ادا کر کے فوری پرنٹ لیں۔",
+    "lastVerified": "September 3, 2026",
+    "officialSource": {
+      "name": "NIMS NADRA Portal",
+      "url": "https://nims.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Health Documentation Specialist"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Digital Vaccination Certificate Issuance",
+        "serviceUr": "ڈیجیٹل ویکسینیشن سرٹیفکیٹ کا اجرا",
+        "normal": "PKR 100 (One-Time)",
+        "urgent": "Instant PDF Download",
+        "executive": "Lifetime Free Re-printing"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Administer Vaccine at Health Center",
+        "titleUr": "ہسپتال سے ویکسین لگوائیں",
+        "detailEn": "Ensure health staff enters your dose into the NIMS national database.",
+        "detailUr": "ہسپتال کے عملے سے نمز سسٹم میں اندراج کروائیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Download from nims.nadra.gov.pk",
+        "titleUr": "ویب سائٹ سے ڈاؤنلوڈ کریں",
+        "detailEn": "Enter CNIC or B-Form number, pay PKR 100, and download the QR-verified certificate.",
+        "detailUr": "100 روپے فیس ادا کر کے اصل پی ڈی ایف سرٹیفکیٹ ڈاؤنلوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is a Polio certificate required for international travel from Pakistan?",
+        "questionUr": "کیا سفر کے لیے پولیو کارڈ لازمی ہے؟",
+        "answerEn": "Yes. Under WHO regulations, all Pakistani citizens traveling abroad after staying more than 4 weeks require a valid Polio certificate administered within 12 months.",
+        "answerUr": "جی ہاں! عالمی ادارہ صحت کے تحت پاکستان سے باہر سفر کے لیے پولیو سرٹیفکیٹ لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Official guide to generating and downloading international travel and routine childhood vaccination certificates from NIMS NADRA.",
+    "contentUr": "نادرا کے نمز پورٹل سے ویکسینیشن سرٹیفکیٹ ڈاؤنلوڈ کرنے کی مکمل سرکاری رہنمائی۔",
+    "relatedSlugs": [
+      "/nadra/b-form-frc-status-check",
+      "/nadra/b-form-kaise-banaye",
+      "/nadra/nicop-apply-online",
+      "/nadra/nadra-helpline-complaint-directory-2026"
+    ]
   }
 };
+
 

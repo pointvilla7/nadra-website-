@@ -37,6 +37,8 @@ export const metadata: Metadata = {
     'Find your nearest NADRA Registration Center (NRC): Mega 24/7 centers, Executive branches, Mobile Registration Vans (MRVs), and 17,000+ e-Sahulat franchise counters. Verified timings, token rules, and visit checklist.',
   keywords: [
     'nadra registration center locator 2026',
+    'nadra mega center north nazimabad',
+    'nadra branchless banking',
     'nearest nadra office rawalpindi lahore karachi islamabad',
     'nadra mega center timings 24 7',
     'nadra executive center appointment booking',
@@ -81,7 +83,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-30',
-      dateModified: '2026-08-30',
+      dateModified: '2026-09-03',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/nadra/nadra-registration-center-locator-guide-2026',
     },
     {
@@ -371,6 +373,75 @@ export default function NadraCenterLocatorGuidePage() {
           </div>
         </section>
 
+        {/* Dedicated Section: Mega Centers 24/7 (e.g. North Nazimabad) & Branchless Banking */}
+        <section className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+          <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-doc-brass">Specialized Service Tiers</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-extrabold text-doc-ink dark:text-white mt-1">
+              NADRA Mega Centers (24/7) &amp; Branchless Banking Network
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Two of the most frequently searched NADRA facilities are round-the-clock 24/7 Mega Centers and neighborhood branchless banking e-Sahulat counters.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Mega Centers 24/7 Highlight */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-bold">
+                  24/7 NON-STOP
+                </span>
+                <Clock className="w-5 h-5 text-emerald-500" />
+              </div>
+              <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white">
+                NADRA Mega Centers: 24/7 Round-the-Clock Facilities
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
+                To serve working professionals and eliminate daylight rush, NADRA operates flagship <strong>24/7 Mega Centers</strong> in metropolitan hubs. These multi-story complexes operate three non-stop shifts with hundreds of automated counters.
+              </p>
+              <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700 pt-3">
+                <p>
+                  <strong>Spotlight: NADRA Mega Center North Nazimabad (Karachi):</strong> Located at Block L, North Nazimabad near Sakhi Hassan, this is Karachi’s busiest 24/7 Mega hub. It features dedicated executive female counters, senior citizen priority lanes, computerized queue tokens, and full enrollment capabilities (Smart CNIC, NICOP, FRC, and CRC B-Form).
+                </p>
+                <p>
+                  <strong>Other Major 24/7 Mega Centers:</strong> Karachi (Siemens Chowrangi SITE &amp; DHA Phase 1), Lahore (DHA Phase 4 Commercial &amp; Shimla Hill), Islamabad (Mauve Area G-10), and Rawalpindi (Murree Road Rehmanabad).
+                </p>
+              </div>
+            </div>
+
+            {/* Branchless Banking & e-Sahulat */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono text-xs font-bold">
+                  17,000+ OUTLETS
+                </span>
+                <Store className="w-5 h-5 text-blue-500" />
+              </div>
+              <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white">
+                NADRA Branchless Banking &amp; e-Sahulat Network
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
+                <strong>NADRA Branchless Banking</strong> operates through authorized retail franchise merchants equipped with secure biometric POS terminals across every village, town, and commercial market in Pakistan.
+              </p>
+              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700 pt-3">
+                <li className="flex items-start gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <span><strong>Telecom &amp; Bank Biometric Verification:</strong> Real-time thumbprint authentication for SIM issuance and branchless wallet activation (JazzCash, EasyPaisa, SadaPay).</span>
+                </li>
+                <li className="flex items-start gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <span><strong>Government Fee Collection:</strong> Deposit Rs. 100 NIMS vaccination certificate fees, utility bills (LESCO, K-Electric, SNGPL), and recruitment test fees without visiting commercial bank branches.</span>
+                </li>
+                <li className="flex items-start gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <span><strong>Cash Disbursement:</strong> Financial aid distribution under BISP / Kafalat social welfare programs.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <AdPlacementZone format="horizontal" />
 
         {/* Section: Cross-Linking to Detailed Process Guides */}
@@ -381,7 +452,29 @@ export default function NadraCenterLocatorGuidePage() {
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
             Learn the exact document checklist, fee slabs, and digital tracking procedures before your visit:
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+            <Link
+              href="/nadra/nadra-tracking-id-check-online-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Card Tracking</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                NADRA Tracking ID Check →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Check receipt token status via 8400 SMS and online portal.</p>
+            </Link>
+
+            <Link
+              href="/nadra/nadra-helpline-complaint-directory-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Helpline 1777</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Helpline &amp; Complaint Directory →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Official phone directory, 1777 mobile code, and dispute resolution.</p>
+            </Link>
+
             <Link
               href="/nadra/executive-center-timings-fees"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
@@ -391,17 +484,6 @@ export default function NadraCenterLocatorGuidePage() {
                 Executive Center Timings &amp; Fees →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Executive fee slabs, fast-track token rules &amp; VIP lounge timings.</p>
-            </Link>
-
-            <Link
-              href="/nadra/family-registration-certificate"
-              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
-            >
-              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Family Records</span>
-              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
-                Family Registration Certificate (FRC) →
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">By birth vs by marriage FRC issuance requirements and fees.</p>
             </Link>
 
             <Link
