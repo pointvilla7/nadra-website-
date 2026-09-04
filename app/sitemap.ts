@@ -108,6 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/welfare/pessi-sessi-vs-eobi-difference-registration-2026',
     '/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026',
     '/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026',
+    '/overseas/overseas-pakistanis-voting-rights-current-status-2026',
     '/family-registration/talaq-khula-legal-process-pakistan-2026',
     '/hajj-umrah/zakat-calculator-2026',
     '/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026',

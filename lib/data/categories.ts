@@ -732,6 +732,11 @@ export const CATEGORIES: Category[] = [
         "en": "NICOP Fee 2026 (USA/UK/Gulf)",
         "ur": "نائیکوپ فیس برائے زون اے و بی",
         "slug": "/overseas/nicop-fee-usa-uk-saudi-uae-2026"
+      },
+      {
+        "en": "Overseas Voting Rights Status 2026",
+        "ur": "بیرون ملک پاکستانیوں کے ووٹ کا حق",
+        "slug": "/overseas/overseas-pakistanis-voting-rights-current-status-2026"
       }
     ]
   },

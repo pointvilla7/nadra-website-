@@ -465,6 +465,57 @@ export default function NicopMandatoryEntryRulesPage() {
           ]}
         />
 
+        {/* Related Overseas Guides */}
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <Globe className="w-6 h-6 text-doc-brass" />
+            <h2 className="text-xl font-serif font-bold text-doc-ink dark:text-white">
+              Related Overseas Pakistanis Utilities &amp; Legal Guides
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <Link
+              href="/overseas/overseas-pakistanis-voting-rights-current-status-2026"
+              className="p-4 rounded-xl border border-doc-seal/30 bg-doc-seal/5 dark:bg-doc-seal/10 hover:border-doc-seal transition group"
+            >
+              <span className="text-xs font-mono text-doc-seal font-bold uppercase block">Legal Status 2026</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1 flex items-center justify-between">
+                Overseas Voting Rights Status →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Why online and postal voting is currently inactive, and what expats can actually do.
+              </p>
+            </Link>
+
+            <Link
+              href="/overseas/poc-card-pakistan-apply-online"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Former Citizens &amp; Spouses</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1 flex items-center justify-between">
+                POC Card Online Guide →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Pakistan Origin Card fees, eligibility, and rights for foreign passport holders.
+              </p>
+            </Link>
+
+            <Link
+              href="/nadra/voter-registration-check-cnic-ecp-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-emerald-600 font-bold uppercase block">ECP 8300 Verification</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1 flex items-center justify-between">
+                Voter Registration by CNIC →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Verify your registered home constituency, polling block code, and serial number.
+              </p>
+            </Link>
+          </div>
+        </section>
+
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
           <p className="font-bold text-slate-700 dark:text-slate-400">Official Sources Cited:</p>
