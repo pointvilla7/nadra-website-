@@ -95,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/nadra/nims-vaccination-certificate-nadra-2026',
     '/legal/police-khidmat-markaz-services-guide-2026',
     '/legal/crime-control-department-ccd-punjab-explained-2026',
+    '/legal/pakistan-court-case-status-check-online-2026',
     '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',
     '/certificates/death-certificate-registration-process-2026',
     '/passport/lost-passport-abroad-reissuance-process-2026',

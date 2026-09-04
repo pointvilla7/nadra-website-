@@ -1129,6 +1129,11 @@ export const CATEGORIES: Category[] = [
         "en": "CCD Punjab Police 2026",
         "ur": "کرائم کنٹرول ڈیپارٹمنٹ پنجاب",
         "slug": "/legal/crime-control-department-ccd-punjab-explained-2026"
+      },
+      {
+        "en": "Court Case Status Check 2026",
+        "ur": "عدالتی کیس آن لائن سٹیٹس 2026",
+        "slug": "/legal/pakistan-court-case-status-check-online-2026"
       }
     ]
   },
