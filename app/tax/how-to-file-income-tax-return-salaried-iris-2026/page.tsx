@@ -343,6 +343,17 @@ export default function SalariedTaxFilingGuidePage() {
             </Link>
 
             <Link
+              href="/tax/fbr-active-taxpayer-atl-check-sim-block-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-rose-600 font-bold uppercase block">Enforcement &amp; ATL</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                FBR ATL Check &amp; SIM Block Guide →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Section 114B PTA SIM blocks, 30 Sept deadline &amp; restoration.</p>
+            </Link>
+
+            <Link
               href="/tax/fbr-active-taxpayer-status-helper-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >

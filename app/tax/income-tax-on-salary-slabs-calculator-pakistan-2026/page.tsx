@@ -492,6 +492,22 @@ export default function IncomeTaxOnSalaryPage() {
             </Link>
 
             <Link
+              href="/tax/fbr-active-taxpayer-atl-check-sim-block-2026"
+              className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group flex flex-col justify-between"
+            >
+              <div>
+                <span className="text-xs font-mono text-rose-600 font-bold uppercase block">Enforcement Alert</span>
+                <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                  FBR ATL &amp; SIM Block Guide →
+                </h3>
+                <p className="text-xs text-slate-500 mt-2 leading-relaxed">
+                  Section 114B PTA SIM disconnections, September 30 deadline, and restoration procedure.
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-rose-600 mt-3 inline-block">SIM Unblock Steps →</span>
+            </Link>
+
+            <Link
               href="/tax/fbr-active-taxpayer-status-helper-2026"
               className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group flex flex-col justify-between"
             >

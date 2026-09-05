@@ -653,6 +653,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "FBR ATL Check & SIM Block 2026",
+        "ur": "ایف بی آر اے ٹی ایل چیک اور سم بلاک 2026",
+        "slug": "/tax/fbr-active-taxpayer-atl-check-sim-block-2026"
+      },
+      {
         "en": "Income Tax on Salary Slabs 2026-27",
         "ur": "تنخواہ پر انکم ٹیکس سلیبز اور کیلکولیٹر 2026",
         "slug": "/tax/income-tax-on-salary-slabs-calculator-pakistan-2026"
