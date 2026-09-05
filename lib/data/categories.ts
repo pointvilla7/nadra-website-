@@ -653,6 +653,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-ink dark:text-slate-200",
     "popularSearches": [
       {
+        "en": "FBR POS Invoice Verification 2026",
+        "ur": "ایف بی آر رسید تصدیق و انعامی اسکیم 2026",
+        "slug": "/tax/fbr-pos-invoice-verification-prize-scheme-2026"
+      },
+      {
         "en": "FBR ATL Check & SIM Block 2026",
         "ur": "ایف بی آر اے ٹی ایل چیک اور سم بلاک 2026",
         "slug": "/tax/fbr-active-taxpayer-atl-check-sim-block-2026"

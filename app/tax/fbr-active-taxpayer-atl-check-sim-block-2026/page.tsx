@@ -702,20 +702,20 @@ export default function Page() {
             </Link>
 
             <Link
-              href="/tax/fbr-filer-status-check-cnic"
+              href="/tax/fbr-pos-invoice-verification-prize-scheme-2026"
               className="p-4 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 hover:border-doc-seal transition space-y-1.5 group flex flex-col justify-between"
             >
               <div className="space-y-1">
-                <span className="text-[11px] font-mono text-amber-600 dark:text-amber-400 font-bold">CNIC Verification</span>
+                <span className="text-[11px] font-mono text-purple-600 dark:text-purple-400 font-bold">POS Verification</span>
                 <h4 className="font-serif font-bold text-sm text-doc-ink dark:text-slate-100 group-hover:text-doc-seal transition">
-                  FBR Filer Status Check by CNIC
+                  FBR POS Invoice Verification
                 </h4>
                 <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
-                  Direct online lookup for Active Taxpayer List standing, NTN registration status, and tax year validity.
+                  Verify retail shopping receipts on Tax Asaan or SMS 9966, Pakki Receipt rules &amp; prize scheme status.
                 </p>
               </div>
               <span className="text-xs font-mono font-bold text-doc-seal dark:text-red-300 flex items-center gap-1 pt-2">
-                <span>Check Filer Status</span>
+                <span>Check POS Receipt</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Link>
