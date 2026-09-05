@@ -803,6 +803,19 @@ export default function FBRJobsCareersHowToApplyPage() {
             </Link>
 
             <Link
+              href="/jobs/fbr-jobs-syllabus-past-papers-test-prep-2026"
+              className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-doc-brass transition group shadow-sm"
+            >
+              <span className="text-xs font-mono font-bold text-doc-seal dark:text-red-400">SYLLABUS &amp; PREP</span>
+              <h3 className="text-sm font-bold text-doc-ink dark:text-white group-hover:text-doc-seal transition mt-1">
+                FBR Jobs Syllabus, Sepoy Criteria &amp; Past Papers 2026
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">
+                Cadre-specific syllabi, Sepoy physical standards, FPSC vs RTO testing, and roll number slip downloads.
+              </p>
+            </Link>
+
+            <Link
               href="/tax/fbr-active-taxpayer-status-helper-2026"
               className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-doc-brass transition group shadow-sm"
             >

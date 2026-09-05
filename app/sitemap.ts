@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/alerts/pakistan-emergency-helpline-numbers-directory-2026',
     '/jobs/verified-govt-jobs-sources-avoid-scams-2026',
     '/jobs/fbr-jobs-careers-how-to-apply-2026',
+    '/jobs/fbr-jobs-syllabus-past-papers-test-prep-2026',
     '/tax/fbr-property-valuation-tables-explained-2026',
     '/traffic/punjab-excise-vehicle-verification-2026',
     '/traffic/sindh-excise-vehicle-verification-2026',

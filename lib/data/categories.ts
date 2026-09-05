@@ -384,6 +384,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/jobs/verified-govt-jobs-sources-avoid-scams-2026"
       },
       {
+        "en": "FBR Jobs Syllabus & Past Papers 2026",
+        "ur": "ایف بی آر سلیبس و پاسٹ پیپرز 2026",
+        "slug": "/jobs/fbr-jobs-syllabus-past-papers-test-prep-2026"
+      },
+      {
         "en": "FBR Jobs & Careers 2026",
         "ur": "ایف بی آر نوکریاں و کیریئر گائیڈ 2026",
         "slug": "/jobs/fbr-jobs-careers-how-to-apply-2026"
