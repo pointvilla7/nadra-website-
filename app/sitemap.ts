@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education/9th-class-result-2026-quetta-board',
     '/education/university-merit-list-checker-2026',
     '/education/hec-scholarship-status-2026',
+    '/education/hec-scholarship-pakistan',
     '/traffic/token-tax-calculator-2026',
     '/traffic/vehicle-verification-online-2026',
     '/loans/emi-calculator-2026',

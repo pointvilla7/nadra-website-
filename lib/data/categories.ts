@@ -290,6 +290,11 @@ export const CATEGORIES: Category[] = [
         "en": "CM Punjab E-Bike Scheme 2026",
         "ur": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026",
         "slug": "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply"
+      },
+      {
+        "en": "HEC Scholarships Guide 2026 (Need-Based & Foreign)",
+        "ur": "ایچ ای سی سکالرشپس گائیڈ 2026 (قومی و بین الاقوامی)",
+        "slug": "/education/hec-scholarship-pakistan"
       }
     ]
   },

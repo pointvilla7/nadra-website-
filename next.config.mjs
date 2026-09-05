@@ -61,6 +61,46 @@ const nextConfig = {
       },
       // 3. Merged & Alias page redirects (1-hop direct to final live page)
       {
+        source: '/education/hec-scholarships-pakistan-2026-eligibility-apply',
+        destination: '/education/hec-scholarship-pakistan',
+        permanent: true,
+      },
+      {
+        source: '/banking',
+        destination: '/finance',
+        permanent: true,
+      },
+      {
+        source: '/banking/:slug+',
+        destination: '/finance/:slug+',
+        permanent: true,
+      },
+      {
+        source: '/passports',
+        destination: '/passport',
+        permanent: true,
+      },
+      {
+        source: '/passports/:slug+',
+        destination: '/passport/:slug+',
+        permanent: true,
+      },
+      {
+        source: '/vehicles',
+        destination: '/traffic',
+        permanent: true,
+      },
+      {
+        source: '/vehicles/:slug+',
+        destination: '/traffic/:slug+',
+        permanent: true,
+      },
+      {
+        source: '/employment/pessi-sessi-vs-eobi-difference-registration-2026',
+        destination: '/welfare/pessi-sessi-vs-eobi-difference-registration-2026',
+        permanent: true,
+      },
+      {
         source: '/legal/police-character-certificate-apply-online',
         destination: '/certificates/police-character-certificate-online-apply-2026',
         permanent: true,
