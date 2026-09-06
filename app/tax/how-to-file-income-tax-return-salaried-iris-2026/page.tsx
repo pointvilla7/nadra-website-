@@ -73,7 +73,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-22',
-      dateModified: '2026-08-22',
+      dateModified: '2026-09-06',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/tax/how-to-file-income-tax-return-salaried-iris-2026',
     },
     {
@@ -163,6 +163,29 @@ export default function SalariedTaxFilingGuidePage() {
           answerEn="Any individual whose salary constitutes more than 50% of their total taxable annual income can use the simplified Declaration Form 114(I) on FBR IRIS 2.0 (iris.fbr.gov.pk). Login with your 13-digit CNIC, declare gross salary and employer tax deductions, reconcile your Section 116 wealth statement to zero, and submit before September 30."
           answerUr="وہ تمام افراد جن کی سالانہ آمدن کا 50 فیصد یا اس سے زائد حصہ تنخواہ پر مشتمل ہو، وہ ایف بی آر پورٹل (iris.fbr.gov.pk) پر آسان فارم 114(I) جمع کروا سکتے ہیں۔ شناختی کارڈ سے لاگ ان کریں، تنخواہ اور کٹوتی کا اندراج کریں، ویلتھ اسٹیٹمنٹ ریکنسائل کریں اور 30 ستمبر سے پہلے فائل کریں۔"
         />
+
+        {/* SRO 1495(I)/2026 Form Revision Alert Callout */}
+        <section className="p-4 sm:p-5 rounded-2xl bg-amber-500/10 border-2 border-amber-500/40 text-amber-950 dark:text-amber-200 font-sans shadow-sm">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+            <div className="space-y-1 text-xs sm:text-sm leading-relaxed">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-mono font-extrabold uppercase px-2 py-0.5 rounded bg-amber-500/20 text-amber-900 dark:text-amber-300 text-[10px]">
+                  FBR STATUTORY AMENDMENT (SEPTEMBER 2, 2026)
+                </span>
+                <span className="font-bold text-amber-900 dark:text-amber-100">
+                  SRO 1495(I)/2026: Return Form 114 Second Schedule Revision
+                </span>
+              </div>
+              <p className="text-slate-700 dark:text-slate-300">
+                On <strong>September 2, 2026</strong>, FBR notified SRO 1495(I)/2026 amending the Second Schedule to the Income Tax Rules 2002 by adding <strong>Part-II-ZE</strong> (Salaried Individuals Return Form 114), <strong>Part-II-ZF</strong> (AOPs), <strong>Part-II-ZG</strong> (Business), and <strong>Part-II-ZH</strong> (Transitional Schedules).
+              </p>
+              <p className="text-[11px] text-amber-900 dark:text-amber-200 font-semibold">
+                ⚠️ <strong>Filing Guidance</strong>: If your IRIS 2.0 portal displays updated sub-schedules or restructured fields under Declaration Form 114, these reflect this September 2026 gazette amendment. Do not be alarmed if minor field codes differ from older tutorial screenshots. Ensure submission before the <strong>30 September 2026</strong> deadline.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Section 1: Pakistan's Tax Year vs Calendar Year Clarification */}
         <section className="space-y-4">

@@ -10941,19 +10941,19 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/fbr-bank-account-tax-deduction"
     ]
   },
-  "income-tax-return-filing-guide": {
+    "income-tax-return-filing-guide": {
     "slug": "income-tax-return-filing-guide",
     "fullPath": "/tax/income-tax-return-filing-guide",
     "categoryId": "tax",
-    "titleEn": "Income Tax Return Filing Guide Pakistan 2026 (Salaried & Business)",
-    "titleUr": "انکم ٹیکس ریٹرن فائلنگ گائیڈ 2026 – تنخواہ دار اور کاروباری افراد",
-    "metaDescriptionEn": "Complete tutorial for filing annual income tax returns in Pakistan 2026 on FBR Iris. Learn salaried tax slabs, wealth statement reconciliation, and Nil returns.",
-    "metaDescriptionUr": "ایف بی آر آئرس پر سالانہ انکم ٹیکس ریٹرن فائل کرنے کی مکمل رہنمائی۔ تنخواہ دار طبقے کے ٹیکس سلیب، ویلتھ ری کنسیلیشن اور نل ریٹرن کا طریقہ۔",
-    "directAnswerEn": "To file your annual income tax return in Pakistan for Tax Year 2026, log in to FBR Iris (iris.fbr.gov.pk), select Declaration Form 114(1), input your gross salary or business turnover, claim adjustable withholding taxes from your mobile and vehicle certificates, reconcile your net assets in Wealth Statement 116, and submit using your 4-digit PIN.",
-    "directAnswerUr": "سال 2026 کا انکم ٹیکس ریٹرن فائل کرنے کے لیے ایف بی آر آئرس iris.fbr.gov.pk پر لاگ ان کریں، فارم 114(1) میں اپنی سالانہ تنخواہ یا کاروباری آمدن درج کریں، گاڑی اور موبائل پر کٹنے والے ٹیکس ایڈجسٹ کریں اور ویلتھ سٹیٹمنٹ فارم 116 مکمل کر کے پن کوڈ سے جمع کریں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Income Tax Return Filing Guide Pakistan 2026 (Salaried & Business) | SRO 1495(I) Updated",
+    "titleUr": "انکم ٹیکس ریٹرن فائلنگ گائیڈ 2026 – تنخواہ دار اور کاروباری افراد (ایس آر او 1495 اپڈیٹ)",
+    "metaDescriptionEn": "Complete tutorial for filing annual income tax returns in Pakistan for Tax Year 2026 on FBR Iris. Updated for SRO 1495(I)/2026 Second Schedule amendments (Part-II-ZE to ZH) and 30 September deadline.",
+    "metaDescriptionUr": "ایف بی آر آئرس پر سالانہ انکم ٹیکس ریٹرن فائل کرنے کی مکمل رہنمائی۔ نئے ایس آر او 1495(I)/2026 کے مطابق تنخواہ دار طبقے کے سلیب، سیکنڈ شیڈول فارم اور ویلتھ ری کنسیلیشن۔",
+    "directAnswerEn": "To file your annual income tax return in Pakistan for Tax Year 2026, log in to FBR Iris (iris.fbr.gov.pk) under the updated Second Schedule framework (SRO 1495(I)/2026 Parts ZE-ZH), select Declaration Form 114(1), input your gross salary or turnover, adjust withholding taxes (mobile, vehicle, bank), reconcile Wealth Statement 116 to exactly 0.00, and submit with your 4-digit PIN before September 30, 2026.",
+    "directAnswerUr": "ٹیکس سال 2026 کے لیے ایف بی آر کے نئے ایس آر او 1495(I)/2026 فریم ورک کے تحت iris.fbr.gov.pk پر لاگ ان کریں، فارم 114(1) میں تنخواہ یا کاروباری آمدن درج کریں، ودہولڈنگ ٹیکس ایڈجسٹ کریں اور ویلتھ سٹیٹمنٹ 116 مکمل کر کے 30 ستمبر 2026 سے پہلے پن کوڈ سے جمع کریں۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
-      "name": "FBR Iris Portal",
+      "name": "FBR Iris Portal & SRO 1495(I)/2026",
       "url": "https://iris.fbr.gov.pk/"
     },
     "author": {
@@ -10962,7 +10962,7 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Salaried Income Tax Return Submission",
+        "serviceEn": "Salaried Income Tax Return Submission (Part-II-ZE)",
         "serviceUr": "تنخواہ دار طبقے کی ریٹرن فائلنگ",
         "normal": "100% FREE (Govt)",
         "urgent": "Immediate Acknowledgement",
@@ -10970,7 +10970,7 @@ export const ARTICLES: Record<string, Article> = {
         "validity": "Tax Year 2026"
       },
       {
-        "serviceEn": "Business Tax Audit Assessment",
+        "serviceEn": "Business Tax Return Assessment (Part-II-ZG)",
         "serviceUr": "کاروباری ٹیکس ڈیکلریشن",
         "normal": "Self-Assessment (Sec 120)",
         "urgent": "Instant CPR Generation",
@@ -10983,36 +10983,55 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 1,
         "titleEn": "Log in to Iris 2.0 with CNIC & Password",
         "titleUr": "آئرس میں لاگ ان کریں",
-        "detailEn": "Visit iris.fbr.gov.pk and enter your 13-digit CNIC and password.",
+        "detailEn": "Visit iris.fbr.gov.pk and enter your 13-digit CNIC and password. Ensure your active profile data matches your current mobile and email.",
         "detailUr": "شناختی کارڈ نمبر اور پاس ورڈ درج کر کے لاگ ان کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Fill Salary / Income Details (Code 1000)",
-        "titleUr": "تنخواہ اور آمدن کا اندراج کریں",
-        "detailEn": "Enter total annual gross salary received in Tax Year (July 1 to June 30).",
-        "detailUr": "سال بھر کی کل تنخواہ کا ریکارڈ درج کریں۔"
+        "titleEn": "Select Declaration Form 114(1) (Revised Schedule)",
+        "titleUr": "ڈیکلریشن فارم 114(1) منتخب کریں",
+        "detailEn": "Under Declaration, open Form 114(1) for Tax Year 2026 (incorporating SRO 1495(I)/2026 Part-II-ZE for salaried persons or Part-II-ZG for business).",
+        "detailUr": "ڈیکلریشن مینو سے ٹیکس سال 2026 کا نظرثانی شدہ فارم 114 منتخب کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Claim Adjustable Taxes (Mobile, Vehicle, Bank)",
-        "titleUr": "ایڈجسٹیبل ٹیکس کلیم کریں",
-        "detailEn": "Enter advance tax deducted on mobile cards, electricity bills, and motor vehicle token tax.",
-        "detailUr": "موبائل لوڈ، بجلی کے بل اور گاڑی پر ادا شدہ ٹیکس شامل کریں۔"
+        "titleEn": "Enter Gross Salary & Employer Deductions (Sec 149)",
+        "titleUr": "تنخواہ اور آجر کی ٹیکس کٹوتی درج کریں",
+        "detailEn": "Enter total annual gross salary (July 1 to June 30) under Code 1000, and enter employer tax withheld under Section 149 from your Salary Tax Certificate.",
+        "detailUr": "سالانہ کل تنخواہ کوڈ 1000 میں اور آجر کی ٹیکس کٹوتی سیکشن 149 میں درج کریں۔"
       },
       {
         "stepNumber": 4,
-        "titleEn": "Reconcile Wealth Statement & Net Assets",
+        "titleEn": "Claim Adjustable Withholding Taxes (Sec 236, 234)",
+        "titleUr": "ایڈجسٹیبل ٹیکس کلیم کریں",
+        "detailEn": "Enter advance taxes deducted on mobile phone top-ups (Sec 236), vehicle token taxes (Sec 234), and banking transactions to reduce payable tax.",
+        "detailUr": "موبائل کارڈ، گاڑی کے ٹوکن اور بینک کٹوتی کا ٹیکس ایڈجسٹمنٹ میں شامل کریں۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Reconcile Wealth Statement (Section 116)",
         "titleUr": "ویلتھ سٹیٹمنٹ کا بیلنس برابر کریں",
-        "detailEn": "Ensure 'Unreconciled Amount' in Section 116 is exactly ZERO before final submission.",
-        "detailUr": "یقینی بنائیں کہ غیر مطابقت شدہ رقم (Unreconciled Amount) بالکل صفر (0) ہو۔"
+        "detailEn": "Declare opening assets, household expenses, and closing assets as of 30 June. Verify 'Unreconciled Amount' is exactly 0.00 and submit with 4-digit PIN before September 30.",
+        "detailUr": "اثاثے اور گھریلو اخراجات درج کر کے یقینی بنائیں کہ Unreconciled Amount صفر (0) ہو۔"
       }
     ],
     "faqs": [
       {
+        "questionEn": "What did FBR change in SRO 1495(I)/2026 right before the 30 September deadline?",
+        "questionUr": "ایف بی آر نے 30 ستمبر کی ڈیڈ لائن سے قبل ایس آر او 1495 میں کیا تبدیلیاں کیں؟",
+        "answerEn": "FBR issued SRO 1495(I)/2026 on September 2, 2026, amending the Second Schedule to the Income Tax Rules 2002 by introducing Parts II-ZE (Salaried Individuals), II-ZF (AOPs), II-ZG (Business Individuals), and II-ZH (Transitional Disclosures). This updated electronic return formats for Tax Year 2026 in IRIS.",
+        "answerUr": "ایف بی آر نے 2 ستمبر 2026 کو ایس آر او 1495 جاری کر کے انکم ٹیکس رولز کے سیکنڈ شیڈول میں پارٹ II-ZE، II-ZF، II-ZG اور II-ZH شامل کیے تاکہ ٹیکس سال 2026 کے الیکٹرانک گوشواروں کو اپڈیٹ کیا جا سکے۔"
+      },
+      {
+        "questionEn": "What is the statutory deadline for filing Tax Year 2026 returns in Pakistan?",
+        "questionUr": "ٹیکس سال 2026 کے گوشوارے جمع کروانے کی آخری قانونی تاریخ کیا ہے؟",
+        "answerEn": "Under Section 118 of the Income Tax Ordinance 2001, the statutory deadline for salaried employees, individuals, and Associations of Persons (AOPs) is September 30, 2026. Failing to file by this date results in exclusion from the Active Taxpayer List (ATL) and invites Section 182A surcharges and SIM block orders under Section 114B.",
+        "answerUr": "تنخواہ دار افراد اور کاروباری ایسوسی ایشنز کے لیے آخری قانونی تاریخ 30 ستمبر 2026 ہے۔ تاخیر کی صورت میں ایکٹو ٹیکس پیئر لسٹ سے نام نکل جاتا ہے اور سم بلاک ہونے کا خطرہ ہوتا ہے۔"
+      },
+      {
         "questionEn": "What is the minimum taxable income threshold for salaried persons in Pakistan?",
         "questionUr": "تنخواہ دار افراد کے لیے ٹیکس سے مستثنیٰ سالانہ آمدن کتنی ہے؟",
-        "answerEn": "Under the 2026 tax slabs, annual taxable income up to PKR 600,000 (PKR 50,000/month) is subject to 0% income tax.",
+        "answerEn": "Under the enacted Finance Act provisions for salaried individuals (where salary exceeds 50% of taxable income), annual salary up to PKR 600,000 (PKR 50,000/month) is subject to 0% tax.",
         "answerUr": "سالانہ 6 لاکھ روپے (50 ہزار روپے ماہانہ) تک کی تنخواہ پر انکم ٹیکس کی شرح 0% (مستثنیٰ) ہے۔"
       },
       {
@@ -11020,20 +11039,14 @@ export const ARTICLES: Record<string, Article> = {
         "questionUr": "کیا موبائل لوڈ پر کٹنے والا ٹیکس ایڈجسٹ ہو سکتا ہے؟",
         "answerEn": "Yes, you can obtain an annual tax deduction certificate from your cellular provider (Jazz, Telenor, Zong, Ufone) and enter it under Section 236 in Iris to reduce your payable tax.",
         "answerUr": "جی ہاں! اپنی سم کمپنی سے سالانہ ٹیکس سرٹیفکیٹ لے کر آئرس پورٹل میں درج کر کے ٹیکس میں چھوٹ حاصل کی جا سکتی ہے۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The Federal Board of Revenue (FBR) regulates annual income tax return submissions for salaried employees, business individuals, and association of persons (AOPs) through the unified IRIS 2.0 digital portal.\n\n## Salaried Income Tax Slabs (Finance Act 2026-27)\n\nUnder the prevailing Finance Act provisions for salaried individuals (where salary income constitutes more than 50% of total taxable income):\n\n| Annual Taxable Salary (PKR) | Tax Rate Applicable | Fixed Base Tax |\n| :--- | :--- | :--- |\n| **Up to PKR 600,000** (Up to 50k/mo) | 0% (Exempt) | PKR 0 |\n| **PKR 600,001 to 1,200,000** (50k – 100k/mo) | 1% of amount exceeding 600,000 | PKR 0 |\n| **PKR 1,200,001 to 2,200,000** (100k – 183.3k/mo) | 11% of amount exceeding 1,200,000 | PKR 6,000 |\n| **PKR 2,200,001 to 3,200,000** (183.3k – 266.7k/mo) | 20% of amount exceeding 2,200,000 | PKR 116,000 |\n| **PKR 3,200,001 to 4,100,000** (266.7k – 341.7k/mo) | 25% of amount exceeding 3,200,000 | PKR 316,000 |\n| **PKR 4,100,001 to 5,600,000** (341.7k – 466.7k/mo) | 29% of amount exceeding 4,100,000 | PKR 541,000 |\n| **PKR 5,600,001 to 7,000,000** (466.7k – 583.3k/mo) | 32% of amount exceeding 5,600,000 | PKR 976,000 |\n| **Above PKR 7,000,000** (> 583.3k/mo) | 35% of amount exceeding 7,000,000 | PKR 1,424,000 |\n\n## Essential Return Filing Steps on IRIS 2.0\n\n1. **Access FBR IRIS**: Login at `iris.fbr.gov.pk` using your 13-digit CNIC and password.\n2. **Select Declaration Form 114(1)**: Choose the active tax year and enter your annual gross salary.\n3. **Declare Tax Deductions (Section 149)**: Enter total tax withheld by your employer as shown on your annual Salary Tax Certificate.\n4. **Claim Adjustable Withholding Taxes**: Enter mobile bill tax (Section 236), vehicle token tax (Section 234), and banking deductions.\n5. **Reconcile Wealth Statement (Section 116)**: Input your opening assets, annual household expenses, new asset acquisitions, and ensure \"Unreconciled Amount\" equals exactly **0.00**.\n6. **Submit with 4-Digit PIN**: Finalize submission to update your status on the Active Taxpayer List (ATL).",
-    "contentUr": "## انکم ٹیکس ریٹرن فائلنگ مکمل طریقہ کار\nتنخواہ دار ملازمین اور کاروباری افراد کے لیے آئرس پر گوشوارے جمع کروانے کی تفصیلات۔",
+    "contentEn": "The Federal Board of Revenue (FBR) regulates annual income tax return submissions for salaried employees, business individuals, and association of persons (AOPs) through the unified IRIS 2.0 digital portal.\n\n> ⚠️ **CRITICAL STATUTORY UPDATE: S.R.O. 1495(I)/2026 (September 2, 2026)**\n> The Federal Board of Revenue notified **S.R.O. 1495(I)/2026** on **September 2, 2026**, introducing last-minute statutory amendments to the **Income Tax Rules, 2002** just weeks before the **30 September 2026** deadline. The notification inserts four new parts into the **Second Schedule** following Part-II-ZD:\n> - **Part-II-ZE**: Electronic Return of Income for Salaried Individuals (Form 114)\n> - **Part-II-ZF**: Electronic Return of Income for Association of Persons (AOP)\n> - **Part-II-ZG**: Electronic Return of Income for Business Individuals & Manufacturers\n> - **Part-II-ZH**: Additional Schedules, Minimum Tax & Transitional Disclosures\n>\n> *If your IRIS 2.0 portal displays updated sub-schedules or restructured fields under Declaration Form 114, these reflect this September 2026 gazette amendment. Do not be alarmed if specific field headings differ slightly from older video tutorials.*\n\n## Salaried Income Tax Slabs (Enacted Finance Act Rates)\n\nUnder the prevailing statutory provisions for salaried individuals (where salary income constitutes more than 50% of total taxable income):\n\n| Annual Taxable Salary (PKR) | Tax Rate Applicable | Fixed Base Tax |\n| :--- | :--- | :--- |\n| **Up to PKR 600,000** (Up to 50k/mo) | 0% (Exempt) | PKR 0 |\n| **PKR 600,001 to 1,200,000** (50k – 100k/mo) | 1% of amount exceeding 600,000 | PKR 0 |\n| **PKR 1,200,001 to 2,200,000** (100k – 183.3k/mo) | 11% of amount exceeding 1,200,000 | PKR 6,000 |\n| **PKR 2,200,001 to 3,200,000** (183.3k – 266.7k/mo) | 20% of amount exceeding 2,200,000 | PKR 116,000 |\n| **PKR 3,200,001 to 4,100,000** (266.7k – 341.7k/mo) | 25% of amount exceeding 3,200,000 | PKR 316,000 |\n| **PKR 4,100,001 to 5,600,000** (341.7k – 466.7k/mo) | 29% of amount exceeding 4,100,000 | PKR 541,000 |\n| **PKR 5,600,001 to 7,000,000** (466.7k – 583.3k/mo) | 32% of amount exceeding 5,600,000 | PKR 976,000 |\n| **Above PKR 7,000,000** (> 583.3k/mo) | 35% of amount exceeding 7,000,000 | PKR 1,424,000 |\n\n## Essential Return Filing Steps on IRIS 2.0\n\n1. **Access FBR IRIS**: Login at `iris.fbr.gov.pk` using your 13-digit CNIC and password.\n2. **Select Declaration Form 114(1)**: Choose Tax Year 2026. The system maps your return to the revised Second Schedule (Part-II-ZE for salaried individuals).\n3. **Declare Tax Deductions (Section 149)**: Enter total tax withheld by your employer as shown on your annual Salary Tax Certificate.\n4. **Claim Adjustable Withholding Taxes**: Enter mobile bill tax (Section 236), vehicle token tax (Section 234), and banking deductions under the updated sub-schedules.\n5. **Reconcile Wealth Statement (Section 116)**: Input your opening assets, annual household expenses, new asset acquisitions, and ensure \"Unreconciled Amount\" equals exactly **0.00**.\n6. **Submit with 4-Digit PIN before 30 September**: Finalize submission to secure or retain your active status on the Active Taxpayer List (ATL) and avoid late surcharges under Section 182A.\n\n## Filing Deadline Notice: 30 September 2026\nUnder Section 118 of the Income Tax Ordinance 2001, the statutory deadline for salaried individuals, business proprietors, and AOPs is **30 September 2026**. Filing on time guarantees zero late surcharges and uninterrupted banking and mobile SIM connectivity.",
+    "contentUr": "## انکم ٹیکس ریٹرن فائلنگ مکمل طریقہ کار (ایس آر او 1495 اپڈیٹ)\nایف بی آر آئرس پر نئے سیکنڈ شیڈول فارم کے تحت 30 ستمبر 2026 سے قبل اپنے گوشوارے جمع کروائیں۔",
     "relatedSlugs": [
       "/tax/how-to-become-tax-filer-pakistan-2026",
       "/tax/withholding-tax-rates-filers-non-filers",
-      "/tax/fbr-filer-status-check-cnic"
+      "/tax/fbr-active-taxpayer-atl-check-sim-block-2026"
     ]
   },
   "withholding-tax-rates-filers-non-filers": {
