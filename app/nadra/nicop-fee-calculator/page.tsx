@@ -50,14 +50,14 @@ export default function NicopFeeCalculatorPage() {
     {
       questionEn: 'How much does NICOP cost for USA, UK, Canada, and European applicants?',
       questionUr: 'امریکہ، برطانیہ، کینیڈا اور یورپ کے شہریوں کے لیے نائیکوپ فیس کتنی ہے؟',
-      answerEn: 'For Zone A countries (USA, UK, Canada, Europe, Australia), official NADRA Smart NICOP fees are $39 USD for Normal processing (30–45 working days), $59 USD for Urgent processing (15–20 working days), and $79 USD for Executive processing (7–10 working days).',
-      answerUr: 'زون اے کے ممالک (امریکہ، برطانیہ، کینیڈا، یورپ) کے لیے نائیکوپ فیس 39 ڈالر (نارمل)، 59 ڈالر (ارجنٹ) اور 79 ڈالر (ایگزیکٹو) ہے۔',
+      answerEn: 'For Zone A countries (USA, UK, Canada, Europe, Australia), official NADRA Smart NICOP fees are $39 USD for Normal processing, $57 USD for Urgent processing, and $75 USD for Executive processing.',
+      answerUr: 'زون اے کے ممالک (امریکہ، برطانیہ، کینیڈا، یورپ) کے لیے نائیکوپ فیس 39 ڈالر (نارمل)، 57 ڈالر (ارجنٹ) اور 75 ڈالر (ایگزیکٹو) ہے۔',
     },
     {
       questionEn: 'What are the NICOP fees for Saudi Arabia, UAE, and GCC countries?',
       questionUr: 'سعودی عرب، امارات اور گلف ممالک کے لیے نائیکوپ فیس کتنی ہے؟',
-      answerEn: 'For Zone B countries (Saudi Arabia, UAE, Qatar, Oman, Kuwait, Bahrain), official NICOP fees are $20 USD for Normal processing (30–45 working days), $39 USD for Urgent processing (15–20 working days), and $59 USD for Executive processing (7–10 working days).',
-      answerUr: 'زون بی کے ممالک (سعودی عرب، متحدہ عرب امارات، گلف) کے لیے نائیکوپ فیس 20 ڈالر (نارمل)، 39 ڈالر (ارجنٹ) اور 59 ڈالر (ایگزیکٹو) ہے۔',
+      answerEn: 'For Zone B countries (Saudi Arabia, UAE, Qatar, Oman, Kuwait, Bahrain), official NICOP fees are $20 USD for Normal processing, $30 USD for Urgent processing, and $40 USD for Executive processing.',
+      answerUr: 'زون بی کے ممالک (سعودی عرب، متحدہ عرب امارات، گلف) کے لیے نائیکوپ فیس 20 ڈالر (نارمل)، 30 ڈالر (ارجنٹ) اور 40 ڈالر (ایگزیکٹو) ہے۔',
     },
     {
       questionEn: 'How long does international delivery take for NICOP applications?',
@@ -86,7 +86,7 @@ export default function NicopFeeCalculatorPage() {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
       lowPrice: '20',
-      highPrice: '79',
+      highPrice: '75',
       offerCount: '6',
     },
     provider: {
@@ -122,7 +122,7 @@ export default function NicopFeeCalculatorPage() {
 
         {/* GEO Trust Badge */}
         <GeoTrustBadge
-          lastVerified="August 28, 2026"
+          lastVerified="September 6, 2026"
           officialSource={officialSource}
           author={author}
         />
@@ -132,8 +132,8 @@ export default function NicopFeeCalculatorPage() {
       <DirectAnswerBox
         topicTitleEn="Official NADRA NICOP Fees 2026 (In Short)"
         topicTitleUr="نائیکوپ فیس کا مختصر جائزہ 2026"
-        answerEn="Zone A applicants (USA, UK, Canada, Europe, Australia) pay $39 USD (Normal), $59 USD (Urgent), or $79 USD (Executive). Zone B applicants (Saudi Arabia, UAE, Qatar, GCC) pay $20 USD (Normal), $39 USD (Urgent), or $59 USD (Executive). Apply 100% online via id.nadra.gov.pk with international home delivery."
-        answerUr="زون اے (امریکہ، برطانیہ، کینیڈا، یورپ) کے لیے نائیکوپ فیس $39 (نارمل)، $59 (ارجنٹ) اور $79 (ایگزیکٹو) ہے۔ زون بی (سعودی عرب، امارات، گلف) کے لیے فیس $20 (نارمل)، $39 (ارجنٹ) اور $59 (ایگزیکٹو) ہے۔ آن لائن درخواست id.nadra.gov.pk پر دی جا سکتی ہے۔"
+        answerEn="Zone A applicants (USA, UK, Canada, Europe, Australia) pay $39 USD (Normal), $57 USD (Urgent), or $75 USD (Executive). Zone B applicants (Saudi Arabia, UAE, Qatar, GCC) pay $20 USD (Normal), $30 USD (Urgent), or $40 USD (Executive). Apply 100% online via id.nadra.gov.pk with international home delivery."
+        answerUr="زون اے (امریکہ، برطانیہ، کینیڈا، یورپ) کے لیے نائیکوپ فیس $39 (نارمل)، $57 (ارجنٹ) اور $75 (ایگزیکٹو) ہے۔ زون بی (سعودی عرب، امارات، گلف) کے لیے فیس $20 (نارمل)، $30 (ارجنٹ) اور $40 (ایگزیکٹو) ہے۔ آن لائن درخواست id.nadra.gov.pk پر دی جا سکتی ہے۔"
       />
 
       {/* Standalone Numeric Highlights */}
@@ -141,22 +141,22 @@ export default function NicopFeeCalculatorPage() {
         <div className="p-3.5 rounded-xl doc-card border border-doc-brass/30 bg-white dark:bg-doc-dark-card text-center">
           <span className="text-[10px] font-mono uppercase text-slate-500 font-bold block">Zone A Normal</span>
           <div className="text-lg font-mono font-extrabold text-doc-ink dark:text-white mt-0.5">$39 USD</div>
-          <span className="text-[10px] text-slate-500">30–45 Days</span>
+          <span className="text-[10px] text-slate-500">31 Days</span>
         </div>
         <div className="p-3.5 rounded-xl doc-card border border-doc-brass/30 bg-white dark:bg-doc-dark-card text-center">
           <span className="text-[10px] font-mono uppercase text-slate-500 font-bold block">Zone A Urgent</span>
-          <div className="text-lg font-mono font-extrabold text-doc-seal dark:text-red-400 mt-0.5">$59 USD</div>
-          <span className="text-[10px] text-slate-500">15–20 Days</span>
+          <div className="text-lg font-mono font-extrabold text-doc-seal dark:text-red-400 mt-0.5">$57 USD</div>
+          <span className="text-[10px] text-slate-500">23 Days</span>
         </div>
         <div className="p-3.5 rounded-xl doc-card border border-doc-brass/30 bg-white dark:bg-doc-dark-card text-center">
           <span className="text-[10px] font-mono uppercase text-slate-500 font-bold block">Zone B Normal</span>
           <div className="text-lg font-mono font-extrabold text-doc-ink dark:text-white mt-0.5">$20 USD</div>
-          <span className="text-[10px] text-slate-500">30–45 Days</span>
+          <span className="text-[10px] text-slate-500">31 Days</span>
         </div>
         <div className="p-3.5 rounded-xl doc-card border border-doc-brass/30 bg-white dark:bg-doc-dark-card text-center">
           <span className="text-[10px] font-mono uppercase text-slate-500 font-bold block">Zone B Urgent</span>
-          <div className="text-lg font-mono font-extrabold text-doc-brass mt-0.5">$39 USD</div>
-          <span className="text-[10px] text-slate-500">15–20 Days</span>
+          <div className="text-lg font-mono font-extrabold text-doc-brass mt-0.5">$30 USD</div>
+          <span className="text-[10px] text-slate-500">23 Days</span>
         </div>
       </section>
 
@@ -190,7 +190,7 @@ export default function NicopFeeCalculatorPage() {
               United States of America (USA), United Kingdom (UK), Canada, Australia, New Zealand, European Union (Germany, France, Italy, Spain, Norway, Sweden, Denmark, etc.), Japan, Singapore, and Switzerland.
             </p>
             <div className="pt-2 font-mono text-xs text-doc-seal dark:text-red-400 font-bold">
-              Normal: $39 USD • Urgent: $59 USD • Executive: $79 USD
+              Normal: $39 USD • Urgent: $57 USD • Executive: $75 USD
             </div>
           </div>
 
@@ -205,7 +205,7 @@ export default function NicopFeeCalculatorPage() {
               Kingdom of Saudi Arabia (KSA), United Arab Emirates (UAE: Dubai, Abu Dhabi, Sharjah), Qatar, Sultanate of Oman, Kuwait, Bahrain, Malaysia, and other Asian/African countries.
             </p>
             <div className="pt-2 font-mono text-xs text-doc-seal dark:text-red-400 font-bold">
-              Normal: $20 USD • Urgent: $39 USD • Executive: $59 USD
+              Normal: $20 USD • Urgent: $30 USD • Executive: $40 USD
             </div>
           </div>
         </div>

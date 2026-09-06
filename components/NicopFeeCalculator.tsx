@@ -51,14 +51,14 @@ export const NICOP_FEE_RATES: Record<NicopZone, {
         timelineRoman: '30–45 Working Days',
       },
       urgent: {
-        amount: 59,
+        amount: 57,
         currency: 'USD',
         timelineEn: '15–20 Working Days',
         timelineUr: '15 تا 20 کام کے دن',
         timelineRoman: '15–20 Working Days',
       },
       executive: {
-        amount: 79,
+        amount: 75,
         currency: 'USD',
         timelineEn: '7–10 Working Days',
         timelineUr: '7 تا 10 کام کے دن',
@@ -81,14 +81,14 @@ export const NICOP_FEE_RATES: Record<NicopZone, {
         timelineRoman: '30–45 Working Days',
       },
       urgent: {
-        amount: 39,
+        amount: 30,
         currency: 'USD',
         timelineEn: '15–20 Working Days',
         timelineUr: '15 تا 20 کام کے دن',
         timelineRoman: '15–20 Working Days',
       },
       executive: {
-        amount: 59,
+        amount: 40,
         currency: 'USD',
         timelineEn: '7–10 Working Days',
         timelineUr: '7 تا 10 کام کے دن',

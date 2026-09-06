@@ -76,7 +76,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-23',
-      dateModified: '2026-08-23',
+      dateModified: '2026-09-06',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/nadra/senior-citizen-card-pakistan-explained-2026',
     },
     {

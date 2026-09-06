@@ -68,7 +68,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا شناختی کارڈ منسوخی و فوتیدگی سرٹیفکیٹ کا طریقہ۔ یونین کونسل ڈیتھ سرٹیفکیٹ، فیس اور نادرا سینٹر کے قواعد۔",
     "directAnswerEn": "To cancel a deceased family member's CNIC and obtain a NADRA Cancellation Certificate, visit any NADRA Registration Center (NRC) with the original Union Council Death Certificate, original CNIC of the deceased (to be surrendered), and CNIC of the legal heir. The fee is PKR 500.",
     "directAnswerUr": "فوت شدہ فرد کا شناختی کارڈ منسوخ کروانے کے لیے اصل یونین کونسل ڈیتھ سرٹیفکیٹ، متوفی کا اصل شناختی کارڈ اور وارث کا شناختی کارڈ لے کر نادرا سینٹر جائیں۔ فیس 500 روپے ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -159,7 +159,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا جانشینی سرٹیفکیٹ آن لائن اپلائی کرنے کا طریقہ۔ وارثان کی بائیو میٹرک، فیس شیڈول اور بینک اکاؤنٹ میں رقم منتقلی۔",
     "directAnswerEn": "NADRA issues Succession Certificates within 15 days for legal heirs to claim moveable assets (bank accounts, stocks, vehicles) of deceased citizens. Apply online at succession.nadra.gov.pk or at NRC. Fee is PKR 10,000 for assets up to 100,000 PKR and PKR 20,000 for assets above 100,000 PKR.",
     "directAnswerUr": "نادرا سکسیشن سرٹیفکیٹ 15 دن میں بینک اکاؤنٹس اور گاڑیوں کی وراثت منتقلی کے لیے جاری کیا جاتا ہے۔ 1 لاکھ تک کے اثاثوں پر فیس 10,000 روپے اور 1 لاکھ سے زائد پر 20,000 روپے ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Succession Portal",
       "url": "https://succession.nadra.gov.pk/"
@@ -244,7 +244,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا شناختی کارڈ پر نام کی درستی، سپیلنگ کی تبدیلی، پتہ اور شادی کے بعد ترمیم کا آن لائن طریقہ۔ پاک آئی ڈی ایپ فیس اور قواعد۔",
     "directAnswerEn": "To modify data or perform name correction on your NADRA CNIC (such as typographical spelling errors, marital status after marriage, present/permanent address), apply online via the Pak-ID app or visit any NADRA Registration Center (NRC). For Smart CNIC (Chip), modification fees are Normal PKR 750 (31 days), Urgent PKR 1,500 (15 days), and Executive PKR 2,500 (7 days). For traditional plain CNIC, fees are Normal PKR 400, Urgent PKR 1,150, and Executive PKR 2,150. Minor typos require school certificates, while full legal name changes require newspaper advertisements and gazette notifications.",
     "directAnswerUr": "شناختی کارڈ پر نام کی درستی، ازدواجی حیثیت یا پتہ کی تبدیلی کے لیے پاک آئی ڈی ایپ یا نادرا سینٹر سے رجوع کریں۔ اسمارٹ کارڈ فیس: نارمل 750 روپے، ارجنٹ 1500 روپے اور ایگزیکٹو 2500 روپے ہے۔ معمولی غلطی کے لیے تعلیمی سند اور مکمل نام بدلنے کے لیے گزٹ نوٹیفکیشن درکار ہوتا ہے۔",
-    "lastVerified": "September 3, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID App",
       "url": "https://id.nadra.gov.pk/"
@@ -323,7 +323,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا ایگزیکٹو سینٹر کے اوقات کار، ہفتہ وار رخصت، ایگزیکٹو شناختی کارڈ فیس 2500 روپے اور لائیو ٹوکن سٹیٹس۔",
     "directAnswerEn": "NADRA Executive Registration Centers (NRCs) offer air-conditioned lounges, 24/7 or extended timings (8:00 AM to 10:00 PM including Saturdays), and priority processing. Executive Smart CNIC fee is PKR 2,500 with delivery within 7 working days.",
     "directAnswerUr": "نادرا ایگزیکٹو سینٹر ہفتے کے دن بھی کھلے رہتے ہیں اور ایگزیکٹو شناختی کارڈ کی فیس 2500 روپے ہے جس کی ڈیلیوری 7 دنوں میں ہوتی ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA NRC Directory",
       "url": "https://www.nadra.gov.pk/"
@@ -388,7 +388,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "پاک آئی ڈی موبائل ایپ پر فنگر پرنٹ سکین کے مسائل، لائٹ ایڈجسٹمنٹ اور بایومیٹرک ایرر کا آسان ترین حل۔",
     "directAnswerEn": "If the Pak-ID mobile app fails to capture finger biometrics, place your hand over a plain white sheet of paper in bright natural daylight, hold your smartphone camera 6 inches away, and align your 4 fingers inside the green guide box.",
     "directAnswerUr": "پاک آئی ڈی ایپ پر بائیو میٹرک ایرر دور کرنے کے لیے ہاتھ کو سفید کاغذ پر رکھیں اور تیز قدرتی روشنی میں کیمرہ 6 انچ کے فاصلے پر رکھیں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID App Technical Support",
       "url": "https://id.nadra.gov.pk/"
@@ -3320,7 +3320,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نیا نادرا سمارٹ شناختی کارڈ بنوانے کا مکمل طریقہ۔ ضروری دستاویزات، نادرا فیس کا نیا شیڈول، بایومیٹرک تصدیق، ٹوکن اور آن لائن ٹریکنگ کی آسان اور تفصیلی رہنمائی۔",
     "directAnswerEn": "To get a new NADRA Smart CNIC in Pakistan, citizens turning 18 must visit any NADRA Registration Center (NRC). Bring your original B-Form (CRC), original matric certificate or birth certificate, father and mother's original CNICs, and one blood relative for mandatory biometric cross-verification. Normal delivery fee is PKR 750 (31 working days), Urgent is PKR 1,500 (15 working days), and Executive is PKR 2,500 (7 working days).",
     "directAnswerUr": "پاکستان میں نیا سمارٹ شناختی کارڈ (CNIC) بنوانے کے لیے 18 سال کے شہری اپنے اصل بی فارم، میٹرک سرٹیفکیٹ، اور والد و والدہ کے اصل شناختی کارڈ کے ساتھ کسی بھی نادرا رجسٹریشن سینٹر جائیں۔ تصدیق کے لیے خونی رشتہ دار کا ساتھ ہونا لازمی ہے۔ نارمل فیس 750 روپے، ارجنٹ 1500 روپے اور ایگزیکٹو فیس 2500 روپے ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Official Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -3446,7 +3446,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "18 سال سے کم عمر بچوں کا نادرا بی فارم (CRC) بنوانے کی مکمل معلومات۔ یونین کونسل کمپیوٹرائزڈ برتھ سرٹیفکیٹ، نادرا سینٹر کی فیس 50 روپے اور ضروری کاغذات۔",
     "directAnswerEn": "To get a NADRA B-Form (Child Registration Certificate / CRC) for children under 18 in Pakistan, parents must first obtain a Computerized Birth Certificate from their local Union Council or Cantonment Board. Then, visit any NADRA Registration Center with the birth certificate and original CNICs of both parents. Normal processing fee is PKR 50, Executive counter processing is PKR 500.",
     "directAnswerUr": "18 سال سے کم عمر بچوں کا نادرا بی فارم (CRC) بنوانے کے لیے پہلے متعلقہ یونین کونسل یا کینٹ بورڈ سے کمپیوٹرائزڈ برتھ سرٹیفکیٹ حاصل کریں۔ اس کے بعد والدین اپنے اصل شناختی کارڈز اور برتھ سرٹیفکیٹ کے ساتھ نادرا سینٹر جائیں۔ نارمل فیس صرف 50 روپے اور ایگزیکٹو فیس 500 روپے ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official Portal",
       "url": "https://www.nadra.gov.pk/"
@@ -3556,9 +3556,9 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "نادرا کارڈ فیس شیڈول 2026 (شناختی کارڈ، نائیکوپ، فیملی سرٹیفکیٹ)",
     "metaDescriptionEn": "Official NADRA Card Fee Schedule 2026. Verified rates for Smart CNIC, renewal, modification, duplicate card, FRC (PKR 1000), and overseas NICOP Zone A/B tariffs.",
     "metaDescriptionUr": "سال 2026 میں نادرا سمارٹ شناختی کارڈ، تجدید، ترمیم، گم شدہ کارڈ، ایف آر سی اور نائیکوپ کی آفیشل فیسوں کی مکمل اور اپڈیٹ شدہ لسٹ۔",
-    "directAnswerEn": "As of 2026, official NADRA Smart CNIC (Chip) fees are: Normal PKR 750 (31 working days), Urgent PKR 1,500 (15 working days), and Executive PKR 2,500 (7 working days). Non-Smart (traditional) card renewal or modification is PKR 400 (Normal), PKR 1,150 (Urgent), and PKR 2,150 (Executive), with first-time normal issue free at standard counters. Family Registration Certificate (FRC) costs PKR 1,000. Overseas NICOP fees range from $20 to $79 USD depending on country zone.",
-    "directAnswerUr": "2026 کے سرکاری نادرا شیڈول کے مطابق، اسمارٹ شناختی کارڈ (چپ والا) فیس: نارمل 750 روپے (31 دن)، ارجنٹ 1500 روپے (15 دن) اور ایگزیکٹو 2500 روپے (7 دن) ہے۔ عام (نان اسمارٹ) کارڈ کی تجدید یا ترمیم نارمل 400 روپے، ارجنٹ 1150 اور ایگزیکٹو 2150 روپے ہے۔ ایف آر سی فیس 1000 روپے جبکہ نائیکوپ فیس زون کے لحاظ سے 20 سے 79 ڈالر ہے۔",
-    "lastVerified": "August 28, 2026",
+    "directAnswerEn": "As of 2026, official NADRA Smart CNIC (Chip) fees are: Normal PKR 750 (31 working days), Urgent PKR 1,500 (15 working days), and Executive PKR 2,500 (7 working days). Non-Smart (traditional) card renewal or modification is PKR 400 (Normal), PKR 1,150 (Urgent), and PKR 2,150 (Executive), with first-time normal issue free at standard counters. Family Registration Certificate (FRC) costs PKR 1,000. Overseas NICOP fees range from $20 to $75 USD depending on country zone.",
+    "directAnswerUr": "2026 کے سرکاری نادرا شیڈول کے مطابق، اسمارٹ شناختی کارڈ (چپ والا) فیس: نارمل 750 روپے (31 دن)، ارجنٹ 1500 روپے (15 دن) اور ایگزیکٹو 2500 روپے (7 دن) ہے۔ عام (نان اسمارٹ) کارڈ کی تجدید یا ترمیم نارمل 400 روپے، ارجنٹ 1150 اور ایگزیکٹو 2150 روپے ہے۔ ایف آر سی فیس 1000 روپے جبکہ نائیکوپ فیس زون کے لحاظ سے 20 سے 75 ڈالر ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official Fee Schedule Portal",
       "url": "https://www.nadra.gov.pk/fee-structure/"
@@ -3607,15 +3607,15 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "NICOP Overseas Card (Zone A Countries)",
         "serviceUr": "نائیکوپ (زون A - امریکہ، برطانیہ، یورپ)",
         "normal": "$39 USD",
-        "urgent": "$59 USD",
-        "executive": "$79 USD"
+        "urgent": "$57 USD",
+        "executive": "$75 USD"
       },
       {
         "serviceEn": "NICOP Overseas Card (Zone B Countries)",
         "serviceUr": "نائیکوپ (زون B - مڈل ایسٹ، ایشیا)",
         "normal": "$20 USD",
-        "urgent": "$39 USD",
-        "executive": "$59 USD"
+        "urgent": "$30 USD",
+        "executive": "$40 USD"
       }
     ],
     "steps": [
@@ -3674,8 +3674,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "ایف آر سی سرٹیفکیٹ کی آفیشل فیس 1,000 روپے ہے اور آن لائن اپلائی کرنے پر پی ڈی ایف فوری ایمیل ہوتی ہے۔"
       }
     ],
-    "contentEn": "The NADRA CNIC Fee Structure is the official government tariff schedule established by the National Database and Registration Authority (NADRA) regulating processing rates for new Smart CNICs, traditional cards, renewals, data modifications, Family Registration Certificates (FRC), and overseas NICOP cards across Pakistan.\n\nUnderstanding the difference between **Smart CNIC (Chip-based)** and **Non-Smart (Plain printed)** fee schedules ensures you pay the exact regulated amount and avoid confusion between different counter categories.\n\n## Smart CNIC (Chip-Based) Official Tariffs 2026\n\nThe Smart National Identity Card (SNIC) features an embedded microchip with multi-biometric security. The official fees apply uniformly whether you are applying for a new Smart Card, renewing an expired card, replacing a lost card, or modifying data on a Smart Card:\n\n- **Normal Processing**: PKR 750 (Delivery in 31 working days)\n- **Urgent Processing**: PKR 1,500 (Delivery in 15 working days)\n- **Executive Processing**: PKR 2,500 (Delivery in 7 working days)\n\n## Traditional / Non-Smart CNIC Tariffs\n\nFor citizens opting for the traditional plain printed identity card (without a chip):\n- **First-Time Issuance (Age 18+)**: 100% **FREE** under the Normal timeline at standard NRC counters.\n- **Renewal / Data Modification / Duplicate**:\n  - Normal Processing: PKR 400\n  - Urgent Processing: PKR 1,150\n  - Executive Processing: PKR 2,150\n\n> 💡 **Why Rates Conflict Across Unofficial Websites**: Many unofficial aggregators confuse the non-smart modification fee (PKR 400 / 1,150 / 2,150) with the chip-based Smart CNIC fee (PKR 750 / 1,500 / 2,500). If you are updating data on a Smart Card or upgrading to a Smart Card, the Rs. 750/1,500/2,500 schedule applies. If updating an older non-smart card without chip upgrade, the Rs. 400/1,150/2,150 schedule applies.\n\n## Overseas NICOP & FRC Fee Matrix\n\nFor Pakistani citizens residing abroad or holding dual nationality, NICOP fees are categorized into country zones:\n- **Zone A Countries** (USA, UK, Canada, Europe, Australia, New Zealand, Japan): Normal $39 USD, Urgent $59 USD, Executive $79 USD.\n- **Zone B Countries** (Saudi Arabia, UAE, Qatar, Oman, Bahrain, Kuwait, Malaysia, and other countries): Normal $20 USD, Urgent $39 USD, Executive $59 USD.\n- **Family Registration Certificate (FRC)**: Standard fee is PKR 1,000 for By Birth, By Marriage, or By Adoption categories (delivered instantly via email on Pak-ID portal or printed same-day at NRC).\n\n## Digital Payment & Fee Transparency\n\nOfficial NADRA fees can be deposited at NRC cash counters, National Bank of Pakistan (NBP) branches, or online via the official Pak-ID web portal (id.nadra.gov.pk) or mobile app using JazzCash, Easypaisa, 1Link, or credit/debit cards.\n\nNADRA does NOT authorize private middlemen or external agents. Never pay cash surcharges above the official receipt. Report extortion or agent malpractice directly to the central NADRA helpline at **1777**.",
-    "contentUr": "نادرا شناختی کارڈ فیس شیڈول نادرا کا مصدقہ اور سرکاری ریٹ چارٹ ہے جو سمارٹ شناختی کارڈ، تجدید، ترمیم، ایف آر سی اور نائیکوپ کی فیسوں کو منظم کرتا ہے۔\n\n## نادرا سمارٹ کارڈ فیس 2026\n- **نارمل پروسیسنگ**: 750 روپے (31 کام کے دن)\n- **ارجنٹ پروسیسنگ**: 1,500 روپے (15 کام کے دن)\n- **ایگزیکٹو پروسیسنگ**: 2,500 روپے (7 کام کے دن)\n\n## نائیکوپ اور فیملی سرٹیفکیٹ فیس\n- **زون A ممالک** (امریکہ، برطانیہ، یورپ): نارمل $39، ارجنٹ $59، ایگزیکٹو $79 ڈالر\n- **زون B ممالک** (مڈل ایسٹ، ایشیا): نارمل $20، ارجنٹ $39، ایگزیکٹو $59 ڈالر\n- **فیملی سرٹیفکیٹ (FRC)**: آفیشل فیس 1,000 روپے ہے\n\nفیس کی آن لائن ادائیگی پاک آئی ڈی ایپ پر جاز کیش، ایزی پیسہ یا بینک کریڈٹ کارڈ سے ہو سکتی ہے۔",
+    "contentEn": "The NADRA CNIC Fee Structure is the official government tariff schedule established by the National Database and Registration Authority (NADRA) regulating processing rates for new Smart CNICs, traditional cards, renewals, data modifications, Family Registration Certificates (FRC), and overseas NICOP cards across Pakistan.\n\nUnderstanding the difference between **Smart CNIC (Chip-based)** and **Non-Smart (Plain printed)** fee schedules ensures you pay the exact regulated amount and avoid confusion between different counter categories.\n\n## Smart CNIC (Chip-Based) Official Tariffs 2026\n\nThe Smart National Identity Card (SNIC) features an embedded microchip with multi-biometric security. The official fees apply uniformly whether you are applying for a new Smart Card, renewing an expired card, replacing a lost card, or modifying data on a Smart Card:\n\n- **Normal Processing**: PKR 750 (Delivery in 31 working days)\n- **Urgent Processing**: PKR 1,500 (Delivery in 15 working days)\n- **Executive Processing**: PKR 2,500 (Delivery in 7 working days)\n\n## Traditional / Non-Smart CNIC Tariffs\n\nFor citizens opting for the traditional plain printed identity card (without a chip):\n- **First-Time Issuance (Age 18+)**: 100% **FREE** under the Normal timeline at standard NRC counters.\n- **Renewal / Data Modification / Duplicate**:\n  - Normal Processing: PKR 400\n  - Urgent Processing: PKR 1,150\n  - Executive Processing: PKR 2,150\n\n> 💡 **Why Rates Conflict Across Unofficial Websites**: Many unofficial aggregators confuse the non-smart modification fee (PKR 400 / 1,150 / 2,150) with the chip-based Smart CNIC fee (PKR 750 / 1,500 / 2,500). If you are updating data on a Smart Card or upgrading to a Smart Card, the Rs. 750/1,500/2,500 schedule applies. If updating an older non-smart card without chip upgrade, the Rs. 400/1,150/2,150 schedule applies.\n\n## Overseas NICOP & FRC Fee Matrix\n\nFor Pakistani citizens residing abroad or holding dual nationality, NICOP fees are categorized into country zones:\n- **Zone A Countries** (USA, UK, Canada, Europe, Australia, New Zealand, Japan): Normal $39 USD, Urgent $57 USD, Executive $75 USD.\n- **Zone B Countries** (Saudi Arabia, UAE, Qatar, Oman, Bahrain, Kuwait, Malaysia, and other countries): Normal $20 USD, Urgent $30 USD, Executive $40 USD.\n- **Family Registration Certificate (FRC)**: Standard fee is PKR 1,000 for By Birth, By Marriage, or By Adoption categories (delivered instantly via email on Pak-ID portal or printed same-day at NRC).\n\n## Digital Payment & Fee Transparency\n\nOfficial NADRA fees can be deposited at NRC cash counters, National Bank of Pakistan (NBP) branches, or online via the official Pak-ID web portal (id.nadra.gov.pk) or mobile app using JazzCash, Easypaisa, 1Link, or credit/debit cards.\n\nNADRA does NOT authorize private middlemen or external agents. Never pay cash surcharges above the official receipt. Report extortion or agent malpractice directly to the central NADRA helpline at **1777**.",
+    "contentUr": "نادرا شناختی کارڈ فیس شیڈول نادرا کا مصدقہ اور سرکاری ریٹ چارٹ ہے جو سمارٹ شناختی کارڈ، تجدید، ترمیم، ایف آر سی اور نائیکوپ کی فیسوں کو منظم کرتا ہے۔\n\n## نادرا سمارٹ کارڈ فیس 2026\n- **نارمل پروسیسنگ**: 750 روپے (31 کام کے دن)\n- **ارجنٹ پروسیسنگ**: 1,500 روپے (15 کام کے دن)\n- **ایگزیکٹو پروسیسنگ**: 2,500 روپے (7 کام کے دن)\n\n## نائیکوپ اور فیملی سرٹیفکیٹ فیس\n- **زون A ممالک** (امریکہ، برطانیہ، یورپ): نارمل $39، ارجنٹ $57، ایگزیکٹو $75 ڈالر\n- **زون B ممالک** (مڈل ایسٹ، ایشیا): نارمل $20، ارجنٹ $30، ایگزیکٹو $40 ڈالر\n- **فیملی سرٹیفکیٹ (FRC)**: آفیشل فیس 1,000 روپے ہے\n\nفیس کی آن لائن ادائیگی پاک آئی ڈی ایپ پر جاز کیش، ایزی پیسہ یا بینک کریڈٹ کارڈ سے ہو سکتی ہے۔",
     "relatedSlugs": [
       "/nadra/cnic-kaise-banaye",
       "/nadra/tracking-id",
@@ -3692,7 +3692,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "12 ہندسوں کی نادرا ٹریکنگ آئی ڈی یا 8400 پر ایس ایم ایس کے ذریعے اپنے شناختی کارڈ کی تیاری کی صورتحال مفت آن لائن چیک کریں۔",
     "directAnswerEn": "To track your NADRA application status, send your 12-digit Tracking ID via SMS to 8400 (cost approx PKR 2+tax) or check online for free at id.nadra.gov.pk by logging into your account under \"Track Application\". You will see status updates such as In-Process, Printed, or Dispatched via TCS/Pakistan Post.",
     "directAnswerUr": "اپنے نادرا فارم کا سٹیٹس چیک کرنے کے لیے 12 ہندسوں کی ٹریکنگ آئی ڈی (Tracking ID) لکھ کر 8400 پر ایس ایم ایس بھیجیں یا id.nadra.gov.pk پر جا کر ٹریک ایپلی کیشن سیکشن میں آن لائن فری چیک کریں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Tracking Portal",
       "url": "https://id.nadra.gov.pk/tracking/"
@@ -3778,7 +3778,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "میعاد ختم شدہ نادرا شناختی کارڈ گھر بیٹھے آن لائن رینیو کرنے کی مکمل گائیڈ۔ پاک آئی ڈی موبائل ایپ سے فنگر پرنٹ سکیننگ، تصویر کے قوانین، فیس اور ڈلیوری کا طریقہ۔",
     "directAnswerEn": "To renew an expired CNIC online in Pakistan or from abroad, download the official Pak-ID mobile app or log in to id.nadra.gov.pk. Create an account, choose \"Renewal\", scan your fingerprints using your smartphone camera, upload a white-background photo, pay the processing fee (Normal PKR 750, Urgent PKR 1,500, Executive PKR 2,500 + delivery), and receive your card at your doorstep.",
     "directAnswerUr": "شناختی کارڈ کی آن لائن تجدید کے لیے پاک آئی ڈی ایپ یا id.nadra.gov.pk پر لاگ ان کریں۔ کارڈ رینیول کا انتخاب کر کے موبائل کیمرے سے فنگر پرنٹس سکین کریں، تصویر اپلوڈ کریں اور آن لائن فیس ادا کر کے گھر پر کارڈ وصول کریں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Web Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -3890,7 +3890,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا فیملی رجسٹریشن سرٹیفکیٹ (FRC) آن لائن اور سینٹر سے حاصل کرنے کا طریقہ۔ فیس 1000 روپے، بائی برتھ بمقابلہ بائی میرج ایف آر سی اور ضروری کاغذات۔",
     "directAnswerEn": "Family Registration Certificate (FRC) is an official NADRA document validating your family tree records. It comes in 3 types: By Birth (with parents & siblings), By Marriage (with spouse & children), or By Adoption. Official fee is PKR 1,000. Online applications submitted via id.nadra.gov.pk deliver a verified PDF document directly to your email within hours.",
     "directAnswerUr": "نادرا فیملی رجسٹریشن سرٹیفکیٹ (FRC) خاندان کے افراد کے اندراج کی سرکاری سند ہے۔ یہ تین قسموں میں آتا ہے: والدین اور بہن بھائیوں کے ساتھ (By Birth) یا اہلیہ اور بچوں کے ساتھ (By Marriage)۔ فیس 1000 روپے ہے اور آن لائن اپلائی کرنے پر پی ڈی ایف ایمیل پر مل جاتی ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "Pak-ID FRC Official Portal",
       "url": "https://id.nadra.gov.pk/family-registration-certificate/"
@@ -4000,9 +4000,9 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "نائیکوپ (NICOP) آن لائن درخواست اور فیس 2026 (سمندر پار پاکستانی)",
     "metaDescriptionEn": "Complete online NICOP application guide for overseas Pakistanis and dual nationals. Verified Zone A & Zone B country fee tables, online Pak-ID steps, and visa-free travel benefits.",
     "metaDescriptionUr": "سمندر پار اور دوہری شہریت کے حامل پاکستانیوں کے لیے نائیکوپ آن لائن اپلائی کی گائیڈ۔ زون اے اور زون بی فیس ریٹس ($20-$79)، طریقہ کار اور ویزا فری آمد کے فوائد۔",
-    "directAnswerEn": "National Identity Card for Overseas Pakistanis (NICOP) is issued to Pakistani citizens residing abroad or holding dual nationality. Apply 100% online via id.nadra.gov.pk. NICOP allows visa-free entry into Pakistan and full civil rights. Fees depend on country zone: Zone A (USA, UK, Canada, Europe) costs $39 (Normal), $59 (Urgent), $79 (Executive); Zone B (Middle East, GCC) costs $20 (Normal), $39 (Urgent), $59 (Executive).",
-    "directAnswerUr": "نائیکوپ (NICOP) سمندر پار پاکستانیوں اور دوہری شہریت رکھنے والوں کے لیے ویزا فری پاکستان آمد کی سند ہے۔ آن لائن id.nadra.gov.pk سے اپلائی کریں۔ زون اے (امریکہ، برطانیہ، یورپ) فیس 39 سے 79 ڈالر اور زون بی (عرب ممالک) فیس 20 سے 59 ڈالر ہے۔",
-    "lastVerified": "August 28, 2026",
+    "directAnswerEn": "National Identity Card for Overseas Pakistanis (NICOP) is issued to Pakistani citizens residing abroad or holding dual nationality. Apply 100% online via id.nadra.gov.pk. NICOP allows visa-free entry into Pakistan and full civil rights. Fees depend on country zone: Zone A (USA, UK, Canada, Europe) costs $39 (Normal), $57 (Urgent), $75 (Executive); Zone B (Middle East, GCC) costs $20 (Normal), $30 (Urgent), $40 (Executive).",
+    "directAnswerUr": "نائیکوپ (NICOP) سمندر پار پاکستانیوں اور دوہری شہریت رکھنے والوں کے لیے ویزا فری پاکستان آمد کی سند ہے۔ آن لائن id.nadra.gov.pk سے اپلائی کریں۔ زون اے (امریکہ، برطانیہ، یورپ) فیس 39 سے 75 ڈالر اور زون بی (عرب ممالک) فیس 20 سے 40 ڈالر ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Overseas Services Portal",
       "url": "https://id.nadra.gov.pk/e-nicop/"
@@ -4016,15 +4016,15 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "NICOP Zone A (USA, UK, Canada, EU, Australia)",
         "serviceUr": "نائیکوپ زون A (امریکہ، برطانیہ، یورپ)",
         "normal": "$39 USD",
-        "urgent": "$59 USD",
-        "executive": "$79 USD"
+        "urgent": "$57 USD",
+        "executive": "$75 USD"
       },
       {
         "serviceEn": "NICOP Zone B (Saudi Arabia, UAE, GCC, Asia)",
         "serviceUr": "نائیکوپ زون B (سعودی عرب، امارات، گلف)",
         "normal": "$20 USD",
-        "urgent": "$39 USD",
-        "executive": "$59 USD"
+        "urgent": "$30 USD",
+        "executive": "$40 USD"
       }
     ],
     "steps": [
@@ -4096,8 +4096,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "ایگزیکٹو درخواست کا نائیکوپ 7 تا 10 دنوں میں ڈی ایچ ایل سے آپ کے غیر ملکی پتے پر پہنچ جاتا ہے۔"
       }
     ],
-    "contentEn": "For millions of overseas Pakistanis living in Saudi Arabia, UAE, UK, USA, Canada, and Europe, the **National Identity Card for Overseas Pakistanis (NICOP)** is the ultimate identity bridge connecting them to their homeland.\n\nIssued under the NADRA Ordinance, NICOP guarantees dual nationals and expatriates visa-free entry into Pakistan, complete property inheritance rights, and seamless access to banking services.\n\n## Core Privileges of Holding a Valid NICOP\n\n- **Visa-Free Entry to Pakistan**: Travel to any airport in Pakistan using your foreign passport paired with your valid NICOP card.\n- **Property Ownership & Legal Transactions**: Full right to purchase, register, sell, and inherit land and houses across Pakistan.\n- **Roshan Digital Banking (RDA)**: Open zero-tax foreign currency and PKR bank accounts remotely.\n\n## Country Zone Classification & Fee Matrix 2026\n\nNADRA categorizes residence countries into two primary zones:\n\n| Country Classification Zone | Normal Fee | Urgent Fee | Executive Fee |\n| :--- | :--- | :--- | :--- |\n| **Zone A** (USA, UK, Canada, EU, Australia, NZ) | **$39 USD** | **$59 USD** | **$79 USD** |\n| **Zone B** (Saudi Arabia, UAE, Qatar, Oman, GCC, Asia) | **$20 USD** | **$39 USD** | **$59 USD** |\n\n*Official foreign currency tariffs confirmed via [NADRA Pak-ID Portal](https://id.nadra.gov.pk/).*",
-    "contentUr": "سمندر پار پاکستانیوں کے لیے **نائیکوپ (NICOP)** ایک اہم ترین قومی شناختی سند ہے جو دوہری شہریت کے حامل شہریوں کو پاکستان میں تمام حقوق فراہم کرتی ہے۔\n\n## نائیکوپ کے اہم فوائد\n- **ویزا فری داخلہ**: غیر ملکی پاسپورٹ کے ساتھ نائیکوپ پر بغیر ویزا پاکستان سفر کریں۔\n- **جائیداد کی خرید و فروخت**: پاکستان میں زمین اور جائیداد اپنے نام منتقل کروانے کا حق۔\n- **روشن ڈیجیٹل اکاؤنٹ**: بیرون ملک سے پاکستانی بینکوں میں ڈالر اور روپے کے اکاؤنٹس۔\n\n## زون فیس شیڈول 2026\n- **زون A** (امریکہ، برطانیہ، یورپ): نارمل $39، ارجنٹ $59، ایگزیکٹو $79 ڈالر\n- **زون B** (سعودی عرب، امارات، عرب ممالک): نارمل $20، ارجنٹ $39، ایگزیکٹو $59 ڈالر",
+    "contentEn": "For millions of overseas Pakistanis living in Saudi Arabia, UAE, UK, USA, Canada, and Europe, the **National Identity Card for Overseas Pakistanis (NICOP)** is the ultimate identity bridge connecting them to their homeland.\n\nIssued under the NADRA Ordinance, NICOP guarantees dual nationals and expatriates visa-free entry into Pakistan, complete property inheritance rights, and seamless access to banking services.\n\n## Core Privileges of Holding a Valid NICOP\n\n- **Visa-Free Entry to Pakistan**: Travel to any airport in Pakistan using your foreign passport paired with your valid NICOP card.\n- **Property Ownership & Legal Transactions**: Full right to purchase, register, sell, and inherit land and houses across Pakistan.\n- **Roshan Digital Banking (RDA)**: Open zero-tax foreign currency and PKR bank accounts remotely.\n\n## Country Zone Classification & Fee Matrix 2026\n\nNADRA categorizes residence countries into two primary zones:\n\n| Country Classification Zone | Normal Fee | Urgent Fee | Executive Fee |\n| :--- | :--- | :--- | :--- |\n| **Zone A** (USA, UK, Canada, EU, Australia, NZ) | **$39 USD** | **$57 USD** | **$75 USD** |\n| **Zone B** (Saudi Arabia, UAE, Qatar, Oman, GCC, Asia) | **$20 USD** | **$30 USD** | **$40 USD** |\n\n*Official foreign currency tariffs confirmed via [NADRA Pak-ID Portal](https://id.nadra.gov.pk/).*",
+    "contentUr": "سمندر پار پاکستانیوں کے لیے **نائیکوپ (NICOP)** ایک اہم ترین قومی شناختی سند ہے جو دوہری شہریت کے حامل شہریوں کو پاکستان میں تمام حقوق فراہم کرتی ہے۔\n\n## نائیکوپ کے اہم فوائد\n- **ویزا فری داخلہ**: غیر ملکی پاسپورٹ کے ساتھ نائیکوپ پر بغیر ویزا پاکستان سفر کریں۔\n- **جائیداد کی خرید و فروخت**: پاکستان میں زمین اور جائیداد اپنے نام منتقل کروانے کا حق۔\n- **روشن ڈیجیٹل اکاؤنٹ**: بیرون ملک سے پاکستانی بینکوں میں ڈالر اور روپے کے اکاؤنٹس۔\n\n## زون فیس شیڈول 2026\n- **زون A** (امریکہ، برطانیہ، یورپ): نارمل $39، ارجنٹ $57، ایگزیکٹو $75 ڈالر\n- **زون B** (سعودی عرب، امارات، عرب ممالک): نارمل $20، ارجنٹ $30، ایگزیکٹو $40 ڈالر",
     "relatedSlugs": [
       "/nadra/nadra-card-fee",
       "/nadra/card-renewal-online",
@@ -10512,7 +10512,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا شناختی کارڈ (CNIC)، اوورسیز نائیکوپ (NICOP) اور پاکستان اوریجن کارڈ (POC) میں فرق، فیس اور اہلیت کی مکمل معلومات۔",
     "directAnswerEn": "A CNIC (Smart ID) is issued to resident Pakistani citizens aged 18+. A NICOP (National Identity Card for Overseas Pakistanis) is issued to Pakistani citizens residing abroad or holding dual nationality, granting visa-free entry to Pakistan. A POC (Pakistan Origin Card) is issued to foreign spouses of Pakistani nationals or former citizens who renounced Pakistani citizenship.",
     "directAnswerUr": "شناختی کارڈ (CNIC) پاکستان میں مقیم شہریوں کے لیے ہے، نائیکوپ (NICOP) اوورسیز اور دوہری شہریت والے پاکستانیوں کو بغیر ویزا پاکستان آنے کی سہولت دیتا ہے، جبکہ پی او سی (POC) غیر ملکی شریک حیات یا ترک شہریت کرنے والوں کو جاری ہوتا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official Identification Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -10534,8 +10534,8 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "NICOP (Zone A - US, UK, Canada, Europe)",
         "serviceUr": "نائیکوپ (زون اے: امریکہ، برطانیہ، یورپ)",
         "normal": "$39 USD / PKR 11,000",
-        "urgent": "$59 USD / PKR 16,500",
-        "executive": "$79 USD / PKR 22,000",
+        "urgent": "$57 USD / PKR 16,000",
+        "executive": "$75 USD / PKR 21,000",
         "validity": "10 Years"
       },
       {
@@ -11127,7 +11127,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "امریکہ، برطانیہ، سعودی عرب اور خلیجی ممالک سے نائیکوپ کی آن لائن تجدید کا مکمل طریقہ۔ پاک آئی ڈی ایپ سے بائیومیٹرک فنگر پرنٹ اور ہوم ڈلیوری۔",
     "directAnswerEn": "Overseas Pakistanis can renew their expired NICOP online from anywhere in the world using the official NADRA Pak-ID app (id.nadra.gov.pk). You do not need to visit a Pakistani embassy: simply capture your live photograph and fingerprint biometrics using your smartphone camera, pay via international credit card, and receive your card via DHL courier within 7-10 business days.",
     "directAnswerUr": "بیرون ملک مقیم پاکستانی نادرا کی پاک آئی ڈی موبائل ایپ (id.nadra.gov.pk) کے ذریعے گھر بیٹھے نائیکوپ کی تجدید کروا سکتے ہیں۔ اپنے اسمارٹ فون کیمرے سے بائیومیٹرک فنگر پرنٹس اور تصویر اسکین کریں، بین الاقوامی کارڈ سے فیس ادا کریں اور ڈی ایچ ایل کے ذریعے 7 تا 10 دنوں میں کارڈ حاصل کریں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Official Web Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -11141,8 +11141,8 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "NICOP Renewal (Zone A: US, UK, Canada, Europe)",
         "serviceUr": "نائیکوپ تجدید (زون اے: امریکہ، برطانیہ، یورپ)",
         "normal": "$39 USD (31 Days)",
-        "urgent": "$59 USD (15 Days)",
-        "executive": "$79 USD (7 Days)",
+        "urgent": "$57 USD (23 Days)",
+        "executive": "$75 USD (9 Days)",
         "validity": "10 Years"
       },
       {
@@ -11204,7 +11204,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $59 USD | $79 USD (7 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
+    "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $57 USD | $75 USD (9 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
     "contentUr": "## بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ تجدید گائیڈ\nپاک آئی ڈی پورٹل کے ذریعے فیس اور طریقہ کار کی تفصیلات۔",
     "relatedSlugs": [
       "/overseas/poc-card-pakistan-apply-online",
@@ -15217,9 +15217,9 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "نائیکوپ فیس برائے امریکہ، برطانیہ، سعودی عرب اور دبئی 2026",
     "metaDescriptionEn": "Official NADRA NICOP fee chart 2026 for Zone A and Zone B countries. Compare normal, urgent, and executive rates in USD, GBP, SAR, AED, and PKR.",
     "metaDescriptionUr": "نادرا نائیکوپ فیس شیڈول 2026 برائے زون اے و زون بی۔ امریکہ، برطانیہ، یورپ اور خلیجی ممالک کے لیے نارمل، ارجنٹ اور ایگزیکٹو فیس کی تفصیل۔",
-    "directAnswerEn": "NADRA classifies NICOP application fees into two geographical zones. Zone A countries (USA, UK, Canada, Australia, Europe) have official fees of $39 USD (Normal), $59 USD (Urgent), and $79 USD (Executive). Zone B countries (Saudi Arabia, UAE, Qatar, Oman, Bahrain, Kuwait) have fees of $20 USD (Normal), $30 USD (Urgent), and $40 USD (Executive).",
-    "directAnswerUr": "نادرا نائیکوپ فیس چارٹ 2026: زون اے کے لیے 39 ڈالر نارمل، 59 ڈالر ارجنٹ اور 79 ڈالر ایگزیکٹو ہے؛ جبکہ زون بی (خلیجی ممالک) کے لیے 20 ڈالر نارمل، 30 ڈالر ارجنٹ اور 40 ڈالر ایگزیکٹو ہے۔",
-    "lastVerified": "August 28, 2026",
+    "directAnswerEn": "NADRA classifies NICOP application fees into two geographical zones. Zone A countries (USA, UK, Canada, Australia, Europe) have official fees of $39 USD (Normal), $57 USD (Urgent), and $75 USD (Executive). Zone B countries (Saudi Arabia, UAE, Qatar, Oman, Bahrain, Kuwait) have fees of $20 USD (Normal), $30 USD (Urgent), and $40 USD (Executive).",
+    "directAnswerUr": "نادرا نائیکوپ فیس چارٹ 2026: زون اے کے لیے 39 ڈالر نارمل، 57 ڈالر ارجنٹ اور 75 ڈالر ایگزیکٹو ہے؛ جبکہ زون بی (خلیجی ممالک) کے لیے 20 ڈالر نارمل، 30 ڈالر ارجنٹ اور 40 ڈالر ایگزیکٹو ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official Fee Chart",
       "url": "https://id.nadra.gov.pk/fee/"
@@ -15233,8 +15233,8 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "Zone A (USA, UK, Europe, Canada)",
         "serviceUr": "زون اے فیس",
         "normal": "$39 USD (31 Days)",
-        "urgent": "$59 USD (15 Days)",
-        "executive": "$79 USD (7 Days)",
+        "urgent": "$57 USD (23 Days)",
+        "executive": "$75 USD (9 Days)",
         "validity": "10 Years"
       },
       {
@@ -15424,7 +15424,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا شناختی کارڈ کے نئے قواعد 2026: 18 سال کے شہریوں کے لیے پہلا کارڈ مفت، تجدید فیس شیڈول، بائیو میٹرک تصدیق اور سم رجسٹریشن کی تفصیلات۔",
     "directAnswerEn": "First-time CNIC for Pakistani citizens aged 18+ is completely FREE under the Normal category (15 days). Renewals cost PKR 400 (Normal), PKR 1,150 (Urgent), and PKR 2,150 (Executive) for standard cards; and PKR 750, PKR 1,500, and PKR 2,500 for Smart Cards. Applicants must link a biometric mobile number registered in their own name.",
     "directAnswerUr": "18 سال کی عمر کے شہریوں کے لیے پہلا شناختی کارڈ نارمل کیٹیگری میں بالکل مفت (0 روپے) ہے۔ تجدید فیس عام کارڈ کے لیے 400 (نارمل)، 1150 (ارجنٹ) اور 2150 (ایگزیکٹو) جبکہ اسمارٹ کارڈ کے لیے 750، 1500 اور 2500 روپے ہے۔ درخواست گزار کے اپنے نام پر رجسٹرڈ سم کا ہونا لازمی قرار دیا گیا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Corporate & Pak-ID Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -17237,7 +17237,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "گم شدہ شناختی کارڈ دوبارہ بنوانے کا طریقہ۔ پاک آئی ڈی ایپ آن لائن اپلائی، ری پرنٹ بمقابلہ تجدید، پولیس رپورٹ اور فیس شیڈول 2026۔",
     "directAnswerEn": "If your lost CNIC was unexpired (still within its validity date), apply under 'Reprint' (Duplicate) to receive an exact replacement retaining your original expiry date. If your lost card had already expired or has less than 6 months left, apply under 'Renewal' for a fresh 10-year validity. Both can be done online via the Pak-ID app.",
     "directAnswerUr": "اگر گم شدہ شناختی کارڈ کی مدت ختم نہیں ہوئی تھی تو 'ری پرنٹ' (ڈپلیکیٹ) کی درخواست دیں تاکہ پرانی تاریخ والا کارڈ مل جائے۔ اگر کارڈ پہلے سے ایکسپائر تھا تو 'تجدید' (Renewal) کروائیں جس سے 10 سال کی نئی میعاد ملے گی۔ دونوں پاک آئی ڈی ایپ سے آن لائن ہو جاتے ہیں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-Identity Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -19369,7 +19369,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا بی فارم (چائلڈ رجسٹریشن) اور فیملی رجسٹریشن سرٹیفکیٹ کی درخواست کا آن لائن سٹیٹس معلوم کریں۔",
     "directAnswerEn": "To track your B-Form or FRC: Enter your 12-digit Tracking ID or applicant CNIC into the NADRA Pak-ID portal to view real-time processing and delivery status.",
     "directAnswerUr": "بی فارم یا ایف آر سی ٹریک کرنے کے لیے 12 ہندسوں کا ٹریکنگ نمبر پاک آئی ڈی پورٹل پر درج کریں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Official Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -19577,7 +19577,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ کی درخواست کا اسٹیٹس آن لائن معلوم کریں۔",
     "directAnswerEn": "Enter your 12-digit Tracking ID on the NADRA Pak-ID portal to verify real-time status of your B-Form or FRC application.",
     "directAnswerUr": "12 ہندسوں کا ٹریکنگ نمبر پاک آئی ڈی پورٹل پر درج کر کے بی فارم یا ایف آر سی کا اسٹیٹس دیکھیں۔",
-    "lastVerified": "August 28, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID",
       "url": "https://id.nadra.gov.pk/"
@@ -19627,9 +19627,9 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "نادرا نائیکوپ فیس کیلکولیٹر 2026",
     "metaDescriptionEn": "Calculate official NADRA NICOP smart card fees for overseas Pakistanis across Zone A and Zone B countries.",
     "metaDescriptionUr": "اوورسیز پاکستانیوں کے لیے نادرا نائیکوپ فیس کیلکولیٹر۔",
-    "directAnswerEn": "Official NADRA Smart NICOP fees for overseas Pakistanis: Zone A (USA, UK, Europe, Canada, Australia) is $39 Normal / $59 Urgent / $79 Executive. Zone B (Saudi Arabia, UAE, GCC & other countries) is $20 Normal / $39 Urgent / $59 Executive. Online delivery via Pak-ID portal.",
-    "directAnswerUr": "بیرون ملک مقیم پاکستانیوں کے لیے نادرا اسمارٹ نائیکوپ فیس: زون اے (امریکہ، برطانیہ، یورپ، کینیڈا، آسٹریلیا) نارمل 39 ڈالر، ارجنٹ 59 ڈالر اور ایگزیکٹو 79 ڈالر ہے۔ زون بی (سعودی عرب، امارات، گلف) نارمل 20 ڈالر، ارجنٹ 39 ڈالر اور ایگزیکٹو 59 ڈالر ہے۔",
-    "lastVerified": "August 28, 2026",
+    "directAnswerEn": "Official NADRA Smart NICOP fees for overseas Pakistanis: Zone A (USA, UK, Europe, Canada, Australia) is $39 Normal / $57 Urgent / $75 Executive. Zone B (Saudi Arabia, UAE, GCC & other countries) is $20 Normal / $30 Urgent / $40 Executive. Online delivery via Pak-ID portal.",
+    "directAnswerUr": "بیرون ملک مقیم پاکستانیوں کے لیے نادرا اسمارٹ نائیکوپ فیس: زون اے (امریکہ، برطانیہ، یورپ، کینیڈا، آسٹریلیا) نارمل 39 ڈالر، ارجنٹ 57 ڈالر اور ایگزیکٹو 75 ڈالر ہے۔ زون بی (سعودی عرب، امارات، گلف) نارمل 20 ڈالر، ارجنٹ 30 ڈالر اور ایگزیکٹو 40 ڈالر ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official",
       "url": "https://www.nadra.gov.pk/"
@@ -19643,15 +19643,15 @@ export const ARTICLES: Record<string, Article> = {
         "serviceEn": "NICOP Zone A (USA, UK, Europe, Canada)",
         "serviceUr": "نائیکوپ زون A (امریکہ، برطانیہ، یورپ)",
         "normal": "$39 USD",
-        "urgent": "$59 USD",
-        "executive": "$79 USD"
+        "urgent": "$57 USD",
+        "executive": "$75 USD"
       },
       {
         "serviceEn": "NICOP Zone B (Saudi Arabia, UAE, GCC)",
         "serviceUr": "نائیکوپ زون B (سعودی عرب، امارات، گلف)",
         "normal": "$20 USD",
-        "urgent": "$39 USD",
-        "executive": "$59 USD"
+        "urgent": "$30 USD",
+        "executive": "$40 USD"
       }
     ],
     "steps": [
@@ -19689,7 +19689,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "قریبی نادرا سنٹر، 24 گھنٹے کھلے میگا سنٹرز، ایگزیکٹو برانچز اور ای-سہولت کاؤنٹرز کا پتہ اور دفتری اوقات۔",
     "directAnswerEn": "To locate your nearest NADRA center, check nadra.gov.pk/ngrids or the Pak ID app, or call 1777. Choose Regular NRCs (8:30 AM-4:30 PM) for standard fees, Executive Centers for express queues, Mega Centers for 24/7 service in major cities, or 17,000+ e-Sahulat shops for instant biometric verifications.",
     "directAnswerUr": "قریبی نادرا دفتر تلاش کرنے کے لیے nadra.gov.pk/ngrids وزٹ کریں یا 1777 پر کال کریں۔ میگا سنٹرز 24 گھنٹے کھلے رہتے ہیں، ایگزیکٹو سنٹرز تیز ترین سروس فراہم کرتے ہیں اور ای-سہولت پر بائیومیٹرک تصدیق فوری ہو جاتی ہے۔",
-    "lastVerified": "August 30, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Official Center Locator",
       "url": "https://www.nadra.gov.pk/ngrids"
@@ -20156,7 +20156,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "12 ہندسوں کی نادرا ٹریکنگ آئی ڈی یا 8400 پر ایس ایم ایس کے ذریعے اپنے شناختی کارڈ کی تیاری کی صورتحال مفت آن لائن چیک کریں۔",
     "directAnswerEn": "To track your NADRA application: Send your 10 to 12-digit Tracking ID via SMS to shortcode 8400 (costs approx Rs. 2 + tax across Jazz, Zong, Telenor, and Ufone) or visit id.nadra.gov.pk to track for free online. The automated system returns your exact processing milestone: In Process, Approved & Sent for Printing, Dispatched, Ready for Collection at NRC, or Objection Raised.",
     "directAnswerUr": "اپنے فارم کا سٹیٹس جاننے کے لیے 10 سے 12 ہندسوں کا ٹریکنگ نمبر 8400 پر ایس ایم ایس کریں یا id.nadra.gov.pk پر مفت دیکھیں۔",
-    "lastVerified": "September 3, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Pak-ID Tracking Portal",
       "url": "https://id.nadra.gov.pk/"
@@ -20224,7 +20224,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نادرا میں ملازمت کے لیے سرکاری پورٹل، واک ان ٹیسٹ اور جعلی بھرتیوں سے بچاؤ کی مکمل معلوماتی گائیڈ۔",
     "directAnswerEn": "NADRA recruits through its dedicated career portal at careers.nadra.gov.pk for software, database, and managerial roles, and via published walk-in tests at Regional Head Offices for customer service and data entry operators. NADRA never asks for fees to personal mobile accounts.",
     "directAnswerUr": "نادرا careers.nadra.gov.pk کے ذریعے آئی ٹی آسامیوں اور ریجنل آفسز میں واک ان ٹیسٹ کے ذریعے کاؤنٹر سٹاف بھرتی کرتا ہے۔",
-    "lastVerified": "September 3, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Careers Portal",
       "url": "https://careers.nadra.gov.pk/"
@@ -20277,7 +20277,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "موبائل سے 1777 یا لینڈ لائن سے 051-111-786-100 ملا کر نادرا سے رابطہ کریں۔ شکایات پورٹل اور ازالے کی تفصیلات۔",
     "directAnswerEn": "To contact NADRA: Dial shortcode 1777 from any Pakistani mobile network or call +92 51 111 786 100 from landlines and overseas. Note that '7000' is an obsolete shortcode. To file a formal complaint, use the official CMS portal at id.nadra.gov.pk/complaint/ or email csd@nadra.gov.pk.",
     "directAnswerUr": "موبائل سے 1777 اور لینڈ لائن سے 051-111-786-100 پر رابطہ کریں۔ آن لائن شکایت کے لیے id.nadra.gov.pk/complaint استعمال کریں۔",
-    "lastVerified": "September 3, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NADRA Customer Services Division",
       "url": "https://id.nadra.gov.pk/complaint/"
@@ -20330,7 +20330,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "نمز پورٹل nims.nadra.gov.pk سے پولیو، کورونا اور بیرون ملک سفر کے لیے کیو آر تصدیق شدہ سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
     "directAnswerEn": "To download an official vaccination certificate: Visit nims.nadra.gov.pk, select your certificate category (Polio Travel Certificate, COVID-19, or Yellow Fever), enter your 13-digit CNIC (or child's B-Form CRC number for minors), and pay the PKR 100 fee online via card, JazzCash, EasyPaisa, or e-Sahulat.",
     "directAnswerUr": "nims.nadra.gov.pk پر جا کر مطلوبہ سرٹیفکیٹ منتخب کریں، شناختی کارڈ یا بی فارم نمبر لکھیں اور 100 روپے فیس ادا کر کے فوری پرنٹ لیں۔",
-    "lastVerified": "September 3, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "NIMS NADRA Portal",
       "url": "https://nims.nadra.gov.pk/"
