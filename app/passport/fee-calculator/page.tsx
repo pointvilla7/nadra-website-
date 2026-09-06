@@ -122,7 +122,7 @@ export default function PassportFeeCalculatorPage() {
 
         {/* GEO Trust Badge */}
         <GeoTrustBadge
-          lastVerified="August 28, 2026"
+          lastVerified="September 6, 2026"
           officialSource={officialSource}
           author={author}
         />

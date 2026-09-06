@@ -4114,7 +4114,7 @@ export const ARTICLES: Record<string, Article> = {
     "metaDescriptionUr": "ڈائریکٹوریٹ آف پاسپورٹ کی سرکاری فیس لسٹ 2026۔ 36، 72، 100 صفحات، ای پاسپورٹ، 1Bill آن لائن چارجز اور فاسٹ ٹریک ہوم ڈلیوری کی مکمل تفصیل۔",
     "directAnswerEn": "As of 2026, standard 36-page Machine Readable Passport (5-year validity) fee is PKR 4,500 for Normal delivery and PKR 7,500 for Urgent delivery. A 10-year 36-page passport costs PKR 6,700 (Normal) and PKR 11,200 (Urgent). Chip-embedded e-Passport fees start at PKR 9,000. Fees are paid via a 17-digit PSID on the Passport Fee Asaan app (with a nominal PKR 10-30 1Bill bank digital processing charge) or at National Bank of Pakistan (NBP) counters.",
     "directAnswerUr": "سال 2026 میں 36 صفحات والے 5 سالہ پاسپورٹ کی نارمل فیس 4,500 روپے اور ارجنٹ 7,500 روپے ہے۔ 10 سالہ پاسپورٹ کی نارمل فیس 6,700 اور ارجنٹ 11,200 روپے ہے۔ ای پاسپورٹ فیس 9,000 روپے سے شروع ہوتی ہے۔ فیس پاسپورٹ فیس آسان ایپ سے 17 ہندسوں کے PSID پر ادا کی جا سکتی ہے جس پر بینک کے 10 تا 30 روپے ڈیجیٹل چارجز لاگو ہوتے ہیں۔",
-    "lastVerified": "August 30, 2026",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "Directorate General of Immigration & Passports (DGIP)",
       "url": "https://dgip.gov.pk/"
@@ -4160,6 +4160,13 @@ export const ARTICLES: Record<string, Article> = {
         "executive": "PKR 23,000 (Fast Track 2 Days)"
       },
       {
+        "serviceEn": "100 Pages (10 Years Validity)",
+        "serviceUr": "100 صفحات (10 سال میعاد)",
+        "normal": "PKR 13,500 (21 Days)",
+        "urgent": "PKR 27,000 (7 Days)",
+        "executive": "PKR 32,000 (Fast Track 2 Days)"
+      },
+      {
         "serviceEn": "e-Passport 36 Pages (5 Years)",
         "serviceUr": "ای پاسپورٹ 36 صفحات (5 سال)",
         "normal": "PKR 9,000",
@@ -4172,6 +4179,13 @@ export const ARTICLES: Record<string, Article> = {
         "normal": "PKR 13,500",
         "urgent": "PKR 22,500",
         "executive": "PKR 27,000 (Fast Track)"
+      },
+      {
+        "serviceEn": "e-Passport 72 Pages (10 Years)",
+        "serviceUr": "ای پاسپورٹ 72 صفحات (10 سال)",
+        "normal": "PKR 24,750",
+        "urgent": "PKR 40,500",
+        "executive": "N/A (No Fast Track)"
       }
     ],
     "steps": [
@@ -4230,8 +4244,8 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "جی ہاں! پاسپورٹ آفس جا کر نارمل اور ارجنٹ کا درمیانی فرق (3,000 روپے اضافی چالان) جمع کروا کر فائل کو ارجنٹ کیٹیگری میں تبدیل کروایا جا سکتا ہے۔"
       }
     ],
-    "contentEn": "## Directorate General of Immigration & Passports: 2026 Official Fee Schedule\nThe **Directorate General of Immigration and Passports (DGIP)**, under the Ministry of Interior, issues Machine Readable Passports (MRP) and chip-embedded biometric e-Passports to citizens across Pakistan and through foreign missions abroad.\n\n---\n\n## Complete 2026 Passport Fee Schedule (All Categories)\n\n| Passport Category & Booklet Size | Validity Period | Normal Delivery (21 Days) | Urgent Delivery (7 Days) | Fast Track (2 Days) |\n| :--- | :--- | :--- | :--- | :--- |\n| **36 Pages (Standard)** | **5 Years** | **PKR 4,500** | **PKR 7,500** | **PKR 12,500** |\n| **36 Pages (Standard)** | **10 Years** | **PKR 6,700** | **PKR 11,200** | **PKR 16,200** |\n| **72 Pages (Frequent Traveler)** | **5 Years** | **PKR 8,200** | **PKR 13,500** | **PKR 18,500** |\n| **72 Pages (Frequent Traveler)** | **10 Years** | **PKR 12,400** | **PKR 20,200** | **PKR 25,200** |\n| **100 Pages (Business Traveler)** | **5 Years** | **PKR 9,000** | **PKR 18,000** | **PKR 23,000** |\n| **100 Pages (Business Traveler)** | **10 Years** | **PKR 13,500** | **PKR 27,000** | **PKR 32,000** |\n| **e-Passport 36 Pages** | **5 Years** | **PKR 9,000** | **PKR 15,000** | **PKR 20,000** |\n| **e-Passport 36 Pages** | **10 Years** | **PKR 13,500** | **PKR 22,500** | **PKR 27,000** |\n\n*Note: An additional third-party 1Bill digital processing fee of PKR 10 to PKR 30 is levied by commercial banks and fintech apps (EasyPaisa/JazzCash) during electronic settlement.*\n\n---\n\n## Digital Fee Payment Process via Passport Fee Asaan App\n1. Download **Passport Fee Asaan** from Google Play Store or Apple App Store, or visit `fee.dgip.gov.pk`.\n2. Choose **Passport Application Type**: Regular MRP or Biometric e-Passport.\n3. Select **Delivery Priority**: Normal, Urgent, or Fast Track.\n4. Select **Page Count** (36, 72, or 100) and **Validity** (5 or 10 Years).\n5. Enter your 13-digit CNIC, mobile number, and email to generate a **17-Digit PSID**.\n6. Pay via your mobile banking app under **1Bill Invoice/Payment**, or deposit cash at any **National Bank of Pakistan (NBP)** branch.\n7. Print or screenshot the computerized transaction receipt to show at the Regional Passport Office token counter.",
-    "contentUr": "## پاکستان پاسپورٹ فیس شیڈول 2026 (آفیشل ریٹس)\nڈائریکٹوریٹ آف امیگریشن اینڈ پاسپورٹس کا تازہ ترین فیس شیڈول برائے مشین ریڈ ایبل اور ای پاسپورٹ۔\n\n### 2026 سرکاری فیس چارٹ\n- **36 صفحات (5 سال)**: نارمل 4,500 روپے | ارجنٹ 7,500 روپے | فاسٹ ٹریک 12,500 روپے\n- **36 صفحات (10 سال)**: نارمل 6,700 روپے | ارجنٹ 11,200 روپے | فاسٹ ٹریک 16,200 روپے\n- **72 صفحات (5 سال)**: نارمل 8,200 روپے | ارجنٹ 13,500 روپے | فاسٹ ٹریک 18,500 روپے\n- **72 صفحات (10 سال)**: نارمل 12,400 روپے | ارجنٹ 20,200 روپے | فاسٹ ٹریک 25,200 روپے\n- **ای پاسپورٹ (5 سال 36 صفحات)**: نارمل 9,000 روپے | ارجنٹ 15,000 روپے\n- **ای پاسپورٹ (10 سال 36 صفحات)**: نارمل 13,500 روپے | ارجنٹ 22,500 روپے\n\n*نوٹ: 1Bill اور آن لائن بینکنگ سے فیس ادائیگی پر 10 تا 30 روپے بینک چارجز لاگو ہوتے ہیں۔*",
+    "contentEn": "## Directorate General of Immigration & Passports: 2026 Official Fee Schedule\nThe **Directorate General of Immigration and Passports (DGIP)**, under the Ministry of Interior, issues Machine Readable Passports (MRP) and chip-embedded biometric e-Passports to citizens across Pakistan and through foreign missions abroad.\n\n---\n\n## Complete 2026 Passport Fee Schedule (All Categories)\n\n| Passport Category & Booklet Size | Validity Period | Normal Delivery (21 Days) | Urgent Delivery (7 Days) | Fast Track (2 Days) |\n| :--- | :--- | :--- | :--- | :--- |\n| **36 Pages (Standard)** | **5 Years** | **PKR 4,500** | **PKR 7,500** | **PKR 12,500** |\n| **36 Pages (Standard)** | **10 Years** | **PKR 6,700** | **PKR 11,200** | **PKR 16,200** |\n| **72 Pages (Frequent Traveler)** | **5 Years** | **PKR 8,200** | **PKR 13,500** | **PKR 18,500** |\n| **72 Pages (Frequent Traveler)** | **10 Years** | **PKR 12,400** | **PKR 20,200** | **PKR 25,200** |\n| **100 Pages (Business Traveler)** | **5 Years** | **PKR 9,000** | **PKR 18,000** | **PKR 23,000** |\n| **100 Pages (Business Traveler)** | **10 Years** | **PKR 13,500** | **PKR 27,000** | **PKR 32,000** |\n| **e-Passport 36 Pages** | **5 Years** | **PKR 9,000** | **PKR 15,000** | **PKR 20,000** |\n| **e-Passport 36 Pages** | **10 Years** | **PKR 13,500** | **PKR 22,500** | **PKR 27,000** |\n| **e-Passport 72 Pages** | **5 Years** | **PKR 16,500** | **PKR 27,000** | **N/A (No Fast Track)** |\n| **e-Passport 72 Pages** | **10 Years** | **PKR 24,750** | **PKR 40,500** | **N/A (No Fast Track)** |\n\n> 💡 **Understanding Top-End Figures (Rs. 27,000 / Rs. 32,000 vs Rs. 40,500)**: Under official DGIP schedules, the top-tier fee for a standard Machine Readable Passport (MRP) is **PKR 27,000** (100 Pages, 10 Years, Urgent) or **PKR 32,000** (Fast Track). The higher **PKR 40,500** fee applies strictly to the 72-page, 10-year **biometric e-Passport** under the Urgent category (Fast Track is not offered for e-Passports).\n\n*Note: An additional third-party 1Bill digital processing fee of PKR 10 to PKR 30 is levied by commercial banks and fintech apps (EasyPaisa/JazzCash) during electronic settlement.*\n\n---\n\n## Digital Fee Payment Process via Passport Fee Asaan App\n1. Download **Passport Fee Asaan** from Google Play Store or Apple App Store, or visit `fee.dgip.gov.pk`.\n2. Choose **Passport Application Type**: Regular MRP or Biometric e-Passport.\n3. Select **Delivery Priority**: Normal, Urgent, or Fast Track.\n4. Select **Page Count** (36, 72, or 100) and **Validity** (5 or 10 Years).\n5. Enter your 13-digit CNIC, mobile number, and email to generate a **17-Digit PSID**.\n6. Pay via your mobile banking app under **1Bill Invoice/Payment**, or deposit cash at any **National Bank of Pakistan (NBP)** branch.\n7. Print or screenshot the computerized transaction receipt to show at the Regional Passport Office token counter.",
+    "contentUr": "## پاکستان پاسپورٹ فیس شیڈول 2026 (آفیشل ریٹس)\nڈائریکٹوریٹ آف امیگریشن اینڈ پاسپورٹس کا تازہ ترین فیس شیڈول برائے مشین ریڈ ایبل اور ای پاسپورٹ۔\n\n### 2026 سرکاری فیس چارٹ\n- **36 صفحات (5 سال)**: نارمل 4,500 روپے | ارجنٹ 7,500 روپے | فاسٹ ٹریک 12,500 روپے\n- **36 صفحات (10 سال)**: نارمل 6,700 روپے | ارجنٹ 11,200 روپے | فاسٹ ٹریک 16,200 روپے\n- **72 صفحات (5 سال)**: نارمل 8,200 روپے | ارجنٹ 13,500 روپے | فاسٹ ٹریک 18,500 روپے\n- **72 صفحات (10 سال)**: نارمل 12,400 روپے | ارجنٹ 20,200 روپے | فاسٹ ٹریک 25,200 روپے\n- **100 صفحات (10 سال)**: نارمل 13,500 روپے | ارجنٹ 27,000 روپے | فاسٹ ٹریک 32,000 روپے\n- **ای پاسپورٹ (10 سال 36 صفحات)**: نارمل 13,500 روپے | ارجنٹ 22,500 روپے\n- **ای پاسپورٹ (10 سال 72 صفحات)**: نارمل 24,750 روپے | ارجنٹ 40,500 روپے\n\n*نوٹ: 1Bill اور آن لائن بینکنگ سے فیس ادائیگی پر 10 تا 30 روپے بینک چارجز لاگو ہوتے ہیں۔*",
     "relatedSlugs": [
       "/passport/online-apply",
       "/passport/tracking-status",
