@@ -11345,13 +11345,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "intiqal-registration-online-punjab",
     "fullPath": "/property/intiqal-registration-online-punjab",
     "categoryId": "property",
-    "titleEn": "Intiqal Registration Online Punjab 2026 – PLRA Land Mutation",
-    "titleUr": "آن لائن انتقال اراضی پنجاب 2026 – پی ایل آر اے میوٹیشن گائیڈ",
-    "metaDescriptionEn": "Register property Intiqal (mutation) online in Punjab via PLRA (punjab-zameen.gov.pk). Check Arazi Record Center token fees, registry mutation, and inheritance Fard.",
-    "metaDescriptionUr": "پنجاب لینڈ ریکارڈ اتھارٹی (PLRA) کے ذریعے آن لائن انتقال اراضی، اراضی ریکارڈ سنٹر ٹوکن فیس، بیع نامہ اور وراثتی انتقال کا مکمل طریقہ۔",
-    "directAnswerEn": "Property Intiqal (land mutation) in Punjab can be initiated online via the Punjab Land Records Authority (PLRA) portal at punjab-zameen.gov.pk. Intiqal officially transfers the revenue ownership record in the government register (Jamabandi) following a registered sale deed (Baye-Nama) or inheritance succession, costing a standardized 3% mutation fee at computerized Arazi Record Centers (ARC).",
-    "directAnswerUr": "پنجاب میں آن لائن انتقال اراضی پی ایل آر اے کی ویب سائٹ punjab-zameen.gov.pk کے ذریعے کروایا جا سکتا ہے۔ رجسٹری (بیع نامہ) یا وراثت کے بعد سرکاری ریکارڈ میں نام کی منتقلی کے لیے اراضی ریکارڈ سنٹر (ARC) پر 3% انتقال فیس جمع کروائی جاتی ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Intiqal Registration Online Punjab 2026: PLRA Land Mutation & One-Counter Guide",
+    "titleUr": "آن لائن انتقال اراضی پنجاب 2026: پی ایل آر اے میوٹیشن اور ون کاؤنٹر رجسٹری گائیڈ",
+    "metaDescriptionEn": "Register property Intiqal online in Punjab via PLRA (punjab-zameen.gov.pk). New PLRA-FBR One-Counter system, inheritance stamp duty exemption, fees & ARC token.",
+    "metaDescriptionUr": "پنجاب میں آن لائن انتقال اراضی اور نیا PLRA-FBR ون کاؤنٹر سسٹم۔ وراثتی انتقال پر اسٹامپ ڈیوٹی چھوٹ، فیس شیڈول اور اراضی ریکارڈ سنٹر رجسٹریشن۔",
+    "directAnswerEn": "Property Intiqal (land mutation) in Punjab officially transfers land revenue ownership in the Jamabandi register following a registered deed (Baye-Nama) or inheritance succession. Under the new PLRA–FBR 'One-Counter' integration launched in August 2026 (active in Lahore, Multan, Faisalabad, and expanding province-wide), property registration, e-stamping, and FBR tax collection are finalized in a single 30–90 minute visit at the Arazi Record Centre (ARC). Intiqal for inheritance (Intiqal-e-Wirasat) is 100% EXEMPT from stamp duty, requiring only a nominal fixed mutation fee (PKR 500–2,000). For sale transactions, stamp duty typically ranges from 1% to 3% based on zoning and instrument type.",
+    "directAnswerUr": "پنجاب میں انتقال اراضی (Intiqal) کے ذریعے رجسٹری یا وراثت کے بعد سرکاری ریونیو ریکارڈ (جمع بندی) میں ملکیت منتقل ہوتی ہے۔ اگست 2026 میں نافذ ہونے والے نئے 'PLRA-FBR ون کاؤنٹر' سسٹم (لاہور، ملتان، فیصل آباد سے شروع ہو کر صوبہ بھر میں فعال) کے تحت رجسٹری، ای سٹامپ اور ایف بی آر ٹیکس اب ایک ہی وزٹ میں 30 سے 90 منٹ میں مکمل ہو جاتے ہیں۔ وراثتی انتقال پر اسٹامپ ڈیوٹی مکمل معاف (0 روپے) ہے اور صرف معمولی فیس (500 تا 2,000 روپے) لاگو ہوتی ہے، جبکہ بیع (خرید و فروخت) پر اسٹامپ ڈیوٹی کا عمومی تناسب 1% سے 3% تک ہے۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
       "name": "Punjab Land Records Authority (PLRA)",
       "url": "https://punjab-zameen.gov.pk/"
@@ -11362,71 +11362,107 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Intiqal Fee (Baye / Sale Mutation)",
-        "serviceUr": "انتقال بیع فیس",
-        "normal": "3% of DC Valuation",
-        "urgent": "Computerized ARC",
-        "executive": "PLRA Portal",
-        "validity": "Permanent"
+        "serviceEn": "Inheritance Mutation (Intiqal-e-Wirasat)",
+        "serviceUr": "وراثتی انتقال (انتقالِ وراثت)",
+        "normal": "PKR 500 - 2,000 (Stamp Duty 100% EXEMPT)",
+        "urgent": "Legal Heirs Biometric",
+        "executive": "Arazi Record Center",
+        "validity": "Permanent Record Update"
       },
       {
-        "serviceEn": "Intiqal-e-Wirasat (Inheritance Mutation)",
-        "serviceUr": "وراثتی انتقال فیس",
-        "normal": "PKR 500 / Transaction",
-        "urgent": "Legal Heirs Biometric",
-        "executive": "ARC Center",
-        "validity": "Permanent"
+        "serviceEn": "Sale Mutation Fee (Baye Intiqal)",
+        "serviceUr": "بیع انتقال فیس (خرید و فروخت)",
+        "normal": "3% of DC Valuation",
+        "urgent": "Computerized ARC",
+        "executive": "PLRA / ePay Punjab",
+        "validity": "Permanent Record Update"
+      },
+      {
+        "serviceEn": "Punjab Base Stamp Duty (Sale Deeds)",
+        "serviceUr": "پنجاب اسٹامپ ڈیوٹی (بیع نامہ)",
+        "normal": "1% to 3% (Confirm with Sub-Registrar)",
+        "urgent": "e-Stamping Challan 32-A",
+        "executive": "estamp.punjab.gov.pk",
+        "validity": "Single Transaction"
+      },
+      {
+        "serviceEn": "PLRA Computerized Fard Issuance",
+        "serviceUr": "کمپیوٹرائزڈ فرد برائے انتقال",
+        "normal": "PKR 350 / Document",
+        "urgent": "Instant Print / App",
+        "executive": "PLRA Zameen Portal",
+        "validity": "Verification Proof"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Book ARC Appointment Online",
-        "titleUr": "آن لائن ٹوکن حاصل کریں",
-        "detailEn": "Book a computerized token slot on punjab-zameen.gov.pk.",
-        "detailUr": "اراضی ریکارڈ سنٹر کے لیے آن لائن وقت لیں۔"
+        "titleEn": "Book ARC Token Online & Verify Fard",
+        "titleUr": "آن لائن ٹوکن حاصل کریں اور فرد کی تصدیق کریں",
+        "detailEn": "Reserve an appointment on punjab-zameen.gov.pk or PLRA Mobile App and check digital record ownership.",
+        "detailUr": "اراضی ریکارڈ سنٹر کے لیے پورٹل یا ایپ سے وقت لیں اور ملکیتی فرد چیک کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Biometric Verification of Buyer & Seller",
-        "titleUr": "خریدار و فروخت کنندہ کی تصدیق",
-        "detailEn": "Visit Arazi Record Center with CNICs and original Sale Deed.",
-        "detailUr": "اصل رجسٹری اور شناختی کارڈ کے ساتھ سنٹر جائیں۔"
+        "titleEn": "Single Visit to PLRA-FBR One-Counter",
+        "titleUr": "PLRA-FBR ون کاؤنٹر پر ایک ہی وزٹ",
+        "detailEn": "Under the August 2026 integration, land records sync directly with FBR filer databases to calculate CVT, stamp duty, and withholding taxes.",
+        "detailUr": "نئے سسٹم کے تحت زمین کا ریکارڈ اور ایف بی آر فائلر ٹیکس خودکار طریقے سے تصدیق ہوتے ہیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Pay Challan 32-A & Receive Fard",
-        "titleUr": "چالان جمع کروا کر فرد حاصل کریں",
-        "detailEn": "Pay government fees via e-Stamping portal and obtain computerized Intiqal confirmation.",
-        "detailUr": "فیس ادا کر کے تصدیق شدہ انتقال کاپی لیں۔"
+        "titleEn": "Pay Unified PSID (Challan 32-A & Taxes)",
+        "titleUr": "مشترکہ پی ایس آئی ڈی (چالان 32-A و ٹیکس) ادا کریں",
+        "detailEn": "Pay government stamp duty, PLRA mutation charges, and FBR taxes (236C/236K) in one go via ePay Punjab or mobile banking.",
+        "detailUr": "ای پے پنجاب یا موبائل بینکنگ کے ذریعے تمام فیسیں اور چالان ایک ساتھ ادا کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Biometric Verification & Intiqal Sanction",
+        "titleUr": "بائیومیٹرک تصدیق اور انتقال کی منظوری",
+        "detailEn": "Complete biometric verification of buyer, seller, or legal heirs. Clean transactions are finalized in 30 to 90 minutes.",
+        "detailUr": "خریدار، فروخت کنندہ یا تمام قانونی ورثا کی بائیومیٹرک تصدیق کے بعد 30 تا 90 منٹ میں انتقال مکمل ہوتا ہے۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "Is a registered Sale Deed valid without Intiqal?",
+        "questionEn": "What is the new PLRA-FBR 'One-Counter' integration introduced in August 2026?",
+        "questionUr": "اگست 2026 میں شروع ہونے والا نیا PLRA-FBR ون کاؤنٹر سسٹم کیا ہے؟",
+        "answerEn": "Launched on 21 August 2026 across Punjab (initially active in Lahore, Multan, and Faisalabad, expanding province-wide), this direct digital bridge links PLRA land records with FBR's tax database. Instead of visiting separate tax offices, banks, and sub-registrars over multiple days, citizens complete property registration, e-stamping, CVT, and FBR withholding tax payments in a single visit at the Arazi Record Centre (ARC) in typically 30 to 90 minutes.",
+        "answerUr": "پنجاب حکومت اور ایف بی آر کے مشترکہ منصوبے کے تحت 21 اگست 2026 سے ون کاؤنٹر سروس نافذ کی گئی ہے جو لاہور، ملتان اور فیصل آباد کے بعد صوبہ بھر میں پھیلائی جا رہی ہے۔ شہری اب الگ الگ دفاتر کے چکر کاٹنے کے بجائے اراضی ریکارڈ سنٹر پر ایک ہی وزٹ میں 30 سے 90 منٹ کے اندر رجسٹری، ای سٹامپ اور ایف بی آر ٹیکس ادا کر کے انتقال کروا سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Is stamp duty charged on inheritance property transfers (Intiqal-e-Wirasat) in Punjab?",
+        "questionUr": "کیا پنجاب میں وراثتی جائیداد کی منتقلی پر اسٹامپ ڈیوٹی لگتی ہے؟",
+        "answerEn": "NO. In Punjab, Intiqal-e-Wirasat (transfer of inherited property to legal heirs) is 100% EXEMPT from stamp duty under Board of Revenue regulations. Legal heirs do not pay percentage-based stamp duty or CVT. Only a nominal, fixed revenue mutation fee (typically PKR 500 to PKR 2,000 depending on land classification) is charged to record the heirs' names in the Jamabandi.",
+        "answerUr": "ہرگز نہیں! پنجاب بورڈ آف ریونیو کے قوانین کے تحت وراثتی انتقال پر اسٹامپ ڈیوٹی مکمل طور پر معاف (0 روپے) ہے۔ قانونی ورثا کو مالیت پر کوئی فیصد اسٹامپ ڈیوٹی یا سی وی ٹی ادا نہیں کرنی پڑتی، صرف جمع بندی میں نام درج کروانے کی معمولی فیس (500 سے 2,000 روپے) لی جاتی ہے۔"
+      },
+      {
+        "questionEn": "What is the exact Punjab stamp duty rate for property sales in 2026?",
+        "questionUr": "2026 میں پنجاب میں پراپرٹی کی خرید و فروخت پر اسٹامپ ڈیوٹی کا ریٹ کیا ہے؟",
+        "answerEn": "The base stamp duty rate in Punjab typically ranges between 1% and 3% of the DC valuation, depending on the property classification, urban/rural zoning, and transaction instrument. While recent provincial amendments under the Stamp (Amendment) Ordinance standardized direct sale deeds to 1% (with certain extended agreements attracting up to 2%), local municipal TMA taxes and zoning surcharges can affect the total payable amount. Citizens should confirm their exact rate on the e-Stamping portal (estamp.punjab.gov.pk) or with their local Sub-Registrar rather than assuming a single flat figure.",
+        "answerUr": "پنجاب میں اسٹامپ ڈیوٹی کی بنیادی شرح عام طور پر 1% سے 3% کے درمیان ہے۔ اگرچہ اسٹامپ آرڈیننس کے تحت براہ راست بیع نامہ پر شرح 1% کر دی گئی ہے اور 12 ماہ سے زائد کے معاہدات پر 2% تک ہو سکتی ہے، تاہم میونسپل کمیٹی/ٹی ایم اے چارجز کے باعث حتمی شرح مختلف ہو سکتی ہے۔ شہری ای سٹامپ پورٹل یا متعلقہ سب رجسٹرار سے اپنے چالان کی حتمی شرح لازماً کنفرم کریں۔"
+      },
+      {
+        "questionEn": "What essential documents are mandatory for inheritance Intiqal?",
+        "questionUr": "وراثتی انتقال کروانے کے لیے کون سے کاغذات لازمی ہیں؟",
+        "answerEn": "Required documents include the NADRA Succession Certificate or Letter of Administration, original Death Certificate of the deceased, Family Registration Certificate (FRC), CNICs of all legal heirs, and mandatory biometric presence of all surviving heirs (including female heirs) at the Arazi Record Centre.",
+        "answerUr": "نادرا سکسیشن سرٹیفکیٹ یا لیٹر آف ایڈمنسٹریشن، متوفی کا ڈیتھ سرٹیفکیٹ، نادرا فیملی رجسٹریشن سرٹیفکیٹ (FRC)، تمام ورثا کے اصل شناختی کارڈ اور تمام قانونی ورثا (بشمول خواتین) کی اراضی ریکارڈ سنٹر پر بائیومیٹرک حاضری لازمی ہے۔"
+      },
+      {
+        "questionEn": "Is a registered Sale Deed valid without Intiqal in revenue records?",
         "questionUr": "کیا بغیر انتقال کے صرف رجسٹری قانونی طور پر کافی ہے؟",
-        "answerEn": "No. While a registry proves the contract between parties, ownership in the government land revenue record (Jamabandi) only takes legal effect once Intiqal is approved.",
-        "answerUr": "نہیں! ریونیو ریکارڈ میں مالک بننے کے لیے رجسٹری کے بعد انتقال کروانا لازمی ہوتا ہے۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for Intiqal Registration Online Punjab 2026?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "answerEn": "No. While a registered sale deed (Baye-Nama) legally confirms the transaction contract between parties, ownership in the government land revenue record (Jamabandi) only takes official effect when Intiqal is sanctioned by the Revenue Officer and entered into the PLRA database.",
+        "answerUr": "نہیں! رجسٹری فریقین کے درمیان قانونی معاہدے کا ثبوت ہے، لیکن سرکاری ریونیو ریکارڈ (جمع بندی) میں قانونی مالک بننے اور اراضی کی آگے خرید و فروخت کے لیے پی ایل آر اے سے باقاعدہ انتقال منظور کروانا ضروری ہے۔"
       }
     ],
-    "contentEn": "Comprehensive guide to PLRA land mutation and Intiqal in Punjab.",
-    "contentUr": "پنجاب میں زمین کے انتقال کی مکمل معلومات۔",
+    "contentEn": "## Complete Guide to Online Intiqal & Property Mutation in Punjab (2026)\nIn Punjab's land revenue system, **Intiqal (Mutation)** is the definitive administrative process that updates the government's Record of Rights (*Jamabandi*) to reflect new property ownership following a purchase, gift, or inheritance.\n\n> 🏛️ **MAJOR REFORM: PLRA-FBR \"ONE-COUNTER\" INTEGRATION (Live August 2026)**:\n> On **21 August 2026**, the Punjab Government and the Federal Board of Revenue (FBR) operationalized a unified **'One-Counter' sale-registry system** across Punjab (piloted first in **Lahore, Multan, and Faisalabad**, expanding province-wide).\n> - **Single Visit**: Property registration, e-Stamping, PLRA mutation fees, and FBR withholding taxes (Section 236C for sellers and 236K for buyers) are processed concurrently at the Arazi Record Centre (ARC) or Sub-Registrar office.\n> - **Processing Time**: Clean property cases that previously took days and multiple trips to banks, FBR commissioners, and Patwarkhanas are now finalized in **30 to 90 minutes**.\n> - **Real-Time Filer Verification**: The system connects PLRA land data with FBR's Active Taxpayer List (ATL) to auto-calculate accurate tax liabilities on the spot.\n\n---\n\n> 📜 **CRITICAL EXEMPTION: ZERO STAMP DUTY ON INHERITANCE (INTIQAL-E-WIRASAT)**:\n> A major point of confusion for citizens is whether inheritance transfers incur commercial property taxes.\n> - **Stamp Duty Exemption**: Under Punjab Board of Revenue regulations, **Intiqal-e-Wirasat (Inheritance Mutation) is 100% EXEMPT from stamp duty** (0% rate).\n> - **No Percentage Taxes**: Legal heirs do NOT pay percentage-based stamp duty, CVT, or municipal transfer taxes on inherited property.\n> - **Nominal Fixed Fee Only**: Only a nominal, fixed administrative mutation fee applies (typically **PKR 500 to PKR 2,000** depending on rural/urban classification).\n> - **Requirements**: Must present a valid NADRA Succession Certificate or Letter of Administration, death certificate, FRC, and ensure the biometric presence of all legal heirs (including female heirs).\n\n---\n\n## Punjab Stamp Duty Rates on Sale Deeds (1% to 3% Range)\nWhen executing a sale deed (*Baye-Nama*) followed by mutation, the base stamp duty rate in Punjab typically ranges between **1% and 3%** of the official DC valuation:\n- **1% Standard Rate**: Under recent provincial enactments (including the Stamp Amendment Ordinance), direct sale deeds for immovable property have been standardized to 1%.\n- **Time-Based Variation**: Agreements extending beyond 12 months may attract an additional duty up to 2%.\n- **Local Municipal Taxes & TMA Charges**: Urban municipal corporations and District Councils may assess supplementary transfer fees (typically 1%).\n- **Official Advisory**: Because rates vary by district zoning and property classification, **always verify your exact challan rate on the official e-Stamping portal (`estamp.punjab.gov.pk`) or directly with your local Sub-Registrar** rather than relying on an assumed flat percentage.\n\n---\n\n## Four-Stage Step-by-Step Intiqal Procedure\n1. **Pre-Check Digital Fard**: Visit `punjab-zameen.gov.pk` to verify computerized title and ensure no active legal stays or court injunctions exist on the Khewat.\n2. **Generate e-Stamp Challan 32-A & FBR Tax Challans**: Use the integrated e-Registration system to generate unified PSIDs for stamp duty, registration fees, and FBR taxes.\n3. **Pay PSID Digitally**: Complete payment via ePay Punjab, mobile banking, ATM, or authorized bank branches.\n4. **Appear for Biometric Sanction**: Visit your designated Arazi Record Centre or Sub-Registry for biometric thumb-impression verification. The Revenue Officer approves the Intiqal, updating the Jamabandi record in real time.",
+    "contentUr": "## آن لائن انتقال اراضی پنجاب 2026: مکمل سرکاری گائیڈ\nپنجاب میں جائیداد کی خرید و فروخت یا وراثت کے بعد سرکاری ریکارڈ (جمع بندی) میں نیا نام درج کروانے کے عمل کو **انتقال (Intiqal)** کہا جاتا ہے۔\n\n> 🏛️ **بڑی پیش رفت: PLRA اور FBR کا \"ون کاؤنٹر\" سسٹم (اگست 2026)**:\n> 21 اگست 2026 سے پنجاب حکومت اور ایف بی آر نے جائیداد کی رجسٹری اور ٹیکس ادائیگی کے لیے مشترکہ **ون کاؤنٹر سروس** فعال کر دی ہے (پہلے مرحلے میں **لاہور، ملتان اور فیصل آباد**، اور اب صوبہ بھر میں وسعت دی جا رہی ہے)۔\n> - **ایک ہی وزٹ**: رجسٹری، ای سٹامپ، پی ایل آر اے فیس اور ایف بی آر انکم ٹیکس (236C و 236K) اب اراضی ریکارڈ سنٹر پر ایک ہی جگہ جمع ہوتے ہیں۔\n> - **وقت کی بچت**: مختلف دفاتر کے چکر کاٹنے کا پرانا نظام ختم؛ صاف شفاف کیسز اب **30 سے 90 منٹ** میں مکمل ہو جاتے ہیں۔\n> - **فائلر تصدیق**: سسٹم خودکار طریقے سے فائلر/نان فائلر اسٹیٹس چیک کر کے اصل ٹیکس کا حساب لگاتا ہے۔\n\n---\n\n> 📜 **اہم ترین قانونی رعایت: وراثتی انتقال پر اسٹامپ ڈیوٹی مکمل معاف**:\n> شہریوں کے لیے سب سے بڑا ابہام وراثتی جائیداد پر ٹیکس کے حوالے سے ہوتا ہے:\n> - **اسٹامپ ڈیوٹی سے چھوٹ**: پنجاب بورڈ آف ریونیو کے تحت **وراثتی انتقال (Intiqal-e-Wirasat) پر اسٹامپ ڈیوٹی 100 فیصد معاف (0 روپے)** ہے۔\n> - **کوئی فیصد ٹیکس نہیں**: قانونی ورثا کو مالیت پر کوئی اسٹامپ ڈیوٹی یا سی وی ٹی ادا نہیں کرنی ہوتی۔\n> - **صرف معمولی فیس**: صرف ریکارڈ کی درستگی کی معمولی فیس (**500 سے 2,000 روپے**) لی جاتی ہے۔\n> - **لازمی کاغذات**: نادرا سکسیشن سرٹیفکیٹ، ڈیتھ سرٹیفکیٹ، فیملی رجسٹریشن سرٹیفکیٹ (FRC) اور تمام قانونی ورثا (خصوصاً خواتین) کی بائیومیٹرک تصدیق لازمی ہے۔\n\n---\n\n## پنجاب میں اسٹامپ ڈیوٹی کی شرح (1% تا 3% رینج)\nخرید و فروخت کے بیع نامہ پر اسٹامپ ڈیوٹی کا عمومی تناسب ڈی سی ریٹ کے مطابق **1% سے 3%** ہوتا ہے:\n- براہ راست بیع نامہ پر عام طور پر شرح **1%** لاگو ہوتی ہے۔\n- 12 ماہ سے زائد کے بیعانہ معاہدات پر یہ شرح 2% تک ہو سکتی ہے۔\n- شہری حتمی ادائیگی سے قبل ای سٹامپ پورٹل (`estamp.punjab.gov.pk`) یا متعلقہ سب رجسٹرار سے اپنے کیس کی درست شرح لازمی کنفرم کریں۔",
     "relatedSlugs": [
+      "/property/stamp-duty-challan-32a-online-payment",
+      "/property/property-mutation-check-by-cnic",
       "/property/registry-vs-intiqal-difference",
-      "/property/patwari-record-online-check",
-      "/property/property-tax-calculator-pakistan-2026"
+      "/property/patwari-record-online-check"
     ]
   },
   "property-mutation-check-by-cnic": {
@@ -11711,15 +11747,15 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "stamp-duty-challan-32a-online-payment",
     "fullPath": "/property/stamp-duty-challan-32a-online-payment",
     "categoryId": "property",
-    "titleEn": "e-Stamping Punjab Challan 32-A Online Payment & Verification",
-    "titleUr": "ای سٹامپ پنجاب چالان 32-A آن لائن ادائیگی اور تصدیق",
-    "metaDescriptionEn": "Generate and pay e-Stamp non-judicial stamp papers online in Punjab via estamp.punjab.gov.pk. Pay Challan 32-A for property registry, rent agreements, and affidavits.",
-    "metaDescriptionUr": "ای سٹامپ پیپر آن لائن بنانے کا طریقہ۔ پراپرٹی رجسٹری، کرایہ نامہ اور بیان حلفی کے لیے چالان 32-A کی آن لائن ادائیگی اور تصدیق۔",
-    "directAnswerEn": "e-Stamping Punjab (estamp.punjab.gov.pk) allows citizens to generate electronic judicial and non-judicial stamp papers online within 5 minutes. After entering property DC rate valuation parameters, the system creates a 16-digit Challan 32-A (PSID) payable via 1Link, mobile banking apps, or National Bank branches before printing the high-security e-Stamp paper.",
-    "directAnswerUr": "پنجاب میں ای سٹامپ پیپر بنانے کے لیے estamp.punjab.gov.pk پر جا کر چالان 32-A حاصل کریں۔ 1Link یا موبائل بینکنگ سے فیس ادا کر کے کیو آر کوڈ والا اصل ای سٹامپ پیپر پرنٹ کروائیں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "e-Stamping Punjab Challan 32-A Online Payment & Stamp Duty Guide 2026",
+    "titleUr": "ای سٹامپ پنجاب چالان 32-A آن لائن ادائیگی اور اسٹامپ ڈیوٹی گائیڈ 2026",
+    "metaDescriptionEn": "Generate & pay e-Stamp Challan 32-A online in Punjab (estamp.punjab.gov.pk). Learn 1-3% stamp duty rates, inheritance exemptions & PLRA-FBR One-Counter integration.",
+    "metaDescriptionUr": "پنجاب میں ای سٹامپ چالان 32-A آن لائن بنانے اور ادا کرنے کا طریقہ۔ 1% تا 3% اسٹامپ ڈیوٹی ریٹس، وراثتی چھوٹ اور PLRA-FBR ون کاؤنٹر سسٹم کی تفصیلات۔",
+    "directAnswerEn": "e-Stamping Punjab (estamp.punjab.gov.pk) generates electronic judicial and non-judicial stamp papers via a 16-digit Challan 32-A (PSID) payable through ePay Punjab, mobile banking, or bank branches. Base Punjab Stamp Duty typically ranges from 1% to 3% depending on property type, urban/rural zoning, and transaction instrument (with recent provincial amendments standardizing direct sale deeds to 1%, and time-based agreements up to 2%). Always confirm the exact rate with your Sub-Registrar or on the portal. Transfers to legal heirs via inheritance (Intiqal-e-Wirasat) are 100% EXEMPT from stamp duty. Under the new PLRA-FBR One-Counter system launched in August 2026, e-Stamp Challan 32-A and FBR taxes (236C/236K) are processed simultaneously in a single 30–90 minute visit.",
+    "directAnswerUr": "پنجاب میں ای سٹامپ پورٹل (estamp.punjab.gov.pk) کے ذریعے 16 ہندسوں والا چالان 32-A (PSID) حاصل کیا جاتا ہے جس کی ادائیگی ای پے پنجاب یا موبائل بینکنگ سے ہوتی ہے۔ پنجاب میں اسٹامپ ڈیوٹی کی بنیادی شرح 1% سے 3% کے درمیان ہے جو پراپرٹی کی قسم، زوننگ اور معاہدے کے دورانیے پر منحصر ہے (براہ راست بیع نامہ پر عمومی شرح 1% ہے، تاہم حتمی شرح سب رجسٹرار سے تصدیق کریں)۔ قانونی ورثا کے نام وراثتی منتقلی پر اسٹامپ ڈیوٹی مکمل معاف ہے۔ اگست 2026 کے نئے 'PLRA-FBR ون کاؤنٹر' سسٹم کے تحت ای سٹامپ اور ایف بی آر ٹیکس چالان اب ایک ساتھ 30 سے 90 منٹ میں نمٹا دیے جاتے ہیں۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
-      "name": "Punjab e-Stamping Portal (PITB)",
+      "name": "Punjab e-Stamping Portal (PITB / Board of Revenue)",
       "url": "https://estamp.punjab.gov.pk/"
     },
     "author": {
@@ -11728,45 +11764,102 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Affidavit / Statement (PKR 100 Stamp)",
-        "serviceUr": "بیان حلفی سٹامپ پیپر",
-        "normal": "PKR 100 / Paper",
+        "serviceEn": "Punjab Base Stamp Duty (Sale Deeds)",
+        "serviceUr": "پنجاب بنیادی اسٹامپ ڈیوٹی (بیع نامہ)",
+        "normal": "1% to 3% (Confirm with Sub-Registrar)",
+        "urgent": "e-Stamp Challan 32-A",
+        "executive": "estamp.punjab.gov.pk",
+        "validity": "Executed Deed"
+      },
+      {
+        "serviceEn": "Inheritance Transfer (Intiqal-e-Wirasat)",
+        "serviceUr": "وراثتی منتقلی (انتقالِ وراثت)",
+        "normal": "PKR 0 Stamp Duty (100% EXEMPT)",
+        "urgent": "Nominal fee only",
+        "executive": "Arazi Record Center",
+        "validity": "Permanent Record Update"
+      },
+      {
+        "serviceEn": "Non-Judicial Affidavit / Agreement Stamp",
+        "serviceUr": "نان جوڈیشل بیان حلفی اسٹامپ پیپر",
+        "normal": "PKR 100 - 1,200 / Paper",
         "urgent": "Instant Print",
-        "executive": "Bank of Punjab / NBP",
-        "validity": "Valid"
+        "executive": "ePay / NBP / BoP",
+        "validity": "Legally Enforceable"
+      },
+      {
+        "serviceEn": "Punjab Registration Fee (Sub-Registrar)",
+        "serviceUr": "پنجاب سب رجسٹرار رجسٹریشن فیس",
+        "normal": "~1% of Property Valuation",
+        "urgent": "Challan 32-A Integrated",
+        "executive": "Sub-Registrar Office",
+        "validity": "Registered Deed"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
         "titleEn": "Fill e-Stamping Form Online",
-        "titleUr": "آن لائن فارم بھریں",
-        "detailEn": "Select District, Tehsil, and transaction type on estamp.punjab.gov.pk.",
-        "detailUr": "ضلع اور معاہدے کی قسم درج کریں۔"
+        "titleUr": "آن لائن ای سٹامپ فارم پُر کریں",
+        "detailEn": "Select District, Tehsil, Sub-Registrar, Mouza, and DC rate classification on estamp.punjab.gov.pk.",
+        "detailUr": "پورٹل پر ضلع، تحصیل، سب رجسٹرار اور ڈی سی ریٹ کی معلومات درج کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Generate 16-Digit Challan 32-A (PSID)",
+        "titleUr": "16 ہندسوں کا چالان 32-A (PSID) حاصل کریں",
+        "detailEn": "The system automatically calculates stamp duty, CVT, and registration charges, issuing a 16-digit PSID code.",
+        "detailUr": "سسٹم خودکار طریقے سے اسٹامپ ڈیوٹی اور فیس کا حساب لگا کر پی ایس آئی ڈی جاری کرتا ہے۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay via ePay Punjab or 1Link Banking",
+        "titleUr": "ای پے پنجاب یا ون لنک بینکنگ سے ادا کریں",
+        "detailEn": "Pay digitally via mobile banking, ATM, OTC bank counters, or ePay Punjab app.",
+        "detailUr": "موبائل ایپ، بینک کاؤنٹر یا اے ٹی ایم کے ذریعے آن لائن ادائیگی مکمل کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Print e-Stamp Paper with QR Code",
+        "titleUr": "کیو آر کوڈ والا اصل ای سٹامپ پرنٹ کریں",
+        "detailEn": "Download and print the official watermark stamp paper and bring it to the Sub-Registrar / ARC One-Counter for biometric execution.",
+        "detailUr": "کیو آر کوڈ اور سیکیورٹی واٹر مارک والا ای سٹامپ پرنٹ کر کے سب رجسٹرار سنٹر پر پیش کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "How do I verify the authenticity of an e-Stamp paper?",
-        "questionUr": "ای سٹامپ پیپر کی اصلیت کیسے چیک کریں؟",
-        "answerEn": "SMS the 16-digit e-Stamp certificate number to 8100 or scan the on-page QR code with a smartphone camera.",
-        "answerUr": "16 ہندسوں کا نمبر 8100 پر ایس ایم ایس کریں یا کیو آر کوڈ اسکین کریں۔"
+        "questionEn": "What is the current exact Punjab stamp duty rate for property transactions?",
+        "questionUr": "پنجاب میں جائیداد کی رجسٹری پر اسٹامپ ڈیوٹی کی موجودہ شرح کیا ہے؟",
+        "answerEn": "Stamp duty in Punjab typically falls within a 1% to 3% range based on property category, zoning (urban vs rural), and deed instrument. While recent enactments under the Stamp (Amendment) Ordinance standardized regular conveyance sale deeds to 1% (with long-term agreements extending beyond 12 months taxed up to 2%), local municipal TMA levies or Zila council surcharges can vary by locality. Intending buyers must always verify their specific Challan 32-A calculation on estamp.punjab.gov.pk or with the local Sub-Registrar rather than assuming a single blanket number.",
+        "answerUr": "پنجاب میں اسٹامپ ڈیوٹی کی شرح عام طور پر 1% سے 3% کے درمیان ہوتی ہے جو شہری یا دیہی حدود اور معاہدے کی قسم پر منحصر ہے۔ اسٹامپ آرڈیننس کے تحت عام بیع نامہ پر بنیادی شرح 1% ہے، جبکہ 12 ماہ سے زائد کے ایگریمنٹس پر 2% ہو سکتی ہے۔ میونسپل ٹی ایم اے چارجز ضلع کے لحاظ سے مختلف ہو سکتے ہیں، اس لیے ای سٹامپ پورٹل یا متعلقہ سب رجسٹرار سے اپنے چالان کی حتمی تصدیق ضرور کریں۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for e-Stamping Punjab Challan 32-A Online Payment & Verification?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
+        "questionEn": "Is Challan 32-A stamp duty required for inheritance property transfers?",
+        "questionUr": "کیا وراثتی جائیداد کی منتقلی کے لیے بھی چالان 32-A اسٹامپ ڈیوٹی بھرنا ضروری ہے؟",
+        "answerEn": "NO. In Punjab, transferring property to legal heirs through Intiqal-e-Wirasat (Inheritance Mutation) is 100% EXEMPT from stamp duty under Board of Revenue regulations. Legal heirs do not pay percentage stamp duty or CVT. Only nominal administrative mutation fees (typically PKR 500 to PKR 2,000) apply at the Arazi Record Centre.",
+        "answerUr": "ہرگز نہیں! پنجاب بورڈ آف ریونیو کے احکامات کے تحت قانونی ورثا کے نام وراثتی انتقال پر اسٹامپ ڈیوٹی مکمل معاف (0 فیصد) ہے۔ ورثا کو مالیت پر کوئی اسٹامپ ڈیوٹی نہیں دینی ہوتی، صرف اراضی ریکارڈ سنٹر پر معمولی فیس ادا کر کے وراثت درج کروائی جاتی ہے۔"
       },
       {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "How does the August 2026 PLRA-FBR 'One-Counter' integration affect Challan 32-A and property registry?",
+        "questionUr": "اگست 2026 کے PLRA-FBR ون کاؤنٹر سسٹم سے چالان 32-A اور رجسٹری کے طریقہ کار پر کیا اثر پڑا ہے؟",
+        "answerEn": "Introduced on 21 August 2026 across Punjab (piloted in Lahore, Multan, and Faisalabad), the One-Counter system synchronizes e-Stamping with FBR's tax portal. Now, provincial stamp duty (Challan 32-A), CVT, and federal withholding taxes under Section 236C (sellers) and Section 236K (buyers) are generated and settled together in a single visit at the Arazi Record Centre or Sub-Registrar office, completing the entire registry in 30 to 90 minutes.",
+        "answerUr": "21 اگست 2026 سے نافذ نئے سسٹم کے تحت ای سٹامپ چالان اور ایف بی آر ٹیکس چالان اب اراضی ریکارڈ سنٹر یا سب رجسٹری پر ایک ہی کاؤنٹر پر ساتھ ساتھ نمٹائے جاتے ہیں۔ اس سے خریدار و فروخت کنندہ کا کام صرف ایک وزٹ میں 30 تا 90 منٹ کے اندر مکمل ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "How can I verify the authenticity of an e-Stamp paper?",
+        "questionUr": "ای سٹامپ پیپر کی تصدیق کیسے کی جاتی ہے؟",
+        "answerEn": "You can verify the e-Stamp paper instantly by sending the 16-digit certificate number via SMS to 8100, scanning the printed QR code with a smartphone camera, or entering the e-Stamp ID on the official portal at estamp.punjab.gov.pk.",
+        "answerUr": "ای سٹامپ پیپر کا 16 ہندسوں کا نمبر 8100 پر ایس ایم ایس کر کے، کیمرے سے کیو آر کوڈ اسکین کر کے، یا سرکاری پورٹل estamp.punjab.gov.pk پر نمبر درج کر کے سیکنڈوں میں تصدیق کی جا سکتی ہے۔"
+      },
+      {
+        "questionEn": "Can I get a refund if an e-Stamp Challan 32-A is generated with incorrect details?",
+        "questionUr": "کیا غلط چالان بننے کی صورت میں ای سٹامپ فیس کی واپسی ممکن ہے؟",
+        "answerEn": "Yes. If an e-Stamp paper is unused and contains clerical errors, you can submit a refund application to the District Collector (Deputy Commissioner's office) or District Treasury within the statutory period, supported by the original printed stamp paper and payment receipt.",
+        "answerUr": "جی ہاں! اگر ای سٹامپ پیپر استعمال نہ ہوا ہو اور اس میں کوئی غلطی ہو جائے تو اصل چالان اور ثبوت کے ساتھ ضلعی کلکٹر / ڈپٹی کمشنر کے دفتر میں ری فنڈ کی درخواست دی جا سکتی ہے۔"
       }
     ],
-    "contentEn": "Guide on generating and paying e-Stamping Challan 32-A in Pakistan.",
-    "contentUr": "ای سٹامپ پیپر بنانے اور چالان کی معلومات۔",
+    "contentEn": "## Complete Guide to e-Stamping Punjab & Challan 32-A Online Payment (2026)\nThe Government of Punjab's **e-Stamping System** (`estamp.punjab.gov.pk`), managed by the Punjab Information Technology Board (PITB) and the Board of Revenue, enables citizens to generate judicial and non-judicial electronic stamp papers transparently within minutes.\n\n> 🏛️ **PLRA-FBR \"ONE-COUNTER\" INTEGRATION (Live August 2026)**:\n> As of **21 August 2026**, the Punjab government rolled out a unified **PLRA–FBR One-Counter service** across the province (initially launched in **Lahore, Multan, and Faisalabad**).\n> - **Single Visit Workflow**: Previously, property buyers and sellers had to visit FBR offices for tax challans, National Bank branches for stamp duty, and the Sub-Registrar for deed execution. Now, property registration, e-Stamp Challan 32-A verification, and FBR withholding tax collection (Section 236C & 236K) take place in a single visit at the Arazi Record Centre or Sub-Registrar counter.\n> - **Time to Complete**: Clean property transactions are now routinely finalized in **30 to 90 minutes**.\n> - **Unified Digital Calculation**: Linking PLRA computerized land records with FBR databases ensures automated, tamper-proof tax calculation based on live filer/non-filer status.\n\n---\n\n> ⚖️ **PUNJAB STAMP DUTY RATE: 1% TO 3% RANGE ADVISORY**:\n> Stamp duty rates in Punjab vary depending on transaction category and zoning:\n> - **Standard Direct Sale Rate**: Recent legislative updates under the Stamp (Amendment) Ordinance standardized direct conveyance sale deeds to **1%** of the DC valuation.\n> - **Long-Term Agreements**: Sale agreements extending beyond 12 months can attract a duty rate of up to **2%**.\n> - **Municipal / TMA Levies**: Local municipal corporations and District Councils often impose an additional local transfer duty (typically ~1%).\n> - **Official Verification Rule**: Do not rely on fixed assumptions. Always calculate your exact rate on `estamp.punjab.gov.pk` or **confirm your exact rate at the local Sub-Registrar**, as rates vary across urban, rural, residential, and commercial classifications.\n\n---\n\n> 📜 **CRITICAL EXEMPTION: ZERO STAMP DUTY ON INHERITANCE (INTIQAL-E-WIRASAT)**:\n> A very common misunderstanding among citizens is that legal heirs must pay stamp duty when distributing inherited real estate.\n> - **100% Stamp Duty Exemption**: Transfers of inherited property to legal heirs through *Intiqal-e-Wirasat* are **completely exempt from stamp duty** (0%).\n> - **No Percentage Fees**: No stamp duty, CVT, or registry percentage taxes apply to inheritance cases in Punjab.\n> - **Nominal Fee Only**: Heirs pay only a nominal administrative mutation fee (typically **PKR 500 to PKR 2,000**) at the Arazi Record Centre.\n> - **Succession Documents Required**: A valid NADRA Succession Certificate or Letter of Administration is required to effectuate the tax-free mutation.\n\n---\n\n## Step-by-Step Challan 32-A Payment Process\n1. **Access e-Stamping Portal**: Navigate to `estamp.punjab.gov.pk` and choose **Non-Judicial** for property sale deeds or affidavits.\n2. **Input Valuation Parameters**: Select District, Tehsil, Sub-Registrar, Mouza, and DC land classification to auto-compute duty and generate your 16-digit PSID.\n3. **Pay via 1Link or ePay Punjab**: Use mobile banking apps, ATMs, JazzCash/EasyPaisa, or over-the-counter at BoP/NBP branches.\n4. **Print e-Stamp Paper**: Print the electronic stamp paper featuring a high-security barcode and 2D QR code.\n5. **Instant QR Verification**: SMS the 16-digit code to `8100` or scan with a smartphone camera to confirm validity.",
+    "contentUr": "## ای سٹامپ پنجاب چالان 32-A آن لائن ادائیگی و تصدیق گائیڈ 2026\nپنجاب انفارمیشن ٹیکنالوجی بورڈ (PITB) اور بورڈ آف ریونیو کا **ای سٹامپ پورٹل** (`estamp.punjab.gov.pk`) شہریوں کو گھر بیٹھے قانونی اسٹامپ پیپر اور چالان 32-A بنانے کی سہولت دیتا ہے۔\n\n> 🏛️ **PLRA اور FBR کا ون کاؤنٹر سسٹم (اگست 2026)**:\n> 21 اگست 2026 سے پنجاب بھر میں رجسٹری کا انقلابی **ون کاؤنٹر سسٹم** نافذ ہو چکا ہے (پہلے مرحلے میں **لاہور، ملتان اور فیصل آباد** سے آغاز کیا گیا):\n> - **ایک ہی کاؤنٹر پر تمام کام**: چالان 32-A کی تصدیق، سی وی ٹی، اور ایف بی آر انکم ٹیکس (سیکشن 236C و 236K) اب اراضی ریکارڈ سنٹر پر ایک ہی وزٹ میں نمٹائے جاتے ہیں۔\n> - **30 تا 90 منٹ میں تکمیل**: پہلے جن کاموں میں کئی دن لگتے تھے، اب شفاف کیسز 30 سے 90 منٹ میں نمٹا دیے جاتے ہیں۔\n> - **خودکار سسٹم**: پی ایل آر اے اور ایف بی آر ڈیٹا کے باہمی رابطے سے جعلی چالان اور دھوکہ دہی کا خاتمہ ہو چکا ہے۔\n\n---\n\n> ⚖️ **پنجاب اسٹامپ ڈیوٹی کی شرح: 1% تا 3% رینج**:\n> - بیع نامہ پر بنیادی اسٹامپ ڈیوٹی عام طور پر **1% سے 3%** کے درمیان ہوتی ہے۔\n> - اسٹامپ ترمیمی آرڈیننس کے تحت عام سیل ڈیڈ پر شرح **1%** مقرر ہے جبکہ 12 ماہ سے زائد کے بیعانہ پر 2% تک ہو سکتی ہے۔\n> - میونسپل کارپوریشن اور ٹی ایم اے کے مقامی ٹیکس مختلف علاقوں میں لاگو ہو سکتے ہیں، اس لیے حتمی ادائیگی سے قبل اپنے سب رجسٹرار یا پورٹل سے شرح لازمی کنفرم کریں۔\n\n---\n\n> 📜 **وراثتی منتقلی پر اسٹامپ ڈیوٹی مکمل معاف**:\n> - قانونی ورثا کے نام جائیداد کی وراثتی منتقلی پر **اسٹامپ ڈیوٹی 100 فیصد معاف (0 روپے)** ہے۔\n> - ورثا پر مالیت کے لحاظ سے کوئی فیصد ٹیکس لاگو نہیں ہوتا، صرف 500 سے 2,000 روپے کی معمولی دفتری فیس ادا کرنی ہوتی ہے۔\n> - اس سہولت کے لیے نادرا کا جاری کردہ سکسیشن سرٹیفکیٹ یا کورٹ لیٹر درکار ہوتا ہے۔",
     "relatedSlugs": [
       "/property/intiqal-registration-online-punjab",
       "/property/registry-vs-intiqal-difference",

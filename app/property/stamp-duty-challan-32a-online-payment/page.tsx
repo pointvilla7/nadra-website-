@@ -4,11 +4,11 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "e-Stamping Punjab Challan 32-A Online Payment & Verification",
-  description: "Generate and pay e-Stamp non-judicial stamp papers online in Punjab via estamp.punjab.gov.pk. Pay Challan 32-A for property registry, rent agreements, and affidavits.",
+  title: "e-Stamping Punjab Challan 32-A Online Payment & Stamp Duty Guide 2026",
+  description: "Generate & pay e-Stamp Challan 32-A online in Punjab (estamp.punjab.gov.pk). Learn 1-3% stamp duty rates, inheritance exemptions & PLRA-FBR One-Counter integration.",
   openGraph: {
-    title: "e-Stamping Punjab Challan 32-A Online Payment & Verification",
-    description: "Generate and pay e-Stamp non-judicial stamp papers online in Punjab via estamp.punjab.gov.pk. Pay Challan 32-A for property registry, rent agreements, and affidavits.",
+    title: "e-Stamping Punjab Challan 32-A Online Payment & Stamp Duty Guide 2026",
+    description: "Generate & pay e-Stamp Challan 32-A online in Punjab (estamp.punjab.gov.pk). Learn 1-3% stamp duty rates, inheritance exemptions & PLRA-FBR One-Counter integration.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/property/stamp-duty-challan-32a-online-payment',
   },
