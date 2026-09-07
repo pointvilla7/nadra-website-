@@ -6,17 +6,16 @@ import { AUTHORS } from '@/lib/data/authors';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.pakistaninfohub.com';
 
-  const staticPages = [
+  // Set of all article paths to guarantee no double-listing between static and dynamic articles
+  const articlePathSet = new Set(Object.values(ARTICLES).map((art) => art.fullPath));
+
+  // Static standalone pages, hubs, calculators, and board result pages that are NOT part of ARTICLES
+  const rawStaticRoutes = [
     '',
     '/about',
     '/how-we-verify',
     '/editorial-team',
     '/tracker',
-    '/nadra/nicop-fee-calculator',
-    '/nadra/b-form-frc-status-check',
-    '/passport/fee-calculator',
-    '/passport/tracking-status',
-    '/education/bise-result-checker-2026',
     '/education/9th-class-result-2026-lahore-board',
     '/education/9th-class-result-2026-faisalabad-board',
     '/education/9th-class-result-2026-rawalpindi-board',
@@ -37,95 +36,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education/9th-class-result-2026-sukkur-board',
     '/education/9th-class-result-2026-larkana-board',
     '/education/9th-class-result-2026-quetta-board',
-    '/education/university-merit-list-checker-2026',
-    '/education/hec-scholarship-status-2026',
-    '/education/hec-scholarship-pakistan',
-    '/traffic/token-tax-calculator-2026',
-    '/traffic/vehicle-verification-online-2026',
-    '/loans/emi-calculator-2026',
-    '/loans/loan-application-status-tracker-2026',
-    '/welfare/sehat-card-eligibility-checker-2026',
-    '/welfare/pser-survey-status-checker-2026',
-    '/jobs/roll-number-slip-checker-2026',
-    '/jobs/nts-result-scorecard-checker-2026',
-    '/tax/fbr-active-taxpayer-status-helper-2026',
-    '/property/punjab-land-record-fard-verifier-2026',
-    '/hajj-umrah/hajj-application-eligibility-checker-2026',
-    '/business/company-name-availability-checker-2026',
-    '/certificates/police-character-certificate-online-apply-2026',
-    '/certificates/police-character-certificate-tracking-status-2026',
-    '/legal/succession-certificate-legal-heir-nadra-2026',
-    '/nadra/cnic-new-rules-2026',
-    '/passport/passport-new-rules-2026-cashless-epassport',
     '/passport/urgent-passport-fee-and-time-in-pakistan-2026',
-    '/bills/net-metering-net-billing-change-2026',
-    '/bills/smart-meter-pakistan-price-how-it-works-2026',
-    '/traffic/challan-paid-but-showing-pending-2026',
-    '/education/matric-40-percent-passing-marks-rule-2026',
-    '/jobs/fpsc-ppsc-age-relaxation-quota-rules-2026',
-    '/welfare/pmt-score-explained-bisp-eligibility-2026',
-    '/loans/how-to-spot-fake-loan-scheme-scams-2026',
-    '/overseas/nicop-mandatory-entry-rules-2026',
-    '/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026',
-    '/health/sehat-card-active-status-by-province-2026',
-    '/alerts/ndma-flood-earthquake-sms-alert-setup-2026',
-    '/traffic/driving-license-online-apply-renewal-dlims-2026',
     '/traffic/driving-license-status-check-online-2026',
     '/traffic/international-driving-permit-pakistan-2026',
     '/traffic/vehicle-ownership-transfer-online-punjab-2026',
     '/traffic/mtmis-token-tax-check-online-punjab-karachi-islamabad-2026',
-    '/business/pseb-freelancer-registration-tax-benefits-2026',
-    '/business/trademark-registration-pakistan-ipo-guide-2026',
-    '/property/e-stamping-challan-32a-online-guide-2026',
     '/property/government-employee-housing-schemes-pakistan-2026',
     '/property/property-tax-online-check-pay-2026',
-    '/alerts/pakistan-emergency-helpline-numbers-directory-2026',
     '/jobs/verified-govt-jobs-sources-avoid-scams-2026',
-    '/jobs/fbr-jobs-careers-how-to-apply-2026',
     '/jobs/fbr-jobs-syllabus-past-papers-test-prep-2026',
-    '/tax/fbr-property-valuation-tables-explained-2026',
     '/traffic/punjab-excise-vehicle-verification-2026',
     '/traffic/sindh-excise-vehicle-verification-2026',
     '/traffic/islamabad-vehicle-verification-2026',
-    '/bills/lahore-water-sewerage-bill-guide-2026',
-    '/bills/karachi-water-board-bill-guide-2026',
-    '/bills/faisalabad-water-bill-guide-2026',
-    '/jobs/beoe-protector-registration-overseas-employment-2026',
-    '/nadra/lost-stolen-cnic-replacement-2026',
-    '/nadra/nadra-registration-center-locator-guide-2026',
-    '/nadra/nadra-tracking-id-check-online-2026',
-    '/nadra/nadra-jobs-careers-how-to-apply-2026',
-    '/nadra/nadra-helpline-complaint-directory-2026',
-    '/nadra/nims-vaccination-certificate-nadra-2026',
-    '/legal/police-khidmat-markaz-services-guide-2026',
-    '/legal/crime-control-department-ccd-punjab-explained-2026',
     '/legal/pakistan-court-case-status-check-online-2026',
-    '/loans/kamyab-jawan-pm-youth-loan-current-status-2026',
-    '/certificates/death-certificate-registration-process-2026',
-    '/passport/lost-passport-abroad-reissuance-process-2026',
-    '/education/university-entry-test-guide-nust-fast-comsats-2026',
     '/education/hec-degree-attestation-new-blockchain-system-2026',
     '/education/ibcc-matric-intermediate-attestation-guide-2026',
-    '/education/cm-punjab-e-bike-scheme-2026-eligibility-apply',
-    '/tax/how-to-file-income-tax-return-salaried-iris-2026',
-    '/welfare/eobi-pension-check-cnic-2026',
     '/welfare/pessi-sessi-vs-eobi-difference-registration-2026',
-    '/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026',
     '/welfare/benazir-taleemi-wazaif-check-online-registration-2026',
-    '/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026',
     '/overseas/overseas-pakistanis-voting-rights-current-status-2026',
-    '/family-registration/talaq-khula-legal-process-pakistan-2026',
-    '/hajj-umrah/zakat-calculator-2026',
-    '/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026',
-    '/health/disability-certificate-special-cnic-apply-2026',
     '/health/sehat-card-hospital-list-lahore-2026',
-    '/legal/power-of-attorney-online-overseas-pakistanis-2026',
-    '/tax/income-tax-calculator-salaried-2026',
     '/tax/income-tax-on-salary-slabs-calculator-pakistan-2026',
     '/tax/fbr-active-taxpayer-atl-check-sim-block-2026',
     '/tax/fbr-pos-invoice-verification-prize-scheme-2026',
     '/tax/foreign-remittance-tax-pakistan-overseas-2026',
-    '/jobs/beoe-protector-fee-calculator-2026',
     '/education/pm-laptop-scheme-2026-eligibility-status-check',
     '/nadra/senior-citizen-card-pakistan-explained-2026',
     '/nadra/pta-sim-check-how-many-sims-on-cnic-2026',
@@ -138,24 +71,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/tenant-police-verification-online-2026',
     '/legal/how-to-get-fir-copy-online-pakistan-2026',
     '/welfare/ehsaas-rashan-riayat-program-8123-2026',
-    '/mobile-pta/pta-mobile-registration-guide-2026',
-    '/mobile-pta/pta-mobile-tax-check-online',
-    '/mobile-pta/pta-mobile-imei-check',
-    '/mobile-pta/tax-calculator-2026',
-    '/mobile-pta/imei-check-2026',
-    '/mobile-pta/sim-information-system-guide',
-    '/mobile-pta/overseas-temporary-registration-120-days-2026',
-    '/mobile-pta/how-to-register-phone-pta-dvs-online',
     '/pakistan-post',
-    '/pakistan-post/tracking-2026',
-    '/pakistan-post/overview-guide-2026',
-    '/pakistan-post/post-office-locator-2026',
     '/finance',
-    '/finance/how-to-open-bank-account-online-pakistan-2026',
-    '/finance/pakistan-iban-number-check-validator-2026',
     '/finance/roshan-digital-account-2026-eligibility-apply',
-    '/education/bise-lahore-result-2026',
-    '/business/secp-company-registration-online-2026',
     '/offices/locator',
     '/alerts/subscribe',
     '/alerts/manage',
@@ -163,12 +81,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/terms',
     '/disclaimer',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date('2026-08-22'),
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : (route.includes('/nadra/') || route.includes('/passport/') || route.includes('/education/') || route.includes('/bills/') || route.includes('/tax/') || route.includes('/mobile-pta/') || route.includes('/pakistan-post/') || route.includes('/finance/') || route.includes('/traffic/') || route.includes('/property/') || route.includes('/jobs/') || route.includes('/hajj-umrah/') || route.includes('/business/') || route.includes('/certificates/') || route.includes('/legal/') || route.includes('/overseas/') || route.includes('/family-registration/') || route.includes('/welfare/') || route.includes('/loans/') || route.includes('/health/') || route.includes('/alerts/') ? 0.9 : 0.6),
-  }));
+  ];
+
+  // Strictly filter out any route that already exists in ARTICLES
+  const staticPages = rawStaticRoutes
+    .filter((route) => !articlePathSet.has(route))
+    .map((route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date('2026-08-22'),
+      changeFrequency: 'weekly' as const,
+      priority: route === '' ? 1.0 : (route.includes('/') ? 0.9 : 0.6),
+    }));
 
   const categoryPages = CATEGORIES.map((cat) => ({
     url: `${baseUrl}/${cat.slug}`,
@@ -196,5 +119,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticPages, ...categoryPages, ...authorPages, ...articlePages];
+  // Consolidate into a unique Map keyed by URL to ensure zero duplicate entries in sitemap.xml
+  const sitemapMap = new Map<string, MetadataRoute.Sitemap[number]>();
+  for (const page of [...staticPages, ...categoryPages, ...authorPages, ...articlePages]) {
+    if (!sitemapMap.has(page.url)) {
+      sitemapMap.set(page.url, page);
+    }
+  }
+
+  return Array.from(sitemapMap.values());
 }

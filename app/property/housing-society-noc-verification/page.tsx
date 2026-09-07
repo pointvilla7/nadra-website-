@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/property/housing-society-noc-verification',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/property/housing-society-noc-verification',
+  },
 };
 
 export default function Page() {
