@@ -160,6 +160,20 @@ export default function NetMeteringToNetBillingPage() {
           answerUr="نیپرا نے نئے سولر کنکشنز کے لیے 1:1 نیٹ میٹرنگ ختم کر کے نیٹ بلنگ نافذ کر دی ہے۔ اب گرڈ سے بجلی 45 تا 55 روپے فی یونٹ ملے گی جبکہ گرڈ کو بیچی گئی سولر بجلی کا کریڈٹ تقریباً 10 تا 13 روپے فی یونٹ ملے گا۔ پرانے معاہدے مدت ختم ہونے تک محفوظ رہیں گے۔"
         />
 
+        {/* Smart Meter Hardware Callout */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans shadow-sm">
+          <div>
+            <strong className="text-doc-ink dark:text-white font-serif block text-sm">Need Physical Meter Hardware &amp; Installation Specs?</strong>
+            <span>This guide covers NEPRA economic tariffs and buyback rates. For physical AMI bidirectional (green) smart meter hardware specifications, replacement costs, and DISCO testing rules, read our companion guide.</span>
+          </div>
+          <Link
+            href="/bills/smart-meter-pakistan-price-how-it-works-2026"
+            className="shrink-0 px-4 py-2.5 rounded-xl bg-doc-ink dark:bg-slate-700 text-white font-bold text-xs hover:bg-doc-seal transition inline-flex items-center gap-1.5"
+          >
+            <span>Smart Meter Hardware Guide →</span>
+          </Link>
+        </div>
+
         {/* Section 1: Side-by-Side Comparison: Net Metering vs Net Billing */}
         <section className="space-y-4">
           <div className="flex items-center gap-2">

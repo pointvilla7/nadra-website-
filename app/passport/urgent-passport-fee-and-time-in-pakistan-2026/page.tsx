@@ -289,28 +289,40 @@ export default function UrgentPassportFeeAndTimePage() {
           </div>
 
           <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
-            The fee for an urgent passport in Pakistan is determined by three independent factors: <strong>technology type</strong> (standard
-            Machine Readable Passport vs. microchip-embedded e-Passport), <strong>validity</strong> (5 years vs. 10 years), and{' '}
-            <strong>page booklet size</strong> (36, 72, or 100 pages). Below is the official DGIP fee schedule:
+            The urgent passport service in Pakistan is tailored for citizens requiring expedited booklet printing within an official 5-working-day target. Below are the specific <strong>Urgent-Tier</strong> rates across standard MRP and chip-embedded e-Passports:
           </p>
 
-          {/* Table 1: Standard Machine Readable Passport (MRP) Rates */}
+          {/* Link to Full General Fee Table */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-500/30 text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans shadow-sm">
+            <div>
+              <strong className="text-doc-ink dark:text-white font-serif block text-sm">Looking for the Complete Standard Fee Schedule?</strong>
+              <span>This guide focuses exclusively on urgent processing. For normal-pace delivery, executive fast-track rates, 1Bill charges, and overseas fee tables, view the complete guide.</span>
+            </div>
+            <Link
+              href="/passport/fee-2026"
+              className="shrink-0 px-4 py-2.5 rounded-xl bg-doc-ink dark:bg-slate-800 text-white font-bold text-xs hover:bg-doc-seal transition inline-flex items-center gap-1.5"
+            >
+              <span>View Complete 2026 Fee Table →</span>
+            </Link>
+          </div>
+
+          {/* Table 1: Standard Machine Readable Passport (MRP) Urgent Rates */}
           <div className="space-y-2">
             <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white flex items-center gap-2">
               <FileText className="w-4 h-4 text-doc-brass" />
-              1. Standard Machine Readable Passport (MRP) Fees
+              1. Urgent Machine Readable Passport (MRP) Tariffs & Delivery Schedule
             </h3>
 
             <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
               <div className="table-scroll-container">
-                <table className="w-full text-sm font-sans min-w-[620px]">
+                <table className="w-full text-sm font-sans min-w-[540px]">
                   <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                     <tr>
                       <th className="px-4 py-3 text-left">Booklet Size</th>
                       <th className="px-4 py-3 text-left">Validity</th>
-                      <th className="px-4 py-3 text-left">Normal Fee</th>
-                      <th className="px-4 py-3 text-left bg-doc-brass/20 text-doc-brass">Urgent Fee (Target 5 Days)</th>
-                      <th className="px-4 py-3 text-left">Fast Track Fee (2 Days)</th>
+                      <th className="px-4 py-3 text-left bg-doc-brass/20 text-doc-brass">Urgent Fee (PKR)</th>
+                      <th className="px-4 py-3 text-left">Official Target Time</th>
+                      <th className="px-4 py-3 text-left">Real-World Delivery Window</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -319,19 +331,19 @@ export default function UrgentPassportFeeAndTimePage() {
                         36 Pages
                       </td>
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">5 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 4,500</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 7,500
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 12,500</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">10–15 Calendar Days</td>
                     </tr>
                     <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">10 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 6,700</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 11,200
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 16,200</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">10–15 Calendar Days</td>
                     </tr>
 
                     <tr className="bg-slate-50/60 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
@@ -339,19 +351,19 @@ export default function UrgentPassportFeeAndTimePage() {
                         72 Pages
                       </td>
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">5 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 8,200</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 13,500
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 18,500</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">12–16 Calendar Days</td>
                     </tr>
                     <tr className="bg-slate-50/60 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">10 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 12,400</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 20,200
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 25,200</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">12–16 Calendar Days</td>
                     </tr>
 
                     <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
@@ -359,19 +371,19 @@ export default function UrgentPassportFeeAndTimePage() {
                         100 Pages
                       </td>
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">5 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 9,000</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 18,000
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 23,000</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">14–18 Calendar Days</td>
                     </tr>
                     <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">10 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 13,500</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 27,000
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 32,000</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs font-mono text-amber-700 dark:text-amber-400 font-bold">14–18 Calendar Days</td>
                     </tr>
                   </tbody>
                 </table>
@@ -379,23 +391,23 @@ export default function UrgentPassportFeeAndTimePage() {
             </div>
           </div>
 
-          {/* Table 2: Microchip e-Passport Rates */}
+          {/* Table 2: Microchip e-Passport Urgent Rates */}
           <div className="space-y-2 pt-2">
             <h3 className="font-serif font-bold text-base text-doc-ink dark:text-white flex items-center gap-2">
               <Zap className="w-4 h-4 text-doc-brass" />
-              2. Microchip-Embedded e-Passport Fees (Higher Security Tier)
+              2. Microchip-Embedded e-Passport Urgent Processing Tariffs
             </h3>
 
             <div className="table-scroll-wrapper rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
               <div className="table-scroll-container">
-                <table className="w-full text-sm font-sans min-w-[620px]">
+                <table className="w-full text-sm font-sans min-w-[540px]">
                   <thead className="bg-doc-ink text-white text-xs font-mono uppercase tracking-wider">
                     <tr>
                       <th className="px-4 py-3 text-left">e-Passport Type</th>
                       <th className="px-4 py-3 text-left">Validity</th>
-                      <th className="px-4 py-3 text-left">Normal Fee</th>
-                      <th className="px-4 py-3 text-left bg-doc-brass/20 text-doc-brass">Urgent Fee</th>
-                      <th className="px-4 py-3 text-left">Fast Track Fee</th>
+                      <th className="px-4 py-3 text-left bg-doc-brass/20 text-doc-brass">Urgent Fee (PKR)</th>
+                      <th className="px-4 py-3 text-left">Official Target Time</th>
+                      <th className="px-4 py-3 text-left">Security Features</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -404,19 +416,19 @@ export default function UrgentPassportFeeAndTimePage() {
                         36 Pages e-Passport
                       </td>
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">5 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 9,000</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 15,000
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 20,000</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs text-slate-600 dark:text-slate-400">ICAO contactless RFID microchip</td>
                     </tr>
                     <tr className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">10 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 13,500</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 22,500
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 27,000</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs text-slate-600 dark:text-slate-400">ICAO contactless RFID microchip</td>
                     </tr>
 
                     <tr className="bg-slate-50/60 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
@@ -424,19 +436,19 @@ export default function UrgentPassportFeeAndTimePage() {
                         72 Pages e-Passport
                       </td>
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">5 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 16,500</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 27,000
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 32,000</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs text-slate-600 dark:text-slate-400">High-capacity biometric booklet</td>
                     </tr>
                     <tr className="bg-slate-50/60 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
                       <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">10 Years</td>
-                      <td className="px-4 py-3 text-xs font-mono text-slate-600 dark:text-slate-300">PKR 24,750</td>
                       <td className="px-4 py-3 font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/20">
                         PKR 40,500
                       </td>
-                      <td className="px-4 py-3 text-xs font-mono text-purple-700 dark:text-purple-300">PKR 45,500</td>
+                      <td className="px-4 py-3 text-xs font-mono text-slate-700 dark:text-slate-300">5 Working Days</td>
+                      <td className="px-4 py-3 text-xs text-slate-600 dark:text-slate-400">High-capacity biometric booklet</td>
                     </tr>
                   </tbody>
                 </table>

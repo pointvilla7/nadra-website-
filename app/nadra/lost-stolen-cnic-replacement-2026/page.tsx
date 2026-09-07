@@ -157,6 +157,29 @@ export default function LostStolenCnicReplacementPage() {
           </p>
         </header>
 
+        {/* Scope Clarification & Cross-Links */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm font-sans">
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col justify-between gap-2">
+            <div>
+              <strong className="text-doc-ink dark:text-white font-serif block">Routine Expiry Renewal?</strong>
+              <span className="text-slate-600 dark:text-slate-300 text-xs">If your card is not lost but simply reaching its 10-year expiration date, follow our step-by-step Pak-ID mobile renewal guide.</span>
+            </div>
+            <Link href="/nadra/card-renewal-online" className="font-bold text-doc-seal hover:underline inline-flex items-center gap-1 text-xs">
+              <span>Standard Renewal Guide →</span>
+            </Link>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col justify-between gap-2">
+            <div>
+              <strong className="text-doc-ink dark:text-white font-serif block">New 2026 NADRA Policies?</strong>
+              <span className="text-slate-600 dark:text-slate-300 text-xs">Learn about free first-time cards at 18, cashless NRC token desks, and updated biometric parent verification directives.</span>
+            </div>
+            <Link href="/nadra/cnic-new-rules-2026" className="font-bold text-doc-seal hover:underline inline-flex items-center gap-1 text-xs">
+              <span>2026 Policy Directives →</span>
+            </Link>
+          </div>
+        </div>
+
         {/* Direct Answer Box */}
         <DirectAnswerBox
           topicTitleEn="Should I Apply for a 'Reprint' or 'Renewal' for a Lost CNIC?"

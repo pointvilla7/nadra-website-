@@ -326,6 +326,29 @@ export default function CnicNewRules2026Page() {
           ]}
         />
 
+        {/* Specific Transaction Guides Callout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm font-sans">
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col justify-between gap-2">
+            <div>
+              <strong className="text-doc-ink dark:text-white font-serif block">Lost or Stolen CNIC?</strong>
+              <span className="text-slate-600 dark:text-slate-300 text-xs">Learn when to file a police FIR, how to request an unexpired reprint, and how to safeguard against identity theft.</span>
+            </div>
+            <Link href="/nadra/lost-stolen-cnic-replacement-2026" className="font-bold text-doc-seal hover:underline inline-flex items-center gap-1 text-xs">
+              <span>Lost CNIC Replacement Guide →</span>
+            </Link>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col justify-between gap-2">
+            <div>
+              <strong className="text-doc-ink dark:text-white font-serif block">Routine Card Renewal?</strong>
+              <span className="text-slate-600 dark:text-slate-300 text-xs">Renew your expired card from home using the Pak-ID smartphone app with camera-based fingerprint scanning.</span>
+            </div>
+            <Link href="/nadra/card-renewal-online" className="font-bold text-doc-seal hover:underline inline-flex items-center gap-1 text-xs">
+              <span>Online Renewal Guide →</span>
+            </Link>
+          </div>
+        </div>
+
         {/* Section 3: Step-by-Step Application Workflow */}
         <section className="space-y-4">
           <div className="flex items-center gap-2">

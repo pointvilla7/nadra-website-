@@ -156,6 +156,20 @@ export default function LostPassportAbroadPage() {
           </p>
         </header>
 
+        {/* Domestic Loss Cross-Link Callout */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans shadow-sm">
+          <div>
+            <strong className="text-doc-ink dark:text-white font-serif block text-sm">Lost Your Passport Domestically Inside Pakistan?</strong>
+            <span>This consular guide is for citizens stranded in foreign countries. If your passport was misplaced or stolen within Pakistan, view our guide on domestic police FIR requirements and DGIP penalty fee tiers.</span>
+          </div>
+          <Link
+            href="/passport/lost-passport-application-fee"
+            className="shrink-0 px-4 py-2.5 rounded-xl bg-doc-ink dark:bg-slate-700 text-white font-bold text-xs hover:bg-doc-seal transition inline-flex items-center gap-1.5"
+          >
+            <span>Domestic Loss Guide →</span>
+          </Link>
+        </div>
+
         {/* Direct Answer Box */}
         <DirectAnswerBox
           topicTitleEn="What is the Immediate First Step If You Lose Your Passport Abroad?"
