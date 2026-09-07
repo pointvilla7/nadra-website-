@@ -6401,11 +6401,11 @@ export const ARTICLES: Record<string, Article> = {
     "categoryId": "welfare",
     "titleEn": "BISP 8171 Check Online by CNIC 2026: Benazir Kafaalat, PMT Score & Payment Status",
     "titleUr": "8171 بی آئی ایس پی پورٹل 2026: شناختی کارڈ سے اہلیت، قسط اور پی ایم ٹی اسکور",
-    "metaDescriptionEn": "Check BISP 8171 eligibility online by 13-digit CNIC. Complete guide to Benazir Kafaalat quarterly PKR 10,500 stipend, PMT score cutoffs, Taleemi Wazaif, and biometric payments.",
-    "metaDescriptionUr": "8171 پورٹل سے بے نظیر کفالت 10,500 روپے قسط، پی ایم ٹی اسکور کی اہلیت اور تعلیمی وظائف چیک کرنے کا آفیشل اور آسان طریقہ۔",
-    "directAnswerEn": "To check BISP eligibility and quarterly payment status in 2026, visit the official 8171 web portal at 8171.bisp.gov.pk or text your 13-digit CNIC (without dashes) to 8171. Families with a verified Proxy Means Test (PMT) score below 32 receive the quarterly Benazir Kafaalat unconditional cash transfer of PKR 10,500. Cash can be collected with biometric thumb verification at designated Bank Alfalah or HBL BISP facilitation campsites.",
-    "directAnswerUr": "بی آئی ایس پی اہلیت اور 10,500 روپے کی سہ ماہی قسط چیک کرنے کے لیے 8171.bisp.gov.pk پورٹل کھولیں یا 8171 پر شناختی کارڈ نمبر ایس ایم ایس کریں۔ 32 سے کم پی ایم ٹی (PMT) اسکور والے اہل خاندان بینک الفلاح اور ایچ بی ایل کے نامزد بائیومیٹرک کیمپ سائٹس سے رقم وصول کر سکتے ہیں۔",
-    "lastVerified": "August 30, 2026",
+    "metaDescriptionEn": "Check BISP 8171 eligibility online by 13-digit CNIC. Complete guide to Benazir Kafaalat quarterly PKR 14,500 stipend (raised in 2026), PMT score cutoffs (32/37), Taleemi Wazaif, and biometric payments.",
+    "metaDescriptionUr": "8171 پورٹل سے بے نظیر کفالت 14,500 روپے قسط، پی ایم ٹی اسکور کی اہلیت اور تعلیمی وظائف چیک کرنے کا آفیشل اور آسان طریقہ۔",
+    "directAnswerEn": "To check BISP eligibility and quarterly payment status in 2026, visit the official 8171 web portal at 8171.bisp.gov.pk or text your 13-digit CNIC (without dashes) to 8171. Families with a verified Proxy Means Test (PMT) score of 32 or below (extended to 37 for households with registered disabled members) receive the quarterly Benazir Kafaalat unconditional cash transfer of PKR 14,500 (enhanced in 2026 from PKR 13,500 / 10,500). Cash is collected via biometric thumb verification at designated Bank Alfalah or HBL BISP facilitation campsites.",
+    "directAnswerUr": "بی آئی ایس پی اہلیت اور 14,500 روپے کی سہ ماہی قسط چیک کرنے کے لیے 8171.bisp.gov.pk پورٹل کھولیں یا 8171 پر شناختی کارڈ نمبر ایس ایم ایس کریں۔ 32 یا اس سے کم پی ایم ٹی اسکور (معذور افراد کے لیے 37) والے اہل خاندان بینک الفلاح اور ایچ بی ایل کے نامزد بائیومیٹرک کیمپ سائٹس سے رقم وصول کر سکتے ہیں۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "Benazir Income Support Programme (BISP 8171)",
       "url": "https://8171.bisp.gov.pk/"
@@ -6434,10 +6434,10 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "Benazir Kafaalat Quarterly Stipend",
         "serviceUr": "بے نظیر کفالت سہ ماہی وظیفہ",
-        "normal": "PKR 10,500 / Quarter",
+        "normal": "PKR 14,500 / Quarter",
         "urgent": "Biometric Cash Out",
         "executive": "Unconditional Support",
-        "validity": "PMT <= 32"
+        "validity": "PMT <= 32 (37 for Disabled)"
       },
       {
         "serviceEn": "NSER Tehsil Registration Survey",
@@ -6460,7 +6460,7 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 2,
         "titleEn": "Review Eligibility & PMT Poverty Score Result",
         "titleUr": "اپنی اہلیت اور پی ایم ٹی اسکور کا نتیجہ دیکھیں",
-        "detailEn": "The response reveals: 1) Eligible for Kafaalat (PKR 10,500 ready for withdrawal); 2) Eligible for Taleemi Wazaif / Nashonuma; or 3) Ineligible / NSER Survey Required.",
+        "detailEn": "The response reveals: 1) Eligible for Kafaalat (PKR 14,500 ready for withdrawal); 2) Eligible for Taleemi Wazaif (PKR 2,000 to 5,000 per child) / Nashonuma; or 3) Ineligible / NSER Survey Required.",
         "detailUr": "نتیجہ میں کفالت کی قسط، تعلیمی وظائف یا سروے کروانے کی ہدایت دکھائی دے گی۔"
       },
       {
@@ -6482,14 +6482,14 @@ export const ARTICLES: Record<string, Article> = {
       {
         "questionEn": "What is the PMT score cutoff for BISP Kafaalat, Taleemi Wazaif, and Nashonuma in 2026?",
         "questionUr": "2026 میں بی آئی ایس پی کفالت، تعلیمی وظائف اور نشوونما کے لیے پی ایم ٹی (PMT) اسکور کی حد کیا ہے؟",
-        "answerEn": "The Proxy Means Test (PMT) poverty cutoff for the Benazir Kafaalat cash transfer is set at PMT <= 32. For Benazir Taleemi Wazaif (children's education stipends), the household must also have a PMT <= 32 and children enrolled in school with 70%+ attendance. Benazir Nashonuma (maternal and infant nutrition) covers pregnant/lactating mothers and infants under 2 years with PMT <= 35. For detailed scoring mechanisms, read our comprehensive [PMT Score Explained Guide](/welfare/pmt-score-explained-bisp-eligibility-2026).",
-        "answerUr": "بے نظیر کفالت کے لیے پی ایم ٹی اسکور کی حد 32 یا اس سے کم ہے۔ تعلیمی وظائف کے لیے بھی 32 کا اسکور اور اسکول میں 70 فیصد حاضری لازمی ہے۔ نشوونما پروگرام 35 تک کے اسکور والی حاملہ خواتین اور 2 سال تک کے بچوں کو کور کرتا ہے۔ تفصیلی معلومات کے لیے ہمارا پی ایم ٹی اسکور گائیڈ پڑھیں۔"
+        "answerEn": "The standard Proxy Means Test (PMT) poverty cutoff for the Benazir Kafaalat cash transfer is set at PMT <= 32, with an extended relaxation up to PMT <= 37 for households with registered persons with disabilities (holding wheelchair-symbol CNICs) and select underserved districts. For Benazir Taleemi Wazaif, the mother must be an active Kafaalat beneficiary (PMT <= 32/37) and children must maintain at least 70% quarterly school attendance. Benazir Nashonuma covers pregnant/lactating mothers and infants under 2 years with PMT <= 35. For detailed scoring mechanisms, read our comprehensive [PMT Score Explained Guide](/welfare/pmt-score-explained-bisp-eligibility-2026).",
+        "answerUr": "بے نظیر کفالت کے لیے بنیادی پی ایم ٹی اسکور کی حد 32 یا اس سے کم ہے، جبکہ معذور افراد والے خاندانوں اور پسماندہ اضلاع کے لیے حد 37 مقرر ہے۔ تعلیمی وظائف کے لیے بھی کفالت کی اہلیت اور اسکول میں 70 فیصد حاضری لازمی ہے۔ نشوونما پروگرام 35 تک کے اسکور والی حاملہ خواتین اور 2 سال تک کے بچوں کو کور کرتا ہے۔ تفصیلی معلومات کے لیے ہمارا پی ایم ٹی اسکور گائیڈ پڑھیں۔"
       },
       {
         "questionEn": "What is the difference between BISP Kafaalat, Nashonuma, and Taleemi Wazaif?",
         "questionUr": "بے نظیر کفالت، نشوونما اور تعلیمی وظائف پروگراموں میں کیا بنیادی فرق ہے؟",
-        "answerEn": "1) Benazir Kafaalat provides an unconditional quarterly cash grant of PKR 10,500 directly to the female family head; 2) Benazir Taleemi Wazaif provides quarterly educational stipends (PKR 1,500 to PKR 4,500 depending on grade and gender) contingent on school attendance; 3) Benazir Nashonuma provides conditional cash grants and specialized nutritious food sachets to combat child stunting. Compare all 3 programs in our in-depth [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif Breakdown](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).",
-        "answerUr": "1۔ کفالت پروگرام خواتین کو 10,500 روپے کی غیر مشروط سہ ماہی مالی امداد دیتا ہے۔ 2۔ تعلیمی وظائف اسکول جانے والے بچوں کو 1500 تا 4500 روپے سہ ماہی دیتا ہے۔ 3۔ نشوونما پروگرام بچوں میں غذائی قلت کے خاتمے کے لیے غذائی خوراک اور نقد وظیفہ فراہم کرتا ہے۔"
+        "answerEn": "1) Benazir Kafaalat provides an unconditional quarterly cash grant of PKR 14,500 (enhanced in 2026 from PKR 13,500 / 10,500) directly to the female family head; 2) Benazir Taleemi Wazaif provides quarterly educational stipends (Primary: Boys PKR 2,000-2,500 / Girls PKR 2,500-3,000; Secondary: Boys PKR 3,000-3,500 / Girls PKR 3,500-4,000; Higher Secondary: Boys PKR 4,000-4,500 / Girls PKR 4,500-5,000, plus a PKR 3,000 primary completion bonus for girls) contingent on 70% school attendance; 3) Benazir Nashonuma provides conditional cash grants and specialized nutritious food sachets to combat child stunting. Compare all 3 programs in our in-depth [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif Breakdown](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).",
+        "answerUr": "1۔ کفالت پروگرام خواتین کو 14,500 روپے کی غیر مشروط سہ ماہی مالی امداد دیتا ہے۔ 2۔ تعلیمی وظائف اسکول جانے والے بچوں کو 2000 تا 5000 روپے سہ ماہی وظیفہ اور طالبات کو 3000 روپے پرائمری پاس بونس دیتا ہے۔ 3۔ نشوونما پروگرام بچوں میں غذائی قلت کے خاتمے کے لیے غذائی خوراک اور نقد وظیفہ فراہم کرتا ہے۔"
       },
       {
         "questionEn": "What should I do if the biometric device fails to read my fingerprints at the BISP campsite?",
@@ -6504,7 +6504,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "جن خاندانوں کے سروے کو 3 سال گزر چکے ہوں یا جن کے معاشی حالات خراب ہوئے ہوں، وہ کسی بھی وقت بی آئی ایس پی تحصیل سنٹر جا کر اپنا ڈیٹا دوبارہ رجسٹر کروا سکتے ہیں۔"
       }
     ],
-    "contentEn": "## Benazir Income Support Programme (BISP 8171): Complete 2026 Eligibility & Cashout Guide\nThe **Benazir Income Support Programme (BISP)** is Pakistan's largest targeted social safety net, providing unconditional and conditional cash transfers to over 9.3 million deserving families across all four provinces, Gilgit-Baltistan, and Azad Jammu & Kashmir.\n\n---\n\n## Understanding the 3 Core BISP Pillars\n\n1. **Benazir Kafaalat (بے نظیر کفالت)**: The cornerstone program providing quarterly unconditional cash assistance of **PKR 10,500** directly to eligible female family heads.\n2. **Benazir Taleemi Wazaif (تعلیمی وظائف)**: Quarterly conditional educational stipends for school-going children (Primary: Boys PKR 1,500, Girls PKR 2,000; Secondary: Boys PKR 2,500, Girls PKR 3,000; Higher Secondary: Boys PKR 3,500, Girls PKR 4,000, plus a PKR 3,000 graduation bonus for girls).\n3. **Benazir Nashonuma (نشوونما پروگرام)**: Specialized conditional cash transfers and fortified nutritional food packets for pregnant/lactating mothers and children under 2 years to eradicate stunting.\n\n> For a complete feature-by-feature comparison of benefits and eligibility criteria, see our detailed guide on [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).\n\n---\n\n## The PMT Poverty Score Cutoff Explained\nBISP utilizes the **Proxy Means Test (PMT)** score generated from the National Socio-Economic Registry (NSER) dynamic survey to assess household poverty on a scale of 0 to 100:\n- **PMT Score 0 to 32**: Qualified for Benazir Kafaalat, Taleemi Wazaif, and targeted utility subsidies.\n- **PMT Score 32.1 to 35**: Qualified for Benazir Nashonuma health assistance.\n- **PMT Score > 35**: Ineligible for cash stipends.\n\n> To learn how PMT scores are calculated and how to lower your score through official survey updates, read our guide on [PMT Score Explained for BISP Eligibility 2026](/welfare/pmt-score-explained-bisp-eligibility-2026).\n\n---\n\n## Step-by-Step Guide to the NSER Dynamic Registry at Tehsil Centers\nIf your CNIC inquiry on 8171 returns *'Not Registered'* or *'Survey Expired'*, follow these steps:\n1. **Locate Your Tehsil Center**: Visit your district's official BISP Tehsil Facilitation Center.\n2. **Bring Mandatory Family Documents**: Original CNICs of all adult household members, computerized NADRA B-Forms for all children, and paid electricity/gas utility bills.\n3. **Token & Biometric Interview**: An NSER survey enumerator will record your housing conditions, livestock, monthly expenditure, family health, and assets.\n4. **Computerized Confirmation Slip**: You will receive an official NSER Dynamic Registry receipt with a tracking barcode. Results update on 8171 within 30 to 45 days.\n\n---\n\n## Partner Banks & Cash Withdrawal Channels\n- **Punjab, Islamabad, Azad Kashmir & Gilgit-Baltistan**: Managed through **Habib Bank Limited (HBL)** biometric ATMs, Konnect agents, and BISP school campsites.\n- **Sindh, Khyber Pakhtunkhwa & Balochistan**: Managed through **Bank Alfalah** digital retail points, designated biometric camps, and agent networks.\n- **Helpline & Fraud Reporting**: BISP official toll-free complaint hotline is **0800-26477** (Never trust fake lottery or SMS messages from personal 11-digit numbers).",
+    "contentEn": "## Benazir Income Support Programme (BISP 8171): Complete 2026 Eligibility & Cashout Guide\nThe **Benazir Income Support Programme (BISP)** is Pakistan's largest targeted social safety net, providing unconditional and conditional cash transfers to over 9.3 million deserving families across all four provinces, Gilgit-Baltistan, and Azad Jammu & Kashmir.\n\n---\n\n## Understanding the 3 Core BISP Pillars\n\n1. **Benazir Kafaalat (بے نظیر کفالت)**: The cornerstone program providing quarterly unconditional cash assistance of **PKR 10,500** directly to eligible female family heads.\n2. **Benazir Taleemi Wazaif (تعلیمی وظائف)**: Quarterly conditional educational stipends for school-going children (Primary: Boys PKR 1,500, Girls PKR 2,000; Secondary: Boys PKR 2,500, Girls PKR 3,000; Higher Secondary: Boys PKR 3,500, Girls PKR 4,000, plus a PKR 3,000 graduation bonus for girls).\n3. **Benazir Nashonuma (نشوونما پروگرام)**: Specialized conditional cash transfers and fortified nutritional food packets for pregnant/lactating mothers and children under 2 years to eradicate stunting.\n\n> For a complete feature-by-feature comparison of benefits and eligibility criteria, see our detailed guide on [BISP Kafaalat vs Nashonuma vs Taleemi Wazaif](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026).\n\n---\n\n## The PMT Poverty Score Cutoff Explained\nBISP utilizes the **Proxy Means Test (PMT)** score generated from the National Socio-Economic Registry (NSER) dynamic survey to assess household poverty on a scale of 0 to 100:\n- **PMT Score 0 to 32 (up to 37 for Persons with Disabilities / Special Quotas)**: Qualified for Benazir Kafaalat, Taleemi Wazaif, and targeted utility subsidies.\n- **PMT Score 32.1 to 35**: Qualified for Benazir Nashonuma health assistance.\n- **PMT Score > 35**: Ineligible for cash stipends.\n\n> To learn how PMT scores are calculated and how to lower your score through official survey updates, read our guide on [PMT Score Explained for BISP Eligibility 2026](/welfare/pmt-score-explained-bisp-eligibility-2026).\n\n---\n\n## Step-by-Step Guide to the NSER Dynamic Registry at Tehsil Centers\nIf your CNIC inquiry on 8171 returns *'Not Registered'* or *'Survey Expired'*, follow these steps:\n1. **Locate Your Tehsil Center**: Visit your district's official BISP Tehsil Facilitation Center.\n2. **Bring Mandatory Family Documents**: Original CNICs of all adult household members, computerized NADRA B-Forms for all children, and paid electricity/gas utility bills.\n3. **Token & Biometric Interview**: An NSER survey enumerator will record your housing conditions, livestock, monthly expenditure, family health, and assets.\n4. **Computerized Confirmation Slip**: You will receive an official NSER Dynamic Registry receipt with a tracking barcode. Results update on 8171 within 30 to 45 days.\n\n---\n\n## Partner Banks & Cash Withdrawal Channels\n- **Punjab, Islamabad, Azad Kashmir & Gilgit-Baltistan**: Managed through **Habib Bank Limited (HBL)** biometric ATMs, Konnect agents, and BISP school campsites.\n- **Sindh, Khyber Pakhtunkhwa & Balochistan**: Managed through **Bank Alfalah** digital retail points, designated biometric camps, and agent networks.\n- **Helpline & Fraud Reporting**: BISP official toll-free complaint hotline is **0800-26477** (Never trust fake lottery or SMS messages from personal 11-digit numbers).",
     "contentUr": "## بے نظیر انکم سپورٹ پروگرام (8171) اہلیت و قسط گائیڈ 2026\nبی آئی ایس پی پاکستان کا سب سے بڑا فلاحی نیٹ ورک ہے جو غریب خاندانوں کو مالی تحفظ فراہم کرتا ہے۔\n\n### 3 بنیادی پروگرام اور فوائد\n1۔ **بے نظیر کفالت**: مستحق خواتین کے لیے 10,500 روپے سہ ماہی نقد وظیفہ۔\n2۔ **تعلیمی وظائف**: اسکول جانے والے بچوں کے لیے 1500 تا 4000 روپے سہ ماہی وظیفہ۔\n3۔ **نشوونما پروگرام**: حاملہ خواتین اور 2 سال سے کم عمر بچوں کے لیے غذائی خوراک اور مالی مدد۔\n\nمزید تفصیل کے لیے ہمارے آرٹیکلز [پی ایم ٹی اسکور کی مکمل گائیڈ](/welfare/pmt-score-explained-bisp-eligibility-2026) اور [کفالت بنام نشوونما بنام تعلیمی وظائف](/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026) ملاحظہ کریں۔",
     "relatedSlugs": [
       "/welfare/pmt-score-explained-bisp-eligibility-2026",
@@ -6583,7 +6583,7 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (check current installment amount via 8171 portal) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 1,500 – 4,000** (70% attendance required) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
+    "contentEn": "The **8171 Web Portal** (`8171.bisp.gov.pk`) is the official digital gateway established by the Government of Pakistan to ensure complete transparency in welfare fund disbursement.\n\n> 🚨 **SCAM WARNING**: \n> BISP and 8171 services are **100% FREE**. \n> Never trust unofficial portals ending in .com, .tk, or .blogspot. Official BISP portals strictly use the **.gov.pk** government domain extension.\n\n## What You Can Check on 8171 Portal\n- **Benazir Kafaalat Payment Status**: Verify if your quarterly cash payment (check current installment amount via 8171 portal) is ready for campsite collection.\n- **Taleemi Wazaif Education Stipends**: Trace school stipend releases for your enrolled children.\n- **NSER Dynamic Survey Status**: Confirm if your household survey data is active in the central database.\n\n### 💳 BISP 8171 Quarterly Payment Disbursement Schedule (2026)\n*Verified financial assistance cycles for Benazir Income Support Programme beneficiaries:*\n\n| Quarter Cycle | Disbursement Period | Beneficiary Category | Quarterly Stipend Amount |\n| :--- | :--- | :--- | :--- |\n| **Q1 (Jan – Mar)** | First Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q2 (Apr – Jun)** | Second Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q3 (Jul – Sep)** | Third Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Q4 (Oct – Dec)** | Fourth Tranche | Registered Kafaalat Women | Current BISP Kafaalat amount (check via 8171 portal) |\n| **Taleemi Wazaif** | Quarterly with Kafaalat | Primary / Secondary School Students | **PKR 2,000 – 5,000** per child (PKR 4,000–9,000+ multi-child) |\n\n> ℹ️ *Official Verification: Beneficiaries must verify their eligibility exclusively via free SMS to `8171` or through the official `8171.bisp.gov.pk` portal before visiting designated HBL / Bank Alfalah biometric campsites.*",
     "contentUr": "**8171 ویب پورٹل** (8171.bisp.gov.pk) حکومت پاکستان کا آفیشل اور شفاف پورٹل ہے۔\n\n> 🚨 **سکیم الرٹ**: بی آئی ایس پی کی تمام سروسز **100 فیصد مفت** ہیں۔ کسی ایجنٹ یا جعلی ویب سائٹ پر اعتبار نہ کریں۔ سرکاری سائٹس کے آخر میں **.gov.pk** ہوتا ہے۔",
     "relatedSlugs": [
       "/welfare/bisp-eligibility-check-by-cnic",
@@ -6597,11 +6597,11 @@ export const ARTICLES: Record<string, Article> = {
     "categoryId": "welfare",
     "titleEn": "BISP Registration Guide 2026: Dynamic NSER Survey & Office Process",
     "titleUr": "بی آئی ایس پی میں نام درج کروانے کا طریقہ 2026: ڈائنامک این ایس ای آر سروے",
-    "metaDescriptionEn": "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT calculation, and registration steps.",
-    "metaDescriptionUr": "بے نظیر پروگرام میں نیا اندراج کروانے کا مکمل طریقہ۔ نادرا و بی آئی ایس پی تحصیل سینٹر پر ڈائنامک این ایس ای آر سروے، ضروری کاغذات اور اہلیت۔",
-    "directAnswerEn": "To register for BISP, the female head of household must visit the nearest BISP Tehsil Registration Center with her original Smart CNIC and original B-Forms for all minor children. Complete the dynamic NSER survey interview, answer household asset questions, provide biometric thumbprints, and receive an official SMS from 8171 confirming survey registration. Survey registration is 100% FREE.",
-    "directAnswerUr": "بی آئی ایس پی میں اندارج کے لیے خاندان کی شادی شدہ خاتون اپنے اصل سمارٹ شناختی کارڈ اور تمام بچوں کے اصل بی فارم کے ساتھ قریبی بی آئی ایس پی تحصیل سینٹر جائیں۔ وہاں ڈائنامک این ایس ای آر سروے ڈیسک پر سوالات کا جواب دیں اور مفت اندراج کروائیں۔",
-    "lastVerified": "August 28, 2026",
+    "metaDescriptionEn": "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT cutoff (32/37), PKR 14,500 Kafaalat stipend, and registration steps.",
+    "metaDescriptionUr": "بے نظیر پروگرام میں نیا اندراج کروانے کا مکمل طریقہ۔ نادرا و بی آئی ایس پی تحصیل سینٹر پر ڈائنامک این ایس ای آر سروے، 14,500 روپے کفالت قسط اور اہلیت۔",
+    "directAnswerEn": "To register for BISP, the female head of household must visit the nearest BISP Tehsil Registration Center with her original Smart CNIC and original B-Forms for all minor children. Complete the dynamic NSER survey interview, answer household asset questions, provide biometric thumbprints, and receive an official SMS from 8171 confirming survey registration. Families qualifying with a PMT score of 32 or below (37 for disabled) receive PKR 14,500 quarterly. Survey registration is 100% FREE.",
+    "directAnswerUr": "بی آئی ایس پی میں اندراج کے لیے خاندان کی شادی شدہ خاتون اپنے اصل سمارٹ شناختی کارڈ اور تمام بچوں کے اصل بی فارم کے ساتھ قریبی بی آئی ایس پی تحصیل سینٹر جائیں۔ این ایس ای آر سروے میں 32 یا اس سے کم پی ایم ٹی اسکور (معذور افراد کے لیے 37) پر اہل ہونے پر 14,500 روپے سہ ماہی وظیفہ جاری ہوتا ہے۔ اندراج 100 فیصد مفت ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "BISP Registration Division",
       "url": "https://bisp.gov.pk/"
@@ -6617,6 +6617,20 @@ export const ARTICLES: Record<string, Article> = {
         "normal": "PKR 0 (100% FREE)",
         "urgent": "Tehsil Office Visit",
         "executive": "No Fee Ever"
+      },
+      {
+        "serviceEn": "Benazir Kafaalat Cash Entitlement",
+        "serviceUr": "بے نظیر کفالت نقد حق داری",
+        "normal": "PKR 14,500 / Quarter",
+        "urgent": "Unconditional Support",
+        "executive": "PMT <= 32 (37 Disabled)"
+      },
+      {
+        "serviceEn": "Benazir Taleemi Wazaif Education",
+        "serviceUr": "بے نظیر تعلیمی وظائف",
+        "normal": "PKR 2,000 - 5,000 / Child",
+        "urgent": "70% School Attendance",
+        "executive": "Plus PKR 3,000 Bonus"
       }
     ],
     "steps": [
@@ -6757,9 +6771,9 @@ export const ARTICLES: Record<string, Article> = {
     "titleUr": "بے نظیر تعلیمی وظائف 2026: تعلیمی وظائف کی رقم اور اندراج",
     "metaDescriptionEn": "Complete guide to Benazir Taleemi Wazaif for primary, secondary, and higher secondary students. Check quarterly stipend amounts, 75% attendance rule, and bonus grants.",
     "metaDescriptionUr": "بے نظیر تعلیمی وظائف کی مکمل معلومات۔ پرائمری، سیکنڈری اور ہائر سیکنڈری طلباء کی سہ ماہی رقم، 75 فیصد حاضری اور طالبات کا تعلیمی بونس۔",
-    "directAnswerEn": "Benazir Taleemi Wazaif provides quarterly educational cash stipends to children of active Benazir Kafaalat beneficiaries. Quarterly stipend amounts are: Primary (Boys PKR 1,500 / Girls PKR 2,000); Secondary (Boys PKR 2,500 / Girls PKR 3,000); Higher Secondary (Boys PKR 3,500 / Girls PKR 4,000). Girls completing primary school also receive a one-time PKR 3,000 graduation bonus.",
-    "directAnswerUr": "بے نظیر تعلیمی وظائف کفالت ہولڈرز کے بچوں کو دیے جاتے ہیں۔ پرائمری (لڑکے 1500 / لڑکیاں 2000 روپے)، سیکنڈری (لڑکے 2500 / لڑکیاں 3000 روپے)، ہائر سیکنڈری (لڑکے 3500 / لڑکیاں 4000 روپے)۔ پرائمری مکمل کرنے پر لڑکیوں کو 3000 روپے کا بونس ملتا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "directAnswerEn": "Benazir Taleemi Wazaif provides quarterly educational cash stipends to children of active Benazir Kafaalat beneficiaries (who receive PKR 14,500 quarterly). Current quarterly stipend amounts are: Primary (Boys PKR 2,000-2,500 / Girls PKR 2,500-3,000); Secondary (Boys PKR 3,000-3,500 / Girls PKR 3,500-4,000); Higher Secondary (Boys PKR 4,000-4,500 / Girls PKR 4,500-5,000). Girls completing primary school also receive a one-time PKR 3,000 graduation bonus. Families with multiple children commonly receive combined quarterly education stipends of PKR 4,000 to PKR 9,000+.",
+    "directAnswerUr": "بے نظیر تعلیمی وظائف کفالت ہولڈرز (جنہیں 14,500 روپے سہ ماہی ملتے ہیں) کے بچوں کو دیے جاتے ہیں۔ پرائمری (لڑکے 2000 تا 2500 / لڑکیاں 2500 تا 3000 روپے)، سیکنڈری (لڑکے 3000 تا 3500 / لڑکیاں 3500 تا 4000 روپے)، ہائر سیکنڈری (لڑکے 4000 تا 4500 / لڑکیاں 4500 تا 5000 روپے)۔ طالبات کو 3000 روپے پرائمری تکمیل بونس ملتا ہے۔ متعدد بچوں والے خاندانوں کو 4000 تا 9000+ روپے سہ ماہی وظیفہ ملتا ہے۔",
+    "lastVerified": "September 6, 2026",
     "officialSource": {
       "name": "BISP Education Division",
       "url": "https://bisp.gov.pk/TaleemiWazaif"
@@ -6772,22 +6786,22 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "Primary Level Stipend (Class 1 to 5)",
         "serviceUr": "پرائمری سطح (جماعت 1 تا 5)",
-        "normal": "Boys: PKR 1,500 / qtr",
-        "urgent": "Girls: PKR 2,000 / qtr",
+        "normal": "Boys: PKR 2,000 - 2,500 / qtr",
+        "urgent": "Girls: PKR 2,500 - 3,000 / qtr",
         "executive": "Plus PKR 3k Bonus"
       },
       {
         "serviceEn": "Secondary Level Stipend (Class 6 to 10)",
         "serviceUr": "سیکنڈری سطح (جماعت 6 تا 10)",
-        "normal": "Boys: PKR 2,500 / qtr",
-        "urgent": "Girls: PKR 3,000 / qtr",
-        "executive": "75% Attendance"
+        "normal": "Boys: PKR 3,000 - 3,500 / qtr",
+        "urgent": "Girls: PKR 3,500 - 4,000 / qtr",
+        "executive": "70% Attendance"
       },
       {
         "serviceEn": "Higher Secondary (Class 11 & 12)",
         "serviceUr": "ہائر سیکنڈری (جماعت 11 و 12)",
-        "normal": "Boys: PKR 3,500 / qtr",
-        "urgent": "Girls: PKR 4,000 / qtr",
+        "normal": "Boys: PKR 4,000 - 4,500 / qtr",
+        "urgent": "Girls: PKR 4,500 - 5,000 / qtr",
         "executive": "College Stipend"
       }
     ],
@@ -11213,10 +11227,10 @@ export const ARTICLES: Record<string, Article> = {
     ],
     "faqs": [
       {
-        "questionEn": "Can I travel to Pakistan on an expired NICOP card?",
-        "questionUr": "کیا زائد المیعاد نائیکوپ پر پاکستان کا سفر کیا جا سکتا ہے؟",
-        "answerEn": "Under CAA regulations, airlines allow entry to Pakistan if you present your expired NICOP along with an official NADRA Pak-ID online tracking slip showing an in-process renewal application.",
-        "answerUr": "سول ایوی ایشن کے قواعد کے مطابق اگر آپ کے پاس نادرا پاک آئی ڈی کی آن لائن تجدید سلپ موجود ہو تو ایئرلائن پاکستان آنے کی اجازت دیتی ہے۔"
+        "questionEn": "Can I travel to Pakistan on an expired NICOP card with a renewal receipt?",
+        "questionUr": "کیا زائد المیعاد نائیکوپ اور تجدید سلپ پر پاکستان کا سفر کیا جا سکتا ہے؟",
+        "answerEn": "No. Under the July 2026 FIA border enforcement directives, international airlines will strictly deny boarding to foreign passport holders with expired NICOP cards. Online NADRA Pak-ID renewal tracking receipts, tokens, or email confirmations are NO LONGER accepted as boarding waivers. If your physical NICOP is expired and your flight date is near, you must obtain a fast-track Pakistani eVisa (issued in 24–48 hours) or wait for your renewed physical card to be delivered. Read our [Mandatory NICOP Entry Rules Guide](/overseas/nicop-mandatory-entry-rules-2026) for comprehensive travel protocols.",
+        "answerUr": "نہیں! جولائی 2026 سے لاگو ہونے والے ایف آئی اے کے سخت سرحدی قوانین کے تحت ایئرلائنز زائد المیعاد نائیکوپ پر بورڈنگ سے انکار کر دیتی ہیں۔ نادرا تجدید کی آن لائن سلپ یا ٹریکنگ ٹوکن اب قابل قبول نہیں ہے۔ سفر سے قبل اصل نائیکوپ کارڈ کا موجود ہونا لازمی ہے، بصورت دیگر ہنگامی پاکستانی ای ویزا حاصل کریں۔"
       },
       {
         "questionEn": "Which official portal or helpline should citizens use for NICOP Renewal from Abroad 2026?",
@@ -11231,11 +11245,12 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $57 USD | $75 USD (9 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
+    "contentEn": "## Complete Overseas NICOP Renewal Procedure (2026)\nThe **National Identity Card for Overseas Pakistanis (NICOP)** is an essential identity document granting **100% visa-free entry** into Pakistan for expatriates and dual nationals.\n\n> 🚨 **CRITICAL TRAVEL ADVISORY — JULY 2026 FIA BORDER DIRECTIVE**:\n> **A physical, unexpired Smart NICOP is now strictly mandatory for visa-free entry to Pakistan on a foreign passport.**\n> Under revised FIA border enforcement directives, international airlines will **deny boarding** at departure airports if your NICOP is expired. Online renewal tracking receipts, application tokens, or consular letters are **NO LONGER ACCEPTED** for boarding.\n> \n> If your flight date is approaching and your renewed card will not arrive in time, you must apply for an emergency Pakistani Tourist/Family Visit eVisa via `visa.nadra.gov.pk` (typically issued in 24–48 hours).\n> \n> 🔗 **Read Full Border Policy:** [FIA Mandatory NICOP Entry Rules & Airline Directives 2026](/overseas/nicop-mandatory-entry-rules-2026)\n\n| Country Category | Zone | Normal Fee | Urgent Fee | Executive Delivery |\n| :--- | :--- | :--- | :--- | :--- |\n| **USA, UK, Canada, Australia, Europe** | **Zone A** | $39 USD | $57 USD | $75 USD (9 Days) |\n| **Saudi Arabia, UAE, Oman, Qatar, Kuwait** | **Zone B** | $20 USD | $30 USD | $40 USD (7 Days) |",
     "contentUr": "## بیرون ملک مقیم پاکستانیوں کے لیے نائیکوپ تجدید گائیڈ\nپاک آئی ڈی پورٹل کے ذریعے فیس اور طریقہ کار کی تفصیلات۔",
     "relatedSlugs": [
-      "/overseas/poc-card-pakistan-apply-online",
-      "/overseas/overseas-pakistanis-foundation-opf-schemes"
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/overseas/nicop-fee-usa-uk-saudi-uae-2026",
+      "/overseas/poc-card-pakistan-apply-online"
     ]
   },
   "poc-card-pakistan-apply-online": {

@@ -5,10 +5,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "BISP Registration Guide 2026: Dynamic NSER Survey & Office Process",
-  description: "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT calculation, and registration steps.",
+  description: "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT cutoff (32/37), PKR 14,500 Kafaalat stipend, and registration steps.",
   openGraph: {
     title: "BISP Registration Guide 2026: Dynamic NSER Survey & Office Process",
-    description: "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT calculation, and registration steps.",
+    description: "Learn how to register for Benazir Income Support Programme (BISP) via dynamic NSER survey at Tehsil offices. Required documents, PMT cutoff (32/37), PKR 14,500 Kafaalat stipend, and registration steps.",
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/welfare/bisp-how-to-register',
   },

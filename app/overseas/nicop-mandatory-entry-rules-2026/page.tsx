@@ -474,7 +474,20 @@ export default function NicopMandatoryEntryRulesPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/overseas/nicop-renewal-from-abroad"
+              className="p-4 rounded-xl border border-emerald-500/30 bg-emerald-50/10 dark:bg-emerald-950/20 hover:border-emerald-500 transition group"
+            >
+              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-bold uppercase block">Renewal Guide</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-emerald-600 mt-1 flex items-center justify-between">
+                NICOP Renewal Abroad →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Renew your expired card via Pak-ID app with biometric scan and doorstep DHL delivery.
+              </p>
+            </Link>
+
             <Link
               href="/overseas/overseas-pakistanis-voting-rights-current-status-2026"
               className="p-4 rounded-xl border border-doc-seal/30 bg-doc-seal/5 dark:bg-doc-seal/10 hover:border-doc-seal transition group"
