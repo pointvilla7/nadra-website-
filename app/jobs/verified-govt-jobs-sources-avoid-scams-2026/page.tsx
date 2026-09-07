@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
+import { GeoTrustBadge } from '@/components/GeoTrustBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
 import { ComparisonVisual, ProcessStepsDiagram, FAQAccordionVisual } from '@/components/visuals';
@@ -30,7 +31,8 @@ import {
   Scale,
   BadgeAlert,
   Check,
-  X
+  X,
+  Info
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -83,7 +85,7 @@ const jsonLd = {
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-08-27',
-      dateModified: '2026-08-27',
+      dateModified: '2026-09-07',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/jobs/verified-govt-jobs-sources-avoid-scams-2026',
     },
     {
@@ -276,9 +278,9 @@ export default function VerifiedGovtJobsSourcesScamGuidePage() {
       titleEn: 'Verify Advertisement Number & Case Reference',
       titleUr: 'کیس نمبر اور اشتہار کا حوالہ چیک کریں',
       detailEn:
-        'Every genuine government job carries a unique Advertisement Number and Case/Post Code (e.g. Case No. F.4-120/2026-R or Ad No. 14/2026). Match this code with the official consolidated PDF notification.',
+        'Every genuine government job carries a unique Advertisement Number and Case/Post Code (for example, illustrative standard formats: Case No. F.4-XXX/2026-R on FPSC or Ad No. XX/2026 on PPSC). Match this reference code against the currently active consolidated PDF advertisement directly on the commission portal; never assume a job is open without verifying its published closing deadline.',
       detailUr:
-        'ہر سرکاری آسامی کا ایک مخصوص اشتہار نمبر اور کیس کوڈ ہوتا ہے۔ تصدیق کریں کہ یہ کوڈ کمیشن کے اصل پی ڈی ایف نوٹیفکیشن میں موجود ہے۔',
+        'ہر اصل سرکاری آسامی کا ایک مخصوص اشتہار نمبر اور کیس کوڈ ہوتا ہے (مثلاً وضاحتی فارمیٹ: Case No. F.4-XXX/2026-R یا اشتہار نمبر XX/2026)۔ درخواست دینے سے پہلے کمیشن پورٹل پر موجود فعال پی ڈی ایف سے اس ریفرنس کوڈ اور آخری تاریخ (Deadline) کی تصدیق لازمی کریں۔',
       badgeEn: 'STEP 2: CASE CODE',
       badgeUr: 'دوسرا مرحلہ: کوڈ چیک',
     },
@@ -373,6 +375,17 @@ export default function VerifiedGovtJobsSourcesScamGuidePage() {
             learn where the official, daily-updated government portals are, how genuine recruitment works across all provinces, and how to protect
             yourself from fake testing agencies and advance fee scams.
           </p>
+          <GeoTrustBadge
+            lastVerified="September 7, 2026"
+            officialSource={{
+              name: 'FPSC, PPSC & Provincial Commissions Directory',
+              url: 'https://www.fpsc.gov.pk/',
+            }}
+            author={{
+              name: 'Muhammad Tariq Khan',
+              role: 'Editor-in-Chief & Senior Civic Policy Researcher',
+            }}
+          />
         </header>
 
         {/* Direct Answer Box */}
@@ -666,6 +679,16 @@ export default function VerifiedGovtJobsSourcesScamGuidePage() {
             subtitleUr="سال 2026 کے ضوابط کے تحت ملازمت کی تصدیق کا محفوظ طریقہ کار"
             variant="dark"
           />
+
+          <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+            <p className="font-bold text-doc-ink dark:text-white flex items-center gap-1.5">
+              <Info className="w-4 h-4 text-doc-brass shrink-0" />
+              Important Note on Advertisement Numbers &amp; Active Deadlines:
+            </p>
+            <p className="leading-relaxed">
+              All case numbers and advertisement codes referenced in this guide are <strong>purely illustrative format examples</strong> demonstrating official government numbering syntax. Public service commission job vacancies are strictly time-bound (usually remaining open for 15 to 30 days from initial publication in the press). To view currently open vacancies, live syllabus breakdowns, and active closing deadlines, always consult the active consolidated advertisement PDF files hosted directly on official commission portals (<a href="https://www.fpsc.gov.pk" target="_blank" rel="noopener noreferrer" className="text-doc-seal dark:text-red-300 font-mono font-bold hover:underline">fpsc.gov.pk</a>, <a href="https://www.ppsc.gop.pk" target="_blank" rel="noopener noreferrer" className="text-doc-seal dark:text-red-300 font-mono font-bold hover:underline">ppsc.gop.pk</a>, or <a href="https://njp.gov.pk" target="_blank" rel="noopener noreferrer" className="text-doc-seal dark:text-red-300 font-mono font-bold hover:underline">njp.gov.pk</a>).
+            </p>
+          </div>
         </section>
 
         {/* Section 4: Official Helpline Directory for Public Verifications */}
