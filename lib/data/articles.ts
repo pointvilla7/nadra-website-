@@ -12330,13 +12330,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "secp-company-registration-online-2026",
     "fullPath": "/business/secp-company-registration-online-2026",
     "categoryId": "business",
-    "titleEn": "SECP Company Registration Online 2026 – Pvt Ltd Formation Guide",
-    "titleUr": "ایس ای سی پی کمپنی رجسٹریشن آن لائن 2026 – پرائیویٹ لمیٹڈ کمپنی طریقہ",
-    "metaDescriptionEn": "Register a Private Limited (Pvt Ltd) or Single Member Company (SMC) online in Pakistan via SECP eServices in 4 hours. Fees, Memorandum & Articles of Association.",
-    "metaDescriptionUr": "ایس ای سی پی ای سروسز پر پرائیویٹ لمیٹڈ کمپنی آن لائن رجسٹر کرنے کی مکمل معلومات۔ فیس، میمورنڈم، آرٹیکلز اور ڈیجیٹل سرٹیفکیٹ کا طریقہ۔",
-    "directAnswerEn": "To register a Private Limited (Pvt Ltd) or Single Member Company (SMC) in Pakistan, use the Securities and Exchange Commission of Pakistan (SECP) eServices portal at eservices.secp.gov.pk. The integrated digital process combines name reservation, incorporation filing, and automated FBR NTN / provincial tax registration within 4 to 24 hours.",
-    "directAnswerUr": "پاکستان میں پرائیویٹ لمیٹڈ کمپنی رجسٹر کرنے کے لیے ایس ای سی پی کے ای سروسز پورٹل eservices.secp.gov.pk پر درخواست دیں۔ نام کی منظوری، میمورنڈم اور آرٹیکلز جمع کروانے کے بعد 4 سے 24 گھنٹوں میں کمپنی کا ڈیجیٹل رجسٹریشن سرٹیفکیٹ اور این ٹی این جاری ہو جاتا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "SECP Company Registration Online 2026 – eZfile Portal Guide",
+    "titleUr": "ایس ای سی پی کمپنی رجسٹریشن آن لائن 2026 – ای زیڈ فائل پورٹل گائیڈ",
+    "metaDescriptionEn": "Register a Private Limited (Pvt Ltd), Single Member Company (SMC), or LLP online in Pakistan via SECP eZfile. Itemized fees (PKR 1,500–2,700), MoA/AoA, and automated FBR NTN.",
+    "metaDescriptionUr": "ایس ای سی پی کے آفیشل eZfile پورٹل پر پرائیویٹ لمیٹڈ اور سنگل ممبر کمپنی آن لائن رجسٹر کرنے کی معلومات۔ فیس شیڈول، میمورنڈم، اور خودکار FBR این ٹی این کا طریقہ۔",
+    "directAnswerEn": "To register a Private Limited (Pvt Ltd), Single Member Company (SMC), or LLP in Pakistan, use the Securities and Exchange Commission of Pakistan (SECP) eZfile portal (ezfile.secp.gov.pk). The integrated digital workflow combines name reservation, user registration, incorporation filing, and automated FBR NTN generation within 4 hours to 1 working day.",
+    "directAnswerUr": "پاکستان میں پرائیویٹ لمیٹڈ، سنگل ممبر یا ایل ایل پی کمپنی رجسٹر کرنے کے لیے ایس ای سی پی کے آفیشل eZfile پورٹل ezfile.secp.gov.pk پر درخواست دیں۔ نام کی منظوری، میمورنڈم اور آرٹیکلز جمع کروانے کے بعد 4 سے 24 گھنٹوں میں ڈیجیٹل سرٹیفکیٹ اور خودکار FBR این ٹی این جاری ہو جاتا ہے۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
       "name": "Securities & Exchange Commission of Pakistan (SECP)",
       "url": "https://www.secp.gov.pk/"
@@ -12347,72 +12347,100 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "SECP Fast-Track Online Incorporation (Up to 100K Capital)",
-        "serviceUr": "کمپنی رجسٹریشن فیس (1 لاکھ سرمائے تک)",
-        "normal": "PKR 1,500 - 2,500",
-        "urgent": "Same Day (4 Hours)",
-        "executive": "eServices Digital",
+        "serviceEn": "eZfile User Profile & Digital PIN Registration",
+        "serviceUr": "ای زیڈ فائل یوزر پروفائل و ڈیجیٹل پن فیس",
+        "normal": "PKR 200 / User",
+        "urgent": "Instant OTP",
+        "executive": "eZfile Portal",
         "validity": "Permanent"
       },
       {
-        "serviceEn": "Name Reservation Fee",
-        "serviceUr": "نام ریزرویشن فیس",
-        "normal": "PKR 200",
-        "urgent": "Instant Online",
-        "executive": "SECP Portal",
+        "serviceEn": "Company Name Reservation (Online)",
+        "serviceUr": "کمپنی نام کی آن لائن ریزرویشن",
+        "normal": "PKR 500 – 1,000",
+        "urgent": "Instant Check",
+        "executive": "eZfile Single-Step",
         "validity": "60 Days"
+      },
+      {
+        "serviceEn": "Statutory Incorporation (Up to PKR 100,000 Capital)",
+        "serviceUr": "بنیادی رجسٹریشن فیس (1 لاکھ کیپیٹل تک)",
+        "normal": "PKR 1,500 – 2,000",
+        "urgent": "Same Day (4 Hours)",
+        "executive": "Seventh Schedule",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Total Itemized Government Filing Cost (User + Name + Incorporation)",
+        "serviceUr": "کل آئٹمائزڈ سرکاری فیس (یوزر + نام + رجسٹریشن)",
+        "normal": "PKR 1,500 – 2,700",
+        "urgent": "4 Hours to 1 Day",
+        "executive": "Full Setup",
+        "validity": "Permanent"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Name Reservation on SECP eServices",
-        "titleUr": "کمپنی کا نام منظور کروائیں",
-        "detailEn": "Search and reserve a unique company name on eservices.secp.gov.pk.",
-        "detailUr": "ای سروسز پر منفرد نام منتخب کریں۔"
+        "titleEn": "Create User Account on SECP eZfile",
+        "titleUr": "ای زیڈ فائل پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Sign up on ezfile.secp.gov.pk with CNIC and mobile number; obtain SMS digital PIN (PKR 200 fee).",
+        "detailUr": "شناختی کارڈ اور موبائل نمبر سے اکاؤنٹ بنائیں اور ڈیجیٹل پن حاصل کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Submit Incorporation Form, MoA & AoA",
-        "titleUr": "میمورنڈم اور آرٹیکلز جمع کریں",
-        "detailEn": "Fill standard Memorandum and Articles of Association online.",
-        "detailUr": "کمپنی کا منشور اور قواعد آن لائن جمع کروائیں۔"
+        "titleEn": "Name Availability & Reservation",
+        "titleUr": "کمپنی کا نام منتخب اور ریزرو کریں",
+        "detailEn": "Search proposed names and reserve online via eZfile (PKR 500 bundled, PKR 1,000 separate).",
+        "detailUr": "ای زیڈ فائل پر نام تلاش کریں اور منظوری کے لیے جمع کروائیں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Pay Fee Online & Download Incorporation Certificate",
-        "titleUr": "فیس ادا کر کے سرٹیفکیٹ حاصل کریں",
-        "detailEn": "Pay via 1Link/Debit Card and receive digital Digital Incorporation Certificate.",
-        "detailUr": "آن لائن فیس دے کر کارپوریشن سرٹیفکیٹ ڈاؤن لوڈ کریں۔"
+        "titleEn": "Submit Digital MoA, AoA & Director Details",
+        "titleUr": "میمورنڈم، آرٹیکلز اور ڈائریکٹرز کی تفصیل دیں",
+        "detailEn": "Fill standard digital Memorandum and Articles of Association and add director CNICs on eZfile.",
+        "detailUr": "آن لائن میمورنڈم اور آرٹیکلز فارم پر کر کے تمام ڈائریکٹرز کے کوائف درج کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Pay Fee via 1Link & Download Incorporation Certificate",
+        "titleUr": "فیس ادا کر کے سرٹیفکیٹ اور خودکار این ٹی این لیں",
+        "detailEn": "Pay PSID challan via internet banking/ATM; download digital Certificate of Incorporation with automated FBR NTN.",
+        "detailUr": "ون لنک سے فیس ادا کر کے ڈیجیٹل کارپوریشن سرٹیفکیٹ اور کمپنی کا این ٹی این حاصل کریں۔"
       }
     ],
     "faqs": [
+      {
+        "questionEn": "Is there a separate STARR portal for SECP company name reservation?",
+        "questionUr": "کیا کمپنی نام کی منظوری کے لیے STARR کا الگ پورٹل ہے؟",
+        "answerEn": "No. STARR (Sales Tax Automated Refund Repository) is an FBR system used exclusively for sales tax refund processing. SECP does not operate a STARR portal; all name availability checks and name reservations are performed 100% inside the SECP eZfile platform.",
+        "answerUr": "نہیں! سٹار (STARR) ایف بی آر کا سیلز ٹیکس ریفنڈ سسٹم ہے اور اس کا کمپنی نام سے کوئی تعلق نہیں۔ کمپنی کا نام اور رجسٹریشن صرف اور صرف ایس ای سی پی کے آفیشل eZfile پورٹل سے ہوتی ہے۔"
+      },
+      {
+        "questionEn": "Why do fee quotes for minimum capital (PKR 100,000) vary between PKR 1,500 and PKR 2,700?",
+        "questionUr": "1 لاکھ کیپیٹل والی کمپنی کی فیس 1500 سے 2700 روپے کے درمیان کیوں بیان کی جاتی ہے؟",
+        "answerEn": "The base statutory online incorporation filing fee is PKR 1,500–2,000. When adding the mandatory eZfile user profile registration (PKR 200 per director) and name reservation fee (PKR 500 bundled, or PKR 1,000 if reserved independently), the total itemized government tariff ranges between PKR 1,500 and PKR 2,700.",
+        "answerUr": "بنیادی رجسٹریشن فیس 1,500 سے 2,000 روپے ہے۔ جب اس میں فی ڈائریکٹر یوزر اکاؤنٹ (200 روپے) اور نام ریزرویشن (500 سے 1,000 روپے) شامل کیے جائیں تو کل سرکاری خرچ 1,500 سے 2,700 روپے بنتا ہے۔"
+      },
+      {
+        "questionEn": "What is SECP's 2026 mandate on digital book-entry shares (S.R.O. 328(I)/2026)?",
+        "questionUr": "ایس ای سی پی کا ڈیجیٹل شیئرز (SRO 328) سے متعلق نیا قانون کیا ہے؟",
+        "answerEn": "Under S.R.O. 328(I)/2026 pursuant to Section 72 of the Companies Act 2017, companies are mandated to convert physical paper share certificates into electronic book-entry form via the Central Depository System (CDS) or digital share registers to curb title fraud.",
+        "answerUr": "کمپنیز ایکٹ کے سیکشن 72 اور SRO 328 کے تحت تمام کمپنیوں کے کاغذی شیئرز کو ڈیجیٹل بک انٹری سسٹم (سی ڈی ایس) میں تبدیل کرنا لازمی قرار دیا گیا ہے تاکہ جعلسازی کا خاتمہ ہو۔"
+      },
       {
         "questionEn": "What is the minimum capital required to register a Pvt Ltd company in Pakistan?",
         "questionUr": "پرائیویٹ لمیٹڈ کمپنی کے لیے کم از کم کتنا سرمایہ درکار ہے؟",
         "answerEn": "Under the Companies Act 2017, there is no statutory minimum paid-up capital requirement (you can start with nominal PKR 100,000 authorized capital).",
         "answerUr": "قانون کے مطابق کم از کم سرمائے کی کوئی سخت حد نہیں، ایک لاکھ روپے سے بھی آغاز کیا جا سکتا ہے۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for SECP Company Registration Online 2026?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
       }
     ],
-    "contentEn": "Comprehensive guide to SECP company registration in Pakistan.",
-    "contentUr": "ایس ای سی پی میں کمپنی رجسٹریشن کا مکمل اور آسان طریقہ۔",
+    "contentEn": "Comprehensive guide to incorporating Private Limited companies and LLPs in Pakistan through SECP eZfile.",
+    "contentUr": "ایس ای سی پی کے آفیشل پورٹل پر کمپنی رجسٹریشن اور کارپوریٹ ٹیکسیشن کا مکمل گائیڈ۔",
     "relatedSlugs": [
-      "/business/sole-proprietorship-ntn-registration",
+      "/business/company-name-availability-checker-2026",
       "/business/trademark-registration-pakistan-ipo-guide-2026",
-      "/tax/ntn-registration-online-pakistan",
-      "/business/import-export-license-weboc-registration"
+      "/business/pseb-freelancer-registration-tax-benefits-2026"
     ]
   },
   "trademark-registration-pakistan-ipo-guide-2026": {
