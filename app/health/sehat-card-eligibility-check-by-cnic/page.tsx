@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Sehat Card Eligibility Check by CNIC 2026 – 8500 SMS & Portal",
-  description: "Check Sehat Sahulat Card eligibility online in 2026 by 13-digit CNIC or SMS to 8500. Free indoor medical treatment up to PKR 1 Million across empaneled hospitals.",
+  description: "Check Sehat Card eligibility online by CNIC or SMS to 8500. No physical card needed — CNIC acts as health card for PKR 1M cashless treatment at panel hospitals.",
   openGraph: {
     title: "Sehat Card Eligibility Check by CNIC 2026 – 8500 SMS & Portal",
     description: "Check Sehat Sahulat Card eligibility online in 2026 by 13-digit CNIC or SMS to 8500. Free indoor medical treatment up to PKR 1 Million across empaneled hospitals.",

@@ -4,8 +4,8 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Sehat Card Hospital List Near Me – Panel Hospitals Directory",
-  description: "Search full list of Sehat Sahulat empaneled hospitals in Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, and Quetta. Find free treatment centers near you.",
+  title: "Sehat Card Hospital List Near Me 2026 – Panel Hospitals Directory",
+  description: "Find official Sehat Sahulat empaneled hospitals near you via pmhealthprogram.gov.pk. No card required — present CNIC for free treatment in Lahore, Islamabad, KPK & nationwide.",
   openGraph: {
     title: "Sehat Card Hospital List Near Me – Panel Hospitals Directory",
     description: "Search full list of Sehat Sahulat empaneled hospitals in Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, and Quetta. Find free treatment centers near you.",
