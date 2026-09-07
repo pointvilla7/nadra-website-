@@ -695,7 +695,7 @@ export const CATEGORIES: Category[] = [
       {
         "en": "File Salaried Tax Return (Iris)",
         "ur": "آئرس پورٹل انکم ٹیکس فائلنگ",
-        "slug": "/tax/how-to-file-income-tax-return-salaried-iris-2026"
+        "slug": "/tax/income-tax-return-filing-guide"
       },
       {
         "en": "FBR Active Taxpayer Status 2026",

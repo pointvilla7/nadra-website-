@@ -451,7 +451,7 @@ export function IncomeTaxCalculator() {
       {/* Internal Navigation */}
       <div className="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-100 dark:border-slate-800">
         <Link
-          href="/tax/how-to-file-income-tax-return-salaried-iris-2026"
+          href="/tax/income-tax-return-filing-guide"
           className="inline-flex items-center gap-2 text-xs font-mono font-bold text-doc-seal hover:text-doc-brass transition"
         >
           <span>How to File Form 114(I) on FBR IRIS 2.0 →</span>

@@ -218,7 +218,7 @@ export function PtaImeiStatusChecker() {
       {/* Internal Navigation */}
       <div className="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-100 dark:border-slate-800">
         <Link
-          href="/mobile-pta/tax-calculator-2026"
+          href="/mobile-pta/pta-mobile-tax-check-online"
           className="inline-flex items-center gap-2 text-xs font-mono font-bold text-doc-seal hover:text-doc-brass transition"
         >
           <span>Calculate PTA Registration Tax (Passport vs CNIC) →</span>

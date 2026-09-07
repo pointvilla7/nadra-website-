@@ -1,21 +1,36 @@
 import React from 'react';
 import { CATEGORIES } from '@/lib/data/categories';
-import { ARTICLES } from '@/lib/data/articles';
 import { CategoryPillNav } from '@/components/CategoryPillNav';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SchemaInjector } from '@/components/SchemaInjector';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
-import { ShieldCheck, FileText, CheckCircle2, ArrowRight, Smartphone, Calculator, CheckSquare, Radio, Search, BookOpen } from 'lucide-react';
+import {
+  ShieldCheck,
+  FileText,
+  CheckCircle2,
+  ArrowRight,
+  Smartphone,
+  Calculator,
+  Radio,
+  Search,
+  ShieldAlert,
+  Headphones,
+  Scale,
+  Globe2,
+  Users
+} from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { CategoryHeroIllustration } from '@/components/visuals';
 
 export const metadata: Metadata = {
-  title: 'Mobile & PTA Services 2026: Registration Guide, Tax Check & IMEI Verification | Pakistan Info Hub',
-  description: 'Official guides and verified tools for PTA mobile registration in Pakistan: 2026 tax calculator (Passport vs CNIC), DIRBS 15-digit IMEI status check (8484 SMS), 120-day overseas temporary registration, and SIM verification.',
+  title: 'Mobile & PTA Telecommunications Directory 2026: Consumer Guides, Tax Rates & Device Verification | Pakistan Info Hub',
+  description:
+    'Comprehensive public portal for Pakistan Telecommunication Authority (PTA) compliance: DIRBS handset verification (8484 SMS), legal biometric SIM card limits per CNIC, Customs tariff schedules, overseas temporary permits, and consumer rights.',
   openGraph: {
-    title: 'Mobile & PTA Services 2026: Registration Guide, Tax Check & IMEI Verification',
-    description: 'Official guides and verified tools for PTA mobile registration, 2026 tax calculator (Passport vs CNIC), DIRBS 15-digit IMEI status check (8484 SMS), and SIM verification.',
+    title: 'Mobile & PTA Telecommunications Directory 2026: Consumer Guides, Tax Rates & Device Verification',
+    description:
+      'Official civic reference for Pakistan Telecommunication Authority (PTA) statutory regulations: DIRBS device compliance, biometric SIM limits, customs duty structure, and consumer helplines.',
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/mobile-pta',
   },
@@ -28,9 +43,10 @@ export default function MobilePtaHubPage() {
     slug: 'mobile-pta',
     nameEn: 'Mobile & PTA Services',
     nameUr: 'موبائل و پی ٹی اے سروسز',
-    taglineEn: 'PTA Mobile Registration, Tax Check & DIRBS IMEI Verification',
-    taglineUr: 'پی ٹی اے موبائل رجسٹریشن، ٹیکس کیلکولیٹر اور آئی ایم ای آئی تصدیق',
-    descriptionEn: 'Official step-by-step guides and online tools for PTA DIRBS mobile device registration, Customs duty tax calculation for iPhones & Android (Passport vs CNIC), IMEI status verification (8484 SMS), and SIM information rules in Pakistan.',
+    taglineEn: 'PTA Regulatory Framework, DIRBS Handset Verification & SIM Compliance',
+    taglineUr: 'پی ٹی اے ریگولیٹری فریم ورک، ڈی آئی آر بی ایس تصدیق اور سم قوانین',
+    descriptionEn:
+      'The Pakistan Telecommunication Authority (PTA) governs telecommunication infrastructure, cellular network standards, spectrum allocation, and consumer terminal equipment under the Pakistan Telecommunication (Re-organization) Act 1996. This civic repository provides citizens, overseas travelers, and consumers with authoritative regulatory information regarding device legal status, biometric SIM quotas, and customs duties.',
     popularSearches: [
       { en: 'PTA Mobile Registration Guide', ur: 'پی ٹی اے موبائل رجسٹریشن گائیڈ', slug: '/mobile-pta/pta-mobile-registration-guide-2026' },
       { en: 'PTA Mobile Tax Check Online', ur: 'پی ٹی اے ٹیکس چیک آن لائن', slug: '/mobile-pta/pta-mobile-tax-check-online' },
@@ -40,7 +56,48 @@ export default function MobilePtaHubPage() {
     ],
   };
 
-  const articles = Object.values(ARTICLES).filter((a) => a.categoryId === 'mobile-pta');
+  const ptaGuides = [
+    {
+      slug: 'pta-mobile-registration-guide-2026',
+      fullPath: '/mobile-pta/pta-mobile-registration-guide-2026',
+      titleEn: 'PTA Mobile Registration 2026: Complete Online Guide & DVS Portal',
+      descEn: 'Official procedural walkthrough for registering personal imported handsets via DIRBS: Generating 17-digit PSID vouchers, 1Link banking payment, and comparing Passport vs CNIC tariff categories.',
+      badge: 'Primary Process',
+      date: 'Updated September 2026',
+    },
+    {
+      slug: 'pta-mobile-tax-check-online',
+      fullPath: '/mobile-pta/pta-mobile-tax-check-online',
+      titleEn: 'PTA Mobile Tax Check Online 2026: Calculator & iPhone Duty Rates',
+      descEn: 'Statutory Customs duty brackets, sales tax schedules, and regulatory duties based on C&F device dollar value for iPhones, Samsung, and flagship smartphones.',
+      badge: 'Tax & Tariffs',
+      date: 'Updated September 2026',
+    },
+    {
+      slug: 'pta-mobile-imei-check',
+      fullPath: '/mobile-pta/pta-mobile-imei-check',
+      titleEn: 'PTA Mobile IMEI Check: How to Check if Mobile is PTA Approved Online (8484)',
+      descEn: 'Verification protocols for 15-digit IMEI status using free 8484 SMS or dirbs.pta.gov.pk to identify Compliant, Non-Compliant, or Blocked counterfeit devices before purchase.',
+      badge: 'Device Security',
+      date: 'Updated September 2026',
+    },
+    {
+      slug: 'sim-information-system-guide',
+      fullPath: '/mobile-pta/sim-information-system-guide',
+      titleEn: 'PTA SIM Information System Guide – *8888#, 668 & Biometric Limits',
+      descEn: 'Consumer legal guide to biometric SIM limits: Maximum 5 voice SIMs and 3 broadband data connections per CNIC, checking active numbers via cnic.sims.pk, and blocking unauthorized connections.',
+      badge: 'Identity Protection',
+      date: 'Updated September 2026',
+    },
+    {
+      slug: 'overseas-temporary-registration-120-days-2026',
+      fullPath: '/mobile-pta/overseas-temporary-registration-120-days-2026',
+      titleEn: '120-Day Temporary PTA Mobile Registration 2026 – Overseas & Tourists',
+      descEn: 'Statutory duty exemption framework for overseas Pakistanis and foreign tourists visiting Pakistan: Activating cellular service without customs payment for up to 120 days per visit.',
+      badge: 'Exemption Scheme',
+      date: 'Updated September 2026',
+    },
+  ];
 
   return (
     <>
@@ -48,9 +105,10 @@ export default function MobilePtaHubPage() {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Mobile & PTA Services | Pakistan Info Hub',
+          name: 'Mobile & PTA Telecommunications Directory | Pakistan Info Hub',
           url: 'https://www.pakistaninfohub.com/mobile-pta',
-          description: 'Official guides and verified tools for PTA mobile phone registration, 2026 tax calculator (Passport vs CNIC), DIRBS 15-digit IMEI status check (8484 SMS), and SIM verification.',
+          description:
+            'Official directory of telecommunications regulations, DIRBS device registration rules, biometric SIM card quotas, and customs duties overseen by the Pakistan Telecommunication Authority.',
         }}
       />
       <div className="space-y-8 animate-fadeIn max-w-5xl mx-auto font-sans">
@@ -63,7 +121,7 @@ export default function MobilePtaHubPage() {
               <div className="flex items-center gap-3">
                 <VerifiedBadge variant="header" textEn="VERIFIED PUBLIC REPOSITORY" />
                 <span className="font-mono text-xs text-doc-seal uppercase tracking-widest font-bold">
-                  OFFICIAL DIRBS GUIDES &amp; TOOLS
+                  CIVIC TELECOM DIRECTORY
                 </span>
               </div>
               <h1 className="font-serif font-extrabold text-3xl sm:text-4xl text-doc-ink dark:text-slate-100 tracking-tight leading-tight">
@@ -85,184 +143,155 @@ export default function MobilePtaHubPage() {
 
         <CategoryPillNav />
 
-        {/* Featured Online Tools & High-Demand Queries */}
-        <section className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/30 space-y-3">
+        {/* Regulatory Framework Overview — 4 Core Pillars */}
+        <section className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-doc-brass flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-doc-brass" />
-              <span>High-Demand Services &amp; Online Tools</span>
+            <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white flex items-center gap-2">
+              <Scale className="w-5 h-5 text-doc-brass" />
+              <span>PTA Telecommunications Compliance Framework</span>
             </h2>
+            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">Statutory Rules</span>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { en: 'PTA Mobile Registration (12.1k/mo)', ur: 'پی ٹی اے موبائل رجسٹریشن', slug: '/mobile-pta/pta-mobile-registration-guide-2026' },
-              { en: 'PTA Mobile Tax Check Online', ur: 'پی ٹی اے ٹیکس چیک آن لائن', slug: '/mobile-pta/pta-mobile-tax-check-online' },
-              { en: 'PTA Mobile IMEI Check (8484)', ur: 'آئی ایم ای آئی تصدیق 8484', slug: '/mobile-pta/pta-mobile-imei-check' },
-              { en: 'SIM Information System (*8888#)', ur: 'سم معلومات سسٹم', slug: '/mobile-pta/sim-information-system-guide' },
-              { en: '120-Day Temporary Registration', ur: 'اوورسیز 120 دن عارضی رجسٹریشن', slug: '/mobile-pta/overseas-temporary-registration-120-days-2026' },
-            ].map((item) => (
-              <Link
-                key={item.slug}
-                href={item.slug}
-                className="px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-doc-ink hover:text-white dark:hover:bg-slate-700 text-doc-ink dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-medium transition flex items-center gap-1.5"
-              >
-                <span className="font-serif font-bold">{item.en}</span>
-                <span className="text-[10px] text-slate-400 font-sans">({item.ur})</span>
-              </Link>
-            ))}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 space-y-2 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-doc-ink text-doc-brass flex items-center justify-center font-bold">
+                <Smartphone className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
+                1. DIRBS System
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Prevents illegal smuggling and protects users from counterfeit terminal equipment by authenticating 15-digit GSMA IMEIs against telecom networks.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 space-y-2 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-doc-ink text-doc-brass flex items-center justify-center font-bold">
+                <Calculator className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
+                2. Customs Duty Matrix
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Determines statutory FBR taxes (Customs, Regulatory, Sales Tax, and Withholding Tax) based on tiered handset value in USD, with separate Passport vs CNIC rates.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 space-y-2 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-doc-ink text-doc-brass flex items-center justify-center font-bold">
+                <Users className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
+                3. Biometric SIM Limits
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                National quota enforced under NADRA integration: A maximum of 5 voice SIMs and 3 broadband data connections can be registered under a single CNIC.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 space-y-2 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-doc-ink text-doc-brass flex items-center justify-center font-bold">
+                <Globe2 className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white">
+                4. Overseas Exemption
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                The Temporary Mobile Registration System (TTRS) grants non-resident Pakistanis and foreign tourists 120 days of duty-free connectivity per calendar trip.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Featured Hero: #1 Highest Volume Guide */}
-        <Link
-          href="/mobile-pta/pta-mobile-registration-guide-2026"
-          className="p-6 sm:p-8 rounded-3xl bg-doc-ink text-white border border-doc-brass/50 hover:border-doc-brass transition group flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl relative overflow-hidden"
-        >
-          <div className="space-y-2 max-w-2xl">
-            <div className="flex items-center gap-2">
-              <span className="px-3 py-1 rounded-full bg-doc-brass text-doc-ink font-mono font-bold text-xs uppercase tracking-wider">
-                Most Requested Guide (12,100 Searches/Mo)
-              </span>
-            </div>
-            <h2 className="font-serif font-extrabold text-2xl sm:text-3xl text-white group-hover:text-amber-300 transition">
-              PTA Mobile Registration 2026: Complete Online Guide →
+        {/* Quick Civic Compliance Reference Card */}
+        <section className="p-6 rounded-3xl bg-slate-900 text-white border border-slate-800 space-y-4 shadow-md">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-doc-brass flex items-center gap-2">
+              <ShieldAlert className="w-4 h-4 text-amber-400" />
+              <span>Official Telecommunication Codes &amp; Consumer Rules</span>
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed">
-              Step-by-step walkthrough on how to register mobile with PTA via DIRBS portal, compare Passport vs CNIC duty, claim 120-day overseas exemption, and pay via 1Link banking apps.
-            </p>
+            <span className="text-[11px] font-mono text-slate-400">Official Standards</span>
           </div>
-          <div className="shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl bg-doc-brass text-doc-ink font-bold text-sm shadow-md group-hover:bg-amber-400 transition">
-            <span>Read Registration Guide</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-emerald-400">8484</span>
+              <span className="text-[11px] text-slate-300 font-medium">IMEI SMS Check</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-emerald-400">668</span>
+              <span className="text-[11px] text-slate-300 font-medium">SIM Count SMS</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-amber-300">*8888#</span>
+              <span className="text-[11px] text-slate-300 font-medium">Biometric SIM Menu</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-cyan-300">5 + 3</span>
+              <span className="text-[11px] text-slate-300 font-medium">Max SIMs per CNIC</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-amber-300">60 Days</span>
+              <span className="text-[11px] text-slate-300 font-medium">Unregistered Grace</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span className="block font-mono font-extrabold text-lg text-purple-300">120 Days</span>
+              <span className="text-[11px] text-slate-300 font-medium">Overseas Pass</span>
+            </div>
           </div>
-        </Link>
 
-        {/* Interactive Tools Highlight Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Link
-            href="/mobile-pta/pta-mobile-tax-check-online"
-            className="p-6 rounded-2xl bg-slate-900 text-white border border-slate-800 hover:border-doc-brass transition group flex flex-col justify-between"
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold text-doc-brass uppercase">Interactive Tool</span>
-                <Calculator className="w-5 h-5 text-amber-400" />
-              </div>
-              <h3 className="font-serif font-bold text-lg text-white group-hover:text-doc-brass transition">
-                PTA Mobile Tax Check Online 2026 →
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-sans">
-                Real-time calculation of customs duty, regulatory duty, and sales tax for iPhone 16/15, Samsung, and Android devices (Passport vs CNIC rates).
-              </p>
-            </div>
-            <div className="pt-4 mt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-emerald-400 font-bold">
-              <span>Instant Tax Calculation</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          <Link
-            href="/mobile-pta/pta-mobile-imei-check"
-            className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-doc-seal transition group flex flex-col justify-between"
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold text-doc-seal uppercase">Device Verification</span>
-                <Smartphone className="w-5 h-5 text-doc-seal" />
-              </div>
-              <h3 className="font-serif font-bold text-lg text-doc-ink dark:text-white group-hover:text-doc-seal transition">
-                PTA Mobile IMEI Check (8484 SMS) →
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
-                15-digit IMEI formatting helper, *#06# dial code guide, free SMS to 8484, and direct link to the official DIRBS verification portal.
-              </p>
-            </div>
-            <div className="pt-4 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-mono text-doc-seal font-bold">
-              <span>Verify Device Approval</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
+          <div className="pt-2 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+            <span className="flex items-center gap-1.5">
+              <Headphones className="w-3.5 h-3.5 text-doc-brass" />
+              <span>PTA Consumer Helpline: <strong>0800-55055</strong> (Toll-Free) or <strong>051-9225325</strong></span>
+            </span>
+            <span>Official Portal: <strong>dirbs.pta.gov.pk</strong></span>
+          </div>
         </section>
 
         {/* Complete Category Articles Directory */}
-        <div className="space-y-3">
-          <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
-            All Mobile &amp; PTA Services Guides
-          </h2>
+        <section className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
+              Official PTA &amp; Mobile Guides
+            </h2>
+            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
+              {ptaGuides.length} Verified Guides
+            </span>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              {
-                slug: 'pta-mobile-registration-guide-2026',
-                fullPath: '/mobile-pta/pta-mobile-registration-guide-2026',
-                titleEn: 'PTA Mobile Registration 2026: Complete Online Guide',
-                descEn: 'Complete procedural guide to registering imported mobile phones on PTA DIRBS, generating PSID vouchers, and paying customs duties via 1Link.',
-                date: 'August 28, 2026',
-              },
-              {
-                slug: 'pta-mobile-tax-check-online',
-                fullPath: '/mobile-pta/pta-mobile-tax-check-online',
-                titleEn: 'PTA Mobile Tax Check Online 2026: Calculator & iPhone Duty Rates',
-                descEn: 'Calculate exact PTA mobile phone registration tax and customs duty in Pakistan for 2026. Compare Passport vs CNIC registration rates.',
-                date: 'August 28, 2026',
-              },
-              {
-                slug: 'pta-mobile-imei-check',
-                fullPath: '/mobile-pta/pta-mobile-imei-check',
-                titleEn: 'PTA Mobile IMEI Check: How to Check if Mobile is PTA Approved Online (8484)',
-                descEn: 'Check your mobile phone PTA DIRBS registration status in Pakistan. Learn how to verify 15-digit IMEI via free SMS to 8484.',
-                date: 'August 28, 2026',
-              },
-              {
-                slug: 'sim-information-system-guide',
-                fullPath: '/mobile-pta/sim-information-system-guide',
-                titleEn: 'PTA SIM Information System Guide – *8888#, 668 & Biometric Limits',
-                descEn: 'Official civic guide to checking SIM cards registered against your CNIC in Pakistan: How to use PTA SIM Information System (*8888# and 668 SMS).',
-                date: 'August 28, 2026',
-              },
-              {
-                slug: 'overseas-temporary-registration-120-days-2026',
-                fullPath: '/mobile-pta/overseas-temporary-registration-120-days-2026',
-                titleEn: '120-Day Temporary PTA Mobile Registration 2026 – Overseas & Tourists',
-                descEn: 'Complete guide to PTA Temporary Mobile Registration System (TTRS) for overseas Pakistanis and foreign tourists: Tax-free for 120 days.',
-                date: 'August 28, 2026',
-              },
-              {
-                slug: 'how-to-register-phone-pta-dvs-online',
-                fullPath: '/mobile-pta/how-to-register-phone-pta-dvs-online',
-                titleEn: 'How to Register Phone with PTA Online 2026 – PSID & 1Link Payment',
-                descEn: 'Step-by-step guide on how to register imported mobile phones with PTA DIRBS in Pakistan and generate 17-digit PSID vouchers.',
-                date: 'August 28, 2026',
-              },
-            ].map((art) => (
+            {ptaGuides.map((guide) => (
               <Link
-                key={art.slug}
-                href={art.fullPath}
-                className="doc-card rounded-2xl p-5 border border-doc-brass/30 hover:border-doc-seal hover:shadow-md transition flex flex-col justify-between group"
+                key={guide.slug}
+                href={guide.fullPath}
+                className="doc-card rounded-2xl p-5 border border-doc-brass/30 hover:border-doc-seal hover:shadow-md transition flex flex-col justify-between group bg-white dark:bg-doc-dark-card"
               >
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded">
-                      <CheckCircle2 className="w-3 h-3" />
-                      <span>Verified {art.date}</span>
+                    <span className="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-doc-ink dark:text-doc-brass bg-doc-brass/10 px-2 py-0.5 rounded">
+                      <CheckCircle2 className="w-3 h-3 text-doc-brass" />
+                      <span>{guide.badge}</span>
                     </span>
-                    <FileText className="w-4 h-4 text-doc-brass group-hover:text-doc-seal transition" />
+                    <span className="text-[10px] font-mono text-slate-400">{guide.date}</span>
                   </div>
                   <h3 className="font-serif font-bold text-base text-doc-ink dark:text-slate-100 group-hover:text-doc-seal dark:group-hover:text-red-400 transition">
-                    {art.titleEn}
+                    {guide.titleEn}
                   </h3>
-                  <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2 leading-relaxed">
-                    {art.descEn}
+                  <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 leading-relaxed">
+                    {guide.descEn}
                   </p>
                 </div>
 
                 <div className="flex items-center justify-between pt-4 mt-3 border-t border-doc-brass/20 text-xs font-mono font-bold text-doc-seal dark:text-red-300">
-                  <span>View Full Guide</span>
+                  <span>Open Full Guide</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

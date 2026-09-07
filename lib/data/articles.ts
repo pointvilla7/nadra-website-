@@ -1315,71 +1315,6 @@ export const ARTICLES: Record<string, Article> = {
       "/bills/ssgc-duplicate-bill-check"
     ]
   },
-  "bise-rawalpindi-result-2026": {
-    "slug": "bise-rawalpindi-result-2026",
-    "fullPath": "/education/bise-rawalpindi-result-2026",
-    "categoryId": "education",
-    "titleEn": "BISE Rawalpindi Board Result 2026: 9th, 10th, 11th & 12th Class",
-    "titleUr": "بورڈ آف انٹرمیڈیٹ اینڈ سیکنڈری ایجوکیشن راولپنڈی رزلٹ 2026",
-    "metaDescriptionEn": "BISE Rawalpindi matric (SSC) and intermediate (HSSC) result check online by roll number and SMS 800296. Official gazette and mark sheet.",
-    "metaDescriptionUr": "بی آئی ایس ای راولپنڈی بورڈ 9ویں، 10ویں، 11ویں اور 12ویں کلاس کا رزلٹ آن لائن رول نمبر اور ایس ایم ایس 800296 سے دیکھیں۔",
-    "directAnswerEn": "To check BISE Rawalpindi 9th, 10th, 11th, or 12th class result 2026 online, enter your Roll Number at biserawalpindi.edu.pk or send your Roll Number via SMS to 800296.",
-    "directAnswerUr": "راولپنڈی بورڈ کا رزلٹ دیکھنے کے لیے اپنا رول نمبر biserawalpindi.edu.pk پر درج کریں یا 800296 پر ایس ایم ایس بھیجیں۔",
-    "lastVerified": "August 28, 2026",
-    "officialSource": {
-      "name": "BISE Rawalpindi Portal",
-      "url": "https://biserawalpindi.edu.pk/"
-    },
-    "author": {
-      "name": "Editorial Team",
-      "role": "Education Gazette Desk"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "Online Gazette Result",
-        "serviceUr": "آن لائن رزلٹ پورٹل",
-        "normal": "FREE",
-        "urgent": "Instant View",
-        "executive": "Official Site"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Enter Roll Number on BISE Portal",
-        "titleUr": "راولپنڈی بورڈ پورٹل پر رول نمبر درج کریں",
-        "detailEn": "Visit biserawalpindi.edu.pk and click 'Results'. Enter roll number to view marks.",
-        "detailUr": "پورٹل پر رول نمبر درج کر کے نمبرز اور ڈی ایم سی دیکھیں۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "What is BISE Rawalpindi SMS result code?",
-        "questionUr": "راولپنڈی بورڈ کا ایس ایم ایس رزلٹ کوڈ کیا ہے؟",
-        "answerEn": "Send Roll Number to 800296.",
-        "answerUr": "اپنا رول نمبر 800296 پر ایس ایم ایس کریں۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for BISE Rawalpindi Board Result 2026: 9th, 10th, 11th & 12th Class?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
-      }
-    ],
-    "contentEn": "BISE Rawalpindi matric and FSc result gazette lookup guide.\n\n### 📅 Expected 2026 Examination & Result Announcement Timetable\n*Official schedule based on Punjab Boards Committee of Chairmen (PBCC) and Federal Board (FBISE) annual academic calendars:*\n\n| Examination Class | Exam Session | Expected Result Announcement | Official Verification Mode |\n| :--- | :--- | :--- | :--- |\n| **Matric 10th Class (Annual 2026)** | March 2026 | **July 2026** (Expected) | Board Portal Online / SMS Service |\n| **Matric 9th Class (Annual 2026)** | March – April 2026 | **August 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 12th Class (2nd Year)** | April – May 2026 | **September 2026** (Expected) | Board Portal Online / SMS Service |\n| **Intermediate 11th Class (1st Year)** | May – June 2026 | **October 2026** (Expected) | Board Portal Online / SMS Service |\n\n> ⚠️ *Note: Official result dates are formally notified via Board Chairman press releases 48–72 hours prior to online gazette publication. Timelines listed above reflect official annual estimates.*",
-    "contentUr": "راولپنڈی بورڈ کے رزلٹ اور مارکس شیٹ کا مکمل گائیڈ۔",
-    "relatedSlugs": [
-      "/education/bise-result-check-2026",
-      "/education/bise-lahore-result-2026",
-      "/education/fbise-federal-board-result-2026"
-    ]
-  },
   "bise-faisalabad-result-2026": {
     "slug": "bise-faisalabad-result-2026",
     "fullPath": "/education/bise-faisalabad-result-2026",
@@ -4874,7 +4809,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/education/punjab-university-admission-2026",
       "/education/nust-admission-process",
-      "/education/bise-rawalpindi-result-2026"
+      "/education/9th-class-result-2026-rawalpindi-board"
     ],
     "steps": [
       {
@@ -17911,99 +17846,6 @@ export const ARTICLES: Record<string, Article> = {
       "/education/bise-lahore-result-2026"
     ]
   },
-  "how-to-file-income-tax-return-salaried-iris-2026": {
-    "slug": "how-to-file-income-tax-return-salaried-iris-2026",
-    "fullPath": "/tax/how-to-file-income-tax-return-salaried-iris-2026",
-    "categoryId": "tax",
-    "titleEn": "How to File Income Tax Return for Salaried Persons 2026 – FBR IRIS 2.0",
-    "titleUr": "تنخواہ دار افراد انکم ٹیکس ریٹرن فائلنگ طریقہ 2026",
-    "metaDescriptionEn": "Complete, step-by-step 2026 tax filing guide for salaried persons on FBR IRIS 2.0 (iris.fbr.gov.pk): Form 114(I) simplified declaration, July-June fiscal tax year, salary withholding tax deductions, wealth statement reconciliation (Section 116), and Active Taxpayer List (ATL) maintenance.",
-    "metaDescriptionUr": "ایف بی آر پورٹل پر تنخواہ دار افراد کے انکم ٹیکس گوشوارے جمع کروانے کا آسان طریقہ۔ فارم 114(I)، ویلتھ اسٹیٹمنٹ ریکنسلیشن اور 30 ستمبر ڈیڈ لائن۔",
-    "directAnswerEn": "Any individual whose salary constitutes more than 50% of their total taxable annual income can use the simplified Declaration Form 114(I) on FBR IRIS 2.0 (iris.fbr.gov.pk). Login with your 13-digit CNIC, declare gross salary and employer tax deductions, reconcile your Section 116 wealth statement to zero, and submit before September 30.",
-    "directAnswerUr": "وہ تمام افراد جن کی سالانہ آمدن کا 50 فیصد یا اس سے زائد حصہ تنخواہ پر مشتمل ہو، وہ ایف بی آر پورٹل (iris.fbr.gov.pk) پر آسان فارم 114(I) جمع کروا سکتے ہیں۔ شناختی کارڈ سے لاگ ان کریں، تنخواہ اور کٹوتی کا اندراج کریں، ویلتھ اسٹیٹمنٹ ریکنسائل کریں اور 30 ستمبر سے پہلے فائل کریں۔",
-    "lastVerified": "August 28, 2026",
-    "officialSource": {
-      "name": "Federal Board of Revenue (FBR) IRIS 2.0 Portal",
-      "url": "https://iris.fbr.gov.pk/"
-    },
-    "author": {
-      "name": "Editorial Team",
-      "role": "Tax & Financial Compliance Desk"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "Salaried Return Online Filing (Form 114(I))",
-        "serviceUr": "تنخواہ دار ٹیکس گوشوارہ آن لائن",
-        "normal": "100% FREE (No FBR Fee)",
-        "urgent": "Instant Submission on IRIS",
-        "executive": "Direct Active ATL Status"
-      },
-      {
-        "serviceEn": "Wealth Statement (Section 116)",
-        "serviceUr": "ویلتھ اسٹیٹمنٹ (سیکشن 116)",
-        "normal": "Mandatory with Return",
-        "urgent": "Unreconciled Must Equal 0.00",
-        "executive": "Personal Assets & Outflows"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Log in to FBR IRIS 2.0",
-        "titleUr": "ایف بی آر آئرس 2.0 پر لاگ ان کریں",
-        "detailEn": "Visit iris.fbr.gov.pk and enter your 13-digit CNIC (without dashes) and password.",
-        "detailUr": "سرکاری پورٹل پر جا کر اپنا شناختی کارڈ نمبر اور پاس ورڈ درج کریں۔"
-      },
-      {
-        "stepNumber": 2,
-        "titleEn": "Select Form 114(I) for Tax Year 2026",
-        "titleUr": "ٹیکس سال 2026 کے لیے فارم 114(I) منتخب کریں",
-        "detailEn": "Navigate to Declaration → 'Salary Return for Individuals - Form 114(I)' and choose Tax Year 2026.",
-        "detailUr": "ڈیکلریشن ٹیب سے تنخواہ دار افراد کا فارم 114(I) کھولیں۔"
-      },
-      {
-        "stepNumber": 3,
-        "titleEn": "Enter Annual Gross Salary & Withholding Tax",
-        "titleUr": "سالانہ تنخواہ اور منہا شدہ ٹیکس درج کریں",
-        "detailEn": "Input annual gross income from your employer salary certificate and advance tax under Section 149.",
-        "detailUr": "سیلری سرٹیفکیٹ کے مطابق کل سالانہ آمدن اور کٹنے والا ٹیکس درج کریں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Reconcile Wealth Statement (Section 116) & Submit",
-        "titleUr": "ویلتھ اسٹیٹمنٹ ریکنسائل کر کے جمع کروائیں",
-        "detailEn": "Declare assets, liabilities, and household expenses until the unreconciled amount equals 0.00, then submit.",
-        "detailUr": "تمام اثاثے اور اخراجات درج کر کے رقم 0.00 کریں اور گوشوارہ جمع کروائیں۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "Do I need a lawyer for a simple salary return?",
-        "questionUr": "کیا تنخواہ دار ریٹرن کے لیے وکیل کی ضرورت ہے؟",
-        "answerEn": "No. Salaried individuals can easily file Form 114(I) themselves on IRIS 2.0 within 15-20 minutes.",
-        "answerUr": "نہیں! تنخواہ دار افراد خود اپنے گھر بیٹھے 15 سے 20 منٹ میں ریٹرن فائل کر سکتے ہیں۔"
-      },
-      {
-        "questionEn": "What does wealth statement reconciliation mean?",
-        "questionUr": "ویلتھ ریکنسلیشن کا کیا مطلب ہے؟",
-        "answerEn": "It means the change in your net assets from last year must exactly equal your income minus expenses.",
-        "answerUr": "اس کا مطلب ہے کہ پچھلے سال کے مقابلے میں اثاثوں کی تبدیلی آپ کی آمدن اور اخراجات کے برابر ہونی چاہیے۔"
-      },
-      {
-        "questionEn": "Can overseas Pakistanis file on IRIS remotely?",
-        "questionUr": "کیا سمندر پار پاکستانی باہر سے ریٹرن فائل کر سکتے ہیں؟",
-        "answerEn": "Yes. Non-resident Pakistanis can log in using CNIC/NICOP and file to maintain active ATL status.",
-        "answerUr": "جی ہاں! اوورسیز پاکستانی پورٹل پر لاگ ان کر کے ایکٹو ٹیکس پیئر رہنے کے لیے ریٹرن فائل کر سکتے ہیں۔"
-      }
-    ],
-    "contentEn": "Step-by-step guide to filing salaried income tax returns on FBR IRIS 2.0, Form 114(I), salary certificates, and wealth statement reconciliation.",
-    "contentUr": "ایف بی آر پورٹل پر تنخواہ دار افراد کے انکم ٹیکس گوشوارے جمع کروانے کا آسان طریقہ، ویلتھ اسٹیٹمنٹ اور تصدیق۔",
-    "relatedSlugs": [
-      "/tax/fbr-active-taxpayer-status-helper-2026",
-      "/tax/how-to-become-tax-filer-pakistan-2026",
-      "/tax/withholding-tax-rates-filers-non-filers"
-    ]
-  },
   "bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026": {
     "slug": "bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
     "fullPath": "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
@@ -18583,160 +18425,6 @@ export const ARTICLES: Record<string, Article> = {
       "/overseas/poc-card-pakistan-apply-online"
     ]
   },
-  "tax-calculator-2026": {
-    "slug": "tax-calculator-2026",
-    "fullPath": "/mobile-pta/tax-calculator-2026",
-    "categoryId": "mobile-pta",
-    "titleEn": "PTA Mobile Tax Calculator 2026 – Passport vs CNIC Duty Rates",
-    "titleUr": "پی ٹی اے موبائل ٹیکس کیلکولیٹر 2026",
-    "metaDescriptionEn": "Calculate exact PTA mobile phone registration tax and customs duty in Pakistan for 2026. Compare Passport vs CNIC registration rates across all FBR C&F USD brackets.",
-    "metaDescriptionUr": "پی ٹی اے موبائل فون رجسٹریشن ٹیکس کیلکولیٹر 2026: پاسپورٹ اور شناختی کارڈ ریٹس، ایف بی آر کسٹم ڈیوٹی اور 18 فیصد سیلز ٹیکس کا مکمل حساب۔",
-    "directAnswerEn": "PTA mobile tax is determined by the phone's C&F valuation in USD across 6 brackets, combining Customs Duty, Regulatory Duty, 18% Sales Tax, and Mobile Levy. Registering on a Passport is significantly cheaper than registering on a local resident CNIC. Phones can be used tax-free for 60 days before blocking.",
-    "directAnswerUr": "پی ٹی اے ٹیکس موبائل فون کی ڈالر قیمت کے مطابق 6 سلیبس میں لاگو ہوتا ہے۔ پاسپورٹ پر رجسٹریشن کی فیس مقامی شناختی کارڈ کی نسبت نمایاں طور پر کم ہوتی ہے۔ غیر رجسٹرڈ فون 60 دن تک بغیر ٹیکس چل سکتا ہے۔",
-    "lastVerified": "August 28, 2026",
-    "officialSource": {
-      "name": "PTA DIRBS Portal & FBR Customs",
-      "url": "https://dirbs.pta.gov.pk/"
-    },
-    "author": {
-      "name": "Editorial Team",
-      "role": "PTA & Telecom Desk"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "Phones > $500 (iPhone 15/16 Pro, S24 Ultra)",
-        "serviceUr": "500 ڈالر سے زائد مالیت کے فلیگ شپ فونز",
-        "normal": "Passport: ~Rs. 135,000",
-        "urgent": "CNIC: ~Rs. 165,000",
-        "executive": "18% GST + RD Included"
-      },
-      {
-        "serviceEn": "Mid-Range Phones ($200 – $350)",
-        "serviceUr": "مڈ رینج فونز (200 تا 350 ڈالر)",
-        "normal": "Passport: ~Rs. 38,000",
-        "urgent": "CNIC: ~Rs. 48,000",
-        "executive": "FBR Customs Slabs"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Find Phone IMEI via *#06#",
-        "titleUr": "*#06# ملا کر فون کا آئی ایم ای آئی معلوم کریں",
-        "detailEn": "Dial *#06# on your device keypad and note down the 15-digit IMEI 1 and IMEI 2.",
-        "detailUr": "اپنے فون کے ڈائل پیڈ پر *#06# ڈائل کریں اور 15 ہندسوں کا نمبر نوٹ کریں۔"
-      },
-      {
-        "stepNumber": 2,
-        "titleEn": "Generate 17-Digit PSID on dirbs.pta.gov.pk",
-        "titleUr": "پی ٹی اے پورٹل سے 17 ہندسوں کا پی ایس آئی ڈی بنائیں",
-        "detailEn": "Select Passport or CNIC registration on DIRBS and submit your device details to generate a PSID.",
-        "detailUr": "سرکاری ویب سائٹ پر جا کر پاسپورٹ یا شناختی کارڈ کا انتخاب کریں اور چالان بنائیں کریں۔"
-      },
-      {
-        "stepNumber": 3,
-        "titleEn": "Pay Tax via 1Link Banking App or ATM",
-        "titleUr": "بینکنگ ایپ یا اے ٹی ایم سے ٹیکس ادا کریں",
-        "detailEn": "Pay the exact duty through 1Link under FBR/GOP Tax Payments in your mobile banking app.",
-        "detailUr": "موبائل بینکنگ ایپ میں ون لنک کے ذریعے پی ایس آئی ڈی درج کر کے فیس جمع کروائیں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Device Network Activation Within 24 Hours",
-        "titleUr": "24 گھنٹے کے اندر فون کی نیٹ ورک بحالی",
-        "detailEn": "PTA DIRBS automatically reconciles payment and restores cellular network connectivity.",
-        "detailUr": "ادائیگی کے بعد پی ٹی اے سسٹم 24 گھنٹے میں فون کا نیٹ ورک فعال کر دیتا ہے۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "Why is Passport registration cheaper than CNIC?",
-        "questionUr": "پاسپورٹ پر ٹیکس شناختی کارڈ سے کم کیوں ہے؟",
-        "answerEn": "International travelers receive passenger baggage concessions, whereas CNIC represents local resident commercial importation.",
-        "answerUr": "بین الاقوامی مسافروں کو سفری سامان کی مد میں رعایت دی جاتی ہے جبکہ شناختی کارڈ پر پورا کمرشل ٹیکس لگتا ہے۔"
-      },
-      {
-        "questionEn": "What is the grace period before an unregistered phone is blocked?",
-        "questionUr": "فون بلاک ہونے سے پہلے کتنے دن کی مہلت ملتی ہے؟",
-        "answerEn": "You have 60 days from the first insertion of a Pakistani SIM card to pay the tax before the phone is disconnected.",
-        "answerUr": "پاکستانی سم پہلی بار ڈالنے کے بعد 60 دن کے اندر ٹیکس ادا کرنا لازمی ہوتا ہے۔"
-      }
-    ],
-    "contentEn": "Complete guide to PTA mobile phone tax calculation in Pakistan, FBR customs duty slabs, and Passport vs CNIC registration.",
-    "contentUr": "پاکستان میں موبائل فون پر پی ٹی اے ٹیکس، ایف بی آر کسٹم ڈیوٹی اور پاسپورٹ بنام شناختی کارڈ ریٹس کی مکمل گائیڈ۔",
-    "relatedSlugs": [
-      "/mobile-pta/imei-check-2026",
-      "/mobile-pta/sim-information-system-guide",
-      "/mobile-pta/overseas-temporary-registration-120-days-2026"
-    ]
-  },
-  "imei-check-2026": {
-    "slug": "imei-check-2026",
-    "fullPath": "/mobile-pta/imei-check-2026",
-    "categoryId": "mobile-pta",
-    "titleEn": "PTA IMEI Status Check 2026 – DIRBS 8484 SMS Verification",
-    "titleUr": "پی ٹی اے آئی ایم ای آئی تصدیق 8484 ایس ایم ایس",
-    "metaDescriptionEn": "Check your mobile phone PTA DIRBS registration status in Pakistan. Learn how to verify 15-digit IMEI via free SMS to 8484, dial *#06#, and use official portal dirbs.pta.gov.pk.",
-    "metaDescriptionUr": "موبائل فون پی ٹی اے رجسٹریشن تصدیق: *#06# سے آئی ایم ای آئی حاصل کریں، 8484 پر مفت میسج بھیجیں اور چوری شدہ فونز سے محفوظ رہیں۔",
-    "directAnswerEn": "To check PTA status, dial *#06# to get your 15-digit IMEI number, then send the 15 digits via free SMS to 8484 from any local SIM. You will immediately receive a reply confirming if the device is Compliant (Approved), Non-Compliant (Tax Pending with 60-day timer), or Blocked.",
-    "directAnswerUr": "فون کا اسٹیٹس معلوم کرنے کے لیے *#06# ڈائل کر کے 15 ہندسوں کا آئی ایم ای آئی نمبر حاصل کریں، پھر اسے 8484 پر مفت ایس ایم ایس بھیجیں۔ پی ٹی اے فوری تصدیق کرے گا کہ فون منظور شدہ ہے یا بلاک ہے۔",
-    "lastVerified": "August 28, 2026",
-    "officialSource": {
-      "name": "PTA DIRBS Portal",
-      "url": "https://dirbs.pta.gov.pk/"
-    },
-    "author": {
-      "name": "Editorial Team",
-      "role": "PTA & Telecom Desk"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "SMS to Shortcode 8484",
-        "serviceUr": "8484 پر ایس ایم ایس تصدیق",
-        "normal": "100% FREE of Charge",
-        "urgent": "Instant Automated Reply",
-        "executive": "All Networks (Jazz, Zong, Telenor, Ufone)"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Dial *#06# on Dialpad",
-        "titleUr": "فون پر *#06# ڈائل کریں",
-        "detailEn": "Check your 15-digit IMEI number displayed on the screen.",
-        "detailUr": "اسکرین پر ظاہر ہونے والا 15 ہندسوں کا آئی ایم ای آئی نمبر دیکھیں۔"
-      },
-      {
-        "stepNumber": 2,
-        "titleEn": "Send 15 Digits to 8484 via SMS",
-        "titleUr": "8484 پر 15 ہندسے ایس ایم ایس کریں",
-        "detailEn": "Type the 15-digit IMEI without spaces and send to 8484.",
-        "detailUr": "بغیر کسی فاصلے کے 15 ہندسے 8484 پر بھیجیں۔"
-      },
-      {
-        "stepNumber": 3,
-        "titleEn": "Review Status Reply",
-        "titleUr": "جوابی پیغام میں اسٹیٹس چیک کریں",
-        "detailEn": "Confirm if device is Compliant, Non-Compliant, or Blocked.",
-        "detailUr": "تصدیق کریں کہ فون پی ٹی اے منظور شدہ ہے یا بلاک ہے۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "Is 8484 SMS check free?",
-        "questionUr": "کیا 8484 پر میسج مفت ہے؟",
-        "answerEn": "Yes. Checking IMEI via 8484 is completely free on all networks.",
-        "answerUr": "جی ہاں! تمام موبائل نیٹ ورکس پر 8484 سروس بالکل مفت ہے۔"
-      }
-    ],
-    "contentEn": "Complete guide to checking mobile phone IMEI registration status on PTA DIRBS portal and SMS shortcode 8484.",
-    "contentUr": "پی ٹی اے ڈیوائس تصدیق، 8484 ایس ایم ایس اور چوری شدہ موبائل فونز کی جانچ کی مکمل گائیڈ۔",
-    "relatedSlugs": [
-      "/mobile-pta/tax-calculator-2026",
-      "/mobile-pta/sim-information-system-guide",
-      "/mobile-pta/how-to-register-phone-pta-dvs-online"
-    ]
-  },
   "sim-information-system-guide": {
     "slug": "sim-information-system-guide",
     "fullPath": "/mobile-pta/sim-information-system-guide",
@@ -18799,8 +18487,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Complete guide to checking active SIM cards on CNIC, PTA 668 shortcode, and blocking unauthorized mobile numbers.",
     "contentUr": "شناختی کارڈ پر سمز کی تصدیق، 668 شارٹ کوڈ، 5 سمز کی حد اور فراڈ سے بچاؤ کی مکمل گائیڈ۔",
     "relatedSlugs": [
-      "/mobile-pta/imei-check-2026",
-      "/mobile-pta/tax-calculator-2026",
+      "/mobile-pta/pta-mobile-imei-check",
+      "/mobile-pta/pta-mobile-tax-check-online",
       "/nadra/lost-stolen-cnic-replacement-2026"
     ]
   },
@@ -18866,83 +18554,9 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Complete guide to PTA 120-day temporary tax-free mobile registration for overseas Pakistanis and tourists.",
     "contentUr": "اوورسیز پاکستانیوں اور غیر ملکی سیاحوں کے لیے 120 دن کی مفت عارضی موبائل رجسٹریشن کی مکمل گائیڈ۔",
     "relatedSlugs": [
-      "/mobile-pta/tax-calculator-2026",
-      "/overseas/nicop-mandatory-entry-rules-2026",
-      "/mobile-pta/imei-check-2026"
-    ]
-  },
-  "how-to-register-phone-pta-dvs-online": {
-    "slug": "how-to-register-phone-pta-dvs-online",
-    "fullPath": "/mobile-pta/how-to-register-phone-pta-dvs-online",
-    "categoryId": "mobile-pta",
-    "titleEn": "How to Register Phone with PTA Online 2026 – PSID & 1Link Payment",
-    "titleUr": "فون آن لائن رجسٹر اور پی ٹی اے ٹیکس ادا کرنے کا طریقہ",
-    "metaDescriptionEn": "Step-by-step guide on how to register imported mobile phones with PTA DIRBS in Pakistan: How to generate 17-digit PSID code online, pay customs tax via mobile banking apps/1Link/ATM, and unblock devices within 24 hours.",
-    "metaDescriptionUr": "پی ٹی اے ڈیوائس رجسٹریشن، 17 ہندسوں کا پی ایس آئی ڈی چالان بنانے اور موبائل بینکنگ ایپ سے فیس ادا کرنے کا آسان طریقہ۔",
-    "directAnswerEn": "To register your phone: (1) Go to dirbs.pta.gov.pk and create an account using your CNIC/Passport, (2) Enter your 15-digit IMEI number(s) to generate a 17-digit PSID payment code, and (3) Pay the tax via any online banking app under 1Link FBR/GOP Tax Payments. Network service activates within 24 hours.",
-    "directAnswerUr": "فون رجسٹر کرنے کے لیے: (1) پورٹل (dirbs.pta.gov.pk) پر لاگ ان کریں، (2) آئی ایم ای آئی درج کر کے 17 ہندسوں کا PSID چالان بنائیں، اور (3) کسی بھی بینکنگ ایپ سے ون لنک کے ذریعے فیس ادا کریں۔ 24 گھنٹے میں فون ایکٹیو ہو جائے گا۔",
-    "lastVerified": "August 28, 2026",
-    "officialSource": {
-      "name": "PTA DIRBS Registration",
-      "url": "https://dirbs.pta.gov.pk/"
-    },
-    "author": {
-      "name": "Editorial Team",
-      "role": "PTA & Telecom Desk"
-    },
-    "feeStructure": [
-      {
-        "serviceEn": "PTA DIRBS Registration (Single/Dual SIM)",
-        "serviceUr": "پی ٹی اے رجسٹریشن چالان",
-        "normal": "Per FBR Customs Slabs",
-        "urgent": "17-Digit PSID Voucher",
-        "executive": "Paid via 1Link Banking"
-      }
-    ],
-    "steps": [
-      {
-        "stepNumber": 1,
-        "titleEn": "Create Individual Account on DIRBS",
-        "titleUr": "پی ٹی اے پورٹل پر لاگ ان بنائیں",
-        "detailEn": "Sign up with your CNIC, email, and mobile phone number.",
-        "detailUr": "شناختی کارڈ اور ای میل کے ذریعے سرکاری ویب سائٹ پر اکاؤنٹ بنائیں۔"
-      },
-      {
-        "stepNumber": 2,
-        "titleEn": "Submit Device IMEIs & Generate PSID",
-        "titleUr": "آئی ایم ای آئی درج کر کے چالان بنائیں",
-        "detailEn": "Enter your device IMEI 1 and IMEI 2 to generate the 17-digit PSID code.",
-        "detailUr": "فون کے آئی ایم ای آئی نمبرز درج کر کے پی ایس آئی ڈی کوڈ حاصل کریں۔"
-      },
-      {
-        "stepNumber": 3,
-        "titleEn": "Pay Tax via Online Banking or ATM",
-        "titleUr": "آن لائن بینکنگ یا اے ٹی ایم سے فیس ادا کریں",
-        "detailEn": "Pay under 1Link FBR/GOP Tax Payments in your bank app.",
-        "detailUr": "بینکنگ ایپ میں ون لنک کے ذریعے 17 ہندسوں کا کوڈ ڈال کر فیس ادا کریں۔"
-      },
-      {
-        "stepNumber": 4,
-        "titleEn": "Network Activation within 24 Hours",
-        "titleUr": "24 گھنٹے میں فون فعال",
-        "detailEn": "Device is cleared and cellular signals are restored automatically.",
-        "detailUr": "ادائیگی کے بعد سسٹم فون کے نیٹ ورک سگنلز فوری بحال کر دیتا ہے۔"
-      }
-    ],
-    "faqs": [
-      {
-        "questionEn": "How long does PTA take to unblock after payment?",
-        "questionUr": "ادائیگی کے کتنی دیر بعد فون ان بلاک ہوتا ہے؟",
-        "answerEn": "Connectivity is typically restored within 2 to 24 hours after 1Link payment.",
-        "answerUr": "فیس جمع کروانے کے بعد عام طور پر 2 سے 24 گھنٹے میں فون بحال ہو جاتا ہے۔"
-      }
-    ],
-    "contentEn": "Complete procedural guide to registering mobile phones on PTA DIRBS, generating PSID vouchers, and paying customs duties via 1Link.",
-    "contentUr": "پی ٹی اے پورٹل پر موبائل فون رجسٹریشن، پی ایس آئی ڈی واؤچر بنانے اور ون لنک سے ادائیگی کی مکمل رہنمائی۔",
-    "relatedSlugs": [
       "/mobile-pta/pta-mobile-tax-check-online",
-      "/mobile-pta/pta-mobile-imei-check",
-      "/mobile-pta/sim-information-system-guide"
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/mobile-pta/pta-mobile-imei-check"
     ]
   },
   "pta-mobile-registration-guide-2026": {

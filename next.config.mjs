@@ -237,6 +237,32 @@ const nextConfig = {
         destination: '/nadra/nadra-tracking-id-check-online-2026',
         permanent: true,
       },
+      // 6. GSC Duplicate URL Merges (Phase 2)
+      {
+        source: '/tax/how-to-file-income-tax-return-salaried-iris-2026',
+        destination: '/tax/income-tax-return-filing-guide',
+        permanent: true,
+      },
+      {
+        source: '/education/bise-rawalpindi-result-2026',
+        destination: '/education/9th-class-result-2026-rawalpindi-board',
+        permanent: true,
+      },
+      {
+        source: '/mobile-pta/imei-check-2026',
+        destination: '/mobile-pta/pta-mobile-imei-check',
+        permanent: true,
+      },
+      {
+        source: '/mobile-pta/tax-calculator-2026',
+        destination: '/mobile-pta/pta-mobile-tax-check-online',
+        permanent: true,
+      },
+      {
+        source: '/mobile-pta/how-to-register-phone-pta-dvs-online',
+        destination: '/mobile-pta/pta-mobile-registration-guide-2026',
+        permanent: true,
+      },
     ];
   },
 

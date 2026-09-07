@@ -250,7 +250,7 @@ export default function SalariedIncomeTaxCalculatorPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/tax/how-to-file-income-tax-return-salaried-iris-2026"
+              href="/tax/income-tax-return-filing-guide"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Filing Guide</span>

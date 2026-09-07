@@ -255,7 +255,7 @@ export default function SimInformationSystemGuidePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
-              href="/mobile-pta/imei-check-2026"
+              href="/mobile-pta/pta-mobile-imei-check"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Device Status</span>
@@ -266,7 +266,7 @@ export default function SimInformationSystemGuidePage() {
             </Link>
 
             <Link
-              href="/mobile-pta/tax-calculator-2026"
+              href="/mobile-pta/pta-mobile-tax-check-online"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
               <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Tax Estimator</span>

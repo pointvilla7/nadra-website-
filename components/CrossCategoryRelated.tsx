@@ -77,7 +77,7 @@ const TOPICAL_BRIDGES: Record<string, string[]> = {
   overseas: [
     '/passport/overseas-pakistani-passport-renewal',
     '/nadra/nicop-fee-calculator',
-    '/mobile-pta/tax-calculator-2026',
+    '/mobile-pta/pta-mobile-tax-check-online',
     '/finance/pakistan-iban-number-check-validator-2026',
   ],
   'family-registration': [
@@ -123,7 +123,7 @@ const TOPICAL_BRIDGES: Record<string, string[]> = {
     '/traffic/m-tag-motorway-registration-one-network',
   ],
   'mobile-pta': [
-    '/mobile-pta/tax-calculator-2026',
+    '/mobile-pta/pta-mobile-tax-check-online',
     '/tax/fbr-active-taxpayer-status-helper-2026',
     '/overseas/opf-scholarship-children-spouses-overseas-pakistanis-2026',
     '/nadra/cnic-kaise-banaye',

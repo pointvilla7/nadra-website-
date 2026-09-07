@@ -683,7 +683,7 @@ export default function Page() {
             </Link>
 
             <Link
-              href="/tax/how-to-file-income-tax-return-salaried-iris-2026"
+              href="/tax/income-tax-return-filing-guide"
               className="p-4 rounded-2xl bg-white dark:bg-doc-dark-card border border-doc-brass/20 hover:border-doc-seal transition space-y-1.5 group flex flex-col justify-between"
             >
               <div className="space-y-1">

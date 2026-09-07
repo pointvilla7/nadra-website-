@@ -476,7 +476,7 @@ export default function IncomeTaxOnSalaryPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link
-              href="/tax/how-to-file-income-tax-return-salaried-iris-2026"
+              href="/tax/income-tax-return-filing-guide"
               className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group flex flex-col justify-between"
             >
               <div>

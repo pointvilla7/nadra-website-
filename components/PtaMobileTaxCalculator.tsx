@@ -351,7 +351,7 @@ export function PtaMobileTaxCalculator() {
           <span>Official PTA DIRBS Web Portal (Generate PSID) →</span>
         </a>
         <Link
-          href="/mobile-pta/imei-check-2026"
+          href="/mobile-pta/pta-mobile-imei-check"
           className="inline-flex items-center gap-2 text-xs font-mono font-bold text-doc-brass hover:underline transition"
         >
           <span>Check IMEI Registration Status (8484) →</span>
