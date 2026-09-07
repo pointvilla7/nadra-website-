@@ -31,6 +31,7 @@ import {
   Phone,
   Users,
   Award,
+  Scale,
 } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 
@@ -152,13 +153,13 @@ export const NinthClassBoardResultTemplate: React.FC<NinthClassBoardResultTempla
           <div className="flex flex-wrap items-center gap-2">
             <InteractiveToolBadge labelEn="OFFICIAL PORTAL HELPER" labelUr="سرکاری پورٹل رہنمائی" variant="gold" />
             <VerifiedBadge />
-            {board.isAnnouncedToday ? (
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-100 text-emerald-900 dark:bg-emerald-950/70 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 animate-pulse">
-                🟢 ANNOUNCED TODAY — RESULTS LIVE
+            {board.statusType === 'in-progress' ? (
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-100 text-amber-900 dark:bg-amber-950/70 dark:text-amber-300 border border-amber-300 dark:border-amber-700 animate-pulse">
+                🟡 IN FINAL COMPILATION — EXPECTED MID-SEPTEMBER 2026
               </span>
             ) : (
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-blue-100 text-blue-900 dark:bg-blue-950/70 dark:text-blue-300 border border-blue-300 dark:border-blue-700">
-                🔵 OFFICIAL RESULT LIVE ON PORTAL
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-100 text-emerald-900 dark:bg-emerald-950/70 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
+                🟢 OFFICIAL RESULT DECLARED — LIVE ONLINE &amp; SMS
               </span>
             )}
           </div>
@@ -171,19 +172,23 @@ export const NinthClassBoardResultTemplate: React.FC<NinthClassBoardResultTempla
           </h1>
 
           <p className="text-base text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed font-sans">
-            Check the official <strong>9th Class (SSC Part-I) Annual Examination Result 2026</strong> for <strong>{board.boardFullNameEn}</strong>.
-            {board.isAnnouncedToday
-              ? ` The result was officially announced today, Wednesday, September 2, 2026 at 10:00 AM.`
-              : ` The result was officially declared on July 29, 2026 and is currently available for marks verification.`}{' '}
-            Enter your roll number below for the direct portal link or use the instant verified SMS code <strong>{board.smsCode}</strong>.
+            {board.statusType === 'in-progress' ? (
+              <>
+                Check the latest official schedule and announcement updates for <strong>{board.boardFullNameEn} 9th Class (SSC Part-I) Annual Examination Result 2026</strong>. {board.announcementDateEn}. Use the verified portal link below or send your Roll Number to SMS code <strong>{board.smsCode}</strong> as soon as the gazette goes live.
+              </>
+            ) : (
+              <>
+                Check the official <strong>9th Class (SSC Part-I) Annual Examination Result 2026</strong> for <strong>{board.boardFullNameEn}</strong>. The result has been officially announced ({board.announcementDateEn}) and is available for instant marks verification and gazette lookup. Enter your roll number below for the direct portal link or use the verified SMS code <strong>{board.smsCode}</strong>.
+              </>
+            )}
           </p>
         </header>
 
         {/* Announcement Status Banner */}
         <div className={`p-4 rounded-2xl border flex items-start gap-3.5 ${
-          board.isAnnouncedToday
-            ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800 text-emerald-950 dark:text-emerald-200'
-            : 'bg-blue-50 dark:bg-blue-950/30 border-blue-300 dark:border-blue-800 text-blue-950 dark:text-blue-200'
+          board.statusType === 'in-progress'
+            ? 'bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-800 text-amber-950 dark:text-amber-200'
+            : 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800 text-emerald-950 dark:text-emerald-200'
         }`}>
           <Clock className="w-5 h-5 shrink-0 mt-0.5 text-emerald-600 dark:text-emerald-400" />
           <div className="space-y-1">
@@ -405,7 +410,68 @@ export const NinthClassBoardResultTemplate: React.FC<NinthClassBoardResultTempla
               </span>
             </div>
 
-            {/* In-depth Narrative Analysis */}
+            {/* IBCC & Federal Board 10-Tier Grading System Section */}
+        <section className="doc-card p-5 sm:p-7 rounded-2xl border-2 border-doc-brass/40 bg-white dark:bg-slate-900 shadow-md space-y-4 font-sans">
+          <div className="flex items-center gap-2.5">
+            <Scale className="w-6 h-6 text-doc-brass shrink-0" />
+            <div>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-doc-ink dark:text-white">
+                New IBCC &amp; Federal Board 10-Tier Grading Scheme (SSC-I / 2026 Onwards)
+              </h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                National Educational Reform &bull; 40% Minimum Passing Standard
+              </span>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-xs text-amber-950 dark:text-amber-200 leading-relaxed space-y-2">
+            <p>
+              <strong>Important Policy Shift (Effective 2026):</strong> Under the Inter-Boards Coordination Commission (IBCC) national reform guidelines, the traditional marks-based competition and old 5-grade system (A to E) are being phased out in favor of a standardized <strong>10-tier qualitative grading scale</strong>.
+            </p>
+            <ul className="list-disc list-inside space-y-1 pl-1">
+              <li><strong>Implemented for SSC-I (9th Class) in 2026:</strong> Federal Board (FBISE) officially rolled out the 10-tier grading scale for 9th and 11th class examinations from 2026, with full adoption across SSC-II/HSSC-II scheduled for 2027.</li>
+              <li><strong>Passing Marks Raised to 40%:</strong> The minimum passing threshold has been raised from 33% to 40% across national curricula. Students scoring below 40% are placed in the &apos;U&apos; (Ungraded) category.</li>
+              <li><strong>Provincial Transition:</strong> Punjab, Sindh, KPK, and Balochistan boards are synchronizing with the IBCC grading formula to ensure unified university admission eligibility.</li>
+            </ul>
+          </div>
+
+          {/* 10-Tier Grade Band Table */}
+          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+            <table className="w-full text-left text-xs border-collapse font-sans">
+              <thead>
+                <tr className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono uppercase text-[11px]">
+                  <th className="px-3.5 py-2.5 font-bold">Grade</th>
+                  <th className="px-3.5 py-2.5 font-bold">Percentage Range</th>
+                  <th className="px-3.5 py-2.5 font-bold">Performance Category</th>
+                  <th className="px-3.5 py-2.5 font-bold">Passing Status</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-mono">
+                {[
+                  { grade: 'A++', range: '96% – 100%', category: 'Extraordinary', status: 'Pass', color: 'text-emerald-600 dark:text-emerald-400 font-bold' },
+                  { grade: 'A+', range: '91% – 95%', category: 'Exceptional', status: 'Pass', color: 'text-emerald-600 dark:text-emerald-400 font-bold' },
+                  { grade: 'A', range: '86% – 90%', category: 'Outstanding', status: 'Pass', color: 'text-emerald-600 dark:text-emerald-400 font-bold' },
+                  { grade: 'B++', range: '81% – 85%', category: 'Excellent', status: 'Pass', color: 'text-blue-600 dark:text-blue-400' },
+                  { grade: 'B+', range: '76% – 80%', category: 'Very Good', status: 'Pass', color: 'text-blue-600 dark:text-blue-400' },
+                  { grade: 'B', range: '71% – 75%', category: 'Good', status: 'Pass', color: 'text-blue-600 dark:text-blue-400' },
+                  { grade: 'C+', range: '61% – 70%', category: 'Fairly Good', status: 'Pass', color: 'text-amber-600 dark:text-amber-400' },
+                  { grade: 'C', range: '51% – 60%', category: 'Above Average', status: 'Pass', color: 'text-amber-600 dark:text-amber-400' },
+                  { grade: 'D', range: '40% – 50%', category: 'Emerging (Marginal)', status: 'Pass (Minimum)', color: 'text-orange-600 dark:text-orange-400' },
+                  { grade: 'U', range: 'Below 40%', category: 'Ungraded', status: 'Fail (Re-appear)', color: 'text-red-600 dark:text-red-400 font-bold' },
+                ].map((row, i) => (
+                  <tr key={i} className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition">
+                    <td className={`px-3.5 py-2 font-bold ${row.color}`}>{row.grade}</td>
+                    <td className="px-3.5 py-2 text-slate-700 dark:text-slate-300">{row.range}</td>
+                    <td className="px-3.5 py-2 font-sans text-slate-800 dark:text-slate-200">{row.category}</td>
+                    <td className="px-3.5 py-2 font-sans font-semibold text-slate-600 dark:text-slate-400">{row.status}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* In-depth Narrative Analysis */}
             <div className="doc-card p-5 sm:p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-3">
               <h3 className="text-base font-serif font-bold text-doc-ink dark:text-white">
                 {board.nameEn} Evaluation Trends & Regional Breakdown

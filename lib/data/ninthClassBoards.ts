@@ -24,6 +24,7 @@ export interface NinthClassBoardConfig {
   announcementDateEn: string;
   announcementDateUr: string;
   isAnnouncedToday: boolean;
+  statusType?: 'declared' | 'in-progress';
   districtsEn: string[];
   districtsUr: string[];
   recheckingFee: string;

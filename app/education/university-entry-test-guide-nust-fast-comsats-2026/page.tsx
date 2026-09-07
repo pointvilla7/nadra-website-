@@ -344,6 +344,63 @@ export default function UniversityEntryTestGuidePage() {
           </div>
         </section>
 
+        {/* Section: Competitive Merit Percentage & Aggregate Guidance (2026 Cycle) */}
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <BarChart className="w-6 h-6 text-doc-brass" />
+            <h2 className="text-2xl font-serif font-bold text-doc-ink dark:text-white">
+              Competitive Merit Percentage &amp; Cut-Off Guidance (2026 Cycle)
+            </h2>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-4 font-sans text-xs">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              While universities publish baseline application eligibility criteria (typically 60% in FSc / A-Level), the <strong>actual competitive aggregate cut-offs</strong> required to secure admission in high-demand disciplines (such as Computer Science, Software Engineering, and AI) are substantially higher. Below is the verified merit percentage guidance across institutional tiers for the current admission cycle:
+            </p>
+
+            <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+              <table className="w-full text-left text-xs border-collapse font-sans">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono uppercase text-[11px]">
+                    <th className="px-4 py-3 font-bold">Institution Tier</th>
+                    <th className="px-4 py-3 font-bold">Key Universities</th>
+                    <th className="px-4 py-3 font-bold">Min. FSc Eligibility</th>
+                    <th className="px-4 py-3 font-bold">Typical FSc Score Needed</th>
+                    <th className="px-4 py-3 font-bold">Safe Final Aggregate</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-sans">
+                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition">
+                    <td className="px-4 py-3 font-bold text-doc-seal">Tier 1: Premier Tech</td>
+                    <td className="px-4 py-3 font-serif font-bold text-slate-900 dark:text-white">NUST, FAST-NUCES, UET Lahore, GIKI</td>
+                    <td className="px-4 py-3 font-mono">60% Aggregate</td>
+                    <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">70% – 85%+ FSc</td>
+                    <td className="px-4 py-3 font-mono font-bold text-doc-ink dark:text-white">78% – 86%+ for CS / SE; 70% – 76% for Core Eng.</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition">
+                    <td className="px-4 py-3 font-bold text-doc-brass">Tier 2: Semi-Govt &amp; Sectoral</td>
+                    <td className="px-4 py-3 font-serif font-bold text-slate-900 dark:text-white">COMSATS (Isb/Lhr), Air University, Bahria, IST</td>
+                    <td className="px-4 py-3 font-mono">50% – 60%</td>
+                    <td className="px-4 py-3 font-mono font-bold text-blue-600 dark:text-blue-400">65% – 78%+ FSc</td>
+                    <td className="px-4 py-3 font-mono font-bold text-doc-ink dark:text-white">82% – 84%+ for COMSATS CS; 65% – 72% for other majors</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition">
+                    <td className="px-4 py-3 font-bold text-slate-600 dark:text-slate-400">Tier 3: Regional Public</td>
+                    <td className="px-4 py-3 font-serif font-bold text-slate-900 dark:text-white">IUB Bahawalpur, BZU Multan, UOG, GCUF</td>
+                    <td className="px-4 py-3 font-mono">50%</td>
+                    <td className="px-4 py-3 font-mono font-bold text-amber-600 dark:text-amber-400">60%+ FSc</td>
+                    <td className="px-4 py-3 font-mono font-bold text-doc-ink dark:text-white">60% – 68%+ depending on department quota</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 leading-relaxed">
+              💡 <strong>Strategy Note:</strong> Because NUST weights the entry test at <strong>75%</strong> of the final aggregate, a high NET score (150+/200) can compensate for an FSc score in the low 70s. In contrast, for institutions giving 40%–50% weight to intermediate results (such as FAST and COMSATS), having an FSc score above 80% creates a critical competitive cushion.
+            </div>
+          </div>
+        </section>
+
         {/* Section 3: Strategic Planning for Overlapping Windows */}
         <section className="space-y-4">
           <div className="flex items-center gap-2">
