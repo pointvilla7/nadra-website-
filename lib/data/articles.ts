@@ -13189,16 +13189,16 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "hajj-registration-portal-pakistan-2026",
     "fullPath": "/hajj-umrah/hajj-registration-portal-pakistan-2026",
     "categoryId": "hajj-umrah",
-    "titleEn": "Hajj Registration Portal Pakistan 2026 – Government MORA Scheme",
-    "titleUr": "حج رجسٹریشن پورٹل پاکستان 2026 – سرکاری حج سکیم آن لائن فارم",
-    "metaDescriptionEn": "Register for Government Hajj Scheme 2026 online via Ministry of Religious Affairs (hajjinfo.org). Check Regular Scheme vs Sponsorship Scheme (US Dollars) quotas.",
-    "metaDescriptionUr": "وزارت مذہبی امور کے آفیشل پورٹل پر سرکاری حج اسکیم 2026 آن لائن اپلائی کرنے کا طریقہ۔ ریگولر اور فارن اسپانسرشپ اسکیم کی فیس اور شرائط۔",
-    "directAnswerEn": "The Ministry of Religious Affairs and Interfaith Harmony (MORA) manages online applications for the Government Hajj Scheme at hajjinfo.org and designated commercial banks. Pakistani citizens can apply under the Regular Scheme (balloting based in PKR) or the 100% balloting-exempt Sponsorship Scheme by remitting funds in US Dollars from abroad.",
-    "directAnswerUr": "وزارت مذہبی امور کی سرکاری حج اسکیم 2026 کے لیے آن لائن رجسٹریشن hajjinfo.org اور مجاز بینکوں کے ذریعے کی جاتی ہے۔ شہری ریگولر اسکیم (پاکستانی روپے) یا بغیر قرعہ اندازی اسپانسرشپ اسکیم (ڈالر ترسیلات) کے تحت درخواست دے سکتے ہیں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Pakistan Multi-Year Hajj Policy 2027–2030: Pre-Registration Portal & Waiting List Guide",
+    "titleUr": "پاکستان ملٹی ائیر حج پالیسی 2027 تا 2030: پری رجسٹریشن پورٹل و ویٹنگ لسٹ گائیڈ",
+    "metaDescriptionEn": "Federal Cabinet approved Hajj Policy 2027-2030: Register once via MORA Hajj Management System & Pak Hajj App for any year (2027-2030). CNIC-only pre-registration, zero initial fee.",
+    "metaDescriptionUr": "وفاقی کابینہ کی منظور شدہ 4 سالہ حج پالیسی 2027 تا 2030: پاک حج ایپ اور وزارت مذہبی امور پر ایک بار رجسٹریشن، شناختی کارڈ سے مفت اندراج اور ترجیحی ویٹنگ لسٹ۔",
+    "directAnswerEn": "Pakistan has officially transitioned to a multi-year Hajj framework following the Federal Cabinet's approval of the 'Hajj Policy & Plan 2027–2030' on 7 July 2026. Under this landmark reform, the previous annual lottery/balloting system has been permanently discontinued. Pilgrims now register ONCE through the official MORA Hajj Management System (mora.gov.pk / hajj.mora.gov.pk) or the official Pak Hajj mobile app and select their preferred pilgrimage year (any year from 2027 to 2030) on a first-come, first-served priority waiting list. Pre-registration opened on 22 June 2026, requires ONLY a computerized CNIC, and is completely free (PKR 0). A passport (valid until at least 16 November 2027) and a 10% advance deposit are only required later during the formal booking stage.",
+    "directAnswerUr": "وفاقی کابینہ کی جانب سے 7 جولائی 2026 کو منظور کردہ 'حج پالیسی 2027 تا 2030' کے تحت سالانہ قرعہ اندازی کا روایتی نظام ختم کر کے چار سالہ ملٹی ائیر فریم ورک لاگو کر دیا گیا ہے۔ اب شہری وزارت مذہبی امور کے پورٹل (mora.gov.pk) یا پاک حج موبائل ایپ پر صرف ایک بار رجسٹریشن کر کے 2027 سے 2030 تک کے کسی بھی سال کا انتخاب کر سکتے ہیں۔ پری رجسٹریشن 22 جون 2026 سے جاری ہے، جس کے لیے پاسپورٹ نہیں بلکہ صرف شناختی کارڈ درکار ہے اور کوئی فیس نہیں لی جاتی۔ پاسپورٹ (میعاد کم از کم 16 نومبر 2027) اور 10 فیصد ایڈوانس رقم بعد میں کنفرم بکنگ کے مرحلے پر جمع ہوگی۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
-      "name": "Ministry of Religious Affairs (MORA)",
-      "url": "https://hajjinfo.org/"
+      "name": "Ministry of Religious Affairs and Interfaith Harmony (MORA)",
+      "url": "https://www.mora.gov.pk/"
     },
     "author": {
       "name": "Muhammad Tariq Khan",
@@ -13206,60 +13206,102 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Government Regular Hajj Package",
-        "serviceUr": "سرکاری ریگولر حج پیکیج",
-        "normal": "PKR 1,075,000 - 1,150,000",
-        "urgent": "Balloting Quota",
-        "executive": "MORA / Banks",
-        "validity": "Hajj 2026"
+        "serviceEn": "Multi-Year Pre-Registration (CNIC Entry)",
+        "serviceUr": "ملٹی ائیر پری رجسٹریشن (شناختی کارڈ)",
+        "normal": "PKR 0 (100% FREE)",
+        "urgent": "Instant Online Entry",
+        "executive": "MORA Web / Pak Hajj App",
+        "validity": "2027 - 2030 Framework"
       },
       {
-        "serviceEn": "Dollar Sponsorship Scheme (No Balloting)",
-        "serviceUr": "ڈالر اسپانسرشپ اسکیم (بغیر قرعہ اندازی)",
+        "serviceEn": "Waiting List Queue Allocation Token",
+        "serviceUr": "ویٹنگ لسٹ ترجیحی ٹوکن",
+        "normal": "10% of Estimated Cost",
+        "urgent": "First-Come, First-Served",
+        "executive": "Designated Commercial Banks",
+        "validity": "Target Year (2027-2030)"
+      },
+      {
+        "serviceEn": "Estimated Regular Government Package",
+        "serviceUr": "تخمینی سرکاری ریگولر پیکیج",
+        "normal": "PKR 1,075,000 - 1,175,000",
+        "urgent": "Phased Installments",
+        "executive": "MORA Air/Lodging",
+        "validity": "Formal Booking Stage"
+      },
+      {
+        "serviceEn": "Foreign Remittance Sponsorship Stream",
+        "serviceUr": "غیر ملکی ترسیلات اسپانسرشپ",
         "normal": "$3,800 - $4,200 USD",
-        "urgent": "Guaranteed Seat",
-        "executive": "Foreign Remittance",
-        "validity": "Hajj 2026"
+        "urgent": "Direct Foreign Inflow",
+        "executive": "Priority Allocation",
+        "validity": "Direct Allocation"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Verify Machine Readable Passport Validity",
-        "titleUr": "پاسپورٹ کی تاریخ چیک کریں",
-        "detailEn": "Ensure passport has at least 7 months validity with valid CNIC.",
-        "detailUr": "پاسپورٹ کی میعاد کم از کم 7 ماہ ہونی چاہیے۔"
+        "titleEn": "Free Pre-Registration via Pak Hajj App or mora.gov.pk",
+        "titleUr": "پاک حج ایپ یا ویب سائٹ پر مفت پری رجسٹریشن",
+        "detailEn": "Enter your 13-digit computerized CNIC, active mobile number, and select your preferred pilgrimage year (2027, 2028, 2029, or 2030). Zero fee is charged.",
+        "detailUr": "اپنا 13 ہندسوں کا شناختی کارڈ نمبر درج کریں اور اپنی پسند کا سال (2027 تا 2030) منتخب کریں۔ کوئی فیس نہیں ہے۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Submit Application at Designated Bank",
-        "titleUr": "مجاز بینک میں فارم جمع کروائیں",
-        "detailEn": "Deposit initial token advance in 15 designated banks (HBL, NBP, Meezan, etc.).",
-        "detailUr": "بینک میں ٹوکن رقم جمع کروائیں۔"
+        "titleEn": "Receive System Tracking ID & Waiting List Priority",
+        "titleUr": "سسٹم ٹریکنگ آئی ڈی اور ترجیحی نمبر حاصل کریں",
+        "detailEn": "The Hajj Management System logs your entry on a first-come, first-served basis and assigns a permanent central tracking number.",
+        "detailUr": "پہلے آئیے، پہلے پائیے کی بنیاد پر مرکزی ٹریکنگ نمبر اور ترجیحی قطار الاٹ ہو گی۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Deposit 10% Advance When Priority Window Opens",
+        "titleUr": "منتخب سال کی بکنگ پر 10 فیصد رقم جمع کروائیں",
+        "detailEn": "When formal booking for your target year begins, deposit 10% of the estimated package cost at a designated bank to transition from the general registry to the active waiting queue.",
+        "detailUr": "منتخب سال کے آغاز پر 10 فیصد ایڈوانس رقم مجاز بینک میں جمع کروا کر پوزیشن محفوظ کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Provide Passport & Clear Medical Screening",
+        "titleUr": "بکنگ کے حتمی مرحلے پر پاسپورٹ اور بقایا فیس دیں",
+        "detailEn": "Provide a machine-readable or e-Passport valid until at least 16 November 2027, clear the mandatory medical fitness exam, and pay remaining package balance.",
+        "detailUr": "کم از کم 16 نومبر 2027 تک کارآمد پاسپورٹ، میڈیکل فٹنس سرٹیفکیٹ اور بقایا رقم جمع کروائیں۔"
       }
     ],
     "faqs": [
       {
+        "questionEn": "What is the new Multi-Year Hajj Policy 2027–2030, and how does it replace the old annual lottery?",
+        "questionUr": "نئی چار سالہ حج پالیسی 2027 تا 2030 کیا ہے اور یہ پرانے سالانہ نظام سے کیسے مختلف ہے؟",
+        "answerEn": "Approved by the Federal Cabinet on 7 July 2026, the Hajj Policy & Plan 2027–2030 establishes Pakistan's first multi-year framework. Instead of re-applying every year and risking rejection in annual balloting, citizens register once and reserve their preferred pilgrimage year between 2027 and 2030 on a first-come, first-served priority waiting list.",
+        "answerUr": "وفاقی کابینہ کی 7 جولائی 2026 کی منظوری کے تحت ہر سال نئے سرے سے قرعہ اندازی کا پرانا طریقہ ختم کر دیا گیا ہے۔ شہری ایک بار رجسٹر ہو کر 2027 سے 2030 کے درمیان کسی بھی سال کے لیے اپنی باری محفوظ کر سکتے ہیں۔"
+      },
+      {
+        "questionEn": "Do I need a passport or fee payment to pre-register for Hajj 2027-2030?",
+        "questionUr": "کیا حج پری رجسٹریشن کے لیے پاسپورٹ اور فیس کی ضرورت ہے؟",
+        "answerEn": "NO. Initial pre-registration requires ONLY a computerized 13-digit CNIC and is completely free (PKR 0). A passport (valid until at least 16 November 2027) and a 10% advance deposit are only demanded later when you confirm your position in the formal booking queue for your designated year.",
+        "answerUr": "ہرگز نہیں! ابتدائی پری رجسٹریشن کے لیے صرف 13 ہندسوں کا شناختی کارڈ درکار ہے اور کوئی فیس نہیں ہے۔ پاسپورٹ (میعاد کم از کم 16 نومبر 2027) اور 10 فیصد ایڈوانس رقم بعد میں کنفرم بکنگ کے وقت درکار ہوگی۔"
+      },
+      {
+        "questionEn": "What is the current pre-registration status and deadline as of September 2026?",
+        "questionUr": "ستمبر 2026 کے مطابق پری رجسٹریشن کی موجودہ صورتحال اور آخری تاریخ کیا ہے؟",
+        "answerEn": "Pre-registration opened on 22 June 2026 and remains actively OPEN through mora.gov.pk and the Pak Hajj mobile app. No immediate closing deadline has been imposed; however, queue allocation is strictly first-come, first-served, so early registration secures a higher priority slot for your target year.",
+        "answerUr": "پری رجسٹریشن 22 جون 2026 سے مسلسل فعال ہے اور پاک حج ایپ اور mora.gov.pk پر کھلی ہے۔ تاحال کوئی آخری تاریخ مقرر نہیں کی گئی، تاہم پہلے آئیے پہلے پائیے کی بنیاد پر ترجیحی نمبر ملتا ہے۔"
+      },
+      {
+        "questionEn": "What are the passport validity rules for Hajj 2027?",
+        "questionUr": "حج 2027 کے لیے پاسپورٹ کی کم از کم میعاد کیا ہونی چاہیے؟",
+        "answerEn": "Saudi authorities strictly require passports to have at least six months validity past the pilgrimage conclusion. For Hajj 2027, your passport must remain valid until at least 16 November 2027. If your passport expires prior to this date, you can still pre-register with your CNIC now and renew your passport before formal booking.",
+        "answerUr": "سعودی وزارت حج کے مطابق پاسپورٹ کی میعاد کم از کم 16 نومبر 2027 تک ہونی چاہیے۔ اگر پاسپورٹ ایکسپائر ہو تو بھی آپ شناختی کارڈ پر فوری پری رجسٹر ہو سکتے ہیں اور پاسپورٹ بعد میں بنوا سکتے ہیں۔"
+      },
+      {
         "questionEn": "Is a female pilgrim allowed without a Mahram in the Government Hajj Scheme?",
         "questionUr": "کیا خواتین بغیر محرم سرکاری حج کر سکتی ہیں؟",
-        "answerEn": "Yes, under current Saudi and MORA guidelines, women aged 45 and above can travel in organized female group cohorts without a male Mahram.",
-        "answerUr": "جی ہاں! 45 سال سے زائد عمر کی خواتین خواتین کے گروپ میں بغیر محرم حج کر سکتی ہیں۔"
-      },
-      {
-        "questionEn": "Which official portal or helpline should citizens use for Hajj Registration Portal Pakistan 2026?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "answerEn": "Yes. Under current Saudi Ministry of Hajj and MORA regulations, female pilgrims are legally permitted to perform Hajj without a male Mahram, provided they travel in verified female group cohorts or trusted family arrangements.",
+        "answerUr": "جی ہاں! سعودی وزارت حج اور پاکستانی قوانین کے تحت خواتین کسی قابل اعتماد گروپ یا ساتھی خواتین کے ہمراہ بغیر محرم حج کی سعادت حاصل کر سکتی ہیں۔"
       }
     ],
-    "contentEn": "Comprehensive guide to Government Hajj registration in Pakistan.",
-    "contentUr": "سرکاری حج اسکیم میں اپلائی کرنے کی مکمل رہنمائی۔",
+    "contentEn": "## Pakistan Multi-Year Hajj Policy 2027–2030: The Complete Official Guide\nOn **7 July 2026**, the Federal Cabinet of Pakistan officially approved the landmark **'Hajj Policy & Plan 2027–2030'**, fundamentally reforming the nation's Hajj administration. For decades, intending pilgrims had to endure the uncertainty of annual re-applications and computerized lotteries. The new multi-year framework permanently replaces that system with a transparent, digital multi-year queue.\n\n> 🕋 **HISTORIC REFORM NOTICE (As of September 2026)**:\n> **The previous single-year balloting system has been permanently discontinued.**\n> Intending pilgrims now **register ONCE** through the official Ministry of Religious Affairs & Interfaith Harmony (MORA) Hajj Management System and can elect to perform Hajj in **any year between 2027 and 2030**.\n> \n> ⚠️ **Key Pre-Registration Rules (Current Status: OPEN)**:\n> - **Pre-registration opened 22 June 2026**: Fully operational via `mora.gov.pk` and the official **Pak Hajj** mobile app.\n> - **Zero Fee at Pre-Registration**: Initial entry is **100% FREE (PKR 0)**.\n> - **CNIC Only Required**: You do NOT need a passport to pre-register. A valid passport (valid until at least 16 November 2027) is required only at the later formal booking stage.\n> - **Priority Waiting List**: Allocations are logged on a strict first-come, first-served basis.\n\n---\n\n## Core Pillars of the 2027–2030 Multi-Year Framework\n\n### 1. Digital Queue & Priority Waiting List\nUnder the partnership between MORA and the National Information Technology Board (NITB), all applicant records are logged in a unified national database on a **first-come, first-served** basis. When you pre-register, you receive a timestamped tracking number that establishes your priority in the waiting list for your chosen year.\n\n### 2. Two-Stage Registration Architecture\n- **Stage 1 (Pre-Registration — Open Now)**: Enter your 13-digit CNIC, mobile number, and target Hajj year (2027, 2028, 2029, or 2030). No financial commitment or passport is required.\n- **Stage 2 (Queue Confirmation / 10% Advance)**: When MORA announces the operational calendar for your selected year, applicants on the register deposit **10% of the estimated package cost** into designated commercial banks to secure their place on the active waiting list.\n- **Stage 3 (Formal Booking & Passport Submission)**: Submit your machine-readable or e-Passport (must be valid until at least **16 November 2027** for the 2027 cycle), undergo biometric enrollment via Saudi Bio App, complete mandatory biometric health screenings, and deposit the remaining package balance.\n\n---\n\n## Private Hajj Operators (HGOs) 2027–2030 Licensing\nUnder the new 2027–2030 policy, private operators must obtain a **Pre-Registration Clearance Certificate (PRCC)** through rigorous operational and digital readiness evaluations. All private bookings must be recorded in the centralized MORA digital portal to eliminate fraudulent third-party package claims.\n\n---\n\n## Official Sources & Verified Portals\n- **Official MORA Portal**: `mora.gov.pk` and `hajj.mora.gov.pk`\n- **Official Mobile Application**: Download the **Pak Hajj** app from Google Play Store or Apple App Store.\n- **Hajj Information & Helpline**: Call MORA central helpline at `051-9205696` or `051-9216980` for real-time verification.",
+    "contentUr": "## پاکستان ملٹی ائیر حج پالیسی 2027 تا 2030: مکمل سرکاری گائیڈ\nوفاقی کابینہ نے 7 جولائی 2026 کو پاکستان کی تاریخ کی پہلی 4 سالہ **'حج پالیسی و پلان 2027 تا 2030'** کی باضابطہ منظوری دی ہے۔ اس تاریخی فیصلے کے بعد سالانہ قرعہ اندازی کا روایتی نظام مکمل طور پر ختم کر دیا گیا ہے۔\n\n> 🕋 **اہم ترین پالیسی تبدیلی (ستمبر 2026)**:\n> **ہر سال نئے سرے سے اپلائی کرنے کا پرانا طریقہ ختم ہو چکا ہے۔**\n> اب عازمین حج صرف **ایک بار رجسٹر** ہو کر 2027 سے 2030 تک کے کسی بھی سال میں حج ادا کرنے کے لیے اپنی ترجیحی باری محفوظ کر سکتے ہیں۔\n> \n> ⚠️ **پری رجسٹریشن کے اہم نکات (موجودہ صورتحال: فعال)**:\n> 1۔ پری رجسٹریشن 22 جون 2026 سے وزارت کی ویب سائٹ (mora.gov.pk) اور آفیشل **پاک حج ایپ** پر جاری ہے۔\n> 2۔ ابتدائی مرحلے میں کوئی فیس (0 روپے) نہیں لی جاتی۔\n> 3۔ صرف قومی شناختی کارڈ درکار ہے؛ پاسپورٹ کی ضرورت بعد میں کنفرم بکنگ کے وقت پڑے گی۔\n> 4۔ پہلے آئیے پہلے پائیے کی بنیاد پر ترجیحی ویٹنگ لسٹ میں نمبر الاٹ کیا جاتا ہے۔\n\n### رجسٹریشن کے مراحل\n1۔ **پری رجسٹریشن**: شناختی کارڈ درج کر کے پسندیدہ سال منتخب کریں۔\n2۔ **10 فیصد ٹوکن**: منتخب سال کی باری آنے پر 10 فیصد رقم بینک میں جمع کروا کر ویٹنگ لسٹ میں ترجیح پکی کریں۔\n3۔ **حتمی بکنگ**: کم از کم 16 نومبر 2027 تک کارآمد پاسپورٹ اور بائیو میٹرک کے بعد باقی رقم ادا کریں۔",
     "relatedSlugs": [
       "/hajj-umrah/hajj-balloting-result-check-online",
       "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
@@ -13270,13 +13312,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "umrah-visa-apply-from-pakistan-steps",
     "fullPath": "/hajj-umrah/umrah-visa-apply-from-pakistan-steps",
     "categoryId": "hajj-umrah",
-    "titleEn": "Umrah Visa Apply from Pakistan Steps – Nusuk Portal Complete Guide",
-    "titleUr": "پاکستان سے عمرہ ویزا اپلائی کرنے کا طریقہ 2026 – نسک (Nusuk) پورٹل",
-    "metaDescriptionEn": "Apply for Saudi tourist & Umrah e-visa directly from Pakistan via the official Nusuk portal (nusuk.sa). 90-day multiple entry visa fees, hotel booking, and Rawdah permits.",
-    "metaDescriptionUr": "سعودی عرب کے سرکاری نسک (Nusuk) پورٹل سے براہ راست 90 دن کا عمرہ ای ویزا حاصل کرنے کا طریقہ، فیس اور ریاض الجنہ پرمٹ کی مکمل تفصیل۔",
-    "directAnswerEn": "Pakistani pilgrims can apply for an Umrah e-visa directly online using the official Saudi Government Nusuk platform (nusuk.sa) or via authorized Umrah travel operators. The Saudi 90-day tourist/Umrah e-visa allows pilgrims to perform Umrah, travel freely across Makkah, Madinah, and all Saudi cities, and book Rawdah permits on the Nusuk app.",
-    "directAnswerUr": "پاکستانی شہری سعودی حکومت کے آفیشل 'نسک' (nusuk.sa) پورٹل کے ذریعے براہ راست 90 دن کا عمرہ ویزا حاصل کر سکتے ہیں۔ یہ ویزا پورے سعودی عرب میں سفر، عمرہ کی ادائیگی اور ریاض الجنہ میں نماز کے لیے پرمٹ بک کرنے کی اجازت دیتا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Umrah Visa Apply from Pakistan 2026: 30-Day Entry Rule, Nusuk & Steps",
+    "titleUr": "پاکستان سے عمرہ ویزا گائیڈ 2026: 30 دن کی نئی شرط، نسک پورٹل و مکمل مراحل",
+    "metaDescriptionEn": "Apply for Umrah visa from Pakistan for 1448 AH: Note the new 30-day entry validity window (shortened from 90 days), Nusuk platform requirements, and Rawdah permits.",
+    "metaDescriptionUr": "1448 ہجری کے لیے پاکستان سے عمرہ ویزا: ویزا پر داخلے کی نئی 30 روزہ میعاد، نسک (Nusuk) پورٹل کے قوانین اور ریاض الجنہ پرمٹ کی تفصیلات۔",
+    "directAnswerEn": "Pakistani pilgrims can obtain an Umrah visa through authorized travel operators integrated with Saudi Nusuk providers or via the official Nusuk platform (nusuk.sa). Under revised Saudi Ministry of Hajj & Umrah regulations for the 1448 AH season (effective 31 May 2026), the entry visa validity window after issuance has been shortened from 90 days to 30 days — meaning you must enter Saudi Arabia within 30 days of visa issuance, or it lapses. Once inside the Kingdom, the permitted duration of stay remains up to 90 days. Rawdah and Umrah prayer permits must be reserved through the Nusuk smartphone app.",
+    "directAnswerUr": "پاکستانی شہری مجاز ٹریول ایجنٹس یا سرکاری نسک (nusuk.sa) پورٹل کے ذریعے عمرہ ویزا حاصل کر سکتے ہیں۔ 1448 ہجری سیزن (لاگو 31 مئی 2026) کے لیے سعودی وزارت حج و عمرہ نے ویزا جاری ہونے کے بعد داخلے کی میعاد 90 دن سے کم کر کے 30 دن کر دی ہے۔ یعنی ویزا ملنے کے 30 دنوں کے اندر سعودی عرب میں داخل ہونا لازمی ہے، ورنہ ویزا منسوخ ہو جائے گا۔ مملکت میں داخلے کے بعد زیادہ سے زیادہ 90 دن تک قیام کی اجازت برقرار ہے۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
       "name": "Saudi Nusuk Official Portal",
       "url": "https://www.nusuk.sa/"
@@ -13287,52 +13329,73 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Official Saudi Umrah e-Visa Fee",
-        "serviceUr": "عمرہ ای ویزا سرکاری فیس",
-        "normal": "SAR 300 - 450 (PKR 25K-35K)",
-        "urgent": "Instant e-Visa (24 Hrs)",
-        "executive": "Nusuk Platform",
-        "validity": "90 Days"
+        "serviceEn": "Saudi Umrah Visa (Authorized Agent / Nusuk)",
+        "serviceUr": "سعودی عمرہ ویزا (مجاز ایجنٹ / نسک)",
+        "normal": "SAR 300 - 450 (~PKR 25K-35K)",
+        "urgent": "24 to 48 Hours",
+        "executive": "Nusuk Authorized Partner",
+        "validity": "30 Days Entry (90 Days Stay)"
+      },
+      {
+        "serviceEn": "1-Year Multiple Entry Tourist/Umrah Visa",
+        "serviceUr": "ایک سالہ ملٹیپل انٹری ٹورسٹ ویزا",
+        "normal": "SAR 535 (~PKR 40K-45K)",
+        "urgent": "Instant Electronic",
+        "executive": "Full Insurance Included",
+        "validity": "365 Days (90 Days Max Stay)"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Create Account on Nusuk.sa",
-        "titleUr": "نسک پورٹل پر اکاؤنٹ بنائیں",
-        "detailEn": "Register with valid Pakistani passport details.",
-        "detailUr": "پاسپورٹ سے نسک پر رجسٹر ہوں۔"
+        "titleEn": "Submit Details via Licensed Nusuk Operator or Portal",
+        "titleUr": "مجاز ایجنٹ یا نسک پورٹل پر تفصیلات جمع کروائیں",
+        "detailEn": "Provide passport valid for at least 6 months, passport photograph with white background, and confirmed round-trip flights.",
+        "detailUr": "کم از کم 6 ماہ کارآمد پاسپورٹ اور واپسی کے ٹکٹ کی تفصیلات فراہم کریں۔"
       },
       {
         "stepNumber": 2,
-        "titleEn": "Book Rawdah Permit on App",
-        "titleUr": "ریاض الجنہ پرمٹ حاصل کریں",
-        "detailEn": "Select prayer time slot in the Nusuk smartphone app.",
-        "detailUr": "ایپ سے ریاض الجنہ کا وقت منتخب کریں۔"
+        "titleEn": "Ensure Travel Within 30-Day Entry Window",
+        "titleUr": "30 دن کے اندر سعودی عرب میں داخلہ یقینی بنائیں",
+        "detailEn": "Enter the Kingdom of Saudi Arabia within 30 calendar days of visa issuance to prevent visa expiration under the 1448 AH rule.",
+        "detailUr": "ویزا جاری ہونے کے 30 دن کے اندر سفر کریں تاکہ ویزا ایکسپائر نہ ہو۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Book Umrah & Rawdah Permits on Nusuk App",
+        "titleUr": "نسک ایپ پر عمرہ و ریاض الجنہ پرمٹ بک کریں",
+        "detailEn": "Download the official Nusuk mobile app (iOS / Android) and secure mandatory time slots for performing Umrah and visiting Rawdah ash-Sharifah.",
+        "detailUr": "نسک موبائل ایپ ڈاؤن لوڈ کر کے عمرہ اور ریاض الجنہ زیارت کا ٹائم سلاٹ بک کریں۔"
       }
     ],
     "faqs": [
       {
+        "questionEn": "What is the new 30-day entry validity rule for Umrah visas in 1448 AH (2026)?",
+        "questionUr": "1448 ہجری میں عمرہ ویزا کے لیے 30 دن کی داخلہ شرط کیا ہے؟",
+        "answerEn": "Effective 31 May 2026 for the 1448 AH pilgrimage season, the Saudi Ministry of Hajj & Umrah shortened the visa entry window from 90 days to 30 days. Intending pilgrims must enter Saudi Arabia within 30 days of visa issuance, otherwise the visa automatically lapses. However, once you enter the Kingdom, your permitted stay duration is still up to 90 days.",
+        "answerUr": "سعودی وزارت حج و عمرہ کے نئے احکامات (لاگو 31 مئی 2026) کے تحت ویزا ملنے کے بعد 30 دنوں کے اندر سعودی عرب میں داخل ہونا لازمی ہے۔ اگر 30 دن گزر جائیں تو ویزا ضائع ہو جاتا ہے۔ تاہم سعودی عرب پہنچنے کے بعد 90 دن تک قیام کی اجازت برقرار ہے۔"
+      },
+      {
+        "questionEn": "Does the 30-day entry rule reduce my length of stay inside Saudi Arabia?",
+        "questionUr": "کیا 30 دن کی داخلہ شرط سے سعودی عرب میں قیام کی مدت بھی کم ہو گئی ہے؟",
+        "answerEn": "No. The 30-day rule only governs the timeframe in which you must enter the country after visa issuance. Once your entry stamp is processed at a Saudi port of entry, the maximum allowed stay remains up to 90 days from arrival.",
+        "answerUr": "جی نہیں! 30 دن کا قانون صرف ویزا جاری ہونے کے بعد سعودی عرب پہنچنے کی آخری حد ہے۔ ملک میں داخل ہونے کے بعد آپ کو پہلے کی طرح 90 دن تک رہنے کی اجازت ہوتی ہے۔"
+      },
+      {
         "questionEn": "Can I perform Umrah on a standard Saudi tourist visa?",
-        "questionUr": "کیا وزٹ ویزا پر عمرہ ادا کیا جا سکتا ہے؟",
-        "answerEn": "Yes, holders of Saudi tourist, family visit, or business visas are officially permitted to perform Umrah throughout the year except during the core Hajj dates.",
-        "answerUr": "جی ہاں! وزٹ ویزا ہولڈرز حج کے ایام کے علاوہ پورا سال عمرہ کر سکتے ہیں۔"
+        "questionUr": "کیا وزٹ یا ٹورسٹ ویزا پر عمرہ ادا کیا جا سکتا ہے؟",
+        "answerEn": "Yes, holders of Saudi tourist, family visit, or business visas are officially permitted to perform Umrah throughout the year except during the restricted Hajj season.",
+        "answerUr": "جی ہاں! وزٹ یا ٹورسٹ ویزا ہولڈرز حج کے ایام کے علاوہ پورا سال عمرہ کر سکتے ہیں۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Umrah Visa Apply from Pakistan Steps?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "Which official portal or app is required for Umrah permits?",
+        "questionUr": "عمرہ پرمٹ کے لیے کون سی آفیشل ایپ استعمال کی جاتی ہے؟",
+        "answerEn": "Pilgrims must use the official Saudi Nusuk mobile app (nusuk.sa) to obtain mandatory time slots for Umrah and entry into the Rawdah ash-Sharifah in Madinah.",
+        "answerUr": "عمرہ اور ریاض الجنہ میں داخلے کے لیے سعودی حکومت کی آفیشل 'نسک' (Nusuk) ایپ استعمال کی جاتی ہے۔"
       }
     ],
-    "contentEn": "Guide on applying for Umrah e-visa via Nusuk from Pakistan.",
-    "contentUr": "پاکستان سے آن لائن عمرہ ویزا حاصل کرنے کا طریقہ۔",
+    "contentEn": "## Umrah Visa Guide for Pakistani Pilgrims (1448 AH Season / 2026)\nPerforming Umrah from Pakistan requires adhering to the updated digital visa and entry regulations issued by the Saudi Ministry of Hajj & Umrah.\n\n> ⚠️ **CRITICAL VISA VALIDITY UPDATE (1448 AH Season — Effective 31 May 2026)**:\n> **The Umrah visa entry window has been reduced from 90 days to 30 days.**\n> Intending pilgrims must enter the Kingdom of Saudi Arabia within **30 days** of visa issuance. If you fail to arrive within 30 days, your visa automatically lapses and a fresh visa must be obtained. Once you have arrived in Saudi Arabia, your permitted stay duration is up to **90 days**.\n\n---\n\n## How Pakistani Citizens Obtain an Umrah Visa\n1. **Authorized Travel Operators**: Pakistani passport holders generally apply through licensed tour operators integrated with Saudi Nusuk B2B systems.\n2. **Documentation Required**: Machine-readable or e-Passport with at least 6 months validity, white background passport photograph, confirmed return flight, and verified hotel reservations.\n3. **Multiple-Entry Tourist Visa Alternative**: Eligible Pakistanis (such as those holding valid US, UK, or Schengen visas, or GCC residency) can avail the 1-year multiple-entry visa allowing up to 90 days cumulative stay.\n\n---\n\n## Mandatory Digital Permits on Nusuk App\n- **Umrah Permit**: Before performing Tawaf, book your official time slot on the **Nusuk app** (`nusuk.sa`).\n- **Rawdah ash-Sharifah Permit**: Visiting the sacred chamber inside the Prophet's Mosque in Madinah strictly requires a pre-booked permit via Nusuk. Entry without a confirmed app appointment is not permitted.",
+    "contentUr": "## پاکستانی عازمین کے لیے عمرہ ویزا گائیڈ 1448 ہجری (2026)\nپاکستانی عازمین کے لیے سعودی وزارت حج و عمرہ کے نئے قوانین کے تحت ویزا حاصل کرنے کا طریقہ کار۔\n\n> ⚠️ **اہم ترین تبدیلی: ویزا پر داخلے کی میعاد اب صرف 30 دن ہے (لاگو 31 مئی 2026)**:\n> **ویزا جاری ہونے کے بعد 30 دنوں کے اندر سعودی عرب پہنچنا لازمی ہے۔**\n> اگر آپ ویزا کے اجرا کے بعد 30 دن کے اندر سفر نہیں کرتے تو ویزا کینسل ہو جائے گا۔ تاہم سعودی عرب پہنچنے کے بعد قیام کی مدت 90 دن تک ہو سکتی ہے۔\n\n### ضروری معلومات\n1۔ مجاز ٹریول ایجنٹ کے ذریعے نسک سسٹم پر اپلائی کریں۔\n2۔ پاسپورٹ کی میعاد کم از کم 6 ماہ ہونا ضروری ہے۔\n3۔ عمرہ اور ریاض الجنہ کی زیارت کے لیے 'نسک' (Nusuk) موبائل ایپ سے پرمٹ لینا لازمی ہے۔",
     "relatedSlugs": [
       "/hajj-umrah/hajj-registration-portal-pakistan-2026",
       "/hajj-umrah/umrah-package-government-vs-private"
