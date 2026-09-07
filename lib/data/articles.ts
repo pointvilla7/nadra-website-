@@ -11944,15 +11944,15 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "marriage-certificate-union-council-apply",
     "fullPath": "/family-registration/marriage-certificate-union-council-apply",
     "categoryId": "family-registration",
-    "titleEn": "Union Council Marriage Certificate (MRC) Online Apply Guide",
-    "titleUr": "یونین کونسل کمپیوٹرائزڈ شادی سرٹیفکیٹ (MRC) حاصل کرنے کا طریقہ",
-    "metaDescriptionEn": "Apply for a NADRA computerized Marriage Registration Certificate (MRC) from Union Council for passport update, spousal visa, and family registration.",
-    "metaDescriptionUr": "نادرا کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) یونین کونسل سے بنوانے کا طریقہ۔ پاسپورٹ میں شوہر کا نام، ویزا اور فیملی رجسٹریشن کے ضروری کاغذات۔",
-    "directAnswerEn": "A Computerized Marriage Registration Certificate (MRC) is issued on green-bordered NADRA security paper by the local Union Council where the marriage took place. Required for updating the wife's CNIC, spouse visas, and passport modifications, the MRC costs PKR 500-1,000 and is issued within 3-5 business days upon providing the original Nikah Nama and spouse CNICs.",
-    "directAnswerUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) نادرا کے سیکیورٹی پیپر پر متعلقہ یونین کونسل سے جاری ہوتا ہے۔ بیوی کے شناختی کارڈ میں شوہر کا نام درج کروانے اور ویزا کے لیے اصل نکاح نامہ اور شناختی کارڈ کی کاپی جمع کروا کر 3 سے 5 دنوں میں سرٹیفکیٹ حاصل کیا جا سکتا ہے۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Union Council Marriage Certificate (MRC) Online Apply Guide 2026",
+    "titleUr": "یونین کونسل کمپیوٹرائزڈ شادی سرٹیفکیٹ (MRC) حاصل کرنے کا طریقہ 2026",
+    "metaDescriptionEn": "Apply for a NADRA computerized Marriage Registration Certificate (MRC) from Union Council with QR-code verification, required documents, and small-town digitization guide.",
+    "metaDescriptionUr": "نادرا کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) یونین کونسل سے بنوانے کا طریقہ، کیو آر کوڈ تصدیق، اور پرانے غیر ڈیجیٹائزڈ ریکارڈ کی تصدیق کے ضوابط۔",
+    "directAnswerEn": "A Computerized Marriage Registration Certificate (MRC) is issued on green-bordered NADRA security paper by the local Union Council where the marriage took place. Featuring an official cryptographic QR code for embassy and immigration verification, the MRC costs PKR 500-1,000 and is issued within 3-5 business days upon providing the original Nikah Nama and spouse CNICs.",
+    "directAnswerUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC) نادرا کے سیکیورٹی پیپر پر متعلقہ یونین کونسل سے جاری ہوتا ہے۔ ایمبیسی اور ویزا تصدیق کے لیے اس پر کیو آر (QR) کوڈ موجود ہوتا ہے۔ اصل نکاح نامہ اور شناختی کارڈ جمع کروا کر 3 سے 5 دنوں میں سرٹیفکیٹ حاصل کیا جا سکتا ہے۔",
+    "lastVerified": "September 7, 2026",
     "officialSource": {
-      "name": "Local Government Department",
+      "name": "Local Government & Community Development",
       "url": "https://lgcd.punjab.gov.pk/"
     },
     "author": {
@@ -11961,24 +11961,73 @@ export const ARTICLES: Record<string, Article> = {
     },
     "feeStructure": [
       {
-        "serviceEn": "Computerized MRC Certificate",
-        "serviceUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ",
+        "serviceEn": "Computerized MRC Certificate (Normal)",
+        "serviceUr": "کمپیوٹرائزڈ میرج سرٹیفکیٹ (نارمل)",
         "normal": "PKR 500 - 1,000",
-        "urgent": "3 Business Days",
-        "executive": "Union Council",
+        "urgent": "3 to 5 Business Days",
+        "executive": "Local Union Council",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Urgent / Same-Day Processing (Select Urban UCs)",
+        "serviceUr": "ارجنٹ پروسیسنگ (منتخب شہری یوسیز)",
+        "normal": "PKR 1,500 - 2,000",
+        "urgent": "24 to 48 Hours",
+        "executive": "Facilitation Counter",
+        "validity": "Permanent"
+      },
+      {
+        "serviceEn": "Late Marriage Registration (After 30 Days)",
+        "serviceUr": "تاخیری شادی رجسٹریشن فیس",
+        "normal": "PKR 1,000 - 2,000",
+        "urgent": "Affidavit Required",
+        "executive": "Secretary Approval",
         "validity": "Permanent"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Submit Original Nikah Nama & CNICs",
-        "titleUr": "اصل نکاح نامہ اور شناختی کارڈ دیں",
-        "detailEn": "Provide Nikah Nama copy and CNIC copies of husband and wife.",
-        "detailUr": "میاں بیوی کے شناختی کارڈ اور نکاح نامہ جمع کروائیں۔"
+        "titleEn": "Gather Original Nikah Nama & Spouse CNICs",
+        "titleUr": "اصل نکاح نامہ اور شناختی کارڈ تیار کریں",
+        "detailEn": "Collect original Nikah Nama, CNICs of bride, groom, both fathers, and two witnesses.",
+        "detailUr": "اصل نکاح نامہ، میاں بیوی، والدین اور دو گواہوں کے شناختی کارڈ ہمراہ رکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit at Relevant Union Council Office",
+        "titleUr": "متعلقہ یونین کونسل میں جمع کروائیں",
+        "detailEn": "Visit the local UC having jurisdiction where the marriage took place; for older records, request verification against original volume registers.",
+        "detailUr": "متعلقہ یونین کونسل میں کاغذات جمع کروائیں اور پرانے ریکارڈ کے دستی اندراج کی درخواست دیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Review CRMS Computerized Data Entry Draft",
+        "titleUr": "ڈیجیٹل اندراج کا ڈرافٹ چیک کریں",
+        "detailEn": "Carefully cross-check spellings of names, CNICs, date of marriage, and Haq Mehr before final print approval.",
+        "detailUr": "ناموں کے ہجے، شناختی کارڈ نمبر اور حق مہر کی تفصیلات حتمی پرنٹ سے پہلے بغور چیک کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Collect QR-Coded NADRA Security Certificate",
+        "titleUr": "کیو آر کوڈ شدہ سیکیورٹی سرٹیفکیٹ حاصل کریں",
+        "detailEn": "Pay official municipal fee (PKR 500-1,000) and collect stamped computerized certificate ready for embassy/NADRA use.",
+        "detailUr": "سرکاری فیس ادا کر کے مہر شدہ سیکیورٹی سرٹیفکیٹ حاصل کریں جو سفارت خانوں اور نادرا کے لیے قابل قبول ہے۔"
       }
     ],
     "faqs": [
+      {
+        "questionEn": "How does the QR-code verification on the computerized MRC work for foreign embassies?",
+        "questionUr": "سفارت خانوں کے لیے کمپیوٹرائزڈ میرج سرٹیفکیٹ پر کیو آر کوڈ کی تصدیق کیسے کام کرتی ہے؟",
+        "answerEn": "Modern computerized MRCs printed on NADRA security paper include an encrypted dynamic QR code. Foreign embassies (including US, UK, Schengen, Canada, and Gulf/Saudi Arabia), visa consulates, and MOFA scan this QR code directly via smartphone or verification terminals to validate the marriage record against the official provincial civil database, eliminating counterfeit risk.",
+        "answerUr": "نادرا کے سیکیورٹی پیپر پر جاری کردہ جدید میرج سرٹیفکیٹ پر ڈائنامک کیو آر کوڈ ہوتا ہے۔ غیر ملکی سفارت خانے، ویزا دفاتر اور وزارت خارجہ اسے اسکین کر کے سرکاری ریکارڈ سے فوری تصدیق کر سکتے ہیں جس سے جعلی دستاویزات کا خدشہ ختم ہو جاتا ہے۔"
+      },
+      {
+        "questionEn": "What should we do if our older marriage record is not found on the online provincial portal?",
+        "questionUr": "اگر پرانا نکاح آن لائن پورٹل پر ظاہر نہ ہو تو کیا کرنا چاہیے؟",
+        "answerEn": "If a marriage was registered years ago at a smaller-town or rural Union Council and is not found on provincial portals (such as Baldia Online), it has likely not been digitized yet. The couple (or a representative with original CNICs) must visit that specific Union Council in person with the original manual Nikah Nama so the UC staff can manually key the historical paper register entry into the CRMS database.",
+        "answerUr": "اگر شادی سالوں پہلے کسی چھوٹے قصبے یا دیہی یونین کونسل میں ہوئی تھی اور آن لائن پورٹل پر ریکارڈ نہیں مل رہا، تو اس کا مطلب ہے کہ پرانا دستی رجسٹر تاحال ڈیجیٹائز نہیں ہوا۔ اصل نکاح نامہ لے کر اسی یونین کونسل ذاتی طور پر جانا ہوگا تاکہ عملہ سی آر ایم ایس پورٹل پر نیا ڈیجیٹل اندراج کر سکے۔"
+      },
       {
         "questionEn": "Can I apply for an MRC online without visiting the Union Council?",
         "questionUr": "کیا بغیر یونین کونسل جائے آن لائن میرج سرٹیفکیٹ مل سکتا ہے؟",
@@ -11986,24 +12035,18 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "بلدیہ آن لائن ایپ کے ذریعے ابتدائی درخواست دی جا سکتی ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Union Council Marriage Certificate (MRC) Online Apply Guide?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
         "questionEn": "What essential documents are mandatory for verification?",
         "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "answerEn": "Mandatory documents include the original Nikah Nama signed by the Nikah Registrar, CNIC copies of husband, wife, both fathers, and two witnesses.",
+        "answerUr": "اصل نکاح نامہ، میاں بیوی، دونوں کے والد اور دو گواہوں کے شناختی کارڈ کی کاپیاں لازمی درکار ہوتی ہیں۔"
       }
     ],
-    "contentEn": "Guide on obtaining NADRA computerized marriage certificate from Union Council.",
-    "contentUr": "یونین کونسل میرج سرٹیفکیٹ حاصل کرنے کا طریقہ۔",
+    "contentEn": "## Overview: Computerized Marriage Registration Certificate (MRC)\n\nIn Pakistan, while the traditional manual **Nikah Nama** (Islamic marriage contract) confirms the religious and civil solemnization of marriage, government authorities, NADRA, the Directorate General of Immigration & Passports (DGIP), and foreign embassies require the **Computerized Marriage Registration Certificate (MRC)**.\n\nThe computerized MRC is issued on official NADRA-integrated green security paper with a unique registration tracking number issued via the **Civil Registration Management System (CRMS)** at your designated local Union Council (or Cantonment Board / Municipal Committee).\n\n---\n\n## 1. Digital QR-Code Verification Feature\n\n> [!NOTE]\n> **Dynamic Cryptographic QR Code on Modern MRCs**  \n> All computerized Marriage Registration Certificates issued under the NADRA CRMS framework feature an encrypted dynamic **QR code** printed directly on the certificate. Foreign embassies (including US, UK, Schengen, Canada, and Gulf/Saudi MOFA missions), visa immigration officers, and NADRA verification counters scan this QR code directly with a smartphone or dedicated terminal to verify the document's authenticity against the central provincial local government database. This instant digital verification eliminates the risk of counterfeit paper certificates and ensures seamless acceptance for spousal visas, family immigration, and MOFA attestation without requiring manual record verification letters.\n\n---\n\n## 2. Real-World Snag: Legacy & Small-Town Union Council Non-Digitized Records\n\n> [!WARNING]\n> **Caveat for Marriages Registered Years Ago in Smaller Towns / Rural UCs**  \n> If your marriage was solemnized several years or decades ago at a smaller-town, rural, or tehsil Union Council and you cannot locate the record on provincial digital portals (such as Punjab's *Baldia Online* app or Sindh Local Government digital portals), **do not panic**. In many smaller jurisdictions, historical paper registers (Volume and Serial registers kept by Nikah Registrars) have not been retroactively digitized into the central CRMS database.  \n> **What to do:** The online system will show \"Record Not Found\" simply because the digital entry was never created. The couple (or an authorized first-degree family member holding original CNICs) must visit that specific Union Council office in person. Present the original manual Nikah Nama along with the volume/page reference number and request the UC Secretary or Computer Operator to perform an **initial computerized data entry**. Once entered into the CRMS, your computerized MRC with a verified QR code will be generated within 1 to 3 working days.\n\n---\n\n## 3. Mandatory Documents Checklist for MRC\n\nTo apply for or digitize your computerized Marriage Registration Certificate at the Union Council, bring:\n\n1. **Original Nikah Nama** signed and stamped by the licensed Nikah Registrar (Nikah Khawan) and Union Council Secretary.\n2. **Photocopy of Nikah Nama** (clearly showing all 25 columns, Haq Mehr, and witness signatures).\n3. **Original CNICs / Smart Cards** of both Husband and Wife (plus 2 clear photocopies each).\n4. **CNIC Photocopies of Two Witnesses** listed on the Nikah Nama.\n5. **Father's CNIC Photocopy** of both Bride and Groom (for parentage verification).\n6. **Recent Passport-size Photographs** of the bride and groom (required by certain municipal councils).\n7. **For Overseas Pakistanis / Foreign Spouses:** Valid Foreign Passport, NICOP, or POC copy.\n\n---\n\n## 4. Step-by-Step Union Council Application Process\n\n### Step 1: Identify the Relevant Union Council\nThe MRC must be obtained from the Union Council having territorial jurisdiction over the location where the Nikah was solemnized, or where the bride resided at the time of marriage.\n\n### Step 2: In-Person Document Submission & Verification\nSubmit the document folder to the Union Council Secretary or Civil Registration Assistant. The officer cross-references the details against the official Nikah Registrar's register.\n\n### Step 3: CRMS Digital Data Entry & Proof-Reading\nThe data entry operator keys the details into NADRA's CRMS software. You will be provided a printed draft slip to review spellings of names, CNIC numbers, date of marriage, and Haq Mehr amount. **Verify every letter carefully** before signing approval, as corrections after final printing require an amendment fee.\n\n### Step 4: Printing & Collection of QR-Coded Security Certificate\nUpon payment of the statutory municipal fee (typically PKR 500 to PKR 1,000 depending on the province and municipal schedule), the official computerized MRC is printed on NADRA green security paper, stamped by the UC Secretary/Chairman, and handed over.",
+    "contentUr": "## کمپیوٹرائزڈ میرج رجسٹریشن سرٹیفکیٹ (MRC) کی اہمیت\n\nپاکستان میں روایتی **نکاح نامہ** شرعی اور قانونی طور پر شادی کا بنیادی ثبوت ہوتا ہے، لیکن نادرا میں بیوی کے شناختی کارڈ میں شوہر کا نام درج کروانے، پاسپورٹ بنوانے، فیملی رجسٹریشن سرٹیفکیٹ (FRC) اور غیر ملکی ویزا و امیگریشن کے لیے متعلقہ یونین کونسل کا **کمپیوٹرائزڈ میرج سرٹیفکیٹ (MRC)** لازمی درکار ہوتا ہے۔ یہ سرٹیفکیٹ نادرا کے سی آر ایم ایس (CRMS) سسٹم کے تحت سیکیورٹی پیپر پر جاری ہوتا ہے۔\n\n---\n\n## 1. جدید میرج سرٹیفکیٹ پر کیو آر (QR) کوڈ کی تصدیق\n\n> [!NOTE]\n> **کیو آر کوڈ کے ذریعے فوری قانونی تصدیق**  \n> نادرا اور لوکل گورنمنٹ کے جدید کمپیوٹرائزڈ میرج سرٹیفکیٹ پر ایک مخصوص **QR Code** پرنٹ ہوتا ہے۔ غیر ملکی سفارت خانے (امریکہ، برطانیہ، کینیڈا، شینگن ممالک اور خلیجی ممالک)، امیگریشن حکام اور وزارت خارجہ (MOFA) اس کیو آر کوڈ کو اسکین کر کے سرکاری ریکارڈ سے فوری تصدیق کرتے ہیں۔ اس سے جعلی کاغذات کا خطرہ ختم ہو جاتا ہے اور ویزا یا تصدیق میں تاخیر نہیں ہوتی۔\n\n---\n\n## 2. پرانی اور چھوٹے شہروں کی شادیوں کا اہم مسئلہ (ڈیجیٹل ریکارڈ کی عدم موجودگی)\n\n> [!WARNING]\n> **چھوٹے قصبات یا دیہی یونین کونسلز کے پرانے ریکارڈ کے لیے اہم تنبیہ**  \n> اگر آپ کا نکاح کئی سال یا دہائیاں پہلے کسی چھوٹے شہر، تحصیل یا دیہی یونین کونسل میں ہوا تھا اور صوبائی آن لائن پورٹل (جیسے پنجاب کی بلدیہ آن لائن ایپ) پر ریکارڈ نہیں مل رہا، تو پریشان ہونے کی ضرورت نہیں۔ بیشتر چھوٹے علاقوں کے پرانے دستی رجسٹر تاحال خودکار طریقے سے ڈیجیٹائز نہیں ہو سکے۔  \n> **حل:** آن لائن \"ریکارڈ ناٹ فاؤنڈ\" کا مطلب یہ ہرگز نہیں کہ نکاح غیر قانونی ہے۔ میاں یا بیوی کو اصل دستی نکاح نامہ لے کر اسی متعلقہ یونین کونسل جانا ہوگا جہاں نکاح کا اندراج ہوا تھا۔ وہاں سیکرٹری یونین کونسل کو دستی ریکارڈ دکھا کر سی آر ایم ایس سسٹم میں پہلی بار کمپیوٹرائزڈ اندراج (Data Entry) کروانا ہوگا۔ اندراج کے 1 سے 3 دنوں بعد کیو آر کوڈ والا کمپیوٹرائزڈ سرٹیفکیٹ مل جائے گا۔\n\n---\n\n## 3. ضروری کاغذات کی فہرست\n\n1. اصل نکاح نامہ (نکاح رجسٹرار کی مہر اور دستخط شدہ) بمعہ فوٹو کاپیاں۔\n2. میاں اور بیوی کے اصل قومی شناختی کارڈ (CNIC/Smart Card) اور 2، 2 فوٹو کاپیاں۔\n3. نکاح نامے پر درج دونوں گواہان کے شناختی کارڈ کی کاپیاں۔\n4. دلہا اور دلہن کے والد کے شناختی کارڈ کی کاپیاں۔\n5. اوورسیز پاکستانیوں کے لیے نائیکوپ (NICOP) یا پاسپورٹ کی کاپی۔",
     "relatedSlugs": [
       "/family-registration/nikah-nama-registration-process-pakistan",
-      "/nadra/cnic-name-address-modification",
-      "/family-registration/unmarried-certificate-single-status-pakistan"
+      "/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026",
+      "/nadra/cnic-name-address-modification"
     ]
   },
   "divorce-registration-pakistan-online": {
