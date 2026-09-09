@@ -20630,4 +20630,119 @@ export const ARTICLES: Record<string, Article> = {
       "/bills/sui-gas-bill-check-online"
     ]
   }
+,
+  "mdcat-result-medical-college-merit-admission-2026": {
+    "slug": "mdcat-result-medical-college-merit-admission-2026",
+    "fullPath": "/education/mdcat-result-medical-college-merit-admission-2026",
+    "categoryId": "education",
+    "titleEn": "MDCAT Result 2026 & Medical College Merit Admission: PMDC Aggregate Formula & Portals",
+    "titleUr": "ایم ڈی کیٹ رزلٹ 2026 اور میڈیکل کالج میرٹ ایڈمیشن: پی ایم ڈی سی ایگریگیٹ فارمولا و پورٹلز",
+    "metaDescriptionEn": "Comprehensive verified guide to MDCAT 2026 results, official PM&DC 50-40-10 aggregate formula with worked examples, centralized provincial medical college admission portals (UHS, DUHS, KMU, BUMHS, SZABMU), and document verification.",
+    "metaDescriptionUr": "ایم ڈی کیٹ رزلٹ 2026 اور میڈیکل کالجز میں میرٹ داخلے کی مکمل گائیڈ: پی ایم ڈی سی 50:40:10 فارمولا بمعہ مثال، صوبائی سنٹرلائزڈ پورٹلز (یو ایچ ایس، ڈاؤ، کے ایم یو، بولان) اور تصدیق شدہ دستاویزات۔",
+    "directAnswerEn": "As of September 9, 2026, the MDCAT 2026 examination is scheduled for Sunday, September 20, 2026, with results currently pending. Once scorecards are released, centralized admissions for public and private MBBS/BDS colleges will open across provincial university portals (UHS, KMU, DUHS/LUMHS, BUMHS, SZABMU). Merit is calculated using the mandatory PM&DC formula: 50% MDCAT + 40% FSc Pre-Medical + 10% Matric.",
+    "directAnswerUr": "9 ستمبر 2026 تک کی مصدقہ صورتحال کے مطابق، ایم ڈی کیٹ 2026 کا امتحان اتوار 20 ستمبر 2026 کو منعقد ہو رہا ہے اور رزلٹ کا انتظار ہے۔ رزلٹ کے فوراً بعد صوبائی یونیورسٹیوں (یو ایچ ایس، کے ایم یو، ڈاؤ، بولان، شہید ذوالفقار علی بھٹو یونیورسٹی) کے سینٹرلائزڈ پورٹلز پر داخلے کھلیں گے۔ میرٹ پی ایم ڈی سی کے 50:40:10 فارمولے پر بنے گا۔",
+    "lastVerified": "September 9, 2026",
+    "officialSource": {
+      "name": "Pakistan Medical and Dental Council (PM&DC)",
+      "url": "https://www.pmdc.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Medical Education & Higher Admissions Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Punjab Centralized Medical Admissions",
+        "serviceUr": "پنجاب میڈیکل سنٹرلائزڈ داخلے",
+        "normal": "University of Health Sciences (UHS)",
+        "urgent": "uhs.edu.pk",
+        "executive": "3,400+ Public MBBS Seats"
+      },
+      {
+        "serviceEn": "Sindh Centralized Medical Admissions",
+        "serviceUr": "سندھ میڈیکل داخلے (ریجنل سسٹم)",
+        "normal": "DUHS / JSMU / LUMHS / SMBBMU",
+        "urgent": "admissions.duhs.edu.pk",
+        "executive": "Zonal/District Tagged Seats"
+      },
+      {
+        "serviceEn": "KP Centralized Admission System (CAS)",
+        "serviceUr": "کے پی کے سینٹرلائزڈ ایڈمیشن سسٹم",
+        "normal": "Khyber Medical University (KMU)",
+        "urgent": "cas.kmu.edu.pk",
+        "executive": "KMC, AMC, BMC, Saidu, KGMC"
+      },
+      {
+        "serviceEn": "Balochistan Medical Admissions",
+        "serviceUr": "بلوچستان میڈیکل داخلے",
+        "normal": "BUMHS Quetta",
+        "urgent": "bumhs.edu.pk",
+        "executive": "BMC Quetta & District Quotas"
+      },
+      {
+        "serviceEn": "Federal & Quota Seats (ICT / AJK / GB)",
+        "serviceUr": "وفاقی و کوٹہ نشستیں",
+        "normal": "SZABMU Islamabad",
+        "urgent": "szabmu.edu.pk",
+        "executive": "Federal Medical College (FMC)"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Download Official MDCAT Scorecard",
+        "titleUr": "ایم ڈی کیٹ رزلٹ کارڈ ڈاؤن لوڈ کریں",
+        "detailEn": "Retrieve official roll number result card from mdcat.pmdc.pk with QR code verification.",
+        "detailUr": "پی ایم ڈی سی کی ویب سائٹ سے رول نمبر درج کر کے رزلٹ کارڈ پرنٹ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Compute Exact Merit Aggregate",
+        "titleUr": "پی ایم ڈی سی فارمولا سے ایگریگیٹ نکالیں",
+        "detailEn": "Apply PM&DC formula: 10% Matric + 40% FSc Pre-Medical + 50% MDCAT.",
+        "detailUr": "میٹرک کا 10 فیصد، ایف ایس سی کا 40 فیصد اور ایم ڈی کیٹ کا 50 فیصد ملا کر میرٹ نکالیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Register on Provincial Centralized Portal",
+        "titleUr": "صوبائی داخلہ پورٹل پر آن لائن اکاؤنٹ بنائیں",
+        "detailEn": "Create profile on UHS, KMU, DUHS, BUMHS or SZABMU and upload certified documents.",
+        "detailUr": "متعلقہ صوبائی پورٹل پر لاگ ان ہو کر اپنے تمام دستاویزات اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Submit Preference List & Confirm Admission",
+        "titleUr": "ترجیحی کالجز کا انتخاب اور فیس چالان جمع کروائیں",
+        "detailEn": "Lock college preferences and submit original documents and fee challan within 3-5 days of selection.",
+        "detailUr": "کالجز کی ترجیحی لسٹ لاک کریں اور سلیکشن لسٹ میں نام آنے پر 3 سے 5 دن کے اندر اصل کاغذات اور فیس جمع کروائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "When will MDCAT 2026 results be officially announced?",
+        "questionUr": "ایم ڈی کیٹ 2026 کا رزلٹ کب جاری ہوگا؟",
+        "answerEn": "MDCAT 2026 is scheduled for September 20, 2026. Official results are typically compiled and announced on mdcat.pmdc.pk within 7 to 10 days of the test date (early October 2026).",
+        "answerUr": "امتحان 20 ستمبر 2026 کو منعقد ہو رہا ہے۔ رزلٹ ٹیسٹ کے 7 سے 10 دن کے اندر اکتوبر کے پہلے ہفتے میں جاری کیا جائے گا۔"
+      },
+      {
+        "questionEn": "How is the PM&DC aggregate merit score calculated?",
+        "questionUr": "ایگریگیٹ میرٹ کیسے نکالا جاتا ہے؟",
+        "answerEn": "The PM&DC formula is: (Matric % × 0.10) + (FSc % × 0.40) + (MDCAT % × 0.50). For example, 90% in each component results in exactly 90.0000% aggregate.",
+        "answerUr": "پی ایم ڈی سی فارمولا: میٹرک کا 10 فیصد، ایف ایس سی کا 40 فیصد اور ایم ڈی کیٹ کا 50 فیصد ملا کر 100 میں سے فائنل میرٹ بنتا ہے۔"
+      },
+      {
+        "questionEn": "Can I apply to public medical colleges in another province?",
+        "questionUr": "کیا دوسرے صوبے کے پبلک میڈیکل کالج میں داخلہ ہو سکتا ہے؟",
+        "answerEn": "Open merit seats are reserved 100% for provincial domicile holders. Inter-provincial admissions are only possible on designated reciprocal or federal quota seats.",
+        "answerUr": "اوپن میرٹ پر نہیں، کیونکہ تمام پبلک سیٹیں صوبائی ڈومیسائل کے لیے ہیں۔ البتہ باہمی یا وفاقی کوٹہ نشستوں پر داخلہ ممکن ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide for pre-medical students calculating PM&DC aggregate score and applying through provincial centralized medical college admission portals.",
+    "contentUr": "میڈیکل اور ڈینٹل کالجز میں داخلے کے لیے پی ایم ڈی سی ایگریگیٹ فارمولا، صوبائی پورٹلز اور میرٹ لسٹ کے طریقہ کار کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/education/university-entry-test-guide-nust-fast-comsats-2026",
+      "/education/bise-result-checker-2026",
+      "/education/hec-scholarship-pakistan"
+    ]
+  }
 };

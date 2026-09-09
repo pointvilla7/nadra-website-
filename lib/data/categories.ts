@@ -282,6 +282,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/education/hec-degree-attestation-new-blockchain-system-2026"
       },
       {
+        "en": "MDCAT Result & Merit Admission 2026",
+        "ur": "ایم ڈی کیٹ رزلٹ و میڈیکل ایڈمیشن 2026",
+        "slug": "/education/mdcat-result-medical-college-merit-admission-2026"
+      },
+      {
         "en": "PM Laptop Scheme 2026",
         "ur": "وزیر اعظم لیپ ٹاپ سکیم 2026",
         "slug": "/education/pm-laptop-scheme-2026-eligibility-status-check"
