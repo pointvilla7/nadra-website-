@@ -90,7 +90,7 @@ export const LiveTrustStatsWidget: React.FC = () => {
           </div>
           <div>
             <div className="text-lg sm:text-xl font-mono font-extrabold text-slate-900 dark:text-white leading-none">
-              August 2026
+              September 2026
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 font-sans mt-1">
               {t('Latest Sitewide Audit', 'تازہ ترین آڈٹ تاریخ')}

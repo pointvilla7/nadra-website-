@@ -83,7 +83,7 @@ export default function HomePage() {
               {t('Fresh 2026 Data', 'تازہ ترین 2026')}
             </h4>
             <p className="text-[11px] sm:text-xs text-[#475569] dark:text-slate-400 font-sans line-clamp-1">
-              {t('Verified August 2026', 'اگست 2026 اپڈیٹ')}
+              {t('Verified September 2026', 'ستمبر 2026 اپڈیٹ')}
             </p>
           </div>
         </div>

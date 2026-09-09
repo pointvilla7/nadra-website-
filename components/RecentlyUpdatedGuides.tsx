@@ -60,7 +60,7 @@ export function formatRelativeVerification(dateStr: string, t: (en: string, ur?:
   } else if (diffDays > 1 && diffDays < 30) {
     return t(`Verified ${diffDays} days ago`, `${diffDays} دن پہلے تصدیق شدہ`);
   } else {
-    return t('Verified August 2026', 'اگست 2026 مصدقہ');
+    return t('Verified September 2026', 'ستمبر 2026 مصدقہ');
   }
 }
 

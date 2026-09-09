@@ -129,7 +129,7 @@ export const ReportErrorModal: React.FC<ReportErrorModalProps> = ({
                     rows={3}
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    placeholder={t('e.g. New passport urgent fee is now PKR 5,000 according to August 2026 notification...', 'مثال: اگست 2026 کے نوٹیفکیشن کے مطابق نئی فیس...')}
+                    placeholder={t('e.g. New passport urgent fee is now PKR 5,000 according to September 2026 notification...', 'مثال: ستمبر 2026 کے نوٹیفکیشن کے مطابق نئی فیس...')}
                     required
                     className="w-full p-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs font-sans text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-doc-brass resize-none"
                   />

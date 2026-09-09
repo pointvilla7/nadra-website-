@@ -71,9 +71,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
             <ShieldCheck className="w-3.5 h-3.5 text-doc-brass shrink-0" />
             <span className="truncate">
               {t(
-                'Pakistan Official Services Information Portal • Updated August 2026',
-                'پاکستان آفیشل پورٹل معلومات و رہنمائی • اگست 2026',
-                'Pakistan Official Services Information Portal • Updated August 2026'
+                'Pakistan Official Services Information Portal • Updated September 2026',
+                'پاکستان آفیشل پورٹل معلومات و رہنمائی • ستمبر 2026',
+                'Pakistan Official Services Information Portal • Updated September 2026'
               )}
             </span>
           </div>

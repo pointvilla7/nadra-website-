@@ -154,7 +154,7 @@ export default function SmartMeterPakistanGuidePage() {
             Smart Electricity Meters (AMI) in Pakistan 2026: Prices, Working &amp; Prepaid Guide
           </h1>
           <p className="text-sm text-slate-600 dark:text-slate-400 font-mono">
-            Last verified: August 2026 • Sources: NEPRA, LESCO, IESCO, K-Electric, Ministry of Energy Power Division
+            Last verified: September 2026 • Sources: NEPRA, LESCO, IESCO, K-Electric, Ministry of Energy Power Division
           </p>
         </header>
 

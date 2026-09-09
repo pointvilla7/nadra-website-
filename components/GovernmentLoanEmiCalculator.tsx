@@ -220,7 +220,7 @@ export const GovernmentLoanEmiCalculator: React.FC = () => {
         {/* Source citation */}
         <div className="pt-3 border-t border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px] text-slate-500 dark:text-slate-400 font-sans">
           <span>
-            {t('Based on rates effective August 2026, source:', 'مصدقہ حکومتی گزٹ اگست 2026، ماخذ:')}{' '}
+            {t('Based on rates effective September 2026, source:', 'مصدقہ حکومتی گزٹ ستمبر 2026، ماخذ:')}{' '}
             <a
               href={result.portalUrl}
               target="_blank"

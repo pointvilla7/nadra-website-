@@ -16,7 +16,7 @@ export interface MediaMention {
 
 export const TRUST_CONFIG = {
   activeYear: '2026',
-  auditDate: 'August 2026',
+  auditDate: 'September 2026',
   accuracyStandard: '100% Official Gazette Cross-Checked',
 };
 

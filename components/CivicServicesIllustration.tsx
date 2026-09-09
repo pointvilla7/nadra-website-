@@ -224,7 +224,7 @@ export const CivicServicesIllustration: React.FC<{ className?: string }> = ({ cl
             100% GAZETTE VERIFIED
           </text>
           <text x="42" y="30" fill="#D4A017" fontSize="7" fontFamily="sans-serif" fontWeight="500">
-            Updated August 2026
+            Updated September 2026
           </text>
         </g>
 
