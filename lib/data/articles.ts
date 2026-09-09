@@ -15023,66 +15023,80 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "smog-air-quality-aqi-advisory-punjab",
     "fullPath": "/alerts/smog-air-quality-aqi-advisory-punjab",
     "categoryId": "alerts",
-    "titleEn": "Smog Air Quality (AQI) Advisory Punjab – Green Lockdown Guidelines",
-    "titleUr": "سموگ ایئر کوالٹی انڈیکس (AQI) الرٹ پنجاب – گرین لاک ڈاؤن قواعد",
-    "metaDescriptionEn": "Live Air Quality Index (AQI) tracking for Lahore, Faisalabad, and Gujranwala. Smog season health precautions, school closure guidelines, and odd-even vehicle rules.",
-    "metaDescriptionUr": "لاہور، فیصل آباد اور گوجرانوالہ میں سموگ کی صورتحال، ایئر کوالٹی انڈیکس (AQI) الرٹس، اسکولوں کے اوقات اور اینٹی سموگ لاک ڈاؤن کی سرکاری ہدایات۔",
-    "directAnswerEn": "During the winter smog season (October to February), the Punjab Environment Protection Department monitors Air Quality Index (AQI) levels across Lahore and central Punjab. Hazardous AQI readings (> 300) trigger green lockdowns, mandatory N95 face masks, temporary school schedule shifts, and commercial market closures under the Punjab Environmental Protection Act.",
-    "directAnswerUr": "موسم سرما میں سموگ کے دوران محکمہ تحفظ ماحول ایئر کوالٹی انڈیکس (AQI) کی لائیو مانیٹرنگ کرتا ہے۔ شدید سموگ (AQI > 300) کی صورت میں گرین لاک ڈاؤن، ماسک کا لازمی استعمال اور اسکولوں کے اوقات میں تبدیلی کے حکومتی احکامات جاری کیے جاتے ہیں۔",
-    "lastVerified": "August 28, 2026",
+    "titleEn": "Smog Air Quality (AQI) Advisory Punjab 2026–27: School Timings, Fines & Rules",
+    "titleUr": "سموگ ایئر کوالٹی انڈیکس (AQI) ایڈوائزری پنجاب 2026–27: اسکول اوقات و اینٹی سموگ قواعد",
+    "metaDescriptionEn": "Comprehensive seasonal guide for Punjab smog season 2026–27: Historical school timing changes (8:45 AM rule), violation fines (up to Rs 1M), AQI crisis triggers, 1373 helpline, and public health guidelines.",
+    "metaDescriptionUr": "پنجاب سموگ سیزن 2026–27: اسکولوں کے اوقات (8:45 بجے پابندی)، خلاف ورزی پر 10 لاکھ تک جرمانے، اے کیو آئی ایمرجنسی لاک ڈاؤن اور 1373 ہیلپ لائن کی مصدقہ رہنمائی۔",
+    "directAnswerEn": "Punjab's annual smog season historically peaks from mid-to-late October through January 31. Once the Air Quality Index (AQI) crosses 150+ (Unhealthy), government regulations mandate that all public and private schools cannot open before 8:45 AM. Violating schools face fines of Rs 100,000 to Rs 1,000,000 and campus sealing. If AQI exceeds 300+ (Hazardous), emergency escalations like complete school closures or online classes are ordered in hotspot districts. Report violations 24/7 to EPA helpline 1373.",
+    "directAnswerUr": "پنجاب میں سموگ کا سیزن روایتی طور پر اکتوبر کے وسط سے 31 جنوری تک رہتا ہے۔ ایئر کوالٹی انڈیکس (AQI) 150 سے بڑھنے پر تمام سرکاری و نجی اسکولوں کے لیے 8:45 سے پہلے کھلنے پر سخت پابندی ہوتی ہے۔ خلاف ورزی پر 1 لاکھ سے 10 لاکھ روپے تک جرمانہ اور اسکول سیل ہو سکتا ہے۔ اے کیو آئی 300 سے تجاوز کرنے پر اسکولوں کی مکمل چھٹی یا آن لائن کلاسز نافذ کی جاتی ہیں۔ شکایات ہیلپ لائن 1373 پر درج کرائی جا سکتی ہیں۔",
+    "lastVerified": "September 9, 2026",
     "officialSource": {
       "name": "Punjab Environment Protection Agency (EPA)",
       "url": "https://epd.punjab.gov.pk/"
     },
     "author": {
-      "name": "Syeda Fatima Zahra",
-      "role": "Social Welfare & BISP Verification Lead"
+      "name": "Editorial Team",
+      "role": "Environmental Protection & Public Health Desk"
     },
     "feeStructure": [
       {
-        "serviceEn": "Daily City AQI Public Advisory",
-        "serviceUr": "روزانہ ایئر کوالٹی الرٹ",
-        "normal": "100% FREE",
-        "urgent": "Real-Time Sensor Feed",
-        "executive": "Punjab EPA",
-        "validity": "Live"
+        "serviceEn": "First Violation: School Opening Before 8:45 AM",
+        "serviceUr": "پہلی خلاف ورزی: اسکول 8:45 سے پہلے کھولنے پر",
+        "normal": "Rs 100,000 – 500,000",
+        "urgent": "Show-Cause Notice",
+        "executive": "Deputy Commissioner Fine"
+      },
+      {
+        "serviceEn": "Repeat Violation: Persistent Non-Compliance",
+        "serviceUr": "دوبارہ خلاف ورزی: مسلسل اسکول جلدی کھولنے پر",
+        "normal": "Rs 600,000 – 1,000,000",
+        "urgent": "Campus Sealing",
+        "executive": "Registration Cancellation"
+      },
+      {
+        "serviceEn": "Smoke-Emitting Commercial Vehicle Challan",
+        "serviceUr": "دھواں چھوڑنے والی گاڑی کا چالان",
+        "normal": "Rs 2,000 – 5,000",
+        "urgent": "Impounded at Police Station",
+        "executive": "Traffic Squad Impoundment"
       }
     ],
     "steps": [
       {
         "stepNumber": 1,
-        "titleEn": "Wear N95 Masks Outdoors",
-        "titleUr": "این 95 ماسک پہنیں",
-        "detailEn": "Protect lungs from hazardous PM2.5 microscopic particulates.",
-        "detailUr": "باہر نکلتے وقت ماسک لازمی لگائیں۔"
+        "titleEn": "Spot Environmental Violation",
+        "titleUr": "خلاف ورزی دیکھیں",
+        "detailEn": "Identify school opening before 8:45 AM, smoke-emitting vehicle, or crop residue burning.",
+        "detailUr": "اسکول کے قبل از وقت کھلنے، دھوئیں یا پرالی جلانے کی نشاندہی کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Dial 1373 or Open Green Punjab App",
+        "titleUr": "1373 پر کال کریں یا گرین پنجاب ایپ استعمال کریں",
+        "detailEn": "Report with location, school name, or vehicle number to generate an official complaint ticket.",
+        "detailUr": "پتہ یا گاڑی کا نمبر بتا کر شکایت درج کرائیں اور ٹریکنگ نمبر حاصل کریں۔"
       }
     ],
     "faqs": [
       {
-        "questionEn": "What AQI reading is considered hazardous for human health in Pakistan?",
-        "questionUr": "کتنا اے کیو آئی صحت کے لیے خطرناک مانا جاتا ہے؟",
-        "answerEn": "An Air Quality Index (AQI) reading above 300 is classified as 'Hazardous', prompting emergency medical warnings for children and elderly individuals.",
-        "answerUr": "300 سے زیادہ AQI خطرناک درجے میں آتا ہے۔"
+        "questionEn": "When does smog season usually start in Punjab?",
+        "questionUr": "پنجاب میں سموگ سیزن کب شروع ہوتا ہے؟",
+        "answerEn": "Historically, smog builds in mid-to-late October, peaks through November-December, and runs through January 31.",
+        "answerUr": "اکتوبر کے آخری ہفتے میں شروع ہو کر نومبر اور دسمبر میں شدید ہوتا ہے اور 31 جنوری تک جاری رہتا ہے۔"
       },
       {
-        "questionEn": "Which official portal or helpline should citizens use for Smog Air Quality (AQI) Advisory Punjab?",
-        "questionUr": "اس سروس کے لیے کون سا آفیشل پورٹل یا ہیلپ لائن استعمال کریں؟",
-        "answerEn": "Citizens should exclusively use verified government portals (such as NADRA, DGIP, FBR, or Provincial Government sites) or contact the official toll-free civic helplines cited in this article.",
-        "answerUr": "شہری صرف سرکاری پورٹلز اور منظور شدہ ہیلپ لائنز پر ہی رابطہ کریں۔"
-      },
-      {
-        "questionEn": "What essential documents are mandatory for verification?",
-        "questionUr": "تصدیق کے لیے کون سے ضروری کاغذات درکار ہیں؟",
-        "answerEn": "Mandatory documents typically include an original valid CNIC/Smart Card, proof of residence (utility bills/rent agreement), and biometric verification at the designated government facilitation center.",
-        "answerUr": "اصل شناختی کارڈ، رہائش کا ثبوت (بجلی کا بل) اور بائیومیٹرک تصدیق لازمی درکار ہوتی ہے۔"
+        "questionEn": "What fine do schools face for opening before 8:45 AM?",
+        "questionUr": "اسکول جلدی کھولنے پر کتنا جرمانہ ہے؟",
+        "answerEn": "First violations carry fines of Rs 100,000 to 500,000; repeat violations incur Rs 600,000 to 1,000,000 and campus sealing.",
+        "answerUr": "پہلی بار 1 تا 5 لاکھ، اور بار بار خلاف ورزی پر 6 تا 10 لاکھ روپے جرمانہ اور اسکول سیل ہو سکتا ہے۔"
       }
     ],
-    "contentEn": "Guide on smog advisory, air quality index, and green lockdowns in Punjab.",
-    "contentUr": "سموگ کے خطرات اور حکومتی احتیاطی تدابیر کی معلومات۔",
+    "contentEn": "Preparedness guide on Punjab winter smog regulations, 8:45 AM school timings, EPA fines, and public health advisories.",
+    "contentUr": "پنجاب میں سموگ سیزن، اسکولوں کے اوقات (8:45 بجے)، قانونی جرمانوں اور صحت کی احتیاطی تدابیر کی مکمل گائیڈ۔",
     "relatedSlugs": [
       "/alerts/emergency-helpline-numbers-pakistan",
-      "/traffic/e-challan-check-online",
-      "/alerts/monsoon-warning-pdma-updates"
+      "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply",
+      "/traffic/e-challan-check-online"
     ]
   },
   "earthquake-emergency-safety-guidelines-pakistan": {

@@ -1235,6 +1235,11 @@ export const CATEGORIES: Category[] = [
         "en": "24/7 Emergency Helplines",
         "ur": "پاکستان کے تمام ایمرجنسی نمبرز",
         "slug": "/alerts/emergency-helpline-numbers-pakistan"
+      },
+      {
+        "en": "Smog AQI & School Timings Punjab",
+        "ur": "سموگ ایئر کوالٹی انڈیکس و اسکول اوقات پنجاب",
+        "slug": "/alerts/smog-air-quality-aqi-advisory-punjab"
       }
     ]
   },
