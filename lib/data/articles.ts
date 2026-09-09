@@ -20268,13 +20268,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "cm-punjab-e-bike-scheme-2026-eligibility-apply",
     "fullPath": "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply",
     "categoryId": "education",
-    "titleEn": "CM Punjab E-Bike Scheme 2026: Eligibility, Online Apply & BOP Installment Plan",
-    "titleUr": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026: اہلیت، آن لائن اپلائی اور بینک آف پنجاب اقساط کا طریقہ",
-    "metaDescriptionEn": "Verified guide to Chief Minister Punjab E-Bike Scheme 2026: Apply online at bikes.punjab.gov.pk, driving license rules, Bank of Punjab interest-free financing, and computerized e-balloting.",
-    "metaDescriptionUr": "وزیراعلیٰ پنجاب بائیک سکیم bikes.punjab.gov.pk پر اپلائی کرنے، ڈرائیونگ لائسنس کی شرط اور بلا سود آسان اقساط کی مکمل معلوماتی گائیڈ۔",
-    "directAnswerEn": "The Chief Minister Punjab E-Bike Scheme provides subsidized, zero-markup electric and petrol motorcycles to regular college and university students in Punjab through the official portal bikes.punjab.gov.pk. Applicants must hold a valid CNIC/B-Form and a valid motorcycle driving license or learner's permit. Selection is conducted via computerized e-balloting, with financing disbursed through the Bank of Punjab (BOP).",
-    "directAnswerUr": "وزیراعلیٰ پنجاب ای بائیک سکیم کے تحت باقاعدہ کالج اور یونیورسٹی طلبہ bikes.punjab.gov.pk پر مفت درخواست جمع کرا سکتے ہیں۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے، جبکہ بلا سود اقساط بینک آف پنجاب فراہم کرتا ہے۔",
-    "lastVerified": "September 4, 2026",
+    "titleEn": "CM Punjab E-Bike Scheme 2026: Applications Open, Eligibility & 100,000 Bikes",
+    "titleUr": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026: درخواستیں اوپن، اہلیت اور 1 لاکھ بائیکس کا اعلان",
+    "metaDescriptionEn": "Official verified guide to Chief Minister Punjab E-Bike Scheme 2026: Online apply open at bikes.punjab.gov.pk, 100,000 electric bikes for school, college & university students, zero down payment, PKR 3,028/mo installment plan & pink bikes for girls.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم bikes.punjab.gov.pk پر درخواستیں لائیو۔ 1 لاکھ الیکٹرک بائیکس، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ قسط کی مکمل مصدقہ گائیڈ۔",
+    "directAnswerEn": "Online applications are OPEN NOW on bikes.punjab.gov.pk (opened 5 September 2026; last date 4 October 2026). The Punjab Government is distributing 100,000 electric bikes across 33,000+ schools, colleges, and universities. Total bike cost is PKR 199,000, with PKR 90,000 government subsidy, PKR 0 down payment, and the remaining PKR 109,000 repaid over 36 months at PKR 3,028/month. A valid driving license or DLIMS learner permit is mandatory.",
+    "directAnswerUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم کے تحت bikes.punjab.gov.pk پر درخواستیں لائیو ہیں (آخری تاریخ 4 اکتوبر 2026)۔ صوبے کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے طلبہ کے لیے 100,000 ای بائیکس مختص ہیں۔ حکومت 90 ہزار روپے سبسڈی اور مکمل مارک اپ فراہم کر رہی ہے، جبکہ ڈاؤن پیمنٹ صفر اور ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔",
+    "lastVerified": "September 9, 2026",
     "officialSource": {
       "name": "Punjab E-Bike Portal (PITB)",
       "url": "https://bikes.punjab.gov.pk/"
@@ -20292,18 +20292,46 @@ export const ARTICLES: Record<string, Article> = {
         "executive": "No Agent Bribe / Zero Fee"
       },
       {
-        "serviceEn": "Bank Markup (Interest)",
-        "serviceUr": "بینک سود و مارک اپ",
+        "serviceEn": "Total Electric Bike Market Value",
+        "serviceUr": "الیکٹرک بائیک کی کل قیمت",
+        "normal": "PKR 199,000",
+        "urgent": "Retail Value",
+        "executive": "Govt Audited Valuation"
+      },
+      {
+        "serviceEn": "Punjab Government Direct Subsidy",
+        "serviceUr": "پنجاب حکومت کی کیش سبسڈی",
+        "normal": "PKR 90,000 (Waived Off)",
+        "urgent": "Non-repayable",
+        "executive": "100% Treasury Funded"
+      },
+      {
+        "serviceEn": "Student Net Payable Principal",
+        "serviceUr": "طالب علم کی اصل واجب الادا رقم",
+        "normal": "PKR 109,000",
+        "urgent": "Zero Markup",
+        "executive": "Spread Over 36 Months"
+      },
+      {
+        "serviceEn": "Initial Down Payment / Advance",
+        "serviceUr": "ابتدائی ڈاؤن پیمنٹ / ایڈوانس",
+        "normal": "PKR 0 (Completely Waived)",
+        "urgent": "Zero Advance",
+        "executive": "Approved by CM Punjab"
+      },
+      {
+        "serviceEn": "Monthly Installment (36 Months Plan)",
+        "serviceUr": "ماہانہ قسط (36 ماہ)",
+        "normal": "PKR 3,028 / month",
+        "urgent": "PKR 109,000 ÷ 36",
+        "executive": "Zero Interest Facility"
+      },
+      {
+        "serviceEn": "Bank Markup, Insurance & Registration",
+        "serviceUr": "بینک سود، انشورنس اور رجسٹریشن",
         "normal": "0% (100% Paid by Punjab Govt)",
         "urgent": "Zero Markup Facility",
         "executive": "Full Subsidy by Govt"
-      },
-      {
-        "serviceEn": "Monthly Installment (Estimated Range)",
-        "serviceUr": "ماہانہ قسط کا تخمینہ",
-        "normal": "~PKR 3,000 to PKR 5,000",
-        "urgent": "24 Months Financing",
-        "executive": "Confirmed upon BOP Approval"
       }
     ],
     "steps": [
@@ -20311,34 +20339,40 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 1,
         "titleEn": "Register on bikes.punjab.gov.pk",
         "titleUr": "آفیشل پورٹل پر رجسٹریشن",
-        "detailEn": "Create an account using your 13-digit CNIC and registered mobile number.",
-        "detailUr": "شناختی کارڈ اور موبائل نمبر کے ذریعے آفیشل پورٹل پر لاگ ان بنائیں۔"
+        "detailEn": "Create an account using your 13-digit CNIC and registered mobile number (Portal live till 4 Oct 2026).",
+        "detailUr": "شناختی کارڈ اور موبائل نمبر کے ذریعے آفیشل پورٹل پر لاگ ان بنائیں۔ درخواستیں 4 اکتوبر 2026 تک جاری ہیں۔"
       },
       {
         "stepNumber": 2,
         "titleEn": "Enter Academic & Driving License Data",
         "titleUr": "تعلیمی اور لائسنس ڈیٹا درج کریں",
-        "detailEn": "Input student roll number and valid motorcycle permanent license or learner permit number.",
-        "detailUr": "کالج کا ڈیٹا اور ٹریفک پولیس کا لرنر یا پکا ڈرائیونگ لائسنس نمبر درج کریں۔"
+        "detailEn": "Input school, college, or university roll number and valid motorcycle driving license or DLIMS learner permit number.",
+        "detailUr": "سکول، کالج یا یونیورسٹی کا ڈیٹا اور ٹریفک پولیس کا لرنر یا پکا ڈرائیونگ لائسنس نمبر درج کریں۔"
       },
       {
         "stepNumber": 3,
-        "titleEn": "Choose E-Bike or Petrol Bike",
-        "titleUr": "الیکٹرک یا پیٹرول بائیک کا انتخاب",
-        "detailEn": "Select one vehicle stream and submit the application.",
-        "detailUr": "کسی ایک کیٹیگری کا انتخاب کر کے فارم جمع کرائیں۔"
+        "titleEn": "Select Electric Bike & Color (Pink for Girls)",
+        "titleUr": "الیکٹرک بائیک اور کلر کا انتخاب",
+        "detailEn": "Select electric motorcycle (female applicants can choose dedicated pink variant) and submit the form for free.",
+        "detailUr": "الیکٹرک بائیک کا انتخاب کریں (طالبات کے لیے گلابی ویرینٹ دستیاب ہے) اور مفت فارم جمع کرائیں۔"
       }
     ],
     "faqs": [
       {
         "questionEn": "Can I apply using a Learner Driving Permit?",
         "questionUr": "کیا لرنر پرمٹ پر اپلائی ہو سکتا ہے؟",
-        "answerEn": "Yes! A valid motorcycle Learner's Driving Permit issued by Punjab Police is fully acceptable.",
+        "answerEn": "Yes! A valid motorcycle Learner's Driving Permit issued by Punjab Police / DLIMS is fully acceptable.",
         "answerUr": "جی ہاں! پنجاب ٹریفک پولیس کا لرنر پرمٹ مکمل طور پر قبول کیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "Are school and college students eligible?",
+        "questionUr": "کیا سکول اور کالج کے طلبہ اہل ہیں؟",
+        "answerEn": "Yes! Regular students of registered schools, colleges, and universities across 33,000+ Punjab institutions are eligible.",
+        "answerUr": "جی ہاں! پنجاب کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے باقاعدہ طلبہ اپلائی کر سکتے ہیں۔"
       }
     ],
-    "contentEn": "Authoritative guide to applying for CM Punjab student e-bikes and petrol motorcycles.",
-    "contentUr": "وزیراعلیٰ پنجاب سٹوڈنٹ بائیک سکیم کی مکمل، شفاف اور مصدقہ رہنمائی۔",
+    "contentEn": "Authoritative guide to applying for CM Punjab 100,000 student electric bikes with zero down payment and PKR 3,028 monthly installments.",
+    "contentUr": "وزیراعلیٰ پنجاب ایک لاکھ سٹوڈنٹ الیکٹرک بائیک سکیم، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ اقساط کی مصدقہ رہنمائی۔",
     "relatedSlugs": [
       "/education/pm-laptop-scheme-2026-eligibility-status-check",
       "/traffic/driving-license-online-apply-renewal-dlims-2026",
@@ -20346,5 +20380,3 @@ export const ARTICLES: Record<string, Article> = {
     ]
   }
 };
-
-
