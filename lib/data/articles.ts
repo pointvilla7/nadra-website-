@@ -20515,4 +20515,119 @@ export const ARTICLES: Record<string, Article> = {
       "/education/pm-laptop-scheme-2026-eligibility-status-check"
     ]
   }
+,
+  "winter-gas-load-shedding-schedule-sngpl-ssgc-2026-27": {
+    "slug": "winter-gas-load-shedding-schedule-sngpl-ssgc-2026-27",
+    "fullPath": "/bills/winter-gas-load-shedding-schedule-sngpl-ssgc-2026-27",
+    "categoryId": "bills",
+    "titleEn": "Winter Gas Load-Shedding Schedule 2026–27: SNGPL & SSGC Timings & Rules",
+    "titleUr": "موسم سرما گیس لوڈ شیڈنگ شیڈول 2026–27: سوئی ناردرن و سوئی سدرن اوقات کار",
+    "metaDescriptionEn": "Authoritative guide to winter gas load-shedding across Pakistan: SNGPL (Punjab & KP) and SSGC (Sindh & Balochistan) supply hours, historical 3-slot baseline, 2026 RLNG new connection rules, and official 1199 verification.",
+    "metaDescriptionUr": "پاکستان میں موسم سرما کے دوران گیس کی بندش اور اوقات کار: سوئی ناردرن اور سوئی سدرن کا شیڈول، 3 اوقات کا تاریخی ریکارڈ، 2026 میں نئے آر ایل این جی کنکشن کی بحالی اور 1199 ہیلپ لائن۔",
+    "directAnswerEn": "As of September 9, 2026, the official 2026–27 winter gas schedule has NOT yet been announced by SNGPL or SSGC. Competing claims share last winter’s (2025–26) pattern: SNGPL supplied domestic gas during three cooking slots (5:30–8:30 AM, 11:30 AM–1:30 PM, 5:30–8:30 PM), while SSGC curtailed night pressure (10 PM–5 AM). Official circulars drop in late October/November on sngpl.com.pk, ssgc.com.pk, or via helpline 1199.",
+    "directAnswerUr": "9 ستمبر 2026 تک سوئی ناردرن (SNGPL) اور سوئی سدرن (SSGC) کی جانب سے سال 2026–27 کا نیا موسم سرما شیڈول جاری نہیں کیا گیا۔ گزشتہ سال پنجاب و کے پی میں ناشتے، دوپہر اور رات کے کھانے کے لیے 3 اوقات میں گیس دی گئی تھی جبکہ سندھ و بلوچستان میں رات 10 سے صبح 5 بجے تک پریشر بند رہا تھا۔ نیا نوٹیفکیشن اکتوبر یا نومبر میں جاری ہوگا، شہری 1199 پر رابطہ کریں۔",
+    "lastVerified": "September 9, 2026",
+    "officialSource": {
+      "name": "SNGPL & SSGC Official Portals",
+      "url": "https://www.sngpl.com.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Energy & Public Utilities Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Morning Breakfast Cooking Window (SNGPL)",
+        "serviceUr": "صبح ناشتے کے اوقات (سوئی ناردرن)",
+        "normal": "5:30 AM – 8:30 AM",
+        "urgent": "3 Hours Full Pressure",
+        "executive": "Historical Reference Baseline"
+      },
+      {
+        "serviceEn": "Midday Lunch Cooking Window (SNGPL)",
+        "serviceUr": "دوپہر کے کھانے کے اوقات (سوئی ناردرن)",
+        "normal": "11:30 AM – 1:30 PM",
+        "urgent": "2 Hours Full Pressure",
+        "executive": "Historical Reference Baseline"
+      },
+      {
+        "serviceEn": "Evening Dinner Cooking Window (SNGPL)",
+        "serviceUr": "رات کے کھانے کے اوقات (سوئی ناردرن)",
+        "normal": "5:30 PM – 8:30 PM",
+        "urgent": "3 Hours Full Pressure",
+        "executive": "Historical Reference Baseline"
+      },
+      {
+        "serviceEn": "Nighttime Pressure Curtailment (SSGC)",
+        "serviceUr": "رات کے اوقات میں گیس بندش (سوئی سدرن)",
+        "normal": "10:00 PM – 5:00 AM",
+        "urgent": "Line-Pack Building",
+        "executive": "Sindh & Balochistan Towns"
+      },
+      {
+        "serviceEn": "Universal Gas Emergency Helpline",
+        "serviceUr": "سوئی گیس ایمرجنسی ہیلپ لائن",
+        "normal": "1199 (Toll-Free 24/7)",
+        "urgent": "Both Utilities",
+        "executive": "Pressure Complaint Dispatch"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Identify Your Provincial Gas Provider",
+        "titleUr": "اپنی گیس کمپنی کی شناخت کریں",
+        "detailEn": "Confirm whether your home is supplied by SNGPL (Punjab, KP, Islamabad, AJK) or SSGC (Sindh, Balochistan).",
+        "detailUr": "سوئی ناردرن (پنجاب/کے پی) یا سوئی سدرن (سندھ/بلوچستان) میں سے اپنے ادارے کی شناخت کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Check Official Web Notice Boards",
+        "titleUr": "آفیشل نوٹس بورڈ چیک کریں",
+        "detailEn": "Visit sngpl.com.pk (Media Releases / Low Pressure Notices) or ssgc.com.pk (Company Announcements) for authenticated notifications.",
+        "detailUr": "واٹس ایپ افواہوں کی بجائے sngpl.com.pk یا ssgc.com.pk کے پریس ریلیز سیکشن میں دیکھیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Dial Universal Gas Helpline 1199",
+        "titleUr": "سوئی گیس ہیلپ لائن 1199 پر کال کریں",
+        "detailEn": "If pressure is missing during official cooking hours, dial 1199 with your 10 or 11-digit Consumer ID ready.",
+        "detailUr": "مقررہ اوقات میں گیس پریشر غائب ہونے پر بل پر درج صارف نمبر کے ساتھ 1199 پر شکایت درج کروائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Submit New Connection via RLNG Portal",
+        "titleUr": "نئے آر ایل این جی کنکشن کے لیے درخواست دیں",
+        "detailEn": "Following the 2026 resumption of domestic connections, apply online at sngpl.com.pk under the RLNG tariff structure.",
+        "detailUr": "سال 2026 میں بحال ہونے والے نئے گھریلو کنکشن کے لیے سوئی ناردرن کی ویب سائٹ پر آر ایل این جی نرخوں کے تحت اپلائی کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is SNGPL the same company as SSGC?",
+        "questionUr": "کیا سوئی ناردرن اور سوئی سدرن ایک ہی کمپنی ہیں؟",
+        "answerEn": "No. SNGPL supplies Punjab, Khyber Pakhtunkhwa, and Islamabad, while SSGC serves Sindh and Balochistan. Their networks, billing, and winter load management schedules are completely independent.",
+        "answerUr": "نہیں، یہ دونوں الگ الگ کمپنیاں ہیں۔ سوئی ناردرن پنجاب، کے پی اور اسلام آباد کو جبکہ سوئی سدرن سندھ اور بلوچستان کو گیس فراہم کرتی ہے۔"
+      },
+      {
+        "questionEn": "Has this year's (2026–27) winter gas schedule been announced?",
+        "questionUr": "کیا سال 2026–27 کے لیے موسم سرما کا نیا شیڈول جاری ہو چکا ہے؟",
+        "answerEn": "No. As of September 9, 2026, the official 2026–27 winter schedule has not yet been notified. Competing sites are showing last year’s 2025–26 timetable without disclosing the date.",
+        "answerUr": "نہیں! 9 ستمبر 2026 تک نیا شیڈول جاری نہیں ہوا۔ انٹرنیٹ پر وائرل شیڈولز دراصل پچھلے سال (2025–26) کے ہیں۔"
+      },
+      {
+        "questionEn": "How can I apply for a new gas connection in 2026?",
+        "questionUr": "سال 2026 میں نیا گیس کنکشن کیسے حاصل کریں؟",
+        "answerEn": "Following the federal government lifting the 4-year ban in 2026, households can apply online via sngpl.com.pk or SSGC facilitation centers under the RLNG tariff.",
+        "answerUr": "2021 کی پابندی کے بعد 2026 میں گھریلو کنکشن بحال ہو چکے ہیں اور شہری درآمدی آر ایل این جی ریٹ پر آن لائن درخواست دے سکتے ہیں۔"
+      }
+    ],
+    "contentEn": "Definitive consumer reference for SNGPL and SSGC winter gas load-shedding schedules in Pakistan, historical cooking window baselines, 2026 RLNG connection process, and 1199 helpline verification.",
+    "contentUr": "پاکستان میں سوئی ناردرن اور سوئی سدرن کے موسم سرما کے گیس اوقات کار، کھانا پکانے کے تین اوقات کی تاریخی تفصیل، اور نئے آر ایل این جی گیس کنکشن 2026 کی مصدقہ معلومات۔",
+    "relatedSlugs": [
+      "/bills/utility-bill-checker-2026",
+      "/bills/smart-meter-pakistan-price-how-it-works-2026",
+      "/bills/sui-gas-bill-check-online"
+    ]
+  }
 };
