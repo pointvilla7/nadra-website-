@@ -348,7 +348,7 @@ export default function CmPunjabEBikeSchemePage() {
                     Portal Open as of 5 September 2026 — Deadline: 4 October 2026
                   </p>
                   <p className="text-xs text-emerald-100 mt-0.5 font-sans">
-                    100,000 electric bikes for students across 33,000+ schools, colleges, and universities in Punjab.
+                    100,000 electric bikes for students across 33,000+ schools, colleges, and universities in Punjab. (Are you a teacher? See <Link href="/education/ptf-punjab-teacher-e-bike-scheme-2026" className="underline font-bold text-white hover:text-amber-200">PTF Teacher E-Bike Scheme</Link>).
                   </p>
                 </div>
               </div>
@@ -681,6 +681,25 @@ export default function CmPunjabEBikeSchemePage() {
               ]}
             />
           </section>
+
+          {/* Dedicated Cross-Link for Punjab Government Teachers */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-300 dark:border-amber-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm font-sans">
+            <div className="space-y-1">
+              <span className="text-amber-800 dark:text-amber-300 font-bold uppercase tracking-wider text-[11px] block font-mono">
+                Looking for Punjab School Teachers Scheme?
+              </span>
+              <p className="text-slate-700 dark:text-slate-300">
+                Government school teachers apply through the separate <strong>Punjab Teachers Foundation (PTF) E-Bike Scheme</strong> on <code className="text-amber-800 dark:text-amber-300 font-bold">ptf.punjab.gov.pk</code> with 30–40% subsidy and interest-free installments.
+              </p>
+            </div>
+            <Link
+              href="/education/ptf-punjab-teacher-e-bike-scheme-2026"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shrink-0 shadow-sm transition"
+            >
+              <span>Read Teacher E-Bike Guide</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </Link>
+          </div>
 
           {/* Scam Protection Alert */}
           <section className="p-6 sm:p-8 rounded-3xl bg-rose-50 dark:bg-rose-950/30 border-2 border-rose-300 dark:border-rose-800 space-y-4">

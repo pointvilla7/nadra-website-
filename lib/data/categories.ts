@@ -292,6 +292,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply"
       },
       {
+        "en": "PTF Punjab Teacher E-Bike Scheme 2026",
+        "ur": "پنجاب ٹیچرز فاؤنڈیشن ای بائیک سکیم 2026",
+        "slug": "/education/ptf-punjab-teacher-e-bike-scheme-2026"
+      },
+      {
         "en": "HEC Scholarships Guide 2026 (Need-Based & Foreign)",
         "ur": "ایچ ای سی سکالرشپس گائیڈ 2026 (قومی و بین الاقوامی)",
         "slug": "/education/hec-scholarship-pakistan"

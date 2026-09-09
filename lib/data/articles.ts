@@ -20374,9 +20374,131 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Authoritative guide to applying for CM Punjab 100,000 student electric bikes with zero down payment and PKR 3,028 monthly installments.",
     "contentUr": "وزیراعلیٰ پنجاب ایک لاکھ سٹوڈنٹ الیکٹرک بائیک سکیم، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ اقساط کی مصدقہ رہنمائی۔",
     "relatedSlugs": [
+      "/education/ptf-punjab-teacher-e-bike-scheme-2026",
       "/education/pm-laptop-scheme-2026-eligibility-status-check",
       "/traffic/driving-license-online-apply-renewal-dlims-2026",
       "/education/hec-degree-attestation-new-blockchain-system-2026"
+    ]
+  },
+  "ptf-punjab-teacher-e-bike-scheme-2026": {
+    "slug": "ptf-punjab-teacher-e-bike-scheme-2026",
+    "fullPath": "/education/ptf-punjab-teacher-e-bike-scheme-2026",
+    "categoryId": "education",
+    "titleEn": "PTF Punjab Teacher E-Bike Scheme 2026: Apply Online, Eligibility & Subsidy",
+    "titleUr": "پنجاب ٹیچرز فاؤنڈیشن (PTF) ای بائیک سکیم 2026: آن لائن اپلائی، اہلیت و سبسڈی",
+    "metaDescriptionEn": "Complete official guide to the Punjab Teachers Foundation (PTF) Teacher E-Bike Scheme 2026: Online registration at ptf.punjab.gov.pk, 30–40% government subsidy, 0% markup installment plans (PKR 3,600–4,200/mo), and eligibility criteria.",
+    "metaDescriptionUr": "پنجاب ٹیچرز فاؤنڈیشن (PTF) الیکٹرک بائیک سکیم برائے اساتذہ۔ ptf.punjab.gov.pk پر اپلائی، 30 سے 40 فیصد سرکاری سبسڈی اور بلا سود اقساط (3,600 تا 4,200 روپے ماہانہ) کی مصدقہ رہنمائی۔",
+    "directAnswerEn": "The PTF Punjab Teacher E-Bike Scheme is an exclusive provincial welfare program providing subsidized, interest-free electric motorcycles to permanent and contract government school teachers (up to 55 years old) across Punjab. The government provides a 30%–40% direct subsidy with monthly installments between PKR 3,600 and PKR 4,200 (0% markup) via ptf.punjab.gov.pk. A valid driving license or DLIMS motorcycle learner permit is mandatory.",
+    "directAnswerUr": "یہ سکیم پنجاب ٹیچرز فاؤنڈیشن کی جانب سے صرف سرکاری سکولوں کے مستقل اور کنٹریکٹ اساتذہ (زیادہ سے زیادہ 55 سال عمر) کے لیے شروع کی گئی ہے۔ حکومت پنجاب 30 سے 40 فیصد کیش سبسڈی فراہم کرتی ہے اور بقیہ رقم 0 فیصد شرح سود پر 3,600 تا 4,200 روپے ماہانہ اقساط میں ptf.punjab.gov.pk پر دی جاتی ہے۔ موٹرسائیکل ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔",
+    "lastVerified": "September 9, 2026",
+    "officialSource": {
+      "name": "Punjab Teachers Foundation (PTF)",
+      "url": "https://ptf.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "School Education & Civic Welfare Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "PTF Portal Registration Fee",
+        "serviceUr": "پی ٹی ایف پورٹل رجسٹریشن فیس",
+        "normal": "PKR 0 (Free)",
+        "urgent": "No Charges",
+        "executive": "Direct Portal Filing"
+      },
+      {
+        "serviceEn": "Total Electric Bike Market Value",
+        "serviceUr": "الیکٹرک بائیک کی کل قیمت",
+        "normal": "PKR 200,000 – 250,000",
+        "urgent": "Certified EV Models",
+        "executive": "Approved Fleet Pricing"
+      },
+      {
+        "serviceEn": "Punjab Government / PTF Subsidy",
+        "serviceUr": "حکومتی و پی ٹی ایف کیش سبسڈی",
+        "normal": "30% – 40% (PKR 70,000 – 90,000)",
+        "urgent": "Direct Grant",
+        "executive": "Non-repayable"
+      },
+      {
+        "serviceEn": "Teacher Net Payable Principal",
+        "serviceUr": "استاد کی اصل واجب الادا رقم",
+        "normal": "PKR 130,000 – 150,000",
+        "urgent": "Net Financed",
+        "executive": "Spread Over 24–36 Mos"
+      },
+      {
+        "serviceEn": "Estimated Monthly Installment",
+        "serviceUr": "تخمینہ ماہانہ قسط",
+        "normal": "PKR 3,600 – 4,200 / month",
+        "urgent": "Payroll Deduction",
+        "executive": "Bank of Punjab Account"
+      },
+      {
+        "serviceEn": "Commercial Bank Markup",
+        "serviceUr": "بینک مارک اپ / سود",
+        "normal": "0% (Interest-Free)",
+        "urgent": "Fully Absorbed by Govt",
+        "executive": "Shariah Compliant"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Profile on ptf.punjab.gov.pk",
+        "titleUr": "پی ٹی ایف پورٹل پر پروفائل بنائیں",
+        "detailEn": "Register on ptf.punjab.gov.pk using your CNIC and registered mobile phone number.",
+        "detailUr": "شناختی کارڈ اور موبائل نمبر کے ذریعے آفیشل ویب سائٹ پر اپنا پروفائل مکمل کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Input Service & School Information",
+        "titleUr": "ملازمت اور سکول کی تفصیلات درج کریں",
+        "detailEn": "Input Personal/PESS number, school EMIS code, and posting district as registered in SED records.",
+        "detailUr": "پرسنل نمبر (PESS)، سکول کوڈ اور ضلع درج کریں جو محکمہ تعلیم کے ریکارڈ سے میچ ہو۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Upload Documents & Driving License",
+        "titleUr": "کاغذات اور ڈرائیونگ لائسنس اپلوڈ کریں",
+        "detailEn": "Upload CNIC scans, recent salary slip, service certificate, photo, and motorcycle license or DLIMS learner permit.",
+        "detailUr": "شناختی کارڈ، سیلری سلپ، سروس سرٹیفکیٹ، تصویر اور ڈرائیونگ لائسنس یا لرنر پرمٹ اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Submit & Download Acknowledgment Slip",
+        "titleUr": "درخواست جمع کروائیں اور رسید حاصل کریں",
+        "detailEn": "Submit online and print the computer-generated PTF acknowledgment slip for departmental record.",
+        "detailUr": "درخواست مکمل کر کے کمپیوٹرائزڈ رسید پرنٹ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is this the same as the student CM Punjab E-Bike Scheme?",
+        "questionUr": "کیا یہ طلبہ والی وزیراعلیٰ پنجاب ای بائیک سکیم ہی ہے؟",
+        "answerEn": "No. This is a separate initiative for government teachers managed via ptf.punjab.gov.pk. The student scheme is at bikes.punjab.gov.pk.",
+        "answerUr": "ہرگز نہیں! یہ صرف سرکاری سکول اساتذہ کے لیے الگ سکیم ہے جس کا پورٹل ptf.punjab.gov.pk ہے۔ طلبہ کی سکیم کا پورٹل bikes.punjab.gov.pk ہے۔"
+      },
+      {
+        "questionEn": "Can private school teachers apply?",
+        "questionUr": "کیا پرائیویٹ سکول کے اساتذہ بھی اہل ہیں؟",
+        "answerEn": "Generally no. Only permanent and contract teachers under Punjab School Education Department are eligible.",
+        "answerUr": "عام طور پر نہیں۔ یہ سکیم محکمہ سکول ایجوکیشن پنجاب کے تحت کام کرنے والے سرکاری اساتذہ کے لیے ہے۔"
+      },
+      {
+        "questionEn": "Can I apply using a Learner's Driving Permit?",
+        "questionUr": "کیا لرنر پرمٹ پر اپلائی ہو سکتا ہے؟",
+        "answerEn": "Yes! A valid motorcycle Learner Driving Permit from Punjab Police / DLIMS is fully accepted.",
+        "answerUr": "جی ہاں! پنجاب پولیس کے ڈرائیونگ لرنر پرمٹ کی بنیاد پر بھی اپلائی کیا جا سکتا ہے۔"
+      }
+    ],
+    "contentEn": "Authoritative manual for Punjab government teachers applying for subsidized electric motorcycles with 30-40% government subsidy and 0% markup.",
+    "contentUr": "پنجاب کے سرکاری سکول اساتذہ کے لیے 30 سے 40 فیصد کیش سبسڈی اور بغیر سود کے الیکٹرک بائیک کے حصول کی مصدقہ گائیڈ۔",
+    "relatedSlugs": [
+      "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply",
+      "/traffic/driving-license-online-apply-renewal-dlims-2026",
+      "/education/pm-laptop-scheme-2026-eligibility-status-check"
     ]
   }
 };
