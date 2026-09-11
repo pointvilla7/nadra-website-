@@ -323,6 +323,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "FESCO Bill Online Check 2026",
+        "ur": "فیسکو بل آن لائن چیک 2026",
+        "slug": "/bills/fesco-bill-check-online-duplicate-2026"
+      },
+      {
         "en": "Winter Gas Schedule 2026–27 (SNGPL/SSGC)",
         "ur": "موسم سرما گیس لوڈ شیڈنگ شیڈول 2026–27",
         "slug": "/bills/winter-gas-load-shedding-schedule-sngpl-ssgc-2026-27"

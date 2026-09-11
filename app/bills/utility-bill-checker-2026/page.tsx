@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { DirectAnswerBox } from '@/components/DirectAnswerBox';
 import { VerifiedBadge } from '@/components/VerifiedBadge';
 import { InteractiveToolBadge } from '@/components/InteractiveToolBadge';
 import { AdPlacementZone } from '@/components/AdPlacementZone';
-import { ExternalLink, HelpCircle, ShieldCheck, Zap } from 'lucide-react';
+import { ExternalLink, HelpCircle, ShieldCheck, Zap, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Official Utility Bill Portal Access 2026 – LESCO, K-Electric, SNGPL & SSGC Gas Bills | Pakistan Info Hub',
@@ -207,6 +208,62 @@ export default function UtilityBillCheckerPage() {
               </tbody>
             </table>
             </div>
+          </div>
+        </section>
+
+        {/* Featured Provider Deep Dives & Civic Guides */}
+        <section className="space-y-4">
+          <h2 className="font-serif font-bold text-2xl text-doc-ink dark:text-white">
+            Dedicated Electricity Guides &amp; Duplicate Bill Portals
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Link
+              href="/bills/fesco-bill-check-online-duplicate-2026"
+              className="p-4 rounded-xl border border-doc-brass/40 bg-white dark:bg-slate-900 hover:border-doc-brass transition shadow-sm space-y-2 group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono font-bold text-doc-brass uppercase">550K/mo High Volume</span>
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-doc-brass group-hover:translate-x-1 transition" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-brass transition">
+                FESCO Bill Online Check 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                14-digit reference &amp; 10-digit customer ID duplicate bill download for Faisalabad, Sargodha, and Jhang.
+              </p>
+            </Link>
+
+            <Link
+              href="/bills/smart-meter-pakistan-price-how-it-works-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition shadow-sm space-y-2 group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono font-bold text-amber-600 dark:text-amber-400 uppercase">AMI Technology</span>
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-doc-brass group-hover:translate-x-1 transition" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-brass transition">
+                Smart Meters (AMI) Pakistan 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Automated meter readings, DISCO installation costs, and solar net billing bidirectional meter guides.
+              </p>
+            </Link>
+
+            <Link
+              href="/bills/net-metering-net-billing-change-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition shadow-sm space-y-2 group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase">Solar Buyback</span>
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-doc-brass group-hover:translate-x-1 transition" />
+              </div>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-brass transition">
+                Net Metering to Net Billing Rules →
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                NEPRA solar buyback rate reductions, grandfathering rules, and rooftop solar economics in 2026.
+              </p>
+            </Link>
           </div>
         </section>
 

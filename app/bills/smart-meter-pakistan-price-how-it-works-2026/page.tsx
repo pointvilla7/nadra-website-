@@ -511,7 +511,18 @@ export default function SmartMeterPakistanGuidePage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Electricity &amp; Utility Billing Resources
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/bills/fesco-bill-check-online-duplicate-2026"
+              className="p-4 rounded-xl border border-doc-brass/40 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">550K/mo Keyword</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                FESCO Bill Check 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">14-digit reference number duplicate bill download for Faisalabad.</p>
+            </Link>
+
             <Link
               href="/bills/net-metering-net-billing-change-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"

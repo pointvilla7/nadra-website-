@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/tenant-police-verification-online-2026',
     '/legal/how-to-get-fir-copy-online-pakistan-2026',
     '/welfare/ehsaas-rashan-riayat-program-8123-2026',
+    '/bills/fesco-bill-check-online-duplicate-2026',
     '/pakistan-post',
     '/finance',
     '/finance/roshan-digital-account-2026-eligibility-apply',
