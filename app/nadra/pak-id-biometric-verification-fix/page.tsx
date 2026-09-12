@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/nadra/pak-id-biometric-verification-fix',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/nadra/pak-id-biometric-verification-fix',
+  },
 };
 
 export default function Page() {

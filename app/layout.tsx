@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   description: siteConfig.descriptionEn,
   metadataBase: new URL(BASE_URL),
   alternates: {
-    canonical: './',
+    canonical: BASE_URL,
   },
   openGraph: {
     type: 'website',

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/hajj-umrah/zamzam-water-and-baggage-rules-pia',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/hajj-umrah/zamzam-water-and-baggage-rules-pia',
+  },
 };
 
 export default function Page() {

@@ -263,6 +263,27 @@ const nextConfig = {
         destination: '/mobile-pta/pta-mobile-registration-guide-2026',
         permanent: true,
       },
+      // 7. Bills legacy alias redirects
+      {
+        source: '/bills/kelectric-duplicate-bill',
+        destination: '/bills/k-electric-duplicate-bill',
+        permanent: true,
+      },
+      {
+        source: '/bills/kwsc-karachi-water-bill-check',
+        destination: '/bills/karachi-water-board-bill-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/bills/wasa-faisalabad-bill-check-online',
+        destination: '/bills/faisalabad-water-bill-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/bills/wasa-lahore-bill-check-online',
+        destination: '/bills/lahore-wasa-duplicate-bill-online-2026',
+        permanent: true,
+      },
     ];
   },
 

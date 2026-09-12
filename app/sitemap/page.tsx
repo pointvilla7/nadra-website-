@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     url: 'https://www.pakistaninfohub.com/sitemap',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/sitemap',
+  },
 };
 
 export default function Page() {

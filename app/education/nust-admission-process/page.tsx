@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/education/nust-admission-process',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/education/nust-admission-process',
+  },
 };
 
 export default function Page() {

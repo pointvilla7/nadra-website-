@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/tax/fbr-filer-status-check-cnic',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/tax/fbr-filer-status-check-cnic',
+  },
 };
 
 export default function Page() {

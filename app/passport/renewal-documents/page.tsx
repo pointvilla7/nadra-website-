@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/passport/renewal-documents',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/passport/renewal-documents',
+  },
 };
 
 export default function Page() {

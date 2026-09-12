@@ -31,6 +31,9 @@ export async function generateMetadata({ params }: AuthorPageProps): Promise<Met
       description: author.bioEn,
       url: `https://www.pakistaninfohub.com/authors/${author.slug}`,
     },
+    alternates: {
+      canonical: `https://www.pakistaninfohub.com/authors/${author.slug}`,
+    },
   };
 }
 

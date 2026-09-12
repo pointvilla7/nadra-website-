@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/loans/akhuwat-interest-free-loan-application',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/loans/akhuwat-interest-free-loan-application',
+  },
 };
 
 export default function Page() {

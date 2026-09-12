@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/loans/pm-youth-loan-scheme',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/loans/pm-youth-loan-scheme',
+  },
 };
 
 export default function Page() {

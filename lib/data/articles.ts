@@ -310,7 +310,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/nadra/cnic-kaise-banaye",
       "/nadra/card-renewal-online",
-      "/nadra/tracking-id"
+      "/nadra/nadra-tracking-id-check-online-2026"
     ]
   },
   "executive-center-timings-fees": {
@@ -3367,7 +3367,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "پاکستان میں 18 سال کی عمر کو پہنچنا ایک اہم قانونی مرحلہ ہے، اور نادرا کا کمپیوٹرائزڈ قومی شناختی کارڈ (CNIC) حاصل کرنا آپ کی شہری شناخت کا پہلا قدم ہے۔ شناختی کارڈ بینک اکاؤنٹ کھولنے، سم کارڈ خریدنے، پاسپورٹ بنوانے، ڈرائیونگ لائسنس، اور ووٹنگ کے لیے بنیادی دستاویز ہے۔\n\nنیشنل ڈیٹا بیس اینڈ رجسٹریشن اتھارٹی (نادرا) سمارٹ کارڈ کے ذریعے شہریوں کا بایومیٹرک ڈیٹا محفوظ کرتی ہے۔ اگر آپ پہلی بار شناختی کارڈ بنوانے نادرا رجسٹریشن سینٹر (NRC) جا رہے ہیں، تو یہ تفصیلی گائیڈ آپ کے لیے تمام معلومات فراہم کرتی ہے۔\n\n## پہلی بار شناختی کارڈ کے لیے ضروری دستاویزات کی فہرست\n\nنادرا سینٹر جانے سے پہلے یہ تمام اصل کاغذات اپنے ساتھ رکھنا لازمی ہے:\n\n1. **اصل بی فارم (چائلڈ رجسٹریشن سرٹیفکیٹ / CRC)**: یہ نادرا ڈیٹا بیس میں آپ کی بنیادی شناخت کی سند ہے۔\n2. **میٹرک سرٹیفکیٹ یا تاریخ پیدائش کا ثبوت**: اصل میٹرک کی سند یا سکول چھوڑنے کا سرٹیفکیٹ جس پر تاریخ پیدائش درج ہو۔\n3. **والدین کے اصل شناختی کارڈز**: والد اور والدہ کے اصل سمارٹ شناختی کارڈز۔ اگر والدین میں سے کوئی وفات پا چکا ہو تو یونین کونسل کا جاری کردہ ڈیتھ سرٹیفکیٹ ساتھ لائیں۔\n4. **خونی رشتہ دار برائے بایومیٹرک تصدیق**: والد، والدہ، سگا بھائی یا سگی بہن میں سے کسی ایک کا نادرا سینٹر میں ساتھ ہونا لازمی ہے تاکہ وہ موقع پر انگوٹھا لگا کر نادرا فیملی ٹری میں آپ کی تصدیق کر سکیں۔\n\n## نادرا سینٹر کا مرحلہ وار طریقہ کار\n\n1. **ٹوکن حاصل کرنا**: سینٹر کے داخلے پر اپنے اصل کاغذات دکھا کر ٹوکن لیں۔\n2. **تصویر اور بایومیٹرک**: ٹوکن نمبر پکارے جانے پر کاؤنٹر پر جائیں جہاں آپ کی تازہ تصویر لی جائے گی اور 10 انگلیوں کے فنگر پرنٹس سکین کیے جائیں گے۔\n3. **خونی رشتہ دار کی تصدیق**: ساتھ آئے والد یا بھائی کا انگوٹھا لگا کر بائیو میٹرک تصدیق کی جائے گی۔\n4. **ڈرافٹ کی جانچ**: عملہ آپ کے قوائف درج کر کے پرنٹ شدہ ڈرافٹ دے گا۔ انگریزی و اردو نام کے ہجوں کو اچھی طرح چیک کریں۔\n5. **فیس کی ادائیگی**: کاؤنٹر پر فیس جمع کروائیں اور 12 ہندسوں کی ٹریکنگ رسید حاصل کریں۔\n\n## نادرا سمارٹ کارڈ فیس شیڈول 2026\n\n| کیٹیگری | سرکاری فیس | پروسیسنگ اور ڈلیوری کا وقت |\n| :--- | :--- | :--- |\n| **نارمل فیس** | 750 روپے | 31 کام کے دن |\n| **ارجنٹ فیس** | 1,500 روپے | 15 کام کے دن |\n| **ایگزیکٹو فیس** | 2,500 روپے | 7 کام کے دن |\n\nآفیشل فیس اور تفصیلات نادرا کے پورٹل [NADRA Official Portal](https://id.nadra.gov.pk/) سے تصدیق شدہ ہیں۔\n\n## ٹریکنگ کا طریقہ\n\nاپنی درخواست کا سٹیٹس جاننے کے لیے اپنی 12 ہندسوں پر مشتمل ٹریکنگ آئی ڈی لکھ کر **8400** پر ایس ایم ایس کریں یا نادرا پاک آئی ڈی پورٹل پر آن لائن چیک کریں۔",
     "relatedSlugs": [
       "/nadra/nadra-card-fee",
-      "/nadra/tracking-id",
+      "/nadra/nadra-tracking-id-check-online-2026",
       "/nadra/b-form-kaise-banaye"
     ]
   },
@@ -3613,13 +3613,13 @@ export const ARTICLES: Record<string, Article> = {
     "contentUr": "نادرا شناختی کارڈ فیس شیڈول نادرا کا مصدقہ اور سرکاری ریٹ چارٹ ہے جو سمارٹ شناختی کارڈ، تجدید، ترمیم، ایف آر سی اور نائیکوپ کی فیسوں کو منظم کرتا ہے۔\n\n## نادرا سمارٹ کارڈ فیس 2026\n- **نارمل پروسیسنگ**: 750 روپے (31 کام کے دن)\n- **ارجنٹ پروسیسنگ**: 1,500 روپے (15 کام کے دن)\n- **ایگزیکٹو پروسیسنگ**: 2,500 روپے (7 کام کے دن)\n\n## نائیکوپ اور فیملی سرٹیفکیٹ فیس\n- **زون A ممالک** (امریکہ، برطانیہ، یورپ): نارمل $39، ارجنٹ $57، ایگزیکٹو $75 ڈالر\n- **زون B ممالک** (مڈل ایسٹ، ایشیا): نارمل $20، ارجنٹ $30، ایگزیکٹو $40 ڈالر\n- **فیملی سرٹیفکیٹ (FRC)**: آفیشل فیس 1,000 روپے ہے\n\nفیس کی آن لائن ادائیگی پاک آئی ڈی ایپ پر جاز کیش، ایزی پیسہ یا بینک کریڈٹ کارڈ سے ہو سکتی ہے۔",
     "relatedSlugs": [
       "/nadra/cnic-kaise-banaye",
-      "/nadra/tracking-id",
+      "/nadra/nadra-tracking-id-check-online-2026",
       "/nadra/b-form-kaise-banaye"
     ]
   },
   "tracking-id": {
     "slug": "tracking-id",
-    "fullPath": "/nadra/tracking-id",
+    "fullPath": "/nadra/nadra-tracking-id-check-online-2026",
     "categoryId": "nadra",
     "titleEn": "NADRA CNIC Tracking Online 2026: Check Status via SMS 8400 & Website",
     "titleUr": "نادرا ٹریکنگ 8400: شناختی کارڈ کا سٹیٹس آن لائن چیک کریں",
@@ -3812,7 +3812,7 @@ export const ARTICLES: Record<string, Article> = {
     "relatedSlugs": [
       "/nadra/cnic-kaise-banaye",
       "/nadra/nadra-card-fee",
-      "/nadra/tracking-id"
+      "/nadra/nadra-tracking-id-check-online-2026"
     ]
   },
   "family-registration-certificate": {
@@ -19257,8 +19257,8 @@ export const ARTICLES: Record<string, Article> = {
     ]
   },
   "nadra-b-form-frc-status-checker": {
-    "slug": "b-form-frc-status-checker",
-    "fullPath": "/nadra/b-form-frc-status-checker",
+    "slug": "b-form-frc-status-check",
+    "fullPath": "/nadra/b-form-frc-status-check",
     "categoryId": "nadra",
     "titleEn": "NADRA B-Form & FRC Status Checker 2026 (CRC / Family Certificate)",
     "titleUr": "نادرا بی فارم و ایف آر سی سٹیٹس چیکر 2026",
@@ -19304,7 +19304,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Guide and tracker helper for NADRA child registration certificates (B-Form) and family certificates (FRC).",
     "contentUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ کی آن لائن تصدیق اور ٹریکنگ کی گائیڈ۔",
     "relatedSlugs": [
-      "/nadra/tracking-id",
+      "/nadra/nadra-tracking-id-check-online-2026",
       "/nadra/family-registration-certificate"
     ]
   },
@@ -19512,8 +19512,8 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "Online tracking guide for NADRA B-Form and Family Registration Certificates.",
     "contentUr": "نادرا بی فارم اور فیملی رجسٹریشن سرٹیفکیٹ آن لائن ٹریک کرنے کی مکمل گائیڈ۔",
     "relatedSlugs": [
-      "/nadra/tracking-id",
-      "/nadra/b-form-frc-status-checker"
+      "/nadra/nadra-tracking-id-check-online-2026",
+      "/nadra/b-form-frc-status-check"
     ]
   },
   "nadra-nicop-fee-calculator-tool": {

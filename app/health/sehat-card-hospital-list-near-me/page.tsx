@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/health/sehat-card-hospital-list-near-me',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/health/sehat-card-hospital-list-near-me',
+  },
 };
 
 export default function Page() {

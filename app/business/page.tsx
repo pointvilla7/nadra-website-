@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/business',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/business',
+  },
 };
 
 export default function Page() {

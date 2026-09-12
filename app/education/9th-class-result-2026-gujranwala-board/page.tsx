@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: board.metaTitle,
     description: board.metaDescription,
-    url: `https://www.pakistaninfohub.com/education/${BOARD_SLUG}`,
+    url: 'https://www.pakistaninfohub.com/education/9th-class-result-2026-gujranwala-board',
   },
   alternates: {
-    canonical: `https://www.pakistaninfohub.com/education/${BOARD_SLUG}`,
+    canonical: 'https://www.pakistaninfohub.com/education/9th-class-result-2026-gujranwala-board',
   },
 };
 

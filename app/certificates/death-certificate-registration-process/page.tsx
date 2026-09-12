@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/certificates/death-certificate-registration-process',
   },
+  alternates: {
+    canonical: 'https://www.pakistaninfohub.com/certificates/death-certificate-registration-process',
+  },
 };
 
 export default function Page() {
