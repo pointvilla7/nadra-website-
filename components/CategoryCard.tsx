@@ -26,6 +26,7 @@ import {
   Smartphone,
   Mail,
   ArrowRight,
+  Sprout,
 } from 'lucide-react';
 import { Category } from '@/lib/data/categories';
 import { useLanguage } from '@/lib/context/LanguageContext';
@@ -125,6 +126,10 @@ const CATEGORY_CTA_MAP: Record<string, CategoryCtaConfig> = {
     ctaEn: 'Check Withholding Tax Rates',
     ctaUr: 'بینک ٹیکس و پرافٹ ریٹس',
   },
+  agriculture: {
+    ctaEn: 'Check Kissan Card & Farmer Schemes',
+    ctaUr: 'کسان کارڈ و زرعی سکیمیں دیکھیں',
+  },
 };
 
 const getCategoryIcon = (iconName: string) => {
@@ -168,6 +173,9 @@ const getCategoryIcon = (iconName: string) => {
       return <Smartphone {...props} />;
     case 'Mail':
       return <Mail {...props} />;
+    case 'Sprout':
+    case 'agriculture':
+      return <Sprout {...props} />;
     default:
       return <Sparkles {...props} />;
   }

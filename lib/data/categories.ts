@@ -1365,5 +1365,36 @@ export const CATEGORIES: Category[] = [
         "slug": "/finance/currency-exchange-rate-pakistan-open-market-interbank-2026"
       }
     ]
+  },
+  {
+    "id": "agriculture",
+    "slug": "agriculture",
+    "nameEn": "Agriculture & Farmer Services",
+    "nameUr": "زراعت اور کسان سروسز",
+    "taglineEn": "CM Kissan Card, Interest-Free Loans, Green Tractor & Subsidies",
+    "taglineUr": "وزیر اعلیٰ کسان کارڈ، بلاسود قرضے، گرین ٹریکٹر اور زرعی سبسڈیز",
+    "descriptionEn": "Official Punjab Agriculture Department, PITB, and Bank of Punjab guidelines for CM Kissan Card registration, PLRA computerized land verification, interest-free seasonal crop financing, Green Tractor balloting, and fertilizer subsidies.",
+    "descriptionUr": "پنجاب ایگریکلچر ڈیپارٹمنٹ اور بینک آف پنجاب کی کسان کارڈ آن لائن رجسٹریشن، اراضی ریکارڈ تصدیق، بلاسود زرعی قرضہ، گرین ٹریکٹر سکیم اور کھاد پر سبسڈی کی مصدقہ اور آسان ترین معلوماتی رہنمائی۔",
+    "iconName": "Sprout",
+    "accentColor": "#1E4D2B",
+    "badgeBg": "bg-emerald-900/10 dark:bg-emerald-950/40",
+    "badgeText": "text-emerald-800 dark:text-emerald-300",
+    "popularSearches": [
+      {
+        "en": "CM Punjab Kissan Card 2026",
+        "ur": "وزیر اعلیٰ پنجاب کسان کارڈ 2026",
+        "slug": "/agriculture/cm-punjab-kissan-card-registration-eligibility-2026"
+      },
+      {
+        "en": "Kissan Card Eligibility & Land Limit",
+        "ur": "کسان کارڈ اہلیت و رقبہ کی حد",
+        "slug": "/agriculture/cm-punjab-kissan-card-registration-eligibility-2026#eligibility"
+      },
+      {
+        "en": "CM Green Tractor Scheme 2026",
+        "ur": "گرین ٹریکٹر سکیم قرعہ اندازی",
+        "slug": "/agriculture/cm-punjab-kissan-card-registration-eligibility-2026#adjacent-schemes"
+      }
+    ]
   }
 ];

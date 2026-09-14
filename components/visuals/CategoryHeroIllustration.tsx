@@ -129,6 +129,16 @@ export const CategoryHeroIllustration: React.FC<CategoryHeroIllustrationProps> =
           glow: 'from-yellow-700/15 via-amber-500/10 to-emerald-600/15',
           title: 'PLRA Fard & Land Mutation Vector',
         };
+      case 'agriculture':
+      case 'kisan':
+        return {
+          primary: '#1E4D2B',
+          secondary: '#0F766E',
+          accent: '#D4A017',
+          seal: '#0F9D6D',
+          glow: 'from-emerald-600/15 via-amber-500/10 to-green-700/15',
+          title: 'Agriculture & Kissan Services Vector',
+        };
       default:
         return {
           primary: '#1B2A4A',

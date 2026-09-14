@@ -249,9 +249,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                       ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
                     },
                     {
-                      titleEn: 'Money & Business',
-                      titleUr: 'ٹیکس، بینکنگ و جائیداد',
-                      ids: ['tax', 'finance', 'business', 'property', 'loans'],
+                      titleEn: 'Money, Land & Agriculture',
+                      titleUr: 'ٹیکس، زراعت و جائیداد',
+                      ids: ['tax', 'finance', 'business', 'property', 'loans', 'agriculture'],
                     },
                     {
                       titleEn: 'Utilities, Tech & Postal',
@@ -354,9 +354,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
                 ids: ['nadra', 'passport', 'overseas', 'hajj-umrah', 'certificates'],
               },
               {
-                titleEn: 'Money & Business',
-                titleUr: 'ٹیکس، بینکنگ و جائیداد',
-                ids: ['tax', 'finance', 'business', 'property', 'loans'],
+                titleEn: 'Money, Land & Agriculture',
+                titleUr: 'ٹیکس، زراعت و جائیداد',
+                ids: ['tax', 'finance', 'business', 'property', 'loans', 'agriculture'],
               },
               {
                 titleEn: 'Utilities, Tech & Postal',

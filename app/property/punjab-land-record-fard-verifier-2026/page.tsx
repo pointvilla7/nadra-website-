@@ -469,6 +469,28 @@ export default function PunjabLandRecordFardVerifierPage() {
           ]}
         />
 
+        {/* Agricultural Landowners Cross-link */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-emerald-50 via-white to-emerald-50/50 dark:from-emerald-950/40 dark:via-slate-900 dark:to-emerald-950/20 border border-emerald-300 dark:border-emerald-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-900/60 px-2.5 py-0.5 rounded">
+              Farmer Alert 2026
+            </span>
+            <h3 className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-white">
+              Using Your PLRA Fard for the CM Punjab Kissan Card?
+            </h3>
+            <p className="text-xs text-slate-600 dark:text-slate-400">
+              Your computerized land record in PLRA is the primary requirement for interest-free crop loans up to Rs. 300,000.
+            </p>
+          </div>
+          <Link
+            href="/agriculture/cm-punjab-kissan-card-registration-eligibility-2026"
+            className="shrink-0 px-4 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm"
+          >
+            <span>Kissan Card Guide</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+
         {/* FAQ Section */}
         <FAQAccordionVisual
           titleEn="Frequently Asked Questions (Punjab Fard Online)"

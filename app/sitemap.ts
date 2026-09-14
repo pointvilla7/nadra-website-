@@ -76,6 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/finance',
     '/finance/roshan-digital-account-2026-eligibility-apply',
     '/finance/currency-exchange-rate-pakistan-open-market-interbank-2026',
+    '/agriculture/cm-punjab-kissan-card-registration-eligibility-2026',
     '/offices/locator',
     '/alerts/subscribe',
     '/alerts/manage',
