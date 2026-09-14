@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ShieldAlert, ExternalLink, Globe, Mail, MapPin } from 'lucide-react';
+import { ShieldAlert, ExternalLink, Globe, Mail } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { CATEGORIES } from '@/lib/data/categories';
 import { VerifiedSeal } from './VerifiedSeal';
@@ -57,8 +57,8 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex flex-col gap-1.5 text-xs text-slate-400 font-mono">
               <div className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-doc-brass shrink-0" />
-                <span>Islamabad, Pakistan</span>
+                <Globe className="w-3.5 h-3.5 text-doc-brass shrink-0" />
+                <span>{t('Serving Pakistan & Overseas Citizens', 'پاکستان اور سمندر پار پاکستانیوں کے لیے')}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Mail className="w-3.5 h-3.5 text-doc-brass shrink-0" />

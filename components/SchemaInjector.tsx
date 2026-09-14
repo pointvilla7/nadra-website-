@@ -51,7 +51,8 @@ export const SchemaInjector: React.FC<SchemaInjectorProps> = ({
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      contactType: 'Editorial & Civic Guidance Helpline',
+      contactType: 'Editorial Desk',
+      email: 'pakistaninfohub1@gmail.com',
       availableLanguage: ['English', 'Urdu'],
       areaServed: 'PK',
     },

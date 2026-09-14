@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { UserCheck, ShieldCheck, Mail, MapPin, Award, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '@/lib/context/LanguageContext';
 import { VerifiedSeal } from '@/components/VerifiedSeal';
 import { SchemaInjector } from '@/components/SchemaInjector';
