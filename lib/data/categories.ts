@@ -1358,6 +1358,11 @@ export const CATEGORIES: Category[] = [
         "en": "Roshan Digital Account (RDA) 2026",
         "ur": "روشن ڈیجیٹل اکاؤنٹ اہلیت و اپلائی 2026",
         "slug": "/finance/roshan-digital-account-2026-eligibility-apply"
+      },
+      {
+        "en": "Currency Exchange Rate Converter Pakistan 2026",
+        "ur": "کرنسی ریٹ و کنورٹر پاکستان 2026",
+        "slug": "/finance/currency-exchange-rate-pakistan-open-market-interbank-2026"
       }
     ]
   }
