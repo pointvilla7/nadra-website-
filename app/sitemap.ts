@@ -120,10 +120,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Consolidate into a unique Map keyed by URL to ensure zero duplicate entries in sitemap.xml
+  // Strict validator: ensure ONLY genuine content pages are admitted (no system files, assets, or technical endpoints)
+  const EXCLUDED_EXTENSIONS = /\.(xml|json|webmanifest|woff2?|ttf|eot|png|jpg|jpeg|gif|webp|svg|ico|txt|map)$/i;
+  const EXCLUDED_PREFIXES = /^\/(_next|api|opengraph-image|twitter-image|icon|apple-icon|favicon|manifest|site\.webmanifest|sitemap|sw\.js)/i;
+
+  const isValidContentUrl = (fullUrl: string): boolean => {
+    try {
+      const pathname = new URL(fullUrl).pathname;
+      if (EXCLUDED_EXTENSIONS.test(pathname)) return false;
+      if (EXCLUDED_PREFIXES.test(pathname)) return false;
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
+  // Consolidate into a unique Map keyed by URL to ensure zero duplicate entries and no technical/system files
   const sitemapMap = new Map<string, MetadataRoute.Sitemap[number]>();
   for (const page of [...staticPages, ...categoryPages, ...authorPages, ...articlePages]) {
-    if (!sitemapMap.has(page.url)) {
+    if (isValidContentUrl(page.url) && !sitemapMap.has(page.url)) {
       sitemapMap.set(page.url, page);
     }
   }

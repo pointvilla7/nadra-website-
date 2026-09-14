@@ -300,6 +300,26 @@ const nextConfig = {
           },
         ],
       },
+      // Block search indexing of technical system files and media
+      {
+        source: '/_next/static/media/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
+        source: '/:manifest(manifest\\.json|site\\.webmanifest)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=604800, stale-while-revalidate=86400' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
+        source: '/opengraph-image:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
       // GSC verification file — must be accessible, no caching issues
       {
         source: '/google:file*',
@@ -318,6 +338,7 @@ const nextConfig = {
         source: '/sitemap.xml',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=3600, stale-while-revalidate=86400' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
         ],
       },
     ];
