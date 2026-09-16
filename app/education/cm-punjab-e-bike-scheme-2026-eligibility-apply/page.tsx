@@ -28,24 +28,25 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'CM Punjab E-Bike Scheme 2026: Applications Open, Eligibility & 100,000 Bikes',
+  title: 'CM Punjab E-Bike Scheme 2026: 125,000+ Bikes, Zero Down Payment & Online Apply',
   description:
-    'Official verified guide to Chief Minister Punjab E-Bike Scheme 2026: Online apply open at bikes.punjab.gov.pk, 100,000 electric bikes for school, college & university students, zero down payment, PKR 3,028/mo installment plan & pink bikes for girls.',
+    'Official verified guide to Chief Minister Punjab E-Bike Scheme 2026: Online apply open at bikes.punjab.gov.pk, 125,000+ electric bikes for school, college & university students, zero down payment (eliminated by CM Maryam Nawaz), PKR 3,028/mo installment plan & pink bikes for girls.',
   keywords: [
     'cm punjab e bike scheme 2026',
     'bikes.punjab.gov.pk online apply',
-    'cm punjab 100000 electric bikes',
+    'cm punjab 125000 electric bikes',
     'punjab student e bike eligibility criteria',
     'bank of punjab e bike installment plan 3028',
+    'cm maryam nawaz zero down payment e bike',
     'punjab e bike last date october 2026',
     'cm maryam nawaz pink bike scheme',
     'punjab school college university e bike apply',
     'dlims learner permit bike scheme punjab',
   ],
   openGraph: {
-    title: 'CM Punjab E-Bike Scheme 2026: Applications Open for 100,000 Bikes',
+    title: 'CM Punjab E-Bike Scheme 2026: Applications Open for 125,000+ Bikes',
     description:
-      'Official student portal guide to bikes.punjab.gov.pk: 100,000 electric bikes across 33,000+ schools, colleges, and universities. Zero down payment, PKR 3,028/month, and pink bikes for female students.',
+      'Official student portal guide to bikes.punjab.gov.pk: 125,000+ electric bikes across 33,000+ schools, colleges, and universities. Zero down payment (PKR 0 advance), PKR 3,028/month, and pink bikes for female students.',
     images: [{ url: 'https://www.pakistaninfohub.com/og-default.jpg', width: 1200, height: 630 }],
     url: 'https://www.pakistaninfohub.com/education/cm-punjab-e-bike-scheme-2026-eligibility-apply',
   },
@@ -72,13 +73,13 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'CM Punjab E-Bike Scheme 2026: Applications Open, Eligibility & 100,000 Bikes',
+      headline: 'CM Punjab E-Bike Scheme 2026: 125,000+ Bikes, Zero Down Payment & Online Apply',
       description:
-        'Authoritative public guide explaining how regular school, college, and university students across Punjab can apply for 100,000 subsidized electric motorcycles on bikes.punjab.gov.pk with zero down payment, PKR 3,028 monthly installments, and dedicated pink bikes for women.',
+        'Authoritative public guide explaining how regular school, college, and university students across Punjab can apply for 125,000+ subsidized electric motorcycles on bikes.punjab.gov.pk with zero down payment (upfront charges eliminated by CM Maryam Nawaz), PKR 3,028 monthly installments, and dedicated pink bikes for women.',
       author: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       publisher: { '@type': 'Organization', name: 'Pakistan Info Hub', url: 'https://www.pakistaninfohub.com' },
       datePublished: '2026-09-04',
-      dateModified: '2026-09-09',
+      dateModified: '2026-09-16',
       mainEntityOfPage: 'https://www.pakistaninfohub.com/education/cm-punjab-e-bike-scheme-2026-eligibility-apply',
     },
     {
@@ -121,7 +122,7 @@ const jsonLd = {
           '@type': 'HowToStep',
           position: 6,
           name: 'Zero-Advance Vehicle & Helmet Collection',
-          text: 'With down payment waived (PKR 0 advance), collect your registered electric motorcycle, complimentary safety helmet, and protection rods from the designated dealership.',
+          text: 'With down payment completely eliminated by CM Maryam Nawaz (PKR 0 advance) and government covering 100% interest and insurance, collect your registered electric motorcycle, complimentary safety helmet, and protection rods from the designated dealership.',
         },
       ],
     },
@@ -133,7 +134,7 @@ const jsonLd = {
           name: 'Are applications currently open for the CM Punjab E-Bike Scheme?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes! Applications officially opened on September 5, 2026, announced directly by Chief Minister Maryam Nawaz. Eligible students can apply online through the official portal bikes.punjab.gov.pk until the deadline of October 4, 2026.',
+            text: 'Yes! Applications officially opened on Friday, September 4, 2026, announced directly by Chief Minister Maryam Nawaz. Eligible students can apply online through the official portal bikes.punjab.gov.pk until the deadline of October 4, 2026.',
           },
         },
         {
@@ -294,12 +295,12 @@ const applicationSteps = [
   {
     number: 6,
     icon: <CheckCircle2 className="w-5 h-5 text-doc-brass" />,
-    titleEn: 'Zero-Down-Payment Vehicle Collection',
+    titleEn: 'Zero-Advance Vehicle & Helmet Collection',
     titleUr: 'بغیر ایڈوانس ادائیگی بائیک و ہیلمٹ کی وصولی',
-    descEn: 'With down payment waived (PKR 0 advance), collect your brand-new electric bike, complimentary safety helmet, and protective guards directly from the authorized dealership.',
-    descUr: 'ڈاؤن پیمنٹ مکمل معاف ہونے کی وجہ سے بغیر ایڈوانس ادائیگی اپنی نئی بائیک، ہیلمٹ اور وارنٹی کارڈ حاصل کریں۔',
-    tagEn: 'PKR 0 Down Payment',
-    tagUr: 'صفر ایڈوانس',
+    descEn: 'CM Maryam Nawaz explicitly rejected proposals requiring any upfront payment or charges beyond monthly installments. With down payment completely eliminated (PKR 0 advance) and government paying 100% markup and insurance, collect your registered electric bike, helmet, and warranty without paying a single rupee advance.',
+    descUr: 'وزیراعلیٰ مریم نواز نے ایڈوانس ڈاؤن پیمنٹ کی تجویز یکسر مسترد کر دی ہے۔ ڈاؤن پیمنٹ مکمل ختم (0 روپے) ہونے کے بعد بغیر کسی ایڈوانس ادائیگی اپنی نئی بائیک، ہیلمٹ اور وارنٹی حاصل کریں۔',
+    tagEn: 'PKR 0 Down Payment (Eliminated)',
+    tagUr: 'صفر ایڈوانس (مکمل معاف)',
   },
 ];
 
@@ -325,7 +326,7 @@ export default function CmPunjabEBikeSchemePage() {
                 },
               ]}
             />
-            <VerifiedBadge textEn="Verified September 2026 • Portal Live" textUr="مصدقہ ستمبر 2026 • پورٹل لائیو" />
+            <VerifiedBadge textEn="Verified September 16, 2026 • 125,000+ Bikes • Zero Down Payment" textUr="مصدقہ 16 ستمبر 2026 • 125,000 بائیکس • صفر ڈاؤن پیمنٹ" />
           </div>
         </div>
 
@@ -345,10 +346,10 @@ export default function CmPunjabEBikeSchemePage() {
                     <span className="text-xs text-emerald-100 font-medium">Phase 2 Provincial Rollout</span>
                   </div>
                   <p className="text-sm sm:text-base font-bold text-white mt-1 leading-snug">
-                    Portal Open as of 5 September 2026 — Deadline: 4 October 2026
+                    Portal Open as of Friday, 4 September 2026 — Deadline: 4 October 2026
                   </p>
                   <p className="text-xs text-emerald-100 mt-0.5 font-sans">
-                    100,000 electric bikes for students across 33,000+ schools, colleges, and universities in Punjab. (Are you a teacher? See <Link href="/education/ptf-punjab-teacher-e-bike-scheme-2026" className="underline font-bold text-white hover:text-amber-200">PTF Teacher E-Bike Scheme</Link>).
+                    125,000+ electric bikes for students across 33,000+ schools, colleges, and universities in Punjab. (Are you a teacher? See <Link href="/education/ptf-punjab-teacher-e-bike-scheme-2026" className="underline font-bold text-white hover:text-amber-200">PTF Teacher E-Bike Scheme</Link>).
                   </p>
                 </div>
               </div>
@@ -368,7 +369,7 @@ export default function CmPunjabEBikeSchemePage() {
           <header className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-bold tracking-wide">
               <Zap className="w-3.5 h-3.5" />
-              <span>OFFICIAL STUDENT MOBILITY INITIATIVE • 100,000 ELECTRIC BIKES</span>
+              <span>OFFICIAL STUDENT MOBILITY INITIATIVE • 125,000+ ELECTRIC BIKES</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-doc-ink dark:text-white tracking-tight leading-tight">
@@ -376,7 +377,7 @@ export default function CmPunjabEBikeSchemePage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
-              The verified, independent public guide to Chief Minister Maryam Nawaz&apos;s interest-free electric bike program for regular school, college, and university students across Punjab. Learn how the active portal <code className="bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-xs font-mono text-doc-seal dark:text-amber-400 font-bold">bikes.punjab.gov.pk</code>, zero-down-payment policy, computerized PITB e-balloting, and PKR 3,028 monthly financing actually work.
+              The verified, independent public guide to Chief Minister Maryam Nawaz&apos;s interest-free electric bike program for regular school, college, and university students across Punjab. Learn how the active portal <code className="bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-xs font-mono text-doc-seal dark:text-amber-400 font-bold">bikes.punjab.gov.pk</code>, zero-down-payment policy (all upfront charges eliminated), computerized PITB e-balloting, and PKR 3,028 monthly financing actually work.
             </p>
           </header>
 
@@ -384,8 +385,8 @@ export default function CmPunjabEBikeSchemePage() {
           <DirectAnswerBox
             topicTitleEn="Summary: CM Punjab Student E-Bike Scheme (2026)"
             topicTitleUr="خلاصہ: وزیراعلیٰ پنجاب طلبہ ای بائیک سکیم 2026"
-            answerEn="Online applications are OPEN NOW on bikes.punjab.gov.pk (opened 5 September 2026; last date 4 October 2026). The Punjab Government is distributing 100,000 electric bikes across 33,000+ schools, colleges, and universities. Total bike cost is PKR 199,000, with PKR 90,000 government subsidy, PKR 0 down payment, and the remaining PKR 109,000 repaid over 36 months at PKR 3,028/month. A valid driving license or DLIMS learner permit is mandatory."
-            answerUr="وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم کے تحت bikes.punjab.gov.pk پر درخواستیں لائیو ہیں (آخری تاریخ 4 اکتوبر 2026)۔ صوبے کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے طلبہ کے لیے 100,000 ای بائیکس مختص ہیں۔ حکومت 90 ہزار روپے سبسڈی اور مکمل مارک اپ فراہم کر رہی ہے، جبکہ ڈاؤن پیمنٹ صفر اور ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔"
+            answerEn="Online applications are OPEN NOW on bikes.punjab.gov.pk (opened Friday, 4 September 2026; last date 4 October 2026). The Punjab Government has expanded the distribution to 125,000+ electric bikes across 33,000+ schools, colleges, and universities. CM Maryam Nawaz explicitly rejected proposals requiring students to make any upfront payment or charges beyond monthly installments. Total bike cost is PKR 199,000, with PKR 90,000 government subsidy, PKR 0 down payment, and the remaining PKR 109,000 repaid over 36 months at PKR 3,028/month. The provincial government covers 100% of interest, bank markup, and insurance. A valid driving license or DLIMS learner permit is mandatory."
+            answerUr="وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم کے تحت bikes.punjab.gov.pk پر درخواستیں لائیو ہیں (آخری تاریخ 4 اکتوبر 2026)۔ صوبے کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے طلبہ کے لیے 125,000 ای بائیکس مختص کی گئی ہیں۔ وزیراعلیٰ مریم نواز نے ایڈوانس رقم یا ماہانہ قسط کے علاوہ کسی بھی اضافی چارجز کی تجویز یکسر مسترد کر دی ہے۔ حکومت 90 ہزار روپے سبسڈی، مکمل سود اور انشورنس برداشت کر رہی ہے، جبکہ ڈاؤن پیمنٹ صفر اور ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔"
           />
 
           {/* CONFIRMED OFFICIAL FINANCIAL BREAKDOWN */}
@@ -395,7 +396,7 @@ export default function CmPunjabEBikeSchemePage() {
               <h2>Confirmed Official Pricing: Subsidy, Net Cost &amp; Monthly Installments</h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
-              Earlier internet speculation cited contradictory figures ranging between Rs. 2,100 and Rs. 10,000/month. The Government of Punjab has now finalized and announced the official financial schedule for the 100,000 electric bike distribution:
+              Following the expanded September 2026 directive, the Government of Punjab finalized and announced the official financial schedule for the 125,000+ electric bike distribution:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-sans pt-1">
@@ -428,10 +429,10 @@ export default function CmPunjabEBikeSchemePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 text-xs font-sans">
               <div className="p-3.5 rounded-xl bg-white/70 dark:bg-slate-900/70 border border-emerald-200 dark:border-emerald-800/40">
                 <strong className="text-doc-ink dark:text-white block font-bold text-xs mb-1">
-                  1. Zero Down Payment (PKR 0 Advance)
+                  1. Zero Down Payment (All Upfront Charges Eliminated)
                 </strong>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Chief Minister Maryam Nawaz waived the initial down payment requirement. Students are not required to pay PKR 20,000 to PKR 25,000 in upfront cash.
+                  CM Maryam Nawaz explicitly rejected proposals requiring students to make any upfront payment or pay charges beyond the monthly installment. Students pay PKR 0 advance at collection.
                 </p>
               </div>
 
@@ -615,8 +616,8 @@ export default function CmPunjabEBikeSchemePage() {
                   badgeUr: "طلبہ کے لیے (لائیو)",
                   badgeVariant: "emerald",
                   pointsEn: [
-                    "Open now (5 Sept to 4 Oct 2026) on bikes.punjab.gov.pk.",
-                    "100,000 electric bikes for regular school, college, and university students.",
+                    "Open now (Friday, 4 Sept to 4 Oct 2026) on bikes.punjab.gov.pk.",
+                    "125,000+ electric bikes for regular school, college, and university students.",
                     "Zero down payment (PKR 0 advance) with PKR 90,000 govt capital subsidy.",
                     "PKR 3,028/month over 36 months via Bank of Punjab (BOP) with zero markup.",
                     "Signature pink electric bikes and equal quota for female students.",
@@ -682,19 +683,80 @@ export default function CmPunjabEBikeSchemePage() {
             />
           </section>
 
-          {/* Dedicated Cross-Link for Punjab Government Teachers */}
+          {/* UPCOMING / ANNOUNCED EXPANSION (IN-PRINCIPLE APPROVAL) */}
+          <section className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-indigo-950/20 dark:to-blue-950/20 border-2 border-indigo-200 dark:border-indigo-800/50 shadow-sm space-y-4">
+            <div className="flex items-center gap-2.5 text-indigo-900 dark:text-indigo-300 font-serif font-extrabold text-lg sm:text-xl">
+              <Sparkles className="w-6 h-6 text-indigo-600 dark:text-indigo-400 shrink-0" />
+              <h2>Upcoming Expansion: Future Phases for Govt Employees, Delivery Riders &amp; Public</h2>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-800 dark:text-indigo-300 text-xs font-mono font-bold uppercase tracking-wide">
+              <span>IN-PRINCIPLE APPROVAL GRANTED • UPCOMING ROLLOUT (NOT YET OPEN)</span>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
+              Due to massive public demand following the launch of the student phase, Chief Minister Maryam Nawaz Sharif has granted <strong>in-principle approval</strong> to gradually extend the subsidized electric bike program beyond students in forthcoming provincial phases:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-sans pt-1">
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-800/40 space-y-1.5">
+                <span className="text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider text-[10px] block font-mono">Future Phase 3</span>
+                <strong className="text-doc-ink dark:text-white block font-bold text-sm">Punjab Government Employees</strong>
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Provincial government department staff and civil servants will be offered zero-markup electric motorcycles via monthly salary deductions to trim official fuel overheads.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-800/40 space-y-1.5">
+                <span className="text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider text-[10px] block font-mono">Future Phase 4</span>
+                <strong className="text-doc-ink dark:text-white block font-bold text-sm">Delivery Riders &amp; Gig Workers</strong>
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Registered courier, e-commerce, and food delivery riders across major metropolitan clusters (Lahore, Rawalpindi, Faisalabad) will be allocated dedicated subsidized fleets.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-800/40 space-y-1.5">
+                <span className="text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider text-[10px] block font-mono">Future Phase 5</span>
+                <strong className="text-doc-ink dark:text-white block font-bold text-sm">General Public Phase</strong>
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                  A broader citizen quota is under commercial feasibility with provincial banking partners under the Punjab Green Transport Vision. Portal registration will be announced separately.
+                </p>
+              </div>
+            </div>
+            <div className="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-indigo-200 dark:border-indigo-800/40 text-xs text-slate-600 dark:text-slate-400">
+              <strong className="text-slate-900 dark:text-white">Note for Non-Students:</strong> The active registration portal on <code className="font-mono font-bold text-emerald-600">bikes.punjab.gov.pk</code> (closing October 4, 2026) is strictly reserved for currently enrolled regular students. If you are not a student and need immediate relief on your petrol bike, check the Federal Petrol Relief Scheme below.
+            </div>
+          </section>
+
+          {/* Dedicated Cross-Link for Petrol Relief Scheme */}
           <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-300 dark:border-amber-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm font-sans">
             <div className="space-y-1">
               <span className="text-amber-800 dark:text-amber-300 font-bold uppercase tracking-wider text-[11px] block font-mono">
+                Driving a Petrol Motorcycle Right Now?
+              </span>
+              <p className="text-slate-700 dark:text-slate-300">
+                While awaiting electric bike delivery, claim <strong>Rs. 100 per litre discount</strong> on up to 20 litres/month through the nationwide <strong>Prime Minister&apos;s Petrol Relief Scheme</strong> via SMS code <code className="text-amber-800 dark:text-amber-300 font-bold">9771</code>.
+              </p>
+            </div>
+            <Link
+              href="/bills/petrol-relief-scheme-100-rupees-registration-2026"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shrink-0 shadow-sm transition"
+            >
+              <span>Read Petrol Relief Guide</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          {/* Dedicated Cross-Link for Punjab Government Teachers */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm font-sans">
+            <div className="space-y-1">
+              <span className="text-slate-800 dark:text-slate-300 font-bold uppercase tracking-wider text-[11px] block font-mono">
                 Looking for Punjab School Teachers Scheme?
               </span>
               <p className="text-slate-700 dark:text-slate-300">
-                Government school teachers apply through the separate <strong>Punjab Teachers Foundation (PTF) E-Bike Scheme</strong> on <code className="text-amber-800 dark:text-amber-300 font-bold">ptf.punjab.gov.pk</code> with 30–40% subsidy and interest-free installments.
+                Government school teachers apply through the separate <strong>Punjab Teachers Foundation (PTF) E-Bike Scheme</strong> on <code className="text-slate-800 dark:text-slate-300 font-bold">ptf.punjab.gov.pk</code> with 30–40% subsidy and interest-free installments.
               </p>
             </div>
             <Link
               href="/education/ptf-punjab-teacher-e-bike-scheme-2026"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs shrink-0 shadow-sm transition"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs shrink-0 shadow-sm transition"
             >
               <span>Read Teacher E-Bike Guide</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -843,8 +905,8 @@ export default function CmPunjabEBikeSchemePage() {
               {
                 questionEn: "When do online applications open and what is the last date to apply?",
                 questionUr: "آن لائن درخواستیں کب کھلی ہیں اور اپلائی کرنے کی آخری تاریخ کیا ہے؟",
-                answerEn: "Chief Minister Maryam Nawaz officially announced the opening of online applications on September 5, 2026. The official portal bikes.punjab.gov.pk is accepting applications until the deadline of October 4, 2026.",
-                answerUr: "وزیراعلیٰ مریم نواز کے اعلان کے مطابق آن لائن درخواستیں 5 ستمبر 2026 سے لائیو ہیں اور اپلائی کرنے کی آخری تاریخ 4 اکتوبر 2026 ہے۔",
+                answerEn: "Chief Minister Maryam Nawaz officially announced the opening of online applications on Friday, September 4, 2026. The official portal bikes.punjab.gov.pk is currently live and accepting applications until the deadline of October 4, 2026.",
+                answerUr: "وزیراعلیٰ مریم نواز کے باضابطہ اعلان کے مطابق آن لائن درخواستیں جمعہ 4 ستمبر 2026 سے لائیو ہیں اور اپلائی کرنے کی آخری تاریخ 4 اکتوبر 2026 ہے۔",
               },
               {
                 questionEn: "Are school and college students eligible to apply, or only university students?",
@@ -855,8 +917,8 @@ export default function CmPunjabEBikeSchemePage() {
               {
                 questionEn: "What is the exact price, down payment, and monthly installment for students?",
                 questionUr: "طلبہ کے لیے بائیک کی کل قیمت، ڈاؤن پیمنٹ اور ماہانہ قسط کتنی ہے؟",
-                answerEn: "The total market price of the electric bike is PKR 199,000. The Punjab Government pays a direct subsidy of PKR 90,000, reducing the student's payable principal to PKR 109,000. Initial down payment is PKR 0 (completely waived off). The remaining PKR 109,000 is repaid in 36 monthly installments of approximately PKR 3,028 per month with zero bank markup.",
-                answerUr: "الیکٹرک بائیک کی کل قیمت 199,000 روپے ہے۔ پنجاب حکومت 90,000 روپے کی براہ راست کیش سبسڈی دے رہی ہے، جس کے بعد طالب علم کی اصل واجب الادا رقم 109,000 روپے ہے۔ ڈاؤن پیمنٹ صفر (0 روپے) ہے اور ماہانہ قسط صرف 3,028 روپے (36 ماہ کے لیے) بغیر کسی سود کے ہے۔",
+                answerEn: "The total market price of the electric bike is PKR 199,000. The Punjab Government pays a direct subsidy of PKR 90,000, reducing the student's payable principal to PKR 109,000. CM Maryam Nawaz has completely eliminated the down payment (PKR 0 advance) and rejected any additional charges. The remaining PKR 109,000 is repaid in 36 monthly installments of approximately PKR 3,028 per month with zero bank markup and 100% government-paid insurance.",
+                answerUr: "الیکٹرک بائیک کی کل قیمت 199,000 روپے ہے۔ پنجاب حکومت 90,000 روپے کی براہ راست کیش سبسڈی دے رہی ہے، جس کے بعد طالب علم کی اصل واجب الادا رقم 109,000 روپے ہے۔ وزیراعلیٰ مریم نواز نے ڈاؤن پیمنٹ مکمل معاف (0 روپے) کر دی ہے۔ ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے جبکہ تمام سود اور انشورنس حکومت ادا کرے گی۔",
               },
               {
                 questionEn: "Are pink-colored electric bikes specifically reserved for female students?",
@@ -869,6 +931,12 @@ export default function CmPunjabEBikeSchemePage() {
                 questionUr: "اگر میرے پاس پکا ڈرائیونگ لائسنس نہ ہو تو کیا لرنر پرمٹ پر اپلائی ہو سکتا ہے؟",
                 answerEn: "Yes! A valid motorcycle Learner's Driving Permit issued by Punjab Traffic Police / DLIMS is fully acceptable for application submission. You can obtain an instant online learner permit in 15 minutes at dlims.punjab.gov.pk and enter its tracking number on bikes.punjab.gov.pk.",
                 answerUr: "جی ہاں! پنجاب ٹریفک پولیس کا کمپیوٹرائزڈ لرنر پرمٹ مکمل طور پر قبول کیا جاتا ہے۔ آپ dlims.punjab.gov.pk سے 15 منٹ میں لرنر حاصل کر کے اس کا نمبر بائیک پورٹل پر درج کر سکتے ہیں۔",
+              },
+              {
+                questionEn: "Will the scheme be expanded to government employees and the general public?",
+                questionUr: "کیا یہ سکیم سرکاری ملازمین اور عام شہریوں کے لیے بھی شروع ہوگی؟",
+                answerEn: "Yes. Chief Minister Maryam Nawaz has granted in-principle approval to extend the subsidized electric bike program to Punjab government employees, delivery riders, and the general public in subsequent rollout phases. However, the current active application phase on bikes.punjab.gov.pk is strictly for regular students. Citizens with petrol bikes can currently claim Rs. 100/litre petrol subsidy via SMS 9771.",
+                answerUr: "جی ہاں، وزیراعلیٰ مریم نواز نے سرکاری ملازمین، ڈیلیوری رائیڈرز اور عام شہریوں کے لیے اس سکیم کو آئندہ مراحل میں توسیع دینے کی اصولی منظوری دے دی ہے۔ فی الحال موجودہ مرحلہ صرف طلبہ کے لیے کھلا ہے۔ عام شہری پیٹرول والی بائیک کے لیے 9771 ایس ایم ایس سکیم سے فی لیٹر 100 روپے رعایت لے سکتے ہیں۔",
               },
               {
                 questionEn: "How does the computerized balloting work and how are winners selected?",

@@ -439,7 +439,7 @@ export default function PtfPunjabTeacherEBikePage() {
 
                   <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-1">
                     <span className="font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block font-mono">For Students</span>
-                    <strong className="text-doc-ink dark:text-white block">CM Punjab 100,000 E-Bike Scheme</strong>
+                    <strong className="text-doc-ink dark:text-white block">CM Punjab 125,000+ E-Bike Scheme</strong>
                     <p className="text-slate-600 dark:text-slate-400">
                       Exclusively for school, college, and university students. Zero down payment, PKR 3,028/mo, applied at <span className="font-semibold text-emerald-600 dark:text-emerald-400">bikes.punjab.gov.pk</span>.
                     </p>
@@ -854,7 +854,7 @@ export default function PtfPunjabTeacherEBikePage() {
               >
                 <div>
                   <strong className="text-white block font-bold text-sm group-hover:text-amber-400 transition">
-                    CM Punjab Student E-Bike Scheme (100,000 Bikes)
+                    CM Punjab Student E-Bike Scheme (125,000+ Bikes)
                   </strong>
                   <span className="text-slate-400">Zero down payment, PKR 3,028/mo, bikes.punjab.gov.pk</span>
                 </div>

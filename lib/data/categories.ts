@@ -323,6 +323,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Petrol Relief Scheme 2026",
+        "ur": "پیٹرول ریلیف سکیم 100 روپے سبسڈی 2026",
+        "slug": "/bills/petrol-relief-scheme-100-rupees-registration-2026"
+      },
+      {
         "en": "FESCO Bill Online Check 2026",
         "ur": "فیسکو بل آن لائن چیک 2026",
         "slug": "/bills/fesco-bill-check-online-duplicate-2026"

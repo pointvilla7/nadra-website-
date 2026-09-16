@@ -20282,13 +20282,13 @@ export const ARTICLES: Record<string, Article> = {
     "slug": "cm-punjab-e-bike-scheme-2026-eligibility-apply",
     "fullPath": "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply",
     "categoryId": "education",
-    "titleEn": "CM Punjab E-Bike Scheme 2026: Applications Open, Eligibility & 100,000 Bikes",
-    "titleUr": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026: درخواستیں اوپن، اہلیت اور 1 لاکھ بائیکس کا اعلان",
-    "metaDescriptionEn": "Official verified guide to Chief Minister Punjab E-Bike Scheme 2026: Online apply open at bikes.punjab.gov.pk, 100,000 electric bikes for school, college & university students, zero down payment, PKR 3,028/mo installment plan & pink bikes for girls.",
-    "metaDescriptionUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم bikes.punjab.gov.pk پر درخواستیں لائیو۔ 1 لاکھ الیکٹرک بائیکس، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ قسط کی مکمل مصدقہ گائیڈ۔",
-    "directAnswerEn": "Online applications are OPEN NOW on bikes.punjab.gov.pk (opened 5 September 2026; last date 4 October 2026). The Punjab Government is distributing 100,000 electric bikes across 33,000+ schools, colleges, and universities. Total bike cost is PKR 199,000, with PKR 90,000 government subsidy, PKR 0 down payment, and the remaining PKR 109,000 repaid over 36 months at PKR 3,028/month. A valid driving license or DLIMS learner permit is mandatory.",
-    "directAnswerUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم کے تحت bikes.punjab.gov.pk پر درخواستیں لائیو ہیں (آخری تاریخ 4 اکتوبر 2026)۔ صوبے کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے طلبہ کے لیے 100,000 ای بائیکس مختص ہیں۔ حکومت 90 ہزار روپے سبسڈی اور مکمل مارک اپ فراہم کر رہی ہے، جبکہ ڈاؤن پیمنٹ صفر اور ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔",
-    "lastVerified": "September 9, 2026",
+    "titleEn": "CM Punjab E-Bike Scheme 2026: 125,000+ Bikes, Zero Down Payment & Online Apply",
+    "titleUr": "وزیراعلیٰ پنجاب ای بائیک سکیم 2026: 125,000 بائیکس، ڈاؤن پیمنٹ ختم اور آن لائن اپلائی",
+    "metaDescriptionEn": "Official verified guide to Chief Minister Punjab E-Bike Scheme 2026: Online apply open at bikes.punjab.gov.pk, 125,000+ electric bikes for school, college & university students, zero down payment (eliminated by CM Maryam Nawaz), PKR 3,028/mo installment plan & pink bikes for girls.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم bikes.punjab.gov.pk پر درخواستیں لائیو۔ 125,000 بائیکس، ڈاؤن پیمنٹ مکمل ختم اور 3,028 روپے ماہانہ قسط کی مصدقہ گائیڈ۔",
+    "directAnswerEn": "Online applications are OPEN NOW on bikes.punjab.gov.pk (opened Friday, 4 September 2026; last date 4 October 2026). The Punjab Government has expanded the distribution to 125,000+ electric bikes across 33,000+ schools, colleges, and universities. CM Maryam Nawaz explicitly rejected proposals requiring students to make any upfront payment or charges beyond monthly installments. Total bike cost is PKR 199,000, with PKR 90,000 government subsidy, PKR 0 down payment, and the remaining PKR 109,000 repaid over 36 months at PKR 3,028/month. The government covers 100% of interest, markup, and insurance. A valid driving license or DLIMS learner permit is mandatory.",
+    "directAnswerUr": "وزیراعلیٰ پنجاب الیکٹرک بائیک سکیم کے تحت bikes.punjab.gov.pk پر درخواستیں لائیو ہیں (آخری تاریخ 4 اکتوبر 2026)۔ صوبے کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے طلبہ کے لیے 125,000 ای بائیکس مختص ہیں۔ وزیراعلیٰ مریم نواز نے ایڈوانس ڈاؤن پیمنٹ اور اضافی چارجز یکسر مسترد کر دیے ہیں۔ حکومت 90 ہزار روپے سبسڈی اور مکمل سود ادا کر رہی ہے، جبکہ ڈاؤن پیمنٹ صفر اور ماہانہ قسط صرف 3,028 روپے (36 ماہ) ہے۔ ڈرائیونگ لائسنس یا لرنر پرمٹ لازمی ہے۔",
+    "lastVerified": "September 16, 2026",
     "officialSource": {
       "name": "Punjab E-Bike Portal (PITB)",
       "url": "https://bikes.punjab.gov.pk/"
@@ -20329,9 +20329,9 @@ export const ARTICLES: Record<string, Article> = {
       {
         "serviceEn": "Initial Down Payment / Advance",
         "serviceUr": "ابتدائی ڈاؤن پیمنٹ / ایڈوانس",
-        "normal": "PKR 0 (Completely Waived)",
+        "normal": "PKR 0 (Completely Eliminated)",
         "urgent": "Zero Advance",
-        "executive": "Approved by CM Punjab"
+        "executive": "Approved by CM Maryam Nawaz"
       },
       {
         "serviceEn": "Monthly Installment (36 Months Plan)",
@@ -20367,8 +20367,8 @@ export const ARTICLES: Record<string, Article> = {
         "stepNumber": 3,
         "titleEn": "Select Electric Bike & Color (Pink for Girls)",
         "titleUr": "الیکٹرک بائیک اور کلر کا انتخاب",
-        "detailEn": "Select electric motorcycle (female applicants can choose dedicated pink variant) and submit the form for free.",
-        "detailUr": "الیکٹرک بائیک کا انتخاب کریں (طالبات کے لیے گلابی ویرینٹ دستیاب ہے) اور مفت فارم جمع کرائیں۔"
+        "detailEn": "Select electric motorcycle (female applicants can choose dedicated pink variant) and submit the form for free with zero down payment.",
+        "detailUr": "الیکٹرک بائیک کا انتخاب کریں (طالبات کے لیے گلابی ویرینٹ دستیاب ہے) اور صفر ڈاؤن پیمنٹ پر مفت فارم جمع کرائیں۔"
       }
     ],
     "faqs": [
@@ -20385,9 +20385,10 @@ export const ARTICLES: Record<string, Article> = {
         "answerUr": "جی ہاں! پنجاب کے 33,000 سے زائد سکولوں، کالجوں اور یونیورسٹیوں کے باقاعدہ طلبہ اپلائی کر سکتے ہیں۔"
       }
     ],
-    "contentEn": "Authoritative guide to applying for CM Punjab 100,000 student electric bikes with zero down payment and PKR 3,028 monthly installments.",
-    "contentUr": "وزیراعلیٰ پنجاب ایک لاکھ سٹوڈنٹ الیکٹرک بائیک سکیم، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ اقساط کی مصدقہ رہنمائی۔",
+    "contentEn": "Authoritative guide to applying for CM Punjab 125,000+ student electric bikes with zero down payment (eliminated by CM Maryam Nawaz) and PKR 3,028 monthly installments.",
+    "contentUr": "وزیراعلیٰ پنجاب 125,000 سٹوڈنٹ الیکٹرک بائیک سکیم، صفر ڈاؤن پیمنٹ اور 3,028 روپے ماہانہ اقساط کی مصدقہ رہنمائی۔",
     "relatedSlugs": [
+      "/bills/petrol-relief-scheme-100-rupees-registration-2026",
       "/education/ptf-punjab-teacher-e-bike-scheme-2026",
       "/education/pm-laptop-scheme-2026-eligibility-status-check",
       "/traffic/driving-license-online-apply-renewal-dlims-2026",
@@ -20878,6 +20879,94 @@ export const ARTICLES: Record<string, Article> = {
       "/tax/how-to-become-tax-filer-pakistan-2026",
       "/tax/income-tax-on-salary-slabs-calculator-pakistan-2026",
       "/tax/income-tax-return-filing-guide"
+    ]
+  },
+  "petrol-relief-scheme-100-rupees-registration-2026": {
+    "slug": "petrol-relief-scheme-100-rupees-registration-2026",
+    "fullPath": "/bills/petrol-relief-scheme-100-rupees-registration-2026",
+    "categoryId": "bills",
+    "titleEn": "Petrol Relief Scheme 2026: Rs. 100/Litre Subsidy, 9771 Registration & Quotas",
+    "titleUr": "پیٹرول ریلیف سکیم 2026: 100 روپے فی لیٹر سبسڈی، 9771 ایس ایم ایس رجسٹریشن اور کوٹہ",
+    "metaDescriptionEn": "Complete official guide to Prime Minister Petrol Relief Scheme 2026: Rs. 100/litre subsidy on petrol for motorcycles, rickshaws, and cars up to 800cc. Check 9771 SMS registration syntax, monthly quotas (20L vs 30L), rollout dates, and pump token redemption.",
+    "metaDescriptionUr": "حکومت پاکستان کی پیٹرول ریلیف سکیم 2026: موٹر سائیکلز اور 800 سی سی گاڑیوں کے لیے فی لیٹر 100 روپے رعایت، 9771 ایس ایم ایس رجسٹریشن اور ماہانہ کوٹہ کی مکمل گائیڈ۔",
+    "directAnswerEn": "The Government of Pakistan provides a direct subsidy of Rs. 100 per litre on petrol. Motorcycles and rickshaws receive up to 20 litres/month (max Rs. 2,000 relief); small cars up to 800cc receive up to 30 litres/month (max Rs. 3,000 relief). Cars above 800cc are excluded. To register, send an SMS to 9771 in the format: REG [CNIC] [Vehicle Number] [Province Code] [Registration Date DDMMYYYY] from a SIM registered in your own name. Before visiting a pump, text TOK to 9771 to generate your redemption token.",
+    "directAnswerUr": "حکومت پاکستان کی پیٹرول ریلیف سکیم کے تحت پیٹرول پر فی لیٹر 100 روپے کی براہ راست رعایت دی جا رہی ہے۔ موٹر سائیکل اور رکشہ کو ماہانہ 20 لیٹر (زیادہ سے زیادہ 2,000 روپے ریلیف) اور 800 سی سی تک چھوٹی گاڑیوں کو ماہانہ 30 لیٹر (زیادہ سے زیادہ 3,000 روپے ریلیف) دیا جائے گا۔ 800 سی سی سے بڑی گاڑیاں اس میں شامل نہیں۔ رجسٹریشن کے لیے اپنے نام کی سم سے 9771 پر میسج بھیجیں: REG [شناختی کارڈ] [گاڑی نمبر] [صوبائی کوڈ] [رجسٹریشن تاریخ]۔ پمپ جانے سے قبل 9771 پر TOK لکھ کر ٹوکن حاصل کریں۔",
+    "lastVerified": "September 16, 2026",
+    "officialSource": {
+      "name": "Ministry of Energy (Petroleum Division) / 9771 SMS Gateway",
+      "url": "https://www.pakistaninfohub.com/bills/petrol-relief-scheme-100-rupees-registration-2026"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Energy & Subsidies Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Motorcycles & Rickshaws (2 & 3 Wheelers)",
+        "serviceUr": "موٹرسائیکلز اور رکشہ (2 و 3 ویلرز)",
+        "normal": "20 Litres / month",
+        "urgent": "Rs. 100 / Litre Subsidy",
+        "executive": "Max Rs. 2,000 Monthly Relief"
+      },
+      {
+        "serviceEn": "Small Cars (Up to 800cc Engine)",
+        "serviceUr": "چھوٹی گاڑیاں (800 سی سی تک)",
+        "normal": "30 Litres / month",
+        "urgent": "Rs. 100 / Litre Subsidy",
+        "executive": "Max Rs. 3,000 Monthly Relief"
+      },
+      {
+        "serviceEn": "Vehicles Above 800cc (1000cc+)",
+        "serviceUr": "800 سی سی سے بڑی گاڑیاں",
+        "normal": "0 Litres (Ineligible)",
+        "urgent": "No Subsidy Available",
+        "executive": "Standard Retail Price"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Ensure SIM and Vehicle in Your Own Name",
+        "titleUr": "سم اور گاڑی کی ملکیت کی تصدیق",
+        "detailEn": "SIM card and provincial excise vehicle registration must strictly match your own CNIC.",
+        "detailUr": "سم کارڈ اور گاڑی کا ایکسائز ریکارڈ آپ کے اپنے شناختی کارڈ پر ہونا ضروری ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Send Registration SMS to 9771",
+        "titleUr": "9771 پر رجسٹریشن میسج بھیجیں",
+        "detailEn": "Text: REG [CNIC] [Vehicle Number] [Province Code] [Registration Date DDMMYYYY] to 9771.",
+        "detailUr": "میسج بھیجیں: REG [شناختی کارڈ بغیر ڈیش] [گاڑی نمبر] [صوبائی کوڈ] [رجسٹریشن تاریخ] 9771 پر۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Request Fuel Token via TOK to 9771",
+        "titleUr": "9771 پر TOK لکھ کر فیول ٹوکن حاصل کریں",
+        "detailEn": "Before visiting petrol station, text TOK to 9771 and present the digital code at pump POS.",
+        "detailUr": "پیٹرول پمپ جانے سے قبل 9771 پر TOK بھیج کر ڈیجیٹل ٹوکن کوڈ حاصل کریں اور پمپ پر دکھائیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Are 1000cc cars eligible for the Rs. 100 petrol relief?",
+        "questionUr": "کیا 1000 سی سی گاڑیاں پیٹرول ریلیف کی اہل ہیں؟",
+        "answerEn": "No. The subsidy is strictly capped at engines up to 800cc (e.g. Mehran, Alto 660cc, Cuore, Pearl). Cars above 800cc are excluded.",
+        "answerUr": "نہیں، یہ ریلیف صرف 800 سی سی تک چھوٹی گاڑیوں کے لیے ہے، 1000 سی سی گاڑیاں اہل نہیں ہیں۔"
+      },
+      {
+        "questionEn": "When does the scheme start nationwide?",
+        "questionUr": "یہ سکیم ملک بھر میں کب سے شروع ہو رہی ہے؟",
+        "answerEn": "Islamabad launched midnight Sept 14–15, 2026; nationwide rollout begins 11:59 PM Sept 16, 2026.",
+        "answerUr": "اسلام آباد میں 14 اور 15 ستمبر، جبکہ ملک بھر میں 16 ستمبر 2026 کی رات 11:59 بجے سے لاگو ہے۔"
+      }
+    ],
+    "contentEn": "Complete official guide to Prime Minister Petrol Relief Scheme 2026: Rs. 100/litre subsidy on petrol for motorcycles, rickshaws, and cars up to 800cc via 9771 SMS registration.",
+    "contentUr": "وزیراعظم پیٹرول ریلیف سکیم 2026: موٹرسائیکلز، رکشوں اور 800 سی سی گاڑیوں کے لیے فی لیٹر 100 روپے سبسڈی اور 9771 رجسٹریشن کی مصدقہ رہنمائی۔",
+    "relatedSlugs": [
+      "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply",
+      "/traffic/punjab-excise-vehicle-verification-2026",
+      "/traffic/driving-license-status-check-online-2026",
+      "/bills/utility-bill-checker-2026"
     ]
   }
 };
