@@ -20968,5 +20968,183 @@ export const ARTICLES: Record<string, Article> = {
       "/traffic/driving-license-status-check-online-2026",
       "/bills/utility-bill-checker-2026"
     ]
+  },
+  "asaan-karobar-card-punjab-apply-2026": {
+    "slug": "asaan-karobar-card-punjab-apply-2026",
+    "fullPath": "/business/asaan-karobar-card-punjab-apply-2026",
+    "categoryId": "business",
+    "titleEn": "Asaan Karobar Card Punjab 2026: Apply Online at akc.punjab.gov.pk, Eligibility & 10 Lakh Limit",
+    "titleUr": "آسان کاروبار کارڈ پنجاب 2026: آن لائن اپلائی، اہلیت اور 10 لاکھ بلا سود کریڈٹ",
+    "metaDescriptionEn": "Complete official guide to Chief Minister Punjab Asaan Karobar Card 2026: Online apply at akc.punjab.gov.pk, up to PKR 10 Lakh (1 Million) interest-free revolving credit, Bank of Punjab (BOP) review, mandatory FBR tax filer rule, PKR 500 PSID fee & PITB scam warning.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب آسان کاروبار کارڈ 2026: پورٹل akc.punjab.gov.pk پر آن لائن اپلائی، 10 لاکھ روپے بلا سود ریوالونگ فنانسنگ، ٹیکس فائلر کی لازمی شرط اور 500 روپے فیس کی مصدقہ گائیڈ۔",
+    "directAnswerEn": "The Asaan Karobar Card is a digital SME revolving credit card by the Government of Punjab and Bank of Punjab (BOP), providing up to PKR 1,000,000 (10 Lakh) in interest-free business financing over a 3-year tenure with a 3-month initial grace period. Applications are submitted online exclusively at akc.punjab.gov.pk with a PKR 500 fee paid via official 17-digit PSID. Applicants must be Punjab residents aged 21–57, operate a business in Punjab, and be active tax filers on FBR’s ATL (or commit to FBR registration). Up to 25% cash withdrawal is permitted after 6 months; 75% is restricted to digital/POS business payments.",
+    "directAnswerUr": "آسان کاروبار کارڈ حکومت پنجاب اور بینک آف پنجاب (BOP) کا مشترکہ منصوبہ ہے جس کے تحت چھوٹے دکانداروں اور تاجروں کو 3 سال کی مدت کے لیے 10 لاکھ روپے تک بلا سود ریوالونگ کریڈٹ فراہم کیا جاتا ہے۔ آن لائن درخواستیں صرف آفیشل پورٹل akc.punjab.gov.pk پر جمع ہوتی ہیں اور 500 روپے فیس صرف 17 ہندسی PSID کے ذریعے ادا کی جاتی ہے۔ عمر کی حد 21 تا 57 سال، پنجاب کا شناختی کارڈ اور ایف بی آر میں فائلر ہونا لازمی ہے۔ 6 ماہ بعد 25 فیصد تک کیش نکلوانے کی اجازت ہے جبکہ 75 فیصد رقم صرف ڈیجیٹل خریداری اور بلوں کے لیے مخصوص ہے۔",
+    "lastVerified": "September 16, 2026",
+    "officialSource": {
+      "name": "Punjab Asaan Karobar Portal (PITB / BOP)",
+      "url": "https://akc.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public SME & Corporate Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Application Processing Fee",
+        "serviceUr": "درخواست پروسیسنگ فیس",
+        "normal": "PKR 500 (Non-refundable)",
+        "urgent": "Payable via 17-digit PSID",
+        "executive": "No Agent Cash / ePay Punjab"
+      },
+      {
+        "serviceEn": "Revolving Credit Limit",
+        "serviceUr": "ریوالونگ کریڈٹ لمٹ",
+        "normal": "Up to PKR 1,000,000 (10 Lakh)",
+        "urgent": "0% Markup (Interest-Free)",
+        "executive": "3-Year Revolving Tenure"
+      },
+      {
+        "serviceEn": "Cash Withdrawal Limit",
+        "serviceUr": "کیش نکلوانے کی حد",
+        "normal": "Up to 25% of Limit",
+        "urgent": "Unlocked After 6 Months",
+        "executive": "75% POS/Digital Purchases"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "FBR Filer & Business Check",
+        "titleUr": "ٹیکس فائلر اور اہلیت کی تصدیق",
+        "detailEn": "Ensure active NTN on FBR ATL, age 21–57, and valid business setup in Punjab.",
+        "detailUr": "ایف بی آر میں ایکٹو فائلر ہونے اور پنجاب میں دکان یا کاروبار کی تصدیق کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Register on akc.punjab.gov.pk",
+        "titleUr": "آفیشل پورٹل پر رجسٹریشن",
+        "detailEn": "Submit profile and upload CNIC, utility bill, and business proof.",
+        "detailUr": "پورٹل پر اکاؤنٹ بنا کر دستاویزات اور دکان کی تصاویر اپلوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay PKR 500 via PSID & Collect Card",
+        "titleUr": "پی ایس آئی ڈی سے فیس اور کارڈ کی وصولی",
+        "detailEn": "Pay PKR 500 fee via generated PSID. After BOP review, sign agreement at branch to collect card.",
+        "detailUr": "17 ہندسی PSID کے ذریعے 500 روپے فیس ادا کریں۔ بینک تصدیق کے بعد برانچ سے کارڈ وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is being an FBR tax filer mandatory for Asaan Karobar Card?",
+        "questionUr": "کیا آسان کاروبار کارڈ کے لیے ٹیکس فائلر ہونا لازمی ہے؟",
+        "answerEn": "Yes. Applicants must be active tax filers on FBR's ATL or commit to complete tax registration within 6 months of card issuance.",
+        "answerUr": "جی ہاں! ایف بی آر کی ایکٹو ٹیکس پیئر لسٹ میں نام ہونا یا 6 ماہ کے اندر رجسٹریشن مکمل کرنا لازمی ہے۔"
+      },
+      {
+        "questionEn": "What is the official application portal for Asaan Karobar Card?",
+        "questionUr": "آسان کاروبار کارڈ کا آفیشل پورٹل کون سا ہے؟",
+        "answerEn": "The only genuine government portal is akc.punjab.gov.pk. Beware of compromised third-party sites ending in .com or .pk with casino spam.",
+        "answerUr": "واحد مستند سرکاری پورٹل akc.punjab.gov.pk ہے۔ غیر مصدقہ یا ہیک شدہ ڈاٹ کام ویب سائٹس سے ہوشیار رہیں۔"
+      }
+    ],
+    "contentEn": "Authoritative guide to CM Punjab Asaan Karobar Card 2026: Up to PKR 10 Lakh interest-free revolving credit for SMEs on akc.punjab.gov.pk with mandatory FBR tax filer compliance.",
+    "contentUr": "وزیراعلیٰ پنجاب آسان کاروبار کارڈ 2026: چھوٹے دکانداروں اور تاجروں کے لیے 10 لاکھ روپے تک بلا سود ریوالونگ فنانسنگ، ٹیکس فائلر شرائط اور پورٹل akc.punjab.gov.pk کی مصدقہ رہنمائی۔",
+    "relatedSlugs": [
+      "/tax/fbr-filer-status-check-cnic",
+      "/tax/how-to-become-tax-filer-pakistan-2026",
+      "/business/secp-company-registration-online-2026",
+      "/loans/cm-punjab-kisan-card-apply-2026",
+      "/loans/how-to-spot-fake-loan-scheme-scams-2026"
+    ]
+  },
+  "cm-punjab-kisan-card-apply-2026": {
+    "slug": "cm-punjab-kisan-card-apply-2026",
+    "fullPath": "/loans/cm-punjab-kisan-card-apply-2026",
+    "categoryId": "loans",
+    "titleEn": "CM Punjab Kisan Card 2026: 8070 SMS Apply, Eligibility & Rs. 150,000 Loan",
+    "titleUr": "وزیراعلیٰ پنجاب کسان کارڈ 2026: 8070 ایس ایم ایس، اہلیت اور 150,000 روپے بلا سود قرضہ",
+    "metaDescriptionEn": "Complete official guide to Chief Minister Punjab Kisan Card 2026: Apply via 8070 SMS (PKC format), official portal agripunjab.gov.pk, Rs. 150,000 interest-free loan for fertilizer and seeds, 1 to 12.5 acres eligibility, BOP biometric collection & PITB scam alert.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب کسان کارڈ 2026: 8070 ایس ایم ایس پر رجسٹریشن، کھاد اور بیج کے لیے 150,000 روپے بلا سود قرضہ، 1 تا ساڑھے 12 ایکڑ اراضی کی اہلیت اور بائیو میٹرک وصولی کی مصدقہ گائیڈ۔",
+    "directAnswerEn": "The CM Punjab Kisan Card provides small and medium farmers owning 1 to 12.5 acres of agricultural land with interest-free production loans of Rs. 30,000 per acre (up to Rs. 150,000 per crop season for up to 5 acres). Managed jointly with the Bank of Punjab (BOP), the card enables digital subsidized purchases of DAP, Urea, certified seeds, and pesticides. To apply, text PKC [Space] [CNIC without dashes] to 8070 from a SIM registered in your own name. After automated PLRA land verification, collect your card with biometric verification at designated BOP branches.",
+    "directAnswerUr": "وزیراعلیٰ پنجاب کسان کارڈ 1 سے ساڑھے 12 ایکڑ اراضی کے مالک کسانوں کو فی ایکڑ 30,000 روپے (زیادہ سے زیادہ 150,000 روپے فی فصل) بلا سود زرعی قرضہ فراہم کرتا ہے۔ یہ منصوبہ بینک آف پنجاب کے تعاون سے ڈی اے پی، یوریا، بیج اور زرعی ادویات کی خریداری کے لیے ہے۔ اپلائی کرنے کے لیے اپنی سم سے 8070 پر میسج بھیجیں: PKC [سپیس] [شناختی کارڈ بغیر ڈیش]۔ پی ایل آر اے لینڈ ریکارڈ کی تصدیق کے بعد بینک آف پنجاب سے بائیو میٹرک کے ذریعے کارڈ جاری ہوتا ہے۔",
+    "lastVerified": "September 16, 2026",
+    "officialSource": {
+      "name": "Agriculture Department Punjab (8070 SMS / BOP)",
+      "url": "https://agripunjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Public Agriculture & Rural Finance Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Application Fee via SMS 8070",
+        "serviceUr": "8070 ایس ایم ایس رجسٹریشن فیس",
+        "normal": "PKR 0 (Free of Charge)",
+        "urgent": "Standard Telco SMS Rate Only",
+        "executive": "No Agent Commission"
+      },
+      {
+        "serviceEn": "Agricultural Financing per Acre",
+        "serviceUr": "فی ایکڑ زرعی قرض",
+        "normal": "Rs. 30,000 per Acre",
+        "urgent": "0% Markup (Interest-Free)",
+        "executive": "For Fertilizer & Seeds"
+      },
+      {
+        "serviceEn": "Maximum Loan per Crop Season",
+        "serviceUr": "زیادہ سے زیادہ قرض فی فصل",
+        "normal": "Up to Rs. 150,000 (5 Acres)",
+        "urgent": "6-Month Crop Tenure",
+        "executive": "Post-Harvest Repayment"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Confirm PLRA Land Records",
+        "titleUr": "اراضی ریکارڈ کی تصدیق",
+        "detailEn": "Ensure 1 to 12.5 acres of agricultural land is computerised under your CNIC in PLRA records.",
+        "detailUr": "پنجاب لینڈ ریکارڈ اتھارٹی میں 1 تا ساڑھے 12 ایکڑ زمین اپنے شناختی کارڈ پر ہونے کی تصدیق کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Text 8070: PKC [CNIC]",
+        "titleUr": "8070 پر میسج بھیجیں",
+        "detailEn": "From your own SIM, text PKC [Space] [CNIC without dashes] to 8070.",
+        "detailUr": "اپنی سم سے 8070 پر PKC لکھ کر شناختی کارڈ نمبر ارسال کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Biometric Collection at BOP",
+        "titleUr": "بینک آف پنجاب سے کارڈ کی وصولی",
+        "detailEn": "Upon receiving approval SMS, visit assigned BOP branch with original CNIC for biometric card pickup.",
+        "detailUr": "منظوری کا میسج ملنے پر اصل شناختی کارڈ کے ساتھ نامزد بینک آف پنجاب سے کارڈ وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the SMS code to apply for Kisan Card?",
+        "questionUr": "کسان کارڈ کے لیے ایس ایم ایس کوڈ کیا ہے؟",
+        "answerEn": "Send PKC [Space] [13-digit CNIC without dashes] to 8070 from a SIM registered in your own name.",
+        "answerUr": "اپنے نام کی رجسٹرڈ سم سے 8070 پر PKC لکھ کر شناختی کارڈ نمبر بھیجیں۔"
+      },
+      {
+        "questionEn": "Is Kisan Card different from Asaan Karobar Card?",
+        "questionUr": "کیا کسان کارڈ اور آسان کاروبار کارڈ مختلف ہیں؟",
+        "answerEn": "Yes! Kisan Card is strictly for farmers owning 1 to 12.5 acres for crop inputs (Rs. 1.5 Lakh), whereas Asaan Karobar Card is for urban/rural retail shopkeepers and SMEs (up to Rs. 10 Lakh).",
+        "answerUr": "جی ہاں! کسان کارڈ کاشتکاروں کے لیے کھاد و بیج کے لیے ہے، جبکہ آسان کاروبار کارڈ دکانداروں اور تاجروں کے لیے 10 لاکھ روپے تک کا کمرشل کارڈ ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to CM Punjab Kisan Card 2026: Rs. 150,000 interest-free agriculture loans via 8070 SMS, 1 to 12.5 acres PLRA land eligibility, and Bank of Punjab collection.",
+    "contentUr": "وزیراعلیٰ پنجاب کسان کارڈ 2026: 8070 ایس ایم ایس کے ذریعے درخواست، ساڑھے 12 ایکڑ تک اراضی کی اہلیت اور 150,000 روپے بلا سود کھاد و بیج قرضے کی مکمل مصدقہ رہنمائی۔",
+    "relatedSlugs": [
+      "/business/asaan-karobar-card-punjab-apply-2026",
+      "/agriculture/cm-punjab-kissan-card-registration-eligibility-2026",
+      "/loans/punjab-green-tractor-scheme-2026",
+      "/property/punjab-land-record-fard-verifier-2026",
+      "/loans/how-to-spot-fake-loan-scheme-scams-2026"
+    ]
   }
 };

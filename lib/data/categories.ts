@@ -485,6 +485,16 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "CM Punjab Kisan Card 2026",
+        "ur": "وزیراعلیٰ پنجاب کسان کارڈ 2026",
+        "slug": "/loans/cm-punjab-kisan-card-apply-2026"
+      },
+      {
+        "en": "Asaan Karobar Card (10 Lakh)",
+        "ur": "آسان کاروبار کارڈ (10 لاکھ بلا سود)",
+        "slug": "/business/asaan-karobar-card-punjab-apply-2026"
+      },
+      {
         "en": "PM Youth Loan Status 2026",
         "ur": "پی ایم یوتھ لون تازہ ترین سٹیٹس",
         "slug": "/loans/kamyab-jawan-pm-youth-loan-current-status-2026"
@@ -926,6 +936,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "Asaan Karobar Card 2026",
+        "ur": "آسان کاروبار کارڈ 2026",
+        "slug": "/business/asaan-karobar-card-punjab-apply-2026"
+      },
       {
         "en": "PSEB Freelancer Registration 2026",
         "ur": "پی ایس ای بی فری لانسر رجسٹریشن",
