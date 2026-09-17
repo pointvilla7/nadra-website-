@@ -336,7 +336,7 @@ export default function PmtScoreExplainedPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Welfare &amp; Verification Tools
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             <Link
               href="/welfare/bisp-payment-check"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
@@ -346,6 +346,17 @@ export default function PmtScoreExplainedPage() {
                 BISP Payment Check Online →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Check 8171 stipend payment status by CNIC.</p>
+            </Link>
+
+            <Link
+              href="/health/himmat-card-punjab-disabled-persons-apply-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">PMT &le; 45 Program</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Punjab Himmat Card 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Rs. 10,500 quarterly stipend for PWDs under PMT 45.</p>
             </Link>
 
             <Link

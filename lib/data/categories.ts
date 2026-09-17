@@ -1115,6 +1115,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/health/disability-certificate-special-cnic-apply-2026"
       },
       {
+        "en": "Himmat Card Punjab 2026",
+        "ur": "ہمت کارڈ پنجاب 2026",
+        "slug": "/health/himmat-card-punjab-disabled-persons-apply-2026"
+      },
+      {
         "en": "Sehat Card Province Status 2026",
         "ur": "صحت کارڈ صوبائی سٹیٹس 2026",
         "slug": "/health/sehat-card-active-status-by-province-2026"

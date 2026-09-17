@@ -341,7 +341,7 @@ export default function BispSubProgramsExplainedPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Social Welfare &amp; Relief Tools on Pakistan Info Hub
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <Link
               href="/welfare/benazir-taleemi-wazaif-check-online-registration-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
@@ -365,6 +365,17 @@ export default function BispSubProgramsExplainedPage() {
             </Link>
 
             <Link
+              href="/health/himmat-card-punjab-disabled-persons-apply-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Disability Relief</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Punjab Himmat Card 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Rs. 10,500 quarterly stipend for PWDs with PMT &le; 45.</p>
+            </Link>
+
+            <Link
               href="/welfare/pmt-score-explained-bisp-eligibility-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
             >
@@ -384,6 +395,17 @@ export default function BispSubProgramsExplainedPage() {
                 Sehat Card Eligibility Checker →
               </h3>
               <p className="text-xs text-slate-500 mt-1">Free hospital treatment eligibility by CNIC.</p>
+            </Link>
+
+            <Link
+              href="/health/disability-certificate-special-cnic-apply-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-doc-brass font-bold uppercase block">Special CNIC</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Disability Certificate &amp; Special CNIC →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Medical boards, NADRA 1777 doorstep service &amp; benefits.</p>
             </Link>
           </div>
         </section>

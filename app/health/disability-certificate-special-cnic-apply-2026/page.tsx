@@ -420,6 +420,26 @@ export default function DisabilityCertificateSpecialCnicPage() {
           ]}
         />
 
+        {/* Next Step: Punjab Himmat Card Banner */}
+        <section className="p-5 rounded-2xl bg-gradient-to-r from-doc-paper via-amber-50/50 to-doc-paper dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 border border-doc-brass/40 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <span className="text-xs font-bold text-doc-seal dark:text-amber-400 uppercase tracking-wider">NEXT CIVIC STEP IN PUNJAB</span>
+            <h3 className="font-serif font-bold text-base sm:text-lg text-doc-ink dark:text-white">
+              Already Have Your Disability Certificate? Apply for the CM Punjab Himmat Card
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Receive Rs. 10,500 quarterly financial assistance (Rs. 3,500/mo equivalent) via Bank of Punjab ATM chip card.
+            </p>
+          </div>
+          <Link
+            href="/health/himmat-card-punjab-disabled-persons-apply-2026"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-doc-ink text-white dark:bg-amber-400 dark:text-slate-900 text-xs sm:text-sm font-bold shadow hover:opacity-90 shrink-0 transition"
+          >
+            <span>Himmat Card Guide</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </section>
+
         {/* Source Citations */}
         <section className="text-xs text-slate-500 dark:text-slate-500 font-sans space-y-1 border-t border-slate-200 dark:border-slate-800 pt-6">
           <p className="font-bold text-slate-700 dark:text-slate-400">Official Sources Cited:</p>

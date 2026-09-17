@@ -21146,5 +21146,107 @@ export const ARTICLES: Record<string, Article> = {
       "/property/punjab-land-record-fard-verifier-2026",
       "/loans/how-to-spot-fake-loan-scheme-scams-2026"
     ]
+  },
+  "himmat-card-punjab-disabled-persons-apply-2026": {
+    "slug": "himmat-card-punjab-disabled-persons-apply-2026",
+    "fullPath": "/health/himmat-card-punjab-disabled-persons-apply-2026",
+    "categoryId": "health",
+    "titleEn": "CM Punjab Himmat Card 2026: Rs. 10,500 Quarterly Stipend, Eligibility & BOP ATM Apply",
+    "titleUr": "وزیراعلیٰ پنجاب ہمت کارڈ 2026: 10,500 روپے سہ ماہی وظیفہ، اہلیت اور بینک آف پنجاب کارڈ",
+    "metaDescriptionEn": "Official 2026 guide for CM Punjab Himmat Card for persons with disabilities (PWDs). Verified Rs. 10,500 quarterly stipend (Rs. 3,500/mo equivalent), PMT score <= 45, DPMIS check, and BOP ATM pickup.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب ہمت کارڈ 2026: 10,500 روپے سہ ماہی وظیفہ، غربت اسکور PMT 45 یا کم، ڈی پی ایم آئی ایس اندراج اور بینک آف پنجاب اے ٹی ایم کارڈ کی مکمل تفصیلات۔",
+    "directAnswerEn": "The Punjab Himmat Card provides an official government stipend of Rs. 10,500 disbursed QUARTERLY (every three months — equal to Rs. 3,500/month) via a customized Bank of Punjab (BOP) ATM card to eligible persons with disabilities (PWDs) certified as 'not fit to work' with a BISP PMT score of 45 or below. Registration is 100% free.",
+    "directAnswerUr": "وزیراعلیٰ پنجاب ہمت کارڈ کے تحت معذور افراد کو بینک آف پنجاب کے ذریعے ہر تین ماہ بعد 10,500 روپے سہ ماہی وظیفہ (ماہانہ 3,500 روپے) دیا جاتا ہے۔ اس کے لیے پنجاب ڈومیسائل، میڈیکل بورڈ سرٹیفکیٹ اور PMT اسکور 45 یا اس سے کم ہونا لازمی ہے۔",
+    "lastVerified": "2026-09-17",
+    "officialSource": {
+      "name": "Punjab Council for the Rights of Persons with Disabilities (CRPD)",
+      "url": "https://crpd.punjab.gov.pk"
+    },
+    "author": {
+      "name": "Social Welfare & Citizen Rights Desk",
+      "role": "Provincial Welfare Research Specialist"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Quarterly Cash Stipend",
+        "serviceUr": "سہ ماہی نقد وظیفہ",
+        "normal": "Rs. 10,500 / Quarter",
+        "urgent": "Every 3 Months",
+        "executive": "Equal to Rs. 3,500/Month"
+      },
+      {
+        "serviceEn": "Bank of Punjab ATM Card Issuance",
+        "serviceUr": "بینک آف پنجاب کارڈ فیس",
+        "normal": "PKR 0 (100% Free)",
+        "urgent": "No Hidden Deductions",
+        "executive": "Zero ATM Charges at BOP"
+      },
+      {
+        "serviceEn": "Registration & DPMIS Scrutiny",
+        "serviceUr": "رجسٹریشن و جانچ فیس",
+        "normal": "PKR 0 (Free of Cost)",
+        "urgent": "Beware of Fake Agents",
+        "executive": "Report Fraud to 1312"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Obtain DHQ Medical Board Certificate",
+        "titleUr": "ڈی ایچ کیو میڈیکل بورڈ سرٹیفکیٹ",
+        "detailEn": "Appear before the District Assessment Board at DHQ Hospital to obtain a certified disability document categorized as 'not fit to work'.",
+        "detailUr": "ڈی ایچ کیو ہسپتال میں ڈسٹرکٹ اسیسمنٹ بورڈ سے معذوری سرٹیفکیٹ حاصل کریں جس میں روزگار کے لیے نااہل درج ہو۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "DPMIS System Enrollment",
+        "titleUr": "ڈی پی ایم آئی ایس سسٹم میں اندراج",
+        "detailEn": "Verify your active profile in the Disabled Persons Management Information System at your local Social Welfare Office.",
+        "detailUr": "سوشل ویلفیئر دفتر سے DPMIS ڈیٹا بیس میں اپنے شناختی کارڈ کے فعال اندراج کی تصدیق کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Submit Application on CRPD Portal",
+        "titleUr": "سی آر پی ڈی پورٹل پر درخواست",
+        "detailEn": "Lodge your application online at crpd.punjab.gov.pk or at your Tehsil Social Welfare Officer (TSWO) office.",
+        "detailUr": "پورٹل crpd.punjab.gov.pk پر یا تحصیل سوشل ویلفیئر آفیسر کے دفتر میں درخواست جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "NSER PMT Score Scrutiny (<= 45)",
+        "titleUr": "پی ایم ٹی اسکور جانچ (45 یا کم)",
+        "detailEn": "The department verifies that your household BISP PMT score is 45 or below with no duplicate pensions.",
+        "detailUr": "محکمہ بی آئی ایس پی این ایس ای آر ریکارڈ سے تصدیق کرتا ہے کہ غربت کا اسکور 45 یا اس سے کم ہے۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Biometric ATM Pickup at Bank of Punjab",
+        "titleUr": "بینک آف پنجاب سے بائیومیٹرک وصولی",
+        "detailEn": "Upon receiving approval SMS, visit designated BOP branch with original Special CNIC for biometric card collection.",
+        "detailUr": "منظوری کا ایس ایم ایس ملنے پر اصل خصوصی شناختی کارڈ کے ساتھ نامزد بینک آف پنجاب سے کارڈ وصول کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is the Himmat Card stipend Rs. 10,500 monthly or quarterly?",
+        "questionUr": "کیا ہمت کارڈ وظیفہ ماہانہ ہے یا سہ ماہی؟",
+        "answerEn": "Official Punjab Government regulations confirm the stipend is strictly QUARTERLY (Rs. 10,500 every 3 months), equal to Rs. 3,500 per month.",
+        "answerUr": "حکومت پنجاب کے سرکاری قوانین کے مطابق وظیفہ مکمل طور پر سہ ماہی ہے یعنی ہر تین ماہ بعد 10,500 روپے ملتے ہیں (جو ماہانہ 3,500 روپے کے حساب سے بنتے ہیں)۔"
+      },
+      {
+        "questionEn": "Can I receive both Himmat Card and BISP Kafaalat?",
+        "questionUr": "کیا ہمت کارڈ اور بی آئی ایس پی کفالت دونوں مل سکتے ہیں؟",
+        "answerEn": "No. Anti-duplication rules prohibit receiving simultaneous cash aid from BISP Kafaalat, Zakat, Bait-ul-Maal, or PSPA alongside the Himmat Card.",
+        "answerUr": "نہیں، حکومت کے اینٹی ڈپلیکیشن قوانین کے تحت بی آئی ایس پی، زکوٰۃ یا بیت المال کے ساتھ ہمت کارڈ کا نقد وظیفہ نہیں مل سکتا۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to CM Punjab Himmat Card 2026: Rs. 10,500 quarterly financial assistance, PMT score <= 45 rule, DPMIS registration, and free Bank of Punjab ATM card collection.",
+    "contentUr": "وزیراعلیٰ پنجاب ہمت کارڈ 2026: 10,500 روپے سہ ماہی وظیفہ، پی ایم ٹی اسکور 45 کی حد، ڈی پی ایم آئی ایس میں اندراج اور بینک آف پنجاب اے ٹی ایم کارڈ کی مکمل سرکاری گائیڈ۔",
+    "relatedSlugs": [
+      "/health/disability-certificate-special-cnic-apply-2026",
+      "/welfare/pmt-score-explained-bisp-eligibility-2026",
+      "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
+      "/health/sehat-card-treatment-limit-2026"
+    ]
   }
 };
