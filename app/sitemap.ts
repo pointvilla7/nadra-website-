@@ -72,6 +72,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/how-to-get-fir-copy-online-pakistan-2026',
     '/welfare/ehsaas-rashan-riayat-program-8123-2026',
     '/bills/fesco-bill-check-online-duplicate-2026',
+    '/bills/roshan-gharana-solar-panel-scheme-punjab-2026',
+    '/bills/petrol-relief-scheme-100-rupees-registration-2026',
     '/pakistan-post',
     '/finance',
     '/finance/roshan-digital-account-2026-eligibility-apply',

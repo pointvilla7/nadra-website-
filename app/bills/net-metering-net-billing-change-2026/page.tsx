@@ -358,7 +358,18 @@ export default function NetMeteringToNetBillingPage() {
           <h2 className="font-serif font-bold text-xl text-doc-ink dark:text-white">
             Related Electricity Bill &amp; Tax Calculation Tools
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link
+              href="/bills/roshan-gharana-solar-panel-scheme-punjab-2026"
+              className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"
+            >
+              <span className="text-xs font-mono text-amber-600 font-bold uppercase block">Punjab Free Solar</span>
+              <h3 className="font-serif font-bold text-sm text-doc-ink dark:text-white group-hover:text-doc-seal mt-1">
+                Roshan Gharana Scheme 2026 →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">Free 550W/1,100W kits for 0–200 unit lifeline users.</p>
+            </Link>
+
             <Link
               href="/bills/smart-meter-pakistan-price-how-it-works-2026"
               className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-doc-brass transition group"

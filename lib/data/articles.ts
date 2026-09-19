@@ -21248,5 +21248,110 @@ export const ARTICLES: Record<string, Article> = {
       "/welfare/bisp-kafaalat-vs-nashonuma-vs-taleemi-wazaif-explained-2026",
       "/health/sehat-card-treatment-limit-2026"
     ]
+  },
+  "roshan-gharana-solar-panel-scheme-punjab-2026": {
+    "slug": "roshan-gharana-solar-panel-scheme-punjab-2026",
+    "fullPath": "/bills/roshan-gharana-solar-panel-scheme-punjab-2026",
+    "categoryId": "bills",
+    "titleEn": "Roshan Gharana Solar Scheme Punjab 2026: Free Solar Panels, 8800 SMS & Ballot Status",
+    "titleUr": "روشن گھرانہ سولر پینل سکیم پنجاب 2026: مفت سولر پینلز، 8800 ایس ایم ایس اور قرعہ اندازی نتائج",
+    "metaDescriptionEn": "Complete official guide to CM Maryam Nawaz Roshan Gharana Solar Scheme in Punjab. Verified 0–200 electricity units cutoff, free 550W/1,100W kit specs, 8800 SMS syntax, district balloting rules, and debunking fake application deadlines.",
+    "metaDescriptionUr": "پنجاب روشن گھرانہ فری سولر پینل سکیم 2026: 0 تا 200 یونٹ والے صارفین کے لیے 550 واٹ اور 1100 واٹ مفت کٹس، 8800 ایس ایم ایس رجسٹریشن اور قرعہ اندازی کی مصدقہ معلومات۔",
+    "directAnswerEn": "The Punjab Roshan Gharana Scheme provides 100% free small solar panel kits (550W for <=100 units/month; 1,100W for 101-200 units/month) including panels, hybrid inverter, battery storage, and complete installation to protected domestic consumers in Punjab. Households consuming MORE than 200 units/month are strictly ineligible. Beneficiaries are chosen through transparent computerized balloting conducted by PITB across Punjab's 36 districts—applying via SMS to 8800 or the official portal does NOT guarantee selection. No application fees or agent charges apply.",
+    "directAnswerUr": "پنجاب روشن گھرانہ سکیم کے تحت 0 سے 200 یونٹ بجلی استعمال کرنے والے گھریلو صارفین کو مکمل مفت سولر کٹ (550 واٹ تا 1100 واٹ مع سولر پینلز، انورٹر اور بیٹری) فراہم کی جاتی ہے۔ 200 یونٹ سے زائد بجلی استعمال کرنے والے گھرانے اس مفت سکیم کے اہل نہیں ہیں۔ درخواست دہندگان میں سے شفاف قرعہ اندازی (کمپیوٹرائزڈ بیلٹنگ) کے ذریعے قرعہ نکلنے والوں کو کٹس دی جاتی ہیں۔ 8800 پر ایس ایم ایس یا سرکاری پورٹل پر درخواست دینے سے فوری سولر پینل ملنے کی ضمانت نہیں ہوتی۔",
+    "lastVerified": "September 19, 2026",
+    "officialSource": {
+      "name": "Punjab Energy Department & PITB",
+      "url": "https://cmsolarscheme.punjab.gov.pk"
+    },
+    "author": {
+      "name": "Editorial Desk",
+      "role": "Energy & Civic Rights Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Tier 1: Up to 100 Units / month",
+        "serviceUr": "پہلا مرحلہ: 100 یونٹ ماہانہ تک",
+        "normal": "550W Solar Kit",
+        "urgent": "100% Free (Govt Funded)",
+        "executive": "1 Panel + Inverter + Battery",
+        "validity": "Single-phase meter"
+      },
+      {
+        "serviceEn": "Tier 2: 101 to 200 Units / month",
+        "serviceUr": "دوسرا مرحلہ: 101 سے 200 یونٹ ماہانہ",
+        "normal": "1,100W Solar Kit",
+        "urgent": "100% Free (Govt Funded)",
+        "executive": "2 Panels + Inverter + Battery",
+        "validity": "Single-phase meter"
+      },
+      {
+        "serviceEn": "Above 200 Units / month",
+        "serviceUr": "200 یونٹ سے زائد استعمال",
+        "normal": "Ineligible for Free Kit",
+        "urgent": "Private Net Metering Required",
+        "executive": "5kW-10kW System",
+        "validity": "Three-phase bidirectional meter"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify 6-Month Units on Electricity Bill",
+        "titleUr": "بجلی کے بل پر 6 ماہ کے یونٹس چیک کریں",
+        "detailEn": "Ensure average consumption over previous 6 months is <= 200 units with sanctioned load <= 2 kW.",
+        "detailUr": "یقینی بنائیں کہ پچھلے 6 ماہ کا اوسط استعمال 200 یونٹ یا اس سے کم اور منظور شدہ لوڈ 2 کلو واٹ تک ہے۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Registration via SMS 8800 or Portal",
+        "titleUr": "8800 پر ایس ایم ایس یا سرکاری پورٹل پر اندراج",
+        "detailEn": "Send SMS to 8800: [CNIC] [14-digit Reference No] or apply at cmsolarscheme.punjab.gov.pk.",
+        "detailUr": "8800 پر میسج بھیجیں: [شناختی کارڈ بغیر ڈیش] [14 ہندسوں کا ریفرنس نمبر] یا پورٹل پر اندراج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "PITB Computerized District Balloting",
+        "titleUr": "پی آئی ٹی بی کی خودکار شفاف قرعہ اندازی",
+        "detailEn": "PITB conducts transparent automated balloting across Punjab's 36 districts based on population quotas.",
+        "detailUr": "پنجاب کے تمام 36 اضلاع میں آبادی اور کوٹے کے مطابق شفاف کمپیوٹرائزڈ قرعہ اندازی کی جاتی ہے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Field Verification by District Teams",
+        "titleUr": "ضلعی انتظامیہ اور ڈسکوز کی فیلڈ تصدیق",
+        "detailEn": "Local AC office and DISCO engineers inspect premises, load, and verify no electricity theft record.",
+        "detailUr": "متعلقہ اسسٹنٹ کمشنر اور ڈسکو انجینئرز گھر کا معائنہ کر کے لوڈ اور بجلی چوری سے پاک ریکارڈ چیک کرتے ہیں۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Zero-Cost Installation & Handover",
+        "titleUr": "مفت تنصیب اور سولر سسٹم کی ترسیل",
+        "detailEn": "Authorized contractors install panels, inverter, and battery backup with barcoded equipment registration.",
+        "detailUr": "سرکاری کنٹریکٹرز بارکوڈ شدہ سولر پینل، انورٹر اور بیٹری بالکل مفت نصب کر کے دیتے ہیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What if my household consumes more than 200 units a month?",
+        "questionUr": "اگر ماہانہ بجلی کا استعمال 200 یونٹ سے زیادہ ہو تو کیا ہوگا؟",
+        "answerEn": "Households using >200 units/month are not eligible for the free kit. They require larger 5kW-10kW private solar systems with net metering.",
+        "answerUr": "200 یونٹ سے زائد استعمال کرنے والے گھرانے مفت کٹ کے اہل نہیں ہیں۔ انہیں 5 سے 10 کلوواٹ کا ذاتی سولر سسٹم اور نیٹ میٹرنگ لگوانا ہوگی۔"
+      },
+      {
+        "questionEn": "Is selection guaranteed if I apply via 8800?",
+        "questionUr": "کیا 8800 پر میسج بھیجنے سے سولر پینل ملنے کی ضمانت ہے؟",
+        "answerEn": "No. Selection is determined strictly by computerized balloting across Punjab districts.",
+        "answerUr": "نہیں، انتخاب مکمل طور پر پنجاب کے اضلاع میں شفاف کمپیوٹرائزڈ قرعہ اندازی کے ذریعے ہوتا ہے۔"
+      }
+    ],
+    "contentEn": "Authoritative guide to CM Punjab Roshan Gharana Solar Scheme 2026: 0-200 units free solar kits, 8800 SMS syntax, district balloting, and net metering comparison.",
+    "contentUr": "وزیراعلیٰ پنجاب روشن گھرانہ فری سولر پینل سکیم 2026: 0 تا 200 یونٹ مفت سولر کٹ، 8800 ایس ایم ایس رجسٹریشن، قرعہ اندازی اور نیٹ میٹرنگ کے موازنے کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/bills/net-metering-net-billing-change-2026",
+      "/bills/smart-meter-pakistan-price-how-it-works-2026",
+      "/bills/utility-bill-checker-2026",
+      "/bills/petrol-relief-scheme-100-rupees-registration-2026"
+    ]
   }
 };

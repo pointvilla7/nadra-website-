@@ -86,6 +86,8 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
     'sngpl-bill-check-online',
     'net-metering-net-billing-change-2026',
     'smart-meter-pakistan-price-how-it-works-2026',
+    'roshan-gharana-solar-panel-scheme-punjab-2026',
+    'petrol-relief-scheme-100-rupees-registration-2026',
   ],
 
   // Tax & Filer Status

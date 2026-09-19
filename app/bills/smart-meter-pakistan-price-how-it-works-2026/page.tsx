@@ -294,7 +294,7 @@ export default function SmartMeterPakistanGuidePage() {
               >
                 NEPRA Net Metering to Net Billing Regulations 2026
               </Link>
-              , the DISCO installs a compliant <strong>bidirectional (green) smart meter</strong> to independently measure imported and exported units as part of your sanctioned interconnection framework.
+              , the DISCO installs a compliant <strong>bidirectional (green) smart meter</strong> to independently measure imported and exported units as part of your sanctioned interconnection framework. <em>(Note: Standalone mini-kits under the <Link href="/bills/roshan-gharana-solar-panel-scheme-punjab-2026" className="underline font-bold text-emerald-800 dark:text-emerald-300">CM Punjab Roshan Gharana Solar Scheme</Link> operate off-grid and do not require green meters.)</em>
             </p>
           </div>
 

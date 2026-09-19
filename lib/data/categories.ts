@@ -323,6 +323,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Roshan Gharana Solar Scheme 2026",
+        "ur": "روشن گھرانہ سولر پینل سکیم 2026",
+        "slug": "/bills/roshan-gharana-solar-panel-scheme-punjab-2026"
+      },
+      {
         "en": "Petrol Relief Scheme 2026",
         "ur": "پیٹرول ریلیف سکیم 100 روپے سبسڈی 2026",
         "slug": "/bills/petrol-relief-scheme-100-rupees-registration-2026"
