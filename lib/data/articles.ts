@@ -5915,6 +5915,7 @@ export const ARTICLES: Record<string, Article> = {
     "contentEn": "## Overview of the Apni Chhat Apna Ghar Scheme 2026\nThe **Apni Chhat Apna Ghar (ACAG) Housing Scheme** is the flagship social housing initiative launched by the Government of Punjab to assist low-to-middle income families who own small residential land parcels but lack the capital to build a durable brick-and-mortar home. Unlike conventional commercial bank mortgages that carry high KIBOR interest rates, ACAG is a **pure interest-free (Qarz-e-Hasna) micro-credit facility** where the Punjab provincial government absorbs the entire financial spread.\n\nUnder the program, approved beneficiaries receive **PKR 1.5 Million (15 Lakh Rupees)** disbursed in three milestones linked to construction progress. The repayment is structured over **7 years (84 months)** at a fixed, affordable monthly installment of **PKR 14,000**.\n\n---\n\n## Detailed Eligibility Criteria & Rules\n\nTo qualify for the Apni Chhat Apna Ghar program, applicants must satisfy strict demographic and asset thresholds:\n\n| Requirement | Detailed Official Parameter | Verification Document |\n| :--- | :--- | :--- |\n| **Provincial Domicile** | Citizen of Pakistan with permanent Punjab domicile & CNIC | Punjab Domicile Certificate & NADRA CNIC |\n| **Land Size (Urban)** | 1 Marla to 5 Marla residential plot inside municipal limits | Computerized Fard Malkiat / Registered Deed |\n| **Land Size (Rural)** | Up to 10 Marla residential plot in rural revenue estates | Rural Revenue Estate Record (Inteqal) |\n| **Household Monthly Income** | Total family monthly earnings below PKR 60,000 | Self-declaration & utility bill verification |\n| **Previous Home Ownership** | Must not own any other registered concrete house in Punjab | NADRA & Land Record Society cross-check |\n| **Credit History** | Clean eCIB record with no default on previous bank loans | State Bank of Pakistan credit bureau check |\n\n> [!IMPORTANT]\n> **Plot Ownership Caveat**: The land must be unencumbered (free of court stays, bank mortgages, or disputed inheritance). If your plot is in an unapproved housing society lacking a TMA NOC, your application will be placed on hold until societal clearance is documented.\n\n---\n\n## Breakdown of the PKR 1.5M Disbursement Tranches\n\nThe loan is not released as a single lump-sum cash payout to prevent fund diversion. Instead, the Bank of Punjab (BOP) releases money in structured stages:\n\n```\nTranche 1: Foundation & Plinth Level (40% = PKR 600,000)\n   ↓ (Site Inspection & Geo-Tagged Photo Upload)\nTranche 2: Walls & Roof Lintel Casting (30% = PKR 450,000)\n   ↓ (Physical Inspection by Assistant Commissioner Team)\nTranche 3: Plaster, Flooring & Doors Finishing (30% = PKR 450,000)\n```\n\n1. **Tranche 1 (PKR 600,000)**: Issued within 10 days of biometric loan agreement signing. Used for ground excavation, foundation laying, and plinth construction.\n2. **Tranche 2 (PKR 450,000)**: Released once the field engineer verifies brick masonry walls up to 10-foot height and shuttering for roof slab.\n3. **Tranche 3 (PKR 450,000)**: Released upon roof casting for internal electrical conduits, sanitary piping, plastering, and floor screed.\n\n---\n\n## Step-by-Step Online Application Guide\n\n### Phase 1: Portal Registration\n- Access **acag.punjab.gov.pk** on mobile or PC.\n- Register using your CNIC number and an active SIM card registered against your own CNIC.\n- Set up a secure password and verify through the 6-digit SMS OTP.\n\n### Phase 2: Form Submission\n- Fill in household bio-data: marital status, number of dependents, and source of monthly income.\n- Enter precise plot details: District, Tehsil, Mauza, Khasra Number, and Street Address.\n- Upload front and back photos of your CNIC and the computerized Fard Malkiat issued by the Punjab Land Record Authority (PLRA).\n\n### Phase 3: Field Verification & Biometrics\n- Within 15 to 20 working days, a field team visits the plot coordinates.\n- Once cleared, you will receive an SMS containing a tracking voucher code.\n- Visit the designated Bank of Punjab branch for biometric signature on the Qarz-e-Hasna contract.\n\n---\n\n## Practical Tips for Quick Approval\n\n- **Avoid Agents & Middlemen**: The ACAG application is 100% free of charge. Never pay money to unauthorized agents promising \"guaranteed balloting\".\n- **Ensure Clear Khasra Number**: If your land is situated in a rural area, obtain a freshly stamped *Aks-Shajra* (map tracing) from your local Patwari to prevent boundary rejections.\n- **Maintain an Active BOP Account**: Opening an Asaan Current Account at your nearest BOP branch before balloting saves 5 to 7 days during disbursement.\n- **Observe the Grace Period**: Repayment starts 90 days after receiving the initial PKR 600,000 payment. Set up an auto-debit on your salary or savings account to maintain a clean credit score.\n\n## In-Depth Architectural Blueprints & Construction Specifications\nThe Punjab Housing and Town Planning Agency (PHATA) has standardized three architectural plans for the Apni Chhat Apna Ghar initiative to prevent cost overruns and structural safety hazards:\n\n### 1. The 3-Marla Model Design (Covered Area: ~650 sq ft)\n- **Ground Floor**: 1 Master Bedroom (12x14 ft) with attached bath, 1 Guest/Living Room (10x12 ft), open kitchen counter, front verandah/porch, and internal ventilation shaft.\n- **Structural Spec**: 9-inch brick load-bearing external walls, 1:2:4 reinforced cement concrete (RCC) roof slab, and concealed PVC electrical conduit piping.\n\n### 2. The 5-Marla Model Design (Covered Area: ~950 sq ft)\n- **Ground Floor**: 2 Bedrooms (12x13 ft each) with 2 bathrooms, central lounge (14x16 ft), separate kitchen (8x10 ft), car porch, and rear laundry courtyard.\n- **Structural Spec**: Anti-termite subterranean chemical treatment, DPC waterproofing bitumen membrane, and aluminum sliding windows.\n\n---\n\n## Complete District Distribution & Quota Matrix across Punjab\nThe 100,000 housing loan quota is distributed across all 9 administrative divisions of Punjab based on district population census data:\n\n| Division | Major Focus Districts | Allocated Loan Units | Execution Partners |\n| :--- | :--- | :--- | :--- |\n| **Lahore Division** | Lahore, Kasur, Sheikhupura, Nankana Sahib | 22,000 Units | PHATA / Bank of Punjab |\n| **Faisalabad Division** | Faisalabad, Jhang, Toba Tek Singh, Chiniot | 15,000 Units | PHATA / BOP / Akhuwat |\n| **Rawalpindi Division** | Rawalpindi, Attock, Jhelum, Chakwal | 14,000 Units | PHATA / District Admin |\n| **Multan Division** | Multan, Khanewal, Lodhran, Vehari | 13,000 Units | PHATA / BOP |\n| **Gujranwala Division** | Gujranwala, Sialkot, Gujrat, Narowal, Hafizabad | 14,000 Units | PHATA / BOP |\n| **Bahawalpur Division** | Bahawalpur, Bahawalnagar, Rahim Yar Khan | 10,000 Units | PHATA / BOP |\n| **Sargodha & D.G. Khan** | Sargodha, Bhakkar, Mianwali, D.G. Khan, Muzaffargarh | 12,000 Units | PHATA / Rural Housing Desk |\n\n---\n\n## Step-by-Step Troubleshooting for Common Verification Delays\n- **Issue: Fard Not Verified in PLRA System**: Visit your local Arazi Record Center (ARC) with your original CNIC and request a *Fard Baraye Tameer-e-Makan* (Fard for Housing Construction) to ensure proper digital sync.\n- **Issue: Location Coordinates Mismatch**: Ensure you take the plot photos using a smartphone with GPS Location / Geo-Tagging enabled in camera settings.\n- **Issue: Delayed BOP Biometric Token**: If you haven't received your bank invitation SMS within 30 days of site verification, call the Chief Minister Complaint Cell at 0800-02345 with your ACAG Tracking Reference Number.\n---\n\n## Comprehensive Document Checklist & Physical Counter Requirements\nWhen preparing your application file for official submission, ensure you carry both original documents and two sets of attested photocopies to prevent counter delays:\n\n1. **Original NADRA CNIC / NICOP / Smart Card**: Must be physically intact with visible chip and unexpired validity date.\n2. **Attested Photocopies of Immediate Dependents**: Father's CNIC, Mother's CNIC, Spouse's CNIC, and Children's Computerized B-Forms (CRC).\n3. **Recent Passport-Sized Color Photographs**: Exactly 4 photographs with a light blue or white background, taken within the last 30 days.\n4. **Proof of Residence & Utility Records**: Paid electricity (LESCO/IESCO/MEPCO/KE) or Sui Gas bills from the last 3 billing cycles matching your stated residential address.\n5. **Computerized Land Revenue / Educational Credentials**: Duly stamped Fard Malkiat, Inteqal registry, or HEC/IBCC attested degree certificates.\n\n---\n\n## Critical Warnings, Common Mistakes & How to Avoid Rejections\nExperienced applicants and civic facilitators report that over 65% of preliminary application delays occur due to avoidable clerical errors. Review this essential caution matrix before submitting your dossier:\n\n| Common Pitfall | Official Consequence | Corrective Preventive Action |\n| :--- | :--- | :--- |\n| **Name Spelling Inconsistency** | Immediate File Hold / Rejection | Cross-check spellings across Matric Certificate, CNIC, and Domicile before submission |\n| **Expired CNIC or Invalid SIM** | Biometric OTP Delivery Failure | Ensure your mobile number is officially registered against your own CNIC with PTA |\n| **Unattested Photocopies** | Counter Bar at Document Desk | Get all photocopies attested by a Grade-17+ gazetted government officer |\n| **Paying Cash to Unauthorized Agents** | Fraud Risk & File Cancellation | Never pay cash to touts outside offices; use only official 1Link PSID or Treasury Challan |\n| **Incomplete Khasra / Khatoni Details** | Field Inspection Disqualification | Obtain an updated *Aks-Shajra* and computerized Fard from your local Arazi Record Center |\n\n---\n\n## Official Grievance Redressal, Helplines & Office Timings\nIf you encounter undue administrative delays, harassment, or demand for unauthorized fees at any departmental counter, immediately register a formal grievance through the designated state oversight channels:\n\n- **Prime Minister's Performance Delivery Unit (PMDU)**: Download the **Pakistan Citizen's Portal** app on Android or iOS and submit a geo-tagged complaint under the relevant ministry.\n- **Federal Ombudsman (Wafaqi Mohtasib)**: Call toll-free helpline **1055** or file an online complaint at `complaint.mohtasib.gov.pk` for federal departments.\n- **Provincial Ombudsman (Mohtasib Punjab / Sindh / KPK)**: Contact regional provincial grievance offices for fast-track local administrative relief.\n- **Standard Government Counter Timings**: Monday through Thursday: 9:00 AM to 5:00 PM (Lunch & Prayer Break: 1:00 PM to 2:00 PM); Friday: 9:00 AM to 12:30 PM.\n\n---\n\n## Strategic Financial Planning & Credit Score Management for Borrowers\nAcquiring government-subsidized credit or interest-free microfinance is a major financial milestone that requires disciplined cash-flow management to protect your long-term national credit standing.\n\n### 1. Understanding SBP's Electronic Credit Information Bureau (eCIB)\nEvery subsidized loan application is screened against the State Bank of Pakistan's central eCIB database. Maintaining a flawless credit rating is essential:\n- **Timely Installment Clearing**: Always deposit installments at least 48 hours prior to the monthly due date to prevent inter-bank settlement delays from triggering overdue flags.\n- **Credit Card & Overdraft Caution**: Never utilize more than 60% of your sanctioned credit card limit, and clear statement balances in full to maintain prime borrower tier categorization.\n- **Guarantor Responsibility**: Serving as a loan guarantor for a friend or relative makes you legally and financially liable. If the primary borrower defaults, your own eCIB record is flagged, blocking your future personal loan and mortgage applications.\n\n### 2. Business Cash Flow Allocation for Micro-Enterprises\n- **Separating Personal & Business Wallets**: Never mix household grocery expenses with daily shop sales revenue. Maintain a separate digital ledger book (Khata) to track inventory turnarounds.\n- **Emergency Reserve Fund**: Re-invest at least 20% of net monthly business profits into an emergency liquidity reserve to cushion against seasonal market slumps and inflation.\n\n---\n\n## Legal Rights & Consumer Protection for Subsidized Borrowers\nUnder State Bank of Pakistan Consumer Protection Regulations:\n- **Transparent Amortization Schedules**: Banks must provide a full printed repayment schedule displaying principal breakdown, payment dates, and zero hidden penalty clauses.\n- **No Early Repayment Penalties**: For subsidized youth and housing schemes, borrowers can make partial or full early lump-sum settlements with zero prepayment penalties.\n- **Harassment Prohibition**: Bank recovery officers are strictly barred by law from contacting borrowers before 9:00 AM or after 7:00 PM, or visiting family residences without prior written appointment notices.",
     "contentUr": "## اپنی چھت اپنا گھر سکیم 2026 کا مکمل جائزہ\nحکومت پنجاب کی جانب سے شروع کی گئی **اپنی چھت اپنا گھر سکیم** غریب اور متوسط طبقے کے لیے بلا سود ہاؤسنگ فنانسنگ کا شاندار پروگرام ہے۔ اس سکیم کے تحت ایسے تمام شہری جن کے پاس 1 سے 5 مرلہ کا شہری یا 10 مرلہ تک کا دیہی پلاٹ موجود ہے، وہ گھر کی تعمیر کے لیے **15 لاکھ روپے تک کا بلا سود قرضہ** حاصل کر سکتے ہیں۔\n\nاس قرضے پر کوئی سود یا مارک اپ نہیں ہے کیونکہ پنجاب حکومت تمام اضافی اخراجات خود برداشت کرتی ہے۔ درخواست گزار کو 7 سال (84 ماہ) کے دوران صرف **14,000 روپے ماہانہ قسط** ادا کرنی ہوتی ہے۔\n\n---\n\n## اہلیت اور ضروری شرائط\n- درخواست گزار پنجاب کا مستقل رہائشی ہو اور اس کے پاس پنجاب کا ڈومیسائل اور نادرا شناختی کارڈ ہو۔\n- شہری علاقوں میں 1 تا 5 مرلہ یا دیہی علاقوں میں 10 مرلہ تک اراضی کی قانونی ملکیت (کمپیوٹرائزڈ فرد یا رجسٹرڈ بیع نامہ) موجود ہو۔\n- خاندان کی کل ماہانہ آمدنی 60,000 روپے سے کم ہو۔\n- درخواست گزار کسی دوسرے پکے مکان کا مالک نہ ہو اور کسی بینک کا نادہندہ نہ ہو۔\n\n---\n\n## 15 لاکھ روپے کی اقساط کا طریقہ کار\nرقم 3 مرحلہ وار اقساط میں بینک آف پنجاب کے ذریعے منتقل کی جاتی ہے:\n1. **پہلی قسط (40 فیصد - 6 لاکھ روپے)**: بنیادوں اور ڈی پی سی لیول کی تعمیر کے لیے۔\n2. **دوسری قسط (30 فیصد - 4.5 لاکھ روپے)**: دیواروں اور چھت ڈالنے کے مرحلے پر۔\n3. **تیسری قسط (30 فیصد - 4.5 لاکھ روپے)**: پلستر، فرش، بجلی اور سینیٹری کے کاموں کے لیے۔",
     "relatedSlugs": [
+      "/property/apni-zameen-apna-ghar-punjab-free-plot-scheme-2026",
       "/loans/pm-youth-loan-scheme",
       "/loans/mera-ghar-mera-ashiana",
       "/loans/kamyab-jawan-program"
@@ -21352,6 +21353,112 @@ export const ARTICLES: Record<string, Article> = {
       "/bills/smart-meter-pakistan-price-how-it-works-2026",
       "/bills/utility-bill-checker-2026",
       "/bills/petrol-relief-scheme-100-rupees-registration-2026"
+    ]
+  },
+  "apni-zameen-apna-ghar-punjab-free-plot-scheme-2026": {
+    "slug": "apni-zameen-apna-ghar-punjab-free-plot-scheme-2026",
+    "fullPath": "/property/apni-zameen-apna-ghar-punjab-free-plot-scheme-2026",
+    "categoryId": "property",
+    "titleEn": "Apni Zameen Apna Ghar Scheme Punjab 2026: Free 3-Marla Plots, Status & Rules",
+    "titleUr": "اپنی زمین اپنا گھر سکیم پنجاب 2026: مفت 3 مرلہ رہائشی پلاٹس، رجسٹریشن سٹیٹس اور قواعد",
+    "metaDescriptionEn": "Official consumer guide to CM Maryam Nawaz Apni Zameen Apna Ghar (AZAG) Scheme. Check current registration status, Phase 1 balloting details (1,892 plots in 19 districts), landless eligibility, Rs. 200 e-stamp affidavit rules, and difference from ACAG loans.",
+    "metaDescriptionUr": "پنجاب اپنی زمین اپنا گھر سکیم 2026: بے زمین خاندانوں کے لیے 3 مرلہ مفت رہائشی پلاٹس، فیز 1 قرعہ اندازی نتائج، ڈپٹی کمشنر دفتر میں تصدیق اور اپنی چھت لون کا موازنہ۔",
+    "directAnswerEn": "Apni Zameen Apna Ghar (AZAG) provides 100% free, developed 3-Marla residential plots to completely landless, homeless low-income families in Punjab. Executed by PHATA under HUD&PHED, Phase 1 covered 1,892 plots across 23 schemes in 19 districts. Selection is conducted via computerized balloting by PITB, followed by document scrutiny (including a Rs. 200 e-stamp affidavit) at District Deputy Commissioner Offices. Phase 1 registration is currently closed; applicants must monitor azag.punjab.gov.pk for Phase 2 opening announcements. There are zero application or land charges.",
+    "directAnswerUr": "اپنی زمین اپنا گھر (AZAG) سکیم کے تحت پنجاب کے بالکل بے زمین اور بے گھر خاندانوں کو 3 مرلہ کے رہائشی پلاٹ مکمل مفت فراہم کیے جاتے ہیں۔ پہلے مرحلے میں 19 اضلاع کی 23 ہاؤسنگ سکیموں میں 1,892 پلاٹس مختص کیے گئے۔ انتخاب پی آئی ٹی بی کے ذریعے شفاف کمپیوٹرائزڈ قرعہ اندازی سے ہوتا ہے، جس کے بعد ڈپٹی کمشنر دفتر میں 200 روپے کے ای اسٹامپ بیان حلفی کے ساتھ تصدیق ہوتی ہے۔ پہلے مرحلے کی رجسٹریشن مکمل ہو چکی ہے اور قرعہ اندازی ہو چکی ہے۔ نئے فیز 2 کے آغاز کے لیے سرکاری پورٹل azag.punjab.gov.pk دیکھیں۔",
+    "lastVerified": "September 19, 2026",
+    "officialSource": {
+      "name": "PHATA & HUD-PHED Punjab",
+      "url": "https://azag.punjab.gov.pk"
+    },
+    "author": {
+      "name": "Editorial Desk",
+      "role": "Housing & Land Rights Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "3-Marla Developed Residential Plot",
+        "serviceUr": "3 مرلہ تیار رہائشی پلاٹ",
+        "normal": "100% Free (Zero Land Cost)",
+        "urgent": "Fully Subsidized by Govt",
+        "executive": "Clear Title / Allotment Letter",
+        "validity": "Permanent Ownership"
+      },
+      {
+        "serviceEn": "Online Registration Fee",
+        "serviceUr": "آن لائن رجسٹریشن فیس",
+        "normal": "FREE (Zero Processing Fee)",
+        "urgent": "No Hidden Agent Charges",
+        "executive": "Official azag.punjab.gov.pk",
+        "validity": "Government Welfare"
+      },
+      {
+        "serviceEn": "Affidavit on E-Stamp Paper (Post-Ballot)",
+        "serviceUr": "ای اسٹامپ بیان حلفی برائے تصدیق",
+        "normal": "PKR 200 Stamp Duty",
+        "urgent": "Standard E-Stamp Rate",
+        "executive": "Attested by Oath Commissioner",
+        "validity": "30-Day Window"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify Landlessness & Residency",
+        "titleUr": "بے زمین ہونے اور رہائش کی تصدیق",
+        "detailEn": "Ensure applicant, spouse, and dependents own zero land in Pakistan, with permanent residence in native Punjab district.",
+        "detailUr": "یقینی بنائیں کہ پاکستان بھر میں کوئی مکان یا زمین نہ ہو اور شناختی کارڈ پر متعلقہ ضلع کی مستقل رہائش درج ہو۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Submit Online via azag.punjab.gov.pk",
+        "titleUr": "سرکاری پورٹل پر مفت آن لائن اندراج",
+        "detailEn": "Apply during active intake window with CNIC, family particulars, and district scheme selection.",
+        "detailUr": "رجسٹریشن کھلی ہونے پر پورٹل پر اپنا شناختی کارڈ اور خاندانی کوائف درج کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Computerized Balloting by PITB",
+        "titleUr": "پی آئی ٹی بی کی خودکار شفاف قرعہ اندازی",
+        "detailEn": "Transparent digital balloting allocates plots based on district-wise quotas.",
+        "detailUr": "پنجاب انفارمیشن ٹیکنالوجی بورڈ تمام اضلاع میں کوٹہ کے تحت شفاف خودکار قرعہ اندازی کرتا ہے۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Submit Rs. 200 E-Stamp Affidavit",
+        "titleUr": "200 روپے کے ای اسٹامپ پر بیان حلفی کی جمع آوری",
+        "detailEn": "Shortlisted candidates submit affidavit declaring landlessness to DC Office within 30 days.",
+        "detailUr": "قرعہ اندازی میں کامیاب افراد 30 دن کے اندر ڈپٹی کمشنر دفتر میں بیان حلفی جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Plot Allotment & ACAG Loan Access",
+        "titleUr": "پلاٹ الاٹمنٹ اور تعمیراتی قرضے کی سہولت",
+        "detailEn": "Receive official allotment letter and apply for Apni Chhat Apna Ghar interest-free loan up to Rs. 1.5M.",
+        "detailUr": "پلاٹ الاٹمنٹ لیٹر حاصل کر کے اپنی چھت سکیم سے 15 لاکھ تک بلا سود قرضہ حاصل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is registration currently open for Apni Zameen Apna Ghar?",
+        "questionUr": "کیا اپنی زمین اپنا گھر سکیم کی رجسٹریشن ابھی کھلی ہے؟",
+        "answerEn": "No. Phase 1 registration and balloting for 1,892 plots has concluded. Monitor azag.punjab.gov.pk for Phase 2 opening.",
+        "answerUr": "نہیں، پہلے مرحلے کی رجسٹریشن اور 1,892 پلاٹس کی قرعہ اندازی مکمل ہو چکی ہے۔ فیز 2 کے اعلان کے لیے پورٹل azag.punjab.gov.pk دیکھیں۔"
+      },
+      {
+        "questionEn": "What is the difference between AZAG and ACAG?",
+        "questionUr": "اپنی زمین اپنا گھر اور اپنی چھت اپنا گھر میں کیا فرق ہے؟",
+        "answerEn": "AZAG provides free 3-marla plots for landless families. ACAG provides up to Rs. 1.5M interest-free construction loans for citizens who already own land.",
+        "answerUr": "اپنی زمین اپنا گھر بے زمین لوگوں کو 3 مرلہ کا مفت پلاٹ دیتی ہے۔ جبکہ اپنی چھت اپنا گھر ان لوگوں کو 15 لاکھ بلا سود قرضہ دیتی ہے جن کے پاس پہلے سے زمین ہو۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide to CM Punjab Apni Zameen Apna Ghar (AZAG) Scheme 2026: free 3-marla plots for landless families, Phase 1 balloting status, e-stamp affidavit rules, and ACAG loan comparison.",
+    "contentUr": "وزیراعلیٰ پنجاب اپنی زمین اپنا گھر سکیم 2026: بے زمین خاندانوں کے لیے 3 مرلہ مفت پلاٹس، فیز 1 قرعہ اندازی نتائج، ڈپٹی کمشنر دفتر میں جانچ اور اپنی چھت لون کے موازنے کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/loans/apni-chhat-apna-ghar",
+      "/welfare/pmt-score-explained-bisp-eligibility-2026",
+      "/property/government-employee-housing-schemes-pakistan-2026",
+      "/property/punjab-land-record-fard-verifier-2026",
+      "/property/e-stamping-challan-32a-online-guide-2026"
     ]
   }
 };

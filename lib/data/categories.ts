@@ -835,6 +835,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "Apni Zameen Apna Ghar (Free Plots 2026)",
+        "ur": "اپنی زمین اپنا گھر مفت پلاٹ سکیم 2026",
+        "slug": "/property/apni-zameen-apna-ghar-punjab-free-plot-scheme-2026"
+      },
+      {
         "en": "Property Tax Online Check & Pay 2026",
         "ur": "پراپرٹی ٹیکس آن لائن ادائیگی 2026",
         "slug": "/property/property-tax-online-check-pay-2026"

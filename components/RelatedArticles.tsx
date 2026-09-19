@@ -130,6 +130,16 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
     'emi-calculator-2026',
     'loan-application-status-tracker-2026',
   ],
+
+  // Property, Land & Housing Schemes
+  property_housing: [
+    'apni-zameen-apna-ghar-punjab-free-plot-scheme-2026',
+    'apni-chhat-apna-ghar',
+    'government-employee-housing-schemes-pakistan-2026',
+    'punjab-land-record-fard-verifier-2026',
+    'property-tax-online-check-pay-2026',
+    'pmt-score-explained-bisp-eligibility-2026',
+  ],
 };
 
 function getArticlesFromSlugs(slugs: string[]): Article[] {

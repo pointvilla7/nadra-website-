@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traffic/vehicle-ownership-transfer-online-punjab-2026',
     '/traffic/mtmis-token-tax-check-online-punjab-karachi-islamabad-2026',
     '/property/government-employee-housing-schemes-pakistan-2026',
+    '/property/apni-zameen-apna-ghar-punjab-free-plot-scheme-2026',
     '/property/property-tax-online-check-pay-2026',
     '/jobs/verified-govt-jobs-sources-avoid-scams-2026',
     '/jobs/fbr-jobs-syllabus-past-papers-test-prep-2026',
