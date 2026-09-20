@@ -305,6 +305,11 @@ export const CATEGORIES: Category[] = [
         "en": "HEC Scholarships Guide 2026 (Need-Based & Foreign)",
         "ur": "ایچ ای سی سکالرشپس گائیڈ 2026 (قومی و بین الاقوامی)",
         "slug": "/education/hec-scholarship-pakistan"
+      },
+      {
+        "en": "CM Punjab Tabeer Program 2026",
+        "ur": "وزیراعلیٰ پنجاب تعبیر پروگرام 2026",
+        "slug": "/education/cm-punjab-tabeer-program-2026"
       }
     ]
   },
@@ -489,6 +494,11 @@ export const CATEGORIES: Category[] = [
     "badgeBg": "bg-doc-brass/10 dark:bg-amber-950/40",
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
+      {
+        "en": "CM Punjab E-Taxi Scheme 2026",
+        "ur": "وزیراعلیٰ پنجاب ای ٹیکسی سکیم 2026",
+        "slug": "/loans/cm-punjab-e-taxi-scheme-eligibility-apply-2026"
+      },
       {
         "en": "CM Punjab Kisan Card 2026",
         "ur": "وزیراعلیٰ پنجاب کسان کارڈ 2026",

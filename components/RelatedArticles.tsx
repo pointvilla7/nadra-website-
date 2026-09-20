@@ -114,6 +114,7 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
 
   // Jobs, Overseas & Public Service
   jobs_careers: [
+    'cm-punjab-tabeer-program-2026',
     'verified-govt-jobs-sources-avoid-scams-2026',
     'beoe-protector-registration-overseas-employment-2026',
     'beoe-protector-fee-calculator-2026',
@@ -125,6 +126,7 @@ const SUBTOPIC_CLUSTERS: Record<string, string[]> = {
 
   // Loans & Fraud Prevention
   loans_scams: [
+    'cm-punjab-e-taxi-scheme-eligibility-apply-2026',
     'how-to-spot-fake-loan-scheme-scams-2026',
     'kamyab-jawan-pm-youth-loan-current-status-2026',
     'emi-calculator-2026',

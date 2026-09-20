@@ -21460,5 +21460,215 @@ export const ARTICLES: Record<string, Article> = {
       "/property/punjab-land-record-fard-verifier-2026",
       "/property/e-stamping-challan-32a-online-guide-2026"
     ]
+  },
+  "cm-punjab-e-taxi-scheme-eligibility-apply-2026": {
+    "slug": "cm-punjab-e-taxi-scheme-eligibility-apply-2026",
+    "fullPath": "/loans/cm-punjab-e-taxi-scheme-eligibility-apply-2026",
+    "categoryId": "loans",
+    "titleEn": "CM Punjab E-Taxi Scheme 2026: Eligibility, Portal Status & Installment Plan",
+    "titleUr": "وزیراعلیٰ پنجاب ای ٹیکسی سکیم 2026: پورٹل سٹیٹس، اہلیت اور اقساط پلان",
+    "metaDescriptionEn": "Authoritative guide to CM Maryam Nawaz E-Taxi Scheme Punjab 2026. Check official portal status (e-taxi.punjab.gov.pk), 0% markup 5-year installment terms, 60% women subsidy, fake domain warnings (ebiz.punjab-govt.pk), and Phase 2 updates.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب ای ٹیکسی سکیم 2026: باضابطہ پورٹل سٹیٹس، 5 سالہ بلا سود اقساط، خواتین کے لیے 60 فیصد سبسڈی، جعلی ویب سائٹس سے بچاؤ اور اہلیت کی مکمل گائیڈ۔",
+    "directAnswerEn": "The CM Punjab E-Taxi Scheme is an interest-free (0% markup) financing initiative over 5 years for commercial electric taxis with a 50% government down-payment subsidy for men and 60% for women. Phase 1 registration is currently closed. Monitor e-taxi.punjab.gov.pk for Phase 2 opening; do not trust unverified third-party domains like ebiz.punjab-govt.pk.",
+    "directAnswerUr": "وزیراعلیٰ پنجاب ای ٹیکسی سکیم کے تحت 5 سالہ بلاسود اقساط پر الیکٹرک ٹیکسیاں دی جا رہی ہیں جن میں 50 فیصد (مرد) اور 60 فیصد (خواتین) ڈاؤن پیمنٹ حکومت دیتی ہے۔ پہلا مرحلہ مکمل ہو چکا ہے۔ فیز 2 کے لیے e-taxi.punjab.gov.pk پر نظر رکھیں۔",
+    "lastVerified": "September 2026",
+    "officialSource": {
+      "name": "Punjab Transport Department / PITB",
+      "url": "https://e-taxi.punjab.gov.pk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Government Down-Payment Subsidy (General / Male)",
+        "serviceUr": "حکومتی ڈاؤن پیمنٹ سبسڈی (عام / مرد ڈرائیورز)",
+        "normal": "50% Govt Covered",
+        "urgent": "Direct Grant",
+        "validity": "Phase 1 Terms"
+      },
+      {
+        "serviceEn": "Government Down-Payment Subsidy (Women Drivers)",
+        "serviceUr": "حکومتی ڈاؤن پیمنٹ سبسڈی (خواتین ڈرائیورز)",
+        "normal": "60% Govt Covered",
+        "urgent": "Enhanced Grant",
+        "validity": "30% Women Quota"
+      },
+      {
+        "serviceEn": "Financing Markup Rate (Interest)",
+        "serviceUr": "شرح سود / مارک اپ",
+        "normal": "0% (Interest-Free)",
+        "urgent": "Zero Hidden Charges",
+        "validity": "60 Months Tenor"
+      },
+      {
+        "serviceEn": "Repayment Period",
+        "serviceUr": "قرض کی واپسی کی مدت",
+        "normal": "5 Years (60 Months)",
+        "urgent": "3-Month Grace Period",
+        "validity": "Bank of Punjab"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Verify License & Domicile",
+        "titleUr": "لائسنس اور رہائش کی تصدیق",
+        "detailEn": "Ensure possession of an unexpired Punjab-issued LTV or HTV license, permanent Punjab CNIC domicile, and no active bank defaults.",
+        "detailUr": "پنجاب کا جاری کردہ کارآمد ایل ٹی وی یا ایچ ٹی وی لائسنس، مستقل شناختی کارڈ اور بینک نادہندگی نہ ہونے کی تسلی کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Monitor Official Portal (e-taxi.punjab.gov.pk)",
+        "titleUr": "سرکاری پورٹل پر نظر رکھیں (e-taxi.punjab.gov.pk)",
+        "detailEn": "Only access the authentic .gov.pk address. Never register on unauthorized third-party phishing domains like ebiz.punjab-govt.pk.",
+        "detailUr": "صرف مستند ڈومین پر معلومات دیکھیں۔ کسی بھی غیر سرکاری یا جعلی ویب سائٹ پر اپنا شناختی کارڈ ہرگز درج نہ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Transparent PITB Computerized Balloting",
+        "titleUr": "پی آئی ٹی بی کی خودکار شفاف قرعہ اندازی",
+        "detailEn": "PITB runs automated public balloting to allocate vehicles fairly based on district and gender quotas.",
+        "detailUr": "رجسٹریشن بند ہونے پر پنجاب انفارمیشن ٹیکنالوجی بورڈ تمام کوٹہ جات کے تحت کمپیوٹرائزڈ قرعہ اندازی کرے گا۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "Deposit Subsidized Down Payment at BOP",
+        "titleUr": "بینک آف پنجاب میں ڈاؤن پیمنٹ کا بقایا حصہ جمع کروانا",
+        "detailEn": "Shortlisted candidates deposit their subsidized share of down payment and execute interest-free financing at designated Bank of Punjab branches.",
+        "detailUr": "کامیاب امیدوار بینک آف پنجاب میں ڈاؤن پیمنٹ کا بقایا حصہ جمع کروا کر بلاسود فنانسنگ کا معاہدہ دستخط کریں گے۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Vehicle Delivery & PSCA Onboarding",
+        "titleUr": "گاڑی کی ڈیلیوری اور سیف سٹی انٹیگریشن",
+        "detailEn": "Receive electric taxi equipped with integrated PSCA emergency panic buttons and authorized ride-hailing tracking.",
+        "detailUr": "گاڑی حاصل کریں جس میں سیف سٹیز اتھارٹی سے منسلک ایمرجنسی پینک بٹن اور رائیڈ ہیلنگ ایپس کی سہولت شامل ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is the CM Punjab E-Taxi Scheme portal currently open for applications?",
+        "questionUr": "کیا وزیراعلیٰ پنجاب ای ٹیکسی سکیم کی رجسٹریشن ابھی کھلی ہے؟",
+        "answerEn": "No. Phase 1 registration concluded for the initial cohort of 1,100 electric vehicles piloted in Lahore. Phase 2 expansion across 148 tehsils is pending official announcement.",
+        "answerUr": "نہیں، پہلے مرحلے کی رجسٹریشن اور 1,100 گاڑیوں کی قرعہ اندازی مکمل ہو چکی ہے۔ فیز 2 کے اعلان کے لیے پورٹل e-taxi.punjab.gov.pk دیکھیں۔"
+      },
+      {
+        "questionEn": "What is the genuine official portal URL for the Punjab E-Taxi Scheme?",
+        "questionUr": "ای ٹیکسی سکیم کا اصل سرکاری پورٹل کون سا ہے؟",
+        "answerEn": "The only authentic official portal is e-taxi.punjab.gov.pk, maintained by PITB. Beware of fake phishing sites like ebiz.punjab-govt.pk.",
+        "answerUr": "صرف e-taxi.punjab.gov.pk باضابطہ سرکاری پورٹل ہے۔ جعلی ڈومینز جیسے ebiz.punjab-govt.pk سے ہوشیار رہیں۔"
+      }
+    ],
+    "contentEn": "Authoritative consumer guide to CM Maryam Nawaz E-Taxi Scheme Punjab 2026: official portal status, 0% markup 5-year installment terms, 60% women subsidy, fake domain warnings (ebiz.punjab-govt.pk), and Phase 2 updates.",
+    "contentUr": "وزیراعلیٰ پنجاب ای ٹیکسی سکیم 2026: باضابطہ پورٹل سٹیٹس، 5 سالہ بلا سود اقساط، خواتین کے لیے 60 فیصد سبسڈی، جعلی ویب سائٹس سے بچاؤ اور اہلیت کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/loans/how-to-spot-fake-loan-scheme-scams-2026",
+      "/loans/apni-chhat-apna-ghar",
+      "/loans/cm-punjab-kissan-card-registration-eligibility-2026",
+      "/traffic/driving-license-online-apply-renewal-dlims-2026"
+    ]
+  },
+  "cm-punjab-tabeer-program-2026": {
+    "slug": "cm-punjab-tabeer-program-2026",
+    "fullPath": "/education/cm-punjab-tabeer-program-2026",
+    "categoryId": "education",
+    "titleEn": "CM Punjab Tabeer Program 2026: PSDF Apply, Eligibility & GCC Jobs",
+    "titleUr": "وزیراعلیٰ پنجاب تعبیر پروگرام 2026: پی ایس ڈی ایف آن لائن اپلائی اور خلیجی ممالک میں ملازمتیں",
+    "metaDescriptionEn": "Complete guide to CM Maryam Nawaz Tabeer Program implemented by PSDF (psdf.org.pk). Check eligibility (age 18–35), monthly training stipend, free certification, Parwaaz Card support, and overseas job placement in Saudi Arabia & GCC.",
+    "metaDescriptionUr": "وزیراعلیٰ پنجاب تعبیر پروگرام (PSDF): 18 تا 35 سال کے نوجوانوں کے لیے مفت ٹیکنیکل ٹریننگ، ماہانہ وظیفہ، پرواز کارڈ اور سعودی عرب و خلیجی ممالک میں باوقار روزگار۔",
+    "directAnswerEn": "The CM Punjab Tabeer Program, operated by the Punjab Skills Development Fund (PSDF) under Hunarmand Naujawan, provides 100% free technical training, monthly student stipends, international trade certifications, and direct legal job placement in GCC countries (Saudi Arabia, UAE, Qatar). Apply online at psdf.org.pk.",
+    "directAnswerUr": "تعبیر پروگرام پنجاب سکلز ڈویلپمنٹ فنڈ (PSDF) کا ایک باضابطہ منصوبہ ہے جس میں مفت فنی تربیت، ماہانہ وظیفہ، عالمی سرٹیفکیٹ اور خلیجی ممالک میں قانونی روزگار دیا جاتا ہے۔ آن لائن درخواست psdf.org.pk پر دیں۔",
+    "lastVerified": "September 2026",
+    "officialSource": {
+      "name": "Punjab Skills Development Fund (PSDF)",
+      "url": "https://www.psdf.org.pk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Course Tuition & Practical Lab Fees",
+        "serviceUr": "کورس ٹیوشن اور پریکٹیکل لیب فیس",
+        "normal": "100% Free (Govt Funded)",
+        "urgent": "Zero Out-of-Pocket Expense",
+        "validity": "PSDF Centers"
+      },
+      {
+        "serviceEn": "Monthly Student Training Stipend",
+        "serviceUr": "ماہانہ تربیتی وظیفہ (اسٹائپنڈ)",
+        "normal": "Disbursed Monthly",
+        "urgent": "Direct Bank Transfer",
+        "validity": "Full Course Duration"
+      },
+      {
+        "serviceEn": "International Trade Certification Exam",
+        "serviceUr": "بین الاقوامی تجارتی سرٹیفیکیشن امتحان",
+        "normal": "Fully Subsidized",
+        "urgent": "Globally Recognized",
+        "validity": "NAVTTC / International"
+      },
+      {
+        "serviceEn": "Parwaaz Card Pre-Departure Support",
+        "serviceUr": "پرواز کارڈ برائے ابتدائی سفری اخراجات",
+        "normal": "Financial Grant / Facility",
+        "urgent": "Covers Medical & Visa",
+        "validity": "Selected GCC Hires"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Profile on psdf.org.pk",
+        "titleUr": "پی ایس ڈی ایف پورٹل پر پروفائل بنائیں",
+        "detailEn": "Register on the official Punjab Skills Development Fund platform (psdf.org.pk) with CNIC and academic credentials.",
+        "detailUr": "پنجاب سکلز ڈویلپمنٹ فنڈ کی سرکاری ویب سائٹ پر اپنا شناختی کارڈ اور تعلیمی کوائف درج کر کے رجسٹر ہوں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select In-Demand Trade Course",
+        "titleUr": "شعبہ منتخب کریں اور ابتدائی ٹیسٹ دیں",
+        "detailEn": "Choose an eligible technical trade aligned with overseas employer quotas (hospitality, logistics, healthcare, electromechanical).",
+        "detailUr": "اپنی دلچسپی اور تعلیم کے مطابق مطلوبہ شعبے کا انتخاب کریں اور بنیادی اہلیت کا انٹرویو پاس کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Hands-On Training with Monthly Stipend",
+        "titleUr": "وظیفے کے ساتھ مکمل تکنیکی تربیت حاصل کریں",
+        "detailEn": "Undergo intensive practical training at certified partner institutes while receiving a monthly financial stipend.",
+        "detailUr": "منظور شدہ تربیتی اداروں میں جدید پریکٹیکل کورس مکمل کریں اور ماہانہ مالی وظیفہ حاصل کریں۔"
+      },
+      {
+        "stepNumber": 4,
+        "titleEn": "International Trade Testing & GCC Interviews",
+        "titleUr": "بین الاقوامی ٹریڈ ٹیسٹ اور غیر ملکی انٹرویو",
+        "detailEn": "Obtain international skill certification and attend direct placement interviews with pre-vetted corporate employers from Saudi Arabia, UAE, and Qatar.",
+        "detailUr": "عالمی معیار کا ٹیسٹ پاس کر کے خلیجی ممالک (سعودی عرب، یو اے ای، قطر) کے نمائندوں سے ملازمت کا انٹرویو دیں۔"
+      },
+      {
+        "stepNumber": 5,
+        "titleEn": "Parwaaz Card Support & Legal Departure",
+        "titleUr": "پرواز کارڈ مالی معاونت اور قانونی پرواز",
+        "detailEn": "Receive Parwaaz Card financial support for medical and visa fees, complete BEOE Protector registration, and safely deploy abroad.",
+        "detailUr": "پرواز کارڈ کی مدد سے میڈیکل و ویزا اخراجات ادا کریں، پروٹیکٹر لگوائیں اور باوقار قانونی روزگار کے لیے روانہ ہوں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is the CM Punjab Tabeer Program and who operates it?",
+        "questionUr": "وزیراعلیٰ پنجاب تعبیر پروگرام کیا ہے اور کون چلا رہا ہے؟",
+        "answerEn": "The Tabeer Program is an official youth empowerment initiative operated by the Punjab Skills Development Fund (PSDF) under Hunarmand Naujawan, offering free training and GCC jobs.",
+        "answerUr": "یہ منصوبہ پنجاب سکلز ڈویلپمنٹ فنڈ (PSDF) ہنرمند نوجوان پروگرام کے تحت چلا رہا ہے جس میں مفت ٹریننگ اور خلیجی ممالک میں روزگار دیا جاتا ہے۔"
+      },
+      {
+        "questionEn": "What are the eligibility criteria for Tabeer Program?",
+        "questionUr": "تعبیر پروگرام کی اہلیت کے قواعد کیا ہیں؟",
+        "answerEn": "Applicants must be permanent residents of Punjab aged between 18 and 35 years with a valid CNIC. Apply online at psdf.org.pk.",
+        "answerUr": "امیدوار کے پاس پنجاب کا شناختی کارڈ اور عمر 18 سے 35 سال ہونی چاہیے۔ آن لائن درخواست psdf.org.pk پر دی جا سکتی ہے۔"
+      }
+    ],
+    "contentEn": "Complete guide to CM Maryam Nawaz Tabeer Program implemented by PSDF (psdf.org.pk): eligibility (age 18–35), monthly training stipend, free certification, Parwaaz Card support, and overseas job placement in Saudi Arabia & GCC.",
+    "contentUr": "وزیراعلیٰ پنجاب تعبیر پروگرام (PSDF): 18 تا 35 سال کے نوجوانوں کے لیے مفت ٹیکنیکل ٹریننگ، ماہانہ وظیفہ، پرواز کارڈ اور سعودی عرب و خلیجی ممالک میں باوقار روزگار۔",
+    "relatedSlugs": [
+      "/jobs/beoe-protector-registration-overseas-employment-2026",
+      "/jobs/beoe-protector-fee-calculator-2026",
+      "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
+      "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply"
+    ]
   }
 };
