@@ -21769,5 +21769,104 @@ export const ARTICLES: Record<string, Article> = {
       "/family-registration/nikah-nama-registration-process-pakistan",
       "/family-registration/marriage-certificate-union-council-apply"
     ]
+  },
+  "raast-instant-payment-system-pakistan-2026": {
+    "slug": "raast-instant-payment-system-pakistan-2026",
+    "fullPath": "/finance/raast-instant-payment-system-pakistan-2026",
+    "categoryId": "finance",
+    "titleEn": "Raast Instant Payment System Pakistan 2026: SBP Registration & Rules",
+    "titleUr": "راست انسٹنٹ پیمنٹ سسٹم پاکستان 2026: رجسٹریشن گائیڈ اور قوانین",
+    "metaDescriptionEn": "Complete State Bank of Pakistan (SBP) Raast guide 2026: Instant 24/7 transfers using mobile number/CNIC, zero-fee P2P rules, BISP digital transfers, overseas remittance integration, and Rs 3.5B merchant QR subsidy.",
+    "metaDescriptionUr": "اسٹیٹ بینک راست فوری ادائیگی سسٹم کا مکمل گائیڈ 2026: موبائل نمبر اور شناختی کارڈ سے مفت فوری رقم کی منتقلی، بی آئی ایس پی رقم کا آن لائن طریقہ، بیرون ملک ترسیلات زر اور کیو آر کوڈ مرچنٹ سبسڈی۔",
+    "directAnswerEn": "Raast ('Direct Path') is Pakistan's premier instant payment platform developed by the State Bank of Pakistan (SBP). It enables citizens to send and receive money 24/7 in seconds using a simple Raast ID (typically a mobile number or CNIC) linked to any bank account or mobile wallet (JazzCash, EasyPaisa, SadaPay, etc.) without entering long 24-character IBAN numbers. Person-to-person (P2P) transactions are free of cost.",
+    "directAnswerUr": "راست (Raast) اسٹیٹ بینک آف پاکستان کا قائم کردہ پہلا فوری اور مفت پیمنٹ سسٹم ہے۔ اس کے ذریعے شہری 24 گھنٹے سیکنڈز میں رقم منتقل کر سکتے ہیں۔ 24 ہندسوں کے طویل IBAN کی جگہ صرف اپنے موبائل نمبر یا شناختی کارڈ کو راست آئی ڈی بنا کر کسی بھی بینک یا موبائل والٹ (جائز کیش، ایزی پیسہ، نایا پے) میں فنڈز موصول یا ارسال کر سکتے ہیں۔ عام صارفین کے لیے یہ سروس بالکل مفت ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "State Bank of Pakistan (SBP) Raast Portal",
+      "url": "https://www.sbp.org.pk/raast/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Banking & Digital Finance Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Person-to-Person (P2P) Fund Transfer",
+        "serviceUr": "شہریوں کے درمیان باہمی رقم کی منتقلی",
+        "normal": "Free (PKR 0)",
+        "urgent": "Instant 24/7",
+        "validity": "All Participating Banks & Wallets"
+      },
+      {
+        "serviceEn": "Person-to-Merchant (P2M) QR Payment",
+        "serviceUr": "کیو آر کوڈ سے خریداری اور دکاندار کی ادائیگی",
+        "normal": "Subsidized (0% to 0.25%)",
+        "urgent": "Instant QR",
+        "validity": "Rs 3.5B Govt Subsidy Scheme"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Open Bank / Mobile Wallet App",
+        "titleUr": "اپنی بینکنگ یا ایزی پیسہ/جائز کیش ایپ کھولیں",
+        "detailEn": "Log in to your commercial bank's mobile banking application or digital wallet (EasyPaisa, JazzCash, SadaPay, NayaPay).",
+        "detailUr": "اپنی بینکنگ ایپ یا موبائل والٹ میں لاگ ان کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select Raast ID Management",
+        "titleUr": "راست آئی ڈی مینجمنٹ منتخب کریں",
+        "detailEn": "Navigate to Account Settings or Funds Transfer and select 'Raast ID Management' or 'Register Raast ID'.",
+        "detailUr": "سیٹنگز یا فنڈز ٹرانسفر میں جا کر 'راست آئی ڈی مینجمنٹ' پر کلک کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Link Mobile Number & Confirm",
+        "titleUr": "موبائل نمبر لنک کریں اور تصدیق کریں",
+        "detailEn": "Select the bank account or wallet you wish to link to your mobile number, verify via OTP, and activate your Raast ID.",
+        "detailUr": "اپنا موبائل نمبر منتخب بینک اکاؤنٹ کے ساتھ لنک کریں اور او ٹی پی کوڈ سے آن لائن تصدیق مکمل کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Is Raast the same as JazzCash or EasyPaisa?",
+        "questionUr": "کیا راست (Raast) جائز کیش یا ایزی پیسہ کا نیا نام ہے؟",
+        "answerEn": "No. Raast is a centralized national payment infrastructure operated by the State Bank of Pakistan. JazzCash, EasyPaisa, and all commercial banks integrate with Raast to allow instant inter-bank transactions.",
+        "answerUr": "جی نہیں، راست اسٹیٹ بینک آف پاکستان کا مرکزی قومی ادائیگی ڈائریکٹ سسٹم ہے جس سے تمام بینک اور موبائل والٹس (جائز کیش، ایزی پیسہ) منسلک ہیں۔"
+      },
+      {
+        "questionEn": "How is a Raast ID different from an IBAN?",
+        "questionUr": "راست آئی ڈی 24 ہندسوں کے آئی بی اے این (IBAN) سے کیسے مختلف ہے؟",
+        "answerEn": "An IBAN is a 24-character international account number. A Raast ID is a simple alias (like your mobile number) linked directly to your underlying IBAN, making sharing quick and error-free.",
+        "answerUr": "آئی بی اے این 24 ہندسوں کا طویل اکاؤنٹ نمبر ہوتا ہے جبکہ راست آئی ڈی آپ کے موبائل نمبر کی صورت میں ایک آسان شارٹ کٹ ہے جو بیک اینڈ پر آپ کے آئی بی اے این سے منسلک ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Do I need a commercial bank account or can I use a mobile wallet?",
+        "questionUr": "کیا راست استعمال کرنے کے لیے روایتی بینک اکاؤنٹ ضروری ہے؟",
+        "answerEn": "You can use either! Raast works seamlessly across both traditional bank accounts (HBL, Meezan, UBL, etc.) and branchless mobile wallets (EasyPaisa, JazzCash, SadaPay, NayaPay).",
+        "answerUr": "آپ دونوں استعمال کر سکتے ہیں! راست تمام روایتی بینکوں اور موبائل والٹس (ایزی پیسہ، جائز کیش وغیرہ) پر یکساں کام کرتا ہے۔"
+      },
+      {
+        "questionEn": "Are there any fees for sending money via Raast?",
+        "questionUr": "کیا راست کے ذریعے پیسے بھیجنے پر کوئی چارجز یا فیس ہے؟",
+        "answerEn": "No. Person-to-Person (P2P) transfers via Raast are completely free of charge for individual customers across Pakistan.",
+        "answerUr": "جی نہیں! عام شہریوں کے لیے راست کے ذریعے باہمی پیسے بھیجنا بالکل مفت (صفر چارجز) ہے۔"
+      },
+      {
+        "questionEn": "Is Raast safe and secure?",
+        "questionUr": "کیا راست سسٹم سیکیور اور محفوظ ہے؟",
+        "answerEn": "Yes. Raast is directly managed and encrypted by the State Bank of Pakistan with biometric and bank-grade security protocols.",
+        "answerUr": "جی ہاں! راست اسٹیٹ بینک آف پاکستان کی سرپرستی میں چلنے والا جدید ترین اور اعلیٰ ترین سیکیورٹی کا حامل سٹیٹ فنانشل نیٹ ورک ہے۔"
+      }
+    ],
+    "contentEn": "State Bank of Pakistan (SBP) Raast instant payment guide: registration steps, Raast ID vs IBAN comparison, BISP digital transfers, foreign remittance routing, and Rs 3.5B merchant QR subsidy.",
+    "contentUr": "اسٹیٹ بینک راست فوری ادائیگی سسٹم: آئی ڈی بنانے کا طریقہ، آئی بی اے این سے تقابل، بینظیر کفالت اور بیرون ملک سے ترسیلات زر کی آن لائن منتقلی۔",
+    "relatedSlugs": [
+      "/finance/pakistan-iban-number-check-validator-2026",
+      "/tax/foreign-remittance-tax-pakistan-overseas-2026",
+      "/welfare/benazir-taleemi-wazaif-check-online-registration-2026",
+      "/finance/how-to-open-bank-account-online-pakistan-2026"
+    ]
   }
 };

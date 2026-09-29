@@ -1413,6 +1413,11 @@ export const CATEGORIES: Category[] = [
         "en": "Currency Exchange Rate Converter Pakistan 2026",
         "ur": "کرنسی ریٹ و کنورٹر پاکستان 2026",
         "slug": "/finance/currency-exchange-rate-pakistan-open-market-interbank-2026"
+      },
+      {
+        "en": "Raast Instant Payment System 2026",
+        "ur": "راست آن لائن فوری ادائیگی سسٹم 2026",
+        "slug": "/finance/raast-instant-payment-system-pakistan-2026"
       }
     ]
   },
