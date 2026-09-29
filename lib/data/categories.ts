@@ -939,6 +939,11 @@ export const CATEGORIES: Category[] = [
         "en": "Nikah Nama English MOFA",
         "ur": "نکاح نامہ انگلش ترجمہ و تصدیق",
         "slug": "/family-registration/nikah-nama-english-translation-attestation"
+      },
+      {
+        "en": "Punjab Child Marriage Law 2026",
+        "ur": "پنجاب چائلڈ میرج قانون 2026",
+        "slug": "/family-registration/punjab-child-marriage-restraint-ordinance-2026-explained"
       }
     ]
   },

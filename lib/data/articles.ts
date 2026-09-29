@@ -21670,5 +21670,104 @@ export const ARTICLES: Record<string, Article> = {
       "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
       "/education/cm-punjab-e-bike-scheme-2026-eligibility-apply"
     ]
+  },
+  "punjab-child-marriage-restraint-ordinance-2026-explained": {
+    "slug": "punjab-child-marriage-restraint-ordinance-2026-explained",
+    "fullPath": "/family-registration/punjab-child-marriage-restraint-ordinance-2026-explained",
+    "categoryId": "family-registration",
+    "titleEn": "Punjab Child Marriage Restraint Ordinance 2026 Explained: Minimum Age 18 & Rules",
+    "titleUr": "پنجاب چائلڈ میرج ریسٹرینٹ آرڈیننس 2026: شادی کی کم از کم عمر 18 سال اور قانونی نتائج",
+    "metaDescriptionEn": "Factual public explainer on the Punjab Child Marriage Restraint (Amendment) Ordinance 2026 / Act: 18-year uniform age limit, cognizable non-bailable penalties, Nikah Registrar CNIC/B-Form age checks, minority girl protection, and 1121 reporting.",
+    "metaDescriptionUr": "پنجاب میں لڑکے اور لڑکی کی شادی کی کم از کم عمر 18 سال کرنے کے قانون کی مکمل تفصیل، نا قابلِ ضمانت سزا، یونین کونسل نکاح ہسٹری تصدیق اور ہیلپ لائنز۔",
+    "directAnswerEn": "Under the Punjab Child Marriage Restraint (Amendment) Ordinance/Act 2026, the minimum legal age for marriage in Punjab is 18 years for BOTH males and females. Contracting, officiating, or facilitating an underage marriage is a cognizable, non-bailable, and non-compoundable offense. Nikah Registrars must verify CNIC or B-Form records prior to registration, and offenders face up to 3 years rigorous imprisonment, fines up to PKR 500,000, and up to 7 years for cohabitation.",
+    "directAnswerUr": "پنجاب چائلڈ میرج ریسٹرینٹ آرڈیننس/ایکٹ 2026 کے تحت پنجاب میں لڑکے اور لڑکی دونوں کے لیے شادی کی قانونی عمر کم از کم 18 سال مقرر کی گئی ہے۔ زیرِ عمر شادی کا انعقاد یا سہولت کاری قابلِ دست اندازی پولیس، ناقابلِ ضمانت اور ناقابلِ راضی نامہ جرم ہے۔ نکاح خواں کے لیے شناختی کارڈ یا بی فارم کی تصدیق لازمی ہے، جبکہ خلاف ورزی پر 3 سال قیدِ با مشقت اور 5 لاکھ روپے تک جرمانہ عائد ہوتا ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "Punjab Child Protection & Welfare Bureau / Govt of Punjab",
+      "url": "https://cpwb.punjab.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Family & Legal Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Nikah Khawan Age Verification Check",
+        "serviceUr": "نکاح خواں عمر کی آن لائن/دستاویزی تصدیق",
+        "normal": "Mandatory via CNIC/B-Form",
+        "urgent": "Statutory Duty",
+        "validity": "All Nikah Registrations in Punjab"
+      },
+      {
+        "serviceEn": "Child Protection Emergency Helpline (CPWB)",
+        "serviceUr": "چائلڈ پروٹیکشن اینڈ ویلفیئر بیورو ہیلپ لائن",
+        "normal": "Toll-Free 1121",
+        "urgent": "24/7 Available",
+        "validity": "Punjab Statewide"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Mandatory Document Check (CNIC / B-Form)",
+        "titleUr": "شناختی کارڈ یا بی فارم سے عمر کی تصدیق",
+        "detailEn": "The Nikah Khawan must inspect original NADRA CNICs (or Smart Card/B-Form) for both bride and groom to confirm both are at least 18 years old.",
+        "detailUr": "نکاح خواں کے لیے لازمی ہے کہ وہ نادرا کا اصل شناختی کارڈ یا بی فارم دیکھ کر تصدیق کرے کہ دلہا اور دلہن دونوں 18 سال مکمل کر چکے ہیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Nikah Solemnization & Verification Entry",
+        "titleUr": "نکاح نامہ کا انعقاد اور کوائف کا اندراج",
+        "detailEn": "Upon age confirmation, the Nikah Nama is executed using government-issued forms with complete CNIC numbers of both parties, parents, and witnesses.",
+        "detailUr": "عمر کی تصدیق کے بعد ہی سرکاری فارم پر نکاح نامہ درج کیا جاتا ہے اور فریقین و گواہان کے شناختی کارڈ درج کیے جاتے ہیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Union Council Registration & Verification",
+        "titleUr": "یونین کونسل میں اندراج اور فائنل کمپیوٹرائزڈ ایم آر سی",
+        "detailEn": "The Nikah Registrar submits the duplicate Nikah Nama to the local Union Council, which re-verifies ages against NADRA CRMS database before issuing the Marriage Registration Certificate.",
+        "detailUr": "نکاح خواں دوسری کاپی مقامی یونین کونسل میں جمع کرواتا ہے، جہاں نادرا ڈاٹابیس سے دوبارہ عمر چیک کر کے ہی ایم آر سی جاری کیا جاتا ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Does the Punjab Child Marriage Restraint 2026 law apply to all religions?",
+        "questionUr": "کیا 2026 کا پنجاب چائلڈ میرج ریسٹرینٹ قانون تمام مذاہب پر لاگو ہوتا ہے؟",
+        "answerEn": "Yes. The law applies universally to all citizens and residents living in Punjab, regardless of their religious affiliation.",
+        "answerUr": "جی ہاں، یہ قانون بلا تفریقِ مذہب پنجاب کے تمام باشندوں پر یکساں لاگو ہوتا ہے۔"
+      },
+      {
+        "questionEn": "Can a Family Court judge issue a special permission/waiver for marriage under 18 in Punjab?",
+        "questionUr": "کیا فیملی کورٹ 18 سال سے کم عمر میں شادی کے لیے کوئی خاص اجازت دے سکتی ہے؟",
+        "answerEn": "No. The 2026 legislation sets an absolute minimum statutory threshold of 18 years with no judicial waiver or exceptions.",
+        "answerUr": "جی نہیں، اس نئے قانون میں 18 سال کی کم از کم حد مطلق ہے اور عدالتی استثنیٰ یا اجازت کی کوئی گنجائش نہیں ہے۔"
+      },
+      {
+        "questionEn": "Can parents or Nikah Registrars be prosecuted if an underage marriage is not registered with the Union Council?",
+        "questionUr": "اگر زیرِ عمر شادی یونین کونسل میں رجسٹر نہ ہوئی ہو تب بھی کیا والدین یا نکاح خواں پر مقدمہ چل سکتا ہے؟",
+        "answerEn": "Yes. Solemnizing, arranging, or assisting an unregistered child marriage is a criminal offense subject to police arrest and prosecution under the law.",
+        "answerUr": "جی ہاں، غیر رجسٹرڈ بچوں کی شادی کا انعقاد، اہتمام یا معاونت کرنا بھی قابلِ دست اندازی پولیس جرم ہے جس میں گرفتاری اور سزا ہو سکتی ہے۔"
+      },
+      {
+        "questionEn": "Is the minimum age of marriage 18 across all provinces of Pakistan?",
+        "questionUr": "کیا پاکستان کے تمام صوبوں میں شادی کی کم از کم عمر 18 سال ہی ہے؟",
+        "answerEn": "Sindh enacted 18 years in 2013, and Punjab enacted 18 years in 2026. Other regions (ICT, KP, Balochistan) are governed by federal/provincial frameworks where legislative updates remain under discussion.",
+        "answerUr": "سندھ نے 2013 میں جبکہ پنجاب نے 2026 میں شادی کی کم از کم عمر 18 سال مقرر کی۔ دیگر صوبوں میں قانون سازی کی الگ ترامیمز و بحث جاری ہے۔"
+      },
+      {
+        "questionEn": "What should you do if an underage marriage is being planned in Punjab?",
+        "questionUr": "اگر پنجاب میں کسی زیرِ عمر بچے کی شادی کا منصوبہ ہو تو کیا کرنا چاہیے؟",
+        "answerEn": "Report immediately to the Child Protection & Welfare Bureau Helpline at 1121 or Emergency Police at 15. Reports can be made confidentially.",
+        "answerUr": "چائلڈ پروٹیکشن بیورو کی ہیلپ لائن 1121 یا ایمرجنسی پولیس 15 پر فوری اطلاع دیں۔ اطلاع دینے والے کا نام راز میں رکھا جاتا ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive factual guide to the Punjab Child Marriage Restraint (Amendment) Ordinance/Act 2026: uniform age limit 18 for both genders, cognizable non-bailable offense classification, Nikah Khawan duties, minority protection, and reporting helplines.",
+    "contentUr": "پنجاب چائلڈ میرج ریسٹرینٹ 2026: لڑکے اور لڑکی کے لیے 18 سال کی یکساں عمر، نا قابلِ ضمانت جرم، نکاح خواں کی ذمہ داریاں، اقلیتی حقوق کا تحفظ اور رپورٹنگ ہیلپ لائنز۔",
+    "relatedSlugs": [
+      "/family-registration/nikah-nama-vs-marriage-certificate-mrc-2026",
+      "/family-registration/talaq-khula-legal-process-pakistan-2026",
+      "/family-registration/nikah-nama-registration-process-pakistan",
+      "/family-registration/marriage-certificate-union-council-apply"
+    ]
   }
 };
