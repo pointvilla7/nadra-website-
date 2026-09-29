@@ -1074,6 +1074,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Ramzan Sehri & Iftar Timings 2026",
+        "ur": "رمضان سحری و افطار اوقات 2026",
+        "slug": "/hajj-umrah/ramzan-sehri-iftar-timings-2026"
+      },
+      {
         "en": "Nusuk App Umrah Guide 2026",
         "ur": "نسک ایپ عمرہ رہنمائی 2026",
         "slug": "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026"

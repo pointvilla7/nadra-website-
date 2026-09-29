@@ -21868,5 +21868,72 @@ export const ARTICLES: Record<string, Article> = {
       "/welfare/benazir-taleemi-wazaif-check-online-registration-2026",
       "/finance/how-to-open-bank-account-online-pakistan-2026"
     ]
+  },
+  "hajj-umrah-ramzan-sehri-iftar-timings-2026": {
+    "slug": "ramzan-sehri-iftar-timings-2026",
+    "fullPath": "/hajj-umrah/ramzan-sehri-iftar-timings-2026",
+    "categoryId": "hajj-umrah",
+    "titleEn": "Ramzan Sehri & Iftar Timings 2026 Pakistan: City Wise Calendar",
+    "titleUr": "رمضان سحری و افطار اوقات 2026 پاکستان",
+    "metaDescriptionEn": "Check today’s Sehri end time & Iftar time for Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, Quetta, Faisalabad & all Pakistani cities with full 30-day Ramadan 2026 timetable.",
+    "metaDescriptionUr": "پاکستان کے تمام شہروں لاہور، کراچی، اسلام آباد، پشاور، کوئٹہ کے رمضان 2026 سحری و افطار کے اوقات اور 30 روزہ کیلنڈر۔",
+    "directAnswerEn": "Ramadan 2026 in Pakistan is expected to begin on February 18–19, 2026, subject to Ruet-e-Hilal Committee moon sighting. Sehri end equals Fajr dawn, while Iftar equals Maghrib sunset, calculated using the University of Islamic Sciences, Karachi convention (18° Fajr/Isha). Local mosques add a 1–2 minute buffer.",
+    "directAnswerUr": "پاکستان میں رمضان 2026 کا آغاز 18 یا 19 فروری کو رویت ہلال کمیٹی کے چاند کی تصدیق کے بعد ہوگا۔ سحری کا وقت فجر کی اذان تک اور افطار کا وقت مغرب کے غروب آفتاب پر ہوتا ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "Central Ruet-e-Hilal Committee & Jamia Binoria Karachi",
+      "url": "https://mora.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Islamic Civic Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Karachi Juristic Method",
+        "serviceUr": "جامعہ علوم اسلامیہ کراچی طریقہ",
+        "normal": "18.0° Fajr Angle",
+        "urgent": "18.0° Isha Angle",
+        "executive": "Hanafi Juristic Asr"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select Your City in Pakistan",
+        "titleUr": "اپنا شہر منتخب کریں",
+        "detailEn": "Choose from Lahore, Karachi, Islamabad, Rawalpindi, Peshawar, Quetta, or 30+ Pakistani cities.",
+        "detailUr": "لاہور، کراچی، اسلام آباد یا دیگر 30 سے زائد پاکستانی شہروں میں سے انتخاب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "View Today's Sehri & Iftar Times",
+        "titleUr": "آج کے سحری و افطار کے اوقات دیکھیں",
+        "detailEn": "Check Fajr (Sehri End) and Maghrib (Iftar) with live countdown to the next event.",
+        "detailUr": "فجر (ختمِ سحری) اور مغرب (افطار) کا وقت اور لائیو کاؤنٹ ڈاؤن دیکھیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Print 30-Day Ramadan Schedule",
+        "titleUr": "30 روزہ رمضان کیلنڈر پرنٹ کریں",
+        "detailEn": "Access the complete 30-day timetable for the entire month of Ramadan 2026.",
+        "detailUr": "پورے ماہِ رمضان 2026 کا 30 روزہ مکمل ٹائم ٹیبل دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What time does Sehri end in Lahore today?",
+        "questionUr": "لاہور میں آج سحری کا وقت کب ختم ہوگا؟",
+        "answerEn": "Sehri time ends at Fajr dawn (~5:18 AM at Ramadan start in Feb 2026). Check our live tool above for exact city times.",
+        "answerUr": "سحری کا وقت فجر کے آغاز پر ختم ہوتا ہے۔ تازہ ترین اوقات اوپر ٹول سے دیکھیں۔"
+      }
+    ],
+    "contentEn": "Interactive tool and guide for calculating real-time daily Ramzan Sehri and Iftar timings for all major cities in Pakistan.",
+    "contentUr": "پاکستان کے تمام شہروں کے لیے رمضان المبارک کے سحری اور افطار کے اوقات اور 30 روزہ ٹائم ٹیبل۔",
+    "relatedSlugs": [
+      "/hajj-umrah/zakat-calculator-2026",
+      "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026",
+      "/hajj-umrah/hajj-registration-portal-pakistan-2026"
+    ]
   }
 };
