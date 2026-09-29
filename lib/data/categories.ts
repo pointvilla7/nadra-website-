@@ -398,6 +398,16 @@ export const CATEGORIES: Category[] = [
         "slug": "/bills/faisalabad-water-bill-guide-2026"
       },
       {
+        "en": "New Electricity Connection Guide 2026",
+        "ur": "نیا بجلی میٹر آن لائن اپلائی 2026",
+        "slug": "/bills/new-electricity-connection-application-guide-2026"
+      },
+      {
+        "en": "New Gas Connection Policy 2026",
+        "ur": "نیا گیس میٹر پالیسی و صورتحال 2026",
+        "slug": "/bills/new-gas-connection-application-guide-2026"
+      },
+      {
         "en": "WAPDA Complaint Tracker",
         "ur": "واپڈا شکایات ٹریکر",
         "slug": "/bills/wapda-complaint-status-tracker-2026"

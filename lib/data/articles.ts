@@ -22076,5 +22076,146 @@ export const ARTICLES: Record<string, Article> = {
       "/overseas/poc-card-pakistan-apply-online",
       "/overseas/pakistan-embassy-attestation-documents"
     ]
+  },
+  "bills-new-electricity-connection-application-guide-2026": {
+    "slug": "new-electricity-connection-application-guide-2026",
+    "fullPath": "/bills/new-electricity-connection-application-guide-2026",
+    "categoryId": "bills",
+    "titleEn": "New Electricity Connection Guide 2026: ENC Portal, Fees & Documents",
+    "titleUr": "نیا بجلی میٹر آن لائن اپلائی گائیڈ 2026",
+    "metaDescriptionEn": "Complete guide to applying for a new electricity connection online in Pakistan via the ENC portal (enc.com.pk) for LESCO, IESCO, FESCO, MEPCO, PESCO, GEPCO, and K-Electric.",
+    "metaDescriptionUr": "پاکستان میں نیا بجلی کا میٹر آن لائن اپلائی کرنے کا طریقہ، ای این سی پورٹل، ضروری کاغذات، ڈیمانڈ نوٹس اور انسٹالیشن گائیڈ۔",
+    "directAnswerEn": "To get a new electricity connection in Pakistan, apply online at enc.com.pk (or ke.com.pk for Karachi). Upload CNIC, property ownership proof, wiring test certificate, and a neighbor’s bill. After a site survey, pay the Demand Notice at a bank. Meters are typically installed within 15–30 days.",
+    "directAnswerUr": "پاکستان میں نیا بجلی کا میٹر لگوانے کے لیے آفیشل پورٹل (enc.com.pk) پر آن لائن فارم پر کریں۔ شناختی کارڈ، اراضی ثبوت، وائرنگ ٹیسٹ رپورٹ اور ہمسائے کا بل اپ لوڈ کریں۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "PITC & NEPRA ENC Portal",
+      "url": "https://enc.com.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Power & Utility Services Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Category 1 (Up to 15 kW)",
+        "serviceUr": "کیٹیگری 1 (15 کلو واٹ تک)",
+        "normal": "Demand Notice Fee",
+        "urgent": "15-30 Days",
+        "executive": "Single/Three Phase"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Apply Online on enc.com.pk",
+        "titleUr": "ای این سی پورٹل پر آن لائن فارم پر کریں",
+        "detailEn": "Select your DISCO and upload required property documents and CNIC.",
+        "detailUr": "اپنی ڈسکو کمپنی منتخب کریں اور کاغذات اپ لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Pay Demand Notice at Bank",
+        "titleUr": "ڈیمانڈ نوٹس کی ادائیگی کریں",
+        "detailEn": "Download approved Demand Notice and pay at designated bank branches.",
+        "detailUr": "ڈیمانڈ نوٹس بینک میں جمع کروائیں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Meter Installation & Energization",
+        "titleUr": "میٹر کی تنصیب اور کنکشن",
+        "detailEn": "DISCO team completes meter installation within 15-30 days post-payment.",
+        "detailUr": "بی ایس ڈی او ٹیم 15 تا 30 دنوں میں میٹر انسٹال کرتی ہے۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "How do I apply for a new electricity connection online?",
+        "questionUr": "نیا بجلی کا میٹر آن لائن کیسے اپلائی کریں؟",
+        "answerEn": "Apply on enc.com.pk for all government DISCOs or ke.com.pk for Karachi.",
+        "answerUr": "سرکاری پورٹل enc.com.pk سے آن لائن درخواست دیں۔"
+      }
+    ],
+    "contentEn": "Step-by-step guide for applying for a new domestic or commercial electricity connection in Pakistan via the official ENC portal.",
+    "contentUr": "پاکستان کے تمام شہروں میں نیا بجلی میٹر آن لائن اپلائی کرنے کا مکمل اور آسان طریقہ۔",
+    "relatedSlugs": [
+      "/bills/new-gas-connection-application-guide-2026",
+      "/bills/fesco-bill-check-online-duplicate-2026",
+      "/bills/wapda-complaint-status-tracker-2026"
+    ]
+  },
+  "bills-new-gas-connection-application-guide-2026": {
+    "slug": "new-gas-connection-application-guide-2026",
+    "fullPath": "/bills/new-gas-connection-application-guide-2026",
+    "categoryId": "bills",
+    "titleEn": "New Gas Connection Policy 2026: SNGPL & SSGC Status & Rules",
+    "titleUr": "نیا گیس میٹر پالیسی و موجودہ صورتحال 2026",
+    "metaDescriptionEn": "Current 2026 policy status for new domestic gas connections in Pakistan across SNGPL and SSGC. Understand ongoing moratorium restrictions, RLNG tariff options, application tracking, and scam warnings.",
+    "metaDescriptionUr": "سوئی ناردرن اور سوئی سدرن گیس کے نئے میٹرز کی موجودہ پالیسی، آر ایل این جی ٹیرف اور دھوکہ دہی سے بچاؤ کی مکمل رہنمائی۔",
+    "directAnswerEn": "New domestic natural gas connections in Pakistan remain broadly suspended across SNGPL and SSGC due to energy supply shortages and gas depletion. Demand notice issuance for standard system gas is frozen in most residential areas. Where conditionally opened, connections are restricted to higher RLNG tariffs.",
+    "directAnswerUr": "پاکستان میں قدرتی گیس کی شارٹیج کی وجہ سے سوئی ناردرن (SNGPL) اور سوئی سدرن (SSGC) کی جانب سے نئے گھریلو گیس کنکشن پر پابندی اور تعطل برقرار ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "SNGPL & SSGC Gas Transmission Companies",
+      "url": "https://www.sngpl.com.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Energy & Utility Advisory Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "System Gas (Suspended)",
+        "serviceUr": "سسٹم گیس (معطل)",
+        "normal": "Frozen",
+        "urgent": "Moratorium Active",
+        "executive": "No New DN Issued"
+      },
+      {
+        "serviceEn": "RLNG Tariff (Conditional)",
+        "serviceUr": "آر ایل این جی ٹیرف (مشروط)",
+        "normal": "Full Cost Tariff",
+        "urgent": "Selected Housing Societies",
+        "executive": "Higher Rate"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Check Area Status on sngpl.com.pk / ssgc.com.pk",
+        "titleUr": "اپنے علاقے کی پالیسی آن لائن چیک کریں",
+        "detailEn": "Verify whether new RLNG applications are conditionally open in your sub-division.",
+        "detailUr": "آفیشل پورٹل پر اپنے علاقے کے ویزٹ کی تازہ ترین صورتحال دیکھیں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Track Existing Pending Applications",
+        "titleUr": "سابقہ آن لائن درخواست کا سٹیٹس ٹریک کریں",
+        "detailEn": "Use your application reference number to check seniority on official company portals.",
+        "detailUr": "ریفرینس نمبر کے ذریعے اپنی پینڈنگ درخواست کی سینارٹی چیک کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Avoid Fake Private Agents & Contractors",
+        "titleUr": "جعلی ایجنٹوں اور ٹھیکیداروں سے بچیں",
+        "detailEn": "Neither SNGPL nor SSGC authorizes third-party middlemen or unofficial cash payments.",
+        "detailUr": "کسی نجی ٹھیکیدار کو ویزا یا میٹر کا جھانسا دینے پر رقم نہ دیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Are new domestic gas connections available in 2026?",
+        "questionUr": "کیا 2026 میں نیا گیس کنکشن مل رہا ہے؟",
+        "answerEn": "New domestic natural gas connections remain suspended or restricted across most regions.",
+        "answerUr": "گھریلو قدرتی گیس کنکشن پر پابندی کی وجہ سے زیادہ تر علاقوں میں نئے میٹرز معطل ہیں۔"
+      }
+    ],
+    "contentEn": "Detailed public policy guide explaining the current 2026 new gas connection moratorium across SNGPL and SSGC in Pakistan.",
+    "contentUr": "سوئی ناردرن اور سوئی سدرن گیس کے نئے کنکشنز کی موجودہ حکومتی پالیسی اور تعطل کی مکمل گائیڈ۔",
+    "relatedSlugs": [
+      "/bills/new-electricity-connection-application-guide-2026",
+      "/bills/fesco-bill-check-online-duplicate-2026",
+      "/bills/sui-gas-bill-check-online"
+    ]
   }
 };
