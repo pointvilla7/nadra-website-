@@ -305,7 +305,7 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 font-sans">
-                {t('Purpose-built guides for Pakistani citizens and overseas Pakistanis.', 'شہریوں کی سہولت کے لیے 21 اہم کیٹیگریز۔')}
+                {t('Purpose-built guides for Pakistani citizens and overseas Pakistanis.', `شہریوں کی سہولت کے لیے ${CATEGORIES.length} اہم کیٹیگریز۔`)}
               </p>
             </div>
 

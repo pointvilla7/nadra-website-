@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
                   href="/sitemap"
                   className="hover:text-amber-400 transition flex items-center gap-1.5 text-doc-brass font-bold pt-1"
                 >
-                  <span>→ {t('View All 21 Portals', 'تمام 21 پورٹلز دیکھیں')}</span>
+                  <span>→ {t(`View All ${CATEGORIES.length} Portals`, `تمام ${CATEGORIES.length} پورٹلز دیکھیں`)}</span>
                 </Link>
               </li>
             </ul>

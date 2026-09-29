@@ -14,5 +14,5 @@ export const siteConfig = {
   descriptionEn:
     "Pakistan's verified civic services directory. Official step-by-step guides, fee calculators, and online tracking for NADRA, Passport, FBR, DLIMS & Property.",
   descriptionUr:
-    'پاکستان کا آزاد و مصدقہ عوامی معلوماتی پورٹل — نادرا، پاسپورٹ، پاکستان پوسٹ، پی ٹی اے، ایف بی آر، بینکنگ، حج، پراپرٹی اور 21 کیٹیگریز کی سرکاری فیسیں، ٹولز اور مکمل رہنمائی۔',
+    'پاکستان کا آزاد و مصدقہ عوامی معلوماتی پورٹل — نادرا، پاسپورٹ، پاکستان پوسٹ، پی ٹی اے، ایف بی آر، بینکنگ، حج، پراپرٹی اور 22 کیٹیگریز کی سرکاری فیسیں، ٹولز اور مکمل رہنمائی۔',
 };

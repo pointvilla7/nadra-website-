@@ -18,7 +18,7 @@ Pakistan Info Hub provides independent, factual, and 100% gazette-verified step-
 
 ---
 
-## 21 Core Category Hubs
+## 22 Core Category Hubs
 1. **NADRA Services** (`/nadra`): Smart CNIC, B-Form (CRC), NICOP, Family Registration Certificate (FRC), Succession Certificate, Death Cancellation.
 2. **Passports & Visas** (`/passport`): Machine Readable Passport (MRP), e-Passport 2026, Fast Track Executive, Child Passport, Overseas Renewal.
 3. **Education & Boards** (`/education`): BISE Matric & Intermediate Results, HEC Degree Attestation, University Merit Lists, PM Laptop Scheme.
@@ -40,6 +40,7 @@ Pakistan Info Hub provides independent, factual, and 100% gazette-verified step-
 19. **Pakistan Post** (`/pakistan-post`): Urgent Mail Service (UMS) Tracking, International EMS Parcel Delivery, Postal Code Directory.
 20. **Banking & Finance** (`/finance`): SBP Asaan Digital Account Opening, Pakistan IBAN Format Validator, Withholding Tax on Cash Withdrawal.
 21. **Jobs & Career** (`/jobs`): Federal Public Service Commission (FPSC), PPSC Provincial Jobs, Government Career Portals.
+22. **Agriculture & Farmer Services** (`/agriculture`): CM Punjab Kissan Card 8070, PLRA Land Verification, Interest-Free Crop Loans, Green Tractor Balloting.
 
 ---
 

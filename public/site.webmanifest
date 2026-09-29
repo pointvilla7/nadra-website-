@@ -1,7 +1,7 @@
 {
   "name": "Pakistan Info Hub - Verified Civic Services Directory",
   "short_name": "PakistanInfoHub",
-  "description": "Pakistan's independent civic services directory — NADRA, Passport, Pakistan Post, Tax/FBR, PTA, Banking, Hajj, Property & 21 categories with verified fees & tools.",
+  "description": "Pakistan's independent civic services directory — NADRA, Passport, Pakistan Post, Tax/FBR, PTA, Banking, Hajj, Property & 22 categories with verified fees & tools.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
