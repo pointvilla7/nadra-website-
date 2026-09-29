@@ -419,6 +419,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-doc-seal dark:text-red-300",
     "popularSearches": [
       {
+        "en": "BPS Salary Calculator 2026",
+        "ur": "بی پی ایس تنخواہ کیلکولیٹر 2026",
+        "slug": "/jobs/bps-salary-calculator-2026"
+      },
+      {
         "en": "Verified Govt Jobs & Scam Alert 2026",
         "ur": "سرکاری نوکریاں اور فراڈ سے بچاؤ 2026",
         "slug": "/jobs/verified-govt-jobs-sources-avoid-scams-2026"

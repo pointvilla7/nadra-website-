@@ -21935,5 +21935,72 @@ export const ARTICLES: Record<string, Article> = {
       "/hajj-umrah/nusuk-app-guide-pakistani-pilgrims-2026",
       "/hajj-umrah/hajj-registration-portal-pakistan-2026"
     ]
+  },
+  "jobs-bps-salary-calculator-2026": {
+    "slug": "bps-salary-calculator-2026",
+    "fullPath": "/jobs/bps-salary-calculator-2026",
+    "categoryId": "jobs",
+    "titleEn": "BPS Salary Calculator 2026 Pakistan: Revised Basic Pay Scales",
+    "titleUr": "بی پی ایس تنخواہ کیلکولیٹر 2026 پاکستان",
+    "metaDescriptionEn": "Calculate your government employee salary online under Federal Revised Basic Pay Scales 2026 (RBPS-2026). Includes BPS-1 to BPS-22 basic pay, 7% Ad-hoc Relief 2026, frozen house rent, 50% revised conveyance allowance, and FBR income tax estimates.",
+    "metaDescriptionUr": "وفاقی و صوبائی سرکاری ملازمین کا پے اسکیل 2026 کے مطابق تنخواہ، الاؤنسز، ہاؤس رینٹ اور انکم ٹیکس کیلکولیٹر۔",
+    "directAnswerEn": "Government pay scales were revised effective July 1, 2026 (Finance Division OM F.1(2)IMP/2026 dated July 21, 2026). Old ad-hoc allowances (15% from 2022 & 10% from 2025) were merged into basic pay (RBPS-2026), and a new 7% Ad-hoc Relief 2026 was added. House rent remains frozen, while conveyance allowance increased 50%.",
+    "directAnswerUr": "پاکستان میں 1 جولائی 2026 سے پے اسکیلز کو ریواز کر کے RBPS-2026 نافذ کیا گیا ہے۔ پرانے ایڈہاک الاؤنسز بنیادی تنخواہ میں ضم کر دیے گئے ہیں اور 7 فیصد نیا ایڈہاک الاؤنس 2026 دیا گیا ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "Finance Division, Government of Pakistan",
+      "url": "https://finance.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Civil Service & Pay Fixation Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "BPS-17 Starting Basic (2026)",
+        "serviceUr": "بی پی ایس 17 شروعاتی بنیادی تنخواہ",
+        "normal": "PKR 54,140",
+        "urgent": "PKR 4,110 / yr",
+        "executive": "Max PKR 136,340"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Select BPS Grade (1 to 22)",
+        "titleUr": "پے اسکیل گریڈ (1 تا 22) منتخب کریں",
+        "detailEn": "Choose your civil service pay grade from BPS-1 to BPS-22.",
+        "detailUr": "اپنا پے گریڈ منتخب کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Select Service Increments (Stages)",
+        "titleUr": "سروس اسٹیجز / سالانہ اضافہ درج کریں",
+        "detailEn": "Set the number of annual increments earned to calculate running basic pay.",
+        "detailUr": "سالانہ انکریمنٹس کی تعداد منتخب کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "View Payslip Breakdown & Take-Home Pay",
+        "titleUr": "مکمل سلیپ و نیٹ تنخواہ دیکھیں",
+        "detailEn": "Get exact breakdown of basic pay, 7% ARA 2026, frozen HRA, conveyance, medical, tax, and net cash in hand.",
+        "detailUr": "بنیادی تنخواہ، 7 فیصد الاؤنس، کرایہ مکان، ٹیکس اور نقد تنخواہ دیکھیں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "What is BPS-17 starting basic pay in 2026?",
+        "questionUr": "بی پی ایس 17 کی ابتدائی بنیادی تنخواہ 2026 کیا ہے؟",
+        "answerEn": "BPS-17 starting basic pay under RBPS-2026 is PKR 54,140 per month.",
+        "answerUr": "بی پی ایس 17 کی شروعاتی بنیادی تنخواہ 54,140 روپے ہے۔"
+      }
+    ],
+    "contentEn": "Interactive calculator and detailed guide for calculating federal and provincial civil servant monthly salaries under Revised Basic Pay Scales 2026 (RBPS-2026).",
+    "contentUr": "وفاقی و صوبائی سرکاری ملازمین کی تنخواہ کا آن لائن کیلکولیٹر اور پے اسکیل 2026 کی مکمل رہنمائی۔",
+    "relatedSlugs": [
+      "/tax/income-tax-calculator-salaried-2026",
+      "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
+      "/welfare/eobi-pension-check-cnic-2026"
+    ]
   }
 };
