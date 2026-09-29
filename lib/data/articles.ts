@@ -22002,5 +22002,79 @@ export const ARTICLES: Record<string, Article> = {
       "/jobs/verified-govt-jobs-sources-avoid-scams-2026",
       "/welfare/eobi-pension-check-cnic-2026"
     ]
+  },
+  "overseas-pakistan-evisa-foreign-visitors-guide-2026": {
+    "slug": "pakistan-evisa-foreign-visitors-guide-2026",
+    "fullPath": "/overseas/pakistan-evisa-foreign-visitors-guide-2026",
+    "categoryId": "overseas",
+    "titleEn": "Pakistan e-Visa Guide 2026: Official Portal, VPA Suspension & Fees",
+    "titleUr": "پاکستان ای ویزا غیر ملکی سیاحوں کی گائیڈ 2026",
+    "metaDescriptionEn": "Complete guide to applying for a Pakistan e-Visa in 2026 via visa.nadra.gov.pk. Includes the 1 January 2026 Visa Prior to Arrival (VPA) suspension update, Tourist/Business visa fees, 7-10 day processing times, and scam alerts for foreign visitors.",
+    "metaDescriptionUr": "غیر ملکیوں کے لیے پاکستان آن لائن ای ویزا پورٹل، یکم جنوری 2026 کی نئی ویزا پالیسی اور ویزا آن ارائیول کی معطلی کی مکمل گائیڈ۔",
+    "directAnswerEn": "Effective January 1, 2026, Pakistan suspended its free Visa Prior to Arrival (VPA) scheme. Foreign tourists must apply online prior to travel through the official government portal (visa.nadra.gov.pk). Processing takes 7–10 business days. Tourist, Business, and Transit e-Visas are available, with fees varying by nationality.",
+    "directAnswerUr": "یکم جنوری 2026 سے پاکستان نے فری ویزا آن ارائیول (VPA) کی سہولت معطل کر دی ہے۔ تمام غیر ملکی سیاحوں کے لیے آفیشل پورٹل (visa.nadra.gov.pk) سے آن لائن ای ویزا اپلائی کرنا لازمی ہے۔",
+    "lastVerified": "September 29, 2026",
+    "officialSource": {
+      "name": "Directorate General of Immigration & Passports (DGIP) & NADRA",
+      "url": "https://visa.nadra.gov.pk/"
+    },
+    "author": {
+      "name": "Editorial Team",
+      "role": "Immigration & Foreign Visitor Desk"
+    },
+    "feeStructure": [
+      {
+        "serviceEn": "Tourist e-Visa",
+        "serviceUr": "سیاحتی ای ویزا",
+        "normal": "~$5 to $60 USD",
+        "urgent": "7-10 Business Days",
+        "executive": "30-90 Days Stay"
+      },
+      {
+        "serviceEn": "Business e-Visa",
+        "serviceUr": "تجارتی ای ویزا",
+        "normal": "~$25 to $120 USD",
+        "urgent": "7-10 Business Days",
+        "executive": "Up to 5 Years Multiple"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "titleEn": "Create Account on visa.nadra.gov.pk",
+        "titleUr": "آفیشل پورٹل پر اکاؤنٹ بنائیں",
+        "detailEn": "Register a verified account on the official government visa portal.",
+        "detailUr": "نادرا کے آفیشل ویزا پورٹل پر اپنا اکاؤنٹ رجسٹر کریں۔"
+      },
+      {
+        "stepNumber": 2,
+        "titleEn": "Upload Passport & Travel Docs",
+        "titleUr": "پاسپورٹ اور دستاویزات اپ لوڈ کریں",
+        "detailEn": "Submit passport scan (>6 months validity), photo, and flight/hotel booking.",
+        "detailUr": "پاسپورٹ کاپی، تصویر اور فلائٹ ٹکٹ اپ لوڈ کریں۔"
+      },
+      {
+        "stepNumber": 3,
+        "titleEn": "Pay Fee & Receive PDF e-Visa",
+        "titleUr": "فیس ادا کریں اور پی ڈی ایف ویزا حاصل کریں",
+        "detailEn": "Pay online via card and print approved e-Visa notice upon issuance.",
+        "detailUr": "آن لائن کارڈ سے فیس ادا کر کے ای ویزا پی ڈی ایف ڈاؤن لوڈ کریں۔"
+      }
+    ],
+    "faqs": [
+      {
+        "questionEn": "Do foreign nationals need a visa for Pakistan in 2026?",
+        "questionUr": "کیا 2026 میں غیر ملکیوں کے لیے پاکستان ویزا لازمی ہے؟",
+        "answerEn": "Yes. Free Visa Prior to Arrival (VPA) was suspended on 1 January 2026. Almost all foreign nationals must apply online at visa.nadra.gov.pk prior to travel.",
+        "answerUr": "جی ہاں، ویزا آن ارائیول کی سہولت معطل ہو چکی ہے۔ تمام غیر ملکیوں کے لیے ویزا آن لائن لینا لازمی ہے۔"
+      }
+    ],
+    "contentEn": "Comprehensive guide for foreign nationals applying for a Pakistan Tourist, Business, or Transit e-Visa online in 2026.",
+    "contentUr": "غیر ملکی شہریوں کے لیے پاکستان آن لائن ای ویزا کی شرائط، فیس، پالیسی میں تبدیلی اور آفیشل پورٹل کی رہنمائی۔",
+    "relatedSlugs": [
+      "/overseas/nicop-mandatory-entry-rules-2026",
+      "/overseas/poc-card-pakistan-apply-online",
+      "/overseas/pakistan-embassy-attestation-documents"
+    ]
   }
 };

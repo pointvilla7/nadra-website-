@@ -799,6 +799,11 @@ export const CATEGORIES: Category[] = [
     "badgeText": "text-amber-800 dark:text-amber-300",
     "popularSearches": [
       {
+        "en": "Pakistan e-Visa Foreign Visitors 2026",
+        "ur": "پاکستان ای ویزا غیر ملکیوں کے لیے 2026",
+        "slug": "/overseas/pakistan-evisa-foreign-visitors-guide-2026"
+      },
+      {
         "en": "NICOP Mandatory Rules 2026",
         "ur": "نائیکوپ لازمی سفری قوانین 2026",
         "slug": "/overseas/nicop-mandatory-entry-rules-2026"
