@@ -1221,6 +1221,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/legal/cybercrime-complaint-nccia-guide-2026"
       },
       {
+        "en": "Women Protection Helplines 2026",
+        "ur": "خواتین تحفظ و گھریلو تشدد ہیلپ لائنز",
+        "slug": "/legal/women-protection-domestic-violence-helplines-pakistan-2026"
+      },
+      {
         "en": "Tenant Police Verification 2026",
         "ur": "کرایہ دار پولیس تصدیق 2026",
         "slug": "/legal/tenant-police-verification-online-2026"
