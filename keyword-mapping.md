@@ -58,3 +58,4 @@
 | `https://pakistaninfohub.com/alerts/emergency-helpline-numbers-pakistan` | Emergency Helpline Numbers in Pakistan (Rescue 1122, Edhi 115, 15) | Complete nationwide directory of toll-free em... | Informational / Transactional |
 | `https://pakistaninfohub.com/alerts/smog-air-quality-aqi-advisory-punjab` | Smog Air Quality (AQI) Advisory Punjab | Live Air Quality Index (AQI) tracking for Lah... | Informational / Transactional |
 | `https://pakistaninfohub.com/alerts/earthquake-emergency-safety-guidelines-pakistan` | Earthquake Emergency Safety Guidelines & PMD Seismic Alert Hub | Real-time earthquake alerts in Pakistan from ... | Informational / Transactional |
+| `https://pakistaninfohub.com/legal/cybercrime-complaint-nccia-guide-2026` | How to File Cybercrime Complaint in Pakistan 2026 | NCCIA complaint online, 1799 helpline, PECA evidence guide, FIA cyber wing defunct | Informational / Transactional |

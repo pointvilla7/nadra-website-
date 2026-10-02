@@ -1216,6 +1216,11 @@ export const CATEGORIES: Category[] = [
         "slug": "/legal/how-to-get-fir-copy-online-pakistan-2026"
       },
       {
+        "en": "Cybercrime Complaint NCCIA Guide 2026",
+        "ur": "سائبر کرائم شکایت این سی سی آئی اے 2026",
+        "slug": "/legal/cybercrime-complaint-nccia-guide-2026"
+      },
+      {
         "en": "Tenant Police Verification 2026",
         "ur": "کرایہ دار پولیس تصدیق 2026",
         "slug": "/legal/tenant-police-verification-online-2026"

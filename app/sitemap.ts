@@ -73,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/legal/suthra-punjab-anti-littering-squad-fines-explained-2026',
     '/legal/tenant-police-verification-online-2026',
     '/legal/how-to-get-fir-copy-online-pakistan-2026',
+    '/legal/cybercrime-complaint-nccia-guide-2026',
     '/welfare/ehsaas-rashan-riayat-program-8123-2026',
     '/bills/fesco-bill-check-online-duplicate-2026',
     '/bills/roshan-gharana-solar-panel-scheme-punjab-2026',
